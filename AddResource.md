@@ -1,8 +1,5 @@
-###DRAFT
 
-## What is a resource?
-
-A resource is an item, item set, or media file or reference linked to specific items. 
+Items are the building blocks of the Omeka system. They can be images, texts, objects, or many other item types. Before creating items you may want to create *Resource Templates* (link), which will load specific fields for various item types which you define.
 
 ## Adding an Item
 

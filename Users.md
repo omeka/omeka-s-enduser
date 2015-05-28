@@ -23,3 +23,6 @@ To manage an existing user, go to the Users section.
 To view the name, email, and role of a user, click on the username. To quickly view this information without leaving the page, click on the … button to the left of the role. 
 
 To edit a user’s information, change their password, or access API keys, click the edit icon (pencil) to the left of their role. The Edit User page has three tabs: one for information, one for the password, and one for API keys. 
+
+## Delete a User
+On the User page of the administrative dashboard, click the trash can icon in the user’s row, to the left of their role information, to delete the user. Confirm the deletion in the dialog box which will appear on the right of the screen.
