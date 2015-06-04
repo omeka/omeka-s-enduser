@@ -9,7 +9,7 @@ You can browse the items in your OmekaS install from the Items tab on the left-h
 
 To add a new item, begin by selecting the the _Add new item_ button. 
 
-### Vaules
+### Values
 The Values tab is where you enter metadata information such as title, description, etc.
 
 ![Basic view of add items page, with no content entered](/content/contentfiles/AddItem_start.png)

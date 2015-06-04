@@ -1,6 +1,9 @@
 ## Terminology
-**Admin Dashboard**: the dashboard for administration of the entire OmekaS install, where sites, items, vocabularies, modules, etc are managed. 
+**Installation or Admin Dashboard**: the dashboard for administration of the entire OmekaS install, where sites, items, vocabularies, modules, etc are managed. 
+
 **Site Dashboard**: dashboard for managing site content, arrangement, etc.
+
+Also see the [glossary](/Glossary.md)
 
 ## Formatting
 
