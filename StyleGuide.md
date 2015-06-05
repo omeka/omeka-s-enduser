@@ -1,5 +1,5 @@
 ## Terminology
-**Installation or Admin Dashboard**: the dashboard for administration of the entire OmekaS install, where sites, items, vocabularies, modules, etc are managed. 
+**Admin/Administrative Dashboard**: the dashboard for administration of the entire OmekaS install, where sites, items, vocabularies, modules, etc are managed. 
 
 **Site Dashboard**: dashboard for managing site content, arrangement, etc.
 
@@ -7,6 +7,7 @@ Also see the [glossary](/Glossary.md)
 
 ## Formatting
 
+- Omeka S is written *with* a space between the Omeka and the S.
 - Names of buttons in *italics*
 - Names of options in *italics*
 - Describe icons based on their tooltip, ex. edit (pencil icon), delete (trash can icon), details (ellipses icon). This way the text is useful for people using screen readers as well as those who are not.
