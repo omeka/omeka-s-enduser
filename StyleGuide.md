@@ -3,6 +3,8 @@
 
 **Site Dashboard**: dashboard for managing site content, arrangement, etc.
 
+**sidebar** the things which slide open on the right of the screen when you click an ellipses.
+
 Also see the [glossary](/Glossary.md)
 
 ## Formatting
@@ -11,5 +13,5 @@ Also see the [glossary](/Glossary.md)
 - Names of buttons in *italics*
 - Names of options in *italics*
 - Describe icons based on their tooltip, ex. edit (pencil icon), delete (trash can icon), details (ellipses icon). This way the text is useful for people using screen readers as well as those who are not.
-- Add, Edit, and Delete should be described separately, each with their own heading. 
+- Add, Edit, and Delete processes should be described separately, each with their own heading. 
 - Use H2 (##) for each subsection of a documentation page.
