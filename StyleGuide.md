@@ -1,3 +1,7 @@
+—
+title: “Style Guide”
+—
+
 ## Terminology
 **Admin/Administrative Dashboard**: the dashboard for administration of the entire OmekaS install, where sites, items, vocabularies, modules, etc are managed. 
 
@@ -8,6 +12,8 @@
 Also see the [glossary](/Glossary.md)
 
 ## Formatting
+Start each page with the following: [3 dashes, return]
+title: “Name of the Page” [return, 3 dashes] for Jekyll. 
 
 - Omeka S is written *with* a space between the Omeka and the S.
 - Names of buttons in *italics*
