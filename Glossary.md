@@ -1,4 +1,6 @@
-Glossary of terms used in Omeka S
+---
+title:Glossary of terms used in Omeka S
+---
 
 **Installation**
 An instance of Omeka S. Typically, a central IT department of an institution does the process of installing, and probably also creates sites for others.

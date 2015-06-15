@@ -1,3 +1,7 @@
+---
+title: Administrative Dashboard
+---
+
 The administrative dashboard manages the content shared by all OmekaS sites as well as managing the core functionalities of the OmekaS installation. 
 
 ![Left-hand view on the admin dashboard, which appears consistently throughout the admin interface, with options as described below](/files/admindashleft.png)

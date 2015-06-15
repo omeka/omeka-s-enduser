@@ -1,3 +1,7 @@
+---
+title: Users
+---
+
 There are six user roles in OmekaS.
 - Global Admin: full site privileges
 - Site Administrator: Full site privileges except: modules: browse only; vocabularies: search, read, create.

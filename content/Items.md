@@ -1,3 +1,6 @@
+---
+title: Items
+---
 
 Items are the building blocks of the Omeka system. They can be images, texts, objects, or many other item types. Before creating items you may want to create [Resource Templates](/ResourceTemplate/), which will load specific fields for various item types which you define.
 

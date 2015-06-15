@@ -1,3 +1,7 @@
+---
+title: Resource Templates
+---
+
 A *Resource Template* is a set of pre-defined Properties, and optionally a Class, to use to guide Item creation and interpretation of Properties. 
 
 Resource templates are managed in the Administrative Dashboard, accessed through the left-hand navigation under the tab label *Resource Templates*. 
