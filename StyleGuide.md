@@ -1,6 +1,6 @@
-—
+---
 title: “Style Guide”
-—
+---
 
 ## Terminology
 **Admin/Administrative Dashboard**: the dashboard for administration of the entire OmekaS install, where sites, items, vocabularies, modules, etc are managed. 
