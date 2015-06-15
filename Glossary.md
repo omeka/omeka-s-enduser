@@ -1,5 +1,5 @@
 ---
-title:Glossary of terms used in Omeka S
+title: Glossary of terms used in Omeka S
 ---
 
 **Installation**
