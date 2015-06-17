@@ -9,7 +9,7 @@ title: Style Guide
 
 **sidebar** the things which slide open on the right of the screen when you click an ellipses.
 
-Also see the [glossary](../Glossary.md)
+Also see the [glossary](glossary.md)
 
 ## Formatting
 Start each page with the following: [3 dashes, return]

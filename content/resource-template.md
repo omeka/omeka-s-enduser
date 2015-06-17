@@ -6,7 +6,7 @@ A *Resource Template* is a set of pre-defined Properties, and optionally a Class
 
 Resource templates are managed in the Administrative Dashboard, accessed through the left-hand navigation under the tab label *Resource Templates*. 
 
-![Basic view of resource templates tab, showing the column titles and one template](../content/contentfiles/templates1.png)
+![Basic view of resource templates tab, showing the column titles and one template](contentfiles/templates1.png)
 
 From this tab, you can sort existing templates by *label*, *class*, or number of *items* assigned to that template, using the up-down arrow icon next to each column heading. You can also use the icons in each template’s row: use the *pencil* to edit, the *trash can* to delete, and the *ellipses* to quickly view the details for that template. If you click on the number of items listed for a template, it will take you to a list of all those items. 
 
