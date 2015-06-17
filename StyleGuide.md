@@ -9,11 +9,13 @@ title: Style Guide
 
 **sidebar** the things which slide open on the right of the screen when you click an ellipses.
 
-Also see the [glossary](/Glossary.md)
+Also see the [glossary](../Glossary.md)
 
 ## Formatting
 Start each page with the following: [3 dashes, return]
 title: “Name of the Page” [return, 3 dashes] for Jekyll. 
+
+All relative links need to begin with .. (so .. / content / etc)
 
 - Omeka S is written *with* a space between the Omeka and the S.
 - Names of buttons in *italics*
