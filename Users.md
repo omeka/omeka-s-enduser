@@ -10,7 +10,9 @@ There are six user roles in OmekaS.
 - Author: Create own content.
 - Researcher: Search and read privileges only.
 
-Manage and create users from the User section of the main administrative dashboard. This page displays the user’s username followed by full name in parentheses, as well as their role and the date the account was created.
+Only site and global administrators can create, edit, and delete users. Editors, Reviewers, Authors, and Researchers can edit their own user information but cannot change the information of other users. 
+
+Administrators manage and create users from the User section of the main administrative dashboard. This page displays the user’s username followed by full name in parentheses, as well as their role and the date the account was created.
 
 ## Create a New User
 To create a new user, select the *Add new user* button in the upper right hand corner of the Users section in the main administrative dashboard. 
