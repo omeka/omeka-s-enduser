@@ -15,6 +15,8 @@ Also see the [glossary](glossary.md)
 Start each page with the following: [3 dashes, return]
 title: “Name of the Page” [return, 3 dashes] for Jekyll. 
 
+Page file names should be lowercase with spaces represented by a dash (so admin-dashboard.md for Administrative Dashboard page). 
+
 All relative links need to begin with .. (so .. / content / etc)
 
 - Omeka S is written *with* a space between the Omeka and the S.
