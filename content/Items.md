@@ -4,7 +4,7 @@ title: Items
 
 Items are the building blocks of the Omeka system. They can be images, texts, objects, or many other item types. Before creating items you may want to create [Resource Templates](../ResourceTemplate/), which will load specific fields for various item types which you define.
 
-You can browse the items in your OmekaS install from the Items tab on the left-hand navigation of the main administrative dashboard. Each item appears as a row, with the *Title*, buttons for *edit*, *delete*, and *view info*, the *Class*, and *Date Created*. The list of items can be sorted by any of the fields listed using the up/down arrow icons at the end of that section.  
+You can browse the items in your OmekaS install from the Items tab on the left-hand navigation of the main administrative dashboard. Each item appears as a row, with the *Title*, buttons for options to *edit* (pencil), *delete* (trash can), or *view details* (ellipses), the *Class*, and *Date Created*. The list of items can be sorted by any of the fields listed using the up/down arrow icons at the end of that section.  
 
 ![Basic view of admin items page, showing a handful of item resources](contentfiles/itemsOS.png)
 

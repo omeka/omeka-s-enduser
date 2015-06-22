@@ -2,9 +2,9 @@
 title: Item Sets
 ---
 
-Item Sets are an aggregation of Items. Items can belong to any number of Item Sets.
+Item sets are an aggregation of Items. Items can belong to any number of item sets.
 
-Item sets are managed via the *item sets* tab located in the left hand navigation of the admin dashboard. When on the item-set view, there is a table of all item sets with their Title, number of Items, the Owner of the set, and icons for each row representing options to *edit* (pencil), *delete* (trash can), or *view details* (ellipses). In the upper right hand corner are buttons to *Add new item set* or *Search item sets* using a detailed search form. To return to the item sets table from this search form, simply use your browser’s back button.
+Item sets are managed via the *item sets* tab located in the left hand navigation of the admin dashboard. When on the item-set view, there is a table of all item sets with their *Title*, number of *Items*, the *Owner* of the set, and icons for each row representing options to *edit* (pencil), *delete* (trash can), or *view details* (ellipses). In the upper right hand corner are buttons to *Add new item set* or *Advanced item sets search* using a detailed search form. To return to the item sets table from this search form, simply use your browser’s back button.
 
 To view an item set, click on its name. On the item sets view page, there are tabs to see its metadata and linked resources - note that these are linked resources for the set’s metadata, not resources within the set. 
 
