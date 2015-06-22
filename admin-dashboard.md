@@ -21,6 +21,6 @@ From the left hand navigation of the admin dashboard, access the following funct
 - [Resource Templates](content/resource-template.md): manage predefined sets of properties (fields) to use when creating items.
 - [Users](users.md): manage users for the whole install and individual sites.
 - *Modules* add functionality to your sites
-- *Jobs* show you what user-activated tasks are currently running.
+- *Jobs* show you what user-activated tasks are currently running. NB: jobs only display when they are running.
 - *Sites* lists and provides access to all of the sites on the OmekaS install
 - *Settings* for specifying the global settings for all sites, the admin dashboard and the site dashboards.
