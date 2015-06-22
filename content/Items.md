@@ -42,7 +42,7 @@ Using the dropdown of the *Add New Media* menu on the right side of the screen, 
 
 While editing, you can delete any media instance using the delete button (trashcan) on the upper right corner of the media block.
 
-![Blank media instance blocks for URL, upload](../content/contentfiles/AddItem_media2.png)
+![Blank media instance blocks for URL, upload](../content/contentfiles/Additem_media2.png)
 
 If you have more than one media instance for an item, you can reorder them by dragging and drop each media instance block, using the icon of three lines in the upper left corner of the block as the anchor when dragging (click there).
 
