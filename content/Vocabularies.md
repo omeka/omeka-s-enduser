@@ -18,7 +18,7 @@ You can use the icons at the right of the Label field to manage individual vocab
 When editing a vocabulary, you can make changes to the *label* and add *comments*. 
 
 ## Add a vocabulary
-New vocabularies must be imported from an existing metadata standard source. In order to import a new vocabulary, you must have a vocabulary file  **file type?**
+New vocabularies must be imported from an existing metadata standard source. In order to import a new vocabulary, you must have a vocabulary file (RDF/XML with an .rdf extension).
 
 After specifying the vocabulary file to upload using your browser’s file chooser, enter the vocabulary’s:
 - prefix

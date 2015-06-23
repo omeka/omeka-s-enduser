@@ -8,6 +8,12 @@ Documentation Map
 - content:
   - items
   - item sets
+  - resource templates
   - vocabularies
-- sites (documentation about how to manage sites will go here
-- modules: installing generally, with pages for each module
+- sites 
+  - sites management 
+  - pages management
+  - etc
+- modules
+  - modules (managing)
+  - individual modules documentation
