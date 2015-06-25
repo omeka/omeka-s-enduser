@@ -46,6 +46,8 @@ While editing, you can delete any media instance using the delete button (trashc
 
 If you have more than one media instance for an item, you can reorder them by dragging and drop each media instance block, using the icon of three lines in the upper left corner of the block as the anchor when dragging (click there).
 
+After you have added media, you can edit and delete it from the [Media](../content/media.md) tab on the left hand navigation.
+
 ### Item Sets
 Use the dropdown to add the item to an item set.
 
@@ -55,3 +57,5 @@ Use the *make public/private* button (eye icon) to set whether the item is visib
 ![make public button showing an eye icon](../content/contentfiles/item_public.png) Public 
 
 ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)  Private
+
+Note that if an item is private, all the media attached is private, but an item which is public can have attached media which are set to be either public or private.
