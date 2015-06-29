@@ -4,7 +4,7 @@ title: Administrative Dashboard
 
 The administrative dashboard manages the content shared by all OmekaS sites as well as managing the core functionalities of the OmekaS installation. 
 
-![Left-hand view on the admin dashboard, which appears consistently throughout the admin interface, with options as described below](../files/admindashleft.png)
+![Left-hand view on the admin dashboard, which appears consistently throughout the admin interface, with options as described below](../files/leftnav.png)
 
 The following content appears on the left side of the admin dashboard, both in the main view of the installation (/admin) and throughout the administrative side of the installation. 
 
@@ -25,6 +25,5 @@ From the left hand navigation of the admin dashboard, users can access the follo
 - [Sites](../sites/sites.md): lists and provides access to all of the sites on the OmekaS install. (Computer icon)
 - *Settings*: manage the global settings for all sites, the admin dashboard and the site dashboards. (Gears icon)
 
-![Left hand navigation with icons and text](../files/leftnav.png)
 
 Below the navigation is a small display which tells you which version of Omeka S you are running.
