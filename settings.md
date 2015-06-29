@@ -11,6 +11,6 @@ Admin users may change the settings for the admin dashboard and general settings
 *Results per page* changes the number of items, item sets, etc, displayed per page when browsing in either public or admin sides of the installation.
 
 *Property label information* determines what is displayed next to each property when users are editing items and item sets. 
-* By default, this is set to none, meaning that only the property label is dsiplayed.
+* By default, this is set to *none*, meaning that only the property label is dsiplayed.
 * If *show vocabulary* is selected, 
 * If *show term* is selected, a parenthetical statement will appear next to the property name with the vocabulary:term. 
