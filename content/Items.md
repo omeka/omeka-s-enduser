@@ -8,6 +8,18 @@ You can browse the items in your OmekaS install from the Items tab on the left-h
 
 ![Basic view of admin items page, showing a handful of item resources](../content/contentfiles/itemsOS.png)
 
+## View
+To quickly view the basic information about an item, click the *view details* (ellipses) button in the row for the item, located next to the edit and delete buttons. This will open a drawer displaying the item’s title and description followed by all metadata properties under their respective headings.
+
+![Item browse view with details open for Case of Identity. Links to item view page squared in blue](../content/contentfiles/viewitem.png) The blue squares indicate where to click to open the full item view.
+
+For a more detailed look at an individual item, click on its title in the items browse table or when viewing its details  
+When you view an individual item , there are tabs for the item’s *Metadata* and its *Linked Resources*. The right hand side of the page displays the item’s media, any *item sets* to which it belongs, its creation date, owner, and visibility. 
+
+![Item view for Case of Identity, showing linked resources](../content/contentfiles/item_linked.png) 
+
+An item’s *linked resources* (as shown above) are those items which have been added as properties to the item being viewed. The table on this tab gives the predicate (property) and a link to each object (item).
+
 ## Adding an Item
 
 To add a new item, begin by selecting the the _Add new item_ button. 
