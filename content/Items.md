@@ -4,9 +4,9 @@ title: Items
 
 Items are the building blocks of the Omeka system. 
 
-In Omeka S, items are made available to you through the Items tab on the left-hand navigation of the administrative dashboard, and you may add items to a site. 
+In Omeka S, items can be made available to you from the system administrator, and you may add items to your own site.
 
-Each item appears as a row, with the *Title*, buttons for options to *edit* (pencil), *delete* (trash can), or *view details* (ellipses), the *Class*, and *Date Created*. The list of items can be sorted by any of the fields listed using the up/down arrow icons at the end of that section.  
+Items are listed in the Items tab, found on the left-hand navigation of the administrative dashboard. Each item appears as a row, with the *Title*; icons to *edit* (pencil), *delete* (trash can), or *view details* (ellipses); the *Class*, and *Date Created*. The list of items can be sorted by any of the fields listed using the up/down arrow icons at the end of that section.  
 
 ![Basic view of admin items page, showing a handful of item resources](../content/contentfiles/itemsOS.png)
 
@@ -16,7 +16,7 @@ To quickly view the basic information about an item, click the *view details* (e
 ![Item browse view with details open for Case of Identity. Links to item view page squared in blue](../content/contentfiles/viewitem.png) The blue squares indicate where to click to open the full item view.
 
 For a more detailed look at an individual item, click on its title in the items browse table or when viewing its details  
-When you view an individual item , there are tabs for the item’s *Metadata* and its *Linked Resources*. The right hand side of the page displays the item’s media, any *item sets* to which it belongs, its creation date, owner, and visibility. 
+When you view an individual item , there are tabs for the item’s *Metadata* and its *Linked Resources*. The right side of the page displays the item’s media, any *item sets* to which it belongs, its creation date, owner, and visibility. 
 
 ![Item view for Case of Identity, showing linked resources](../content/contentfiles/item_linked.png) 
 
@@ -26,7 +26,7 @@ An item’s *linked resources* (as shown above) are those items which have been 
 
 To add a new item, begin by selecting the the _Add new item_ button. 
 
-Before creating items, site admins  may want to create [Resource Templates](/content/resource-template.md), which will load specific fields for various item types which you define.
+Before creating items, site admins may want to create [Resource Templates](/content/resource-template.md), which will load specific fields for various item types.
 
 ### Values
 The Values tab is where you enter metadata information such as title, description, etc.
