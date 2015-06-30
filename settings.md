@@ -12,5 +12,5 @@ Admin users may change the settings for the admin dashboard and general settings
 
 *Property label information* determines what is displayed next to each property when users are editing items and item sets. 
 * By default, this is set to *none*, meaning that only the property label is dsiplayed.
-* If *show vocabulary* is selected, 
-* If *show term* is selected, a parenthetical statement will appear next to the property name with the vocabulary:term. 
+* If *show vocabulary* is selected, the parenthetical statement next to the property name displays the vocabulary used (for example, Dublin Core) 
+* If *show term* is selected, the parenthetical statement next to the property name displays the vocabulary:term (for example, dc:title). 
