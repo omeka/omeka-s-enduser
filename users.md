@@ -51,6 +51,20 @@ The following is a detailed breakdown of permissions for each user role:
 
 **Editor**
 - Full privileges (create, edit, delete) of item, item sets, media, resource templates, and site pages
-- Can search, read, and create, and update or delete own sites and user information.
+- Can search, read, and create sites and users, and edit or delete sites they own. Can only delete their own user profile.
 - Search and read only privileges for vocabularies.
+- No privileges for modules
+
+**Reviewer**
+- Can search, read, create, and edit all items, item sets, media, sites and site pages. Can only delete those items, item sets, media, sites and site pages which the user owns.
+- Search and read only privileges for vocabularies and resource templates.
+- No privileges for modules
+
+**Author**
+- Can search, read, and create items, item sets, media, and site pages. Can only edit or delete content which the user has created.
+- Search and read only privileges for vocabularies and sites.
+- No privileges for modules
+
+**Researcher**
+- Search and read-only privileges for all content, sites, and users. 
 - No privileges for modules

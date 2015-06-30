@@ -11,7 +11,7 @@ Items are listed in the Items tab, found on the left-hand navigation of the admi
 ![Basic view of admin items page, showing a handful of item resources](../content/contentfiles/itemsOS.png)
 
 ## View
-To quickly view the basic information about an item, click the *view details* (ellipses) button in the row for the item, located next to the edit and delete buttons. This will open a drawer displaying the item’s title and description followed by all metadata properties under their respective headings.
+To quickly view the basic information about an item, click the *view details* (ellipses) button in the row for the item, located next to the edit and delete buttons. This will open a drawer to the right of the list which displays the item’s title and description followed by all metadata properties under their respective headings.
 
 ![Item browse view with details open for Case of Identity. Links to item view page squared in blue](../content/contentfiles/viewitem.png) The blue squares indicate where to click to open the full item view.
 
