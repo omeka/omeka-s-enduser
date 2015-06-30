@@ -2,9 +2,9 @@
 title: Item Sets
 ---
 
-Item sets are an aggregation of *items*. Items can belong to any number of item sets, and an item set can have any number of items.
+Item sets are an aggregation of *items*, similar to collections in previous versions of Omeka. In Omeka S, items may belong to any number of sets, and an item set can have any number of items.
 
-Item sets are managed via the *item sets* tab located in the left hand navigation of the admin dashboard. When on the item-set view, there is a table of all item sets with their *Title*, number of *Items*, the *Owner* of the set, and icons for each row representing options to *edit* (pencil), *delete* (trash can), or *view details* (ellipses). In the upper right hand corner are buttons to *Add new item set* or *Advanced item sets search* using a detailed search form. To return to the item sets table from this search form, simply use your browser’s back button.
+Item sets are managed via the *item sets* tab located in the left navigation of the admin dashboard. After clicking on the tab, a table appears listing all item sets with their *Title*, number of *Items*, the *Owner* of the set, and icons for each row representing options to *edit* (pencil), *delete* (trash can), or *view details* (ellipses). In the upper right corner are buttons to *Add new item set* or *Advanced item sets search. To return to the sets browse screen from this search form, use your browser’s back button.
 
 ## View Item Set
 To quickly see information about an item set, click on the *view details* button for the item set on the item sets browse page. This will open a drawer to the right of the list of item sets with the basic metadata for the set.
