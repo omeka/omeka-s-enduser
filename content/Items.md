@@ -18,9 +18,9 @@ To quickly view the basic information about an item, click the *view details* (e
 For a more detailed look at an individual item, click on its title in the items browse table or when viewing its details  
 When you view an individual item , there are tabs for the item’s *Metadata* and its *Linked Resources*. The right side of the page displays the item’s media, any *item sets* to which it belongs, its creation date, owner, and visibility. 
 
-![Item view for Case of Identity, showing linked resources](../content/contentfiles/item_linked.png) 
+An item’s *linked resources* (shown below) are resources, which have been added as properties to the item. The table on this tab gives the predicate (property) and a link to each object (item).
 
-An item’s *linked resources* (as shown above) are those items which have been added as properties to the item being viewed. The table on this tab gives the predicate (property) and a link to each object (item).
+![Item view for Case of Identity, showing linked resources](../content/contentfiles/item_linked.png) 
 
 ## Adding an Item
 
@@ -29,23 +29,23 @@ To add a new item, begin by selecting the the _Add new item_ button.
 Before creating items, site admins may want to create [Resource Templates](/content/resource-template.md), which will load specific fields for various item types.
 
 ### Values
-The Values tab is where you enter metadata information such as title, description, etc.
+The Values tab is where you enter metadata, such as title, description, etc.
 
 ![Basic view of add items page, with no content entered](../content/contentfiles/AddItem_start.png)
 
-1. If desired, select a resource template from the top drop-down menu. Resource templates are defined by the site administrators and editors.
+1. If available and appropriate, select a resource template from the drop-down menu. Resource templates are defined by the site administrators and editors.
   * If using a resource template, the class should automatically load.
-  * If not using a resource template, select a class from the dropdown menu (these are populated from the Vocabularies in your installation).
+  * If not using a resource template, select a class from the dropdown menu (these are populated from the [Vocabularies] (/content/vocabularies.md) in your installation).
 1. Add information to the fields provided.  
-  1. You have the choice of three forms of input for fields in your item resources: text, a resource from the installation, or an external link.  
-    * **Text** fields are entered with text, which can include html code.  
+  1. You may add text, a resource from the installation, or an external link in each field.  
+    * **Text** fields are entered with text, which can include HTML code.  
     * **Omeka Resource** fields create an internal link between the resource you are creating and the resource which fills that field. 
      You have the option to use either another item or an item set. 
      Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
 
       ![Select Item menu with list of items to link in edit item view](../content/contentfiles/AddItem_resource.png)
     * **URI** fields link to an external website or online resource.
-1. You can add additional fields by selecting a property from the list on the right side of the screen. You can either browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
+1. You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
 
 ### Media
 Use the *Media* tab to add images, video, or other files.
@@ -62,13 +62,13 @@ While editing, you can delete any media instance using the delete button (trashc
 
 If you have more than one media instance for an item, you can reorder them by dragging and drop each media instance block, using the icon of three lines in the upper left corner of the block as the anchor when dragging (click there).
 
-After you have added media, you can edit and delete it from the [Media](../content/media.md) tab on the left hand navigation.
+After you have added media, you can edit and delete it from the [Media](../content/media.md) tab on the left navigation.
 
 ### Item Sets
-Use the dropdown to add the item to an item set.
+Use the dropdown to add the item to an item set. Sets must be created first, before adding the item. 
 
 ### Visibility
-Use the *make public/private* button (eye icon) to set whether the item is visible to the public or only to users of the OmekaS install. 
+Use the *make public/private* button (eye icon) to set whether the item is visible to the public or only to users of the Omeka S system. 
 
 ![make public button showing an eye icon](../content/contentfiles/item_public.png) Public 
 
