@@ -1,6 +1,5 @@
 Documentation Map
 
-- about
 - admin dashboard
 - glossary
 - settings
@@ -8,12 +7,12 @@ Documentation Map
 - content:
   - items
   - item sets
+  - media
   - resource templates
   - vocabularies
 - sites 
   - sites management 
   - pages management
-  - etc
 - modules
   - modules (managing)
   - individual modules documentation
