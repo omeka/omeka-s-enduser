@@ -7,7 +7,7 @@ Clicking on a media title will take you to the page for that media. This page di
 
 Clicking on the item associated with the media will take you to that item’s show page. Clicking on the owner will take you to their user information page.
 
-![browse media view](..content/contentfiles/mediaBrowse.png)
+![browse media view](../content/contentfiles/mediaBrowse.png)
 
 ## Add Media
 
