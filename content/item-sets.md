@@ -6,8 +6,12 @@ Item sets are an aggregation of *items*. Items can belong to any number of item 
 
 Item sets are managed via the *item sets* tab located in the left hand navigation of the admin dashboard. When on the item-set view, there is a table of all item sets with their *Title*, number of *Items*, the *Owner* of the set, and icons for each row representing options to *edit* (pencil), *delete* (trash can), or *view details* (ellipses). In the upper right hand corner are buttons to *Add new item set* or *Advanced item sets search* using a detailed search form. To return to the item sets table from this search form, simply use your browser’s back button.
 
+![Browse item sets view with four item sets.](../content/contentfiles/itemsetsBrowse.png)
+
 ## View Item Set
-To quickly see information about an item set, click on the *view details* button for the item set on the item sets browse page. This will open a drawer on the right hand side of the page with the basic metadata for the set.
+To quickly see information about an item set, click on the *view details* button for the item set on the item sets browse page. This will open a drawer on the right hand side of the page with the basic metadata for the set. To close the drawer, click the X in the upper right hand corner of the drawer.
+
+![Drawer view of an item, with description and title](../content/contentfiles/itemsetsDrawer.png)
 
 To view all the information for an item set, click on its name. On the item sets view page, there are tabs to see an item set’s *Metadata* and *Linked Resources*. On the right side of the item set’s view page is information about the date created, owner, and visibility. For item sets, visibility includes both whether the set is private or public and whether other users can add items to the set. 
 
