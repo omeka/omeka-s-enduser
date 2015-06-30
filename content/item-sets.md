@@ -9,15 +9,13 @@ Item sets are managed via the *item sets* tab located in the left navigation of 
 ![Browse item sets view with four item sets.](../content/contentfiles/itemsetsBrowse.png)
 
 ## View Item Set
-<<<<<<< HEAD
 To quickly see information about an item set, click on the *view details* button for the item set on the item sets browse page. This will open a drawer on the right hand side of the page with the basic metadata for the set. To close the drawer, click the X in the upper right hand corner of the drawer.
 
 ![Drawer view of an item, with description and title](../content/contentfiles/itemsetsDrawer.png)
-=======
-To quickly see information about an item set, click on the *view details* button for the item set on the item sets browse page. This will open a drawer to the right of the list of item sets with the basic metadata for the set.
->>>>>>> origin/master
 
 To view all the information for an item set, click on its name. On the item sets view page, there are tabs to see an item set’s *Metadata* and *Linked Resources*. On the right side of the item set’s view page is information about the date created, owner, and visibility. For item sets, visibility includes both whether the set is private or public and whether other users can add items to the set. 
+
+![Reading view of a single item set](../content/contentfiles/itemsetsView.png)
 
 The item set’s *metadata* is entered by users. The *linked resources* are items which are used to populate specific metadata properties (for example: Creator). When viewing linked resources, the table includes the predicate (property or description) and the object (linked item resource).
 
