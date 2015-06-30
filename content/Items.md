@@ -26,7 +26,7 @@ An item’s *linked resources* (as shown above) are those items which have been 
 
 To add a new item, begin by selecting the the _Add new item_ button. 
 
-Before creating items, site admins  may want to create [Resource Templates](..content/resource-template.md), which will load specific fields for various item types which you define.
+Before creating items, site admins  may want to create [Resource Templates](/content/resource-template.md), which will load specific fields for various item types which you define.
 
 ### Values
 The Values tab is where you enter metadata information such as title, description, etc.
