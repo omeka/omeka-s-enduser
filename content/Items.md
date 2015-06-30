@@ -2,9 +2,11 @@
 title: Items
 ---
 
-Items are the building blocks of the Omeka system. Each item record represents a Before creating items you may want to create [Resource Templates](../ResourceTemplate/), which will load specific fields for various item types which you define.
+Items are the building blocks of the Omeka system. 
 
-You can browse the items in your OmekaS install from the Items tab on the left-hand navigation of the main administrative dashboard. Each item appears as a row, with the *Title*, buttons for options to *edit* (pencil), *delete* (trash can), or *view details* (ellipses), the *Class*, and *Date Created*. The list of items can be sorted by any of the fields listed using the up/down arrow icons at the end of that section.  
+In Omeka S, items are made available to you through the Items tab on the left-hand navigation of the administrative dashboard, and you may add items to a site. 
+
+Each item appears as a row, with the *Title*, buttons for options to *edit* (pencil), *delete* (trash can), or *view details* (ellipses), the *Class*, and *Date Created*. The list of items can be sorted by any of the fields listed using the up/down arrow icons at the end of that section.  
 
 ![Basic view of admin items page, showing a handful of item resources](../content/contentfiles/itemsOS.png)
 
@@ -23,6 +25,8 @@ An item’s *linked resources* (as shown above) are those items which have been 
 ## Adding an Item
 
 To add a new item, begin by selecting the the _Add new item_ button. 
+
+Before creating items, site admins  may want to create [Resource Templates](../ResourceTemplate/), which will load specific fields for various item types which you define.
 
 ### Values
 The Values tab is where you enter metadata information such as title, description, etc.
