@@ -18,9 +18,9 @@ To quickly view the basic information about an item, click the *view details* (e
 For a more detailed look at an individual item, click on its title in the items browse table or when viewing its details  
 When you view an individual item , there are tabs for the item’s *Metadata* and its *Linked Resources*. The right side of the page displays the item’s media, any *item sets* to which it belongs, its creation date, owner, and visibility. 
 
-![Item view for Case of Identity, showing linked resources](../content/contentfiles/item_linked.png) 
+An item’s *linked resources* (shown below) are resources, which have been added as properties to the item. The table on this tab gives the predicate (property) and a link to each object (item).
 
-An item’s *linked resources* (as shown above) are those items which have been added as properties to the item being viewed. The table on this tab gives the predicate (property) and a link to each object (item).
+![Item view for Case of Identity, showing linked resources](../content/contentfiles/item_linked.png) 
 
 ## Adding an Item
 
