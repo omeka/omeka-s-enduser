@@ -9,6 +9,7 @@ Item sets are managed via the *item sets* tab located in the left navigation of 
 ![Browse item sets view with four item sets.](../content/contentfiles/itemsetsBrowse.png)
 
 ## View Item Set
+
 To quickly see information about an item set, click on the *view details* button for the item set on the item sets browse page. This will open a drawer on the right hand side of the page with the basic metadata for the set. To close the drawer, click the X in the upper right hand corner of the drawer.
 
 ![Drawer view of an item, with description and title](../content/contentfiles/itemsetsDrawer.png)
