@@ -1,8 +1,11 @@
 ---
 Title: Media
 ---
+## Add Media
 
-Media can only be added via the [item](../content/items.md). However, once an item is added, you can access individual media via the Media tab on the left hand navigation on the admin dashboard in order to edit media metadata, set the visibility of individual media, and delete media.
+Adding media includes uploading a file, or directly attaching content with oEmbed, YouTube URLs, or writing HTML.
+
+Media can only be added via the [item](../content/items.md). However, once an item is added, you can access individual media via the Media tab on the left hand navigation on the admin dashboard in order to edit media metadata, set the visibility of individual media, and delete media. 
 
 On the admin/media page, all media in the install is displayed in a table with the *Title*, the *Item* with which the media is associated, and the *Owner* of the media. You can sort by any of these categories using the up-down arrows in the header of the table.
 
