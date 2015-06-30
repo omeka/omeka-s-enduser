@@ -2,15 +2,15 @@
 title: Administrative Dashboard
 ---
 
-The administrative dashboard manages the content shared by all OmekaS sites as well as managing the core functionalities of the OmekaS installation. 
+The administrative dashboard manages the content shared by all OmekaS sites and the core functionalities of the OmekaS installation. 
+
+The following content appears on the left side of the admin dashboard and on all administrative pages. 
 
 ![View of the left hand navigation on the admin dashboard, which also appears consistently throughout the admin interface, with options as described below](/files/leftnav.png)
 
-The following content appears on the left side of the admin dashboard, both in the main view of the installation (/admin) and throughout the administrative side of the installation. 
+In the upper left corner of the screen is a link displaying the name of the installation which will always take you back to the admin dashboard. 
 
-In the upper left corner of the screen is a link displaying the name of the installation which will always take you back to the admin dashboard (/admin). 
-
-Underneath the site name is a search field which has an option for advanced search (ellipses) in addition to the button to search (magnifying glass). The search function here covers all content on the administrative install, including items, vocabularies, resource templates, and media.  
+Underneath the site name is a search field which has an option for advanced search (ellipses) in addition to the button to search (magnifying glass). The search function will survey content on the administrative install, including items, vocabularies, resource templates, and media.  
 
 From the left hand navigation of the admin dashboard, users can access the following functions:
 
