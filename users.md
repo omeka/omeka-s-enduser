@@ -4,8 +4,8 @@ title: Users
 
 There are six user roles in OmekaS.
 - Global Admin: full site privileges
-- Site Administrator: Full site privileges except: modules: browse only; vocabularies: search, read, create.
-- Editor (Content Expert): full privileges for content creation, editing, and deleting; limited privileges for user, module, and vocabularies.
+- Site Administrator: Full site privileges
+- Editor (Content Expert): full privileges for content creation
 - Reviewer: robust content privileges but can only delete own content.
 - Author: Create own content.
 - Researcher: Search and read privileges only.
@@ -37,3 +37,20 @@ To generate an *API Key*, navigate to that tab and enter a *New Key Label*. This
 
 ## Delete a User
 On the User page of the administrative dashboard, click the trash can icon in the user’s row, to the left of their role information, to delete the user. Confirm the deletion in the dialog box which will appear on the right of the screen.
+
+
+## Roles and Permissions
+The following is a detailed breakdown of permissions for each user role:
+**Global Admin**
+- All privileges
+
+**Site Administrator**
+- Full privileges (create, edit, delete) of item, item sets, media, resource templates, site pages, sites, and users.
+- Browse-only privileges for modules
+- Search, read, and create privileges for Vocabularies (cannot delete)
+
+**Editor**
+- Full privileges (create, edit, delete) of item, item sets, media, resource templates, and site pages
+- Can search, read, and create, and update or delete own sites and user information.
+- Search and read only privileges for vocabularies.
+- No privileges for modules
