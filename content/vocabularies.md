@@ -11,7 +11,7 @@ The main view of the *Vocabularies* tab in the Admin Dashboard displays the exis
 
 ![Main view of vocabularies, with columns for label, prefix, classes, and properties counts and information](contentfiles/vocab1.png)
 
-Vocabularies are displayed in a table with headings for Label (name of vocabulary), prefix (used by the database), classes (number of classes in the vocabulary), and properties (number of properties in the vocabulary). You can sort vocabularies by these columns using the up and down arrows at the right end of each column. 
+Vocabularies are displayed in a table with headings for *Label* (name of vocabulary), *Prefix* (used by the database), *Classes* (number of classes in the vocabulary), and *Properties* (number of properties in the vocabulary). You can sort vocabularies by these columns using the up and down arrows at the right end of each column. 
 
 You can use the icons at the right of the Label field to manage individual vocabularies. The edit icon (pencil) takes you to the edit page for that vocabulary, the delete icon (trash can) opens a sidebar to delete the vocabulary, and the details icon (ellipses) opens a sidebar with information about the vocabulary.
 
