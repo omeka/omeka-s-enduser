@@ -8,9 +8,9 @@ The following content appears on the left side of the admin dashboard and on all
 
 ![View of the left hand navigation on the admin dashboard, which also appears consistently throughout the admin interface, with options as described below](/files/leftnav.png)
 
-In the upper left corner of the screen is a link displaying the name of the installation which will always take you back to the admin dashboard. 
+In the upper left corner of the screen is a link displaying the title of the installation which will always take you back to the admin dashboard. 
 
-Underneath the site name is a search field which has an option for advanced search (ellipses) in addition to the button to search (magnifying glass). The search function will survey content on the administrative install, including items, vocabularies, resource templates, and media.  
+Underneath the installation title is a search field which has an option for advanced search (ellipses) in addition to the button to search (magnifying glass). The search function will survey content on the administrative install, including items, vocabularies, resource templates, and media.  
 
 From the left hand navigation of the admin dashboard, users can access the following functions:
 
