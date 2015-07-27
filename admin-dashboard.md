@@ -15,7 +15,6 @@ Underneath the installation title is a search field which has an option for adva
 From the left hand navigation of the admin dashboard, users can access the following functions:
 
 - [Items](../content/items.md): manage the individual resources of your install. (Box icon)
-- [Media](../content/media.md): browse media content related to items. (Photo icon)
 - [Item Sets](../content/item-sets.md): manage aggregated groups of items. (Multiple boxes icon)
 - [Vocabularies](../content/vocabularies.md): manage the metadata standards for your install. (Closed book icon)
 - [Resource Templates](../content/resource-template.md): manage predefined sets of properties (fields) to use when creating items. (Pencil in a square icon)
