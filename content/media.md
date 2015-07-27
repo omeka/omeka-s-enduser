@@ -1,22 +1,18 @@
 ---
 Title: Media
 ---
-On the admin/media page, all media in the install is displayed in a table with the *Title*, the *Item* with which the media is associated, and the *Owner* of the media. You can sort by any of these categories using the up-down arrows in the header of the table.
+Access media through the item with which is is associated. Media cannot exist independent of an associated item. 
 
-Clicking on a media title will take you to the page for that media. This page displays any uploaded files as well as all metadata which has been entered or automatically generated for the media.
-
-Clicking on the item associated with the media will take you to that item’s show page. Clicking on the owner will take you to their user information page.
-
-![browse media view](../content/contentfiles/mediaBrowse.png)
+To view the metadata for media, click on the media’s name in the  right-hand sidebar on the item view page. 
 
 ## Add Media
 
 Adding media includes uploading a file, or directly attaching content with oEmbed, YouTube URLs, or writing HTML.
 
-Media can only be added via the [item](../content/Items.md). However, once an item is added, you can access individual media via the Media tab on the left hand navigation on the admin dashboard in order to edit media metadata, set the visibility of individual media, and delete media. 
+Media can only be added via the [item](../content/Items.md). 
 
 ## Edit Media
-To edit an existing media, either click on the *edit* (pencil) button or click the media title and then select the *Edit media* button in the upper right corner of the page. 
+To edit an existing media, go to its metadata page and select the *Edit media* button in the upper right corner of the page. 
 
 If desired, you can select a *Resource Template* or *Class* from the two dropdown menus which load automatically. Selecting a resource template will populate the page with predetermined properties.
 
