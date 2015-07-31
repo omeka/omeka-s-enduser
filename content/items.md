@@ -38,7 +38,8 @@ The Values tab is where you enter metadata, such as title, description, etc.
   * If not using a resource template, select a class from the dropdown menu (these are populated from the [Vocabularies] (/content/vocabularies.md) in your installation).
 1. Add information to the fields provided.  
   1. You may add text, a resource from the installation, or an external link in each field.  
-    * **Text** fields are entered with text, which can include HTML code.  
+    * **Text** fields are entered with text, which can include HTML code. The keyboard at the top of the field input indicates text. The globe icon which appears next to it can be used to set language. 
+![image of text input field with keyboard icon indicating text input, the globe icon for setting language, and a trashcan delete icon](../content/contentfiles/item_textedit.png)
     * **Omeka Resource** fields create an internal link between the resource you are creating and the resource which fills that field. 
      You have the option to use either another item or an item set. 
      Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.

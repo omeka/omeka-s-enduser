@@ -25,3 +25,4 @@ From the left hand navigation of the admin dashboard, users can access the follo
 - [Settings](../settings.md): manage the global settings for all sites, the admin dashboard and the site dashboards. (Gears icon)
 
 Below the navigation is a small display which tells you which version of Omeka S you are running.
+
