@@ -24,4 +24,11 @@ To edit a site, either click on the *edit* (pencil) icon for the site on the man
 
 On the *Admin* tab on the edit site page, you can change the site’s *URL Slug*, *Title*, and *Theme*
 
-On the *Pages* tab you can add, edit, and delete pages for the site.
+On the *Pages* tab you can add, edit, and delete [pages](../sites/pages.md) for the site.
+
+On the *User permissions* tab you can manage which users can access the administrative side of the site. 
+
+## Managing Site Users
+To add a user to a site, navigate to the *User permissions* tab (see above).
+
+On 
