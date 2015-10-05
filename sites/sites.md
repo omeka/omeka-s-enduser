@@ -31,4 +31,19 @@ On the *User permissions* tab you can manage which users can access the administ
 ## Managing Site Users
 To add a user to a site, navigate to the *User permissions* tab (see above).
 
-On 
+On the right hand side of the screen a drawer will appear that shows all of the users for your install. The users will be sorted by the letter of their first name. To add a user, click on their name. You will then be prompted to check various boxes:
+
+Admin: Gives user full administrative privileges  
+Attach: Not sure?   
+Edit: Gives user editing privileges
+
+Once you've selected the box(es) for the user you wish to add, click the Save button located in the upper right hand corner. You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon located next to the Edit box.
+
+Editing a Page within a Site  
+After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). On the right hand side you can choose to add a new block by selecting one of the following layouts:
+
+HTML: Opens up an HTML box in which you can add text and links
+Browse preview: Allows you to add resources via searching 
+One item: Once you click the Select Item button, a drawer appears on the right hand side displaying the various items in your Omeka install. Click on the item you wish to add to the page and then click the Select resource button. You can add a caption to the item using the box. In order to add more than one item you will need to continually choose the One item layout until you have populated your page with as many items as you wish.
+
+Once you have added items to your page, click the Save button in the right hand corner. You can delete any of the blocks by clicking on the trash can icon located next to the title of the block. The position of the blocks on the page can be changed by dragging and dropping a specific block.
