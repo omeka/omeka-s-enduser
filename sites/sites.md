@@ -20,13 +20,18 @@ You will need to:
 * Select which *theme* you want for the site or whether to go with the installation default. Themes set the appearance of the site.
 
 ## Editing a Site
-To edit a site, either click on the *edit* (pencil) icon for the site on the manage sites page or click on the site’s name in that same page.
+To edit a site click on the *edit* (pencil) icon for the site on the manage sites page.
 
 On the *Admin* tab on the edit site page, you can change the site’s *URL Slug*, *Title*, and *Theme*
 
 On the *Pages* tab you can add, edit, and delete [pages](../sites/pages.md) for the site.
 
+On the *Navigation* tab you can manage the navigation for your site, adding the pages you build, browse pages for items and item sets, and external links.
+
 On the *User permissions* tab you can manage which users can access the administrative side of the site. 
+
+## Managing Navigation
+
 
 ## Managing Site Users
 To add a user to a site, navigate to the *User permissions* tab (see above).
@@ -39,11 +44,4 @@ Edit: Gives user editing privileges
 
 Once you've selected the box(es) for the user you wish to add, click the Save button located in the upper right hand corner. You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon located next to the Edit box.
 
-Editing a Page within a Site  
-After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). On the right hand side you can choose to add a new block by selecting one of the following layouts:
-
-HTML: Opens up an HTML box in which you can add text and links
-Browse preview: Allows you to add resources via searching 
-One item: Once you click the Select Item button, a drawer appears on the right hand side displaying the various items in your Omeka install. Click on the item you wish to add to the page and then click the Select resource button. You can add a caption to the item using the box. In order to add more than one item you will need to continually choose the One item layout until you have populated your page with as many items as you wish.
-
-Once you have added items to your page, click the Save button in the right hand corner. You can delete any of the blocks by clicking on the trash can icon located next to the title of the block. The position of the blocks on the page can be changed by dragging and dropping a specific block.
+See the section on [pages](../sites/pages.md) for information on editing pages.
