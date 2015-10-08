@@ -9,9 +9,12 @@ Admin users may change the settings for the admin dashboard and general settings
 *Administrator Email* sets the email address for the installation administrator. 
 Note that some hosting setups may require that the domain name for the administrator email match the domain name of the installation (if your domain is yourinstall.org, the administrator email must be user@yourinstall.org).  
 
+*Installation Title* allows you to change the title for the OmekaS installation overall. This is what appears in the upper left-hand corner of the admin dashboard.
+
 *Results per page* changes the number of results (items, item sets, media) displayed per page when browsing in either public or admin sides of the installation.
 
 *Property label information* determines what is displayed next to each property when users are editing items and item sets. 
 * By default, this is set to *none*, meaning that only the property label is displayed.
 * If *show vocabulary* is selected, the parenthetical statement next to the property name displays the vocabulary used (for example, Dublin Core) 
 * If *show term* is selected, the parenthetical statement next to the property name displays the vocabulary:term (for example, dc:title). 
+*Use HTMLPurifier* checkbox. If checked, the service [HTMLPurifier](http://htmlpurifier.org/) will clean up any user-entered HTML. 

@@ -20,7 +20,8 @@ To create a new user, select the *Add new user* button in the upper right hand c
 On the Add User page, enter the following:
 - *Name* (full name or credit name)
 - *Email address*
-- and select a *Role* using the dropdown menu (see above for user role privileges)
+- Select a *Role* using the dropdown menu (see above for user role privileges)
+- Check the *Is Active* box to confirm that the user is active.
 
 ## Managing Users
 To manage an existing user, go to the Users section.
@@ -31,7 +32,9 @@ To edit a user’s information, change their password, or access API keys, click
 
 The Edit User page has three tabs: *User Information*, *Password*, and *API Keys*. 
 
-On the *User* tab, you can edit the display *Name* and *Email* for the user. In order to reset the *Password* on that tab, you must also know the current password. 
+On the *User* tab, you can edit the display *Name* and *Email* for the user, select or change the user *Role* and click the checkbox to confirm that the user *Is Active* (or uncheck the checkbox to render the user inactive)
+
+In order to reset the *Password* on that tab, you must also know the current password. 
 
 To generate an *API Key*, navigate to that tab and enter a *New Key Label*. This could be a date or the purpose of the key. To remove existing API keys, check the *Delete?* box on the row for that key and click *Submit* (save changes) in the upper right hand corner of the screen.
 
