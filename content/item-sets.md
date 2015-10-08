@@ -1,18 +1,18 @@
----
+---/Users/mebrett/Documents/omeka-s-enduser/content/item-sets.md
 title: Item Sets
 ---
 
 Item sets are an aggregation of *items*, similar to collections in previous versions of Omeka. In Omeka S, items may belong to any number of sets, and an item set can have any number of items.
 
-Item sets are managed via the *item sets* tab located in the left navigation of the admin dashboard. After clicking on the tab, a table appears listing all item sets with their *Title*, number of *Items*, the *Owner* of the set, and icons for each row representing options to *edit* (pencil), *delete* (trash can), or *view details* (ellipses). In the upper right corner are buttons to *Add new item set* or *Advanced item sets search. To return to the sets browse screen from this search form, use your browser’s back button.
+Item sets are managed via the *item sets* tab located in the left navigation of the admin dashboard. After clicking on the tab, a table appears listing all item sets with: their *Title*; icons for each row representing options to *edit* (pencil), *delete* (trash can), or *view details* (ellipses); the item set’s *Class*, the *Owner* of the set, and the *Date Created* In the upper right corner is the button to *Add new item set*. To return to the sets browse screen from this search form, use your browser’s back button.
 
 ![Browse item sets view with four item sets.](../content/contentfiles/itemsetsBrowse.png)
 
 ## View Item Set
 
-To quickly see information about an item set, click on the *view details* button for the item set on the item sets browse page. This will open a drawer on the right hand side of the page with the basic metadata for the set. To close the drawer, click the X in the upper right hand corner of the drawer.
+To quickly see information about an item set, click on the *view details* button (ellipses) for the item set on the item sets browse page. This will open a drawer on the right hand side of the page with the item set’s Title, Visibility, and number of Items.
 
-![Drawer view of an item, with description and title](../content/contentfiles/itemsetsDrawer.png)
+![Drawer view of an item, with description and title](../content/contentfiles/itemsetsDrawer2.png)
 
 To view all the information for an item set, click on its name. On the item sets view page, there are tabs to see an item set’s *Metadata* and *Linked Resources*. On the right side of the item set’s view page is information about the date created, owner, and visibility. For item sets, visibility includes both whether the set is private or public and whether other users can add items to the set. 
 

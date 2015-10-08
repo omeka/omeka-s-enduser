@@ -6,12 +6,12 @@ Items are the building blocks of the Omeka system.
 
 In Omeka S, items can be made available to you from the system administrator, and you may add items to your own site.
 
-Items are listed in the Items tab, found on the left-hand navigation of the administrative dashboard. Each item appears as a row, with the *Title*; icons to *edit* (pencil), *delete* (trash can), or *view details* (ellipses); the *Class*, and *Date Created*. The list of items can be sorted by any of the fields listed using the up/down arrow icons at the end of that section.  
+Items are listed in the Items tab, found on the left-hand navigation of the administrative dashboard. Each item appears as a row, with: the *Title*; icons to *edit* (pencil), *delete* (trash can), or *view details* (ellipses); the *Class*; the item’s *Owner*; and *Date Created*. The list of items can be sorted by any of the fields listed using the up/down arrow icons at the end of that section.  
 
 ![Basic view of admin items page, showing a handful of item resources](../content/contentfiles/itemsOS.png)
 
 ## View
-To quickly view the basic information about an item, click the *view details* (ellipses) button in the row for the item, located next to the edit and delete buttons. This will open a drawer to the right of the list which displays the item’s title and description followed by all metadata properties under their respective headings.
+To quickly view the basic information about an item, click the *view details* (ellipses) button in the row for the item, located next to the edit and delete buttons. This will open a drawer to the right of the list which displays the item’s title,  description, and visibility.
 
 ![Item browse view with details open for Case of Identity. Links to item view page squared in blue](../content/contentfiles/viewitem.png) The blue squares indicate where to click to open the full item view.
 
