@@ -4,7 +4,7 @@ title: Site Navigation
 
 Use the *Navigation* tab of the [Sites](../sites/sites.md) to manage the navigation, or menu, or your site. You can add links, browse pages, and your [pages](../sites/site_pages.md) to the navigation, arrange them, and delete links from the navigation.
 
-![Editing navigation with a drawer on the right side of the screen for adding links](../sites/sitesfiles/sitenav_add.png)
+![Editing navigation with a drawer on the right side of the screen for adding links](../sites/sitesfiles/sitenav_add2.png)
 
 ## Adding Navigation
 To add a link you can use the *Add a custom link* drop-down on the right hand drawer to add either:
@@ -13,4 +13,32 @@ To add a link you can use the *Add a custom link* drop-down on the right hand dr
 
 Or you can add one of your [pages](../sites/site_pages.md), which should be listed in the right-hand drawer below the *Add a custom link* dropdown. If you need to find a specific page, begin typing the page title in the search box with the helper text *Filter pages* which appears directly below the text “Add a link to a site page.” 
 
-### Custom URL
+**Custom URL** link blocks display three pieces of information: the block *type* (Custom URL), the *label* which is the text which will appear in the site navigation menu, and the *url*. 
+
+![URL block with the label “RRCHNM” and url chnm.gmu.edu](../sites/sitesfiles/sitenav_url.png “Custom URL block”)
+
+**Browse** blocks create a browse page for content already associated with your site (assigned to existing pages, even if those pages are not currently part of the navigation). You can change the *label* of the block to reflect what, specifically, site visitors will browse. 
+
+If you want to refine the Browse block, you can use the Query to create a search query that returns the desired results. 
+
+![Browse block with the label ‘Browse’ and no query](../sites/sitesfiles/sitenav_brw.png “Browse block”)
+
+**Site Page** blocks create links to pages you have built for your site. The *page* field indicates which page is in use, as does the block title. You can change the *label* for the page link in the navigation, as in the example image below.
+
+![Page block with for the page Custard Page 2 labeled “More Custard”](../sites/sitesfiles/sitenav_pgs.png “Site Page block”)
+
+Be sure to click save before leaving the Navigation tab to save changes.
+
+## Editing and Arranging Navigation
+When you add a link block it is automatically expanded. To collapse an open link block, click the edit (pencil) icon in the  upper right corner of each block, next to the delete (trash) icon. When you arrive at the Navigation tab after saving changes or from the main site edit page, the navigation items should be collapsed; open the block by clicking the edit (pencil) icon.
+
+You can arrange your navigation links by dragging and dropping them into your preferred order. Nest links by dragging the desired child link on top of the desired parent link; when you do so a small black triangle should appear to the left of the parent block.
+
+![The block for Custard Page 2 - the child page - hovering over the block for Opening Page - the parent block.](../sites/sitesfiles/sitenav_drop.png “Custard page 2 is the child link; Opening Page will be the parent link, as indicated by the small black triangle on the left”)
+
+OmekaS allows for multiple levels of nested navigation.
+
+## Deleting Navivation
+To delete a link from the navigation, click the delete (trash can) icon and then click *Save*. If you accidentally click the delete icon, you can click the undo (back looped arrow) icon before click save to cancel the deletion.
+
+![Two link blocks, one of which is highlighted in red and marked for deletion](../sites/sitesfiles/sitenav_del.png “The delete icon for browse has been pushed; the block now displays the undo button instead”)
