@@ -8,6 +8,9 @@ Manage the pages for a site by navigating to the Sites tab on the left-hand navi
 
 Once you are editing the site, click the Pages tab on the top navigation for sites. 
 
+## Adding Pages
+From the page for the site, click the Pages tab. Then click the "Add a Page" button on the left side of that tab. 
+
 ## Editing Pages  
 After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). On the right hand side you can choose to add a new block by selecting one of the following layouts:
 
