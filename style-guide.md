@@ -20,6 +20,7 @@ Page file names should be lowercase with spaces represented by a dash (so admin-
 All relative links need to begin with .. (so .. / content / etc)
 
 - Omeka S is written *with* a space between the Omeka and the S.
+  - Possesive is Omeka S's
 - Names of buttons in *italics*
 - Names of options in *italics*
 - Describe icons based on their tooltip, ex. edit (pencil icon), delete (trash can icon), details (ellipses icon). This way the text is useful for people using screen readers as well as those who are not.
