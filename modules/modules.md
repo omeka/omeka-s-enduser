@@ -38,6 +38,7 @@ You can also use git to clone a module directly from the git repository. Do this
 To install a module, navigate to the Modules tab on the left-hand navigation of the admin dashboard of your OmekaS installation.
 
 Find the module in the table and click the install button.
+
 ![Install button, zoomed in](../modules/modulesfiles/modinstall.png)
 
 The module is now installed.
