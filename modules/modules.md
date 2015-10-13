@@ -2,7 +2,15 @@
 title: Modules
 ---
 
-To see what modules are installed on your Omeka S site, click on the Modules link on your administrative dashboard. The name of the module will appear under the Module heading and the Status will either be Active or Not Active.
+To see what modules are installed on your Omeka S site, click on the Modules link on the left-hand navigation of your administrative dashboard. 
 
-There are three icons located next to the title of the module. The first icon (description of icon) allows users to activate or deactivate the module. The second icon (an arrow pointing the the right) allows users to install or uninstall the module. The third icon (ellipses) provides details of the module. Another icon (a wrench) allows users to configure the module.
+Note that only Global Administrators can install and manage modules. Site Administrators can browse installed modules. Other users do not have access to this tab.
+
+![Screen capture of admin dashboard showing Modules tab active with 3 modules attached.](../modules/modulesfiles/modlocation.png)
+
+Any modules which have been installed on the Omeka S install should appear in the Modules table. This table has headings for the for *Module* name and author and for its *Status*, including Not Active, Active, and Not Installed.
+
+There are multiple icons which can appear to the right of a module’s title:
+* *Configure* (a wrench icon): some modules have settings which can be adjusted. Click this icon to adjust settings for the module in this row.
+* *Activate/Deactivate* (sliding switch(
 
