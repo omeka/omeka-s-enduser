@@ -23,14 +23,14 @@ In the following image, DSpace connector is *Not Active*, Metadata Browse is *Ac
 ![Screenshot of the modules table as described above](../modules/modulesfiles/moddisplay.png)
 
 ## Installing Modules
-### Add the Module to OmekaS
-In order to appear on in the *Modules* table on the Modules tab of the Admin Dashboard for your OmekaS installation, modules must be manually added to the modules folder of the installation, using an FTP program or an ssh connection.
+### Add the Module to Omeka S
+In order to appear on in the *Modules* table on the Modules tab of the Admin Dashboard for your Omeka S installation, modules must be manually added to the modules folder of the installation, using an FTP program or an ssh connection.
 
 To add a module to the site using FTP
 
 1. Download the zipped module to your computer.
 
-1. Open your FTP client, log on to the server that houses  the OmekaS install and navigate to the /modules folder (this should be located in the main folder of the install).
+1. Open your FTP client, log on to the server that houses  the Omeka S install and navigate to the /modules folder (this should be located in the main folder of the install).
 
 1. Upload the zipped module to the /modules folder 
 
@@ -39,7 +39,7 @@ To add a module to the site using FTP
 You can also use git to clone a module directly from the git repository. Do this only if you are comfortable with git.
 
 ### Install the Module
-To install a module, navigate to the Modules tab on the left-hand navigation of the admin dashboard of your OmekaS installation.
+To install a module, navigate to the Modules tab on the left-hand navigation of the admin dashboard of your Omeka S installation.
 
 Find the module in the table and click the install button.
 
