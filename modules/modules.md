@@ -36,7 +36,7 @@ To add a module to the site using FTP
 
 1. Unzip the module
 
-You can also use git to clone a module directly from the git repository. Do this only if you are conformable with git.
+You can also use git to clone a module directly from the git repository. Do this only if you are comfortable with git.
 
 ### Install the Module
 To install a module, navigate to the Modules tab on the left-hand navigation of the admin dashboard of your OmekaS installation.
