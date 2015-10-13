@@ -35,3 +35,13 @@ After clicking the Pages tab, select the page you wish to edit by clicking the n
 Once you have added items to your page, click the Save button in the right hand corner. You can delete any of the blocks by clicking on the trash can icon located in the upper right corner of the block. 
 
 Change the order of blocks by clicking on the three horizontal lines on the upper left corner of the block and then dragging and dropping it to the desired location.
+
+## Deleting Pages
+To delete a page, go the to *Pages* tab of the site of which the page is a part. Click the delete (trash can) button at the right end of the row for that page. The title of the page will change to “Page to be removed” and the entire row will highlight.
+
+To complete deletion, click *Save* in the upper right corner of the window.
+
+To cancel the deletion, click the undo (counter-clockwise circle arrow) button which replaced the trash can.
+
+![Top row is a page marked for deletion](../sites/sitesfiles/sitepg_delete.png)
+
