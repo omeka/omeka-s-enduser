@@ -38,14 +38,16 @@ You can track the status of the import by navigating to the DSpace Connector > P
 ## Review Imports
 Go to the DSpace Connector tab on the left-hand navigation of the admin dashboard, click on DSpace Connector and then click on Past Imports, which should appear below the DSpace Connector tab.
 
-This page displays a table of Past DSpace Imports, with their *Job ID*, the repository’s *Dspace Collection Link*, any *Comments* made during import, the number of *Items* imported, the *Date* of the import, the import *Status*, and the *Owner*, or user who initiated the import.
+This page displays a table of Past DSpace Imports, with a checkbox option to *Undo*, the *Job ID* for the import, the repository’s *Dspace Collection Link*, any *Comments* made during import, the number of *Items* imported, the *Date* of the import, the import *Status*, and the *Owner*, or user who initiated the import.
+
+![Table of past imports showing two from mars.gmu.edu](../modules/modulesfiles/mods_dspacepast.png)
 
 ## Undo an Import
 To undo a completed import and remove all associated items, go to the DSpace Connector tab on the left-hand navigation of the admin dashboard, click on DSpace Connector and then click on Past Imports, which should appear below the DSpace Connector tab.
 
-![DSpace Connector navigation option with two sub-tab options for Import and Past Imports](../modules/modulesfiles/mods_dspacenav.png)
+You will see a table of all post imports.
 
-This table shows you all previous 
+![Table of past imports showing two from mars.gmu.edu](../modules/modulesfiles/mods_dspacepast.png)
 
 Check the box for each import you wish to undo and click submit.
 
