@@ -12,7 +12,7 @@ In the upper left corner of the screen is a link displaying the title of the ins
 
 Underneath the installation title is a search field which has an option for advanced search (ellipses) in addition to the button to search (magnifying glass). The search function will survey content on the administrative install, including items, vocabularies, resource templates, and media.  
 
-From the left hand navigation of the admin dashboard, users can access the following functions:
+From the left hand navigation of the admin dashboard, Global Administrators can access the following functions:
 
 - [Items](https://github.com/omeka/omeka-s-enduser/blob/master/content/items.md): manage the individual resources of your install. (Box icon)
 - [Item Sets](https://github.com/omeka/omeka-s-enduser/blob/master/content/item-sets.md): manage aggregated groups of items. (Multiple boxes icon)
@@ -26,3 +26,4 @@ From the left hand navigation of the admin dashboard, users can access the follo
 
 Below the navigation is a small display which tells you which version of Omeka S you are running.
 
+Note that users with more limited permissions will see only some of these navigation options.

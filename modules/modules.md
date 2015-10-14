@@ -8,7 +8,7 @@ Modules extend the functionality of your Omeka S installation and sites.
 
 ## Managing Modules
 
-To see what modules are installed on your Omeka S site, click on the Modules link on the left-hand navigation of your administrative dashboard. 
+To see what modules are installed on your Omeka S site, click on the Modules link on the left-hand navigation of your [admin dashboard](../admin-dashboard.md)
 
 Note that only Global Administrators can install and manage modules. Site Administrators can browse installed modules. Other users do not have access to this tab.
 
@@ -49,16 +49,18 @@ To install a module, navigate to the Modules tab on the left-hand navigation of 
 
 Find the module in the table and click the install button.
 
-The module is now installed. You should see the following message on the Modules tab once the page reloads and the *Status* of the module should change from “Not Installed” to “Not Active”
+The module is now installed. You should see a success medal on the Modules tab once the page reloads and the *Status* of the module should change from “Not Installed” to “Not Active”
 
-![Success message with green highlight reading “The module was successfully installed”](../modules/modulesfiles/mods_success.png)
+![Success message with green highlight reading “The module was successfully installed”](../modules/modulesfiles/mods_insuccess.png)
 
 ### Activate the Module
 Installing a module does not immediately make it available to use. You must also activate the module. 
 
 Find the module in the table and click the activate button.
 
-You should see the following message once the page reloads, and the *Status* of the module should change from “Not Active” to “Active”
+You should see a success message once the page reloads, and the *Status* of the module should change from “Not Active” to “Active”
+
+![Success message with green highlight reading “The module was successfully activated”](../modules/modulesfiles/mods_acsuccess.png)
 
 ## Configuring a module
 Some, but not all, modules include the option to configure settings for that module. If an active module displays the *configure* (wrench) button, you may configure that module.
