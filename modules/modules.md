@@ -49,14 +49,14 @@ To install a module, navigate to the Modules tab on the left-hand navigation of 
 
 Find the module in the table and click the install button.
 
-The module is now installed. You should see a success medal on the Modules tab once the page reloads and the *Status* of the module should change from “Not Installed” to “Not Active”
+The module is now installed. You should see a success message once the page reloads. For modules with configuration options, you will be taken immediately to the configuration page for that module. For all other modules the Modules page will simply reload. On the Modules page, the *Status* of the module should change from “Not Installed” to “Not Active”
 
 ![Success message with green highlight reading “The module was successfully installed”](../modules/modulesfiles/mods_insuccess.png)
 
-### Activate the Module
-Installing a module does not immediately make it available to use. You must also activate the module. 
+Modules are automatically activated when installed. 
 
-Find the module in the table and click the activate button.
+### Activating Module
+If you have a module which is installed but inactive, click the activate button to use the module.
 
 You should see a success message once the page reloads, and the *Status* of the module should change from “Not Active” to “Active”
 
@@ -67,7 +67,12 @@ Some, but not all, modules include the option to configure settings for that mod
 
 Information regarding configuration options for individual modules can be found on the documentation page for those modules.
 
-## Deleting a module
-Deleting a module is essentially installing in reverse:
+## Uninstalling a module
+Removing a module is essentially installing in reverse:
 1. Deactivate the module by clicking the *deactivate* button
 1. Uninstall the module by clicking the *uninstall* button
+1. A drawer will open on the right side of the window asking you to confirm that you want to uninstall the module. Click “Confirm Uninstall” to continue.
+
+![Uninstall module dialogue with the message “Are you sure you would like to uninstall this module?”](../modules/modulesfiles/mods_confirmuninstall.png)
+
+The uninstalled module will continue to appear on your Modules page unless the folder for the module is removed from the /modules folder on the Omeka S installation, which can be done via FTP or SSH.
