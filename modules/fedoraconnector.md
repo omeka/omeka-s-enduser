@@ -24,10 +24,11 @@ To use Fedora Connector, navigate to the tab labelled *Fedora Connector* on the 
 
 You should see a screen with the following options:
 
-* *Fedora Container URI* for the Repository;
-* *Import files into Omeka* checkbox, check yes if you want to import media and other files attached to content;
-* *Comment* for example, any notes to yourself or other users of the installation;
-* *Import into* a selected [Item Set](../content/item-sets.md), if desired. Note that the Item Set must already exist in order to import into it.
+* *Fedora Container URI* for the Repository (required);
+* *Import files into Omeka* checkbox, check yes if you want to import media and other files attached to content (optional, recommended);
+* *Comment* for example, any notes to yourself or other users of the installation (optional);
+* *Import into* a selected [Item Set](../content/item-sets.md), if desired (optional). 
+ * Note that the Item Set must already exist in order to import into it.
 
 ![Screenshot of the field options for Fedora Connector](../modules/modulesfiles/mods_fedoraconnect.png)
 
