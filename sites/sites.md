@@ -48,7 +48,6 @@ From any tab you can use the the *make public/private* button (eye icon) to set 
 ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)  Private
 
 
-
 ## Managing Site Users
 To add a user to a site, navigate to the *User permissions* tab (see above).
 
@@ -60,6 +59,6 @@ Admin: user has full administrative privileges for the site, including adding us
 
 Once you've added one or more users, click the Save button located in the upper right hand corner. You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon located next to the Edit box.
 
-See also:
-[Site Navigation](../sites/site_navigation.md)
-[Site Pages](../sites/site_pages.md)
+## See also
+- [Site Navigation](../sites/site_navigation.md)
+- [Site Pages](../sites/site_pages.md)

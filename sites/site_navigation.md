@@ -38,7 +38,7 @@ You can arrange your navigation links by dragging and dropping them into your pr
 
 OmekaS allows for multiple levels of nested navigation.
 
-## Deleting Navivation
+## Deleting Navigation
 To delete a link from the navigation, click the delete (trash can) icon and then click *Save*. If you accidentally click the delete icon, you can click the undo (back looped arrow) icon before click save to cancel the deletion.
 
 ![Two link blocks, one of which is highlighted in red and marked for deletion](../sites/sitesfiles/sitenav_del.png) In this image, the delete icon for browse has been pushed; the block now displays the undo button instead
