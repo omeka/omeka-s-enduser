@@ -16,7 +16,7 @@ There are multiple buttons which can appear to the right of a module’s title:
 * *Install/Uninstall* (arrow and rectangle): use this button to install or uninstall a module. When the arrow is coming from the rectangle, the button will uninstall the module. When the arrow is pointing into the rectangle, the button will install the module.
 * *Details* (ellipses): clicking this button will open a drawer on the right side of the screen with the module’s title and a brief description of what it does.
 
-![Icons described above, from right to left: configure, deactivate, uninstall, details](../modules/modulesfiles/modicons_l.png)
+![Icons described above, from right to left: configure, deactivate, uninstall, details](../modules/modulesfiles/modsicons_label.png)
 
 In the following image, DSpace connector is *Not Active*, Metadata Browse is *Active* and can be *Configured*, and Omeka2Importer is *Not Installed*.
 
@@ -46,3 +46,6 @@ Find the module in the table and click the install button.
 ![Install button, zoomed in](../modules/modulesfiles/modinstall.png)
 
 The module is now installed.
+
+### Activate the Module
+
