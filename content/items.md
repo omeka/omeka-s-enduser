@@ -8,7 +8,7 @@ In Omeka S, items can be made available to you from the system administrator, an
 
 Items are listed in the Items tab, found on the left-hand navigation of the administrative dashboard. Each item appears as a row, with: the *Title*; icons to *edit* (pencil), *delete* (trash can), or *view details* (ellipses); the *Class*; the item’s *Owner*; and *Date Created*. The list of items can be sorted by any of the fields listed using the up/down arrow icons at the end of that section.  
 
-![Basic view of admin items page, showing a handful of item resources](../content/contentfiles/itemsOS.png)
+![Basic view of admin items page, showing a handful of item resources](../content/contentfiles/itemsMain.png)
 
 On the right side of the window above the table of items is a button to *add new item* and a link to the *advanced item search*.
 
