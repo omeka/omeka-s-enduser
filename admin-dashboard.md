@@ -4,6 +4,8 @@ title: Administrative Dashboard
 
 The administrative dashboard manages the content shared by all OmekaS sites and the core functionalities of the OmekaS installation. 
 
+In the upper right hand corner of the window on the admin dashboard and throughout the install is the message “Welcome, *User*” where *User* is the display name of the person logged in. Next to this is the button to *Logout*. 
+
 The following content appears on the left side of the admin dashboard and on all administrative pages. 
 
 ![View of the left hand navigation on the admin dashboard, which also appears consistently throughout the admin interface, with options as described below](/files/leftnav.png)
@@ -23,6 +25,8 @@ From the left hand navigation of the admin dashboard, Global Administrators can 
 - [Jobs](https://github.com/omeka/omeka-s-enduser/blob/master/jobs.md): displays the user-activated tasks which are currently running. NB: jobs only display when they are running. (Three bars icon)
 - [Sites](https://github.com/omeka/omeka-s-enduser/blob/master/sites/sites.md): lists and provides access to all of the sites on the OmekaS install. (Computer icon)
 - [Settings](https://github.com/omeka/omeka-s-enduser/blob/master/settings.md): manage the global settings for all sites, the admin dashboard and the site dashboards. (Gears icon)
+
+If you have installed modules, they may appear in the navigation below settings.
 
 Below the navigation is a small display which tells you which version of Omeka S you are running.
 

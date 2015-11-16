@@ -10,6 +10,8 @@ Items are listed in the Items tab, found on the left-hand navigation of the admi
 
 ![Basic view of admin items page, showing a handful of item resources](../content/contentfiles/itemsOS.png)
 
+On the right side of the window above the table of items is a button to *add new item* and a link to the *advanced item search*.
+
 ## View
 To quickly view the basic information about an item, click the *view details* (ellipses) button in the row for the item, located next to the edit and delete buttons. This will open a drawer to the right of the list which displays the item’s title,  description, and visibility.
 
@@ -24,7 +26,7 @@ An item’s *linked resources* (shown below) are resources, which have been adde
 
 ## Adding an Item
 
-To add a new item, begin by selecting the the _Add new item_ button. 
+To add a new item, begin by selecting the the *Add new item* button. 
 
 Before creating items, site admins may want to create [Resource Templates](/content/resource-template.md), which will load specific fields for various item types.
 
