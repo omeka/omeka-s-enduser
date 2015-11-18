@@ -68,7 +68,9 @@ The settings in the Item Pool tab allow you to set the parameters for the pool. 
 * *Search by item set*: include all items within a specific item set.
 
 ### Managing User Permissions
-To add a user to a site, navigate to the *User permissions* tab (see above).
+To add a user to a site, navigate to the *User Permissions* tab.
+
+![User permissions tab with no added users and an alphabetical director on the right](../sites/sitesfiles/sites_users.png)
 
 On the right hand side of the screen a drawer will appear that shows all of the users for your install, sorted by the first letter of their first name. To add a user, click on their name. You will then be prompted to check various boxes:
 
