@@ -6,10 +6,12 @@ Use the *Navigation* tab of the [Sites](../sites/sites.md) to manage the navigat
 
 ![Editing navigation with a drawer on the right side of the screen for adding links](../sites/sitesfiles/sitenav_add2.png)
 
+The topmost item in the navigation is the main page for your site.
+
 ## Adding Navigation
 To add a link you can use the *Add a custom link* drop-down on the right hand drawer to add either:
- - a *Custom URL* to any web address; or
- - a Browse page for items on your site.
+ * a *Custom URL* to any web address; or
+ * a Browse page for items on your site
 
 Or you can add one of your [pages](../sites/site_pages.md), which should be listed in the right-hand drawer below the *Add a custom link* dropdown. If you need to find a specific page, begin typing the page title in the search box with the helper text *Filter pages* which appears directly below the text “Add a link to a site page.” 
 
@@ -17,7 +19,7 @@ Or you can add one of your [pages](../sites/site_pages.md), which should be list
 
 ![URL block with the label “RRCHNM” and url chnm.gmu.edu](../sites/sitesfiles/sitenav_url.png) URL Block
 
-**Browse** blocks create a browse page for content already associated with your site (assigned to existing pages, even if those pages are not currently part of the navigation). You can change the *label* of the block to reflect what, specifically, site visitors will browse. 
+**Browse** blocks create a browse page for content already associated with your site (assigned to existing pages and in the item pool). You can change the *label* of the block to reflect what, specifically, site visitors will browse. 
 
 If you want to refine the Browse block, you can use the Query to create a search query that returns the desired results. 
 
@@ -31,6 +33,8 @@ Be sure to click save before leaving the Navigation tab to save changes.
 
 ## Editing and Arranging Navigation
 When you add a link block it is automatically expanded. To collapse an open link block, click the edit (pencil) icon in the  upper right corner of each block, next to the delete (trash) icon. When you arrive at the Navigation tab after saving changes or from the main site edit page, the navigation items should be collapsed; open the block by clicking the edit (pencil) icon.
+
+The topmost item in the navigation is the main page for your site.
 
 You can arrange your navigation links by dragging and dropping them into your preferred order. Nest links by dragging the desired child link on top of the desired parent link; when you do so a small black triangle should appear to the left of the parent block.
 
