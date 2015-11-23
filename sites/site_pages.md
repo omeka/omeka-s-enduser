@@ -20,28 +20,35 @@ To add a page you must enter a *URL slug* and a *Title*. Both of these can be ed
 Once you have entered this information, click the Add button in the upper right hand corner of the browser window.
 
 ## Editing Pages  
-After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page *title* will take you to the public view of that page. On the right hand side you can choose to add a new block by selecting one of the following layouts:
+After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page *title* will take you to the public view of that page. On the right hand side you can choose to add a new block by selecting one of the following layouts: *HTML; Browse Preview; Item List; Navigation; File with Text*.
+
+![Add block dropdown menu with the above mentioned options](../sites/sitesfiles/sitepg_addblock.png)
+
+Once you have added blocks to your page, click the Save button in the right hand corner. You can delete any of the blocks by clicking on the trash can icon located in the upper right corner of the block. 
+
+Change the order of blocks by clicking on the three horizontal lines on the upper left corner of the block and then dragging and dropping it to the desired location.
 
 ### HTML: 
 Creates an HTML box in which you can add formatted text and links.
 
 ![Page block for HTML content](../sites/sitesfiles/sitepg_html.png)
 
-### Browse preview: Allows you to add resources via searching 
+### Browse preview: 
+Allows you to add resources through a search. 
 
 ![Page block for Browse Preview](../sites/sitesfiles/sitepg_browse.png)
 
 ### Item List
+A list of items. 
 
+Using the drop-down menu in the block, you can set the thumbnail size for these items as large (default), medium, or square. 
 
+Click the *Add Attachment* button to add an item to the block. This will open a drawer on the right side of the page to browse and select items. 
 ![Page block for one item](../sites/sitesfiles/sitepg_oneitem.png)
 
-Once you have added items to your page, click the Save button in the right hand corner. You can delete any of the blocks by clicking on the trash can icon located in the upper right corner of the block. 
-
-Change the order of blocks by clicking on the three horizontal lines on the upper left corner of the block and then dragging and dropping it to the desired location.
 
 ### Navigation
-Child pages
+If the current page has child pages, you can add a navigation block for those pages. 
 
 ### File with Text
 

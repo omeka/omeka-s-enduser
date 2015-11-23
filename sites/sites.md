@@ -38,7 +38,7 @@ On the admin show page for a site, you can see the URL Slug, Title, and current 
 
 On the left-hand navigation are options for *General* options, site *Settings* and site *Pages*. Settings include: administrative options, the item pool, navigation management, and user permissions. 
 
-The standard options in the left hand navigation (items, item sets, etc) are still available under the *Global Navigation* header. Click the orange arrow to reveal those menu options.
+The standard options in the left hand navigation (items, item sets, etc) are still available under the *Global Navigation* header. Click the  phrase or the small orange arrow to reveal the standard left-hand navigation menu options.
 
 ## General 
 Site settings have the following tabs: Admin, Item Pool, [Navigation](../sites/site_navigation.md), and User Permissions. 
