@@ -36,11 +36,11 @@ On the admin show page for a site, you can see the URL Slug, Title, and current 
 
 ![Sites show page, displaying summary information](../sites/sitesfiles/sites_show.png)
 
-On the left-hand navigation are options for site *settings* and site *pages*. Settings include: administrative options, the item pool, navigation management, and user permissions. 
+On the left-hand navigation are options for *General* options, site *Settings* and site *Pages*. Settings include: administrative options, the item pool, navigation management, and user permissions. 
 
 The standard options in the left hand navigation (items, item sets, etc) are still available under the *Global Navigation* header. Click the orange arrow to reveal those menu options.
 
-## Site Settings. 
+## General 
 Site settings have the following tabs: Admin, Item Pool, [Navigation](../sites/site_navigation.md), and User Permissions. 
 
 On the *Admin* tab on the edit site page, you can change the site’s *URL Slug*, *Title*, and *Theme*
@@ -80,6 +80,10 @@ Admin: user has full administrative privileges for the site, including adding us
 
 Once you've added one or more users, click the Save button located in the upper right hand corner. You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon located next to the Edit box.
 
-### See also
-- [Site Navigation](../sites/site_navigation.md)
-- [Site Pages](../sites/site_pages.md)
+### Site Navigation
+See the documentation for managing [Site Navigation](../sites/site_navigation.md).
+
+## Settings
+
+## Pages
+See the documentation for managing [Site Pages](../sites/site_pages.md)
