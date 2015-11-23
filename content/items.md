@@ -6,9 +6,17 @@ Items are the building blocks of the Omeka system.
 
 In Omeka S, items can be made available to you from the system administrator, and you may add items to your own site.
 
-Items are listed in the Items tab, found on the left-hand navigation of the administrative dashboard. Each item appears as a row, with: the *Title*; icons to *edit* (pencil), *delete* (trash can), or *view details* (ellipses); the *Class*; the item’s *Owner*; and *Date Created*. The list of items can be sorted by any of the fields listed using the up/down arrow icons at the end of that section.  
+Items are listed in the Items tab, found on the left-hand navigation of the administrative dashboard. Each item appears as a row, with: the *Title*; icons to *edit* (pencil), *delete* (trash can), or *view details* (ellipses); the *Class*; the item’s *Owner*; and *Date Created*. 
 
-![Basic view of admin items page, showing a handful of item resources](../content/contentfiles/itemsOS.png)
+Options for navigating and creating items display above the table of items. 
+
+On the left side is a text button for *advanced item search*. Immediately below that button is a display for the number of pages of items, with forward and back arrows. The current page number is an editable field - enter any valid page number and hit return/enter on your keyboard to go to that page. 
+
+On the right top of the Items window, above the table of items, is the *Add new item* button. Just above the table on the right are options for sorting the table of items, with two dropdown menus. The first lets you select between *Title*, *Class*, *Owner,* and *Date Created*; the second allows you to sort ascending or descending. To apply, click the *sort* button.
+
+![Basic view of admin items page, showing a handful of item resources](../content/contentfiles/itemsMain.png)
+
+
 
 ## View
 To quickly view the basic information about an item, click the *view details* (ellipses) button in the row for the item, located next to the edit and delete buttons. This will open a drawer to the right of the list which displays the item’s title,  description, and visibility.
@@ -24,7 +32,7 @@ An item’s *linked resources* (shown below) are resources, which have been adde
 
 ## Adding an Item
 
-To add a new item, begin by selecting the the _Add new item_ button. 
+To add a new item, begin by selecting the the *Add new item* button. 
 
 Before creating items, site admins may want to create [Resource Templates](/content/resource-template.md), which will load specific fields for various item types.
 
