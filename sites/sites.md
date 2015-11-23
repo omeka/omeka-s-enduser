@@ -30,7 +30,6 @@ In the upper right hand corner of the screen, next to the *Add* button, you can 
 
 You will probably want to leave the site Private until you have added some content.
 
-
 ## Manage a site
 On the admin show page for a site, you can see the URL Slug, Title, and current Theme for the site. 
 

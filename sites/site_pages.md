@@ -44,13 +44,44 @@ A list of items.
 Using the drop-down menu in the block, you can set the thumbnail size for these items as large (default), medium, or square. 
 
 Click the *Add Attachment* button to add an item to the block. This will open a drawer on the right side of the page to browse and select items. 
-![Page block for one item](../sites/sitesfiles/sitepg_oneitem.png)
+![Block for item list with one item added](../sites/sitesfiles/sitepg_itemlist.png)
 
+On loading, the drawer will show a list of your items, most recent first. You can select form the first page, page through using the forward and back arrows, or search using the search bar.
+
+![Select item drawer](../sites/sitesfiles/sitepg_selectitem.png)
+
+Once you’ve selected an item, the drawer will shift to that item’s information. You can add a caption and select which media (if more than one) you want to use. To return to the list of items, click the *Select item* button at the top of the drawer. To use the item displayed and apply the caption, etc, click the *Apply changes* button at the bottom of the drawer.
+
+![Item view with apply changes option](../sites/sitesfiles/sitepg_applyitem.png)
+
+To cancel the item selection, click the X in the upper right corner of the drawer at any time.
+
+Once you’ve added an item, it will appear in the Item List block. You can edit the caption or media options by clicking the edit (wrench) button for that row, and you can delete the item using the delete (trash can) icon.
 
 ### Navigation
-If the current page has child pages, you can add a navigation block for those pages. 
+If the current page has child pages, you can add a navigation block for those pages.
+
+Add and arrange pages using the [Site Navigation](../sites/site_navigation.md) settings. 
 
 ### File with Text
+A block with one more more items and a text block.
+
+Using the drop-down menu in the top of the block, you can set the thumbnail size for these items as large (default), medium, or square. 
+
+![Basic file with text block](../sites/sitesfiles/sitepg_filetext.png)
+
+On loading, the drawer will show a list of your items, most recent first. You can select form the first page, page through using the forward and back arrows, or search using the search bar.
+
+![Select item drawer](../sites/sitesfiles/sitepg_selectitem.png)
+
+Once you’ve selected an item, the drawer will shift to that item’s information. You can add a caption and select which media (if more than one) you want to use. To return to the list of items, click the *Select item* button at the top of the drawer. To use the item displayed and apply the caption, etc, click the *Apply changes* button at the bottom of the drawer.
+
+![Item view with apply changes option](../sites/sitesfiles/sitepg_applyitem.png)
+
+To cancel the item selection, click the X in the upper right corner of the drawer at any time.
+
+The text has full HTML formatting options. 
+
 
 ## Deleting Pages
 To delete a page, go the to *Pages* tab of the site of which the page is a part. Click the delete (trash can) button at the right end of the row for that page. The title of the page will change to “Page to be removed” and the entire row will highlight.
