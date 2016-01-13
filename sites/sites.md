@@ -35,14 +35,14 @@ On the admin show page for a site, you can see the URL Slug, Title, and current 
 
 ![Sites show page, displaying summary information](../sites/sitesfiles/sites_show.png)
 
-On the left-hand navigation are options for *General* options, site *Settings* and site *Pages*. Settings include: administrative options, the item pool, navigation management, and user permissions. 
+On the left-hand navigation are options for *General* options, site *Settings* and site *Pages*. General options include: administrative options, the item pool, navigation management, and user permissions. 
 
-The standard options in the left hand navigation (items, item sets, etc) are still available under the *Global Navigation* header. Click the  phrase or the small orange arrow to reveal the standard left-hand navigation menu options.
+The standard options in the left hand navigation (items, item sets, etc) are still available under the *Global Navigation* header. Click the words *Global Navigation* or the small orange arrow to reveal the standard left-hand navigation menu options.
 
 ## General 
-Site settings have the following tabs: Admin, Item Pool, [Navigation](../sites/site_navigation.md), and User Permissions. 
+General site management has the following tabs: Admin, Item Pool, [Navigation](../sites/site_navigation.md), and User Permissions. 
 
-On the *Admin* tab on the edit site page, you can change the site’s *URL Slug*, *Title*, and *Theme*
+On the *Admin* tab on the of the General Site management, you can change the site’s *URL Slug*, *Title*, and *Theme*
 
 See below for information on using. *Item Pool* and *User Permissions* 
 
@@ -53,7 +53,7 @@ From any tab you can use the the *make public/private* button (eye icon) to set 
 ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)  Private
 
 ### Managing the Item Pool
-The Item Pool determines what automatically appears in the item selection options on a site’s pages. It also creates the items which may appear on a browse page on your site.
+The Item Pool determines what automatically appears in the resource selection options on a site’s pages. It also can also be used to limit the resources which appear on a browse page on your site.
 
 ![The Item Pool tab on site settings has multiple search options, as described below](../sites/sitesfiles/sites_itempool.png)
 
@@ -69,20 +69,24 @@ The settings in the Item Pool tab allow you to set the parameters for the pool. 
 ### Managing User Permissions
 To add a user to a site, navigate to the *User Permissions* tab.
 
-![User permissions tab with no added users and an alphabetical director on the right](../sites/sitesfiles/sites_users.png)
+![User permissions tab with no added users and an alphabetical directory on the right](../sites/sitesfiles/sites_users.png)
 
-On the right hand side of the screen a drawer will appear that shows all of the users for your install, sorted by the first letter of their first name. To add a user, click on their name. You will then be prompted to check various boxes:
+A drawer on the right hand side of the screen shows all of the users for your install, sorted by the first letter of their first name. 
 
-Viewer: user can see the site’s backend but cannot edit.
-Editor: user can access and edit the site’s backed.
-Admin: user has full administrative privileges for the site, including adding users and deleting the site.
+To add a user, click on their name. 
 
-Once you've added one or more users, click the Save button located in the upper right hand corner. You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon located next to the Edit box.
+Then select their role from the dropdown:
+*Viewer*: user can see the site’s backend but cannot edit.
+*Editor*: user can access and edit the site’s backed.
+*Admin*: user has full administrative privileges for the site, including adding users and deleting the site.
+
+Once you've added one or more users, click the Save button located in the upper right hand corner. You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon on their row.
 
 ### Site Navigation
 See the documentation for managing [Site Navigation](../sites/site_navigation.md).
 
 ## Settings
+There is a check box to *Restrict browse to attached items*. If checked, users adding content to sites pages will only be able to access items designated in the Item Pool, and the public browse page will be limited to that content as well.
 
 ## Pages
 See the documentation for managing [Site Pages](../sites/site_pages.md)
