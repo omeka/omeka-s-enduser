@@ -43,7 +43,7 @@ To map:
 1. In the  right-hand drawer, either click through or search for the property or class to which you want to map your element. 
 1. Click on the property or class in the drawer to map it. 
 
-![Mapping the element Date of Birth to the foaf property “birthday”, showing the mapped relationship.](../modules/modulesfiles/o2i_mapping.png)
+![Mapping the element Date of Birth to the foaf property “birthday”, showing the mapped relationship.](../modules/modulesfiles/o2i_mappping.png)
 
 To remove a mapping, click the delete (trash can) icon in the element/property row.
 
