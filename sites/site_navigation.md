@@ -9,6 +9,7 @@ Use the *Navigation* tab of the [Sites](../sites/sites.md) to manage the navigat
 The topmost item in the navigation is the main page for your site.
 
 ## Adding Navigation
+### Custom Link
 To add a link you can use the *Add a custom link* drop-down on the right hand drawer to add either:
  * a *Custom URL* to any web address; or
  * a Browse page for items on your site
@@ -25,7 +26,9 @@ If you want to refine the Browse block, you can use the Query to create a search
 
 ![Browse block with the label ‘Browse’ and no query](../sites/sitesfiles/sitenav_brw.png) Browse block 
 
-**Site Page** blocks create links to pages you have built for your site. The *page* field indicates which page is in use, as does the block title. You can change the *label* for the page link in the navigation, as in the example image below.
+
+### Site Page
+Site page blocks create links to pages you have built for your site. The *page* field indicates which page is in use, as does the block title. You can change the *label* for the page link in the navigation, as in the example image below. Note that changing the label does not change the page title. 
 
 ![Page block with for the page Custard Page 2 labeled “More Custard”](../sites/sitesfiles/sitenav_pgs.png) Site Page block
 
