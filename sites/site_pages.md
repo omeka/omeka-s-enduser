@@ -41,7 +41,7 @@ Allows you to add a browsable block of resources. You designate which resources 
 The *Preview Title* field is the heading above the browse 
 ![Page block for Browse Preview](../sites/sitesfiles/sitepg_browse.png)
 
-### Item List
+### Item Showcase
 A list of items. 
 
 Using the drop-down menu in the block, you can set the thumbnail size for these items as large (default), medium, or square. 
