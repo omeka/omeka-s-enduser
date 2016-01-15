@@ -10,7 +10,7 @@ Once you have successfully installed and configured the database.ini file, you c
 
 The first time you to the install site, you will need to enter information for the first user, along with basic information for your install. 
 
-![Install dialog with options as described below](../files/os_install.png)
+![Install dialog with options as described below](/files/os_install.png)
 
 For the first user, enter:
 * an *email* address
@@ -19,6 +19,6 @@ For the first user, enter:
 * confirm the *password*
 * a *display name* for the User
 
-Note that you can change all of these later in the [User](../user.md) management section of your install.
+Note that you can change all of these later in the [User](/user.md) management section of your install.
 
-You also need to enter an *Installation Title* and select your installation’s *Time Zone* from the dropdown. You can later changes these in the [Settings](../settings.md) section of your [Admin Dashboard](../admin-dashboard.md)
+You also need to enter an *Installation Title* and select your installation’s *Time Zone* from the dropdown. You can later changes these in the [Settings](/settings.md) section of your [Admin Dashboard](/admin-dashboard.md)
