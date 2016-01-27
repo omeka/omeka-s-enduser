@@ -2,9 +2,9 @@
 title: Resource Templates
 ---
 
-A *Resource Template* is a set of pre-defined Properties, and optionally a Class, to guide Item creation and interpretation of Properties. 
+A *Resource Template* is a set of pre-defined Properties, optionally with a Class, to guide Item creation and the interpretation of Properties. 
 
-Resource templates are managed in the Administrative Dashboard, accessed through the left-hand navigation under the tab label *Resource Templates*. 
+Resource templates are managed from the Admin Dashboard, accessed through the left-hand navigation under the tab labeled *Resource Templates*. 
 
 ![Basic view of resource templates tab, showing the column titles and one template](contentfiles/templates1.png)
 
@@ -15,6 +15,15 @@ From this tab, you can sort existing templates by *label*, *class*, or number of
 1. In the Label property, type the label for your new template. This will be the text displayed in the dropdown for Resource Templates when creating an item, so be sure that the label is clear.
 1. If desired, select a class to associate with the template.
 1. Add properties from the list of vocabularies in the menu on the right side of the screen. You can filter properties in the text box or select from a specific vocabulary using the arrows to the right of the vocabulary names. 
+  - The Dublin Core properties *Title* and *Description* are added to every Resource Template by default. You can use these or delete as desired.
+
+![The Add Resource Template page, with fields for title, class, and properties Title and Description pre-loaded](contentfiles/template_add.png)
+
+You can change the display label of the property when the resource template is used by entering the text you want to appear in the *Alternate Label* field for each property. You can also add alternate comments for the property. This will change the text under the property name when users are creating items using your Resource Template. 
+
+In the image below, from an Add Item view, the template has been written so that the Description property is labeled as Gist with an new comment (the default is “an account of the resource”): 
+
+![A property labeled Gist with the comment “A quick summary of the document’s content”](contentfiles/template_alt.png)
 
 Note that users who select this resource template when creating an item will be able to add other properties to the item, and that the properties associated with the resource template are not required when creating an item.
 
