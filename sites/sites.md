@@ -31,20 +31,15 @@ In the upper right hand corner of the screen, next to the *Add* button, you can 
 You will probably want to leave the site Private until you have added some content.
 
 ## Manage a site
-On the admin show page for a site, you can see the URL Slug, Title, and current Theme for the site. 
+To manage a site, navigate to the *Sites* tab from the Omeka S Admin Dashboard. Click either on the site’s title or the edit (pencil) button in the list of sites. 
+ 
+The admin show page for a site, you can see the URL Slug, Title, and current Theme for the site. 
 
 ![Sites show page, displaying summary information](../sites/sitesfiles/sites_show.png)
 
-On the left-hand navigation are options for *General* options, site *Settings* and site *Pages*. General options include: administrative options, the item pool, navigation management, and user permissions. 
+Site admin left hand navigation options are: *General*, *Pages*, *[Navigation](../sites/site_navigation.md)*, *Item Pool*, *User Permissions*, and *Settings*. 
 
-The standard options in the left hand navigation (items, item sets, etc) are still available under the *Global Navigation* header. Click the words *Global Navigation* or the small orange arrow to reveal the standard left-hand navigation menu options.
-
-## General 
-General site management has the following tabs: Admin, Item Pool, [Navigation](../sites/site_navigation.md), and User Permissions. 
-
-On the *Admin* tab on the of the General Site management, you can change the site’s *URL Slug*, *Title*, and *Theme*
-
-See below for information on using. *Item Pool* and *User Permissions* 
+The standard options in the left hand navigation of the Omeka S Admin (items, item sets, etc) are still available under the *Global Navigation* header. Click the words *Global Navigation* or the small orange arrow to reveal the standard left-hand navigation menu options.
 
 From any tab you can use the the *make public/private* button (eye icon) to set whether the site is visible to the public or only to users of the Omeka S system. 
 
@@ -52,21 +47,15 @@ From any tab you can use the the *make public/private* button (eye icon) to set 
 
 ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)  Private
 
-### Managing the Item Pool
-The Item Pool determines what automatically appears in the resource selection options on a site’s pages. It also can also be used to limit the resources which appear on a browse page on your site.
+## General 
+The General settings for an Omeka S site are where you can change the *URL slug*, site *Title*, and *theme*. 
 
-![The Item Pool tab on site settings has multiple search options, as described below](../sites/sitesfiles/sites_itempool.png)
+## See also: 
+* [Site Pages](../sites/site_pages.md)
+* [Site Navigation](../sites/site_navigation.md).
+* [Site Item Pool](../sites/site_pages.md)
 
-Note that the search options for the Item Pool build on each other. Every search you add further narrows what is returned for the pool.
-
-The settings in the Item Pool tab allow you to set the parameters for the pool. You can use one or more of the search options:
-* *Search by class*: search by resource Class. 
-* *Search all properties*: create a search across all properties in all items. You can use the drop-down menu to select from: has exact value, does not have exact value, contains value, or does not contain value. Use the *Add new value* to create additional search criteria.
-* *Search specific property*: search for words or phrases within a specific property. Select the property from the drop down menu, and then select from: as exact value, does not have exact value, contains value, or does not contain value. Use the *Add new value* to create additional search criteria.
-* *Search resources*: search for resources which either *has property* or *does not have propert* for a specific resource class.
-* *Search by item set*: include all items within a specific item set.
-
-### Managing User Permissions
+## Managing User Permissions
 To add a user to a site, navigate to the *User Permissions* tab.
 
 ![User permissions tab with no added users and an alphabetical directory on the right](../sites/sitesfiles/sites_users.png)
@@ -82,11 +71,5 @@ Then select their role from the dropdown:
 
 Once you've added one or more users, click the Save button located in the upper right hand corner. You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon on their row.
 
-### Site Navigation
-See the documentation for managing [Site Navigation](../sites/site_navigation.md).
-
 ## Settings
 There is a check box to *Restrict browse to attached items*. If checked, users adding content to sites pages will only be able to access items designated in the Item Pool, and the public browse page will be limited to that content as well.
-
-## Pages
-See the documentation for managing [Site Pages](../sites/site_pages.md)
