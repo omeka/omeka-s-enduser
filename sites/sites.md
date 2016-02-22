@@ -10,7 +10,7 @@ Sites are managed and access via the *Sites* tab on the left-hand side of the ad
 
 The manage sites page displays a table with all the sites for the installation, giving the title and owner for each site. Either of these columns can be used to sort the list of sites by using the up and down arrows on the right edge of the column heading.
 
-Each row gives the title of a site, options to *view* (eyeball), *edit* (pencil), or *delete* (trash can), and displays the owner of the site. *Only global admins and site owners can delete a site.*
+Each row gives the title of a site, options to *view* (box with outward arrow), *edit* (pencil), or *delete* (trash can), and displays the owner of the site. *Only global admins and site owners can delete a site.*
 
 Clicking on the site title will take you to the site’s admin show page. 
 
