@@ -51,8 +51,7 @@ The Values tab is where you enter metadata, such as title, description, etc.
     * **Omeka Resource** fields create an internal link between the resource you are creating and the resource which fills that field. 
      You have the option to use either another item or an item set. 
      Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
-
-      ![Select Item menu with list of items to link in edit item view](../content/contentfiles/AddItem_resource.png)
+     ![Select Item menu with list of items to link in edit item view](../content/contentfiles/AddItem_resource.png)
     * **URI** fields link to an external website or online resource.
 1. You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
 
@@ -63,7 +62,9 @@ Using the dropdown of the *Add New Media* menu on the right side of the screen, 
 - *Upload*: select a file to upload from your computer.
 - *URL*: add a link to a website or web resource.
 - *oEmbed*: insert an embedded representation of an external URL. Note that this will only work with content from existing oEmbed providers.
+- *YouTube*: add a link to embed a YouTube video.
 - *HTML*: add html content as a media resource for your item.
+- *IIIF*: Add an IIIF image via url.
 
 While editing, you can delete any media instance using the delete button (trashcan) on the upper right corner of the media block.
 
