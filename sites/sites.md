@@ -37,18 +37,18 @@ The admin show page for a site, you can see the URL Slug, Title, and current The
 
 ![Sites show page, displaying summary information](../sites/sitesfiles/sites_show.png)
 
-Site admin left hand navigation options are: *General*, *Pages*, *[Navigation](../sites/site_navigation.md)*, *Item Pool*, *User Permissions*, and *Settings*. 
+Site admin left hand navigation options are: *Site Info*, *[Pages](../sites/site_pages.md)*, *[Navigation](../sites/site_navigation.md)*, *[Item Pool](../sites/site_itempool.md)*, *User Permissions*, and *Settings*. 
 
 The standard options in the left hand navigation of the Omeka S Admin (items, item sets, etc) are still available under the *Global Navigation* header. Click the words *Global Navigation* or the small orange arrow to reveal the standard left-hand navigation menu options.
 
-From any tab you can use the the *make public/private* button (eye icon) to set whether the site is visible to the public or only to users of the Omeka S system. 
+## Site Info 
+The site info settings for an Omeka S site are where you can change the *URL slug*, site *Title*, and *theme*. 
+
+From this tab you can use the the *make public/private* button (eye icon) to set whether the site is visible to the public or only to users of the Omeka S system. 
 
 ![make public button showing an eye icon](../content/contentfiles/item_public.png) Public 
 
 ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)  Private
-
-## General 
-The General settings for an Omeka S site are where you can change the *URL slug*, site *Title*, and *theme*. 
 
 ## See also: 
 * [Site Pages](../sites/site_pages.md)
