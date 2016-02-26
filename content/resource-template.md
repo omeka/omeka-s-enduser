@@ -22,7 +22,7 @@ From this tab, you can sort existing templates by *label*, *class*, or number of
   - URI: a link with label
   - Resource: either an existing Item or Item Set in the Omeka S install
 
-![The Add Resource Template page, with fields for title, class, and properties Title and Description pre-loaded](contentfiles/template_add.png)
+![The Add Resource Template page, with fields for title, class, and properties Title and Description pre-loaded](contentfiles/template_add2.png)
 
 You can change the display label of the property when the resource template is used by entering the text you want to appear in the *Alternate Label* field for each property. You can also add alternate comments for the property. This will change the text under the property name when users are creating items using your Resource Template. 
 
