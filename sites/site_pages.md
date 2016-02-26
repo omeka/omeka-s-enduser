@@ -35,7 +35,7 @@ Creates an HTML box in which you can add formatted text and links.
 
 ![Page block for HTML content](../sites/sitesfiles/sitepg_html.png)
 
-### Browse preview: 
+### Browse Preview: 
 Allows you to add a browsable block of resources. You designate which resources to display by defining search through the *Query* field. 
 
 The *Preview Title* field is the heading above the browse 
