@@ -16,6 +16,11 @@ From this tab, you can sort existing templates by *label*, *class*, or number of
 1. If desired, select a class to associate with the template.
 1. Add properties from the list of vocabularies in the menu on the right side of the screen. You can filter properties in the text box or select from a specific vocabulary using the arrows to the right of the vocabulary names. 
   - The Dublin Core properties *Title* and *Description* are added to every Resource Template by default. You can use these or delete as desired.
+1. If desired, add an alternate label and alternate comment for the element (see below)
+1. Select a data type for the element: Literal, URI, or Resource. Whichever you choose will be automatically loaded once someone selects that Resource Type and they will only be able to use **this data type** for the element when using this Resource Template.
+  - Literal: text and/or html imput
+  - URI: a link with label
+  - Resource: either an existing Item or Item Set in the Omeka S install
 
 ![The Add Resource Template page, with fields for title, class, and properties Title and Description pre-loaded](contentfiles/template_add.png)
 
