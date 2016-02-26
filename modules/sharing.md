@@ -1,7 +1,7 @@
 ---
 title: Sharing
 ---
-The Sharing module allows you to add buttons to site pages which  visitors can use to share and embed content from your site on social media or via email.
+The Sharing [module](../modules/modules.md) allows you to add buttons to site pages which visitors can use to share and embed content from your site on social media or via email.
 
 Currently, Sharing supports the following options:
 - Facebook
@@ -11,7 +11,7 @@ Currently, Sharing supports the following options:
 - Email
 - Embed codes
 
-Once sharing has been installed and activated for an Omeka S install, it is available for all sites on the install. 
+Once sharing has been [installed](../modules/modules.md#installing-modules)  and activated for an Omeka S install, it is available for all sites on the install. 
 
 ![Sharing module installed and activated in the general settings module page](../modules/modulesfiles/sharing1.png)
 
