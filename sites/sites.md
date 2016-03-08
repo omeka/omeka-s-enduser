@@ -15,12 +15,14 @@ Each row gives the title of a site, options to *view* (box with outward arrow), 
 Clicking on the site title will take you to the site’s admin show page. 
 
 ## Adding a site
-To create a site, click the *Add new site* button in the upper right-hand corner of the page. 
+To create a site, click the *Add new site* button in the upper right-hand corner of the site browse page.
+
+![add new site dialogs, with tabs for site info and item pool](../sites/sitesfiles/sites_addsite.png)
 
 You will need to:
-* create a *slug* for the site’s url. The url will be *installurl/site/slug*
-* Give your site a *title*
-* Select which *theme* you want for the site or whether to go with the installation default. Themes set the appearance of the site.
+* Give your site a *title* (required)
+* create a *slug* for the site’s url. The url will be *installurl/site/slug*. This is optional - if you leave this field blank, Omeka S will create a slug based on the site title.
+* Select which *theme* you want for the site or whether to go with the installation default. Themes set the appearance of the site. (required)
 
 In the upper right hand corner of the screen, next to the *Add* button, you can set the visibility of your site using the the *make public/private* button (eye icon).
 
@@ -29,6 +31,10 @@ In the upper right hand corner of the screen, next to the *Add* button, you can 
 ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)  Private
 
 You will probably want to leave the site Private until you have added some content.
+
+You can, if you want, set up the [item pool](../sites/site_pages.md) at this point, but it is not necessary.
+
+When you are ready, click the *Add* button in the upper right corner. Once the page is created, you will be redirected to the site info tab of the site management. 
 
 ## Manage a site
 To manage a site, navigate to the *Sites* tab from the Omeka S Admin Dashboard. Click either on the site’s title or the edit (pencil) button in the list of sites. 

@@ -10,12 +10,14 @@ Once you are editing the site, click the Pages tab in the left hand navigation.
 
 ![Left hand menu options for editing sites, with General, Settings, and Pages links](../sites/sitesfiles/sitepage_nav.png)
 
+When you create a new site, Omeka S automatically adds a page titled *Welcome* with a single HTML block (see below). You can edit this page or delete it.
+
 ## Adding Pages
 From the page for the site, click the Pages tab. Then click the "Add a Page" button on the left side of that tab to be taken to the Add Page function.
 
 ![Page view showing the fields for Add Page](../sites/sitesfiles/sitepg_add.png)
 
-To add a page you must enter a *URL slug* and a *Title*. Both of these can be edited later but are required to create the page.  A slug is the portion of the url and can only contain letters, numbers, and hyphens; no other characters are allowed.
+To add a page you must enter a *Title*. You can also enter a *URL Slug*. Both of these can be edited later but are required to create the page. If you do not enter a slug, Omeka S will create one from the page title. A slug is the page’s portion of the url and can only contain letters, numbers, and hyphens; no other characters are allowed.
 
 Once you have entered this information, click the Add button in the upper right hand corner of the browser window.
 
