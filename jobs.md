@@ -2,6 +2,22 @@
 title: Jobs
 ---
 
-When a user starts running a process which will take some time, such as an API import, the progress of the process is displayed in the *Jobs* tab of the admin dashboard. 
+When a user starts running a process which will take some time, such as an API import, the progress of the process is displayed in the *Jobs* tab of the admin dashboard.  The table also displays completed, stopped, and error-interrupted jobs.
 
-If there are not user-created processes running, no jobs will appear.
+The Jobs table shows a job’s *ID* number, *class* of job, *Status* and the *Owner*, or user who started the job.
+
+To see the details of a job, click on its id number. 
+
+[Table of jobs including all status messages](/files/jobs_table.png)
+
+You can order the rows of the table by ID, Class, Status, or Owner (descending or ascending) using the drop-down menus just above the table on the upper right.
+
+On a job’s details page, you will see the following information: 
+- *Status* (In Progress, Error, Completed, Stopped)
+- *Started* and *Ended* datestamps
+- *Class* 
+- *Owner*
+- *Args*
+- *Log* - click on *view log* to see any error or other messages. 
+
+[The Logs heading with “view logs” below in orange, indicating it is a link](/files/jobs_viewlog.png)
