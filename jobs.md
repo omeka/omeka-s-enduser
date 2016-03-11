@@ -8,7 +8,7 @@ The Jobs table shows a job’s *ID* number, *class* of job, *Status* and the *Ow
 
 To see the details of a job, click on its id number. 
 
-[Table of jobs including all status messages](/files/jobs_table.png)
+![Table of jobs including all status messages](/files/jobs_table.png)
 
 You can order the rows of the table by ID, Class, Status, or Owner (descending or ascending) using the drop-down menus just above the table on the upper right.
 
@@ -20,4 +20,4 @@ On a job’s details page, you will see the following information:
 - *Args*
 - *Log* - click on *view log* to see any error or other messages. 
 
-[The Logs heading with “view logs” below in orange, indicating it is a link](/files/jobs_viewlog.png)
+![The Logs heading with “view logs” below in orange, indicating it is a link](/files/jobs_viewlog.png)
