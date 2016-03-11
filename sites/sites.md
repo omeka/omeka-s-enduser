@@ -32,7 +32,7 @@ In the upper right hand corner of the screen, next to the *Add* button, you can 
 
 You will probably want to leave the site Private until you have added some content.
 
-You can, if you want, set up the [item pool](../sites/site_pages.md) at this point, but it is not necessary.
+You can, if you want, set up the [item pool](../sites/site_itempool.md) at this point, but it is not necessary.
 
 When you are ready, click the *Add* button in the upper right corner. Once the page is created, you will be redirected to the site info tab of the site management. 
 
@@ -43,7 +43,14 @@ The admin show page for a site, you can see the URL Slug, Title, and current The
 
 ![Sites show page, displaying summary information](../sites/sitesfiles/sites_show.png)
 
-Site admin left hand navigation options are: *Site Info*, *[Pages](../sites/site_pages.md)*, *[Navigation](../sites/site_navigation.md)*, *[Item Pool](../sites/site_itempool.md)*, *User Permissions*, and *Settings*. 
+Site admin left hand navigation options are: 
+- *Site Info*, 
+- *[Pages](../sites/site_pages.md)*, 
+- *[Navigation](../sites/site_navigation.md)*, 
+- *[Item Pool](../sites/site_itempool.md)*, 
+- *Theme*
+- *User Permissions*, 
+- *Settings*. 
 
 The standard options in the left hand navigation of the Omeka S Admin (items, item sets, etc) are still available under the *Global Navigation* header. Click the words *Global Navigation* or the small orange arrow to reveal the standard left-hand navigation menu options.
 
@@ -76,6 +83,11 @@ Then select their role from the dropdown:
 *Admin*: user has full administrative privileges for the site, including adding users and deleting the site.
 
 Once you've added one or more users, click the Save button located in the upper right hand corner. You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon on their row.
+
+## Theme
+This tab allows you to customize theme settings for the site.
+
+The setting *Top Navigation Depth* allows you the limit the depth of the top navigation menu on the public side of the site.  The default setting, 0, does not restrict the number of levels of the top navigation menu. Setting it to one would only show the top-level pages or links of your site.
 
 ## Settings
 There is a check box to *Restrict browse to attached items*. If checked, users adding content to sites pages will only be able to access items designated in the Item Pool, and the public browse page will be limited to that content as well.
