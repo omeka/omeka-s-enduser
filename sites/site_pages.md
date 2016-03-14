@@ -10,12 +10,14 @@ Once you are editing the site, click the Pages tab in the left hand navigation.
 
 ![Left hand menu options for editing sites, with General, Settings, and Pages links](../sites/sitesfiles/sitepage_nav.png)
 
+When you create a new site, Omeka S automatically adds a page titled *Welcome* with a single HTML block (see below). You can edit this page or delete it.
+
 ## Adding Pages
 From the page for the site, click the Pages tab. Then click the "Add a Page" button on the left side of that tab to be taken to the Add Page function.
 
 ![Page view showing the fields for Add Page](../sites/sitesfiles/sitepg_add.png)
 
-To add a page you must enter a *URL slug* and a *Title*. Both of these can be edited later but are required to create the page.  A slug is the portion of the url and can only contain letters, numbers, and hyphens; no other characters are allowed.
+To add a page you must enter a *Title*. You can also enter a *URL Slug*. Both of these can be edited later but are required to create the page. If you do not enter a slug, Omeka S will create one from the page title. A slug is the page’s portion of the url and can only contain letters, numbers, and hyphens; no other characters are allowed.
 
 Once you have entered this information, click the Add button in the upper right hand corner of the browser window.
 
@@ -24,7 +26,9 @@ After clicking the Pages tab, select the page you wish to edit by clicking the n
 
 ![Add block dropdown menu with the above mentioned options](../sites/sitesfiles/sitepg_addblock.png)
 
-Once you have added blocks to your page, click the Save button in the right hand corner. You can delete any of the blocks by clicking on the trash can icon located in the upper right corner of the block. 
+Once you have added blocks to your page, click the Save button in the right hand corner. 
+
+You can delete any of the blocks by clicking on the trash can icon located in the upper right corner of the block. 
 
 Change the order of blocks by clicking on the three horizontal lines on the upper left corner of the block and then dragging and dropping it to the desired location.
 
@@ -33,12 +37,13 @@ Creates an HTML box in which you can add formatted text and links.
 
 ![Page block for HTML content](../sites/sitesfiles/sitepg_html.png)
 
-### Browse preview: 
-Allows you to add resources through a search. 
+### Browse Preview: 
+Allows you to add a browsable block of resources. You designate which resources to display by defining search through the *Query* field. 
 
+The *Preview Title* field is the heading above the browse 
 ![Page block for Browse Preview](../sites/sitesfiles/sitepg_browse.png)
 
-### Item List
+### Item Showcase
 A list of items. 
 
 Using the drop-down menu in the block, you can set the thumbnail size for these items as large (default), medium, or square. 
@@ -58,8 +63,14 @@ To cancel the item selection, click the X in the upper right corner of the drawe
 
 Once you’ve added an item, it will appear in the Item List block. You can edit the caption or media options by clicking the edit (wrench) button for that row, and you can delete the item using the delete (trash can) icon.
 
-### Navigation
-If the current page has child pages, you can add a navigation block for those pages.
+You can add multiple items to the list.
+
+### Table of Contents
+If the current page has child pages, you can add a table of content block for those pages.
+
+The Depth option allows you to set how many levels of child pages you want to display. If left blank, it will display all possible levels. Please enter a whole number.  
+
+![Table of content block with not depth option set](../sites/sitesfiles/sitepg_toc.png)
 
 Add and arrange pages using the [Site Navigation](../sites/site_navigation.md) settings. 
 

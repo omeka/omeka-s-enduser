@@ -17,4 +17,7 @@ Note that some hosting setups may require that the domain name for the administr
 * By default, this is set to *none*, meaning that only the property label is displayed.
 * If *show vocabulary* is selected, the parenthetical statement next to the property name displays the vocabulary used (for example, Dublin Core) 
 * If *show term* is selected, the parenthetical statement next to the property name displays the vocabulary:term (for example, dc:title). 
+
+*Default Site* dropdown gives you control over where people land they navigate to the base url of your install. You can either display a list of all sites in the install (default) or select a specific site from the dropdown, to which people will be redirected.
+
 *Use HTMLPurifier* checkbox. If checked, the service [HTMLPurifier](http://htmlpurifier.org/) will clean up any user-entered HTML. 

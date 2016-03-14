@@ -16,6 +16,7 @@ Underneath the installation title is a search field which has an option for adva
 
 From the left hand navigation of the admin dashboard, Global Administrators can access the following functions:
 
+- [Sites](https://github.com/omeka/omeka-s-enduser/blob/master/sites/sites.md): lists and provides access to all of the sites on the OmekaS install. (Computer icon)
 - [Items](https://github.com/omeka/omeka-s-enduser/blob/master/content/items.md): manage the individual resources of your install. (Box icon)
 - [Item Sets](https://github.com/omeka/omeka-s-enduser/blob/master/content/item-sets.md): manage aggregated groups of items. (Multiple boxes icon)
 - [Vocabularies](https://github.com/omeka/omeka-s-enduser/blob/master/content/vocabularies.md): manage the metadata standards for your install. (Closed book icon)
@@ -23,7 +24,6 @@ From the left hand navigation of the admin dashboard, Global Administrators can 
 - [Users](https://github.com/omeka/omeka-s-enduser/blob/master/users.md): manage users for the whole install and individual sites. (Three people icon)
 - [Modules](https://github.com/omeka/omeka-s-enduser/blob/master/modules/modules.md): add functionality to your sites. (Plus sign in square icon)
 - [Jobs](https://github.com/omeka/omeka-s-enduser/blob/master/jobs.md): displays the user-activated tasks which are currently running. NB: jobs only display when they are running. (Three bars icon)
-- [Sites](https://github.com/omeka/omeka-s-enduser/blob/master/sites/sites.md): lists and provides access to all of the sites on the OmekaS install. (Computer icon)
 - [Settings](https://github.com/omeka/omeka-s-enduser/blob/master/settings.md): manage the global settings for all sites, the admin dashboard and the site dashboards. (Gears icon)
 
 If you have installed modules, they may appear in the navigation below settings.
