@@ -16,7 +16,7 @@ Underneath the user information is a search field which has an option for advanc
 
 Advanced search options (the ellipses) allow you to refine the search by Resource Type, limiting it to *Items*, *Item Sets*, or *Media* by clicking the radio button next to the Resource Type you want to search. 
 
-![Advanced search options](/files/search)
+![Advanced search options](/files/search.png)
 
 From the left hand navigation of the admin dashboard, Global Administrators can access the following functions:
 
@@ -36,4 +36,4 @@ Note that users with more limited permissions will see only some of these naviga
 
 In the bottom right corner is a short display of the current version of Omeka S, along with a link to further System Information. 
 
-![Example system information page](/files/systeminformation.png)
+![Example system information page](/files/systeminfo.png)
