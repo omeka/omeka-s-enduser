@@ -6,7 +6,7 @@ A *Resource Template* is a set of pre-defined Properties, optionally with a Clas
 
 Resource templates are managed from the Admin Dashboard, accessed through the left-hand navigation under the tab labeled *Resource Templates*. 
 
-![Basic view of resource templates tab, showing the column titles and one template](contentfiles/templates1.png)
+![Basic view of resource templates tab, showing the column titles and one template](contentfiles/templates_browse.png)
 
 From this tab, you can sort existing templates by *label*, *class*, or number of *items* assigned to that template, using the up-down arrow icon next to each column heading. You can also use the icons in each template’s row to: *edit* (pencil), *delete* (trash can), or *view details* (ellipses). If you click on the number of items listed for a template, it will take you to a list of all those items. 
 
@@ -22,13 +22,13 @@ From this tab, you can sort existing templates by *label*, *class*, or number of
   - URI: a link with label
   - Resource: either an existing Item or Item Set in the Omeka S install
 
-![The Add Resource Template page, with fields for title, class, and properties Title and Description pre-loaded](contentfiles/template_add2.png)
+![The Add Resource Template page, with fields for title, class, and properties Title and Description pre-loaded](contentfiles/templates_add.png)
 
 You can change the display label of the property when the resource template is used by entering the text you want to appear in the *Alternate Label* field for each property. You can also add alternate comments for the property. This will change the text under the property name when users are creating items using your Resource Template. 
 
 In the image below, from an Add Item view, the template has been written so that the Description property is labeled as Gist with an new comment (the default is “an account of the resource”): 
 
-![A property labeled Gist with the comment “A quick summary of the document’s content”](contentfiles/template_alt.png)
+![A property labeled Gist with the comment “Brief Summary”](contentfiles/templates_label.png)
 
 Note that users who select this resource template when creating an item will be able to add other properties to the item, and that the properties associated with the resource template are not required when creating an item.
 

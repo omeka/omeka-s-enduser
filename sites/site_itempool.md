@@ -12,5 +12,5 @@ The settings in the Item Pool tab allow you to set the parameters for the pool. 
 * *Search by class*: search by resource Class. 
 * *Search all properties*: create a search across all properties in all items. You can use the drop-down menu to select from: has exact value, does not have exact value, contains value, or does not contain value. Use the *Add new value* to create additional search criteria.
 * *Search specific property*: search for words or phrases within a specific property. Select the property from the drop down menu, and then select from: as exact value, does not have exact value, contains value, or does not contain value. Use the *Add new value* to create additional search criteria.
-* *Search resources*: search for resources which either *has property* or *does not have propert* for a specific resource class.
+* *Search resources*: search for resources which either *has property* or *does not have property* for a specific resource class.
 * *Search by item set*: include all items within a specific item set.
