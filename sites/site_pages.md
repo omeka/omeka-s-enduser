@@ -100,7 +100,7 @@ Add and arrange pages using the [Site Navigation](../sites/site_navigation.md) s
 ### Line Break
 Line break creates a transparent or opaque line break on the page, clearing all blocks. 
 
-![line break table, dropdown selected to transparent](../sites/sitepg_line.png)
+![line break table, dropdown selected to transparent](../sites/sitesfiles/sitepg_line.png)
 
 HTML blocks wrap around Media blocks and at times you may want to clear the page. You might also want to create a visual break on the page. 
 
