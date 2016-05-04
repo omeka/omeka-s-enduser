@@ -8,7 +8,7 @@ Manage the pages for a site by navigating to the Sites tab on the left-hand navi
 
 Once you are editing the site, click the Pages tab in the left hand navigation.
 
-![Left hand menu options for editing sites, with General, Settings, and Pages links](../sites/sitesfiles/sitepage_nav.png)
+![Left hand menu options for editing sites, with General, Settings, and Pages links](../sites/sitesfiles/sitepg_nav.png)
 
 When you create a new site, Omeka S automatically adds a page titled *Welcome* with a single HTML block (see below). You can edit this page or delete it.
 
@@ -22,7 +22,7 @@ To add a page you must enter a *Title*. You can also enter a *URL Slug*. Both of
 Once you have entered this information, click the Add button in the upper right hand corner of the browser window.
 
 ## Editing Pages  
-After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page *title* will take you to the public view of that page. On the right hand side you can choose to add a new block by selecting one of the following layouts: *HTML; Browse Preview; Item List; Navigation; File with Text*.
+After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page *title* will take you to the public view of that page. On the right hand side you can choose to add a new block by selecting one of the following layouts: *Media, HTML, Browse Preview, Item Showcase, Table of Contents, Line Break, Item with Metadata*
 
 ![Add block dropdown menu with the above mentioned options](../sites/sitesfiles/sitepg_addblock.png)
 
@@ -31,6 +31,21 @@ Once you have added blocks to your page, click the Save button in the right hand
 You can delete any of the blocks by clicking on the trash can icon located in the upper right corner of the block. 
 
 Change the order of blocks by clicking on the three horizontal lines on the upper left corner of the block and then dragging and dropping it to the desired location.
+
+### Media
+Creates a block with one or more pieces of media associated with items in the item pool. 
+
+![media block with no media attached](../sites/sitesfiles/sitepg_media.png)
+
+To add media, click the *add attachment* 
+On loading, the drawer will show a list of your items, most recent first. You can select form the first page, page through using the forward and back arrows, or search using the search bar.
+
+![Select item drawer](../sites/sitesfiles/sitepg_selectitem.png)
+
+Once you’ve selected an item, the drawer will shift to that item’s information. You can add a caption and select which media (if more than one) you want to use. To return to the list of items, click the *Select item* button at the top of the drawer. To use the item displayed and apply the caption, etc, click the *Apply changes* button at the bottom of the drawer.
+
+
+Dropdown options allow you 
 
 ### HTML: 
 Creates an HTML box in which you can add formatted text and links.
