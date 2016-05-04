@@ -37,7 +37,7 @@ Once you have added blocks to your page, click the Save button in the right hand
 
 You can delete any of the blocks by clicking on the trash can icon located in the upper right corner of the block. 
 
-![The “media” block is marked for deletion and thus highlighted in red.](..sites/sitesfiles/sitepg_delblock.png)
+![The “media” block is marked for deletion and thus highlighted in red.](../sites/sitesfiles/sitepg_delblock.png)
 
 Change the order of blocks by clicking on the three horizontal lines on the upper left corner of the block and then dragging and dropping it to the desired location.
 
@@ -107,7 +107,7 @@ HTML blocks wrap around Media blocks and at times you may want to clear the page
 ### Item with Metadata
 This block displays an item along with all associated metadata (entered when creating or editing the [item](../content/items.md).
 
-![Item with metadata block with nothing attached](../sites/sitefiles/sitepg_iwm.png)
+![Item with metadata block with nothing attached](../sites/sitesfiles/sitepg_iwm.png)
 
 ## Deleting Pages
 To delete a page, go the to *Pages* tab of the site of which the page is a part. Click the delete (trash can) button at the right end of the row for that page. 
