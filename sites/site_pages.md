@@ -22,13 +22,22 @@ To add a page you must enter a *Title*. You can also enter a *URL Slug*. Both of
 Once you have entered this information, click the Add button in the upper right hand corner of the browser window.
 
 ## Editing Pages  
-After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page *title* will take you to the public view of that page. On the right hand side you can choose to add a new block by selecting one of the following layouts: *Media, HTML, Browse Preview, Item Showcase, Table of Contents, Line Break, Item with Metadata*
+After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page *title* will take you to the public view of that page. On the right hand side you can choose to add a new block by selecting one of the following layouts: 
+- Media 
+- HTML 
+- Browse Preview 
+- Item Showcase 
+- Table of Contents 
+- Line Break
+- Item with Metadata
 
-![Add block dropdown menu with the above mentioned options](../sites/sitesfiles/sitepg_addblock.png)
+![A page in edit view, with one media block added](../sites/sitesfiles/sitepg_edit.png)
 
 Once you have added blocks to your page, click the Save button in the right hand corner. 
 
 You can delete any of the blocks by clicking on the trash can icon located in the upper right corner of the block. 
+
+![The “media” block is marked for deletion and thus highlighted in red.](..sites/sitesfiles/sitepg_delblock.png)
 
 Change the order of blocks by clicking on the three horizontal lines on the upper left corner of the block and then dragging and dropping it to the desired location.
 
@@ -44,8 +53,7 @@ On loading, the drawer will show a list of your items, most recent first. You ca
 
 Once you’ve selected an item, the drawer will shift to that item’s information. You can add a caption and select which media (if more than one) you want to use. To return to the list of items, click the *Select item* button at the top of the drawer. To use the item displayed and apply the caption, etc, click the *Apply changes* button at the bottom of the drawer.
 
-
-Dropdown options allow you 
+![Item view with apply changes option](../sites/sitesfiles/sitepg_applyitem.png)
 
 ### HTML: 
 Creates an HTML box in which you can add formatted text and links.
@@ -64,7 +72,7 @@ A list of items.
 Using the drop-down menu in the block, you can set the thumbnail size for these items as large (default), medium, or square. 
 
 Click the *Add Attachment* button to add an item to the block. This will open a drawer on the right side of the page to browse and select items. 
-![Block for item list with one item added](../sites/sitesfiles/sitepg_itemlist.png)
+![Block for item showcase with one item added](../sites/sitesfiles/sitepg_showcase.png)
 
 On loading, the drawer will show a list of your items, most recent first. You can select form the first page, page through using the forward and back arrows, or search using the search bar.
 
@@ -85,36 +93,26 @@ If the current page has child pages, you can add a table of content block for th
 
 The Depth option allows you to set how many levels of child pages you want to display. If left blank, it will display all possible levels. Please enter a whole number.  
 
-![Table of content block with not depth option set](../sites/sitesfiles/sitepg_toc.png)
+![Table of content block with no depth option set](../sites/sitesfiles/sitepg_toc.png)
 
 Add and arrange pages using the [Site Navigation](../sites/site_navigation.md) settings. 
 
-### File with Text
-A block with one more more items and a text block.
+### Line Break
+Line break creates a transparent or opaque line break on the page, clearing all blocks. 
 
-Using the drop-down menu in the top of the block, you can set the thumbnail size for these items as large (default), medium, or square. 
+![line break table, dropdown selected to transparent](../sites/sitepg_line.png)
 
-![Basic file with text block](../sites/sitesfiles/sitepg_filetext.png)
+HTML blocks wrap around Media blocks and at times you may want to clear the page. You might also want to create a visual break on the page. 
 
-On loading, the drawer will show a list of your items, most recent first. You can select form the first page, page through using the forward and back arrows, or search using the search bar.
+### Item with Metadata
+This block displays an item along with all associated metadata (entered when creating or editing the [item](../content/items.md).
 
-![Select item drawer](../sites/sitesfiles/sitepg_selectitem.png)
-
-Once you’ve selected an item, the drawer will shift to that item’s information. You can add a caption and select which media (if more than one) you want to use. To return to the list of items, click the *Select item* button at the top of the drawer. To use the item displayed and apply the caption, etc, click the *Apply changes* button at the bottom of the drawer.
-
-![Item view with apply changes option](../sites/sitesfiles/sitepg_applyitem.png)
-
-To cancel the item selection, click the X in the upper right corner of the drawer at any time.
-
-The text has full HTML formatting options. 
-
+![Item with metadata block with nothing attached](../sites/sitefiles/sitepg_iwm.png)
 
 ## Deleting Pages
-To delete a page, go the to *Pages* tab of the site of which the page is a part. Click the delete (trash can) button at the right end of the row for that page. The title of the page will change to “Page to be removed” and the entire row will highlight.
+To delete a page, go the to *Pages* tab of the site of which the page is a part. Click the delete (trash can) button at the right end of the row for that page. 
 
-To complete deletion, click *Save* in the upper right corner of the window.
+A drawer will open on the right side of the page asking you to confirm that you wish to delete the page, with the name of the page displayed under the confirm button. To proceed, click the *Confirm delete* button. Otherwise, click the *X* in the upper right corner of the drawer to cancel.
 
-To cancel the deletion, click the undo (counter-clockwise circle arrow) button which replaced the trash can.
-
-![Top row is a page marked for deletion](../sites/sitesfiles/sitepg_delete.png)
+![Delete drawer for the Novels page](../sites/sitesfiles/sitepg_delete.png)
 
