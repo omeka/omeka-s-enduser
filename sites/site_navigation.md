@@ -4,7 +4,7 @@ title: Site Navigation
 
 Use the *Navigation* tab of the [Sites](../sites/sites.md) to manage the navigation, or menu, or your site. You can add links, browse pages, and your [pages](../sites/site_pages.md) to the navigation, arrange them, and delete links from the navigation.
 
-![Editing navigation with a drawer on the right side of the screen for adding links](../sites/sitesfiles/sitenav_add2.png)
+![Editing navigation with a drawer on the right side of the screen for adding links](../sites/sitesfiles/sitenav_add.png)
 
 The topmost item in the navigation is the main page for your site.
 
@@ -24,13 +24,13 @@ Or you can add one of your [pages](../sites/site_pages.md), which should be list
 
 If you want to refine the Browse block, you can use the Query to create a search query that returns the desired results. 
 
-![Browse block with the label ‘Browse’ and no query](../sites/sitesfiles/sitenav_brw.png) Browse block 
+![Browse block with the label ‘Browse’ and no query](../sites/sitesfiles/sitenav_browse.png) Browse block 
 
 
 ### Site Page
 Site page blocks create links to pages you have built for your site. The *page* field indicates which page is in use, as does the block title. You can change the *label* for the page link in the navigation, as in the example image below. Note that changing the label does not change the page title. 
 
-![Page block with for the page Custard Page 2 labeled “More Custard”](../sites/sitesfiles/sitenav_pgs.png) Site Page block
+![Page block with for the page Custard Page 2 labeled “More Custard”](../sites/sitesfiles/sitenav_pages.png) Site Page block
 
 Be sure to click save before leaving the Navigation tab to save changes.
 

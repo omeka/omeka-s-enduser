@@ -14,8 +14,8 @@ You can order the rows of the table by ID, Class, Status, or Owner (descending o
 
 On a job’s details page, you will see the following information: 
 - *Status* (In Progress, Error, Completed, Stopped)
-- *Started* and *Ended* datestamps
-- *Class* 
+- *Started* and *Ended* (date stamps)
+- *Class* (source of the job, for example `DspaceConnector\Job\Import`)
 - *Owner*
 - *Args*
 - *Log* - click on *view log* to see any error or other messages. 
