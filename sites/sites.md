@@ -96,6 +96,13 @@ This tab allows you to customize theme settings for the site.
 The setting *Top Navigation Depth* allows you the limit the depth of the top navigation menu on the public side of the site.  The default setting, 0, does not restrict the number of levels of the top navigation menu. Setting it to one would only show the top-level pages or links of your site.
 
 ## Settings
-There is a check box to *Restrict browse to attached items*. If checked, users adding content to sites pages will only be able to access items designated in the Item Pool, and the public browse page will be limited to that content as well.
+This tab allows you to configure settings for the site overall.
+
+The first setting is a check box to *Restrict browse to attached items*. If checked, users adding content to sites pages will only be able to access items designated in the Item Pool, and the public browse page will be limited to that content as well.
+
+The second setting option is *Attachment link type*, which sets the target of links from attachments you add to [site page blocks](../sites/site_pages.md#editing-pages) (for example, in an [item showcase](../sites/site_pages.md#item-showcase). It offers a dropdown with the following options:
+- *item page:* clicking on the attachment takes users to the item page associated with the attached media;
+- *media page:* clicking on the attachment takes users to the media page; 
+- *direct link to file:* clicking on the attachment takes user to the file alone. 
 
 ![Site settings](../sites/sitesfiles/sites_settings.png)
