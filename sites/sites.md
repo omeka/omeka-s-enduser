@@ -14,7 +14,7 @@ Each row gives the title of a site, options to *view* (box with outward arrow), 
 
 Clicking on the site title will take you to a summary page for the site which displays the site’s *url slug, title,* and *theme*. , from which you can return to the site list using a button on the left side of the scree, or *edit* or *view* the site using buttons in the upper right 
 
-![show page for the site “What Does This Look Like” indicating that the theme is default and the slug is public views.](../sites/sitefiles/sites_quickshow.png)
+![show page for the site “What Does This Look Like” indicating that the theme is default and the slug is public views.](../sites/sitesfiles/sites_quickshow.png)
 
 ## Adding a site
 To create a site, click the *Add new site* button in the upper right-hand corner of the site browse page.
@@ -59,7 +59,7 @@ The standard options in the left hand navigation of the Omeka S Admin (items, it
 ## Site Info 
 The site info settings for an Omeka S site are where you can change the *URL slug*, site *Title*, and *theme*. 
 
-![Site info for the site “Jane Austen” with buttons across the top to View, Delete, and Save the site](../sites/sitefiles/sites_siteinfo.png)
+![Site info for the site “Jane Austen” with buttons across the top to View, Delete, and Save the site](../sites/sitesfiles/sites_siteinfo.png)
 
 From this tab you can use the the *make public/private* button (eye icon) to set whether the site is visible to the public or only to users of the Omeka S system. 
 
@@ -69,7 +69,7 @@ From this tab you can use the the *make public/private* button (eye icon) to set
 
 ## See also: 
 * [Site Pages](../sites/site_pages.md)
-* [Site Navigation](../sites/site_navigation.md).
+* [Site Navigation](../sites/site_navigation.md)
 * [Site Item Pool](../sites/site_pages.md)
 
 ## Managing User Permissions
