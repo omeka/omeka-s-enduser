@@ -24,12 +24,12 @@ Once you have entered this information, click the Add button in the upper right 
 ## Editing Pages  
 After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page *title* will take you to the public view of that page. On the right hand side you can choose to add a new block by selecting one of the following layouts: 
 - Media 
-- HTML 
 - Browse Preview 
 - Item Showcase 
 - Table of Contents 
 - Line Break
 - Item with Metadata
+- HTML
 
 ![A page in edit view, with one media block added](../sites/sitesfiles/sitepg_edit.png)
 
@@ -41,6 +41,8 @@ You can delete any of the blocks by clicking on the trash can icon located in th
 
 Change the order of blocks by clicking on the three horizontal lines on the upper left corner of the block and then dragging and dropping it to the desired location.
 
+Some modules may create additional blocks for your site pages. For information on working with these blocks, please see the documentation for that [module](../modules/modules.md)
+## Page Blocks
 ### Media
 Creates a block with one or more pieces of media associated with items in the item pool. 
 
@@ -55,11 +57,6 @@ Once you’ve selected an item, the drawer will shift to that item’s informati
 
 ![Item view with apply changes option](../sites/sitesfiles/sitepg_applyitem.png)
 
-### HTML: 
-Creates an HTML box in which you can add formatted text and links.
-
-![Page block for HTML content](../sites/sitesfiles/sitepg_html.png)
-
 ### Browse Preview: 
 Allows you to add a browsable block of resources. You designate which resources to display by defining search through the *Query* field. 
 
@@ -71,7 +68,8 @@ A list of items.
 
 Using the drop-down menu in the block, you can set the thumbnail size for these items as large (default), medium, or square. 
 
-Click the *Add Attachment* button to add an item to the block. This will open a drawer on the right side of the page to browse and select items. 
+Click the *Add Attachment* button to add an item to the block. This will open a drawer on the right side of the page to browse and select items.
+
 ![Block for item showcase with one item added](../sites/sitesfiles/sitepg_showcase.png)
 
 On loading, the drawer will show a list of your items, most recent first. You can select form the first page, page through using the forward and back arrows, or search using the search bar.
@@ -108,6 +106,11 @@ HTML blocks wrap around Media blocks and at times you may want to clear the page
 This block displays an item along with all associated metadata (entered when creating or editing the [item](../content/items.md).
 
 ![Item with metadata block with nothing attached](../sites/sitesfiles/sitepg_iwm.png)
+
+### HTML: 
+Creates an HTML box in which you can add formatted text and links.
+
+![Page block for HTML content](../sites/sitesfiles/sitepg_html.png)
 
 ## Deleting Pages
 To delete a page, go the to *Pages* tab of the site of which the page is a part. Click the delete (trash can) button at the right end of the row for that page. 
