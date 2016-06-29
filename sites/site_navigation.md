@@ -10,7 +10,7 @@ The topmost item in the navigation is the main page for your site.
 
 ## Adding Navigation
 ### Custom Link
-To add a link you can use the *Add a custom link* drop-down on the right hand drawer to add either:
+To add a link you can use the *Add a custom link* buttons on the right hand drawer to add either:
  * a *Custom URL* to any web address; or
  * a Browse page for items on your site
 
@@ -32,6 +32,8 @@ Site page blocks create links to pages you have built for your site. The *page* 
 
 ![Page block with for the page Custard Page 2 labeled “More Custard”](../sites/sitesfiles/sitenav_pages.png) Site Page block
 
+If you have many pages, you can use the *Filter pages* field to find the names and slugs of specific pages.
+
 Be sure to click save before leaving the Navigation tab to save changes.
 
 ## Editing and Arranging Navigation
@@ -48,4 +50,5 @@ OmekaS allows for multiple levels of nested navigation.
 ## Deleting Navigation
 To delete a link from the navigation, click the delete (trash can) icon and then click *Save*. If you accidentally click the delete icon, you can click the undo (back looped arrow) icon before click save to cancel the deletion.
 
-![Two link blocks, one of which is highlighted in red and marked for deletion](../sites/sitesfiles/sitenav_del.png) In this image, the delete icon for browse has been pushed; the block now displays the undo button instead
+![Two link blocks, one of which is highlighted in red and marked for deletion](../sites/sitesfiles/sitenav_del.png) 
+In this image, the delete icon for browse has been clicked; the block now displays the undo button instead
