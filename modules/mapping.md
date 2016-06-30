@@ -15,7 +15,7 @@ To add a map to a new or existing item, click to edit the item. Navigate to the 
 ### Manipulating the Map
 Small white buttons on the left side of the map control and modify the appearance of the map. Hover over the buttons with the mouse to view tool-tips.
 
-![Screenshot of the buttons on the map described below](../modules/modulesfiles/Mapping_JustButtons.png)
+![Screenshot of the buttons on the map described below](../modules/modulesfiles/Mapping_JustButtons.png) ![Screenshot of the  map with the buttons labeled.](../modules/modulesfiles/Mapping_LabeledMap.png)
 
 * _Zoom in_: The small white square with a black plus sign. Each click zooms in one step.
 * _Zoom out_: The small white square with black minus sign. Each click zooms out one step.
@@ -57,27 +57,34 @@ To add a map to a new or existing page, click to edit the page. On the right, un
 
 ![Screenshot of the Page with Map Block selected. Block includes menu options Default View, WMS Overlays and attachments.](../modules/modulesfiles/Mapping_Page_MapBlock.png)
 
-* _Default View_: Small white buttons on the left of the map interface set the default view for the map.
+
+* _Default View_: Small white buttons on the left of the map interface set the default view for the map. [See Figure 5 below.]
     * _Zoom in_: Each click zooms in one step.
     * _Zoom out_: Each click zooms out one step.
     * _Set the current view as default view_: The map will default to a global view. Click to set the current view as the default view.
     * _Go to current default view_: This option is only available after you have set a default view. Click to pan and zoom map to the selected view.
     * _Clear the default center and zoom level_: Click to clear pan and zoom preferences and return to the initial global view.
 
-![Screenshot of the Default view includes a map with the white buttons described.](../modules/modulesfiles/Mapping_Page_Default.png)
 
-* _WMS Overlays_: Add, edit, and delete Web Map Service (WMS) overlays.
+* _WMS Overlays_: Add, edit, and delete Web Map Service (WMS) overlays. [See Figure 6 below.]
     * _Label_: Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays. _Base URL_: Add a URL to the WMS map.
     * _Layers_:
     * _Styles_:
-    * Click Add Overlay to create the overlay. Click _Clear Inputs_ to clear each of the fields. Multiple overlays can be added. Choose a default overlay by checking the box next to it. Edit or delete an overlay click on the red pencil edit button, or click the red trashcan icon to delete..
+    * Click Add Overlay to create the overlay. Click _Clear Inputs_ to clear each of the fields. Multiple overlays can be added. Choose a default overlay by checking the box next to it. Edit or delete an overlay click on the red pencil edit button, or click the red trashcan icon to delete.
 
-![Screenshot of the WMS Overlays with fields and buttons described.](../modules/modulesfiles/Mapping_Item_Delete.png)
-
-* _Attachments_: Markers are added to the map using  _Items_.
+* _Attachments_: Markers are added to the map using  _Items_. [See Figure 7 below.]
     * After Items have been mapped, click _Add Attachment_ to select them from a list on the right. 
     * Clicking an item adds it to a list in the Attachments pane.
     * Click and drag items in this list to reorder them. 
     * Delete items by clicking the red trashcan. 
 
+
+####Default View [Figure 5]
+![Screenshot of the Default view includes a map with the white buttons described.](../modules/modulesfiles/Mapping_Page_Default.png)
+
+####WMS Overlays [Figure 6]
+![Screenshot of the WMS Overlays with fields and buttons described.](../modules/modulesfiles/Mapping_Item_Delete.png)
+
+####Adding an Attachment [Figure 7]
 ![Screenshot of the map with Add Attachment selected. On the right a list of items.](../modules/modulesfiles/Mapping_Page_Attachments.png)
+
