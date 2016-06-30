@@ -15,7 +15,7 @@ To add a map to a new or existing item, click to edit the item. Navigate to the 
 ### Manipulating the Map
 Small white buttons on the left side of the map control and modify the appearance of the map. Hover over the buttons with the mouse to view tool-tips.
 
-![Screenshot of the buttons on the map described below](../modules/modulesfiles/Mapping_JustButtons.png) ![Screenshot of the  map with the buttons labeled.](../modules/modulesfiles/Mapping_LabeledMap.png)
+![Screenshot of the buttons on the map described below](../modules/modulesfiles/Mapping_JustButtons.png) 
 
 * **Zoom in**: The small white square with a black plus sign. Each click zooms in one step.
 * **Zoom out**: The small white square with black minus sign. Each click zooms out one step.
