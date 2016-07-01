@@ -27,7 +27,7 @@ After specifying the vocabulary file to upload using your browser’s file choos
 - and any comments you have.
 
 ### Vocabulary Import
-Omeka S will import propertly formatted vocabularies/ontologies. rdfs:Class and rdfs:Property data will be available. 
+Omeka S will import properly formatted vocabularies/ontologies. rdfs:Class and rdfs:Property data will be available. 
 
 For Web Ontology Language (OWL) data, Omeka S will store only the RDF/S super-Properties and -Classes. Omeka S does not enforce any declaration or inferencing rules from OWL. Thus, for example, an owl:Class is treated in Omeka S like an rdfs:Class.
 
