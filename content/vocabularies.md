@@ -9,7 +9,7 @@ Global and Site Administrators can manage their installation’s vocabularies fr
 ## Managing vocabularies
 The main view of the *Vocabularies* tab in the Admin Dashboard displays the existing vocabularies for the Omeka S install. 
 
-![Main view of vocabularies, with columns for label, prefix, classes, and properties counts and information](contentfiles/vocab1.png)
+![Main view of vocabularies, with columns for label, prefix, classes, and properties counts and information](contentfiles/vocabularies.png)
 
 Vocabularies are displayed in a table with headings for *Label* (name of vocabulary), *Prefix* (used by the database), *Classes* (number of classes in the vocabulary), and *Properties* (number of properties in the vocabulary). You can sort vocabularies by these columns using the up and down arrows at the right end of each column. 
 
@@ -27,7 +27,7 @@ After specifying the vocabulary file to upload using your browser’s file choos
 - and any comments you have.
 
 ### Vocabulary Import
-Omeka S will import propertly formatted vocabularies/ontologies. rdfs:Class and rdfs:Property data will be available. 
+Omeka S will import properly formatted vocabularies/ontologies. rdfs:Class and rdfs:Property data will be available. 
 
 For Web Ontology Language (OWL) data, Omeka S will store only the RDF/S super-Properties and -Classes. Omeka S does not enforce any declaration or inferencing rules from OWL. Thus, for example, an owl:Class is treated in Omeka S like an rdfs:Class.
 
