@@ -58,7 +58,9 @@ The Values tab is where you enter metadata, such as title, description, etc.
 ### Media
 Use the *Media* tab to add images, video, or other files.
 Using the buttons on the *Add New Media* menu on the right side of the screen, select a media type (Upload, URL, oEmbed, YouTube, or HTML)
-  ![“Add new media” dropdown showing the options](../content/contentfiles/items_mediaadd.png)
+
+![“Add new media” dropdown showing the options](../content/contentfiles/items_mediaadd.png)
+
 - *Upload*: select a file to upload from your computer.
 - *URL*: add a link to a website or web resource.
 - *oEmbed*: insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7) - use the url in your browser’s location bar.
@@ -74,7 +76,7 @@ If you have more than one media instance for an item, you can reorder them by dr
 
 You can edit media later by going by editing an item, navigating to the *media* tab, and clicking the edit button (pencil) for a media when editing the item. You can use the delete button to remove media from an item.
 
-![Media tab of an item being edited, with the view, edit, and delete buttons to the right of the media file name](../content/contentfiles/item_mediaedit.png)
+![Media tab of an item being edited, with the view, edit, and delete buttons to the right of the media file name](../content/contentfiles/items_mediaedit.png)
 
 ### Item Sets
 You can only add items to existing item sets.
@@ -85,7 +87,7 @@ You can also filter item sets using the text entry bar above the list of users.
 
 To remove a connection between an item and item set, click the delete (trash can) button to the right of the item set title.
 
-![item set tab with one item set added](../content/contentfiles/item_itemset.png)
+![item set tab with one item set added](../content/contentfiles/items_itemset.png)
 
 
 ### Visibility
