@@ -12,21 +12,19 @@ To see what modules are installed on your Omeka S site, click on the Modules lin
 
 Note that only Global Administrators can install and manage modules. Site Administrators can browse installed modules. Other users do not have access to this tab.
 
-![Screen capture of admin dashboard showing Modules tab active with 3 modules attached.](../modules/modulesfiles/modlocation.png)
+![Screen capture of admin dashboard showing Modules tab active.](../modules/modulesfiles/modulesbrowse.png)
 
-Any modules which have been installed on the Omeka S install should appear in the Modules table. This table has headings for the for *Module* name and author and for its *Status*, including Not Active, Active, and Not Installed.
+Any modules which have been installed on the Omeka S install should appear in the list of Modules. Each module displays the name of the module with the version number, creator, and a summary of its function. 
 
-There are multiple buttons which can appear to the right of a module’s title:
+![CSV import module label. It is version 0.1 alpha, created by RRCHNM, and is summaries as "import content from a CSV file."](../modules/modulesfiles/modulesLabel.png)
+
+
+There are multiple buttons which can appear to the right of a module’s label. Each button has both an icon and a label describing its action:
 * *Configure* (a wrench icon): some modules have settings which can be adjusted. Click this icon to adjust settings for the module in this row.
 * *Activate/Deactivate* (sliding switch): when a module is active, the slider area background is transparent and the switch is to the left. When inactive, the background of the slider area background is opaque and the switch is to the right.
 * *Install/Uninstall* (arrow and rectangle): use this button to install or uninstall a module. When the arrow is coming from the rectangle, the button will uninstall the module. When the arrow is pointing into the rectangle, the button will install the module.
-* *Details* (ellipses): clicking this button will open a drawer on the right side of the screen with the module’s title and a brief description of what it does.
 
-![Icons described above, from right to left: configure, deactivate, uninstall, details](../modules/modulesfiles/modsicons_label.png)
-
-In the following image, DSpace connector is *Not Active*, Metadata Browse is *Active* and can be *Configured*, and Omeka2Importer is *Not Installed*.
-
-![Screenshot of the modules table as described above](../modules/modulesfiles/moddisplay.png)
+![Icons described above, from right to left: configure, activate and deactivate, install and uninstall](../modules/modulesfiles/moduleButtons.png)
 
 ## Installing Modules
 ### Add the Module to Omeka S
