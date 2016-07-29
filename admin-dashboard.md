@@ -54,6 +54,9 @@ If you have installed modules, they may appear in the admin section of the left 
 
 Note that users with more limited permissions will see only some of these navigation options.
 
+System Information
+-------------------------------
+
 In the bottom right corner is a short display of the current version of Omeka S, along with a link to further System Information. 
 
 ![Example system information page](/files/systeminfo.png)
