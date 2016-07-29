@@ -14,7 +14,7 @@ In addition to the left-hand navigation present on all pages (see below), the ad
 
 The *Manage Resources* box displays the following resources with their total count: [Items](/content/items.md), [Item Sets](/content/item-sets.md), [Vocabularies](/content/vocabularies.md), and [Resource Templates](/content/resource-template.md). Clicking on the label of the Resource will take you to the browse page; clicking the Plus button to the right of the label will take you to the add page for that resource type. 
 
-[Close up of manage resources and manage sites boxes](/files/admindashmanage.png)
+![Close up of manage resources and manage sites boxes](/files/admindashmanage.png)
 
 The *Manage Sites* box lists the [Sites](/sites/sites.md) on the install. Clicking on the site name will take you to the public view of the site; clicking the edit (pencil) button will take you to the Edit Site Info page for that site. 
 
