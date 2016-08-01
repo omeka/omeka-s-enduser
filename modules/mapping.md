@@ -156,3 +156,6 @@ After Items have been mapped, click _Add Attachment_  (1) to select them from a 
 
 ![Screenshot of the map with Add Attachment selected. On the right a list of items.](../modules/modulesfiles/Mapping_Page_Attachments.png)
 
+### Troubleshooting
+If you would like to remove a map from an item, you must delete all the map modifications. First, click to delete each marker (click the Delete a Marker button, select the marker, click to save) and then click to clear the default center and zoom level (click the Clear the default and zoom level button. The map will return to a global view). Click to save the item and confirm that the map no longer appears.
+
