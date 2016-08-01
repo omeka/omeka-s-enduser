@@ -50,33 +50,33 @@ Select an existing marker then click the trash can icon to delete the marker.
 *Figure 4* Search Address
 Click the magnifying glass icon to open a search address field
 
-####Drawing a Marker _[Figure 1]_
+#### Drawing a Marker _[Figure 1]_
 ![Screenshot of the map with Draw a Marker selected.](../modules/modulesfiles/Mapping_Item_Draw.png)
 
 
-####Move a Marker _[Figure 2]_
+#### Move a Marker _[Figure 2]_
 ![Screenshot of the map with Move marker selected.](../modules/modulesfiles/Mapping_Item_Move.png)
 
 
-####Delete a Marker _[Figure 3]_
+#### Delete a Marker _[Figure 3]_
 ![Screenshot of the map with delete marker selected.](../modules/modulesfiles/Mapping_Item_Delete.png)
 
-####Search Address _[Figure 4]_
->>>>>>> master
+#### Search Address _[Figure 4]_
 
-####Drawing a Marker _[Figure 1]_
+
+#### Drawing a Marker _[Figure 1]_
 ![Screenshot of the map with Draw a Marker selected.](../modules/modulesfiles/Mapping_Item_Draw.png)
 
 
-####Move a Marker _[Figure 2]_
+#### Move a Marker _[Figure 2]_
 ![Screenshot of the map with Move marker selected.](../modules/modulesfiles/Mapping_Item_Move.png)
 
 
-####Delete a Marker _[Figure 3]_
+#### Delete a Marker _[Figure 3]_
 ![Screenshot of the map with delete marker selected.](../modules/modulesfiles/Mapping_Item_Delete.png)
 
-####Search Address _[Figure 4]_
->>>>>>> master
+#### Search Address _[Figure 4]_
+
 ![Screenshot of the map with Search bar selected.](../modules/modulesfiles/Mapping_Item_Search.png)
 
 
@@ -146,13 +146,13 @@ Add, edit, and delete Web Map Service (WMS) overlays.
 *Figure 7*: Adding an Attachment
 After Items have been mapped, click _Add Attachment_  (1) to select them from a list on the right (2). Note: This list will only be populated by items that have been mapped. Clicking an item adds it to a list in the Attachments pane (3).
 
-####Default View _[Figure 5]_
+#### Default View _[Figure 5]_
 ![Screenshot of the Default view includes a map with the white buttons described.](../modules/modulesfiles/Mapping_Page_Default.png)
 
-####WMS Overlays _[Figure 6]_
+#### WMS Overlays _[Figure 6]_
 ![Screenshot of the WMS Overlays with fields and buttons described.](../modules/modulesfiles/Mapping_Page_Overlays.png)
 
-####Adding an Attachment _[Figure 7]_
+#### Adding an Attachment _[Figure 7]_
 
 ![Screenshot of the map with Add Attachment selected. On the right a list of items.](../modules/modulesfiles/Mapping_Page_Attachments.png)
 
