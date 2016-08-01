@@ -16,7 +16,7 @@ Note that only Global Administrators can install and manage modules. Site Admini
 
 Any modules which have been installed on the Omeka S install should appear in the list of Modules. Each module displays the name of the module with the version number, creator, and a summary of its function. 
 
-![CSV import module label. It is version 0.1 alpha, created by RRCHNM, and is summaries as "import content from a CSV file."](../modules/modulesfiles/modulesLabel.png)
+![CSV import module label. It is version 0.1 alpha, created by RRCHNM, and is summaries as "import content from a CSV file."](../modules/modulesfiles/moduleLabel.png)
 
 
 There are multiple buttons which can appear to the right of a module’s label. Each button has both an icon and a label describing its action:
