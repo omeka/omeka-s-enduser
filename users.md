@@ -9,7 +9,7 @@ This Users section displays the user’s email followed by full name in parenthe
 
 There are six user roles in OmekaS.
 - Global Admin: full installation privileges
-- Site Administrator: full installation privileges
+- Site Administrator: robust installation privileges
 - Editor (Content Expert): full privileges for content creation
 - Reviewer: robust content privileges but can only delete own content.
 - Author: Create own content.
