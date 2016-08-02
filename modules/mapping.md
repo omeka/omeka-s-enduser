@@ -23,10 +23,6 @@ Small white buttons on the left side of the map control and modify the appearanc
 * **Move Marker**: The small white square with black box and pencil icon. This option is only available after a marker has been added. Click the button and a pink box appears around each marker. Click a marker to move it. Click again to place. Use the grey buttons to _Save_ or _Cancel_. _(See Figure 2 below.)_
 * **Delete Marker**: The small white button with a trashcan icon. This option is only available after a marker has been added. Click the icon to select a marker. Click the marker to be removed and it will disappear. Use the grey buttons to _Save_ or _Cancel_ these changes. _(See Figure 3 below.)_
 * **Search Address**: The small white square with a black magnifying glass icon. Click to enter an address in the search bar. Hit enter to locate. _(See Figure 4 below.)_
-* **Draw a Marker**: The small white square with black bubble marker. When you click the button your pointer becomes a blue marker. Click again on the map to place the marker. An item can have multiple markers on its map. _[See Figure 1 below.]_
-* **Move Marker**: The small white square with black box and pencil icon. This option is only available after a marker has been added. Click the button and a pink box appears around each marker. Click a marker to move it. Click again to place. Use the grey buttons to _Save_ or _Cancel_. _[See Figure 2 below.]_
-* **Delete Marker**: The small white button with a trashcan icon. This option is only available after a marker has been added. Click the icon to select a marker. Click the marker to be removed and it will disappear. Use the grey buttons to _Save_ or _Cancel_ these changes. _[See Figure 3 below.]_
-* **Search Address**: The small white square with a black magnifying glass icon. Click to enter an address in the search bar. Hit enter to locate. _[See Figure 4 below.]_
 * **Set the current view as default view**: The small white square with a target or crosshair symbol. The map will default to a zoomed out (global) view. Click to set the current view as the default view.
 * **Go to current default view**: The small black square with a black box around a dot. The This option is only available after you have set a default view. Click to pan and zoom map to the selected view.
 * **Clear the default center and zoom level**: The small white square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
@@ -48,35 +44,7 @@ Select an existing marker then click the trash can icon to delete the marker.
 ![Screenshot of the map with delete marker selected.](../modules/modulesfiles/Mapping_Item_Delete.png)
 
 *Figure 4* Search Address
-Click the magnifying glass icon to open a search address field
-
-#### Drawing a Marker _[Figure 1]_
-![Screenshot of the map with Draw a Marker selected.](../modules/modulesfiles/Mapping_Item_Draw.png)
-
-
-#### Move a Marker _[Figure 2]_
-![Screenshot of the map with Move marker selected.](../modules/modulesfiles/Mapping_Item_Move.png)
-
-
-#### Delete a Marker _[Figure 3]_
-![Screenshot of the map with delete marker selected.](../modules/modulesfiles/Mapping_Item_Delete.png)
-
-#### Search Address _[Figure 4]_
-
-
-#### Drawing a Marker _[Figure 1]_
-![Screenshot of the map with Draw a Marker selected.](../modules/modulesfiles/Mapping_Item_Draw.png)
-
-
-#### Move a Marker _[Figure 2]_
-![Screenshot of the map with Move marker selected.](../modules/modulesfiles/Mapping_Item_Move.png)
-
-
-#### Delete a Marker _[Figure 3]_
-![Screenshot of the map with delete marker selected.](../modules/modulesfiles/Mapping_Item_Delete.png)
-
-#### Search Address _[Figure 4]_
-
+Click the magnifying glass icon to open a search address field.
 ![Screenshot of the map with Search bar selected.](../modules/modulesfiles/Mapping_Item_Search.png)
 
 
@@ -95,12 +63,12 @@ The above image shows a dialog window with field for Marker Label and button to 
 
 
 ## Adding Items to a Page in a Site
-To add a map to a new or existing page, click to edit the page. On the right, under _Add New Block_ , click the  _Map_ tab to add a map to the item [1]. Selecting the tab will open the map block to the page [2]. This block includes customizable features for the map in collapsable panes. Click the triangle to expand or collapse these fields [3]. 
+To add a map to a new or existing page, click to edit the page. On the right, under _Add New Block_ , click the  _Map_ tab to add a map to the item (1). Selecting the tab will open the map block to the page (2). This block includes customizable features for the map in collapsable panes. Click the triangle to expand or collapse these fields (3). 
 
 ![Screenshot of the Page with Map Block selected. Block includes menu options Default View, WMS Overlays and attachments.](../modules/modulesfiles/Mapping_Page_MapBlock.png)
 
 
-* **Default View**: Small white buttons on the left of the map interface set the default view for the map. _[See Figure 5 below.]_
+* **Default View**: Small white buttons on the left of the map interface set the default view for the map. _(See Figure 5 below.)_
     * _Zoom in_: The small white square with a black plus sign. Each click zooms in one step.
     * _Zoom out_: The small white square with black minus sign. Each click zooms out one step.
     * _Set the current view as default view_: The small white square with a target or crosshair symbol. The map will default to a global view. Click to set the current view as the default view.
@@ -108,12 +76,6 @@ To add a map to a new or existing page, click to edit the page. On the right, un
     * _Clear the default center and zoom level_: The small white square with a black "X". Click to clear pan and zoom preferences and return to the initial global view.
 
 * **WMS Overlays**: Add, edit, and delete Web Map Service (WMS) overlays. _(See Figure 6 below.)_
-
-* **WMS Overlays**: Add, edit, and delete Web Map Service (WMS) overlays. _[See Figure 6 below.]_
-
-
-
-* **WMS Overlays**: Add, edit, and delete Web Map Service (WMS) overlays. _[See Figure 6 below.]_
     * _Label_: Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays. 
     * _Base URL_: Add a URL to the WMS map.
     * _Layers_:
@@ -123,14 +85,6 @@ To add a map to a new or existing page, click to edit the page. On the right, un
 * **Attachments**: Markers are added to the map using _Items_. _(See Figure 7 below.)_
     * After Items have been mapped, click _Add Attachment_  (1) to select them from a list on the right (2). Note: This list will only be populated by items that have been mapped.
     * Clicking an item adds it to a list in the Attachments pane (3).
-
-* **Attachments**: Markers are added to the map using _Items_. _[See Figure 7 below.]_
-    * After Items have been mapped, click _Add Attachment_ [1] to select them from a list on the right [2]. Note: This list will only be populated by items that have been mapped.
-    * Clicking an item adds it to a list in the Attachments pane [3].
-
-* **Attachments**: Markers are added to the map using _Items_. _[See Figure 7 below.]_
-    * After Items have been mapped, click _Add Attachment_ [1] to select them from a list on the right [2]. Note: This list will only be populated by items that have been mapped.
-    * Clicking an item adds it to a list in the Attachments pane [3].
     * Click and drag items in this list to reorder them. 
     * Delete items by clicking the red trashcan. 
 
@@ -145,17 +99,7 @@ Add, edit, and delete Web Map Service (WMS) overlays.
 
 *Figure 7*: Adding an Attachment
 After Items have been mapped, click _Add Attachment_  (1) to select them from a list on the right (2). Note: This list will only be populated by items that have been mapped. Clicking an item adds it to a list in the Attachments pane (3).
-
-#### Default View _[Figure 5]_
-![Screenshot of the Default view includes a map with the white buttons described.](../modules/modulesfiles/Mapping_Page_Default.png)
-
-#### WMS Overlays _[Figure 6]_
-![Screenshot of the WMS Overlays with fields and buttons described.](../modules/modulesfiles/Mapping_Page_Overlays.png)
-
-#### Adding an Attachment _[Figure 7]_
-
 ![Screenshot of the map with Add Attachment selected. On the right a list of items.](../modules/modulesfiles/Mapping_Page_Attachments.png)
 
 ### Troubleshooting
 If you would like to remove a map from an item, you must delete all the map modifications. First, click to delete each marker (click the Delete a Marker button, select the marker, click to save) and then click to clear the default center and zoom level (click the Clear the default and zoom level button. The map will return to a global view). Click to save the item and confirm that the map no longer appears.
-
