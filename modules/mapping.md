@@ -56,9 +56,6 @@ The appearance of existing markers may be modified. Click the Marker to open a d
       * Note: the item must have image media attached in order to select an image. 
 
 
-![Screenshot of the map with marker selected.](../modules/modulesfiles/Mapping_Item_Modify.png)
-The above image shows a dialog window with field for Marker Label and button to add Marker Image. To the right, the Marker Image pane includes options to select an image or to add no image
-
 ![Screenshot of the map with marker selected, revealing dialog window with field for Marker Label and button to add Marker Image. To the right, the Marker Image pane includes options to select an image or to add no image.](../modules/modulesfiles/Mapping_Item_Modify.png)
 
 
