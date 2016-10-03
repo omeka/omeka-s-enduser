@@ -7,7 +7,7 @@ For information on installing, see the instructions on the general modules page.
 
 Once installed, the Omeka 2 Importer module should appear toward the bottom of the left navigation menu on the main admin dashboard. When selected, there are sub-menu items for *Import* and *Past Imports*
 
-![Omeka 2 Importer menu options Import and Past Imports](go2i_menu.png)
+![Omeka 2 Importer menu options Import and Past Imports](../modules/modulesfiles/go2i_menu.png)
 
 # Import
 From the Import tab you can start new imports. 
