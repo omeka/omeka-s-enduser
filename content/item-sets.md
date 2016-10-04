@@ -36,6 +36,8 @@ To create a new item set, click the Item Sets tab from the left navigation of th
 
 Item sets may use the same resource templates available for items to provide pre-selected fields. Each set should contain at least one descriptive value, such as Dublin Core Description. 
 
+![Add item set, no properties selected](../content/contentfiles/itemsets_add.png)
+
 In the *Values* tab:
 - You may add text, a resource from the installation, or an external link in each field.  
     * *Text* fields are entered with text, which can include HTML code. The keyboard at the top of the field input indicates text. The globe icon which appears next to it can be used to set language. 
