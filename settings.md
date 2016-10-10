@@ -27,3 +27,9 @@ Note that some hosting setups may require that the domain name for the administr
 *Default Site* dropdown gives you control over where people land they navigate to the base url of your install. You can either display a list of all sites in the install (default) or select a specific site from the dropdown, to which people will be redirected.
 
 *Use HTMLPurifier* checkbox. If checked, the service [HTMLPurifier](http://htmlpurifier.org/) will clean up any user-entered HTML. 
+
+The following two fields relate to setting up [reCAPTCHA](https://www.google.com/recaptcha/intro/index.html) for your site. You will need both a site key and a secret key. Enter them in the corresponding fields after [signing up](https://www.google.com/recaptcha/admin#list) with reCAPTCHA/Google:
+
+*reCAPTCHA site key* enables to display of the widget on your install's sites.
+
+*reCAPTCHA secret key* allows communication between your install and reCAPTCHA's server. 
