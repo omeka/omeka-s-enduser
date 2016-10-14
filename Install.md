@@ -4,7 +4,7 @@ title: Installing
 
 Basic instructions for installing from GitHub can be found in the [https://github.com/omeka/omeka-s/blob/develop/README.md](ReadMe) of the Omeka S github repository.
 
-If you are installing from the released zip file, you can use the instructions on the ReadMe or follow these instructions for [http://bavatuesdays.com/installing-omeka-s-alpha-on-reclaim-hosting-via-command-line/](Installing Omeka S Alpha on Reclaim Hosting via Command Line), by Jim Groom. 
+If you are installing from the released zip file, you can use the instructions on the ReadMe or follow these instructions for [Installing Omeka S Alpha on Reclaim Hosting via Command Line](http://bavatuesdays.com/installing-omeka-s-alpha-on-reclaim-hosting-via-command-line/), by Jim Groom. 
 
 Once you have successfully installed and configured the database.ini file, you can navigate to the location of your Omeka S install.
 
