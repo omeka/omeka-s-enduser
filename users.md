@@ -50,6 +50,7 @@ On the User page of the administrative dashboard, click the trash can icon in th
 
 ## Roles and Permissions
 The following is a detailed breakdown of permissions for each user role:
+
 **Global Admin**
 - All privileges
 
