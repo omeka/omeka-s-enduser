@@ -52,11 +52,13 @@ On the User page of the administrative dashboard, click the trash can icon in th
 The following is a detailed breakdown of permissions for each user role:
 
 **Global Admin**
-- All privileges
+- Full privileges (create, edit, delete) of item, item sets, media, resource templates, site pages, sites, and users.
+- Full privileges for modules - install, activate, configure.
+- Search, read, and create privileges for Vocabularies (cannot delete)
 
 **Site Administrator**
 - Full privileges (create, edit, delete) of item, item sets, media, resource templates, site pages, sites, and users.
-- Browse-only privileges for modules
+- Browse-only privileges for modules in the module tab. Site administrators can interact with active modules where appropriate.
 - Search, read, and create privileges for Vocabularies (cannot delete)
 
 **Editor**
