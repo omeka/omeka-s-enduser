@@ -6,11 +6,11 @@ When a user starts running a process which will take some time, such as an API i
 
 The Jobs table shows a job’s *ID* number, *class* of job, *Status* and the *Owner*, or user who started the job.
 
-To see the details of a job, click on its id number. 
+You can order the rows of the table by ID, Class, Status, or Owner (descending or ascending) using the drop-down menus just above the table on the upper right.
 
 ![Table of jobs including all status messages](/files/jobstable.png)
 
-You can order the rows of the table by ID, Class, Status, or Owner (descending or ascending) using the drop-down menus just above the table on the upper right.
+To see the details of a job, click on its id number. 
 
 On a job’s details page, you will see the following information: 
 - *Status* (In Progress, Error, Completed, Stopped)
