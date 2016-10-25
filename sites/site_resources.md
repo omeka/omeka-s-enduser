@@ -26,7 +26,8 @@ The settings in the Item Pool tab allow you to set the parameters for the pool. 
 * *Search by class*: search by resource Class. 
 * *Search by value*: search for a term or phrase. 
     - The first selector allows you to specify a property to search. 
-    - The second selector allows you to set the relationship the property has exactly, does not have exactly, 
+    - The second selector allows you to set the relationship the property has exactly, does not have exactly, contains, or does not contain the value you enter in the text area.
+    - finally, there is a 
 * *Search by item set*: include all items within a specific item set. This is the only criteria where adding will actually broaden the pool - selecting a second item set will include all items in Item Set A or in Item Set B. 
 
 If you have already set terms for an item pool, the Item Pool page will display a message above the table of search options, with the number of items in the current site pool. The number functions as a link which takes you to an admin-side browse of all the items in the site's item pool. *Note that clicking the link takes you outside of the Sites admin*
