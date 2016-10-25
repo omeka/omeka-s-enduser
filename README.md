@@ -9,7 +9,7 @@ Site map:
 * [Admin Dashboard](/admin-dashboard.md)
 * [Manage Settings](settings.md)
 * [Manage Users](/users.md)
-[Jobs](jobs.md)
+* [Jobs](jobs.md)
 * Content
   * [Items](/content/items.md)
   * [Item Sets](/content/item-sets.md). Manage aggregated groups of items. 
