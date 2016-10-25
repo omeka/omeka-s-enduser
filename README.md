@@ -25,3 +25,6 @@ The documentation is organized in a series of markdown (md) documents. Click on 
 
 ## Sites
 * [Sites](/sites/sites.md)
+
+## Get Help
+For troubleshooting, problem solving, and questions, please post on our [forum](https://forum.omeka.org/c/omeka-s).
