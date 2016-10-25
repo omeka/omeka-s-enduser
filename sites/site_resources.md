@@ -1,7 +1,8 @@
 ---
-title: Sites Item Pool
+title: Site Resources
+date: 25 October 2016
 ---
-
+The 
 The Item Pool determines what automatically appears in the resource selection options on the [pages](../sites/site_pages.md) of your Omeka S [site](../sites/sites.md). It also can also be used to limit the resources which appear on a browse page on your site.
 
 ![The Item Pool tab on site settings has multiple search options, as described below](../sites/sitesfiles/sites_itempool.png)
