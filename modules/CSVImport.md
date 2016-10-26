@@ -21,7 +21,7 @@ Importing
 
 Start an import by clicking on the CSV Importer tab on the left-hand navigation. This will open the Import page. 
 - Using the *Choose File* button, select the file from your computer. 
-- From the *Import Type* dropdown, select whether you're importing *Items* or *Users*
+- From the *Import Type* dropdown, select whether you're importing *Items* or *Users* (scroll down for instructions for each of these types of import)
 - Click the *next* button
 
 ![First page of the CSV Importer process](../modules/modulesfiles/csvimport_choosefile.png)
@@ -33,7 +33,7 @@ has the following fields, none of which are required:
 - *Comment*: make a note on the import.
 - *Resource Template*: select a resource template from the drop-down menu to apply to the imported items
 - *Class*: select a class from the drop-down menu to apply to the imported items
-- *Item Sets*: add the imported items to a specific item set or sets using the select menu
+- *Item Sets*: add the imported items to a specific item set or sets using the select menu (required)
 - *Owner*: set the owner for the Items by selecting  from the drop-down menu.
 - *Multivalue Separator*: enter the multivalue separator character here, if using
       - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon.
@@ -95,7 +95,7 @@ The next page of the Importer has two tabs:
 
 #### Basic Import Settings
 - *Comment*: make a note on the import.
-- *Item Sets*: add the imported items to a specific item set or sets using the select menu
+- *Item Sets*: add the imported items to a specific item set or sets using the select menu (required)
 - *Owner*: set the owner for the Items by selecting  from the drop-down menu.
 - *Multivalue Separator*: enter the multivalue separator character here, if using
       - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon.
