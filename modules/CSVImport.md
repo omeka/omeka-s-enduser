@@ -133,7 +133,7 @@ This will display a table with the following columns:
 - *Status* of import
 - Import *Owner*
 
-![CSV Import past imports table](../modules/modulesfiles/csvimport_pastimports.png)
+![CSV Import past imports table](../modules/modulesfiles/pastImportTable.png)
 
 To see the details of an import, click the Job ID number in its row. This will give you a detailed job page with Status, start and end timestamps, Class, Owner, any Args, and a link to the import log at the bottom of the page. 
 
