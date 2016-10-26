@@ -137,6 +137,10 @@ This will display a table with the following columns:
 
 To see the details of an import, click the Job ID number in its row. This will give you a detailed job page with Status, start and end timestamps, Class, Owner, any Args, and a link to the import log at the bottom of the page. 
 
+Confirm that the content has been imported in the Imported Content column.
+
+![CSV Import past imports table](../modules/modulesfiles/csvimport_added.png)
+
 Undo an Import
 ------------------------
 To undo an import, click on the CSV Importer module tab and select the Past Imports subtab. 
