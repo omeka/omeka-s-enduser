@@ -7,7 +7,7 @@ Administrators manage and create users from the User tab of the main administrat
 
 This Users section displays the user’s email followed by full name in parentheses, as well as their role and the date the account was created.
 
-There are six user roles in OmekaS.
+There are six user roles in Omeka S:
 - Global Admin: full installation privileges
 - Site Administrator: robust site and content privileges
 - Editor (Content Expert): full privileges for content creation
