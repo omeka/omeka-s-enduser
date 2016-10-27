@@ -9,28 +9,38 @@ Once installed, the Omeka 2 Importer module should appear toward the bottom of t
 
 ![Omeka 2 Importer menu options Import and Past Imports](../modules/modulesfiles/o2i_menu.png)
 
-# Import
+## Import
 From the Import tab you can start new imports. 
 
 **Note** You must have API enabled on the source Omeka installation for the importer to work.
 
+### Enter the API
 On the first page of the importer, enter the *Omeka 2 Api Endpoint* - the site URL for the API you wish to access (it should end with api). Make sure you enter the full url, beginning with http, otherwise the importer will not be able to access the items at that site. Click *next*.
+
+![API import field]((../modules/modulesfiles/o2i_enterapi.png)
 
 If you have entered a valid API endpoint, the next page will load with no issue. If you have entered an invalid endpoint, the module will display error messages “Warning: Invalid argument”.
 
-On the second page of the importer there is a block of basic import settings and a table which allows you to map specific Omeka 2 elements to Omeka S properties.
+### Import Settings and Mapping
+On the second page of the importer there are tabs for basic import settings, mapping Omeka Classic elements to Omeka S properties, and mapping Omeka Classic item types to Omeka S classes. 
 
-**Basic Import Settings**
+Move between all three tabs to ensure that the data is mapped as you want and the settings are correct before clicking Import.
+
+Clicking the Start Over button will take you back to the API import url field.
+
+#### Basic Import Settings
 * *Omeka 2 Api Key*: This field can either be blank or filled, depending on whether you have an API key for the site you are attempting to import data from.  
 * *Comment*: You can add a comment such as “Jane Doe’s API, no key” to help identify the specific import when viewing previous imports.  
-* *Import Into*: This option allows you to select a specific item set in which to import the items.   
+* *Import Into*: This option allows you to select the item set into which you want to import the items.   
 * *Import Collections*: Check this box if you wish to import the collections from the Omeka 2 site to the Omeka S site.
 
 ![Basic options for importing Omeka2](../modules/modulesfiles/o2i_basic.png)
 
+#### Map to Omeka S Properties
+
 The tables for mapping show the *Omeka 2 Element*, the *Mapped Properties* and a checkbox option to *Import as HTML Media*. There are tables for *Dublin Core*, *Item Type Metadata*, any other element sets in your Omeka 2.x installation, and a table to map Omeka 2 Item Types to Omeka S Resource Classes.
 
-![Some of the mapped elements](../modules/modulesfiles/o2i_importele.png)
+![Map Omeka ](../modules/modulesfiles/o2i_mapprop.png)
 
 Most properties will automatically map. To clear the default mapping, click the *Clear Defaults* button. 
 
