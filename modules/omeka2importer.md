@@ -1,3 +1,4 @@
+---
 title: Omeka 2 Importer
 ---
 
@@ -9,7 +10,8 @@ Once installed, the Omeka 2 Importer module should appear toward the bottom of t
 
 ![Omeka 2 Importer menu options Import and Past Imports](../modules/modulesfiles/o2i_menu.png)
 
-## Import
+Import
+-------------
 From the Import tab you can start new imports. 
 
 **Note** You must have API enabled on the source Omeka installation for the importer to work.
@@ -59,7 +61,8 @@ To remove a mapping, click the delete (trash can) icon in the element/property r
 
 When you have finished customizing the mapping, click the *Import* button in the upper right corner of the window.
 
-# Manage Past Imports
+Manage Past Imports
+----------------------------------
 The past imports section of the module allows you to view previous API imports.
 
 Each import is a row. The table has the following columns.
