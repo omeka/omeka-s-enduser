@@ -39,26 +39,38 @@ Clicking the Start Over button will take you back to the API import url field.
 ![Basic options for importing Omeka2](../modules/modulesfiles/o2i_basic.png)
 
 #### Map to Omeka S Properties
+This tab features a table for mapping between Omeka @ elements and Omeka S properties. 
 
-The tables for mapping show the *Omeka 2 Element*, the *Mapped Properties* and a checkbox option to *Import as HTML Media*. There are tables for *Dublin Core*, *Item Type Metadata*, any other element sets in your Omeka 2.x installation, and a table to map Omeka 2 Item Types to Omeka S Resource Classes.
-
-![Map Omeka ](../modules/modulesfiles/o2i_mapprop.png)
-
-Most properties will automatically map. To clear the default mapping, click the *Clear Defaults* button. 
-
+The Import module will automatically map many properties, but you may want to review the mapping in case you need to add or edit the automatic mapping. 
 Custom item type elements may not map; you will need to manually map them. 
 
-![Some of the mapped classes](../modules/modulesfiles/o2i_importcl.png)
+To clear the default mapping, click the *Clear Defaults* button. 
+
+The columns of the table are *Omeka 2 Element*, *Mapped Properties* and a checkbox option to *Import as HTML Media*. 
+![Map Omeka properties](../modules/modulesfiles/o2i_mapprop.png)
+
+The first set of the table is Dublin Core, followed by Item Type Metadata, but the import will also bring in any legacy or additional element sets (for example Omeka Legacy File).
 
 To map:
-1. Select the element or item type in the table by click on its row.
-1. In the  right-hand drawer, either click through or search for the property or class to which you want to map your element. 
-1. Click on the property or class in the drawer to map it. 
+1. Select the element or item type in the table by clicking on its row or label.
+1. In the  right-hand drawer, either click through or search for the property to which you want to map your element. 
+1. Click on the property in the drawer to map it. 
 
-![Mapping the element Date of Birth to the foaf property “birthday”, showing the mapped relationship.](../modules/modulesfiles/o2i_mappping.png)
+![Mapping the element Date of Birth to the foaf property “birthday”, showing the mapped relationship.](../modules/modulesfiles/o2i_mapping.png)
 
 To remove a mapping, click the delete (trash can) icon in the element/property row.
 
+#### Map to Omeka S Classes
+In this tab you map Omeka Classic Item Types to Omeka S Resource Classes. You can select from the classes for any of the installed vocabularies.  
+
+To map:
+1. Select the item type in the table by clicking on its row or label.
+1. In the  right-hand drawer, either click through or search for the resource class to which you want to map your element. 
+1. Click on the resource class in the drawer to map it. 
+
+
+
+### Complete Import
 When you have finished customizing the mapping, click the *Import* button in the upper right corner of the window.
 
 Manage Past Imports
