@@ -9,8 +9,8 @@ The following is a list of modules available for OmekaS either produced by the O
 * [Custom Vocab](../modules/customvocab.md): create controlled vocabulary for a particular property to use when describing a resource.
 * [DSpace Connector](../modules/dspaceconnector.md): connects to a DSpace repostiory in order to import items.
 * [Fedora Connector](../modules/fedoraconnector.md): connects to a Fedora repostiory in order to import items.
-* [Mapping](../mapping.md): geolocate resources and add maps to your sites.
-* [Metadata Browse](../metadatabrowse.md): browse all resources that share a value for a particular property.
+* [Mapping](../modules/mapping.md): geolocate resources and add maps to your sites.
+* [Metadata Browse](../modules/metadatabrowse.md): browse all resources that share a value for a particular property.
 * [Omeka2 Importer](../modules/omeka2importer.md): import content from an Omeka Classic installation.
 * [Sharing](../modules/sharing.md): add buttons to sites for sharing content on social media, via email, and via embed codes.
 * [Zotero Import](../modules/zoteroimport.md): imports content from your Zotero library into the Omeka S install.
