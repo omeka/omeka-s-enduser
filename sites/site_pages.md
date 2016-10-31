@@ -48,6 +48,12 @@ Change the order of blocks by clicking on the three horizontal lines on the uppe
 
 Some modules may create additional blocks for your site pages. For information on working with these blocks, please see the documentation for that [module](../modules/modules.md)
 ## Page Blocks
+### HTML: 
+Creates an HTML box in which you can add formatted text and links.
+
+![Page block for HTML content](../sites/sitesfiles/sitepg_html.png)
+### Page Title
+Displays the title of the current page.
 ### Media
 Creates a block with one or more pieces of media associated with items in the item pool. 
 
@@ -112,10 +118,7 @@ This block displays an item along with all associated metadata (entered when cre
 
 ![Item with metadata block with nothing attached](../sites/sitesfiles/sitepg_iwm.png)
 
-### HTML: 
-Creates an HTML box in which you can add formatted text and links.
-
-![Page block for HTML content](../sites/sitesfiles/sitepg_html.png)
+For module-specific blocks (like [Collecting](../modules/collecting.md) or [Map](../modules/mapping.md)) see the documentation for that module.
 
 ## Deleting Pages
 To delete a page, go the to *Pages* tab of the site of which the page is a part. Click the delete (trash can) button at the right end of the row for that page. 
