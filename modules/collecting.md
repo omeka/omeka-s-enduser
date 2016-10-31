@@ -136,4 +136,10 @@ To add a collecting form to a page:
 
 Managing Collected Items
 ----------------
+Items added via a collecting form will appear in the Items section of the Admin Dashboard, but you will likely find it easier to manage them through the Collecting tab of the site to which through which they were collected. 
 
+To see the items collected with a specific form, go to the Collecting tab in the context menu for the site and click on the form label. Then click the *Collected Items* tab.
+
+![Collected Items tab with a number of items](../modules/modulesfiles/collecting_items.png)
+
+This tab has a table of collected items with their: Title, the Date Submitted, Reviewed By, Status, and ellipses (three dots) 
