@@ -24,7 +24,7 @@ The Add Collecting Form page has two sections: the first has a set of fields and
 - *Label*: name the collecting form. The label will appear as a header above the form on the public side, so the label should be descriptive and helpful to both you and site visitors. 
 - *Item Set*: select the item set to which you want to add collected items.
 - *Anonymity Type*: a dropdown with three options:
-     - "User sets own anonymity":users can decide whether they contribute anonymously and whether their items can be published).
+     - "User sets own anonymity": users can decide whether they contribute anonymously and whether their items can be published).
      - "User Public and User Name inputs are publicly visible": both the user's name and their items will be made public
      - "User Public and User Name inputs are private": both inputs remain public. 
  - *Success Text*: the message that displays on a new page if the item is successfully collected.
