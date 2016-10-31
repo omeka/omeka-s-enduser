@@ -118,6 +118,7 @@ This block displays an item along with all associated metadata (entered when cre
 
 ![Item with metadata block with nothing attached](../sites/sitesfiles/sitepg_iwm.png)
 
+### Other blocks
 For module-specific blocks (like [Collecting](../modules/collecting.md) or [Map](../modules/mapping.md)) see the documentation for that module.
 
 ## Deleting Pages
