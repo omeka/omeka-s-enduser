@@ -103,12 +103,18 @@ Rearrange the order of prompts by dragging and dropping them using the three-lin
 
 ![Prompts with a red arrow pointing to the icon for dragging and dropping](../modules/modulesfiles/collecting_dragthis.png)
 
-### Edit existing form
-Once you have at least one Collecting form, they will appear on the Collecting Forms page. Click the edit button (pencil) to edit the form. 
+### Manage an existing form
+Once you have at least one Collecting form, they will appear on the Collecting Forms page. Click the edit button (pencil) to edit the form. Click on the form label to see more information about the form and view collected items.
 
-![collecting form page with red arrow pointing to the edit button for the form "Share a Quote"](../modules/modulesfiles/collecting_edit1.png)
+The form page has two tabs: Form Information and Collected Items
 
-The options are in the form settings are the same as when adding a form. 
+Form tabs show you the existing data for label, anonymity type, and item set, along with a table of all of the prompts, in order, with their type, text, and whether they prompt is required. 
+
+![Form info page for "share a quote" form](../modules/modulesfiles/collecting_forminfo.png)
+
+To edit the form, click the *Edit form* button in the upper right hand corner.
+
+The options are in the edit form page are the same as when adding a form. 
 
 To edit a prompt, click the edit button (pencil) for the prompt. This will open the sidebar drawer for that prompt.
 
@@ -124,4 +130,10 @@ Add a Collecting Form to Site Pages
 To add a collecting form to a page:
 1. Go to the page on which you want the form to appear (or add a new page for the form)
 2. From the *Add New Block* sidebar select the *Collecting* block
-3. On the Collecting block, 
+3. On the Collecting block, click the box for the form you want to include. You can add more than one form to the page by checking more than one box.
+
+![Collecting block with one form, its box checked](../modules/modulesfiles/collecting_pageblock.png)
+
+Managing Collected Items
+----------------
+
