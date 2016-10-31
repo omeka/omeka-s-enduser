@@ -27,8 +27,8 @@ The Add Collecting Form page has two sections: the first has a set of fields and
      - "User sets own anonymity": users can decide whether they contribute anonymously and whether their items can be published).
      - "User Public and User Name inputs are publicly visible": both the user's name and their items will be made public
      - "User Public and User Name inputs are private": both inputs remain public. 
- - *Success Text*: the message that displays on a new page if the item is successfully collected.
- - *Email text*: the message in the email that will be sent to site visitors who submit an item, if you collect an email address from them.
+- *Success Text*: the message that displays on a new page if the item is successfully collected.
+- *Email text*: the message in the email that will be sent to site visitors who submit an item, if you collect an email address from them.
 
 #### Prompts
 Prompts are listed in a table which gives their *Type* and the display *Text* on the public form. These prompts make up the form which site visitors will see (in addition to the label, discussed above).
