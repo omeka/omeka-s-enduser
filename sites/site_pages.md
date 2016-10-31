@@ -23,13 +23,18 @@ Once you have entered this information, click the Add button in the upper right 
 
 ## Editing Pages  
 After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page *title* will take you to the public view of that page. On the right hand side you can choose to add a new block by selecting one of the following layouts: 
-- Media 
-- Browse Preview 
-- Item Showcase 
-- Table of Contents 
+- HTML
+- Page Title
+- Media
+- Browse Preview
+- Item Showcase
+- Table of Contents
 - Line Break
 - Item with Metadata
-- HTML
+
+If you have the relevant modules installed, you may also have:
+- Map
+- Collecting
 
 ![A page in edit view, with one media block added](../sites/sitesfiles/sitepg_edit.png)
 
