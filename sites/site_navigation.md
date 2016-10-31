@@ -20,7 +20,9 @@ Or you can add one of your [pages](../sites/site_pages.md), which should be list
 
 ![URL block with the label “RRCHNM” and url chnm.gmu.edu](../sites/sitesfiles/sitenav_url.png) URL Block
 
-**Browse** blocks create a browse page for content already associated with your site (assigned to existing pages and in the item pool). You can change the *label* of the block to reflect what, specifically, site visitors will browse. 
+**Browse** blocks create a browse page for [resources](../sites/site_resources.md) already associated with your site. There are blocks to create a browse items page and a block to browse item sets.  
+
+You can change the *label* of the block to reflect what, specifically, site visitors will browse. 
 
 If you want to refine the Browse block, you can use the Query to create a search query that returns the desired results. 
 
@@ -45,10 +47,15 @@ You can arrange your navigation links by dragging and dropping them into your pr
 
 ![The block for Custard Page 2 - the child page - hovering over the block for Opening Page - the parent block.](../sites/sitesfiles/sitenav_drop.png) In this image, Custard page 2 is the child link; Opening Page will be the parent link, as indicated by the small black triangle on the left
 
-OmekaS allows for multiple levels of nested navigation.
+Omeka S allows for multiple levels of nested navigation.
 
 ## Deleting Navigation
 To delete a link from the navigation, click the delete (trash can) icon and then click *Save*. If you accidentally click the delete icon, you can click the undo (back looped arrow) icon before click save to cancel the deletion.
 
 ![Two link blocks, one of which is highlighted in red and marked for deletion](../sites/sitesfiles/sitenav_del.png) 
+
 In this image, the delete icon for browse has been clicked; the block now displays the undo button instead
+
+NOTE: Deleting a parent block from the navigation will also delete any child blocks. 
+
+![Parent and child block marked for deletion](../sites/sitesfiles/sitenav_del2.png) 
