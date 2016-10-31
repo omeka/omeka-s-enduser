@@ -20,7 +20,7 @@ The Add Collecting Form page has two sections: the first has a set of fields and
 
 ![Add Collecting Form page](../modules/modulesfiles/collecting_addform.png)
 
-**Fields and Settings:**
+#### Fields and Settings
 - *Label*: name the collecting form. The label will appear as a header above the form on the public side, so the label should be descriptive and helpful to both you and site visitors. 
 - *Item Set*: select the item set to which you want to add collected items.
 - *Anonymity Type*: a dropdown with three options:
@@ -30,7 +30,7 @@ The Add Collecting Form page has two sections: the first has a set of fields and
  - *Success Text*: the message that displays on a new page if the item is successfully collected.
  - *Email text*: the message in the email that will be sent to site visitors who submit an item, if you collect an email address from them.
 
-**Prompts**
+#### Prompts
 Prompts are listed in a table which gives their *Type* and the display *Text* on the public form. These prompts make up the form which site visitors will see (in addition to the label, discussed above).
 
 To add a new prompt, click the *Add prompt* button just below the Prompts header. This will open a side drawer with a dropdown to select prompt type.
@@ -41,7 +41,87 @@ On selection, the options for that type will load in the sidebar for you to edit
 
 The Collecting module has Prompt Types with options as follows:
 
-*Item Property*: a property from the installation's vocabularies. Options:
-     - Property: select a property from the vocabularies (example: Description)
-     - Prompt Text: If you want the prompt to be something other than the property label.
-     - Input type: options are "text boxs
+**Item Property**: select a property from the installation's vocabularies for the visitor to use to describe the item.
+- Property: select a property from the vocabularies (example: Description)
+- Prompt Text: If you want the prompt to be something other than the property label.
+- Input type: length and kind of input box. Choose from:
+     - Text box (one line)
+     - Text box (multiple line)
+     - Select menu (dropdown)
+	     - If you choose "Select menu," you will need to enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
+ - Required? check if this field should be required.
+
+![Item Property prompt with a select menu input type](../modules/modulesfiles/collecting_itemprop.png)
+
+**Item Media** allows visitors to add media to their item.
+- Media Type: options are 
+	- Map (requires Mapping module); 
+	- URL
+	- HTML
+	- Upload
+- Prompt Text: If you want the prompt to be something other than the property label.
+- Required? check if the media should be required
+
+**Item Supplementary** additional information for the item, not linked to any particularly vocabulary or property.
+- Prompt Text: If you want the prompt to be something other than the property label.
+- Input type: length and kind of input box. Choose from:
+     - Text box (one line)
+     - Text box (multiple line)
+     - Select menu (dropdown)
+	     - If you choose "Select menu," you will need to enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
+ - Required? check if this field should be required.
+
+**User Name** which will be used to assign the item owner. If the person using the form is a logged-in user of the Omeka S installation, this will autopopulate.
+- Prompt Text: If you want the prompt to be something other than the property label.
+- Required? check if this field should be required.
+
+**User Email** where the person adding the item can give their email. If this is left blank, they will not receive an email with the text in the *Email Text* field.
+- Prompt Text: If you want the prompt to be something other than the property label.
+- Required? check if this field should be required.
+
+**User Private** collect additional information from the user which will be kept private
+- Prompt Text: If you want the prompt to be something other than the property label.
+- Input type: length and kind of input box. Choose from:
+     - Text box (one line)
+     - Text box (multiple line)
+     - Select menu (dropdown)
+	     - If you choose "Select menu," you will need to enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
+ - Required? check if this field should be required.
+
+**User Public** collect additional information from the user which can be made public
+- Prompt Text: If you want the prompt to be something other than the property label.
+- Input type: length and kind of input box. Choose from:
+     - Text box (one line)
+     - Text box (multiple line)
+     - Select menu (dropdown)
+	     - If you choose "Select menu," you will need to enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
+ - Required? check if this field should be required.
+
+**HTML** insert a block of HTML text into the form, for additional guidance, information, etc. The Prompt Text field for this prompt has WYSIWG formatting options.
+
+Rearrange the order of prompts by dragging and dropping them using the three-line icon on the far left of the Prompt Type label.
+
+![Prompts with a red arrow pointing to the icon for dragging and dropping](../modules/modulesfiles/collecting_dragthis.png)
+
+### Edit existing form
+Once you have at least one Collecting form, they will appear on the Collecting Forms page. Click the edit button (pencil) to edit the form. 
+
+![collecting form page with red arrow pointing to the edit button for the form "Share a Quote"](../modules/modulesfiles/collecting_edit1.png)
+
+The options are in the form settings are the same as when adding a form. 
+
+To edit a prompt, click the edit button (pencil) for the prompt. This will open the sidebar drawer for that prompt.
+
+![Prompts with a red arrow pointing at the column of edit buttons](../modules/modulesfiles/collecting_edit2.png)
+
+Rearrange the order of prompts by dragging and dropping them using the three-line icon on the far left of the Prompt Type label.
+
+![Prompts with a red arrow pointing to the icon for dragging and dropping](../modules/modulesfiles/collecting_dragthis.png)
+
+
+Add a Collecting Form to Site Pages
+------------------------------------
+To add a collecting form to a page:
+1. Go to the page on which you want the form to appear (or add a new page for the form)
+2. From the *Add New Block* sidebar select the *Collecting* block
+3. On the Collecting block, 
