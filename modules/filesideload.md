@@ -32,7 +32,7 @@ The File Sideload module has two configuration options.
 
 If unchecked, the files will remain in the directory, and available to be added as media to any item, until you manually remove them using an ftp or shell client.
 
-![A red arrow points to the configure button](../modules/modulesfiles/filesideload_config.png)
+![A red arrow points to the configure button](../modules/modulesfiles/filesideload_config2.png)
 
 Add a sideload file to an item
 ------------------------------
