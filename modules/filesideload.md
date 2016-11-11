@@ -46,4 +46,4 @@ Clicking on the button adds a Sideload media block. There are two fields:
 - *Title*: Give the media file a new title (optional)
 - *File*: select a file from this dropdown menu. The menu will load the file names as they appear in the directory. Select one from the dropdown and save changes.
 
-![Sideload media options with the dropdown open, displaying file names](../modules/modulesfiles/fiesideload_addfile.png)
+![Sideload media options with the dropdown open, displaying file names](../modules/modulesfiles/filesideload_addfile.png)
