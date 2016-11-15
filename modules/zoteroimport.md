@@ -21,8 +21,7 @@ You may also want to have the id for a specific collection and an API key to imp
 
 To import, go to the Zotero Import tab on the left-hand navigation of the admin dashboard of your Omeka S install. This will automatically take you to the Import tab.
 
-
-![Zotero Import options](../modules/modulesfiles/mods_zoteroim.png)
+![Zotero Import options](../modules/modulesfiles/zoteroimport_new.png)
 
 To import from a Zotero library:
 * Choose an Item Set for imported items (required); 
@@ -34,5 +33,25 @@ To import from a Zotero library:
 *  Choose “Added After”. Only import items that have been added to Zotero after this datetime.
 * Hit Submit.
 
-You can track the status of the import by navigating to the Browse Imports tab from the Zotero Import page or on the [Jobs](../jobs.md) tab of the left-hand navigation on the admin dashboard.
+The page will load on the Past Imports tab with a message "Importing from Zotero". To check the status of the import, reload the page or click to the [Jobs](../jobs.md) tab of the left-hand navigation on the admin dashboard.
 
+![Screen with successful import message and a single import running](../modules/modulesfiles/zoteroimport_starting.png)
+
+Managing Past Imports
+---------------------------------
+To view and manage past imports, click ont he Zotero Import tab in the left-hand navigation, and then click on the "Past Imports" tab.
+
+![red arrow points to past imports tab](../modules/modulesfiles/zoteroimport_pasttab.png)
+
+The Past Imports shows a table of previous imports, whether successful, failed on error, or undone. The table has the following columns:
+- *Zotero Library* giving the User or Group library name;
+- The *Undo* button, which is a counter-clockwise curved arrow;
+- *Items Added Before* the date of the import;
+- *Job Status* current status of job. Clicking on the text of a job status will take you to that job's page;
+- *Item count* the number of items added in the import.
+
+To Undo an import, click the *Undo* button to the left of the *Items Added Before* timestamp. This will open a sidebar dialog asking you to confirm that you want to undo the import and delete all imported items. Click *Confirm* to continue. 
+
+![past imports tab with sidebar open to confirm undo](../modules/modulesfiles/zoteroimport_undo.png)
+
+Past Imports which have already been undone will have a job status "Undo Import Completed".
