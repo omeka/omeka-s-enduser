@@ -19,7 +19,7 @@ You may also want to have the id for a specific collection and an API key to imp
 
 ## Import Data
 
-To import, go to the Zotero Import tab on the left-hand navigation of the admin dashboard of your Omeka S install. This will automatically take you to the Import tab.
+To import, go to the Zotero Import tab on the left-hand navigation of the admin dashboard of your Omeka S install. This will automatically take you to the Import sub-tab, also in the left-hand navigation.
 
 ![Zotero Import options](../modules/modulesfiles/zoteroimport_new.png)
 
@@ -35,11 +35,9 @@ To import from a Zotero library:
 
 The page will load on the Past Imports tab with a message "Importing from Zotero". To check the status of the import, reload the page or click to the [Jobs](../jobs.md) tab of the left-hand navigation on the admin dashboard.
 
-![Screen with successful import message and a single import running](../modules/modulesfiles/zoteroimport_starting.png)
-
 Managing Past Imports
 ---------------------------------
-To view and manage past imports, click ont he Zotero Import tab in the left-hand navigation, and then click on the "Past Imports" tab.
+To view and manage past imports, click on the Zotero Import tab in the left-hand navigation, and then click on the "Past Imports" sub-tab.
 
 ![red arrow points to past imports tab](../modules/modulesfiles/zoteroimport_pasttab.png)
 
