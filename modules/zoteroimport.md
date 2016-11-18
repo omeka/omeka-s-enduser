@@ -30,8 +30,11 @@ To import from a Zotero library:
 * Enter a collection key (not required); 
 * Enter your API key to import private data and/or files (optional for import but necessary to import files)
 * Choose whether to import files. The API key is required to import files.
+		* HTML page snapshots will be imported as zip files. 
 *  Choose “Added After”. Only import items that have been added to Zotero after this datetime.
 * Hit Submit.
+
+A note on files: The rules for importing an item are the same as creating an item in Omeka, so if your Zotero library has files which are a disallowed media type, the items will not be imported.
 
 The page will load on the Past Imports tab with a message "Importing from Zotero". To check the status of the import, reload the page or click to the [Jobs](../jobs.md) tab of the left-hand navigation on the admin dashboard.
 
