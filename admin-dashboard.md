@@ -57,6 +57,6 @@ Note that users with more limited permissions will see only some of these naviga
 System Information
 -------------------------------
 
-In the bottom right corner is a short display of the current version of Omeka S, along with a link to further System Information. 
+In the bottom right corner is a short display of the current version of Omeka S. Click the link labelled *System Information* to see a full page with details.
 
 ![Example system information page](/files/systeminfo.png)

@@ -62,7 +62,7 @@ Using the buttons on the *Add New Media* menu on the right side of the screen, s
 ![“Add new media” dropdown showing the options](../content/contentfiles/items_mediaadd.png)
 
 - *Upload*: select a file to upload from your computer.
-- *URL*: add a link to a website or web resource.
+- *URL*: import media via a uri.
 - *oEmbed*: insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7) - use the url in your browser’s location bar.
 - *YouTube*: add a link to embed a YouTube video. Use the url from your browser’s location bar (with `/watch/` in it) rather than the `youtu.be` link.
 - *HTML*: add html content as a media resource for your item.

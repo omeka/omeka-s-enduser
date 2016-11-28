@@ -40,37 +40,52 @@ When you are ready, click the *Add* button in the upper right corner. Once the p
 
 ## Manage a site
 To manage a site, navigate to the *Sites* tab from the Omeka S Admin Dashboard. Click either on the site’s title or the edit (pencil) button in the list of sites. 
- 
-The admin show page for a site, you can see the URL Slug, Title, and current Theme for the site. 
 
-![Sites show page, displaying summary information](../sites/sitesfiles/sites_show.png)
+This will take you to the Site Info page, and open the context menu for that site in the left hand navigation. 
+
+The context menu for every site has the site title at the top, with an icon of a computer (the site icon) to the right. To the left of the site title is a view button (box with escaping arrow). Clicking the view button will open the public side of the site in a new window.
+
+![Context menu for the site Jane Austen, with two modules installed](../sites/sitesfiles/sites_menu.png)
 
 Site admin left hand navigation options are: 
 - *Site Info*, (see below)
 - *[Pages](../sites/site_pages.md)*, 
 - *[Navigation](../sites/site_navigation.md)*, 
-- *[Item Pool](../sites/site_itempool.md)*,
+- *[Resources](../sites/site_resources.md)*,
 - *User Permissions*, (see below)
-- *Theme* (see below)
+- *[Theme Settings](../sites/site_themesettings.md)*,
 - *Settings*. (see below)
 
-The standard options in the left hand navigation of the Omeka S Admin (items, item sets, etc) are still available under the *Global Navigation* header. Click the words *Global Navigation* or the small orange arrow to reveal the standard left-hand navigation menu options.
+Any modules which you have installed that have site-specific settings will appear below the site Settings tab in the site's context menu. In the image above, the modules Metadata Browse and Collecting are installed.
+
+The standard options in the left hand navigation of the Omeka S Admin (items, item sets, etc) are still available below the site context menu. 
 
 ## Site Info 
-The site info settings for an Omeka S site are where you can change the *URL slug*, site *Title*, and *theme*. 
+The site info settings for an Omeka S site are where you can change the basic info for the site:
+* *title* (text)
+* *slug* (text)
+* *theme* (dropdown)
 
 ![Site info for the site “Jane Austen” with buttons across the top to View, Delete, and Save the site](../sites/sitesfiles/sites_siteinfo.png)
 
-From this tab you can use the the *make public/private* button (eye icon) to set whether the site is visible to the public or only to users of the Omeka S system. 
+In the upper right hand corner of the window on this tab, you can use buttons to:
+- *Public/Private button* (see below);
+- *View* the public side of the site;
+- *Delete* the site;
+- *Save* changes.
 
-![make public button showing an eye icon](../content/contentfiles/item_public.png) Public 
+The *make public/private* button (eye icon) is used to both indicate and set whether the site is visible to the public or only to users of this Omeka S installation 
+Site is public:
+![make public button showing an eye icon](../content/contentfiles/item_public.png) 
 
-![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)  Private
+Site is Private:
+![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)
 
 ## See also: 
 * [Site Pages](../sites/site_pages.md)
 * [Site Navigation](../sites/site_navigation.md)
-* [Site Item Pool](../sites/site_pages.md)
+* [Site Resources](../sites/site_resources.md)
+* [Theme Settings](../sites/site_themesettings.md)
 
 ## Managing User Permissions
 To add a user to a site, navigate to the *User Permissions* tab.
@@ -87,13 +102,6 @@ Then select their role from the dropdown:
 *Admin*: user has full administrative privileges for the site, including adding users and deleting the site.
 
 Once you've added one or more users, click the Save button located in the upper right hand corner. You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon on their row.
-
-## Theme
-This tab allows you to customize theme settings for the site.
-
-![Theme settings with Top Navigation depth at 0](../sites/sitesfiles/sites_theme.png)
-
-The setting *Top Navigation Depth* allows you the limit the depth of the top navigation menu on the public side of the site.  The default setting, 0, does not restrict the number of levels of the top navigation menu. Setting it to one would only show the top-level pages or links of your site.
 
 ## Settings
 This tab allows you to configure settings for the site overall.
