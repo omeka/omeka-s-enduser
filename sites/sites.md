@@ -53,7 +53,7 @@ Site admin left hand navigation options are:
 - *[Navigation](../sites/site_navigation.md)*, 
 - *[Resources](../sites/site_resources.md)*,
 - *User Permissions*, (see below)
-- *[Theme Settings](../sites/site_themesettings.md)*,
+- *[Theme](../sites/site_themesettings.md)*,
 - *Settings*. (see below)
 
 Any modules which you have installed that have site-specific settings will appear below the site Settings tab in the site's context menu. In the image above, the modules Metadata Browse and Collecting are installed.
