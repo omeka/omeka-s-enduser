@@ -24,7 +24,6 @@ The Add New Site page has three tabs: Site Info, Theme, and Item Pool.
 On the **Site Info** tab:
 * Give your site a *title* (required)
 * create a *slug* for the site’s url. The url will be *installurl/site/slug*. This is optional - if you leave this field blank, Omeka S will create a slug based on the site title.
-<<<<<<< HEAD
 
 ![Site info tab](
 
@@ -33,8 +32,6 @@ On the **Theme** tab, select from the installed themes. Each theme appears as a 
 ![Theme tab with one theme selected]
 
 On the **Item Pool** tab, you can set up the [item pool](../sites/site_resources.md#item-pool.md) for the site.
-=======
->>>>>>> origin/develop
 
 In the upper right hand corner of the screen, next to the *Add* button, you can set the visibility of your site using the the *make public/private* button (eye icon).
 
@@ -61,11 +58,7 @@ Site admin left hand navigation options are:
 - *[Navigation](../sites/site_navigation.md)*, 
 - *[Resources](../sites/site_resources.md)*,
 - *User Permissions*, (see below)
-<<<<<<< HEAD
 - *[Theme](../sites/site_theme.md)*
-=======
-- *[Theme](../sites/site_themesettings.md)*,
->>>>>>> origin/develop
 - *Settings*. (see below)
 - Modules, if installed.
 
