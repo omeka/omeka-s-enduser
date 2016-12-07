@@ -3,7 +3,9 @@ title: Site Theme Settings
 date: 25 October 2016
 ---
 
-The theme for the site is selected in the [site info](../sites/sites.md#site-info) tab of your site. This tab allows you to customize theme settings for the site.
+The theme for the site is selected in the Theme tab of your site. This tab allows you to customize theme settings for the site.
+
+![Theme options page with Cozy theme selected.](../sites/sitesfiles/sitetheme_menu.png)
 
 Depending on which theme you have selected, you may see any of the following setting options:
 
@@ -30,6 +32,7 @@ To upload a logo, click the Select button. This will open a sidebar where you ca
 ![Logo option with sidebar open](../sites/sitesfiles/sitetheme_logo2.png)
 
 Note that the logo completely replaces the header, including the site title, for the site, so you may want to consider an image with text if it is important to you that users see the site title.
+
 
 To remove a logo, click the *clear* button in that block (only visible when a logo is active) and save changes.
 

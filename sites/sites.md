@@ -12,7 +12,7 @@ The manage sites page displays a table with all the sites for the installation, 
 
 Each row gives the title of a site, options to *view* (box with outward arrow), *edit* (pencil), or *delete* (trash can), and displays the owner of the site. *Only global admins and site owners can delete a site.*
 
-Clicking on the site title will take you to a summary page for the site which displays the site’s *url slug, title,* and *theme*. , from which you can return to the site list using a button on the left side of the scree, or *edit* or *view* the site using buttons in the upper right 
+Clicking on the site title will take you to a summary page for the site which displays the site’s *url slug,* and *title,* from which you can return to the site list using a button on the left side of the scree, or *edit* or *view* the site using buttons in the upper right 
 
 ![show page for the site “What Does This Look Like” indicating that the theme is default and the slug is public views.](../sites/sitesfiles/sites_quickshow.png)
 
@@ -24,6 +24,7 @@ The Add New Site page has three tabs: Site Info, Theme, and Item Pool.
 On the **Site Info** tab:
 * Give your site a *title* (required)
 * create a *slug* for the site’s url. The url will be *installurl/site/slug*. This is optional - if you leave this field blank, Omeka S will create a slug based on the site title.
+<<<<<<< HEAD
 
 ![Site info tab](
 
@@ -32,6 +33,8 @@ On the **Theme** tab, select from the installed themes. Each theme appears as a 
 ![Theme tab with one theme selected]
 
 On the **Item Pool** tab, you can set up the [item pool](../sites/site_resources.md#item-pool.md) for the site.
+=======
+>>>>>>> origin/develop
 
 In the upper right hand corner of the screen, next to the *Add* button, you can set the visibility of your site using the the *make public/private* button (eye icon).
 
@@ -58,7 +61,11 @@ Site admin left hand navigation options are:
 - *[Navigation](../sites/site_navigation.md)*, 
 - *[Resources](../sites/site_resources.md)*,
 - *User Permissions*, (see below)
+<<<<<<< HEAD
 - *[Theme](../sites/site_theme.md)*
+=======
+- *[Theme](../sites/site_themesettings.md)*,
+>>>>>>> origin/develop
 - *Settings*. (see below)
 - Modules, if installed.
 
@@ -90,7 +97,7 @@ Site is Private:
 * [Site Pages](../sites/site_pages.md)
 * [Site Navigation](../sites/site_navigation.md)
 * [Site Resources](../sites/site_resources.md)
-* [Theme Settings](../sites/site_themesettings.md)
+* [Theme](../sites/site_themesettings.md)
 
 ## Managing User Permissions
 To add a user to a site, navigate to the *User Permissions* tab.
