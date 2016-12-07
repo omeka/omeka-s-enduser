@@ -21,18 +21,18 @@ To create a site, click the *Add new site* button in the upper right-hand corner
 
 The Add New Site page has three tabs: Admin, Theme, and Item Pool.
 
-### The Admin tab:
+### The Admin tab
 * Give your site a *title* (required)
 * create a *slug* for the site’s url. The url will be *installurl/site/slug*. This is optional - if you leave this field blank, Omeka S will create a slug based on the site title.
 
 ![Admin tab for a new site with nothing entered](../sites/sitesfiles/sitesadd_admin.png)
 
-### The **Theme** tab
+### The Theme tab
 Select from the installed themes. Each theme appears as a button with a screenshot of the theme, the theme name, and a link to its creator. When a theme is selected, it will highlight slightly in gray and a checkbox will appear in the bottom right corner of the button.
 
 ![Theme tab with default theme selected](../sites/sitesfiles/sitesadd_theme.png)
 
-### The **Item Pool** tab
+### The Item Pool tab
 Set up the [item pool](../sites/site_resources.md#item-pool.md) for the site.
 
 ### Publication settings
