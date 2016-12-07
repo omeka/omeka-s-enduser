@@ -19,12 +19,19 @@ Clicking on the site title will take you to a summary page for the site which di
 ## Adding a site
 To create a site, click the *Add new site* button in the upper right-hand corner of the site browse page.
 
-![add new site dialogs, with tabs for site info and item pool](../sites/sitesfiles/sites_addsite.png)
+The Add New Site page has three tabs: Site Info, Theme, and Item Pool.
 
-You will need to:
+On the **Site Info** tab:
 * Give your site a *title* (required)
 * create a *slug* for the site’s url. The url will be *installurl/site/slug*. This is optional - if you leave this field blank, Omeka S will create a slug based on the site title.
-* Select which *theme* you want for the site or whether to go with the installation default. Themes set the appearance of the site. (required)
+
+![Site info tab](
+
+On the **Theme** tab, select from the installed themes. Each theme appears as a button with a screenshot of the theme, the theme name, and a link to its creator. When a theme is selected, it will highlight slightly in gray and a checkbox will appear in the bottom right corner of the button.
+
+![Theme tab with one theme selected]
+
+On the **Item Pool** tab, you can set up the [item pool](../sites/site_resources.md#item-pool.md) for the site.
 
 In the upper right hand corner of the screen, next to the *Add* button, you can set the visibility of your site using the the *make public/private* button (eye icon).
 
@@ -33,8 +40,6 @@ In the upper right hand corner of the screen, next to the *Add* button, you can 
 ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)  Private
 
 You will probably want to leave the site Private until you have added some content.
-
-You can set up the [item pool](../sites/site_itempool.md) at this point, or after the site has been created.
 
 When you are ready, click the *Add* button in the upper right corner. Once the page is created, you will be redirected to the site info tab of the site management. 
 
@@ -53,8 +58,9 @@ Site admin left hand navigation options are:
 - *[Navigation](../sites/site_navigation.md)*, 
 - *[Resources](../sites/site_resources.md)*,
 - *User Permissions*, (see below)
-- *[Theme Settings](../sites/site_themesettings.md)*,
+- *[Theme](../sites/site_theme.md)*
 - *Settings*. (see below)
+- Modules, if installed.
 
 Any modules which you have installed that have site-specific settings will appear below the site Settings tab in the site's context menu. In the image above, the modules Metadata Browse and Collecting are installed.
 
@@ -64,7 +70,6 @@ The standard options in the left hand navigation of the Omeka S Admin (items, it
 The site info settings for an Omeka S site are where you can change the basic info for the site:
 * *title* (text)
 * *slug* (text)
-* *theme* (dropdown)
 
 ![Site info for the site “Jane Austen” with buttons across the top to View, Delete, and Save the site](../sites/sitesfiles/sites_siteinfo.png)
 
