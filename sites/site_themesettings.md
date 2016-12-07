@@ -11,7 +11,7 @@ Depending on which theme you have selected, you may see any of the following set
 
 Top Navigation Depth
 -------------------------------
-(Default, Cozy, The Daily, Center Row)
+(Default, Cozy)
 
 Top Navigation Depth allows you the limit the depth of the top navigation menu on the public side of the site.  The default setting, 0, does not restrict the number of levels of the top navigation menu. Setting it to one would only show the top-level pages or links of your site.
 
