@@ -19,20 +19,23 @@ Clicking on the site title will take you to a summary page for the site which di
 ## Adding a site
 To create a site, click the *Add new site* button in the upper right-hand corner of the site browse page.
 
-The Add New Site page has three tabs: Site Info, Theme, and Item Pool.
+The Add New Site page has three tabs: Admin, Theme, and Item Pool.
 
-On the **Site Info** tab:
+### The Admin tab:
 * Give your site a *title* (required)
 * create a *slug* for the site’s url. The url will be *installurl/site/slug*. This is optional - if you leave this field blank, Omeka S will create a slug based on the site title.
 
-![Site info tab](
+![Admin tab for a new site with nothing entered](../sites/sitesfiles/sitesadd_admin.png)
 
-On the **Theme** tab, select from the installed themes. Each theme appears as a button with a screenshot of the theme, the theme name, and a link to its creator. When a theme is selected, it will highlight slightly in gray and a checkbox will appear in the bottom right corner of the button.
+### The **Theme** tab
+Select from the installed themes. Each theme appears as a button with a screenshot of the theme, the theme name, and a link to its creator. When a theme is selected, it will highlight slightly in gray and a checkbox will appear in the bottom right corner of the button.
 
-![Theme tab with one theme selected]
+![Theme tab with default theme selected](../sites/sitesfiles/sitesadd_theme.png)
 
-On the **Item Pool** tab, you can set up the [item pool](../sites/site_resources.md#item-pool.md) for the site.
+### The **Item Pool** tab
+Set up the [item pool](../sites/site_resources.md#item-pool.md) for the site.
 
+### Publication settings
 In the upper right hand corner of the screen, next to the *Add* button, you can set the visibility of your site using the the *make public/private* button (eye icon).
 
 ![make public button showing an eye icon](../content/contentfiles/item_public.png) Public 
@@ -41,6 +44,7 @@ In the upper right hand corner of the screen, next to the *Add* button, you can 
 
 You will probably want to leave the site Private until you have added some content.
 
+### Add site
 When you are ready, click the *Add* button in the upper right corner. Once the page is created, you will be redirected to the site info tab of the site management. 
 
 ## Manage a site
