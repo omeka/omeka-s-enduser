@@ -2,7 +2,9 @@
 title: Modules for OmekaS
 ---
 
-The following is a list of modules available for OmekaS either produced by the Omeka Developers at the Roy Rosenzweig Center for History and New Media or approved for inclusion.
+The following modules available for OmekaS were either produced by the Omeka Developers at the Roy Rosenzweig Center for History and New Media or approved for inclusion.
+
+Links go to the documentation page for the module, not their download pages.
 
 * [Collecting](): gather public contributions through your sites.
 * [CSV Import](../modules/csvimport.md): import content or users from a csv file.
