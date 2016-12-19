@@ -47,7 +47,9 @@ Each column in your CSV file will appear as a block with a the *CSV Column* head
 
 All actions have the option to indicate that this column data uses the multivalue separator.
 
-*Map* (this option will only be available if you have installed the [mapping](../modules/mapping.md) module)
+**Map** 
+
+(this option will only be available if you have installed the [mapping](../modules/mapping.md) module)
 Select whether this column contains: 
 - Latitude
 - Longitude
@@ -58,13 +60,15 @@ Select whether this column contains:
 
 ![Mapping options for geolocation data](../modules/modulesfiles/csvimport_itemsgeo.png)
 
-*Properties* 
+**Properties** 
+
 Select from the properties of all installed vocabularies. You can search for a specific property using the *Filter properties* field at the top of the drawer. 
 You can choose to import the content as a URL.
 
 ![Mapping options for properties data](../modules/modulesfiles/csvimport_iproperties.png)
 
-*Media Import*
+**Media Import**
+
 Select one of the following:
 - URL
 - HTML
@@ -74,7 +78,8 @@ Select one of the following:
 
 ![Mapping options for media](../modules/modulesfiles/csvimport_imedia.png)
 
-*Item Data*
+**Item Data**
+
 These actions allow you to set the column data as:
 - Item Set ID
 - Resource Template Name
