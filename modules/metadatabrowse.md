@@ -8,9 +8,11 @@ It does this by adding a link below selected properties that reads "See all item
 
 The module's browse function is applied on the admin side when the module is active, and can be enabled on the public side of individual sites,  on a site-by-site basis. 
 
-Site Settings
-Admin-side Browsing
-Global Configuration Options
+Contents
+------------------
+- [Site Settings](../modules/metadatabrowse.md#metadata-browse-on-sites)
+- [Admin-side Browsing](../modules/metadatabrowse.md#admin-side-browse)
+- [Installation-wide Configuration Options](../modules/metadatabrowse.md#installation-wide-configuration-options)
 
 Metadata Browse on Sites
 ------------------------------
@@ -37,7 +39,7 @@ In the example below, Metadata Browse is available for Title, Author (Creator) a
 
 ![An item with arrows pointing to the links for "see all items with this value"](../modules/modulesfiles/mdbr_public1.png)
 
-Clicking on "See all items with this value" under creator takes a visitor to a page of search results where the Author is exactly "Jane Austen" - as shown in this image.
+Clicking on "See all items with this value" under creator takes a visitor to a page of search results where the Author is exactly "Jane Austen" - as shown in this image:
 
 ![Beginning of search results](../modules/modulesfiles/mdbr_public2.png)
 
