@@ -29,6 +29,9 @@ There should be a section which looks like image below, with label *Enable Shari
 
 Ensure that the correct boxes are checked for your site. You can uncheck all of the boxes to turn off sharing for your site. Be sure to save your changes. 
 
+Public Side
+-------------------------------
+
 Sharing icons for enabled services and options will display at the bottom of pages you build as well as individual item/show pages on your site. 
 
 ![Share buttons for Facebook, twitter, and email displayed below the site’s Previous and Next navigation buttons](../modules/modulesfiles/sharing_buttons.png)
