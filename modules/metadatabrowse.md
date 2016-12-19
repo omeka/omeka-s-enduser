@@ -46,15 +46,15 @@ Once the module is activated and installed, it will show up in the context menu 
 
 To set up Metadata Browse for a site, click on the Metadata Browse tab in the site's context menu.
 
-[A red arrow points to the Metadata Browse tab](../modules/modulesfiles/mdbr_sites1.png)
+![A red arrow points to the Metadata Browse tab](../modules/modulesfiles/mdbr_sites1.png)
 
 On the page which loads, select properties from the sidebar to enable metadata browse by clicking on them in the sidebar.
 
-[Metadata Browse site options](../modules/modulesfiles/mdbr_sites2.png)
+![Metadata Browse site options](../modules/modulesfiles/mdbr_sites2.png)
 
 Delete any selected properties by clicking the trash can/delete icon. If you accidentally click the delete button, simply click the undo button which replaces it to keep that property. 
 
-[A property set to be deleted, showing the undo button](../modules/modulesfiles/mdbr_sites3.png)
+![A property set to be deleted, showing the undo button](../modules/modulesfiles/mdbr_sites3.png)
 
 Remember to click the *Save* button to save changes. 
 
@@ -63,11 +63,11 @@ Once you have selected properties and saved changes, visitors to your site can u
 
 In the example below, Metadata Browse is available for Title, Author (Creator) and Date of Publication.
 
-[An item with arrows pointing to the links for "see all items with this value"](../modules/modulesfiles/mdbr_public1.png)
+![An item with arrows pointing to the links for "see all items with this value"](../modules/modulesfiles/mdbr_public1.png)
 
 Clicking on "See all items with this value" under creator takes a visitor to a page of search results where the Author is exactly "Jane Austen" - as shown in this image.
 
-[Beginning of search results](../modules/modulesfiles/mdbr_public2.png)
+![Beginning of search results](../modules/modulesfiles/mdbr_public2.png)
 
 Admin side browse
 -------------------
