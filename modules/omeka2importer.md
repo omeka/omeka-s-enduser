@@ -19,7 +19,7 @@ From the Import tab you can start new imports.
 ### Enter the API
 On the first page of the importer, enter the *Omeka 2 Api Endpoint* - the site URL for the API you wish to access (it should end with api). Make sure you enter the full url, beginning with http, otherwise the importer will not be able to access the items at that site. Click *next*.
 
-![API import field]((../modules/modulesfiles/o2i_enterapi.png)
+![API import field](../modules/modulesfiles/o2i_enterapi.png)
 
 If you have entered a valid API endpoint, the next page will load with no issue. If you have entered an invalid endpoint, the module will display error messages “Warning: Invalid argument”.
 

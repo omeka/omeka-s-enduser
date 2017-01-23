@@ -7,10 +7,11 @@ Omeka S is a web publication system for universities, galleries, libraries, arch
 Omeka S is part of the [Omeka](http://omeka.org) family of products
 
 Site map:
-* [Admin Dashboard](/admin-dashboard.md)
-* [Manage Settings](settings.md)
+
+- [Admin Dashboard](/admin-dashboard.md)
+- [Manage Settings](settings.md)
 * [Manage Users](/users.md)
-[Jobs](jobs.md)
+* [Jobs](jobs.md)
 * Content
   * [Items](/content/items.md)
   * [Item Sets](/content/item-sets.md). Manage aggregated groups of items. 
@@ -18,3 +19,4 @@ Site map:
   * [Resource Templates](/content/resource-template.md). Manage predefined sets of properties 
 * [Modules](modules/modules.md)
 * [Sites](/sites/sites.md)
+* [Error Logging](/errorLogging.md)

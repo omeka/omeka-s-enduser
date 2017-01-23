@@ -11,7 +11,21 @@ Most spreadsheet editors (including Microsoft Excel, Google Sheets, and Apple Nu
 
 If the spreadsheet is already created, take a moment to think about which columns you want to match to which vocabulary properties. 
 
+*Note* Your csv file *must have a header row* in order for the module to process it correctly.
+
 If you have multiple inputs for a single property, you can separate them with a secondary *multivalue separator*. For example, a work with multiple authors (E.B. White and William Strunk Jr.) with the column for Creator containing "E.B. White; William Strunk Jr" has a semicolon (;) as the multivalue separator. When imported into Omeka S, each of these would appear as a separate entry in the property (Creator: E.B. White and Creator: William Strunk Jr.)
+
+### Automapping 
+The module can automap column headers if they conform to the property terms of your installation's [vocabularies](../content/vocabularies.md). For example, a CSV file with a column header "dcterms:title" would automap to the Dublin Core Title property when the CSV is loaded for mapping.
+
+To find the terms you should use for your column headers, go to the Vocabularies tab from the admin dashboard. Click on the number of properties for the vocabulary you want to use (Dublin Core in the image below)
+
+![Red arrow points to the properties link for Dublin Core](../modules/modulesfiles/csv_automap1.png)
+
+In the table of vocabulary properties, there is a column for *Term*. Use the Term for the property you want to automap in the CSV Import. For example, "dcterms:abstract" would automap to the Dublin Core property "Absract" and "foaf:firstName" would automap to the Friend of a Friend property "firstName"
+
+![arrow points to the Term column for Dublin Core properties.](../modules/modulesfiles/csv_automap2.png)
+
 
 Importing
 ---------
@@ -28,6 +42,7 @@ Start an import by clicking on the CSV Importer tab on the left-hand navigation.
 
 ### Items Import
 The next page of the Importer has two tabs:  
+
 #### Basic Import Settings
 has the following fields, none of which are required: 
 - *Comment*: make a note on the import.
@@ -47,7 +62,9 @@ Each column in your CSV file will appear as a block with a the *CSV Column* head
 
 All actions have the option to indicate that this column data uses the multivalue separator.
 
-*Map* (this option will only be available if you have installed the [mapping](../modules/mapping.md) module)
+**Map** 
+
+(this option will only be available if you have installed the [mapping](../modules/mapping.md) module)
 Select whether this column contains: 
 - Latitude
 - Longitude
@@ -58,13 +75,15 @@ Select whether this column contains:
 
 ![Mapping options for geolocation data](../modules/modulesfiles/csvimport_itemsgeo.png)
 
-*Properties* 
+**Properties** 
+
 Select from the properties of all installed vocabularies. You can search for a specific property using the *Filter properties* field at the top of the drawer. 
 You can choose to import the content as a URL.
 
 ![Mapping options for properties data](../modules/modulesfiles/csvimport_iproperties.png)
 
-*Media Import*
+**Media Import**
+
 Select one of the following:
 - URL
 - HTML
@@ -74,7 +93,8 @@ Select one of the following:
 
 ![Mapping options for media](../modules/modulesfiles/csvimport_imedia.png)
 
-*Item Data*
+**Item Data**
+
 These actions allow you to set the column data as:
 - Item Set ID
 - Resource Template Name

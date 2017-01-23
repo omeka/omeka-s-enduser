@@ -43,17 +43,29 @@ The Values tab is where you enter metadata, such as title, description, etc.
 
 ![Basic view of add items page, with no content entered](../content/contentfiles/items_add1.png)
 
-1. If available and appropriate, select a resource template from the drop-down menu. Resource templates are defined by the site administrators and editors.
+You can select a resource template from the drop-down menu. Resource templates are defined by the site administrators and editors.
   * If using a resource template, the class should automatically load.
-  * If not using a resource template, select a class from the dropdown menu (these are populated from the [Vocabularies](/content/vocabularies.md) in your installation).
-1. Add information to the fields provided.  
-  1. You may add text, a resource from the installation, or an external link in each field.  
-    * **Text** fields are entered with text, which can include HTML code. The keyboard at the top of the field input indicates text. The globe icon which appears next to it can be used to set language. 
+  * If not using a resource template, you may select a class from the dropdown menu (these are populated from the [Vocabularies](/content/vocabularies.md) in your installation).
+
+Add information to the properties which load. If you do not select a resource template or class, the Dublin Core properties Title and Description will load automatically.    
+You may add text, a resource from the installation, or an external link in each field.  
+
+#### Text
+Text fields are entered with text, which can include HTML code. The keyboard at the top of the field input indicates text. The globe icon which appears next to it can be used to set language. 
 ![image of text input field with keyboard icon indicating text input, the globe icon for setting language, and a trashcan delete icon](../content/contentfiles/items_textedit.png)
-    * **Omeka Resource** fields create an internal link between the resource you are creating and the resource which fills that field. You have the option to use either another item or an item set. Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
+
+#### Omeka Resource
+Omeka Resource fields create an internal link between the resource you are creating and the resource which fills that field. You have the option to use either another item or an item set. Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
      ![Select Item menu with list of items to link in edit item view](../content/contentfiles/items_addresource.png)
-    * **URI** fields link to an external website or online resource.
-1. You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
+
+#### URI
+URI fields link to an external website or online resource.
+
+You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
+
+You can indicate the language for the content of a text input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code for the language in which the text is written.
+
+![Red arrow points to the globe icon and a text entry field highlighted in blue](../content/contentfiles/item_lang.png)
 
 ### Media
 Use the *Media* tab to add images, video, or other files.
