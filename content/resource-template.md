@@ -13,7 +13,7 @@ From this tab, you can sort existing templates by *label*, *class*, or number of
 ## Base Resource
 All Omeka S installations include a Base Resource template which maps to the metadata fields required by the Digital Public Library of America (DPLA). It will display in the table of resource templates as "Base Resource" with no owner. 
 
-![Base resource template displayed in the table of templates](/contentfiles/templates_base1.png)
+![Base resource template displayed in the table of templates](contentfiles/templates_base1.png)
 
 The Base Resource template contains the following Dublin Core fields: Title; Rights; Type; Creator; Date; Description; Format; Language; Spatial Coverage (Place); Publisher; Alternative Title: Contributor; Extent; Identifier; Relation; Is Replaced By; Replaces; RightsHolder; Subject; Temporal Coverage.
 
