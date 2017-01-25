@@ -106,9 +106,9 @@ A drawer on the right hand side of the screen shows all of the users for your in
 To add a user, click on their name. 
 
 Then select their role from the dropdown:
-*Viewer*: user can see the site’s backend but cannot edit.
-*Editor*: user can access and edit the site’s backed.
-*Admin*: user has full administrative privileges for the site, including adding users and deleting the site.
+* *Viewer*: user can see the site’s backend but cannot edit.
+* *Editor*: user can access and edit the site’s backend.
+* *Admin*: user has full administrative privileges for the site, including adding users and deleting the site.
 
 Once you've added one or more users, click the Save button located in the upper right hand corner. You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon on their row.
 
