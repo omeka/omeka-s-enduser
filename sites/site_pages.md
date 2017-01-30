@@ -59,7 +59,7 @@ Creates a block with one or more pieces of media associated with items in the it
 
 ![media block with no media attached](../sites/sitesfiles/sitepg_media.png)
 
-To add media, click the *add attachment* 
+To add media, click the *add attachment*. 
 On loading, the drawer will show a list of your items, most recent first. You can select form the first page, page through using the forward and back arrows, or search using the search bar.
 
 ![Select item drawer](../sites/sitesfiles/sitepg_selectitem.png)
