@@ -114,7 +114,7 @@ Line break creates a transparent or opaque line break on the page, clearing all 
 HTML blocks wrap around Media blocks and at times you may want to clear the page. You might also want to create a visual break on the page. 
 
 ### Item with Metadata
-This block displays an item along with all associated metadata (entered when creating or editing the [item](../content/items.md).
+This block displays an item along with all associated metadata (entered when creating or editing the [item](../content/items.md)).
 
 ![Item with metadata block with nothing attached](../sites/sitesfiles/sitepg_iwm.png)
 
