@@ -25,7 +25,7 @@ When you click the title of a Resource Template to see its details, the ValueSug
 ![Resource Template "Fashion Illustrations" with Value Suggest:Getty: The Union List of Artist Names(ULAN) applied to Creator.](../modules/modulesfiles/ValSug-ResTemplate2.png)
 
 
-Using ValueSuggest to an Item
+Adding ValueSuggest to an Item
 --------------------
 When this Resource Template is used in an Item or Item Set, the designated properties will auto-suggest vocabulary. Users must start typing in the open text box of that specific property to prompt the auto-suggest feature. There may be a slight delay, but a drop-down menu will appear with choices drawn directly from the authority or vocabulary list you have associated with that property.
 
