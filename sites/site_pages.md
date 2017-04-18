@@ -59,7 +59,7 @@ Creates a block with one or more pieces of media associated with items in the it
 
 ![media block with no media attached](../sites/sitesfiles/sitepg_media.png)
 
-To add media, click the *add attachment* 
+To add media, click the *add attachment*. 
 On loading, the drawer will show a list of your items, most recent first. You can select form the first page, page through using the forward and back arrows, or search using the search bar.
 
 ![Select item drawer](../sites/sitesfiles/sitepg_selectitem.png)
@@ -114,7 +114,7 @@ Line break creates a transparent or opaque line break on the page, clearing all 
 HTML blocks wrap around Media blocks and at times you may want to clear the page. You might also want to create a visual break on the page. 
 
 ### Item with Metadata
-This block displays an item along with all associated metadata (entered when creating or editing the [item](../content/items.md).
+This block displays an item along with all associated metadata (entered when creating or editing the [item](../content/items.md)).
 
 ![Item with metadata block with nothing attached](../sites/sitesfiles/sitepg_iwm.png)
 

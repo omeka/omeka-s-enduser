@@ -9,7 +9,7 @@ To view the metadata for media, click on the media’s name in the  right-hand s
 
 Adding media includes uploading a file, or directly attaching content with oEmbed, YouTube URLs, or writing HTML.
 
-Media can only be added via the [item](../content/Items.md). 
+Media can only be added via the [item](../content/items.md). 
 
 ## Edit Media
 To edit an existing media, go to its metadata page and select the *Edit media* button in the upper right corner of the page. 

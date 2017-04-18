@@ -2,9 +2,9 @@
 title: Zotero Import
 ---
 
-Zotero Import is a [module](modules/modules.md) for Omeka S which allows you to connect an Omeka S instance to a Zotero library and import items from that library.
+Zotero Import is a [module](modules.md) for Omeka S which allows you to connect an Omeka S instance to a Zotero library and import items from that library.
 
-To install Zotero Import, follow the instructions for [Installing Modules](../modules/modules.md#installing-modules) on the Modules documentation.
+To install Zotero Import, follow the instructions for [Installing Modules](modules.md#installing-modules) on the Modules documentation.
 
 ## Prepare your Zotero Library
 Ensure that your Zotero library is published. Login to Zotero, go to settings, and then to privacy. Make sure that 'publish entire library' is checked. The 'publish notes' box can also be checked.
@@ -21,7 +21,7 @@ You may also want to have the id for a specific collection and an API key to imp
 
 To import, go to the Zotero Import tab on the left-hand navigation of the admin dashboard of your Omeka S install. This will automatically take you to the Import sub-tab, also in the left-hand navigation.
 
-![Zotero Import options](../modules/modulesfiles/zoteroimport_new.png)
+![Zotero Import options](modulesfiles/zoteroimport_new.png)
 
 To import from a Zotero library:
 * Choose an Item Set for imported items (required); 
@@ -42,7 +42,7 @@ Managing Past Imports
 ---------------------------------
 To view and manage past imports, click on the Zotero Import tab in the left-hand navigation, and then click on the "Past Imports" sub-tab.
 
-![red arrow points to past imports tab](../modules/modulesfiles/zoteroimport_pasttab.png)
+![red arrow points to past imports tab](modulesfiles/zoteroimport_pasttab.png)
 
 The Past Imports shows a table of previous imports, whether successful, failed on error, or undone. The table has the following columns:
 - *Zotero Library* giving the User or Group library name;
@@ -53,6 +53,6 @@ The Past Imports shows a table of previous imports, whether successful, failed o
 
 To Undo an import, click the *Undo* button to the left of the *Items Added Before* timestamp. This will open a sidebar dialog asking you to confirm that you want to undo the import and delete all imported items. Click *Confirm* to continue. 
 
-![past imports tab with sidebar open to confirm undo](../modules/modulesfiles/zoteroimport_undo.png)
+![past imports tab with sidebar open to confirm undo](modulesfiles/zoteroimport_undo.png)
 
 Past Imports which have already been undone will have a job status "Undo Import Completed".

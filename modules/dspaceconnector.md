@@ -2,15 +2,15 @@
 title: DSpace Connector
 ---
 
-DSpace Connector is a [module](modules/modules.md) for Omeka S which allows you to connect an Omeka S instance to a DSpace repository to import items from that repository. In addition to importing information, the Omeka S item will include a link back to the original item.
+DSpace Connector is a [module](modules.md) for Omeka S which allows you to connect an Omeka S instance to a DSpace repository to import items from that repository. In addition to importing information, the Omeka S item will include a link back to the original item.
 
-To install DSpace Connector, follow the instructions for [Installing Modules](../modules/modules.md#installing-modules) on the Modules documentation.
+To install DSpace Connector, follow the instructions for [Installing Modules](modules.md#installing-modules) on the Modules documentation.
 
 Note that DSpace Connector only works with DSpace versions 4 and higher.
 
 You can view past imports by going to the DSpace Connector tab on the left-hand navigation of the admin dashboard and clicking the *Past Imports* sub-tab.
 
-![DSpace Connector navigation option with two sub-tab options for Import and Past Imports](../modules/modulesfiles/mods_dspacenav.png)
+![DSpace Connector navigation option with two sub-tab options for Import and Past Imports](modulesfiles/mods_dspacenav.png)
 
 ## Import Data
 To use DSpace Connector, navigate to the tab labelled *DSpace Connector* on the left-hand navigation of the admin dashboard. This will automatically take you to the Import sub-tab.
@@ -24,7 +24,7 @@ You should see a screen with the following options:
  * Note that the Item Set must already exist in order to import into it.
 * *Comment* for example, any notes to yourself or other users of the installation (optional);
 
-![Screenshot of the field options for DSpace Connector with collections loaded from a university library](../modules/modulesfiles/mods_dspaceconnect.png)
+![Screenshot of the field options for DSpace Connector with collections loaded from a university library](modulesfiles/mods_dspaceconnect.png)
 
 To import from a DSpace Repository:
  1.  Enter a URL into the *DSpace site URL* field and then click either *Get Collections* or *Get Communities*, depending on your preference. Note that you have to enter the entire url, including the “http://“. This will load the collections or communities below the other options. 
@@ -40,14 +40,14 @@ Go to the DSpace Connector tab on the left-hand navigation of the admin dashboar
 
 This page displays a table of Past DSpace Imports, with a checkbox option to *Undo*, the *Job ID* for the import, the repository’s *Dspace Collection Link*, any *Comments* made during import, the number of *Items* imported, the *Date* of the import, the import *Status*, and the *Owner*, or user who initiated the import.
 
-![Table of past imports showing two from mars.gmu.edu](../modules/modulesfiles/mods_dspacepast.png)
+![Table of past imports showing two from mars.gmu.edu](modulesfiles/mods_dspacepast.png)
 
 ## Undo an Import
 To undo a completed import and remove all associated items, go to the DSpace Connector tab on the left-hand navigation of the admin dashboard, click on DSpace Connector and then click on Past Imports, which should appear below the DSpace Connector tab.
 
 You will see a table of all post imports.
 
-![Table of past imports showing two from mars.gmu.edu](../modules/modulesfiles/mods_dspacepast.png)
+![Table of past imports showing two from mars.gmu.edu](modulesfiles/mods_dspacepast.png)
 
 Check the box for each import you wish to undo and click submit.
 
