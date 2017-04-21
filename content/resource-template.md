@@ -48,6 +48,8 @@ To export a resource template from your Omeka S installation:
 2. Click the Label of the template you want to export.
 3. On the resource template view page, click the Export button in the upper right corner of the screen.
 
+![A red arrow points to the export button on a screen showing a resource template labelled "Textual Work"](contentfiles/templates_export.png)[^]
+
 Exporting a Resource Template will download it to your computer's default download location as a json file with the same name as the Resource Template's Label.
 
 ### Import Resource Template
@@ -55,11 +57,16 @@ To import a resource template (exported from a different S installation) into yo
 
 1. Go to the Resource Templates menu on the main navigation
 2. Click the Import button in the upper right corner of the screen.
+
+![Red arrow points to the Import button on the browse resource templates page of the admin site of an Omeka S installation](contentfiles/templates_import1.png)
+
 3. On the Resource Template: Import page, click the *Choose File* button
 	4. This will open your browsers file selection window. Choose the json file for the resource template you want to import
 5. Click the Review import button
 	1. On the Review page, you will be able to check that Date Types, Alternate Labels, and Alternate Comments have been imported correctly
 	2. Imported templates which used Value Suggest or Custom Vocab will indicate in the Data Type column what the original source was, and a dropdown to allow you to select a new Data Type (if you do not have the necessary modules, the dropdown will only show the default options).
+
+![On the review imported template page, all the elements for the reviewed import are highlighted green. The final element, subject, lists a datatype of Value Suggest and has a dropdown for users to select a new data type.](contentfiles/templates_import2.png)
 
 NB: If you want to import a Resource Template using a Custom Vocab, you will need to manually reproduce the Custom Vocab on the second Omeka S installation *before* importing the resource template.
 
