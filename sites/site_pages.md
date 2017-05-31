@@ -48,6 +48,8 @@ Change the order of blocks by clicking on the three horizontal lines on the uppe
 
 Some modules may create additional blocks for your site pages. For information on working with these blocks, please see the documentation for that [module](../modules/modules.md)
 ## Page Blocks
+Pages are made up of blocks, each of which has a different form of content.
+
 ### HTML: 
 Creates an HTML box in which you can add formatted text and links.
 
@@ -68,10 +70,23 @@ Once you’ve selected an item, the drawer will shift to that item’s informati
 
 ![Item view with apply changes option](../sites/sitesfiles/sitepg_applyitem.png)
 
-### Browse Preview: 
-Allows you to add a browsable block of resources. You designate which resources to display by defining search through the *Query* field. 
+If you want media to appear alongside text, place a media block *above* an HTML block.
 
-The *Preview Title* field is the heading above the browse 
+### Browse Preview: 
+Allows you to add a block of items on a site page.
+
+In order to create a Browse Preview block, you'll first need to perform a search on your Omeka S installation for the items you want to include. You can use the general search on the left hadn navigation or, if you want to show all items in an item set, use the Advanced Search from Items browse. 
+
+Once you have searched, highlight everything in your browser's address bar starting with the question mark all the way to the end of the search url (to the right).
+
+![a search query url with the question mark and everything to its right highlighted](../sites/sitesfiles/sitespg_bpquery.png) 
+
+In the *Query* field of the Browse Preview block, paste the part of the url you just copied (everything from the question mark over). 
+
+The *Preview Title* field sets the heading above the browse section on the page.
+
+The *Browse link text* field sets the link text at the bottom of the block - the block will only display the first ten results for the query.
+
 ![Page block for Browse Preview](../sites/sitesfiles/sitepg_browse.png)
 
 ### Item Showcase

@@ -10,6 +10,8 @@ Once installed, the Omeka 2 Importer module should appear toward the bottom of t
 
 ![Omeka 2 Importer menu options Import and Past Imports](../modules/modulesfiles/o2i_menu.png)
 
+**Note** that the module only imports Dublin Core metadata, Item Type metadata, and files. It *will not* import tags or Geolocation data.
+
 Import
 -------------
 From the Import tab you can start new imports. 
@@ -23,7 +25,7 @@ On the first page of the importer, enter the *Omeka 2 Api Endpoint* - the site U
 
 If you have entered a valid API endpoint, the next page will load with no issue. If you have entered an invalid endpoint, the module will display error messages “Warning: Invalid argument”.
 
-### Import Settings and Mapping
+### Import Settings and Map Metadata
 On the second page of the importer there are tabs for basic import settings, mapping Omeka Classic elements to Omeka S properties, and mapping Omeka Classic item types to Omeka S classes. 
 
 Move between all three tabs to ensure that the data is mapped as you want and the settings are correct before clicking Import.
@@ -67,7 +69,6 @@ To map:
 1. Select the item type in the table by clicking on its row or label.
 1. In the  right-hand drawer, either click through or search for the resource class to which you want to map your element. 
 1. Click on the resource class in the drawer to map it. 
-
 
 
 ### Complete Import
