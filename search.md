@@ -14,9 +14,11 @@ Advanced search options are accessible on the *Items* page, from the *Advanced S
 ![Advanced search button indicated with a red arrow.](/files/advancedsearch2.png)
 
 Users may use drop down menus to select metadata fields and search by the following:
-- Search by class
-- Search by value
-- Search by property
-- Search by item set
+- *Search by class*: search by resource Class. 
+- *Search by value*: search for a term or phrase. 
+    - The first selector allows you to specify a property to search. 
+    - The second selector allows you to set the relationship the property has exactly, does not have exactly, contains, or does not contain the value you enter in the text area.
+    - finally, there is a text field for you to enter the value you want the property to have.
+- *Search by item set*: include all items within a specific item set. This is the only criteria where adding will actually broaden the pool - selecting a second item set will include all items in Item Set A or in Item Set B. 
 
-![Advanced search options page.](/files/advancedsearch3.png)
+![Advanced search options page.](/files/advancedsearch4.png)
