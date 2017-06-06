@@ -90,12 +90,6 @@ Site is public:
 Site is Private:
 ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)
 
-## See also: 
-* [Site Pages](../sites/site_pages.md)
-* [Site Navigation](../sites/site_navigation.md)
-* [Site Resources](../sites/site_resources.md)
-* [Theme](../sites/site_themesettings.md)
-
 ## Managing User Permissions
 To add a user to a site, navigate to the *User Permissions* tab.
 
@@ -123,3 +117,9 @@ The second setting option is *Attachment link type*, which sets the target of li
 - *direct link to file:* clicking on the attachment takes user to the file alone. 
 
 ![Site settings](../sites/sitesfiles/sites_settings.png)
+
+## See also: 
+* [Site Pages](../sites/site_pages.md)
+* [Site Navigation](../sites/site_navigation.md)
+* [Site Resources](../sites/site_resources.md)
+* [Theme](../sites/site_themesettings.md)
