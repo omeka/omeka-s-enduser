@@ -8,15 +8,17 @@ Omeka S is part of the [Omeka](http://omeka.org) family of products
 
 Site map:
 
-- [Admin Dashboard](/admin-dashboard.md)
-- [Manage Settings](settings.md)
-* [Manage Users](/users.md)
-* [Jobs](jobs.md)
-* Content
+* [Admin Dashboard](/admin-dashboard.md)
+* [Sites](/sites/sites.md)
+* Resources
   * [Items](/content/items.md)
   * [Item Sets](/content/item-sets.md). Manage aggregated groups of items. 
   * [Vocabularies](/content/vocabularies.md). Manage the metadata standards for your install.
   * [Resource Templates](/content/resource-template.md). Manage predefined sets of properties 
-* [Modules](modules/modules.md)
-* [Sites](/sites/sites.md)
+* Admin
+  * [Manage Users](/users.md)
+  * [Modules](modules/modules.md)
+  * [Jobs](jobs.md)
+  * [Manage Settings](settings.md)
+
 * [Error Logging](/errorLogging.md)
