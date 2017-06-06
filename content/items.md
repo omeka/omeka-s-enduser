@@ -71,14 +71,15 @@ You can indicate the language for the content of a text input using the globe sy
 Use the *Media* tab to add images, video, or other files.
 Using the buttons on the *Add New Media* menu on the right side of the screen, select a media type (Upload, URL, oEmbed, YouTube, or HTML)
 
-![“Add new media” dropdown showing the options](../content/contentfiles/items_mediaadd.png)
+![“Add new media” dropdown showing the options](../content/contentfiles/items_mediaadd2.png)
 
 - *Upload*: select a file to upload from your computer.
 - *URL*: import media via a uri.
-- *oEmbed*: insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7) - use the url in your browser’s location bar.
-- *YouTube*: add a link to embed a YouTube video. Use the url from your browser’s location bar (with `/watch/` in it) rather than the `youtu.be` link.
 - *HTML*: add html content as a media resource for your item.
 - *IIIF*: Add an IIIF image via url.
+- *oEmbed*: insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7) - use the url in your browser’s location bar.
+- *YouTube*: add a link to embed a YouTube video. Use the url from your browser’s location bar (with `/watch/` in it) rather than the `youtu.be` link.
+
 
 While editing, you can delete any media instance using the delete button (trashcan) on the upper right corner of the media block.
 
