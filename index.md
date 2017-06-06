@@ -9,6 +9,7 @@ Omeka S is part of the [Omeka](http://omeka.org) family of products
 Site map:
 
 * [Admin Dashboard](/admin-dashboard.md)
+* [Searching](/search.md)
 * [Sites](/sites/sites.md)
 * Resources
   * [Items](/content/items.md)
