@@ -6,7 +6,7 @@ The following modules available for OmekaS were either produced by the Omeka Dev
 
 Links go to the documentation page for the module, not their download pages.
 
-* [Collecting](): gather public contributions through your sites.
+* [Collecting](../modules/collecting.md): gather public contributions through your sites.
 * [CSV Import](../modules/csvimport.md): import content or users from a csv file.
 * [Custom Vocab](../modules/customvocab.md): create controlled vocabulary for a particular property to use when describing a resource.
 * [DSpace Connector](../modules/dspaceconnector.md): connects to a DSpace repostiory in order to import items.
