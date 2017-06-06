@@ -109,12 +109,16 @@ Once you've added one or more users, click the Save button located in the upper 
 ## Settings
 This tab allows you to configure settings for the site overall.
 
-The first setting is a check box to *Restrict browse to attached items*. If checked, users adding content to sites pages will only be able to access items designated in the Item Pool, and the public browse page will be limited to that content as well.
+There are three settings blocks on this page: Restrict browse to attached items, attachment link type, and embed media on item pages. 
 
-The second setting option is *Attachment link type*, which sets the target of links from attachments you add to [site page blocks](../sites/site_pages.md#editing-pages) (for example, in an [item showcase](../sites/site_pages.md#item-showcase). It offers a dropdown with the following options:
+*Restrict browse to attached items* is a checkbox. If checked, the Browse functions of your site will only show items which have been added to a page block. If unchecked, browse pages and blocks on your site will include all items in the Item Pool.
+
+*Attachment link type*, which sets the target of links from attachments you add to [site page blocks](../sites/site_pages.md#editing-pages) (for example, in an [item showcase](../sites/site_pages.md#item-showcase). It offers a dropdown with the following options:
 - *item page:* clicking on the attachment takes users to the item page associated with the attached media;
 - *media page:* clicking on the attachment takes users to the media page; 
 - *direct link to file:* clicking on the attachment takes user to the file alone. 
+
+*Embed media on item pages* is a checkbox. When checked, any linked media (such as videos) will be embedded on the item pages. When unchecked, site visitors will click through to view playable media.
 
 ![Site settings](../sites/sitesfiles/sites_settings.png)
 
