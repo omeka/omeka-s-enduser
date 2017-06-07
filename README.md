@@ -29,3 +29,11 @@ The documentation is organized in a series of markdown (md) documents. Click on 
 
 ## Get Help
 For troubleshooting, problem solving, and questions, please post on our [forum](https://forum.omeka.org/c/omeka-s).
+
+## Try it out
+The Omeka S Sandbox is a place to get a feel for the system works without going to the process of an installation. The Sandbox has been pre-populated with resources, sites, and module settings; the installation resets to just this initial content on a regular basis.
+
+Log in with one of the following email accounts (passwords for each account correspond to the part before the @ sign):
+- omekasdemo1@example.com
+- omekasdemo2@example.com
+- omekasdemo3@example.com
