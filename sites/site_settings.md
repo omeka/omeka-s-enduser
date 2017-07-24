@@ -28,8 +28,8 @@ This tab allows you to configure settings for the [site](../sites/sites.md) over
 	- User's display name: takes you to your user page.
 	- Logout: logs out current user.
 
-![a blue bar across the top of the image displays the following words in light blue text, indicating a link: RRCHNM Omeka S Dev Site; A Tin Box; signed in as Megan; Logout. Below this, the site's title "A Tin Box" is displayed in black text on a white background.](../sites/sitefiles/sites_userbarin.png)
+![a blue bar across the top of the image displays the following words in light blue text, indicating a link: RRCHNM Omeka S Dev Site; A Tin Box; signed in as Megan; Logout. Below this, the site's title "A Tin Box" is displayed in black text on a white background.](../sites/sitesfiles/sites_userbarin.png)
 
 - When users are not logged, the user bar only displays a login option.
 
-![A blue bar across the top of the image only has a small button reading "Log In". Below this, the site's title "A Tin Box" is displayed in black text on a white background.](../sites/sitefiles/sites_userbarout.png)
+![A blue bar across the top of the image only has a small button reading "Log In". Below this, the site's title "A Tin Box" is displayed in black text on a white background.](../sites/sitesfiles/sites_userbarout.png)
