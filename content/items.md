@@ -55,8 +55,21 @@ Text fields are entered with text, which can include HTML code. The keyboard at 
 ![image of text input field with keyboard icon indicating text input, the globe icon for setting language, and a trashcan delete icon](../content/contentfiles/items_textedit.png)
 
 #### Omeka Resource
-Omeka Resource fields create an internal link between the resource you are creating and the resource which fills that field. You have the option to use either another item or an item set. Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
-     ![Select Item menu with list of items to link in edit item view](../content/contentfiles/items_addresource.png)
+Omeka Resource fields create an internal link between the resource you are creating and the resource which fills that field. 
+
+When creating an item, you have the option to use either another item or an item set. Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
+
+![Select Item menu with list of items to link in edit item view](../content/contentfiles/items_addresource.png)
+     
+Once you have created an item and added media to it, you will also have the option to use media *attached to that item* for a property. 
+
+![A blue outline of a rectangle highlights resource options for Items, Item sets, and Media to be used as the input for the element "Description"](../content/contentfiles/items_addmediaresource.png)
+
+To use a media resource for a property, select the media option for the element. The drawer which opens will display all media attached to the item. Select the media which you want to use; this will switch the drawer to just that media. Click the *Select Resource* button at the bottom of the drawer to complete the process.
+
+![Focus on the editing portion of a window for the item "Sense and Sensibility", with the elements Title and Description visible. On the right side of the window, a vertical rectangle (the drawer) is open on the right displaying five media which are attached to the item, including video, images, and text.](../content/contentfiles/items_mediaresource1.png)
+
+![The same window as before, but now the drawer on the right displays a thumbnail of the media "Sense and Sensibility DVD Trailer" with a dark gray button labeled "select resource" at the bottom of the drawer area.](../content/contentfiles/items_mediaresource2.png)
 
 #### URI
 URI fields link to an external website or online resource.
