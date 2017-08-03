@@ -5,7 +5,8 @@ date: 07/02/2017
 ---
 
 The ValueSuggest module adds an auto-complete feature to a specific property in a resource template and draws on controlled vocabularies from Library of Congress and Getty Collection.
-This functionality helps those building an Omeka site to enforce consistent metadata input and data compatibility with other databases of records.
+
+This functionality helps those building an Omeka site to encourage consistent metadata input and data compatibility with other databases of records. Please note that ValueSuggest offers  but cannot require that users select values from the autosuggest feature. Users will always have the option of creating their own value instead.
 
 To install ValueSuggest follow the instructions for Installing Modules on the Modules documentation.
 
