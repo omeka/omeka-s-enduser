@@ -35,11 +35,13 @@ The Base Resource template contains the following Dublin Core fields: Title; Rig
 
 ![The Add Resource Template page, with fields for title, class, and properties Title and Description pre-loaded]({{site.url}}{{site.baseurl}}/content/contentfiles/templates_add.png)
 
+![The Add Resource Template page, with fields for title, class, and properties Title and Description pre-loaded](/content/contentfiles/templates_add.png)
+
 You can change the display label of the property when the resource template is used by entering the text you want to appear in the *Alternate Label* field for each property. You can also add alternate comments for the property. This will change the text under the property name when users are creating items using your Resource Template. 
 
 In the image below, from an Add Item view, the template has been written so that the Description property is labeled as Gist with an new comment (the default is “an account of the resource”): 
 
-![A property labeled Gist with the comment “Brief Summary”]({{site.url}}{{site.baseurl}}/content/contentfiles/templates_label.png)
+![A property labeled Gist with the comment “Brief Summary”](/content/contentfiles/templates_label.png)
 
 Note that users who select this resource template when creating an item will be able to add other properties to the item, and that the properties associated with the resource template are not required when creating an item.
 
@@ -52,7 +54,7 @@ To export a resource template from your Omeka S installation:
 2. Click the Label of the template you want to export.
 3. On the resource template view page, click the Export button in the upper right corner of the screen.
 
-![A red arrow points to the export button on a screen showing a resource template labelled "Textual Work"]({{site.url}}{{site.baseurl}}/content/contentfiles/templates_export.png)[^]
+![A red arrow points to the export button on a screen showing a resource template labelled "Textual Work"](/content/contentfiles/templates_export.png)[^]
 
 Exporting a Resource Template will download it to your computer's default download location as a json file with the same name as the Resource Template's Label.
 
@@ -62,7 +64,7 @@ To import a resource template (exported from a different S installation) into yo
 1. Go to the Resource Templates menu on the main navigation
 2. Click the Import button in the upper right corner of the screen.
 
-![Red arrow points to the Import button on the browse resource templates page of the admin site of an Omeka S installation]({{site.url}}{{site.baseurl}}/content/contentfiles/templates_import1.png)
+![Red arrow points to the Import button on the browse resource templates page of the admin site of an Omeka S installation](/content/contentfiles/templates_import1.png)
 
 3. On the Resource Template: Import page, click the *Choose File* button
 	4. This will open your browsers file selection window. Choose the json file for the resource template you want to import
@@ -70,7 +72,6 @@ To import a resource template (exported from a different S installation) into yo
 	1. On the Review page, you will be able to check that Date Types, Alternate Labels, and Alternate Comments have been imported correctly
 	2. Imported templates which used Value Suggest or Custom Vocab will indicate in the Data Type column what the original source was, and a dropdown to allow you to select a new Data Type (if you do not have the necessary modules, the dropdown will only show the default options).
 
-![On the review imported template page, all the elements for the reviewed import are highlighted green. The final element, subject, lists a datatype of Value Suggest and has a dropdown for users to select a new data type.]({{site.url}}{{site.baseurl}}/content/contentfiles/templates_import2.png)
+![On the review imported template page, all the elements for the reviewed import are highlighted green. The final element, subject, lists a datatype of Value Suggest and has a dropdown for users to select a new data type.](/content/contentfiles/templates_import2.png)
 
 NB: If you want to import a Resource Template using a Custom Vocab, you will need to manually reproduce the Custom Vocab on the second Omeka S installation *before* importing the resource template.
-
