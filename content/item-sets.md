@@ -6,7 +6,7 @@ Item sets are an aggregation of *items*, similar to collections in previous vers
 
 Item sets are managed via the *Item Sets* tab (stacked boxes) located in the left navigation of the admin dashboard. 
 
-![Browse item sets view with four item sets.]({{site.url}}{{site.baseurl}}/content/contentfiles/itemsets_browse.png)
+![Browse item sets view with four item sets.](/content/contentfiles/itemsets_browse.png)
 
 After clicking on the tab, a table appears listing all item sets with: their *Title*; icons for each row representing options to *edit* (pencil), *delete* (trash can), or *view details* (ellipses); the item set’s *Class*, the *Owner* of the set, and the *Date Created*.
 
@@ -19,11 +19,11 @@ In the upper right corner is the button to *Add new item set*.
 
 To quickly see information about an item set, click on the *view details* button (ellipses) for the item set on the item sets browse page. This will open a drawer on the right hand side of the page with the item set’s Title, Visibility, and number of Items.
 
-![Drawer view of an item, with description and title]({{site.url}}{{site.baseurl}}/content/contentfiles/itemsets_drawer.png)
+![Drawer view of an item, with description and title](/content/contentfiles/itemsets_drawer.png)
 
 To view all the information for an item set, click on its name. On the item sets view page, there are tabs to see an item set’s *Metadata* and *Linked Resources*. On the right side of the item set’s view page is information about the date created, owner, and visibility. For item sets, visibility includes both whether the set is private or public and whether other users can add items to the set. 
 
-![Reading view of a single item set]({{site.url}}{{site.baseurl}}/content/contentfiles/itemsets_view.png)
+![Reading view of a single item set](/content/contentfiles/itemsets_view.png)
 
 The item set’s *metadata* is entered by users. The *linked resources* are items which are used to populate specific metadata properties (for example: Creator). When viewing linked resources, the table includes the predicate (property or description) and the object (linked item resource).
 
@@ -36,7 +36,7 @@ To create a new item set, click the Item Sets tab from the left navigation of th
 
 Item sets may use the same resource templates available for items to provide pre-selected fields. Each set should contain at least one descriptive value, such as Dublin Core Description. 
 
-![Add item set, no properties selected]({{site.url}}{{site.baseurl}}/content/contentfiles/itemsets_add.png)
+![Add item set, no properties selected](/content/contentfiles/itemsets_add.png)
 
 In the *Values* tab:
 - You may add text, a resource from the installation, or an external link in each field.  
@@ -54,6 +54,6 @@ Use the *make public/private* button (eye icon) to make the item visible to the 
 *Open* sets can be edited and added to by any user on the install.
 *Closed* sets are available and editable only by its creator, site admins, and global admins.
 
-![a set which is open and public, with an open padlock icon and an icon of an open eye]({{site.url}}{{site.baseurl}}/content/contentfiles/setOpenPublic.png) Open and Public 
+![a set which is open and public, with an open padlock icon and an icon of an open eye](/content/contentfiles/setOpenPublic.png) Open and Public 
 
-![a set which is closed and private, with a closed padlock icon and  an icon of an eye with a slash through it]({{site.url}}{{site.baseurl}}/content/contentfiles/setClosedPrivate.png)  Closed and Private
+![a set which is closed and private, with a closed padlock icon and  an icon of an eye with a slash through it](/content/contentfiles/setClosedPrivate.png)  Closed and Private

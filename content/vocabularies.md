@@ -9,7 +9,7 @@ Global and Site Administrators can manage their installation’s vocabularies fr
 ## Managing vocabularies
 The main view of the *Vocabularies* tab in the Admin Dashboard displays the existing vocabularies for the Omeka S install. 
 
-![Main view of vocabularies, with columns for label, prefix, classes, and properties counts and information]({{site.url}}{{site.baseurl}}/content/contentfiles/vocabularies.png)
+![Main view of vocabularies, with columns for label, prefix, classes, and properties counts and information](/content/contentfiles/vocabularies.png)
 
 Vocabularies are displayed in a table with headings for *Label* (name of vocabulary), *Prefix* (used by the database), *Classes* (number of classes in the vocabulary), and *Properties* (number of properties in the vocabulary). You can sort vocabularies by these columns using the up and down arrows at the right end of each column. 
 
