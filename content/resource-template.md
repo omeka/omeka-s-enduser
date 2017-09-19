@@ -22,22 +22,35 @@ All Omeka S installations include a Base Resource template which maps to the met
 The Base Resource template contains the following Dublin Core fields: Title; Rights; Type; Creator; Date; Description; Format; Language; Spatial Coverage (Place); Publisher; Alternative Title: Contributor; Extent; Identifier; Relation; Is Replaced By; Replaces; RightsHolder; Subject; Temporal Coverage.
 
 ## Create a resource template
-1. From the Resource Templates tab in the Admin Dashboard, click the *Add new resource template* button.
-1. In the Label property, type the label for your new template. This will be the text displayed in the dropdown for Resource Templates when creating an item, so be sure that the label is clear.
-1. If desired, select a class to associate with the template.
-1. Add properties from the list of vocabularies in the menu on the right side of the screen. You can filter properties in the text box or select from a specific vocabulary using the arrows to the right of the vocabulary names. 
-  - The Dublin Core properties *Title* and *Description* are added to every Resource Template by default. You can use these or delete as desired.
-1. If desired, add an alternate label and alternate comment for the element (see below)
-1. Select a data type for the element: Literal, URI, or Resource. Whichever you choose will be automatically loaded once someone selects that Resource Type and they will only be able to use **this data type** for the element when using this Resource Template.
-  - Literal: text and/or html imput
-  - URI: a link with label
-  - Resource: either an existing Item or Item Set in the Omeka S install
+From the Resource Templates tab in the Admin Dashboard, click the *Add new resource template* button.
 
-![The Add Resource Template page, with fields for title, class, and properties Title and Description pre-loaded]({{site.url}}{{site.baseurl}}/content/contentfiles/templates_add.png)
+The New resource template page will load with options for Label, suggested class, and the properties *Title* (dcterms:title) and *Description* (dcterms:description)
 
 ![The Add Resource Template page, with fields for title, class, and properties Title and Description pre-loaded](/content/contentfiles/templates_add.png)
 
-You can change the display label of the property when the resource template is used by entering the text you want to appear in the *Alternate Label* field for each property. You can also add alternate comments for the property. This will change the text under the property name when users are creating items using your Resource Template. 
+1. In the Label property, type the label for your new template. This will be the text displayed in the dropdown for Resource Templates when creating an item, so be sure that the label is clear.
+1. If desired, select a class to associate with the template.
+1. Add properties from the list of vocabularies in the menu on the right side of the screen. You can filter properties in the text box or select from a specific vocabulary using the arrows to the right of the vocabulary names. 
+1. If desired, modify the property (see Property options, below)
+
+### Property options
+You can modify the display label, comment on the label, set a property as required, and set the default data type for each property in your template.
+
+To do this, click the edit (pencil) icon in the row for the property you wish to modify. This will open a drawer on the right side of the screen with the ability to edit the properties:
+
+**Label**  
+Change the displayed label of the property that appears when the template is applied to an item by entering the text you want to appear in the *Alternate Label* field for each property.
+
+**Comment**  
+Add alternate comments for the property in the field *Alternate* in this section.. This will change the text under the property name when users are creating items using your Resource Template.
+ 
+**Other options**  
+Use the checkbox to determine whether a property is required when the template is in use.
+
+Using the dropdown, you can designate a  data type for the property: Literal, URI, or Resource. Whichever you choose will be automatically loaded once someone selects that Resource Type and they will only be able to use this data type for the element when using this Resource Template.  
+  - Literal: text and/or html imput
+  - URI: a link with label
+  - Resource: either an existing Item or Item Set in the Omeka S install.
 
 In the image below, from an Add Item view, the template has been written so that the Description property is labeled as Gist with an new comment (the default is “an account of the resource”): 
 
