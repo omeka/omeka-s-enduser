@@ -33,6 +33,8 @@ The New resource template page will load with options for Label, suggested class
 1. Add properties from the list of vocabularies in the menu on the right side of the screen. You can filter properties in the text box or select from a specific vocabulary using the arrows to the right of the vocabulary names. 
 1. If desired, modify the property (see Property options, below)
 
+Be sure to Save your resource template before leaving this page.
+
 ### Property options
 You can modify the display label, comment on the label, set a property as required, and set the default data type for each property in your template.
 
@@ -44,7 +46,7 @@ Change the displayed label of the property that appears when the template is app
 **Comment**  
 Add alternate comments for the property in the field *Alternate* in this section.. This will change the text under the property name when users are creating items using your Resource Template.
  
-**Other options**  
+**Other options** 
 Use the checkbox to determine whether a property is required when the template is in use.
 
 Using the dropdown, you can designate a  data type for the property: Literal, URI, or Resource. Whichever you choose will be automatically loaded once someone selects that Resource Type and they will only be able to use this data type for the element when using this Resource Template.  
@@ -57,6 +59,8 @@ In the image below, from an Add Item view, the template has been written so that
 ![A property labeled Gist with the comment “Brief Summary”](/content/contentfiles/templates_label.png)
 
 Note that users who select this resource template when creating an item will be able to add other properties to the item, and that the properties associated with the resource template are not required when creating an item.
+
+Ne sure to Set Changes before exiting.
 
 ## Sharing Resource Template
 It is possible to share a resource template between Omeka S installations by exporting and importing them.
