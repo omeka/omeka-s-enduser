@@ -58,7 +58,7 @@ In the image below, from an Add Item view, the template has been written so that
 
 ![A property labeled Gist with the comment “Brief Summary”](/content/contentfiles/templates_label.png)
 
-Note that users who select this resource template when creating an item will be able to add other properties to the item, and that the properties associated with the resource template are not required when creating an item.
+Note that users who select this resource template when creating an item will still be able to add other properties to the item, and that they will only be required to fill out those which you check as required.
 
 Ne sure to Set Changes before exiting.
 
