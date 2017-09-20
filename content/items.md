@@ -124,3 +124,34 @@ Use the *make public/private* button (eye icon) to set whether the item is visib
 ![make private button showing an eye icon with a diagonal slash through it](/content/contentfiles/item_private.png)  Private
 
 Note that if an item is private, all the media attached is private, but an item which is public can have attached media which are set to be either public or private.
+
+## Batch editing
+
+From the browse page of items (admin/item) you can batch edit items, using the dropdown menu on the upper right near the "Add New Item" button. You can select multiple items using the checkboxes on the left of each item's row.
+
+Batch actions are as follows:  
+- Edit selected: edit only the items that are selected on the page
+- Edit all: edit all the items returned by a search (default is all items)
+- Delete selected: delete only the items that are selected on the page
+- Delete all: delete all the items returned by a search (default is all items)
+
+Choose one of these options and then click *Go*.
+
+**Batch editing** items takes you to a new page. The items being edited will display on the right side in a drawer, while the batch edit form gives you the following options:  
+
+- set visibility: a dropdown, select from public or not public.
+- set template: a dropdown, select from the installation's resource templates.
+- set class: a dropdown, select from classes of the installed vocabularies.
+- add to item set: a dropdown, select from item sets on the installation. Add to an additional item set using the *add another item set* button.
+- remove from item set: a dropdown, select from item sets on the installation. Remove from an additional item set using the *remove another item set* button.
+- clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected items. Clear additional properties using the *Clear another property* button.
+
+In addition,  you can use the bottoms at the bottom of the batch edit form to add properties to every item:
+
+- add text value
+- add resource value
+- add URI value  
+
+Selecting any of these will add a block to the form where you can select a property from the installed vocabularies and enter the value for that property.
+
+For the **delete actions**, a drawer will open on the right side of the screen telling you the number of items which will be deleted. Nothing will be deleted unless you click the red *Confirm Delete* button. This action cannot be undone. To opt out of deleting the items, click the X in the upper right corner of the deletion drawer.
