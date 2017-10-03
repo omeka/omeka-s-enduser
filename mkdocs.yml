@@ -28,6 +28,7 @@ pages:
             - 'Custom Vocab': 'modules/customvocab.md'
             - 'DSpace Connector': 'modules/dspaceconnector.md'
             - 'Fedora Connector': 'modules/fedoraconnector.md'
+            - 'File Sideload': 'modules/filesideload.md'
             - 'Mapping': 'modules/mapping.md'
             - 'Metadata Browse': 'modules/metadatabrowse.md'
             - 'Omeka2 Importer': 'modules/omeka2importer.md'
