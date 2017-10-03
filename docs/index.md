@@ -18,7 +18,7 @@ Site map:
   * [Resource Templates](content/resource-template.md). Manage predefined sets of properties 
 * Admin
   * [Manage Users](users.md)
-  * [Modules](modules/modules.md)
+  * [Modules](modules/index.md)
   * [Jobs](jobs.md)
   * [Manage Settings](settings.md)
 

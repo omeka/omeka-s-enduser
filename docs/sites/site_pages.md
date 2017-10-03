@@ -46,7 +46,7 @@ You can delete any of the blocks by clicking on the trash can icon located in th
 
 Change the order of blocks by clicking on the three horizontal lines on the upper left corner of the block and then dragging and dropping it to the desired location.
 
-Some modules may create additional blocks for your site pages. For information on working with these blocks, please see the documentation for that [module](../modules/modules.md)
+Some modules may create additional blocks for your site pages. For information on working with these blocks, please see the documentation for that [module](../modules/index.md)
 ## Page Blocks
 Pages are made up of blocks, each of which has a different form of content.
 

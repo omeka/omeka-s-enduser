@@ -2,9 +2,9 @@
 title: Mapping 
 ---
 
-Mapping is a [module](../modules/modules.md) for Omeka S which allows you to geolocate Omeka S items and add interactive maps to [Site Pages].
+Mapping is a [module](../modules/index.md) for Omeka S which allows you to geolocate Omeka S items and add interactive maps to [Site Pages].
 
-To install Mapping, follow the instructions for [Installing Modules](../modules/modules.md#installing-modules) on the Modules documentation.
+To install Mapping, follow the instructions for [Installing Modules](../modules/index.md#installing-modules) on the Modules documentation.
 
 ## Adding Geolocation to an Item
 

@@ -14,7 +14,7 @@ The documentation is organized in a series of markdown (md) documents. Click on 
 
 ## Administrative Settings
 * Creating and managing [Users](/users.md)
-* Installing and managing [Modules](modules/modules.md)
+* Installing and managing [Modules](modules/index.md)
 * [Jobs](jobs.md)
 * Installation-level [Settings](settings.md) for the installation
 
