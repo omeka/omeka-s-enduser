@@ -32,6 +32,7 @@ pages:
             - 'Metadata Browse': 'modules/metadatabrowse.md'
             - 'Omeka2 Importer': 'modules/omeka2importer.md'
             - 'Sharing': 'modules/sharing.md'
+            - 'ValueSuggest': 'modules/valuesuggest.md'
             - 'Zotero Import': 'modules/zoteroimport.md'
     - 'Jobs': 'jobs.md'
     - 'Manage Settings': 'settings.md'
