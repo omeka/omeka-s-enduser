@@ -4,8 +4,6 @@ title: Modules
 
 Modules extend the functionality of your Omeka S installation and sites. 
 
-[List of modules](modules_list.md)
-
 ## Managing Modules
 
 To see what modules are installed on your Omeka S site, click on the Modules link on the left-hand navigation of your [admin dashboard](../admin-dashboard.md)

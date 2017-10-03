@@ -12,7 +12,7 @@ The settings are as follows divided into two sections; General and Security sett
 
 ### General
 
-![General settings with fields as described below]({{site.url}}{{site.baseurl}}/files/settings_general.png)
+![General settings with fields as described below](files/settings_general.png)
 
 - *Administrator Email* sets the email address for the installation administrator. 
 Note that some hosting setups may require that the domain name for the administrator email match the domain name of the installation (if your domain is yourinstall.org, the administrator email must be user@yourinstall.org).  
@@ -32,7 +32,7 @@ Note that some hosting setups may require that the domain name for the administr
 
 ### Security
 
-![Security settings with fields as described below]({{site.url}}{{site.baseurl}}/files/settings_security.png)
+![Security settings with fields as described below](files/settings_security.png)
 
 - *Use HTMLPurifier* checkbox. If checked, the service [HTMLPurifier](http://htmlpurifier.org/) will clean up any user-entered HTML. 
 - *Disable file validation*: a checkbox, unchecked by default. When unchecked, file uploads are limited by the following two fields. When this box is checked, any type of media or MIME type can be uploaded.

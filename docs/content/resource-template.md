@@ -6,7 +6,7 @@ A *Resource Template* is a set of pre-defined Properties, optionally with a Clas
 
 Resource templates are managed from the Admin Dashboard, accessed through the left-hand navigation under the tab labeled *Resource Templates*. 
 
-![Basic view of resource templates tab, showing the column titles and one template]({{site.url}}{{site.baseurl}}/content/contentfiles/templates_browse.png)
+![Basic view of resource templates tab, showing the column titles and one template](content/contentfiles/templates_browse.png)
 
 ![Basic view of resource templates tab, showing the column titles and one template](/content/contentfiles/templates_browse.png)
 
@@ -15,7 +15,7 @@ From this tab, you can sort existing templates by *label*, *class*, or number of
 ## Base Resource
 All Omeka S installations include a Base Resource template which maps to the metadata fields required by the Digital Public Library of America (DPLA). It will display in the table of resource templates as "Base Resource" with no owner. 
 
-![Base resource template displayed in the table of templates]({{site.url}}{{site.baseurl}}/content/contentfiles/templates_base1.png)
+![Base resource template displayed in the table of templates](content/contentfiles/templates_base1.png)
 
 ![Base resource template displayed in the table of templates](/content/contentfiles/templates_base1.png)
 
