@@ -11,7 +11,7 @@ Item Pool is where you can set the items available for selection and browse in y
 
 Item Sets is where you select the sets which will show up on the  Browse Item Sets page, should you choose to include it 
 
-![A window open to a site's resources tab](../sites/sitesfiles/site_resourcesview.png)
+![A window open to a site's resources tab](../sites/sitesfiles/siteres1.png)
 
 **Note** The two tabs operate independently from each other. The selections made on one will have no effect on the other.
 

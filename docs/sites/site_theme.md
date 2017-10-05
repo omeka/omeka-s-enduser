@@ -9,7 +9,7 @@ When you navigate to the Theme tab, the current theme will appear on the top of 
 
 A large image of the theme in action appears on the left, with the theme Title, creator, and a button for Theme Settings on the right.
 
-![Theme tab with Center Row as the current theme](../sites/sitesfiles/sites_themetab.png)
+![Theme tab with Center Row as the current theme](../sites/sitesfiles/sitetheme_tab.png)
 
 Below the current theme are buttons for all other installed themes. The buttons have a small image of the theme in action, the theme name, and a link to the creator of the theme. 
 
@@ -25,7 +25,7 @@ Theme settings allow you to customize aspects of the site's theme, such as addin
 
 To edit the settings of your selected theme, click on the button labeled *edit theme settings* to the right of the current theme thumbnail (highlighted with an arrow in the below image).
 
-![Theme settings button](../sites/sitesfiles/sites_themesettings.png)
+![Theme settings button](../sites/sitesfiles/sitetheme_settings.png)
 
 Note that your settings for a specific theme on a site will be saved even if you change themes. For example, if you customized the footer for the default theme, then switched to using The Daily for a while, then switched back to the default theme, your custom footer would still be there.
 
