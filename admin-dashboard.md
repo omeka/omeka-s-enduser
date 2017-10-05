@@ -47,10 +47,10 @@ The left hand navigation of the dashboard is divided into sections related to fu
     - [Vocabularies]({{site.url}}{{site.baseurl}}/content/vocabularies.md): manage the metadata standards for your install. (Closed book icon)
     - [Resource Templates]({{site.url}}{{site.baseurl}}/content/resource-template.md): manage predefined sets of properties (fields) to use when creating items. (Pencil in a square icon)
 - Admin: installation-level administration (note that some of these tabs may not be visible to all user levels)
-    - [Users]({{site.url}}{{site.baseurl}}/users.md): manage users for the whole install and individual sites. (head and shoulders person icon)
-    - [Modules]({{site.url}}{{site.baseurl}}/modules/modules.md): add functionality to your sites. (Plus sign in square icon)
-    - [Jobs]({{site.url}}{{site.baseurl}}/jobs.md): displays the user-activated tasks which are currently running. NB: jobs only display when they are running. (Three bars icon)
-    - [Settings]({{site.url}}{{site.baseurl}}/settings.md): manage the global settings for all sites, the admin dashboard and the site dashboards. (Gears icon)
+    - [Users](/users.md): manage users for the whole install and individual sites. (head and shoulders person icon)
+    - [Modules](/modules/modules.md): add functionality to your sites. (Plus sign in square icon)
+    - [Jobs](/jobs.md): displays the user-activated tasks which are currently running. NB: jobs only display when they are running. (Three bars icon)
+    - [Settings](/settings.md): manage the global settings for all sites, the admin dashboard and the site dashboards. (Gears icon)
 
 If you have installed modules, they may appear in the admin section of the left navigation below settings.
 
