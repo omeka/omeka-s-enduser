@@ -9,6 +9,8 @@ Use the *Navigation* tab of the [Sites](../sites/sites.md) to manage the navigat
 The topmost item in the navigation is the main page for your site.
 
 ## Adding Navigation
+Add to the navigation of the site using the options on the right hand side of the page. There are two sections: [Add a custom link](../sites/site_navigation/#custom-link) and [Add a link to a site page](../sites/site_navigation/#site-page)
+
 ### Custom Link
 To add a link you can use the *Add a custom link* buttons on the right hand drawer to add either:
  * a *Custom URL* to any web address; or
