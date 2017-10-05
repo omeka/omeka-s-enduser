@@ -8,13 +8,15 @@ Admin Main Page
 ---------------------
 When a user logs in, the first page they see is the Admin Dashboard. 
 
-![Admin dashboard full view]({{site.url}}{{site.baseurl}}/files/admindashfullview.png)
+*Note: depending on the user role, you may not see precisely the same options in the left-hand navigation. See [below](#left-hand-navigation) for details* 
+
+![Admin dashboard full view](/files/admindashfullview.png)
 
 In addition to the left-hand navigation present on all pages (see below), the admin dashboard presents users with two boxes: Manage Resources and Manage Sites.
 
-The *Manage Resources* box displays the following resources with their total count: [Items]({{site.url}}{{site.baseurl}}/content/items.md), [Item Sets]({{site.url}}{{site.baseurl}}/content/item-sets.md), [Vocabularies]({{site.url}}{{site.baseurl}}/content/vocabularies.md), and [Resource Templates]({{site.url}}{{site.baseurl}}/content/resource-template.md). Clicking on the label of the Resource will take you to the browse page; clicking the Plus button to the right of the label will take you to the add page for that resource type. 
+The *Manage Resources* box displays the following resources with their total count: [Items](/content/items.md), [Item Sets]({{site.url}}{{site.baseurl}}/content/item-sets.md), [Vocabularies]({{site.url}}{{site.baseurl}}/content/vocabularies.md), and [Resource Templates]({{site.url}}{{site.baseurl}}/content/resource-template.md). Clicking on the label of the Resource will take you to the browse page; clicking the Plus button to the right of the label will take you to the add page for that resource type. 
 
-![Close up of manage resources and manage sites boxes]({{site.url}}{{site.baseurl}}/files/admindashmanage.png)
+![Close up of manage resources and manage sites boxes](/files/admindashmanage.png)
 
 The *Manage Sites* box lists the [Sites]({{site.url}}{{site.baseurl}}/sites/sites.md) on the install. Clicking on the site name will take you to the public view of the site; clicking the edit (pencil) button will take you to the Edit Site Info page for that site. 
 
