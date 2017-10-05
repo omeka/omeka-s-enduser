@@ -13,7 +13,11 @@ Once you are editing the site, click the Pages tab in the left hand navigation.
 When you create a new site, Omeka S automatically adds a page titled *Welcome* with a single HTML block (see below). You can edit this page or delete it.
 
 ## Adding Pages
-From the page for the site, click the Pages tab. Then click the "Add a Page" button on the left side of that tab to be taken to the Add Page function.
+From the page for the site, click the Pages tab. Then click the *Add new page* button on the upper left side of the window.
+
+![A red arrow points to a grey button labeled "add new page"](../sites/sitesfiles/sitepg_addnew.png)  
+
+To add a page you must enter a *Title*. You can also enter a *URL Slug*. Both of these can be edited later but are required to create the page. If you do not enter a slug, Omeka S will create one from the page title. A slug is the page’s portion of the url and can only contain letters, numbers, and hyphens; no other characters are allowed.
 
 ![Page view showing the fields for Add Page](../sites/sitesfiles/sitepg_add.png)
 
@@ -50,12 +54,21 @@ Some modules may create additional blocks for your site pages. For information o
 ## Page Blocks
 Pages are made up of blocks, each of which has a different form of content.
 
-### HTML: 
-Creates an HTML box in which you can add formatted text and links.
+### HTML
+Creates an HTML box in which you can add formatted text and links. When you click in the box, a formatting menu will display above the text field. 
 
+Basic block: 
 ![Page block for HTML content](../sites/sitesfiles/sitepg_html.png)
+
+With formatting menu open:
+![Page block for HTML content with active field, showing formatting menu](../sites/sitesfiles/sitepg_html2.png)
+
+
 ### Page Title
 Displays the title of the current page.
+
+![Page block display site's title](../sites/sitesfiles/sitepg_title.png)
+
 ### Media
 Creates a block with one or more pieces of media associated with items in the item pool. 
 
@@ -70,7 +83,13 @@ Once you’ve selected an item, the drawer will shift to that item’s informati
 
 ![Item view with apply changes option](../sites/sitesfiles/sitepg_applyitem.png)
 
-If you want media to appear alongside text, place a media block *above* an HTML block.
+The Media block has options for the display of the media: 
+
+- Thumbnail type: choose from large, medium, and square.
+- Thumbnail alignment: relative to page. Choose from left and right.
+- Show attachment title: Choose whether the media should have a caption of the item title, file name, or no title displayed at all.
+
+*Layout note*: If you want media to appear beside a block of text, place a media block *above* an HTML block.
 
 ### Browse Preview
 
@@ -123,7 +142,7 @@ The Depth option allows you to set how many levels of child pages you want to di
 Add and arrange pages using the [Site Navigation](../sites/site_navigation.md) settings. 
 
 ### Line Break
-Line break creates a transparent or opaque line break on the page, clearing all blocks. 
+Line break creates a transparent or opaque line break on the page, clearing all blocks. Select whether the line is transparent or opaque from the dropdown.
 
 ![line break table, dropdown selected to transparent](../sites/sitesfiles/sitepg_line.png)
 
@@ -131,6 +150,8 @@ HTML blocks wrap around Media blocks and at times you may want to clear the page
 
 ### Item with Metadata
 This block displays an item along with all associated metadata (entered when creating or editing the [item](../content/items.md)).
+
+Add attachments in the same manner as the [media](../sites/site_pages/#media) page block.
 
 ![Item with metadata block with nothing attached](../sites/sitesfiles/sitepg_iwm.png)
 
