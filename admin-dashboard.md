@@ -49,8 +49,8 @@ The left hand navigation of the dashboard is divided into sections related to fu
 - Admin: installation-level administration (note that some of these tabs may not be visible to all user levels)
     - [Users](/users.md): manage users for the whole install and individual sites. (head and shoulders person icon)
     - [Modules](/modules/modules.md): add functionality to your sites. (Plus sign in square icon)
-    - [Jobs](https://github.com/omeka/omeka-s-enduser/blob/master/jobs.md): displays the user-activated tasks which are currently running. NB: jobs only display when they are running. (Three bars icon)
-    - [Settings](https://github.com/omeka/omeka-s-enduser/blob/master/settings.md): manage the global settings for all sites, the admin dashboard and the site dashboards. (Gears icon)
+    - [Jobs](/jobs.md): displays the user-activated tasks which are currently running. NB: jobs only display when they are running. (Three bars icon)
+    - [Settings](/settings.md): manage the global settings for all sites, the admin dashboard and the site dashboards. (Gears icon)
 
 If you have installed modules, they may appear in the admin section of the left navigation below settings.
 
