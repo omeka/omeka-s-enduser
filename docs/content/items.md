@@ -51,8 +51,13 @@ Add information to the properties which load. If you do not select a resource te
 You may add text, a resource from the installation, or an external link in each field.  
 
 #### Text
-Text fields are entered with text, which can include HTML code. The keyboard at the top of the field input indicates text. The globe icon which appears next to it can be used to set language. 
+Text fields allow for unformatted text entry.
+
 ![image of text input field with keyboard icon indicating text input, the globe icon for setting language, and a trashcan delete icon](/content/contentfiles/items_textedit.png)
+
+You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code for the language in which the text is written.
+
+![Red arrow points to the globe icon and a text entry field highlighted in blue](/content/contentfiles/item_lang.png)
 
 #### Omeka Resource
 Omeka Resource fields create an internal link between the resource you are creating and the resource which fills that field. 
@@ -65,18 +70,19 @@ Once you have created an item and added media to it, you will also have the opti
 
 ![A blue outline of a rectangle highlights resource options for Items, Item sets, and Media to be used as the input for the element "Description"](/content/contentfiles/items_addmediaresource.png)
 
-To use a media resource for a property, select the media option for the element. The drawer which opens will display all media attached to the item. Select the media which you want to use; this will switch the drawer to just that media. Click the *Select Resource* button at the bottom of the drawer to complete the process.
+To use a media resource for a property, select the media option for the element (1). The drawer which opens will display all media attached to the item. Select the media which you want to use(2); this will switch the drawer to just that media (second image). Click the *Select Resource* button at the bottom of the drawer to complete the process (3).
 
-![Focus on the editing portion of a window for the item "Sense and Sensibility", with the elements Title and Description visible. On the right side of the window, a vertical rectangle (the drawer) is open on the right displaying five media which are attached to the item, including video, images, and text.](/content/contentfiles/items_mediaresource1.png)
+![Focus on the editing portion of a window for the item "Sense and Sensibility", with the elements Title and Description visible. On the right side of the window, a vertical rectangle (the drawer) is open on the right displaying five media which are attached to the item, including video, images, and text. This image contains steps 1 and 2.](/content/contentfiles/items_mediaresource1.png)
 
-![The same window as before, but now the drawer on the right displays a thumbnail of the media "Sense and Sensibility DVD Trailer" with a dark gray button labeled "select resource" at the bottom of the drawer area.](/content/contentfiles/items_mediaresource2.png)
+![The same window as before, but now the drawer on the right displays a thumbnail of the media "Sense and Sensibility DVD Trailer" with a dark gray button labeled "select resource" at the bottom of the drawer area. This image contains step 3](/content/contentfiles/items_mediaresource2.png)
 
 #### URI
 URI fields link to an external website or online resource.
 
 You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
 
-You can indicate the language for the content of a text input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code for the language in which the text is written.
+#### Language 
+You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code for the language in which the text is written.
 
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](/content/contentfiles/item_lang.png)
 
@@ -84,7 +90,7 @@ You can indicate the language for the content of a text input using the globe sy
 Use the *Media* tab to add images, video, or other files.
 Using the buttons on the *Add New Media* menu on the right side of the screen, select a media type (Upload, URL, oEmbed, YouTube, or HTML)
 
-![“Add new media” dropdown showing the options](/content/contentfiles/items_mediaadd2.png)
+![“Add new media” drawer showing the options](/content/contentfiles/items_mediaadd2.png)
 
 - *Upload*: select a file to upload from your computer.
 - *URL*: import media via a uri.
@@ -93,16 +99,13 @@ Using the buttons on the *Add New Media* menu on the right side of the screen, s
 - *oEmbed*: insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7) - use the url in your browser’s location bar.
 - *YouTube*: add a link to embed a YouTube video. Use the url from your browser’s location bar (with `/watch/` in it) rather than the `youtu.be` link.
 
-
-While editing, you can delete any media instance using the delete button (trashcan) on the upper right corner of the media block.
-
-![Blank media instance blocks all six media types](/content/contentfiles/items_mediablocks.png)
-
 If you have more than one media instance for an item, you can reorder them by dragging and drop each media instance block, using the icon of three lines in the upper left corner of the block as the anchor when dragging (click there).
 
-You can edit media later by going by editing an item, navigating to the *media* tab, and clicking the edit button (pencil) for a media when editing the item. You can use the delete button to remove media from an item.
+You can edit media later by going by editing an item, navigating to the *media* tab, and clicking the edit button (pencil) for a media when editing the item. 
 
-![Media tab of an item being edited, with the view, edit, and delete buttons to the right of the media file name](/content/contentfiles/items_mediaedit.png)
+You can delete any media instance from the item's edit page using the delete button (trashcan) on the upper right corner of the media block.
+
+![Image shows a close up of a media item being removed - it is red and has an undo curling arrow at the right end of the block](/content/contentfiles/item_mediablockdelete.png)
 
 ### Item Sets
 You can only add items to existing item sets.
@@ -162,4 +165,4 @@ Selecting any of these will add a block to the form where you can select a prope
 
 For the **delete actions**, a drawer will open on the right side of the screen telling you the number of items which will be deleted. Nothing will be deleted unless you click the red *Confirm Delete* button. This action cannot be undone. To opt out of deleting the items, click the X in the upper right corner of the deletion drawer. To confirm delete, check the "Are you sure" checkbox and then click *Confirm Delete*
 
-![Close up of the warning, with the text describing the number of items to be deleted in red.](/content/contentfiles/item_batchdelwarn.png)
+![Close up of the warning, with the text describing the number of items to be deleted in red.](/content/contentfiles/items_batchdelwarn.png)
