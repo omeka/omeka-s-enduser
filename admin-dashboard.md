@@ -8,6 +8,8 @@ Admin Main Page
 ---------------------
 When a user logs in, the first page they see is the Admin Dashboard. 
 
+*Note: depending on the user role, you may not see precisely the same options in the left-hand navigation. See [below](#left-hand-navigation) for details* 
+
 ![Admin dashboard full view](/files/admindashfullview.png)
 
 In addition to the left-hand navigation present on all pages (see below), the admin dashboard presents users with two boxes: Manage Resources and Manage Sites.
