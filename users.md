@@ -28,7 +28,7 @@ On the Add User page, enter the following:
 ## Managing Users
 To manage an existing user, go to the Users section.
 
-![Manage users view, top row is the Omeka Devs account. The drawer showing the number of items and item sets created by the Omeka Devs user is opened.](/files/users_table.png)
+![Manage users view, top row is the Omeka Devs account. The drawer showing the number of items and item sets created by the Omeka Devs user is opened.]({{site.url}}{{site.baseurl}}/files/users_table.png)
 
 To view the name, email, and role of a user, click on the username. 
 

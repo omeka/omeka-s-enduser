@@ -72,10 +72,11 @@ Once you’ve selected an item, the drawer will shift to that item’s informati
 
 If you want media to appear alongside text, place a media block *above* an HTML block.
 
-### Browse Preview: 
+### Browse Preview
+
 Allows you to add a block of items on a site page.
 
-In order to create a Browse Preview block, you'll first need to perform a search on your Omeka S installation for the items you want to include. You can use the general search on the left hadn navigation or, if you want to show all items in an item set, use the Advanced Search from Items browse. 
+In order to create a Browse Preview block, you'll first need to perform a search on your Omeka S installation for the items you want to include. You can use the general search on the left hand navigation or, if you want to show all items in an item set, use the Advanced Search from Items browse. NB: if you leave the search options blank, the browse preview will load all items in your site's item pool.
 
 Once you have searched, highlight everything in your browser's address bar starting with the question mark all the way to the end of the search url (to the right).
 

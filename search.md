@@ -5,7 +5,7 @@ There are search functions on both the administrative and public sides of Omeka 
 
 Underneath the user information is a search field which has an option for advanced search (ellipses) in addition to the button to search (magnifying glass). The search function will survey content on the administrative install, including items, vocabularies, resource templates, and media.  
 
-![Search option in blue sidebar, described above.](/files/advancedsearch1.png)
+![Search option in blue sidebar, described above.]({{site.url}}{{site.baseurl}}/files/advancedsearch1.png)
 
 Advanced search options (the ellipses) allow you to refine the search by Resource Type, limiting it to *Items*, *Item Sets*, or *Media* by clicking the radio button next to the Resource Type you want to search. 
 
@@ -49,3 +49,4 @@ The advanced search loads on a new page, and has the following options:
 You can remove value searches using the red trash can icon to the right of the value settings.
 
 ![Advanced item set search options form, with fields as described above.](/files/advancedsearchis2.png)
+
