@@ -9,7 +9,7 @@ To view the metadata for media, click on the media’s name in the  right-hand s
 
 Adding media includes uploading a file, or directly attaching content with oEmbed, YouTube URLs, or writing HTML.
 
-Media can only be added via the [item]({{site.url}}{{site.baseurl}}/content/items.md). 
+Media can only be added via the [item](../content/items.md). 
 
 ## Edit Media
 To edit an existing media, go to its metadata page and select the *Edit media* button in the upper right corner of the page. 
@@ -22,8 +22,8 @@ Automatically generated metadata, such as source, visibility, and part of item, 
 
 Use the *make public/private* button (eye icon) to set whether the media is visible to the public or only to users of the OmekaS install. 
 
-![make public button showing an eye icon]({{site.url}}{{site.baseurl}}/content/contentfiles/item_public.png) Public 
+![make public button showing an eye icon](../content/contentfiles/item_public.png) Public 
 
-![make private button showing an eye icon with a diagonal slash through it]({{site.url}}{{site.baseurl}}/content/contentfiles/item_private.png)  Private
+![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)  Private
 
 Note that if an item is private, all the media attached is private, but an item which is public can have attached media which are set to be either public or private.

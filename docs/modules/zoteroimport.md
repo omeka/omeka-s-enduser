@@ -2,9 +2,9 @@
 title: Zotero Import
 ---
 
-Zotero Import is a [module](modules.md) for Omeka S which allows you to connect an Omeka S instance to a Zotero library and import items from that library.
+Zotero Import is a [module](index.md) for Omeka S which allows you to connect an Omeka S instance to a Zotero library and import items from that library.
 
-To install Zotero Import, follow the instructions for [Installing Modules](modules.md#installing-modules) on the Modules documentation.
+To install Zotero Import, follow the instructions for [Installing Modules](index.md#installing-modules) on the Modules documentation.
 
 ## Prepare your Zotero Library
 Ensure that your Zotero library is published. Login to Zotero, go to settings, and then to privacy. Make sure that 'publish entire library' is checked. The 'publish notes' box can also be checked.

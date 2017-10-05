@@ -29,7 +29,7 @@ In the table of vocabulary properties, there is a column for *Term*. Use the Ter
 
 Importing
 ---------
-[Install and activate](../modules/modules.md#installing-modules) the CSV Importer module. Once active, the module will add a tab to the left-hand navigation of your Omeka S install dashboard, under the Modules heading. 
+[Install and activate](../modules/index.md#installing-modules) the CSV Importer module. Once active, the module will add a tab to the left-hand navigation of your Omeka S install dashboard, under the Modules heading. 
 
 ![A red arrow points to CSV Importer in the navigation](../modules/modulesfiles/csvimport_nav.png)
 
