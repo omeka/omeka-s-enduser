@@ -35,7 +35,9 @@ Clicking the Start Over button will take you back to the API import url field.
 #### Basic Import Settings
 * *Omeka 2 Api Key*: This field can either be blank or filled, depending on whether you have an API key for the site you are attempting to import data from.  
 * *Comment*: You can add a comment such as “Jane Doe’s API, no key” to help identify the specific import when viewing previous imports.  
-* *Import Into*: This option allows you to select the item set into which you want to import the items.   
+* *Import Into*: This option allows you to select the item set into which you want to import the items. Note that you can only import into item sets which you own.
+* *Per Page* is an option setting to limit the number of records per request that you retreive. Useful for sites which may have thousands of items per page.
+* *Update a previous import* allows you to update - and overwrite - a previous import from the same source.
 * *Import Collections*: Check this box if you wish to import the collections from the Omeka 2 site to the Omeka S site.
 
 ![Basic options for importing Omeka2](../modules/modulesfiles/o2i_basic.png)
@@ -54,6 +56,7 @@ The columns of the table are *Omeka 2 Element*, *Mapped Properties* and a checkb
 The first set of the table is Dublin Core, followed by Item Type Metadata, but the import will also bring in any legacy or additional element sets (for example Omeka Legacy File).
 
 To map:
+
 1. Select the element or item type in the table by clicking on its row or label.
 1. In the  right-hand drawer, either click through or search for the property to which you want to map your element. 
 1. Click on the property in the drawer to map it. 
@@ -66,10 +69,12 @@ To remove a mapping, click the delete (trash can) icon in the element/property r
 In this tab you map Omeka Classic Item Types to Omeka S Resource Classes. You can select from the classes for any of the installed vocabularies.  
 
 To map:
+
 1. Select the item type in the table by clicking on its row or label.
 1. In the  right-hand drawer, either click through or search for the resource class to which you want to map your element. 
 1. Click on the resource class in the drawer to map it. 
 
+![Inactive classes mapping tab](../modules/modulesfiles/o2i_mapclass.png)
 
 ### Complete Import
 When you have finished customizing the mapping, click the *Import* button in the upper right corner of the window.
