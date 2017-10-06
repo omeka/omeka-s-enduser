@@ -42,6 +42,7 @@ On selection, the options for that type will load in the sidebar for you to edit
 The Collecting module has Prompt Types with options as follows:
 
 **Item Property**: select a property from the installation's vocabularies for the visitor to use to describe the item.
+
 - Property: select a property from the vocabularies (example: Description)
 - Prompt Text: If you want the prompt to be something other than the property label.
 - Input type: length and kind of input box. Choose from:
@@ -49,11 +50,12 @@ The Collecting module has Prompt Types with options as follows:
      - Text box (multiple line)
      - Select menu (dropdown)
 	     - If you choose "Select menu," you will need to enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
+	 - Item resource (will appear as dropdown)
+		 - This will offer the user the choice of existing items to add as a property value. You can paste anything after the `admin/` in the url of an advanced search to load specific items.
  - Required? check if this field should be required.
 
-![Item Property prompt with a select menu input type](../modules/modulesfiles/collecting_itemprop.png)
-
 **Item Media** allows visitors to add media to their item.
+
 - Media Type: options are 
 	- Map (requires Mapping module); 
 	- URL
@@ -63,6 +65,7 @@ The Collecting module has Prompt Types with options as follows:
 - Required? check if the media should be required
 
 **Item Supplementary** additional information for the item, not linked to any particularly vocabulary or property.
+
 - Prompt Text: If you want the prompt to be something other than the property label.
 - Input type: length and kind of input box. Choose from:
      - Text box (one line)
@@ -72,14 +75,17 @@ The Collecting module has Prompt Types with options as follows:
  - Required? check if this field should be required.
 
 **User Name** which will be used to assign the item owner. If the person using the form is a logged-in user of the Omeka S installation, this will autopopulate.
+
 - Prompt Text: If you want the prompt to be something other than the property label.
 - Required? check if this field should be required.
 
 **User Email** where the person adding the item can give their email. If this is left blank, they will not receive an email with the text in the *Email Text* field.
+
 - Prompt Text: If you want the prompt to be something other than the property label.
 - Required? check if this field should be required.
 
-**User Private** collect additional information from the user which will be kept private
+**User Private** collect additional information from the user which will be kept private.
+
 - Prompt Text: If you want the prompt to be something other than the property label.
 - Input type: length and kind of input box. Choose from:
      - Text box (one line)
@@ -89,6 +95,7 @@ The Collecting module has Prompt Types with options as follows:
  - Required? check if this field should be required.
 
 **User Public** collect additional information from the user which can be made public
+
 - Prompt Text: If you want the prompt to be something other than the property label.
 - Input type: length and kind of input box. Choose from:
      - Text box (one line)
@@ -128,6 +135,7 @@ Rearrange the order of prompts by dragging and dropping them using the three-lin
 Add a Collecting Form to Site Pages
 ------------------------------------
 To add a collecting form to a page:
+
 1. Go to the page on which you want the form to appear (or add a new page for the form)
 2. From the *Add New Block* sidebar select the *Collecting* block
 3. On the Collecting block, click the box for the form you want to include. You can add more than one form to the page by checking more than one box.
