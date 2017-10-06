@@ -37,21 +37,25 @@ Custom Vocabularies are applied through Resource Templates.
 Go to the Resource Templates and either add new or edit an existing template. Once you are editing the template:
 
 1. Add the property to which you want to apply the Custom Vocab.
-2. In the Data Type section of the property block, open the dropdown. Select the Custom Vocabulary you want to use
-3. Save changes
+2. Edit the property
+3. In the drawer which opens on the right, go to the Other options section and find the Data type dropdown.
+2. Scroll through the dropdown and slect the Custom Vocabulary you want to use
+3. Click set changes at the bottom of the drawer.
+
+Be sure to save your changes
 
 ![Resource Template data being edited with dropdown open to show available vocabularies](../modules/modulesfiles/customVocab_select.png)
 
-When you click the title of a Resource Template to see its details, the Custom Vocab will show up under the Data Type table heading.
+When you click the title of a Resource Template to see its details, the Custom Vocab will show up in the Data Type table heading.
 
-![Resource Template "Place" with the custom vocabulary State applied to Coverage](../modules/modulesfiles/customVocab_resource.png)
+![Resource Template "National Park" with the custom vocabulary State applied to Spatial Coverage](../modules/modulesfiles/customVocab_resource.png)
 
 When this Resource Template is used in an Item or Item Set, the designated properties will always load as a drop down menu with the values from the custom vocabulary.
 
-In this image, the Resource Template modified earlier is loaded for a new item. See that Coverage has a "select below" message and arrows indicating the property input is a drop down menu.
+In this image, the Resource Template modified earlier is loaded for a new item. See that Spatial Coverage has a "select below" message and arrows indicating the property input is a drop down menu.
 
 ![as described](../modules/modulesfiles/customVocab_item1.png)
 
-This image shows the dropdown open, displaying the values from the State vocabulary.
+This image shows the dropdown open, displaying the values from the "US states & territories"  vocabulary.
 
 ![as described](../modules/modulesfiles/customVocab_item2.png)
