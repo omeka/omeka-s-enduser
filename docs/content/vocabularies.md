@@ -21,10 +21,13 @@ When editing a vocabulary, you can make changes to the *label* and add *comments
 New vocabularies must be imported from an existing metadata standard source. In order to import a new vocabulary, you must have a vocabulary file (RDF/XML with an .rdf extension).
 
 After specifying the vocabulary file to upload using your browser’s file chooser, enter the follow values for the vocabulary:
-- prefix
-- namespace uri
-- label
-- and any comments you have.
+
+- prefix (required);
+- namespace uri (required);
+- label (required);
+- and any comments you have (optional).
+
+![New vocabulary form, with a file chooser for the vocabulary file and text entry fields for the other values.](/content/contentfiles/vocab_addnew.png)
 
 Note that you may have to research in order to find the prefix, namespace uri, and label for the vocabulary, as these are not standardized. In addition to the vocabulary's website, you might consult <http://lov.okfn.org/dataset/lov/vocabs>.
 
