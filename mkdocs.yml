@@ -6,7 +6,7 @@ pages:
     - 'Glossary': 'glossary.md'
     - 'Searching': 'search.md'
     - 'Sites': 
-        - 'Sites Management': 'sites/sites.md'
+        - 'Sites Management': 'sites/index.md'
         - 'Site Settings': 'sites/site_settings.md'
         - 'Pages Management': 'sites/site_pages.md'
         - 'Navigation': 'sites/site_navigation.md'

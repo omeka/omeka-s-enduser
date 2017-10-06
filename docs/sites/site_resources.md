@@ -17,7 +17,7 @@ Item Sets is where you select the sets which will show up on the  Browse Item Se
 
 Item Pool
 ----------------------------
-The Item Pool determines what automatically appears in the resource selection options on the [pages](../sites/site_pages.md) of your Omeka S [site](../sites/sites.md). It also limits the resources which appear on a browse page on your site.
+The Item Pool determines what automatically appears in the resource selection options on the [pages](../sites/site_pages.md) of your Omeka S [site](../sites/index.md). It also limits the resources which appear on a browse page on your site.
 
 ![The Item Pool tab on site settings has multiple search options, as described below](../sites/sitesfiles/sites_itempool.png)
 

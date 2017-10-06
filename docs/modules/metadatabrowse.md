@@ -16,7 +16,7 @@ Contents
 
 Metadata Browse on Sites
 ------------------------------
-Once the module is activated and installed, it will show up in the context menu for [sites](../sites/sites.md) on your installation. 
+Once the module is activated and installed, it will show up in the context menu for [sites](../sites/index.md) on your installation. 
 
 To set up Metadata Browse for a site, click on the Metadata Browse tab in the site's context menu.
 

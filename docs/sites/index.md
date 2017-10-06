@@ -110,5 +110,5 @@ Once you've added one or more users, click the Save button located in the upper 
 * [Site Pages](../sites/site_pages.md)
 * [Site Navigation](../sites/site_navigation.md)
 * [Site Resources](../sites/site_resources.md)
-* [Theme](../sites/site_themesettings.md)
+* [Theme](../sites/site_theme.md)
 * [Site Settings](../sites/site_settings.md)

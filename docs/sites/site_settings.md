@@ -1,7 +1,7 @@
 ---
 title: Site Settings
 ---
-This tab allows you to configure settings for the [site](../sites/sites.md) overall. These settings include browse options, links, and the option for a user bar on the public side of the site.
+This tab allows you to configure settings for the [site](../sites/index.md) overall. These settings include browse options, links, and the option for a user bar on the public side of the site.
 
 ![Site settings options as described below](../sites/sitesfiles/sites_settings.png)
 

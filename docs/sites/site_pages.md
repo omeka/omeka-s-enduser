@@ -2,7 +2,7 @@
 title: Site Pages
 ---
 
-Pages form the content of your [sites](../sites/sites.md). A site can have a single page or many pages.
+Pages form the content of your [sites](../sites/index.md). A site can have a single page or many pages.
 
 Manage the pages for a site by navigating to the Sites tab on the left-hand navigation of the admin dashboard. Select the site  for which you want to manage the pages and click either the title or the edit (pencil) button to edit that site. 
 
