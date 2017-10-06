@@ -77,8 +77,13 @@ Select whether this column contains:
 
 **Properties** 
 
-Select from the properties of all installed vocabularies. You can search for a specific property using the *Filter properties* field at the top of the drawer. 
-You can choose to import the content as a URL.
+Select from the properties of all installed vocabularies. You can search for a specific property using the *Filter properties* field at the top of the drawer or open a specific vocabulary by clicking on its name.
+
+Options:  
+- Use the set language button to set the language for this specific property. You must enter the standard language code, case sensitive, in this box.
+- You can choose to import the content as a URL by clicking the *Import as URL reference* button
+- Import as Omeka S resource ID will populate the property with an existing Omeka S resource.
+- Use multivalue separator, if you have multiple values in this property in the csv file.
 
 ![Mapping options for properties data](../modules/modulesfiles/csvimport_iproperties.png)
 
@@ -90,6 +95,9 @@ Select one of the following:
 - IIIF Image
 - oEmbed code
 - YouTube
+- Sideload (if [File Sideload](/modules/filesideload) is installed)
+
+There is an option to use the multivalue separator for this import.
 
 ![Mapping options for media](../modules/modulesfiles/csvimport_imedia.png)
 
@@ -111,14 +119,10 @@ As soon as you select a mapping it should appear in the Mappings column of the t
 Once you have completed mapping, hit import. You should see a confirmation message saying "Importing in Job ID [number]"
 
 ### Users Import
-The next page of the Importer has two tabs: 
+You can import user data from a csv and map to the following information: email, display name, and role. When you import a user csv, the tabs are as follows: 
 
 #### Basic Import Settings
 - *Comment*: make a note on the import.
-- *Item Sets*: add the imported items to a specific item set or sets using the select menu (required)
-- *Owner*: set the owner for the Items by selecting  from the drop-down menu.
-- *Multivalue Separator*: enter the multivalue separator character here, if using
-      - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon.
 
 ![Basic options for user import](../modules/modulesfiles/csvimport_userbasic.png)
 
@@ -153,13 +157,13 @@ This will display a table with the following columns:
 - *Status* of import
 - Import *Owner*
 
-![CSV Import past imports table](../modules/modulesfiles/pastImportTable.png)
+![CSV Import past imports table](../modules/modulesfiles/csvimports_pastimports.png)
 
 To see the details of an import, click the Job ID number in its row. This will give you a detailed job page with Status, start and end timestamps, Class, Owner, any Args, and a link to the import log at the bottom of the page. 
 
 Confirm that the content has been imported in the Imported Content column.
 
-![CSV Import past imports table](../modules/modulesfiles/csvimport_added.png)
+![A red rectangle surrounds the message of how many items were added in an import](../modules/modulesfiles/csvimport_added.png)
 
 Undo an Import
 ------------------------
