@@ -30,6 +30,8 @@ Note that some hosting setups may require that the domain name for the administr
 
 - *Default Site* dropdown gives you control over where people land they navigate to the base url of your install. You can either display a list of all sites in the install (default) or select a specific site from the dropdown, to which people will be redirected.
 
+- *Locale* dropdown lets you select from a dropdown of [available languages](https://www.transifex.com/omeka/omeka-s/) for the Omeka S core to change the language in which your installation's admin side displays.
+
 ### Security
 
 ![Security settings with fields as described below](files/settings_security.png)
