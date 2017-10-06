@@ -33,7 +33,7 @@ To import from a DSpace Repository:
 1. Add any comments.
 1. Click the *Import Collection* button for the collection you want to import.
 
-You can track the status of the import by navigating to the DSpace Connector > Past Imports tab or on the [Jobs](../jobs.md) tab of the left-hand navigation on the admin dashboard.
+You can track the status of the import by navigating to the DSpace Connector > Past Imports tab or on the [Jobs](/admin/jobs.md) tab of the left-hand navigation on the admin dashboard.
 
 ## Review Imports
 Go to the DSpace Connector tab on the left-hand navigation of the admin dashboard, click on DSpace Connector and then click on Past Imports, which should appear below the DSpace Connector tab.

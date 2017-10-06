@@ -32,7 +32,7 @@ You should see a screen with the following options:
 
 ![Screenshot of the field options for Fedora Connector](../modules/modulesfiles/mods_fedoraconnect.png)
 
-When the data is complete, press submit. You can track the status of the import by navigating to the Fedora Connector > Past Imports tab or on the [Jobs](../jobs.md) tab of the left-hand navigation on the admin dashboard.
+When the data is complete, press submit. You can track the status of the import by navigating to the Fedora Connector > Past Imports tab or on the [Jobs](/admin/jobs.md) tab of the left-hand navigation on the admin dashboard.
 
 ## Undo an Import
 To undo a completed import and remove all associated items, go to the Fedora Connector tab on the left-hand navigation of the admin dashboard, click on Fedora Connector and then click on Past Imports, which should appear below the Fedora Connector tab.

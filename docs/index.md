@@ -10,16 +10,16 @@ Site map:
 
 * [Admin Dashboard](admin-dashboard.md)
 * [Searching](search.md)
-* [Sites](sites/sites.md)
+* [Sites](sites/index.md)
 * Resources
   * [Items](content/items.md)
   * [Item Sets](content/item-sets.md). Manage aggregated groups of items. 
   * [Vocabularies](content/vocabularies.md). Manage the metadata standards for your install.
   * [Resource Templates](content/resource-template.md). Manage predefined sets of properties 
 * Admin
-  * [Manage Users](users.md)
+  * [Manage Users](admin/users.md)
   * [Modules](modules/index.md)
-  * [Jobs](jobs.md)
-  * [Manage Settings](settings.md)
+  * [Jobs](admin/jobs.md)
+  * [Manage Settings](admin/settings.md)
 
 * [Error Logging](errorLogging.md)
