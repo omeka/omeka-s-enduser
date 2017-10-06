@@ -19,7 +19,10 @@ pages:
         - 'Media': 'content/media.md'
     - 'Vocabularies': 'content/vocabularies.md'
     - 'Resource Templates': 'content/resource-template.md'
-    - 'Users': 'users.md'
+    - 'Admin':
+        - 'Users': 'admin/users.md'
+        - 'Jobs': 'admin/jobs.md'
+        - 'Manage Settings': 'admin/settings.md'
     - 'Modules':
         - 'Modules Management': 'modules/index.md'
         - 'Collecting': 'modules/collecting.md'
@@ -34,6 +37,4 @@ pages:
         - 'Sharing': 'modules/sharing.md'
         - 'ValueSuggest': 'modules/valuesuggest.md'
         - 'Zotero Import': 'modules/zoteroimport.md'
-    - 'Jobs': 'jobs.md'
-    - 'Manage Settings': 'settings.md'
     - 'Error Logging': 'errorLogging.md'
