@@ -10,26 +10,42 @@ Note that DSpace Connector only works with DSpace versions 4 and higher.
 
 You can view past imports by going to the DSpace Connector tab on the left-hand navigation of the admin dashboard and clicking the *Past Imports* sub-tab.
 
-![DSpace Connector navigation option with two sub-tab options for Import and Past Imports](modulesfiles/dspace_nav.png)
+![DSpace Connector navigation option with two sub-tab options for Import and Past Imports](modules/modulesfiles/dspace_nav.png)
 
 ## Import Data
-To use DSpace Connector, navigate to the tab labelled *DSpace Connector* on the left-hand navigation of the admin dashboard. This will automatically take you to the Import sub-tab.
+To use DSpace Connector, navigate to the tab labelled *DSpace Connector* on the left-hand navigation of the admin dashboard. 
 
-You should see a screen with the following options:
+![Screenshot of the field options for DSpace Connector with collections loaded from a university library](modules/modulesfiles/dspace_import.png)
+
+To import from a DSpace Repository: 
+
+On the first form, enter the following information: 
 
 * *DSpace site URL* for the Repository - note that you have to enter the entire url, including the `http://` (required);
-* *Endpoint* for the api (required);
+* *Endpoint* for the api (required. by default this is "rest" but may be changed in the DSpace instance);
 * *Limit* or maximum number of results to retrieve at once. 
 
+Then click *Get collections and communities*
 
-![Screenshot of the field options for DSpace Connector with collections loaded from a university library](modulesfiles/dspace_import.png)
+If the information above has been correctly entered, you will proceed to the DSpace Connector Import Options page. This has three tabs. 
 
-To import from a DSpace Repository:
- 1.  Enter data into the three fields and click *Get collections and communities* into the *DSpace site URL* field and then click either *Get Collections* or *Get Communities*, depending on your preference. Note that you have to enter the entire url, including the “http://“. This will load the collections or communities below the other options. 
-1. If you want to import files as well as data, check the *Import files into Omeka* box.
-1. If desired, select an [Item Set](../content/item-sets.md) to which you want the imported items to be added.
-1. Add any comments.
-1. Click the *Import Collection* button for the collection you want to import.
+### Basic Import Settings
+This tab has three options:
+
+* *Import files into Omeka S*: click this checkbox to import files in addition to metadata.
+* *Item Set*: select an item set from the dropdown into which to import the items. 
+* *Comment*: for any comments you have.
+
+![basic import settings, nothing entered and no boxes checked.](modules/modulesfiles/dspace_importset.png) 
+
+### Collections and Communities
+These tabs will display the list of collections and communities, respectively, for the DSpace repository. You can only import one collection or community at a time.
+
+To import a collection or community, click the Import button to the left of its name. This will automatically begin the import.
+
+![First few collections from mars.gmu.edu's DSpace repository](modulesfiles/dspace_coll.png)
+
+![First community from mars.gmu.edu's DSpace repository](modulesfiles/dspace_comm.png)
 
 You can track the status of the import by navigating to the DSpace Connector > Past Imports tab or on the [Jobs](/admin/jobs.md) tab of the left-hand navigation on the admin dashboard.
 
@@ -43,9 +59,7 @@ This page displays a table of Past DSpace Imports, with a checkbox option to *Un
 ## Undo an Import
 To undo a completed import and remove all associated items, go to the DSpace Connector tab on the left-hand navigation of the admin dashboard, click on DSpace Connector and then click on Past Imports, which should appear below the DSpace Connector tab.
 
-You will see a table of all post imports.
-
 ![Table of past imports showing two from mars.gmu.edu](modulesfiles/mods_dspacepast.png)
 
-Check the box for each import you wish to undo and click submit.
+Check the box for each import you wish to undo and click submit. The 
 
