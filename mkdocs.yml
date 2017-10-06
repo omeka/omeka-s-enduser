@@ -12,7 +12,6 @@ pages:
         - 'Navigation': 'sites/site_navigation.md'
         - 'Resources': 'sites/site_resources.md'
         - 'Theme Selection': 'sites/site_theme.md'
-        - 'Theme Settings': 'sites/site_themesettings.md'
     - 'Resources':
         - 'Items': 'content/items.md'
         - 'Item Sets': 'content/item-sets.md'
