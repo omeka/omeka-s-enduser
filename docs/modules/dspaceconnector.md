@@ -10,24 +10,22 @@ Note that DSpace Connector only works with DSpace versions 4 and higher.
 
 You can view past imports by going to the DSpace Connector tab on the left-hand navigation of the admin dashboard and clicking the *Past Imports* sub-tab.
 
-![DSpace Connector navigation option with two sub-tab options for Import and Past Imports](modulesfiles/mods_dspacenav.png)
+![DSpace Connector navigation option with two sub-tab options for Import and Past Imports](modulesfiles/dspace_nav.png)
 
 ## Import Data
 To use DSpace Connector, navigate to the tab labelled *DSpace Connector* on the left-hand navigation of the admin dashboard. This will automatically take you to the Import sub-tab.
 
 You should see a screen with the following options:
 
-* *DSPace site URL* for the Repository (required);
-* Button options to *Get Collections* or *Get Communities*
-* *Import files into Omeka* checkbox, check yes if you want to import media and other files attached to content (optional, recommended);
-* *Import into* a selected [Item Set](../content/item-sets.md), if desired (optional). 
- * Note that the Item Set must already exist in order to import into it.
-* *Comment* for example, any notes to yourself or other users of the installation (optional);
+* *DSpace site URL* for the Repository - note that you have to enter the entire url, including the `http://` (required);
+* *Endpoint* for the api (required);
+* *Limit* or maximum number of results to retrieve at once. 
 
-![Screenshot of the field options for DSpace Connector with collections loaded from a university library](modulesfiles/mods_dspaceconnect.png)
+
+![Screenshot of the field options for DSpace Connector with collections loaded from a university library](modulesfiles/dspace_import.png)
 
 To import from a DSpace Repository:
- 1.  Enter a URL into the *DSpace site URL* field and then click either *Get Collections* or *Get Communities*, depending on your preference. Note that you have to enter the entire url, including the “http://“. This will load the collections or communities below the other options. 
+ 1.  Enter data into the three fields and click *Get collections and communities* into the *DSpace site URL* field and then click either *Get Collections* or *Get Communities*, depending on your preference. Note that you have to enter the entire url, including the “http://“. This will load the collections or communities below the other options. 
 1. If you want to import files as well as data, check the *Import files into Omeka* box.
 1. If desired, select an [Item Set](../content/item-sets.md) to which you want the imported items to be added.
 1. Add any comments.
