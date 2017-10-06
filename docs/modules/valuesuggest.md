@@ -14,16 +14,20 @@ Create a Resource Template
 --------------------
 ValueSuggest vocabularies are applied through Resource Templates. For additional information on Resource Templates, see the [Resource Template Documentation](../content/resource-template.md).
 
-1. From the Resources Templates tab in the Admin Dashboard, click the Add new resource template button. Add a label and assign a class. 
-2. Add properties from the list of vocabularies in the menu on the right side of the screen. To add a vocabulary from the Library of Congress or Getty Collections to a property, select the data type for the element. Whichever you choose will be automatically loaded once someone selects that Resource Type and they will only be able to use this data type for the element. (For instance, selecting the Getty: Union List of Artist Names as the data type for the Creator property will auto-complete the metadata entry of an artist’s name for an item with this Template applied.)
-3. If desired, add an alternate label and alternate comment for the element. 
-4. When done, click Add to Save.
+1. From the Resources templates tab in the Admin Dashboard, either add a new [template](../content/resource-template.md) or edit an existing one.
+2. Add the property to which you want to apply the ValueSuggest. 
+3. Once the property is added to the template, click the pencil/edit icon for that property.
+4. At the bottom of the drawer which opens on the right, open the *Data type* dropdown. Below the standard options, you will see the ValueSuggest options. Select the vocabulary you want to use from the dropdown.
+	- Note that you can also add alternate labels and comments for the property in this drawer.
+6. Click the *Set changes* button at the bottom of the drawer to assign the Values to the property. 
+7. Save changes to the resource template. 
 
-![Resource template with Data Type Value Suggest: Getty: The Art and Architecture Thesaurus (AAT) selected for the Medium property.](../modules/modulesfiles/ValSug-ResTemplate1.png)
+
+![Editing the property subject, and the dropdown is open to show the Value Suggest vocabularies from the Library of Congress](../modules/modulesfiles/valSug-resTemplate1.png)
 
 When you click the title of a Resource Template to see its details, the ValueSuggest vocabulary will appear under the Data Type table heading.
 
-![Resource Template "Fashion Illustrations" with Value Suggest:Getty: The Union List of Artist Names(ULAN) applied to Creator.](../modules/modulesfiles/ValSug-ResTemplate2.png)
+![A red rectangle highlights the fact that the data type for Subject is "LC: Subject Headings"](../modules/modulesfiles/valSug-resTemplate2.png)
 
 
 Adding ValueSuggest to an Item
