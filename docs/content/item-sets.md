@@ -58,6 +58,8 @@ Use the *make public/private* button (eye icon) to make the item visible to the 
 
 ![a set which is closed and private, with a closed padlock icon and  an icon of an eye with a slash through it](/content/contentfiles/setClosedPrivate.png)  Closed and Private
 
+Note that the public/private and open/closed settings operate independently - you can have an open and private item set, for example.
+
 ## Batch Editing
 
 From the browse page of item sets (admin/item-set) you can batch edit item sets, using the dropdown menu on the upper right near the "Add new item set" button. You can select multiple item sets using the checkboxes on the left of each set's row.
