@@ -4,7 +4,7 @@ title: Site Navigation
 
 Use the *Navigation* tab of the [Sites](../sites/sites.md) to manage the navigation, or menu, or your site. You can add links, browse pages, and your [pages](../sites/site_pages.md) to the navigation, arrange them, and delete links from the navigation.
 
-The topmost page in the navigation is the main page for your site. Please note that custom URLs will not work as a home page - the topmost item in your navigation must be a page.
+The topmost page in the navigation is the main page for your site. Note that custom URLs will not work as a home page - the topmost item in your navigation must be a page.
 
 ![Editing navigation with a drawer on the right side of the screen for adding links](../sites/sitesfiles/sitenav_add.png)
 
