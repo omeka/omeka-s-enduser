@@ -28,7 +28,7 @@ When you view an individual item , there are tabs for the item’s *Metadata* an
 
 ![Item browse view with details open for Case of Identity. Links to item view page squared in blue](/content/contentfiles/items_detailview.png) The blue squares indicate where to click to open the full item view.
 
-An item’s *linked resources* (shown below) are resources, which have been added as properties to the item. The table on this tab gives the predicate (property) and a link to each object (item).
+An item’s *linked resources* (shown below) are resources, which have been added as properties to the item. The table on this tab gives the predicate (property) and a link to each object (item). Note that this section only shows resources which have been linked *to* this item (which have it for a property); resources which are linked *from* this item will display in the property which they fill.  
 
 ![Item view for Case of Identity, showing linked resources](/content/contentfiles/items_linked.png) 
 
