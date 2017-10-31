@@ -13,7 +13,7 @@ Item Sets is where you select the sets which will show up on the  Browse Item Se
 
 ![A window open to a site's resources tab](../sites/sitesfiles/siteres1.png)
 
-**Note** The two tabs operate independently from each other. The selections made on one will have no effect on the other.
+**Note** The two tabs operate independently from each other. The selections made on one will have no effect on the other. The Item Pool tab limits which items are available, while The Item Set tab limits which sets are visible for public browsing.
 
 Item Pool
 ----------------------------
