@@ -16,8 +16,8 @@ pages:
         - 'Items': 'content/items.md'
         - 'Item Sets': 'content/item-sets.md'
         - 'Media': 'content/media.md'
-    - 'Vocabularies': 'content/vocabularies.md'
-    - 'Resource Templates': 'content/resource-template.md'
+        - 'Vocabularies': 'content/vocabularies.md'
+        - 'Resource Templates': 'content/resource-template.md'
     - 'Admin':
         - 'Users': 'admin/users.md'
         - 'Jobs': 'admin/jobs.md'
