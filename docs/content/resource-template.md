@@ -56,7 +56,9 @@ In the image below, from an Add Item view, the template has been written so that
 
 Note that users who select this resource template when creating an item will still be able to add other properties to the item, and that they will only be required to fill out those which you check as required.
 
-Be sure to Set Changes before exiting.
+**Note** you must click the *Set Changes* at the bottom of the drawer for each property that you edit before exiting the drawer or moving on to another property! If you do not click *Set Changes*, your edits will not be saved.
+
+![A close up of the drawer for editing property options with a large red arrow pointing down at an angle to the Set Changes button, which is on the very bottom of the image.](/content/contentfiles/templates_setchanges.png)
 
 ## Sharing Resource Template
 It is possible to share a resource template between Omeka S installations by exporting and importing them.
