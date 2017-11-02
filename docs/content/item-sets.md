@@ -25,7 +25,9 @@ To view all the information for an item set, click on its name. On the item sets
 
 ![Reading view of a single item set](/content/contentfiles/itemsets_view.png)
 
-The item set’s *metadata* is entered by users. The *linked resources* are items which are used to populate specific metadata properties (for example: Creator). When viewing linked resources, the table includes the predicate (property or description) and the object (linked item resource).
+The item set’s *metadata* is entered by users. 
+
+*Linked resources* are items which have used the item set to populate specific metadata properties. When viewing linked resources, the table includes the predicate (property or description) and the object (linked item resource). Note that incoming resources (those used as properties for the item set being viewed) will *not* display here, as they already display in the item set's metadata.
 
 To view the items in a set, either click on the number of items in the set on the item set browse page, or click the *view items* button in the upper right corner of the individual item set page.
 
