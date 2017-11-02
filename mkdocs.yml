@@ -1,5 +1,6 @@
 site_name: Omeka S User Manual
 theme: 'readthedocs'
+repo_url: 'http://github.com/omeka/omeka-s-enduser'
 pages:
     - 'Home': 'index.md'
     - 'Admin Dashboard': 'admin-dashboard.md'
