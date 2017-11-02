@@ -1,0 +1,2 @@
+mkdocs build
+rsync -rv --delete site/ preview.omeka.org:/websites/omekaorg/www/s/docs/user-manual
