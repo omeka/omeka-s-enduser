@@ -6,7 +6,7 @@ Use the *Navigation* tab of the [Sites](../sites/index.md) to manage the navigat
 
 ![Editing navigation with a drawer on the right side of the screen for adding links](../sites/sitesfiles/sitenav_add.png)
 
-The topmost item in the navigation is the main page for your site.
+The topmost page in the navigation is the main page for your site. Note that custom URLs will not work as a home page - the topmost item in your navigation must be a page.
 
 ## Adding Navigation
 Add to the navigation of the site using the options on the right hand side of the page. There are two sections: [Add a custom link](../sites/site_navigation/#custom-link) and [Add a link to a site page](../sites/site_navigation/#site-page)
