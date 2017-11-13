@@ -1,0 +1,34 @@
+a {
+    color: #A91919;
+}
+
+a:hover,
+a:active {
+    color: #d60a0a;
+}
+
+a:visited {
+    color: #984646;
+}
+
+.wy-side-nav-search {
+    background-color: #404E61;
+}
+
+.wy-side-nav-search input[type=text] {
+    border-color: #404E61;
+}
+
+.wy-side-nav-search>a, 
+.wy-side-nav-search .wy-dropdown>a,
+.wy-menu-vertical a:hover {
+    color: #fff !important;
+}
+
+.wy-menu-vertical a:active {
+    background-color: #A91919;
+}
+
+.wy-menu-vertical a:visited {
+    color: #b3b3b3;
+}

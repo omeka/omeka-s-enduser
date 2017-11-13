@@ -1,6 +1,8 @@
 site_name: Omeka S User Manual
 theme: 'readthedocs'
 repo_url: 'http://github.com/omeka/omeka-s-enduser'
+extra_css:
+    - css/extra.css
 pages:
     - 'Home': 'index.md'
     - 'Installing': 'install.md'
