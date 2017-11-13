@@ -18,6 +18,6 @@ Access to functionality in the admin section varies by user role, but can includ
 **Modules**  
 This section opens with basic information on managing the modules which extend the functionality of your Omeka S installation and sites. It then offers specific documentaiton for Omeka S modules created by RRCHNM, listed in alphabetial order.
 
-This manual also includes a [glossary](glossary.md), instructions on conducting [searches](searching.md), and how to turn on [error logging](errorLogging.md)
+This manual also includes a [glossary](glossary.md), instructions on conducting [searches](search.md), and how to turn on [error logging](errorLogging.md)
 
 This documentation is CC-BY-NC

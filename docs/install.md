@@ -18,7 +18,7 @@ The first time you to the install site, you will need to enter information for t
 
 In the First User section, enter:
 
-- an *email* address, and type again to confirm.*
+- an *email* address, and type again to confirm.
 - confirm the *password* and type again in the next input to confirm.
 - a *display name* for the user
 
