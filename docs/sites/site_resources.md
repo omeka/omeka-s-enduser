@@ -24,6 +24,7 @@ The Item Pool determines what automatically appears in the resource selection op
 Note that the search options for the Item Pool work together to build an overall search. If you have a Class
 
 The settings in the Item Pool tab allow you to set the parameters for the pool. You can use one or more of the search options:
+
 * *Search by class*: search by resource Class. 
 * *Search by value*: search for a term or phrase. 
     - The first selector allows you to specify a property to search. 
@@ -48,13 +49,13 @@ The table in the Item Sets tab shows any item sets already added, with their tit
 ![Site resources Item Pool](../sites/sitesfiles/siteres_itemsets.png)
 
 To add an item set, select it in the right hand sidebar. You can find the desired item set by either:
-    - typing the name of the item set in the search bar and then clicking on the correct item set, or
-    - click on the name of the item set owner, then clicking on the name of the item set.
+
+- typing the name of the item set in the search bar and then clicking on the correct item set, or
+- click on the name of the item set owner, then clicking on the name of the item set.
 
 ![Selecting an item set from the owner's section of the sidebar](../sites/sitesfiles/siteres_itemsetsel.png)
 
 Remove an item set by clicking the red delete button (trash can icon). You can change the order of the item sets by dragging and dropping using the three-bar icon on the left end of the row.
-
 
 The following image shows a browse item sets public view using the default theme: 
 

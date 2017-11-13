@@ -10,7 +10,13 @@ Items are listed in the *Items* tab (one box icon), found on the left-hand navig
 
 ![Basic view of admin items page, showing a handful of item resources](/content/contentfiles/items_browse.png)
 
-Each item appears as a row, with: the *Title*; icons to *edit* (pencil), *delete* (trash can), or *view details* (ellipses); the *Class*; the item’s *Owner*; and *Date Created*. 
+Each item appears as a row, with columns for:
+
+- the *Title*
+- icons to *edit* (pencil), *delete* (trash can), or *view details* (ellipses)
+- the *Class*
+- the item’s *Owner*
+- and *Date Created*. 
 
 Options for navigating and creating items display above the table of items. 
 
@@ -23,7 +29,8 @@ On the right top of the Items window, above the table of items, is the *Add new 
 ## View
 To quickly view the basic information about an item, click the *view details* (ellipses) button in the row for the item, located next to the edit and delete buttons. This will open a drawer to the right of the list which displays the item’s title,  description, and visibility.
 
-For a more detailed look at an individual item, click on its title in the items browse table or when viewing its details  
+For a more detailed look at an individual item, click on its title in the items browse table or when viewing its details.
+ 
 When you view an individual item , there are tabs for the item’s *Metadata* and its *Linked Resources*. The right side of the page displays the item’s media, any *item sets* to which it belongs, its creation date, owner, and visibility. 
 
 ![Item browse view with details open for Case of Identity. Links to item view page squared in blue](/content/contentfiles/items_detailview.png) The blue squares indicate where to click to open the full item view.
@@ -44,10 +51,12 @@ The Values tab is where you enter metadata, such as title, description, etc.
 ![Basic view of add items page, with no content entered](/content/contentfiles/items_add1.png)
 
 You can select a resource template from the drop-down menu. Resource templates are defined by the site administrators and editors.
-  * If using a resource template, the class should automatically load.
-  * If not using a resource template, you may select a class from the dropdown menu (these are populated from the [Vocabularies](/content/vocabularies.md) in your installation).
 
-Add information to the properties which load. If you do not select a resource template or class, the Dublin Core properties Title and Description will load automatically.    
+- If using a resource template, the class should automatically load.
+- If not using a resource template, you may select a class from the dropdown menu (these are populated from the [Vocabularies](/content/vocabularies.md) in your installation).
+
+Add information to the properties which load. If you do not select a resource template or class, the Dublin Core properties Title and Description will load automatically.
+
 You may add text, a resource from the installation, or an external link in each field.  
 
 #### Text
@@ -135,6 +144,7 @@ From the browse page of items (admin/item) you can batch edit items, using the d
 ![A red arrow points to the dropdown for batch editing and deleting options](/content/contentfiles/items_batch.png)
 
 Batch actions are as follows:  
+
 - Edit selected: edit only the items that are selected on the page
 - Edit all: edit all the items returned by a search (default is all items)
 - Delete selected: delete only the items that are selected on the page

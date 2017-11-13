@@ -8,6 +8,7 @@ Administrators manage and create users from the User tab of the main administrat
 This Users section displays the user’s email followed by full name in parentheses, as well as their role and the date the account was created.
 
 There are six user roles in Omeka S:
+
 - Global Admin: full installation privileges
 - Site Administrator: robust site and content privileges
 - Editor (Content Expert): full privileges for content creation
@@ -20,6 +21,7 @@ There are six user roles in Omeka S:
 To create a new user, select the *Add new user* button in the upper right hand corner of the Users section in the main administrative dashboard. 
 
 On the Add User page, enter the following:
+
 - *Name* (full name or credit name)
 - *Email address*
 - Select a *Role* using the dropdown menu (see above for user role privileges)
@@ -76,31 +78,37 @@ On the User page of the administrative dashboard, click the trash can icon in th
 The following is a detailed breakdown of permissions for each user role:
 
 **Global Admin**
+
 - Full privileges (create, edit, delete) of item, item sets, media, resource templates, site pages, sites, and users.
 - Full privileges for modules - install, activate, configure.
 - Search, read, create, and delete privileges for Vocabularies
 
 **Site Administrator**
+
 - Full privileges (create, edit, delete) of item, item sets, media, resource templates, site pages, sites, and users.
 - Browse-only privileges for modules in the module tab. Site administrators can interact with active modules where appropriate.
 - Search, read, and create privileges for Vocabularies (cannot delete)
 
 **Editor**
+
 - Full privileges (create, edit, delete) of item, item sets, media, resource templates, and site pages
 - Can search, read, and create sites and users, and edit or delete sites they own. Can only delete their own user profile.
 - Search and read only privileges for vocabularies.
 - No privileges for modules
 
 **Reviewer**
+
 - Can search, read, create, and edit all items, item sets, media, sites and site pages. Can only delete those items, item sets, media, sites and site pages which the user owns.
 - Search and read only privileges for vocabularies and resource templates.
 - No privileges for modules
 
 **Author**
+
 - Can search, read, and create items, item sets, media, and site pages. Can only edit or delete content which the user has created.
 - Search and read only privileges for vocabularies and sites.
 - No privileges for modules
 
 **Researcher**
+
 - Search and read-only privileges for all content, sites, and users. 
 - No privileges for modules

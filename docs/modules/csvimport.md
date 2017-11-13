@@ -34,6 +34,7 @@ Importing
 ![A red arrow points to CSV Importer in the navigation](../modules/modulesfiles/csvimport_nav.png)
 
 Start an import by clicking on the CSV Importer tab on the left-hand navigation. This will open the Import page. 
+
 - Using the *Choose File* button, select the file from your computer. 
 - From the *Import Type* dropdown, select whether you're importing *Items* or *Users* (scroll down for instructions for each of these types of import)
 - Click the *next* button
@@ -44,7 +45,8 @@ Start an import by clicking on the CSV Importer tab on the left-hand navigation.
 The next page of the Importer has two tabs:  
 
 #### Basic Import Settings
-has the following fields, none of which are required: 
+This tab has the following fields, none of which are required: 
+
 - *Comment*: make a note on the import.
 - *Resource Template*: select a resource template from the drop-down menu to apply to the imported items
 - *Class*: select a class from the drop-down menu to apply to the imported items
@@ -62,10 +64,10 @@ Each column in your CSV file will appear as a block with a the *CSV Column* head
 
 All actions have the option to indicate that this column data uses the multivalue separator.
 
-**Map** 
+**Map** (this option will only be available if you have installed the [mapping](../modules/mapping.md) module)
 
-(this option will only be available if you have installed the [mapping](../modules/mapping.md) module)
 Select whether this column contains: 
+
 - Latitude
 - Longitude
 - Latitude/Longitude (formatted in this manner)
@@ -80,6 +82,7 @@ Select whether this column contains:
 Select from the properties of all installed vocabularies. You can search for a specific property using the *Filter properties* field at the top of the drawer or open a specific vocabulary by clicking on its name.
 
 Options:  
+
 - Use the set language button to set the language for this specific property. You must enter the standard language code, case sensitive, in this box.
 - You can choose to import the content as a URL by clicking the *Import as URL reference* button
 - Import as Omeka S resource ID will populate the property with an existing Omeka S resource.
@@ -90,6 +93,7 @@ Options:
 **Media Import**
 
 Select one of the following:
+
 - URL
 - HTML
 - IIIF Image
@@ -104,6 +108,7 @@ There is an option to use the multivalue separator for this import.
 **Item Data**
 
 These actions allow you to set the column data as:
+
 - Item Set ID
 - Resource Template Name
 - Resource Class Name
@@ -122,7 +127,7 @@ Once you have completed mapping, hit import. You should see a confirmation messa
 You can import user data from a csv and map to the following information: email, display name, and role. When you import a user csv, the tabs are as follows: 
 
 #### Basic Import Settings
-- *Comment*: make a note on the import.
+*Comment*: make a note on the import.
 
 ![Basic options for user import](../modules/modulesfiles/csvimport_userbasic.png)
 
@@ -130,6 +135,7 @@ You can import user data from a csv and map to the following information: email,
 Each column in your CSV file will appear as a block with a the *CSV Column* header, a space to indicate *Mappings* and mapping *Actions*. For the Users import, the only available action is Users Info.
 
 You have three options to map User info to the column data:
+
 - Email
 - Display Name
 - Role
@@ -149,6 +155,7 @@ To review past imports, click on the CSV Importer module tab and select the Past
 ![CSV Import subtab options on left hand nav](../modules/modulesfiles/csvimport_pastimportsnav.png)
 
 This will display a table with the following columns:
+
 - An *Undo* Checkbox
 - *JobID*
 - *Comment* entered on import
@@ -178,4 +185,5 @@ Depending on the size of the import, it may take some time to undo. On complete,
 Troubleshooting
 ---------------------
 The following are known errors that can occur during an import:  
+
 - **Encoding**: CSVs for import must be UTF-8 encoded. 

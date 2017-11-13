@@ -46,6 +46,7 @@ Add alternate comments for the property in the field *Alternate* in this section
 Use the checkbox to determine whether a property is required when the template is in use.
 
 Using the dropdown, you can designate a  data type for the property: Literal, URI, or Resource. Whichever you choose will be automatically loaded once someone selects that Resource Type and they will only be able to use this data type for the element when using this Resource Template.  
+
   - Literal: text and/or html imput
   - URI: a link with label
   - Resource: either an existing Item or Item Set in the Omeka S install.
@@ -65,6 +66,7 @@ It is possible to share a resource template between Omeka S installations by exp
 
 ### Export Resource Template
 To export a resource template from your Omeka S installation:
+
 1. Go to the Resource Templates menu on the main navigation.
 2. Click the Label of the template you want to export.
 3. On the resource template view page, click the Export button in the upper right corner of the screen.
@@ -76,16 +78,16 @@ Exporting a Resource Template will download it to your computer's default downlo
 ### Import Resource Template
 To import a resource template (exported from a different S installation) into your Omeka S installation:  
 
-1. Go to the Resource Templates menu on the main navigation
-2. Click the Import button in the upper right corner of the screen.
+- Go to the Resource Templates menu on the main navigation
+- Click the Import button in the upper right corner of the screen.
 
 ![Red arrow points to the Import button on the browse resource templates page of the admin site of an Omeka S installation](/content/contentfiles/templates_import1.png)
 
-3. On the Resource Template: Import page, click the *Choose File* button
-	4. This will open your browsers file selection window. Choose the json file for the resource template you want to import
-5. Click the Review import button
-	1. On the Review page, you will be able to check that Date Types, Alternate Labels, and Alternate Comments have been imported correctly
-	2. Imported templates which used Value Suggest or Custom Vocab will indicate in the Data Type column what the original source was, and a dropdown to allow you to select a new Data Type (if you do not have the necessary modules, the dropdown will only show the default options).
+- On the Resource Template: Import page, click the *Choose File* button
+	- This will open your browsers file selection window. Choose the json file for the resource template you want to import
+- Click the Review import button
+	- On the Review page, you will be able to check that Date Types, Alternate Labels, and Alternate Comments have been imported correctly
+	- Imported templates which used Value Suggest or Custom Vocab will indicate in the Data Type column what the original source was, and a dropdown to allow you to select a new Data Type (if you do not have the necessary modules, the dropdown will only show the default options).
 
 ![On the review imported template page, all the elements for the reviewed import are highlighted green. The final element, subject, lists a datatype of Value Suggest and has a dropdown for users to select a new data type.](/content/contentfiles/templates_import2.png)
 

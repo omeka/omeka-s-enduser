@@ -25,6 +25,7 @@ From the modules tab of the left hand navigation, scroll to File Sideload and cl
 The File Sideload module has two configuration options. 
 
 **Sideload Directory**: the complete path, relative to the server root, of the directory in which the files are stored. 
+
    - If you have shell access to the directory via terminal, you can copy and paste the results of the command "pwd". 
    - If you are using a ftp application, copy out the path in the location bar of the application.
 
@@ -43,6 +44,7 @@ When editing an item, go to the *Media* tab. The Add New Media sidebar now inclu
 ![A red arrow points to the add sideload media button](../modules/modulesfiles/filesideload_browse.png)
 
 Clicking on the button adds a Sideload media block. There are two fields:
+
 - *Title*: Give the media file a new title (optional)
 - *File*: select a file from this dropdown menu. The menu will load the file names as they appear in the directory. Select one from the dropdown and save changes.
 

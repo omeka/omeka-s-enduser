@@ -10,6 +10,7 @@ A checkbox. If checked, the Browse functions of your site will only show items w
 
 ## Attachment link type
 Sets the target of links from attachments you add to [site page blocks](../sites/site_pages.md#editing-pages) (for example, in an [item showcase](../sites/site_pages.md#item-showcase). It offers a dropdown with the following options:
+
 - *item page:* clicking on the attachment takes users to the item page associated with the attached media;
 - *media page:* clicking on the attachment takes users to the media page; 
 - *direct link to file:* clicking on the attachment takes user to the file alone. 

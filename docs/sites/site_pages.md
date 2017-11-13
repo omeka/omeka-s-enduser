@@ -27,6 +27,7 @@ Once you have entered this information, click the Add button in the upper right 
 
 ## Editing Pages  
 After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page *title* will take you to the public view of that page. On the right hand side you can choose to add a new block by selecting one of the following layouts: 
+
 - HTML
 - Page Title
 - Media
@@ -37,6 +38,7 @@ After clicking the Pages tab, select the page you wish to edit by clicking the n
 - Item with Metadata
 
 If you have the relevant modules installed, you may also have:
+
 - Map
 - Collecting
 
@@ -51,6 +53,7 @@ You can delete any of the blocks by clicking on the trash can icon located in th
 Change the order of blocks by clicking on the three horizontal lines on the upper left corner of the block and then dragging and dropping it to the desired location.
 
 Some modules may create additional blocks for your site pages. For information on working with these blocks, please see the documentation for that [module](../modules/index.md)
+
 ## Page Blocks
 Pages are made up of blocks, each of which has a different form of content.
 
@@ -58,9 +61,11 @@ Pages are made up of blocks, each of which has a different form of content.
 Creates an HTML box in which you can add formatted text and links. When you click in the box, a formatting menu will display above the text field. 
 
 Basic block: 
+
 ![Page block for HTML content](../sites/sitesfiles/sitepg_html.png)
 
 With formatting menu open:
+
 ![Page block for HTML content with active field, showing formatting menu](../sites/sitesfiles/sitepg_html2.png)
 
 
@@ -75,6 +80,7 @@ Creates a block with one or more pieces of media associated with items in the it
 ![media block with no media attached](../sites/sitesfiles/sitepg_media.png)
 
 To add media, click the *add attachment*. 
+
 On loading, the drawer will show a list of your items, most recent first. You can select form the first page, page through using the forward and back arrows, or search using the search bar.
 
 ![Select item drawer](../sites/sitesfiles/sitepg_selectitem.png)

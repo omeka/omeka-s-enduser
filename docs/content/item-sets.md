@@ -41,6 +41,7 @@ Item sets may use the same resource templates available for items to provide pre
 ![Add item set, no properties selected](/content/contentfiles/itemsets_add.png)
 
 In the *Values* tab:
+
 - You may add text, a resource from the installation, or an external link in each field.  
     * *Text* fields are entered with text, which can include HTML code. The keyboard at the top of the field input indicates text. The globe icon which appears next to it can be used to set language. 
     * *Omeka Resource* fields create an internal link between the resource you are creating and the resource which fills that field. You have the option to use either another item or an item set. Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
@@ -54,6 +55,7 @@ Item sets have two settings which control their access. They can be *public* or 
 Use the *make public/private* button (eye icon) to make the item visible to the public or only to all users of the Omeka S installation (not public). 
 
 *Open* sets can be edited and added to by any user on the install.
+
 *Closed* sets are available and editable only by its creator, site admins, and global admins.
 
 ![a set which is open and public, with an open padlock icon and an icon of an open eye](/content/contentfiles/setOpenPublic.png) Open and Public 
@@ -69,6 +71,7 @@ From the browse page of item sets (admin/item-set) you can batch edit item sets,
 ![A red arrow points to the dropdown for batch editing and deleting options](/content/contentfiles/itemsets_batch.png)
 
 Batch actions are as follows:  
+
 - Edit selected: edit only the item sets that are selected on the page
 - Edit all: edit all the item sets returned by a search (default is all item sets)
 - Delete selected: delete only the item sets that are selected on the page

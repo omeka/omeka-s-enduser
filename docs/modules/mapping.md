@@ -2,7 +2,7 @@
 title: Mapping 
 ---
 
-Mapping is a [module](../modules/index.md) for Omeka S which allows you to geolocate Omeka S items and add interactive maps to [Site Pages].
+Mapping is a [module](../modules/index.md) for Omeka S which allows you to geolocate Omeka S items and add interactive maps to [Site Pages](../sites/site_pages)
 
 To install Mapping, follow the instructions for [Installing Modules](../modules/index.md#installing-modules) on the Modules documentation.
 
@@ -53,7 +53,7 @@ Click the magnifying glass icon to open a search address field.
 The appearance of existing markers may be modified. Click the Marker to open a dialog window. 
 * Enter descriptive text in the text field. 
 * To add an image to the marker click _Select Marker Image_ to select an image from the media uploaded to this item. 
-      * Note: the item must have image media attached in order to select an image. 
+	* Note: the item must have image media attached in order to select an image. 
 
 
 ![Screenshot of the map with marker selected, revealing dialog window with field for Marker Label and button to add Marker Image. To the right, the Marker Image pane includes options to select an image or to add no image.](../modules/modulesfiles/Mapping_Item_Modify.png)
@@ -86,15 +86,15 @@ To add a map to a new or existing page, click to edit the page. On the right, un
     * Delete items by clicking the red trashcan. 
 
 
-*Figure 5*: Default View
+*Figure 5*: Default View  
 Small white buttons on the left of the map interface set the default view for the map
 ![Screenshot of the Default view includes a map with the white buttons described.](../modules/modulesfiles/Mapping_Page_Default.png)
 
-*Figure 6*: WMS Overlays
+*Figure 6*: WMS Overlays  
 Add, edit, and delete Web Map Service (WMS) overlays.
 ![Screenshot of the WMS Overlays with fields and buttons described.](../modules/modulesfiles/Mapping_Page_Overlays.png)
 
-*Figure 7*: Adding an Attachment
+*Figure 7*: Adding an Attachment  
 After Items have been mapped, click _Add Attachment_  (1) to select them from a list on the right (2). Note: This list will only be populated by items that have been mapped. Clicking an item adds it to a list in the Attachments pane (3).
 ![Screenshot of the map with Add Attachment selected. On the right a list of items.](../modules/modulesfiles/Mapping_Page_Attachments.png)
 

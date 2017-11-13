@@ -57,6 +57,7 @@ The context menu for every site has the site title at the top, with an icon of a
 ![Context menu for the site Jane Austen, with two modules installed](../sites/sitesfiles/sites_menu.png)
 
 Site admin left hand navigation options are: 
+
 - *Site Info*, (see below)
 - *[Pages](../sites/site_pages.md)*, 
 - *[Navigation](../sites/site_navigation.md)*, 
@@ -72,22 +73,27 @@ The standard options in the left hand navigation of the Omeka S Admin (items, it
 
 ## Site Info 
 The site info settings for an Omeka S site are where you can change the basic info for the site:
+
 * *title* (text)
 * *slug* (text)
 
 ![Site info for the site “Jane Austen” with buttons across the top to View, Delete, and Save the site](../sites/sitesfiles/sites_siteinfo.png)
 
 In the upper right hand corner of the window on this tab, you can use buttons to:
+
 - *Public/Private button* (see below);
 - *View* the public side of the site;
 - *Delete* the site;
 - *Save* changes.
 
 The *make public/private* button (eye icon) is used to both indicate and set whether the site is visible to the public or only to users of this Omeka S installation 
+
 Site is public:
+
 ![make public button showing an eye icon](../content/contentfiles/item_public.png) 
 
 Site is Private:
+
 ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)
 
 ## Managing User Permissions
@@ -100,6 +106,7 @@ A drawer on the right hand side of the screen shows all of the users for your in
 To add a user, click on their name. 
 
 Then select their role from the dropdown:
+
 * *Viewer*: user can see the site’s backend but cannot edit.
 * *Editor*: user can access and edit the site’s backend.
 * *Admin*: user has full administrative privileges for the site, including adding users and deleting the site.
