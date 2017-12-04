@@ -16,7 +16,7 @@ To add a link you can use the *Add a custom link* buttons on the right hand draw
  * a *Custom URL* to any web address; or
  * a Browse page for items on your site
 
-Or you can add one of your [pages](../sites/site_pages.md), which should be listed in the right-hand drawer below the *Add a custom link* dropdown. If you need to find a specific page, begin typing the page title in the search box with the helper text *Filter pages* which appears directly below the text “Add a link to a site page.” 
+Or you can add one of your [pages](../sites/site_pages), which should be listed in the right-hand drawer below the *Add a custom link* dropdown. If you need to find a specific page, begin typing the page title in the search box with the helper text *Filter pages* which appears directly below the text “Add a link to a site page.” 
 
 **Custom URL** link blocks display three pieces of information: the block *type* (Custom URL), the *label* which is the text which will appear in the site navigation menu, and the *url*. 
 
@@ -28,8 +28,20 @@ You can change the *label* of the block to reflect what, specifically, site visi
 
 If you want to refine the Browse block, you can use the Query to create a search query that returns the desired results. 
 
-![Browse block with the label ‘Browse’ and no query](../sites/sitesfiles/sitenav_browse.png) Browse block 
+![Browse block with the label ‘Browse’ and no query](../sites/sitesfiles/sitenav_browse.png)
 
+Note that you **must** enter a query for the block to function.
+
+To create a Browse Item Set navigation for all the item sets which you have already assigned to the [resources](../sites/site_resources/) with the site on which you are working:
+
+- (In a separate window): conduct an [advanced item set search](../search/#advanced-item-set-search) using your site for the "In site pool" option.
+- Once the search results load, highlight everything in your browser's address bar starting with the question mark all the way to the end of the search url (to the right).
+
+![Browser address bar with a query string highlighted](../sites/sitesfiles/sitenav_itemsetsearch.png)
+
+- Paste the text you just copied into the "Query" field of the Browse item sets Navigation link.
+
+![Browse item sets navigation item with a query pasted in to the Query field, and no alternate label supplied](../sites/sitesfiles/sitenav_browseitemset.png)
 
 ### Site Page
 Site page blocks create links to pages you have built for your site. The *page* field indicates which page is in use, as does the block title. You can change the *label* for the page link in the navigation, as in the example image below. Note that changing the label does not change the page title. 
