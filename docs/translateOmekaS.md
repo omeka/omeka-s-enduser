@@ -4,17 +4,17 @@ We need the community's help translating English text in Omeka S into new langua
 Getting Started
 --------------------------------------------------------
 
-### Sign up on Transifex.net
-Omeka S uses [Transifex.net](http://transifex.net) to manage translations. To start helping to translate Omeka into other languages, you will first need to [sign up for an account](https://www.transifex.net/plans/). Transifex.net offers several plans, but since Omeka is an open-source project, you can use the Free plan.
+### Sign up on Transifex.com
+Omeka S uses [Transifex.com](https://www.transifex.com) to manage translations. To start helping to translate Omeka into other languages, you will first need to [sign up for an account](https://www.transifex.com/signup/). Transifex.net offers several plans, but since Omeka is an open-source project, you can use the Free plan.
 
 ### Join or start a language team
-Once you have registered for an account, visit the [Omeka project page](https://www.transifex.com/omeka/omeka-s/) and click on the "Teams" tab. This will show you the teams working on translations of Omeka into different languages.
+Once you have registered for an account, visit the [Omeka S project page](https://www.transifex.com/omeka/omeka-s/) and click on the "Help Translate Omeka S" or "Join Team" button.
 
-Here, you have two options. If you want to start work on a translation into a language which is not already being worked on, click the "Request a new team" button, and select the language that you want to work on. Once that request is approved, you will be the coordinator for that language.
+Here, you can choose among all the lanaguages that are already being worked on. If you want to start work on a translation into a new language which isn't listed, you need to request that language first. Click "cancel" and scroll down to the bottom of the page and click the "request language" link, and select the language that you want to work on.
 
 On the other hand, if someone has already created a team for the language you want to work on, click the name of the language, and on the next screen click the "Join this Team" button. It will be up to the coordinator to approve your request to be a member of the team.
 
-Once a coordinator has approved you to the team, you can click on the "Omeka → core" link and begin translating.
+Once a coordinator has approved you to join the team, you can go to the Omeka S dashboard and click on the "Translate" button to begin translating.
 
 If you want to check your translation or anything else you need to make an mo file from your po file, you can do it with msgfmt from the [GNU gettext package](http://www.gnu.org/software/gettext/).
 
