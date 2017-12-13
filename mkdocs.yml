@@ -41,3 +41,4 @@ pages:
         - 'ValueSuggest': 'modules/valuesuggest.md'
         - 'Zotero Import': 'modules/zoteroimport.md'
     - 'Error Logging': 'errorLogging.md'
+    - 'Translate Omeka S': 'translateOmekaS.md'
