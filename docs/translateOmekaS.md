@@ -10,7 +10,7 @@ Omeka S uses [Transifex.com](https://www.transifex.com) to manage translations. 
 ### Join or start a language team
 Once you have registered for an account, visit the [Omeka S project page](https://www.transifex.com/omeka/omeka-s/) and click on the "Help Translate Omeka S" or "Join Team" button.
 
-Here, you can choose among all the lanaguages that are already being worked on. If you want to start work on a translation into a new language which isn't listed, you need to request that language first. Click "cancel" and scroll down to the bottom of the page and click the "request language" link, and select the language that you want to work on.
+Here, you can choose among all the languages that are already being worked on. If you want to start work on a translation into a new language which isn't listed, you need to request that language first. Click "cancel" and scroll down to the bottom of the page and click the "request language" link, and select the language that you want to work on.
 
 On the other hand, if someone has already created a team for the language you want to work on, click the name of the language, and on the next screen click the "Join this Team" button. It will be up to the coordinator to approve your request to be a member of the team.
 
