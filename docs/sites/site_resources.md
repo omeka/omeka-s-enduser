@@ -19,9 +19,9 @@ Item Pool
 ----------------------------
 The Item Pool determines what automatically appears in the resource selection options on the [pages](../sites/site_pages.md) of your Omeka S [site](../sites/index.md). It also limits the resources which appear on a browse page on your site.
 
-![The Item Pool tab on site settings has multiple search options, as described below](../sites/sitesfiles/sites_itempool.png)
+![The Item Pool tab on site settings, as described below, searching for items where "Creator" contains "Doyle"](../sites/sitesfiles/sites_itempool.png)
 
-Note that the search options for the Item Pool work together to build an overall search. If you have a Class
+Note that the search options for the Item Pool work together to build an overall search. If you had the search in the image above, looking for items where "Creator" contains the word "Doyle" and you added a criteria where Class=Text, it would only add items to your pool which matched *both* statements.
 
 The settings in the Item Pool tab allow you to set the parameters for the pool. You can use one or more of the search options:
 
