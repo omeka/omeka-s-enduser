@@ -23,11 +23,11 @@ ValueSuggest vocabularies are applied through Resource Templates. For additional
 7. Save changes to the resource template. 
 
 
-![Editing the property subject, and the dropdown is open to show the Value Suggest vocabularies from the Library of Congress](../modules/modulesfiles/valSug-resTemplate1.png)
+![Editing the property subject, and the dropdown is open to show the Value Suggest vocabularies from the Library of Congress](../modules/modulesfiles/ValSug-ResTemplate1.png)
 
 When you click the title of a Resource Template to see its details, the ValueSuggest vocabulary will appear under the Data Type table heading.
 
-![A red rectangle highlights the fact that the data type for Subject is "LC: Subject Headings"](../modules/modulesfiles/valSug-resTemplate2.png)
+![A red rectangle highlights the fact that the data type for Subject is "LC: Subject Headings"](../modules/modulesfiles/ValSug-ResTemplate2.png)
 
 
 Adding ValueSuggest to an Item
