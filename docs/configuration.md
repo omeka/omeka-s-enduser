@@ -6,17 +6,17 @@ The following can be configured in the file `local.config.php` located in the co
 
 ## Thumbnails
 
-- `thumbnails` (lines 14-18)
+- `thumbnails`
 	- Set the maximum dimensions for derivative images for media files.
 	- Options for large, medium, and square. Defaults for these are 800, 200, and 200 respectively (all sizes are pixels)
 
-- `thumbnailer_options` (lines 20-21)
+- `thumbnailer_options`
 	- Default is `Omeka\File\Thumbnailer\ImageMagick`. 
 	- Also available are `Omeka\File\Thumbnailer\Imagick` and `Omeka\File\Thumbnailer\Gd`
 
 ## PHP Path
 
-- `phpcli_path` (line 12)
+- `phpcli_path`
 	- Set the path the the php version you want to use.
 	- Default is to attempt to detect correct path to PHP. Use this option to specify a path if needed in your server configuration. For example: 
 ```
