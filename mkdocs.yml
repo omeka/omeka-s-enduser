@@ -42,3 +42,4 @@ pages:
         - 'Zotero Import': 'modules/zoteroimport.md'
     - 'Error Logging': 'errorLogging.md'
     - 'Translate Omeka S': 'translateOmekaS.md'
+    - 'Configuration Options': 'configuration.md'

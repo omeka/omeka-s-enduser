@@ -36,37 +36,7 @@ In the Settings section, enter:
 
 You can changes these at any time in the in the [Settings](/admin/settings.md) section of your [Admin Dashboard](/admin-dashboard.md)
 
-## Configuration options
-The following can be configured in the file local.config.php (located in the config directory)
-
-- `thumbnailer` Default is `Omeka\File\Thumbnailer\ImageMagick`. Also available are `Omeka\File\Thumbnailer\Imagick` and `Omeka\File\Thumbnailer\Gd`
-- `phpcli_path` Default is to attempt to detect correct path to PHP. Use this option to specify a path if needed in your server configuration. For example: 
-```
-    'cli' => array(
-        'phpcli_path' => '/usr/bin/php55',
-    ),
-```
-
-- `mail` Default is to use Sendmail. If using SMTP use this example configuration (see the [zend-mail docs](https://docs.zendframework.com/zend-mail/transport/smtp-options/) for clarification):
-```
-    'mail' => [
-        'transport' => [
-            'type' => 'smtp',
-            'options' => [
-                'name' => 'localhost',
-                'host' => '127.0.0.1',
-                'port' => 25, // 465 for 'ssl', and 587 for 'tls'
-                'connection_class' => 'smtp', // 'plain', 'login', or 'crammd5'
-                'connection_config' => [
-                    'username' => null,
-                    'password' => null,
-                    'ssl' => null, // 'ssl' or 'tls'
-                    'use_complete_quit' => true,
-                ],
-            ],
-        ],
-    ],
-```
+See [Configuration Options](configuration) for information on settings for thumbnail generation, php path, and more.
 
 ## Updating
 1. Download the latest release from the release page
