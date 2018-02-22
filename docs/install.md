@@ -45,4 +45,4 @@ See [Configuration Options](configuration) for information on settings for thumb
 1. Make a copy of your /files directory.
 1. Remove all Omeka S files, and replace them with the files from the updated zip file.
 1. Replace your original /config/local.config.php file, and the /modules, /themes, and /files directories that you copied.
-1. In your web browser, go to your site and run any migrations that are needed.
+1. In your web browser, go to your site's admin page (yoururl/admin) and run any migrations that are needed.
