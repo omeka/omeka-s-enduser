@@ -4,6 +4,15 @@ title: Installing
 
 Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md) of the Omeka S github repository.
 
+## System Requirements
+In order to install Omeka S, you will need a server running the following: 
+
+- Linux
+- Apache (with AllowOverride set to "All" and mod_rewrite enabled)
+- MySql 5.5.3+
+- PHP 5.6+ (latest stable version preferred, with PDO, pdo_mysql, and xml extensions installed)
+
+
 ## Installing from released zip file
 
 1. Download the latest release from the release page
