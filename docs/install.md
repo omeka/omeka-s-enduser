@@ -8,9 +8,9 @@ Basic instructions for installing and updating from GitHub can be found in the [
 In order to install Omeka S, you will need a server running the following: 
 
 - Linux
-- Apache (with AllowOverride set to "All" and mod_rewrite enabled)
+- Apache (with [AllowOverride](https://httpd.apache.org/docs/2.4/mod/core.html#allowoverride) set to "All" and [mod_rewrite ](http://httpd.apache.org/docs/current/mod/mod_rewrite.html) enabled)
 - MySql 5.5.3+
-- PHP 5.6+ (latest stable version preferred, with PDO, pdo_mysql, and xml extensions installed)
+- PHP 5.6+ (latest stable version preferred, with [PDO](http://php.net/manual/en/intro.pdo.php), [pdo_mysql](http://php.net/manual/en/ref.pdo-mysql.php), and [xml](http://php.net/manual/en/intro.xml.php) extensions installed)
 
 
 ## Installing from released zip file
