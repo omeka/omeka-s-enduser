@@ -6,14 +6,14 @@ A *Resource Template* is a set of pre-defined Properties, optionally with a Clas
 
 Resource templates are managed from the Admin Dashboard, accessed through the left-hand navigation under the tab labeled *Resource Templates*. 
 
-![Basic view of resource templates tab, showing the column titles and one template](content/contentfiles/templates_browse.png)
+![Basic view of resource templates tab, showing the column titles and one template](/content/contentfiles/templates_browse.png)
 
 From this tab, you can sort existing templates by *label*, *class*, or number of *items* assigned to that template, using the up-down arrow icon next to each column heading. You can also use the icons in each template’s row to: *edit* (pencil), *delete* (trash can), or *view details* (ellipses). If you click on the number of items listed for a template, it will take you to a list of all those items. 
 
 ## Base Resource
 All Omeka S installations include a Base Resource template which maps to the metadata fields required by the Digital Public Library of America (DPLA). It will display in the table of resource templates as "Base Resource" with no owner. 
 
-![Base resource template displayed in the table of templates](content/contentfiles/templates_base1.png)
+![Base resource template displayed in the table of templates](/content/contentfiles/templates_base1.png)
 
 The Base Resource template contains the following Dublin Core fields: Title; Rights; Type; Creator; Date; Description; Format; Language; Spatial Coverage (Place); Publisher; Alternative Title: Contributor; Extent; Identifier; Relation; Is Replaced By; Replaces; RightsHolder; Subject; Temporal Coverage.
 
