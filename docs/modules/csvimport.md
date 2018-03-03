@@ -99,7 +99,6 @@ Select one of the following:
 - IIIF Image
 - oEmbed code
 - YouTube
-- Sideload (if [File Sideload](/modules/filesideload) is installed)
 
 There is an option to use the multivalue separator for this import.
 
