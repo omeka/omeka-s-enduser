@@ -32,6 +32,11 @@ The settings in the Item Pool tab allow you to set the parameters for the pool. 
     - finally, there is a text field for you to enter the value you want the property to have.
 * *Search by item set*: include all items within a specific item set. This is the only criteria where adding will actually broaden the pool - selecting a second item set will include all items in Item Set A or in Item Set B. 
 
+Once you have multiple sites, there is also an option for *In site pool.* This dropdown lists all sites on the installation by owner. You do not need to select the current site - this dropdown is only there so you can build searches using other sites' pools. 
+
+![The Item Pool tab on site settings, with a red rectangle around the dropdown for "In site pool"](../sites/sitesfiles/sites_itempool2.png)
+
+
 If you have already set terms for an item pool, the Item Pool page will display a message above the table of search options, with the number of items in the current site pool (see the image below). The number functions as a link which takes you to an admin-side browse of all the items in the site's item pool. *Note that clicking the link takes you outside of the Sites admin*
 
 ![arrow points to the link in the current items sentence](../sites/sitesfiles/sites_ipn.png)
