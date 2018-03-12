@@ -5,6 +5,7 @@ extra_css:
     - css/extra.css
 pages:
     - 'Home': 'index.md'
+    - 'Accessibility Statement': 'accessibility.md'
     - 'Installing': 'install.md'
     - 'Admin Dashboard': 'admin-dashboard.md'
     - 'Glossary': 'glossary.md'
