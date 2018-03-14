@@ -25,6 +25,10 @@ There are multiple buttons which can appear to the right of a module’s label. 
 
 ![Icons described above, from right to left: configure, activate and deactivate, install and uninstall](modulesfiles/moduleButtons.png)
 
+When a module has a new release, it will display on the browse page with a message in green stating "A new version of this module is available. Get the new version," with a link to the download page for the module. 
+
+![File Sideload module row on the module browse page. Below the information about the module's version and function is the message quoted above, written in dark green text on a bright green highlight.](modulesfiles/moduleUpdatemsg.png)
+
 ## Installing Modules
 ### Add the Module to Omeka S
 In order to appear on in the *Modules* table on the Modules tab of the Admin Dashboard for your Omeka S installation, modules must be manually added to the modules folder of the installation, using an FTP program or an ssh connection.
@@ -74,3 +78,5 @@ Removing a module is essentially installing in reverse:
 ![Uninstall module dialogue with the message “Are you sure you would like to uninstall this module?”](modulesfiles/mods_confirmuninstall.png)
 
 The uninstalled module will continue to appear on your Modules page unless the folder for the module is removed from the /modules folder on the Omeka S installation, which can be done via FTP or SSH.
+
+## Updating a module
