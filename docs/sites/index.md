@@ -12,6 +12,8 @@ The manage sites page displays a table with all the sites for the installation, 
 
 Each row gives the title of a site, options to *view* (box with outward arrow), *edit* (pencil), or *delete* (trash can), and displays the owner of the site. *Only global admins and site owners can delete a site.*
 
+Sites which are not public will have the private icon (an eye with a slash through it) display to the right of the site title. 
+
 Clicking on the site title will take you to a summary page for the site which displays the site’s *url slug,* and *title,* from which you can return to the site list using a button on the left side of the scree, or *edit* or *view* the site using buttons in the upper right 
 
 ![show page for the site “What Does This Look Like” indicating that the theme is default and the slug is public views.](../sites/sitesfiles/sites_quickshow.png)
