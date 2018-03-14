@@ -25,7 +25,7 @@ There are multiple buttons which can appear to the right of a module’s label. 
 
 ![Icons described above, from right to left: configure, activate and deactivate, install and uninstall](modulesfiles/moduleButtons.png)
 
-When a module has a new release, it will display on the browse page with a message in green stating "A new version of this module is available. Get the new version," with a link to the download page for the module. 
+When a module has a new release, it will display on the browse page with a message in green stating "A new version of this module is available. Get the new version," with a link to the download page for the module. (See updating, below, for more information)
 
 ![File Sideload module row on the module browse page. Below the information about the module's version and function is the message quoted above, written in dark green text on a bright green highlight.](modulesfiles/moduleUpdatemsg.png)
 
@@ -36,11 +36,8 @@ In order to appear on in the *Modules* table on the Modules tab of the Admin Das
 To add a module to the site using FTP
 
 1. Download the zipped module to your computer.
-
 1. Open your FTP client, log on to the server that houses  the Omeka S install and navigate to the /modules folder (this should be located in the main folder of the install).
-
 1. Upload the zipped module to the /modules folder 
-
 1. Unzip the module
 
 You can also use git to clone a module directly from the git repository. Do this only if you are comfortable with git.
@@ -80,3 +77,17 @@ Removing a module is essentially installing in reverse:
 The uninstalled module will continue to appear on your Modules page unless the folder for the module is removed from the /modules folder on the Omeka S installation, which can be done via FTP or SSH.
 
 ## Updating a module
+To update a module using FTP:
+
+1. From the Modules tab on your Omeka S installation, deactivate the module you're going to update.
+2. From the Omeka S website or other source, download the latest release of zipped module to your computer.
+1. Open your FTP client and log on to the server that houses the Omeka S install.
+2. Navigate to the /modules folder (this should be located in the main folder of the install).
+3. Move the old copy of the module to your desktop (or somewhere else on your local machine where you will be able to find it).
+4. Use your FTP client to upload the zipped folder for the latest version of the module to the /modules folder 
+5. In your FTP client, unzip the new version module
+6. On the Omeka S installation dashboard, go to the Modules tab and activate the new version of the module.
+
+If you are concerned about problems with the update, be sure to keep the older version of the module on your local machine in case you have to switch them back. You would roll back in the same way you updated.
+
+If you run into problems while updating, turn on [error logging](../errorLogging) and post on the [Omeka Forum](https://forum.omeka.org/c/omeka-s/modules). 
