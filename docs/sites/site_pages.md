@@ -17,11 +17,14 @@ From the page for the site, click the Pages tab. Then click the *Add new page* b
 
 ![A red arrow points to a grey button labeled "add new page"](../sites/sitesfiles/sitepg_addnew.png)  
 
-To add a page you must enter a *Title*. You can also enter a *URL Slug*. Both of these can be edited later but are required to create the page. If you do not enter a slug, Omeka S will create one from the page title. A slug is the page’s portion of the url and can only contain letters, numbers, and hyphens; no other characters are allowed.
+To add a page you must enter a *Title*. 
+You can also enter a *URL Slug*. 
+
+Both of these can be edited later but are required to create the page. If you do not enter a slug, Omeka S will create one from the page title. A slug is the page’s portion of the url and can only contain letters, numbers, and hyphens; no other characters are allowed.
+
+In addition, there is a checkbox for "Add to navigation". If checked, the page will automatically appear at the main [navigation](../sites/site_navigation.md) level for the site. If you do not check this box, you will have to manually add the page to the site navigation at a later point. 
 
 ![Page view showing the fields for Add Page](../sites/sitesfiles/sitepg_add.png)
-
-To add a page you must enter a *Title*. You can also enter a *URL Slug*. Both of these can be edited later but are required to create the page. If you do not enter a slug, Omeka S will create one from the page title. A slug is the page’s portion of the url and can only contain letters, numbers, and hyphens; no other characters are allowed.
 
 Once you have entered this information, click the Add button in the upper right hand corner of the browser window.
 
