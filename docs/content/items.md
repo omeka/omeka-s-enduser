@@ -16,7 +16,7 @@ Each item appears as a row, with columns for:
 - icons to *edit* (pencil), *delete* (trash can), or *view details* (ellipses)
 - the *Class*
 - the item’s *Owner*
-- and *Date Created*. 
+- and the date the item was *Created*. 
 
 Options for navigating and creating items display above the table of items. 
 

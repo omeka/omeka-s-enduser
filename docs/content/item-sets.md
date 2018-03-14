@@ -8,7 +8,13 @@ Item sets are managed via the *Item Sets* tab (stacked boxes) located in the lef
 
 ![Browse item sets view with four item sets.](/content/contentfiles/itemsets_browse.png)
 
-After clicking on the tab, a table appears listing all item sets with: their *Title*; icons for each row representing options to *edit* (pencil), *delete* (trash can), or *view details* (ellipses); the item set’s *Class*, the *Owner* of the set, and the *Date Created*.
+After clicking on the tab, a table appears listing all item sets with: 
+
+- their *Title*; 
+- icons for each row representing options to *edit* (pencil), *delete* (trash can), or *view details* (ellipses); 
+- the item set’s *Class*, 
+- the *Owner* of the set, 
+- and the date the set was *Created*.
 
 Above this table on the left is the pagination for the item sets table, where you can click the left and right arrows to move forward and back or enter a page number to go a specific page of item sets. In the center above the table is the button for *advanced search*. On the right above the table are drop-down menus to re-order the table by *title, class, owner,* or *date created* in either *ascending* or *descending* order. 
 
