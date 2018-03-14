@@ -35,9 +35,13 @@ When you view an individual item , there are tabs for the item’s *Metadata* an
 
 ![Item browse view with details open for Case of Identity. Links to item view page squared in blue](/content/contentfiles/items_detailview.png) The blue squares indicate where to click to open the full item view.
 
-An item’s *linked resources* (shown below) are resources, which have been added as properties to the item. The table on this tab gives the predicate (property) and a link to each object (item). Note that this section only shows resources which have been linked *to* this item (which have it for a property); resources which are linked *from* this item will display in the property which they fill.  
+An item’s *linked resources* (shown below) are resources, which have been added as properties to the item. Note that this section only shows resources which have been linked *to* this item (which have it for a property); resources which are linked *from* this item will display in the property which they fill.
 
-![Item view for Case of Identity, showing linked resources](/content/contentfiles/items_linked.png) 
+Linked items are grouped by the property for which they use the current item. In the example below, the item William Shakespeare is used for the properties "Creator," "References," and "list of authors" for the linked resources. 
+
+You can filter linked resources to only display those referencing a specific property using the dropdown "Filter by property." It will only display properties actively in use.
+
+![Item linked resources view for William Shakespeare, with six plays using Shakespeare as Creator, the item Folger Shakespeare Library listed as 'references' Shakespeare, and the Globe Theatre using Shakespeare for 'list of authors'. Each property cluster is in a separate rectangle, headed by the property being referenced.](/content/contentfiles/items_linked.png) 
 
 ## Adding an Item
 
