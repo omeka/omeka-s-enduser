@@ -55,12 +55,25 @@ Advanced search for item sets only is available on the [Item Sets](/content/item
 
 The advanced search loads on a new page, and has the following options:
 
-- *Search by Class*: select a class by which to search from the dropdown menu
-- *Search by value*: search for a term or phrase which you enter 
-    - The first selector allows you to specify a property to search. 
-    - The second selector allows you to set the relationship the property has exactly, does not have exactly, contains, or does not contain the value you enter in the text area.
-    - finally, there is a text field for you to enter the value you want the property to have.
-- *In site pool*: select from a dropdown menu of all the sites on the Omeka S installation, sorted by user-owner. 
+*Search by Class*: select a class by which to search from the dropdown menu
+
+*Search by value*: search for a term or phrase which you enter 
+
+- The first selector allows you to specify a property to search. 
+- The second selector allows you to set the relationship the property has with the value. The options are:
+	- is exactly, 
+	- is not exactly, 
+	- contains,
+	- does not contain,
+	- is resource with ID,
+	- is not resource with ID,
+	- has any value (there is something in the property), and
+	- has no values.
+- Finally, there is a text field for you to enter the value you want the property to have.
+
+To find a resource ID, go to the resource and look at the url in your browser's address bar. The numbers at the end of the url are the resource ID. 
+
+*In site pool*: select from a dropdown menu of all the sites on the Omeka S installation, sorted by user-owner.  
 
 You can remove value searches using the red trash can icon to the right of the value settings.
 
