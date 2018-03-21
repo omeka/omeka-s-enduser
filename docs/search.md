@@ -29,7 +29,7 @@ Both *Search by value* and *search by item set* allow you to add multiple inputs
 
 You can remove value and item set searches using the red trash can icon to the right of those search options.
 
-![Advanced item search options page.](/files/.png)
+![Advanced item search options page.](/files/advancedsearch3.png)
 
 ## Advanced Item Set Search
 
