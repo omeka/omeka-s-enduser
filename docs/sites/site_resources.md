@@ -25,17 +25,29 @@ Note that the search options for the Item Pool work together to build an overall
 
 The settings in the Item Pool tab allow you to set the parameters for the pool. You can use one or more of the search options:
 
-* *Search by class*: search by resource Class. 
-* *Search by value*: search for a term or phrase. 
-    - The first selector allows you to specify a property to search. 
-    - The second selector allows you to set the relationship the property has exactly, does not have exactly, contains, or does not contain the value you enter in the text area.
-    - finally, there is a text field for you to enter the value you want the property to have.
-* *Search by item set*: include all items within a specific item set. This is the only criteria where adding will actually broaden the pool - selecting a second item set will include all items in Item Set A or in Item Set B. 
+*Search by Class*: select a class by which to search from the dropdown menu
 
-Once you have multiple sites, there is also an option for *In site pool.* This dropdown lists all sites on the installation by owner. You do not need to select the current site - this dropdown is only there so you can build searches using other sites' pools. 
+*Search by value*: search for a term or phrase which you enter 
+
+- The first selector allows you to specify a property to search. 
+- The second selector allows you to set the relationship the property has with the value. The options are:
+	- is exactly, 
+	- is not exactly, 
+	- contains,
+	- does not contain,
+	- is resource with ID,
+	- is not resource with ID,
+	- has any value (there is something in the property), and
+	- has no values.
+- Finally, there is a text field for you to enter the value you want the property to have.
+
+To find a resource ID, go to the resource and look at the url in your browser's address bar. The numbers at the end of the url are the resource ID. 
+
+*In site pool*: select from a dropdown menu of all the sites on the Omeka S installation, sorted by user-owner. This dropdown lists all sites on the installation by owner. You do not need to select the current site - this dropdown is only there so you can build searches using other sites' pools. 
+
+*Search by item set*: select from a dropdown of item sites.
 
 ![The Item Pool tab on site settings, with a red rectangle around the dropdown for "In site pool"](../sites/sitesfiles/sites_itempool2.png)
-
 
 If you have already set terms for an item pool, the Item Pool page will display a message above the table of search options, with the number of items in the current site pool (see the image below). The number functions as a link which takes you to an admin-side browse of all the items in the site's item pool. *Note that clicking the link takes you outside of the Sites admin*
 

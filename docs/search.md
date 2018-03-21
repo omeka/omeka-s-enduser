@@ -17,19 +17,35 @@ Advanced search for items only is available on the [Items](/content/items.md) pa
 
 The advanced search loads on a new page, and has the following options:
 
-- *Search by Class*: select a class by which to search from the dropdown menu
-- *Search by value*: search for a term or phrase which you enter 
-    - The first selector allows you to specify a property to search. 
-    - The second selector allows you to set the relationship the property has exactly, does not have exactly, contains, or does not contain the value you enter in the text area.
-    - finally, there is a text field for you to enter the value you want the property to have.
-- *In site pool*: select from a dropdown menu of all the sites on the Omeka S installation, sorted by user-owner. 
-- *Search by item set*: select from a dropdown of item sites.
+*Search by Class*: select a class by which to search from the dropdown menu
+
+*Search by value*: search for a term or phrase which you enter 
+
+- The first selector allows you to specify a property to search. 
+- The second selector allows you to set the relationship the property has with the value. The options are:
+	- is exactly, 
+	- is not exactly, 
+	- contains,
+	- does not contain,
+	- is resource with ID,
+	- is not resource with ID,
+	- has any value (there is something in the property), and
+	- has no values.
+- Finally, there is a text field for you to enter the value you want the property to have.
+
+To find a resource ID, go to the resource and look at the url in your browser's address bar. The numbers at the end of the url are the resource ID. 
+
+*In site pool*: select from a dropdown menu of all the sites on the Omeka S installation, sorted by user-owner. 
+
+*Search by item set*: select from a dropdown of item sites.
+
+
+![Advanced item search options page.](/files/advancedsearch3.png)
 
 Both *Search by value* and *search by item set* allow you to add multiple inputs - use the *add new value* or *add new item set* buttons to search with more than one value or item set. These search terms build - searching for two item sets will return all items in either item set, rather than only those items which are in both. 
 
 You can remove value and item set searches using the red trash can icon to the right of those search options.
 
-![Advanced item search options page.](/files/advancedsearch3.png)
 
 ## Advanced Item Set Search
 
