@@ -56,6 +56,9 @@ This page displays a table of Past DSpace Imports, with a checkbox option to *Un
 
 ![Table of past imports showing two from mars.gmu.edu](../modules/modulesfiles/mods_dspacepast.png)
 
+## Update Imported Resources
+To update resources created using the DSpace Connector, simply re-run an import from the same source. The resources will be updated, not reimported. This allows you to use the Connector to synch data between your DSpace and Omeka S installations.
+
 ## Undo an Import
 To undo a completed import and remove all associated items, go to the DSpace Connector tab on the left-hand navigation of the admin dashboard, click on DSpace Connector and then click on Past Imports, which should appear below the DSpace Connector tab.
 
