@@ -43,9 +43,9 @@ These tabs will display the list of collections and communities, respectively, f
 
 To import a collection or community, click the Import button to the left of its name. This will automatically begin the import.
 
-![First few collections from mars.gmu.edu's DSpace repository](../modulesfiles/dspace_coll.png)
+![First few collections from mars.gmu.edu's DSpace repository](../modules/modulesfiles/dspace_coll.png)
 
-![First community from mars.gmu.edu's DSpace repository](../modulesfiles/dspace_comm.png)
+![First community from mars.gmu.edu's DSpace repository](../modules/modulesfiles/dspace_comm.png)
 
 You can track the status of the import by navigating to the DSpace Connector > Past Imports tab or on the [Jobs](/admin/jobs.md) tab of the left-hand navigation on the admin dashboard.
 
@@ -54,12 +54,12 @@ Go to the DSpace Connector tab on the left-hand navigation of the admin dashboar
 
 This page displays a table of Past DSpace Imports, with a checkbox option to *Undo*, the *Job ID* for the import, the repository’s *Dspace Collection Link*, any *Comments* made during import, the number of *Items* imported, the *Date* of the import, the import *Status*, and the *Owner*, or user who initiated the import.
 
-![Table of past imports showing two from mars.gmu.edu](../modulesfiles/mods_dspacepast.png)
+![Table of past imports showing two from mars.gmu.edu](../modules/modulesfiles/mods_dspacepast.png)
 
 ## Undo an Import
 To undo a completed import and remove all associated items, go to the DSpace Connector tab on the left-hand navigation of the admin dashboard, click on DSpace Connector and then click on Past Imports, which should appear below the DSpace Connector tab.
 
-![Table of past imports showing two from mars.gmu.edu](../modulesfiles/mods_dspacepast.png)
+![Table of past imports showing two from mars.gmu.edu](../modules/modulesfiles/mods_dspacepast.png)
 
 Check the box for each import you wish to undo and click submit. The 
 
