@@ -10,12 +10,12 @@ Note that DSpace Connector only works with DSpace versions 4 and higher.
 
 You can view past imports by going to the DSpace Connector tab on the left-hand navigation of the admin dashboard and clicking the *Past Imports* sub-tab.
 
-![DSpace Connector navigation option with two sub-tab options for Import and Past Imports](modules/modulesfiles/dspace_nav.png)
+![DSpace Connector navigation option with two sub-tab options for Import and Past Imports](../modules/modulesfiles/dspace_nav.png)
 
 ## Import Data
 To use DSpace Connector, navigate to the tab labelled *DSpace Connector* on the left-hand navigation of the admin dashboard. 
 
-![Screenshot of the field options for DSpace Connector with collections loaded from a university library](modules/modulesfiles/dspace_import.png)
+![Screenshot of the field options for DSpace Connector with collections loaded from a university library](../modules/modulesfiles/dspace_import.png)
 
 To import from a DSpace Repository: 
 
@@ -36,16 +36,16 @@ This tab has three options:
 * *Item Set*: select an item set from the dropdown into which to import the items. 
 * *Comment*: for any comments you have.
 
-![basic import settings, nothing entered and no boxes checked.](modules/modulesfiles/dspace_importset.png) 
+![basic import settings, nothing entered and no boxes checked.](../modules/modulesfiles/dspace_importset.png) 
 
 ### Collections and Communities
 These tabs will display the list of collections and communities, respectively, for the DSpace repository. You can only import one collection or community at a time.
 
 To import a collection or community, click the Import button to the left of its name. This will automatically begin the import.
 
-![First few collections from mars.gmu.edu's DSpace repository](modulesfiles/dspace_coll.png)
+![First few collections from mars.gmu.edu's DSpace repository](../modulesfiles/dspace_coll.png)
 
-![First community from mars.gmu.edu's DSpace repository](modulesfiles/dspace_comm.png)
+![First community from mars.gmu.edu's DSpace repository](../modulesfiles/dspace_comm.png)
 
 You can track the status of the import by navigating to the DSpace Connector > Past Imports tab or on the [Jobs](/admin/jobs.md) tab of the left-hand navigation on the admin dashboard.
 
@@ -54,12 +54,12 @@ Go to the DSpace Connector tab on the left-hand navigation of the admin dashboar
 
 This page displays a table of Past DSpace Imports, with a checkbox option to *Undo*, the *Job ID* for the import, the repository’s *Dspace Collection Link*, any *Comments* made during import, the number of *Items* imported, the *Date* of the import, the import *Status*, and the *Owner*, or user who initiated the import.
 
-![Table of past imports showing two from mars.gmu.edu](modulesfiles/mods_dspacepast.png)
+![Table of past imports showing two from mars.gmu.edu](../modulesfiles/mods_dspacepast.png)
 
 ## Undo an Import
 To undo a completed import and remove all associated items, go to the DSpace Connector tab on the left-hand navigation of the admin dashboard, click on DSpace Connector and then click on Past Imports, which should appear below the DSpace Connector tab.
 
-![Table of past imports showing two from mars.gmu.edu](modulesfiles/mods_dspacepast.png)
+![Table of past imports showing two from mars.gmu.edu](../modulesfiles/mods_dspacepast.png)
 
 Check the box for each import you wish to undo and click submit. The 
 
