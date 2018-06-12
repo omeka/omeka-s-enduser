@@ -31,13 +31,13 @@ When a module has a new release, it will display on the browse page with a messa
 
 ## Installing Modules
 ### Add the Module to Omeka S
-In order to appear on in the *Modules* table on the Modules tab of the Admin Dashboard for your Omeka S installation, modules must be manually added to the modules folder of the installation, using an FTP program or an ssh connection.
+In order to appear in the *Modules* table on the Modules tab of the Admin Dashboard for your Omeka S installation, modules must be manually added to the modules folder of the installation, using an FTP program or an ssh connection.
 
 To add a module to the site using FTP
 
 1. Download the zipped module to your computer.
-1. Open your FTP client, log on to the server that houses  the Omeka S install and navigate to the /modules folder (this should be located in the main folder of the install).
-1. Upload the zipped module to the /modules folder 
+1. Open your FTP client, log on to the server that houses  the Omeka S install and navigate to the `/modules` folder (this should be located in the main folder of the install).
+1. Upload the zipped module to the `/modules` folder 
 1. Unzip the module
 
 You can also use git to clone a module directly from the git repository. Do this only if you are comfortable with git.
