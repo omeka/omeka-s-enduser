@@ -84,3 +84,15 @@ The navigation background color sets the color of the navigation sidebar for the
 Edit either field by typing a [color value](https://en.wikipedia.org/wiki/Web_colors) into the field. Either a triplet or a six-character hexadecimal code will work. Once you have entered a valid value, the color bar on the left will automatically update to show the color entered, even without saving changes.
 
 The default values are stored in the prompt text for the field. For the Cozy theme, the default values are: main accent color is `089494` and navigation background color is `bfdcdc`
+
+## Installing themes
+In order to appear in the *Themes* tab for sites, themes must be manually added to the `themes` folder of the installation, using an FTP program or an ssh connection.
+
+To add a module to the site using FTP
+
+1. Download the zipped module to your computer.
+1. Open your FTP client, log on to the server that houses  the Omeka S install and navigate to the `/themes` folder (this should be located in the main folder of the install).
+1. Upload the zipped module to the `/themes` folder 
+1. Unzip the module
+
+You can also use git to clone a theme directly from the git repository. Do this only if you are comfortable with git.
