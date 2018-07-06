@@ -105,6 +105,22 @@ Selecting any of these will add a block to the form where you can select a prope
 
 ![Image depicts only the Add text value block of the batch edit form, with a dropdown labeled "select property" above an empty text field](/content/contentfiles/itemsets_property.png)
 
-For the **delete actions**, a drawer will open on the right side of the screen telling you the number of item sets which will be deleted. Nothing will be deleted unless you click the red *Confirm Delete* button. This action cannot be undone. To opt out of deleting the item sets, click the X in the upper right corner of the deletion drawer. To confirm delete, check the "Are you sure" checkbox and then click *Confirm Delete*
+For the **delete actions**, a drawer will open on the right side of the screen telling you the number of item sets which will be deleted. Nothing will be deleted unless you click the red *Confirm Delete* button. This action cannot be undone. To opt out of deleting the item sets, click the X in the upper right corner of the deletion drawer. To confirm delete, check the "Are you sure" checkbox and then click *Confirm Delete*. Note that deleting the item set will not delete the items associated with that set.
 
 ![Close up of the warning, with the text describing the number of items to be deleted in red.](/content/contentfiles/itemsets_bulkdelete.png)
+
+## Delete Item Set
+In addition to the batch delete function described above, you can also delete individual item sets. 
+
+Note that deleting item sets does not delete any items associated with the item set. 
+
+From the Item Set browse view, you can delete an item set by clicking the trash can icon in the row for the item set you want to delete. This will open a drawer on the right with a message at the top asking you to confirm that you want to delete the item set, with the metadata for the item set below the confirm delete button. Click *Confirm delete* to delete the item set, or close the drawer to cancel.
+
+![Browse item sets view with two item sets and a red arrow pointing to the trash can icon](/content/contentfiles/itemsets_browseDel.png)
+
+![Drawer with a confirmation message to delete the an item set, including the Confirm delete button and the item set's basic descriptive metadata - title, description, and number of items in the set. ](/content/contentfiles/itemsets_browseDel.png)
+
+
+From the edit page for an Item Set, click the *Delete* button in the upper right-hand corner. This will open a drawer on the right side asking you to confirm that you want to delete the item set. Click *Confirm delete* to delete the item set, or close the drawer to cancel.
+
+![Close up of the warning drawer, with text stating "Are you sure you would like to delete this item set" and below it a red button with white text stating "Confirm delete".](/content/contentfiles/itemsets-delete2.png)
