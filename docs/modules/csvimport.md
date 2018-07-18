@@ -1,9 +1,9 @@
 ---
 title: CSV Import
 ---
-The CSV Import module allows you to import items or users into your Omeka S install from a csv (comma separated values) document. 
+The CSV Import module allows you to import items or users into your Omeka S install from a csv (comma separated values), tsv (tab-separated values) or odf (open document format) file. 
 
-Please note that an import must be for either items or users, but cannot be for both.
+Please note that an import must have a specific import type. 
 
 Preparing your CSV file
 -----------------------
@@ -16,7 +16,7 @@ If the spreadsheet is already created, take a moment to think about which column
 If you have multiple inputs for a single property, you can separate them with a secondary *multivalue separator*. For example, a work with multiple authors (E.B. White and William Strunk Jr.) with the column for Creator containing "E.B. White; William Strunk Jr" has a semicolon (;) as the multivalue separator. When imported into Omeka S, each of these would appear as a separate entry in the property (Creator: E.B. White and Creator: William Strunk Jr.)
 
 ### Automapping 
-The module can automap column headers if they conform to the property terms of your installation's [vocabularies](../content/vocabularies.md). For example, a CSV file with a column header "dcterms:title" would automap to the Dublin Core Title property when the CSV is loaded for mapping.
+The module will automatically automap column headers if they conform to the property terms of your installation's [vocabularies](../content/vocabularies.md). For example, a CSV file with a column header "dcterms:title" would automap to the Dublin Core Title property when the CSV is loaded for mapping.
 
 To find the terms you should use for your column headers, go to the Vocabularies tab from the admin dashboard. Click on the number of properties for the vocabulary you want to use (Dublin Core in the image below)
 
@@ -26,6 +26,7 @@ In the table of vocabulary properties, there is a column for *Term*. Use the Ter
 
 ![arrow points to the Term column for Dublin Core properties.](../modules/modulesfiles/csv_automap2.png)
 
+In addition, there is a setting in the inital import settings to automap with labels alone - this will work with columns whose names match a vocabulary label, for example "Title" or "date". Note that this option defaults to Dublin Core before proceeding through other installed vocabularies. 
 
 Importing
 ---------
@@ -33,13 +34,39 @@ Importing
 
 ![A red arrow points to CSV Importer in the navigation](../modules/modulesfiles/csvimport_nav.png)
 
-Start an import by clicking on the CSV Importer tab on the left-hand navigation. This will open the Import page. 
+Start an import by clicking on the CSV Importer tab on the left-hand navigation. This will open the initial Import Settings page. 
 
 - Using the *Choose File* button, select the file from your computer. 
-- From the *Import Type* dropdown, select whether you're importing *Items* or *Users* (scroll down for instructions for each of these types of import)
-- Click the *next* button
+- From the *CSV Column delimiter* dropdown, choose from the following options (this should match the formatting of your file)
+	- comma
+	- semi-colon
+	- colon
+	- tabulation
+	- carriage return
+	- space
+	- pipe
+
+- From the *CSV column enclosure* dropdown, choose the option which encloses long text in your file:
+	- double quote
+	- quote
+	- hash
+
+- From the *Import Type* dropdown, select what you are importing:
+	- Item Sets
+	- Items
+	- Media (must relate to already existing Items)
+	- Resources (can be a mix of Item Sets, Items, and Media)
+	- Users
+
+- Check the box to *Automap with labels alone.* This will automap not only specially formatted column headings but also column headings which match existing vocabulary property labels. Note that this option defaults to Dublin Core before proceeding through other installed vocabularies. 
+
+Click the *next* button to continue with the import process. 
 
 ![First page of the CSV Importer process](../modules/modulesfiles/csvimport_choosefile.png)
+
+### General Import Logic
+
+### Items Sets Import
 
 ### Items Import
 The next page of the Importer has two tabs:  
@@ -121,6 +148,12 @@ As soon as you select a mapping it should appear in the Mappings column of the t
 ![Arrow points to the trash can icon to delete mapping](../modules/modulesfiles/csvimport_itemdelete.png)
 
 Once you have completed mapping, hit import. You should see a confirmation message saying "Importing in Job ID [number]"
+
+### Media Import
+
+### Resources Import
+
+
 
 ### Users Import
 You can import user data from a csv and map to the following information: email, display name, and role. When you import a user csv, the tabs are as follows: 
