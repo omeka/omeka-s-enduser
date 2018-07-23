@@ -12,7 +12,7 @@ The Omeka S Scripto module allows you to create multiple projects on a single Sc
 To install Scripto, you need:
 
 - To be running Omeka S 1.1.2
-- Have a MediaWiki installation running on the same server as the Omeka S installation. Minimum MediaWiki version is XXX.
+- Have a MediaWiki installation running on the same server as the Omeka S installation. Minimum MediaWiki version is 1.30.0.
 
 Create the MediaWiki installation on your server using their instructions. Install the Scripto module using the [documentation for installing modules](https://omeka.org/s/docs/user-manual/modules/#installing-modules). 
 
@@ -21,6 +21,11 @@ Once you have installed the module and created your MediaWiki installation, go t
 Staying on the Modules tab, click the Configure button for the Scripto module. 
 
 On the Configuration page, enter the url for your MediaWiki API endpoint; this should be something like `<your mediawiki url>/api.php`. 
+
+### Creating an item set
+The Scripto module uses item sets to manage the content coming to and from your Omeka installation. 
+
+Each Scripto project needs an item set with which it can synch. You can add items to this item set later if you need to. 
 
 ## Users
 
@@ -49,6 +54,8 @@ To create a new Scripto project, go to the Scripto dashboard (the Scripto tab in
 
 This will load the New project page, which has two tabs: Configuration and Reviewers. 
 
+The eye symbol on the upper right by the "add" button sets the visibility of the project. If the button is set to private (eye with a slash) it will only be visible to users *of the Omeka site*
+
 **Configuration options**
 
 - Title (required): the name of the Scripto project. This will display on public and admin sides.
@@ -57,7 +64,15 @@ This will load the New project page, which has two tabs: Configuration and Revie
 - Item set (required): select the item set with which the Scripto project should synch. This item set should contain all the items and/or media you wish to include in the project. 
 - Import target: select the resource to store data when it is pushed from the Scripto project back to Omeka S metadata. Options are Item and Media, Item, or Media.
 - Property (required): select from the dropdown which property should store the content created through Scripto and imported back into Omeka S metadata. In addition to installed [Vocabularies](https://omeka.org/s/docs/user-manual/content/vocabularies/), Scripto has its own vocabulary options of content, transcription, and translation. 
+- Language tag: the language tag for the content being imported into the property selected above.
+
+**Reviewers**
+Add Omeka S users to your Scripto project as reviewers. 
 
 
 You can change these settings at any time by editing the project. 
 
+
+## Uninstalling Scripto
+
+In order to successfully uninstall scripto, the module must be still be active. 
