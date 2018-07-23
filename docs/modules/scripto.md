@@ -56,6 +56,8 @@ This will load the New project page, which has two tabs: Configuration and Revie
 
 The eye symbol on the upper right by the "add" button sets the visibility of the project. If the button is set to private (eye with a slash) it will only be visible to users *of the Omeka site*
 
+You can change these settings at any time by editing the project. 
+
 **Configuration options**
 
 - Title (required): the name of the Scripto project. This will display on public and admin sides.
@@ -67,10 +69,20 @@ The eye symbol on the upper right by the "add" button sets the visibility of the
 - Language tag: the language tag for the content being imported into the property selected above.
 
 **Reviewers**
-Add Omeka S users to your Scripto project as reviewers. 
+Add Omeka S users to your Scripto project as reviewers, who can *DO WHAT*
 
+On the right-hand side of the window is a browsable list of Omeka S users, sorted alphabetically by username. To add a user as a Scripto project reviewer, simply click on their name; this will add them to the table of reviewers in the main part of the page.
 
-You can change these settings at any time by editing the project. 
+To remove a user as reviewer, click the trash can icon to the right of their email address in the table of reviewers.  
+
+Click "Add" to create the new project.
+
+### Initial Sync
+Immediately upon creating a project, you will see the message: "No Scripto items found. Do you need to sync the project? If you have recently synced, the sync job has likely not finished."
+
+To sync the project, go to the Actions dropdown button in the upper right corner of the window. From the options, select "Sync project" - this will update the project so that it has every item in the item set. 
+
+Note that the first time you run the sync may take some time, and you may continue to see the "No Scripto items found" message. You should also see a green message across the top of the page stating that the project is syncing and giving you a link to the job for the sync.
 
 
 ## Uninstalling Scripto
