@@ -110,11 +110,11 @@ Once you have searched, highlight everything in your browser's address bar start
 
 ![a search query url with the question mark and everything to its right highlighted](../sites/sitesfiles/sitespg_bpquery.png) 
 
-In the *Query* field of the Browse Preview block, paste the part of the url you just copied (everything from the question mark over). 
-
-The *Preview Title* field sets the heading above the browse section on the page.
-
-The *Browse link text* field sets the link text at the bottom of the block - the block will only display the first ten results for the query.
+- From the *Resource type* dropdown, choose the kind of resource you want to display in the block: Items, Item Sets, or Media. 
+- In the *Query* field of the Browse Preview block, paste the part of the url you just copied (everything from the question mark over). 
+- The *Limit* field lets you set the number of resources to display in the block; any additional results from your query can be accessed on a search page linked from the bottom of the block (you set the text of the link in the *browse link text* field below).
+- The *Preview Title* field sets the heading above the browse section on the page.
+- The *Browse link text* field sets the link text at the bottom of the block - the block will only display as many results as you set in the *Limit* field above.
 
 ![Page block for Browse Preview](../sites/sitesfiles/sitepg_browse.png)
 
