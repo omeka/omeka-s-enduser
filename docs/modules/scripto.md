@@ -68,21 +68,37 @@ You can change these settings at any time by editing the project.
 - Property (required): select from the dropdown which property should store the content created through Scripto and imported back into Omeka S metadata. In addition to installed [Vocabularies](https://omeka.org/s/docs/user-manual/content/vocabularies/), Scripto has its own vocabulary options of content, transcription, and translation. 
 - Language tag: the language tag for the content being imported into the property selected above.
 
+![Add New Project window open to the "Configuration" tab - all fields are blank](../modules/modulesfiles/scripto_newconfig.png)
+
 **Reviewers**
-Add Omeka S users to your Scripto project as reviewers, who can *DO WHAT*
+Add Omeka S users to your Scripto project as reviewers, who can can access private projects, and mark media as approved and unapproved. Only Omeka users with site and global administrator roles can sync and import projects, due to the destructive potential of those actions.
 
 On the right-hand side of the window is a browsable list of Omeka S users, sorted alphabetically by username. To add a user as a Scripto project reviewer, simply click on their name; this will add them to the table of reviewers in the main part of the page.
 
 To remove a user as reviewer, click the trash can icon to the right of their email address in the table of reviewers.  
+
+![Add New Project window open to the "Reviewers" tab - the page is largely blank, with an alphabetical menu down one side.](../modules/modulesfiles/scripto_newrev.png)
 
 Click "Add" to create the new project.
 
 ### Initial Sync
 Immediately upon creating a project, you will see the message: "No Scripto items found. Do you need to sync the project? If you have recently synced, the sync job has likely not finished."
 
+![](../modules/modulesfiles/scripto_newproject.png)
+
 To sync the project, go to the Actions dropdown button in the upper right corner of the window. From the options, select "Sync project" - this will update the project so that it has every item in the item set. 
 
+![](../modules/modulesfiles/scripto-projectactions.png)
+
 Note that the first time you run the sync may take some time, and you may continue to see the "No Scripto items found" message. You should also see a green message across the top of the page stating that the project is syncing and giving you a link to the job for the sync.
+
+## Review project
+From the Scripto dashboard you can access projects you own and those to which you have reviewer access. Regardless of your status for the project, clicking on the project's title will take you to its review page.
+
+At the top of the page you will see the title of the project along with the label "Review". Underneath the project title will be the Scripto account bar, where you can either log in or navigate to the dashboard, your contributions and watchlist. 
+
+
+
 
 
 ## Uninstalling Scripto
