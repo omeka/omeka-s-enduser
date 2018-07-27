@@ -8,7 +8,6 @@ The Omeka S Scripto module allows you to create multiple projects on a single Sc
 
 
 ## Installation and Configuration
-
 To install Scripto, you need:
 
 - To be running Omeka S 1.1.2
@@ -92,11 +91,59 @@ To sync the project, go to the Actions dropdown button in the upper right corner
 
 Note that the first time you run the sync may take some time, and you may continue to see the "No Scripto items found" message. You should also see a green message across the top of the page stating that the project is syncing and giving you a link to the job for the sync.
 
-## Review project
+## Admin Project View
 From the Scripto dashboard you can access projects you own and those to which you have reviewer access. Regardless of your status for the project, clicking on the project's title will take you to its review page.
+
+![scripto review page, user not logged in to Scripto](../modules/modulesfiles/scripto-preview.png)
 
 At the top of the page you will see the title of the project along with the label "Review". Underneath the project title will be the Scripto account bar, where you can either log in or navigate to the dashboard, your contributions and watchlist. 
 
+The sidebar on the right summarizes the metadata for the project. The project title, item set, and owner all act as links .
+
+In the main work area is a table with all of the items in the project, with the following information:
+
+- Item (first media thumbnail and title)
+- Ellipses to see item metadata - this will open in a drawer on the right
+- Date synced: date most recently synced.
+- Last edited. If the item's media has not been edited, this will be blank
+- Media count: number of media associated with the item
+- Status: item status, which will be blank, completed, or approved.
+
+Above the table are options to:
+
+- search items and media in the project (search bar)
+- page through the project's items
+- sort by date synced or last edited, either ascending or descending
+- filter results by:
+	- is approved
+	- is not approved
+	- is in progress
+	- is new
+	- is edited after imported
+
+## Admin Item Review
+To review an item, click on its title in the project view.
+
+The Item view page, like the project view, has near the top of the page a Scripto account bar, where you can either log in or navigate to the dashboard, your contributions and watchlist.
+
+On the right is a bar summarizing the item's status and data. The properties for the Scripto Project and Omeka S item link back to their respective properties. 
+
+![item admin side](../modules/modulesfiles/scripto-itemview.png)
+
+The main work area has two tabs: one for Media and one with the Omkea item metadata.
+
+On the **Media** tab, there is a table with all the media in an item. Users transcribe media by media, so Scripto allows you to review on the media level.
+
+The table includes:
+
+- A selectbox for the media
+- The index number of the media
+- The media's thumbnail and title
+- last edited date
+- status (approved, complete, blank)
+- Edit protection (admin only, open to all)
+
+You can sort the table by last synced, last edited, last completed and last approved, either ascending or descending, using the dropdowns in the upper right of the tab.
 
 
 
