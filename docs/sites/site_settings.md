@@ -8,6 +8,13 @@ This tab allows you to configure settings for the [site](../sites/index.md) over
 ## Restrict browse to attached items
 A checkbox. If checked, the Browse functions of your site will only show items which have been added to a page block. If unchecked, browse pages and blocks on your site will include all items in the Item Pool.
 
+## Results per page
+Set the number of results per page on browse pages by entering a number. If left blank, the site will use the default from the [global settings](../admin/settings).
+
+Depending on the [site theme](../sites/site_theme), you may want to make this a multiple of 4 for a more elegant display.
+
+Note that using very large numbers (50, 75, 100) may cause browse pages to load slowly.
+
 ## Attachment link type
 Sets the target of links from attachments you add to [site page blocks](../sites/site_pages.md#editing-pages) (for example, in an [item showcase](../sites/site_pages.md#item-showcase). It offers a dropdown with the following options:
 
@@ -26,20 +33,32 @@ Set which property to use as the heading for each resource on a browse page. By 
 ## Browse body property
 Set which property to use as the body text for each resource on a browse page. By default, this is Dublin Core: Description. The dropdown allows you to select from all available vocabularies, and includes a search bar to quickly find the desired property.
 
-## Always show user bar on public views
-A checkbox. When checked, the public views of the site will have a header bar which either displays navigation options (for logged-in users) or a login option (for logged-out users)
+## Show page pagination
+When checked, "Previous" and "Next" links will display at the bottom of every page in the site, proceeding through your navigation. 
 
-- When users are logged in, the user bar has the following options:
-	- Installation Title: takes you back to the installation admin
-	- Site Title: takes you back to the landing page for managing the site (site/show).
-	- User's display name: takes you to your user page.
-	- Logout: logs out current user.
+If unchecked, these links will not display.
+
+## Show user bar on public views
+Set whether there is a bar across the top of public site pages which allow users to access the admin side of the site. 
+
+When users are logged in, the user bar has the following options:
+
+- Installation Title: takes you back to the installation admin
+- Site Title: takes you back to the landing page for managing the site (site/show).
+- User's display name: takes you to your user page.
+- Logout: logs out current user.
 
 ![a blue bar across the top of the image displays the following words in light blue text, indicating a link: RRCHNM Omeka S Dev Site; A Tin Box; signed in as Megan; Logout. Below this, the site's title "A Tin Box" is displayed in black text on a white background.](../sites/sitesfiles/sites_userbarin.png)
 
-- When users are not logged, the user bar only displays a login option.
+When users are not logged, the user bar only displays a login option.
 
 ![A blue bar across the top of the image only has a small button reading "Log In". Below this, the site's title "A Tin Box" is displayed in black text on a white background.](../sites/sitesfiles/sites_userbarout.png)
+
+The options for this setting are:
+
+- Never
+- When identified (when logged in) 
+- Always
 
 ## Locale
 A dropdown menu to select the language code for this site. By default this will be set to the same as the global locale setting for the entire Omeka S installation. To change, select a language from the dropdown menu.

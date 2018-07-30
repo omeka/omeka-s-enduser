@@ -1,9 +1,9 @@
 ---
 Title: Media
 ---
-Access media through the item with which is is associated. Media cannot exist independent of an associated item. 
+Media are only created by adding them to an Item. Media cannot exist independently. 
 
-To view the metadata for media, click on the media’s name in the  right-hand sidebar on the item view page. 
+To view the metadata for media, click on the media’s name in the  right-hand sidebar on the item view page.
 
 ## Add Media
 
