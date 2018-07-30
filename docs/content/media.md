@@ -3,7 +3,11 @@ Title: Media
 ---
 Media are only created by adding them to an Item. Media cannot exist independently. 
 
-To view the metadata for media, click on the media’s name in the  right-hand sidebar on the item view page.
+To view the media associated with an item, click on the media’s name in the right-hand sidebar on the item view page.
+
+To view all media in the installation, first go to the admin item browse. In the left hand navigation, an option for Media browse will appear under the Item browse (you may have to click on the triangle to expand the menu below Items)
+
+![The Resources section of the navigation, with light blue text on a dark blue background. Below the option for items, indented, is a navigation option for Media. It has no representative icon, unlike the other options.](/content/contentfiles/media-browsenav.png)
 
 ## Add Media
 
