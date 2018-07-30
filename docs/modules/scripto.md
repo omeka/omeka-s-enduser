@@ -132,7 +132,8 @@ On the right is a bar summarizing the item's status and data. The properties for
 
 The main work area has two tabs: one for Media and one with the Omkea item metadata.
 
-On the **Media** tab, there is a table with all the media in an item. Users transcribe media by media, so Scripto allows you to review on the media level.
+### Media tab
+On the Media tab, there is a table with all the media in an item. Users transcribe media by media, so Scripto allows you to review on the media level.
 
 The table includes:
 
@@ -144,6 +145,28 @@ The table includes:
 - Edit protection (admin only, open to all)
 
 You can sort the table by last synced, last edited, last completed and last approved, either ascending or descending, using the dropdowns in the upper right of the tab.
+
+You can also filter which media are displayed using the dropdown to show only: 
+
+- Is/is not edited
+- Is/is not completed
+- Is/is not approved
+- Is edited after approved
+- Is edited after imported
+- Is synced after imported
+
+Using the checkbox you can edit selected or all media.
+
+Batch edit options are: 
+
+Set completion status as Complete, incomplete, or no change. Set Approval status as Approved, not approved, or no change.
+
+![batch edit](../modules/modulesfiles/scripto_batcheditmedia.png)
+
+### Omeka item metadata
+This tab is a static display of the metadata for the Omeka S item with which the Scripto item is associated. When you sync the project, this is the item which will be updated. To edit the item, scroll in the right hand drawer 
+
+## Media Review page
 
 
 
