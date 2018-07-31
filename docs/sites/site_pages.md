@@ -26,7 +26,7 @@ In addition, there is a checkbox for "Add to navigation". If checked, the page w
 
 ![Page view showing the fields for Add Page](../sites/sitesfiles/sitepg_add.png)
 
-Once you have entered this information, click the Add button in the upper right hand corner of the browser window.
+Once you have entered this information, click the Add button in the upper right hand corner of the browser window. You will be automatically taken to the edit form for that page.
 
 ## Editing Pages  
 After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page *title* will take you to the public view of that page. On the right hand side you can choose to add a new block by selecting one of the following layouts: 
