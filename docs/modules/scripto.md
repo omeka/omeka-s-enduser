@@ -1,7 +1,3 @@
----
-title: Scripto
----
-
 The Scripto module for Omeka S allows you to create projects to transcribe, translate, or describe media attached to items in your Omeka S installation. The items and media are organized into an item set and then imported into a project in Scripto and can be periodically synched with the Omeka S item set to send the data back from Scripto to the Omeka S item and media metadata.
 
 The Omeka S Scripto module allows you to create multiple projects on a single Scripto installation. Like sites in Omeka S, Scripto projects can exist independently of each other. This means that you can support a manuscript transcription project and a document translation project through the same Omeka S installation.
@@ -167,9 +163,45 @@ Set completion status as Complete, incomplete, or no change. Set Approval status
 This tab is a static display of the metadata for the Omeka S item with which the Scripto item is associated. When you sync the project, this is the item which will be updated. To edit the item, scroll in the right hand drawer 
 
 ## Media Review page
+This is where you review the community contributions.
 
+Along the top of the page are the following buttons:
 
+- A star to add this page to your watchlist (if you are logged in to Scripto)
+- A button to go to the Revision History
+- A button to View discussion of the media
+- A button to Save changes
 
+There are three tabs on this page, along with a drawer on the right which remains open. 
+
+The first tab is **Wikitext** and displays the user-generated text from MediaWiki next to the media. You can use the Layout buttons to toggle between side by side and top and bottom display. You can zoom in and rotate the media display using the buttons within the media viewer. There is also an option to go to a full screen view of the text and media.
+
+The second tab is an **HTML** display of the Wikitext content, showing the formatted text as it will display on the public side of a site.
+
+The third tab is **Omeka media metadata** for the media. 
+
+To the right of the tabs is a set of foward-backward arrow buttons and numbers (1 of 2 in the image) which allow you to move through media attached to an item without backing out to the Review item page.
+
+![Media review](../modules/modulesfiles/scripto_mediareview1.png)
+
+In the sidebar:
+
+You can move through revisions using the forward and backward arrows.
+
+You can view review status and modify using checkboxes if your Mediawiki role includes bureaucrat.
+
+You can edit the protection of the Wikitext page, choosing from all users, confirmed users, or only administrators, and set the protection to expire or set it as indefinite. Again, you can only do this if your Mediawiki role allows it.
+
+### Revision History
+Clicking the "Revision History at the top of the Review media page takes you to a listing of the revision history for the media.
+
+Clicking on the timestamp for a revision will take you to that revision. 
+![Revision history](../modules/modulesfiles/scripto_revisionhist.png)
+
+### Discussion
+The discussion view looks similar to the Review media view. It provides a place where community volunteers can discuss an item with the Scripto project team.
+
+![Discussion](../modules/modulesfiles/scripto_discussion.png)
 
 ## Uninstalling Scripto
 
