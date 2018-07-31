@@ -5,22 +5,90 @@ Media are only created by adding them to an Item. Media cannot exist independent
 
 To view the media associated with an item, click on the media’s name in the right-hand sidebar on the item view page.
 
-To view all media in the installation, first go to the admin item browse. In the left hand navigation, an option for Media browse will appear under the Item browse (you may have to click on the triangle to expand the menu below Items)
-
-![The Resources section of the navigation, with light blue text on a dark blue background. Below the option for items, indented, is a navigation option for Media. It has no representative icon, unlike the other options.](/content/contentfiles/media-browsenav.png)
+To view all media in the installation, navigate to the Items browse first. The media browse will appear below Items in the left-hand navigation.
 
 ## Add Media
 
 Adding media includes uploading a file, or directly attaching content with oEmbed, YouTube URLs, or writing HTML.
 
-Media can only be added via the [item](../content/items.md). 
+Media can only be added via an [item](../content/items.md). 
+
+## Browse media
+To browse media, first go to the admin item browse. In the left hand navigation, an option for Media browse will appear under the Item browse (you may have to click on the triangle to expand the menu below Items)
+
+![The Resources section of the navigation, with light blue text on a dark blue background. Below the option for items, indented, is a navigation option for Media. It has no representative icon, unlike the other options.](/content/contentfiles/media-browsenav.png)
+
+Media are displayed in a table. Each media is a row, with columns for:
+
+- Select media (a checkbox)
+- Media *title*
+- icons to *edit* (pencil), *delete* (trash can), or *view details* (ellipses)
+- the media's *Class*
+- the media's *Owner*
+- and the date the media was *Created*. 
+
+![The browse media table as described above. All of the media are named with a mediawiki url and owned by the user Megan.](/content/contentfiles/media_browse.png)
+
+Options for navigating and creating items display above the table of items. 
+
+On the left side is a display for the number of pages of media, with forward and back arrows. The current page number is an editable field - enter any valid page number and hit return/enter on your keyboard to go to that page. 
+
+In the center top is a button for [Advanced Search](/search.md). 
+
+Just above the table on the right are options for sorting media, with two dropdown menus. The first lets you select between *Title*, *Class*, *Owner,* and *(date)Created*; the second allows you to sort ascending or descending. To apply, click the *sort* button.
+
+Clicking on the title of any media will take you to its metadata page. This page displays any metadata in the main work area, with a sidebar on the right listing the visibility, associated item (an active link), date created, MIME type, Size, Ingester, Source, and links to the file derivatives.
+
+![Media view page for a mediawiki file. The image is of a grup of people in late 19th century clothing, from left to right a a women standing and facing a standing man holding a small child while reaching out to the woman, with another man standing and smiling behind the man with the child. On the right hand side of the image is the database information for the media.](../content/contentfiles/media_view.png)
+
 
 ## Edit Media
-To edit an existing media, go to its metadata page and select the *Edit media* button in the upper right corner of the page. 
+To edit existing media, you can:
 
-If desired, you can select a *Resource Template* or *Class* from the two dropdown menus which load automatically. Selecting a resource template will populate the page with predetermined properties.
+- Go to the Browse page and click the pencil/edit icon for the media's row
+- Go to the Media browse page, click on the title to view the media's metadata and then click the "*Edit media* button in the upper right hand corner
+- Click on the media's name in the right-hand sidebar of an item's page to go to the media's metadata, and then click on *Edit media* from there.
 
-You can also add properties by selecting from the list on the right side of the screen. You can either browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
+Editing media is very similar to editing [items](../content/items) or [item sets](../content/item-sets).
+
+![Edit media page, with no properties loaded](../content/contentfiles/media_edit.png)
+
+If desired, you can select a resource template from the drop-down menu. Resource templates are defined by site administrators and editors.
+
+- If using a resource template, the class should automatically load.
+- If not using a resource template, you may select a class from the dropdown menu (these are populated from the [Vocabularies](/content/vocabularies.md) in your installation).
+
+Add information to the properties which load. If you do not select a resource template or class, the Dublin Core properties Title and Description will load automatically.
+
+You may add text, a resource from the installation, or an external link in each field.  
+
+Note that if you add the property `dcterms:title`, its contents will replace the autogenerated title of the media. This is useful if dealing with url or media uploads with auto-generated names.  
+
+**Text** fields allow for unformatted text entry.
+
+![image of text input field with keyboard icon indicating text input, the globe icon for setting language, and a trashcan delete icon](/content/contentfiles/items_textedit.png)
+
+You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code for the language in which the text is written.
+
+![Red arrow points to the globe icon and a text entry field highlighted in blue](/content/contentfiles/item_lang.png)
+
+**Omeka Resource** fields create an internal link between the resource you are creating and the resource which fills that field. 
+
+You have the option to use either an item, another media, or an item set. Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
+
+![Select Item menu with list of items to link in edit media view](/content/contentfiles/media_addresource.png)
+
+You can use the "Quick add slider" in the right hand drawer to select multiple resources using a checkbox instead of adding each individually. You must still click the *Add selected* button at the bottom of the drawer to complete the process.
+     
+**URI** fields link to an external website or online resource.
+
+You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
+
+**Language** You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code for the language in which the text is written.
+
+![Red arrow points to the globe icon and a text entry field highlighted in blue](/content/contentfiles/item_lang.png)
+
+You can add properties by selecting from the list on the right side of the screen. You can either browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
 
 Automatically generated metadata, such as source, visibility, and part of item, cannot be edited. 
 
@@ -31,3 +99,42 @@ Use the *make public/private* button (eye icon) to set whether the media is visi
 ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)  Private
 
 Note that if an item is private, all the media attached is private, but an item which is public can have attached media which are set to be either public or private.
+
+## Batch editing
+
+From the media browse page, you can batch edit media, using the dropdown menu on left just above the table of media. You can select multiple items using the checkboxes on the left of each item's row.
+
+![A red arrow points to the dropdown for batch editing and deleting options](/content/contentfiles/media_batch1.png)
+
+Batch actions are as follows:  
+
+- Edit selected: edit only the items that are selected on the page
+- Edit all: edit all the items returned by a search (default is all items)
+- Delete selected: delete only the items that are selected on the page
+- Delete all: delete all the items returned by a search (default is all items)
+
+Choose one of these options and then click *Go*.
+
+**Batch editing** media takes you to a new page. The media being edited will display on the right side in a drawer, while the batch edit form gives you the following options:  
+
+- set visibility: radio buttons, select from Public, Not public, or No change
+- set template: a dropdown, select from the installation's resource templates.
+- set class: a dropdown, select from classes of the installed vocabularies.
+- Clear language: a checkbox
+- Set language: a text entry box.
+- Clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected items. Clear additional properties using the *Clear another property* button.
+
+![Batch edit medias form, with options as described above. Everything is grayscale](/content/contentfiles/media_batchedit.png)
+
+In addition, you can use the bottoms at the bottom of the batch edit form to add properties to every media:
+
+- add text value
+- add resource value
+- add URI value  
+
+Selecting any of these will add a block to the form where you can select a property from the installed vocabularies and enter the value for that property.
+
+For the **delete actions**, a drawer will open on the right side of the screen telling you the number of media which will be deleted. Nothing will be deleted unless you click the red *Confirm Delete* button. This action cannot be undone. To opt out of deleting the media, click the X in the upper right corner of the deletion drawer. To confirm delete, check the "Are you sure" checkbox and then click *Confirm Delete*
+
+![Close up of the warning that 2 medias will be deleted.](/content/contentfiles/media_batchdelwarn.png)
+
