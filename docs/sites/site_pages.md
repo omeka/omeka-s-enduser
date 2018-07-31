@@ -28,6 +28,13 @@ In addition, there is a checkbox for "Add to navigation". If checked, the page w
 
 Once you have entered this information, click the Add button in the upper right hand corner of the browser window. You will be automatically taken to the edit form for that page.
 
+## Browse Pages
+The pages tab (once you have at least one page) will display all of your pages in their navigation order. Child pages will display below the parent page with a `-` before the page title.
+
+Every page is listed with its *Title*, buttons to view (box with an arrow coming out), edit (pencil), or delete (trash can) the page, and the page's slug. 
+
+![A sites page browse view, with 12 pages listed, some of which are child pages of the others.](../sites/sitesfiles/sitepg_browse.png)
+
 ## Editing Pages  
 After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page *title* will take you to the public view of that page. On the right hand side you can choose to add a new block by selecting one of the following layouts: 
 
@@ -116,7 +123,7 @@ Once you have searched, highlight everything in your browser's address bar start
 - The *Preview Title* field sets the heading above the browse section on the page.
 - The *Browse link text* field sets the link text at the bottom of the block - the block will only display as many results as you set in the *Limit* field above.
 
-![Page block for Browse Preview](../sites/sitesfiles/sitepg_browse.png)
+![Page block for Browse Preview](../sites/sitesfiles/sitepg_bpblock.png)
 
 ### Item Showcase
 A list of items. 
