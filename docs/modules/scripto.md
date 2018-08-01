@@ -190,6 +190,15 @@ In the sidebar:
 - You can view review status and modify using checkboxes if your Mediawiki role includes bureaucrat.
 - You can edit the protection of the Wikitext page, choosing from all users, confirmed users, or only administrators, and set the protection to expire or set it as indefinite. Again, you can only do this if your Mediawiki role allows it.
 
+
+#### Media status:
+
+**Complete**
+
+**Protected**
+
+
+
 ### Revision History
 Clicking the "Revision History at the top of the Review media page takes you to a listing of the revision history for the media.
 
@@ -217,7 +226,38 @@ Users can toggle between gallery and list views using the layout button. They ca
 ![Public item view](../modules/modulesfiles/scripto_publicproj.png)
 
 ### Public media view
+The media view is where community users will create transcriptions, translations, or descriptions. 
 
+The initial media view shows the media on the right, with metadata on the left. Underneath the media display is the HTML of whatever wikitext has already been generated. 
+
+Above the media and metadata are a series of buttons:
+- Toggle between the media's *Text* and *Discussion* of the media
+- Edit the media - add wikitext
+- View revision history
+- And watch/stop watching media (a star)
+
+![media view](../modules/modulesfiles/scripto_mediav.png)
+
+#### Adding text
+To start working with a piece of media, the user clicks "edit" in the toolbar above the media and metadata display.
+
+A new page loads, with a media viewer and a editing workspace for users to enter text. Depending on the selected layout, media may be to the right of the workspace or above it.
+
+The area between the media title and the workspace and viewer has a combination of information display and action items for the user. From left to right:
+
+- watch or stop watching media
+- Protection status and expiration
+- Status of media with a checkbox to mark the revision as complete
+- Save changes button
+- Cancel changes button
+
+Users can rotate the media and zoom in and out using the controls within the media viewer. They can use the layout buttons to toggle between side by side and top and bottom views. 
+
+![edit media](../modules/modulesfiles/scripto_editmedia.png)
+
+The editing workspace has a formatting toolbar which adds MediaWiki markup to the text (it does not change the appearance of the text in the workspace)  Any formatting will be applied to the HTML view of the text after changes are saved.
+
+Below the media viewer and workspace is a field for users to summarize their changes.
 
 ## Uninstalling Scripto
 
