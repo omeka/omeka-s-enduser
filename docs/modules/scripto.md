@@ -33,13 +33,13 @@ You may find it easiest to have administrators of Scripto projects use the same 
 ## Scripto Admin Dashboard
 The Scripto tab which appears under the Modules section of the left-hand navigation on the Omeka S installation admin side takes you to the Scripto Dashboard. From the dashboard, you can:
 
-Log in to Scripto using the bar across the top. If you are logged in, this bar will display your username, links to your contributions and watchlist, and the option to log out of Scripto.
+- Log in to Scripto using the bar across the top. If you are logged in, this bar will display your username, links to your contributions and watchlist, and the option to log out of Scripto.
+- Quickly see the projects you own and the projects you review.
+- See your recent contributions and activity on items on your watchlist. 
+- From the dropdown in the upper right, browse all projects, add a new project, and browse all Scripto users. 
 
-Quickly see the projects you own and the projects you review.
+![Scripto dashboard with three projects, two of which the user reviews, and a series of recent contributions.](../modules/modulesfiles/scripto_dash.png)
 
-See your recent contributions and activity on items on your watchlist. 
-
-From the dropdown in the upper right, browse all projects, add a new project, and browse all Scripto users. 
 
 ## Public and Admin views
 To toggle between the public and admin views of a project, delete the `/admin` from the url of any Scripto site, or add it in directly after the name of your Omeka S installation.
@@ -186,11 +186,9 @@ To the right of the tabs is a set of foward-backward arrow buttons and numbers (
 
 In the sidebar:
 
-You can move through revisions using the forward and backward arrows.
-
-You can view review status and modify using checkboxes if your Mediawiki role includes bureaucrat.
-
-You can edit the protection of the Wikitext page, choosing from all users, confirmed users, or only administrators, and set the protection to expire or set it as indefinite. Again, you can only do this if your Mediawiki role allows it.
+- You can move through revisions using the forward and backward arrows.
+- You can view review status and modify using checkboxes if your Mediawiki role includes bureaucrat.
+- You can edit the protection of the Wikitext page, choosing from all users, confirmed users, or only administrators, and set the protection to expire or set it as indefinite. Again, you can only do this if your Mediawiki role allows it.
 
 ### Revision History
 Clicking the "Revision History at the top of the Review media page takes you to a listing of the revision history for the media.
@@ -202,6 +200,24 @@ Clicking on the timestamp for a revision will take you to that revision.
 The discussion view looks similar to the Review media view. It provides a place where community volunteers can discuss an item with the Scripto project team.
 
 ![Discussion](../modules/modulesfiles/scripto_discussion.png)
+
+## Public view
+On the public side, users can browse the Scripto project but in order to edit or create content they must have a Scripto (Mediawiki) account and be logged in. 
+
+### Public project view
+On the public side, projects display a progress bar for all items, so that community users can easily identify media or items to work on. 
+
+![Public project view. There are two large square thumbnails representing items in the project. One has a "2/2" and a full green bar underneath it, indicating that the item has been completely transcribed](../modules/modulesfiles/scripto_publicproj.png)
+
+### Public item view
+The public item view displays the Omeka S item metadata in a column on the left side, and the media in the main area on the right. 
+
+Users can toggle between gallery and list views using the layout button. They can also *sort* and *filter* media in the item. Sort options are by last edited, last completed, and last approved. Filter options are is edited, is not edited, is completed, is not completed, is approved, is not approved.
+
+![Public item view](../modules/modulesfiles/scripto_publicproj.png)
+
+### Public media view
+
 
 ## Uninstalling Scripto
 
