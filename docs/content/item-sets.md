@@ -123,4 +123,4 @@ From the Item Set browse view, you can delete an item set by clicking the trash 
 
 From the edit page for an Item Set, click the *Delete* button in the upper right-hand corner. This will open a drawer on the right side asking you to confirm that you want to delete the item set. Click *Confirm delete* to delete the item set, or close the drawer to cancel.
 
-![Close up of the warning drawer, with text stating "Are you sure you would like to delete this item set" and below it a red button with white text stating "Confirm delete".](/content/contentfiles/itemsets-delete2.png)
+![Close up of the warning drawer, with text stating "Are you sure you would like to delete this item set" and below it a red button with white text stating "Confirm delete".](/content/contentfiles/itemset-delete2.png)
