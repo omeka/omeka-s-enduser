@@ -63,6 +63,13 @@ Add information to the properties which load. If you do not select a resource te
 
 You may add text, a resource from the installation, or an external link in each field.  
 
+Whether or not you use a resource template, you can add more properties to the item using the drawer on the right side of the screen. You can simply click open one of the vocabularies and click on the property you want to add, or you can use the “Filter properties” box to search for a specific property (this is helpful when you have multiple large vocabularies). 
+
+![Close up of the right hand drawer with the text "date" entered into the filter properties box and a series of properties containing the word "date" loaded from Dublin Core and Bibliographic Ontology](/content/contentfiles/items_filterprop.png)
+
+Clicking on the property label in the drawer will automatically add it to the Item. If you add a property by accident, leave it blank and it will be removed from the item when you save changes. 
+
+
 #### Text
 Text fields allow for unformatted text entry.
 
@@ -75,7 +82,11 @@ You can indicate the language for the content of an input using the globe symbol
 #### Omeka Resource
 Omeka Resource fields create an internal link between the resource you are creating and the resource which fills that field. 
 
-When creating an item, you have the option to use either another item or an item set. Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
+When creating an item, you have the option to use either another item or an item set. 
+
+Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific item. 
+
+Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
 
 ![Select Item menu with list of items to link in edit item view](/content/contentfiles/items_addresource.png)
      
