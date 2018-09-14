@@ -49,7 +49,7 @@ Item sets may use the same resource templates available for items to provide pre
 In the *Values* tab:
 
 - You may add text, a resource from the installation, or an external link in each field.  
-    * *Text* fields are entered with text, which can include HTML code. The keyboard at the top of the field input indicates text. The globe icon which appears next to it can be used to set language. 
+    * *Text* fields are entered with text. The keyboard at the top of the field input indicates text. The globe icon which appears next to it can be used to set language. 
     * *Omeka Resource* fields create an internal link between the resource you are creating and the resource which fills that field. You have the option to use either another item or an item set. Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
     * *URI* fields link to an external website or online resource.
 - You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.

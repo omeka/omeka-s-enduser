@@ -40,7 +40,7 @@ To do this, click the edit (pencil) icon in the row for the property you wish to
 Change the displayed label of the property that appears when the template is applied to an item by entering the text you want to appear in the *Alternate Label* field for each property.
 
 **Comment**  
-Add alternate comments for the property in the field *Alternate* in this section.. This will change the text under the property name when users are creating items using your Resource Template.
+Add alternate comments for the property in the field *Alternate* in this section. This will change the text under the property name when users are creating items using your Resource Template.
  
 **Other options** 
 Use the checkbox to determine whether a property is required when the template is in use.
