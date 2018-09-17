@@ -40,7 +40,9 @@ To see the items and item sets owned by a user, click the *more* (ellipses) butt
 
 ## Edit User
 
-To edit a user’s information, change their password, or access API keys, click the edit icon (pencil) to the left of their role. 
+To edit a user’s information, change their password, or access API keys, go to the Users section. Find the user on the table and click the edit icon (pencil) on their row in the table.
+
+![A single row of the user table, with the user's email blanked out. A blue circle highlights the edit icon, represented as a red pencil.](/admin/adminfiles/users_editbutton.png) 
 
 The Edit User page has four tabs: *User Information*, *User Settings*, *Password*, and *API Keys*. After making changes on any of these tabs, be sure to click the save button in the upper right hand corner of the browser window.
 
@@ -68,6 +70,8 @@ Use this tab to generate an API key for the user. You must provide a label for t
 To remove existing API keys, check the *Delete?* box on the row for that key and click save.
 
 ![API tab for user Omeka Devs with one generated but hidden api key, and below it the ability to create a new key](/admin/adminfiles/users_apikey.png)
+
+## Batch edit users
 
 ## Delete a User
 On the User page of the administrative dashboard, click the trash can icon in the user’s row, to the left of their role information, to delete the user. Confirm the deletion in the dialog box which will appear on the right of the screen.
