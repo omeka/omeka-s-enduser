@@ -16,7 +16,11 @@ After clicking on the tab, a table appears listing all item sets with:
 - the *Owner* of the set, 
 - and the date the set was *Created*.
 
-Above this table on the left is the pagination for the item sets table, where you can click the left and right arrows to move forward and back or enter a page number to go a specific page of item sets. In the center above the table is the button for *advanced search*. On the right above the table are drop-down menus to re-order the table by *title, class, owner,* or *date created* in either *ascending* or *descending* order. 
+Above this table on the left is the pagination for the item sets table, where you can click the left and right arrows to move forward and back or enter a page number to go a specific page of item sets. 
+
+In the center above the table is the button for *advanced search*. 
+
+On the right above the table are drop-down menus to re-order the table by *title, class, owner,* or *date created* in either *ascending* or *descending* order. 
 
 In the upper right corner is the button to *Add new item set*. 
 

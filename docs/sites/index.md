@@ -8,7 +8,11 @@ Sites are managed and access via the *Sites* tab on the left-hand side of the ad
 
 ![Manage sites view showing Add New button and table of sites with one site](../sites/sitesfiles/sites_admin.png)
 
-The manage sites page displays a table with all the sites for the installation, giving the title and owner for each site. Either of these columns can be used to sort the list of sites by using the up and down arrows on the right edge of the column heading.
+The manage sites page displays a table with all the sites for the installation, giving the title and owner for each site. 
+
+Use the two drop-downs on the right side above the table to sort sites. You can sort by *title*, *URL slug* or *owner*, either ascending or descending. Click the sort button to apply your choices. 
+
+Above the table of sites, on the left, is the pagination for the item sets table, where you can click the left and right arrows to move forward and back or enter a page number to go a specific page of item sets.
 
 Each row gives the title of a site, options to *view* (box with outward arrow), *edit* (pencil), or *delete* (trash can), and displays the owner of the site. *Only global admins and site owners can delete a site.*
 
