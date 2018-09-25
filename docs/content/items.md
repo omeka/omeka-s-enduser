@@ -20,11 +20,15 @@ Each item appears as a row, with columns for:
 
 Options for navigating and creating items display above the table of items. 
 
+On the right top of the Items window is the *Add new item* button. 
+
 On the left side is a display for the number of pages of items, with forward and back arrows. The current page number is an editable field - enter any valid page number and hit return/enter on your keyboard to go to that page. 
 
 In the center top is a button for [Advanced Search](/search.md). 
 
-On the right top of the Items window, above the table of items, is the *Add new item* button. Just above the table on the right are options for sorting the table of items, with two dropdown menus. The first lets you select between *Title*, *Class*, *Owner,* and *Date Created*; the second allows you to sort ascending or descending. To apply, click the *sort* button.
+Just above the table on the right are options for sorting the table of items, with two dropdown menus. The first lets you select between *Title*, *Identifier*, *Class*, *Owner,* and *(Date) Created*; the second allows you to sort ascending or descending. To apply, click the *sort* button.
+
+Between these and the table, on the left, is a dropdown for batch actions, including edit selected, edit all, delete selected, and delete all. 
 
 ## View
 To quickly view the basic information about an item, click the *view details* (ellipses) button in the row for the item, located next to the edit and delete buttons. This will open a drawer to the right of the list which displays the item’s title,  description, and visibility.
@@ -33,7 +37,7 @@ For a more detailed look at an individual item, click on its title in the items 
  
 When you view an individual item , there are tabs for the item’s *Metadata* and its *Linked Resources*. The right side of the page displays the item’s media, any *item sets* to which it belongs, its creation date, owner, and visibility. 
 
-![Item browse view with details open for Case of Identity. Links to item view page squared in blue](/content/contentfiles/items_detailview.png) The blue squares indicate where to click to open the full item view.
+![Item browse view with details open for The Adventure of the Yellow Face. Links to item view page squared in blue](/content/contentfiles/items_detailview.png) The blue squares indicate where to click to open the full item view.
 
 An item’s *linked resources* (shown below) are resources, which have been added as properties to the item. Note that this section only shows resources which have been linked *to* this item (which have it for a property); resources which are linked *from* this item will display in the property which they fill.
 
@@ -154,7 +158,7 @@ Note that if an item is private, all the media attached is private, but an item 
 
 ## Batch editing
 
-From the browse page of items (admin/item) you can batch edit items, using the dropdown menu on the upper right near the "Add New Item" button. You can select multiple items using the checkboxes on the left of each item's row.
+From the browse page of items (admin/item) you can batch edit items, using the dropdown menu on the left near the pagination buttons. You can select multiple items using the checkboxes on the left of each item's row.
 
 ![A red arrow points to the dropdown for batch editing and deleting options](/content/contentfiles/items_batch.png)
 
