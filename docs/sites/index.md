@@ -39,7 +39,7 @@ Select from the installed themes. Each theme appears as a button with a screensh
 ![Theme tab with default theme selected](../sites/sitesfiles/sitesadd_theme.png)
 
 ### The Item Pool tab
-Set up the [item pool](../sites/site_resources.md#item-pool.md) for the site.
+Set up the [item pool](../sites/site_resources/#item-pool) for the site. Follow the link for detail information about Item Pool settings, which can be modified at any time from the [Resources](../sites/site_resources) tab of the site.
 
 ### Publication settings
 In the upper right hand corner of the screen, next to the *Add* button, you can set the visibility of your site using the the *make public/private* button (eye icon).
@@ -113,9 +113,9 @@ To add a user, click on their name.
 
 Then select their role from the dropdown:
 
-* *Viewer*: user can see the site’s backend but cannot edit.
-* *Editor*: user can access and edit the site’s backend.
-* *Admin*: user has full administrative privileges for the site, including adding users and deleting the site.
+* *Viewer:* user can see the site’s backend but cannot edit.
+* *Editor:* user can access and edit the site’s backend.
+* *Admin:* user has full administrative privileges for the site, including adding users and deleting the site.
 
 Once you've added one or more users, click the Save button located in the upper right hand corner. You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon on their row.
 
