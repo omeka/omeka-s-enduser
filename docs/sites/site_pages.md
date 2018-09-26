@@ -49,12 +49,12 @@ After clicking the Pages tab, select the page you wish to edit by clicking the n
 - Line Break
 - Item with Metadata
 
+![A page in edit view, with one media block added](../sites/sitesfiles/sitepg_edit.png)
+
 If you have the relevant modules installed, you may also have:
 
 - Map
 - Collecting
-
-![A page in edit view, with one media block added](../sites/sitesfiles/sitepg_edit.png)
 
 Once you have added blocks to your page, click the Save button in the right hand corner. 
 
@@ -107,7 +107,7 @@ The Media block has options for the display of the media:
 - Thumbnail alignment: relative to page. Choose from left and right.
 - Show attachment title: Choose whether the media should have a caption of the item title, file name, or no title displayed at all.
 
-*Layout note*: If you want media to appear beside a block of text, place a media block *above* an HTML block and select a smaller thumbnail size. In the example below, the media has a thumbnail type of "medium", alignment "right, and attachment title of the "item title": 
+*Layout note:* If you want media to appear beside a block of text, place a media block *above* an HTML block and select a smaller thumbnail size. In the example below, the media has a thumbnail type of "medium", alignment "right, and attachment title of the "item title": 
 
 ![A block of lorem ipsum text with a right-aligned small image embedded at the top of the paragraph](../sites/sitesfiles/sitepg_mediaalign.png)
 

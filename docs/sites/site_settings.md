@@ -10,7 +10,7 @@ The Settings page is divided into three sections: General, Browse, and Search.
 ![general settings, all empty](../sites/sitesfiles/sites_settingsgen.png)
 
 
-**Attachment link type** Sets the target of links from attachments you add to [site page blocks](../sites/site_pages.md#editing-pages) (for example, in an [item showcase](../sites/site_pages.md#item-showcase). It offers a dropdown with the following options:
+**Attachment link type** Sets the target of links from attachments you add to [site page blocks](../sites/site_pages/#page-blocks) (for example, in an [item showcase](../sites/site_pages/#item-showcase). It offers a dropdown with the following options:
 
 - *item page:* clicking on the attachment takes users to the item page associated with the attached media;
 - *media page:* clicking on the attachment takes users to the media page; 
