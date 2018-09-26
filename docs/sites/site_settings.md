@@ -1,45 +1,26 @@
 ---
 title: Site Settings
 ---
-This tab allows you to configure settings for the [site](../sites/index.md) overall. These settings include browse options, links, and the option for a user bar on the public side of the site.
+This page allows you to configure settings for the [site](../sites/index.md) on which you are working. Changes will only be applied to this site and will not change other sites' settings. 
 
-![Site settings options as described below](../sites/sitesfiles/sites_settings.png)
+The Settings page is divided into three sections: General, Browse, and Search. 
 
-## Restrict browse to attached items
-A checkbox. If checked, the Browse functions of your site will only show items which have been added to a page block. If unchecked, browse pages and blocks on your site will include all items in the Item Pool.
+## General settings
 
-## Results per page
-Set the number of results per page on browse pages by entering a number. If left blank, the site will use the default from the [global settings](../admin/settings).
+![general settings, all empty](../sites/sitesfiles/sites_settingsgen.png)
 
-Depending on the [site theme](../sites/site_theme), you may want to make this a multiple of 4 for a more elegant display.
 
-Note that using very large numbers (50, 75, 100) may cause browse pages to load slowly.
-
-## Attachment link type
-Sets the target of links from attachments you add to [site page blocks](../sites/site_pages.md#editing-pages) (for example, in an [item showcase](../sites/site_pages.md#item-showcase). It offers a dropdown with the following options:
+**Attachment link type** Sets the target of links from attachments you add to [site page blocks](../sites/site_pages.md#editing-pages) (for example, in an [item showcase](../sites/site_pages.md#item-showcase). It offers a dropdown with the following options:
 
 - *item page:* clicking on the attachment takes users to the item page associated with the attached media;
 - *media page:* clicking on the attachment takes users to the media page; 
 - *direct link to file:* clicking on the attachment takes user to the file alone. 
 
-## Embed media on item pages
-A checkbox. When checked, any linked media (such as videos) will be embedded on the item pages. When unchecked, site visitors will click through to view playable media.
+**Embed media on item pages** is a checkbox. When checked, any linked media (such as videos) will be embedded on the item pages. When unchecked, site visitors will click through to view playable media.
 
-## Browse heading property
-Set which property to use as the heading for each resource on a browse page. By default, this is Dublin Core: Title. The dropdown allows you to select from all available vocabularies, and includes a search bar to quickly find the desired property.
+**Show page pagination** is also a checkbox. When checked, "Previous" and "Next" links will display at the bottom of every page in the site, proceeding through your navigation. If unchecked, these links will not display.
 
-![The browse heading property option is open. The current selection, Dublin Core: Title, is at the top. Immediately below it is a search bar, indicated by a magnifying glass symbol. Below that are some properties from the the friend of a friend vocabulary.](../sites/sitesfiles/sites_setbrowseprop.png)
-
-## Browse body property
-Set which property to use as the body text for each resource on a browse page. By default, this is Dublin Core: Description. The dropdown allows you to select from all available vocabularies, and includes a search bar to quickly find the desired property.
-
-## Show page pagination
-When checked, "Previous" and "Next" links will display at the bottom of every page in the site, proceeding through your navigation. 
-
-If unchecked, these links will not display.
-
-## Show user bar on public views
-Set whether there is a bar across the top of public site pages which allow users to access the admin side of the site. 
+**Show user bar on public views** sets whether there is a bar across the top of public site pages which allow users to access the admin side of the site. 
 
 When users are logged in, the user bar has the following options:
 
@@ -60,5 +41,33 @@ The options for this setting are:
 - When identified (when logged in) 
 - Always
 
-## Locale
-A dropdown menu to select the language code for this site. By default this will be set to the same as the global locale setting for the entire Omeka S installation. To change, select a language from the dropdown menu.
+**Locale** is dropdown menu to select the language code for this site. By default this will be set to the same as the global locale setting for the entire Omeka S installation. To change, select a language from the dropdown menu.
+
+## Browse settings
+
+![browse settings, all empty](../sites/sitesfiles/sites_settingsbrowse.png)
+
+**Restrict browse to attached items** is a checkbox. If checked, the Browse functions of your site will only show items which have been added to a page block. If unchecked, browse pages and blocks on your site will include all items in the Item Pool.
+
+**Results per page** sets the number of results per page on browse pages by entering a number. If left blank, the site will use the default from the [global settings](../admin/settings).
+
+Depending on the [site theme](../sites/site_theme), you may want to make this a multiple of 4 for a more elegant display. Note that using very large numbers (50, 75, 100) may cause browse pages to load slowly.
+
+**Browse heading property** sets which property to use as the heading for each resource on a browse page. By default, this is Dublin Core: Title. The dropdown allows you to select from all available vocabularies, and includes a search bar to quickly find the desired property.
+
+![The browse heading property option is open. The current selection, Dublin Core: Title, is at the top. Immediately below it is a search bar, indicated by a magnifying glass symbol. Below that are some properties from the the friend of a friend vocabulary.](../sites/sitesfiles/sites_setbrowseprop.png)
+
+
+**Browse body property** sets which property to use as the body text for each resource on a browse page. By default, this is Dublin Core: Description. The dropdown allows you to select from all available vocabularies, and includes a search bar to quickly find the desired property.
+
+## Search 
+
+![search settings, all empty](../sites/sitesfiles/sites_settingssearch.png)
+
+**Templates** allows you to limit the properties for advanced item or item set search to only properties included in a template or templates. When this field is empty, the "Search by Value" on the advanced search will display all properties from all vocabularies in the Omeka S installation. Applying a template not only limits the options in the dropdown, it also includes your alternate labels for properties: 
+
+![Detail view of a dropdown menu for the option 'Search by value". Values loaded include Creator:Author, Date: Date of Publication, and Description.](../sites/sitesfiles/sites_settingtemp.png)
+
+Click in the field to add a template; you can add more than one template by clicking in the field again.
+
+**Restrict to templates** will restrict search results to only those items which are using the selected templates. 
