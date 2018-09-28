@@ -10,6 +10,8 @@ Resource templates are managed from the Admin Dashboard, accessed through the le
 
 From this tab, you can sort existing templates by *label*, *class*, or number of *items* assigned to that template, using the up-down arrow icon next to each column heading. You can also use the icons in each template’s row to: *edit* (pencil), *delete* (trash can), or *view details* (ellipses). If you click on the number of items listed for a template, it will take you to a list of all those items. 
 
+[This screencast](https://vimeo.com/290924872) gives an overview of creating and applying resource templates. 
+
 ## Base Resource
 All Omeka S installations include a Base Resource template which maps to the metadata fields required by the Digital Public Library of America (DPLA). It will display in the table of resource templates as "Base Resource" with no owner. 
 
