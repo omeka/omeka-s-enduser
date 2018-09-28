@@ -8,17 +8,18 @@ Use the *Navigation* tab of the [Sites](../sites/index.md) to manage the navigat
 
 The topmost page in the navigation is the main page for your site. Note that custom URLs will not work as a home page - the topmost item in your navigation must be a page.
 
-For every item in the navigation, you have three options: view (box with arrow icon); edit (pencil icon); or delete (trash can icon). Parent navigation pieces also have a gray square with a black triangle which collapses or expands their child pieces.
+For every item in the navigation, you have three options: view (box with arrow icon); edit (pencil icon); or delete (trash can icon). Parent navigation pages also have a gray square with a black triangle which collapses or expands their child pages.
 
 ![Close up of two navigation sections. The top is "Quotes" which has a dark gray square on the end of it containing a black triangle pointing down. The bottom navigation section is called "Share a quote" and does not have the gray square](../sites/sitesfiles/sitenav_detail.png)
 
 ## Adding Navigation
 Add to the navigation of the site using the options on the right hand side of the page. There are two sections: [Add a custom link](../sites/site_navigation/#custom-link) and [Add a link to a site page](../sites/site_navigation/#site-page)
 
-### Custom Link
-To add a link you can use the *Add a custom link* buttons on the right hand drawer to add either:
- * a *Custom URL* to any web address; or
- * a Browse page for items on your site
+### Add a custom link
+To add a link you can use the *Add a custom link* options on the right hand drawer to add:
+ * a *Custom URL* to any web address;
+ * a Browse page for items on your site;
+ * a Browse page for item sets on your site. 
 
 Or you can add one of your [pages](../sites/site_pages), which should be listed in the right-hand drawer below the *Add a custom link* dropdown. If you need to find a specific page, begin typing the page title in the search box with the helper text *Filter pages* which appears directly below the text “Add a link to a site page.” 
 

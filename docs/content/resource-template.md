@@ -14,6 +14,8 @@ On the right side above the table are two drop-down menus which let you sort res
 
 You can use the icons in each template’s row to: *edit* (pencil), *delete* (trash can), or *view details* (ellipses). If you click on the number of items listed for a template, it will take you to a list of all those items. 
 
+[This screencast](https://vimeo.com/290924872) gives an overview of using and creating Resource Templates.
+
 ## Base Resource
 All Omeka S installations include a Base Resource template which maps to the metadata fields required by the Digital Public Library of America (DPLA). It will display in the table of resource templates as "Base Resource" with no owner. 
 

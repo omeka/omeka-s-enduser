@@ -13,7 +13,7 @@ Item Sets is where you select the sets which will show up on the  Browse Item Se
 
 ![A window open to a site's resources tab](../sites/sitesfiles/siteres1.png)
 
-**Note** The two tabs operate independently from each other. The selections made on one will have no effect on the other. The Item Pool tab limits which items are available, while The Item Set tab limits which sets are visible for public browsing.
+**Note** The two tabs operate *independently* from each other. The selections made on one will have no effect on the other. The Item Pool tab limits which items are available, while The Item Set tab limits which sets are visible for public browsing.
 
 Item Pool
 ----------------------------
@@ -25,9 +25,7 @@ Note that the search options for the Item Pool work together to build an overall
 
 The settings in the Item Pool tab allow you to set the parameters for the pool. You can use one or more of the search options:
 
-*Search by Class*: select a class by which to search from the dropdown menu
-
-*Search by value*: search for a term or phrase which you enter 
+*Search by value:* search for a term or phrase which you enter 
 
 - The first selector allows you to specify a property to search. 
 - The second selector allows you to set the relationship the property has with the value. The options are:
@@ -43,9 +41,11 @@ The settings in the Item Pool tab allow you to set the parameters for the pool. 
 
 To find a resource ID, go to the resource and look at the url in your browser's address bar. The numbers at the end of the url are the resource ID. 
 
-*In site pool*: select from a dropdown menu of all the sites on the Omeka S installation, sorted by user-owner. This dropdown lists all sites on the installation by owner. You do not need to select the current site - this dropdown is only there so you can build searches using other sites' pools. 
+*Search by Class:* select one or more classes from the dropdown menu - the search will only return items with this class. 
 
-*Search by item set*: select from a dropdown of item sites.
+*Search by template:* select from existing resource templates and the search will only return items using this resource template or templates. 
+
+*Search by item set:* select from a dropdown of item sites.
 
 ![The Item Pool tab on site settings, with a red rectangle around the dropdown for "In site pool"](../sites/sitesfiles/sites_itempool2.png)
 
@@ -56,6 +56,8 @@ If you have already set terms for an item pool, the Item Pool page will display 
 The image below shows how those items are displayed; the name of the site is displayed just under the header for items. Note that we are back in the Items section of the Omeka S install admin, rather than the Site admin. 
 
 ![items in site Jane Austen](../sites/sitesfiles/sites_itemsinpool.png)
+
+*In site pool:* select from a dropdown menu of all the sites on the Omeka S installation, sorted by user-owner. This dropdown lists all sites on the installation by owner. You do not need to select the current site - this dropdown is only there so you can build searches using other sites' pools. 
 
 Item Sets
 ---------------------------
