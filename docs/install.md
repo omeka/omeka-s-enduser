@@ -14,6 +14,7 @@ In order to install Omeka S, you will need a server running the following:
 
 
 ## Installing from released zip file
+NB: Before you install Omeka S, you need to create a MySQL database and user. Omeka S must have a dedicated database (you cannot use a prefix for a database used by another system or Omeka S or Classic installation). For more information on creating a database and user, please see your hosting's support documentation or talk to your system administratory.
 
 1. Download the latest release from the release page
 1. Open config/database.ini and add your MySQL username, password, database name, and host name. The user and database must be created before this step.
