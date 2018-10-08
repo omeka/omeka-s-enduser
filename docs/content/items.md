@@ -94,15 +94,6 @@ Once you select an item or item set, detailed information will load, and you mus
 
 ![Select Item menu with list of items to link in edit item view](/content/contentfiles/items_addresource.png)
      
-Once you have created an item and added media to it, you will also have the option to use media *attached to that item* for a property. 
-
-![A blue outline of a rectangle highlights resource options for Items, Item sets, and Media to be used as the input for the element "Description"](/content/contentfiles/items_addmediaresource.png)
-
-To use a media resource for a property, select the media option for the element (1). The drawer which opens will display all media attached to the item. Select the media which you want to use(2); this will switch the drawer to just that media (second image). Click the *Select Resource* button at the bottom of the drawer to complete the process (3).
-
-![Focus on the editing portion of a window for the item "Sense and Sensibility", with the elements Title and Description visible. On the right side of the window, a vertical rectangle (the drawer) is open on the right displaying five media which are attached to the item, including video, images, and text. This image contains steps 1 and 2.](/content/contentfiles/items_mediaresource1.png)
-
-![The same window as before, but now the drawer on the right displays a thumbnail of the media "Sense and Sensibility DVD Trailer" with a dark gray button labeled "select resource" at the bottom of the drawer area. This image contains step 3](/content/contentfiles/items_mediaresource2.png)
 
 #### URI
 URI fields link to an external website or online resource.
@@ -155,6 +146,27 @@ Use the *make public/private* button (eye icon) to set whether the item is visib
 ![make private button showing an eye icon with a diagonal slash through it](/content/contentfiles/item_private.png)  Private
 
 Note that if an item is private, all the media attached is private, but an item which is public can have attached media which are set to be either public or private.
+
+## Edit an item
+Once you have created an item, you can edit it at any time, either by clicking the edit icon (pencil button) or clicking on the item's title and then clicking the Edit button in the upper right-hand corner of the screen.
+
+To cancel out of editing, click the Cancel button in the upper right corner, between the Delete and Save buttons. 
+
+![Detail view of the top row if information and buttons on an item edit view. A red arrow points to the Cancel button, on the far right](/content/contentfiles/items_cancel.png)
+
+Editing options are the same as when creating a new item, with the addition of the ability to add any media which has been saved to an item as a property:
+
+### Media as property 
+Once you have created an item and added media to it, you will also have the option to use media *attached to that item* for a property. 
+
+![A blue outline of a rectangle highlights resource options for Items, Item sets, and Media to be used as the input for the element "Description"](/content/contentfiles/items_addmediaresource.png)
+
+To use a media resource for a property, select the media option for the element (1). The drawer which opens will display all media attached to the item. Select the media which you want to use(2); this will switch the drawer to just that media (second image). Click the *Select Resource* button at the bottom of the drawer to complete the process (3).
+
+![Focus on the editing portion of a window for the item "Sense and Sensibility", with the elements Title and Description visible. On the right side of the window, a vertical rectangle (the drawer) is open on the right displaying five media which are attached to the item, including video, images, and text. This image contains steps 1 and 2.](/content/contentfiles/items_mediaresource1.png)
+
+![The same window as before, but now the drawer on the right displays a thumbnail of the media "Sense and Sensibility DVD Trailer" with a dark gray button labeled "select resource" at the bottom of the drawer area. This image contains step 3](/content/contentfiles/items_mediaresource2.png)
+
 
 ## Batch editing
 

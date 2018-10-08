@@ -74,6 +74,15 @@ Use the *make public/private* button (eye icon) to make the item visible to the 
 
 Note that the public/private and open/closed settings operate independently - you can have an open and private item set, for example.
 
+## Edit an item set
+Once you have created an item set, you can edit it at any time, either by clicking the edit icon (pencil button) or clicking on the item set's title and then clicking the Edit button in the upper right-hand corner of the screen.
+
+Options for editing an item set are the same as for creating an item set. 
+
+To cancel out of editing, click the Cancel button in the upper right corner, between the Delete and Save buttons. 
+
+![Detail view of the top row if information and buttons on an item edit view. A red arrow points to the Cancel button, on the far right](/content/contentfiles/itemset_cancel.png)
+
 ## Batch Editing
 
 From the browse page of item sets (admin/item-set) you can batch edit item sets, using the dropdown menu on the upper right near the "Add new item set" button. You can select multiple item sets using the checkboxes on the left of each set's row.
