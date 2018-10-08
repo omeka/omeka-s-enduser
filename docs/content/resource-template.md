@@ -67,6 +67,13 @@ Note that users who select this resource template when creating an item will sti
 
 ![A close up of the drawer for editing property options with a large red arrow pointing down at an angle to the Set Changes button, which is on the very bottom of the image.](/content/contentfiles/templates_setchanges.png)
 
+## Edit a resource template
+Once you have created a resource template, you can edit it at any time by clicking the edit icon in the table of resource templates, or by clicking Edit in the upper right hand corner when viewing a resource template.
+
+If you decide you do not want to edit the template or do not wish to save your changes, simply click the Cancel button located between the Delete and Save buttons in the upper right hand corner of the window.
+
+![Edit view of the template Person. There are eight properties in use.](/content/contentfiles/resourcetemplate_edit.png)
+
 ## Sharing Resource Template
 It is possible to share a resource template between Omeka S installations by exporting and importing them.
 
