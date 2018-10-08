@@ -33,6 +33,15 @@ Note that you may have to research in order to find the prefix, namespace uri, a
 
 After you have imported a vocabulary, you can use the Edit function to modify the vocabulary's Label and Comment, and to upload an updated vocabulary RDF file. 
 
+## Editing a vocabulary
+You can edit existing vocabularies by clicking the edit button (pencil icon) on the table of vocabularies. 
+
+While editing, you can change the label and comment, or upload a new vocabulary file as an update.
+
+If you decide you do not wish to save your changes, or click on the edit button by mistake, you can click the Cancel button next to the Save button.
+
+![Edit vocabulary page for Bibliographic Ontology. Label and comment fields are editable.](/content/contentfiles/vocab_edit.png)
+
 ### Vocabulary Import
 Omeka S will import properly formatted vocabularies/ontologies. rdfs:Class and rdfs:Property data will be available. 
 
