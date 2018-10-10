@@ -100,6 +100,12 @@ Use the *make public/private* button (eye icon) to set whether the media is visi
 
 Note that if an item is private, all the media attached is private, but an item which is public can have attached media which are set to be either public or private.
 
+You can set individual properties as Private or Publicly visible using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Site Admins, and Editors will be able to see properties even when set to private. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
+
+In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
+
+![As described](/content/contentfiles/item_propviz.png)
+
 ## Batch editing
 
 From the media browse page, you can batch edit media, using the dropdown menu on left just above the table of media. You can select multiple items using the checkboxes on the left of each item's row.

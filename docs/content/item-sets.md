@@ -58,6 +58,11 @@ In the *Values* tab:
     * *URI* fields link to an external website or online resource.
 - You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
 
+You can set individual properties as Private or Publicly visible using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Site Admins, and Editors will be able to see properties even when set to private. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
+
+In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
+
+![As described](/content/contentfiles/item_propviz.png)
 
 ### Access Settings
 Item sets have two settings which control their access. They can be *public* or *not public* and they can be *open* or *closed*.
