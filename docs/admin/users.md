@@ -44,7 +44,7 @@ To edit a user’s information, change their password, or access API keys, go to
 
 ![A single row of the user table, with the user's email blanked out. A blue circle highlights the edit icon, represented as a red pencil.](/admin/adminfiles/users_editbutton.png) 
 
-The Edit User page has four tabs: *User Information*, *User Settings*, *Password*, and *API Keys*. After making changes on any of these tabs, be sure to click the save button in the upper right hand corner of the browser window.
+The Edit User page has four tabs: *User Information*, *User Settings*, *Password*, and *API Keys*. After making changes on any of these tabs, be sure to click the save button in the upper right hand corner of the browser window. At any time you may cancel your edits by clicking the cancel button next to the save button.
 
 ### User information
 On this tab, you can edit the display *Name* and *Email* for the user, select or change the user *Role* and click the checkbox to confirm that the user *Is Active* (or uncheck the checkbox to render the user inactive)

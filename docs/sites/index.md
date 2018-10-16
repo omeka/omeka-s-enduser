@@ -51,7 +51,9 @@ In the upper right hand corner of the screen, next to the *Add* button, you can 
 You will probably want to leave the site Private until you have added some content.
 
 ### Add site
-When you are ready, click the *Add* button in the upper right corner. Once the page is created, you will be redirected to the site info tab of the site management. 
+When you are ready, click the Add button in the upper right corner. Once the page is created, you will be redirected to the site info tab of the site management. 
+
+If you decide you do not want to create this site, click the Cancel button in the upper right next to the Add button
 
 ## Manage a site
 To manage a site, navigate to the *Sites* tab from the Omeka S Admin Dashboard. Click either on the site’s title or the edit (pencil) button in the list of sites. 
