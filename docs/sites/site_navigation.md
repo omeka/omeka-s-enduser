@@ -55,7 +55,7 @@ Site page blocks create links to pages you have built for your site. The *page* 
 
 If you have many pages, you can use the *Filter pages* field to find the names and slugs of specific pages.
 
-Be sure to click save before leaving the Navigation tab to save changes.
+Be sure to click Save before leaving the Navigation tab to save changes. If you do not want to save changes, click the Cancel button.
 
 ## Editing and Arranging Navigation
 When you add a link block it is automatically expanded. To collapse an open link block, click the edit (pencil) icon in the  upper right corner of each block, next to the delete (trash) icon. When you arrive at the Navigation tab after saving changes or from the main site edit page, the navigation items should be collapsed; open the block by clicking the edit (pencil) icon.

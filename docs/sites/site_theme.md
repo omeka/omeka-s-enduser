@@ -17,7 +17,7 @@ To switch themes, click on the theme which you want to use. It should highlight 
 
 ![A selected theme showing the highlight and checkmark](../sites/sitesfiles/sites_themeselect.png)
 
-Click the Save button in the upper right-hand corner of the window to save changes. 
+Click the Save button in the upper right-hand corner of the window to save changes. Click the Cancel button to leave without saving changes. 
 
 Theme Settings
 ---------------------------

@@ -26,7 +26,9 @@ In addition, there is a checkbox for "Add to navigation". If checked, the page w
 
 ![Page view showing the fields for Add Page](../sites/sitesfiles/sitepg_add.png)
 
-Once you have entered this information, click the Add button in the upper right hand corner of the browser window. You will be automatically taken to the edit form for that page.
+Once you have entered this information, click the Add button in the upper right hand corner of the browser window. You will be automatically taken to the edit form for that page. 
+
+If you decide you do not want to create the page, click the Cancel button.
 
 ## Browse Pages
 The pages tab (once you have at least one page) will display all of your pages in their navigation order. Child pages will display below the parent page with a `-` before the page title.
@@ -56,7 +58,7 @@ If you have the relevant modules installed, you may also have:
 - Map
 - Collecting
 
-Once you have added blocks to your page, click the Save button in the right hand corner. 
+Once you have added blocks to your page, click the Save button in the right hand corner.  To leave without saving changes, click Cancel.
 
 You can delete any of the blocks by clicking on the trash can icon located in the upper right corner of the block. 
 

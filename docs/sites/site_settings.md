@@ -5,6 +5,8 @@ This page allows you to configure settings for the [site](../sites/index.md) on 
 
 The Settings page is divided into three sections: General, Browse, and Search. 
 
+To implement any changes you make, click Save at the top right of the browser window when you are done. To leave without saving changes, click cancel.
+
 ## General settings
 
 ![general settings, all empty](../sites/sitesfiles/sites_settingsgen.png)
