@@ -92,6 +92,7 @@ In the upper right hand corner of the window on this tab, you can use buttons to
 - *Public/Private button* (see below);
 - *View* the public side of the site;
 - *Delete* the site;
+- *Cancel* making changes;
 - *Save* changes.
 
 The *make public/private* button (eye icon) is used to both indicate and set whether the site is visible to the public or only to users of this Omeka S installation 
@@ -119,7 +120,9 @@ Then select their role from the dropdown:
 * *Editor:* user can access and edit the site’s backend.
 * *Admin:* user has full administrative privileges for the site, including adding users and deleting the site.
 
-Once you've added one or more users, click the Save button located in the upper right hand corner. You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon on their row.
+You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon on their row.
+
+Once you've added one or more users, click the Save button located in the upper right hand corner. To cancel your changes, click the Cancel button in the upper right hand corner. 
 
 ## See also: 
 * [Site Pages](../sites/site_pages.md)
