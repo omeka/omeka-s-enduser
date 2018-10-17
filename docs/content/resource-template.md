@@ -119,7 +119,7 @@ To import a resource template (exported from a different S installation) into yo
 - On the Resource Template: Import page, click the *Choose File* button
 	- This will open your browsers file selection window. Choose the json file for the resource template you want to import
 - Click the Review import button
-	- On the Review page, you will be able to check that Date Types, Alternate Labels, and Alternate Comments have been imported correctly
+	- On the Review page, you will be able to check that properties and property options are correct
 	- Imported templates which used Value Suggest or Custom Vocab will indicate in the Data Type column what the original source was, and a dropdown to allow you to select a new Data Type (if you do not have the necessary modules, the dropdown will only show the default options).
 
 ![On the review imported template page, all the elements for the reviewed import are highlighted green. The final element, subject, lists a datatype of Value Suggest and has a dropdown for users to select a new data type.](/content/contentfiles/templates_import2.png)
