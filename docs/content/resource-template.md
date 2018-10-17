@@ -49,7 +49,9 @@ Change the displayed label of the property that appears when the template is app
 Add alternate comments for the property in the field *Alternate* in this section. This will change the text under the property name when users are creating items using your Resource Template.
  
 **Other options** 
-Use the checkbox to determine whether a property is required when the template is in use.
+The first checkbox sets whether a property is required when the template is in use. If checked, users will not be able to save an item or item set using this template without adding data for this property.
+
+The next checkbox, Private, sets the visibility of the data for this property. If checked, any data added by a user for this property will only be visible to the owner of the item or item set, global administrators, site administrators, and editors. It will not be visible to the public. *Please note* that 
 
 Using the dropdown, you can designate a  data type for the property: Literal, URI, or Resource. Whichever you choose will be automatically loaded once someone selects that Resource Type and they will only be able to use this data type for the element when using this Resource Template.  
 
@@ -73,6 +75,24 @@ Once you have created a resource template, you can edit it at any time by clicki
 If you decide you do not want to edit the template or do not wish to save your changes, simply click the Cancel button located between the Delete and Save buttons in the upper right hand corner of the window.
 
 ![Edit view of the template Person. There are eight properties in use.](/content/contentfiles/resourcetemplate_edit.png)
+
+## Reviewing resource templates
+Clicking on the title of a resource template takes you to a table view of all the properties and property options for that template.
+
+![Template view for the "Postcard" template with properties for title, description, creator, transcript of, and recipient](/content/contentfiles/templates_view.png)
+
+Each property displays as a row in the table, with columns for:
+
+- Original label, with an ellipses button to see which the property's vocabulary, term, and original comment;
+- Data type;
+- Alternate label;
+- Alternate comment;
+- Whether the property is required;
+- Whether the property's data is set to private.
+
+Click the ellipses next to the original label to open a draw displaying the property's vocabulary, term, and original comment.
+
+Use the buttons in the upper right of this page to export or edit the template.
 
 ## Sharing Resource Template
 It is possible to share a resource template between Omeka S installations by exporting and importing them.
