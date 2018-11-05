@@ -35,6 +35,8 @@ Note that some hosting setups may require that the domain name for the administr
 
 *Enable version notifications* check this box to enable notifications for new versions of Omeka S, themes, and modules. 
 
+*Disable JSON-LD embed* By default, Omeka embeds JSON-LD in resource browse and show pages for the purpose of machine-readable metadata discovery. Check this to disable embedding.
+
 ### Security
 
 ![Security settings with fields as described below](/admin/adminfiles/settings_security.png)
