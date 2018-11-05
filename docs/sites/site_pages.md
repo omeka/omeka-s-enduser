@@ -43,13 +43,14 @@ Use the [Navigation](../sites/site_navigation/) tab of the site admin to set the
 After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page *title* will take you to the public view of that page. On the right hand side you can choose to add a new block by selecting one of the following layouts: 
 
 - HTML
-- Page Title
+- Page title
 - Media
-- Browse Preview
-- Item Showcase
-- Table of Contents
-- Line Break
-- Item with Metadata
+- Browse preview
+- Item showcase
+- List of sites
+- Table of contents
+- Line break
+- Item with metadata
 
 ![A page in edit view, with one media block added](../sites/sitesfiles/sitepg_edit.png)
 
@@ -155,6 +156,23 @@ To cancel the item selection, click the X in the upper right corner of the drawe
 Once you’ve added an item, it will appear in the Item List block. You can edit the caption or media options by clicking the edit (wrench) button for that row, and you can delete the item using the delete (trash can) icon.
 
 You can add multiple items to the list.
+
+### List of sites
+This block displays a list of the sites on your Omeka S install. There are two options:
+
+![List of sites block](../sites/sitesfiles/sitepg_slist1.png)
+
+Max number of sites allows you to limit the number of sites which display at once. If left blank, all sites will display.
+
+The second option allows you to turn on pagination if you set a limit, allowing you to display five sites at a time. 
+
+This image shows a List of sites block with no limits:
+
+![](../sites/sitesfiles/sitepg_slist2.png)
+
+This is the same block edited to have a limit of 5 and pagination is turned on:
+
+![](../sites/sitesfiles/sitepg_slist3.png)
 
 ### Table of Contents
 If the current page has child pages, you can add a table of content block for those pages.
