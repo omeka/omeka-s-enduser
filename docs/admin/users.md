@@ -55,7 +55,7 @@ This tab allows a user or global admin to set the following:
 - *Locale*: select from a dropdown of available languages. This will change the language in which the installation's admin site displays for that user.
 - *Default resource template*: select from existing templates to have a template auto-load whenever the user creates a new item.
 
-![User settings for Omeka Dev with default options selected](/admin/adminfiles/users_settings)
+![User settings for Omeka Dev with default options selected](/admin/adminfiles/users_settings.png)
 
 ### Password
 On this tab, create a new password. It must be entered twice, in both the *new password* and *confirm new password* fields to take.
