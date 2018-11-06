@@ -20,6 +20,10 @@ On creation, an Omeka S site will include navigation options for:
 
 You do not have to use any of these pages or links. How do you want to structure your site? What are the main sections (parent pages) and subsections (child pages)?
 
+Something about BLOCKS goes here (
+And about PAGES 
+
+
 **What will I do with resources in this website?**
 Items are the building blocks of Omeka S. What sort of [resource templates] will you want to create and use to fully describe your items? Any item you include on an Omeka S will have a public item show page, so try to ensure that the information in an [item's] metadata can stand on its own. 
 
@@ -27,6 +31,9 @@ Items are the building blocks of Omeka S. What sort of [resource templates] will
 - What sort of [resource templates] will you want to create and use to fully describe your items?
 - Do you need additional [vocabularies] to describe your items?
 
+ITEM SETS
+
+Using your own resources
 
 Think about how you might structure the metadata for your resources, both in terms of resource templates but also modules, for example:
 
