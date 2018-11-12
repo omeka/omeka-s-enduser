@@ -84,13 +84,13 @@ The site info settings for an Omeka S site are where you can change the basic in
 
 * *title* (text)
 * *slug* (text)
+* *summary* (text) 
 
 ![Site info for the site “Jane Austen” with buttons across the top to View, Delete, and Save the site](../sites/sitesfiles/sites_siteinfo.png)
 
 In the upper right hand corner of the window on this tab, you can use buttons to:
 
 - *Public/Private button* (see below);
-- *View* the public side of the site;
 - *Delete* the site;
 - *Cancel* making changes;
 - *Save* changes.

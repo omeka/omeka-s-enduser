@@ -158,21 +158,26 @@ Once you’ve added an item, it will appear in the Item List block. You can edit
 You can add multiple items to the list.
 
 ### List of sites
-This block displays a list of the sites on your Omeka S install. There are two options:
+This block displays a list of the sites on your Omeka S install. This block has the following options:
 
 ![List of sites block](../sites/sitesfiles/sitepg_slist1.png)
 
-Max number of sites allows you to limit the number of sites which display at once. If left blank, all sites will display.
+- Sort sites by: Alphabetical order (A-Z); Oldest first; newest first. By default this is set to alphabetical. 
+- Max number of sites allows you to limit the number of sites which display at once. If left blank, all sites will display.
+- A checkbox to turn on pagination, applied only if you set a limit.
+- Show site summaries.  
 
-The second option allows you to turn on pagination if you set a limit, allowing you to display five sites at a time. 
-
-This image shows a List of sites block with no limits:
+This image shows a List of sites block, sorted oldest first, with no limits:
 
 ![](../sites/sitesfiles/sitepg_slist2.png)
 
 This is the same block edited to have a limit of 5 and pagination is turned on:
 
 ![](../sites/sitesfiles/sitepg_slist3.png)
+
+The same block with pagination and site summaries turned on:
+
+![](../sites/sitesfiles/sitepg_slist4.png)
 
 ### Table of Contents
 If the current page has child pages, you can add a table of content block for those pages.
