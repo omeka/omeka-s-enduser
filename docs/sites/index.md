@@ -30,6 +30,7 @@ The Add New Site page has three tabs: Admin, Theme, and Item Pool.
 ### The Admin tab
 * Give your site a *title* (required)
 * create a *slug* for the site’s url. The url will be *installurl/site/slug*. This is optional - if you leave this field blank, Omeka S will create a slug based on the site title.
+* Create a *summary* for your site, a brief idea of what it is about which will appear on your installation's landing page and on [list of site blocks](../sites/site_pages/#page-blocks)
 
 ![Admin tab for a new site with nothing entered](../sites/sitesfiles/sitesadd_admin.png)
 
