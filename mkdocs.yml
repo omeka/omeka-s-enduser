@@ -10,6 +10,7 @@ pages:
     - 'Admin Dashboard': 'admin-dashboard.md'
     - 'Glossary': 'glossary.md'
     - 'Searching': 'search.md'
+    - 'Front Page': 'frontpage.md'
     - 'Sites': 
         - 'Sites Management': 'sites/index.md'
         - 'Pages Management': 'sites/site_pages.md'
