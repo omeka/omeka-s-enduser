@@ -39,10 +39,18 @@ Clicking on the "time" button to the right of the day input field will load addi
 
 Entries must be whole numbers, with no decimal points. 
 
-## Integer data
+### Integer data
 An integer property has a narrow input which, once you have data in it, will display up and down arrows on the right hand side to  increase or decrease the value.
 
 ![Field for property Spatial Coverage with the number 1 in the integer entry field, and up or down toggle button on the right side of the field](../modules/modulesfiles/ndt-timestamp2.png)
 
 Your entry must be whole number; decimal points are not supported and will be rounded up to the nearest number. 
 
+## Numeric data search
+When the module is active, it adds additional search options to the Advanced Search for items. 
+
+If you have timestamp data, there are search options for "Date comes before" and "Date comes after". Select the property for timestamp from the dropdown - only properties which are being used for timestamp will appear in the dropdown. 
+
+Integer data is searchable with "Value is less than" and "Value is greater than." As with the timestamp data, only properties which have numeric data will load in the dropdown. 
+
+![Numeric data type search options, no data entered]((../modules/modulesfiles/ndt-search.png)
