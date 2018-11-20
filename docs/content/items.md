@@ -56,7 +56,7 @@ Before creating items, site admins may want to create [Resource Templates](/cont
 ### Values
 The Values tab is where you enter metadata, such as title, description, etc.
 
-![Basic view of add items page, with no content entered](/content/contentfiles/items_add1.png)
+![Basic view of add items page, with no content entered](/content/contentfiles/items_add.png)
 
 You can select a resource template from the drop-down menu. Resource templates are defined by the site administrators and editors.
 
@@ -78,7 +78,6 @@ You can set individual properties as Private or Publicly visible using the eye i
 In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
 
 ![As described](/content/contentfiles/item_propviz.png)
-
 
 #### Text
 Text fields allow for unformatted text entry.
@@ -124,13 +123,15 @@ Using the buttons on the *Add New Media* menu on the right side of the screen, s
 - *oEmbed*: insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7) - use the url in your browser’s location bar.
 - *YouTube*: add a link to embed a YouTube video. Use the url from your browser’s location bar (with `/watch/` in it) rather than the `youtu.be` link.
 
-If you have more than one media instance for an item, you can reorder them by dragging and drop each media instance block, using the icon of three lines in the upper left corner of the block as the anchor when dragging (click there).
-
 You can edit media later by going by editing an item, navigating to the *media* tab, and clicking the edit button (pencil) for a media when editing the item. 
 
 You can delete any media instance from the item's edit page using the delete button (trashcan) on the upper right corner of the media block.
 
 ![Image shows a close up of a media item being removed - it is red and has an undo curling arrow at the right end of the block](/content/contentfiles/item_mediablockdelete.png)
+
+If you have more than one media instance for an item, you can reorder them by dragging and drop each media instance block, using the icon of three lines in the upper left corner of the block as the anchor when dragging.
+
+Omeka S uses the topmost media for an item to create thumbnail images for that item on browse and show pages. 
 
 ### Item Sets
 You can only add items to existing item sets.
@@ -141,7 +142,26 @@ You can also filter item sets using the text entry bar above the list of users.
 
 To remove a connection between an item and item set, click the delete (trash can) button to the right of the item set title.
 
-![item set tab with one item set added](/content/contentfiles/items_itemset.png)
+![item set tab with no item sets assigned](/content/contentfiles/items_itemset.png)
+
+### Thumbnail
+By default, Omeka S will use the topmost media to generate a thumbnail for the item. If you want to use a non-media image for the thumbnail for an item you can set it here.
+
+![Thumbnail tab with no asset selected. The tab displays a message about thumbnail creation and a button to "select" an asset](/content/contentfiles/item_thumbnailtab.png)
+
+When you use an asset thumbnail instead of uploading media, the asset thumbnail does not display on the item's public show page. This makes such thumbnails useful for items which have no media but which would benefit from a thumbnail for the browse view, or for items whose media does not render an elegant thumbnail, such as audio or visual files.
+
+The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../sites/site_theme/#settings-options). 
+
+To assign an asset as a thumbnail, click on the Select button in the main work area of the tab. This will open a drawer on the right side. 
+
+![Select drawer with upload option and two assets, both of which are images.](/content/contentfiles/item_thumbdrawer.png)
+
+The drawer offers two options: upload a file using your browser, or select from existing assets. To select an existing asset, simply click on it and it will automatically be assigned to the item. 
+
+![Add item open to Thumbnail tab, where an asset which is an image of a quill pen on a scrolled piece of paper is in the main work area. Below it are buttons for Select and Clear](/content/contentfiles/item_thumbnail.png)
+
+To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click select and either choose or upload a new thumbnail asset.
 
 
 ### Visibility
