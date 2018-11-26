@@ -53,4 +53,4 @@ If you have timestamp data, there are search options for "Date comes before" and
 
 Integer data is searchable with "Value is less than" and "Value is greater than." As with the timestamp data, only properties which have numeric data will load in the dropdown. 
 
-![Numeric data type search options, no data entered]((../modules/modulesfiles/ndt-search.png)
+![Numeric data type search options, no data entered](../modules/modulesfiles/ndt-search.png)
