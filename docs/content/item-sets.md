@@ -74,7 +74,7 @@ To assign an asset as a thumbnail, click on the Select button in the main work a
 
 ![Select drawer with upload option and two assets, both of which are images.](/content/contentfiles/itemset_thumb2.png)
 
-The drawer offers two options: upload a file using your browser, or select from existing assets. To select an existing asset, simply click on it and it will automatically be assigned to the item. 
+The drawer offers two options: upload a file using your browser, or select from existing assets. To select an existing asset, simply click on it and it will automatically be assigned to the item set. 
 
 ![Add item set open to Thumbnail tab, where an asset which is an image of a quill pen on a scrolled piece of paper is in the main work area. Below it are buttons for Select and Clear](/content/contentfiles/itemset_thumb3.png)
 
