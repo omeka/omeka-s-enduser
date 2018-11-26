@@ -42,16 +42,15 @@ The item set’s *metadata* is entered by users.
 To view the items in a set, either click on the number of items in the set on the item set browse page, or click the *view items* button in the upper right corner of the individual item set page.
 
 
-## Create an item set
+## Add an item set
 
-To create a new item set, click the Item Sets tab from the left navigation of the dashboard. Click the *add new item set* button on the right hand side of the screen.
+To add a new item set, click the Item Sets tab from the left navigation of the dashboard. Click the *add new item set* button on the right hand side of the screen.
 
 Item sets may use the same resource templates available for items to provide pre-selected fields. Each set should contain at least one descriptive value, such as Dublin Core Description. 
 
 ![Add item set, no properties selected](/content/contentfiles/itemsets_add.png)
 
-In the *Values* tab:
-
+### Values tab
 - You may add text, a resource from the installation, or an external link in each field.  
     * *Text* fields are entered with text. The keyboard at the top of the field input indicates text. The globe icon which appears next to it can be used to set language. 
     * *Omeka Resource* fields create an internal link between the resource you are creating and the resource which fills that field. You have the option to use either another item or an item set. Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
@@ -63,6 +62,24 @@ You can set individual properties as Private or Publicly visible using the eye i
 In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
 
 ![As described](/content/contentfiles/item_propviz.png)
+
+### Thumbnail tab
+By default, Omeka S will use the media from the first item added to an item set to generate a thumbnail for the set. If you want to use a non-media image for the thumbnail for an item set you can set it here.
+
+![Thumbnail tab with no asset selected. The tab displays a message about thumbnail creation and a button to "select" an asset](/content/contentfiles/itemset_thumb1.png)
+
+The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../sites/site_theme/#settings-options). 
+
+To assign an asset as a thumbnail, click on the Select button in the main work area of the tab. This will open a drawer on the right side. 
+
+![Select drawer with upload option and two assets, both of which are images.](/content/contentfiles/itemset_thumb2.png)
+
+The drawer offers two options: upload a file using your browser, or select from existing assets. To select an existing asset, simply click on it and it will automatically be assigned to the item. 
+
+![Add item set open to Thumbnail tab, where an asset which is an image of a quill pen on a scrolled piece of paper is in the main work area. Below it are buttons for Select and Clear](/content/contentfiles/itemset_thumb3.png)
+
+To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click select and either choose or upload a new thumbnail asset.
+
 
 ### Access Settings
 Item sets have two settings which control their access. They can be *public* or *not public* and they can be *open* or *closed*.
