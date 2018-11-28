@@ -17,8 +17,6 @@ Advanced search for items only is available on the [Items](/content/items.md) pa
 
 The advanced search loads on a new page, and has the following options:
 
-*Search by Class*: select a class by which to search from the dropdown menu
-
 *Search by value*: search for a term or phrase which you enter 
 
 - The first selector allows you to specify a property to search. 
@@ -35,10 +33,13 @@ The advanced search loads on a new page, and has the following options:
 
 To find a resource ID, go to the resource and look at the url in your browser's address bar. The numbers at the end of the url are the resource ID. 
 
-*In site pool*: select from a dropdown menu of all the sites on the Omeka S installation, sorted by user-owner. 
+*Search by class*: select a class by which to search from the dropdown menu
+
+*Search by template* select a resource template from the dropdown. Templates are arranged by owner, then alphabetically. 
 
 *Search by item set*: select from a dropdown of item sites.
 
+*In site pool*: select from a dropdown menu of all the sites on the Omeka S installation, sorted by user-owner. 
 
 ![Advanced item search options page.](/files/advancedsearch3.png)
 
@@ -46,6 +47,7 @@ Both *Search by value* and *search by item set* allow you to add multiple inputs
 
 You can remove value and item set searches using the red trash can icon to the right of those search options.
 
+You can reset your search terms at any time by using the "Reset" button on the upper right next to the "Search" button.
 
 ## Advanced Item Set Search
 
@@ -54,9 +56,6 @@ Advanced search for item sets only is available on the [Item Sets](/content/item
 ![Advanced search button indicated with a red arrow.](/files/advancedsearchis1.png)
 
 The advanced search loads on a new page, and has the following options:
-
-*Search by Class*: select a class by which to search from the dropdown menu
-
 *Search by value*: search for a term or phrase which you enter 
 
 - The first selector allows you to specify a property to search. 
@@ -73,8 +72,12 @@ The advanced search loads on a new page, and has the following options:
 
 To find a resource ID, go to the resource and look at the url in your browser's address bar. The numbers at the end of the url are the resource ID. 
 
-*In site pool*: select from a dropdown menu of all the sites on the Omeka S installation, sorted by user-owner.  
-
 You can remove value searches using the red trash can icon to the right of the value settings.
 
+*Search by Class*: select a class by which to search from the dropdown menu
+
+*Search by template* select a resource template from the dropdown. Templates are arranged by owner, then alphabetically.
+
 ![Advanced item set search options form, with fields as described above.](/files/advancedsearchis2.png)
+
+You can reset your search terms at any time by using the "Reset" button on the upper right next to the "Search" button.

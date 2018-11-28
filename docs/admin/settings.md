@@ -14,23 +14,28 @@ The settings are as follows divided into two sections: General and Security sett
 
 ![General settings with fields as described below](/admin/adminfiles/settings_general.png)
 
-- *Administrator Email* sets the email address for the installation administrator. 
+*Administrator Email* sets the email address for the installation administrator. 
 Note that some hosting setups may require that the domain name for the administrator email match the domain name of the installation (if your domain is yourinstall.org, the administrator email must be user@yourinstall.org).  
 
-- *Installation Title* allows you to change the title for the OmekaS installation overall. This is what appears in the upper left-hand corner of the admin dashboard.
+*Installation Title* allows you to change the title for the OmekaS installation overall. This is what appears in the upper left-hand corner of the admin dashboard.
 
-- *Time Zone* sets the default time zone for the install, which will be used for error logging messages and to determine creation dates for items, item sets, and other materials on the install. This is a dropdown menu. 
+*Time Zone* sets the default time zone for the install, which will be used for error logging messages and to determine creation dates for items, item sets, and other materials on the install. This is a dropdown menu. 
 
-- *Results per page* changes the number of results (items, item sets, media) displayed per page when browsing in either public or admin sides of the installation.
+*Results per page* changes the number of results (items, item sets, media) displayed per page when browsing in either public or admin sides of the installation.
 
-- *Property label information* determines what is displayed next to each property when users are editing items and item sets. 
-     * By default, this is set to *none*, meaning that only the property label is displayed.
-     * If *show vocabulary* is selected, the parenthetical statement next to the property name displays the vocabulary used (for example, Dublin Core) 
-     * If *show term* is selected, the parenthetical statement next to the property name displays the vocabulary:term (for example, dc:title). 
+*Property label information* determines what is displayed next to each property when users are editing items and item sets. 
 
-- *Default Site* dropdown gives you control over where people land they navigate to the base url of your install. You can either display a list of all sites in the install (default) or select a specific site from the dropdown, to which people will be redirected.
+* By default, this is set to *none*, meaning that only the property label is displayed.
+* If *show vocabulary* is selected, the parenthetical statement next to the property name displays the vocabulary used (for example, Dublin Core) 
+* If *show term* is selected, the parenthetical statement next to the property name displays the vocabulary:term (for example, dc:title). 
 
-- *Locale* dropdown lets you select from a dropdown of [available languages](https://www.transifex.com/omeka/omeka-s/) for the Omeka S core to change the language in which your installation's admin side displays.
+*Default Site* dropdown gives you control over where people land they navigate to the base url of your install. You can either display a list of all sites in the install (default) or select a specific site from the dropdown, to which people will be redirected.
+
+*Locale* dropdown lets you select from a dropdown of [available languages](https://www.transifex.com/omeka/omeka-s/) for the Omeka S core to change the language in which your installation's admin side displays.
+
+*Enable version notifications* check this box to enable notifications for new versions of Omeka S, themes, and modules. 
+
+*Disable JSON-LD embed* By default, Omeka embeds JSON-LD in resource browse and show pages for the purpose of machine-readable metadata discovery. Check this to disable embedding.
 
 ### Security
 

@@ -53,6 +53,8 @@ Editing media is very similar to editing [items](../content/items) or [item sets
 
 ![Edit media page, with no properties loaded](../content/contentfiles/media_edit.png)
 
+### Values
+
 If desired, you can select a resource template from the drop-down menu. Resource templates are defined by site administrators and editors.
 
 - If using a resource template, the class should automatically load.
@@ -78,7 +80,21 @@ You have the option to use either an item, another media, or an item set. Once y
 
 ![Select Item menu with list of items to link in edit media view](/content/contentfiles/media_addresource.png)
 
-You can use the "Quick add slider" in the right hand drawer to select multiple resources using a checkbox instead of adding each individually. You must still click the *Add selected* button at the bottom of the drawer to complete the process.
+If you are using an Item resource for the property, you will have additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search"
+
+![Select Item drawer top options, with a red arrow around a gray triangle button to the right of the phrase "Filter search"](/content/contentfiles/items_filtersearch.png)
+
+This will open a menu below the button with the following options to filter the items in the drawer:
+
+- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation;
+- Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set
+- Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the url of it's edit page; if you are editing the item and the url is `admin/item/11547/edit` then the item's ID is 11547.
+
+![options as above described](/content/contentfiles/item_addresItem.png)
+
+Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (ex, Creator, Has Part). 
+
+![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](/content/contentfiles/items_quickadd.png)
      
 **URI** fields link to an external website or online resource.
 
@@ -99,6 +115,27 @@ Use the *make public/private* button (eye icon) to set whether the media is visi
 ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)  Private
 
 Note that if an item is private, all the media attached is private, but an item which is public can have attached media which are set to be either public or private.
+
+You can set individual properties as Private or Publicly visible using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Site Admins, and Editors will be able to see properties even when set to private. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
+
+In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
+
+![As described](/content/contentfiles/item_propviz.png)
+
+### Thumbnail
+Not all media generate an elegant thumbnail, for example pdf or text file documents or some video files. You can use this tab to set a representative thumbnail for the media which will be used on browse pages but not on the page for the item or its media.
+
+The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../sites/site_theme/#settings-options). 
+
+To assign an asset as a thumbnail, click on the Select button in the main work area of the tab. This will open a drawer on the right side. 
+
+![Select drawer with upload option and two assets, both of which are images.](/content/contentfiles/media_thumbnail1.png)
+
+The drawer offers two options: upload a file using your browser, or select from existing assets. To select an existing asset, simply click on it and it will automatically be assigned to the media. 
+
+![Edit media open to Thumbnail tab, where an asset which is an image of a quill pen on a scrolled piece of paper is in the main work area. Below it are buttons for Select and Clear](/content/contentfiles/media_thumbnail2.png)
+
+To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click select and either choose or upload a new thumbnail asset.
 
 ## Batch editing
 

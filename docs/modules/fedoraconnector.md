@@ -37,6 +37,4 @@ When the data is complete, press submit. You can track the status of the import 
 ## Undo an Import
 To undo a completed import and remove all associated items, go to the Fedora Connector tab on the left-hand navigation of the admin dashboard, click on Fedora Connector and then click on Past Imports, which should appear below the Fedora Connector tab.
 
-![Fedora Connector navigation option with two sub-tab options for Import and Past Imports](../modules/modulesfiles/mods_fcnav.png)
-
 Check the box for each import you wish to undo and click submit.

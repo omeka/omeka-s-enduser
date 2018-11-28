@@ -26,7 +26,9 @@ In addition, there is a checkbox for "Add to navigation". If checked, the page w
 
 ![Page view showing the fields for Add Page](../sites/sitesfiles/sitepg_add.png)
 
-Once you have entered this information, click the Add button in the upper right hand corner of the browser window. You will be automatically taken to the edit form for that page.
+Once you have entered this information, click the Add button in the upper right hand corner of the browser window. You will be automatically taken to the edit form for that page. 
+
+If you decide you do not want to create the page, click the Cancel button.
 
 ## Browse Pages
 The pages tab (once you have at least one page) will display all of your pages in their navigation order. Child pages will display below the parent page with a `-` before the page title.
@@ -41,22 +43,23 @@ Use the [Navigation](../sites/site_navigation/) tab of the site admin to set the
 After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page *title* will take you to the public view of that page. On the right hand side you can choose to add a new block by selecting one of the following layouts: 
 
 - HTML
-- Page Title
+- Page title
 - Media
-- Browse Preview
-- Item Showcase
-- Table of Contents
-- Line Break
-- Item with Metadata
+- Browse preview
+- Item showcase
+- List of sites
+- Table of contents
+- Line break
+- Item with metadata
+
+![A page in edit view, with one media block added](../sites/sitesfiles/sitepg_edit.png)
 
 If you have the relevant modules installed, you may also have:
 
 - Map
 - Collecting
 
-![A page in edit view, with one media block added](../sites/sitesfiles/sitepg_edit.png)
-
-Once you have added blocks to your page, click the Save button in the right hand corner. 
+Once you have added blocks to your page, click the Save button in the right hand corner.  To leave without saving changes, click Cancel.
 
 You can delete any of the blocks by clicking on the trash can icon located in the upper right corner of the block. 
 
@@ -107,7 +110,7 @@ The Media block has options for the display of the media:
 - Thumbnail alignment: relative to page. Choose from left and right.
 - Show attachment title: Choose whether the media should have a caption of the item title, file name, or no title displayed at all.
 
-*Layout note*: If you want media to appear beside a block of text, place a media block *above* an HTML block and select a smaller thumbnail size. In the example below, the media has a thumbnail type of "medium", alignment "right, and attachment title of the "item title": 
+*Layout note:* If you want media to appear beside a block of text, place a media block *above* an HTML block and select a smaller thumbnail size. In the example below, the media has a thumbnail type of "medium", alignment "right, and attachment title of the "item title": 
 
 ![A block of lorem ipsum text with a right-aligned small image embedded at the top of the paragraph](../sites/sitesfiles/sitepg_mediaalign.png)
 
@@ -153,6 +156,28 @@ To cancel the item selection, click the X in the upper right corner of the drawe
 Once you’ve added an item, it will appear in the Item List block. You can edit the caption or media options by clicking the edit (wrench) button for that row, and you can delete the item using the delete (trash can) icon.
 
 You can add multiple items to the list.
+
+### List of sites
+This block displays a list of the sites on your Omeka S install. This block has the following options:
+
+![List of sites block](../sites/sitesfiles/sitepg_slist1.png)
+
+- Sort sites by: Alphabetical order (A-Z); Oldest first; newest first. By default this is set to alphabetical. 
+- Max number of sites allows you to limit the number of sites which display at once. If left blank, all sites will display.
+- A checkbox to turn on pagination, applied only if you set a limit.
+- Show site summaries.  
+
+This image shows a List of sites block, sorted oldest first, with no limits:
+
+![](../sites/sitesfiles/sitepg_slist2.png)
+
+This is the same block edited to have a limit of 5 and pagination is turned on:
+
+![](../sites/sitesfiles/sitepg_slist3.png)
+
+The same block with pagination and site summaries turned on:
+
+![](../sites/sitesfiles/sitepg_slist4.png)
 
 ### Table of Contents
 If the current page has child pages, you can add a table of content block for those pages.

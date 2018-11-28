@@ -16,7 +16,11 @@ After clicking on the tab, a table appears listing all item sets with:
 - the *Owner* of the set, 
 - and the date the set was *Created*.
 
-Above this table on the left is the pagination for the item sets table, where you can click the left and right arrows to move forward and back or enter a page number to go a specific page of item sets. In the center above the table is the button for *advanced search*. On the right above the table are drop-down menus to re-order the table by *title, class, owner,* or *date created* in either *ascending* or *descending* order. 
+Above this table on the left is the pagination for the item sets table, where you can click the left and right arrows to move forward and back or enter a page number to go a specific page of item sets. 
+
+In the center above the table is the button for *advanced search*. 
+
+On the right above the table are drop-down menus to re-order the table by *title, class, owner,* or *date created* in either *ascending* or *descending* order. 
 
 In the upper right corner is the button to *Add new item set*. 
 
@@ -38,21 +42,79 @@ The item set’s *metadata* is entered by users.
 To view the items in a set, either click on the number of items in the set on the item set browse page, or click the *view items* button in the upper right corner of the individual item set page.
 
 
-## Create an item set
+## Add an item set
 
-To create a new item set, click the Item Sets tab from the left navigation of the dashboard. Click the *add new item set* button on the right hand side of the screen.
+To add a new item set, click the Item Sets tab from the left navigation of the dashboard. Click the *add new item set* button on the right hand side of the screen.
 
 Item sets may use the same resource templates available for items to provide pre-selected fields. Each set should contain at least one descriptive value, such as Dublin Core Description. 
 
+You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
+
+### Values tab
+You may add text, a resource from the installation, or an external link in each field.  
+
 ![Add item set, no properties selected](/content/contentfiles/itemsets_add.png)
 
-In the *Values* tab:
+By default, a new Item Set will load with the properties dcterms:Title and dcterms:description. You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
 
-- You may add text, a resource from the installation, or an external link in each field.  
-    * *Text* fields are entered with text. The keyboard at the top of the field input indicates text. The globe icon which appears next to it can be used to set language. 
-    * *Omeka Resource* fields create an internal link between the resource you are creating and the resource which fills that field. You have the option to use either another item or an item set. Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
-    * *URI* fields link to an external website or online resource.
-- You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
+You can set individual properties as Private or Publicly visible using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Site Admins, and Editors will be able to see properties even when set to private. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
+
+In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
+
+![As described](/content/contentfiles/item_propviz.png)
+ 
+### Text
+Text fields are entered with text. The keyboard at the top of the field input indicates text. You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code for the language in which the text is written.
+
+### Omeka Resource
+These fields create an internal link between the resource you are creating and the resource which fills that field. You have the option to use either another item or an item set. Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
+
+When creating an item set, you have the option to use either another item or an item set. 
+
+Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific item or item set 
+
+Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
+
+![Select Item menu with list of items to link in edit item view](/content/contentfiles/items_addresource.png)
+
+If you are using an Item resource for the property, you will have additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search"
+
+![Select Item drawer top options, with a red arrow around a gray triangle button to the right of the phrase "Filter search"](/content/contentfiles/items_filtersearch.png)
+
+This will open a menu below the button with the following options to filter the items in the drawer:
+
+- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation;
+- Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set
+- Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the url of it's edit page; if you are editing the item and the url is `admin/item/11547/edit` then the item's ID is 11547.
+
+![options as above described](/content/contentfiles/item_addresItem.png)
+
+Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (ex, Creator, Has Part). 
+
+![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](/content/contentfiles/items_quickadd.png)
+
+#### URI
+URI fields link to an external website or online resource.
+
+You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
+
+
+### Thumbnail tab
+By default, Omeka S will use the media from the first item added to an item set to generate a thumbnail for the set. If you want to use a non-media image for the thumbnail for an item set you can set it here.
+
+![Thumbnail tab with no asset selected. The tab displays a message about thumbnail creation and a button to "select" an asset](/content/contentfiles/itemset_thumb1.png)
+
+The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../sites/site_theme/#settings-options). 
+
+To assign an asset as a thumbnail, click on the Select button in the main work area of the tab. This will open a drawer on the right side. 
+
+![Select drawer with upload option and two assets, both of which are images.](/content/contentfiles/itemset_thumb2.png)
+
+The drawer offers two options: upload a file using your browser, or select from existing assets. To select an existing asset, simply click on it and it will automatically be assigned to the item set. 
+
+![Add item set open to Thumbnail tab, where an asset which is an image of a quill pen on a scrolled piece of paper is in the main work area. Below it are buttons for Select and Clear](/content/contentfiles/itemset_thumb3.png)
+
+To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click select and either choose or upload a new thumbnail asset.
 
 
 ### Access Settings
@@ -69,6 +131,15 @@ Use the *make public/private* button (eye icon) to make the item visible to the 
 ![a set which is closed and private, with a closed padlock icon and  an icon of an eye with a slash through it](/content/contentfiles/setClosedPrivate.png)  Closed and Private
 
 Note that the public/private and open/closed settings operate independently - you can have an open and private item set, for example.
+
+## Edit an item set
+Once you have created an item set, you can edit it at any time, either by clicking the edit icon (pencil button) or clicking on the item set's title and then clicking the Edit button in the upper right-hand corner of the screen.
+
+Options for editing an item set are the same as for creating an item set. 
+
+To cancel out of editing, click the Cancel button in the upper right corner, between the Delete and Save buttons. 
+
+![Detail view of the top row if information and buttons on an item edit view. A red arrow points to the Cancel button, on the far right](/content/contentfiles/itemset_cancel.png)
 
 ## Batch Editing
 
@@ -118,7 +189,7 @@ From the Item Set browse view, you can delete an item set by clicking the trash 
 
 ![Browse item sets view with two item sets and a red arrow pointing to the trash can icon](/content/contentfiles/itemsets_browseDel.png)
 
-![Drawer with a confirmation message to delete the an item set, including the Confirm delete button and the item set's basic descriptive metadata - title, description, and number of items in the set. ](/content/contentfiles/itemsets_browseDel.png)
+![Drawer with a confirmation message to delete the an item set, including the Confirm delete button and the item set's basic descriptive metadata - title, description, and number of items in the set. ](/content/contentfiles/itemsets_browseDel2.png)
 
 
 From the edit page for an Item Set, click the *Delete* button in the upper right-hand corner. This will open a drawer on the right side asking you to confirm that you want to delete the item set. Click *Confirm delete* to delete the item set, or close the drawer to cancel.

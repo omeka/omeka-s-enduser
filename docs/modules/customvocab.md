@@ -32,7 +32,7 @@ When editing a custom vocabulary, you can change the label, language, or terms.
 
 Using a Custom Vocab
 -------------------------------------
-Custom Vocabularies are applied through Resource Templates. 
+Custom Vocabularies are applied through [resource templates](../content/resource-template.md). 
 
 Go to the Resource Templates and either add new or edit an existing template. Once you are editing the template:
 

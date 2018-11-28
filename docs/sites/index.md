@@ -8,7 +8,11 @@ Sites are managed and access via the *Sites* tab on the left-hand side of the ad
 
 ![Manage sites view showing Add New button and table of sites with one site](../sites/sitesfiles/sites_admin.png)
 
-The manage sites page displays a table with all the sites for the installation, giving the title and owner for each site. Either of these columns can be used to sort the list of sites by using the up and down arrows on the right edge of the column heading.
+The manage sites page displays a table with all the sites for the installation, giving the title and owner for each site. 
+
+Use the two drop-downs on the right side above the table to sort sites. You can sort by *title*, *URL slug* or *owner*, either ascending or descending. Click the sort button to apply your choices. 
+
+Above the table of sites, on the left, is the pagination for the item sets table, where you can click the left and right arrows to move forward and back or enter a page number to go a specific page of item sets.
 
 Each row gives the title of a site, options to *view* (box with outward arrow), *edit* (pencil), or *delete* (trash can), and displays the owner of the site. *Only global admins and site owners can delete a site.*
 
@@ -26,6 +30,7 @@ The Add New Site page has three tabs: Admin, Theme, and Item Pool.
 ### The Admin tab
 * Give your site a *title* (required)
 * create a *slug* for the site’s url. The url will be *installurl/site/slug*. This is optional - if you leave this field blank, Omeka S will create a slug based on the site title.
+* Create a *summary* for your site, a brief idea of what it is about which will appear on your installation's landing page and on [list of site blocks](../sites/site_pages/#page-blocks)
 
 ![Admin tab for a new site with nothing entered](../sites/sitesfiles/sitesadd_admin.png)
 
@@ -35,7 +40,7 @@ Select from the installed themes. Each theme appears as a button with a screensh
 ![Theme tab with default theme selected](../sites/sitesfiles/sitesadd_theme.png)
 
 ### The Item Pool tab
-Set up the [item pool](../sites/site_resources.md#item-pool.md) for the site.
+Set up the [item pool](../sites/site_resources/#item-pool) for the site. Follow the link for detail information about Item Pool settings, which can be modified at any time from the [Resources](../sites/site_resources) tab of the site.
 
 ### Publication settings
 In the upper right hand corner of the screen, next to the *Add* button, you can set the visibility of your site using the the *make public/private* button (eye icon).
@@ -47,7 +52,9 @@ In the upper right hand corner of the screen, next to the *Add* button, you can 
 You will probably want to leave the site Private until you have added some content.
 
 ### Add site
-When you are ready, click the *Add* button in the upper right corner. Once the page is created, you will be redirected to the site info tab of the site management. 
+When you are ready, click the Add button in the upper right corner. Once the page is created, you will be redirected to the site info tab of the site management. 
+
+If you decide you do not want to create this site, click the Cancel button in the upper right next to the Add button
 
 ## Manage a site
 To manage a site, navigate to the *Sites* tab from the Omeka S Admin Dashboard. Click either on the site’s title or the edit (pencil) button in the list of sites. 
@@ -78,14 +85,15 @@ The site info settings for an Omeka S site are where you can change the basic in
 
 * *title* (text)
 * *slug* (text)
+* *summary* (text) 
 
 ![Site info for the site “Jane Austen” with buttons across the top to View, Delete, and Save the site](../sites/sitesfiles/sites_siteinfo.png)
 
 In the upper right hand corner of the window on this tab, you can use buttons to:
 
 - *Public/Private button* (see below);
-- *View* the public side of the site;
 - *Delete* the site;
+- *Cancel* making changes;
 - *Save* changes.
 
 The *make public/private* button (eye icon) is used to both indicate and set whether the site is visible to the public or only to users of this Omeka S installation 
@@ -109,11 +117,13 @@ To add a user, click on their name.
 
 Then select their role from the dropdown:
 
-* *Viewer*: user can see the site’s backend but cannot edit.
-* *Editor*: user can access and edit the site’s backend.
-* *Admin*: user has full administrative privileges for the site, including adding users and deleting the site.
+* *Viewer:* user can see the site’s backend but cannot edit.
+* *Editor:* user can access and edit the site’s backend.
+* *Admin:* user has full administrative privileges for the site, including adding users and deleting the site.
 
-Once you've added one or more users, click the Save button located in the upper right hand corner. You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon on their row.
+You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon on their row.
+
+Once you've added one or more users, click the Save button located in the upper right hand corner. To cancel your changes, click the Cancel button in the upper right hand corner. 
 
 ## See also: 
 * [Site Pages](../sites/site_pages.md)
