@@ -38,6 +38,7 @@ pages:
         - 'File Sideload': 'modules/filesideload.md'
         - 'Mapping': 'modules/mapping.md'
         - 'Metadata Browse': 'modules/metadatabrowse.md'
+        - 'Numeric Data Types': 'modules/numericdatatypes.md'
         - 'Omeka2 Importer': 'modules/omeka2importer.md'
         - 'Sharing': 'modules/sharing.md'
         - 'ValueSuggest': 'modules/valuesuggest.md'
