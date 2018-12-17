@@ -28,13 +28,11 @@ In the table of vocabulary properties, there is a column for *Term*. Use the Ter
 
 In addition, there is a setting in the inital import settings to automap with simple labels - this will work with columns whose names match a vocabulary label, for example "Title" or "date". Note that this option defaults to Dublin Core before proceeding through other installed vocabularies. 
 
-## Importing
-
-[Install and activate](../modules/index.md#installing-modules) the CSV Importer module. Once active, the module will add a tab to the left-hand navigation of your Omeka S install dashboard, under the Modules heading. 
-
-![A red arrow points to CSV Importer in the navigation](../modules/modulesfiles/csvimport_nav.png)
+## Initial Import Settings
 
 Start an import by clicking on the CSV Importer tab on the left-hand navigation. This will open the initial Import Settings page. 
+
+![A red arrow points to CSV Importer in the navigation](../modules/modulesfiles/csvimport_nav.png)
 
 - For the Spreadsheet option, use the *Choose File* button to select the file from your computer. 
 - From the *CSV Column delimiter* dropdown, choose from the following options (this should match the formatting of your file)
@@ -66,7 +64,7 @@ Start an import by clicking on the CSV Importer tab on the left-hand navigation.
 
 Click the *next* button to continue with the import process. 
 
-### Import Items
+## Import Items
 To import items, select "Items" under the "Import type" on the first page.
 
 When you click next, the page will load with the following tabs:
@@ -118,11 +116,59 @@ The drawer has multiple options for mapping:
 
 Be sure to click the "Apply Changes" at the bottom of the drawer or nothing you set here will be kept.
 
+To remove a mapping, click the trash can icon in the row for that data mapping. It will remove *only* the mapping, not the column data. 
 
+If you have data in a column in your CSV which you do not want to bring in to your Omeka S installation, simply do not map that column to a property or data type.
 
-### Basic Settings
+#### Column options
+To access options for data in a column of your csv (represented by a row in the import table), click the wrench icon for that column heading. 
 
-### Advanced Settings
+[A red arrow points to the wrenchn button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapOptions.png)
 
+Column options are in addition to mappings. If you add options without also mapping column data to resource, media, or other data, nothing will be imported. 
 
+This will open a drawer on the right side of the browser window with the following options: 
+
+- **Use multivalve separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
+- **Language:** is a field where you can set the language for this column using the [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the language in which the text is written. This will override what you have entered in basic settings. 
+- **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values one can use when adding properties to an item:
+	- Import as text (default);
+	- Import as URL reference;
+	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
+
+![drawer with options as described above](../modules/modulesfiles/csvimport_ItemColOpt.png)
+
+To remove a column option setting, click the wrench icon again and undo your changes manually.
+
+### Item import Basic Settings
+These settings apply to the entire csv which you are importing. Note that some of these settings can be overwritten by column options in the Map to Omeka S data tab. 
+
+![options as described below](../modules/modulesfiles/csvimport_ItemsBasic.png)
+
+- **Resource Template:** select a resource template from the drop-down menu to apply to the imported items. You can use the search field at the top of the dropdown to narrow results or find a particular template.
+- **Class:** select a class from the drop-down menu to apply to the imported items. You can use the search field at the top of the dropdown to narrow results or find a particular class.
+- **Owner:** set the owner for the Items by selecting a user from the drop-down menu. You can use the search field at the top of the dropdown to narrow results or find a particular user.
+- **Visibility:** set the visibility of the imported items as public  or private. 
+- **Item Sets:** add the imported items to a specific item set or sets using the dropdown menu.
+- **Multivalue Separator:** enter the multivalue separator character here, if you have used one. 
+      - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon.
+- **Language:** set the language of the values in the spreadsheet using the appropriate [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+
+### Item import Advanced Settings
+
+There are two options on this tab which are only for advanced use. 
+
+![options as described below](../modules/modulesfiles/csvimport_ItemsAdvanced.png)
+
+#### Action
+This setting allows you to change the action of process from a straight import to one of the following options:
+
+- **Create a new resource:** default option. Each row in the CSV will become a new resource
+- **Append data to the resource:** add new data to complete the resource;
+- **Revise data of the resource:** replace existing data to the resource by the ones set in each cell, except if empty (don’t modify data that are not provided, except default values);
+- **Update data of the resource:** replace existing data to the resource by the ones set in each cell, even empty (don’t modify data that are not provided, except default values);
+- **Replace all data of the resource:** remove all properties of the resource, and fill new ones from the data.
+- **Delete the resource.**
+
+If you select one of these options from the dropdown, three additional settings will appear on the 
 
