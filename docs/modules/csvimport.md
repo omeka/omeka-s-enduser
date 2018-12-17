@@ -5,8 +5,8 @@ The CSV Import module allows you to import items or users into your Omeka S inst
 
 Please note that an import must have a specific import type. 
 
-Preparing your CSV file
------------------------
+## Preparing your CSV file
+
 Most spreadsheet editors (including Microsoft Excel, Google Sheets, and Apple Numbers) can export to csv format. CSV files for import must be encoded in UTF-8, so when exporting or saving a new document, be sure to check that the encoding is UTF-8.
 
 If the spreadsheet is already created, take a moment to think about which columns you want to match to which vocabulary properties. 
@@ -26,19 +26,19 @@ In the table of vocabulary properties, there is a column for *Term*. Use the Ter
 
 ![arrow points to the Term column for Dublin Core properties.](../modules/modulesfiles/csv_automap2.png)
 
-In addition, there is a setting in the inital import settings to automap with labels alone - this will work with columns whose names match a vocabulary label, for example "Title" or "date". Note that this option defaults to Dublin Core before proceeding through other installed vocabularies. 
+In addition, there is a setting in the inital import settings to automap with simple labels - this will work with columns whose names match a vocabulary label, for example "Title" or "date". Note that this option defaults to Dublin Core before proceeding through other installed vocabularies. 
 
-Importing
----------
+## Importing
+
 [Install and activate](../modules/index.md#installing-modules) the CSV Importer module. Once active, the module will add a tab to the left-hand navigation of your Omeka S install dashboard, under the Modules heading. 
 
 ![A red arrow points to CSV Importer in the navigation](../modules/modulesfiles/csvimport_nav.png)
 
 Start an import by clicking on the CSV Importer tab on the left-hand navigation. This will open the initial Import Settings page. 
 
-- Using the *Choose File* button, select the file from your computer. 
+- For the Spreadsheet option, use the *Choose File* button to select the file from your computer. 
 - From the *CSV Column delimiter* dropdown, choose from the following options (this should match the formatting of your file)
-	- comma
+	- comma (default)
 	- semi-colon
 	- colon
 	- tabulation
@@ -47,7 +47,7 @@ Start an import by clicking on the CSV Importer tab on the left-hand navigation.
 	- pipe
 
 - From the *CSV column enclosure* dropdown, choose the option which encloses long text in your file:
-	- double quote
+	- double quote (default)
 	- quote
 	- hash
 
@@ -55,167 +55,74 @@ Start an import by clicking on the CSV Importer tab on the left-hand navigation.
 	- Item Sets
 	- Items
 	- Media (must relate to already existing Items)
-	- Resources (can be a mix of Item Sets, Items, and Media)
+	- Mixed resources (spreadsheet can inlcude Item Sets, Items, and Media)
 	- Users
 
-- Check the box to *Automap with labels alone.* This will automap not only specially formatted column headings but also column headings which match existing vocabulary property labels. Note that this option defaults to Dublin Core before proceeding through other installed vocabularies. 
+- Check the box to *Automap with simple labels.* This will automap not only specially formatted column headings but also column headings which match existing vocabulary property labels. Note that this option defaults to Dublin Core before proceeding through other installed vocabularies. 
+
+- Comments are useful as they appear on the "Past Imports" page; make a note about what is being imported and any settings you may have on this page. 
+
+![Import settings as described, no entries](../modules/modulesfiles/csvimport_settings.png)
 
 Click the *next* button to continue with the import process. 
 
-![First page of the CSV Importer process](../modules/modulesfiles/csvimport_choosefile.png)
+### Import Items
+To import items, select "Items" under the "Import type" on the first page.
 
-### General Import Logic
+When you click next, the page will load with the following tabs:
 
-### Items Sets Import
+### Map to Omeka S data
+This tab displays a table with the columns from your spreadsheet as rows. Each row displays:
 
-### Items Import
-The next page of the Importer has two tabs:  
+- a Checkbox
+- Column header from the spreadsheet
+- A plus symbol button for adding or modifying a mapping
+- A wrench symbol button for spreadsheet column options
+- A trash can to delete mappings
+- A column to show options selected
 
-#### Basic Import Settings
-This tab has the following fields, none of which are required: 
+![Mappings for a spreadsheet with ten columns. Some of the columns, such as those named Description and Title have automatically been mapped to Dublin Core properties.](../modules/modulesfiles/csvimport_itemsMap1.png)
 
-- *Comment*: make a note on the import.
-- *Resource Template*: select a resource template from the drop-down menu to apply to the imported items
-- *Class*: select a class from the drop-down menu to apply to the imported items
-- *Item Sets*: add the imported items to a specific item set or sets using the select menu (required)
-- *Owner*: set the owner for the Items by selecting  from the drop-down menu.
-- *Multivalue Separator*: enter the multivalue separator character here, if using
-      - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon.
+#### Mapping options
 
-![Basic import settings for Item import](../modules/modulesfiles/csvimport_itemsbasic.png)
+To map a column header to a vocabulary property, click on the plus symbol button to the left of the column header. This will open a drawer on the right-hand side of the screen. 
 
-#### Map to Omeka S Data
-Each column in your CSV file will appear as a block with a the *CSV Column* header, a space to indicate *Mappings* and mapping *Actions*. To map the data in a column, select one of the actions and a drawer will open with the options for that action.
+[A red arrow points to the plus sign button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapButton.png)
 
-![Mapping for import](../modules/modulesfiles/csvimport_itemsmap.png)
+The drawer has multiple options for mapping:
 
-All actions have the option to indicate that this column data uses the multivalue separator.
+**Resource data** has a dropdown to set Item Set by selected property. If you have a column with data for an Item Set to which you want to add the item, you can set how it maps using this dropdown. You can either use the Item Set's internal ID, or any one of its properties (title, description).
 
-**Map** (this option will only be available if you have installed the [mapping](../modules/mapping.md) module)
+![dropdown as described](../modules/modulesfiles/csvimport_itemsMapRD.png)
 
-Select whether this column contains: 
+**Generic data** also has a dropdown where you can set one of four options:
 
-- Latitude
-- Longitude
-- Latitude/Longitude (formatted in this manner)
-- Default Latitude
-- Default Longitude
-- Default Zoom
+- *Resource template (by label):* set the template for an item by name. The name of the template as entered in the spreadsheet and the name of the template in Omeka S must match exactly.
+- *Resource class (by term):* set the resource class for an item. The term for the class in the spreadsheet and in the Omeka S installation must match exactly.
+- *Owner (by email address):* set an item's owner by email address. This must be the email address associated with the user's account in the Omeka S installation.
+- *Visibility public/private:* set the visibility of the item. Use "private" or "public" in the spreadsheet. 
 
-![Mapping options for geolocation data](../modules/modulesfiles/csvimport_itemsgeo.png)
+![Dropdown as described](../modules/modulesfiles/csvimport_itemsMapgeneric.png)
 
-**Properties** 
+**Properties** select a property to map the column data to, from any of the installed vocabularies. Use the Filter field to search the available properties for a specific property.
 
-Select from the properties of all installed vocabularies. You can search for a specific property using the *Filter properties* field at the top of the drawer or open a specific vocabulary by clicking on its name.
+**Media source** If the column in your spreadsheet is a media source, select which kind from the dropdown: 
 
-Options:  
-
-- Use the set language button to set the language for this specific property. You must enter the standard language code, case sensitive, in this box.
-- You can choose to import the content as a URL by clicking the *Import as URL reference* button
-- Import as Omeka S resource ID will populate the property with an existing Omeka S resource.
-- Use multivalue separator, if you have multiple values in this property in the csv file.
-
-![Mapping options for properties data](../modules/modulesfiles/csvimport_iproperties.png)
-
-**Media Import**
-
-Select one of the following:
-
-- URL
 - HTML
-- IIIF Image
-- oEmbed code
-- YouTube
+- IIIF Image (link)
+- oEmbed (link)
+- URL
+- YouTube (link)
 
-There is an option to use the multivalue separator for this import.
+![Dropdown as described](../modules/modulesfiles/csvimport_itemsMapMedia.png)
 
-![Mapping options for media](../modules/modulesfiles/csvimport_imedia.png)
-
-**Item Data**
-
-These actions allow you to set the column data as:
-
-- Item Set ID
-- Resource Template Name
-- Resource Class Name
-- Owner Email Address
-Note that these settings will override the basic settings, and must use email addresses, templates, classes, and IDs from this Omeka S install. 
-
-![Mapping options for item data](../modules/modulesfiles/csvimport_itemdata.png)
-
-As soon as you select a mapping it should appear in the Mappings column of the table. To remove a mapping simply click the red delete (trash can icon) button to the right of the mapping - the mapping should immediately disappear.
-
-![Arrow points to the trash can icon to delete mapping](../modules/modulesfiles/csvimport_itemdelete.png)
-
-Once you have completed mapping, hit import. You should see a confirmation message saying "Importing in Job ID [number]"
-
-### Media Import
-
-### Resources Import
+Be sure to click the "Apply Changes" at the bottom of the drawer or nothing you set here will be kept.
 
 
 
-### Users Import
-You can import user data from a csv and map to the following information: email, display name, and role. When you import a user csv, the tabs are as follows: 
+### Basic Settings
 
-#### Basic Import Settings
-*Comment*: make a note on the import.
+### Advanced Settings
 
-![Basic options for user import](../modules/modulesfiles/csvimport_userbasic.png)
 
-#### Map to Omeka S Data
-Each column in your CSV file will appear as a block with a the *CSV Column* header, a space to indicate *Mappings* and mapping *Actions*. For the Users import, the only available action is Users Info.
 
-You have three options to map User info to the column data:
-
-- Email
-- Display Name
-- Role
-
-![Mapping options for user import](../modules/modulesfiles/csvimport_usermap.png)
-
-As soon as you select a mapping it should appear in the Mappings column of the table. To remove a mapping simply click the red delete (trash can icon) button to the right of the mapping - the mapping should immediately disappear.
-
-![Red arrow points to the delete button for user mapping](../modules/modulesfiles/csvimport_userdelete.png)
-
-Once you have completed mapping, hit import. You should see a confirmation message saying "Importing in Job ID [number]"
-
-Manage Past Imports
---------------------------------------
-To review past imports, click on the CSV Importer module tab and select the Past Imports subtab. 
-
-![CSV Import subtab options on left hand nav](../modules/modulesfiles/csvimport_pastimportsnav.png)
-
-This will display a table with the following columns:
-
-- An *Undo* Checkbox
-- *JobID*
-- *Comment* entered on import
-- *Imported Content*
-- *Date* of import
-- *Status* of import
-- Import *Owner*
-
-![CSV Import past imports table](../modules/modulesfiles/csvimports_pastimports.png)
-
-To see the details of an import, click the Job ID number in its row. This will give you a detailed job page with Status, start and end timestamps, Class, Owner, any Args, and a link to the import log at the bottom of the page. 
-
-Confirm that the content has been imported in the Imported Content column.
-
-![A red rectangle surrounds the message of how many items were added in an import](../modules/modulesfiles/csvimport_added.png)
-
-Undo an Import
-------------------------
-To undo an import, click on the CSV Importer module tab and select the Past Imports subtab. 
-
-Check the *Undo* box in the row of the import which you want to undo, and click Submit.
-
-![a red arrow points to a checked Undo box on the Past Imports page](../modules/modulesfiles/csvimport_undo.png)
-
-Depending on the size of the import, it may take some time to undo. On complete, the status of the import on the CSV Importer Past Imports table will say "Undone" followed by the date the import was reversed. 
-
-Troubleshooting
----------------------
-The following are known errors that can occur during an import:  
-
-- **Encoding**: CSVs for import must be UTF-8 encoded. 
