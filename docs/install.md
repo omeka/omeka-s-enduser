@@ -60,7 +60,11 @@ See [Configuration Options](configuration) for information on settings for thumb
 ## Install on Windows or Mac OS (basic development purpose only)
 Omeka S does not support proprietary or closed source operating systems. Nevertheless, for basic development purposes or for quick training, and if you cannot install Linux on your computer or as a virtual machine, Omeka can run with [WAMP](http://www.wampserver.com), [MAMP](https://www.mamp.info) and similar tools ([easy-php](http://www.easyphp.org)), etc.
 
-First, follow all the previous points. When ready, Omeka S will work fine, except the thumbnailer. To fix it, you need to set Omeka S to use the thumbnailer available in your server via the file `config/local.config.php`. So, at your choice:
+Beforehand, follow all the previous points. When ready, Omeka S needs one or two params in the config file `config/local.config.php` to work.
+
+First, the php path may need to be set if php is not available in the environment path. So, edit the config file and fill the `phpcli_path`. Under Windows, it may be `C:\xampp\php\php.exe`, depending on you install.
+
+Second, you need to config Omeka S in order to use the thumbnailer that is available in your server. So, edit the config file and, at your choice:
 
 - replace the default thumbnailer `Omeka\File\Thumbnailer\ImageMagick` by `Omeka\File\Thumbnailer\Gd`.
 - replace the default thumbnailer `Omeka\File\Thumbnailer\ImageMagick` by `Omeka\File\Thumbnailer\Imagick`, and enable Imagick in the file `php.ini` of your server via the server admin interface or directly in the file.
