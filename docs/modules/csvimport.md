@@ -565,6 +565,10 @@ In addition to the above, the Advanced Settings tab has an option to set the num
 ### Complete import
 Once you have completed mappings, column options, and any settings, click the Import button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]"
 
+## Import Users
+*start writing here!*
+
+
 ## Manage Past Imports
 
 To review past imports, click on the CSV Importer module tab and select the Past Imports subtab. 
