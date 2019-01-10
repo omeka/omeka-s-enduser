@@ -333,7 +333,7 @@ To map a column header to a vocabulary property, click on the plus symbol button
 
 The drawer has multiple options for mapping:
 
-**Resource data** has a dropdown to set the item to which the media should be added. You can either use the Item Set's internal ID, or any one of its properties (title, description). You can use a property in the item's metadata or its internal ID. A resources' interal ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
+**Resource data** has a dropdown to set the item to which the media should be added. You can either use the item's internal ID, or any one of its properties (title, description). A resources' interal ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
 
 ![resource data with dropdown](../modules/modulesfiles/csvimport_mediaResDat.png)
 
@@ -458,11 +458,16 @@ To map a column header to a vocabulary property, click on the plus symbol button
 
 The drawer has multiple options for mapping:
 
-**Resource data** has a dropdown to set the item to which the media should be added. You can either use the Item Set's internal ID, or any one of its properties (title, description). You can use a property in the item's metadata or its internal ID. A resources' interal ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
+**Resource data** has a dropdown from which you select one of three resource types. Select the type of resource that the row *is* - this option assumes that you have specific columns capturing item set information for rows which are items, etc. It fills in the same options for the selected type that you would have with an import of only that resource type (so, for Items, Item Set mapping, etc). 
 
-![resource data with dropdown](../modules/modulesfiles/csvimport_mediaResDat.png)
+- *Item*
+	- Selecting this option gives you a dropdown to select how to identify the associated Item Set. You can either use the Item Set's internal ID, or any one of its properties (title, description).
+- *Item Set*
+	- Selecting this option loads a checkbox labeled "Open to additions." Check to allow other users to edit or add to the item set. Leave unchecked to have the item set be editable only by its creator, site admins, and global admins.
+- *Media:* 
+	- Selecting this option gives you a dropdown which you use set the item to which the media should be added. Media *cannot* exist without an item. You can use a property in the item's metadata or its internal ID.
 
-**Generic data** also has a dropdown where you can set one of four options:
+**Generic data** has a dropdown where you can set one of four options:
 
 - *Resource template (by label):* set the template for the media by name. The name of the template as entered in the spreadsheet and the name of the template in Omeka S must match exactly.
 - *Resource class (by term):* set the resource class for the media. The term for the class in the spreadsheet and in the Omeka S installation must match exactly.
@@ -473,7 +478,7 @@ The drawer has multiple options for mapping:
 
 **Properties** select a property to map the column data to, from any of the installed vocabularies. Use the Filter field to search the available properties for a specific property.
 
-**Media source** For the column in your spreadsheet which points to the media you are creating, select which kind of media it is from the dropdown: 
+**Media source** For the column in your spreadsheet which points to the media, select which kind of media it is from the dropdown: 
 
 - HTML
 - IIIF Image (link)
@@ -498,18 +503,67 @@ Column options are in addition to mappings. If you add options without also mapp
 
 This will open a drawer on the right side of the browser window with the following options: 
 
+- **Use multivalue separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator character in the initial import page, but you can change it in the Basic Settings tab. 
 - **Language:** is a field where you can set the language for this column using the [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the language in which the text is written. This will override what you have entered in basic settings. 
 - **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values one can use when adding properties to an item:
 	- Import as text (default);
 	- Import as URL reference;
 	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
 
-![drawer with options as described above](../modules/modulesfiles/csvimport_mediaColOpt.png)
+![drawer with options as described above](../modules/modulesfiles/csvimport_mixedR2.png)
 
 To remove a column option setting, click the wrench icon again and undo your changes manually.
 
+### Mixed resources import Basic Settings
+These settings apply to the entire csv which you are importing. Note that some of these settings can be overwritten by column options in the Map to Omeka S data tab. 
 
+![options as described below](../modules/modulesfiles/csvimport_mixedRBasic.png)
 
+- **Resource Template:** select a resource template from the drop-down menu to apply to the imported item sets. You can use the search field at the top of the dropdown to narrow results or find a particular template.
+- **Class:** select a class from the drop-down menu to apply to the imported item sets. You can use the search field at the top of the dropdown to narrow results or find a particular class.
+- **Owner:** set the owner for the item sets by selecting a user from the drop-down menu. You can use the search field at the top of the dropdown to narrow results or find a particular user.
+- **Visibility:** set the visibility of the imported item sets as public  or private. 
+- **Item Set open/Closed to additions:** set whether users other than the owner (and site & global admins) will be able to add or edit the item sets.
+- **Item set for items:** select from a dropdown of existing item sets. 
+- **Multivalue Separator:** enter the multivalue separator character here, if you have used one. 
+      - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon.
+- **Language:** set the language of the values in the spreadsheet using the appropriate [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+
+### Mixed resources import Advanced Settings
+There are two options on this tab which are only for advanced use. 
+
+![Advanced settings page showing only the Action dropdown and the field for number of rows to process. ](../modules/modulesfiles/csvimport_mixedRAdv.png)
+
+#### Action
+
+This setting allows you to change the action of process from a straight import to one of the following options:
+
+- **Create a new resource:** default option. Each row in the CSV will become a new resource.
+- **Append data to the resource:** add new data to the resource.
+- **Revise data of the resource:** replace existing data in the resource with data from the csv, except if empty.
+- **Update data of the resource:** replace existing data in the resource with data from the csv, even when the cell is empty.
+- **Replace all data of the resource:** remove all properties of the resource, and fill with new information from the sheet.
+- **Delete the resource:** delete all matching resources
+
+If you select one of these options from the dropdown, three additional settings will appear on the tab. These settings help the process determine which resources to take action on.
+
+[Options described below](../modules/modulesfiles/csvimport_mixedRAdvAct.png)
+
+- **Resource identifier column:** Select from a dropdown of the columns in your CSV. This is the data from your spreadsheet which maps to existing data in your Omeka S installation. 
+- **Resource identifier property:** select from a dropdown of all properties in your Omeka S installation. This should be the property in which you already have data, that you used to create the column data above. 
+	- Example: if the data in the Resource identifier column is "Title" with the first row of data having a title "A Study in Scarlet," and you set Resource identifier property to "Dublin Core: Title," then the actions will operate on a resource already in your Omeka S installation whose dc:title property is "A Study in Scarlet".
+	- This will only work with exact matches.
+	- If you have more than one 
+- **Action on unidentified resources:** This option determines what to do when no matching resource exists in the Omeka S installation, but the selected action only applies to an existing resource ("Append", "Revise", "Update", or "Replace"). This option is not used when the main action is "Create" or "Delete" Your options are two radio buttons:
+	- Skip the row 
+	- Create a new resource
+
+#### Other advanced settings
+
+In addition to the above, the Advanced Settings tab has an option to set the number of rows to process by batch. By default this is set to 20. However, if you are running into errors with an import you may want to set it to 5 or even 1 in order to troubleshoot and determine the source of the error. 
+
+### Complete import
+Once you have completed mappings, column options, and any settings, click the Import button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]"
 
 ## Manage Past Imports
 
