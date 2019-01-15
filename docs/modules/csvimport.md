@@ -140,7 +140,16 @@ This will open a drawer on the right side of the browser window with the followi
 
 ![drawer with options as described above](../modules/modulesfiles/csvimport_ItemColOpt.png)
 
+Be sure to click the Apply Changes button at the bottom of the drawer in order to save your changes. 
+
 To remove a column option setting, click the wrench icon again and undo your changes manually.
+
+#### Batch edit
+When you select one or more rows in the table (columns from your csv file), you can use the "Batch edit options" button to apply the column options described above - multivalue separator, language, and data type - to multiple csv columns at once. 
+
+![a screenshot of the Mapping tab, with the boxes for Columns Title and Creator checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditItems.png)
+
+Be sure to click the Apply Changes button at the bottom of the drawer in order to save your changes. 
 
 ### Item import Basic Settings
 These settings apply to the entire csv which you are importing. Note that some of these settings can be overwritten by column options in the Map to Omeka S data tab. 
@@ -255,6 +264,13 @@ This will open a drawer on the right side of the browser window with the followi
 ![drawer with options as described above](../modules/modulesfiles/csvimport_ItemSetCol.png)
 
 To remove a column option setting, click the wrench icon again and undo your changes manually.
+
+#### Batch edit
+When you select one or more rows in the table (columns from your csv file), you can use the "Batch edit options" button to apply the column options described above - language, and data type - to multiple csv columns at once. 
+
+![a screenshot of the Mapping tab, with the boxes for Columns Title and Creator checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditItemSet.png)
+
+Be sure to click the Apply Changes button at the bottom of the drawer in order to save your changes. 
 
 ### Item Set import Basic Settings
 These settings apply to the entire csv which you are importing. Note that some of these settings can be overwritten by column options in the Map to Omeka S data tab. 
@@ -382,6 +398,13 @@ This will open a drawer on the right side of the browser window with the followi
 ![drawer with options as described above](../modules/modulesfiles/csvimport_mediaColOpt.png)
 
 To remove a column option setting, click the wrench icon again and undo your changes manually.
+
+#### Batch edit
+When you select one or more rows in the table (columns from your csv file), you can use the "Batch edit options" button to apply the column options described above - language, and data type - to multiple csv columns at once. 
+
+![a screenshot of the Mapping tab, with the boxes for Columns Title and Creator checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditMedia.png)
+
+Be sure to click the Apply Changes button at the bottom of the drawer in order to save your changes. 
 
 ### Media import Basic Settings
 These settings apply to the entire csv which you are importing. Note that some of these settings can be overwritten by column options in the Map to Omeka S data tab. 
@@ -514,6 +537,13 @@ This will open a drawer on the right side of the browser window with the followi
 
 To remove a column option setting, click the wrench icon again and undo your changes manually.
 
+#### Batch edit
+When you select one or more rows in the table (columns from your csv file), you can use the "Batch edit options" button to apply the column options described above - use multivalue separator, language, and data type - to multiple csv columns at once. 
+
+![a screenshot of the Mapping tab, with the boxes for Columns Title and Creator checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditMixed.png)
+
+Be sure to click the Apply Changes button at the bottom of the drawer in order to save your changes. 
+
 ### Mixed resources import Basic Settings
 These settings apply to the entire csv which you are importing. Note that some of these settings can be overwritten by column options in the Map to Omeka S data tab. 
 
@@ -608,6 +638,13 @@ This will open a drawer on the right side of the browser window with the followi
 	- Import as text (default);
 	- Import as URL reference;
 	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
+
+#### Batch edit
+When you select one or more rows in the table (columns from your csv file), you can use the "Batch edit options" button to apply the column options described above - language and data type - to multiple csv columns at once. 
+
+![a screenshot of the Mapping tab, with the boxes for Columns user checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditUser.png)
+
+Be sure to click the Apply Changes button at the bottom of the drawer in order to save your changes. 
 
 ## Manage Past Imports
 
