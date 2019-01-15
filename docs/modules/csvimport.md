@@ -655,20 +655,17 @@ To review past imports, click on the CSV Importer module tab and select the Past
 This will display a table with the following columns:
 
 - An *Undo* Checkbox
-- *JobID*
-- *Comment* entered on import
-- *Imported Content*
 - *Date* of import
+- *Action* of the import (create, append, revise, update, replace, or delete).
+	- Beneath the action description there are links to the job details and job log. 
+- *Comment* entered on import or indicating an error
+- *Result* the items updated, added, or deleted
 - *Status* of import
 - Import *Owner*
 
-![CSV Import past imports table](../modules/modulesfiles/csvimports_pastimports.png)
+![CSV Import past imports table](../modules/modulesfiles/csvimport_pastimports.png)
 
-To see the details of an import, click the Job ID number in its row. This will give you a detailed job page with Status, start and end timestamps, Class, Owner, any Args, and a link to the import log at the bottom of the page. 
-
-Confirm that the content has been imported in the Imported Content column.
-
-![A red rectangle surrounds the message of how many items were added in an import](../modules/modulesfiles/csvimport_added.png)
+To see the details of an import, click the "Job details" link below the action description. To review logs, particularly in cases where an error occurred, click the "Log" link below the action description. 
 
 ## Undo an Import
 
