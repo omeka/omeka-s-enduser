@@ -188,7 +188,7 @@ If you select one of these options from the dropdown, three additional settings 
 - **Resource identifier property:** select from a dropdown of all properties in your Omeka S installation. This should be the property in which you already have data, that you used to create the column data above. 
 	- Example: if the data in the Resource identifier column is "Title" with the first row of data having a title "A Study in Scarlet," and you set Resource identifier property to "Dublin Core: Title," then the actions will operate on a resource already in your Omeka S installation whose dc:title property is "A Study in Scarlet".
 	- This will only work with exact matches.
-	- If you have more than one 
+	- If you have more than one resource with matching data, it will only take action on the oldest resource. 
 - **Action on unidentified resources:** This option determines what to do when no matching resource exists in the Omeka S installation, but the selected action only applies to an existing resource ("Append", "Revise", "Update", or "Replace"). This option is not used when the main action is "Create" or "Delete" Your options are two radio buttons:
 	- Skip the row 
 	- Create a new resource
@@ -444,7 +444,7 @@ If you select one of these options from the dropdown, three additional settings 
 - **Resource identifier property:** select from a dropdown of all properties in your Omeka S installation. This should be the property in which you already have data, that you used to create the column data above. 
 	- Example: if the data in the Resource identifier column is "Title" with the first row of data having a title "A Study in Scarlet," and you set Resource identifier property to "Dublin Core: Title," then the actions will operate on a resource already in your Omeka S installation whose dc:title property is "A Study in Scarlet".
 	- This will only work with exact matches.
-	- If you have more than one 
+	- If you have more than one resource with matching data, it will only take action on the oldest resource. 
 - **Action on unidentified resources:** This option determines what to do when no matching resource exists in the Omeka S installation, but the selected action only applies to an existing resource ("Append", "Revise", "Update", or "Replace"). This option is not used when the main action is "Create" or "Delete" Your options are two radio buttons:
 	- Skip the row 
 	- Create a new resource
@@ -583,7 +583,7 @@ If you select one of these options from the dropdown, three additional settings 
 - **Resource identifier property:** select from a dropdown of all properties in your Omeka S installation. This should be the property in which you already have data, that you used to create the column data above. 
 	- Example: if the data in the Resource identifier column is "Title" with the first row of data having a title "A Study in Scarlet," and you set Resource identifier property to "Dublin Core: Title," then the actions will operate on a resource already in your Omeka S installation whose dc:title property is "A Study in Scarlet".
 	- This will only work with exact matches.
-	- If you have more than one 
+	- If you have more than one resource with matching data, it will only take action on the oldest resource. 
 - **Action on unidentified resources:** This option determines what to do when no matching resource exists in the Omeka S installation, but the selected action only applies to an existing resource ("Append", "Revise", "Update", or "Replace"). This option is not used when the main action is "Create" or "Delete" Your options are two radio buttons:
 	- Skip the row 
 	- Create a new resource
