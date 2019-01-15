@@ -132,7 +132,7 @@ Column options are in addition to mappings. If you add options without also mapp
 This will open a drawer on the right side of the browser window with the following options: 
 
 - **Use multivalve separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
-- **Language:** is a field where you can set the language for this column using the [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the language in which the text is written. This will override what you have entered in basic settings. 
+- **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
 - **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values one can use when adding properties to an item:
 	- Import as text (default);
 	- Import as URL reference;
@@ -163,7 +163,7 @@ These settings apply to the entire csv which you are importing. Note that some o
 - **Item Sets:** add the imported items to a specific item set or sets using the dropdown menu.
 - **Multivalue Separator:** enter the multivalue separator character here, if you have used one. 
       - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon.
-- **Language:** set the language of the values in the spreadsheet using the appropriate [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+- **Language:** set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag).
 
 ### Item import Advanced Settings
 
@@ -255,7 +255,7 @@ Column options are in addition to mappings. If you add options without also mapp
 
 This will open a drawer on the right side of the browser window with the following options: 
 
-- **Language:** is a field where you can set the language for this column using the [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the language in which the text is written. This will override what you have entered in basic settings. 
+- **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
 - **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values one can use when adding properties to an item:
 	- Import as text (default);
 	- Import as URL reference;
@@ -284,7 +284,7 @@ These settings apply to the entire csv which you are importing. Note that some o
 - **Open/Closed to additions:** set whether users other than the owner (and site & global admins) will be able to add or edit the item sets.
 - **Multivalue Separator:** enter the multivalue separator character here, if you have used one. 
       - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon.
-- **Language:** set the language of the values in the spreadsheet using the appropriate [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+- **Language:** set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag).
 
 ### Item Set import Advanced Settings
 
@@ -389,7 +389,7 @@ Column options are in addition to mappings. If you add options without also mapp
 
 This will open a drawer on the right side of the browser window with the following options: 
 
-- **Language:** is a field where you can set the language for this column using the [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the language in which the text is written. This will override what you have entered in basic settings. 
+- **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
 - **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values one can use when adding properties to an item:
 	- Import as text (default);
 	- Import as URL reference;
@@ -418,7 +418,7 @@ These settings apply to the entire csv which you are importing. Note that some o
 - **Item Sets:** add the imported items to a specific item set or sets using the dropdown menu.
 - **Multivalue Separator:** enter the multivalue separator character here, if you have used one. 
       - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon.
-- **Language:** set the language of the values in the spreadsheet using the appropriate [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+- **Language:** set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag).
 
 ### Media import Advanced Settings
 There are two options on this tab which are only for advanced use. 
@@ -527,7 +527,7 @@ Column options are in addition to mappings. If you add options without also mapp
 This will open a drawer on the right side of the browser window with the following options: 
 
 - **Use multivalue separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator character in the initial import page, but you can change it in the Basic Settings tab. 
-- **Language:** is a field where you can set the language for this column using the [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the language in which the text is written. This will override what you have entered in basic settings. 
+- **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
 - **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values one can use when adding properties to an item:
 	- Import as text (default);
 	- Import as URL reference;
@@ -557,7 +557,7 @@ These settings apply to the entire csv which you are importing. Note that some o
 - **Item set for items:** select from a dropdown of existing item sets. 
 - **Multivalue Separator:** enter the multivalue separator character here, if you have used one. 
       - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon.
-- **Language:** set the language of the values in the spreadsheet using the appropriate [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+- **Language:** set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag).
 
 ### Mixed resources import Advanced Settings
 There are two options on this tab which are only for advanced use. 
@@ -633,7 +633,7 @@ Column options are in addition to mappings. If you add options without also mapp
 
 This will open a drawer on the right side of the browser window with the following options: 
 
-- **Language:** is a field where you can set the language for this column using the [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the language in which the text is written. This will override what you have entered in basic settings. 
+- **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
 - **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values one can use when adding properties to an item:
 	- Import as text (default);
 	- Import as URL reference;
