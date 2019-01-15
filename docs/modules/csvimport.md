@@ -566,8 +566,48 @@ In addition to the above, the Advanced Settings tab has an option to set the num
 Once you have completed mappings, column options, and any settings, click the Import button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]"
 
 ## Import Users
-*start writing here!*
+When importing users, you can only bring in data related to the user table in Omeka S: the user's email, display name, and role. Any additional data in your CSV will not be imported.
 
+### Map user import to Omeka S data
+This is the only active tab for User import. The Basic and Advanced settings tabs are present but empty.
+
+This tab displays an initial dropdown above a table with the columns from your spreadsheet as rows. Each row displays:
+
+- a Checkbox
+- Column header from the spreadsheet
+- A plus symbol button for adding or modifying a mapping
+- A wrench symbol button for spreadsheet column options
+- A trash can to delete mappings
+- A column to show options selected
+
+![Table as described above, with rows for User, email, and role.](../modules/modulesfiles/csvimport_users.png)
+
+#### Mapping options
+
+To map a column header to a vocabulary property, click on the plus symbol button to the left of the column header. This will open a drawer on the right-hand side of the screen. 
+
+[A red arrow points to the plus sign button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapButton.png)
+
+The drawer has a dropdown for Users info, with three options:
+
+- *Email:* the email address for the user;
+- *Display name:* the user's display name
+- *Role:* the user's [role](../admin/users/#roles-and-permissions) - for this column, use the role labels exactly as they appear in Omeka S. 
+
+#### Column options
+To access options for data in a column of your csv (represented by a row in the import table), click the wrench icon for that column heading. 
+
+[A red arrow points to the wrenchn button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapOptions.png)
+
+Column options are in addition to mappings. If you add options without also mapping column data to resource, media, or other data, nothing will be imported. 
+
+This will open a drawer on the right side of the browser window with the following options: 
+
+- **Language:** is a field where you can set the language for this column using the [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the language in which the text is written. This will override what you have entered in basic settings. 
+- **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values one can use when adding properties to an item:
+	- Import as text (default);
+	- Import as URL reference;
+	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
 
 ## Manage Past Imports
 
