@@ -682,4 +682,19 @@ The following are known errors that can occur during an import:
 
 - **Encoding**: CSVs for import must be UTF-8 encoded. 
 
+## CSV Import with other modules
+Some other modules add functionality to CSV import. 
+
+### Mapping
+If you have [Mapping](../modules/mapping/) installed and active, you will have two additional options in the "Map to Omeka S data" tab when importing Items. Note that these options do not appear for any other import, including Mixed Resources. 
+
+**Resource location:** set the location for the resource. Your column for this option can include one of the following forms of data:
+
+- *Latitude* must be written as a single number (23.43 not 23° 26′).
+- *Longitude* must be written as a decimal fraction using negative and positive to indicate west or east. (−91 rather than 91°W) 
+- *Latitude/longitude* must be inputted as numbers separated by a slash, ex `52.19/ -1.71`
+
+![dropdown with the options described above]()
+
+
 
