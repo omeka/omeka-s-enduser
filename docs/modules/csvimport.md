@@ -683,7 +683,7 @@ The following are known errors that can occur during an import:
 - **Encoding**: CSVs for import must be UTF-8 encoded. 
 
 ## CSV Import with other modules
-Some other modules add functionality to CSV import. 
+Some other modules add functionality to CSV import. If you have these modules installed and active, you will have access to the following options when using CSV import.
 
 ### Mapping
 If you have [Mapping](../modules/mapping/) installed and active, you will have two additional options in the "Map to Omeka S data" tab when importing Items. Note that these options do not appear for any other import, including Mixed Resources. 
@@ -704,3 +704,12 @@ If you have [Mapping](../modules/mapping/) installed and active, you will have t
 - *Map center latitude* must be written as a single number (23.43 not 23° 26′).
 - *Map center longitude* must be written as a decimal fraction using negative and positive to indicate west or east. (−91 rather than 91°W) 
 - *Default zoom* should be a number between 1 (most zoomed out) and 18 (most zoomed in)
+
+### File Sideload
+If you have [File Sideload](../modules/filesideload) installed and active, you can use it as a source for media when running a csv import.
+
+Everything on the *Map to Omeka S data* tab will be the same. When you add a mapping and choose the "Media source" option, you will see that there is now an option for "Sideload"
+
+![Dropdown menu for media source, with Sideload highlighted in blue](../modules/modulesfiles/csvimport_sideload.png). 
+
+For the data in this column, you need to include the full file name, including extension. So, for example, if you want to import a jpg file which is named "Jekyll_and_Hyde_Title" then the data in the media column of the csv you are importing should be `Jekyll_and_Hyde_Title.jpg`.
