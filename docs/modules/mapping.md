@@ -6,6 +6,8 @@ Mapping is a [module](../modules/index.md) for Omeka S which allows you to geolo
 
 To install Mapping, follow the instructions for [Installing Modules](../modules/index.md#installing-modules) on the Modules documentation.
 
+Mapping is compatible with [CSV Import](../modules/csvimport.md). 
+
 ## Adding Geolocation to an Item
 
 To add a map to a new or existing item, click to edit the item. Navigate to the  _Mapping_ tab to add a map to the item. Selecting the tab will open the map interface.

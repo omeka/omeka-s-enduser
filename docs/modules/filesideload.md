@@ -6,6 +6,8 @@ date: November 2016
 
 This module adds the ability to add media files that are already stored on the server where your Omeka S installation lives. 
 
+File Sideload is compatible with [CSV Import](../modules/csvimport.md). 
+
 Create a Directory
 -----------------------
 Create a directory (folder) on your server. It can be within the File Sideload module directory or on the same level as the Omeka S installation. 
