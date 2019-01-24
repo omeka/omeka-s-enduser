@@ -686,7 +686,7 @@ The following are known errors that can occur during an import:
 Some other modules add functionality to CSV import. If you have these modules installed and active, you will have access to the following options when using CSV import.
 
 ### Mapping
-If you have [Mapping](../modules/mapping/) installed and active, you will have two additional options in the "Map to Omeka S data" tab when importing Items. Note that these options do not appear for any other import, including Mixed Resources. 
+If you have [Mapping](../modules/mapping/) (minimum version 1.1.0) installed and active, you will have two additional options in the "Map to Omeka S data" tab when importing Items. Note that these options do not appear for any other import, including Mixed Resources. 
 
 ![Add mapping drawer with additional options for "Resource location" and "default map view"](../modules/modulesfiles/csvimport_mapping1.png)
 
@@ -698,7 +698,6 @@ If you have [Mapping](../modules/mapping/) installed and active, you will have t
 
 ![dropdown with the options described above](../modules/modulesfiles/csvimport_mapping2.png)
 
-
 **Default map view:** sets the default map view for the item to which you are adding Mapping information. 
 
 - *Map center latitude* must be written as a single number (23.43 not 23° 26′).
@@ -706,7 +705,7 @@ If you have [Mapping](../modules/mapping/) installed and active, you will have t
 - *Default zoom* should be a number between 1 (most zoomed out) and 18 (most zoomed in)
 
 ### File Sideload
-If you have [File Sideload](../modules/filesideload) installed and active, you can use it as a source for media when running a csv import.
+If you have [File Sideload](../modules/filesideload) (minimum version 1.1.0) installed and active, you can use it as a source for media when running a csv import.
 
 Everything on the *Map to Omeka S data* tab will be the same. When you add a mapping and choose the "Media source" option, you will see that there is now an option for "Sideload"
 
