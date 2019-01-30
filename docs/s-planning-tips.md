@@ -1,53 +1,39 @@
-In Omeka S, you will build sites from scratch after creating a body of resources (items, item sets) with which to populate your site. However, you may want to start thinking about the structure of your site even before you begin creating resources.
+---
+title: Site Planning tips for Omeka S
+---
 
-Before you start building out a site in Omeka S, it is useful to sketch out an outline or simple [wireframes] to help plan the arrangement of content and to determine how you want your audiences to access and use that content in the website.
+In Omeka S, you build your [sites] page by page, using already existing resources on your installation. While it is best to have some resources before you start building out the pages, you can begin planning your site before you create the first item or item set.
 
-Planning for the content first will help you think about the ways that Omeka can work best for you throughout different stages of the project. 
+What follows are some questions and ideas to help guide you as you plan your sites in Omeka S.
 
-## Questions to ask while planning a site
-These questions will help with those planning steps.
-
-**What are the primary goals of the site?**
+## Site audience and goals
 
 **Who is the primary audience of this site?** Being specific will help you shape the site; "people interested in historic architecture" is much more useful than "the general public." Do you have secondary audiences? What do you want these specific audiences to accomplish when they come to the site?
 
-**What sections will this site include**? 
-On creation, an Omeka S site will include navigation options for:
-- Custom URL
-- Browse
-- Browse item sets
-- Welcome (a page with a single HMTL block)
+**What are the goals of your site?** What do you want your specific audiences to accomplish when they come to the site? What do you want people to take away from the site? What content do you want to highlight?
 
-You do not have to use any of these pages or links. How do you want to structure your site? What are the main sections (parent pages) and subsections (child pages)?
+## Resources
 
-Something about BLOCKS goes here (
-And about PAGES 
+**What will you do with items in this website?**
+[Items] are the building blocks of Omeka S. What sort of [resource templates] will you want to create and use to fully describe your items? Any item you include on an Omeka S will have a public item show page, so try to ensure that the information in an item's metadata can stand on its own. 
 
+**What will you do with item sets?**
+You can use [item sets] to group items to be included on a [site], and they can be a way to guide visitors' browsing on your sites. For some sites, item sets are robust resources themselves.
 
-**What will I do with resources in this website?**
-Items are the building blocks of Omeka S. What sort of [resource templates] will you want to create and use to fully describe your items? Any item you include on an Omeka S will have a public item show page, so try to ensure that the information in an [item's] metadata can stand on its own. 
+How do you want to group items into sets? What metadata fields will your item sets use? Do your item sets have relations to each other or to items?
 
-- Determine the types of items/sources/objects you plan to use in this site, for example videos, documents, images, audio files.
-- What sort of [resource templates] will you want to create and use to fully describe your items?
-- Do you need additional [vocabularies] to describe your items?
+**What do you want your data to do?**
+What properties are you going to want to consistently describe in your site? Do you want some of these to display with a different label - for example 'author' instead of 'creator' for books? Use a [resource template]
 
-ITEM SETS
+In Omeka S, items and item sets can use other resources - items, item sets, and media - as properties; for example, you can make an item for William Shakespeare and have that item fill the 'creator' property for a 'Hamlet' item. How can your resources use this functionality?
 
-Using your own resources
+Do you want to use a set of terms (controlled vocabulary) for certain items? You might want to use [Custom Vocab]. Or do you want to use a terms list created by the Library of Congress or the Getty? Then you might use [Vocab Suggest].
 
-Think about how you might structure the metadata for your resources, both in terms of resource templates but also modules, for example:
+## Building a site
+With Omeka S you will build your site from the ground up, which means you need to give some thought to how you want to organize your site. 
 
-- Do you want to use subject headings or descriptive categories from an existing schema? Try the [ValueSuggest](modules/valuesuggest/)module.
-- Would you like to establish your own Controlled Vocabulary for specific metadata fields, to make it easier for you team to enter consistent data? Use the [Custom Vocab](modules/customvocab/) module.
-- Do you want to display items on a map, or associate an item with multiple locations? Use the [Mapping] module.
+What pages do you want to include? What kind of content do you want on these pages? How do you want to arrange them? Try sketching out a sample menu or wireframes for the site. Use that as a guide as you build your pages.
 
-Think about how you want to display items, and how you want user to interact with resources and the site:
+Pages are made up of [blocks], which can include text, images, and much more. What kind of content do you want on the pages you build? Bear in mind that you can rearrange page blocks as you build, so you can play around with the order of the content on your pages if you need to.
 
-- Do you want to display items on a map, or associate an item with multiple locations? Use the [Mapping] module.
-- Are you interested in collecting materials from your visitors through a web form, such as a story or textual reflection, photos, videos, et al. Install the [Collecting] module.
-- Do you want users to be able to share items from your site on social media? Try the Sharing module. 
-
-## Try Omeka S before installing
-Experiment with Omeka S on the [sandbox](https://omeka.org/s/download/#sandbox), an installation pre-populated with items, item sets, resource templates, and a few sites. Sandbox content is reset every Monday, Wednesday, Friday, and Sunday.
-
-
+How do you want to interact with your visitors on your site? Do you want to [collect] resources from your visitors? Allow them to [share] your content on social media? 
