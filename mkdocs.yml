@@ -34,6 +34,7 @@ pages:
         - 'CSV Import': 'modules/csvimport.md'
         - 'Custom Vocab': 'modules/customvocab.md'
         - 'DSpace Connector': 'modules/dspaceconnector.md'
+        - 'Extract Text' : 'modules/extracttext.md'
         - 'Fedora Connector': 'modules/fedoraconnector.md'
         - 'File Sideload': 'modules/filesideload.md'
         - 'Mapping': 'modules/mapping.md'
