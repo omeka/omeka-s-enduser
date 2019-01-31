@@ -52,17 +52,21 @@ The Collecting module has Prompt Types with options as follows:
 	     - If you choose "Select menu," you will need to enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
 	 - Item resource (will appear as dropdown)
 		 - This will offer the user the choice of existing items to add as a property value. You can paste anything after the `admin/` in the url of an advanced search to load specific items.
+		 - [Custom Vocab](../modules/customvocab/) (requires that plugin to be installed)
+			 - If selected, an additional dropdown will load. Use this to select from your existing Custom Vocabs. This will load as a dropdown for the users on the public side of the form.
  - Required? check if this field should be required.
 
 **Item Media** allows visitors to add media to their item.
+Media Type: options are 
 
-- Media Type: options are 
-	- Map (requires Mapping module); 
-	- URL
-	- HTML
-	- Upload
+- Upload one, which allows users to upload one file;
+- Upload multiple, which allows users to upload multiple files at once using the browser's native file picker (with shift or control keys); 
+- Map (requires Mapping module); 
+- URL;
+- HTML.
 - Prompt Text: If you want the prompt to be something other than the property label.
-- Required? check if the media should be required
+
+Check the Required? box if the media should be required
 
 **Item Supplementary** additional information for the item, not linked to any particularly vocabulary or property.
 
