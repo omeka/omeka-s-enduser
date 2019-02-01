@@ -13,7 +13,6 @@ In order to install Omeka S, you will need a server running the following:
 - PHP 5.6+ (latest stable version preferred, with [PDO](http://php.net/manual/en/intro.pdo.php), [pdo_mysql](http://php.net/manual/en/ref.pdo-mysql.php), and [xml](http://php.net/manual/en/intro.xml.php) extensions installed)
 - Optional, to create thumbnails: ImageMagick version 6.7.5 or greater, the PHP `imagick` extension, or the PHP `gd` extension
 
-
 ## Installing from released zip file
 NB: Before you install Omeka S, you need to create a MySQL database and user. Omeka S must have a dedicated database (you cannot use a prefix for a database used by another system or Omeka S or Classic installation). For more information on creating a database and user, please see your hosting's support documentation or talk to your system administratory.
 
@@ -57,3 +56,18 @@ See [Configuration Options](configuration) for information on settings for thumb
 1. Remove all Omeka S files, and replace them with the files from the updated zip file.
 1. Replace your original `/config/local.config.php` and `/config/local/database.ini` file, and the /modules, /themes`, and `/files` directories that you copied.
 1. In your web browser, go to your site's admin page (yoururl/admin) and run any migrations that are needed.
+
+## Install on Windows or Mac OS (basic development purpose only)
+Omeka S does not support proprietary or closed source operating systems. Nevertheless, for basic development purposes or for quick training, and if you cannot install Linux on your computer or as a virtual machine, Omeka can run with [WAMP](http://www.wampserver.com), [MAMP](https://www.mamp.info) and similar tools ([easy-php](http://www.easyphp.org)), etc.
+
+Beforehand, follow all the previous points. When ready, Omeka S needs one or two params in the config file `config/local.config.php` to work.
+
+First, the php path may need to be set if php is not available in the environment path. So, edit the config file and fill the `phpcli_path`. Under Windows, it may be `C:\xampp\php\php.exe`, depending on you install.
+
+Second, you need to config Omeka S in order to use the thumbnailer that is available in your server. So, edit the config file and, at your choice:
+
+- replace the default thumbnailer `Omeka\File\Thumbnailer\ImageMagick` by `Omeka\File\Thumbnailer\Gd`.
+- replace the default thumbnailer `Omeka\File\Thumbnailer\ImageMagick` by `Omeka\File\Thumbnailer\Imagick`, and enable Imagick in the file `php.ini` of your server via the server admin interface or directly in the file.
+- keep the default thumbnailer, but install the command line tool `imagemagick` and set its directory as value of `imagemagick_dir`. To install imagemagick, see the documentation of your server.
+
+To make your choice, [GD](https://secure.php.net/manual/en/intro.image.php) is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png), but not for other file types, like pdf. [Imagick and ImageMagick](https://www.imagemagick.org) are the same library and can create thumbnails for more than 200 formats, images or not. The difference is that the first is integrated in php and generally older than the command-line version. Furthermore, the first one is limited by the resources defined for php, but not the second, that can generally manage very large files.
