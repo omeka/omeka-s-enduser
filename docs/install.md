@@ -58,16 +58,16 @@ See [Configuration Options](configuration) for information on settings for thumb
 1. In your web browser, go to your site's admin page (yoururl/admin) and run any migrations that are needed.
 
 ## Install on Windows or Mac OS (basic development purpose only)
-Omeka S does not support proprietary or closed source operating systems. Nevertheless, for basic development purposes or for quick training, and if you cannot install Linux on your computer or as a virtual machine, Omeka can run with [WAMP](http://www.wampserver.com), [MAMP](https://www.mamp.info) and similar tools ([easy-php](http://www.easyphp.org)), etc.
+Omeka S does not support proprietary or closed source operating systems. However, for **basic development purposes** or for quick training, Omeka can run with [WAMP](http://www.wampserver.com), [MAMP](https://www.mamp.info) or similar tools.
 
-Beforehand, follow all the previous points. When ready, Omeka S needs one or two params in the config file `config/local.config.php` to work.
+Follow the standard installation instructions. You will need to make the following [configuration](../configuration/) changes to the file `config/local.config.php` to work.
 
-First, the php path may need to be set if php is not available in the environment path. So, edit the config file and fill the `phpcli_path`. Under Windows, it may be `C:\xampp\php\php.exe`, depending on you install.
+First, the php path may need to be set if php. Edit the config file and fill the `phpcli_path` at line 12 with the appropriate path for your operating system.
 
-Second, you need to config Omeka S in order to use the thumbnailer that is available in your server. So, edit the config file and, at your choice:
+Second, you need to configure Omeka S to use the thumbnailer which is available in your server. Edit the `local.config.pgp` file with the following, based on what is available for your system:
 
 - replace the default thumbnailer `Omeka\File\Thumbnailer\ImageMagick` by `Omeka\File\Thumbnailer\Gd`.
 - replace the default thumbnailer `Omeka\File\Thumbnailer\ImageMagick` by `Omeka\File\Thumbnailer\Imagick`, and enable Imagick in the file `php.ini` of your server via the server admin interface or directly in the file.
 - keep the default thumbnailer, but install the command line tool `imagemagick` and set its directory as value of `imagemagick_dir`. To install imagemagick, see the documentation of your server.
 
-To make your choice, [GD](https://secure.php.net/manual/en/intro.image.php) is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png), but not for other file types, like pdf. [Imagick and ImageMagick](https://www.imagemagick.org) are the same library and can create thumbnails for more than 200 formats, images or not. The difference is that the first is integrated in php and generally older than the command-line version. Furthermore, the first one is limited by the resources defined for php, but not the second, that can generally manage very large files.
+[GD](https://secure.php.net/manual/en/intro.image.php) is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). [Imagick and ImageMagick](https://www.imagemagick.org) are the same library and can create thumbnails for more than 200 formats. The difference is that the first is integrated in php and generally older than the command-line version.
