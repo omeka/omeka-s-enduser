@@ -22,4 +22,4 @@ Additions and significant changes should be created in a branch and submitted as
   
 **Links** should be composed as relative to the current file. 
  
-**Images** for a file go into the files director of the directory in which the file sits (so, for content files, images go into the `contentimages` directory). 
+**Images** for a file go into the `files` directory of the directory in which the file sits (so, for content files, images go into the `contentimages` directory). 
