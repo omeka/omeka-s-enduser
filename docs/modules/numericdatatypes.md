@@ -40,7 +40,7 @@ If you enter a day without a month, the day information will not be saved.
 
 ![Empty timestamp fields, for property Date](../modules/modulesfiles/ndt-timestamp1.png)
 
-Clicking on the "time" button to the right of the day input field will load additional fields for Hour, Minute, and Second. Note that there is no AM/PM option so you will want to use twenty-four hour time entries (14 for 2pm, etc)
+Clicking on the "time" button to the right of the day input field will load additional dropdown fields for Hour, Minute, and Second. Note that there is no AM/PM option so you will want to use twenty-four hour time entries (14 for 2pm, etc)
 
 ![Empty timestamp fields, for property Date, with a row of time entry options below the date entry options](../modules/modulesfiles/ndt-timestamp2.png)
 
@@ -49,7 +49,7 @@ Entries must be whole numbers, with no decimal points.
 ### Integer data
 An integer property has a narrow input which, once you have data in it, will display up and down arrows on the right hand side to  increase or decrease the value.
 
-![Field for property Spatial Coverage with the number 1 in the integer entry field, and up or down toggle button on the right side of the field](../modules/modulesfiles/ndt-timestamp2.png)
+![Field for property Spatial Coverage with the number 1 in the integer entry field, and up or down toggle button on the right side of the field](../modules/modulesfiles/ndt-integer.png)
 
 Your entry must be whole number; decimal points are not supported and will be rounded up to the nearest number. 
 
