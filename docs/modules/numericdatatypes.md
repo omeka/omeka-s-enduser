@@ -53,7 +53,7 @@ An integer property has a narrow input which, once you have data in it, will dis
 
 Your entry must be whole number; decimal points are not supported and will be rounded up to the nearest number. 
 
-## Duration data
+### Duration data
 A Duration property has a series of fields in which to enter the duration of the resource. There are fields for:
 
 - Years
@@ -62,22 +62,38 @@ A Duration property has a series of fields in which to enter the duration of the
 - Hours
 - Minutes
 - Seconds
+By default, only the first three of these fields display. Clicking on the "time" button to the right of the day input field will load the fields for Hour, Minute, and Second. Note that there is no AM/PM option so you will want to use twenty-four hour time entries (14 for 2pm, etc)
 
-![A property labelled duration, using the vocabulary dcterms "extent". There fields described are in a stack, with year on top.](../modules/modulesfiles/ndt-durationpng)
+![A property labelled duration, using the vocabulary dcterms "extent". There fields described are in a stack, with year on top.](../modules/modulesfiles/ndt-duration.png)
 
 You do not need to enter every field. For example, you can enter a duration of 1 year and 5 days, leaving the month field blank.
 
-## Interval data
+### Interval data
 Interval data allows you to enter the beginning and end dates for a resource. There are two sets of timestamp fields, one for the start date and one for the end. 
 
 ![Interval property with no times entered](../modules/modulesfiles/ndt-interval.png)
 
+## Sorting 
+Once you have active resource templates using numeric data types, you can use these to sort on the Item, Media, and Item Set browse views. 
+
+Click the first dropdown on the upper right above the table of resources, which defaults to "Created"
+
+![A closeup of the options above the resource table, with a red arrow points to the "created" dropdown option"](../modules/modulesfiles/ndt-browsesort1.png)
+
+Clicking on this dropdown will reveal multiple options, including all of the properties using numeric data types. These options display as the property with the data type in parentheses, for example "Date (numeric:timestamp)" 
+
+![The contents of the dropdown, with the normal options in addition to eight properties using numeric data types.](../modules/modulesfiles/ndt-browsesort2.png)
+
 ## Numeric data search
 When the module is active, it adds additional search options to the Advanced Search for items. 
 
-For each search option, you must select a specific property from the dropdown; if you are using Duration in two resource templates, one for film (ex `time:hasDuration`) and one for events (ex, `dcterms:extent`), you would need to select the correct property from the resource template which you want to search.
-
 ![Numeric data type search options, no data entered](../modules/modulesfiles/ndt-search.png)
+
+For each search option, you must select a specific property from the dropdown; if you are using Duration in two resource templates, one for film (ex `time:hasDuration`) and one for events (ex, `dcterms:extent`), you would need to select the correct property from the resource template which you want to search. The dropdown will display the original property labels (`Extent` or `hasDuration` in the examples above). If you hover over the properties in the dropdown, it will show you the resource templates which are using that property and to which the search will apply.
+
+
+![Close up of the "Date comes before" search, displaying the hovertext for the Date property](../modules/modulesfiles/ndt-searchhelper.png)
+
 
 **Timestamp** data has two search options, one for "Date comes before" and "Date comes after". Select the property for timestamp from the dropdown - only properties which are being used for timestamp will appear in the dropdown. 
 
