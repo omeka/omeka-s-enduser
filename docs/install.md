@@ -19,7 +19,7 @@ NB: Before you install Omeka S, you need to create a MySQL database and user. Om
 1. Download the latest release from the release page
 1. Open config/database.ini and add your MySQL username, password, database name, and host name. The user and database must be created before this step.
 1. Make sure the files/ directory is writable by Apache.
-1. In your web browser, navigate to the admin page for your omeka-s installation, where you can complete installation.
+1. In your web browser, navigate to the admin page for your Omeka S installation (yoururl/admin), where you can complete installation.
 
 ## Initial setup
 Once you have successfully installed and configured the database.ini file, you can navigate to the admin location of your Omeka S installation. If your installation is `/myomekas/` then your admin dashboard would be located at `/myomekas/admin`
