@@ -21,9 +21,9 @@ The Add Collecting Form page has two sections: the first has a set of fields and
 ![Add Collecting Form page](../modules/modulesfiles/collecting_addform.png)
 
 #### Fields and Settings
-- *Label*: name the collecting form. The label will appear as a header above the form on the public side, so the label should be descriptive and helpful to both you and site visitors. 
-- *Item Set*: select the item set to which you want to add collected items.
-- *Anonymity Type*: a dropdown with three options:
+- *Label:* name the collecting form. The label will appear as a header above the form on the public side, so the label should be descriptive and helpful to both you and site visitors. 
+- *Item Set:* select the item set to which you want to add collected items.
+- *Anonymity Type:* a dropdown with three options:
      - "User sets own anonymity": users can decide whether they contribute anonymously and whether their items can be published).
      - "User Public and User Name inputs are publicly visible": both the user's name and their items will be made public
      - "User Public and User Name inputs are private": both inputs remain public. 
@@ -33,7 +33,7 @@ The Add Collecting Form page has two sections: the first has a set of fields and
 #### Prompts
 Prompts are listed in a table which gives their *Type* and the display *Text* on the public form. These prompts make up the form which site visitors will see (in addition to the label, discussed above).
 
-To add a new prompt, click the *Add prompt* button just below the Prompts header. This will open a side drawer with a dropdown to select prompt type.
+To add a new prompt, click the *Add prompt* button just below the Prompts header. This will open a side drawer with a dropdown to select Prompt type.
 
 On selection, the options for that type will load in the sidebar for you to edit, with a Save Changes button at the bottom of the options. 
 
@@ -52,21 +52,25 @@ The Collecting module has Prompt Types with options as follows:
 	     - If you choose "Select menu," you will need to enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
 	 - Item resource (will appear as dropdown)
 		 - This will offer the user the choice of existing items to add as a property value. You can paste anything after the `admin/` in the url of an advanced search to load specific items.
-		 - [Custom Vocab](../modules/customvocab/) (requires that plugin to be installed)
-			 - If selected, an additional dropdown will load. Use this to select from your existing Custom Vocabs. This will load as a dropdown for the users on the public side of the form.
- - Required? check if this field should be required.
+	 - [Custom Vocab](../modules/customvocab/) (requires that plugin to be installed). If selected, an additional dropdown will load. Use this to select from your existing Custom Vocabs. This will load as a dropdown for the users on the public side of the form.
+	 - If you have [Numeric data types](../modules/numericdatatypes/) installed, you will also have the options:
+		 - Numeric timestamp
+		 - Numeric interval
+		 - Numeric duration
+		 - Numeric integer
+ - Check the Required? box if the prompt is required.
 
 **Item Media** allows visitors to add media to their item.
-Media Type: options are 
+Media Type: 
 
-- Upload one, which allows users to upload one file;
-- Upload multiple, which allows users to upload multiple files at once using the browser's native file picker (with shift or control keys); 
-- Map (requires Mapping module); 
-- URL;
-- HTML.
+- A dropdown for Media type, with the following options:
+	- Upload one, which allows users to upload one file;
+	- Upload multiple, which allows users to upload multiple files at once using the browser's native file picker (with shift or control keys); 
+	- Map (requires Mapping module); 
+	- URL;
+	- HTML.
 - Prompt Text: If you want the prompt to be something other than the property label.
-
-Check the Required? box if the media should be required
+- Check the Required? box if the prompt is required.
 
 **Item Supplementary** additional information for the item, not linked to any particularly vocabulary or property.
 
@@ -76,17 +80,17 @@ Check the Required? box if the media should be required
      - Text box (multiple line)
      - Select menu (dropdown)
 	     - If you choose "Select menu," you will need to enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
- - Required? check if this field should be required.
+ - Check the Required? box if the prompt is required.
 
 **User Name** which will be used to assign the item owner. If the person using the form is a logged-in user of the Omeka S installation, this will autopopulate.
 
 - Prompt Text: If you want the prompt to be something other than the property label.
-- Required? check if this field should be required.
+- Check the Required? box if the prompt is required.
 
 **User Email** where the person adding the item can give their email. If this is left blank, they will not receive an email with the text in the *Email Text* field.
 
 - Prompt Text: If you want the prompt to be something other than the property label.
-- Required? check if this field should be required.
+- Check the Required? box if the prompt is required.
 
 **User Private** collect additional information from the user which will be kept private.
 
@@ -96,7 +100,7 @@ Check the Required? box if the media should be required
      - Text box (multiple line)
      - Select menu (dropdown)
 	     - If you choose "Select menu," you will need to enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
- - Required? check if this field should be required.
+ - Check the Required? box if the prompt is required.
 
 **User Public** collect additional information from the user which can be made public
 
@@ -106,11 +110,11 @@ Check the Required? box if the media should be required
      - Text box (multiple line)
      - Select menu (dropdown)
 	     - If you choose "Select menu," you will need to enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
- - Required? check if this field should be required.
+ - Check the Required? box if the prompt is required.
 
 **HTML** insert a block of HTML text into the form, for additional guidance, information, etc. The Prompt Text field for this prompt has WYSIWG formatting options.
 
-Rearrange the order of prompts by dragging and dropping them using the three-line icon on the far left of the Prompt Type label.
+You can rearrange the order of prompts by dragging and dropping them using the three-line icon on the far left of the Prompt Type label.
 
 ![Prompts with a red arrow pointing to the icon for dragging and dropping](../modules/modulesfiles/collecting_dragthis.png)
 
