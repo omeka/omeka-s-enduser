@@ -17,8 +17,8 @@ Staying on the Modules tab, click the Configure button for the Scripto module.
 
 On the Configuration page, enter the url for your MediaWiki API endpoint; this should be something like `<your mediawiki url>/api.php`. 
 
-### Creating an item set
-The Scripto module uses item sets to manage the content coming to and from your Omeka installation. 
+### Create an item set
+The Scripto module uses [item sets](../content/item-sets) to manage the content coming to and from your Omeka installation. 
 
 Each Scripto project needs an item set with which it can synch. You can add items to this item set later if you need to. 
 
@@ -26,7 +26,7 @@ Each Scripto project needs an item set with which it can synch. You can add item
 
 In addition to an Omeka S user account, any individual working on Scripto will need to have a MediaWiki user account as well.
 
-In order to change the status of transcriptions and sync projects to and from Omeka S, users must have Bureaucrat level permissions on the MediaWiki installation. This must be done on MediaWiki and cannot be managed through the Scripto dashboard on Omeka S.
+In order to change the status of transcriptions and sync projects to and from Omeka S, users must have Bureaucrat level permissions on the MediaWiki installation. This *must be done on MediaWiki* and cannot be managed through the Scripto dashboard on Omeka S.
 
 You may find it easiest to have administrators of Scripto projects use the same or similar user names on both installations, in order to keep track of who is doing what. 
 
@@ -36,13 +36,15 @@ The Scripto tab which appears under the Modules section of the left-hand navigat
 - Log in to Scripto using the bar across the top. If you are logged in, this bar will display your username, links to your contributions and watchlist, and the option to log out of Scripto.
 - Quickly see the projects you own and the projects you review.
 - See your recent contributions and activity on items on your watchlist. 
-- From the dropdown in the upper right, browse all projects, add a new project, and browse all Scripto users. 
+- From the dropdown in the upper right: browse all projects, add a new project, and browse all Scripto users. 
 
 ![Scripto dashboard with three projects, two of which the user reviews, and a series of recent contributions.](../modules/modulesfiles/scripto_dash.png)
 
 
 ## Public and Admin views
-To toggle between the public and admin views of a project, delete the `/admin` from the url of any Scripto site, or add it in directly after the name of your Omeka S installation.
+To toggle between the public and admin views of a project, delete the `/admin` from the url of any Scripto site, or add it in directly after the name of your Omeka S installation. 
+
+The admin side is `youromekaurl.net/admin/scripto` and the public side is `youromekaurl.net/scripto`.
 
 ## Creating a Project
 To create a new Scripto project, go to the Scripto dashboard (the Scripto tab in the left-hand navigation) and use the dropdown menu in the upper right corner to select "add new project"
@@ -56,12 +58,37 @@ You can change these settings at any time by editing the project.
 **Configuration options**
 
 - Title (required): the name of the Scripto project. This will display on public and admin sides.
-- Description: a description of the project. This will display on public and admin sides.
-- Guidelines: transcription guidelines. These can be formatted using the WYSIWYG editor which will appear when typing inside this field. 
 - Item set (required): select the item set with which the Scripto project should synch. This item set should contain all the items and/or media you wish to include in the project. 
-- Import target: select the resource to store data when it is pushed from the Scripto project back to Omeka S metadata. Options are Item and Media, Item, or Media.
 - Property (required): select from the dropdown which property should store the content created through Scripto and imported back into Omeka S metadata. In addition to installed [Vocabularies](https://omeka.org/s/docs/user-manual/content/vocabularies/), Scripto has its own vocabulary options of content, transcription, and translation. 
+- Description: a description of the project. This will display on public and admin sides.
+- Guidelines: transcription guidelines. These can be formatted using the WYSIWYG editor which will appear when typing inside this field.
 - Language tag: the language tag for the content being imported into the property selected above.
+- Import target: select the resource to store data when it is pushed from the Scripto project back to Omeka S metadata. Options are Item and Media, Item, or Media.
+- Browse layout: choose the default browse layout for the project, either Grid or List.
+- Item Type: if you want, you can specify the type of item used in this project. What you select here will change the interface language for users. For example, if you choose "manuscript" then the browse link for the project will display as "browse manuscripts" instead of "browse items". Choose from:
+	- Generic Item (default)
+	- Audio
+	- Book
+	- Document
+	- Journal 
+	- Manuscript
+	- Paper
+	- Video
+- Media Type: use this dropdown to specify the type of media used in the project, and change the way that media is referred to in scripto for this project. Choose from:
+	- Generic Media
+	- Entry
+	- Folio
+	- Image
+	- Page
+	- Section
+	- Segment
+	- Sheet
+- Content Type: use this to specify the kind of work in the project. Choose from:
+	- Generic Content
+	- Description
+	- Transcription
+	- Translation
+
 
 ![Add New Project window open to the "Configuration" tab - all fields are blank](../modules/modulesfiles/scripto_newconfig.png)
 
@@ -73,6 +100,7 @@ On the right-hand side of the window is a browsable list of Omeka S users, sorte
 To remove a user as reviewer, click the trash can icon to the right of their email address in the table of reviewers.  
 
 ![Add New Project window open to the "Reviewers" tab - the page is largely blank, with an alphabetical menu down one side.](../modules/modulesfiles/scripto_newrev.png)
+
 
 Click "Add" to create the new project.
 
@@ -98,18 +126,27 @@ The sidebar on the right summarizes the metadata for the project. The project ti
 
 In the main work area is a table with all of the items in the project, with the following information:
 
-- Item (first media thumbnail and title)
+- Item* (first media thumbnail and title)
 - Ellipses to see item metadata - this will open in a drawer on the right
 - Date synced: date most recently synced.
 - Last edited. If the item's media has not been edited, this will be blank
-- Media count: number of media associated with the item
+- Media* count: number of media associated with the item
 - Status: item status, which will be blank, completed, or approved.
+
+*NB: If you changed the Item, Media, or Content in the project configuration, then you will see the terms you selected instead of "item" or "media"
 
 Above the table are options to:
 
 - search items and media in the project (search bar)
 - page through the project's items
-- sort by date synced or last edited, either ascending or descending
+- sort items and media, either ascending or descending, by:
+	- Date synced
+	- Last edited
+	- If you have the module Numeric Data Types installed, you will also see:
+		- Date Created
+		- Date Submitted
+		- Extent
+		- Identifier
 - filter results by:
 	- is approved
 	- is not approved
@@ -167,10 +204,10 @@ This is where you review the community contributions.
 
 Along the top of the page are the following buttons:
 
-- A star to add this page to your watchlist (if you are logged in to Scripto)
-- A button to go to the Revision History
-- A button to View discussion of the media
-- A button to Save changes
+- A **star** to add this page to your watchlist (if you are logged in to Scripto)
+- A button to go to the **Revision History**
+- A button to **View notes** of the media
+- A button to **Save** changes
 
 There are three tabs on this page, along with a drawer on the right which remains open. 
 
