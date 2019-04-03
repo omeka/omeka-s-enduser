@@ -221,28 +221,21 @@ To the right of the tabs is a set of foward-backward arrow buttons and numbers (
 
 ![Media review](../modules/modulesfiles/scripto_mediareview1.png)
 
-In the sidebar:
+In the drawer:
 
 - You can move through revisions using the forward and backward arrows.
 - You can view review status and modify using checkboxes if your Mediawiki role includes bureaucrat.
 - You can edit the protection of the Wikitext page, choosing from all users, confirmed users, or only administrators, and set the protection to expire or set it as indefinite. Again, you can only do this if your Mediawiki role allows it.
 
+You can toggle the drawer open and closed using the open arrow `>` button in the middle of the divider between the drawer and the main work area. 
+
 
 #### Media status:
 
-**Complete**
-
-Community users have the ability to mark a media they are working on as "complete." This serves as a flag to notify the project team that the media is ready for review. If a media is not completely transcribed/translated/described, adminstrators can reverse the Complete status.
-
-**Approved** 
-
-Approval is granted by administrators and indicates that every media is complete and satisfactory. Items can only be considered approved when all child media are approved.
-
-**Protected**
-
-Protection is a [MediaWiki function](https://www.mediawiki.org/wiki/Manual:Administrators#Protection). In the context of Scripto, it is a way for project owners to close editing on a media or item at a certain point, either because it is complete or because of a need to deal with that particular media or item (bad scan, for example). 
-
-Protection can be limited to users, confirmed users, or administrators. In addition,  you can choose to protect the media infinitely or for a set amount of time: 1 hour; 1 day; 1 week; 2 weeks; 1 month; 3 months; 6 months; or 1 year. 
+* **Complete:** Community users have the ability to mark a media they are working on as "complete." This serves as a flag to notify the project team that the media is ready for review. If a media is not completely transcribed/translated/described, adminstrators can reverse the Complete status.
+* **Approved:** Approval is granted by administrators and indicates that every media is complete and satisfactory. Items can only be considered approved when all child media are approved.
+* **Protected:** Protection is a [MediaWiki function](https://www.mediawiki.org/wiki/Manual:Administrators#Protection). In the context of Scripto, it is a way for project owners to close editing on a media or item at a certain point, either because it is complete or because of a need to deal with that particular media or item (bad scan, for example). 
+	* Protection can be limited to users, confirmed users, or administrators. In addition,  you can choose to protect the media infinitely or for a set amount of time: 1 hour; 1 day; 1 week; 2 weeks; 1 month; 3 months; 6 months; or 1 year. 
 
 ### Revision History
 Clicking the "Revision History at the top of the Review media page takes you to a listing of the revision history for the media.
@@ -250,10 +243,18 @@ Clicking the "Revision History at the top of the Review media page takes you to 
 Clicking on the timestamp for a revision will take you to that revision. 
 ![Revision history](../modules/modulesfiles/scripto_revisionhist.png)
 
-### Discussion
-The discussion view looks similar to the Review media view. It provides a place where community volunteers can discuss an item with the Scripto project team.
+### Notes
+Notes are a way for project staff and transcribers to communicate. Access the notes for a specific media using the "View notes" button in the upper right corner of the Review Media page
 
-![Discussion](../modules/modulesfiles/scripto_discussion.png)
+![a red arrow points to the "View notes" button in a close-up of the upper right hand corner](../modules/modulesfiles/scripto_notes_loc.png)
+
+The note review options are similar to the media review options: there is a tab for wiktext where you can see the notes to the left of a small view of the media. The HTML tab displays only the wikitext in full HTML markup, not editable. The Omeka media metadata tab allows you to review the Omeka S metadata associated with the media.  
+
+Using the drawer on the right hand side of the screen, you can change the protection of the notes page to allow only the selected level of users to edit the notes page: all users, only confirmed users, or only administrators. 
+
+![Notes](../modules/modulesfiles/scripto_notes.png)
+
+You can toggle the drawer open and closed using the open arrow `>` button in the middle of the divider between the drawer and the main work area. 
 
 ## Public view
 On the public side, users can browse the Scripto project but in order to edit or create content they must have a Scripto (Mediawiki) account and be logged in. 
@@ -268,18 +269,23 @@ The public item view displays the Omeka S item metadata in a column on the left 
 
 Users can toggle between gallery and list views using the layout button. They can also *sort* and *filter* media in the item. Sort options are by last edited, last completed, and last approved. Filter options are is edited, is not edited, is completed, is not completed, is approved, is not approved.
 
-![Public item view](../modules/modulesfiles/scripto_publicproj.png)
+![Public item view](../modules/modulesfiles/scripto_publicitem.png)
+
+Users can either click on the media's index number to view media information, on edit to go straight to the mediawiki transcription/translation interface.
 
 ### Public media view
-The media view is where community users will create transcriptions, translations, or descriptions. 
-
 The initial media view shows the media on the right, with metadata on the left. Underneath the media display is the HTML of whatever wikitext has already been generated. 
 
-Above the media and metadata are a series of buttons:
-- Toggle between the media's *Text* and *Discussion* of the media
-- Edit the media - add wikitext
-- View revision history
-- And watch/stop watching media (a star)
+At the top of the page is the title of the item, which functions as a link back to the item, followed by the media's number (the second page will be #2, for example). Below this information is the original title of the media itself. 
+
+On the left above the media and metadata are a series of buttons:
+
+- *Edit*
+- *Browse revision history*
+- *View notes*
+- And *track/stop tracking media* with a star button which toggles this option.
+
+On the right above the media and metadata is a pagination button which allows users to easily move between media for a single item
 
 ![media view](../modules/modulesfiles/scripto_mediav.png)
 
@@ -288,21 +294,22 @@ To start working with a piece of media, the user clicks "edit" in the toolbar ab
 
 A new page loads, with a media viewer and a editing workspace for users to enter text. Depending on the selected layout, media may be to the right of the workspace or above it.
 
-The area between the media title and the workspace and viewer has a combination of information display and action items for the user. From left to right:
+The area between the media title and the workspace and viewer has a combination of information display and action items for the user. 
 
-- watch or stop watching media
-- Protection status and expiration
-- Status of media with a checkbox to mark the revision as complete
-- Save changes button
-- Cancel changes button
+On the far left is a button to track or stop tracking media, with a star icon.
+
+In the center is an information display with the media's Protection, protection expiration, and status, and a checkbox where the user can mark the media as completed. 
+
+On the far right are buttons to *save* or *cancel* changes. 
+
 
 Users can rotate the media and zoom in and out using the controls within the media viewer. They can use the layout buttons to toggle between side by side and top and bottom views. 
 
 ![edit media](../modules/modulesfiles/scripto_editmedia.png)
 
-The editing workspace has a formatting toolbar which adds MediaWiki markup to the text (it does not change the appearance of the text in the workspace)  Any formatting will be applied to the HTML view of the text after changes are saved.
+Just above the mediawiki workspace is a field where users are encouraged to summarize their changes. 
 
-Below the media viewer and workspace is a field for users to summarize their changes.
+The editing workspace has a formatting toolbar which adds MediaWiki markup to the text (it does not change the appearance of the text in the workspace). Any formatting will be applied to the HTML view of the text after changes are saved.
 
 
 ## Uninstalling Scripto
