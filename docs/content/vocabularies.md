@@ -18,13 +18,23 @@ You can use the icons at the right of the Label field to manage individual vocab
 When editing a vocabulary, you can make changes to the *label* and add *comments*. 
 
 ## Adding a vocabulary
-New vocabularies must be imported from an existing metadata standard source. In order to import a new vocabulary, you must have a vocabulary file (RDF/XML with an .rdf extension).
+New vocabularies must be imported from an existing metadata standard source. In order to import a new vocabulary, you must have a vocabulary file or a stable link to a vocabulary.
 
-After selecting the vocabulary file to upload using your browser’s file chooser, enter the follow values for the vocabulary:
+On the New Vocabulary page, enter the following:
 
-- prefix (required): This will display before the property, indicating which vocabulary (the prefix for Dublin Core is dcterms);
-- namespace uri (required): this should be provided by the vocabulary;
-- label (required): the display name for the vocabulary in lists (ex "Dublin Core," "Friend of a Friend"
+- Upload the file using your browser's file manager **or**
+- Vocabulary URL: if not uploading a vocabulary file, enter the vocabulary's url here. 
+- File format: a dropdown, select from:
+	- Autodetect
+	- JSON-LD (.jsonld)
+	- N-Triples (.nt)
+	- Notation3 (.n3)
+	- RDF/XML (.rdf)
+	- Turtle (.ttl)
+- Language: Enter the preferred language of the labels and comments using an IETF language tag. 
+- Prefix (required): This will display before the property, indicating which vocabulary (the prefix for Dublin Core is dcterms);
+- Namespace uri (required): this should be provided by the vocabulary;
+- Label (required): the display name for the vocabulary in lists (ex "Dublin Core," "Friend of a Friend"
 - and any comments you have (optional).
 
 ![New vocabulary form, with a file chooser for the vocabulary file and text entry fields for the other values.](/content/contentfiles/vocab_addnew.png)
@@ -34,13 +44,13 @@ Note that you may have to research in order to find the prefix, namespace uri, a
 After you have imported a vocabulary, you can use the Edit function to modify the vocabulary's Label and Comment, and to upload an updated vocabulary RDF file. 
 
 ## Editing a vocabulary
-You can edit existing vocabularies by clicking the edit button (pencil icon) on the table of vocabularies. 
+You can edit existing vocabularies by clicking the edit button (pencil icon) on the table of vocabularies. While editing, you can change the label and comment.
 
-While editing, you can change the label and comment, or upload a new vocabulary file as an update.
+You can also update the vocabulary by either uploading a new vocabulary file or entering the vocabulary url and saving changes. When editing and/or updating a vocabulary you have the option to set the language(s) used in the vocabulary with an IETF language tag. 
 
 If you decide you do not wish to save your changes, or click on the edit button by mistake, you can click the Cancel button next to the Save button.
 
-![Edit vocabulary page for Bibliographic Ontology. Label and comment fields are editable.](/content/contentfiles/vocab_edit.png)
+![Edit vocabulary page for Bibliographic Ontology.](/content/contentfiles/vocab_edit.png)
 
 ### Vocabulary Import
 Omeka S will import properly formatted vocabularies/ontologies. rdfs:Class and rdfs:Property data will be available. 

@@ -15,6 +15,7 @@ For a full list of available configuration keys, please see the [developer docum
 - `thumbnailer_options`
 	- Default is `Omeka\File\Thumbnailer\ImageMagick`. 
 	- Also available are `Omeka\File\Thumbnailer\Imagick` and `Omeka\File\Thumbnailer\Gd`
+	- You can also set the thumbnailer to `NoThumbnail`, which will prevent your Omeka S installation from generating thumbnails. 
 
 ## PHP Path
 
