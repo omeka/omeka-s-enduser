@@ -6,11 +6,22 @@ Use the *Navigation* tab of the [Sites](../sites/index.md) to manage the navigat
 
 ![Editing navigation with a drawer on the right side of the screen for adding links](../sites/sitesfiles/sitenav_main.png)
 
-The topmost page in the navigation is the main page for your site. Note that custom URLs will not work as a home page - the topmost item in your navigation must be a page.
 
 For every item in the navigation, you have three options: view (box with arrow icon); edit (pencil icon); or delete (trash can icon). Parent navigation pages also have a gray square with a black triangle which collapses or expands their child pages.
 
 ![Close up of two navigation sections. The top is "Quotes" which has a dark gray square on the end of it containing a black triangle pointing down. The bottom navigation section is called "Share a quote" and does not have the gray square](../sites/sitesfiles/sitenav_detail.png)
+
+## Set Homepage
+By default, the topmost page in the navigation acts the main page for your site. Note that custom URLs will not work as a home page - the topmost item in your navigation must be a page.
+
+You can set the homepage without changing the order of your pages using the *Select a homepage* section in the righthand drawer. This section has a dropdown which lists all the pages in your site. Simply select the page which you want to use as your homepage.
+
+![Select a homepage dropdown open to show all the pages in this site](../sites/sitesfiles/sitenav_homeselect.png)
+
+To change which page is used as the homepage, select a different page from the dropdown. If you want to revert to using the top page in the navigation, click the 'x' to the right of the page name in the menu (circled in red in the below image).
+
+![Select a homepage set to Map page](../sites/sitesfiles/sitenav_homedel.png)
+
 
 ## Adding Navigation
 Add to the navigation of the site using the options on the right hand side of the page. There are two sections: [Add a custom link](../sites/site_navigation/#custom-link) and [Add a link to a site page](../sites/site_navigation/#site-page)
