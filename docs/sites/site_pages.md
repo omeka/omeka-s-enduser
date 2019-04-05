@@ -69,6 +69,15 @@ Change the order of blocks by clicking on the three horizontal lines on the uppe
 
 Some modules may create additional blocks for your site pages. For information on working with these blocks, please see the documentation for that [module](../modules/index.md)
 
+### From the Public Side
+If you are on the admin side and click "View" in the upper right-hand corner of a page, it will take you to the public view for that page. 
+
+As you are browsing the public side of your site, you can edit the page you are viewing if you are currently logged in and the [user bar option is turned on in Site Settings](../sites/site_settings/#general-settings). 
+
+The user bar, which appears across the top of the page, includes a link to edit the current page - circled in red in the below image. 
+
+![User bar for a page from the site Jane Austen, with "Edit page" circled in red](../sites/sitefiles/sitepg_edit_public.png)
+
 ## Page Blocks
 Pages are made up of blocks, each of which has a different form of content.
 

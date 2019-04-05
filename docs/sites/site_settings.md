@@ -28,10 +28,12 @@ When users are logged in, the user bar has the following options:
 
 - Installation Title: takes you back to the installation admin
 - Site Title: takes you back to the landing page for managing the site (site/show).
+- Page type link: depending on what you are viewing, this is a link to the admin side management for [Pages](../site/site_pages), [Items](../content/items), or [Item Sets](../content/item-sets)
+- Edit link for that page, item set, or item. 
 - User's display name: takes you to your user page.
 - Logout: logs out current user.
 
-![a blue bar across the top of the image displays the following words in light blue text, indicating a link: RRCHNM Omeka S Dev Site; A Tin Box; signed in as Megan; Logout. Below this, the site's title "A Tin Box" is displayed in black text on a white background.](../sites/sitesfiles/sites_userbarin.png)
+![a blue bar across the top of the image displays the following words in light blue text, indicating a link: Stackable Sandbox, Jane Austen, Pages, Edit Page, Signed in as Megan, and a button to Logout.](../sites/sitesfiles/sites_userbarin.png)
 
 When users are not logged, the user bar only displays a login option.
 
