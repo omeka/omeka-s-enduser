@@ -42,9 +42,9 @@ Top Navigation Depth allows you the limit the depth of the top navigation menu o
 #### Logo
 (Default, Center Row, The Daily, Cozy)
 
-Upload a asset (file) to function as a logo in the header of your site. 
+Upload a asset (file) to function as a logo in the header of your site. Allowed file types are: jpg, gif, png, svg, and svgz.
 
-This asset is not associated with any of the items, and will be stored separately; once uploaded to a site you will be able to select it again without re-uploading even if you change themes for a while. Any asset uploaded to one site will be available for all sites on the installation/.
+This asset is not associated with any of the items, and will be stored separately; once uploaded to a site you will be able to select it again without re-uploading even if you change themes for a while. Any asset uploaded to one site will be available for all sites on the installation.
 
 ![Logo option](../sites/sitesfiles/sitetheme_logo.png)
 
@@ -53,7 +53,6 @@ To upload a logo, click the Select button. This will open a sidebar where you ca
 ![Logo option with sidebar open](../sites/sitesfiles/sitetheme_logo2.png)
 
 Note that the logo completely replaces the header, including the site title, for the site, so you may want to consider an image with text if it is important to you that users see the site title.
-
 
 To remove a logo, click the *clear* button in that block (only visible when a logo is active) and save changes.
 
