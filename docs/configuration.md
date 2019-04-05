@@ -6,6 +6,19 @@ The following are commonly requested options which can be configured in the file
 
 For a full list of available configuration keys, please see the [developer documentation page on configuration settings](https://omeka.org/s/docs/developer/reference/configuration/). 
 
+## Password settings
+You can change the requirements for user passwords in the config file. Options include minimum length, number of upper and lowercase letters, and setting allowed symbols.
+
+```
+'min_length' => 6,
+        'min_lowercase' => null,
+        'min_uppercase' => null,
+        'min_number' => null,
+        'min_symbol' => null,
+        'symbol_list' => '`~!@#$%^&*()-=_+[]\{}|;:",./<>?\'',
+```
+Requirements will display on the user creation and edit pages.
+
 ## Thumbnails
 
 - `thumbnails`

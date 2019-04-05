@@ -62,7 +62,15 @@ This tab allows a user or global admin to set the following:
 ### Password
 On this tab, create a new password. It must be entered twice, in both the *new password* and *confirm new password* fields to take.
 
-![Empty password reset fields for the user Omeka Devs](/admin/adminfiles/users_password.png)
+![Empty password reset fields for the user outreach](/admin/adminfiles/users_password.png)
+
+To see the password requirements, click the arrow next to the New Password field. This will display a list of requirements. By default, these are:
+
+- minimum of 6 characters in length.
+- contain at least 1 lowercase characters.
+- contain at least 1 uppercase characters.
+- contain at least 1 numbers.
+- contain at least 1 symbols: `~!@#$%^&*()-=_+[]\{}|;:"',./<>?`
 
 ### API Key
 Use this tab to generate an API key for the user. You must provide a label for the key - this could be a date or the purpose of the key. Click save to generate the key.
