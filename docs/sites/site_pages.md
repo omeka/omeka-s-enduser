@@ -76,7 +76,7 @@ As you are browsing the public side of your site, you can edit the page you are 
 
 The user bar, which appears across the top of the page, includes a link to edit the current page - circled in red in the below image. 
 
-![User bar for a page from the site Jane Austen, with "Edit page" circled in red](../sites/sitefiles/sitepg_edit_public.png)
+![User bar for a page from the site Jane Austen, with "Edit page" circled in red](../sites/sitesfiles/sitepg_edit_public.png)
 
 ## Page Blocks
 Pages are made up of blocks, each of which has a different form of content.
