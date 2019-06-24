@@ -5,9 +5,9 @@ The Theme tab of the site context menu allows you to select the theme for your s
 
 Select a Theme
 ---------------------------
-When you navigate to the Theme tab, the current theme will appear on the top of the page. If you did not select a theme when adding the site, this will be the Default theme. 
+When you navigate to the Theme tab, the currently active theme will appear on the top of the page. If you did not select a theme when adding the site, this will be the Default theme. 
 
-A large image of the theme in action appears on the left, with the theme Title, creator, and a button for Theme Settings on the right.
+A large image of the active appears on the left, with the theme Title, creator, and a button for Theme Settings on the right.
 
 ![Theme tab with Center Row as the current theme](../sites/sitesfiles/sitetheme_tab.png)
 
