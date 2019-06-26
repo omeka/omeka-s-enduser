@@ -87,7 +87,7 @@ This tab displays a table with the columns from your spreadsheet as rows. Each r
 
 To map a column header to a vocabulary property, click on the plus symbol button to the left of the column header. This will open a drawer on the right-hand side of the screen. 
 
-[A red arrow points to the plus sign button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapButton.png)
+![A red arrow points to the plus sign button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapButton.png)
 
 The drawer has multiple options for mapping:
 
@@ -125,7 +125,7 @@ If you have data in a column in your CSV which you do not want to bring in to yo
 #### Column options
 To access options for data in a column of your csv (represented by a row in the import table), click the wrench icon for that column heading. 
 
-[A red arrow points to the wrenchn button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapOptions.png)
+![A red arrow points to the wrench button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapOptions.png)
 
 Column options are in addition to mappings. If you add options without also mapping column data to resource, media, or other data, nothing will be imported. 
 
@@ -133,7 +133,7 @@ This will open a drawer on the right side of the browser window with the followi
 
 - **Use multivalve separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
 - **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values one can use when adding properties to an item:
+- **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
 	- Import as text (default);
 	- Import as URL reference;
 	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
@@ -221,7 +221,7 @@ This tab displays a table with the columns from your spreadsheet as rows. Each r
 
 To map a column header to a vocabulary property, click on the plus symbol button to the left of the column header. This will open a drawer on the right-hand side of the screen. 
 
-[A red arrow points to the plus sign button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapButton.png)
+![A red arrow points to the plus sign button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapButton.png)
 
 The drawer has multiple options for mapping:
 
@@ -249,14 +249,14 @@ If you have data in a column in your CSV which you do not want to bring in to yo
 #### Column options
 To access options for data in a column of your csv (represented by a row in the import table), click the wrench icon for that column heading. 
 
-[A red arrow points to the wrenchn button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapOptions.png)
+![A red arrow points to the wrench button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapOptions.png)
 
 Column options are in addition to mappings. If you add options without also mapping column data to resource, media, or other data, nothing will be imported. 
 
 This will open a drawer on the right side of the browser window with the following options: 
 
 - **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values one can use when adding properties to an item:
+- **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
 	- Import as text (default);
 	- Import as URL reference;
 	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
@@ -345,7 +345,7 @@ This tab displays a table with the columns from your spreadsheet as rows. Each r
 
 To map a column header to a vocabulary property, click on the plus symbol button to the left of the column header. This will open a drawer on the right-hand side of the screen. 
 
-[A red arrow points to the plus sign button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapButton.png)
+![A red arrow points to the plus sign button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapButton.png)
 
 The drawer has multiple options for mapping:
 
@@ -383,14 +383,14 @@ If you have data in a column in your CSV which you do not want to bring in to yo
 #### Column options
 To access options for data in a column of your csv (represented by a row in the import table), click the wrench icon for that column heading. 
 
-[A red arrow points to the wrenchn button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapOptions.png)
+![A red arrow points to the wrench button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapOptions.png)
 
 Column options are in addition to mappings. If you add options without also mapping column data to resource, media, or other data, nothing will be imported. 
 
 This will open a drawer on the right side of the browser window with the following options: 
 
 - **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values one can use when adding properties to an item:
+- **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
 	- Import as text (default);
 	- Import as URL reference;
 	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
@@ -438,7 +438,7 @@ This setting allows you to change the action of process from a straight import t
 
 If you select one of these options from the dropdown, three additional settings will appear on the tab. These settings help the process determine which resources to take action on.
 
-[Options described below](../modules/modulesfiles/csvimport_mediaAdvAct.png)
+![Options described below](../modules/modulesfiles/csvimport_mediaAdvAct.png)
 
 - **Resource identifier column:** Select from a dropdown of the columns in your CSV. This is the data from your spreadsheet which maps to existing data in your Omeka S installation. 
 - **Resource identifier property:** select from a dropdown of all properties in your Omeka S installation. This should be the property in which you already have data, that you used to create the column data above. 
@@ -477,7 +477,7 @@ The dropdown above the table is where you set which column in the csv file indic
 
 To map a column header to a vocabulary property, click on the plus symbol button to the left of the column header. This will open a drawer on the right-hand side of the screen. 
 
-[A red arrow points to the plus sign button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapButton.png)
+![A red arrow points to the plus sign button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapButton.png)
 
 The drawer has multiple options for mapping:
 
@@ -520,7 +520,7 @@ If you have data in a column in your CSV which you do not want to bring in to yo
 #### Column options
 To access options for data in a column of your csv (represented by a row in the import table), click the wrench icon for that column heading. 
 
-[A red arrow points to the wrenchn button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapOptions.png)
+![A red arrow points to the wrench button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapOptions.png)
 
 Column options are in addition to mappings. If you add options without also mapping column data to resource, media, or other data, nothing will be imported. 
 
@@ -528,7 +528,7 @@ This will open a drawer on the right side of the browser window with the followi
 
 - **Use multivalue separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator character in the initial import page, but you can change it in the Basic Settings tab. 
 - **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values one can use when adding properties to an item:
+- **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
 	- Import as text (default);
 	- Import as URL reference;
 	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
@@ -577,7 +577,7 @@ This setting allows you to change the action of process from a straight import t
 
 If you select one of these options from the dropdown, three additional settings will appear on the tab. These settings help the process determine which resources to take action on.
 
-[Options described below](../modules/modulesfiles/csvimport_mixedRAdvAct.png)
+![Options described below](../modules/modulesfiles/csvimport_mixedRAdvAct.png)
 
 - **Resource identifier column:** Select from a dropdown of the columns in your CSV. This is the data from your spreadsheet which maps to existing data in your Omeka S installation. 
 - **Resource identifier property:** select from a dropdown of all properties in your Omeka S installation. This should be the property in which you already have data, that you used to create the column data above. 
@@ -616,7 +616,7 @@ This tab displays an initial dropdown above a table with the columns from your s
 
 To map a column header to a vocabulary property, click on the plus symbol button to the left of the column header. This will open a drawer on the right-hand side of the screen. 
 
-[A red arrow points to the plus sign button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapButton.png)
+![A red arrow points to the plus sign button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapButton.png)
 
 The drawer has a dropdown for Users info, with three options:
 
@@ -627,14 +627,14 @@ The drawer has a dropdown for Users info, with three options:
 #### Column options
 To access options for data in a column of your csv (represented by a row in the import table), click the wrench icon for that column heading. 
 
-[A red arrow points to the wrenchn button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapOptions.png)
+![A red arrow points to the wrench button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapOptions.png)
 
 Column options are in addition to mappings. If you add options without also mapping column data to resource, media, or other data, nothing will be imported. 
 
 This will open a drawer on the right side of the browser window with the following options: 
 
 - **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values one can use when adding properties to an item:
+- **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
 	- Import as text (default);
 	- Import as URL reference;
 	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
