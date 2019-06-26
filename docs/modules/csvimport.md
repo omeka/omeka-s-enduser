@@ -154,7 +154,7 @@ Be sure to click the Apply Changes button at the bottom of the drawer in order t
 ### Item import Basic Settings
 These settings apply to the entire csv which you are importing. Note that some of these settings can be overwritten by column options in the Map to Omeka S data tab. 
 
-![options as described below](../modules/modulesfiles/csvimport_ItemsBasic.png)
+![options as described below](../modules/modulesfiles/csvimport_itemsbasic.png)
 
 - **Resource Template:** select a resource template from the drop-down menu to apply to the imported items. You can use the search field at the top of the dropdown to narrow results or find a particular template.
 - **Class:** select a class from the drop-down menu to apply to the imported items. You can use the search field at the top of the dropdown to narrow results or find a particular class.
