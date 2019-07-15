@@ -91,7 +91,9 @@ To map a column header to a vocabulary property, click on the plus symbol button
 
 The drawer has multiple options for mapping:
 
-**Resource data** has a dropdown to set Item Set by selected property. If you have a column with data for an Item Set to which you want to add the item, you can set how it maps using this dropdown. You can either use the Item Set's internal ID, or any one of its properties (title, description).
+**Properties** select a property to map the column data to, from any of the installed vocabularies. Use the Filter field to search the available properties for a specific property.
+
+**Item-specific data** has a dropdown to set Item Set by selected property. If you have a column with data for an Item Set to which you want to add the item, you can set how it maps using this dropdown. You can either use the Item Set's internal ID, or any one of its properties (title, description).
 
 ![dropdown as described](../modules/modulesfiles/csvimport_itemsMapRD.png)
 
@@ -103,8 +105,6 @@ The drawer has multiple options for mapping:
 - *Visibility public/private:* set the visibility of the item. Use "private" or "public" in the spreadsheet. 
 
 ![Dropdown as described](../modules/modulesfiles/csvimport_itemsMapgeneric.png)
-
-**Properties** select a property to map the column data to, from any of the installed vocabularies. Use the Filter field to search the available properties for a specific property.
 
 **Media source** If the column in your spreadsheet is a media source, select which kind from the dropdown: 
 
@@ -137,6 +137,7 @@ This will open a drawer on the right side of the browser window with the followi
 	- Import as text (default);
 	- Import as URL reference;
 	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
+	- If you have certain modules installed, such as Numeric Data Types, there may be additional data type options supplied by those modules.
 
 ![drawer with options as described above](../modules/modulesfiles/csvimport_ItemColOpt.png)
 
@@ -712,3 +713,8 @@ Everything on the *Map to Omeka S data* tab will be the same. When you add a map
 ![Dropdown menu for media source, with Sideload highlighted in blue](../modules/modulesfiles/csvimport_sideload.png). 
 
 For the data in this column, you need to include the full file name, including extension. So, for example, if you want to import a jpg file which is named "Jekyll_and_Hyde_Title" then the data in the media column of the csv you are importing should be `Jekyll_and_Hyde_Title.jpg`.
+
+## Numeric Data Types
+If you have [Numeric Data Types](modules/numericdatatypes/) installed and active, it will add the option to set a column data type as numeric data.
+
+![Column options drawer with the data type dropdown open, showing options for numeric data types as well as the standard options](../modules/modulesfiles/csvimport-numericdata.png)
