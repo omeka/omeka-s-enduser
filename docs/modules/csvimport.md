@@ -134,10 +134,11 @@ This will open a drawer on the right side of the browser window with the followi
 - **Use multivalve separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
 - **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
 - **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
-	- Import as text (default);
-	- Import as URL reference;
-	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
+	- Import as text (default).
+	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
+	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576.
 	- If you have certain modules installed, such as Numeric Data Types, there may be additional data type options supplied by those modules.
+- **Import values as private**: check this box to set all property values *in this column* private.
 
 ![drawer with options as described above](../modules/modulesfiles/csvimport_ItemColOpt.png)
 
