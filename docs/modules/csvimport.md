@@ -487,7 +487,7 @@ This tab displays an initial dropdown above a table with the columns from your s
 
 The dropdown above the table is where you set which column in the csv file indicates whether the data in that row is an item, item set, or media. *You do not need to map this data in the table on this tab*
 
-#### Mapping options
+#### Mapping options TK
 
 To map a column header to a vocabulary property, click on the plus symbol button to the left of the column header. This will open a drawer on the right-hand side of the screen. 
 
@@ -495,14 +495,20 @@ To map a column header to a vocabulary property, click on the plus symbol button
 
 The drawer has multiple options for mapping:
 
-**Resource data** has a dropdown from which you select one of three resource types. Select the type of resource that the row *is* - this option assumes that you have specific columns capturing item set information for rows which are items, etc. It fills in the same options for the selected type that you would have with an import of only that resource type (so, for Items, Item Set mapping, etc). 
+**Properties** select a property to map the column data to, from any of the installed vocabularies. Use the Filter field to search the available properties for a specific property.
+![Properties option open showing all of the installed vocabularies for the Omeka S installation: Dublin Core, Bibliographic Ontology, Friend of a Friend, Scripto and OWL-Time Ontology.](../modules/modulesfiles/csvimport_itemsMapProp.png)
 
-- *Item*
-	- Selecting this option gives you a dropdown to select how to identify the associated Item Set. You can either use the Item Set's internal ID, or any one of its properties (title, description).
-- *Item Set*
-	- Selecting this option loads a checkbox labeled "Open to additions." Check to allow other users to edit or add to the item set. Leave unchecked to have the item set be editable only by its creator, site admins, and global admins.
-- *Media:* 
-	- Selecting this option gives you a dropdown which you use set the item to which the media should be added. Media *cannot* exist without an item. You can use a property in the item's metadata or its internal ID.
+**Item-specific data** has a dropdown to set Item Set by selected property. If you have a column with data for an Item Set to which you want to add the item, you can set how it maps using this dropdown. You can either use the Item Set's internal ID, or any one of its properties (title, description).
+
+![dropdown as described](../modules/modulesfiles/csvimport_itemsMapISD.png)
+
+**Item set-specific data** is a checkbox for "Open to additions." Check to allow other users to edit or add to the item set. Leave unchecked to have the item set be editable only by its creator, site admins, and global admins.
+
+![Add mapping drawer showing the section "Item set-specific data". Below the section header is a single, unselected checkbox option labeled "Open to additions".](../modules/modulesfiles/csvimport_itemSetSD.png)
+
+**Media-specific data** has a dropdown to set the item to which the media should be added. You can either use the item's internal ID, or any one of its properties (title, description). A resources' interal ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
+
+![Media-specific data with dropdown](../modules/modulesfiles/csvimport_mediaMapData.png)
 
 **Generic data** has a dropdown where you can set one of four options:
 
@@ -512,8 +518,6 @@ The drawer has multiple options for mapping:
 - *Visibility public/private:* set the visibility of the media. Use "private" or "public" in the spreadsheet. 
 
 ![Dropdown as described](../modules/modulesfiles/csvimport_itemsMapgeneric.png)
-
-**Properties** select a property to map the column data to, from any of the installed vocabularies. Use the Filter field to search the available properties for a specific property.
 
 **Media source** For the column in your spreadsheet which points to the media, select which kind of media it is from the dropdown: 
 
@@ -542,17 +546,19 @@ This will open a drawer on the right side of the browser window with the followi
 
 - **Use multivalue separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator character in the initial import page, but you can change it in the Basic Settings tab. 
 - **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
+- **Data type:** is a dropdown with at least three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
 	- Import as text (default);
-	- Import as URL reference;
-	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
+	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
+	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576.
+	- If you have certain modules installed, such as Numeric Data Types, there may be additional data type options supplied by those modules.
+- **Import values as private**: check this box to set all property values *in this column* private.
 
 ![drawer with options as described above](../modules/modulesfiles/csvimport_mixedR2.png)
 
 To remove a column option setting, click the wrench icon again and undo your changes manually.
 
 #### Batch edit
-When you select one or more rows in the table (columns from your csv file), you can use the "Batch edit options" button to apply the column options described above - use multivalue separator, language, and data type - to multiple csv columns at once. 
+When you select one or more rows in the table (columns from your csv file), you can use the "Batch edit options" button to apply the column options described above to multiple csv columns at once. 
 
 ![a screenshot of the Mapping tab, with the boxes for Columns Title and Creator checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditMixed.png)
 
@@ -647,11 +653,14 @@ Column options are in addition to mappings. If you add options without also mapp
 
 This will open a drawer on the right side of the browser window with the following options: 
 
+- **Use multivalve separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
 - **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
 - **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
-	- Import as text (default);
-	- Import as URL reference;
-	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
+	- Import as text (default).
+	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
+	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576.
+	- If you have certain modules installed, such as Numeric Data Types, there may be additional data type options supplied by those modules.
+- **Import values as private**: check this box to set all property values *in this column* private.
 
 #### Batch edit
 When you select one or more rows in the table (columns from your csv file), you can use the "Batch edit options" button to apply the column options described above - language and data type - to multiple csv columns at once. 
