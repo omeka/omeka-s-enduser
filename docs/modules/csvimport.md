@@ -93,9 +93,11 @@ The drawer has multiple options for mapping:
 
 **Properties** select a property to map the column data to, from any of the installed vocabularies. Use the Filter field to search the available properties for a specific property.
 
+![Properties option open showing all of the installed vocabularies for the Omeka S installation: Dublin Core, Bibliographic Ontology, Friend of a Friend, Scripto and OWL-Time Ontology.](../modules/modulesfiles/csvimport_itemsMapProp.png)
+
 **Item-specific data** has a dropdown to set Item Set by selected property. If you have a column with data for an Item Set to which you want to add the item, you can set how it maps using this dropdown. You can either use the Item Set's internal ID, or any one of its properties (title, description).
 
-![dropdown as described](../modules/modulesfiles/csvimport_itemsMapRD.png)
+![dropdown as described](../modules/modulesfiles/csvimport_itemsMapISD.png)
 
 **Generic data** also has a dropdown where you can set one of four options:
 
@@ -133,7 +135,7 @@ This will open a drawer on the right side of the browser window with the followi
 
 - **Use multivalve separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
 - **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
+- **Data type:** is a dropdown with at least three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
 	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576.
@@ -147,7 +149,7 @@ Be sure to click the Apply Changes button at the bottom of the drawer in order t
 To remove a column option setting, click the wrench icon again and undo your changes manually.
 
 #### Batch edit
-When you select one or more rows in the table (columns from your csv file), you can use the "Batch edit options" button to apply the column options described above - multivalue separator, language, and data type - to multiple csv columns at once. 
+When you select one or more rows in the table (columns from your csv file), you can use the "Batch edit options" button to apply the column options described above - multivalue separator, language, data type, and property privacy - to multiple csv columns at once. 
 
 ![a screenshot of the Mapping tab, with the boxes for Columns Title and Creator checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditItems.png)
 
@@ -227,9 +229,13 @@ To map a column header to a vocabulary property, click on the plus symbol button
 
 The drawer has multiple options for mapping:
 
-**Resource data** has a checkbox for "Open to additions." Check to allow other users to edit or add to the item set. Leave unchecked to have the item set be editable only by its creator, site admins, and global admins.
+**Properties** select a property to map the column data to, from any of the installed vocabularies. Use the Filter field to search the available properties for a specific property.
 
-![Add mapping drawer showing the section "Resource data". Below the resource data header is a single, unselected checkbox option labeled "Open to additions".](../modules/modulesfiles/csvimport_itemSetRD.png)
+![Properties option open showing all of the installed vocabularies for the Omeka S installation: Dublin Core, Bibliographic Ontology, Friend of a Friend, Scripto and OWL-Time Ontology.](../modules/modulesfiles/csvimport_itemsMapProp.png)
+
+**Item set-specific data** is a checkbox for "Open to additions." Check to allow other users to edit or add to the item set. Leave unchecked to have the item set be editable only by its creator, site admins, and global admins.
+
+![Add mapping drawer showing the section "Item set-specific data". Below the section header is a single, unselected checkbox option labeled "Open to additions".](../modules/modulesfiles/csvimport_itemSetSD.png)
 
 **Generic data** also has a dropdown where you can set one of four options:
 
@@ -239,8 +245,6 @@ The drawer has multiple options for mapping:
 - *Visibility public/private:* set the visibility of the item set. Use "private" or "public" in the spreadsheet. 
 
 ![Dropdown as described](../modules/modulesfiles/csvimport_itemsMapgeneric.png)
-
-**Properties** select a property to map the column data to, from any of the installed vocabularies. Use the Filter field to search the available properties for a specific property.
 
 Be sure to click the "Apply Changes" at the bottom of the drawer or nothing you set here will be kept.
 
@@ -258,17 +262,19 @@ Column options are in addition to mappings. If you add options without also mapp
 This will open a drawer on the right side of the browser window with the following options: 
 
 - **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
+- **Data type:** is a dropdown with at least three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
 	- Import as text (default);
 	- Import as URL reference;
-	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
+	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576.
+	- If you have certain modules installed, such as Numeric Data Types, there may be additional data type options supplied by those modules.
+- **Import values as private**: check this box to set all property values *in this column* private.
 
 ![drawer with options as described above](../modules/modulesfiles/csvimport_ItemSetCol.png)
 
 To remove a column option setting, click the wrench icon again and undo your changes manually.
 
 #### Batch edit
-When you select one or more rows in the table (columns from your csv file), you can use the "Batch edit options" button to apply the column options described above - language, and data type - to multiple csv columns at once. 
+When you select one or more rows in the table (columns from your csv file), you can use the "Batch edit options" button to apply the column options described above to multiple csv columns at once. 
 
 ![a screenshot of the Mapping tab, with the boxes for Columns Title and Creator checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditItemSet.png)
 
