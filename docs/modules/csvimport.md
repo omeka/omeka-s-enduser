@@ -261,10 +261,11 @@ Column options are in addition to mappings. If you add options without also mapp
 
 This will open a drawer on the right side of the browser window with the following options: 
 
+- **Use multivalve separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
 - **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
 - **Data type:** is a dropdown with at least three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
-	- Import as text (default);
-	- Import as URL reference;
+	- Import as text (default).
+	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
 	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576.
 	- If you have certain modules installed, such as Numeric Data Types, there may be additional data type options supplied by those modules.
 - **Import values as private**: check this box to set all property values *in this column* private.
@@ -357,9 +358,13 @@ To map a column header to a vocabulary property, click on the plus symbol button
 
 The drawer has multiple options for mapping:
 
-**Resource data** has a dropdown to set the item to which the media should be added. You can either use the item's internal ID, or any one of its properties (title, description). A resources' interal ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
+**Properties** select a property to map the column data to, from any of the installed vocabularies. Use the Filter field to search the available properties for a specific property.
 
-![resource data with dropdown](../modules/modulesfiles/csvimport_mediaResDat.png)
+![Properties option open showing all of the installed vocabularies for the Omeka S installation: Dublin Core, Bibliographic Ontology, Friend of a Friend, Scripto and OWL-Time Ontology.](../modules/modulesfiles/csvimport_itemsMapProp.png)
+
+**Media-specific data** has a dropdown to set the item to which the media should be added. You can either use the item's internal ID, or any one of its properties (title, description). A resources' interal ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
+
+![Media-specific data with dropdown](../modules/modulesfiles/csvimport_mediaMapData.png)
 
 **Generic data** also has a dropdown where you can set one of four options:
 
@@ -369,8 +374,6 @@ The drawer has multiple options for mapping:
 - *Visibility public/private:* set the visibility of the media. Use "private" or "public" in the spreadsheet. 
 
 ![Dropdown as described](../modules/modulesfiles/csvimport_itemsMapgeneric.png)
-
-**Properties** select a property to map the column data to, from any of the installed vocabularies. Use the Filter field to search the available properties for a specific property.
 
 **Media source** For the column in your spreadsheet which points to the media you are creating, select which kind of media it is from the dropdown: 
 
@@ -397,18 +400,21 @@ Column options are in addition to mappings. If you add options without also mapp
 
 This will open a drawer on the right side of the browser window with the following options: 
 
+- **Use multivalve separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
 - **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
-	- Import as text (default);
-	- Import as URL reference;
-	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576
+- **Data type:** is a dropdown with at least three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
+	- Import as text (default).
+	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
+	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576.
+	- If you have certain modules installed, such as Numeric Data Types, there may be additional data type options supplied by those modules.
+- **Import values as private**: check this box to set all property values *in this column* private.
 
 ![drawer with options as described above](../modules/modulesfiles/csvimport_mediaColOpt.png)
 
 To remove a column option setting, click the wrench icon again and undo your changes manually.
 
 #### Batch edit
-When you select one or more rows in the table (columns from your csv file), you can use the "Batch edit options" button to apply the column options described above - language, and data type - to multiple csv columns at once. 
+When you select one or more rows in the table (columns from your csv file), you can use the "Batch edit options" button to apply the column options described above to multiple csv columns at once. 
 
 ![a screenshot of the Mapping tab, with the boxes for Columns Title and Creator checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditMedia.png)
 
