@@ -183,6 +183,36 @@ Searches by value, class, and item set allow a visitor to search by more than on
 Site visitors can remove value and item set searches using the red trash can icon to the right of those search options.
 
 ### Advanced item set search
-Site visitors can access an advanced item set search from the Browse Items Sets page, if you have that page accessible. There is a link for Advanced search between the pagination and the sort options at the top of the item browse table.
+Site visitors can access an advanced item set search from the Browse Items Sets page, if you have that page accessible. There is a link for Advanced search on the upper left of the Item Sets page. 
 
-Clicking this loads a new page with three options for search:
+![Item sets page for the Jane Austen site. A blue arrow points to the advanced search link](/files/search_publicitemsets1.png)
+
+Clicking the advanced search link loads a new page with three options for search:
+
+*Search full-text:* runs a full-text search on all of the text for every item set in the installation.
+
+*Search by value:* search for a term or phrase using multiple options.
+
+- The first selector allows you to specify a property to search. 
+	- Note that if you have have the [site settings](/sites/site_settings/#search) to restrict search to templates, this will only display the properties used by those templates. 
+- The second selector allows you to set the relationship the property has with the value. The options are:
+	- is exactly, 
+	- is not exactly, 
+	- contains,
+	- does not contain,
+	- is resource with ID,
+	- is not resource with ID,
+	- has any value (there is something in the property), and
+	- has no values.
+- Finally, there is a text field for you to enter the value you want the property to have.
+
+To find a resource ID, go to the resource and look at the url in your browser's address bar. The numbers at the end of the url are the resource ID. 
+
+*Search by class:* select a class by which to search from the dropdown menu 
+
+![Item set advanced search options as described](/files/search_publicitemsets2.png)
+
+Searches by value and class allow a visitor to search by more than one input; they can use the *add new* buttons to search with more than one search term. These search terms build - searching for two classes will return all item sets which have either class. 
+
+Site visitors can remove value and item set searches using the red trash can icon to the right of those search options.
+
