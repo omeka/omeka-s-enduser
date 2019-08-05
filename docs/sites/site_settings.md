@@ -45,6 +45,8 @@ The options for this setting are:
 - When identified (when logged in) 
 - Always
 
+**Disable JSON-LD embed** Check this box to disable JSON-LD embedding on resource browse and show pages.
+
 **Locale** is dropdown menu to select the language code for this site. By default this will be set to the same as the global locale setting for the entire Omeka S installation. To change, select a language from the dropdown menu.
 
 ## Browse settings
