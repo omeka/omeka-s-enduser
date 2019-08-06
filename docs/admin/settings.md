@@ -39,7 +39,7 @@ Note that some hosting setups may require that the domain name for the administr
 
 *Default content visibility to private* When this box is checked, all new items, item sets, and sites will have their visibility set to Private. If this box is not checked, the default is public. 
 
-*Index full-text search* Check this box to run an index of your installation's resources and sites as soon as you click Save. This is necessary for full-text search to work on the administrative side and on sites. Note that the box will not stay checked, but must be activated regularly to maintain full-text search.
+*Index full-text search* Check this box to run an index of your installation's resources and sites as soon as you click Save. You should only need to run this process if you are having issues with search.
 
 ### Security
 

@@ -42,7 +42,9 @@ Be sure to Save your resource template before leaving this page.
 ### Property options
 You can modify the display label, comment on the label, set a property as required, and set the default data type for each property in your template.
 
-To do this, click the edit (pencil) icon in the row for the property you wish to modify. This will open a drawer on the right side of the screen with the ability to edit the properties:
+To do this, click the edit (pencil) icon in the row for the property you wish to modify. This will open a drawer on the right side of the screen with the ability to edit the properties.
+
+![The property options drawer for Title with no changes made, options as described below]((/content/contentfiles/template_configdrawer.png)
 
 **Label**  
 Change the displayed label of the property that appears when the template is applied to an item by entering the text you want to appear in the *Alternate Label* field for each property.
@@ -51,25 +53,28 @@ Change the displayed label of the property that appears when the template is app
 Add alternate comments for the property in the field *Alternate* in this section. This will change the text under the property name when users are creating items using your Resource Template.
  
 **Other options** 
-The first checkbox sets whether a property is required when the template is in use. If checked, users will not be able to save an item or item set using this template without adding data for this property.
+In this section are a series of additional options for modifying the property when it is used with this template.
 
-The next checkbox, Private, sets the visibility of the data for this property. If checked, any data added by a user for this property will only be visible to the owner of the item or item set, global administrators, site administrators, and editors. It will not be visible to the public. *Please note* that 
+The *Use for resource title* checkbox allows you to select a property to serve as the title for the resource, instead of the default (`dcterms:title`). This property will display in the "title" field on browse pages.
 
-Using the dropdown, you can designate a  data type for the property: Literal, URI, or Resource. Whichever you choose will be automatically loaded once someone selects that Resource Type and they will only be able to use this data type for the element when using this Resource Template.  
+The *Use for resource description* checkbox allows you to select a property to serve as the description for the resource on browse pages, instead of the default (`dcterms:description`). 
 
-  - Literal: text and/or html imput
-  - URI: a link with label
+The *Required* checkbox sets whether a property is required when the template is in use. If checked, users will not be able to save an item or item set using this template without adding data for this property.
+
+The *Private* checkbox sets the visibility of the data for this property. If checked, any data added by a user for this property will only be visible to the owner of the item or item set, global administrators, site administrators, and editors. It will not be visible to the public. *Note:* users working with the template will be able to toggle the visibility of this property on a case-by-case basis.
+
+Using the *Data type* dropdown, you can designate a  data type for the property: Literal, URI, or Resource. Whichever you choose will be automatically loaded once someone selects that Resource Type and they will only be able to use this data type for the element when using this Resource Template.  
+
+  - Literal: text and/or html input
+  - URI: a link with label.
   - Resource: either an existing Item or Item Set in the Omeka S install.
+  - Additional options may be added by modules, such as [Numeric Data Types](../modules/numericdatatypes) and [Value Suggest](../modules/valuesuggest).
 
-In the image below, from an Add Item view, the template has been written so that the Description property is labeled as Gist with an new comment (the default is “an account of the resource”): 
-
-![A property labeled Gist with the comment “Brief Summary”](/content/contentfiles/templates_label.png)
-
-Note that users who select this resource template when creating an item will still be able to add other properties to the item, and that they will only be required to fill out those which you check as required.
-
-**Note** you must click the *Set Changes* at the bottom of the drawer for each property that you edit before exiting the drawer or moving on to another property! If you do not click *Set Changes*, your edits will not be saved.
+Note: you must click the *Set Changes* at the bottom of the drawer for each property that you edit before exiting the drawer or moving on to another property! If you do not click *Set Changes*, your edits will not be saved.
 
 ![A close up of the drawer for editing property options with a large red arrow pointing down at an angle to the Set Changes button, which is on the very bottom of the image.](/content/contentfiles/templates_setchanges.png)
+
+Users who select this resource template when creating an item will still be able to add other properties to the item, and that they will only be required to fill out those which you check as required.
 
 ## Edit a resource template
 Once you have created a resource template, you can edit it at any time by clicking the edit icon in the table of resource templates, or by clicking Edit in the upper right hand corner when viewing a resource template.
