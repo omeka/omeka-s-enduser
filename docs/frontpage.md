@@ -2,7 +2,7 @@
 title: Installation Front Page
 ---
 
-Omeka S allows users to build multiple sites per installation which are not necessarily connected. However, each installation has, by default, a front page which lists the sites in the installation. This page is accessed by going to the main url of your Omeka S installation; if your [admin dashboard] was at `yourdomain.net/omekas/admin`, then you would find this page a `yourdomain.net/omekas/`
+Omeka S allows users to build multiple sites per installation which are not necessarily connected. However, each installation has, by default, a front page which lists the sites in the installation. This page is accessed by going to the main url of your Omeka S installation; if your [admin dashboard](admin-dashboard.md) was at `yourdomain.net/omekas/admin`, then you would find this page a `yourdomain.net/omekas/`
 
 The page displays all sites which a user has permission to see, along with the site's summary if one exists. If someone is not logged in, they will only see public sites. A logged in Global Admin, by contrast, would see all existing sites on the installation.
 
