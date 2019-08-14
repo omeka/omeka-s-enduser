@@ -82,7 +82,7 @@ The navigation background color sets the color of the navigation sidebar for the
 
 Edit either field by typing a [color value](https://en.wikipedia.org/wiki/Web_colors) into the field. Either a triplet or a six-character hexadecimal code will work. Once you have entered a valid value, the color bar on the left will automatically update to show the color entered, even without saving changes.
 
-The default values are stored in the prompt text for the field. For the Cozy theme, the default values are: main accent color is `089494` and navigation background color is `bfdcdc`
+The default values are stored in the prompt text for the field. For the Cozy theme, the default values are: main accent color is `087b94` and navigation background color is `bfdcdc`
 
 ## Installing themes
 In order to appear in the *Themes* tab for sites, themes must be manually added to the `themes` folder of the installation, using an FTP program or an ssh connection.
