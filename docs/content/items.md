@@ -22,7 +22,7 @@ Options for navigating and creating items display above the table of items.
 
 On the right top of the Items window is the *Add new item* button. 
 
-On the left side is a display for the number of pages of items, with forward and back arrows. The current page number is an editable field - enter any valid page number and hit return/enter on your keyboard to go to that page. 
+On the left side is a display for the number of pages of items, with forward and back arrows. The current page number is an editable field — enter any valid page number and hit return/enter on your keyboard to go to that page. 
 
 In the center top is a button for [Advanced Search](/search.md). 
 
@@ -35,11 +35,11 @@ To quickly view the basic information about an item, click the *view details* (e
 
 For a more detailed look at an individual item, click on its title in the items browse table or when viewing its details.
  
-When you view an individual item , there are tabs for the item’s *Metadata* and its *Linked Resources*. The right side of the page displays the item’s media, any *item sets* to which it belongs, its creation date, owner, and visibility. 
-
 ![Item browse view with details open for The Adventure of the Yellow Face. Links to item view page squared in blue](/content/contentfiles/items_detailview.png) The blue squares indicate where to click to open the full item view.
 
-An item’s *linked resources* (shown below) are resources, which have been added as properties to the item. Note that this section only shows resources which have been linked *to* this item (which have it for a property); resources which are linked *from* this item will display in the property which they fill.
+When you view an individual item , there are tabs for the item’s *Metadata* and its *Linked Resources*. The right side of the page displays the item’s media, any *item sets* to which it belongs, its creation date, owner, and visibility. 
+
+An item’s *linked resources* (shown below) are resources, which are linked to this item through properties. Note that this section only shows resources which have been linked *to* this item (which have it for a property); resources which are linked *from* this item will display in the property which they fill.
 
 Linked items are grouped by the property for which they use the current item. In the example below, the item William Shakespeare is used for the properties "Creator," "References," and "list of authors" for the linked resources. 
 
@@ -234,7 +234,7 @@ Choose one of these options and then click *Go*.
 
 ![Batch edit items form, with options as described above. Everything is grayscale](/content/contentfiles/items_batchedit.png)
 
-In addition,  you can use the bottoms at the bottom of the batch edit form to add properties to every item:
+In addition,  you can use the buttons at the bottom of the batch edit form to add properties to every item:
 
 - add text value
 - add resource value
