@@ -16,7 +16,7 @@ Supported file formats for this module are:
 
 Please note that you must have the necessary extractors available on your server for the module to run for these filetypes. To see which filetypes will run on your installation, go to the Modules tab on your Omeka S installation and click the configure button for Extract Text. This will load a table showing you which extractors are available:
 
-![A table of extractors, as described below. All except docx2txt display with the text Yes in green to the right of the extractor name. Docx2txt displays with a red no.]((../modules/modulesfiles/extracttext.png)
+![A table of extractors, as described below. All except docx2txt display with the text Yes in green to the right of the extractor name. Docx2txt displays with a red no.](../modules/modulesfiles/extracttext.png)
 
 The extractors are:
 
