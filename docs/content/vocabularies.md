@@ -9,7 +9,7 @@ Global and Site Administrators can manage their installation’s vocabularies fr
 ## Managing vocabularies
 The main view of the *Vocabularies* tab in the Admin Dashboard displays the existing vocabularies for the Omeka S install. 
 
-![Main view of vocabularies, with columns for label, prefix, classes, and properties counts and information](/content/contentfiles/vocabularies.png)
+![Main view of vocabularies, with columns for label, prefix, classes, and properties counts and information](contentfiles/vocabularies.png)
 
 Vocabularies are displayed in a table with headings for *Label* (name of vocabulary), *Prefix* (used by the database), *Classes* (number of classes in the vocabulary), and *Properties* (number of properties in the vocabulary). You can sort vocabularies by these columns using the up and down arrows at the right end of each column. 
 
@@ -37,7 +37,7 @@ On the New Vocabulary page, enter the following:
 - Label (required): the display name for the vocabulary in lists (ex "Dublin Core," "Friend of a Friend"
 - and any comments you have (optional).
 
-![New vocabulary form, with a file chooser for the vocabulary file and text entry fields for the other values.](/content/contentfiles/vocab_addnew.png)
+![New vocabulary form, with a file chooser for the vocabulary file and text entry fields for the other values.](contentfiles/vocab_addnew.png)
 
 Note that you may have to research in order to find the prefix, namespace uri, and label for the vocabulary, as these are not standardized. In addition to the vocabulary's website, you might consult <http://lov.okfn.org/dataset/lov/vocabs>.
 
@@ -50,7 +50,7 @@ You can also update the vocabulary by either uploading a new vocabulary file or 
 
 If you decide you do not wish to save your changes, or click on the edit button by mistake, you can click the Cancel button next to the Save button.
 
-![Edit vocabulary page for Bibliographic Ontology.](/content/contentfiles/vocab_edit.png)
+![Edit vocabulary page for Bibliographic Ontology.](contentfiles/vocab_edit.png)
 
 ### Vocabulary Import
 Omeka S will import properly formatted vocabularies/ontologies. rdfs:Class and rdfs:Property data will be available. 
@@ -80,9 +80,9 @@ With the exception of Dublin Core and Dublin Core Type, you can delete any vocab
 
 From the Vocabulary browse page, click the trash can/delete icon in the row for the vocabulary you want to delete (1). A drawer will open on the right side of the browser asking you to confirm that you want to delete the vocabulary (2). To delete, click the *Confirm delete* button, and to cancel, simply close the drawer. 
 
-![A view of the vocabularies browse page, with a drawer open on the left asking the user to confirm delete. There is a blue number 1 next to the trash can icon and a blue number 2 just to the left of the red "Confirm delete" button.](/content/contentfiles/vocab-delete1.png)
+![A view of the vocabularies browse page, with a drawer open on the left asking the user to confirm delete. There is a blue number 1 next to the trash can icon and a blue number 2 just to the left of the red "Confirm delete" button.](contentfiles/vocab-delete1.png)
 
 From the edit vocabulary page, you can click the large red *Delete* button in the upper right-hand corner of the page. This will open a drawer which will ask you to confirm the deletion. To delete, click the *Confirm delete* button, and to cancel, simply close the drawer. 
 
-![Edit vocabulary page for "Linked Gen. Data". There is no data in the comments field. A red arrow points to a pale red button labelled "Delete"](/content/contentfiles/vocab-delete2.png)
+![Edit vocabulary page for "Linked Gen. Data". There is no data in the comments field. A red arrow points to a pale red button labelled "Delete"](contentfiles/vocab-delete2.png)
 

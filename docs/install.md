@@ -32,9 +32,9 @@ In the First User section, enter:
 - confirm the *password* and type again in the next input to confirm.
 - a *display name* for the user
 
-Note that you can change all of these later in the [User](/admin/users.md) management section of your install.
+Note that you can change all of these later in the [User](admin/users.md) management section of your install.
 
-![First user section with fields as described](/files/installOmekaS1.png)
+![First user section with fields as described](files/installOmekaS1.png)
 
 In the Settings section, enter:
 
@@ -42,11 +42,11 @@ In the Settings section, enter:
 - The installation's *time zone* (select from dropdown), and
 - select a *locale* for the language of the admin side of the installation.
 
-![Settings section with fields as described](/files/installOmekaS2.png)
+![Settings section with fields as described](files/installOmekaS2.png)
 
-You can changes these at any time in the in the [Settings](/admin/settings.md) section of your [Admin Dashboard](/admin-dashboard.md)
+You can changes these at any time in the in the [Settings](admin/settings.md) section of your [Admin Dashboard](admin-dashboard.md)
 
-See [Configuration Options](configuration) for information on settings for thumbnail generation, php path, and more.
+See [Configuration Options](configuration.md) for information on settings for thumbnail generation, php path, and more.
 
 ## Updating
 1. Download the latest release from the release page
@@ -60,7 +60,7 @@ See [Configuration Options](configuration) for information on settings for thumb
 ## Install on Windows or Mac OS (basic development purpose only)
 Omeka S does not support proprietary or closed source operating systems. However, for **basic development purposes** or for quick training, Omeka can run with [WAMP](http://www.wampserver.com), [MAMP](https://www.mamp.info) or similar tools.
 
-Follow the standard installation instructions. You will need to make the following [configuration](../configuration/) changes to the file `config/local.config.php` to work.
+Follow the standard installation instructions. You will need to make the following [configuration](configuration.md) changes to the file `config/local.config.php` to work.
 
 First, the php path may need to be set if php. Edit the config file and fill the `phpcli_path` at line 12 with the appropriate path for your operating system.
 

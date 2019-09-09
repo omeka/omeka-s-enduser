@@ -16,7 +16,7 @@ Media can only be added via an [item](../content/items.md).
 ## Browse media
 To browse media, first go to the admin item browse. In the left hand navigation, an option for Media browse will appear under the Item browse (you may have to click on the triangle to expand the menu below Items)
 
-![The Resources section of the navigation, with light blue text on a dark blue background. Below the option for items, indented, is a navigation option for Media. It has no representative icon, unlike the other options.](/content/contentfiles/media-browsenav.png)
+![The Resources section of the navigation, with light blue text on a dark blue background. Below the option for items, indented, is a navigation option for Media. It has no representative icon, unlike the other options.](contentfiles/media-browsenav.png)
 
 Media are displayed in a table. Each media is a row, with columns for:
 
@@ -27,13 +27,13 @@ Media are displayed in a table. Each media is a row, with columns for:
 - the media's *Owner*
 - and the date the media was *Created*. 
 
-![The browse media table as described above. All of the media are named with a mediawiki url and owned by the user Megan.](/content/contentfiles/media_browse.png)
+![The browse media table as described above. All of the media are named with a mediawiki url and owned by the user Megan.](contentfiles/media_browse.png)
 
 Options for navigating and creating items display above the table of items. 
 
 On the left side is a display for the number of pages of media, with forward and back arrows. The current page number is an editable field - enter any valid page number and hit return/enter on your keyboard to go to that page. 
 
-In the center top is a button for [Advanced Search](/search.md). 
+In the center top is a button for [Advanced Search](../search.md). 
 
 Just above the table on the right are options for sorting media, with two dropdown menus. The first lets you select between *Title*, *Class*, *Owner,* and *(date)Created*; the second allows you to sort ascending or descending. To apply, click the *sort* button.
 
@@ -58,7 +58,7 @@ Editing media is very similar to editing [items](../content/items) or [item sets
 If desired, you can select a resource template from the drop-down menu. Resource templates are defined by site administrators and editors.
 
 - If using a resource template, the class should automatically load.
-- If not using a resource template, you may select a class from the dropdown menu (these are populated from the [Vocabularies](/content/vocabularies.md) in your installation).
+- If not using a resource template, you may select a class from the dropdown menu (these are populated from the [Vocabularies](vocabularies.md) in your installation).
 
 Add information to the properties which load. If you do not select a resource template or class, the Dublin Core properties Title and Description will load automatically.
 
@@ -68,21 +68,21 @@ Note that if you add the property `dcterms:title`, its contents will replace the
 
 **Text** fields allow for unformatted text entry.
 
-![image of text input field with keyboard icon indicating text input, the globe icon for setting language, and a trashcan delete icon](/content/contentfiles/items_textedit.png)
+![image of text input field with keyboard icon indicating text input, the globe icon for setting language, and a trashcan delete icon](contentfiles/items_textedit.png)
 
 You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code for the language in which the text is written.
 
-![Red arrow points to the globe icon and a text entry field highlighted in blue](/content/contentfiles/item_lang.png)
+![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
 
 **Omeka Resource** fields create an internal link between the resource you are creating and the resource which fills that field. 
 
 You have the option to use either an item, another media, or an item set. Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
 
-![Select Item menu with list of items to link in edit media view](/content/contentfiles/media_addresource.png)
+![Select Item menu with list of items to link in edit media view](contentfiles/media_addresource.png)
 
 If you are using an Item resource for the property, you will have additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search"
 
-![Select Item drawer top options, with a red arrow around a gray triangle button to the right of the phrase "Filter search"](/content/contentfiles/items_filtersearch.png)
+![Select Item drawer top options, with a red arrow around a gray triangle button to the right of the phrase "Filter search"](contentfiles/items_filtersearch.png)
 
 This will open a menu below the button with the following options to filter the items in the drawer:
 
@@ -90,11 +90,11 @@ This will open a menu below the button with the following options to filter the 
 - Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set
 - Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the url of it's edit page; if you are editing the item and the url is `admin/item/11547/edit` then the item's ID is 11547.
 
-![options as above described](/content/contentfiles/item_addresItem.png)
+![options as above described](contentfiles/item_addresItem.png)
 
 Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (ex, Creator, Has Part). 
 
-![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](/content/contentfiles/items_quickadd.png)
+![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](contentfiles/items_quickadd.png)
      
 **URI** fields link to an external website or online resource.
 
@@ -102,7 +102,7 @@ You may add other fields by selecting a property from the list on the right. Bro
 
 **Language** You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code for the language in which the text is written.
 
-![Red arrow points to the globe icon and a text entry field highlighted in blue](/content/contentfiles/item_lang.png)
+![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
 
 You can add properties by selecting from the list on the right side of the screen. You can either browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
 
@@ -120,7 +120,7 @@ You can set individual properties as Private or Publicly visible using the eye i
 
 In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
 
-![As described](/content/contentfiles/item_propviz.png)
+![As described](contentfiles/item_propviz.png)
 
 ### Thumbnail
 Not all media generate an elegant thumbnail, for example pdf or text file documents or some video files. You can use this tab to set a representative thumbnail for the media which will be used on browse pages but not on the page for the item or its media.
@@ -129,11 +129,11 @@ The assets you select from and upload as thumbnails in this tab are the same as 
 
 To assign an asset as a thumbnail, click on the Select button in the main work area of the tab. This will open a drawer on the right side. 
 
-![Select drawer with upload option and two assets, both of which are images.](/content/contentfiles/media_thumbnail1.png)
+![Select drawer with upload option and two assets, both of which are images.](contentfiles/media_thumbnail1.png)
 
 The drawer offers two options: upload a file using your browser, or select from existing assets. To select an existing asset, simply click on it and it will automatically be assigned to the media. 
 
-![Edit media open to Thumbnail tab, where an asset which is an image of a quill pen on a scrolled piece of paper is in the main work area. Below it are buttons for Select and Clear](/content/contentfiles/media_thumbnail2.png)
+![Edit media open to Thumbnail tab, where an asset which is an image of a quill pen on a scrolled piece of paper is in the main work area. Below it are buttons for Select and Clear](contentfiles/media_thumbnail2.png)
 
 To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click select and either choose or upload a new thumbnail asset.
 
@@ -141,7 +141,7 @@ To remove an asset which you have assigned as a thumbnail, click the "Clear" but
 
 From the media browse page, you can batch edit media, using the dropdown menu on left just above the table of media. You can select multiple items using the checkboxes on the left of each item's row.
 
-![A red arrow points to the dropdown for batch editing and deleting options](/content/contentfiles/media_batch1.png)
+![A red arrow points to the dropdown for batch editing and deleting options](contentfiles/media_batch1.png)
 
 Batch actions are as follows:  
 
@@ -161,7 +161,7 @@ Choose one of these options and then click *Go*.
 - Set language: a text entry box.
 - Clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected items. Clear additional properties using the *Clear another property* button.
 
-![Batch edit medias form, with options as described above. Everything is grayscale](/content/contentfiles/media_batchedit.png)
+![Batch edit medias form, with options as described above. Everything is grayscale](contentfiles/media_batchedit.png)
 
 In addition, you can use the bottoms at the bottom of the batch edit form to add properties to every media:
 
@@ -173,5 +173,5 @@ Selecting any of these will add a block to the form where you can select a prope
 
 For the **delete actions**, a drawer will open on the right side of the screen telling you the number of media which will be deleted. Nothing will be deleted unless you click the red *Confirm Delete* button. This action cannot be undone. To opt out of deleting the media, click the X in the upper right corner of the deletion drawer. To confirm delete, check the "Are you sure" checkbox and then click *Confirm Delete*
 
-![Close up of the warning that 2 medias will be deleted.](/content/contentfiles/media_batchdelwarn.png)
+![Close up of the warning that 2 medias will be deleted.](contentfiles/media_batchdelwarn.png)
 

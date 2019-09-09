@@ -39,7 +39,7 @@ To import from a Zotero library:
 
 A note on files: The rules for importing an item are the same as creating an item in Omeka, so if your Zotero library has files which are a disallowed media type, the items will not be imported.
 
-The page will load on the Past Imports tab with a message "Importing from Zotero". To check the status of the import, reload the page or click to the [Jobs](/admin/jobs.md) tab of the left-hand navigation on the admin dashboard.
+The page will load on the Past Imports tab with a message "Importing from Zotero". To check the status of the import, reload the page or click to the [Jobs](../admin/jobs.md) tab of the left-hand navigation on the admin dashboard.
 
 Managing Past Imports
 ---------------------------------
