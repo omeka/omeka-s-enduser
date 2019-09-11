@@ -31,6 +31,7 @@ pages:
     - 'Modules':
         - 'Modules Management': 'modules/index.md'
         - 'Collecting': 'modules/collecting.md'
+        - 'CSS Editor': 'modules/csseditor.md'
         - 'CSV Import': 'modules/csvimport.md'
         - 'Custom Vocab': 'modules/customvocab.md'
         - 'DSpace Connector': 'modules/dspaceconnector.md'
