@@ -64,7 +64,7 @@ Follow the standard installation instructions. You will need to make the followi
 
 First, the php path may need to be set if php. Edit the config file and fill the `phpcli_path` at line 12 with the appropriate path for your operating system.
 
-Second, you need to configure Omeka S to use the thumbnailer which is available in your server. Edit the `local.config.pgp` file with the following, based on what is available for your system:
+Second, you need to configure Omeka S to use the thumbnailer which is available in your server. Edit the `local.config.php` file with the following, based on what is available for your system:
 
 - replace the default thumbnailer `Omeka\File\Thumbnailer\ImageMagick` by `Omeka\File\Thumbnailer\Gd`.
 - replace the default thumbnailer `Omeka\File\Thumbnailer\ImageMagick` by `Omeka\File\Thumbnailer\Imagick`, and enable Imagick in the file `php.ini` of your server via the server admin interface or directly in the file.
