@@ -40,7 +40,8 @@ pages:
         - 'Omeka2 Importer': 'modules/omeka2importer.md'
         - 'Scripto':
             - 'Set up Scripto': 'modules/scripto/index.md'
-            - 'Manage Project': 'modules/scripto/manageproject.md'
+            - 'Scripto Projects': 'modules/scripto/scriptoproject.md'
+            - 'Themeing Scripto': 'modules/scripto/themeingScripto.md'
         - 'Sharing': 'modules/sharing.md'
         - 'ValueSuggest': 'modules/valuesuggest.md'
         - 'Zotero Import': 'modules/zoteroimport.md'
