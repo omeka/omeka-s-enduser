@@ -39,8 +39,8 @@ pages:
         - 'Metadata Browse': 'modules/metadatabrowse.md'
         - 'Omeka2 Importer': 'modules/omeka2importer.md'
         - 'Scripto':
-            - 'modules/scripto/index.md'
-            - 'modules/scripto/manageproject.md'
+            - 'Set up Scripto': 'modules/scripto/index.md'
+            - 'Manage Project': 'modules/scripto/manageproject.md'
         - 'Sharing': 'modules/sharing.md'
         - 'ValueSuggest': 'modules/valuesuggest.md'
         - 'Zotero Import': 'modules/zoteroimport.md'
