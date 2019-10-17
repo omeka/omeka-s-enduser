@@ -105,7 +105,7 @@ Creates a block with one or more pieces of media associated with items in the it
 
 To add media, click the *add attachment*. 
 
-On loading, the drawer will show a list of your items, most recent first. You can select form the first page, page through using the forward and back arrows, or search using the search bar.
+On loading, the drawer will show a list of your items, most recent first. You can select from the first page, page through using the forward and back arrows, or search using the search bar.
 
 ![Select item drawer](../sites/sitesfiles/sitepg_selectitem.png)
 
@@ -152,7 +152,7 @@ Click the *Add Attachment* button to add an item to the block. This will open a 
 
 ![Block for item showcase with one item added](../sites/sitesfiles/sitepg_showcase.png)
 
-On loading, the drawer will show a list of your items, most recent first. You can select form the first page, page through using the forward and back arrows, or search using the search bar.
+On loading, the drawer will show a list of your items, most recent first. You can select from the first page, page through using the forward and back arrows, or search using the search bar.
 
 ![Select item drawer](../sites/sitesfiles/sitepg_selectitem.png)
 
