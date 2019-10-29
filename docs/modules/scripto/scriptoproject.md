@@ -1,4 +1,5 @@
-## Creating a Project
+
+## Create a Project
 To create a new Scripto project, go to the Scripto dashboard (the Scripto tab in the left-hand navigation) and use the dropdown menu in the upper right corner to select "add new project"
 
 This will load the New project page, which has two tabs: Configuration and Reviewers. 
@@ -9,37 +10,50 @@ You can change these settings at any time by editing the project.
 
 ### Configuration options
 
-- **Title** (required): the name of the Scripto project. This will display on public and admin sides.
-- **Item set** (required): select the item set with which the Scripto project should synch. This item set should contain all the items and/or media you wish to include in the project. 
-- **Property** (required): select from the dropdown which property should store the content created through Scripto and imported back into Omeka S metadata. In addition to installed [Vocabularies](https://omeka.org/s/docs/user-manual/content/vocabularies/), Scripto has its own vocabulary options of content, transcription, and translation. 
-- **Description**: a description of the project. This will display on public and admin sides.
-- **Guidelines**: transcription guidelines. These can be formatted using the WYSIWYG editor which will appear when typing inside this field.
-- **Language tag**: the language tag for the content being imported into the property selected above.
-- **Import target**: select the resource to store data when it is pushed from the Scripto project back to Omeka S metadata. Options are Item and Media, Item, or Media.
-- **Browse layout**: choose the default browse layout for the project, either Grid or List.
-- **Item Type**: if you want, you can specify the type of item used in this project. What you select here will change the interface language for users. For example, if you choose "manuscript" then the browse link for the project will display as "browse manuscripts" instead of "browse items". Choose from:
-	- Generic Item (default)
-	- Audio
-	- Book
-	- Document
-	- Journal 
-	- Manuscript
-	- Paper
-	- Video
-- **Media Type**: use this dropdown to specify the type of media used in the project, and change the way that media is referred to in scripto for this project. Choose from:
-	- Generic Media
-	- Entry
-	- Folio
-	- Image
-	- Page
-	- Section
-	- Segment
-	- Sheet
-- **Content Type**: use this to specify the kind of work in the project. Choose from:
-	- Generic Content
-	- Description
-	- Transcription
-	- Translation
+**Title** (required): the name of the Scripto project. This will display on public and admin sides.
+
+**Item set** (required): select the item set with which the Scripto project should synch. This item set should contain all the items and/or media you wish to include in the project. 
+
+**Property** (required): select from the dropdown which property should store the content created through Scripto and imported back into Omeka S metadata. In addition to installed [Vocabularies](https://omeka.org/s/docs/user-manual/content/vocabularies/), Scripto has its own vocabulary options of content, transcription, and translation. 
+
+**Description**: a description of the project. This will display on public and admin sides.
+
+**Guidelines**: transcription guidelines. These can be formatted using the WYSIWYG editor which will appear when typing inside this field.
+
+**Language tag**: the language tag for the content being imported into the property selected above.
+
+**Import target**: select the resource to store data when it is pushed from the Scripto project back to Omeka S metadata. Options are Item and Media, Item, or Media.
+
+**Browse layout**: choose the default browse layout for the project, either Grid or List.
+
+**Item Type**: if you want, you can specify the type of item used in this project. What you select here will change the interface language for users. For example, if you choose "manuscript" then the browse link for the project will display as "browse manuscripts" instead of "browse items". Choose from:
+
+- Generic Item (default)
+- Audio
+- Book
+- Document
+- Journal 
+- Manuscript
+- Paper
+- Video
+
+**Media Type**: use this dropdown to specify the type of media used in the project, and change the way that media is referred to in scripto for this project. Choose from:
+
+- Generic Media
+- Entry
+- Folio
+- Image
+- Page
+- Section
+- Segment
+- Sheet
+
+**Content Type**: use this to specify the kind of work in the project. Choose from:
+
+- Generic Content
+- Description
+- Transcription
+- Translation
 
 
 ![Add New Project window open to the "Configuration" tab - all fields are blank](../../modules/modulesfiles/scripto_newconfig.png)
@@ -70,7 +84,7 @@ Note that the first time you run the sync may take some time, and you may contin
 ## Admin Project View
 From the Scripto dashboard you can access projects you own and those to which you have reviewer access. Regardless of your status for the project, clicking on the project's title will take you to its review page.
 
-![scripto review page, user not logged in to Scripto](../../modules/modulesfiles/scripto-preview.png)
+![scripto review page, user not logged in to Scripto](../../modules/modulesfiles/scripto-admin-project1.png)
 
 At the top of the page you will see the title of the project along with the label "Review". Underneath the project title will be the Scripto account bar, where you can either log in or navigate to the dashboard, your contributions and watchlist. 
 
@@ -115,7 +129,7 @@ On the right is a bar summarizing the item's status and data. The properties for
 
 ![item admin side](../modules/modulesfiles/scripto-itemview.png)
 
-The main work area has two tabs: one for Media and one with the Omkea item metadata.
+The main work area has two tabs: one for Media and one with the Omeka item metadata.
 
 ### Media tab
 On the Media tab, there is a table with all the media in an item. Users transcribe media by media, so Scripto allows you to review on the media level.
