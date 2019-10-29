@@ -25,18 +25,25 @@ The Scripto module uses [item sets](../../content/item-sets) to manage the conte
 Each Scripto project needs its own item set with which it can sync. Create the item set using items from your Omeka S installation which you want to be included in the project. You can add items to this item set later if you need to. 
 
 ## Scripto Admin Dashboard
-The Scripto tab which appears under the Modules section of the left-hand navigation on the Omeka S installation admin side takes you to the Scripto Dashboard. From the dashboard, you can:
+The Scripto tab which appears under the Modules section of the left-hand navigation on the Omeka S installation admin side takes you to the Scripto Dashboard. 
 
-- Log in to Scripto using the bar across the top. If you are logged in, this bar will display your username, links to your contributions and watchlist, and the option to log out of Scripto.
-- Quickly see the projects you own and the projects you review.
-- See your recent contributions and activity on items on your watchlist. 
-- From the dropdown in the upper right: 
-	- browse all projects, 
-	- add a new project, and 
-	- browse all Scripto users. 
+From the dashboard, you can log in to Scripto using the bar across the top:
+
+![Scripto dashboard header and log in fields](../../modules/modulesfiles/scripto-dash-login.png)
+
+Once you are logged in, the dashboard will include:
+
+- A bar across the top with your username and links to the dashboard, your contributions, your watchlist, and a button to Log Out of Scripto.
+- A view of all the [Projects](/modules/scripto/scriptoproject/) you own.
+- A view of all the [Projects](/modules/scripto/scriptoproject/) you review
+- A view of your recent Contributions
+- A View of your watchlist.
 
 ![Scripto dashboard with three projects, two of which the user reviews, and a series of recent contributions.](../../modules/modulesfiles/scripto_dash.png)
 
+From the dropdown in the upper right, Omeka S global and site admins can: browse all [Projects](/modules/scripto/scriptoproject/); add a new [Project](/modules/scripto/scriptoproject/), and browse all Scripto users. 
+
+![Dropdown showing the options to browse projects, add a project, or browse users](../../modules/modulesfiles/scripto-dash-actions.png)
 
 ## Users
 In addition to an Omeka S user account, any individual working on Scripto will need to have a MediaWiki user account as well. They can sign up for this account from the public side of the Scripto interface: `<your omeka S url>/scripto/create-account`.
@@ -48,7 +55,31 @@ You may find it easiest to have administrators of Scripto projects use the same 
 ### Browse users
 From the "actions" dropdown in the upper right corner of the Scripto Dashboard, you can select "Browse users"
 
-This will take you to a user browse page showing all of the users 
+This will take you to a user browse page showing all of the Scripto users on this installation (from MediaWiki). 
+
+![Browse users table with two users, one regular and one admin](../../modules/modulesfiles/scripto-browseUsers.png)
+
+The users are displayed in a table listing their:
+
+- Name
+- MediaWiki Groups, which will indicate their roles
+- Edit count (how many media they have edited)
+- Date the account was created.
+
+### User contributions
+Clicking on a user's name will take you to a page with a summary of their contributions. 
+
+![Contributions of the user DemoUser - one edit dated 15 October 2019](../../modules/modulesfiles/scripto-user-contributions.png)
+
+For each user, there will be a table with a row for every edit they have made to a piece of media. The columns are:
+
+- Revision, with a timestamp which links to that revision;
+- Media #, with a link to the media;
+- Type;
+- Item, which links to the item *in Scripto*;
+- Project with which the item is associated;
+- Size of the edit;
+- Comment, if any. 
 
 ## Public and Admin views
 To toggle between the public and admin views of a project, delete the `/admin` from the url of any Scripto site, or add it in directly after the name of your Omeka S installation. 
