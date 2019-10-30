@@ -1,7 +1,16 @@
-The Scripto module for Omeka S allows you to create projects to transcribe, translate, or describe media attached to items in your Omeka S installation. The items and media are organized into an item set and then imported into a project in Scripto and can be periodically synched with the Omeka S item set to send the data back from Scripto to the Omeka S item and media metadata.
+The Scripto module for Omeka S allows you to create projects which allow members of the public to transcribe, translate, or describe media attached to items in your Omeka S installation. 
 
-The Omeka S Scripto module allows you to create multiple projects on a single Scripto installation. Like sites in Omeka S, Scripto projects can exist independently of each other. This means that you can support a manuscript transcription project and a document translation project through the same Omeka S installation.
+The items and media are organized into an item set and then imported into a project in Scripto and can be periodically synched with the Omeka S item set to send the data back from Scripto to the Omeka S item and media metadata.
 
+## Concepts and Terminology
+
+A Scripto **Project** allows you to organize the materials you want to work with, and set how you intend to work with them. A project can either transcribe, translate, or describe; it cannot do more than one. 
+
+However, the Omeka S Scripto module allows you to create multiple projects on a single Scripto installation. Like sites in Omeka S, Scripto projects can exist independently of each other. This means that you can support a manuscript transcription project and a document translation project through the same Omeka S installation.
+
+An **Item** in Scripto corresponds to an item in Omeka S. When browsing projects, community members will page through items. Items can also be labeled as: audio, book, document, journal, manuscript, paper, or video.
+
+The **Media** associated with an item are the level at which community members transcribe, translate, or describe. Every piece of media is associated with an item. Media can also be called: entry, folio, image, page, segment, section, or sheet. 
 
 ## Installation and Configuration
 To install Scripto, you must:
@@ -18,6 +27,15 @@ Staying on the Modules tab, click the Configure button for the Scripto module. T
 ![Scripto module configuration page, with the field empty and highlighted in red](../modulesfiles/scripto-configure.png)
 
 Enter the url for your [MediaWiki API endpoint](https://www.mediawiki.org/wiki/API:Main_page#Endpoint) in the field; this should be along the lines of `<your mediawiki url>/api.php`. Be sure to click "Submit" to save your changes.  
+
+### Scripto Vocabulary
+Once Scripto is installed and active, it will add the Scripto Vocabulary to your Omeka S installation. This vocabulary contains the following properties:
+
+- Content: A plain text representation of the content of a resource.
+- Transcription: A transcription of a resource
+- Translation: A translation of a resource.
+
+Do not edit this vocabulary.
 
 ## Create an item set
 The Scripto module uses [item sets](../../content/item-sets) to manage the content coming to and from your Omeka installation. 
