@@ -1,3 +1,4 @@
+Scripto is made up of projects. Every transcription, translation, or description effort you create can have its own project. 
 
 ## Create a Project
 To create a new Scripto project, go to the Scripto dashboard (the Scripto tab in the left-hand navigation) and use the dropdown menu in the upper right corner to select "add new project"
@@ -6,7 +7,7 @@ This will load the New project page, which has two tabs: Configuration and Revie
 
 The eye symbol on the upper right by the "add" button sets the visibility of the project. If the button is set to private (eye with a slash) it will only be visible to users *of the Omeka site*
 
-You can change these settings at any time by editing the project. 
+You can change these settings at any time by editing the project using the Actions dropdown on the project review.
 
 ### Configuration options
 
@@ -88,7 +89,7 @@ From the Scripto dashboard you can access projects you own and those to which yo
 
 At the top of the page you will see the title of the project along with the label "Review". Underneath the project title will be the Scripto account bar, where you can either log in or navigate to the dashboard, your contributions and watchlist. 
 
-The sidebar on the right summarizes the metadata for the project. The project title, item set, and owner all act as links .
+The sidebar on the right summarizes the metadata for the project. The project title, item set, and owner all act as links.
 
 In the main work area is a table with all of the items in the project, with the following information:
 
@@ -120,28 +121,31 @@ Above the table are options to:
 	- is new
 	- is edited after imported
 
+To find items which have been edited and are ready for review, filter all items by "is in progress." You may also want to sort by last edited.
+
 ## Admin Item Review
 To review an item, click on its title in the project view.
 
 The Item view page, like the project view, has near the top of the page a Scripto account bar, where you can either log in or navigate to the dashboard, your contributions and watchlist.
 
-On the right is a bar summarizing the item's status and data. The properties for the Scripto Project and Omeka S item link back to their respective properties. 
+On the right is a drawer summarizing the item's status and data. The properties for the Scripto Project and Omeka S item link back to their respective properties. Click the bar between the drawer and the main work area (indicated with a `>` symbol) to collapse the drawer.
 
-![item admin side](../modules/modulesfiles/scripto-itemview.png)
+![item admin side with drawer open](../../modules/modulesfiles/scripto-itemview.png)
 
-The main work area has two tabs: one for Media and one with the Omeka item metadata.
+The main work area has two tabs: one summarizing Media information and one with the Omeka item metadata.
 
 ### Media tab
 On the Media tab, there is a table with all the media in an item. Users transcribe media by media, so Scripto allows you to review on the media level.
 
 The table includes:
 
-- A selectbox for the media
-- The index number of the media
-- The media's thumbnail and title
-- last edited date
-- status (approved, complete, blank)
-- Edit protection (admin only, open to all)
+- A **checkbox** for the media
+- The **index number** of the media
+- The media's **thumbnail** and **title**. Click on this to review the media.
+- An ellpises (`...`) which opens a drawer on the right displaying the metadata for that media
+- **last edited** date
+- **status** 
+- **Edit protection** (admin only, open to all)
 
 You can sort the table by last synced, last edited, last completed and last approved, either ascending or descending, using the dropdowns in the upper right of the tab.
 
@@ -156,17 +160,32 @@ You can also filter which media are displayed using the dropdown to show only:
 
 Using the checkbox you can edit selected or all media.
 
-Batch edit options are: 
+To review a specific piece of media, click either on its title or thumbnail.
 
-Set completion status as Complete, incomplete, or no change. Set Approval status as Approved, not approved, or no change.
+#### Batch edit media 
+If you batch edit media from the Review item tab, you have the following options: 
 
-![batch edit](../modules/modulesfiles/scripto_batcheditmedia.png)
+- Set completion status as Complete, incomplete, or no change.
+- Set Approval status as Approved, not approved, or no change.
+- Change protection level for the selected media to one of the following: No change, Allow all users, Allow only confirmed users, or Allow only administrators.
+- Set an expiry date for the protection, choosing from: infinite, 1 hour, 1 day, 1 week, 2 weeks, 1 month, 3 months, 6 months, 1 year.
+- Set watchlist status as watch, unwatch, or no change.
+
+![batch edit](../../modules/modulesfiles/scripto_batcheditmedia.png)
+
+On the right side of the batch edit media view is a list of all of the media which you are editing.
+
+When you are done, either click Save or Cancel, in the upper right hand corner of the screen.
 
 ### Omeka item metadata
-This tab is a static display of the metadata for the Omeka S item with which the Scripto item is associated. When you sync the project, this is the item which will be updated. To edit the item, scroll in the right hand drawer 
+This tab is a static display of the metadata for the Omeka S item with which the Scripto item is associated. When you sync the project, this is the item which will be updated. To edit the item, scroll in the right hand drawer display of Scripto item metadata to find the Omeka item link (indicated with an arrow in the below image)
+
+![Omeka item metadata view](../../modules/modulesfiles/scripto-omekaitemmeta.png)
 
 ## Media Review page
-This is where you review the community contributions.
+Review of user-generated content takes place at the media level. To review the work for a specific piece of media, click on its title or thumbnail from the review item page of the item with which it is associated.
+
+The Review media page consists of three tabs in the main work area and a drawer on the right hand side. 
 
 Along the top of the page are the following buttons:
 
@@ -175,9 +194,7 @@ Along the top of the page are the following buttons:
 - A button to **View notes** of the media
 - A button to **Save** changes
 
-There are three tabs on this page, along with a drawer on the right which remains open. 
-
-The first tab is **Wikitext** and displays the user-generated text from MediaWiki next to the media. You can use the Layout buttons to toggle between side by side and top and bottom display. You can zoom in and rotate the media display using the buttons within the media viewer. There is also an option to go to a full screen view of the text and media.
+The first tab is **Wikitext** and displays the user-generated text from MediaWiki next to the media. You can use the Layout buttons to toggle between side by side and top and bottom display. You can zoom in and rotate the media display using the buttons within the media viewer. There is also an option to go to a full screen view of the text and media. Note that you cannot edit the text from this view, you can only read it.
 
 The second tab is an **HTML** display of the Wikitext content, showing the formatted text as it will display on the public side of a site.
 
@@ -185,9 +202,15 @@ The third tab is **Omeka media metadata** for the media.
 
 To the right of the tabs is a set of foward-backward arrow buttons and numbers (1 of 2 in the image) which allow you to move through media attached to an item without backing out to the Review item page.
 
-![Media review](../modules/modulesfiles/scripto_mediareview1.png)
+![Media review](../../modules/modulesfiles/scripto_mediareview1.png)
 
-In the drawer:
+The drawer on the right is where review actions take place, in the section titled "Review Status." 
+
+At the top of the drawer is the **This revision** section where you can move through revisions using the forward and back arrows. The first line in this section indicates whether it is the "Latest" revision or "out of date". Use the double-forward (`>>`) button to skip to the latest revision. This section also displays the name of the user who created this revision, the timestamp, and any comments they may have made when saving their changes. 
+
+![This revision section showing an old revision](../../modules/modulesfiles/scripto-thisrevold.png)
+
+The next section is **Review status**. 
 
 - You can move through revisions using the forward and backward arrows.
 - You can view review status and modify using checkboxes if your Mediawiki role includes bureaucrat.
@@ -207,17 +230,43 @@ You can toggle the drawer open and closed using the open arrow `>` button in the
 Clicking the "Revision History at the top of the Review media page takes you to a listing of the revision history for the media.
 
 Clicking on the timestamp for a revision will take you to that revision. 
-![Revision history](../modules/modulesfiles/scripto_revisionhist.png)
+![Revision history](../../modules/modulesfiles/scripto_revisionhist.png)
 
 ### Notes
 Notes are a way for project staff and transcribers to communicate. Access the notes for a specific media using the "View notes" button in the upper right corner of the Review Media page
 
-![a red arrow points to the "View notes" button in a close-up of the upper right hand corner](../modules/modulesfiles/scripto_notes_loc.png)
+![a red arrow points to the "View notes" button in a close-up of the upper right hand corner](../../modules/modulesfiles/scripto_notes_loc.png)
 
 The note review options are similar to the media review options: there is a tab for wiktext where you can see the notes to the left of a small view of the media. The HTML tab displays only the wikitext in full HTML markup, not editable. The Omeka media metadata tab allows you to review the Omeka S metadata associated with the media.  
 
 Using the drawer on the right hand side of the screen, you can change the protection of the notes page to allow only the selected level of users to edit the notes page: all users, only confirmed users, or only administrators. 
 
-![Notes](../modules/modulesfiles/scripto_notes.png)
+![Notes](../../modules/modulesfiles/scripto_notes.png)
 
 You can toggle the drawer open and closed using the open arrow `>` button in the middle of the divider between the drawer and the main work area. 
+
+## Sharing data between Scripto and Omeka S
+Scripto projects and the Omeka S items and item sets with which they are associated are separate entities. In order to update either Scripto or Omeka S, you will need to take one of the following actions on your project from the Actions dropdown in the upper right corner of the screen on the Project review page:
+
+- Sync project
+- Import content
+- Unimport content
+
+![Actions dropdown](../../modules/modulesfiles/scripto-actions.png)
+
+All three of these actions open a drawer on the right side of the screen with a summary of what the action does. In order to complete the action, you must click the button at the end of the text in order to complete the action. 
+
+![Import content drawer with a message summarizing what it does. At the bottom is a button which says "Import project"](../../modules/modulesfiles/scripto-importproject.png)
+
+### Sync project
+Syncing a project updates the project in Scripto with information from the Omeka S item set. 
+
+Use this option if you have made changes to the Omeka S item set, or the items in that set. You should synchronize periodically, any time items are added or removed from the item set, and when item media have been added, removed, or reordered.
+
+### Import content
+This option is how you move content from your Scripto project to Omeka S metadata. This will only move approved transcriptions (or similar content) to the Omeka S items. By default, the target are Scripto vocabulary properties in the resource type you selected during configuration.
+
+If you have a project which is fairly active, you should plan to import content weekly or monthly.
+
+### Unimport content
+This option deletes all project content from Omeka S. 
