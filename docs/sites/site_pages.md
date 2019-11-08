@@ -99,7 +99,7 @@ Displays the title of the current page.
 ![Page block display site's title](../sites/sitesfiles/sitepg_title.png)
 
 ### Media
-Creates a block with one or more pieces of media associated with items in the item pool. 
+Creates a block with one or more pieces of media associated with items in the item pool. In media blocks, multiple attachments stack vertically.
 
 ![media block with no media attached](../sites/sitesfiles/sitepg_media.png)
 
@@ -144,7 +144,7 @@ Once you have searched, highlight everything in your browser's address bar start
 ![Page block for Browse Preview](../sites/sitesfiles/sitepg_bpblock.png)
 
 ### Item Showcase
-A list of items. 
+A list of items. In item showcase blocks, multiple attachments build horizontally, creating rows across the page.
 
 Using the drop-down menu in the block, you can set the thumbnail size for these items as large (default), medium, or square. 
 
