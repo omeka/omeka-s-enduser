@@ -49,8 +49,6 @@ Select an existing marker then click the trash can icon to delete the marker.
 Click the magnifying glass icon to open a search address field.
 ![Screenshot of the map with Search bar selected.](../modules/modulesfiles/Mapping_Item_Search.png)
 
-
-
 ### Modifying the appearance of a Marker
 The appearance of existing markers may be modified. Click the Marker to open a dialog window. 
 * Enter descriptive text in the text field. 
@@ -68,11 +66,11 @@ To add a map to a new or existing page, click to edit the page. On the right, un
 ### Default View 
  Small white buttons on the left of the map interface set the default view for the map: 
  
- * _Zoom in_: The small white square with a black plus sign. Each click zooms in one step.
- * _Zoom out_: The small white square with black minus sign. Each click zooms out one step.
- * _Set the current view as default view_: The small white square with a target or crosshair symbol. The map will default to a global view. Click to set the current view as the default view.
- * _Go to current default view_: The small black square with a black box around a dot. This option is only available after a default view has been set. Click to pan and zoom map to the selected view.
- * _Clear the default center and zoom level_: The small white square with a black "X". Click to clear pan and zoom preferences and return to the initial global view.
+ * *Zoom in:* The small white square with a black plus sign. Each click zooms in one step.
+ * *Zoom out:* The small white square with black minus sign. Each click zooms out one step.
+ * *Set the current view as default view:* The small white square with a target or crosshair symbol. The map will default to a global view. Click to set the current view as the default view.
+ * *Go to current default view:* The small black square with a black box around a dot. This option is only available after a default view has been set. Click to pan and zoom map to the selected view.
+ * *Clear the default center and zoom level:* The small white square with a black "X". Click to clear pan and zoom preferences and return to the initial global view.
 
 ![Screenshot of the Default view includes a map with the white buttons described.](../modules/modulesfiles/Mapping_Page_Default.png)
 
@@ -80,26 +78,33 @@ To add a map to a new or existing page, click to edit the page. On the right, un
 
  Add, edit, and delete Web Map Service (WMS) overlays.
  
- * _Label_: Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays. 
- * _Base URL_: Add a URL to the WMS map.
- * _Layers_:
- * _Styles_:
- * Click Add Overlay to create the overlay. Click _Clear Inputs_ to clear each of the fields. Multiple overlays can be added. Choose a default overlay by checking the box next to it. Edit or delete an overlay click on the red pencil edit button, or click the red trashcan icon to delete.
+ * *Label:* Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays. 
+ * *Base URL:* Add a URL to the WMS map.
+ * *Layers:*
+ * *Styles:*
+ * Click Add Overlay to create the overlay. Click _Clear Inputs_ to clear each of the fields. Multiple overlays can be added.
+ * Choose a default overlay by checking the box next to it. Edit an overlay by clicking on on the red pencil edit button, or click the red trashcan icon to delete the overlay.
+
 ![Screenshot of the WMS Overlays with fields and buttons described.](../modules/modulesfiles/Mapping_Page_Overlays.png)
 
 ### Timeline
+Timeline adds a timeline display to the left of the map view. Note that this feature requires the NumericDataTypes module and at least one item that has a Timestamp or Interval value applied through its resource template. 
+
+- Title headline
+- Title text
+- Fly to
+- Property
 
 
 ### Attachments
 
 Markers are added to the map using _Items_.
 
-* After Items have been mapped, click _Add Attachment_  (1) to select them from a list on the right (2). Note: This list will only be populated by items that have been mapped.
+* Click _Add Attachment_  (1) to select them from a list on the right (2). Note: This list will only be populated by items that have at least one location added to them (when editing the item).
 * Clicking an item adds it to a list in the Attachments pane (3).
 * Click and drag items in this list to reorder them. 
 * Delete items by clicking the red trashcan. 
 
-After Items have been mapped, click _Add Attachment_  (1) to select them from a list on the right (2). Note: This list will only be populated by items that have been mapped. Clicking an item adds it to a list in the Attachments pane (3).
 ![Screenshot of the map with Add Attachment selected. On the right a list of items.](../modules/modulesfiles/Mapping_Page_Attachments.png)
 
 ## Troubleshooting
