@@ -88,12 +88,18 @@ To add a map to a new or existing page, click to edit the page. On the right, un
 ![Screenshot of the WMS Overlays with fields and buttons described.](../modules/modulesfiles/Mapping_Page_Overlays.png)
 
 ### Timeline
-Timeline adds a timeline display to the left of the map view. Note that this feature requires the NumericDataTypes module and at least one item that has a Timestamp or Interval value applied through its resource template. 
+Timeline adds a timeline display to the left of the map view. Note that this feature requires the [NumericDataTypes](../modules/numericdatatypes/) module and at least one item that has a property with a Timestamp or Interval value (applied via the [resource template](../../content/resource-template/)). 
 
 - Title headline
 - Title text
-- Fly to
-- Property
+- *Fly to:* is a dropdown menu where you can set the zoom level for each point in the timeline on the map. Your options are default view, or zoom levels 0-18 (even numbers only). The higher the number, the more zoomed in the map will be. 
+	- Note that the transition between points is animated, so if you have very distant points the shift between them will involve a significant zoom out and in. 
+- *Property:* a dropdown menu; select the timestamp or interval property to use when populating the timeline. The dropdown menu will populate with the properties which have been defined in a resource type as using numeric data types Interval or Timestamp. 
+	- You may want to make a note 
+
+![Mapping block with all options collapsed except Timeline, which shows options as described, all empty](../modules/modulesfiles/mapping-timelineBlock.png)
+
+On the public side, the timeline will display to the left of the map, or above the map on mobile views. 
 
 
 ### Attachments
@@ -106,6 +112,13 @@ Markers are added to the map using _Items_.
 * Delete items by clicking the red trashcan. 
 
 ![Screenshot of the map with Add Attachment selected. On the right a list of items.](../modules/modulesfiles/Mapping_Page_Attachments.png)
+
+
+
+## Public view
+
+### Timeline Public view
+
 
 ## Troubleshooting
 If you would like to remove the mapping location from an item, you must delete all the map modifications. First, click to delete each marker (click the Delete a Marker button, select the marker, click to save) and then click to clear the default center and zoom level (click the Clear the default and zoom level button. The map will return to a global view). Click to save the item and confirm that the map no longer appears.
