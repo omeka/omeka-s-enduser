@@ -130,7 +130,13 @@ Markers are added to the map using _Items_.
 * Click and drag items in this list to reorder them. 
 * Delete items by clicking the red trashcan. 
 
-![Screenshot of the map with Add Attachment selected. On the right a list of items.](../modules/modulesfiles/Mapping_Page_Attachments.png)
+![Screenshot of the map with Add Attachment selected. On the right a list of items.](../modules/modulesfiles/Mapping_pageAttachments.png)
+
+To add multiple items at once, click the "quick add" slider just above the list of items in the right hand drawer. This will add a checkbox to the left of each item. Check the boxes of those items you want to add to the map, then click the "Add selected" button at the bottom of the drawer. 
+
+![Drawer with bulk add option activated](../modules/modulesfiles/Mapping-bulkAttachments.png)
+
+
 
 ## Public view
 A map block will display on a public page at full page width. If you have settings in the [default view](../../modules/mapping/#default-view) of the block, these should be applied. Otherwise the block will zoom so that all of the items are visible. 
