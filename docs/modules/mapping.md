@@ -8,7 +8,7 @@ To install Mapping, follow the instructions for [Installing Modules](../modules/
 
 Mapping is compatible with [CSV Import](../modules/csvimport.md). 
 
-## Adding Geolocation to an Item
+## Item Mapping
 
 To add a map to a new or existing item, click to edit the item. Navigate to the  _Mapping_ tab to add a map to the item. Selecting the tab will open the map interface.
 
@@ -28,8 +28,27 @@ Small white buttons on the left side of the map control and modify the appearanc
 * **Set the current view as default view**: The small white square with a target or crosshair symbol. The map will default to a zoomed out (global) view. Click to set the current view as the default view.
 * **Go to current default view**: The small black square with a black box around a dot. The This option is only available after you have set a default view. Click to pan and zoom map to the selected view.
 * **Clear the default center and zoom level**: The small white square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
+
 In addition to these options, you can also navigate the map using your mouse or trackpad by scrolling to zoom and clicking and dragging to pan.
 
+### Adding locations to an item
+
+In order to add a location to an item, go to the Mapping tab.
+
+To find the point where you want to locate the marker, you can do one of the following: 
+
+* Zoom and drag to find the location.
+* Type the place name into the Search Address field (see Figure 4 below). 
+	* Note that this will populate as you type, and will not search locations which do not match the formatting of the search function.
+* Enter latitude and longitude coordinates into the search box. These should be formatted as decimals, for example `38.897222, -77.064167`, not `38° 53′ 50″ N, 77° 3′ 51″ W`
+
+![Mapping tab with a search for "Roosevelt Island" in the search view. Below the search field are a number of suggested locations.](../modules/modulesfiles/Mapping_itemSearch.png)
+
+Click on the *Draw a Marker* tool in the right hand toolbar. Your cursor will become a marker which can move around the map. To set the point, click on the map.
+
+You can now click on the marker to add a label which will display on public map views of the item.
+
+![Mapping tab with an active marker being drawn. The marker has a tooltip saying "click map to place marker"](../modules/modulesfiles/Mapping-drawMarker.png)
 
 *Figure 1*: Drawing a Marker:
 Draw a marker - the lower marker in the image is the cursor placing a location.
@@ -45,18 +64,18 @@ The lower marker is in the process of being moved.
 Select an existing marker then click the trash can icon to delete the marker.
 ![Screenshot of the map with delete marker selected.](../modules/modulesfiles/Mapping_Item_Delete.png)
 
-*Figure 4* Search Address
+4. Search Address
 Click the magnifying glass icon to open a search address field.
 ![Screenshot of the map with Search bar selected.](../modules/modulesfiles/Mapping_Item_Search.png)
 
 ### Modifying the appearance of a Marker
-The appearance of existing markers may be modified. Click the Marker to open a dialog window. 
+The appearance of existing markers may be modified. Click the Marker to open a dialog window.
+
+![Screenshot of the map with marker selected, revealing dialog window with field for Marker Label and button to add Marker Image. To the right, the Marker Image pane includes options to select an image or to add no image.](../modules/modulesfiles/Mapping_Item_Modify.png)
+
 * Enter descriptive text in the text field. 
 * To add an image to the marker click _Select Marker Image_ to select an image from the media uploaded to this item. 
 	* Note: the item must have image media attached in order to select an image. 
-
-
-![Screenshot of the map with marker selected, revealing dialog window with field for Marker Label and button to add Marker Image. To the right, the Marker Image pane includes options to select an image or to add no image.](../modules/modulesfiles/Mapping_Item_Modify.png)
 
 ## Adding a Map block to a site
 To add a map to a new or existing page, click to edit the page. On the right, under _Add New Block_ , click the  _Map_ tab to add a map to the item (1). Selecting the tab will open the map block to the page (2). This block includes customizable features for the map in collapsable panes. Click the triangle to expand or collapse these fields (3). 
@@ -76,30 +95,37 @@ To add a map to a new or existing page, click to edit the page. On the right, un
 
 ### WMS Overlays
 
- Add, edit, and delete Web Map Service (WMS) overlays.
+ Add, edit, and delete [Web Map Service (WMS)](https://mapserver.org/ogc/wms_server.html) overlays.
  
  * *Label:* Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays. 
  * *Base URL:* Add a URL to the WMS map.
- * *Layers:*
- * *Styles:*
- * Click Add Overlay to create the overlay. Click _Clear Inputs_ to clear each of the fields. Multiple overlays can be added.
- * Choose a default overlay by checking the box next to it. Edit an overlay by clicking on on the red pencil edit button, or click the red trashcan icon to delete the overlay.
+ * *Layers:* Any layers you wish to use, separated by commas.
+ * *Styles:* Any styles you wish to use, separated by commas.
+ 
+ Click Add Overlay to create the overlay. Click _Clear Inputs_ to clear each of the fields. Multiple overlays can be added.
+ 
+ ![Map page block with only the WMS Overlays section open. All of the mentioned fields are empty](../modules/modulesfiles/Mapping_Page_Overlays.png)
 
-![Screenshot of the WMS Overlays with fields and buttons described.](../modules/modulesfiles/Mapping_Page_Overlays.png)
-
+  Once you have added an overlay, it will appear above the fields for adding overlays. 
+ 
+  Choose a default overlay by checking the box next to it. Edit an overlay by clicking on on the red pencil edit button, or click the red trashcan icon to delete the overlay.
+  
+  ![Screenshot of the WMS Overlays with empty fields and the US and Territories overlay above the fields. A blue arrow points to the overlay](../modules/modulesfiles/Mapping_Page_Overlays2.png)
+ 
 ### Timeline
 Timeline adds a timeline display to the left of the map view. Note that this feature requires the [NumericDataTypes](../modules/numericdatatypes/) module and at least one item that has a property with a Timestamp or Interval value (applied via the [resource template](../../content/resource-template/)). 
 
-- Title headline
-- Title text
+- *Title headline:* displays on the first slide of the timeline (see ["Timeline public view"](../../modules/mapping/#timeline-public-view) below). You can use this to name the timeline.
+- *Title text:* appears below the title headline on the first slide of the timeline (see ["Timeline public view"](../../modules/mapping/#timeline-public-view) below). You can use this to provide context or narrative introduction for the timeline.
 - *Fly to:* is a dropdown menu where you can set the zoom level for each point in the timeline on the map. Your options are default view, or zoom levels 0-18 (even numbers only). The higher the number, the more zoomed in the map will be. 
 	- Note that the transition between points is animated, so if you have very distant points the shift between them will involve a significant zoom out and in. 
 - *Property:* a dropdown menu; select the timestamp or interval property to use when populating the timeline. The dropdown menu will populate with the properties which have been defined in a resource type as using numeric data types Interval or Timestamp. 
-	- You may want to make a note 
+	- You may want to make a note of which property and numeric data type you are using before creating the map block. The dropdown only displays the term and data type but not which template it is associated with, for example `Date Created (numeric:timestamp)`.
+	- Noted that you can only select *one* property per timeline. You cannot mix timestamp and interval data. 
 
 ![Mapping block with all options collapsed except Timeline, which shows options as described, all empty](../modules/modulesfiles/mapping-timelineBlock.png)
 
-On the public side, the timeline will display to the left of the map, or above the map on mobile views. 
+To remove the timeline from a map block, click the X on the far right of the Property dropdown.
 
 
 ### Attachments
@@ -116,9 +142,51 @@ Markers are added to the map using _Items_.
 
 
 ## Public view
+A map block will display on a public page at full page width. If you have settings in the [default view](../../modules/mapping/#default-view) of the block, these should be applied. Otherwise the block will zoom so that all of the items are visible. 
+
+Viewers can zoom either using the scroll function of their computer or the Zoom in/out buttons on the left side of the map.
+
+![Map block with three individual markers and two green cluster circles of two markers. The map shows a portion of southern England.](../modules/modulesfiles/mapping-public.png)
+
+Each item will display as a marker on the map. Markers which are close together will display as a cluster circle, with a number indicating how many items share that location. As you zoom in, these clusters may break open. 
+
+Clicking on a marker will open a label for that marker. If you have not added a label or media for the marker, it will simply say "view item." If you have added a label, it will show the label, as well as representative media and a link to the media if the marker has one.
+
+Item mapping marker with label only:
+![](../modules/modulesfiles/mapping-publicLabel.png)
+
+Item mapping marker with label and media:
+![](../modules/modulesfiles/mapping-publicLabelImg.png)
+
+Item mapping marker with no label or media: 
+![](../modules/modulesfiles/mapping-publicNoLabel.png)
 
 ### Timeline Public view
+On the public side, the timeline will display to the left of the map, or above the map on mobile views. Each item appears on both the map and the timeline.
 
+On a map block with timeline, the block initially loads with the map either at default view or zoomed to display all markers. The timeline will display the title headline and text, as seen below:
+
+![Map block with timeline, displaying the first slide of the timeline. There are two lines of text, a larger font reading "Title Headline" and below it smaller font reading "title text".](../modules/modulesfiles/mapping-timelinePublic1.png)
+
+In the timeline half of the display, information appears on the top and the timeline on the bottom. The timeline viewer has zoom buttons which increase or decrease the horizontal display of time (zoom in for year by year, zoom out to see decades at once). The arrow below them returns the viewer to the title slide.
+
+When mousing over the timeline, the cursor changes to a four-directional arrow. Viewers can hold and drag left and right to scroll through the timeline. They can also navigate between items using the semi-opaque right and left arrows on the information area of the display.
+
+Clicking on a maker will display that item's date or interval, title, description, and attached media. The information area has a scroll bar for longer material. The title acts as a link to the item's show page.
+
+![Map block with timeline, displaying the interval item "Steventon Rectory, 1775-1801". The information area includes the beginning of a long paragraph describing the item. The marker for the rectory in the timeline runs off the right side of the timeline, which displays 1760-1800.](../modules/modulesfiles/mapping-timelinePublic2.png)
+
+Whenever an item is selected, its marker in the timeline will show up with a highlight to indicate that it is active.
+
+**Numeric:Interval appearance**
+Interval properties display as a long bar running horizontally across the timeline, with bars reaching down to the timeline at the start and end dates of the interval. Overlapping intervals will stack.
+
+![Interval timeline with both Steventon Rectory and Reading Abbey Girls' School. The latter is open and highlighted in the timeline display; it is shorter than and nested under the timeline display for the Rectory.](../modules/modulesfiles/mapping-timelinePublic3.png)
+
+**Numeric:Timestamp appearance**
+Timestamp properties display as a flag on the timeline, with one bar anchoring them to the timeline. Items which overlap either due to date or long text will stack.
+
+![Timestamp timeline showing markers for the births of Cassandra and Jane Austen in the 1770s](../modules/modulesfiles/mapping-timelinePublic4.png)
 
 ## Troubleshooting
 If you would like to remove the mapping location from an item, you must delete all the map modifications. First, click to delete each marker (click the Delete a Marker button, select the marker, click to save) and then click to clear the default center and zoom level (click the Clear the default and zoom level button. The map will return to a global view). Click to save the item and confirm that the map no longer appears.
