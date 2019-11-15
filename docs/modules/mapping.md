@@ -21,18 +21,17 @@ Small white buttons on the left side of the map control and modify the appearanc
 
 * **Zoom in**: The small white square with a black plus sign. Each click zooms in one step.
 * **Zoom out**: The small white square with black minus sign. Each click zooms out one step.
-* **Draw a Marker**: The small white square with black bubble marker. When you click the button your pointer becomes a blue marker. Click again on the map to place the marker. An item can have multiple markers on its map. _(See Figure 1 below.)_
-* **Move Marker**: The small white square with black box and pencil icon. This option is only available after a marker has been added. Click the button and a pink box appears around each marker. Click a marker to move it. Click again to place. Use the grey buttons to _Save_ or _Cancel_. _(See Figure 2 below.)_
-* **Delete Marker**: The small white button with a trashcan icon. This option is only available after a marker has been added. Click the icon to select a marker. Click the marker to be removed and it will disappear. Use the grey buttons to _Save_ or _Cancel_ these changes. _(See Figure 3 below.)_
-* **Search Address**: The small white square with a black magnifying glass icon. Click to enter an address in the search bar. Hit enter to locate. _(See Figure 4 below.)_
-* **Set the current view as default view**: The small white square with a target or crosshair symbol. The map will default to a zoomed out (global) view. Click to set the current view as the default view.
-* **Go to current default view**: The small black square with a black box around a dot. The This option is only available after you have set a default view. Click to pan and zoom map to the selected view.
+* **Draw a Marker**: The small white square with black bubble marker. When you click the button your pointer becomes a blue marker. Click again on the map to place the marker.
+* **Move Marker**: The small white square with black box and pencil icon. This option is only available after a marker has been added. Click the button and a pink box appears around each marker. Click a marker to move it. Click again to place. Use the grey buttons to _Save_ or _Cancel_. 
+* **Delete Marker**: The small white button with a trashcan icon. This option is only available after a marker has been added. Click the icon to select a marker. Click the marker to be removed and it will disappear. Use the grey buttons to _Save_ or _Cancel_ these changes. 
+* **Search Address**: The small white square with a black magnifying glass icon. Click to enter an address in the search bar.
+* **Set the current view as default view**: The small white square with a target or crosshair symbol. The map will default to a zoomed out (global) view. Click to set the current view as the default view for this item.
+* **Go to current default view**: The small black square with a black box around a dot. The This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
 * **Clear the default center and zoom level**: The small white square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
 
 In addition to these options, you can also navigate the map using your mouse or trackpad by scrolling to zoom and clicking and dragging to pan.
 
 ### Adding locations to an item
-
 In order to add a location to an item, go to the Mapping tab.
 
 To find the point where you want to locate the marker, you can do one of the following: 
@@ -46,36 +45,30 @@ To find the point where you want to locate the marker, you can do one of the fol
 
 Click on the *Draw a Marker* tool in the right hand toolbar. Your cursor will become a marker which can move around the map. To set the point, click on the map.
 
-You can now click on the marker to add a label which will display on public map views of the item.
-
 ![Mapping tab with an active marker being drawn. The marker has a tooltip saying "click map to place marker"](../modules/modulesfiles/Mapping-drawMarker.png)
 
-*Figure 1*: Drawing a Marker:
-Draw a marker - the lower marker in the image is the cursor placing a location.
-![Screenshot of the map with Draw a Marker selected.](../modules/modulesfiles/Mapping_Item_Draw.png)
+You can now click on the marker to add a label which will display on [public map views](../modules/mapping/#public-view) of the item. Be aware that this will display in a large font.
 
+![Close up of map with a marker selected. There is a field to enter the maker label.](../modules/modulesfiles/Mapping-addLabel.png)
 
-*Figure 2*: Move a Marker
-The lower marker is in the process of being moved. 
-![Screenshot of the map with Move marker selected.](../modules/modulesfiles/Mapping_Item_Move.png)
+When you are adding a label, you can also add an image to display on the marker when clicked in the [public view](../modules/mapping/#public-view). You can only select from images which has already been [attached to the item as media](../content/items/#media). To remove the image, select "no Image" from the sidebar. 
 
+![Marker selected with Image added. The media is also visible in the sidebar, along with an option for "no image"](../modules/modulesfiles/Mapping-addImage.png)
 
-*Figure 3*: Delete a Marker
-Select an existing marker then click the trash can icon to delete the marker.
-![Screenshot of the map with delete marker selected.](../modules/modulesfiles/Mapping_Item_Delete.png)
+### Editing markers
+To edit the label or image, simply click on the marker. This will open the options for the label and image, as seen above. 
 
-4. Search Address
-Click the magnifying glass icon to open a search address field.
-![Screenshot of the map with Search bar selected.](../modules/modulesfiles/Mapping_Item_Search.png)
+To **move a marker** you have added, use the "Move marker" button on the left hand toolbar (small white square with black box and pencil icon). Any marker on the map will become highlighted in a red, dotted-line outline. Click and drag the marker you want to move. 
 
-### Modifying the appearance of a Marker
-The appearance of existing markers may be modified. Click the Marker to open a dialog window.
+To apply your changes, click the "Save" option which opens from the "Move marker" button. To cancel the changes, click "Cancel." If you do not click save, the marker will not be moved.
 
-![Screenshot of the map with marker selected, revealing dialog window with field for Marker Label and button to add Marker Image. To the right, the Marker Image pane includes options to select an image or to add no image.](../modules/modulesfiles/Mapping_Item_Modify.png)
+![Marker being moved](../modules/modulesfiles/Mapping-moveMarker.png)
 
-* Enter descriptive text in the text field. 
-* To add an image to the marker click _Select Marker Image_ to select an image from the media uploaded to this item. 
-	* Note: the item must have image media attached in order to select an image. 
+To **delete a marker**, first click the "Delete a marker" in the left hand toolbar (trash can icon). Click on the marker you want to delete; this will remove the marker from the map. In order to make the deletion permanent, you must click Save in the menu which opens from the "Delete a marker" button. 
+
+Note that you can use the "clear all" button in the menu which opens form the "delete a marker" button to clear all markers on the map. 
+
+![Marker being deleted.](../modules/modulesfiles/Mapping-deleteMarker.png)
 
 ## Adding a Map block to a site
 To add a map to a new or existing page, click to edit the page. On the right, under _Add New Block_ , click the  _Map_ tab to add a map to the item (1). Selecting the tab will open the map block to the page (2). This block includes customizable features for the map in collapsable panes. Click the triangle to expand or collapse these fields (3). 
@@ -139,8 +132,6 @@ Markers are added to the map using _Items_.
 
 ![Screenshot of the map with Add Attachment selected. On the right a list of items.](../modules/modulesfiles/Mapping_Page_Attachments.png)
 
-
-
 ## Public view
 A map block will display on a public page at full page width. If you have settings in the [default view](../../modules/mapping/#default-view) of the block, these should be applied. Otherwise the block will zoom so that all of the items are visible. 
 
@@ -150,15 +141,15 @@ Viewers can zoom either using the scroll function of their computer or the Zoom 
 
 Each item will display as a marker on the map. Markers which are close together will display as a cluster circle, with a number indicating how many items share that location. As you zoom in, these clusters may break open. 
 
-Clicking on a marker will open a label for that marker. If you have not added a label or media for the marker, it will simply say "view item." If you have added a label, it will show the label, as well as representative media and a link to the media if the marker has one.
+Clicking on a marker will open a label for that marker. If you have not added a label or image for the marker, it will simply say "view item." If you have added a label, it will show the label, as well as representative media and a link to the media if the marker has one.
 
 Item mapping marker with label only:
 ![](../modules/modulesfiles/mapping-publicLabel.png)
 
-Item mapping marker with label and media:
+Item mapping marker with label and image:
 ![](../modules/modulesfiles/mapping-publicLabelImg.png)
 
-Item mapping marker with no label or media: 
+Item mapping marker with no label or image: 
 ![](../modules/modulesfiles/mapping-publicNoLabel.png)
 
 ### Timeline Public view
@@ -172,7 +163,7 @@ In the timeline half of the display, information appears on the top and the time
 
 When mousing over the timeline, the cursor changes to a four-directional arrow. Viewers can hold and drag left and right to scroll through the timeline. They can also navigate between items using the semi-opaque right and left arrows on the information area of the display.
 
-Clicking on a maker will display that item's date or interval, title, description, and attached media. The information area has a scroll bar for longer material. The title acts as a link to the item's show page.
+Clicking on a maker will display that item's date or interval, title, description, and attached image. The information area has a scroll bar for longer material. The title acts as a link to the item's show page.
 
 ![Map block with timeline, displaying the interval item "Steventon Rectory, 1775-1801". The information area includes the beginning of a long paragraph describing the item. The marker for the rectory in the timeline runs off the right side of the timeline, which displays 1760-1800.](../modules/modulesfiles/mapping-timelinePublic2.png)
 
