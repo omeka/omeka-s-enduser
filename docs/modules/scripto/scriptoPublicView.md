@@ -1,4 +1,4 @@
-On the public side, users can browse the Scripto project but in order to edit or create content they must have a Scripto (Mediawiki) account and be logged in. 
+On the public side, all users can browse Scripto projects that are marked as public. In order to edit or create content, users may need a Scripto (Mediawiki) account and be logged in, but this is only required for MediaWiki installations that forbid anonymous editing. Even so, users may still want to log in to Scripto so they can better monitor their work.
 
 ## Public project view
 On the public side, projects display a progress bar for all items, so that community users can easily identify media or items to work on. 

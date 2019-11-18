@@ -1,6 +1,6 @@
 The Scripto module for Omeka S allows you to create projects which allow members of the public to transcribe, translate, or describe media attached to items in your Omeka S installation. 
 
-The items and media are organized into an item set and then imported into a project in Scripto and can be periodically synched with the Omeka S item set to send the data back from Scripto to the Omeka S item and media metadata.
+The items and media are organized into an item set and then synced with a project in Scripto. Content made within Scripto can be periodically imported into Omeka S as item and media metadata.
 
 ## Concepts and Terminology
 
@@ -15,7 +15,7 @@ The **Media** associated with an item are the level at which community members t
 ## Installation and Configuration
 To install Scripto, you must:
 
-- be running Omeka S v1.1.2 or higher;
+- be running Omeka S v2.0.0 or higher;
 - have a [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) installation running on the same server as the Omeka S installation. Minimum MediaWiki version is 1.30.0.
 
 Create the MediaWiki installation on your server using [their instructions](https://www.mediawiki.org/wiki/Manual:FAQ#Installation_and_configuration). Install the Scripto module using the [documentation for installing modules](https://omeka.org/s/docs/user-manual/modules/#installing-modules). 
