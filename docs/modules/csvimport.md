@@ -631,7 +631,7 @@ This tab displays an initial dropdown above a table with the columns from your s
 
 ![Table as described above, with rows for User, email, and role.](../modules/modulesfiles/csvimport_users.png)
 
-To map a column header to a vocabulary property, click on the plus symbol button to the left of the column header. This will open a drawer on the right-hand side of the screen. 
+To map a column header to user information, click on the plus symbol button to the left of the column header. This will open a drawer on the right-hand side of the screen. 
 
 ![A red arrow points to the plus sign button to the left of the word "title"](../modules/modulesfiles/csvimport_usersMapButton.png)
 
