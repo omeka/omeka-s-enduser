@@ -42,7 +42,7 @@ Go to the Resource Templates and either add new or edit an existing template. On
 1. Add the property to which you want to apply the Custom Vocab.
 2. Edit the property
 3. In the drawer which opens on the right, go to the Other options section and find the Data type dropdown.
-2. Scroll through the dropdown and slect the Custom Vocabulary you want to use
+2. Scroll through the dropdown and select the Custom Vocabulary you want to use
 3. Click set changes at the bottom of the drawer.
 
 Be sure to save your changes
