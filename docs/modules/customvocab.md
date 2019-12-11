@@ -12,13 +12,16 @@ Once you have installed and activated the module, go to the Custom Vocab tab in 
 
 Click the Add a New Vocab button in the upper right-hand corner of the window. 
 
-The Add Cusom Vocab page has three fields: Label, Language, and Terms. 
+The Add Cusom Vocab page has four fields: Label, Language, Items, and Terms. 
 
 ![Add Custom Vocab with data entered in the label and terms fields](../modules/modulesfiles/customVocab_add.png)
 
 - *Label* a name for the vocabulary, which you will use to find it when adding to a resource template.
-- *Language* (optional) of the vocab using the [ISO 639-1 language code.](http://www.iso.org/iso/language_codes)/
-- *Terms* for the custom vocab, one word or phrase per line.
+- *Language* (optional) of the vocab using the [ISO 639-1 language code.](http://www.iso.org/iso/language_codes)
+
+You can set the controlled vocabulary terms either to a list of existing items or to a list of entered terms:
+- *Items* offers a drop-down of Item Sets in your Omeka S installation. Choosing one of these will create a custom vocab populated by items from that item set. When used, the property is populated as an Omeka Resource, not text.
+- *Terms* for the custom vocab, one word or phrase per line. This populates the property as text.
 
 Hit submit to save changes.
 
