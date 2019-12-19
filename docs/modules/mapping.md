@@ -112,6 +112,14 @@ Timeline adds a timeline display to the left of the map view. Note that this fea
 - *Title text:* appears below the title headline on the first slide of the timeline (see ["Timeline public view"](../../modules/mapping/#timeline-public-view) below). You can use this to provide context or narrative introduction for the timeline.
 - *Fly to:* is a dropdown menu where you can set the zoom level for each point in the timeline on the map. Your options are default view, or zoom levels 0-18 (even numbers only). The higher the number, the more zoomed in the map will be. 
 	- Note that the transition between points is animated, so if you have very distant points the shift between them will involve a significant zoom out and in. 
+- *Show contemporaneous events:* sets how two events with the same timestamp or interval are displayed. If checked, contemporaneous events will both display in the map when active in the story slider. 
+	- For timestamp properties, if two events have a date of "1 January 2000," both events will show on the map when either is in the story slider.
+	- For interval properties, if one event has an interval of "28 July 1914 - 11 November 1918" and another has an interval of "January 1819- December 1920" both events will show on the map when either is in the story slider.
+	- Note that this setting only works with the default view of Timeline navigation position. 
+- *Timeline navigation position:* by default, the timeline displays with the story slider, to the left of the map. Using this dropdown, you can change where the story slider displays. Options are:
+	- Default position
+	- Full width, below story slider and map
+	- Full width, above story slider and map
 - *Property:* a dropdown menu; select the timestamp or interval property to use when populating the timeline. The dropdown menu will populate with the properties which have been defined in a resource type as using numeric data types Interval or Timestamp. 
 	- You may want to make a note of which property and numeric data type you are using before creating the map block. The dropdown only displays the term and data type but not which template it is associated with, for example `Date Created (numeric:timestamp)`.
 	- Noted that you can only select *one* property per timeline. You cannot mix timestamp and interval data. 
@@ -120,6 +128,7 @@ Timeline adds a timeline display to the left of the map view. Note that this fea
 
 To remove the timeline from a map block, click the X on the far right of the Property dropdown.
 
+To see how the various settings of the timeline block appear on the public side, please see the [Timeline Public View](#timeline-public-view) section below.
 
 ### Attachments
 
@@ -184,6 +193,20 @@ Interval properties display as a long bar running horizontally across the timeli
 Timestamp properties display as a flag on the timeline, with one bar anchoring them to the timeline. Items which overlap either due to date or long text will stack.
 
 ![Timestamp timeline showing markers for the births of Cassandra and Jane Austen in the 1770s](../modules/modulesfiles/mapping-timelinePublic4.png)
+
+**Timeline navigation position**
+If you select "full width, below story slider and map" in the "Timeline navigation position" dropdown, the timeline and map will display as follows:
+
+![Timeline start page slide, with the timeline displaying full width below the map and story slider](../modules/modulesfiles/mapping-timelinePublicBelow.png)
+
+If you select "full width, above story slider and map", the display will be similar but with the timeline above.
+
+**Show contemporaneous events**
+When "show contemporaneous events" is checked, the map zooms to display all events which take place on the same day. 
+
+In the image below, the timeline is using interval data. The event "Reading Abbey Girls' School" (March 1785 - December 1786) takes place within the same period as "Steventon Rectory" (1775-1801), so the map is zoomed out to display the location markers for both events. 
+
+![image as described](../modules/modulesfiles/mapping-timelinePublicSCE.png)
 
 ## Troubleshooting
 If you would like to remove the mapping location from an item, you must delete all the map modifications. First, click to delete each marker (click the Delete a Marker button, select the marker, click to save) and then click to clear the default center and zoom level (click the Clear the default and zoom level button. The map will return to a global view). Click to save the item and confirm that the map no longer appears.
