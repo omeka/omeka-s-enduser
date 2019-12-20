@@ -120,7 +120,7 @@ To remove an asset which you have assigned as a thumbnail, click the "Clear" but
 ### Access Settings
 Item sets have two settings which control their access. They can be *public* or *not public* and they can be *open* or *closed*.
 
-Use the *make public/private* button (eye icon) to make the item visible to the public or only to all users of the Omeka S installation (not public). 
+Use the *make public/private* button (eye icon) to make the item set visible to the public or only to all users of the Omeka S installation (not public). 
 
 *Open* sets can be edited and added to by any user on the install.
 
