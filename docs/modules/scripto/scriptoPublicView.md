@@ -1,11 +1,27 @@
 On the public side, all users can browse Scripto projects that are marked as public. In order to edit or create content, users may need a Scripto (Mediawiki) account and be logged in, but this is only required for MediaWiki installations that forbid anonymous editing. Even so, users may still want to log in to Scripto so they can better monitor their work.
 
+To toggle between the public and admin views of a project, delete the `/admin` from the url of any Scripto site, or add it in directly after the name of your Omeka S installation. 
+
+The admin side is `youromekaurl.net/admin/scripto` and the public side is `youromekaurl.net/scripto`.
+
+All transcription activity takes place on the **public** side of the Scripto project. You cannot edit a transcription from the admin dashboard.
+
+## Linking between Scripto and an Omeka S site
+While the Scripto public interface exists somewhat separately from the sites you build in your Omeka S installation, it is possible to move between them.
+
+### Scripto block for Omeka S page
+When you add the Scripto module, it creates a new [page block](../../sites/site_pages/#page-blocks) called "Scripto"
+
+The Scripto page block offers a drop-down to let you select from all available Scripto [projects](
+
+## Scripto public dashboard
+
 ## Public project view
 On the public side, projects display a progress bar for all items, so that community users can easily identify media or items to work on. 
 
 ![Public project view. There are two large square thumbnails representing items in the project. One has a "2/2" and a full green bar underneath it, indicating that the item has been completely transcribed](../../modules/modulesfiles/scripto_publicproj.png)
 
-## Public item view
+### Public item view
 The public item view displays the Omeka S item metadata in a column on the left side, and the media in the main area on the right. 
 
 Users can toggle between gallery and list views using the layout button. They can also *sort* and *filter* media in the item. Sort options are by last edited, last completed, and last approved. Filter options are is edited, is not edited, is completed, is not completed, is approved, is not approved.
@@ -14,7 +30,7 @@ Users can toggle between gallery and list views using the layout button. They ca
 
 Users can either click on the media's index number to view media information, on edit to go straight to the mediawiki transcription/translation interface.
 
-## Public media view
+### Public media view
 The initial media view shows the media on the right, with metadata on the left. Underneath the media display is the HTML of whatever wikitext has already been generated. 
 
 At the top of the page is the title of the item, which functions as a link back to the item, followed by the media's number (the second page will be #2, for example). Below this information is the original title of the media itself. 
@@ -30,7 +46,7 @@ On the right above the media and metadata is a pagination button which allows us
 
 ![media view](../../modules/modulesfiles/scripto_mediav.png)
 
-### Adding text
+#### Adding text
 To start working with a piece of media, the user clicks "edit" in the toolbar above the media and metadata display.
 
 A new page loads, with a media viewer and a editing workspace for users to enter text. Depending on the selected layout, media may be to the right of the workspace or above it.

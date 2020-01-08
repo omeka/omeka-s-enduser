@@ -2,6 +2,8 @@ The Scripto module for Omeka S allows you to create projects which allow members
 
 The items and media are organized into an item set and then synced with a project in Scripto. Content made within Scripto can be periodically imported into Omeka S as item and media metadata.
 
+All content creation (transcription, translation, or description) takes place on the [public face](/modules/scripto/scriptoPublicView/) of your Scripto [project](/modules/scripto/scriptoproject/)
+
 ## Concepts and Terminology
 
 A Scripto **Project** allows you to organize the materials you want to work with, and set how you intend to work with them. A project can either transcribe, translate, or describe; it cannot do more than one. 
@@ -29,7 +31,7 @@ Staying on the Modules tab, click the Configure button for the Scripto module. T
 Enter the url for your [MediaWiki API endpoint](https://www.mediawiki.org/wiki/API:Main_page#Endpoint) in the field; this should be along the lines of `<your mediawiki url>/api.php`. Be sure to click "Submit" to save your changes.  
 
 ### Scripto Vocabulary
-Once Scripto is installed and active, it will add the Scripto Vocabulary to your Omeka S installation. This vocabulary contains the following properties:
+Once Scripto is installed and active, it will add the Scripto [Vocabulary](../../content/vocabularies/) to your Omeka S installation. This vocabulary contains the following properties:
 
 - Content: A plain text representation of the content of a resource.
 - Transcription: A transcription of a resource
@@ -55,7 +57,7 @@ Once you are logged in, the dashboard will include:
 - A view of all the [Projects](/modules/scripto/scriptoproject/) you own.
 - A view of all the [Projects](/modules/scripto/scriptoproject/) you review
 - A view of your recent Contributions
-- A View of your watchlist.
+- A view of your watchlist.
 
 ![Scripto dashboard with three projects, two of which the user reviews, and a series of recent contributions.](../../modules/modulesfiles/scripto_dash.png)
 
@@ -104,6 +106,8 @@ To toggle between the public and admin views of a project, delete the `/admin` f
 
 The admin side is `youromekaurl.net/admin/scripto` and the public side is `youromekaurl.net/scripto`.
 
+All transcription activity takes place on the **public** side of the Scripto project. You cannot edit a transcription from the admin dashboard.
+
 ## Uninstalling Scripto
 
-In order to successfully uninstall scripto, the module must be still be active. 
+In order to successfully uninstall Scripto, the module must be still be active. Do not deactivate Scripto prior to uninstalling. 

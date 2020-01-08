@@ -1,29 +1,42 @@
-Scripto is made up of projects. Every transcription, translation, or description effort you create can have its own project. 
+Scripto is made up of projects. Every transcription, translation, or description effort you create can, and should, have its own project. 
 
 ## Create a Project
 To create a new Scripto project, go to the Scripto dashboard (the Scripto tab in the left-hand navigation) and use the dropdown menu in the upper right corner to select "add new project"
 
+![Action dropdown open with a red arrow pointing to the Add New Project option](../modulesfiles/scripto-projectAdd.png)
+
 This will load the New project page, which has two tabs: Configuration and Reviewers. 
 
-The eye symbol on the upper right by the "add" button sets the visibility of the project. If the button is set to private (eye with a slash) it will only be visible to users *of the Omeka site*
+The eye symbol on the upper right by the "add" button sets the visibility of the project. If the button is set to private (eye with a slash) it will only be visible to users *of the Omeka site*.
+
+![Just the top of new project page, showing the two tabs and the eye symbol](../modulesfiles/scripto-projectAdd2.png)
 
 You can change these settings at any time by editing the project using the Actions dropdown on the project review.
 
 ### Configuration options
+Some of these configuration options are required to create your Scripto project; all of them can be changed later using the "Edit project" option.
+
+![Add New Project window open to the "Configuration" tab - all fields are blank](../../modules/modulesfiles/scripto_newconfig.png)
 
 **Title** (required): the name of the Scripto project. This will display on public and admin sides.
 
 **Item set** (required): select the item set with which the Scripto project should synch. This item set should contain all the items and/or media you wish to include in the project. 
 
-**Property** (required): select from the dropdown which property should store the content created through Scripto and imported back into Omeka S metadata. In addition to installed [Vocabularies](https://omeka.org/s/docs/user-manual/content/vocabularies/), Scripto has its own vocabulary options of content, transcription, and translation. 
+**Property** (required): select from the dropdown which property should store the content created through Scripto when it is imported back into Omeka S metadata. In addition to installed [Vocabularies](https://omeka.org/s/docs/user-manual/content/vocabularies/), Scripto has its own vocabulary options of content, transcription, and translation; any of these would work for the property.
 
 **Description**: a description of the project. This will display on public and admin sides.
 
-**Guidelines**: transcription guidelines. These can be formatted using the WYSIWYG editor which will appear when typing inside this field.
+**Guidelines**: transcription guidelines. These can be formatted using the text formatting editor which will appear when typing inside this field.
+
+![Guidelines editor in action, displaying editor](../modulesfiles/scripto-projectGuideEdit.png)
 
 **Language tag**: the language tag for the content being imported into the property selected above.
 
-**Import target**: select the resource to store data when it is pushed from the Scripto project back to Omeka S metadata. Options are Item and Media, Item, or Media.
+**Import target**: select the resource level to store data when it is pushed from the Scripto project back to Omeka S metadata. Options are Item and Media, Item, or Media.
+
+If you select Item, then content created in Scripto will appear in the Item metadata, in the property you selected earlier. 
+
+If you select Media, the content created in Scripto will appear in the media metadata, but not at the item level.
 
 **Browse layout**: choose the default browse layout for the project, either Grid or List.
 
@@ -56,29 +69,32 @@ You can change these settings at any time by editing the project using the Actio
 - Transcription
 - Translation
 
-
-![Add New Project window open to the "Configuration" tab - all fields are blank](../../modules/modulesfiles/scripto_newconfig.png)
-
 ### Reviewers
-Add Omeka S users to your Scripto project as reviewers, who can can access private projects, and mark media as approved and unapproved. Only Omeka users with site and global administrator roles can sync and import projects, due to the destructive potential of those actions.
+Add [Omeka S users](../../admin/users/) to your Scripto project as reviewers, who can can access private projects, and mark media as approved and unapproved. You can manage users after adding a project (see below)
+
+Only Omeka users with **site administrator** and g**lobal administrator** roles can sync and import projects, due to the destructive potential of those actions. 
+
+Although reviewers do not need to have a MediaWiki account to review a Scripto project, it is recommended that they create one.
+
+![Add New Project window open to the "Reviewers" tab - the page is largely blank, with an alphabetical menu down one side.](../modulesfiles/scripto_newrev.png)
 
 On the right-hand side of the window is a browsable list of Omeka S users, sorted alphabetically by username. To add a user as a Scripto project reviewer, simply click on their name; this will add them to the table of reviewers in the main part of the page.
 
+Be sure to add yourself as a reviewer if you plan to work on this project. 
+
 To remove a user as reviewer, click the trash can icon to the right of their email address in the table of reviewers.  
 
-![Add New Project window open to the "Reviewers" tab - the page is largely blank, with an alphabetical menu down one side.](../../modules/modulesfiles/scripto_newrev.png)
-
-
-Click "Add" to create the new project.
+### Add project
+Once you have entered the required fields and lick "Add" to create the new project.
 
 ### Initial Sync
 Immediately upon creating a project, you will see the message: "No Scripto items found. Do you need to sync the project? If you have recently synced, the sync job has likely not finished."
 
-![New project sync message](../../modules/modulesfiles/scripto-newproject.png)
+![New project sync message](../modulesfiles/scripto-newproject.png)
 
 To sync the project, go to the Actions dropdown button in the upper right corner of the window. From the options, select "Sync project" - this will update the project so that it has every item in the item set. 
 
-![](../../modules/modulesfiles/scripto-projectactions.png)
+![](../modulesfiles/scripto-projectactions.png)
 
 Note that the first time you run the sync may take some time, and you may continue to see the "No Scripto items found" message. You should also see a green message across the top of the page stating that the project is syncing and giving you a link to the job for the sync.
 
@@ -89,8 +105,16 @@ From the Scripto dashboard you can access projects you own and those to which yo
 
 At the top of the page you will see the title of the project along with the label "Review". Underneath the project title will be the Scripto account bar, where you can either log in or navigate to the dashboard, your contributions and watchlist. 
 
+In the top right corner is the Actions dropdown which has the following options:
+
+- [Edit project](#edit-project)
+- [Sync project](#sync-project)
+- [Import content](#import-content)
+- [Unimport content](#unimport-content)
+
 The sidebar on the right summarizes the metadata for the project. The project title, item set, and owner all act as links.
 
+### Table of items
 In the main work area is a table with all of the items in the project, with the following information:
 
 - Item* (first media thumbnail and title)
@@ -109,11 +133,6 @@ Above the table are options to:
 - sort items and media, either ascending or descending, by:
 	- Date synced
 	- Last edited
-	- If you have the module Numeric Data Types installed, you will also see:
-		- Date Created
-		- Date Submitted
-		- Extent
-		- Identifier
 - filter results by:
 	- is approved
 	- is not approved
@@ -122,6 +141,9 @@ Above the table are options to:
 	- is edited after imported
 
 To find items which have been edited and are ready for review, filter all items by "is in progress." You may also want to sort by last edited.
+
+### Edit project
+You can edit your project using the Actions dropdown in the upper right hand corner of the screen. It offers the same two tabs you used when [creating your project](#create-a-project) - [Configuration](#configuration-options) and [Reviewers](#reviewers). 
 
 ## Admin Item Review
 To review an item, click on its title in the project view.
@@ -147,7 +169,7 @@ The table includes:
 - **status** 
 - **Edit protection** (admin only, open to all)
 
-You can sort the table by last synced, last edited, last completed and last approved, either ascending or descending, using the dropdowns in the upper right of the tab.
+You can sort the table by last synced, last edited, last completed and last approved, either ascending or descending, using the drop-downs in the upper right of the tab.
 
 You can also filter which media are displayed using the dropdown to show only: 
 
@@ -160,7 +182,7 @@ You can also filter which media are displayed using the dropdown to show only:
 
 Using the checkbox you can edit selected or all media.
 
-To review a specific piece of media, click either on its title or thumbnail.
+To review a specific piece of media, click either on its title or thumbnail. This will take you to its [media review page](#media-review-page).
 
 #### Batch edit media 
 If you batch edit media from the Review item tab, you have the following options: 
@@ -256,17 +278,32 @@ Scripto projects and the Omeka S items and item sets with which they are associa
 
 All three of these actions open a drawer on the right side of the screen with a summary of what the action does. In order to complete the action, you must click the button at the end of the text in order to complete the action. 
 
-![Import content drawer with a message summarizing what it does. At the bottom is a button which says "Import project"](../../modules/modulesfiles/scripto-importproject.png)
-
 ### Sync project
-Syncing a project updates the project in Scripto with information from the Omeka S item set. 
+Syncing a project updates the project in Scripto with information **from** the Omeka S item set. 
 
 Use this option if you have made changes to the Omeka S item set, or the items in that set. You should synchronize periodically, any time items are added or removed from the item set, and when item media have been added, removed, or reordered.
 
+![Sync content drawer with a message summarizing what it does. At the bottom is a button which says "Sync project"](../modulesfiles/scripto-syncproject.png)
+
 ### Import content
-This option is how you move content from your Scripto project to Omeka S metadata. This will only move approved transcriptions (or similar content) to the Omeka S items. By default, the target are Scripto vocabulary properties in the resource type you selected during configuration.
+This option is how you move content from your Scripto project **to** Omeka S metadata. 
+
+This will only move approved transcriptions (or similar content) to the Omeka S items. By default, the target are Scripto vocabulary properties in the resource type you selected during configuration.
 
 If you have a project which is fairly active, you should plan to import content weekly or monthly.
 
+![Import content drawer with a message summarizing what it does. At the bottom is a button which says "Import project"](../modulesfiles/scripto-importproject.png)
+
 ### Unimport content
 This option deletes all project content from Omeka S. 
+
+![Unimport content drawer with a message summarizing what it does. At the bottom is a button which says "Unimport project"](../modulesfiles/scripto-unimportproject.png)
+
+## Delete a project
+To delete a project, choose the 'Edit project' option from the Actions dropdown in the upper right corner of the project dashboard. 
+
+Click the Delete button in the upper right hand corner of the editing window. 
+
+![arrow pointing to the delete button](../modulesfiles/scripto-deleteProject.png)
+
+This will open a drawer asking you to confirm that you wish to delete the project. Click Confirm Delete to completely delete the project.
