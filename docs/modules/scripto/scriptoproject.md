@@ -16,31 +16,33 @@ You can change these settings at any time by editing the project using the Actio
 ### Configuration options
 Some of these configuration options are required to create your Scripto project; all of them can be changed later using the "Edit project" option.
 
-![Add New Project window open to the "Configuration" tab - all fields are blank](../../modules/modulesfiles/scripto_newconfig.png)
+![Add New Project window open to the "Configuration" tab - all fields are blank](../../modules/modulesfiles/scripto-projectNewConfig.png)
 
-**Title** (required): the name of the Scripto project. This will display on public and admin sides.
+**Title:** (required) the name of the Scripto project. This will display on public and admin sides.
 
-**Item set** (required): select the item set with which the Scripto project should synch. This item set should contain all the items and/or media you wish to include in the project. 
+**Item set:** (required) select the item set with which the Scripto project should synch. This item set should contain all the items and/or media you wish to include in the project. 
 
-**Property** (required): select from the dropdown which property should store the content created through Scripto when it is imported back into Omeka S metadata. In addition to installed [Vocabularies](https://omeka.org/s/docs/user-manual/content/vocabularies/), Scripto has its own vocabulary options of content, transcription, and translation; any of these would work for the property.
+**Property:** (required) select from the dropdown which property should store the content created through Scripto when it is imported back into Omeka S metadata. In addition to installed [Vocabularies](https://omeka.org/s/docs/user-manual/content/vocabularies/), Scripto has its own vocabulary options of content, transcription, and translation; any of these would work for the property.
 
-**Description**: a description of the project. This will display on public and admin sides.
+**Description:** a description of the project. This will display on public and admin sides.
 
-**Guidelines**: transcription guidelines. These can be formatted using the text formatting editor which will appear when typing inside this field.
+**Guidelines:** transcription guidelines. These can be formatted using the text formatting editor which will appear when typing inside this field.
 
 ![Guidelines editor in action, displaying editor](../modulesfiles/scripto-projectGuideEdit.png)
 
-**Language tag**: the language tag for the content being imported into the property selected above.
+**Language tag:** the language tag for the content being imported into the property selected above.
 
-**Import target**: select the resource level to store data when it is pushed from the Scripto project back to Omeka S metadata. Options are Item and Media, Item, or Media.
+**Import target:** select the resource level to store data when it is pushed from the Scripto project back to Omeka S metadata. Options are Item and Media, Item, or Media.
 
 If you select Item, then content created in Scripto will appear in the Item metadata, in the property you selected earlier. 
 
 If you select Media, the content created in Scripto will appear in the media metadata, but not at the item level.
 
-**Browse layout**: choose the default browse layout for the project, either Grid or List.
+**Browse layout:** choose the default browse layout for the project, either Grid or List.
 
-**Item Type**: if you want, you can specify the type of item used in this project. What you select here will change the interface language for users. For example, if you choose "manuscript" then the browse link for the project will display as "browse manuscripts" instead of "browse items". Choose from:
+**Filter approved:** when checked, approved items will not display in the public browse view.
+
+**Item Type:** if you want, you can specify the type of item used in this project. What you select here will change the interface language for users. For example, if you choose "manuscript" then the browse link for the project will display as "browse manuscripts" instead of "browse items". Choose from:
 
 - Generic Item (default)
 - Audio
@@ -51,7 +53,7 @@ If you select Media, the content created in Scripto will appear in the media met
 - Paper
 - Video
 
-**Media Type**: use this dropdown to specify the type of media used in the project, and change the way that media is referred to in scripto for this project. Choose from:
+**Media Type:** use this dropdown to specify the type of media used in the project, and change the way that media is referred to in scripto for this project. Choose from:
 
 - Generic Media
 - Entry
@@ -62,7 +64,7 @@ If you select Media, the content created in Scripto will appear in the media met
 - Segment
 - Sheet
 
-**Content Type**: use this to specify the kind of work in the project. Choose from:
+**Content Type:** use this to specify the kind of work in the project. Choose from:
 
 - Generic Content
 - Description

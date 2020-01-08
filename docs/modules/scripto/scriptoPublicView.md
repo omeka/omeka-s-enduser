@@ -9,12 +9,45 @@ All transcription activity takes place on the **public** side of the Scripto pro
 ## Linking between Scripto and an Omeka S site
 While the Scripto public interface exists somewhat separately from the sites you build in your Omeka S installation, it is possible to move between them.
 
-### Scripto block for Omeka S page
+From your Omeka S sites, you can create direct links to your Scripto projects using the [custom link](../../sites/site_navigation/#custom-link) in site Navigation or as a link in any [HTML page block text](../../sites/site_pages/#html).  
+
+### Scripto page block
 When you add the Scripto module, it creates a new [page block](../../sites/site_pages/#page-blocks) called "Scripto"
 
-The Scripto page block offers a drop-down to let you select from all available Scripto [projects](
+The Scripto page block offers a drop-down to let you select from all available Scripto [projects](../scripto/scriptoproject/). Select the project you want to link from the dropdown.
 
-## Scripto public dashboard
+![Dropdown with a single site option](../modulesfiles/scripto-pageBlock.png)
+
+On the public page view, this will display as a link. 
+
+Once you have applied this block to a site, it also creates a link from the project to that Omeka S site. When users browse the project, the name of the associated site is listed in the upper right hand corner of the browser window, near their user information; this serves as a link to the site.
+
+![Top of a scripto project page with a red highlight over the link to the Omeka S site.](../modulesfiles/scripto-pageBlocklink.png)
+
+## Public-side user dashboard
+From the public side, users have access to their dashboard, which givens them an overview of your Contributions and your Watchlist. 
+
+Rcent Contributions (documents the user has edited) display as a list. In each row, it will show the following information:
+
+- Document type (just “document” in most cases);
+- Document title, which is also a link to the document page, with the page number in parentheses after the title;
+- Link to see the changes with the version immediately before that (“diff”);
+- Link to see the history of the document’s edits (“hist);
+- Date of last change in the format Month/Day/Year followed by timestamp; and
+- Summary of the changes, with the number of characters changed in parentheses, followed by any comment or summary supplied by the person making the change.
+
+Above the list is a button which will take users to see all of their contributions
+
+Watched pages will also display as a list. Watched pages include those which the user has already selected, which can include items being edited by another user. Next to the list header is a button which will display all items on the watchlist. 
+
+The list of watched pages displays the following information:
+
+- Document type (just “document” in most cases);
+- Document title, which is also a link to the document page, with the page number in parentheses after the title;
+- Link to see the changes made with the version immediately before that (“diff”);
+- Link to see the history of the document’s edits (“hist);
+- Date of last change in the format Month/Day/Year followed by timestamp; and
+- Summary of the changes, with the number of characters changed in parentheses, followed by any comment or summary supplied by the person making the change
 
 ## Public project view
 On the public side, projects display a progress bar for all items, so that community users can easily identify media or items to work on. 
