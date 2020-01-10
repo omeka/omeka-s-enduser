@@ -20,14 +20,14 @@ The Scripto page block offers a drop-down to let you select from all available S
 
 On the public page view, this will display as a link. 
 
-Once you have applied this block to a site, it also creates a link from the project to that Omeka S site. When users browse the project, the name of the associated site is listed in the upper right hand corner of the browser window, near their user information; this serves as a link to the site.
+Once you have applied this block to a site, it also creates a link from the project to that Omeka S site *when accessed via the site, rather than a direct Scripto link*. When users browse the project, the name of the associated site is listed in the upper right hand corner of the browser window, near their user information; this serves as a link to the site.
 
 ![Top of a scripto project page with a red highlight over the link to the Omeka S site.](../modulesfiles/scripto-pageBlocklink.png)
 
 ## Public-side user dashboard
 From the public side, users have access to their dashboard, which givens them an overview of your Contributions and your Watchlist. 
 
-Rcent Contributions (documents the user has edited) display as a list. In each row, it will show the following information:
+Recent Contributions (documents the user has edited) display as a list. In each row, it will show the following information:
 
 - Document type (just “document” in most cases);
 - Document title, which is also a link to the document page, with the page number in parentheses after the title;
@@ -49,10 +49,47 @@ The list of watched pages displays the following information:
 - Date of last change in the format Month/Day/Year followed by timestamp; and
 - Summary of the changes, with the number of characters changed in parentheses, followed by any comment or summary supplied by the person making the change
 
+## Public project browse
+On the upper right of the browser, near the "Log In" buttons or, when logged in, the user icon, is a link to browse all projects in the Scripto instance. 
+
+This browse page shows the project title, a representative icon determined by the first item in the project, and the project's description (set in the [configuration options](../scripto/scriptoproject/#configuration-options)), if any. 
+
+![Project browse showing three projects, only two of which have a description.](../../modules/modulesfiles/scripto-publicBrowse.png)
+Clicking on any project's title or representative thumbnail takes you to the project's view.
+
 ## Public project view
+The main project view displays the title of the project, as well as its description, if any.
+
+Across the top of the page, just under the Scripto navigation options (project browse and user icon), are:
+
+- the Project title which functions as link back to the main project page; 
+- a link to the project guidelines; 
+- a browse items links; and
+- a search bar to search the items in the project (this is a full-text search for the metadata of the items and media).
+
+Below this is a table of the items in the project. The table will be labeled Items unless you selected from the Item type dropdown in the project's [configuration options](../scripto/scriptoproject/#configuration-options).
+
+The table has two display options. The default view is set in the project's configuration options.
+ 
+- **List** displays the items in horizontal rows that prioritizes text with:
+	- a small thumbnail of the image;
+	- the document title;
+	- date last transcribed; 
+	- transcription status; and
+	- number of approved pages, shown as a bar and a numeric count.
+- **Grid** displays each items four per row with:
+	- a large thumbnail of the first page, which can give you a quick sense of the quality of the image and handwriting;
+	- the document title;
+	- date last transcribed;
+	- transcription status; and
+	- number of approved pages, shown as a bar and a numeric count.
+
+Transcription stat
+
 On the public side, projects display a progress bar for all items, so that community users can easily identify media or items to work on. 
 
-![Public project view. There are two large square thumbnails representing items in the project. One has a "2/2" and a full green bar underneath it, indicating that the item has been completely transcribed](../../modules/modulesfiles/scripto_publicproj.png)
+
+![Public project view. There are two large square thumbnails representing items in the project. One has a "1/3" and a full orange bar underneath it, indicating that the item is in progress](../../modules/modulesfiles/scripto_publicproj.png)
 
 ### Public item view
 The public item view displays the Omeka S item metadata in a column on the left side, and the media in the main area on the right. 
@@ -82,7 +119,7 @@ On the right above the media and metadata is a pagination button which allows us
 #### Adding text
 To start working with a piece of media, the user clicks "edit" in the toolbar above the media and metadata display.
 
-A new page loads, with a media viewer and a editing workspace for users to enter text. Depending on the selected layout, media may be to the right of the workspace or above it.
+A new page loads, with a media viewer and an editing workspace for users to enter text. Depending on the selected layout, media may be to the right of the workspace or above it.
 
 The area between the media title and the workspace and viewer has a combination of information display and action items for the user. 
 
@@ -97,6 +134,6 @@ Users can rotate the media and zoom in and out using the controls within the med
 
 ![edit media](../../modules/modulesfiles/scripto_editmedia.png)
 
-Just above the mediawiki workspace is a field where users are encouraged to summarize their changes. 
+Just above the MediaWiki workspace is a field where users are encouraged to summarize their changes. 
 
 The editing workspace has a formatting toolbar which adds MediaWiki markup to the text (it does not change the appearance of the text in the workspace). Any formatting will be applied to the HTML view of the text after changes are saved.
