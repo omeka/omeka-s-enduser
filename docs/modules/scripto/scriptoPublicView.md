@@ -6,6 +6,8 @@ The admin side is `youromekaurl.net/admin/scripto` and the public side is `youro
 
 All transcription activity takes place on the **public** side of the Scripto project. You cannot edit a transcription from the admin dashboard.
 
+For an example of how to orient community members to the interface, see the [Guide to transcribing the *Papers of the War Department*](http://wardepartmentpapers.org/s/home/page/transcribing-guide)
+
 ## Linking between Scripto and an Omeka S site
 While the Scripto public interface exists somewhat separately from the sites you build in your Omeka S installation, it is possible to move between them.
 
@@ -121,18 +123,15 @@ To start working with a piece of media, the user clicks "edit" in the toolbar ab
 
 A new page loads, with a media viewer and an editing workspace for users to enter text. Depending on the selected layout, media may be to the right of the workspace or above it.
 
+![edit media](../../modules/modulesfiles/scripto_editmedia.png)
+
 The area between the media title and the workspace and viewer has a combination of information display and action items for the user. 
 
-On the far left is a button to track or stop tracking media, with a star icon.
-
-In the center is an information display with the media's Protection, protection expiration, and status, and a checkbox where the user can mark the media as completed. 
-
-On the far right are buttons to *save* or *cancel* changes. 
-
-
-Users can rotate the media and zoom in and out using the controls within the media viewer. They can use the layout buttons to toggle between side by side and top and bottom views. 
-
-![edit media](../../modules/modulesfiles/scripto_editmedia.png)
+- On the far left is a button to track or stop tracking media, with a star icon.
+- In the center is an information display with the media's Protection, protection expiration, and status, and a checkbox where the user can mark the media as completed. 
+- On the far right are buttons to *save* or *cancel* changes. 
+- Users can rotate the media and zoom in and out using the controls within the media viewer.
+- Users can use the layout buttons to toggle between side by side and top and bottom views. 
 
 Just above the MediaWiki workspace is a field where users are encouraged to summarize their changes. 
 
