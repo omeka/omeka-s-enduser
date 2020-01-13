@@ -43,6 +43,7 @@ pages:
             - 'Scripto Projects': 'modules/scripto/scriptoproject.md'
             - 'Themeing Scripto': 'modules/scripto/themeingScripto.md'
             - 'Public Interface': 'modules/scripto/scriptoPublicView.md'
+            - 'Troubleshooting': 'modules/scripto/troubleshootingScripto.md'
         - 'Sharing': 'modules/sharing.md'
         - 'ValueSuggest': 'modules/valuesuggest.md'
         - 'Zotero Import': 'modules/zoteroimport.md'
