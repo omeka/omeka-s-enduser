@@ -1,7 +1,7 @@
 Scripto is made up of projects. Every transcription, translation, or description effort you create can, and should, have its own project. 
 
 ## Create a Project
-To create a new Scripto project, go to the Scripto dashboard (the Scripto tab in the left-hand navigation) and use the dropdown menu in the upper right corner to select "add new project"
+To create a new Scripto project, go to the Scripto dashboard (the Scripto tab in the left-hand navigation) and use the "Actions" dropdown menu in the upper right corner to select "add new project"
 
 ![Action dropdown open with a red arrow pointing to the Add New Project option](../modulesfiles/scripto-projectAdd.png)
 
@@ -72,7 +72,7 @@ If you select Media, the content created in Scripto will appear in the media met
 - Translation
 
 ### Reviewers
-Add [Omeka S users](../../admin/users/) to your Scripto project as reviewers, who can can access private projects, and mark media as approved and unapproved. You can manage users after adding a project (see below)
+Add [Omeka S users](../../../admin/users/) to your Scripto project as reviewers, who can can access private projects, and mark media as approved and unapproved. You can manage users after adding a project (see below)
 
 Only Omeka users with **site administrator** and g**lobal administrator** roles can sync and import projects, due to the destructive potential of those actions. 
 
