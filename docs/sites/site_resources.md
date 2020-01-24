@@ -74,7 +74,9 @@ To add an item set, select it in the right hand sidebar. You can find the desire
 
 ![Selecting an item set from the owner's section of the sidebar](../sites/sitesfiles/siteres_itemsetsel.png)
 
-Remove an item set by clicking the red delete button (trash can icon). You can change the order of the item sets by dragging and dropping using the three-bar icon on the left end of the row.
+Remove an item set by clicking the red delete button (trash can icon). It will still be available to re-add from the drawer on the right.
+
+You can change the order of the item sets by dragging and dropping using the three-bar icon on the left end of the row.
 
 The following image shows a browse item sets public view using the default theme: 
 
