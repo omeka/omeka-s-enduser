@@ -44,7 +44,7 @@ After clicking the Pages tab, select the page you wish to edit by clicking the n
 
 - HTML
 - Page title
-- Media
+- Media Embed
 - Browse preview
 - Item showcase
 - List of sites
@@ -98,10 +98,16 @@ Displays the title of the current page.
 
 ![Page block display site's title](../sites/sitesfiles/sitepg_title.png)
 
-### Media
+### Media Embed
 Creates a block with one or more pieces of media associated with items in the item pool. In media blocks, multiple attachments stack vertically.
 
 ![media block with no media attached](../sites/sitesfiles/sitepg_media.png)
+
+The Media block has options for the display of the media: 
+
+- Thumbnail type: choose from large, medium, and square.
+- Thumbnail alignment: float left, float right, and center.
+- Show attachment title: Choose whether the media should have a caption of the item title, file name, or no title displayed at all.
 
 To add media, click the *add attachment*. 
 
@@ -113,20 +119,13 @@ Once you’ve selected an item, the drawer will shift to that item’s informati
 
 ![Item view with apply changes option](../sites/sitesfiles/sitepg_applyitem.png)
 
-The Media block has options for the display of the media: 
-
-- Thumbnail type: choose from large, medium, and square.
-- Thumbnail alignment: relative to page. Choose from left and right.
-- Show attachment title: Choose whether the media should have a caption of the item title, file name, or no title displayed at all.
-
-*Layout note:* If you want media to appear beside a block of text, place a media block *above* an HTML block and select a smaller thumbnail size. In the example below, the media has a thumbnail type of "medium", alignment "right, and attachment title of the "item title": 
+*Layout note:* If you want media to appear beside a block of text, place a media block *above* an HTML block, select a smaller thumbnail size, and choose either float left or right for alignment. In the example below, the media has a thumbnail type of "medium", alignment "float right," and attachment title of the "item title": 
 
 ![A block of lorem ipsum text with a right-aligned small image embedded at the top of the paragraph](../sites/sitesfiles/sitepg_mediaalign.png)
 
 Placing a media block *after* an HTML block will cause the media to appear below the end of the HTML paragraphs. 
 
 ### Browse Preview
-
 Allows you to add a block of items on a site page.
 
 In order to create a Browse Preview block, you'll first need to perform a search on your Omeka S installation for the items you want to include. You can use the general search on the left hand navigation or, if you want to show all items in an item set, use the Advanced Search from Items browse. NB: if you leave the search options blank, the browse preview will load all items in your site's item pool.
@@ -167,14 +166,15 @@ Once you’ve added an item, it will appear in the Item List block. You can edit
 You can add multiple items to the list.
 
 ### List of sites
-This block displays a list of the sites on your Omeka S install. This block has the following options:
+This block displays a list of all of the sites on your Omeka S install. This block has the following options:
 
 ![List of sites block](../sites/sitesfiles/sitepg_slist1.png)
 
 - Sort sites by: Alphabetical order (A-Z); Oldest first; newest first. By default this is set to alphabetical. 
 - Max number of sites allows you to limit the number of sites which display at once. If left blank, all sites will display.
 - A checkbox to turn on pagination, applied only if you set a limit.
-- Show site summaries.  
+- A checkbox to show site summaries.  
+- A checkbox to exclude the current site from the list. 
 
 This image shows a List of sites block, sorted oldest first, with no limits:
 
