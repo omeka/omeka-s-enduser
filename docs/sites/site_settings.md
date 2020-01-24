@@ -28,7 +28,7 @@ When users are logged in, the user bar has the following options:
 
 - Installation Title: takes you back to the installation admin
 - Site Title: takes you back to the landing page for managing the site (site/show).
-- Page type link: depending on what you are viewing, this is a link to the admin side management for [Pages](../site/site_pages), [Items](../content/items), or [Item Sets](../content/item-sets)
+- Resource view: depending on what you are viewing, this is a link to the admin side management for [Pages](../site/site_pages), [Items](../content/items), or [Item Sets](../content/item-sets)
 - Edit link for that page, item set, or item. 
 - User's display name: takes you to your user page.
 - Logout: logs out current user.
