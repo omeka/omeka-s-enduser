@@ -62,10 +62,9 @@ This section has advanced vocabulary settings
 ![New vocabulary advanced settings, with no data entered](contentfiles/vocab_addAdvanced.png)
 
 ## Editing a vocabulary
-You can edit existing vocabularies by clicking the edit button (pencil icon) on the table of vocabularies. While editing, you can change the label and comment.
+You can edit existing vocabularies by clicking the edit button (pencil icon) on the table of vocabularies.
 
-You can also update the vocabulary by either uploading a new vocabulary file or entering the vocabulary url and saving changes. When editing and/or updating a vocabulary you have the option to set the language(s) used in the vocabulary with an IETF language tag. 
-
+You can also update the vocabulary by either uploading a new vocabulary file or entering the vocabulary url and saving changes. You will be able to review any changes when updating a vocabulary.
 If you decide you do not wish to save your changes, or click on the edit button by mistake, you can click the Cancel button next to the Save button.
 
 ![Edit vocabulary page for OWL-Time Ontology.](contentfiles/vocab_edit.png)
