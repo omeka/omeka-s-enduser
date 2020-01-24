@@ -33,7 +33,7 @@ Options for navigating and creating items display above the table of items.
 
 On the left side is a display for the number of pages of media, with forward and back arrows. The current page number is an editable field - enter any valid page number and hit return/enter on your keyboard to go to that page. 
 
-In the center top is a button for [Advanced Search](../search.md). 
+In the center top is a button for [Advanced Search](../../search#media-advanced-search). 
 
 Just above the table on the right are options for sorting media, with two dropdown menus. The first lets you select between *Title*, *Class*, *Owner,* and *(date)Created*; the second allows you to sort ascending or descending. To apply, click the *sort* button.
 
