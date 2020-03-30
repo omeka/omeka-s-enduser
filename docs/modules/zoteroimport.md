@@ -4,7 +4,7 @@ title: Zotero Import
 
 Zotero Import is a [module](index.md) for Omeka S which allows you to connect an Omeka S instance to a Zotero library and import items from that library.
 
-To install Zotero Import, follow the instructions for [Installing Modules](index.md#installing-modules) on the Modules documentation.
+To install Zotero Import, follow the instructions for [Installing Modules](index.md#installing-modules).
 
 ## Prepare your Zotero Library
 Ensure that your Zotero library is published. Login to Zotero, go to settings, and then to privacy. Make sure that 'publish entire library' is checked. The 'publish notes' box can also be checked.
@@ -12,11 +12,11 @@ Ensure that your Zotero library is published. Login to Zotero, go to settings, a
 In order to import from a Zotero library, you must have API access to the library. To use Zotero Import, you will need the ID for the group or user
 
   * Individual IDs are found on the Feeds/API tab of your Zotero Settings; there is a sentence stating “Your userID for use in API call is”.
-  * Group IDs are found on the Zotero group library page by looking at the URL of “Subscribe to this feed” - it is numeric sequence following “api.zotero.org/groups/“.
+  * Group IDs are found on the Zotero group library page by looking at the URL of the library - it will be `zotero.org/groups/<number>`. If you go to https://api.zotero.org/groups/<numer>`, you should get some information on that page. 
 
 You may also want to have the id for a specific collection and an API key to import files. 
 
-* Collection keys appear in the url of a collection page - they are the alphanumeric sequence at the end of the url, following “collectionKey/“
+* Collection keys appear in the url of a collection page - they are the alphanumeric sequence at the end of the url, following “collections/“
 * To generate an API key, go to Settings in your Zotero account, to the Feeds/API tab, and click the *Create new private key* link.
 
 ## Import Data
@@ -27,15 +27,16 @@ To import, go to the Zotero Import tab on the left-hand navigation of the admin 
 
 To import from a Zotero library:
 
-* Choose an Item Set for imported items (required); 
+* Choose an Item Set to which the imported items will be added (required); 
 * Choose between *User* or *Group* libraries with the radio buttons (required); 
-* Enter the user ID (required); 
-* Enter a collection key (not required); 
+* Enter the Library ID (this is either the Group or User ID number, discussed above). 
+* If importing a collection enter the collection key.
 * Enter your API key to import private data and/or files (optional for import but necessary to import files)
-* Choose whether to import files. The API key is required to import files.
+* Click the checkbox to import files. The API key is required to import files.
 		* HTML page snapshots will be imported as zip files. 
-*  Choose “Added After”. Only import items that have been added to Zotero after this datetime.
-* Hit Submit.
+*  The “Added After”option allows you to import only those Zotero items added to the library after the date and time you choose. You can use this as a way to update from a previous import without re-adding files you already imported.
+
+When you have completed the form, click Submit in the upper right-hand corner of the browser window.
 
 A note on files: The rules for importing an item are the same as creating an item in Omeka, so if your Zotero library has files which are a disallowed media type, the items will not be imported.
 
