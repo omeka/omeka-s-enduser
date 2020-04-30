@@ -30,6 +30,8 @@ Some of these configuration options are required to create your Scripto project;
 
 ![Guidelines editor in action, displaying editor](../modulesfiles/scripto-projectGuideEdit.png)
 
+**Create account text:** enter text which will appear on the public page where users sign up to transcribe; for example, a brief summary of the aims or activities of the project. If left blank, the page will only display the fields for name, email, and password. 
+
 **Language tag:** the language tag for the content being imported into the property selected above.
 
 **Import target:** select the resource level to store data when it is pushed from the Scripto project back to Omeka S metadata. Options are Item and Media, Item, or Media.
