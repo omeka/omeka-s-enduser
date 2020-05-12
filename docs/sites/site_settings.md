@@ -1,13 +1,42 @@
 ---
 title: Site Admin
 ---
-This page allows you to configure settings for the [site](../sites/index.md) on which you are working. Changes will only be applied to this site and will not change other sites' settings. 
+This page allows you to manage the main settings for the [site](../sites/index.md) on which you are working. Changes will only be applied to this site and will not change other sites' settings. 
 
+The Site Admin page has two tabs, Info and Settings.
+
+## Info 
+The site info settings for an Omeka S site are where you can change the basic info for the site:
+
+* *title* (text)
+* *slug* (text)
+* *summary* (text) 
+
+![Site info for the site “Jane Austen” with buttons across the top to View, Delete, and Save the site](../sites/sitesfiles/sites_siteinfo.png)
+
+In the upper right hand corner of the window on this tab, you can use buttons to:
+
+- *Public/Private button* (see below);
+- *Delete* the site;
+- *Cancel* making changes;
+- *Save* changes.
+
+The *make public/private* button (eye icon) is used to both indicate and set whether the site is visible to the public or only to users of this Omeka S installation 
+
+Site is public:
+
+![make public button showing an eye icon](../content/contentfiles/item_public.png) 
+
+Site is Private:
+
+![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)
+
+## Settings
 The Settings page is divided into three sections: General, Browse, and Search. 
 
 To implement any changes you make, click Save at the top right of the browser window when you are done. To leave without saving changes, click cancel.
 
-## General settings
+### General settings
 
 ![general settings, all empty](../sites/sitesfiles/sites_settingsgen.png)
 
@@ -49,7 +78,7 @@ The options for this setting are:
 
 **Locale** is dropdown menu to select the language code for this site. By default this will be set to the same as the global locale setting for the entire Omeka S installation. To change, select a language from the dropdown menu.
 
-## Browse settings
+### Browse settings
 
 ![browse settings, all empty](../sites/sitesfiles/sites_settingsbrowse.png)
 
@@ -66,7 +95,7 @@ Depending on the [site theme](../sites/site_theme), you may want to make this a 
 
 **Browse body property** sets which property to use as the body text for each resource on a browse page. By default, this is Dublin Core: Description. The dropdown allows you to select from all available vocabularies, and includes a search bar to quickly find the desired property.
 
-## Search 
+### Search 
 
 ![search settings, all empty](../sites/sitesfiles/sites_settingssearch.png)
 

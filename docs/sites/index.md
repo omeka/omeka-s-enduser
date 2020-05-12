@@ -67,44 +67,17 @@ The context menu for every site has the site title at the top, with an icon of a
 
 Site admin left hand navigation options are: 
 
-- *Site Info*, (see below)
+- *[Site Admin]*,
 - *[Pages](../sites/site_pages.md)*, 
 - *[Navigation](../sites/site_navigation.md)*, 
 - *[Resources](../sites/site_resources.md)*,
 - *User Permissions*, (see below)
 - *[Theme](../sites/site_theme.md)*
-- *Settings*. (see below)
 - Modules, if installed.
 
 Any modules which you have installed that have site-specific settings will appear below the site Settings tab in the site's context menu. In the image above, the modules Metadata Browse and Collecting are installed.
 
 The standard options in the left hand navigation of the Omeka S Admin (items, item sets, etc) are still available below the site context menu. 
-
-## Site Info 
-The site info settings for an Omeka S site are where you can change the basic info for the site:
-
-* *title* (text)
-* *slug* (text)
-* *summary* (text) 
-
-![Site info for the site “Jane Austen” with buttons across the top to View, Delete, and Save the site](../sites/sitesfiles/sites_siteinfo.png)
-
-In the upper right hand corner of the window on this tab, you can use buttons to:
-
-- *Public/Private button* (see below);
-- *Delete* the site;
-- *Cancel* making changes;
-- *Save* changes.
-
-The *make public/private* button (eye icon) is used to both indicate and set whether the site is visible to the public or only to users of this Omeka S installation 
-
-Site is public:
-
-![make public button showing an eye icon](../content/contentfiles/item_public.png) 
-
-Site is Private:
-
-![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)
 
 ## Managing User Permissions
 To add a user to a site, navigate to the *User Permissions* tab.
