@@ -67,7 +67,7 @@ The context menu for every site has the site title at the top, with an icon of a
 
 Site admin left hand navigation options are: 
 
-- *[Site Admin]*,
+- *[Site Admin](../sites/site_settings)*,
 - *[Pages](../sites/site_pages.md)*, 
 - *[Navigation](../sites/site_navigation.md)*, 
 - *[Resources](../sites/site_resources.md)*,

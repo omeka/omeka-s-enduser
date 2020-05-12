@@ -1,7 +1,9 @@
 ---
 title: Site Admin
 ---
-This page allows you to manage the main settings for the [site](../sites/index.md) on which you are working. Changes will only be applied to this site and will not change other sites' settings. 
+The Site Admin page allows you to manage the main settings for the [site](../sites/index.md) on which you are working. Changes will only be applied to this site and will not change other sites' settings. 
+
+It is the first tab under the site title, represented with a gear icon. 
 
 The Site Admin page has two tabs, Info and Settings.
 
@@ -23,13 +25,9 @@ In the upper right hand corner of the window on this tab, you can use buttons to
 
 The *make public/private* button (eye icon) is used to both indicate and set whether the site is visible to the public or only to users of this Omeka S installation 
 
-Site is public:
+Site is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png) 
 
-![make public button showing an eye icon](../content/contentfiles/item_public.png) 
-
-Site is Private:
-
-![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)
+Site is Private: ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)
 
 ## Settings
 The Settings page is divided into three sections: General, Browse, and Search. 
@@ -38,7 +36,7 @@ To implement any changes you make, click Save at the top right of the browser wi
 
 ### General settings
 
-![general settings, all empty](../sites/sitesfiles/sites_settingsgen.png)
+![general settings, all at default](../sites/sitesfiles/sites_settingsgen.png)
 
 
 **Attachment link type** Sets the target of links from attachments you add to [site page blocks](../sites/site_pages/#page-blocks) (for example, in an [item showcase](../sites/site_pages/#item-showcase). It offers a dropdown with the following options:
