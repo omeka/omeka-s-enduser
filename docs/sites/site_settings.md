@@ -1,5 +1,5 @@
 ---
-title: Site Settings
+title: Site Admin
 ---
 This page allows you to configure settings for the [site](../sites/index.md) on which you are working. Changes will only be applied to this site and will not change other sites' settings. 
 
