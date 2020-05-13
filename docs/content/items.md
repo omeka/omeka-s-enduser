@@ -159,6 +159,11 @@ To remove a connection between an item and item set, click the delete (trash can
 
 ![item set tab with no item sets assigned](contentfiles/items_itemset.png)
 
+### Sites
+Select sites to which to add your items. 
+If there are sites which have "auto-assign new items" turned on in their settings, you can use this tab to remove this item from those sites.
+
+
 ### Thumbnail
 By default, Omeka S will use the topmost media to generate a thumbnail for the item. If you want to use a non-media image for the thumbnail for an item you can set it here.
 
