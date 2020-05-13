@@ -8,25 +8,24 @@ It is the first tab under the site title, represented with a gear icon.
 The Site Admin page has two tabs, Info and Settings.
 
 ## Info 
-The site info settings for an Omeka S site are where you can change the basic info for the site:
+The site info settings for an Omeka S site are where you can change the basic info for the site - the same information you entered when you created the site. You can change the:
 
-* *title* (text)
-* *slug* (text)
-* *summary* (text) 
+* *title* - a text field. 
+* *slug* - the url for your site.
+* *summary* - the brief description of what it is about which will appear on your installation's landing page and on [List of Site](../sites/site_pages/#page-blocks) blocks. 
 
 ![Site info for the site “Jane Austen” with buttons across the top to View, Delete, and Save the site](../sites/sitesfiles/sites_siteinfo.png)
 
 In the upper right hand corner of the window on this tab, you can use buttons to:
 
-- *Public/Private button* (see below);
-- *Delete* the site;
-- *Cancel* making changes;
-- *Save* changes.
+- set your site as public or private using the eye icon button (see below);
+- *delete* the site;
+- *cancel* making changes; and
+- *Ssave* changes.
 
 The *make public/private* button (eye icon) is used to both indicate and set whether the site is visible to the public or only to users of this Omeka S installation 
 
-Site is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png) 
-
+Site is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png)   
 Site is Private: ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)
 
 ## Settings
@@ -38,6 +37,7 @@ To implement any changes you make, click Save at the top right of the browser wi
 
 ![general settings, all at default](../sites/sitesfiles/sites_settingsgen.png)
 
+**Auto-assign new items** A checkbox which sets whether new items are automatically added to the site. If checked, every new item will be added to the site, regardless of the item's owner. Note that item owners may unassign their items from the site at any time, in the item's edit pages.
 
 **Attachment link type** Sets the target of links from attachments you add to [site page blocks](../sites/site_pages/#page-blocks) (for example, in an [item showcase](../sites/site_pages/#item-showcase). It offers a dropdown with the following options:
 
