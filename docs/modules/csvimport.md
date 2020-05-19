@@ -706,7 +706,7 @@ If you have [Mapping](../modules/mapping/) (minimum version 1.1.0) installed and
 - *Default zoom* should be a number between 1 (most zoomed out) and 18 (most zoomed in)
 
 ### File Sideload
-If you have [File Sideload](../modules/filesideload) (minimum version 1.2.0) installed and active, you can use it as a source for media when running a csv import.
+If you have [File Sideload](../filesideload) (minimum version 1.2.0) installed and active, you can use it as a source for media when running a csv import.
 
 Everything on the *Map to Omeka S data* tab will be the same. When you add a mapping and choose the "Media source" option, you will see that there is now an option for "Sideload"
 
