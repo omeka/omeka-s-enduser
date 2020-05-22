@@ -23,6 +23,8 @@ Advanced search for items only is available on the [Items](content/items.md) pag
 
 The advanced search loads on a new page, and has the following options:
 
+![Advanced item search options page.](files/advancedsearch3.png)
+
 *Search full-text:* runs a full-text search on all of the text for every item in the installation.
 
 *Search by value:* search for a term or phrase which you enter 
@@ -47,11 +49,11 @@ To find a resource ID, go to the resource and look at the url in your browser's 
 
 *Search by item set:* select from a dropdown of item sets.
 
+*Search by site:* select a site from a dropdown of sites in the installation. Note that you can only search for items from one site at a time.  
+
 *In site pool:* select from a dropdown menu of all the sites on the Omeka S installation, sorted by user-owner. 
 
-![Advanced item search options page.](files/advancedsearch3.png)
-
-Searches by value, class, template, and item set allow you to search by more than one input - use the *add new* buttons to search with more than one value or item set. These search terms build - searching for two item sets will return all items in either item set, rather than only those items which are in both. 
+Searches by value, class, template, and item set allow you to search by more than one input - use the large red *add new* buttons to search with more than one value or item set. These search terms build - searching for two item sets will return all items in either item set, rather than only those items which are in both. 
 
 You can remove value and item set searches using the red trash can icon to the right of those search options.
 
