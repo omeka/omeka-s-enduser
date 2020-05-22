@@ -31,11 +31,11 @@ Just above the table on the right are options for sorting the table of items, wi
 Between these and the table, on the left, is a dropdown for batch actions, including edit selected, edit all, delete selected, and delete all. 
 
 ## View
-To quickly view the basic information about an item, click the *view details* (ellipses) button in the row for the item, located next to the edit and delete buttons. This will open a drawer to the right of the list which displays the item’s title,  description, and visibility.
+To quickly view the basic information about an item, click the *view details* (ellipses) button in the row for the item, located next to the edit and delete buttons. This will open a drawer to the right of the list which displays the item’s title,  description, visibility, any sites it is used in, and its associated media..
 
 For a more detailed look at an individual item, click on its title in the items browse table or when viewing its details.
  
-![Item browse view with details open for The Adventure of the Yellow Face. Links to item view page squared in blue](contentfiles/items_detailview.png) The blue squares indicate where to click to open the full item view.
+![Item browse view with details open for "Behold, Here's Poison". Links to item view page squared in blue](contentfiles/items_detailview.png) The blue squares indicate where to click to open the full item view.
 
 When you view an individual item , there are tabs for the item’s *Metadata* and its *Linked Resources*. The right side of the page displays the item’s media, any *item sets* to which it belongs, its creation date, owner, and visibility. 
 
@@ -161,7 +161,12 @@ To remove a connection between an item and item set, click the delete (trash can
 
 ### Sites
 Select sites to which to add your items. 
-If there are sites which have "auto-assign new items" turned on in their settings, you can use this tab to remove this item from those sites.
+
+![item 'sites' tab with the item added to two sites. Each site is in its own row, with a delete icon on the far right of the row](contentfiles/items_addItemSite.png)
+
+If there are sites which have "auto-assign new items" turned on in their settings, you can use this tab to remove this item from those sites. Click the trash can icon on the right side of the site's row to remove it.
+
+To add an item to a site, select a site from the menu in the right-hand drawer. You can filter sites by searching in the field at the top of the drawer. 
 
 
 ### Thumbnail
