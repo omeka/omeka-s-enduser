@@ -3,8 +3,6 @@ title: Site Resources
 ---
 The Resources tab of the site context menu allows you to set what Items and Item Sets available on your site's browse pages. The Item Pool also sets which items are available in the sidebar when building pages.
 
-![Red arrow points to the resources tab of the Site Context Menu](../sites/sitesfiles/sites_resourcestab.png)
-
 Resources has two tabs across the top of the window: Item Pool and Item Sets. 
 
 Item Pool is where you can set the items available for selection and browse in your site.

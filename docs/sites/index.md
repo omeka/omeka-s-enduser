@@ -39,9 +39,6 @@ Select from the installed themes. Each theme appears as a button with a screensh
 
 ![Theme tab with default theme selected](../sites/sitesfiles/sitesadd_theme.png)
 
-### The Item Pool tab
-Set up the [item pool](../sites/site_resources/#item-pool) for the site. Follow the link for detail information about Item Pool settings, which can be modified at any time from the [Resources](../sites/site_resources) tab of the site.
-
 ### Publication settings
 In the upper right hand corner of the screen, next to the *Add* button, you can set the visibility of your site using the the *make public/private* button (eye icon).
 
