@@ -111,15 +111,38 @@ The Media block has options for the display of the media:
 
 To add media, click the *add attachment*. 
 
-On loading, the drawer will show a list of your items, most recent first. You can select from the first page, page through using the forward and back arrows, or search using the search bar.
+On loading, the drawer will show a list of your items, most recent first. You can select from the first page, page through using the forward and back arrows, or search using the search bar. You can select from the first page, page through using the forward and back arrows, or search using the search bar. 
 
 ![Select item drawer](../sites/sitesfiles/sitepg_selectitem.png)
+ 
+If you have a large number of items to navigate, or multiple items with the same title, you can use the "Filter search" options by clicking the triangle button to the right of its label. 
+ 
+These options are:
+
+- Filter by class: opens a dropdown to select from all of the classes for the vocabularies in the Omeka S installation.
+- Filter by item set: opens a dropdown to select from all item sets in the installation, not just those associated with the site on which you are working.
+- Filter by item id: you can put in the specific item id for an item (the number which appears in the url when you are looking at the item on the admin). 
+
+Once you have applied your changes to the filter, you must click the search button (magnifying glass) to apply the filters or run the search.
+
+![Select item drawer with filter options displayed](../sites/sitesfiles/sitepg_selectitemFilter.png)
 
 Once you’ve selected an item, the drawer will shift to that item’s information. You can add a caption and select which media (if more than one) you want to use. To return to the list of items, click the *Select item* button at the top of the drawer. To use the item displayed and apply the caption, etc, click the *Apply changes* button at the bottom of the drawer.
 
 ![Item view with apply changes option](../sites/sitesfiles/sitepg_applyitem.png)
 
+To add multiple items at once, click the "quick add" slider just above the list of items in the right hand drawer. This will add a checkbox to the left of each item. Check the boxes of those items you want to add to the block, then click the "Add selected" button at the bottom of the drawer.
+
+![Select item drawer with quick add activated - every item in the view now has a checkbox.](../sites/sitesfiles/sitepg_selectitemQuick.png)
+
+The Media block has options for the display of the media: 
+
+- Thumbnail type: choose from large, medium, and square.
+- Thumbnail alignment: relative to page. Choose from left and right.
+- Show attachment title: Choose whether the media should have a caption of the item title, file name, or no title displayed at all.
+
 *Layout note:* If you want media to appear beside a block of text, place a media block *above* an HTML block, select a smaller thumbnail size, and choose either float left or right for alignment. In the example below, the media has a thumbnail type of "medium", alignment "float right," and attachment title of the "item title": 
+
 
 ![A block of lorem ipsum text with a right-aligned small image embedded at the top of the paragraph](../sites/sitesfiles/sitepg_mediaalign.png)
 
@@ -151,13 +174,25 @@ Click the *Add Attachment* button to add an item to the block. This will open a 
 
 ![Block for item showcase with one item added](../sites/sitesfiles/sitepg_showcase.png)
 
-On loading, the drawer will show a list of your items, most recent first. You can select from the first page, page through using the forward and back arrows, or search using the search bar.
+If you have a large number of items to navigate, or multiple items with the same title, you can use the "Filter search" options by clicking the triangle button to the right of its label. 
+ 
+These options are:
 
-![Select item drawer](../sites/sitesfiles/sitepg_selectitem.png)
+- Filter by class: opens a dropdown to select from all of the classes for the vocabularies in the Omeka S installation.
+- Filter by item set: opens a dropdown to select from all item sets in the installation, not just those associated with the site on which you are working.
+- Filter by item id: you can put in the specific item id for an item (the number which appears in the url when you are looking at the item on the admin). 
+
+Once you have applied your changes to the filter, you must click the search button (magnifying glass) to apply the filters or run the search.
+
+![Select item drawer with filter options displayed](../sites/sitesfiles/sitepg_selectitemFilter.png)
 
 Once you’ve selected an item, the drawer will shift to that item’s information. You can add a caption and select which media (if more than one) you want to use. To return to the list of items, click the *Select item* button at the top of the drawer. To use the item displayed and apply the caption, etc, click the *Apply changes* button at the bottom of the drawer.
 
 ![Item view with apply changes option](../sites/sitesfiles/sitepg_applyitem.png)
+
+To add multiple items at once, click the "quick add" slider just above the list of items in the right hand drawer. This will add a checkbox to the left of each item. Check the boxes of those items you want to add to the block, then click the "Add selected" button at the bottom of the drawer.
+
+![Select item drawer with quick add activated - every item in the view now has a checkbox.](../sites/sitesfiles/sitepg_selectitemQuick.png)
 
 To cancel the item selection, click the X in the upper right corner of the drawer at any time.
 
