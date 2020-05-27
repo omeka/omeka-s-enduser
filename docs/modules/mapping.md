@@ -70,13 +70,29 @@ Note that you can use the "clear all" button in the menu which opens form the "d
 
 ![Marker being deleted.](../modules/modulesfiles/Mapping-deleteMarker.png)
 
-## Adding a Map block to a site
+## Adding Map blocks to a site
+There are two kinds of Mapping blocks which you can add to your site: Map by attachments, where you manually add resources to the map block; and Map by query, which allows you to use a search string to add resources to the map block. 
+
 To add a map to a new or existing page, click to edit the page. On the right, under _Add New Block_ , click the  _Map_ tab to add a map to the item (1). Selecting the tab will open the map block to the page (2). This block includes customizable features for the map in collapsable panes. Click the triangle to expand or collapse these fields (3). 
 
-![Screenshot of the Page with Map Block selected. Block includes menu options Default View, WMS Overlays and attachments.](../modules/modulesfiles/Mapping_Page_MapBlock.png)
+![Screenshot of the Page with Map Block selected. Block includes menu options Default View, WMS Overlays and attachments.](../modules/modulesfiles/Mapping_Page_MapBlock1.png)
+
+The *Map by attachments* and *Map by query* blocks have largely the same settings, with the exception of the final option. 
 
 ### Default View 
- Small white buttons on the left of the map interface set the default view for the map: 
+This section lets you set the appearance and zoom level of the map. There are three fields and a preview map. Within the preview map are buttons which you can use to set the default zoom and location of the map. If you do not set a default zoom or location, the map will adjust to display all resources.
+
+![Map by attachments block open to Default Settings. There is no information in any field, and the preview map is zoomed in to level 2](../modules/modulesfiles/mappingBlockDefaultView1.png)
+
+*Basemap provider:* select from a dropdown of basemaps. Once selected, the preview map will update to show you the appearance of that map. The default is OpenStreetMap.Mapnik.
+
+Minimum zoom level:* set the minimum zoom for the map. Fully zoomed out is 0. 
+
+Maximum zoom level: set the maximum possible zoom level. The highest is 19. Some basemaps do not function at higher levels; you will want to check to be sure you set your maximum at a level where you basemap is visible.
+
+Between the fields and the preview map is a message which tells you the current zoom level, as you zoom using the plus and minus buttons on the preview map or the scroll on your comptuer. Use this to help you determine where you want to set your minimum and maximum zoom levels. 
+
+Within the preview map, there are five buttons: 
  
  * *Zoom in:* The small white square with a black plus sign. Each click zooms in one step.
  * *Zoom out:* The small white square with black minus sign. Each click zooms out one step.
@@ -84,7 +100,7 @@ To add a map to a new or existing page, click to edit the page. On the right, un
  * *Go to current default view:* The small black square with a black box around a dot. This option is only available after a default view has been set. Click to pan and zoom map to the selected view.
  * *Clear the default center and zoom level:* The small white square with a black "X". Click to clear pan and zoom preferences and return to the initial global view.
 
-![Screenshot of the Default view includes a map with the white buttons described.](../modules/modulesfiles/Mapping_Page_Default.png)
+![closeup of the mapping buttons with labels added](../modules/modulesfiles/mappingBlockDefMapButtons.png)
 
 ### WMS Overlays
 
@@ -130,7 +146,7 @@ To remove the timeline from a map block, click the X on the far right of the Pro
 
 To see how the various settings of the timeline block appear on the public side, please see the [Timeline Public View](#timeline-public-view) section below.
 
-### Attachments
+### Attachments (Map by attachments block)
 
 Markers are added to the map using _Items_.
 
@@ -145,7 +161,14 @@ To add multiple items at once, click the "quick add" slider just above the list 
 
 ![Drawer with bulk add option activated](../modules/modulesfiles/Mapping-bulkAttachments.png)
 
+### Query (Map by query)
+In order to use this block, you will need to run a query, or search, in your items. From the search results page, copy everything in your browser's address bar starting with the question mark all the way to the end of the search url (to the right). 
 
+![The address bar and very top of a search results page.](../../sites/sitesfiles/sitespg_bpquery.png)
+
+Paste the query string into the Query field in the Map by query block. Note that at no point will items display on the admin side. You will need to go to the public view to see the items which result from your query.
+
+![A map by query block open to the Query section. There is a query pasted into the field.](../../modules/modulesfiles/mapping-blockQuery.png)
 
 ## Public view
 A map block will display on a public page at full page width. If you have settings in the [default view](../../modules/mapping/#default-view) of the block, these should be applied. Otherwise the block will zoom so that all of the items are visible. 
