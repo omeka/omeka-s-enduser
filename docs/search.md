@@ -88,6 +88,8 @@ You can remove value searches using the red trash can icon to the right of the v
 
 *Search by template:* select a resource template from the dropdown. Templates are arranged by owner, then alphabetically.
 
+*Search by MIME type:* you can specify the media type for the search. For example, to find all tiff images, you would enter `image/tiff`. 
+
 ![Advanced media search options form, with fields as described above.](files/search_mediaadvance2.png)
 
 Searches by value, class, and template allow you to search by more than one input - use the *add new* buttons to search with more than one value or item set. These search terms build - searching for two templates will return all media using either template. 

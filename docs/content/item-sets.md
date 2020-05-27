@@ -104,7 +104,7 @@ By default, Omeka S will use the media from the first item added to an item set 
 
 ![Thumbnail tab with no asset selected. The tab displays a message about thumbnail creation and a button to "select" an asset](contentfiles/itemset_thumb1.png)
 
-The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../sites/site_theme/#settings-options). 
+The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../../sites/site_theme/#settings-options). 
 
 To assign an asset as a thumbnail, click on the Select button in the main work area of the tab. This will open a drawer on the right side. 
 
@@ -120,7 +120,7 @@ To remove an asset which you have assigned as a thumbnail, click the "Clear" but
 ### Access Settings
 Item sets have two settings which control their access. They can be *public* or *not public* and they can be *open* or *closed*.
 
-Use the *make public/private* button (eye icon) to make the item visible to the public or only to all users of the Omeka S installation (not public). 
+Use the *make public/private* button (eye icon) to make the item set visible to the public or only to all users of the Omeka S installation (not public). 
 
 *Open* sets can be edited and added to by any user on the install.
 

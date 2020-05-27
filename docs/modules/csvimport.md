@@ -626,17 +626,14 @@ This tab displays an initial dropdown above a table with the columns from your s
 - a Checkbox
 - Column header from the spreadsheet
 - A plus symbol button for adding or modifying a mapping
-- A wrench symbol button for spreadsheet column options
 - A trash can to delete mappings
 - A column to show options selected
 
 ![Table as described above, with rows for User, email, and role.](../modules/modulesfiles/csvimport_users.png)
 
-#### Mapping options
+To map a column header to user information, click on the plus symbol button to the left of the column header. This will open a drawer on the right-hand side of the screen. 
 
-To map a column header to a vocabulary property, click on the plus symbol button to the left of the column header. This will open a drawer on the right-hand side of the screen. 
-
-![A red arrow points to the plus sign button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapButton.png)
+![A red arrow points to the plus sign button to the left of the word "title"](../modules/modulesfiles/csvimport_usersMapButton.png)
 
 The drawer has a dropdown for Users info, with three options:
 
@@ -644,30 +641,11 @@ The drawer has a dropdown for Users info, with three options:
 - *Display name:* the user's display name
 - *Role:* the user's [role](../admin/users/#roles-and-permissions) - for this column, use the role labels exactly as they appear in Omeka S. 
 
-#### Column options
-To access options for data in a column of your csv (represented by a row in the import table), click the wrench icon for that column heading. 
+![The same table as above, now with the mapping drawer open and the dropdown activated to show the three options.](../modules/modulesfiles/csvimport_usersMap.png)
 
-![A red arrow points to the wrench button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapOptions.png)
+Once you have completed the mappings, click the Import button.
 
-Column options are in addition to mappings. If you add options without also mapping column data to resource, media, or other data, nothing will be imported. 
-
-This will open a drawer on the right side of the browser window with the following options: 
-
-- **Use multivalve separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
-- **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
-	- Import as text (default).
-	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
-	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576.
-	- If you have certain modules installed, such as Numeric Data Types, there may be additional data type options supplied by those modules.
-- **Import values as private**: check this box to set all property values *in this column* private.
-
-#### Batch edit
-When you select one or more rows in the table (columns from your csv file), you can use the "Batch edit options" button to apply the column options described above - language and data type - to multiple csv columns at once. 
-
-![a screenshot of the Mapping tab, with the boxes for Columns user checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditUser.png)
-
-Be sure to click the Apply Changes button at the bottom of the drawer in order to save your changes. 
+The CSV Import for Users does not have tabs for Basic or Advanced Settings. 
 
 ## Manage Past Imports
 
@@ -728,7 +706,7 @@ If you have [Mapping](../modules/mapping/) (minimum version 1.1.0) installed and
 - *Default zoom* should be a number between 1 (most zoomed out) and 18 (most zoomed in)
 
 ### File Sideload
-If you have [File Sideload](../modules/filesideload) (minimum version 1.2.0) installed and active, you can use it as a source for media when running a csv import.
+If you have [File Sideload](../filesideload) (minimum version 1.2.0) installed and active, you can use it as a source for media when running a csv import.
 
 Everything on the *Map to Omeka S data* tab will be the same. When you add a mapping and choose the "Media source" option, you will see that there is now an option for "Sideload"
 

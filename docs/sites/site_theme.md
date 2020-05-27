@@ -87,11 +87,11 @@ The default values are stored in the prompt text for the field. For the Cozy the
 ## Installing themes
 In order to appear in the *Themes* tab for sites, themes must be manually added to the `themes` folder of the installation, using an FTP program or an ssh connection.
 
-To add a module to the site using FTP
+To add a theme to the site using FTP
 
-1. Download the zipped module to your computer.
-1. Open your FTP client, log on to the server that houses  the Omeka S install and navigate to the `/themes` folder (this should be located in the main folder of the install).
-1. Upload the zipped module to the `/themes` folder 
-1. Unzip the module
+1. Download the zipped theme to your computer.
+1. Open your FTP client, log on to the server that houses the Omeka S install and navigate to the `/themes` folder (this should be located in the main folder of the install).
+1. Upload the zipped theme to the `/themes` folder .
+1. Unzip the theme.
 
 You can also use git to clone a theme directly from the git repository. Do this only if you are comfortable with git.

@@ -166,7 +166,7 @@ By default, Omeka S will use the topmost media to generate a thumbnail for the i
 
 When you use an asset thumbnail instead of uploading media, the asset thumbnail does not display on the item's public show page. This makes such thumbnails useful for items which have no media but which would benefit from a thumbnail for the browse view, or for items whose media does not render an elegant thumbnail, such as audio or visual files.
 
-The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../sites/site_theme/#settings-options). 
+The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../../sites/site_theme/#settings-options). 
 
 To assign an asset as a thumbnail, click on the Select button in the main work area of the tab. This will open a drawer on the right side. 
 

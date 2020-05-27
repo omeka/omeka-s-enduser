@@ -64,7 +64,7 @@ On this tab, create a new password. It must be entered twice, in both the *new p
 
 ![Empty password reset fields for the user outreach](adminfiles/users_password.png)
 
-To see the password requirements, click the arrow next to the New Password field. This will display a list of [requirements](../configuration) if any have been configured.
+To see the password requirements, click the arrow next to the New Password field. This will display a list of [requirements](../../configuration) if any have been configured.
 
 ### API Key
 Use this tab to generate an API key for the user. You must provide a label for the key - this could be a date or the purpose of the key. Click save to generate the key.
@@ -150,13 +150,15 @@ The following is a detailed breakdown of permissions for each user role:
 
 **Reviewer**
 
-- Can search, read, create, and edit all items, item sets, media, sites and site pages. Can only delete those items, item sets, media, sites and site pages which the user owns.
+- Can search, read, create, and edit all items, item sets, and media. Can only delete those items, item sets, and media.
+- Can be added to a site at the Editor or Admin levels, which enables them to search, read, create, edit, and delete site pages. If a Reviewer has not beed added as a site user, they will have read-only access to that site's content.
 - Search and read only privileges for vocabularies and resource templates.
 - No privileges for modules
 
 **Author**
 
-- Can search, read, and create items, item sets, media, and site pages. Can only edit or delete content which the user has created.
+- Can search, read, and create items, item sets, and media. Can only edit or delete content which the user has created.
+- Can be added to a site at the Editor or Admin levels, which enables them to search, read, create, edit, and delete site pages. If a Reviewer has not beed added as a site user, they will have read-only access to that site's content.
 - Search and read only privileges for vocabularies and sites.
 - No privileges for modules
 

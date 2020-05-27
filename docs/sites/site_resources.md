@@ -11,8 +11,6 @@ Item Pool is where you can set the items available for selection and browse in y
 
 Item Sets is where you select the sets which will show up on the  Browse Item Sets page, should you choose to include it 
 
-![A window open to a site's resources tab](../sites/sitesfiles/siteres1.png)
-
 **Note** The two tabs operate *independently* from each other. The selections made on one will have no effect on the other. The Item Pool tab limits which items are available, while The Item Set tab limits which sets are visible for public browsing.
 
 Item Pool
@@ -45,10 +43,9 @@ To find a resource ID, go to the resource and look at the url in your browser's 
 
 *Search by template:* select from existing resource templates and the search will only return items using this resource template or templates. 
 
-*Search by item set:* select from a dropdown of item sites.
+*Search by item set:* select from a dropdown of item sets.
 
-![The Item Pool tab on site settings, with a red rectangle around the dropdown for "In site pool"](../sites/sitesfiles/sites_itempool2.png)
-
+### See items in pool
 If you have already set terms for an item pool, the Item Pool page will display a message above the table of search options, with the number of items in the current site pool (see the image below). The number functions as a link which takes you to an admin-side browse of all the items in the site's item pool. *Note that clicking the link takes you outside of the Sites admin*
 
 ![arrow points to the link in the current items sentence](../sites/sitesfiles/sites_ipn.png)
@@ -57,7 +54,6 @@ The image below shows how those items are displayed; the name of the site is dis
 
 ![items in site Jane Austen](../sites/sitesfiles/sites_itemsinpool.png)
 
-*In site pool:* select from a dropdown menu of all the sites on the Omeka S installation, sorted by user-owner. This dropdown lists all sites on the installation by owner. You do not need to select the current site - this dropdown is only there so you can build searches using other sites' pools. 
 
 Item Sets
 ---------------------------
@@ -74,7 +70,9 @@ To add an item set, select it in the right hand sidebar. You can find the desire
 
 ![Selecting an item set from the owner's section of the sidebar](../sites/sitesfiles/siteres_itemsetsel.png)
 
-Remove an item set by clicking the red delete button (trash can icon). You can change the order of the item sets by dragging and dropping using the three-bar icon on the left end of the row.
+Remove an item set by clicking the red delete button (trash can icon). It will still be available to re-add from the drawer on the right.
+
+You can change the order of the item sets by dragging and dropping using the three-bar icon on the left end of the row.
 
 The following image shows a browse item sets public view using the default theme: 
 

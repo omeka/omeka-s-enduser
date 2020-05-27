@@ -4,7 +4,23 @@ title: Collecting
 
 The Collecting module allows you to gather public contributions through your sites. 
 
-Once activated on the [modules](../modules/index.md) tab of the admin dashboard, Collecting is configured on a site-by-site basis.
+Once activated on the [modules](../modules/index) tab of the admin dashboard, Collecting is configured on a site-by-site basis.
+
+Site settings
+-------------------
+Collecting adds a section to your [site settings](../sites/site_settings/) where you can manage terms of service and email for the collecting forms for this site.
+
+![The Collecting section in site settings with two fields as described below.](../modules/modulesfiles/collecting_settingsSite.png)
+
+In this section are two fields:
+
+**Terms of service** is a multi-line field where you can enter terms of services for material collected through this site. This text is linked from the form just above the submit button:
+
+![from the collecting form, the words "I accept the Terms of Service" over a button that says submit. The phrase Terms of Service are a link.](../modules/modulesfiles/collecting-ToSlink.png)
+ 
+Clicking on the phrase "Terms of Service" will open a new window so that people filling out the form do not lose the information they have entered.
+
+**Email address** allows you to set a custom address from which submission emails will be sent. If left blank, these emails will be sent from the administrator email address in the [Global Settings](../admin/settings) for the Omeka S installation. 
 
 Managing Collecting Forms
 -----------------------------
