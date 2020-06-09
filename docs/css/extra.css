@@ -38,3 +38,12 @@ a:visited {
 .wy-menu-vertical li.current .toctree-l4 ~ ul {
     display: none;
 }
+
+.wy-nav-content div[role="main"] a {
+  border-bottom: 1px dotted;
+}
+
+.wy-nav-content div[role="main"] a:hover,
+.wy-nav-content div[role="main"] a:active {
+  border-bottom: 1px solid;
+}
