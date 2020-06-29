@@ -54,6 +54,6 @@ pages:
         - 'Sharing': 'modules/sharing.md'
         - 'ValueSuggest': 'modules/valuesuggest.md'
         - 'Zotero Import': 'modules/zoteroimport.md'
-    - 'Error Logging': 'errorLogging.md'
+    - 'Retrieving Error Messages': 'errorLogging.md'
     - 'Translate Omeka S': 'translateOmekaS.md'
     - 'Configuration Options': 'configuration.md'
