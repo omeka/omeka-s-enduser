@@ -97,6 +97,11 @@ Depending on the [site theme](../sites/site_theme), you may want to make this a 
 
 ![search settings, all empty](../sites/sitesfiles/sites_settingssearch.png)
 
+**Search type** is a dropdown which allows you to set from which site(s) the search bar generates results: 
+
+- This site: only return results from this site;
+- All sites: return results for all sites on the installation. 
+
 **Search resources** is a series of checkboxes which let you select which types of resources are searched from the main search field on the site. Select from: site pages, items, and item sets. You can select all if you want.
 
 **Templates** allows you to limit the properties for advanced item or item set search to only properties included in a template or templates. When this field is empty, the "Search by Value" on the advanced search will display all properties from all vocabularies in the Omeka S installation. Applying a template not only limits the options in the dropdown, it also includes your alternate labels for properties: 

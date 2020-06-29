@@ -64,40 +64,14 @@ The context menu for every site has the site title at the top, with an icon of a
 
 Site admin left hand navigation options are: 
 
-- *[Site Admin](../sites/site_settings)*,
+- *[Site Admin](../sites/site_settings.md)*,
 - *[Pages](../sites/site_pages.md)*, 
 - *[Navigation](../sites/site_navigation.md)*, 
 - *[Resources](../sites/site_resources.md)*,
-- *User Permissions*, (see below)
-- *[Theme](../sites/site_theme.md)*
+- *[User Permissions](../sites/site_users.md)*,
+- *[Theme](../sites/site_theme.md)*, and
 - Modules, if installed.
 
 Any modules which you have installed that have site-specific settings will appear below the site Settings tab in the site's context menu. In the image above, the modules Metadata Browse and Collecting are installed.
 
 The standard options in the left hand navigation of the Omeka S Admin (items, item sets, etc) are still available below the site context menu. 
-
-## Managing User Permissions
-To add a user to a site, navigate to the *User Permissions* tab.
-
-![User permissions tab with no added users and an alphabetical directory on the right](../sites/sitesfiles/sites_users.png)
-
-A drawer on the right hand side of the screen shows all of the users for your install, sorted by the first letter of their first name. 
-
-To add a user, click on their name. 
-
-Then select their role from the dropdown:
-
-* *Viewer:* user can see the site’s backend but cannot edit.
-* *Editor:* user can access and edit the site’s backend.
-* *Admin:* user has full administrative privileges for the site, including adding users and deleting the site.
-
-You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon on their row.
-
-Once you've added one or more users, click the Save button located in the upper right hand corner. To cancel your changes, click the Cancel button in the upper right hand corner. 
-
-## See also: 
-* [Site Pages](../sites/site_pages.md)
-* [Site Navigation](../sites/site_navigation.md)
-* [Site Resources](../sites/site_resources.md)
-* [Theme](../sites/site_theme.md)
-* [Site Settings](../sites/site_settings.md)

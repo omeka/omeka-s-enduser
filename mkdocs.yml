@@ -18,6 +18,7 @@ pages:
         - 'Pages Management': 'sites/site_pages.md'
         - 'Navigation': 'sites/site_navigation.md'
         - 'Resources': 'sites/site_resources.md'
+        - 'User Permissions': 'sites/site_users.md'
         - 'Theme Selection': 'sites/site_theme.md'
     - 'Resources':
         - 'Items': 'content/items.md'
