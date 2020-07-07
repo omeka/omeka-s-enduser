@@ -1,6 +1,8 @@
 Scripto is made up of projects. Every transcription, translation, or description effort you create can, and should, have its own project. 
 
 ## Create a Project
+This [screencast](https://vimeo.com/422818763) walks you through the process of creating a Scripto project in Omeka S. 
+
 To create a new Scripto project, go to the Scripto dashboard (the Scripto tab in the left-hand navigation) and use the "Actions" dropdown menu in the upper right corner to select "add new project"
 
 ![Action dropdown open with a red arrow pointing to the Add New Project option](../modulesfiles/scripto-projectAdd.png)
@@ -150,6 +152,8 @@ To find items which have been edited and are ready for review, filter all items 
 You can edit your project using the Actions dropdown in the upper right hand corner of the screen. It offers the same two tabs you used when [creating your project](#create-a-project) - [Configuration](#configuration-options) and [Reviewers](#reviewers). 
 
 ## Admin Item Review
+[This screencast](https://vimeo.com/431828023) shows the process of reviewing an item and its media.
+
 To review an item, click on its title in the project view.
 
 The Item view page, like the project view, has near the top of the page a Scripto account bar, where you can either log in or navigate to the dashboard, your contributions and watchlist.
