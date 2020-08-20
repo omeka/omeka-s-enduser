@@ -164,10 +164,9 @@ Select sites to which to add your items.
 
 ![item 'sites' tab with the item added to two sites. Each site is in its own row, with a delete icon on the far right of the row](contentfiles/items_addItemSite.png)
 
-If there are sites which have "auto-assign new items" turned on in their settings, you can use this tab to remove this item from those sites. Click the trash can icon on the right side of the site's row to remove it.
-
 To add an item to a site, select a site from the menu in the right-hand drawer. You can filter sites by searching in the field at the top of the drawer. 
 
+If there are sites which have "auto-assign new items" turned on in their settings, you can use this tab to remove this item from those sites. Click the trash can icon on the right side of the site's row to remove it.
 
 ### Thumbnail
 By default, Omeka S will use the topmost media to generate a thumbnail for the item. If you want to use a non-media image for the thumbnail for an item you can set it here.
