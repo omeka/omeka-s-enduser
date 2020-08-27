@@ -3,7 +3,7 @@ theme: 'readthedocs'
 repo_url: 'http://github.com/omeka/omeka-s-enduser'
 extra_css:
     - css/extra.css
-pages:
+nav:
     - 'Home': 'index.md'
     - 'Accessibility Statement': 'accessibility.md'
     - 'Planning Tips': 's-planning-tips.md'
