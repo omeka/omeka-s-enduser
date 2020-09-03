@@ -33,15 +33,11 @@ Note that your settings for a specific theme on a site will be saved even if you
 Depending on which theme you have selected, you may see any of the following setting options:
 
 #### Top Navigation Depth
-(Default, Cozy)
-
 Top Navigation Depth allows you the limit the depth of the top navigation menu on the public side of the site.  The default setting, 0, does not restrict the number of levels of the top navigation menu. Setting it to one would only show the top-level pages or links of your site.
 
 ![Theme settings with Top Navigation depth at 0](../sites/sitesfiles/sitetheme_depth.png)
 
 #### Logo
-(Default, Center Row, The Daily, Cozy)
-
 Upload a asset (file) to function as a logo in the header of your site. Allowed file types are: jpg, gif, png, svg, and svgz.
 
 This asset is not associated with any of the items, and will be stored separately; once uploaded to a site you will be able to select it again without re-uploading even if you change themes for a while. Any asset uploaded to one site will be available for all sites on the installation.
@@ -57,8 +53,6 @@ Note that the logo completely replaces the header, including the site title, for
 To remove a logo, click the *clear* button in that block (only visible when a logo is active) and save changes.
 
 #### Footer Content
-(all themes)
-
 A text field in which you can enter content to appear in the footer of the site.
 
 ![footer text field with prompt visible](../sites/sitesfiles/sitetheme_footer.png)
@@ -82,7 +76,29 @@ The navigation background color sets the color of the navigation sidebar for the
 
 Edit either field by typing a [color value](https://en.wikipedia.org/wiki/Web_colors) into the field. Either a triplet or a six-character hexadecimal code will work. Once you have entered a valid value, the color bar on the left will automatically update to show the color entered, even without saving changes.
 
-The default values are stored in the prompt text for the field. For the Cozy theme, the default values are: main accent color is `087b94` and navigation background color is `bfdcdc`
+The default values are stored in the prompt text for the field. For the Cozy theme, the default values are: main accent color is `087b94` and navigation background color is `bfdcdc`'
+
+#### Foundation Theme Settings
+Foundation is theme which comes with a few default stylesheets for fast prototyping or getting started with modifying themes. As a result it has some unique settings. For more information on using Foundation, including working with Sass, see the [theme ReadMe file](https://github.com/omeka-s-themes/foundation-s/blob/master/README.md).
+
+Settings not described above: 
+* **Stylesheet:** The theme provides 4 style options.
+  * **Default** uses ZURB Foundation's default styles for prototyping, which are all viewable in their documentation under the [Kitchen Sink](https://get.foundation/sites/docs/kitchen-sink.html).
+  * **Revolution** aims to capture the feel of old documents and juxtaposes it with a bright red accent. It includes a textured paper background image.
+  * **Sea Foam** offers a clean, friendly look with a teal palette.
+  * **Inkwell** features a high contrast serif family for its typography, as well as sunny yellow accents.
+* **Navigation layouts:** Global navigation can display as a **horizontal top bar with optional dropdown menus** or a **left vertical column**.
+* **Show Top Navigation Child Pages:** Toggle display of child pages within the main navigation. If unchecked, only the top-level navigation will display. 
+* **Layout for Browse Pages:** Select how to display items within their browse views.
+  * **Grid**: Items are organized into rows and columns. This is recommended for items that prominently feature images.
+  * **List**: Items are stacked into a single column.
+  * **Toggle (default: grid):** Site visitors can choose to display the browse views as grids or lists, and grids are the default.
+  * **Toggle (default: list):** Site visitors can choose to display the browse views as grids or lists, and lists are the default.
+* **Layout for Show Pages:** Resource metadata can show display as **stacked** with properties as headings above their values, or **inline** with properties as headings inline with their values.
+* **Truncate Body Property:** Set how much of the [browse body property]( ) displays on the browse page. You can:
+	* **Show full value** which displays all of the property text. 
+	* **Show 4 lines and fade out** which displays 4 lines of text with a fade at the end of the text block.
+	* **Show 4 lines and ellipses** which displays 4 lines of text concluding with an ellipses (...) 
 
 ## Installing themes
 In order to appear in the *Themes* tab for sites, themes must be manually added to the `themes` folder of the installation, using an FTP program or an ssh connection.
