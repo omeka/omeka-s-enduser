@@ -32,12 +32,8 @@ Note that your settings for a specific theme on a site will be saved even if you
 ### Settings Options
 Depending on which theme you have selected, you may see any of the following setting options:
 
-#### Top Navigation Depth
-Top Navigation Depth allows you the limit the depth of the top navigation menu on the public side of the site.  The default setting, 0, does not restrict the number of levels of the top navigation menu. Setting it to one would only show the top-level pages or links of your site.
-
-![Theme settings with Top Navigation depth at 0](../sites/sitesfiles/sitetheme_depth.png)
-
 #### Logo
+(All themes)
 Upload a asset (file) to function as a logo in the header of your site. Allowed file types are: jpg, gif, png, svg, and svgz.
 
 This asset is not associated with any of the items, and will be stored separately; once uploaded to a site you will be able to select it again without re-uploading even if you change themes for a while. Any asset uploaded to one site will be available for all sites on the installation.
@@ -53,6 +49,7 @@ Note that the logo completely replaces the header, including the site title, for
 To remove a logo, click the *clear* button in that block (only visible when a logo is active) and save changes.
 
 #### Footer Content
+(All themes)
 A text field in which you can enter content to appear in the footer of the site.
 
 ![footer text field with prompt visible](../sites/sitesfiles/sitetheme_footer.png)
@@ -61,10 +58,17 @@ By default the message is Powered by Omeka S.
 
 You can add HTML formatting to the text by manually adding the tags. 
 
-#### Color Selection
-(Cozy)
 
-The theme Cozy includes the option to enter values for colors for the *main accent color* and *navigation background color*
+#### Top Navigation Depth
+(Default, Cozy, Foundation)
+Top Navigation Depth allows you the limit the depth of the top navigation menu on the public side of the site.  The default setting, 0, does not restrict the number of levels of the top navigation menu. Setting it to one would only show the top-level pages or links of your site.
+
+![Theme settings with Top Navigation depth at 0](../sites/sitesfiles/sitetheme_depth.png)
+
+#### Color Selection
+(Default, Cozy, The Daily)
+
+The themes Default, Cozy, and The Daily include an option to enter values for the *main accent color*; Cozy also has an option for the *navigation background color*.
 
 ![color option fields](../sites/sitesfiles/sitetheme_color.png)
 
@@ -78,6 +82,15 @@ Edit either field by typing a [color value](https://en.wikipedia.org/wiki/Web_co
 
 The default values are stored in the prompt text for the field. For the Cozy theme, the default values are: main accent color is `087b94` and navigation background color is `bfdcdc`'
 
+### Layout for Browse Pages
+(Center Row, Foundation)
+Select how to display items within their browse views.
+
+* **Grid**: Items are organized into rows and columns. This is recommended for items that prominently feature images.
+* **List**: Items are stacked into a single column.
+* **Toggle (default: grid):** Site visitors can choose to display the browse views as grids or lists, with grids as the default.
+* **Toggle (default: list):** Site visitors can choose to display the browse views as grids or lists, with lists as the default.
+
 #### Foundation Theme Settings
 Foundation is theme which comes with a few default stylesheets for fast prototyping or getting started with modifying themes. As a result it has some unique settings. For more information on using Foundation, including working with Sass, see the [theme ReadMe file](https://github.com/omeka-s-themes/foundation-s/blob/master/README.md).
 
@@ -89,11 +102,6 @@ Settings not described above:
   * **Inkwell** features a high contrast serif family for its typography, as well as sunny yellow accents.
 * **Navigation layouts:** Global navigation can display as a **horizontal top bar with optional dropdown menus** or a **left vertical column**.
 * **Show Top Navigation Child Pages:** Toggle display of child pages within the main navigation. If unchecked, only the top-level navigation will display. 
-* **Layout for Browse Pages:** Select how to display items within their browse views.
-  * **Grid**: Items are organized into rows and columns. This is recommended for items that prominently feature images.
-  * **List**: Items are stacked into a single column.
-  * **Toggle (default: grid):** Site visitors can choose to display the browse views as grids or lists, and grids are the default.
-  * **Toggle (default: list):** Site visitors can choose to display the browse views as grids or lists, and lists are the default.
 * **Layout for Show Pages:** Resource metadata can show display as **stacked** with properties as headings above their values, or **inline** with properties as headings inline with their values.
 * **Truncate Body Property:** Set how much of the [browse body property]( ) displays on the browse page. You can:
 	* **Show full value** which displays all of the property text. 
