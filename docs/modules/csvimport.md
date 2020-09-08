@@ -3,7 +3,9 @@ title: CSV Import
 ---
 The CSV Import module allows you to import items or users into your Omeka S install from a csv (comma separated values), tsv (tab-separated values) or odf (open document format) file. 
 
-Please note that an import must have a specific import type. 
+Please note that an import must have a specific import type.
+
+This module can be found here: https://github.com/omeka-s-modules/CSVImport
 
 ## Preparing your CSV file
 
