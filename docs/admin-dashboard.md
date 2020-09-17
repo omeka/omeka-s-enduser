@@ -4,6 +4,10 @@ title: Administrative Dashboard
 
 The administrative dashboard manages the content shared by all OmekaS sites and the core functionalities of the OmekaS installation. 
 
+This [screencast](https://vimeo.com/455708039) walks you through the main features of the dashboard and navigating your Omeka S installation.
+
+[![Still image of the first frame of a vimeo video](files/navigatingOmekaS-still.png)](https://vimeo.com/455708039)
+
 Admin Main Page
 ---------------------
 When a user logs in, the first page they see is the Admin Dashboard. 
