@@ -208,7 +208,7 @@ To use a media resource for a property, select the media option for the element 
 ![The same window as before, but now the drawer on the right displays a thumbnail of the media "Sense and Sensibility DVD Trailer" with a dark gray button labeled "select resource" at the bottom of the drawer area. This image contains step 3](contentfiles/items_mediaresource2.png)
 
 
-## Batch editing
+## Batch actions
 
 From the browse page of items (admin/item) you can batch edit items, using the dropdown menu on the left near the pagination buttons. You can select multiple items using the checkboxes on the left of each item's row.
 
@@ -231,6 +231,7 @@ Choose one of these options and then click *Go*.
 - add to item set: a dropdown, select from item sets on the installation. Add to an additional item set using the *add another item set* button.
 - remove from item set: a dropdown, select from item sets on the installation. Remove from an additional item set using the *remove another item set* button.
 - clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected items. Clear additional properties using the *Clear another property* button.
+- Set value visibility: set the visibility of a specific property to either public or not public. Unlike the radio buttons at the top of the form, this will only affect a single property instead of the entire item. Select a property from the text field (type to begin searching), and the choose either the *public* or *not public* radio button for this option.
 
 ![Batch edit items form, with options as described above. Everything is grayscale](contentfiles/items_batchedit.png)
 
