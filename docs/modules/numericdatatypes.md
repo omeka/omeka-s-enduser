@@ -6,7 +6,7 @@ This module allows you to set certain properties as numeric data, using resource
 
 To install Numeric Data Types, follow the instructions for [Installing Modules](../modules/index.md#installing-modules) on the Modules documentation.
 
-## Creating numeric properties
+## Create numeric properties
 To implement the module, you will need to create or edit a [resource template](../content/resource-template.md) to set specific properties as having numeric data types. 
 
 When creating or editing a resource template, find the property you want to set as numeric in the right hand sidebar. Click on the property to add it to the template.
@@ -30,7 +30,7 @@ When you save changes to your resource template, the numeric type you chose shou
 
 Note: these fields will display only the numeric data entered. If you want to indicate what the integers represent, edit the property's label to include the scale you are using, for example creating an alternate label for "Spatial Coverage" which reads "Height (cm)".
 
-## Entering numeric data
+## Add numeric data
 When you add or edit an item using the template you created above, the properties you set as numeric will appear as follows:
 
 ### Timestamp data
@@ -73,7 +73,7 @@ Interval data allows you to enter the beginning and end dates for a resource. Th
 
 ![Interval property with no times entered](../modules/modulesfiles/ndt-interval.png)
 
-## Sorting 
+## Sort
 Once you have active resource templates using numeric data types, you can use these to sort on the Item, Media, and Item Set browse views. 
 
 Click the first dropdown on the upper right above the table of resources, which defaults to "Created"
@@ -84,7 +84,24 @@ Clicking on this dropdown will reveal multiple options, including all of the pro
 
 ![The contents of the dropdown, with the normal options in addition to eight properties using numeric data types.](../modules/modulesfiles/ndt-browsesort2.png)
 
-## Numeric data search
+
+## Bulk edit numeric data
+The module adds an additional option to the [item batch edit](../../content/items/#batch-editing): convert to numeric.
+
+![Batch edit items form with a red rectangle outline surrounding the convert to numeric option](../modules/modulesfiles/ndt-batchoption
+
+The convert to numeric option lets you convert an existing text input property to a numeric data type. It will not work on properties where the data is currently an Omeka resource or a URI. 
+
+In the first field, select a property from the dropdown. You can type to search through the properties. Note that this dropdown loads the property names from the vocabulary and will not have the additional labels from your resource template, so be sure you know which vocabulary term you are looking for.
+
+In the second field, select from the following options:
+
+- convert to timestamp
+- convert to interval
+- convert to duration
+- convert to integer
+
+## Search numeric data
 When the module is active, it adds additional search options to the Advanced Search for items. 
 
 ![Numeric data type search options, no data entered](../modules/modulesfiles/ndt-search.png)
