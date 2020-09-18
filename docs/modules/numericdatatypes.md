@@ -86,7 +86,20 @@ Clicking on this dropdown will reveal multiple options, including all of the pro
 
 
 ## Bulk edit numeric data
-The module adds 
+The module adds an additional option to the [item batch edit](../../content/items/#batch-editing): convert to numeric.
+
+![Batch edit items form with a red rectangle outline surrounding the convert to numeric option](../modules/modulesfiles/ndt-batchoption
+
+The convert to numeric option lets you convert an existing text input property to a numeric data type. It will not work on properties where the data is currently an Omeka resource or a URI. 
+
+In the first field, select a property from the dropdown. You can type to search through the properties. Note that this dropdown loads the property names from the vocabulary and will not have the additional labels from your resource template, so be sure you know which vocabulary term you are looking for.
+
+In the second field, select from the following options:
+
+- convert to timestamp
+- convert to interval
+- convert to duration
+- convert to integer
 
 ## Search numeric data
 When the module is active, it adds additional search options to the Advanced Search for items. 
