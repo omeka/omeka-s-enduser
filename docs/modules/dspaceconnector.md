@@ -6,7 +6,7 @@ DSpace Connector is a [module](index.md) for Omeka S which allows you to connect
 
 To install DSpace Connector, follow the instructions for [Installing Modules](index.md#installing-modules) on the Modules documentation.
 
-Note that DSpace Connector only works with DSpace versions 4 and higher.
+Note that DSpace Connector only works with DSpace versions 5.6 and higher.
 
 You can view past imports by going to the DSpace Connector tab on the left-hand navigation of the admin dashboard and clicking the *Past Imports* sub-tab.
 
@@ -34,6 +34,7 @@ This tab has three options:
 
 * *Import files into Omeka S*: click this checkbox to import files in addition to metadata.
 * *Item Set*: select an item set from the dropdown into which to import the items. 
+* *Ignored Fields*: DSpace metadata fields to ignore on import, separated by commas. 
 * *Comment*: for any comments you have.
 
 ![basic import settings, nothing entered and no boxes checked.](../modules/modulesfiles/dspace_importset.png) 
@@ -64,5 +65,5 @@ To undo a completed import and remove all associated items, go to the DSpace Con
 
 ![Table of past imports showing two from mars.gmu.edu](../modules/modulesfiles/mods_dspacepast.png)
 
-Check the box for each import you wish to undo and click submit. The 
+Check the box for each import you wish to undo and click submit.
 
