@@ -2,7 +2,7 @@
 title: Fedora Connector
 ---
 
-Fedora Connector is a [module](../modules/index.md) for Omeka S which allows you to connect an Omeka S instance to a Fedora 4 repository in order to import items from containers in that repository. In addition to importing information, the Omeka S item will include a link back to the original item.
+Fedora Connector is a [module](../modules/index.md) for Omeka S which allows you to connect an Omeka S instance to a [Fedora](https://duraspace.org/fedora/) 4 repository in order to import items from containers in that repository. In addition to importing information, the Omeka S item will include a link back to the original item.
 
 To install Fedora Connector, follow the instructions for [Installing Modules](../modules/index.md#installing-modules) on the Modules documentation. Following a successful installation you should be redirected to the configuration page for Fedora Connector.
 
@@ -15,7 +15,7 @@ There are two options for configuring Fedora Connector, both of which enable the
 
 The first checkbox offers the option to import the Fedora Vocabulary into your Omeka S install’s Vocabularies. The second checkbox offers the option to import the Linked Data Platform Vocabulary into your Omeka S install’s Vocabularies. If you do so, data in these vocabularies will also be imported into Omeka S.
 
-You can check these boxes when you first install Fedora Connector or at a later point. Note that unchecking the boxes will not delete the vocabularies - you would have to do that from the [vocabularies](../content/vocabularies.md) tab in the admin dashboard.
+You can check these boxes when you first install Fedora Connector, or at a later point via the `Configure` button in the [Modules](../modules/index.md#managing-modules) list
 
 ## Import Data
 To use Fedora Connector, navigate to the tab labelled *Fedora Connector* on the left-hand navigation of the admin dashboard. This will automatically take you to the Import sub-tab.
@@ -24,11 +24,10 @@ To use Fedora Connector, navigate to the tab labelled *Fedora Connector* on the 
 
 You should see a screen with the following options:
 
-* *Fedora Container URI* for the Repository (required);
-* *Import files into Omeka* checkbox, check yes if you want to import media and other files attached to content (optional, recommended);
-* *Comment* for example, any notes to yourself or other users of the installation (optional);
-* *Import into* a selected [Item Set](../content/item-sets.md), if desired (optional). 
- * Note that the Item Set must already exist in order to import into it.
+* *Fedora Container URI* for the Repository, Collection or Resource you wish to import (required)
+* *Import files into Omeka* checkbox, check yes if you want to import media and other files attached to content (optional, recommended)
+* *Comment* for example, any notes to yourself or other users of the installation (optional)
+* *Import into* a selected [Item Set](../content/item-sets.md), if desired (optional--note that the Item Set must already exist in order to import into it)
 
 ![Screenshot of the field options for Fedora Connector](../modules/modulesfiles/mods_fedoraconnect.png)
 
