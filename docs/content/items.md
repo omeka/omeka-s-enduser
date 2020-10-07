@@ -148,7 +148,7 @@ You can edit media later by going by editing an item, navigating to the *media* 
 
 You can delete any media instance from the item's edit page using the delete button (trashcan) on the upper right corner of the media block.
 
-![Image shows a close up of a media item being removed - it is red and has an undo curling arrow at the right end of the block](contentfiles/item_mediablockdelete.png)
+![Image shows a close up of a media item being removed - it is red and has an undo curling arrow at the right end of the block](contentfiles/item_mediablockdelete.JPG)
 
 If you have more than one media instance for an item, you can reorder them by dragging and drop each media instance block, using the icon of three lines in the upper left corner of the block as the anchor when dragging.
 
@@ -163,7 +163,7 @@ You can also filter item sets using the text entry bar above the list of users.
 
 To remove a connection between an item and item set, click the delete (trash can) button to the right of the item set title.
 
-![item set tab with no item sets assigned](contentfiles/items_itemset.png)
+![item set tab with no item sets assigned](contentfiles/items_itemset.JPG)
 
 ### Sites
 Select sites to which to add your items. 
@@ -181,7 +181,7 @@ The advanced tab has two options. One lets you set a custom thumbnail for the it
 
 By default, Omeka S will use the topmost media to generate a thumbnail for the item. If you want to use a non-media image for the thumbnail for an item you can set it here.
 
-![Advanced tab with no asset selected. The tab displays a message about thumbnail creation and a button to "select" an asset](contentfiles/item_thumbnailtab.png)
+![Advanced tab with no asset selected. The tab displays a message about thumbnail creation and a button to "select" an asset](contentfiles/item_advtab.png)
 
 When you use an asset thumbnail instead of uploading media, the asset thumbnail does not display on the item's public show page. This makes such thumbnails useful for items which have no media but which would benefit from a thumbnail for the browse view, or for items whose media does not render an elegant thumbnail, such as audio or visual files.
 
@@ -192,8 +192,6 @@ To assign an asset as a thumbnail, click on the Select button in the main work a
 ![Select drawer with upload option and two assets, both of which are images.](contentfiles/item_thumbdrawer.png)
 
 The drawer offers two options: upload a file using your browser, or select from existing assets. To select an existing asset, simply click on it and it will automatically be assigned to the item. 
-
-![Add item open to Advanced tab, where an asset which is an image of a quill pen on a scrolled piece of paper is in the main work area. Below it are buttons for Select and Clear](contentfiles/item_thumbnail.png)
 
 To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click select and either choose or upload a new thumbnail asset.
 
@@ -215,7 +213,7 @@ Once you have created an item, you can edit it at any time, either by clicking t
 
 To cancel out of editing, click the Cancel button in the upper right corner, between the Delete and Save buttons. 
 
-![Detail view of the top row if information and buttons on an item edit view. A red arrow points to the Cancel button, on the far right](contentfiles/items_cancel.png)
+![Detail view of the top row if information and buttons on an item edit view. A red arrow points to the Cancel button, on the far right](contentfiles/items_cancel.JPG)
 
 Editing options are the same as when creating a new item, with the addition of the ability to add any media which has been saved to an item as a property:
 
