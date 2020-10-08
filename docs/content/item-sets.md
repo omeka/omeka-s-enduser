@@ -100,10 +100,6 @@ You may add other fields by selecting a property from the list on the right. Bro
 
 
 ### Advanced tab
-The advanced tab has two options. One lets you set a custom thumbnail for the item. The other allows you to change which user has ownership of the item. 
-
-**Thumbnail** 
-
 By default, Omeka S will use the media from the first item added to an item set to generate a thumbnail for the set. If you want to use a non-media image for the thumbnail for an item set you can set it here.
 
 ![Thumbnail tab with no asset selected. The tab displays a message about thumbnail creation and a button to "select" an asset](contentfiles/itemset_thumb1.png)
@@ -120,9 +116,6 @@ The drawer offers two options: upload a file using your browser, or select from 
 
 To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click select and either choose or upload a new thumbnail asset.
 
-**Owner**
-
-The ownership of an item set is usually assigned to the user account which creates the item set. You can use this dropdown to reassign ownership. The dropdown will load the user names (not email addresses) of users in the installation. Select a new user and save changes. 
 
 ### Access Settings
 Item sets have two settings which control their access. They can be *public* or *not public* and they can be *open* or *closed*.
