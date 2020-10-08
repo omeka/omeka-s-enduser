@@ -63,12 +63,16 @@ The *Required* checkbox sets whether a property is required when the template is
 
 The *Private* checkbox sets the visibility of the data for this property. If checked, any data added by a user for this property will only be visible to the owner of the item or item set, global administrators, site administrators, and editors. It will not be visible to the public. *Note:* users working with the template will be able to toggle the visibility of this property on a case-by-case basis.
 
-Using the *Data type* dropdown, you can designate a  data type for the property: Literal, URI, or Resource. Whichever you choose will be automatically loaded once someone selects that Resource Type and they will only be able to use this data type for the element when using this Resource Template.  
+Using the *Data type* dropdown, you can designate the data types for the property. Whichever you choose will be automatically loaded once someone selects that Resource Type and they will only be able to use these data type for the element when using this Resource Template. 
 
   - Literal: text and/or html input
   - URI: a link with label.
   - Resource: either an existing Item or Item Set in the Omeka S install.
   - Additional options may be added by modules, such as [Numeric Data Types](../modules/numericdatatypes) and [Value Suggest](../modules/valuesuggest).
+
+You can select multiple data types, for example giving users the option of Literal or Resource for input, but not URI. All choices will appear in the data types field with an X to the right of their label - click the X to remove that data type. 
+
+![The data types field with two types shown: numeric timestamp and text.](contentfiles/templates_multiType.png)
 
 Note: you must click the *Set Changes* at the bottom of the drawer for each property that you edit before exiting the drawer or moving on to another property! If you do not click *Set Changes*, your edits will not be saved.
 

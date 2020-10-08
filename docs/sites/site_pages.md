@@ -8,8 +8,6 @@ Manage the pages for a site by navigating to the Sites tab on the left-hand navi
 
 Once you are editing the site, click the Pages tab in the left hand navigation.
 
-![Left hand menu options for editing sites, with General, Settings, and Pages links](../sites/sitesfiles/sitepg_nav.png)
-
 When you create a new site, Omeka S automatically adds a page titled *Welcome* with a single HTML block (see below). You can edit this page or delete it.
 
 ## Adding Pages

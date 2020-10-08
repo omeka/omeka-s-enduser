@@ -10,7 +10,7 @@ This Users section displays the user’s email followed by full name in parenthe
 There are six user roles in Omeka S:
 
 - Global Admin: full installation privileges
-- Site Administrator: robust site and content privileges
+- Supervisor: robust site and content privileges
 - Editor (Content Expert): full privileges for content creation
 - Reviewer: robust content privileges but can only delete own content.
 - Author: Create own content.
@@ -135,10 +135,10 @@ The following is a detailed breakdown of permissions for each user role:
 - Full privileges for modules - install, activate, configure.
 - Search, read, create, and delete privileges for Vocabularies
 
-**Site Administrator**
+**Supervisor**
 
 - Full privileges (create, edit, delete) of item, item sets, media, resource templates, site pages, sites, and users.
-- Browse-only privileges for modules in the module tab. Site administrators can interact with active modules where appropriate.
+- Browse-only privileges for modules in the module tab. Can interact with active modules where appropriate.
 - Search, read, and create privileges for Vocabularies (cannot delete)
 
 **Editor**

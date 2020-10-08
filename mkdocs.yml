@@ -5,7 +5,7 @@ theme:
 repo_url: 'http://github.com/omeka/omeka-s-enduser'
 extra_css:
     - css/extra.css
-pages:
+nav:
     - 'Home': 'index.md'
     - 'Accessibility Statement': 'accessibility.md'
     - 'Planning Tips': 's-planning-tips.md'
@@ -16,11 +16,12 @@ pages:
     - 'Front Page': 'frontpage.md'
     - 'Sites': 
         - 'Sites Management': 'sites/index.md'
+        - 'Site Admin': 'sites/site_settings.md'
         - 'Pages Management': 'sites/site_pages.md'
         - 'Navigation': 'sites/site_navigation.md'
         - 'Resources': 'sites/site_resources.md'
+        - 'User Permissions': 'sites/site_users.md'
         - 'Theme Selection': 'sites/site_theme.md'
-        - 'Site Settings': 'sites/site_settings.md'
     - 'Resources':
         - 'Items': 'content/items.md'
         - 'Item Sets': 'content/item-sets.md'

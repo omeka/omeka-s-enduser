@@ -31,11 +31,11 @@ Just above the table on the right are options for sorting the table of items, wi
 Between these and the table, on the left, is a dropdown for batch actions, including edit selected, edit all, delete selected, and delete all. 
 
 ## View
-To quickly view the basic information about an item, click the *view details* (ellipses) button in the row for the item, located next to the edit and delete buttons. This will open a drawer to the right of the list which displays the item’s title,  description, and visibility.
+To quickly view the basic information about an item, click the *view details* (ellipses) button in the row for the item, located next to the edit and delete buttons. This will open a drawer to the right of the list which displays the item’s title,  description, visibility, any sites it is used in, and its associated media..
 
 For a more detailed look at an individual item, click on its title in the items browse table or when viewing its details.
  
-![Item browse view with details open for The Adventure of the Yellow Face. Links to item view page squared in blue](contentfiles/items_detailview.png) The blue squares indicate where to click to open the full item view.
+![Item browse view with details open for "Behold, Here's Poison". Links to item view page squared in blue](contentfiles/items_detailview.png) The blue squares indicate where to click to open the full item view.
 
 When you view an individual item , there are tabs for the item’s *Metadata* and its *Linked Resources*. The right side of the page displays the item’s media, any *item sets* to which it belongs, its creation date, owner, and visibility. 
 
@@ -125,6 +125,12 @@ You can indicate the language for the content of an input using the globe symbol
 
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
 
+#### Value order
+If you have multiple values for a property, you can reorder them by dragging and dropping. Click on the bar on the left of the value to grab that value, and drag it into the order that you want it. 
+
+![Close up of the Subject property with two values. A red circle shows the location of the grab bar for the value.](contentfiles/item_valuereorder.png)
+
+
 ### Media
 Use the *Media* tab to add images, video, or other files.
 Using the buttons on the *Add New Media* menu on the right side of the screen, select a media type (Upload, URL, oEmbed, YouTube, or HTML)
@@ -142,7 +148,7 @@ You can edit media later by going by editing an item, navigating to the *media* 
 
 You can delete any media instance from the item's edit page using the delete button (trashcan) on the upper right corner of the media block.
 
-![Image shows a close up of a media item being removed - it is red and has an undo curling arrow at the right end of the block](contentfiles/item_mediablockdelete.png)
+![Image shows a close up of a media item being removed - it is red and has an undo curling arrow at the right end of the block](contentfiles/item_mediablockdelete.JPG)
 
 If you have more than one media instance for an item, you can reorder them by dragging and drop each media instance block, using the icon of three lines in the upper left corner of the block as the anchor when dragging.
 
@@ -157,12 +163,25 @@ You can also filter item sets using the text entry bar above the list of users.
 
 To remove a connection between an item and item set, click the delete (trash can) button to the right of the item set title.
 
-![item set tab with no item sets assigned](contentfiles/items_itemset.png)
+![item set tab with no item sets assigned](contentfiles/items_itemset.JPG)
 
-### Thumbnail
+### Sites
+Select sites to which to add your items. 
+
+![item 'sites' tab with the item added to two sites. Each site is in its own row, with a delete icon on the far right of the row](contentfiles/items_addItemSite.png)
+
+To add an item to a site, select a site from the menu in the right-hand drawer. You can filter sites by searching in the field at the top of the drawer. 
+
+If there are sites which have "auto-assign new items" turned on in their settings, you can use this tab to remove this item from those sites. Click the trash can icon on the right side of the site's row to remove it.
+
+### Advanced
+The advanced tab has two options. One lets you set a custom thumbnail for the item. The other allows you to change which user has ownership of the item. 
+
+**Thumbnail** 
+
 By default, Omeka S will use the topmost media to generate a thumbnail for the item. If you want to use a non-media image for the thumbnail for an item you can set it here.
 
-![Thumbnail tab with no asset selected. The tab displays a message about thumbnail creation and a button to "select" an asset](contentfiles/item_thumbnailtab.png)
+![Advanced tab with no asset selected. The tab displays a message about thumbnail creation and a button to "select" an asset](contentfiles/item_advtab.png)
 
 When you use an asset thumbnail instead of uploading media, the asset thumbnail does not display on the item's public show page. This makes such thumbnails useful for items which have no media but which would benefit from a thumbnail for the browse view, or for items whose media does not render an elegant thumbnail, such as audio or visual files.
 
@@ -174,9 +193,11 @@ To assign an asset as a thumbnail, click on the Select button in the main work a
 
 The drawer offers two options: upload a file using your browser, or select from existing assets. To select an existing asset, simply click on it and it will automatically be assigned to the item. 
 
-![Add item open to Thumbnail tab, where an asset which is an image of a quill pen on a scrolled piece of paper is in the main work area. Below it are buttons for Select and Clear](contentfiles/item_thumbnail.png)
-
 To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click select and either choose or upload a new thumbnail asset.
+
+**Owner**
+
+The ownership of an item is usually assigned to the user account which creates the item. You can use this dropdown to reassign ownership. The dropdown will load the user names (not email addresses) of users in the installation. Select a new user and save changes.  
 
 ### Visibility
 Use the *make public/private* button (eye icon) to set whether the item is visible to the public or only to users of the Omeka S system. 
@@ -192,7 +213,7 @@ Once you have created an item, you can edit it at any time, either by clicking t
 
 To cancel out of editing, click the Cancel button in the upper right corner, between the Delete and Save buttons. 
 
-![Detail view of the top row if information and buttons on an item edit view. A red arrow points to the Cancel button, on the far right](contentfiles/items_cancel.png)
+![Detail view of the top row if information and buttons on an item edit view. A red arrow points to the Cancel button, on the far right](contentfiles/items_cancel.JPG)
 
 Editing options are the same as when creating a new item, with the addition of the ability to add any media which has been saved to an item as a property:
 
