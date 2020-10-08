@@ -7,7 +7,7 @@ The Omeka team is committed to making Omeka S an accessible option for building 
 For more information, please review the following reports:
 - Omeka S version 3.x [Accessibility Conformance Report, using VPAT 2.4 Revised International Standards](files/OmekaS3x_ACR.pdf) (pdf), October 2020.
 - Omeka S version 2.x [Accessibility Conformance Report using VPAT version 2.0](files/VPAT_OmekaS2-0-1.pdf) (pdf), August 2019.
-- Omeka S version 1.x [Accessibility Conformance Report using VPAT version 1.1](files/VAPT2.0-OmekaS1-1.pdf) (pdf), April 2018.
+- Omeka S version 1.x [Accessibility Conformance Report using VPAT version 1.1](files/VPAT2.0-OmekaS1-1.pdf) (pdf), April 2018.
 
 The following statements apply to Omeka S version 1.0.1 and higher:
 
