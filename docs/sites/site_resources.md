@@ -70,7 +70,7 @@ To find a resource ID, go to the resource and look at the url in your browser's 
 
 Note that the fields for searches by value, class, template, and item set have a large red plus sign to the left of the select options. Use these to add more than one search of this kind to your form. You can use the red trash can icon to the right of the field to remove it.
 
-[Select by class with two select fields loaded](../sites/sitesfiles/sites_resourcesSelectMulti.png)
+![Select by class with two select fields loaded](../sites/sitesfiles/sites_resourcesSelectMulti.png)
 
 Item Sets
 ---------------------------

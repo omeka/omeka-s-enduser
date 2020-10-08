@@ -72,6 +72,8 @@ Using the *Data type* dropdown, you can designate the data types for the propert
 
 You can select multiple data types, for example giving users the option of Literal or Resource for input, but not URI. All choices will appear in the data types field with an X to the right of their label - click the X to remove that data type. 
 
+![The data types field with two types shown: numeric timestamp and text.](contentfiles/templates_multiType.png)
+
 Note: you must click the *Set Changes* at the bottom of the drawer for each property that you edit before exiting the drawer or moving on to another property! If you do not click *Set Changes*, your edits will not be saved.
 
 ![A close up of the drawer for editing property options with a large red arrow pointing down at an angle to the Set Changes button, which is on the very bottom of the image.](contentfiles/templates_setchanges.png)
