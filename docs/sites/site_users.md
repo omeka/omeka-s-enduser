@@ -13,8 +13,8 @@ To add a user, click on their name.
 Then select their role from the dropdown:
 
 * *Viewer:* user can see the site’s backend but cannot edit.
-* *Creator:* user can access and edit the site’s backend.
-* *Manager:* user has full administrative privileges for the site, including adding users and deleting the site.
+* *Creator:* user can access and edit the site’s backend (this role is called "Editor" in Omeka S versions 1.x-2.x).
+* *Manager:* user has full administrative privileges for the site, including adding users and deleting the site (this role is called "Admin" in Omeka S versions 1.x-2.x).
 
 You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon on their row.
 
