@@ -7,8 +7,6 @@ Zotero Import is a [module](index.md) for Omeka S which allows you to connect an
 To install Zotero Import, follow the instructions for [Installing Modules](index.md#installing-modules).
 
 ## Prepare your Zotero Library
-Ensure that your Zotero library is published. Login to Zotero, go to settings, and then to privacy. Make sure that 'publish entire library' is checked. The 'publish notes' box can also be checked.
-
 In order to import from a Zotero library, you must have API access to the library. To use Zotero Import, you will need the ID for the group or user
 
   * Individual IDs are found on the Feeds/API tab of your Zotero Settings; there is a sentence stating “Your userID for use in API call is”.
