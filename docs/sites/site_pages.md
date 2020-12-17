@@ -24,7 +24,15 @@ In addition, there is a checkbox for "Add to navigation". If checked, the page w
 
 ![Page view showing the fields for Add Page](../sites/sitesfiles/sitepg_add.png)
 
-Once you have entered this information, click the Add button in the upper right hand corner of the browser window. You will be automatically taken to the edit form for that page. 
+The eye icon to the left of the Cancel and Add buttons is a toggle to set the visibility of your page. If the toggle is set to public (no line), then anyone can see the page. If the toggle is set to private (line through the eye icon), the page will only be visible to logged-in users of the Omeka S installation who have site permissions (Supervisors and Global Admins will always be able to see private pages). 
+
+Clicking or hitting enter on the eye icon toggles between public and private. 
+
+![make public button showing an eye icon](../../content/contentfiles/item_public.png) Public 
+
+![make private button showing an eye icon with a diagonal slash through it](../../content/contentfiles/item_private.png)  Private
+
+Once you have entered this information and set visibility, click the Add button in the upper right hand corner of the browser window. You will be automatically taken to the edit form for that page. 
 
 If you decide you do not want to create the page, click the Cancel button.
 
@@ -89,6 +97,14 @@ Basic block:
 With formatting menu open:
 
 ![Page block for HTML content with active field, showing formatting menu](../sites/sitesfiles/sitepg_html2.png)
+
+You can embed content from elsewhere on the internet using iFrames or other embed codes in the HTML block. 
+
+1. Click into the HTML block content area to show the formatting menu and then click on the button labeled "Source". ![HTML block with formatting menu open. A red arrow points to the Source button](../sites/sitesfiles/sitepg_htmlSource1.png)
+2. This will open a dialog box where you can write HTML content.
+3. Copy and paste the embed code into the source code editor. ![Source box open with a short paragraph of text and an iframe from Vimeo](../sites/sitesfiles/sitepg_htmlSource2.png)
+4. Click the green OK button at the bottom of the editor.
+5. Your embed should show up in the HTML block either as a gray rectangle or as the embedded content. ![HTML block showing the text and an embedded video](../sites/sitesfiles/sitepg_htmlSource3.png)
 
 
 ### Page Title
