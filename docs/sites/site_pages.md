@@ -32,7 +32,7 @@ Clicking or hitting enter on the eye icon toggles between public and private.
 
 ![make private button showing an eye icon with a diagonal slash through it](../../content/contentfiles/item_private.png)  Private
 
-Once you have entered this information and set visibility, click the Add button in the upper right hand corner of the browser window. You will be automatically taken to the edit form for that page. 
+Once you have entered this information and set visibility, click the Add button in the upper right hand corner of the browser window. You will be automatically taken to that page's edit view (see below). 
 
 If you decide you do not want to create the page, click the Cancel button.
 
@@ -46,8 +46,15 @@ Every page is listed with its *Title*, buttons to view (box with an arrow coming
 Use the [Navigation](../sites/site_navigation/) tab of the site admin to set the order of pages, including setting child and parent pages.
 
 ## Editing Pages  
-After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page *title* will take you to the public view of that page. On the right hand side you can choose to add a new block by selecting one of the following layouts: 
+After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page *title* will take you to the public view of that page. 
 
+The edit view for a page will display the page's title across the top. In the upper left is the public/private toggle (the eye icon), and buttons to view the public version (opens in a new tab), delete the page, cancel changes, or save changes. Note that changes will not display on the public view until after they have been saved.
+
+At the top of the work area are fields for the page title and URL slug. You can edit these at any time, but remember that the slug must be unique within the site (you cannot have two pages with the slug "welcome" on the same site).
+
+![A page in edit view, with one media block added](../sites/sitesfiles/sitepg_edit.png)
+
+On the right hand side you can choose to add a new block by selecting one of the following layouts: 
 - HTML
 - Page title
 - Media Embed
@@ -57,9 +64,6 @@ After clicking the Pages tab, select the page you wish to edit by clicking the n
 - Table of contents
 - Line break
 - Item with metadata
-
-![A page in edit view, with one media block added](../sites/sitesfiles/sitepg_edit.png)
-
 If you have the relevant modules installed, you may also have:
 
 - Map
