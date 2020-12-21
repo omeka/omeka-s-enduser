@@ -6,6 +6,9 @@ Vocabularies are a collection of published RDF metadata Classes and Properties f
 
 Global and Site Administrators can manage their installation’s vocabularies from the *Vocabularies* tab on the left hand navigation of the Admin Dashboard. OmekaS comes pre-loaded with the following vocabularies: [Dublin Core](http://purl.org/dc/terms/); [Dublin Core Type](http://purl.org/dc/dcmitype/); [Bibliographic Ontology](http://purl.org/ontology/bibo/); and [Friend of a Friend](http://xmlns.com/foaf/0.1/). 
 
+This [screencast](https://vimeo.com/449764902) walks through managing and adding vocabularies.
+[![First frame of a Vimeo video showing the vocabularies interface](contentfiles/VocabsVideo-still.png](https://vimeo.com/449764902)
+
 ## Managing vocabularies
 The main view of the *Vocabularies* tab in the Admin Dashboard displays the existing vocabularies for the Omeka S install. 
 
@@ -20,7 +23,24 @@ When editing a vocabulary, you can make changes to the *label* and add *comments
 ## Adding a vocabulary
 New vocabularies must be imported from an existing metadata standard source. In order to import a new vocabulary, you must have a vocabulary file or a stable link to a vocabulary.
 
-On the New Vocabulary page, enter the following:
+The New vocabulary page has three sections: Basic Info, File, and Advanced. 
+
+Note that you may have to research in order to find the prefix, namespace uri, and label for the vocabulary, as these are not standardized. In addition to the vocabulary's website, you might consult <http://lov.okfn.org/dataset/lov/vocabs>.
+
+After you have imported a vocabulary, you can use the Edit function to modify the vocabulary's Label and Comment, and to upload an updated vocabulary RDF file. 
+
+### Basic info
+This section contains the basic information for the vocabulary
+
+- Label (required): the display name for the vocabulary in lists (ex "Dublin Core," "Friend of a Friend"
+- Comment: any comments you have. 
+- Namespace uri (required): this should be provided by the vocabulary;
+- Namespace prefix (required): This will display before the property, indicating which vocabulary (for example, the prefix for Dublin Core is dcterms).
+
+![New vocabulary basic settings, nothing entered](contentfiles/vocab_addBasicInfo.png)
+
+### File
+This section deals with the file for the vocabulary.
 
 - Upload the file using your browser's file manager **or**
 - Vocabulary URL: if not uploading a vocabulary file, enter the vocabulary's url here. 
@@ -31,26 +51,26 @@ On the New Vocabulary page, enter the following:
 	- Notation3 (.n3)
 	- RDF/XML (.rdf)
 	- Turtle (.ttl)
+
+
+![New vocabulary file settings, with no data entered and no file chosen](contentfiles/vocab_addFile.png)
+
+### Advanced
+This section has advanced vocabulary settings
+
 - Language: Enter the preferred language of the labels and comments using an IETF language tag. 
-- Prefix (required): This will display before the property, indicating which vocabulary (the prefix for Dublin Core is dcterms);
-- Namespace uri (required): this should be provided by the vocabulary;
-- Label (required): the display name for the vocabulary in lists (ex "Dublin Core," "Friend of a Friend"
-- and any comments you have (optional).
+- Label property: if this vocabulary uses an unconventional property for labels, enter the full property URI in angle brackets (`<`, `>`)in this field.
+- Comment property: if you are using the above label property, enter the corresponding property URI in angle brackets (`<`, `>`) in this field. 
 
-![New vocabulary form, with a file chooser for the vocabulary file and text entry fields for the other values.](contentfiles/vocab_addnew.png)
-
-Note that you may have to research in order to find the prefix, namespace uri, and label for the vocabulary, as these are not standardized. In addition to the vocabulary's website, you might consult <http://lov.okfn.org/dataset/lov/vocabs>.
-
-After you have imported a vocabulary, you can use the Edit function to modify the vocabulary's Label and Comment, and to upload an updated vocabulary RDF file. 
+![New vocabulary advanced settings, with no data entered](contentfiles/vocab_addAdvanced.png)
 
 ## Editing a vocabulary
-You can edit existing vocabularies by clicking the edit button (pencil icon) on the table of vocabularies. While editing, you can change the label and comment.
+You can edit existing vocabularies by clicking the edit button (pencil icon) on the table of vocabularies.
 
-You can also update the vocabulary by either uploading a new vocabulary file or entering the vocabulary url and saving changes. When editing and/or updating a vocabulary you have the option to set the language(s) used in the vocabulary with an IETF language tag. 
-
+You can also update the vocabulary by either uploading a new vocabulary file or entering the vocabulary url and saving changes. You will be able to review any changes when updating a vocabulary.
 If you decide you do not wish to save your changes, or click on the edit button by mistake, you can click the Cancel button next to the Save button.
 
-![Edit vocabulary page for Bibliographic Ontology.](contentfiles/vocab_edit.png)
+![Edit vocabulary page for OWL-Time Ontology.](contentfiles/vocab_edit.png)
 
 ### Vocabulary Import
 Omeka S will import properly formatted vocabularies/ontologies. rdfs:Class and rdfs:Property data will be available. 

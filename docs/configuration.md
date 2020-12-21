@@ -4,7 +4,7 @@ title: Configuration Options
 
 The following are commonly requested options which can be configured in the file `local.config.php` located in the config directory. 
 
-For a full list of available configuration keys, please see the [developer documentation page on configuration settings](https://omeka.org/s/docs/developer/reference/configuration/). 
+For a full list of available configuration keys, please see the [developer documentation page on configuration settings](https://omeka.org/s/docs/developer/configuration/). 
 
 ## Password settings
 You can change the requirements for user passwords in the config file. Options include minimum length, number of upper and lowercase letters, and setting allowed symbols.

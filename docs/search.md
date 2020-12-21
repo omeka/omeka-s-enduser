@@ -17,11 +17,13 @@ By default, this search operates on items in your installation. However, you can
 
 ### Item advanced search
 
-Advanced search for items only is available on the [Items](content/items.md) page, from the *Advanced Search* link above the table of items.
+Advanced search for items only is available on the [Items](/content/items.md) page, from the *Advanced Search* link above the table of items.
 
 ![Advanced search button indicated with a red arrow.](files/advancedsearch2.png)
 
 The advanced search loads on a new page, and has the following options:
+
+![Advanced item search options page.](files/advancedsearch3.png)
 
 *Search full-text:* runs a full-text search on all of the text for every item in the installation.
 
@@ -47,18 +49,18 @@ To find a resource ID, go to the resource and look at the url in your browser's 
 
 *Search by item set:* select from a dropdown of item sets.
 
+*Search by site:* select a site from a dropdown of sites in the installation. Note that you can only search for items from one site at a time.  
+
 *In site pool:* select from a dropdown menu of all the sites on the Omeka S installation, sorted by user-owner. 
 
-![Advanced item search options page.](files/advancedsearch3.png)
-
-Searches by value, class, template, and item set allow you to search by more than one input - use the *add new* buttons to search with more than one value or item set. These search terms build - searching for two item sets will return all items in either item set, rather than only those items which are in both. 
+Searches by value, class, template, and item set allow you to search by more than one input - use the large red *add new* buttons to search with more than one value or item set. These search terms build - searching for two item sets will return all items in either item set, rather than only those items which are in both. 
 
 You can remove value and item set searches using the red trash can icon to the right of those search options.
 
 You can reset your search terms at any time by using the "Reset" button on the upper right next to the "Search" button.
 
 ## Media advanced search
-Advanced search for media is accessed from the [Media](content/media) browse page, from the *Advanced Search* link above the table of item sets.
+Advanced search for media is accessed from the [Media](/content/media) browse page, from the *Advanced Search* link above the table of item sets.
 
 ![Advanced search button indicated with a red arrow.](files/search_mediaadvance1.png)
 
@@ -88,7 +90,9 @@ You can remove value searches using the red trash can icon to the right of the v
 
 *Search by template:* select a resource template from the dropdown. Templates are arranged by owner, then alphabetically.
 
-![Advanced media search options form, with fields as described above.](files/search_mediaadvance2.png)
+*Search by MIME type:* you can specify the media type for the search. For example, to find all tiff images, you would enter `image/tiff`. 
+
+![Advanced media search options form, with fields as described above.](/files/search_mediaadvance2.png)
 
 Searches by value, class, and template allow you to search by more than one input - use the *add new* buttons to search with more than one value or item set. These search terms build - searching for two templates will return all media using either template. 
 
@@ -100,7 +104,7 @@ You can reset your search terms at any time by using the "Reset" button on the u
 
 Advanced search for item sets only is accessed on the [Item Sets](content/item-sets) page, from the *Advanced Search* link above the table of item sets.
 
-![Advanced search button indicated with a red arrow.](files/advancedsearchis1.png)
+![Advanced search button indicated with a red arrow.](/files/advancedsearchis1.png)
 
 The advanced search loads on a new page, and has the following options:
 
@@ -135,7 +139,7 @@ Searches by value, class, and template allow you to search by more than one inpu
 You can reset your search terms at any time by using the "Reset" button on the upper right next to the "Search" button.
 
 ## Public views
-The exact appearance of the search interface will vary based on the [theme](sites/site_theme/) selected. However, the way search works should be consistent regardless of theme. All of the screenshots in this section are from a site using the the Default theme. 
+The exact appearance of the search interface will vary based on the [theme](/sites/site_theme/) selected. However, the way search works should be consistent regardless of theme. All of the screenshots in this section are from a site using the the Default theme. 
 
 ### Basic search
 There is a search bar near the menu for each site. In the default theme, it is located just beneath the main menu, as shown in the image below.
@@ -145,6 +149,8 @@ There is a search bar near the menu for each site. In the default theme, it is l
 This search bar works as a full-text search for the whole site. It will search all of the items, item sets, and media as well as the content of every page published on the site. Results are sorted by type, grouping together page results and item or item set results. From the initial results page, you can view all the results for that type (page, item) using the "view all results" link.
 
 ![Search results for "Cassandra" showing one page and three items](files/search_public2.png)
+
+If the [
 
 ### Advanced item search
 Site visitors can access an advanced item search from the Browse Items page, if you have that page accessible. There is a link for Advanced search between the pagination and the sort options at the top of the item browse table.

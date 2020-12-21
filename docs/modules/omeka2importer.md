@@ -10,7 +10,10 @@ Once installed, the Omeka 2 Importer module should appear toward the bottom of t
 
 ![Omeka 2 Importer menu options Import and Past Imports](../modules/modulesfiles/o2i_menu.png)
 
-**Note** that the module only imports Dublin Core metadata, Item Type metadata, and files. It *will not* import tags or Geolocation data.
+**Notes** 
+
+- the module only imports Dublin Core metadata, Item Type metadata, and files. It *will not* import tags,  Geolocation data, Simple Page content, or Exhibit Builder content.
+- Because resource properties in Omeka S do not have HTML formatting, any html in your Omeka Classic item properties (links, text formatting, etc) will be stripped during the import process.
 
 Import
 -------------
