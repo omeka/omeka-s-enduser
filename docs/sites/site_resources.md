@@ -1,15 +1,15 @@
 ---
 title: Site Resources
 ---
-The Resources tab of the site context menu allows you to set what Items and Item Sets available on your site's browse pages. The Item Pool also sets which items are available in the sidebar when building pages.
+The Resources tab of the site context menu allows you to set what Items and Item Sets available on your site's browse pages. The Items also sets which items are available in the sidebar when building pages.
 
-Resources has two tabs across the top of the window: Item Pool and Item Sets. 
+Resources has two tabs across the top of the window: Items and Item Sets. 
 
-Item Pool is where you can set the items available for selection and browse in your site.
+Under the Items tab, you can set the items available for selection and browse in your site.
 
 Item Sets is where you select the sets which will show up on the  Browse Item Sets page, should you choose to include it 
 
-**Note** The two tabs operate *independently* from each other. The selections made on one will have no effect on the other. The Item Pool tab limits which items are available, while The Item Set tab limits which sets are visible for public browsing.
+**Note** The two tabs operate *independently* from each other. The selections made on one will have no effect on the other. The Items tab limits which items are available, while the Item Set tab limits which sets are visible for public browsing.
 
 Items
 ----------------------------
@@ -78,7 +78,7 @@ On this tab you can select which Item Sets will display on a Browse Item Sets pa
 
 The table in the Item Sets tab shows any item sets already added, with their title and owner's email address. 
 
-![Site resources Item Pool](../sites/sitesfiles/siteres_itemsets.png)
+![Site resources Item Sets tab](../sites/sitesfiles/siteres_itemsets.png)
 
 To add an item set, select it in the right hand sidebar. You can find the desired item set by either:
 
