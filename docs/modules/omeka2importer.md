@@ -82,6 +82,8 @@ To map:
 ### Complete Import
 When you have finished customizing the mapping, click the *Import* button in the upper right corner of the window.
 
+- Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration/) so that your system can perform the background process to make the items.
+
 Manage Past Imports
 ----------------------------------
 The past imports section of the module allows you to view previous API imports.

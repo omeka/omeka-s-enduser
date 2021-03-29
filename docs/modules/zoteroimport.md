@@ -36,6 +36,8 @@ To import from a Zotero library:
 
 When you have completed the form, click Submit in the upper right-hand corner of the browser window.
 
+- Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration/) so that your system can perform the background process to make the items.
+
 A note on files: The rules for importing an item are the same as creating an item in Omeka, so if your Zotero library has files which are a disallowed media type, the items will not be imported.
 
 The page will load on the Past Imports tab with a message "Importing from Zotero". To check the status of the import, reload the page or click to the [Jobs](../admin/jobs.md) tab of the left-hand navigation on the admin dashboard.
