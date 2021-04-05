@@ -39,14 +39,20 @@ This tab has three options:
 
 ![basic import settings, nothing entered and no boxes checked.](../modules/modulesfiles/dspace_importset.png) 
 
-### Collections and Communities
-These tabs will display the list of collections and communities, respectively, for the DSpace repository. You can only import one collection or community at a time.
+### Collections
+This tab will display the list of collections for the DSpace repository, organized by containing community. You can import either one collection at a time or the entire DSpace repository.
 
-To import a collection or community, click the Import button to the left of its name. This will automatically begin the import.
+To import a single collection, click the Import button to the left of its name. This will automatically begin the import.
 
 ![First few collections from mars.gmu.edu's DSpace repository](../modules/modulesfiles/dspace_coll.png)
 
-![First community from mars.gmu.edu's DSpace repository](../modules/modulesfiles/dspace_comm.png)
+To import the entire repository, click 'Import entire repository' at the top of the form.
+
+**NOTE:** Importing an entire DSpace repository with a large number of items (>5,000) is likely to overload the importer and fail. Consider importing collection by collection if at all possible. If you still wish to import an entire large repository at once, the following might help:
+
+* On the initial Import Settings menu, set *Limit* to a smaller number such as 50 or 25
+* Run the import at night and/or whenever there may be less traffic on your DSpace server
+* Consider temporarily inserting a `sleep()` function between the import of each record in `Import.php` to slow the process down slightly and prevent overload (not recommended for production)
 
 You can track the status of the import by navigating to the DSpace Connector > Past Imports tab or on the [Jobs](../admin/jobs.md) tab of the left-hand navigation on the admin dashboard.
 
