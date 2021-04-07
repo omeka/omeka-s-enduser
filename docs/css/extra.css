@@ -45,3 +45,26 @@ a:visited {
 .wy-nav-content div[role="main"] a:active {
   border-bottom: 1px solid;
 }
+
+/* Workaround for mkdocs RTD theme bug: apply theme styles */
+.rst-content table {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.rst-content thead {
+    text-align: left;
+}
+
+.rst-content td, .rst-content th {
+    font-size: 90%;
+    padding: 8px 16px;
+}
+
+.rst-content tr:nth-child(2n-1) td {
+    background-color: #f4f6f6;
+}
+
+.rst-content td {
+    vertical-align: middle;
+}
