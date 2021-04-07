@@ -10,8 +10,8 @@ Item Sets is where you select the sets which will show up on the  Browse Item Se
 
 **Note** The two tabs operate *independently* from each other. The selections made on one will have no effect on the other. The Items tab limits which items are available, while the Item Set tab limits which sets are visible for public browsing.
 
-Items
-----------------------------
+## Items
+
 The Items tab determines what automatically appears in the resource selection options on the [pages](../sites/site_pages.md) of your Omeka S [site](../sites/index.md). It also limits the resources which appear on a browse page on your site.
 
 When you first navigate the to items tab, it will display information about the number of items in the site and give you options for making changes. You will see:
@@ -41,7 +41,7 @@ There is also a checkbox for "keep this search". Checking this box will re-load 
 
 Search forms options are:
 
-Search full-text:* search all values of all items. 
+*Search full-text:* search all values of all items. 
 
 *Search by value:* search for a term or phrase which you enter 
 
