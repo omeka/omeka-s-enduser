@@ -26,9 +26,9 @@ The eye icon to the left of the Cancel and Add buttons is a toggle to set the vi
 
 Clicking or hitting enter on the eye icon toggles between public and private. 
 
-![make public button showing an eye icon](../../content/contentfiles/item_public.png) Public 
+![make public button showing an eye icon](../content/contentfiles/item_public.png) Public 
 
-![make private button showing an eye icon with a diagonal slash through it](../../content/contentfiles/item_private.png)  Private
+![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)  Private
 
 Once you have entered this information and set visibility, click the Add button in the upper right hand corner of the browser window. You will be automatically taken to that page's edit view (see below). 
 

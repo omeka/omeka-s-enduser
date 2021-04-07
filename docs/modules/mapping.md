@@ -45,7 +45,7 @@ Click on the *Draw a Marker* tool in the right hand toolbar. Your cursor will be
 
 ![Mapping tab with an active marker being drawn. The marker has a tooltip saying "click map to place marker"](../modules/modulesfiles/Mapping-drawMarker.png)
 
-You can now click on the marker to add a label which will display on [public map views](../modules/mapping/#public-view) of the item. Be aware that this will display in a large font.
+You can now click on the marker to add a label which will display on [public map views](#public-view) of the item. Be aware that this will display in a large font.
 
 ![Close up of map with a marker selected. There is a field to enter the maker label.](../modules/modulesfiles/Mapping-addLabel.png)
 
@@ -162,14 +162,14 @@ To add multiple items at once, click the "quick add" slider just above the list 
 ### Query (Map by query)
 In order to use this block, you will need to run a query, or search, in your items. From the search results page, copy everything in your browser's address bar starting with the question mark all the way to the end of the search url (to the right). 
 
-![The address bar and very top of a search results page.](../../sites/sitesfiles/sitespg_bpquery.png)
+![The address bar and very top of a search results page.](../sites/sitesfiles/sitespg_bpquery.png)
 
 Paste the query string into the Query field in the Map by query block. Note that at no point will items display on the admin side. You will need to go to the public view to see the items which result from your query.
 
-![A map by query block open to the Query section. There is a query pasted into the field.](../../modules/modulesfiles/mapping-blockQuery.png)
+![A map by query block open to the Query section. There is a query pasted into the field.](../modules/modulesfiles/mapping-blockQuery.png)
 
 ## Public view
-A map block will display on a public page at full page width. If you have settings in the [default view](../../modules/mapping/#default-view) of the block, these should be applied. Otherwise the block will zoom so that all of the items are visible. 
+A map block will display on a public page at full page width. If you have settings in the [default view](#default-view) of the block, these should be applied. Otherwise the block will zoom so that all of the items are visible. 
 
 Viewers can zoom either using the scroll function of their computer or the Zoom in/out buttons on the left side of the map.
 
