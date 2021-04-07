@@ -19,6 +19,10 @@ a:visited {
     border-color: #404E61;
 }
 
+.wy-menu-vertical p.caption {
+    color: white;
+}
+
 .wy-side-nav-search>a, 
 .wy-side-nav-search .wy-dropdown>a,
 .wy-menu-vertical a:hover {
@@ -31,12 +35,6 @@ a:visited {
 
 .wy-menu-vertical a:visited {
     color: #b3b3b3;
-}
-
-/* Hide h3s and down in the left navigation. */
-
-.wy-menu-vertical li.current .toctree-l4 ~ ul {
-    display: none;
 }
 
 .wy-nav-content div[role="main"] a {
