@@ -1,6 +1,4 @@
----
-title: Modules
----
+# Modules Management
 
 Modules extend the functionality of your Omeka S installation and sites. 
 

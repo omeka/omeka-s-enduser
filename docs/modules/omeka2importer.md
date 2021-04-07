@@ -1,6 +1,4 @@
----
-title: Omeka 2 Importer
----
+# Omeka 2 Importer
 
 The Omeka 2 Importer module which enables you to import items from an Omeka 2.x site into an Omeka S installation. 
 
@@ -15,8 +13,8 @@ Once installed, the Omeka 2 Importer module should appear toward the bottom of t
 - the module only imports Dublin Core metadata, Item Type metadata, and files. It *will not* import tags,  Geolocation data, Simple Page content, or Exhibit Builder content.
 - Because resource properties in Omeka S do not have HTML formatting, any html in your Omeka Classic item properties (links, text formatting, etc) will be stripped during the import process.
 
-Import
--------------
+## Import
+
 From the Import tab you can start new imports. 
 
 **Note** You must have API enabled on the source Omeka installation for the importer to work.
@@ -84,8 +82,8 @@ When you have finished customizing the mapping, click the *Import* button in the
 
 - Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration/) so that your system can perform the background process to make the items.
 
-Manage Past Imports
-----------------------------------
+## Manage Past Imports
+
 The past imports section of the module allows you to view previous API imports.
 
 Each import is a row. The table has the following columns.

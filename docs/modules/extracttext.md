@@ -1,6 +1,4 @@
----
-title: Extract Text
----
+# Extract Text
 
 Once installed, this module will extract text from files to make them searchable and machine readable. The extracted text will be added to a property called "extracted text" in a vocabulary unique to that module.
 

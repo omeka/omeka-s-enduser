@@ -1,6 +1,5 @@
----
-Title: Media
----
+# Media
+
 Media are only created by adding them to an Item. Media cannot exist independently. 
 
 To view the media associated with an item, click on the media’s name in the right-hand sidebar on the item view page.

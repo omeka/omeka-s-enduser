@@ -1,8 +1,4 @@
----
-title: ValueSuggest
-keyword: module
-date: 07/02/2017
----
+# ValueSuggest
 
 The ValueSuggest module adds an auto-complete feature to a specific property in a resource template and draws on controlled vocabularies (see the end of this page for a complete list).
 
@@ -10,8 +6,8 @@ This functionality helps those building an Omeka site to encourage consistent me
 
 To install ValueSuggest follow the instructions for Installing Modules on the Modules documentation.
 
-Create a Resource Template
---------------------
+## Create a Resource Template
+
 ValueSuggest vocabularies are applied through Resource Templates. For additional information on Resource Templates, see the [Resource Template Documentation](../content/resource-template.md).
 
 1. From the Resources templates tab in the Admin Dashboard, either add a new [template](../content/resource-template.md) or edit an existing one.
@@ -30,8 +26,8 @@ When you click the title of a Resource Template to see its details, the ValueSug
 ![A red rectangle highlights the fact that the data type for Subject is "LC: Subject Headings"](../modules/modulesfiles/ValSug-ResTemplate2.png)
 
 
-Adding ValueSuggest to an Item
---------------------
+## Adding ValueSuggest to an Item
+
 When this Resource Template is used in an Item or Item Set, the designated properties will auto-suggest values from the vocabulary specified in the template. 
 
 Users must start typing in the open text box of that specific property to prompt the auto-suggest feature. There may be a slight delay, but a drop-down menu will appear with choices drawn directly from the authority or vocabulary list you have associated with that property.
@@ -46,8 +42,8 @@ Note: after selecting a value, a box containing a URL should appear under the va
 
 ![Item property Work Type with "Fashion Illustrations (layout features)" selected. Below, in red is a hyperlink to Getty Collections, with a small red "X".](../modules/modulesfiles/ValSug-ItemProperty3.png)
 
-Available Vocabularies
--------------------------------------
+## Available Vocabularies
+
 This module includes the following vocabularies:
 
 - GeoNames

@@ -1,6 +1,4 @@
----
-title: Vocabularies
----
+# Vocabularies
 
 Vocabularies are a collection of published RDF metadata Classes and Properties for describing a Resource. These exist and are created externally to Omeka, and can be imported (with some limitations) into Omeka S for use throughout the Installation. The most-used Vocabulary is Dublin Core Terms (dcterms:).
 

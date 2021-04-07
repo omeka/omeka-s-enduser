@@ -1,6 +1,4 @@
----
-title: Site Planning tips for Omeka S
----
+# Planning Tips
 
 In Omeka S, you build your [sites](../sites) page by page, using already existing resources on your installation. While it is best to have some resources before you start building out the pages, you can begin planning your site before you create the first item or item set.
 

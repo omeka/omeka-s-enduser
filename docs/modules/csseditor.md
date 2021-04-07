@@ -1,6 +1,4 @@
----
-title: "CSS Editor"
----
+# CSS Editor
 
 The CSS Editor module allows you to write CSS from the Omeka S admin interface.
 

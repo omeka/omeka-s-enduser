@@ -1,6 +1,4 @@
----
-title: Site User Permissions
----
+# User Permissions
 
 To add a user to a site, navigate to the *User Permissions* tab.
 

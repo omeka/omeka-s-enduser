@@ -1,3 +1,5 @@
+# Themeing Scripto
+
 Scripto themes are a way to unite the look of a Scripto project with its associated Omeka S site. You first associate a Scripto project to a site by linking to the project from the site's navigation. In the Omeka S site dashboard, go to the "Navigation" settings, and add "Scripto" to your site's navigation. When a user comes to your site, that navigation link will provide Scripto with your site context and apply the accompanying Scripto theme. 
 
 ## Using an Existing Scripto Theme

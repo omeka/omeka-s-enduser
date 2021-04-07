@@ -1,6 +1,5 @@
----
-title: Users
----
+# Users
+
 Only site and global administrators can create, edit, and delete users. Editors, Reviewers, Authors, and Researchers can edit their own user information but cannot change the information of other users. 
 
 Administrators manage and create users from the User tab of the main administrative dashboard (head and shoulders icon). 

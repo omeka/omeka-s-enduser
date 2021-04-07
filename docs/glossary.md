@@ -1,6 +1,5 @@
----
-title: Glossary of terms used in Omeka S
----
+# Glossary
+
 The following glossary should help to clarify some of the less-familiar terms in Omeka S. Where appropriate, we have provided a roughly analogous term from Omeka Classic, although some analogies are stronger than others. 
 
 

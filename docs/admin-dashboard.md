@@ -1,6 +1,4 @@
----
-title: Administrative Dashboard
----
+# Admin Dashboard
 
 The administrative dashboard manages the content shared by all OmekaS sites and the core functionalities of the OmekaS installation. 
 
@@ -8,8 +6,8 @@ This [screencast](https://vimeo.com/455708039) walks you through the main featur
 
 [![Still image of the first frame of a vimeo video](files/navigatingOmekaS-still.png)](https://vimeo.com/455708039)
 
-Admin Main Page
----------------------
+## Admin Main Page
+
 When a user logs in, the first page they see is the Admin Dashboard. 
 
 *Note: depending on the user role, you may not see precisely the same options in the left-hand navigation. See [below](#left-hand-navigation) for details* 
@@ -25,8 +23,7 @@ The *Manage Resources* box displays the following resources with their total cou
 The *Manage Sites* box lists the [Sites](sites/index.md) on the install. Clicking on the site name will take you to the public view of the site; clicking the edit (pencil) button will take you to the Edit Site Info page for that site. 
 
 
-Left-hand navigation
----------------------
+## Left-hand navigation
 
 The following content appears on the left side of the admin dashboard and on all administrative pages. 
 
@@ -60,8 +57,7 @@ If you have installed modules, they may appear in the admin section of the left 
 
 Note that users with more limited permissions will see only some of these navigation options.
 
-System Information
--------------------------------
+## System Information
 
 In the bottom right corner is a short display of the current version of Omeka S. Click the link labelled *System Information* to see a full page with details.
 

@@ -1,6 +1,5 @@
----
-title: Retrieving Error Messages
----
+# Retrieving Error Messages
+
 If you are experiencing problems with your Omeka S installation, or you want to turn on development-style error tracking, you can do so in two different ways. You will need to edit the `.htaccess` and/or `local.config.php` files, depending on which way you choose. You must use a ftp or terminal client to do so; if you're not sure how to do this, please contact your system administrator or hosting provider. 
 
 ## Display Error Details

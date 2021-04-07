@@ -1,7 +1,6 @@
----
-title: Site Resources
----
-The Resources tab of the site context menu allows you to set what Items and Item Sets available on your site's browse pages. The Items also sets which items are available in the sidebar when building pages.
+# Resources
+
+The Resources tab of the site context menu allows you to set what Items and Item Sets are available on your site's browse pages. The Items tab also sets which items are available in the sidebar when building pages.
 
 Resources has two tabs across the top of the window: Items and Item Sets. 
 

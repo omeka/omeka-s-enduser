@@ -1,6 +1,4 @@
----
-title: Resource Templates
----
+# Resource Templates
 
 A *Resource Template* is a set of pre-defined Properties, optionally with a Class, to guide Item creation and the interpretation of Properties. 
 

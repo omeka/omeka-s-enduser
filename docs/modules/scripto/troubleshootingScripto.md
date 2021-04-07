@@ -1,3 +1,5 @@
+# Troubleshooting
+
 The following are advanced options and troubleshooting tips for Scripto for Omeka S.
 
 ## Disable anonymous editing

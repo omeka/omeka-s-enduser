@@ -1,6 +1,4 @@
----
-title: Fedora Connector
----
+# Fedora Connector
 
 Fedora Connector is a [module](../modules/index.md) for Omeka S which allows you to connect an Omeka S instance to a [Fedora](https://duraspace.org/fedora/) 4 repository in order to import items from containers in that repository. In addition to importing information, the Omeka S item will include a link back to the original item.
 

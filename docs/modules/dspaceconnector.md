@@ -1,6 +1,4 @@
----
-title: DSpace Connector
----
+# DSpace Connector
 
 DSpace Connector is a [module](index.md) for Omeka S which allows you to connect an Omeka S instance to a DSpace repository to import items from that repository. In addition to importing information, the Omeka S item will include a link back to the original item.
 

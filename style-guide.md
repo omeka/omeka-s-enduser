@@ -1,6 +1,4 @@
----
-title: Style Guide
----
+# Style Guide
 
 ## Terminology
 **Admin/Administrative Dashboard**: the dashboard for administration of the entire OmekaS install, where sites, items, vocabularies, modules, etc are managed. 
@@ -9,11 +7,12 @@ title: Style Guide
 
 **sidebar** the things which slide open on the right of the screen when you click an ellipses.
 
-Also see the [glossary](glossary.md)
+Also see the [glossary](docs/glossary.md)
 
 ## Formatting
-Start each page with the following: [3 dashes, return]
-title: “Name of the Page” [return, 3 dashes] for Jekyll. 
+Start each page with the following:
+
+    # Name of the Page
 
 Page file names should be lowercase with spaces represented by a dash (so admin-dashboard.md for Administrative Dashboard page). 
 

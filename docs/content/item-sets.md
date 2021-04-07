@@ -1,6 +1,4 @@
----
-title: Item Sets
----
+# Item Sets
 
 Item sets are an aggregation of *items*, similar to collections in previous versions of Omeka. In Omeka S, items may belong to any number of sets, and an item set can have any number of items.
 

@@ -1,6 +1,4 @@
----
-title: Items
----
+# Items
 
 Items are the building blocks of the Omeka system. 
 

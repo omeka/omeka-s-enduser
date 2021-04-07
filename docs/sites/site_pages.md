@@ -1,6 +1,4 @@
----
-title: Site Pages
----
+# Pages Management
 
 Pages form the content of your [sites](../sites/index.md). A site can have a single page or many pages.
 

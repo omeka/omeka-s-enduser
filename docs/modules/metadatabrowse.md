@@ -1,6 +1,4 @@
----
-title: Metadata Browse
----
+# Metadata Browse
 
 The Metadata Browse module makes it possible to browse all resources that share a value for a particular metadata property. 
 

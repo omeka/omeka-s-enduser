@@ -1,10 +1,9 @@
----
-title: Site Theme
----
+# Theme Selection
+
 The Theme tab of the site context menu allows you to select the theme for your site, and to set theme-specific settings. 
 
-Select a Theme
----------------------------
+## Select a Theme
+
 When you navigate to the Theme tab, the currently active theme will appear on the top of the page. If you did not select a theme when adding the site, this will be the Default theme. 
 
 A large image of the active appears on the left, with the theme Title, creator, and a button for Theme Settings on the right.
@@ -19,8 +18,8 @@ To switch themes, click on the theme which you want to use. It should highlight 
 
 Click the Save button in the upper right-hand corner of the window to save changes. Click the Cancel button to leave without saving changes. 
 
-Theme Settings
----------------------------
+## Theme Settings
+
 Theme settings allow you to customize aspects of the site's theme, such as adding a logo to the top or writing footer text. 
 
 To edit the settings of your selected theme, click on the button labeled *edit theme settings* to the right of the current theme thumbnail (highlighted with an arrow in the below image).

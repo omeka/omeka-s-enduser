@@ -1,6 +1,4 @@
----
-title: Settings
----
+# Manage Settings
 
 Admin users may change the settings for the admin dashboard and general settings for sites using the *Settings* tab on the left side of the admin dashboard (gear icon). 
 

@@ -1,6 +1,4 @@
----
-title: Installing
----
+# Installing
 
 Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md) of the Omeka S github repository.
 

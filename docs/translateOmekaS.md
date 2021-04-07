@@ -1,8 +1,8 @@
+# Translate Omeka S
 
 We need the community's help translating English text in Omeka S into new languages, so users can have a variety of choices. You don't need to know how to write code to help translate Omeka S, you just need to be fluent in English and another language.
 
-Getting Started
---------------------------------------------------------
+## Getting Started
 
 ### Sign up on Transifex.com
 Omeka S uses [Transifex.com](https://www.transifex.com) to manage translations. To start helping to translate Omeka into other languages, you will first need to [sign up for an account](https://www.transifex.com/signup/). Transifex.net offers several plans, but since Omeka is an open-source project, you can use the Free plan.
@@ -20,8 +20,8 @@ If you want to check your translation or anything else you need to make an mo fi
 
 For Transifex-specific issues, please see their [documentation](http://docs.transifex.com/)
 
-Translation Guidelines 
---------------------------------------------------------------
+## Translation Guidelines 
+
 Most of the strings to be translated in Omeka are straightforward and can be translated directly. However, there are a few special cases that need to be treated with care.
 
 ### Placeholders

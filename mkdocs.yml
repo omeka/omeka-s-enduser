@@ -2,59 +2,64 @@ site_name: Omeka S User Manual
 theme: 
     name: 'readthedocs'
     custom_dir: 'omeka/'
+    include_homepage_in_sidebar: false
 repo_url: 'http://github.com/omeka/omeka-s-enduser'
 extra_css:
     - css/extra.css
+markdown_extensions:
+    - toc:
+        permalink: 
 nav:
-    - 'Home': 'index.md'
-    - 'Accessibility Statement': 'accessibility.md'
-    - 'Planning Tips': 's-planning-tips.md'
-    - 'Installing': 'install.md'
-    - 'Admin Dashboard': 'admin-dashboard.md'
-    - 'Glossary': 'glossary.md'
-    - 'Searching': 'search.md'
-    - 'Front Page': 'frontpage.md'
-    - 'Sites': 
-        - 'Sites Management': 'sites/index.md'
-        - 'Site Admin': 'sites/site_settings.md'
-        - 'Pages Management': 'sites/site_pages.md'
-        - 'Navigation': 'sites/site_navigation.md'
-        - 'Resources': 'sites/site_resources.md'
-        - 'User Permissions': 'sites/site_users.md'
-        - 'Theme Selection': 'sites/site_theme.md'
-    - 'Resources':
-        - 'Items': 'content/items.md'
-        - 'Item Sets': 'content/item-sets.md'
-        - 'Media': 'content/media.md'
-        - 'Vocabularies': 'content/vocabularies.md'
-        - 'Resource Templates': 'content/resource-template.md'
-    - 'Admin':
-        - 'Users': 'admin/users.md'
-        - 'Jobs': 'admin/jobs.md'
-        - 'Manage Settings': 'admin/settings.md'
-    - 'Modules':
-        - 'Modules Management': 'modules/index.md'
-        - 'Collecting': 'modules/collecting.md'
-        - 'CSS Editor': 'modules/csseditor.md'
-        - 'CSV Import': 'modules/csvimport.md'
-        - 'Custom Vocab': 'modules/customvocab.md'
-        - 'DSpace Connector': 'modules/dspaceconnector.md'
-        - 'Extract Text' : 'modules/extracttext.md'
-        - 'Fedora Connector': 'modules/fedoraconnector.md'
-        - 'File Sideload': 'modules/filesideload.md'
-        - 'Mapping': 'modules/mapping.md'
-        - 'Metadata Browse': 'modules/metadatabrowse.md'
-        - 'Numeric Data Types': 'modules/numericdatatypes.md'
-        - 'Omeka2 Importer': 'modules/omeka2importer.md'
-        - 'Scripto':
-            - 'Set up Scripto': 'modules/scripto/index.md'
-            - 'Scripto Projects': 'modules/scripto/scriptoproject.md'
-            - 'Themeing Scripto': 'modules/scripto/themeingScripto.md'
-            - 'Public Interface': 'modules/scripto/scriptoPublicView.md'
-            - 'Troubleshooting': 'modules/scripto/troubleshootingScripto.md'
-        - 'Sharing': 'modules/sharing.md'
-        - 'ValueSuggest': 'modules/valuesuggest.md'
-        - 'Zotero Import': 'modules/zoteroimport.md'
-    - 'Retrieving Error Messages': 'errorLogging.md'
-    - 'Translate Omeka S': 'translateOmekaS.md'
-    - 'Configuration Options': 'configuration.md'
+    - index.md
+    - accessibility.md
+    - s-planning-tips.md
+    - install.md
+    - admin-dashboard.md
+    - glossary.md
+    - search.md
+    - frontpage.md
+    - Sites:
+        - sites/index.md
+        - sites/site_settings.md
+        - sites/site_pages.md
+        - sites/site_navigation.md
+        - sites/site_resources.md
+        - sites/site_users.md
+        - sites/site_theme.md
+    - Resources:
+        - content/items.md
+        - content/item-sets.md
+        - content/media.md
+        - content/vocabularies.md
+        - content/resource-template.md
+    - Admin:
+        - admin/users.md
+        - admin/jobs.md
+        - admin/settings.md
+    - Modules:
+        - modules/index.md
+        - modules/collecting.md
+        - modules/csseditor.md
+        - modules/csvimport.md
+        - modules/customvocab.md
+        - modules/dspaceconnector.md
+        - modules/extracttext.md
+        - modules/fedoraconnector.md
+        - modules/filesideload.md
+        - modules/mapping.md
+        - modules/metadatabrowse.md
+        - modules/numericdatatypes.md
+        - modules/omeka2importer.md
+        - Scripto:
+            - modules/scripto/index.md
+            - modules/scripto/scriptoproject.md
+            - modules/scripto/themeingScripto.md
+            - modules/scripto/scriptoPublicView.md
+            - modules/scripto/troubleshootingScripto.md
+        - modules/sharing.md
+        - modules/valuesuggest.md
+        - modules/zoteroimport.md
+    - Miscellaneous:
+        - errorLogging.md
+        - translateOmekaS.md
+        - configuration.md

@@ -1,3 +1,5 @@
+# Scripto Projects
+
 Scripto is made up of projects. Every transcription, translation, or description effort you create can, and should, have its own project. 
 
 ## Create a Project

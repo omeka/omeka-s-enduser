@@ -1,6 +1,4 @@
----
-title: Sites
----
+#  Sites Management
 
 Sites are the public-facing side of an Omeka-S installation. With sites you can create content and interpretation around a group of items from your installation. 
 

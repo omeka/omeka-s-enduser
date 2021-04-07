@@ -1,13 +1,9 @@
----
-title: Custom Vocab
-keyword: module
-date: 20 October 2016
----
+# Custom Vocab
 
 The Custom Vocab module allows you to create a controlled vocabulary and add it to a specific property in a resource template. When using that template for an item, the property will load with a dropdown limited to the options of the controlled vocabulary, rather than a text entry box.
 
-Create a Custom Vocab
---------------------
+## Create a Custom Vocab
+
 Once you have installed and activated the module, go to the Custom Vocab tab in the left-hand navigation, under the Modules heading. 
 
 Click the Add a New Vocab button in the upper right-hand corner of the window. 
@@ -25,16 +21,16 @@ You can set the controlled vocabulary terms either to a list of existing items o
 
 Hit submit to save changes.
 
-Manage Custom Vocabs
-------------------------
+## Manage Custom Vocabs
+
 Once you have created at least one vocabulary, the Custom Vocab module tab will display a table of your existing vocabularies. The table displays the *Label*, the buttons for edit, delete, and display information, and the *Owner* or creator of the vocabulary. 
 
 ![Custom Vocab tab with two existing vocabularies](../modules/modulesfiles/customVocab_manage.png)
 
 When editing a custom vocabulary, you can change the label, language, or terms.
 
-Using a Custom Vocab
--------------------------------------
+## Using a Custom Vocab
+
 Custom Vocabularies are applied through [resource templates](../content/resource-template.md). 
 
 Go to the Resource Templates and either add new or edit an existing template. Once you are editing the template:

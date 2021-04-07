@@ -1,6 +1,4 @@
----
-title: Site Navigation
----
+# Navigation
 
 Use the *Navigation* tab of the [Sites](../sites/index.md) to manage the navigation, or menu, or your site. You can add links, browse pages, and your [pages](../sites/site_pages.md) to the navigation, arrange them, and delete links from the navigation.
 

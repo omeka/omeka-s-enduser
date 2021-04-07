@@ -1,6 +1,4 @@
----
-title: Numeric Data Types
----
+# Numeric Data Types
 
 This module allows you to set certain properties as numeric data, using resource templates. You can designate properties as either date and time (ISO) or integers.
 

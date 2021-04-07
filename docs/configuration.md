@@ -1,6 +1,4 @@
----
-title: Configuration Options
----
+# Configuration Options
 
 The following are commonly requested options which can be configured in the file `local.config.php` located in the config directory. 
 

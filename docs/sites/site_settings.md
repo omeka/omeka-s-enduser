@@ -1,6 +1,5 @@
----
-title: Site Admin
----
+# Site Admin
+
 The Site Admin page allows you to manage the main settings for the [site](../sites/index.md) on which you are working. Changes will only be applied to this site and will not change other sites' settings. 
 
 It is the first tab under the site title, represented with a gear icon. 

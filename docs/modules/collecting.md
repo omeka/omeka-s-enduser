@@ -1,13 +1,11 @@
----
-title: Collecting
----
+# Collecting
 
 The Collecting module allows you to gather public contributions through your sites. 
 
 Once activated on the [modules](../modules/index) tab of the admin dashboard, Collecting is configured on a site-by-site basis.
 
-Site settings
--------------------
+## Site settings
+
 Collecting adds a section to your [site settings](../sites/site_settings/) where you can manage terms of service and email for the collecting forms for this site.
 
 ![The Collecting section in site settings with two fields as described below.](../modules/modulesfiles/collecting_settingsSite.png)
@@ -22,8 +20,8 @@ Clicking on the phrase "Terms of Service" will open a new window so that people 
 
 **Email address** allows you to set a custom address from which submission emails will be sent. If left blank, these emails will be sent from the administrator email address in the [Global Settings](../admin/settings) for the Omeka S installation. 
 
-Managing Collecting Forms
------------------------------
+## Managing Collecting Forms
+
 If Collecting is active, then a tab for Collecting will appear in the context menu for every site. 
 ![Red arrow points to the Collecting tab of the site National Parks](../modules/modulesfiles/collecting_nav.png)
 
@@ -156,8 +154,8 @@ Rearrange the order of prompts by dragging and dropping them using the three-lin
 ![Prompts with a red arrow pointing to the icon for dragging and dropping](../modules/modulesfiles/collecting_dragthis.png)
 
 
-Add a Collecting Form to Site Pages
-------------------------------------
+## Add a Collecting Form to Site Pages
+
 To add a collecting form to a page:
 
 1. Go to the page on which you want the form to appear (or add a new page for the form)
@@ -166,8 +164,8 @@ To add a collecting form to a page:
 
 ![Collecting block with one form, its box checked](../modules/modulesfiles/collecting_pageblock.png)
 
-Managing Collected Items
-----------------
+## Managing Collected Items
+
 Items added via a collecting form will appear in the Items section of the Admin Dashboard, but you will likely find it easier to manage them through the Collecting tab of the site to which through which they were collected. 
 
 To see the items collected with a specific form, go to the Collecting tab in the context menu for the site and click on the form label. Then click the *Collected Items* tab.

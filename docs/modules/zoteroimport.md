@@ -1,6 +1,4 @@
----
-title: Zotero Import
----
+# Zotero Import
 
 Zotero Import is a [module](index.md) for Omeka S which allows you to connect an Omeka S instance to a Zotero library and import items from that library.
 
