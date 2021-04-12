@@ -5,7 +5,7 @@ Vocabularies are a collection of published RDF metadata Classes and Properties f
 Global and Site Administrators can manage their installation’s vocabularies from the *Vocabularies* tab on the left hand navigation of the Admin Dashboard. OmekaS comes pre-loaded with the following vocabularies: [Dublin Core](http://purl.org/dc/terms/); [Dublin Core Type](http://purl.org/dc/dcmitype/); [Bibliographic Ontology](http://purl.org/ontology/bibo/); and [Friend of a Friend](http://xmlns.com/foaf/0.1/). 
 
 This [screencast](https://vimeo.com/449764902) walks through managing and adding vocabularies.
-[![First frame of a Vimeo video showing the vocabularies interface](contentfiles/VocabsVideo-still.png](https://vimeo.com/449764902)
+[ ![First frame of a Vimeo video showing the vocabularies interface](contentfiles/VocabsVideo-still.png)(https://vimeo.com/449764902)
 
 ## Managing vocabularies
 The main view of the *Vocabularies* tab in the Admin Dashboard displays the existing vocabularies for the Omeka S install. 
