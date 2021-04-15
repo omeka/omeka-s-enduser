@@ -714,7 +714,7 @@ Everything on the *Map to Omeka S data* tab will be the same. When you add a map
 
 For the data in this column, you need to include the full file name, including extension. So, for example, if you want to import a jpg file which is named "Jekyll_and_Hyde_Title" then the data in the media column of the csv you are importing should be `Jekyll_and_Hyde_Title.jpg`.
 
-## Numeric Data Types
+### Numeric Data Types
 If you have [Numeric Data Types](modules/numericdatatypes/) installed and active, it will add the option to set a column data type as numeric data.
 
 ![Column options drawer with the data type dropdown open, showing options for numeric data types as well as the standard options](../modules/modulesfiles/csvimport-numericdata.png)
