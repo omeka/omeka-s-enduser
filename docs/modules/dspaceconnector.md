@@ -48,11 +48,11 @@ To import a single collection, click the Import button to the left of its name. 
 
 To import the entire repository, click 'Import entire repository' at the top of the form.
 
-**NOTE:** Importing an entire DSpace repository with a large number of items (>5,000) is likely to overload the importer and fail. Consider importing collection by collection if at all possible. If you still wish to import an entire large repository at once, the following might help:
+**NOTE:** Importing an entire DSpace repository with a large number of items (>5,000) is likely to flood the DSpace hosting server with requests until failure. Consider importing collection by collection if at all possible. If you still wish to import an entire large repository at once, the following might help:
 
 * On the initial Import Settings menu, set *Limit* to a smaller number such as 50 or 25
 * Run the import at night and/or whenever there may be less traffic on your DSpace server
-* Consider temporarily inserting a `sleep()` function between the import of each record in `Import.php` to slow the process down slightly and prevent overload (not recommended for production)
+* Consider temporarily inserting a `sleep()` function between the import of each record in `Import.php` to slow the process down slightly (not recommended for production)
 
 You can track the status of the import by navigating to the DSpace Connector > Past Imports tab or on the [Jobs](../admin/jobs.md) tab of the left-hand navigation on the admin dashboard.
 
