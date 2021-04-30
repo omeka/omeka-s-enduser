@@ -4,7 +4,7 @@ DSpace Connector is a [module](index.md) for Omeka S which allows you to connect
 
 To install DSpace Connector, follow the instructions for [Installing Modules](index.md#installing-modules) on the Modules documentation.
 
-Note that DSpace Connector only works with DSpace versions 4 and higher.
+Note that DSpace Connector only works with DSpace versions 5.6 and higher.
 
 You can view past imports by going to the DSpace Connector tab on the left-hand navigation of the admin dashboard and clicking the *Past Imports* sub-tab.
 
@@ -32,18 +32,25 @@ This tab has three options:
 
 * *Import files into Omeka S*: click this checkbox to import files in addition to metadata.
 * *Item Set*: select an item set from the dropdown into which to import the items. 
+* *Ignored Fields*: DSpace metadata fields to ignore on import, separated by commas. 
 * *Comment*: for any comments you have.
 
 ![basic import settings, nothing entered and no boxes checked.](../modules/modulesfiles/dspace_importset.png) 
 
-### Collections and Communities
-These tabs will display the list of collections and communities, respectively, for the DSpace repository. You can only import one collection or community at a time.
+### Collections
+This tab will display the list of collections for the DSpace repository, organized by containing community. You can import either one collection at a time or the entire DSpace repository.
 
-To import a collection or community, click the Import button to the left of its name. This will automatically begin the import.
+To import a single collection, click the Import button to the left of its name. This will automatically begin the import.
 
 ![First few collections from mars.gmu.edu's DSpace repository](../modules/modulesfiles/dspace_coll.png)
 
-![First community from mars.gmu.edu's DSpace repository](../modules/modulesfiles/dspace_comm.png)
+To import the entire repository, click 'Import entire repository' at the top of the form.
+
+**NOTE:** Importing an entire DSpace repository with a large number of items (>5,000) is likely to flood the DSpace hosting server with requests until failure. Consider importing collection by collection if at all possible. If you still wish to import an entire large repository at once, the following might help:
+
+* On the initial Import Settings menu, set *Limit* to a smaller number such as 50 or 25
+* Run the import at night and/or whenever there may be less traffic on your DSpace server
+* Consider temporarily inserting a `sleep()` function between the import of each record in `Import.php` to slow the process down slightly (not recommended for production)
 
 You can track the status of the import by navigating to the DSpace Connector > Past Imports tab or on the [Jobs](../admin/jobs.md) tab of the left-hand navigation on the admin dashboard.
 
@@ -64,5 +71,5 @@ To undo a completed import and remove all associated items, go to the DSpace Con
 
 ![Table of past imports showing two from mars.gmu.edu](../modules/modulesfiles/mods_dspacepast.png)
 
-Check the box for each import you wish to undo and click submit. The 
+Check the box for each import you wish to undo and click submit.
 
