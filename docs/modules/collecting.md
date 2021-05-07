@@ -2,7 +2,7 @@
 
 The Collecting module allows you to gather public contributions through your sites. 
 
-Once activated on the [modules](../modules/index) tab of the admin dashboard, Collecting is configured on a site-by-site basis.
+Once activated on the [modules](index.md) tab of the admin dashboard, Collecting is configured on a site-by-site basis.
 
 ## Site settings
 
