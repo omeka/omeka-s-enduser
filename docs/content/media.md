@@ -8,7 +8,7 @@ To view all media in the installation, navigate to the Items browse first. The m
 
 ## Add Media
 
-Adding media includes uploading a file, or directly attaching content with oEmbed, YouTube URLs, or writing HTML.
+Adding media includes uploading a file, or directly attaching content with oEmbed, YouTube URLs, IIIF URLs, or writing HTML.
 
 Media can only be added via an [item](../content/items.md). 
 
