@@ -24,10 +24,12 @@ You should see a screen with the following options:
 
 * *Fedora Container URI* for the Repository, Collection or Resource you wish to import (required)
 * *Import files into Omeka* checkbox, check yes if you want to import media and other files attached to content (optional, recommended)
+* *Ignore parent container* checkbox, check yes to only import descendents of the parent container given in Container URI, not the parent container itself (optional)
+* *Import direct descendents only* checkbox, check yes to only import direct descendents of the container given in Container URI (no children of children). If unchecked, all resources below container will be imported recursively (optional)
 * *Comment* for example, any notes to yourself or other users of the installation (optional)
 * *Import into* a selected [Item Set](../content/item-sets.md), if desired (optional--note that the Item Set must already exist in order to import into it)
 
-![Screenshot of the field options for Fedora Connector](../modules/modulesfiles/mods_fedoraconnect.png)
+![Screenshot of the field options for Fedora Connector](../modules/modulesfiles/mods_fcimport.png)
 
 When the data is complete, press submit. You can track the status of the import by navigating to the Fedora Connector > Past Imports tab or on the [Jobs](../admin/jobs.md) tab of the left-hand navigation on the admin dashboard.
 
