@@ -1,6 +1,5 @@
----
-title: "Item Carousel Block"
----
+# Item Carousel Block
+
 Item Carousel Block is a [module](../modules/index.md) that allows you to add a carousel block to [Site Pages](../sites/site_pages).
 
 To install Item Carousel Block, follow the instructions for [Installing Modules](../modules/index.md#installing-modules) on the Modules documentation.
