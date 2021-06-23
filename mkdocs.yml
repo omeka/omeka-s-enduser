@@ -46,6 +46,7 @@ nav:
         - modules/extracttext.md
         - modules/fedoraconnector.md
         - modules/filesideload.md
+        - modules/itemcarouselblock.md
         - modules/mapping.md
         - modules/metadatabrowse.md
         - modules/numericdatatypes.md
