@@ -42,6 +42,7 @@ nav:
         - 'Extract Text' : 'modules/extracttext.md'
         - 'Fedora Connector': 'modules/fedoraconnector.md'
         - 'File Sideload': 'modules/filesideload.md'
+        - 'Item Carousel Block': 'modules/itemcarouselblock.md'
         - 'Mapping': 'modules/mapping.md'
         - 'Metadata Browse': 'modules/metadatabrowse.md'
         - 'Numeric Data Types': 'modules/numericdatatypes.md'
