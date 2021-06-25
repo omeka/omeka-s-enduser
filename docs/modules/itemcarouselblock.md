@@ -4,7 +4,7 @@ Item Carousel Block is a [module](../modules/index.md) that allows you to add a 
 
 To install Item Carousel Block, follow the instructions for [Installing Modules](../modules/index.md#installing-modules) on the Modules documentation.
 
-Once activated on the [modules](https://omeka.org/s/docs/user-manual/modules/) tab of the admin dashboard, Item Carousel Block adds a block to the list available from the page edit interface.
+Once activated on the modules tab of the admin dashboard, Item Carousel Block adds a block to the list available from the page edit interface.
 
 ## Attaching Items
 Click the _Add Attachment_ button to add an item to the block. This will open a sidebar on the right side of the page to browse and select items.
