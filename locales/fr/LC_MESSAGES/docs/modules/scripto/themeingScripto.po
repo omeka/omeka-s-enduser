@@ -19,12 +19,10 @@ msgstr ""
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../docs/modules/scripto/themeingScripto.md:1
-#: bb4a18a6fc824da6ac2d93fd7d916c1f
 msgid "Themeing Scripto"
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:3
-#: 4b976338e0f34ecbac97d292ece90bb3
 msgid ""
 "Scripto themes are a way to unite the look of a Scripto project with its "
 "associated Omeka S site. You first associate a Scripto project to a site "
@@ -36,12 +34,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:5
-#: 13c4dbb0f77045e8ad3996223d2754d2
 msgid "Using an Existing Scripto Theme"
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:7
-#: 9e6a547376c24b06bc8259e7d6079d2e
 msgid ""
 "The only requirement for a Scripto theme is a stylesheet (.css) file "
 "within the Scripto module in the following subdirectory: "
@@ -50,7 +46,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:9
-#: e111437f2aa94d569320a745e525ed68
 msgid ""
 "The Omeka S theme \"Papers\", based off the Papers of the War Department "
 "project theme, contains its companion Scripto theme in the following "
@@ -59,12 +54,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:11
-#: d8d6992e749a4f4fb5d3ec89d58b55c9
 msgid "Manually copy the CSS file to the Scripto module."
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:13
-#: 85103d0210304a1887120a863bf4f5fc
 msgid ""
 "Copy your CSS file into the appropriate directory within the Scripto "
 "module. The path from within your Omeka S installation looks like this: "
@@ -74,12 +67,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:15
-#: bc98cff8047d4e29b02730745e1ae671
 msgid "Use the command line."
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:17
-#: 1cdd76022b3f4ce68a3a88530eeac3a5
 msgid ""
 "This method is for more technical users. The \"Papers\" theme uses Gulp "
 "to manage Sass/CSS compiling, and has a specific task for exporting the "
@@ -91,12 +82,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:19
-#: 6b1b1438439f400f99506cbfb9857445
 msgid "Writing a Scripto Theme"
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:21
-#: c8ea300457fb4610b08af51f7bfa9ab5
 msgid ""
 "The only requirement for a Scripto theme is a stylesheet (.css) file "
 "within the Scripto module in the following subdirectory: "
@@ -106,7 +95,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:23
-#: 6bc619e9ee8d4b209d588d4db8e69d90
 msgid ""
 "The `@import` CSS rule can help create a quick foundation for your "
 "Scripto theme by importing existing styles. For example once again using "
@@ -114,7 +102,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:30
-#: 007277d0c81c45ffb64d039116507922
 msgid ""
 "This import uses relative paths from your custom Scripto theme to the "
 "default Scripto theme and the site theme. You can now write your style "
@@ -122,12 +109,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:32
-#: d655889ca1374a05936ed0b8538ad053
 msgid "Using Sass with Scripto Themes"
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:34
-#: c8391084ad244c808cb1701afaec0e01
 msgid ""
 "Like Omeka S itself and many of its themes, the \"Papers\" theme manages "
 "its styles with Gulp and Sass. If you plan on using these tools, here are"
@@ -135,21 +120,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:36
-#: 0e5eca575b52466594c610e23e0dcb78
 msgid ""
 "`npm install`: Install the theme's Node dependencies. This is required "
 "before running any tools."
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:37
-#: 06e5f1cde29647109b5f807d56d8e2e1
 msgid ""
 "`gulp css`: This command will look at your `.scss` files within "
 "`asset/sass` and export their respective CSS files into `asset/css`."
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:38
-#: 2488299e7d3c4638858421aff3bc269d
 msgid ""
 "`gulp css:watch`: This command performs the same function as `gulp css`, "
 "but watches the `asset/sass` folder for any ongoing changes until the "
@@ -157,26 +139,22 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:39
-#: 2ee113dd0f1d4292add8215bc2d743c4
 msgid ""
 "`gulp scripto`: This command performs the same function as `gulp css`, "
 "but includes Scripto theme files."
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:40
-#: 34e45c46b5c548acb5f952bcb398f1c0
 msgid ""
 "`gulp scripto:watch`: This command performs the same function as `gulp "
 "css:watch`, but includes Scripto theme files."
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:42
-#: 742f7c90d6184a31871b6bfd5cb8eefc
 msgid "Theme Assets"
 msgstr ""
 
 #: ../../docs/modules/scripto/themeingScripto.md:44
-#: 0315063bd6694d5baf0b69bda1a1aac5
 msgid ""
 "An important note: because Scripto is totally controlled with CSS, it "
 "cannot interact with theme options in a site theme, like user-set image "

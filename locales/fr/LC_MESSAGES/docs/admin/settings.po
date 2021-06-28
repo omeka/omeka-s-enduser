@@ -18,44 +18,44 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../docs/admin/settings.md:1 8fe52e6c23e8437f86566cf33f81357c
+#: ../../docs/admin/settings.md:1
 msgid "Manage Settings"
 msgstr ""
 
-#: ../../docs/admin/settings.md:3 3db121e23ded40fa90e76eb2e4d5f1aa
+#: ../../docs/admin/settings.md:3
 msgid ""
 "Admin users may change the settings for the admin dashboard and general "
 "settings for sites using the *Settings* tab on the left side of the admin"
 " dashboard (gear icon)."
 msgstr ""
 
-#: ../../docs/admin/settings.md:5 0ae8532f5b3f4d22aa0e5d8ba138bc7f
+#: ../../docs/admin/settings.md:5
 msgid "Global Settings"
 msgstr ""
 
-#: ../../docs/admin/settings.md:7 728d56ac3f3944b9898f74078d0e1de5
+#: ../../docs/admin/settings.md:7
 msgid ""
 "Global settings are only available to users with Site Administrator or "
 "Global Administrator user roles."
 msgstr ""
 
-#: ../../docs/admin/settings.md:9 e43bfc8275b1439b8f64584f3bf9ea8a
+#: ../../docs/admin/settings.md:9
 msgid ""
 "The settings are as follows divided into two sections: General and "
 "Security settings."
 msgstr ""
 
-#: ../../docs/admin/settings.md:11 a8cae23a39964eb2bd6d5bf8708be975
+#: ../../docs/admin/settings.md:11
 msgid "General"
 msgstr ""
 
-#: ../../docs/admin/settings.md:13 49cfacdb1ed642d19bd6b1dabb2992b1
+#: ../../docs/admin/settings.md:13
 msgid ""
 "![General settings with fields as described "
 "below](adminfiles/settings_general.png)"
 msgstr ""
 
-#: ../../docs/admin/settings.md:15 5bafa13e1c1942228f0d75f65f2385bf
+#: ../../docs/admin/settings.md:15
 msgid ""
 "*Administrator Email* sets the email address for the installation "
 "administrator.  Note that some hosting setups may require that the domain"
@@ -64,14 +64,14 @@ msgid ""
 "must be user@yourinstall.org)."
 msgstr ""
 
-#: ../../docs/admin/settings.md:18 420451e87df3491ead76d7bca6c56a14
+#: ../../docs/admin/settings.md:18
 msgid ""
 "*Installation Title* allows you to change the title for the OmekaS "
 "installation overall. This is what appears in the upper left-hand corner "
 "of the admin dashboard."
 msgstr ""
 
-#: ../../docs/admin/settings.md:20 4ee960c873cb45038a47463b2a3ce3ef
+#: ../../docs/admin/settings.md:20
 msgid ""
 "*Time Zone* sets the default time zone for the install, which will be "
 "used for error logging messages and to determine creation dates for "
@@ -79,38 +79,38 @@ msgid ""
 "menu."
 msgstr ""
 
-#: ../../docs/admin/settings.md:22 bc36f213b61f4b8fb640c48241e921be
+#: ../../docs/admin/settings.md:22
 msgid ""
 "*Results per page* changes the number of results (items, item sets, "
 "media) displayed per page when browsing in either public or admin sides "
 "of the installation."
 msgstr ""
 
-#: ../../docs/admin/settings.md:24 9c003dcc3de147e8b382761c00dfaf8b
+#: ../../docs/admin/settings.md:24
 msgid ""
 "*Property label information* determines what is displayed next to each "
 "property when users are editing items and item sets."
 msgstr ""
 
-#: ../../docs/admin/settings.md:26 a14680d034ce4b598546837d7d1a9e8c
+#: ../../docs/admin/settings.md:26
 msgid ""
 "By default, this is set to *none*, meaning that only the property label "
 "is displayed."
 msgstr ""
 
-#: ../../docs/admin/settings.md:27 8344197b73aa44d3af5acf034e33d66a
+#: ../../docs/admin/settings.md:27
 msgid ""
 "If *show vocabulary* is selected, the parenthetical statement next to the"
 " property name displays the vocabulary used (for example, Dublin Core)"
 msgstr ""
 
-#: ../../docs/admin/settings.md:28 41225ce2f6ed49429418556942144c85
+#: ../../docs/admin/settings.md:28
 msgid ""
 "If *show term* is selected, the parenthetical statement next to the "
 "property name displays the vocabulary:term (for example, dc:title)."
 msgstr ""
 
-#: ../../docs/admin/settings.md:30 899ffbfb1eca4cb1b5a6376be3c2b41d
+#: ../../docs/admin/settings.md:30
 msgid ""
 "*Default Site* dropdown gives you control over where people land when "
 "they navigate to the base url of your install. You can either display a "
@@ -118,65 +118,65 @@ msgid ""
 " the dropdown, to which people will be redirected."
 msgstr ""
 
-#: ../../docs/admin/settings.md:32 742ad8dfd60e43d1839451e13b4d11da
+#: ../../docs/admin/settings.md:32
 msgid ""
 "*Locale* dropdown lets you select from a dropdown of [available "
 "languages](https://www.transifex.com/omeka/omeka-s/) for the Omeka S core"
 " to change the language in which your installation's admin side displays."
 msgstr ""
 
-#: ../../docs/admin/settings.md:34 eea6b66693374727bc884bc344e5e81c
+#: ../../docs/admin/settings.md:34
 msgid ""
 "*Enable version notifications* check this box to enable notifications for"
 " new versions of Omeka S, themes, and modules."
 msgstr ""
 
-#: ../../docs/admin/settings.md:36 09f30ab2a106415d9bca0c95b8ff7b18
+#: ../../docs/admin/settings.md:36
 msgid ""
 "*Disable JSON-LD embed* By default, Omeka embeds JSON-LD in resource "
 "browse and show pages for the purpose of machine-readable metadata "
 "discovery. Check this to disable embedding."
 msgstr ""
 
-#: ../../docs/admin/settings.md:38 2e386d4c0d124b34b04dadd1295a44f5
+#: ../../docs/admin/settings.md:38
 msgid ""
 "*Default content visibility to private* When this box is checked, all new"
 " items, item sets, and sites will have their visibility set to Private. "
 "If this box is not checked, the default is public."
 msgstr ""
 
-#: ../../docs/admin/settings.md:40 993b6ecfe87846a29085447b11cc25fd
+#: ../../docs/admin/settings.md:40
 msgid ""
 "*Index full-text search* Check this box to run an index of your "
 "installation's resources and sites as soon as you click Save. You should "
 "only need to run this process if you are having issues with search."
 msgstr ""
 
-#: ../../docs/admin/settings.md:42 8ed4e9de68eb4eafa1482bcdcad980f7
+#: ../../docs/admin/settings.md:42
 msgid "Security"
 msgstr ""
 
-#: ../../docs/admin/settings.md:44 42b15619650f4dfdaf9ff5e6dcecc148
+#: ../../docs/admin/settings.md:44
 msgid ""
 "![Security settings with fields as described "
 "below](adminfiles/settings_security.png)"
 msgstr ""
 
-#: ../../docs/admin/settings.md:46 97fdd9ce63a8470d93b0e20568b477d9
+#: ../../docs/admin/settings.md:46
 msgid ""
 "*Use HTMLPurifier* checkbox. If checked, the service "
 "[HTMLPurifier](http://htmlpurifier.org/) will clean up any user-entered "
 "HTML."
 msgstr ""
 
-#: ../../docs/admin/settings.md:47 74648c9d7a164aa4b377548b4e97b07b
+#: ../../docs/admin/settings.md:47
 msgid ""
 "*Disable file validation*: a checkbox, unchecked by default. When "
 "unchecked, file uploads are limited by the following two fields. When "
 "this box is checked, any type of media or MIME type can be uploaded."
 msgstr ""
 
-#: ../../docs/admin/settings.md:48 dee4117a0b004b0e842e96483c3a1e2e
+#: ../../docs/admin/settings.md:48
 msgid ""
 "*Allowed media types*: The default list contains the most common media "
 "types. Only files with media types included in this list may be uploaded "
@@ -184,26 +184,25 @@ msgid ""
 msgstr ""
 
 #: ../../docs/admin/settings.md:49 ../../docs/admin/settings.md:52
-#: 51668392cc3e45058678256e9feedaa9 9dc4bbd062ef478b99c72a6cc62f9b7f
 msgid "Separate additions to the list with a comma."
 msgstr ""
 
-#: ../../docs/admin/settings.md:50 3c713d6c74054f37b73f61634893d788
+#: ../../docs/admin/settings.md:50
 msgid "To return to defaults, click the *restore default media types* button."
 msgstr ""
 
-#: ../../docs/admin/settings.md:51 9b06d525c75a497aacc5ce46df057d80
+#: ../../docs/admin/settings.md:51
 msgid ""
 "*Allowed file extensions*: The default list contains common file "
 "extensions. Only files with extensions included in this list may be "
 "uploaded to the installation."
 msgstr ""
 
-#: ../../docs/admin/settings.md:53 0a379fdee1d344bba5ce565d32ab873e
+#: ../../docs/admin/settings.md:53
 msgid "To return to defaults, click the *restore default extensions* button."
 msgstr ""
 
-#: ../../docs/admin/settings.md:55 27416b3d4a5c4b5eb5521097ca211747
+#: ../../docs/admin/settings.md:55
 msgid ""
 "The final two fields relate to setting up "
 "[reCAPTCHA](https://www.google.com/recaptcha/intro/index.html) for your "
@@ -212,13 +211,13 @@ msgid ""
 "up](https://www.google.com/recaptcha/admin#list) with reCAPTCHA/Google:"
 msgstr ""
 
-#: ../../docs/admin/settings.md:56 34323a91fb1f47428edbba5d62ea6918
+#: ../../docs/admin/settings.md:56
 msgid ""
 "*reCAPTCHA site key* enables to display of the widget on your install's "
 "sites."
 msgstr ""
 
-#: ../../docs/admin/settings.md:57 c916156cd5134d3cb80b7b38cd0e4203
+#: ../../docs/admin/settings.md:57
 msgid ""
 "*reCAPTCHA secret key* allows communication between your install and "
 "reCAPTCHA's server."

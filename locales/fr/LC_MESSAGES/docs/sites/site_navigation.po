@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Omeka S end user manual \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"POT-Creation-Date: 2021-06-28 22:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../docs/sites/site_navigation.md:1 e7072c87b6604f42bcdc9d8142f533aa
+#: ../../docs/sites/site_navigation.md:1
 msgid "Navigation"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:3 75e8c559d59d4ad09b743e206e37a36c
+#: ../../docs/sites/site_navigation.md:3
 msgid ""
 "Use the *Navigation* tab of the [Sites](../sites/index.md) to manage the "
 "navigation, or menu, or your site. You can add links, browse pages, and "
@@ -30,13 +30,13 @@ msgid ""
 " delete links from the navigation."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:5 01d9d709320c4691a1513f9ceea9f57c
+#: ../../docs/sites/site_navigation.md:5
 msgid ""
 "![Editing navigation with a drawer on the right side of the screen for "
 "adding links](../sites/sitesfiles/sitenav_main.png)"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:8 551dbf0f29f94b7c849ebd22e28a60e1
+#: ../../docs/sites/site_navigation.md:8
 msgid ""
 "For every item in the navigation, you have three options: view (box with "
 "arrow icon); edit (pencil icon); or delete (trash can icon). Parent "
@@ -44,7 +44,7 @@ msgid ""
 "collapses or expands their child pages."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:10 a175194443304b03858e04f7116f2d38
+#: ../../docs/sites/site_navigation.md:10
 msgid ""
 "![Close up of two navigation sections. The top is \"Quotes\" which has a "
 "dark gray square on the end of it containing a black triangle pointing "
@@ -52,18 +52,18 @@ msgid ""
 "not have the gray square](../sites/sitesfiles/sitenav_detail.png)"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:12 9ed016dcc0714a0590c005426670bfa0
+#: ../../docs/sites/site_navigation.md:12
 msgid "Set Homepage"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:13 e2bed552bb6948d29113eac710f4887e
+#: ../../docs/sites/site_navigation.md:13
 msgid ""
 "By default, the topmost page in the navigation acts the main page for "
 "your site. Note that custom URLs will not work as a home page - the "
 "topmost item in your navigation must be a page."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:15 de66641246f24fbb9ea6802cbcb68ea1
+#: ../../docs/sites/site_navigation.md:15
 msgid ""
 "You can set the homepage without changing the order of your pages using "
 "the *Select a homepage* section in the righthand drawer. This section has"
@@ -71,13 +71,13 @@ msgid ""
 "page which you want to use as your homepage."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:17 1b7d076d6b0c41769ade11a2fd373105
+#: ../../docs/sites/site_navigation.md:17
 msgid ""
 "![Select a homepage dropdown open to show all the pages in this "
 "site](../sites/sitesfiles/sitenav_homeselect.png)"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:19 51fd0a444a6d41a19df3e92d16292542
+#: ../../docs/sites/site_navigation.md:19
 msgid ""
 "To change which page is used as the homepage, select a different page "
 "from the dropdown. If you want to revert to using the top page in the "
@@ -85,47 +85,46 @@ msgid ""
 "(circled in red in the below image)."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:21 5989847ac7d7471092aee9d54a3dbd88
+#: ../../docs/sites/site_navigation.md:21
 msgid ""
 "![Select a homepage set to Map "
 "page](../sites/sitesfiles/sitenav_homedel.png)"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:24 5e8682026b354ae6826a113797f59fe2
+#: ../../docs/sites/site_navigation.md:24
 msgid "Adding Navigation"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:25 4531227cb9084df6b7b7fe4aa6db4d42
+#: ../../docs/sites/site_navigation.md:25
 msgid ""
 "Add to the navigation of the site using the options on the right hand "
-"side of the page. There are two sections: [Add a custom "
-"link](../sites/site_navigation/#custom-link) and [Add a link to a site "
-"page](../sites/site_navigation/#site-page)"
+"side of the page. There are two sections: [Add a custom link](#add-a"
+"-custom-link) and [Add a link to a site page](#site-page)"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:27 8fd6cf0669364abe86fbedc3c9ee12d7
+#: ../../docs/sites/site_navigation.md:27
 msgid "Add a custom link"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:28 8320cb09cbf94a2d97496b6bc5c6536d
+#: ../../docs/sites/site_navigation.md:28
 msgid ""
 "To add a link you can use the *Add a custom link* options on the right "
 "hand drawer to add:"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:29 0e3092c5c20545cb86179eb52a5e6e38
+#: ../../docs/sites/site_navigation.md:29
 msgid "a *Custom URL* to any web address;"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:30 aaddd7c43138474e9ef9bdd866c64f47
+#: ../../docs/sites/site_navigation.md:30
 msgid "a Browse page for items on your site;"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:31 e451d5b0c8c641418aa3cb7f93420874
+#: ../../docs/sites/site_navigation.md:31
 msgid "a Browse page for item sets on your site."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:33 3d11977091454b9a962191c354e7142a
+#: ../../docs/sites/site_navigation.md:33
 msgid ""
 "Or you can add one of your [pages](../sites/site_pages), which should be "
 "listed in the right-hand drawer below the *Add a custom link* dropdown. "
@@ -134,20 +133,20 @@ msgid ""
 "below the text “Add a link to a site page.”"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:35 dc27c05c634f4f72b9a18c9026a12707
+#: ../../docs/sites/site_navigation.md:35
 msgid ""
 "**Custom URL** link blocks display three pieces of information: the block"
 " *type* (Custom URL), the *label* which is the text which will appear in "
 "the site navigation menu, and the *url*."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:37 72af54ea490f4df8b196d0d60dd12925
+#: ../../docs/sites/site_navigation.md:37
 msgid ""
 "![URL block with the label “RRCHNM” and url "
 "chnm.gmu.edu](../sites/sitesfiles/sitenav_url.png) URL Block"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:39 f180a498f9d84560afb47600dc59e318
+#: ../../docs/sites/site_navigation.md:39
 msgid ""
 "**Browse** blocks create a browse page for "
 "[resources](../sites/site_resources.md) already associated with your "
@@ -155,73 +154,73 @@ msgid ""
 "browse item sets."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:41 ff6fab90467c439abd09a1fbfa5129d2
+#: ../../docs/sites/site_navigation.md:41
 msgid ""
 "You can change the *label* of the block to reflect what, specifically, "
 "site visitors will browse."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:43 b4340cdd21564012b8ab9b59955406df
+#: ../../docs/sites/site_navigation.md:43
 msgid ""
 "If you want to refine the Browse block, you can use the Query to create a"
 " search query that returns the desired results."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:45 1482c63c533c4c68b6f5fb01cbb7df51
+#: ../../docs/sites/site_navigation.md:45
 msgid ""
 "![Browse block with the label ‘Browse’ and no "
 "query](../sites/sitesfiles/sitenav_browse.png)"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:47 bf161a7d320b4a6d9d7f32cd78b50570
+#: ../../docs/sites/site_navigation.md:47
 msgid "Note that you **must** enter a query for the block to function."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:49 8416d0a70a104420a4efa819eb1141fe
+#: ../../docs/sites/site_navigation.md:49
 msgid ""
 "To create a Browse Item Set navigation for all the item sets which you "
 "have already assigned to the [resources](../sites/site_resources/) with "
 "the site on which you are working:"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:51 7eea477a7e894f05a4216c9318254206
+#: ../../docs/sites/site_navigation.md:51
 msgid ""
-"(In a separate window): conduct an [advanced item set search](../search"
-"/#advanced-item-set-search) using your site for the \"In site pool\" "
-"option."
+"(In a separate window): conduct an [advanced item set "
+"search](../search.md#advanced-item-set-search) using your site for the "
+"\"In site pool\" option."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:52 ba0342e156a74d069e3d693f0ea87d3f
+#: ../../docs/sites/site_navigation.md:52
 msgid ""
 "Once the search results load, highlight everything in your browser's "
 "address bar starting with the question mark all the way to the end of the"
 " search url (to the right)."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:54 904aa1cb88584b3ea6d838d1ddc94ecb
+#: ../../docs/sites/site_navigation.md:54
 msgid ""
 "![Browser address bar with a query string "
 "highlighted](../sites/sitesfiles/sitenav_itemsetsearch.png)"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:56 748279b771584da7aa31161518f746ec
+#: ../../docs/sites/site_navigation.md:56
 msgid ""
 "Paste the text you just copied into the \"Query\" field of the Browse "
 "item sets Navigation link."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:58 e01485bed32c4325af84a408f1d0c8c3
+#: ../../docs/sites/site_navigation.md:58
 msgid ""
 "![Browse item sets navigation item with a query pasted in to the Query "
 "field, and no alternate label "
 "supplied](../sites/sitesfiles/sitenav_browseitemset.png)"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:60 725ebfad60264d59b30eecd479669b82
+#: ../../docs/sites/site_navigation.md:60
 msgid "Site Page"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:61 9e0661c4ffc44be4825baa4276b265a2
+#: ../../docs/sites/site_navigation.md:61
 msgid ""
 "Site page blocks create links to pages you have built for your site. The "
 "*page* field indicates which page is in use, as does the block title. You"
@@ -230,29 +229,29 @@ msgid ""
 "page title."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:63 3aa7de080b9b4a1aa782ff7ea657f4aa
+#: ../../docs/sites/site_navigation.md:63
 msgid ""
 "![Page block with for the page Custard Page 2 labeled “More "
 "Custard”](../sites/sitesfiles/sitenav_pages.png) Site Page block"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:65 3ec9755276db4daaace404438851b1a6
+#: ../../docs/sites/site_navigation.md:65
 msgid ""
 "If you have many pages, you can use the *Filter pages* field to find the "
 "names and slugs of specific pages."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:67 824d762933b543e3970dfab03acdb8ff
+#: ../../docs/sites/site_navigation.md:67
 msgid ""
 "Be sure to click Save before leaving the Navigation tab to save changes. "
 "If you do not want to save changes, click the Cancel button."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:69 857aed921a234457bb34da4b31a6aff2
+#: ../../docs/sites/site_navigation.md:69
 msgid "Editing and Arranging Navigation"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:70 7d1bbbb732ee417a94e4d8cca52a8eb7
+#: ../../docs/sites/site_navigation.md:70
 msgid ""
 "When you add a link block it is automatically expanded. To collapse an "
 "open link block, click the edit (pencil) icon in the  upper right corner "
@@ -262,11 +261,11 @@ msgid ""
 " (pencil) icon."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:72 fdeb5aa25a7a49efaad15bb39e76b751
+#: ../../docs/sites/site_navigation.md:72
 msgid "The topmost item in the navigation is the main page for your site."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:74 35192b83c42e43cf921d3ce517eef087
+#: ../../docs/sites/site_navigation.md:74
 msgid ""
 "You can arrange your navigation links by dragging and dropping them into "
 "your preferred order. Nest links by dragging the desired child link on "
@@ -274,7 +273,7 @@ msgid ""
 "should appear to the left of the parent block."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:76 64d2c8d5333240768ca8ef743b33827e
+#: ../../docs/sites/site_navigation.md:76
 msgid ""
 "![The block for Custard Page 2 - the child page - hovering over the block"
 " for Opening Page - the parent "
@@ -283,15 +282,15 @@ msgid ""
 "by the small black triangle on the left"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:78 91c89ca1c84f4fcbb17ded03ee9d0147
+#: ../../docs/sites/site_navigation.md:78
 msgid "Omeka S allows for multiple levels of nested navigation."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:80 d67f3693cb974be8a1cb8a83fedb6eb7
+#: ../../docs/sites/site_navigation.md:80
 msgid "Deleting Navigation"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:81 5f9354e0199943a69f8f3c5108881d37
+#: ../../docs/sites/site_navigation.md:81
 msgid ""
 "To delete a link from the navigation, click the delete (trash can) icon "
 "and then click *Save*. If you accidentally click the delete icon, you can"
@@ -299,25 +298,25 @@ msgid ""
 "deletion."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:83 4c92dc02f7ad485db6624655cac7c761
+#: ../../docs/sites/site_navigation.md:83
 msgid ""
 "![Two link blocks, one of which is highlighted in red and marked for "
 "deletion](../sites/sitesfiles/sitenav_del.png)"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:85 5fc54339bfc94f9398e5b21b5db0a2a4
+#: ../../docs/sites/site_navigation.md:85
 msgid ""
 "In this image, the delete icon for browse has been clicked; the block now"
 " displays the undo button instead"
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:87 17648392df094ba8af5359c902bcd34a
+#: ../../docs/sites/site_navigation.md:87
 msgid ""
 "NOTE: Deleting a parent block from the navigation will also delete any "
 "child blocks."
 msgstr ""
 
-#: ../../docs/sites/site_navigation.md:89 c47a2263f8c5409f940e2451283ddb53
+#: ../../docs/sites/site_navigation.md:89
 msgid ""
 "![Parent and child block marked for "
 "deletion](../sites/sitesfiles/sitenav_del2.png)"

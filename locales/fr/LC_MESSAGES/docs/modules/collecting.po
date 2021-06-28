@@ -18,65 +18,65 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../docs/modules/collecting.md:1 b0accaf3d9804da8b724370957276794
+#: ../../docs/modules/collecting.md:1
 msgid "Collecting"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:3 7131193d7f7e4929aba15aa72baa2677
+#: ../../docs/modules/collecting.md:3
 msgid ""
 "The Collecting module allows you to gather public contributions through "
 "your sites."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:5 263c4a027ca049fba8e058bfe69a0fd6
+#: ../../docs/modules/collecting.md:5
 msgid ""
 "Once activated on the [modules](index.md) tab of the admin dashboard, "
 "Collecting is configured on a site-by-site basis."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:7 1e8870db8bbf44e2a9e96cf3bfc16008
+#: ../../docs/modules/collecting.md:7
 msgid "Site settings"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:9 6d50300c9dfe4e27b1be961b03644ab5
+#: ../../docs/modules/collecting.md:9
 msgid ""
 "Collecting adds a section to your [site "
 "settings](../sites/site_settings.md) where you can manage terms of "
 "service and email for the collecting forms for this site."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:11 2f1aace153bc4e5796157c0eeb49491a
+#: ../../docs/modules/collecting.md:11
 msgid ""
 "![The Collecting section in site settings with two fields as described "
 "below.](modulesfiles/collecting_settingsSite.png)"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:13 93105185bfad4c60856c096d2e0d39a3
+#: ../../docs/modules/collecting.md:13
 msgid "In this section are two fields:"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:15 2a3f463245bd455c906e454fd581479e
+#: ../../docs/modules/collecting.md:15
 msgid ""
 "**Terms of service** is a multi-line field where you can enter terms of "
 "services for material collected through this site. This text is linked "
 "from the form just above the submit button:"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:17 90bff850948c4a6ca9ee63a3c575377c
+#: ../../docs/modules/collecting.md:17
 msgid ""
 "![from the collecting form, the words \"I accept the Terms of Service\" "
 "over a button that says submit. The phrase Terms of Service are a "
 "link.](modulesfiles/collecting-ToSlink.png)"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:19 c68d624443c242a58be9915a96514d18
+#: ../../docs/modules/collecting.md:19
 msgid ""
 "Clicking on the phrase \"Terms of Service\" will open a new window so "
 "that people filling out the form do not lose the information they have "
 "entered."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:21 4796d84023d34af299900f32c59e27b1
+#: ../../docs/modules/collecting.md:21
 msgid ""
 "**Email address** allows you to set a custom address from which "
 "submission emails will be sent. If left blank, these emails will be sent "
@@ -84,18 +84,18 @@ msgid ""
 "Settings](../admin/settings.md) for the Omeka S installation."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:23 af3243e50b7f42aa9e0f2cea6e1c06cf
+#: ../../docs/modules/collecting.md:23
 msgid "Managing Collecting Forms"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:25 84befc10b1eb4b9190d7acf5a7050441
+#: ../../docs/modules/collecting.md:25
 msgid ""
 "If Collecting is active, then a tab for Collecting will appear in the "
 "context menu for every site.  ![Red arrow points to the Collecting tab of"
 " the site National Parks](modulesfiles/collecting_nav.png)"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:28 ea212d8749284a42953ca5906a538fd5
+#: ../../docs/modules/collecting.md:28
 msgid ""
 "Clicking on this will take you to a list of your collecting forms for "
 "that site. If you have just installed the module, the Collecting Forms "
@@ -104,17 +104,17 @@ msgid ""
 "of the window."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:30 f3c2db2ca4c84b2eb7bcd8a26fcd5092
+#: ../../docs/modules/collecting.md:30
 msgid ""
 "![Collecting tab, no forms, red arrow points to the Add New "
 "button](modulesfiles/collecting_addnew.png)"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:32 76552eb686d840b2b19a09c0d2748d7a
+#: ../../docs/modules/collecting.md:32
 msgid "Add New Form"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:33 3e397d295b334a638b8064fe75dccc91
+#: ../../docs/modules/collecting.md:33
 msgid ""
 "The Add Collecting Form page has two sections: the first has a set of "
 "fields and options for you to complete; the second is where you add and "
@@ -122,108 +122,105 @@ msgid ""
 "fill out."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:35 c8274d8f1a46454ab98533186ef0e60f
+#: ../../docs/modules/collecting.md:35
 msgid "![Add Collecting Form page](modulesfiles/collecting_addform.png)"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:37 af2678ee41f1495c82d85d9f0ca4e5ba
+#: ../../docs/modules/collecting.md:37
 msgid "Fields and Settings"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:38 8c7129c3d4924413840220f2776892ea
+#: ../../docs/modules/collecting.md:38
 msgid ""
 "*Label:* name the collecting form. The label will appear as a header "
 "above the form on the public side, so the label should be descriptive and"
 " helpful to both you and site visitors."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:39 d3b2abaa5bc943a1b2fe5c3186ac4cf4
+#: ../../docs/modules/collecting.md:39
 msgid "*Item Set:* select the item set to which you want to add collected items."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:40 ec24ae0b346e4a338cafafbe90b961dc
+#: ../../docs/modules/collecting.md:40
 msgid "*Anonymity Type:* a dropdown with three options:"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:41 93df1e0ebb0d4cc79f22cde3424a5cb3
+#: ../../docs/modules/collecting.md:41
 msgid ""
 "\"User sets own anonymity\": users can decide whether they contribute "
 "anonymously and whether their items can be published)."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:42 57752f9f7beb4cd2a39f2207bf7a978e
+#: ../../docs/modules/collecting.md:42
 msgid ""
 "\"User Public and User Name inputs are publicly visible\": both the "
 "user's name and their items will be made public"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:43 9db186e0733b436fa386a1f4568443df
+#: ../../docs/modules/collecting.md:43
 msgid ""
 "\"User Public and User Name inputs are private\": both inputs remain "
 "public."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:44 c4542103977c42e2af57d31a63d674cc
+#: ../../docs/modules/collecting.md:44
 msgid ""
 "*Success Text*: the message that displays on a new page if the item is "
 "successfully collected."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:45 91e0c650bfa44882859193d70ee7f08e
+#: ../../docs/modules/collecting.md:45
 msgid ""
 "*Email text*: the message in the email that will be sent to site visitors"
 " who submit an item, if you collect an email address from them."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:47 3273ab6a429b4fd69a6a2576aee7b09f
+#: ../../docs/modules/collecting.md:47
 msgid "Prompts"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:48 66670fa7a82544cbaa103eeb0f6653dc
+#: ../../docs/modules/collecting.md:48
 msgid ""
 "Prompts are listed in a table which gives their *Type* and the display "
 "*Text* on the public form. These prompts make up the form which site "
 "visitors will see (in addition to the label, discussed above)."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:50 90190ddf6cec44bfad2573ece3d439c0
+#: ../../docs/modules/collecting.md:50
 msgid ""
 "To add a new prompt, click the *Add prompt* button just below the Prompts"
 " header. This will open a side drawer with a dropdown to select Prompt "
 "type."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:52 76cbb0f010024f6c96b532b6503c1190
+#: ../../docs/modules/collecting.md:52
 msgid ""
 "On selection, the options for that type will load in the sidebar for you "
 "to edit, with a Save Changes button at the bottom of the options."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:54 631b71bde73c4ca2b46868331dc69f80
+#: ../../docs/modules/collecting.md:54
 msgid "![Add prompt dropdown](modulesfiles/collecting_prompts.png)"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:56 d15afb4c7c5c4fe2b11a918db2dc7119
+#: ../../docs/modules/collecting.md:56
 msgid "The Collecting module has Prompt Types with options as follows:"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:58 c7d3d6d994454a45905f0c5e30430301
+#: ../../docs/modules/collecting.md:58
 msgid ""
 "**Item Property**: select a property from the installation's vocabularies"
 " for the visitor to use to describe the item."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:60 8f3ef6bbb09f480c88150c398ee5fa48
+#: ../../docs/modules/collecting.md:60
 msgid "Property: select a property from the vocabularies (example: Description)"
 msgstr ""
 
 #: ../../docs/modules/collecting.md:61 ../../docs/modules/collecting.md:86
 #: ../../docs/modules/collecting.md:91 ../../docs/modules/collecting.md:101
 #: ../../docs/modules/collecting.md:106 ../../docs/modules/collecting.md:111
-#: ../../docs/modules/collecting.md:121 1f55de8e1fc045e58db27a231e8deb3e
-#: 20b74d3e692c42049f6559d70b8df199 3a7192de60fb4a4d9aee33c489ded273
-#: 8243f8128b564bbab7b3a727187a0a66 8cca50a2047b465faaae88914d1856eb
-#: b3b721a72ad24695a483b86ddf22cf71 f2b1bac629a24512bf0ff4ab9c5e1928
+#: ../../docs/modules/collecting.md:121
 msgid ""
 "Prompt Text: If you want the prompt to be something other than the "
 "property label."
@@ -231,54 +228,44 @@ msgstr ""
 
 #: ../../docs/modules/collecting.md:62 ../../docs/modules/collecting.md:92
 #: ../../docs/modules/collecting.md:112 ../../docs/modules/collecting.md:122
-#: 17fa1a3fd1db40c5ae6b4131e7cc3458 6cf34d161f3445d2870ec523eddb306b
-#: 90cc8c9c888342a09f9b61ea4233c4ce a08557351124421d97f1c8c532bd3c73
 msgid "Input type: length and kind of input box. Choose from:"
 msgstr ""
 
 #: ../../docs/modules/collecting.md:63 ../../docs/modules/collecting.md:93
 #: ../../docs/modules/collecting.md:113 ../../docs/modules/collecting.md:123
-#: 0e1c1bd9f8b040ac9c3b088c1fa22c61 20eda9ee47294119836674ef973f89df
-#: 54974afb0c4f488c8d8f4944c10a67c2 fe33956cc14a489e9f84082f100e22bc
 msgid "Text box (one line)"
 msgstr ""
 
 #: ../../docs/modules/collecting.md:64 ../../docs/modules/collecting.md:94
 #: ../../docs/modules/collecting.md:114 ../../docs/modules/collecting.md:124
-#: 4558b40b6a214eb88d05fc31ad0187ec 7abe07d50e3a458da8065981f08f5d70
-#: bb181f5dc6dc42319e0d6d6e8b27cbc9 c5ee024400ad4d9ba5d9b306ceb53786
 msgid "Text box (multiple line)"
 msgstr ""
 
 #: ../../docs/modules/collecting.md:65 ../../docs/modules/collecting.md:95
 #: ../../docs/modules/collecting.md:115 ../../docs/modules/collecting.md:125
-#: 5622dd9964cf4d688fe98b176b905702 5f9366b7dceb492bb763f55cdad9b075
-#: 722956a549714427a224b7a2e0ef7685 cec7c508dc9849ceab31b2a19921316a
 msgid "Select menu (dropdown)"
 msgstr ""
 
 #: ../../docs/modules/collecting.md:66 ../../docs/modules/collecting.md:96
 #: ../../docs/modules/collecting.md:116 ../../docs/modules/collecting.md:126
-#: 24a96ce6843b49abb3017357d3d5b918 3f9f25444c41492e9042fe4cebb4bac9
-#: 9c0dbaaaccb341b79fa4493d5ef11d38 a91c6d6add49471484092881d7396aa7
 msgid ""
 "If you choose \"Select menu,\" you will need to enter the options for the"
 " menu in the *Select Menu Options* field that will appear, with one "
 "option per line."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:67 c4cf730c326341ca82103bc5ef31e9db
+#: ../../docs/modules/collecting.md:67
 msgid "Item resource (will appear as dropdown)"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:68 537ec5c984cb4f6c930d8e9c8e4e993c
+#: ../../docs/modules/collecting.md:68
 msgid ""
 "This will offer the user the choice of existing items to add as a "
 "property value. You can paste anything after the `admin/` in the url of "
 "an advanced search to load specific items."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:69 875637147e944f69a8c184bbe060dea1
+#: ../../docs/modules/collecting.md:69
 msgid ""
 "[Custom Vocab](../modules/customvocab/) (requires that plugin to be "
 "installed). If selected, an additional dropdown will load. Use this to "
@@ -286,125 +273,121 @@ msgid ""
 " the users on the public side of the form."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:70 bad81a0a8ea349cab9731543c7767269
+#: ../../docs/modules/collecting.md:70
 msgid ""
 "If you have [Numeric data types](../modules/numericdatatypes/) installed,"
 " you will also have the options:"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:71 04c62a8038d34d67a14fab83d55a49cd
+#: ../../docs/modules/collecting.md:71
 msgid "Numeric timestamp"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:72 c224d6a3d8444336bc1bf509a882bbfb
+#: ../../docs/modules/collecting.md:72
 msgid "Numeric interval"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:73 49e21a86a3a142fa9da2cbe060f7e8ef
+#: ../../docs/modules/collecting.md:73
 msgid "Numeric duration"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:74 d2f208b68e864da4a54a5733e07ec9dc
+#: ../../docs/modules/collecting.md:74
 msgid "Numeric integer"
 msgstr ""
 
 #: ../../docs/modules/collecting.md:75 ../../docs/modules/collecting.md:87
 #: ../../docs/modules/collecting.md:97 ../../docs/modules/collecting.md:102
 #: ../../docs/modules/collecting.md:107 ../../docs/modules/collecting.md:117
-#: ../../docs/modules/collecting.md:127 5318fbb5b9924117ba8775610e57dc72
-#: 79aef402d6584a759b214906801c0d64 8f98a88ed6e7494f8ed2a23bc59f2a77
-#: 972a1e1b242a4561acf004ead440123f c425c70f52d844ce906426509f5c6418
-#: ce4ec657018448a58ec889219abc71c8 f08be61624f24be2812ac4cf15065ff4
+#: ../../docs/modules/collecting.md:127
 msgid "Check the Required? box if the prompt is required."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:77 e6456a463104441bb73731be1f17379a
+#: ../../docs/modules/collecting.md:77
 msgid "**Item Media** allows visitors to add media to their item. Media Type:"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:80 4d8f58229cea4ec3a87e3506c6cb7724
+#: ../../docs/modules/collecting.md:80
 msgid "A dropdown for Media type, with the following options:"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:81 d570b4eb64ed4193a0aff84f00e85191
+#: ../../docs/modules/collecting.md:81
 msgid "Upload one, which allows users to upload one file;"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:82 063f203dc0f245a8ac4393cb576fe87e
+#: ../../docs/modules/collecting.md:82
 msgid ""
 "Upload multiple, which allows users to upload multiple files at once "
 "using the browser's native file picker (with shift or control keys);"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:83 36791daf2dea4960ab5168bba13bb844
+#: ../../docs/modules/collecting.md:83
 msgid "Map (requires Mapping module);"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:84 04476a58a3554f7da7c8944041735371
+#: ../../docs/modules/collecting.md:84
 msgid "URL;"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:85 d7753e684a1445dda19e2b1f603d0de7
+#: ../../docs/modules/collecting.md:85
 msgid "HTML."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:89 117062981c55474399182c04001671bb
+#: ../../docs/modules/collecting.md:89
 msgid ""
 "**Item Supplementary** additional information for the item, not linked to"
 " any particularly vocabulary or property."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:99 b2be620ce9324743a2a8cfbbde3ac211
+#: ../../docs/modules/collecting.md:99
 msgid ""
 "**User Name** which will be used to assign the item owner. If the person "
 "using the form is a logged-in user of the Omeka S installation, this will"
 " autopopulate."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:104 4d8670d357d54ede899aef43197c0f06
+#: ../../docs/modules/collecting.md:104
 msgid ""
 "**User Email** where the person adding the item can give their email. If "
 "this is left blank, they will not receive an email with the text in the "
 "*Email Text* field."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:109 d2b6edbf967f41b182fdee9a64ccb291
+#: ../../docs/modules/collecting.md:109
 msgid ""
 "**User Private** collect additional information from the user which will "
 "be kept private."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:119 3b00f9bf6160433fbc7d2318650db2da
+#: ../../docs/modules/collecting.md:119
 msgid ""
 "**User Public** collect additional information from the user which can be"
 " made public"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:129 461c056ad12c427989ebf3f86ee2e818
+#: ../../docs/modules/collecting.md:129
 msgid ""
 "**HTML** insert a block of HTML text into the form, for additional "
 "guidance, information, etc. The Prompt Text field for this prompt has "
 "WYSIWG formatting options."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:131 8604c3a492b14f7ea8475f4a13e0fa66
+#: ../../docs/modules/collecting.md:131
 msgid ""
 "You can rearrange the order of prompts by dragging and dropping them "
 "using the three-line icon on the far left of the Prompt Type label."
 msgstr ""
 
 #: ../../docs/modules/collecting.md:133 ../../docs/modules/collecting.md:154
-#: a519d16ac61241f2869cb80c39ad7e19 c6bcd528120e406c868c1102a3526296
 msgid ""
 "![Prompts with a red arrow pointing to the icon for dragging and "
 "dropping](modulesfiles/collecting_dragthis.png)"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:135 d45489436be041fbacf9d9ba89f4b9e4
+#: ../../docs/modules/collecting.md:135
 msgid "Manage an existing form"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:136 3e9cac6ff2e04eeca0def98a0cda663d
+#: ../../docs/modules/collecting.md:136
 msgid ""
 "Once you have at least one Collecting form, they will appear on the "
 "Collecting Forms page. Click the edit button (pencil) to edit the form. "
@@ -412,86 +395,86 @@ msgid ""
 "collected items."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:138 dd53d2591073432a836f33569f7a943b
+#: ../../docs/modules/collecting.md:138
 msgid "The form page has two tabs: Form Information and Collected Items"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:140 097a593329a54f06a4abc94a9f429e71
+#: ../../docs/modules/collecting.md:140
 msgid ""
 "Form tabs show you the existing data for label, anonymity type, and item "
 "set, along with a table of all of the prompts, in order, with their type,"
 " text, and whether they prompt is required."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:142 0d04eeaf3453498ba483c31684c348d5
+#: ../../docs/modules/collecting.md:142
 msgid ""
 "![Form info page for \"share a quote\" "
 "form](modulesfiles/collecting_forminfo.png)"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:144 adbe5a4fede74b3a9ad42b62af2ae5a9
+#: ../../docs/modules/collecting.md:144
 msgid ""
 "To edit the form, click the *Edit form* button in the upper right hand "
 "corner."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:146 5959686d65274382aa1a44d12b74eed9
+#: ../../docs/modules/collecting.md:146
 msgid "The options are in the edit form page are the same as when adding a form."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:148 0bcc6cc9af314bcc8c5055950ef1cc17
+#: ../../docs/modules/collecting.md:148
 msgid ""
 "To edit a prompt, click the edit button (pencil) for the prompt. This "
 "will open the sidebar drawer for that prompt."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:150 2db8438de08746f7a0299f8e9f8113ca
+#: ../../docs/modules/collecting.md:150
 msgid ""
 "![Prompts with a red arrow pointing at the column of edit "
 "buttons](modulesfiles/collecting_edit2.png)"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:152 b60d5ae0a112479d90fbb8d9fcb91628
+#: ../../docs/modules/collecting.md:152
 msgid ""
 "Rearrange the order of prompts by dragging and dropping them using the "
 "three-line icon on the far left of the Prompt Type label."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:157 20192ec006244ee3b7ec551c863e8e22
+#: ../../docs/modules/collecting.md:157
 msgid "Add a Collecting Form to Site Pages"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:159 58852034e162453abcaaa6c59ee9f2fd
+#: ../../docs/modules/collecting.md:159
 msgid "To add a collecting form to a page:"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:161 f33fd7beb9e64cb88e17df6cd4bc4e6a
+#: ../../docs/modules/collecting.md:161
 msgid ""
 "Go to the page on which you want the form to appear (or add a new page "
 "for the form)"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:162 2d167f87369749f2b96ddf5fea72aa4b
+#: ../../docs/modules/collecting.md:162
 msgid "From the *Add New Block* sidebar select the *Collecting* block"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:163 3f711660229f488c8a8c3fbe37d09130
+#: ../../docs/modules/collecting.md:163
 msgid ""
 "On the Collecting block, click the box for the form you want to include. "
 "You can add more than one form to the page by checking more than one box."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:165 206a76822a0c48bca01c052e57bea58f
+#: ../../docs/modules/collecting.md:165
 msgid ""
 "![Collecting block with one form, its box "
 "checked](modulesfiles/collecting_pageblock.png)"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:167 e24c09c26e284302a708b794b629fd09
+#: ../../docs/modules/collecting.md:167
 msgid "Managing Collected Items"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:169 c10ed4d692d044999e20264b7f1d0fec
+#: ../../docs/modules/collecting.md:169
 msgid ""
 "Items added via a collecting form will appear in the Items section of the"
 " Admin Dashboard, but you will likely find it easier to manage them "
@@ -499,26 +482,26 @@ msgid ""
 "collected."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:171 5f76ae307a844418beaf24d861019cb1
+#: ../../docs/modules/collecting.md:171
 msgid ""
 "To see the items collected with a specific form, go to the Collecting tab"
 " in the context menu for the site and click on the form label. Then click"
 " the *Collected Items* tab."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:173 e791cb5b97f54210941756d2d6e1748d
+#: ../../docs/modules/collecting.md:173
 msgid ""
 "![Collected Items tab with a number of "
 "items](modulesfiles/collecting_items.png)"
 msgstr ""
 
-#: ../../docs/modules/collecting.md:175 db4a21733a94416fabce73c002ea3b0b
+#: ../../docs/modules/collecting.md:175
 msgid ""
 "This tab has a table of collected items with their: Title, the Date "
 "Submitted, Reviewed By, Status, and ellipses (three dots)."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:177 29f4d60bc94b4cddacb062dce73aaea6
+#: ../../docs/modules/collecting.md:177
 msgid ""
 "To see the collected information, including user name, email, etc, for "
 "any item, click on the more info ellipses. Clicking on an item title will"
@@ -526,7 +509,7 @@ msgid ""
 "menu)."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:179 a40bd5dde7874ba1a33a41e2c75f2ed8
+#: ../../docs/modules/collecting.md:179
 msgid ""
 "A collected item can have one of three status messages: Needs Review, "
 "Public, and Private. To change the status of an item, select the desired "
@@ -534,7 +517,7 @@ msgid ""
 "the upper right corner."
 msgstr ""
 
-#: ../../docs/modules/collecting.md:181 7951f815759342679eaa2010db25ef96
+#: ../../docs/modules/collecting.md:181
 msgid ""
 "When you update the status of an item from \"Needs Review\" to either "
 "\"Public\" or \"Private\", your name will appear in the row for that item"

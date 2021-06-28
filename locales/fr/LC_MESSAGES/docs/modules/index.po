@@ -18,65 +18,65 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../docs/modules/index.md:1 641d3a1267774afb87e658997d8981da
+#: ../../docs/modules/index.md:1
 msgid "Modules Management"
 msgstr ""
 
-#: ../../docs/modules/index.md:3 4106489006934f3e9bcd6ef59f8071fd
+#: ../../docs/modules/index.md:3
 msgid "Modules extend the functionality of your Omeka S installation and sites."
 msgstr ""
 
-#: ../../docs/modules/index.md:5 64a3375edac545b6b432c45de664f424
+#: ../../docs/modules/index.md:5
 msgid "Managing Modules"
 msgstr ""
 
-#: ../../docs/modules/index.md:7 0bbd124617814cb3878f654ce123f179
+#: ../../docs/modules/index.md:7
 msgid ""
 "To see what modules are installed on your Omeka S site, click on the "
 "Modules link on the left-hand navigation of your [admin dashboard"
 "](../admin-dashboard.md)"
 msgstr ""
 
-#: ../../docs/modules/index.md:9 643c0ca1760e43dbbd67b7e9299371cc
+#: ../../docs/modules/index.md:9
 msgid ""
 "Note that only Global Administrators can install and manage modules. Site"
 " Administrators can browse installed modules. Other users do not have "
 "access to this tab."
 msgstr ""
 
-#: ../../docs/modules/index.md:11 7bff6760ca374dcb99660bd71cccf173
+#: ../../docs/modules/index.md:11
 msgid ""
 "![Screen capture of admin dashboard showing Modules tab "
 "active.](modulesfiles/modulesbrowse.png)"
 msgstr ""
 
-#: ../../docs/modules/index.md:13 1fd335602ea1490daed9e4e1e4eb117a
+#: ../../docs/modules/index.md:13
 msgid ""
 "Any modules which have been installed on the Omeka S install should "
 "appear in the list of Modules. Each module displays the name of the "
 "module with the version number, creator, and a summary of its function."
 msgstr ""
 
-#: ../../docs/modules/index.md:15 d0ed5ea87df14039a6b08a361fd34327
+#: ../../docs/modules/index.md:15
 msgid ""
 "![CSV import module label. It is version 0.1 alpha, created by RRCHNM, "
 "and is summaries as \"import content from a CSV "
 "file.\"](modulesfiles/moduleLabel.png)"
 msgstr ""
 
-#: ../../docs/modules/index.md:18 d63d3210485644d9a252cbafc7a745b6
+#: ../../docs/modules/index.md:18
 msgid ""
 "There are multiple buttons which can appear to the right of a module’s "
 "label. Each button has both an icon and a label describing its action:"
 msgstr ""
 
-#: ../../docs/modules/index.md:20 1b81539058f047d7bb628c0210527d60
+#: ../../docs/modules/index.md:20
 msgid ""
 "*Configure* (a wrench icon): some modules have settings which can be "
 "adjusted. Click this icon to adjust settings for the module in this row."
 msgstr ""
 
-#: ../../docs/modules/index.md:21 cafaf7d4a8414c9a90e24145606f6cfc
+#: ../../docs/modules/index.md:21
 msgid ""
 "*Activate/Deactivate* (sliding switch): when a module is active, the "
 "slider area background is transparent and the switch is to the left. When"
@@ -84,7 +84,7 @@ msgid ""
 " switch is to the right."
 msgstr ""
 
-#: ../../docs/modules/index.md:22 56cf4152208749579e34f8f077b32008
+#: ../../docs/modules/index.md:22
 msgid ""
 "*Install/Uninstall* (arrow and rectangle): use this button to install or "
 "uninstall a module. When the arrow is coming from the rectangle, the "
@@ -92,13 +92,13 @@ msgid ""
 "rectangle, the button will install the module."
 msgstr ""
 
-#: ../../docs/modules/index.md:24 45d2f2b03fe2444bb3e8d32ae58c5d07
+#: ../../docs/modules/index.md:24
 msgid ""
 "![Icons described above, from right to left: configure, activate and "
 "deactivate, install and uninstall](modulesfiles/moduleButtons.png)"
 msgstr ""
 
-#: ../../docs/modules/index.md:26 af8f6f2a398f46359f199275f3cf1956
+#: ../../docs/modules/index.md:26
 msgid ""
 "When a module has a new release, it will display on the browse page with "
 "a message in green stating \"A new version of this module is available. "
@@ -106,7 +106,7 @@ msgid ""
 "(See updating, below, for more information)"
 msgstr ""
 
-#: ../../docs/modules/index.md:28 ac84bb75628f403a985d8dfe489eb449
+#: ../../docs/modules/index.md:28
 msgid ""
 "![File Sideload module row on the module browse page. Below the "
 "information about the module's version and function is the message quoted"
@@ -114,15 +114,15 @@ msgid ""
 "highlight.](modulesfiles/moduleUpdatemsg.png)"
 msgstr ""
 
-#: ../../docs/modules/index.md:30 3d8be7c5de5e46028cd806a6131adf1d
+#: ../../docs/modules/index.md:30
 msgid "Installing Modules"
 msgstr ""
 
-#: ../../docs/modules/index.md:31 23286c28b393486990d366400b4bcf43
+#: ../../docs/modules/index.md:31
 msgid "Add the Module to Omeka S"
 msgstr ""
 
-#: ../../docs/modules/index.md:32 9980f82492924481848d87e9bcae59a5
+#: ../../docs/modules/index.md:32
 msgid ""
 "In order to appear in the *Modules* table on the Modules tab of the Admin"
 " Dashboard for your Omeka S installation, modules must be manually added "
@@ -130,37 +130,37 @@ msgid ""
 " connection."
 msgstr ""
 
-#: ../../docs/modules/index.md:34 612a9e6272df4b57bab03d28367c77d8
+#: ../../docs/modules/index.md:34
 msgid ""
 "Modules which have been registered with Omeka are available on the "
 "[Modules](https://omeka.org/s/modules/) page of the Omeka S site. Other "
 "modules may be made available by their authors in other locations."
 msgstr ""
 
-#: ../../docs/modules/index.md:36 e2ea429be0fc4488b90a2ebc8086c1d7
+#: ../../docs/modules/index.md:36
 msgid "To add a module to the site using FTP"
 msgstr ""
 
-#: ../../docs/modules/index.md:38 15d4da162b6146bc9c5199fb7f8dc48f
+#: ../../docs/modules/index.md:38
 msgid "Download the zipped module to your computer."
 msgstr ""
 
-#: ../../docs/modules/index.md:39 14235378396c4eebbcee0ce170387ff1
+#: ../../docs/modules/index.md:39
 msgid ""
 "Open your FTP client, log on to the server that houses  the Omeka S "
 "install and navigate to the `/modules` folder (this should be located in "
 "the main folder of the install)."
 msgstr ""
 
-#: ../../docs/modules/index.md:40 e21033b178204a6da07c6de9b1c85726
+#: ../../docs/modules/index.md:40
 msgid "Upload the zipped module to the `/modules` folder"
 msgstr ""
 
-#: ../../docs/modules/index.md:41 7f1930177ffb4ad08820ec073e5ccb40
+#: ../../docs/modules/index.md:41
 msgid "Unzip the module"
 msgstr ""
 
-#: ../../docs/modules/index.md:43 9bdafa597c964e409e9f91d8443f8244
+#: ../../docs/modules/index.md:43
 msgid ""
 "Please note that if you are downloading the folder for a module from "
 "GitHub rather than the [Module Directory](https://omeka.org/s/modules/), "
@@ -170,28 +170,28 @@ msgid ""
 " please consult the [GitHub help files](https://help.github.com/en)."
 msgstr ""
 
-#: ../../docs/modules/index.md:45 bf45b89379844d21a1cbec74c0058c8e
+#: ../../docs/modules/index.md:45
 msgid ""
 "You can also use ssh to clone a module directly from that module's git "
 "repository. Do this only if you are comfortable with git, github, and "
 "working with ssh."
 msgstr ""
 
-#: ../../docs/modules/index.md:47 b533c6144c564fe39921fc49e2fc6e77
+#: ../../docs/modules/index.md:47
 msgid "Install the Module"
 msgstr ""
 
-#: ../../docs/modules/index.md:48 bf7e0e6f9d414a1e8d1c9b0432f96e63
+#: ../../docs/modules/index.md:48
 msgid ""
 "To install a module, navigate to the Modules tab on the left-hand "
 "navigation of the admin dashboard of your Omeka S installation."
 msgstr ""
 
-#: ../../docs/modules/index.md:50 05c7043c4d8e461ea0e3c8c9d210e88e
+#: ../../docs/modules/index.md:50
 msgid "Find the module in the table and click the install button."
 msgstr ""
 
-#: ../../docs/modules/index.md:52 85b36529ae164c3a917ee0a7f7db2146
+#: ../../docs/modules/index.md:52
 msgid ""
 "The module is now installed. You should see a success message once the "
 "page reloads. For modules with configuration options, you will be taken "
@@ -200,153 +200,153 @@ msgid ""
 "*Status* of the module should change from “Not Installed” to “Not Active”"
 msgstr ""
 
-#: ../../docs/modules/index.md:54 780b7db5a1e34038adf5b3d2e35c3f4f
+#: ../../docs/modules/index.md:54
 msgid ""
 "![Success message with green highlight reading “The module was "
 "successfully installed”](modulesfiles/mods_insuccess.png)"
 msgstr ""
 
-#: ../../docs/modules/index.md:56 4f632b09440c43f2bd4096d82dc2ef59
+#: ../../docs/modules/index.md:56
 msgid "Modules are automatically activated when installed."
 msgstr ""
 
-#: ../../docs/modules/index.md:58 f8c3e18364274ce8b597fa3c5323d803
+#: ../../docs/modules/index.md:58
 msgid "Activating Module"
 msgstr ""
 
-#: ../../docs/modules/index.md:59 ae296f3f37634662bd8eebbec48b0459
+#: ../../docs/modules/index.md:59
 msgid ""
 "If you have a module which is installed but inactive, click the activate "
 "button to use the module."
 msgstr ""
 
-#: ../../docs/modules/index.md:61 b3fbe2f32eb148a68f03aa8cf3a5a887
+#: ../../docs/modules/index.md:61
 msgid ""
 "You should see a success message once the page reloads, and the *Status* "
 "of the module should change from “Not Active” to “Active”"
 msgstr ""
 
-#: ../../docs/modules/index.md:63 f90172ccae954424a3f06048415046de
+#: ../../docs/modules/index.md:63
 msgid ""
 "![Success message with green highlight reading “The module was "
 "successfully activated”](modulesfiles/mods_acsuccess.png)"
 msgstr ""
 
-#: ../../docs/modules/index.md:65 036b4b1ea5ac4b34bdabfe12f40ba289
+#: ../../docs/modules/index.md:65
 msgid "Configuring a module"
 msgstr ""
 
-#: ../../docs/modules/index.md:66 27d5ce1c312d474a89f8916e704e5e76
+#: ../../docs/modules/index.md:66
 msgid ""
 "Some, but not all, modules include the option to configure settings for "
 "that module. If an active module displays the *configure* (wrench) "
 "button, you may configure that module."
 msgstr ""
 
-#: ../../docs/modules/index.md:68 0bab5e6b3ebc4839aba9068e065f55ed
+#: ../../docs/modules/index.md:68
 msgid ""
 "Information regarding configuration options for individual modules can be"
 " found on the documentation page for those modules."
 msgstr ""
 
-#: ../../docs/modules/index.md:70 7b28f15beec64bfc8a76bffecf6f12ff
+#: ../../docs/modules/index.md:70
 msgid "Uninstalling a module"
 msgstr ""
 
-#: ../../docs/modules/index.md:71 90176e9969ad4b8d9a1718cb5760469e
+#: ../../docs/modules/index.md:71
 msgid "Removing a module is essentially installing in reverse:"
 msgstr ""
 
-#: ../../docs/modules/index.md:73 74ac92bc079945cfb2689729f5054384
+#: ../../docs/modules/index.md:73
 msgid "Deactivate the module by clicking the *deactivate* button"
 msgstr ""
 
-#: ../../docs/modules/index.md:74 3c2ffe760ab84498ad3d523595f43a21
+#: ../../docs/modules/index.md:74
 msgid "Uninstall the module by clicking the *uninstall* button"
 msgstr ""
 
-#: ../../docs/modules/index.md:75 d74f5db041104fbfa7700d4c528f9e06
+#: ../../docs/modules/index.md:75
 msgid ""
 "A drawer will open on the right side of the window asking you to confirm "
 "that you want to uninstall the module. Click “Confirm Uninstall” to "
 "continue."
 msgstr ""
 
-#: ../../docs/modules/index.md:77 c0d805edeb4544c6bfee7d22a0b5d2ea
+#: ../../docs/modules/index.md:77
 msgid ""
 "![Uninstall module dialogue with the message “Are you sure you would like"
 " to uninstall this module?”](modulesfiles/mods_confirmuninstall.png)"
 msgstr ""
 
-#: ../../docs/modules/index.md:79 9d7f67677ef54762807ed77afbb47f7a
+#: ../../docs/modules/index.md:79
 msgid ""
 "The uninstalled module will continue to appear on your Modules page "
 "unless the folder for the module is removed from the /modules folder on "
 "the Omeka S installation, which can be done via FTP or SSH."
 msgstr ""
 
-#: ../../docs/modules/index.md:81 b25499ed0bcf49e9a704d76fd82c4821
+#: ../../docs/modules/index.md:81
 msgid "Updating a module"
 msgstr ""
 
-#: ../../docs/modules/index.md:82 4e452e4366034b5e85826c76ed00807c
+#: ../../docs/modules/index.md:82
 msgid "To update a module using FTP:"
 msgstr ""
 
-#: ../../docs/modules/index.md:84 6f3b0266effc435e872605ab8ecef852
+#: ../../docs/modules/index.md:84
 msgid ""
 "From the Modules tab on your Omeka S installation, deactivate the module "
 "you're going to update."
 msgstr ""
 
-#: ../../docs/modules/index.md:85 2ecf0dab35d2432bbcc969a444463576
+#: ../../docs/modules/index.md:85
 msgid ""
 "From the Omeka S website or other source, download the latest release of "
 "zipped module to your computer."
 msgstr ""
 
-#: ../../docs/modules/index.md:86 f7d83d67277d466089407e75127921c5
+#: ../../docs/modules/index.md:86
 msgid ""
 "Open your FTP client and log on to the server that houses the Omeka S "
 "install."
 msgstr ""
 
-#: ../../docs/modules/index.md:87 69f1b20486c940c0bc000d34e10c2354
+#: ../../docs/modules/index.md:87
 msgid ""
 "Navigate to the /modules folder (this should be located in the main "
 "folder of the install)."
 msgstr ""
 
-#: ../../docs/modules/index.md:88 d5161e72160242b99f5d5577f7d779ec
+#: ../../docs/modules/index.md:88
 msgid ""
 "Move the old copy of the module to your desktop (or somewhere else on "
 "your local machine where you will be able to find it)."
 msgstr ""
 
-#: ../../docs/modules/index.md:89 a0aa5f5ddd6549ee8591501a1b6f69a2
+#: ../../docs/modules/index.md:89
 msgid ""
 "Use your FTP client to upload the zipped folder for the latest version of"
 " the module to the /modules folder"
 msgstr ""
 
-#: ../../docs/modules/index.md:90 8632094ca2094b929e94f9d144393e69
+#: ../../docs/modules/index.md:90
 msgid "In your FTP client, unzip the new version module"
 msgstr ""
 
-#: ../../docs/modules/index.md:91 939503d613e54303963acbfe8a6c466a
+#: ../../docs/modules/index.md:91
 msgid ""
 "On the Omeka S installation dashboard, go to the Modules tab and activate"
 " the new version of the module."
 msgstr ""
 
-#: ../../docs/modules/index.md:93 491adf2237ab4eb697418010c598ec83
+#: ../../docs/modules/index.md:93
 msgid ""
 "If you are concerned about problems with the update, be sure to keep the "
 "older version of the module on your local machine in case you have to "
 "switch them back. You would roll back in the same way you updated."
 msgstr ""
 
-#: ../../docs/modules/index.md:95 b8078083d4a742f093c236083937c4f6
+#: ../../docs/modules/index.md:95
 msgid ""
 "If you run into problems while updating, turn on [error "
 "logging](../errorLogging) and post on the [Omeka "
