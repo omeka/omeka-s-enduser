@@ -36,26 +36,21 @@ Or you can add one of your [pages](../sites/site_pages), which should be listed 
 
 ![URL block with the label “RRCHNM” and url chnm.gmu.edu](../sites/sitesfiles/sitenav_url.png) URL Block
 
-**Browse** blocks create a browse page for [resources](../sites/site_resources.md) already associated with your site. There are blocks to create a browse items page and a block to browse item sets.  
+**Browse** blocks create a browse page for [resources](../sites/site_resources.md) already associated with your site. There are blocks to create a browse items page and a block to browse item sets page.  
 
 You can change the *label* of the block to reflect what, specifically, site visitors will browse. 
 
-If you want to refine the Browse block, you can use the Query to create a search query that returns the desired results. 
+![Browse block with the query element](../sites/sitesfiles/sitenav_query.png)
 
-![Browse block with the label ‘Browse’ and no query](../sites/sitesfiles/sitenav_browse.png)
+To refine the Browse block, you can use the Query to create a search query that returns the desired results. Note that you **must** enter a query for the block to function.
 
-Note that you **must** enter a query for the block to function.
+![Advanced search query drawer](../sites/sitesfiles/sitenav_query_search.png)
 
-To create a Browse Item Set navigation for all the item sets which you have already assigned to the [resources](../sites/site_resources/) with the site on which you are working:
+Click the Edit button to reveal the advanced search interface in the drawer. Once you are satisfied with the universe of items in your search, clicking the Apply button will set the universe of items for the Browse block.
 
-- (In a separate window): conduct an [advanced item set search](../search/#advanced-item-set-search) using your site for the "In site pool" option.
-- Once the search results load, highlight everything in your browser's address bar starting with the question mark all the way to the end of the search url (to the right).
+![Browse block with the edit query element](../sites/sitesfiles/sitenav_query_update.png)
 
-![Browser address bar with a query string highlighted](../sites/sitesfiles/sitenav_itemsetsearch.png)
-
-- Paste the text you just copied into the "Query" field of the Browse item sets Navigation link.
-
-![Browse item sets navigation item with a query pasted in to the Query field, and no alternate label supplied](../sites/sitesfiles/sitenav_browseitemset.png)
+Once a query has been set, you can click Edit to update the universe of items. You can click Advanced Edit to directly edit the query string. Finally, you can Clear a query to start over. If you have cleared a search in error, you can Restore it. 
 
 ### Site Page
 Site page blocks create links to pages you have built for your site. The *page* field indicates which page is in use, as does the block title. You can change the *label* for the page link in the navigation, as in the example image below. Note that changing the label does not change the page title. 

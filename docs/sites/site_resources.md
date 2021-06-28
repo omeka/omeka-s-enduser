@@ -29,15 +29,17 @@ A table with the following options for managing your current items:
 
 ![Item resources landing for a site with 28 items](../sites/sitesfiles/sites_resources1.png)
 
-If you want to make changes to the item sources in your site, select the radio button for the action you want to take. For all but "Do nothing" and "Remove all", a search form will automatically load.
+If you want to make changes to the item sources in your site, select the radio button for the action you want to take. For all but "Do nothing" and "Remove all", a Query Edit element will appear.
 
-![Item resources with "replace" selected and the search form loaded](../sites/sitesfiles/sites_resources2.png)
+![Item resources with "add" selected and the search form loaded](../sites/sitesfiles/sites_resources_query_element.png)
+
+Clicking edit will reveal an advanced search form in the drawer. 
+
+![Advanced Search query drawer with People, Location, and Event resource templates added](../sites/sitesfiles/sites_resources_query_drawer.png)
 
 Note that the search options in the form work together to build an overall search. If you had the search in the image above, looking for items where "Creator" contains the word "Doyle" and you added a criteria where Class=Text, it would only add items to your pool which matched *both* statements.
 
-Above the search fields is a button to Preview this search. Clicking the button after creating a search will open a new browser tab with the items which meet the criteria of the search.
-
-There is also a checkbox for "keep this search". Checking this box will re-load this search the next time you come to make changes to the site items. 
+Above the search fields is a button to Preview this search. Clicking the button after creating a search will open a new drawer with the items which meet the criteria of the search.
 
 Search forms options are:
 
@@ -69,7 +71,11 @@ To find a resource ID, go to the resource and look at the url in your browser's 
 
 Note that the fields for searches by value, class, template, and item set have a large red plus sign to the left of the select options. Use these to add more than one search of this kind to your form. You can use the red trash can icon to the right of the field to remove it.
 
-![Select by class with two select fields loaded](../sites/sitesfiles/sites_resourcesSelectMulti.png)
+If you would like to clear your search, select Reset. Once you are satisfied with your items, select Apply to set the universe. 
+
+![Item resource query element with update options ](../sites/sitesfiles/sites_resources_query_update.png)
+
+Even after you've applied your query, you can still Edit, Restore your previous query, or Clear your query. Also, if this is a query that you are likely to repeat, you can select the checkbox to *Keep this query*.
 
 Item Sets
 ---------------------------
