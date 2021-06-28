@@ -706,7 +706,7 @@ If you have [Mapping](../modules/mapping/) (minimum version 1.1.0) installed and
 - *Default zoom* should be a number between 1 (most zoomed out) and 18 (most zoomed in)
 
 ### File Sideload
-If you have [File Sideload](../filesideload) (minimum version 1.2.0) installed and active, you can use it as a source for media when running a csv import.
+If you have [File Sideload](filesideload) (minimum version 1.2.0) installed and active, you can use it as a source for media when running a csv import.
 
 Everything on the *Map to Omeka S data* tab will be the same. When you add a mapping and choose the "Media source" option, you will see that there is now an option for "Sideload"
 
@@ -715,6 +715,6 @@ Everything on the *Map to Omeka S data* tab will be the same. When you add a map
 For the data in this column, you need to include the full file name, including extension. So, for example, if you want to import a jpg file which is named "Jekyll_and_Hyde_Title" then the data in the media column of the csv you are importing should be `Jekyll_and_Hyde_Title.jpg`.
 
 ### Numeric Data Types
-If you have [Numeric Data Types](modules/numericdatatypes/) installed and active, it will add the option to set a column data type as numeric data.
+If you have [Numeric Data Types](numericdatatypes) installed and active, it will add the option to set a column data type as numeric data.
 
 ![Column options drawer with the data type dropdown open, showing options for numeric data types as well as the standard options](../modules/modulesfiles/csvimport-numericdata.png)

@@ -120,7 +120,7 @@ Within the preview map, there are five buttons:
   ![Screenshot of the WMS Overlays with empty fields and the US and Territories overlay above the fields. A blue arrow points to the overlay](../modules/modulesfiles/Mapping_Page_Overlays2.png)
  
 ### Timeline
-Timeline adds a timeline display to the left of the map view. Note that this feature requires the [NumericDataTypes](../modules/numericdatatypes/) module and at least one item that has a property with a Timestamp or Interval value (applied via the [resource template](../../content/resource-template/)). 
+Timeline adds a timeline display to the left of the map view. Note that this feature requires the [NumericDataTypes](../modules/numericdatatypes/) module and at least one item that has a property with a Timestamp or Interval value (applied via the [resource template](../content/resource-template)).
 
 - *Title headline:* displays on the first slide of the timeline (see ["Timeline public view"](../../modules/mapping/#timeline-public-view) below). You can use this to name the timeline.
 - *Title text:* appears below the title headline on the first slide of the timeline (see ["Timeline public view"](../../modules/mapping/#timeline-public-view) below). You can use this to provide context or narrative introduction for the timeline.

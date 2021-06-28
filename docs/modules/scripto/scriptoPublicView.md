@@ -18,7 +18,7 @@ From your Omeka S sites, you can create direct links to your Scripto projects us
 ### Scripto page block
 When you add the Scripto module, it creates a new [page block](../../../sites/site_pages/#page-blocks) called "Scripto"
 
-The Scripto page block offers a drop-down to let you select from all available Scripto [projects](../scriptoproject/). Select the project you want to link from the dropdown.
+The Scripto page block offers a drop-down to let you select from all available Scripto [projects](scriptoproject). Select the project you want to link from the dropdown.
 
 ![Dropdown with a single site option](../modulesfiles/scripto-pageBlock.png)
 

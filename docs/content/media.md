@@ -48,7 +48,7 @@ To edit existing media, you can:
 - Go to the Media browse page, click on the title to view the media's metadata and then click the "*Edit media* button in the upper right hand corner
 - Click on the media's name in the right-hand sidebar of an item's page to go to the media's metadata, and then click on *Edit media* from there.
 
-Editing media is very similar to editing [items](../../content/items) or [item sets](../../content/item-sets).
+Editing media is very similar to editing [items](../content/items) or [item sets](../content/item-sets).
 
 ![Edit media page, with no properties loaded](../content/contentfiles/media_edit.png)
 
