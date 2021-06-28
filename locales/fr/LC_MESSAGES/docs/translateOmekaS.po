@@ -4,78 +4,102 @@
 # manual package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Omeka S end user manual \n"
+"Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 08:33+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-06-28 16:01+0200\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../../docs/translateOmekaS.md:1 9ab28e25ddac472b8f59971b22df08ce
 msgid "Translate Omeka S"
-msgstr ""
+msgstr "Traduire Omeka S"
 
 #: ../../docs/translateOmekaS.md:3 ac1df57578a346e3980f83d2adeb3f28
 msgid ""
-"We need the community's help translating English text in Omeka S into new"
-" languages, so users can have a variety of choices. You don't need to "
+"We need the community's help translating English text in Omeka S into "
+"new languages, so users can have a variety of choices. You don't need to "
 "know how to write code to help translate Omeka S, you just need to be "
 "fluent in English and another language."
 msgstr ""
+"Nous avons besoin de l'aide de la communauté pour traduire le texte "
+"anglais d'Omeka S dans de nouvelles langues afin que les utilisateurs "
+"puissent choisir parmi une variété de choix. Vous n'avez pas besoin de "
+"savoir écrire du code pour nous aider à traduire Omeka S, vous devez "
+"juste parler couramment l'anglais et une autre langue."
 
 #: ../../docs/translateOmekaS.md:5 e5adfbd18b1843e98696484f1b90d944
 msgid "Getting Started"
-msgstr ""
+msgstr "Démarrage"
 
 #: ../../docs/translateOmekaS.md:7 c12b7f28d5784dfe98d977524ebd3f3b
 msgid "Sign up on Transifex.com"
-msgstr ""
+msgstr "Inscrivez-vous sur Transifex.com"
 
 #: ../../docs/translateOmekaS.md:8 2ff577b9a1954f069fd0fbe160c36e1a
 msgid ""
 "Omeka S uses [Transifex.com](https://www.transifex.com) to manage "
 "translations. To start helping to translate Omeka into other languages, "
-"you will first need to [sign up for an "
-"account](https://www.transifex.com/signup/). Transifex.net offers several"
-" plans, but since Omeka is an open-source project, you can use the Free "
-"plan."
+"you will first need to [sign up for an account](https://www.transifex."
+"com/signup/). Transifex.net offers several plans, but since Omeka is an "
+"open-source project, you can use the Free plan."
 msgstr ""
+"Omeka S utilise [Transifex.com](https://www.transifex.com) pour gérer "
+"les traductions. Pour commencer à nous aider à traduire Omeka dans "
+"d'autres langues, vous devez d'abord [créer un compte](https://www."
+"transifex.com/signup/). Transifex.net propose plusieurs plans, mais "
+"comme Omeka est un projet open-source, vous pouvez utiliser le plan Free."
 
 #: ../../docs/translateOmekaS.md:10 de4431a11c634cdb9b1bee01458c0b47
 msgid "Join or start a language team"
-msgstr ""
+msgstr "Rejoindre ou créer une équipe par langue."
 
 #: ../../docs/translateOmekaS.md:11 aab4b3e6a362498fabd58dfc83fdba8c
 msgid ""
-"Once you have registered for an account, visit the [Omeka S project "
-"page](https://www.transifex.com/omeka/omeka-s/) and click on the \"Help "
+"Once you have registered for an account, visit the [Omeka S project page]"
+"(https://www.transifex.com/omeka/omeka-s/) and click on the \"Help "
 "Translate Omeka S\" or \"Join Team\" button."
 msgstr ""
+"Une fois que vous avez ouvert un compte, visitez la page [Omeka S "
+"project page](https://www.transifex.com/omeka/omeka-s/)et cliquez sur le "
+"bouton \"Aide Traduire Omeka S\" ou \"Allez à vos équipes et langues\"."
 
 #: ../../docs/translateOmekaS.md:13 44acf21d6e044d84b5edbd34826f5646
 msgid ""
 "Here, you can choose among all the languages that are already being "
-"worked on. If you want to start work on a translation into a new language"
-" which isn't listed, you need to request that language first. Click "
-"\"cancel\" and scroll down to the bottom of the page and click the "
+"worked on. If you want to start work on a translation into a new "
+"language which isn't listed, you need to request that language first. "
+"Click \"cancel\" and scroll down to the bottom of the page and click the "
 "\"request language\" link, and select the language that you want to work "
 "on."
 msgstr ""
+"Ici, vous pouvez choisir parmi toutes les langues sur lesquelles vous "
+"travaillez déjà. Si vous souhaitez commencer à travailler sur une "
+"traduction dans une nouvelle langue non répertoriée, vous devez d'abord "
+"demander cette langue. Cliquez sur \"demander une langue\" en haut à "
+"droite de l'écran, puis sélectionnez la langue sur laquelle vous "
+"souhaitez travailler."
 
 #: ../../docs/translateOmekaS.md:15 98b79dfc18b644749086dde143f410fb
 msgid ""
-"On the other hand, if someone has already created a team for the language"
-" you want to work on, click the name of the language, and on the next "
-"screen click the \"Join this Team\" button. It will be up to the "
+"On the other hand, if someone has already created a team for the "
+"language you want to work on, click the name of the language, and on the "
+"next screen click the \"Join this Team\" button. It will be up to the "
 "coordinator to approve your request to be a member of the team."
 msgstr ""
+"D'autre part, si quelqu'un a déjà créé une équipe pour la langue sur "
+"laquelle vous souhaitez travailler, cliquez sur le nom de la langue, "
+"puis sur l'écran suivant, cliquez sur le bouton \"Rejoindre cette équipe"
+"\". Il incombera au coordinateur d’approuver votre demande "
+"d’appartenance à l’équipe."
 
 #: ../../docs/translateOmekaS.md:17 080de5b8f5504e77a8f2b231305f1069
 msgid ""
@@ -83,6 +107,9 @@ msgid ""
 "Omeka S dashboard and click on the \"Translate\" button to begin "
 "translating."
 msgstr ""
+"Une fois qu'un coordinateur vous a approuvé pour rejoindre l'équipe, "
+"vous pouvez accéder au tableau de bord Omeka S et cliquer sur le bouton "
+"\"Traduire\" pour commencer la traduction."
 
 #: ../../docs/translateOmekaS.md:19 a60fbd7325854b7e850c9b6437d3b34e
 msgid ""
@@ -90,27 +117,36 @@ msgid ""
 "an mo file from your po file, you can do it with msgfmt from the [GNU "
 "gettext package](http://www.gnu.org/software/gettext/)."
 msgstr ""
+"Si vous voulez vérifier votre traduction ou toute autre chose dont vous "
+"avez besoin pour créer un fichier mo à partir de votre fichier po, vous "
+"pouvez le faire avec msgfmt à partir du [GNU gettext package](http://www."
+"gnu.org/software/gettext/)."
 
 #: ../../docs/translateOmekaS.md:21 3b27482b9eab4406a3d735712214687a
 msgid ""
-"For Transifex-specific issues, please see their "
-"[documentation](http://docs.transifex.com/)"
+"For Transifex-specific issues, please see their [documentation](http://"
+"docs.transifex.com/)"
 msgstr ""
+"Pour les problèmes spécifiques à Transifex, veuillez consulter leur "
+"[documentation](http://docs.transifex.com/)"
 
 #: ../../docs/translateOmekaS.md:23 804835da6db547fb8ee53526fe4dc395
 msgid "Translation Guidelines"
-msgstr ""
+msgstr "Directives de traduction"
 
 #: ../../docs/translateOmekaS.md:25 b2f2efd9e3ef431f9b0a1a5e63789e83
 msgid ""
-"Most of the strings to be translated in Omeka are straightforward and can"
-" be translated directly. However, there are a few special cases that need"
-" to be treated with care."
+"Most of the strings to be translated in Omeka are straightforward and "
+"can be translated directly. However, there are a few special cases that "
+"need to be treated with care."
 msgstr ""
+"La plupart des chaînes à traduire dans Omeka sont simples et peuvent "
+"être traduites directement. Cependant, il existe quelques cas spéciaux "
+"qui doivent être traités avec soin."
 
 #: ../../docs/translateOmekaS.md:27 6904f09c3292443c87f0ea4d0ae07a7a
 msgid "Placeholders"
-msgstr ""
+msgstr "Placeholders / caractères spéciaux"
 
 #: ../../docs/translateOmekaS.md:28 dcc92d73c24249e1bbe8836af0ffdd07
 #, python-format
@@ -120,18 +156,29 @@ msgid ""
 "to allow Omeka to insert some changing piece of information, like the "
 "number of items in an Omeka site, into a translated string."
 msgstr ""
+"Certaines chaînes contiennent du texte qui ressemble à `%s` ou `%1$s`. "
+"Ces morceaux de texte étranges sont appelés **placeholders** en anglais "
+"qu'on peut traduire par \"variables\" ou \"chaîne de caractères spéciaux"
+"\" en français. Ces caractères sont utilisés pour permettre à Omeka "
+"d'insérer des informations changeantes, telles que le nombre d'éléments "
+"d'un site Omeka, dans une chaîne traduite."
 
 #: ../../docs/translateOmekaS.md:30 4a9171b3c5834dac940d08b968a3a223
 msgid ""
 "If a source string contains placeholders, you must include them in your "
 "translation. You can move the placeholders around within the string, and "
-"even change the order of numbered placeholders in the string, but all the"
-" placeholders from the source string must appear in the translation."
+"even change the order of numbered placeholders in the string, but all "
+"the placeholders from the source string must appear in the translation."
 msgstr ""
+"Si une chaîne source contient des caractères spéciaux, vous devez les "
+"inclure dans votre traduction. Vous pouvez déplacer les caractères dans "
+"la chaîne et même modifier l'ordre des caractères numérotés dans la "
+"chaîne, mais tous les caractères spéciaux de la chaîne source doivent "
+"apparaître dans la traduction."
 
 #: ../../docs/translateOmekaS.md:32 31f94c0d86e14f8fb84e0ffbea0bccc9
 msgid "HTML and URLs"
-msgstr ""
+msgstr "HTML et URLs"
 
 #: ../../docs/translateOmekaS.md:33 00f16e2432784476831b7b520fe66682
 msgid ""
@@ -139,4 +186,6 @@ msgid ""
 "change the plain English text in these strings, but you should preserve "
 "any HTML tags or URLs."
 msgstr ""
-
+"Quelques chaînes contiennent du code HTML incorporé ou des URL. Vous "
+"pouvez traduire et modifier le texte anglais brut dans ces chaînes, mais "
+"vous devez conserver les balises HTML ou les URL."

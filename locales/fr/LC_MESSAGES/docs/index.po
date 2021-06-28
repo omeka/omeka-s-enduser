@@ -4,23 +4,24 @@
 # manual package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Omeka S end user manual \n"
+"Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 08:33+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-06-28 15:41+0200\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../../docs/index.md:1 80dd524489ce4a0c97205c98850bb4b2
 msgid "Omeka S User Manual"
-msgstr ""
+msgstr "Omeka S Manuel de l'utilisateur"
 
 #: ../../docs/index.md:3 1340902a923345daae4057a26873e514
 msgid ""
@@ -29,6 +30,10 @@ msgid ""
 "independently curated exhibits sharing a collaboratively built pool of "
 "items and their metadata."
 msgstr ""
+"Omeka S est un outil de publication web (ou CMS) pour les universités, "
+"galeries, bibliothèques, archives et musées et toute structure désireuse "
+"de publier des documents numériques en ligne. Omeka permet d'exposer des "
+"médias de tout types et leur métadonnées."
 
 #: ../../docs/index.md:5 cb472b37a7ae44d398bf59ec3d42dca9
 msgid ""
@@ -36,12 +41,16 @@ msgid ""
 "left-hand side of the [administrative dashboard](admin-dashboard.md) of "
 "an Omeka S Installation:"
 msgstr ""
+"Les sections de ce manuel correspondent aux sections du [tableau de bord "
+"de l'administration] (admin-dashboard.md) d'un Omeka-S standard :"
 
 #: ../../docs/index.md:7 9f2dd118577145d7ba6aae3a9aff6201
 msgid ""
 "**Sites**   Creating, editing, and managing sites, the public-facing "
 "parts of an Omeka S installation."
 msgstr ""
+"**Sites**   Créer, éditer et gérer les sites, interfaces publiques d'une "
+"instance Omeka S."
 
 #: ../../docs/index.md:10 58892cc8bc7a44ebb543d072e59fc756
 msgid ""
@@ -49,12 +58,17 @@ msgid ""
 "installation: items, item sets, media, vocabularies, and resource "
 "templates."
 msgstr ""
+"**Resources**   Créer, éditer et gérer les contenus de votre instance : "
+"contenus, collections, médias, vocabulaires, et modèles de contenu."
 
 #: ../../docs/index.md:13 e38a99bfba504c5a888e69e479c62497
 msgid ""
 "**Admin**   Access to functionality in the admin section varies by user "
 "role, but can include: users, jobs, and settings."
 msgstr ""
+"**Admin**   Accès aux fonctions d'administration variant selon le rôle "
+"de l'utilisateur mais sont inclus la gestion des utilisateurs,des tâches "
+"et des paramétrages."
 
 #: ../../docs/index.md:16 1063038bad7841a8b9fa4d0ad000fc93
 msgid ""
@@ -63,22 +77,28 @@ msgid ""
 "sites. It then offers specific documentaiton for Omeka S modules created "
 "by RRCHNM, listed in alphabetial order."
 msgstr ""
+"**Modules**   Cette section donne l'accès à la gestion des modules qui "
+"étendent les fonctionnalités de votre instance Omeka-S et de vos sites. "
+"La documentation spécifique aux modules d'Omeka S créée par RRCHNM y est "
+"accessible et listée dans l'ordre alphabétique."
 
 #: ../../docs/index.md:19 5f4a5149b37b475e9e551466730af912
 msgid ""
 "This manual also includes a [glossary](glossary.md), instructions on "
-"conducting [searches](search.md), and how to turn on [error "
-"logging](errorLogging.md)."
+"conducting [searches](search.md), and how to turn on [error logging]"
+"(errorLogging.md)."
 msgstr ""
+"e manuel inclue également un [glossaire](glossary.md), une [aide à la "
+"recherche](search.md), et comment gérer les [erreurs de logs]"
+"(errorLogging.md)"
 
 #: ../../docs/index.md:21 9873b58cab3641559d27f19d604e5b71
 msgid ""
 "Screencasts to supplement the documentation are linked from relevant "
-"pages, and can be browsed in the [Omeka S collection on "
-"Vimeo](https://vimeo.com/showcase/4215056)."
+"pages, and can be browsed in the [Omeka S collection on Vimeo](https://"
+"vimeo.com/showcase/4215056)."
 msgstr ""
 
 #: ../../docs/index.md:23 1122088f7384445da6eeadd21cc7950f
 msgid "This documentation is CC-BY-NC"
-msgstr ""
-
+msgstr "Cette documentation est sous licence CC-BY-NC"
