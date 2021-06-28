@@ -44,13 +44,13 @@ You can change the *label* of the block to reflect what, specifically, site visi
 
 To refine the Browse block, you can use the Query to create a search query that returns the desired results. Note that you **must** enter a query for the block to function.
 
-![Advanced search query drawer](../sites/sitesfiles/sitenav_query_search.png)
-
 Click the Edit button to reveal the advanced search interface in the drawer. Once you are satisfied with the universe of items in your search, clicking the Apply button will set the universe of items for the Browse block.
 
-![Browse block with the edit query element](../sites/sitesfiles/sitenav_query_update.png)
+![Advanced search query drawer](../sites/sitesfiles/sitenav_query_search.png)
 
 Once a query has been set, you can click Edit to update the universe of items. You can click Advanced Edit to directly edit the query string. Finally, you can Clear a query to start over. If you have cleared a search in error, you can Restore it. 
+
+![Browse block with the edit query element](../sites/sitesfiles/sitenav_query_update.png)
 
 ### Site Page
 Site page blocks create links to pages you have built for your site. The *page* field indicates which page is in use, as does the block title. You can change the *label* for the page link in the navigation, as in the example image below. Note that changing the label does not change the page title. 

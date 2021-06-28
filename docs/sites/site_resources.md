@@ -21,11 +21,12 @@ A statement of the number of items current assigned to the site. Click on the nu
 A statement of whether the site automatically includes new items, and a link to the site admin to change that setting. 
 
 A table with the following options for managing your current items:
-	- Do nothing: make no changes)
-	- Add - keep existing items and assign items from a new search
-	- Replace - unassign all items and assign items from a new search
-	- Remove - unassign items from a new search
-	- Remove all - unassign all items
+
+- Do nothing: make no changes)
+- Add - keep existing items and assign items from a new search
+- Replace - unassign all items and assign items from a new search
+- Remove - unassign items from a new search
+- Remove all - unassign all items
 
 ![Item resources landing for a site with 28 items](../sites/sitesfiles/sites_resources1.png)
 
@@ -73,9 +74,9 @@ Note that the fields for searches by value, class, template, and item set have a
 
 If you would like to clear your search, select Reset. Once you are satisfied with your items, select Apply to set the universe. 
 
-![Item resource query element with update options ](../sites/sitesfiles/sites_resources_query_update.png)
-
 Even after you've applied your query, you can still Edit, Restore your previous query, or Clear your query. Also, if this is a query that you are likely to repeat, you can select the checkbox to *Keep this query*.
+
+![Item resource query element with update options ](../sites/sitesfiles/sites_resources_query_update.png)
 
 Item Sets
 ---------------------------

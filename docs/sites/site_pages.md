@@ -168,14 +168,14 @@ Allows you to add a block of items on a site page.
 From the *Resource type* dropdown, choose the kind of resource you want to display in the block: Items, Item Sets, or Media. 
 
 Using the *Query* element interface, select your universe of items.
-- 
-![Advanced search query drawer](../sites/sitesfiles/sitepg_query_search.png)
 
 Click the Edit button to reveal the advanced search interface in the drawer. Once you are satisfied with the universe of items in your search, clicking the Apply button will set the universe of items for the Browse block.
 
-![Browse block with the edit query element](../sites/sitesfiles/sitepg_query_update.png)
+![Advanced search query drawer](../sites/sitesfiles/sitepg_query_search.png)
 
 Once a query has been set, you can click Edit to update the universe of items. You can click Advanced Edit to directly edit the query string. Finally, you can Clear a query to start over. If you have cleared a search in error, you can Restore it.
+
+![Browse block with the edit query element](../sites/sitesfiles/sitepg_query_update.png)
 
 The *Limit* field lets you set the number of resources to display in the block; any additional results from your query can be accessed on a search page linked from the bottom of the block (you set the text of the link in the *browse link text* field below).
 
