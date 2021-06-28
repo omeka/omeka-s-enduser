@@ -19,12 +19,10 @@ msgstr ""
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:1
-#: bad5658434934e90a49b89f02316c1d7
 msgid "Public Interface"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:3
-#: b80b2e6142594bc992fc8de2934f6fc3
 msgid ""
 "On the public side, all users can browse Scripto projects that are marked"
 " as public. In order to edit or create content, users may need a Scripto "
@@ -34,7 +32,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:5
-#: ed35e8155a20417e84a9b4b3a3072582
 msgid ""
 "To toggle between the public and admin views of a project, delete the "
 "`/admin` from the url of any Scripto site, or add it in directly after "
@@ -42,14 +39,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:7
-#: e38f8a7dc0e54659a823e7b269ac9f31
 msgid ""
 "The admin side is `youromekaurl.net/admin/scripto` and the public side is"
 " `youromekaurl.net/scripto`."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:9
-#: 663592f8dab54a8c808c77c9a4469f2f
 msgid ""
 "All transcription activity takes place on the **public** side of the "
 "Scripto project. You cannot edit a transcription from the admin "
@@ -57,7 +52,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:11
-#: 3861bb7081ff40459199d2fff5372282
 msgid ""
 "For an example of how to orient community members to the interface, see "
 "the [Guide to transcribing the *Papers of the War "
@@ -66,12 +60,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:13
-#: 9cfd4df43d0a4217a1766d08b90e927d
 msgid "Linking between Scripto and an Omeka S site"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:14
-#: 68ed6386199a401082afa18be05df5a9
 msgid ""
 "While the Scripto public interface exists somewhat separately from the "
 "sites you build in your Omeka S installation, it is possible to move "
@@ -79,28 +71,24 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:16
-#: 2ed4814a6d9f4547b4493bfbca1c31df
 msgid ""
 "From your Omeka S sites, you can create direct links to your Scripto "
-"projects using the [custom link](../../../sites/site_navigation/#custom-"
-"link) in site Navigation or as a link in any [HTML page block "
-"text](../../../sites/site_pages/#html)."
+"projects using the [custom link](../../sites/site_navigation.md#add-a"
+"-custom-link) in site Navigation or as a link in any [HTML page block "
+"text](../../sites/site_pages.md#html)."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:18
-#: fdf2e6f5016347c78ebcaee4a9497204
 msgid "Scripto page block"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:19
-#: f58c9348441f46bca47c2020910e66a4
 msgid ""
 "When you add the Scripto module, it creates a new [page "
-"block](../../../sites/site_pages/#page-blocks) called \"Scripto\""
+"block](../../sites/site_pages.md#page-blocks) called \"Scripto\""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:21
-#: 1c4ba3dcbca9449da0814ca7fb381e87
 msgid ""
 "The Scripto page block offers a drop-down to let you select from all "
 "available Scripto [projects](scriptoproject). Select the project you want"
@@ -108,19 +96,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:23
-#: e1ca2179deba4ecdb9c49c6c021a7eea
 msgid ""
 "![Dropdown with a single site option](../modulesfiles/scripto-"
 "pageBlock.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:25
-#: 3a915e17d0e940ad94a5ec941c64a5d6
 msgid "On the public page view, this will display as a link."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:27
-#: 9a493f425b934c759371e7710b32c55f
 msgid ""
 "Once you have applied this block to a site, it also creates a link from "
 "the project to that Omeka S site *when accessed via the site, rather than"
@@ -130,26 +115,22 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:29
-#: 6633aae47aa84a288309fd168db214f0
 msgid ""
 "![Top of a scripto project page with a red highlight over the link to the"
 " Omeka S site.](../modulesfiles/scripto-pageBlocklink.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:31
-#: d9b234f7e3e44adba8b24fbbfc0be530
 msgid "Public-side user dashboard"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:32
-#: aabe6f06ed764f6c9578c6876bb66f3b
 msgid ""
 "From the public side, users have access to their dashboard, which givens "
 "them an overview of your Contributions and your Watchlist."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:34
-#: 467ab0c7eca446bb8cfcf9095ef37842
 msgid ""
 "Recent Contributions (documents the user has edited) display as a list. "
 "In each row, it will show the following information:"
@@ -157,39 +138,33 @@ msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:36
 #: ../../docs/modules/scripto/scriptoPublicView.md:49
-#: 3025ad0089b74a4f9678dad14df18cb7 3ed7ebd5b9cf45059c8a164c091368db
 msgid "Document type (just “document” in most cases);"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:37
 #: ../../docs/modules/scripto/scriptoPublicView.md:50
-#: 684464de467c455aa805acecd26531ce 700eaee0c9e84651991e0a59a9b847b6
 msgid ""
 "Document title, which is also a link to the document page, with the page "
 "number in parentheses after the title;"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:38
-#: b42951ac6ec14636b60435f474286c15
 msgid "Link to see the changes with the version immediately before that (“diff”);"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:39
 #: ../../docs/modules/scripto/scriptoPublicView.md:52
-#: c542d5d8d29b40b5b511191a134cdf2a e4cfe1b7d05a4b10b8b4b8d64de81101
 msgid "Link to see the history of the document’s edits (“hist);"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:40
 #: ../../docs/modules/scripto/scriptoPublicView.md:53
-#: 7b9db04f74d949e4bf18b173f7d255c0 91474ae5a937413aa422d345c3e82eb4
 msgid ""
 "Date of last change in the format Month/Day/Year followed by timestamp; "
 "and"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:41
-#: 4e8a7f91f1854a7b9f5dbe16c23ed430
 msgid ""
 "Summary of the changes, with the number of characters changed in "
 "parentheses, followed by any comment or summary supplied by the person "
@@ -197,14 +172,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:43
-#: 7d61ce0dfd8141cd99441329f3a01845
 msgid ""
 "Above the list is a button which will take users to see all of their "
 "contributions"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:45
-#: 880299bb99f540399dbfb005dfb96545
 msgid ""
 "Watched pages will also display as a list. Watched pages include those "
 "which the user has already selected, which can include items being edited"
@@ -213,19 +186,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:47
-#: 81004b8ae51943e69f94f98362881722
 msgid "The list of watched pages displays the following information:"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:51
-#: 2e2498a5284949118bc9fcb32bc67bc3
 msgid ""
 "Link to see the changes made with the version immediately before that "
 "(“diff”);"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:54
-#: 5a5f529146f44e92ac4f512e067e3f18
 msgid ""
 "Summary of the changes, with the number of characters changed in "
 "parentheses, followed by any comment or summary supplied by the person "
@@ -233,12 +203,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:56
-#: b166db883e944c1bba2bcb7970cf7e36
 msgid "Public project browse"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:57
-#: 38e54c2066b54632936b8680ff6f2108
 msgid ""
 "On the upper right of the browser, near the \"Log In\" buttons or, when "
 "logged in, the user icon, is a link to browse all projects in the Scripto"
@@ -246,16 +214,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:59
-#: e763585688df42a0b29a02edefac5f66
 msgid ""
 "This browse page shows the project title, a representative icon "
 "determined by the first item in the project, and the project's "
-"description (set in the [configuration options](../scriptoproject"
-"/#configuration-options)), if any."
+"description (set in the [configuration options](scriptoproject.md"
+"#configuration-options)), if any."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:61
-#: 44fbd7a0a3ec46e89caa2c4e42425cbd
 msgid ""
 "![Project browse showing three projects, only two of which have a "
 "description.](../../modules/modulesfiles/scripto-publicBrowse.png) "
@@ -264,122 +230,102 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:64
-#: be10cd79e09f498c8e9da74fc4908f4c
 msgid "Public project view"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:65
-#: 46d65e87bddd413ca4c50b950ffc1de6
 msgid ""
 "The main project view displays the title of the project, as well as its "
 "description, if any."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:67
-#: e25f2737122b4707a926b482374439c0
 msgid ""
 "Across the top of the page, just under the Scripto navigation options "
 "(project browse and user icon), are:"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:69
-#: c78a98347df94242aea60b5303b06378
 msgid "the Project title which functions as link back to the main project page;"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:70
-#: 082ef5ed400d4a9a8cd47f3d9e7bd1ed
 msgid "a link to the project guidelines;"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:71
-#: e06006068d5c41ff84bd1bb72671f6b8
 msgid "a browse items links; and"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:72
-#: ae4a840ae37b4793a37fb0d5cb15ef80
 msgid ""
 "a search bar to search the items in the project (this is a full-text "
 "search for the metadata of the items and media)."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:74
-#: 7dcd20f6e7274e3fa3cfc5826577a96e
 msgid ""
 "Below this is a table of the items in the project. The table will be "
 "labeled Items unless you selected from the Item type dropdown in the "
-"project's [configuration options](../scriptoproject/#configuration-"
+"project's [configuration options](scriptoproject.md#configuration-"
 "options)."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:76
-#: 70241131f2b543e08efcdf9c82b67b00
 msgid ""
 "The table has two display options. The default view is set in the "
 "project's configuration options."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:78
-#: 980fbf359bd54977b70cafc1cad7d62a
 msgid "**List** displays the items in horizontal rows that prioritizes text with:"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:79
-#: eaced26c08284bbcac52fb913f8e4e90
 msgid "a small thumbnail of the image;"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:80
 #: ../../docs/modules/scripto/scriptoPublicView.md:86
-#: 8ca86da4325541a19cd8b6c9844adb1d ae6a9c77574a42669b61057e309fe11c
 msgid "the document title;"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:81
 #: ../../docs/modules/scripto/scriptoPublicView.md:87
-#: 00d577959902417c9bd42c45902970b0 e788c74fae344f03a56b11da6837fd76
 msgid "date last transcribed;"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:82
 #: ../../docs/modules/scripto/scriptoPublicView.md:88
-#: 2126fdc07ce144d0b46d49f0c28e1b3d 7fcf905c715a415fa04a456777df15fe
 msgid "transcription status; and"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:83
 #: ../../docs/modules/scripto/scriptoPublicView.md:89
-#: 64ce6c4f318e403793ef3cae2655fd25 7cdbdabc41de4cf986a3f7915056339e
 msgid "number of approved pages, shown as a bar and a numeric count."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:84
-#: 58303a44cdb1494ea3337f34065548de
 msgid "**Grid** displays each items four per row with:"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:85
-#: dadedfc79d91493d947da071fee4049a
 msgid ""
 "a large thumbnail of the first page, which can give you a quick sense of "
 "the quality of the image and handwriting;"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:91
-#: a141ecf3c7674280918dea7e3ca60a4b
 msgid "Transcription stat"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:93
-#: 5740fa846ec94f428b0fd14087ff0416
 msgid ""
 "On the public side, projects display a progress bar for all items, so "
 "that community users can easily identify media or items to work on."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:96
-#: eb26acccfc144f9194e26d4b94732433
 msgid ""
 "![Public project view. There are two large square thumbnails representing"
 " items in the project. One has a \"1/3\" and a full orange bar underneath"
@@ -388,19 +334,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:98
-#: 392a007933cf495d8aa66a4e41394573
 msgid "Public item view"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:99
-#: 580bd60afe004abd9906fef997aabe7e
 msgid ""
 "The public item view displays the Omeka S item metadata in a column on "
 "the left side, and the media in the main area on the right."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:101
-#: 96c1b83349464604abcb104084a7ceac
 msgid ""
 "Users can toggle between gallery and list views using the layout button. "
 "They can also *sort* and *filter* media in the item. Sort options are by "
@@ -410,12 +353,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:103
-#: 73f1201efe84410fa2a3e525e8c1e34a
 msgid "![Public item view](../../modules/modulesfiles/scripto_publicitem.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:105
-#: 6c3462f15c0e4aa88cfbbf40e68fa4d3
 msgid ""
 "Users can either click on the media's index number to view media "
 "information, on edit to go straight to the mediawiki "
@@ -423,12 +364,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:107
-#: da035a15e9f142a9bcedc450d2e05683
 msgid "Public media view"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:108
-#: a939b7be9ab2436c84422232f9960076
 msgid ""
 "The initial media view shows the media on the right, with metadata on the"
 " left. Underneath the media display is the HTML of whatever wikitext has "
@@ -436,7 +375,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:110
-#: 40c6c5e7103d4db2bbef61bb3b21c0b5
 msgid ""
 "At the top of the page is the title of the item, which functions as a "
 "link back to the item, followed by the media's number (the second page "
@@ -445,58 +383,48 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:112
-#: 9b3e1e0072884d71ba12fb1f44041b14
 msgid "On the left above the media and metadata are a series of buttons:"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:114
-#: 6b3dd0488ef14646bf4a67480f9def88
 msgid "*Edit*"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:115
-#: 906c5452d68642549a2391cd6f84d01d
 msgid "*Browse revision history*"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:116
-#: 194f108245054505b03e124bded24515
 msgid "*View notes*"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:117
-#: 3685ae6febad40689c7d7884b9817ef1
 msgid ""
 "And *track/stop tracking media* with a star button which toggles this "
 "option."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:119
-#: 132a3364ff424fa38429d8536c8bd97f
 msgid ""
 "On the right above the media and metadata is a pagination button which "
 "allows users to easily move between media for a single item"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:121
-#: 5ba56bd77ba64d5e9a2b8fb743f8606d
 msgid "![media view](../../modules/modulesfiles/scripto_mediav.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:123
-#: b24c17da69e84d4e9b9c531d678d1e98
 msgid "Adding text"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:124
-#: e6c73d36b2784adb97111a8172b7cf49
 msgid ""
 "To start working with a piece of media, the user clicks \"edit\" in the "
 "toolbar above the media and metadata display."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:126
-#: 3222c8b16ed2485f91c86174dc0473d3
 msgid ""
 "A new page loads, with a media viewer and an editing workspace for users "
 "to enter text. Depending on the selected layout, media may be to the "
@@ -504,26 +432,22 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:128
-#: fedc4d446c3c4f81868ecad61dc9f5dc
 msgid "![edit media](../../modules/modulesfiles/scripto_editmedia.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:130
-#: 5226102d0d3246be9bf15ebc3af8658f
 msgid ""
 "The area between the media title and the workspace and viewer has a "
 "combination of information display and action items for the user."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:132
-#: 3ec9b0a211694594b57c9f191cd69c83
 msgid ""
 "On the far left is a button to track or stop tracking media, with a star "
 "icon."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:133
-#: 9db9c2efd61843858b21cc5f3d08013b
 msgid ""
 "In the center is an information display with the media's Protection, "
 "protection expiration, and status, and a checkbox where the user can mark"
@@ -531,46 +455,31 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:134
-#: 90128d95a38a44dc95ad92ed46fe1c64
 msgid "On the far right are buttons to *save* or *cancel* changes."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:135
-#: 710d59b4900946ee9355e3ebe5e39091
 msgid ""
 "Users can rotate the media and zoom in and out using the controls within "
 "the media viewer."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:136
-#: fdb79b38cdd64229bcd420a3b88ebaca
 msgid ""
 "Users can use the layout buttons to toggle between side by side and top "
 "and bottom views."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:138
-#: d9dcdb0eb37e4ddb9bcaa8508fce0aa4
 msgid ""
 "Just above the MediaWiki workspace is a field where users are encouraged "
 "to summarize their changes."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoPublicView.md:140
-#: d796513646344375be178df09a980476
 msgid ""
 "The editing workspace has a formatting toolbar which adds MediaWiki "
 "markup to the text (it does not change the appearance of the text in the "
 "workspace). Any formatting will be applied to the HTML view of the text "
 "after changes are saved."
 msgstr ""
-
-#~ msgid ""
-#~ "The Scripto page block offers a "
-#~ "drop-down to let you select from "
-#~ "all available Scripto "
-#~ "[projects](../scriptoproject/). Select the project"
-#~ " you want to link from the "
-#~ "dropdown."
-#~ msgstr ""
-

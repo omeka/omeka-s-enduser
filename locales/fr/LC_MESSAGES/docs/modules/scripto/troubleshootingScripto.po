@@ -20,31 +20,26 @@ msgstr ""
 
 #: ../../docs/modules/scripto/troubleshootingScripto.md:1
 #: ../../docs/modules/scripto/troubleshootingScripto.md:12
-#: 6fd2ced6671f4bd4bb1226ea4b194f60 989ab944b0db480184b27dc1998080cd
 msgid "Troubleshooting"
 msgstr ""
 
 #: ../../docs/modules/scripto/troubleshootingScripto.md:3
-#: ad090211a822415c8b96d1015fd3518b
 msgid ""
 "The following are advanced options and troubleshooting tips for Scripto "
 "for Omeka S."
 msgstr ""
 
 #: ../../docs/modules/scripto/troubleshootingScripto.md:5
-#: a07b4db0d3334726a9c5b51c02c08108
 msgid "Disable anonymous editing"
 msgstr ""
 
 #: ../../docs/modules/scripto/troubleshootingScripto.md:6
-#: 9fb3bddccce04d4082b3a5e3aab8bb2f
 msgid ""
 "By default, Scripto for Omeka S allows anonymous users to edit the "
 "content on your projects."
 msgstr ""
 
 #: ../../docs/modules/scripto/troubleshootingScripto.md:8
-#: 4079e3d86aaf43f986c89b91e3480231
 msgid ""
 "To prevent this, you will need to edit the files in the directory "
 "containing your MediaWiki installation. Add the line "
@@ -52,19 +47,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/troubleshootingScripto.md:10
-#: 4ae1af4cb2b0445493a38ef00c89ac79
 msgid ""
 "For more information, see the [MediaWiki manual on preventing "
 "access](https://www.mediawiki.org/wiki/Manual:Preventing_access)"
 msgstr ""
 
 #: ../../docs/modules/scripto/troubleshootingScripto.md:13
-#: df477b6ba754417fb105dd17ab8fe6ff
 msgid "Project sync stuck"
 msgstr ""
 
 #: ../../docs/modules/scripto/troubleshootingScripto.md:14
-#: 939ecb644ba7483c8395d4a93929eb67
 msgid ""
 "If your project sync will not start or remains in process, check that you"
 " have [correctly configured the PHP-CLI path for your Omeka S "

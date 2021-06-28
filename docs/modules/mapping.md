@@ -49,7 +49,7 @@ You can now click on the marker to add a label which will display on [public map
 
 ![Close up of map with a marker selected. There is a field to enter the maker label.](../modules/modulesfiles/Mapping-addLabel.png)
 
-When you are adding a label, you can also add an image to display on the marker when clicked in the [public view](../modules/mapping/#public-view). You can only select from images which has already been [attached to the item as media](../content/items/#media). To remove the image, select "no Image" from the sidebar. 
+When you are adding a label, you can also add an image to display on the marker when clicked in the [public view](#public-view). You can only select from images which has already been [attached to the item as media](../content/items.md#media). To remove the image, select "no Image" from the sidebar.
 
 ![Marker selected with Image added. The media is also visible in the sidebar, along with an option for "no image"](../modules/modulesfiles/Mapping-addImage.png)
 
@@ -122,8 +122,8 @@ Within the preview map, there are five buttons:
 ### Timeline
 Timeline adds a timeline display to the left of the map view. Note that this feature requires the [NumericDataTypes](../modules/numericdatatypes/) module and at least one item that has a property with a Timestamp or Interval value (applied via the [resource template](../content/resource-template)).
 
-- *Title headline:* displays on the first slide of the timeline (see ["Timeline public view"](../../modules/mapping/#timeline-public-view) below). You can use this to name the timeline.
-- *Title text:* appears below the title headline on the first slide of the timeline (see ["Timeline public view"](../../modules/mapping/#timeline-public-view) below). You can use this to provide context or narrative introduction for the timeline.
+- *Title headline:* displays on the first slide of the timeline (see ["Timeline public view"](#timeline-public-view) below). You can use this to name the timeline.
+- *Title text:* appears below the title headline on the first slide of the timeline (see ["Timeline public view"](#timeline-public-view) below). You can use this to provide context or narrative introduction for the timeline.
 - *Fly to:* is a dropdown menu where you can set the zoom level for each point in the timeline on the map. Your options are default view, or zoom levels 0-18 (even numbers only). The higher the number, the more zoomed in the map will be. 
 	- Note that the transition between points is animated, so if you have very distant points the shift between them will involve a significant zoom out and in. 
 - *Show contemporaneous events:* sets how two events with the same timestamp or interval are displayed. If checked, contemporaneous events will both display in the map when active in the story slider. 

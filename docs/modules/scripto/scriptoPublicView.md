@@ -13,10 +13,10 @@ For an example of how to orient community members to the interface, see the [Gui
 ## Linking between Scripto and an Omeka S site
 While the Scripto public interface exists somewhat separately from the sites you build in your Omeka S installation, it is possible to move between them.
 
-From your Omeka S sites, you can create direct links to your Scripto projects using the [custom link](../../../sites/site_navigation/#custom-link) in site Navigation or as a link in any [HTML page block text](../../../sites/site_pages/#html).  
+From your Omeka S sites, you can create direct links to your Scripto projects using the [custom link](../../sites/site_navigation.md#add-a-custom-link) in site Navigation or as a link in any [HTML page block text](../../sites/site_pages.md#html).
 
 ### Scripto page block
-When you add the Scripto module, it creates a new [page block](../../../sites/site_pages/#page-blocks) called "Scripto"
+When you add the Scripto module, it creates a new [page block](../../sites/site_pages.md#page-blocks) called "Scripto"
 
 The Scripto page block offers a drop-down to let you select from all available Scripto [projects](scriptoproject). Select the project you want to link from the dropdown.
 
@@ -56,7 +56,7 @@ The list of watched pages displays the following information:
 ## Public project browse
 On the upper right of the browser, near the "Log In" buttons or, when logged in, the user icon, is a link to browse all projects in the Scripto instance. 
 
-This browse page shows the project title, a representative icon determined by the first item in the project, and the project's description (set in the [configuration options](../scriptoproject/#configuration-options)), if any. 
+This browse page shows the project title, a representative icon determined by the first item in the project, and the project's description (set in the [configuration options](scriptoproject.md#configuration-options)), if any.
 
 ![Project browse showing three projects, only two of which have a description.](../../modules/modulesfiles/scripto-publicBrowse.png)
 Clicking on any project's title or representative thumbnail takes you to the project's view.
@@ -71,7 +71,7 @@ Across the top of the page, just under the Scripto navigation options (project b
 - a browse items links; and
 - a search bar to search the items in the project (this is a full-text search for the metadata of the items and media).
 
-Below this is a table of the items in the project. The table will be labeled Items unless you selected from the Item type dropdown in the project's [configuration options](../scriptoproject/#configuration-options).
+Below this is a table of the items in the project. The table will be labeled Items unless you selected from the Item type dropdown in the project's [configuration options](scriptoproject.md#configuration-options).
 
 The table has two display options. The default view is set in the project's configuration options.
  

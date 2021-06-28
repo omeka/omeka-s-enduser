@@ -19,11 +19,11 @@ msgstr ""
 "Language: fr_FR\n"
 "X-Generator: Poedit 2.0.6\n"
 
-#: ../../docs/index.md:1 80dd524489ce4a0c97205c98850bb4b2
+#: ../../docs/index.md:1
 msgid "Omeka S User Manual"
 msgstr "Omeka S Manuel de l'utilisateur"
 
-#: ../../docs/index.md:3 1340902a923345daae4057a26873e514
+#: ../../docs/index.md:3
 msgid ""
 "Omeka S is a web publication system for universities, galleries, "
 "libraries, archives, and museums. It creates a local network of "
@@ -35,7 +35,7 @@ msgstr ""
 "de publier des documents numériques en ligne. Omeka permet d'exposer des "
 "médias de tout types et leur métadonnées."
 
-#: ../../docs/index.md:5 cb472b37a7ae44d398bf59ec3d42dca9
+#: ../../docs/index.md:5
 msgid ""
 "The sections of this manual correspond to the navigation sections on the "
 "left-hand side of the [administrative dashboard](admin-dashboard.md) of "
@@ -44,7 +44,7 @@ msgstr ""
 "Les sections de ce manuel correspondent aux sections du [tableau de bord "
 "de l'administration] (admin-dashboard.md) d'un Omeka-S standard :"
 
-#: ../../docs/index.md:7 9f2dd118577145d7ba6aae3a9aff6201
+#: ../../docs/index.md:7
 msgid ""
 "**Sites**   Creating, editing, and managing sites, the public-facing "
 "parts of an Omeka S installation."
@@ -52,7 +52,7 @@ msgstr ""
 "**Sites**   Créer, éditer et gérer les sites, interfaces publiques d'une "
 "instance Omeka S."
 
-#: ../../docs/index.md:10 58892cc8bc7a44ebb543d072e59fc756
+#: ../../docs/index.md:10
 msgid ""
 "**Resources**   Creating, editing, and managing the content of an "
 "installation: items, item sets, media, vocabularies, and resource "
@@ -61,7 +61,7 @@ msgstr ""
 "**Resources**   Créer, éditer et gérer les contenus de votre instance : "
 "contenus, collections, médias, vocabulaires, et modèles de contenu."
 
-#: ../../docs/index.md:13 e38a99bfba504c5a888e69e479c62497
+#: ../../docs/index.md:13
 msgid ""
 "**Admin**   Access to functionality in the admin section varies by user "
 "role, but can include: users, jobs, and settings."
@@ -70,7 +70,7 @@ msgstr ""
 "de l'utilisateur mais sont inclus la gestion des utilisateurs,des tâches "
 "et des paramétrages."
 
-#: ../../docs/index.md:16 1063038bad7841a8b9fa4d0ad000fc93
+#: ../../docs/index.md:16
 msgid ""
 "**Modules**   This section opens with basic information on managing the "
 "modules which extend the functionality of your Omeka S installation and "
@@ -82,7 +82,7 @@ msgstr ""
 "La documentation spécifique aux modules d'Omeka S créée par RRCHNM y est "
 "accessible et listée dans l'ordre alphabétique."
 
-#: ../../docs/index.md:19 5f4a5149b37b475e9e551466730af912
+#: ../../docs/index.md:19
 msgid ""
 "This manual also includes a [glossary](glossary.md), instructions on "
 "conducting [searches](search.md), and how to turn on [error logging]"
@@ -92,13 +92,13 @@ msgstr ""
 "recherche](search.md), et comment gérer les [erreurs de logs]"
 "(errorLogging.md)"
 
-#: ../../docs/index.md:21 9873b58cab3641559d27f19d604e5b71
+#: ../../docs/index.md:21
 msgid ""
 "Screencasts to supplement the documentation are linked from relevant "
 "pages, and can be browsed in the [Omeka S collection on Vimeo](https://"
 "vimeo.com/showcase/4215056)."
 msgstr ""
 
-#: ../../docs/index.md:23 1122088f7384445da6eeadd21cc7950f
+#: ../../docs/index.md:23
 msgid "This documentation is CC-BY-NC"
 msgstr "Cette documentation est sous licence CC-BY-NC"

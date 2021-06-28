@@ -19,11 +19,11 @@ msgstr ""
 "Language: fr_FR\n"
 "X-Generator: Poedit 2.2.1\n"
 
-#: ../../docs/admin/jobs.md:1 bc737d17b7d1427bb02fd7807da8565b
+#: ../../docs/admin/jobs.md:1
 msgid "Jobs"
 msgstr "Tâches"
 
-#: ../../docs/admin/jobs.md:3 85b09a47eaff4ad0812b3a5d170f01b4
+#: ../../docs/admin/jobs.md:3
 msgid ""
 "When a user starts running a process which will take some time, such as an "
 "API import, the progress of the process is displayed in the *Jobs* tab of the "
@@ -35,7 +35,7 @@ msgstr ""
 "dans l'onglet \"Tâches\" du tableau de bord de l'administrateur. Le tableau "
 "affiche également les travaux terminés, arrêtés et interrompus par une erreur."
 
-#: ../../docs/admin/jobs.md:5 00531563d55f4dd68c5d2cee6591bf2d
+#: ../../docs/admin/jobs.md:5
 msgid ""
 "The Jobs table shows a job’s *ID* number, *class* of job, *Status* and the "
 "*Owner*, or user who started the job."
@@ -44,7 +44,7 @@ msgstr ""
 "classe du travail, le statut et le propriétaire, ou l'utilisateur qui a "
 "démarré le travail."
 
-#: ../../docs/admin/jobs.md:7 987e8b15b8bc47a594125af9727c5247
+#: ../../docs/admin/jobs.md:7
 msgid ""
 "You can order the rows of the table by ID, Class, Status, or Owner "
 "(descending or ascending) using the drop-down menus just above the table on "
@@ -54,48 +54,48 @@ msgstr ""
 "Propriétaire (décroissant ou croissant) à l’aide des menus déroulants situés "
 "juste au-dessus du tableau en haut à droite."
 
-#: ../../docs/admin/jobs.md:9 9990c78deb2a4437af47888d89721b53
+#: ../../docs/admin/jobs.md:9
 msgid "![Table of jobs including all status messages](adminfiles/jobstable.png)"
 msgstr ""
 
-#: ../../docs/admin/jobs.md:11 c451251baba4441189eabba51e5b98a2
+#: ../../docs/admin/jobs.md:11
 msgid "To see the details of a job, click on its id number."
 msgstr ""
 "Pour voir les détails d’une tâche, cliquez sur son numéro d’identification."
 
-#: ../../docs/admin/jobs.md:13 3ab20091a2e84ba9beb6b3820b682b2b
+#: ../../docs/admin/jobs.md:13
 msgid "On a job’s details page, you will see the following information:"
 msgstr ""
 "Sur la page des détails d’une tâche, vous verrez les informations suivantes:"
 
-#: ../../docs/admin/jobs.md:15 cd02c6c99a664fb3a38d71732cb04f51
+#: ../../docs/admin/jobs.md:15
 msgid "*Status* (In Progress, Error, Completed, Stopped)"
 msgstr "*Statut* (En cours, Erreur, Terminé, Arrêté)"
 
-#: ../../docs/admin/jobs.md:16 4ec45a308de64fe1a4307b7a08aba101
+#: ../../docs/admin/jobs.md:16
 msgid "*Started* and *Ended* (date stamps)"
 msgstr "*Démarré* et *terminé* (horodatages)"
 
-#: ../../docs/admin/jobs.md:17 5368399152d24797bffea2c177d104e1
+#: ../../docs/admin/jobs.md:17
 msgid "*Class* (source of the job, for example `DspaceConnector\\Job\\Import`)"
 msgstr ""
 "*Classe* (source de la tâche, par exemple `DspaceConnector\\Job\\Import`)"
 
-#: ../../docs/admin/jobs.md:18 4f90f9858d914c7d80b7bfcdf2d867e8
+#: ../../docs/admin/jobs.md:18
 msgid "*Owner*"
 msgstr "*Propriétaire*"
 
-#: ../../docs/admin/jobs.md:19 3ed4a223adc344e59c4fd8281da2a5b9
+#: ../../docs/admin/jobs.md:19
 msgid "*Args*"
 msgstr "*Arguments*"
 
-#: ../../docs/admin/jobs.md:20 c3c0163465494503958b0f2662cbb14c
+#: ../../docs/admin/jobs.md:20
 msgid "*Log* - click on *view log* to see any error or other messages."
 msgstr ""
 "*Journal* - cliquez sur *voir le journal* pour voir le détail des erreurs et "
 "messages."
 
-#: ../../docs/admin/jobs.md:22 8abff672c0054d09817876ee0af91d23
+#: ../../docs/admin/jobs.md:22
 msgid ""
 "![The Logs heading with “view logs” below in orange, indicating it is a link]"
 "(adminfiles/jobs_viewlog.png)"

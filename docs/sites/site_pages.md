@@ -80,7 +80,7 @@ Some modules may create additional blocks for your site pages. For information o
 ### From the Public Side
 If you are on the admin side and click "View" in the upper right-hand corner of a page, it will take you to the public view for that page. 
 
-As you are browsing the public side of your site, you can edit the page you are viewing if you are currently logged in and the [user bar option is turned on in Site Settings](../sites/site_settings/#general-settings). 
+As you are browsing the public side of your site, you can edit the page you are viewing if you are currently logged in and the [user bar option is turned on in Site Settings](site_settings.md#general-settings).
 
 The user bar, which appears across the top of the page, includes a link to edit the current page - circled in red in the below image. 
 
@@ -262,7 +262,7 @@ HTML blocks wrap around Media blocks and at times you may want to clear the page
 ### Item with Metadata
 This block displays an item along with all associated metadata (entered when creating or editing the [item](../content/items.md)).
 
-Add attachments in the same manner as the [media](../sites/site_pages/#media) page block.
+Add attachments in the same manner as the [media](#media-embed) page block.
 
 ![Item with metadata block with nothing attached](../sites/sitesfiles/sitepg_iwm.png)
 

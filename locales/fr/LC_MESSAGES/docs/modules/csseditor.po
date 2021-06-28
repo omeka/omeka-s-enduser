@@ -18,78 +18,78 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../docs/modules/csseditor.md:1 c1f093207aca4e20b9399ec7102e491b
+#: ../../docs/modules/csseditor.md:1
 msgid "CSS Editor"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:3 7d8dc379c00445ec882dfecd6a40c7bd
+#: ../../docs/modules/csseditor.md:3
 msgid ""
 "The CSS Editor module allows you to write CSS from the Omeka S admin "
 "interface."
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:5 df7739a22d654b0fbd4a6cbc89212dfa
+#: ../../docs/modules/csseditor.md:5
 msgid ""
 "Once activated on the [modules](https://omeka.org/s/docs/user-"
 "manual/modules/) tab of the admin dashboard, CSS Editor is used on a "
 "site-by-site basis."
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:7 1c507fc7e9a442b98ddb0e755b901463
+#: ../../docs/modules/csseditor.md:7
 msgid "Managing Custom CSS"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:9 44a02b7af2254b3991d64b27b7334128
+#: ../../docs/modules/csseditor.md:9
 msgid ""
 "If CSSEditor is active, then a tab for CSSEditor will appear in the "
 "context menu for every site."
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:11 8576eae0296241bbb4cd735df87699fc
+#: ../../docs/modules/csseditor.md:11
 msgid ""
 "![Screenshot of Omeka S site context menu witth CSS Editor navigation "
 "item highlighted.](modulesfiles/csseditor_contextmenu.jpg)"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:13 424a60acd4734af791ac8447577ad093
+#: ../../docs/modules/csseditor.md:13
 msgid "Using the CSSEditor interface"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:15 95f284a697d945409b2e3d791a77bc37
+#: ../../docs/modules/csseditor.md:15
 msgid ""
 "![Screenshot of CSS Editor module "
 "interface.](modulesfiles/csseditor_interface.jpg)"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:17 bef5426fd57d487e96c354c2704bc3ba
+#: ../../docs/modules/csseditor.md:17
 msgid ""
 "The first large text area is where you write your individual styles. Use "
 "that text area as you would a stylesheet file."
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:19 5fa7d6515d074c1fbcc1f2cf1f2149a1
+#: ../../docs/modules/csseditor.md:19
 msgid ""
 "If you are new to working with CSS, we recommend the following free "
 "resources for getting started:"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:21 300417db372b4cad9cc366deec94a39b
+#: ../../docs/modules/csseditor.md:21
 msgid ""
 "[Mozilla's \"Intro to CSS\"](https://learning.mozilla.org/en-"
 "US/activities/intermediate-web-lit/)"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:22 19879160e9214d029e3513f32c83d34f
+#: ../../docs/modules/csseditor.md:22
 msgid ""
 "[Codecademy's \"Learn CSS\" course](https://www.codecademy.com/learn"
 "/learn-css)"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:23 b45f133171b64cdc81eb8a7a52ebf1ee
+#: ../../docs/modules/csseditor.md:23
 msgid "[Marksheet's \"CSS Basics\"](https://marksheet.io/css-basics.html)"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:25 2f6e6fad8b594c57b2ab522c74af2b9a
+#: ../../docs/modules/csseditor.md:25
 msgid ""
 "Next, CSS Editor also allows you to include external stylesheets by "
 "entering their URLs. There is no limit to the number of external "
@@ -98,24 +98,24 @@ msgid ""
 " another stylesheet\"."
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:27 427b037f83c64cc6aeb194fe1cb6bc54
+#: ../../docs/modules/csseditor.md:27
 msgid ""
 "To remove external stylesheets, either clear the text inputs, or click on"
 " the trash can icon if there are multiple stylesheet fields."
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:29 d191dfec12c74486a5c1dbdf328961fb
+#: ../../docs/modules/csseditor.md:29
 msgid ""
 "![Screenshot of CSS Editor module interface, cropped to focus on external"
 " stylesheet field with remove button (trash can icon) "
 "highlighted.](modulesfiles/csseditor_remove.jpg) <br><br>"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:31 1739f7e3792747d49d2ed22265df65d6
+#: ../../docs/modules/csseditor.md:31
 msgid "Tutorial: Using a Google Webfont"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:33 a9ee50b6c2ec45e9abaf2027cd0a5e11
+#: ../../docs/modules/csseditor.md:33
 msgid ""
 "You can make your Omeka S site more distinct by using a custom font. "
 "[Google provides a free library of webfonts](https://fonts.google.com/), "
@@ -123,23 +123,23 @@ msgid ""
 "site using the \"Default\" theme through the CSS Editor interface."
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:35 04fe7046dc9e443cae55d746a9bb1821
+#: ../../docs/modules/csseditor.md:35
 msgid ""
 "For reference, the \"Default\" theme begins looking like this, using the "
 "\"Open Sans\" font."
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:37 e066f31993e9451d9968d0be4b23b5dc
+#: ../../docs/modules/csseditor.md:37
 msgid ""
 "![Screenshot of Omeka S site with \"Default\" theme. All the text us "
 "using \"Open Sans\".](modulesfiles/csseditor_before.jpg)"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:39 91c853a7d71e4966b38c5e5fc7c190e0
+#: ../../docs/modules/csseditor.md:39
 msgid "This tutorial will override \"Open Sans\" with the \"Lato\" font family."
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:41 5b720ed410e94afda258d2f56e856c39
+#: ../../docs/modules/csseditor.md:41
 msgid ""
 "Navigate to [Google Fonts](https://fonts.google.com/). Find the \"Lato\" "
 "font family and click on the orange \"+\" button to select it. <br><br> "
@@ -147,7 +147,7 @@ msgid ""
 "highlighted](modulesfiles/csseditor_tutorial1.jpg) <br><br>"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:43 b1d3e6eb5811403eb1058ad92077fb90
+#: ../../docs/modules/csseditor.md:43
 msgid ""
 "A bar labeled \"1 Family Selected\" will appear in the lower right "
 "corner. Click on this bar. <br><br> ![Cropped view of Google Fonts page "
@@ -155,7 +155,7 @@ msgid ""
 "highlighted](modulesfiles/csseditor_tutorial2.jpg) <br><br>"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:45 3b6b0fdf39d74cd3bb9159ba2b9a0172
+#: ../../docs/modules/csseditor.md:45
 msgid ""
 "The bar will open a panel with the information you'll need to use Lato in"
 " your site. The first section, \"Embed this font\", has the external "
@@ -166,7 +166,7 @@ msgid ""
 "highlighted.](modulesfiles/csseditor_tutorial3.jpg) <br><br>"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:47 0571c2bb955a44458f873601d50a037b
+#: ../../docs/modules/csseditor.md:47
 msgid ""
 "Copy this URL into one of the \"External stylesheets\" inputs in CSS "
 "Editor. <br><br> ![Screenshot of CSS Editor module interface, cropped to "
@@ -174,7 +174,7 @@ msgid ""
 "url.](modulesfiles/csseditor_tutorial4.jpg) <br><br>"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:49 152e61373fd541df89333b22ab33e78e
+#: ../../docs/modules/csseditor.md:49
 msgid ""
 "Back in the Google Fonts panel, there is the second section titled "
 "\"Specify in CSS\". Copy the `font-family` rule. ![Screenshot of "
@@ -183,7 +183,7 @@ msgid ""
 "<br><br>"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:51 4933d0c0d3b348c4bc8a22c85ac302e7
+#: ../../docs/modules/csseditor.md:51
 msgid ""
 "For this tutorial, you are setting Lato as the site's default font. To do"
 " this, in the large \"CSS\" text area in CSS Editor, set the `body` "
@@ -193,15 +193,15 @@ msgid ""
 "serif;}').](modulesfiles/csseditor_tutorial6.jpg) <br><br>"
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:53 da8b2234c8884144ad7cc39db40d26bc
+#: ../../docs/modules/csseditor.md:53
 msgid "Click the \"Save\" button in the top right corner."
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:55 989e84b2df4643edbecbb0f8a52c6072
+#: ../../docs/modules/csseditor.md:55
 msgid "Now the \"Default\" theme should look like this."
 msgstr ""
 
-#: ../../docs/modules/csseditor.md:57 8b71dca3d9964dfd8a24095287e36719
+#: ../../docs/modules/csseditor.md:57
 msgid ""
 "![Screenshot of Omeka S site with \"Default\" theme. All the text us "
 "using \"Lato\".](modulesfiles/csseditor_after.jpg)"

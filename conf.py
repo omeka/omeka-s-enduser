@@ -31,6 +31,8 @@ extensions = [
     'myst_parser'
 ]
 
+myst_heading_anchors = 3
+
 source_suffix = {
     '.rst': 'restructuredtext',
     '.md': 'markdown',
@@ -65,4 +67,3 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 gettext_compact = False
-gettext_uuid = True

@@ -19,19 +19,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../index.rst:15 ../../index.rst:52 242c2e0493e24655be58136cbfb31df6
+#: ../../index.rst:15 ../../index.rst:52
 msgid "Sites"
 msgstr "Sites"
 
-#: ../../index.rst:19 ../../index.rst:64 bfb7c5510ac04c97a60d26bb5c22a58b
+#: ../../index.rst:19 ../../index.rst:64
 msgid "Resources"
 msgstr "Ressources"
 
-#: ../../index.rst:23 ../../index.rst:74 6d8d7b5a9ee34395913f21d17b8c35e5
+#: ../../index.rst:23 ../../index.rst:74
 msgid "Admin"
 msgstr "Admin"
 
-#: ../../index.rst:29 ../../index.rst:82 09844492cf9e42e59c2282b2435eae78
+#: ../../index.rst:29 ../../index.rst:82
 msgid "Modules"
 msgstr "Modules"
 
@@ -39,11 +39,11 @@ msgstr "Modules"
 msgid "Miscellaneous"
 msgstr ""
 
-#: ../../index.rst:3 a146aee86f164bee9de30ae10c909774
+#: ../../index.rst:3
 msgid "Omeka S User Manual"
 msgstr ""
 
-#: ../../index.rst:5 00b2162b8d3141fea94a1614f73198b0
+#: ../../index.rst:5
 msgid ""
 "Omeka S is a web publication system for universities, galleries, "
 "libraries, archives, and museums. It creates a local network of "
@@ -51,32 +51,32 @@ msgid ""
 "items and their metadata."
 msgstr ""
 
-#: ../../index.rst:9 b24ce0612ed34f94aba70352fe220f4e
+#: ../../index.rst:9
 msgid ""
 "The sections of this manual correspond to the navigation sections on the "
 "left-hand side of the :doc:`administrative dashboard <docs/admin-"
 "dashboard>`. of an Omeka S Installation:"
 msgstr ""
 
-#: ../../index.rst:14 eab2806d0e7d4ba9a81680334e3a25e4
+#: ../../index.rst:14
 msgid ""
 "Creating, editing, and managing sites, the public-facing parts of an "
 "Omeka S installation."
 msgstr ""
 
-#: ../../index.rst:18 1d4c737c1f174934b1cc3f711627a137
+#: ../../index.rst:18
 msgid ""
 "Creating, editing, and managing the content of an installation: items, "
 "item sets, media, vocabularies, and resource templates."
 msgstr ""
 
-#: ../../index.rst:22 dc2cec2d8f9f4e72b8f3fe67a94e7bc9
+#: ../../index.rst:22
 msgid ""
 "Access to functionality in the admin section varies by user role, but can"
 " include: users, jobs, and settings."
 msgstr ""
 
-#: ../../index.rst:26 2a53c40904ab430a90ce775aeb85eca7
+#: ../../index.rst:26
 msgid ""
 "This section opens with basic information on managing the modules which "
 "extend the functionality of your Omeka S installation and sites. It then "
@@ -84,24 +84,20 @@ msgid ""
 "listed in alphabetial order."
 msgstr ""
 
-#: ../../index.rst:31 41f9aead19f1435e98897f6568ea12c9
+#: ../../index.rst:31
 msgid ""
 "This manual also includes a :doc:`glossary <docs/glossary>`, instructions"
 " on conducting :doc:`searches <docs/search>`, and how to turn on "
 ":doc:`error logging <docs/errorLogging>`."
 msgstr ""
 
-#: ../../index.rst:35 1019d34c6a434873a78c6cc4b58aa9f3
+#: ../../index.rst:35
 msgid ""
 "Screencasts to supplement the documentation are linked from relevant "
 "pages, and can be browsed in the `Omeka S collection on Vimeo "
 "<https://vimeo.com/showcase/4215056>`_."
 msgstr ""
 
-#: ../../index.rst:39 4eaebabb67aa4d698dd4c3c1431bf9f6
+#: ../../index.rst:39
 msgid "This documentation is CC-BY-NC"
 msgstr ""
-
-#~ msgid "Welcome to Omeka S end user manual's documentation!"
-#~ msgstr "Bienvenue dans la documentation Omeka S!"
-

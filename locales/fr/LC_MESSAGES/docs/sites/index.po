@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Omeka S end user manual \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"POT-Creation-Date: 2021-06-28 22:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,63 +18,63 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../docs/sites/index.md:1 cd26461a593e42629b35507f2fcef4f6
+#: ../../docs/sites/index.md:1
 msgid "Sites Management"
 msgstr ""
 
-#: ../../docs/sites/index.md:3 242d360583ec40a9a8700b1f97985ee5
+#: ../../docs/sites/index.md:3
 msgid ""
 "Sites are the public-facing side of an Omeka-S installation. With sites "
 "you can create content and interpretation around a group of items from "
 "your installation."
 msgstr ""
 
-#: ../../docs/sites/index.md:5 52c51ead3d6248c99bfeae62a24059db
+#: ../../docs/sites/index.md:5
 msgid ""
 "Sites are managed and access via the *Sites* tab on the left-hand side of"
 " the administrative dashboard."
 msgstr ""
 
-#: ../../docs/sites/index.md:7 e152af774870402b847300939bb7d05c
+#: ../../docs/sites/index.md:7
 msgid ""
 "![Manage sites view showing Add New button and table of sites with one "
 "site](../sites/sitesfiles/sites_admin.png)"
 msgstr ""
 
-#: ../../docs/sites/index.md:9 0de313f8d602407d8c9f59771354725b
+#: ../../docs/sites/index.md:9
 msgid ""
 "The manage sites page displays a table with all the sites for the "
 "installation, giving the title and owner for each site."
 msgstr ""
 
-#: ../../docs/sites/index.md:11 54713dc10a5b49378a501de334d44c49
+#: ../../docs/sites/index.md:11
 msgid ""
 "Use the two drop-downs on the right side above the table to sort sites. "
 "You can sort by *title*, *URL slug* or *owner*, either ascending or "
 "descending. Click the sort button to apply your choices."
 msgstr ""
 
-#: ../../docs/sites/index.md:13 c63af880ddb94648bcf130fed2b5ac80
+#: ../../docs/sites/index.md:13
 msgid ""
 "Above the table of sites, on the left, is the pagination for the item "
 "sets table, where you can click the left and right arrows to move forward"
 " and back or enter a page number to go a specific page of item sets."
 msgstr ""
 
-#: ../../docs/sites/index.md:15 f74197c335fa4b7eb86047352fbf6965
+#: ../../docs/sites/index.md:15
 msgid ""
 "Each row gives the title of a site, options to *view* (box with outward "
 "arrow), *edit* (pencil), or *delete* (trash can), and displays the owner "
 "of the site. *Only global admins and site owners can delete a site.*"
 msgstr ""
 
-#: ../../docs/sites/index.md:17 628317d29d524d1bb3db9044c13b79dc
+#: ../../docs/sites/index.md:17
 msgid ""
 "Sites which are not public will have the private icon (an eye with a "
 "slash through it) display to the right of the site title."
 msgstr ""
 
-#: ../../docs/sites/index.md:19 a6480a0eb07e4c9998a043aee01c98ab
+#: ../../docs/sites/index.md:19
 msgid ""
 "Clicking on the site title will take you to a summary page for the site "
 "which displays the site’s *url slug,* and *title,* from which you can "
@@ -82,60 +82,60 @@ msgid ""
 "*edit* or *view* the site using buttons in the upper right"
 msgstr ""
 
-#: ../../docs/sites/index.md:21 434d0340fade4926b752990777347359
+#: ../../docs/sites/index.md:21
 msgid ""
 "![show page for the site “What Does This Look Like” indicating that the "
 "theme is default and the slug is public "
 "views.](../sites/sitesfiles/sites_quickshow.png)"
 msgstr ""
 
-#: ../../docs/sites/index.md:23 708a5080fb2a47288c4009adff380da2
+#: ../../docs/sites/index.md:23
 msgid "Adding a site"
 msgstr ""
 
-#: ../../docs/sites/index.md:24 c11ee8d42c684bb190750f743bce69a9
+#: ../../docs/sites/index.md:24
 msgid ""
 "To create a site, click the *Add new site* button in the upper right-hand"
 " corner of the site browse page."
 msgstr ""
 
-#: ../../docs/sites/index.md:26 839587e568044730835dfb50ac6336b6
+#: ../../docs/sites/index.md:26
 msgid "The Add New Site page has three tabs: Admin, Theme, and Item Pool."
 msgstr ""
 
-#: ../../docs/sites/index.md:28 131f0d78f5e94e15bb8d87c9997ea684
+#: ../../docs/sites/index.md:28
 msgid "The Admin tab"
 msgstr ""
 
-#: ../../docs/sites/index.md:29 ec601f80120d4ec0b1722573c20f9311
+#: ../../docs/sites/index.md:29
 msgid "Give your site a *title* (required)"
 msgstr ""
 
-#: ../../docs/sites/index.md:30 1921e38e539045158176ac00b3ea8eb8
+#: ../../docs/sites/index.md:30
 msgid ""
 "create a *slug* for the site’s url. The url will be "
 "*installurl/site/slug*. This is optional - if you leave this field blank,"
 " Omeka S will create a slug based on the site title."
 msgstr ""
 
-#: ../../docs/sites/index.md:31 22c9645ddbb841ea9d023b0a5584f452
+#: ../../docs/sites/index.md:31
 msgid ""
 "Create a *summary* for your site, a brief idea of what it is about which "
 "will appear on your installation's landing page and on [list of site "
-"blocks](../sites/site_pages/#page-blocks)"
+"blocks](site_pages.md#page-blocks)"
 msgstr ""
 
-#: ../../docs/sites/index.md:33 254ad75ab65747b4a0286355100a25a8
+#: ../../docs/sites/index.md:33
 msgid ""
 "![Admin tab for a new site with nothing "
 "entered](../sites/sitesfiles/sitesadd_admin.png)"
 msgstr ""
 
-#: ../../docs/sites/index.md:35 af4afdb284fc46c88f365d7ef7f221ae
+#: ../../docs/sites/index.md:35
 msgid "The Theme tab"
 msgstr ""
 
-#: ../../docs/sites/index.md:36 ae373803bc0b44d1b1dc7c648e65c0e4
+#: ../../docs/sites/index.md:36
 msgid ""
 "Select from the installed themes. Each theme appears as a button with a "
 "screenshot of the theme, the theme name, and a link to its creator. When "
@@ -143,76 +143,76 @@ msgid ""
 "will appear in the bottom right corner of the button."
 msgstr ""
 
-#: ../../docs/sites/index.md:38 e4d9bca142d8456a9356a504810ca5bf
+#: ../../docs/sites/index.md:38
 msgid ""
 "![Theme tab with default theme "
 "selected](../sites/sitesfiles/sitesadd_theme.png)"
 msgstr ""
 
-#: ../../docs/sites/index.md:40 9bf7e4a9caf64a6aacf317047a7ab00d
+#: ../../docs/sites/index.md:40
 msgid "Publication settings"
 msgstr ""
 
-#: ../../docs/sites/index.md:41 dc73abd361f5455393dc0f7d06788639
+#: ../../docs/sites/index.md:41
 msgid ""
 "In the upper right hand corner of the screen, next to the *Add* button, "
 "you can set the visibility of your site using the the *make "
 "public/private* button (eye icon)."
 msgstr ""
 
-#: ../../docs/sites/index.md:43 5b43db8218a14aa39f2cf9f5cc24485d
+#: ../../docs/sites/index.md:43
 msgid ""
 "![make public button showing an eye "
 "icon](../content/contentfiles/item_public.png) Public"
 msgstr ""
 
-#: ../../docs/sites/index.md:45 d3fc3fb4ce934673815ec81d21c5d925
+#: ../../docs/sites/index.md:45
 msgid ""
 "![make private button showing an eye icon with a diagonal slash through "
 "it](../content/contentfiles/item_private.png)  Private"
 msgstr ""
 
-#: ../../docs/sites/index.md:47 b48fc5be7cae49b8884ac5727075e055
+#: ../../docs/sites/index.md:47
 msgid ""
 "You will probably want to leave the site Private until you have added "
 "some content."
 msgstr ""
 
-#: ../../docs/sites/index.md:49 1e22fd55b10d44548b3f6a19d0385a9e
+#: ../../docs/sites/index.md:49
 msgid "Add site"
 msgstr ""
 
-#: ../../docs/sites/index.md:50 f7b41f46c09d4dde9698bd10908724b8
+#: ../../docs/sites/index.md:50
 msgid ""
 "When you are ready, click the Add button in the upper right corner. Once "
 "the page is created, you will be redirected to the site info tab of the "
 "site management."
 msgstr ""
 
-#: ../../docs/sites/index.md:52 6fb7857fe7b840f7a318d192409c217b
+#: ../../docs/sites/index.md:52
 msgid ""
 "If you decide you do not want to create this site, click the Cancel "
 "button in the upper right next to the Add button"
 msgstr ""
 
-#: ../../docs/sites/index.md:54 9ba63deb627e45b18da89af9b984e651
+#: ../../docs/sites/index.md:54
 msgid "Manage a site"
 msgstr ""
 
-#: ../../docs/sites/index.md:55 40c92b617fdb412f959943cd437ecca0
+#: ../../docs/sites/index.md:55
 msgid ""
 "To manage a site, navigate to the *Sites* tab from the Omeka S Admin "
 "Dashboard. Click either on the site’s title or the edit (pencil) button "
 "in the list of sites."
 msgstr ""
 
-#: ../../docs/sites/index.md:57 669493cdfb22461ca0c956e9a64d054e
+#: ../../docs/sites/index.md:57
 msgid ""
 "This will take you to the Site Info page, and open the context menu for "
 "that site in the left hand navigation."
 msgstr ""
 
-#: ../../docs/sites/index.md:59 34faf6c039684fcb882ae766eb36277f
+#: ../../docs/sites/index.md:59
 msgid ""
 "The context menu for every site has the site title at the top, with an "
 "icon of a computer (the site icon) to the right. To the left of the site "
@@ -220,45 +220,45 @@ msgid ""
 "button will open the public side of the site in a new window."
 msgstr ""
 
-#: ../../docs/sites/index.md:61 4f74579cc6754438adb1f6b0c263a5e1
+#: ../../docs/sites/index.md:61
 msgid ""
 "![Context menu for the site Jane Austen, with two modules "
 "installed](../sites/sitesfiles/sites_menu.png)"
 msgstr ""
 
-#: ../../docs/sites/index.md:63 f5c2c9c85b654afda399d6676150eb09
+#: ../../docs/sites/index.md:63
 msgid "Site admin left hand navigation options are:"
 msgstr ""
 
-#: ../../docs/sites/index.md:65 ed7920a97c854d66a1554dfb4cf53c1a
+#: ../../docs/sites/index.md:65
 msgid "*[Site Admin](../sites/site_settings.md)*,"
 msgstr ""
 
-#: ../../docs/sites/index.md:66 418f3ed878c044bbac17759bc847ebb9
+#: ../../docs/sites/index.md:66
 msgid "*[Pages](../sites/site_pages.md)*,"
 msgstr ""
 
-#: ../../docs/sites/index.md:67 5e1d2d40003247488d3415f7fdcbecc5
+#: ../../docs/sites/index.md:67
 msgid "*[Navigation](../sites/site_navigation.md)*,"
 msgstr ""
 
-#: ../../docs/sites/index.md:68 22e6a01bd976433986250db8a5106b4a
+#: ../../docs/sites/index.md:68
 msgid "*[Resources](../sites/site_resources.md)*,"
 msgstr ""
 
-#: ../../docs/sites/index.md:69 55a4dd03df0a4eeab13b30050b21e03b
+#: ../../docs/sites/index.md:69
 msgid "*[User Permissions](../sites/site_users.md)*,"
 msgstr ""
 
-#: ../../docs/sites/index.md:70 5c8148e019a54dcf943d571f3580a3bc
+#: ../../docs/sites/index.md:70
 msgid "*[Theme](../sites/site_theme.md)*, and"
 msgstr ""
 
-#: ../../docs/sites/index.md:71 b12c17a8341d47f98e6eb4378f1a5449
+#: ../../docs/sites/index.md:71
 msgid "Modules, if installed."
 msgstr ""
 
-#: ../../docs/sites/index.md:73 803e3080ed8d47a7a7e817e3330ca495
+#: ../../docs/sites/index.md:73
 msgid ""
 "Any modules which you have installed that have site-specific settings "
 "will appear below the site Settings tab in the site's context menu. In "
@@ -266,7 +266,7 @@ msgid ""
 "installed."
 msgstr ""
 
-#: ../../docs/sites/index.md:75 37a8b31a038645cb91b5fd85475f2e62
+#: ../../docs/sites/index.md:75
 msgid ""
 "The standard options in the left hand navigation of the Omeka S Admin "
 "(items, item sets, etc) are still available below the site context menu."

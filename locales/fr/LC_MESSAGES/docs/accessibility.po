@@ -20,11 +20,11 @@ msgstr ""
 "Generated-By: Babel 2.9.1\n"
 "X-Generator: Poedit 2.2.1\n"
 
-#: ../../docs/accessibility.rst:2 84605d9d84af449cbad139cb7f5fc514
+#: ../../docs/accessibility.rst:2
 msgid "Accessibility Statement"
 msgstr "Déclaration d'accessibilité"
 
-#: ../../docs/accessibility.rst:4 42fe4af56b8a42f082922767a6de82ae
+#: ../../docs/accessibility.rst:4
 msgid ""
 "The Omeka team is committed to making Omeka S an accessible option for "
 "building collections and exhibits online. We are working to make the "
@@ -44,11 +44,11 @@ msgstr ""
 "section508.gov/>`_ de la loi américaine sur les personnes handicapées "
 "(pdf)."
 
-#: ../../docs/accessibility.rst:12 7bbe85f4b29e442f96f24091b22549c1
+#: ../../docs/accessibility.rst:12
 msgid "For more information, please review the following reports:"
 msgstr "Pour plus d'informations, veuillez lire les rapports suivants:"
 
-#: ../../docs/accessibility.rst:14 3b6564bda654473abecdf6d1c0a6699d
+#: ../../docs/accessibility.rst:14
 msgid ""
 "Omeka S version 3.x :download:`Accessibility Conformance Report, using "
 "VPAT 2.4 Revised International Standards <files/OmekaS3x_ACR.pdf>` "
@@ -58,7 +58,7 @@ msgstr ""
 "VPAT 2.4 Revised International Standards <files/OmekaS3x_ACR.pdf>` "
 "(pdf), Octobre 2020."
 
-#: ../../docs/accessibility.rst:15 901ff65c6d204d8295fe8a7446071594
+#: ../../docs/accessibility.rst:15
 msgid ""
 "Omeka S version 2.x :download:`Accessibility Conformance Report using "
 "VPAT version 2.0 <files/VPAT_OmekaS2-0-1.pdf>` (pdf), August 2019."
@@ -66,7 +66,7 @@ msgstr ""
 "Omeka S version 2.x :download:`Accessibility Conformance Report using "
 "VPAT version 2.0 <files/VPAT_OmekaS2-0-1.pdf>` (pdf), Août 2019."
 
-#: ../../docs/accessibility.rst:16 ce7c76dee0484e13a15aa79b1f5d8439
+#: ../../docs/accessibility.rst:16
 msgid ""
 "Omeka S version 1.x :download:`Accessibility Conformance Report using "
 "VPAT version 1.1 <files/VPAT2.0-OmekaS1-1.pdf>` (pdf), April 2018."
@@ -74,17 +74,17 @@ msgstr ""
 "Omeka S version 1.x :download:`Accessibility Conformance Report using "
 "VPAT version 1.1 <files/VPAT2.0-OmekaS1-1.pdf>` (pdf), Avril 2018."
 
-#: ../../docs/accessibility.rst:18 383893997fa342c2bd46127aa1bb65a9
+#: ../../docs/accessibility.rst:18
 msgid "The following statements apply to Omeka S version 1.0.1 and higher:"
 msgstr ""
 "Les instructions suivantes s'appliquent à Omeka S version 1.0.1 et "
 "ultérieure:"
 
-#: ../../docs/accessibility.rst:21 abd6f0bb32d04536b41ce60a53ac7adc
+#: ../../docs/accessibility.rst:21
 msgid "Front End (Public view)"
 msgstr "Front End (vue publique)"
 
-#: ../../docs/accessibility.rst:23 f01ed30314cd4c08bd6295509317905e
+#: ../../docs/accessibility.rst:23
 msgid ""
 "The themes produced for Omeka S by RRCHNM have has the following "
 "features to improve accessibility:"
@@ -92,7 +92,7 @@ msgstr ""
 "Les thèmes produits pour Omeka S par RRCHNM ont les caractéristiques "
 "suivantes pour améliorer l’accessibilité:"
 
-#: ../../docs/accessibility.rst:25 22b2c915126d4102b39580be9d710550
+#: ../../docs/accessibility.rst:25
 msgid ""
 "`ARIA <http://www.w3.org/WAI/intro/aria>`_ (Accessible Rich Internet "
 "Applications) landmarks for tabbing through page content, when not using "
@@ -103,11 +103,10 @@ msgstr ""
 "sans utiliser de souris ni de lecteur d'écran;"
 
 #: ../../docs/accessibility.rst:26 ../../docs/accessibility.rst:36
-#: 628d36a806de49e1bf1dfb6d864e01b7 633bcf69cce548d889f2eec0a101e475
 msgid "Semantic HTML5 markup."
 msgstr "Balisage HTML5 sémantique."
 
-#: ../../docs/accessibility.rst:28 2cf7a13eda95461686cec9db9262bd32
+#: ../../docs/accessibility.rst:28
 msgid ""
 "Please note that although the core code for Omeka S conform to the above "
 "standards, installations of Omeka S which have been customized or which "
@@ -124,11 +123,11 @@ msgstr ""
 "ne pouvons pas garantir que leur code inclut les points de repère ARIA, "
 "SkipNav ou d'autres considérations relatives à l'accessibilité."
 
-#: ../../docs/accessibility.rst:31 a94cf0c0f2f24b21abaa2cb88e8ad453
+#: ../../docs/accessibility.rst:31
 msgid "Back End (Administrative view)"
 msgstr "Back End (vue administrative"
 
-#: ../../docs/accessibility.rst:33 57ab411b23dc46c28a0ce5d977196e57
+#: ../../docs/accessibility.rst:33
 msgid ""
 "The administrative dashboard of Omeka S has the following features for "
 "accessibility:"
@@ -136,7 +135,7 @@ msgstr ""
 "Le tableau de bord administratif d'Omeka S présente les caractéristiques "
 "d'accessibilité suivantes:"
 
-#: ../../docs/accessibility.rst:35 72a08514539c4b8db4ed82a63c164534
+#: ../../docs/accessibility.rst:35
 msgid ""
 "ARIA landmarks for screen readers on the Admin Dashboard, designating "
 "the header, navigation, main content, and footers."

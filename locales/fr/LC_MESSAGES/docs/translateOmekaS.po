@@ -19,11 +19,11 @@ msgstr ""
 "Language: fr_FR\n"
 "X-Generator: Poedit 2.0.6\n"
 
-#: ../../docs/translateOmekaS.md:1 9ab28e25ddac472b8f59971b22df08ce
+#: ../../docs/translateOmekaS.md:1
 msgid "Translate Omeka S"
 msgstr "Traduire Omeka S"
 
-#: ../../docs/translateOmekaS.md:3 ac1df57578a346e3980f83d2adeb3f28
+#: ../../docs/translateOmekaS.md:3
 msgid ""
 "We need the community's help translating English text in Omeka S into "
 "new languages, so users can have a variety of choices. You don't need to "
@@ -36,15 +36,15 @@ msgstr ""
 "savoir écrire du code pour nous aider à traduire Omeka S, vous devez "
 "juste parler couramment l'anglais et une autre langue."
 
-#: ../../docs/translateOmekaS.md:5 e5adfbd18b1843e98696484f1b90d944
+#: ../../docs/translateOmekaS.md:5
 msgid "Getting Started"
 msgstr "Démarrage"
 
-#: ../../docs/translateOmekaS.md:7 c12b7f28d5784dfe98d977524ebd3f3b
+#: ../../docs/translateOmekaS.md:7
 msgid "Sign up on Transifex.com"
 msgstr "Inscrivez-vous sur Transifex.com"
 
-#: ../../docs/translateOmekaS.md:8 2ff577b9a1954f069fd0fbe160c36e1a
+#: ../../docs/translateOmekaS.md:8
 msgid ""
 "Omeka S uses [Transifex.com](https://www.transifex.com) to manage "
 "translations. To start helping to translate Omeka into other languages, "
@@ -58,11 +58,11 @@ msgstr ""
 "transifex.com/signup/). Transifex.net propose plusieurs plans, mais "
 "comme Omeka est un projet open-source, vous pouvez utiliser le plan Free."
 
-#: ../../docs/translateOmekaS.md:10 de4431a11c634cdb9b1bee01458c0b47
+#: ../../docs/translateOmekaS.md:10
 msgid "Join or start a language team"
 msgstr "Rejoindre ou créer une équipe par langue."
 
-#: ../../docs/translateOmekaS.md:11 aab4b3e6a362498fabd58dfc83fdba8c
+#: ../../docs/translateOmekaS.md:11
 msgid ""
 "Once you have registered for an account, visit the [Omeka S project page]"
 "(https://www.transifex.com/omeka/omeka-s/) and click on the \"Help "
@@ -72,7 +72,7 @@ msgstr ""
 "project page](https://www.transifex.com/omeka/omeka-s/)et cliquez sur le "
 "bouton \"Aide Traduire Omeka S\" ou \"Allez à vos équipes et langues\"."
 
-#: ../../docs/translateOmekaS.md:13 44acf21d6e044d84b5edbd34826f5646
+#: ../../docs/translateOmekaS.md:13
 msgid ""
 "Here, you can choose among all the languages that are already being "
 "worked on. If you want to start work on a translation into a new "
@@ -88,7 +88,7 @@ msgstr ""
 "droite de l'écran, puis sélectionnez la langue sur laquelle vous "
 "souhaitez travailler."
 
-#: ../../docs/translateOmekaS.md:15 98b79dfc18b644749086dde143f410fb
+#: ../../docs/translateOmekaS.md:15
 msgid ""
 "On the other hand, if someone has already created a team for the "
 "language you want to work on, click the name of the language, and on the "
@@ -101,7 +101,7 @@ msgstr ""
 "\". Il incombera au coordinateur d’approuver votre demande "
 "d’appartenance à l’équipe."
 
-#: ../../docs/translateOmekaS.md:17 080de5b8f5504e77a8f2b231305f1069
+#: ../../docs/translateOmekaS.md:17
 msgid ""
 "Once a coordinator has approved you to join the team, you can go to the "
 "Omeka S dashboard and click on the \"Translate\" button to begin "
@@ -111,7 +111,7 @@ msgstr ""
 "vous pouvez accéder au tableau de bord Omeka S et cliquer sur le bouton "
 "\"Traduire\" pour commencer la traduction."
 
-#: ../../docs/translateOmekaS.md:19 a60fbd7325854b7e850c9b6437d3b34e
+#: ../../docs/translateOmekaS.md:19
 msgid ""
 "If you want to check your translation or anything else you need to make "
 "an mo file from your po file, you can do it with msgfmt from the [GNU "
@@ -122,7 +122,7 @@ msgstr ""
 "pouvez le faire avec msgfmt à partir du [GNU gettext package](http://www."
 "gnu.org/software/gettext/)."
 
-#: ../../docs/translateOmekaS.md:21 3b27482b9eab4406a3d735712214687a
+#: ../../docs/translateOmekaS.md:21
 msgid ""
 "For Transifex-specific issues, please see their [documentation](http://"
 "docs.transifex.com/)"
@@ -130,11 +130,11 @@ msgstr ""
 "Pour les problèmes spécifiques à Transifex, veuillez consulter leur "
 "[documentation](http://docs.transifex.com/)"
 
-#: ../../docs/translateOmekaS.md:23 804835da6db547fb8ee53526fe4dc395
+#: ../../docs/translateOmekaS.md:23
 msgid "Translation Guidelines"
 msgstr "Directives de traduction"
 
-#: ../../docs/translateOmekaS.md:25 b2f2efd9e3ef431f9b0a1a5e63789e83
+#: ../../docs/translateOmekaS.md:25
 msgid ""
 "Most of the strings to be translated in Omeka are straightforward and "
 "can be translated directly. However, there are a few special cases that "
@@ -144,11 +144,11 @@ msgstr ""
 "être traduites directement. Cependant, il existe quelques cas spéciaux "
 "qui doivent être traités avec soin."
 
-#: ../../docs/translateOmekaS.md:27 6904f09c3292443c87f0ea4d0ae07a7a
+#: ../../docs/translateOmekaS.md:27
 msgid "Placeholders"
 msgstr "Placeholders / caractères spéciaux"
 
-#: ../../docs/translateOmekaS.md:28 dcc92d73c24249e1bbe8836af0ffdd07
+#: ../../docs/translateOmekaS.md:28
 #, python-format
 msgid ""
 "Some strings contain text that looks like `%s` or `%1$s`. These odd-"
@@ -163,7 +163,7 @@ msgstr ""
 "d'insérer des informations changeantes, telles que le nombre d'éléments "
 "d'un site Omeka, dans une chaîne traduite."
 
-#: ../../docs/translateOmekaS.md:30 4a9171b3c5834dac940d08b968a3a223
+#: ../../docs/translateOmekaS.md:30
 msgid ""
 "If a source string contains placeholders, you must include them in your "
 "translation. You can move the placeholders around within the string, and "
@@ -176,11 +176,11 @@ msgstr ""
 "chaîne, mais tous les caractères spéciaux de la chaîne source doivent "
 "apparaître dans la traduction."
 
-#: ../../docs/translateOmekaS.md:32 31f94c0d86e14f8fb84e0ffbea0bccc9
+#: ../../docs/translateOmekaS.md:32
 msgid "HTML and URLs"
 msgstr "HTML et URLs"
 
-#: ../../docs/translateOmekaS.md:33 00f16e2432784476831b7b520fe66682
+#: ../../docs/translateOmekaS.md:33
 msgid ""
 "A few strings contain embedded HTML code or URLs. You can translate and "
 "change the plain English text in these strings, but you should preserve "

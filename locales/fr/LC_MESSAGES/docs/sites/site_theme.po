@@ -18,87 +18,87 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../docs/sites/site_theme.md:1 dc4ddeca70db4e138afac4d6cdd34ca8
+#: ../../docs/sites/site_theme.md:1
 msgid "Theme Selection"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:3 9693349335914777bc50cfd5f87fffb4
+#: ../../docs/sites/site_theme.md:3
 msgid ""
 "The Theme tab of the site context menu allows you to select the theme for"
 " your site, and to set theme-specific settings."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:5 6d01f11f0f384e06b2c5db28ba7a3746
+#: ../../docs/sites/site_theme.md:5
 msgid "Select a Theme"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:7 edf1a072ef9d47609765a26681c526e8
+#: ../../docs/sites/site_theme.md:7
 msgid ""
 "When you navigate to the Theme tab, the currently active theme will "
 "appear on the top of the page. If you did not select a theme when adding "
 "the site, this will be the Default theme."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:9 e253220e8b4642c9a8b2a41324658044
+#: ../../docs/sites/site_theme.md:9
 msgid ""
 "A large image of the active appears on the left, with the theme Title, "
 "creator, and a button for Theme Settings on the right."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:11 5c1ea60a92be4ac9b35ae446ecbdca98
+#: ../../docs/sites/site_theme.md:11
 msgid ""
 "![Theme tab with Center Row as the current "
 "theme](../sites/sitesfiles/sitetheme_tab.png)"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:13 ea8ff83595bf4b51b118c8811d104192
+#: ../../docs/sites/site_theme.md:13
 msgid ""
 "Below the current theme are buttons for all other installed themes. The "
 "buttons have a small image of the theme in action, the theme name, and a "
 "link to the creator of the theme."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:15 8e1b7c8407a241778c88daaab9eb57a3
+#: ../../docs/sites/site_theme.md:15
 msgid ""
 "To switch themes, click on the theme which you want to use. It should "
 "highlight slightly in gray, with a checkbox in the lower right-hand "
 "corner of the theme button."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:17 771a91a82f07474d89c8090b07258eb0
+#: ../../docs/sites/site_theme.md:17
 msgid ""
 "![A selected theme showing the highlight and "
 "checkmark](../sites/sitesfiles/sites_themeselect.png)"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:19 b6fc7f789f0d44958b1b528c5eebc69e
+#: ../../docs/sites/site_theme.md:19
 msgid ""
 "Click the Save button in the upper right-hand corner of the window to "
 "save changes. Click the Cancel button to leave without saving changes."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:21 468fb75d554048c5bbec5559b9c7e8de
+#: ../../docs/sites/site_theme.md:21
 msgid "Theme Settings"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:23 e3c4d378e8ab4596b1914b4aa08fb5c4
+#: ../../docs/sites/site_theme.md:23
 msgid ""
 "Theme settings allow you to customize aspects of the site's theme, such "
 "as adding a logo to the top or writing footer text."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:25 61b6acdfdcf04501876b85f9465a7515
+#: ../../docs/sites/site_theme.md:25
 msgid ""
 "To edit the settings of your selected theme, click on the button labeled "
 "*edit theme settings* to the right of the current theme thumbnail "
 "(highlighted with an arrow in the below image)."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:27 abd97c36b8934d1a82e02dcd615863aa
+#: ../../docs/sites/site_theme.md:27
 msgid "![Theme settings button](../sites/sitesfiles/sitetheme_settings.png)"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:29 05fd2023db7a4ccaa0eae6dad8fa84da
+#: ../../docs/sites/site_theme.md:29
 msgid ""
 "Note that your settings for a specific theme on a site will be saved even"
 " if you change themes. For example, if you customized the footer for the "
@@ -107,27 +107,27 @@ msgid ""
 "there."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:31 06f5522caaee4218ac302a27bd309cd5
+#: ../../docs/sites/site_theme.md:31
 msgid "Settings Options"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:32 41724653229d41398e58a974303ae410
+#: ../../docs/sites/site_theme.md:32
 msgid ""
 "Depending on which theme you have selected, you may see any of the "
 "following setting options:"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:34 d2d4363ebc1348408d0ebbbd354707dd
+#: ../../docs/sites/site_theme.md:34
 msgid "Logo"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:35 25b6c4c58ef7458aa9de058af6628d3f
+#: ../../docs/sites/site_theme.md:35
 msgid ""
 "(All themes) Upload a asset (file) to function as a logo in the header of"
 " your site. Allowed file types are: jpg, gif, png, svg, and svgz."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:38 0b4639fdbbe94d9fa97355f1e63bd16c
+#: ../../docs/sites/site_theme.md:38
 msgid ""
 "This asset is not associated with any of the items, and will be stored "
 "separately; once uploaded to a site you will be able to select it again "
@@ -135,63 +135,63 @@ msgid ""
 "uploaded to one site will be available for all sites on the installation."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:40 ce60c7fb96a64de98cb2c79ecfee655f
+#: ../../docs/sites/site_theme.md:40
 msgid "![Logo option](../sites/sitesfiles/sitetheme_logo.png)"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:42 4f6a1b1e4371454fa7c18b3524a893d1
+#: ../../docs/sites/site_theme.md:42
 msgid ""
 "To upload a logo, click the Select button. This will open a sidebar where"
 " you can either upload a new file from your computer or choose from "
 "assets already uploaded to the installation."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:44 e55a5288e2b84cf2981dec8a78be90dc
+#: ../../docs/sites/site_theme.md:44
 msgid "![Logo option with sidebar open](../sites/sitesfiles/sitetheme_logo2.png)"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:46 87e8a1f24b7445f1988d584989252699
+#: ../../docs/sites/site_theme.md:46
 msgid ""
 "Note that the logo completely replaces the header, including the site "
 "title, for the site, so you may want to consider an image with text if it"
 " is important to you that users see the site title."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:48 38f1d57cdbd448db8f0ef9aee2153a71
+#: ../../docs/sites/site_theme.md:48
 msgid ""
 "To remove a logo, click the *clear* button in that block (only visible "
 "when a logo is active) and save changes."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:50 da40a735e19f486bb3f2d700a93514d1
+#: ../../docs/sites/site_theme.md:50
 msgid "Footer Content"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:51 9921f2c736f94b6da636dbbf1bd4bb06
+#: ../../docs/sites/site_theme.md:51
 msgid ""
 "(All themes) A text field in which you can enter content to appear in the"
 " footer of the site."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:54 6c5a0c26383642bf97790b8c18c16fbc
+#: ../../docs/sites/site_theme.md:54
 msgid ""
 "![footer text field with prompt "
 "visible](../sites/sitesfiles/sitetheme_footer.png)"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:56 a86d32e6347a422eb3899b8108978322
+#: ../../docs/sites/site_theme.md:56
 msgid "By default the message is Powered by Omeka S."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:58 fb23e4898b374e95a76e06a5b2594be5
+#: ../../docs/sites/site_theme.md:58
 msgid "You can add HTML formatting to the text by manually adding the tags."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:61 e456cf3e4ce743fab3ddd02d0bddf47a
+#: ../../docs/sites/site_theme.md:61
 msgid "Top Navigation Depth"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:62 adfd39007b2e463aa8db24a03af2b9a1
+#: ../../docs/sites/site_theme.md:62
 msgid ""
 "(Default, Cozy, Foundation) Top Navigation Depth allows you the limit the"
 " depth of the top navigation menu on the public side of the site.  The "
@@ -200,46 +200,46 @@ msgid ""
 " links of your site."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:65 07a6fb15977a438eb2104d96d38c4b6d
+#: ../../docs/sites/site_theme.md:65
 msgid ""
 "![Theme settings with Top Navigation depth at "
 "0](../sites/sitesfiles/sitetheme_depth.png)"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:67 358bb199bbe0488ea9a9f1406fcc64c3
+#: ../../docs/sites/site_theme.md:67
 msgid "Color Selection"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:68 39b9b1ecd30f422a9b13b5a5840d5f19
+#: ../../docs/sites/site_theme.md:68
 msgid "(Default, Cozy, The Daily)"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:70 b47ac7cafb06445a911df5c7cc7d4939
+#: ../../docs/sites/site_theme.md:70
 msgid ""
 "The themes Default, Cozy, and The Daily include an option to enter values"
 " for the *main accent color*; Cozy also has an option for the *navigation"
 " background color*."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:72 66b557fddc4645ae87d94a670ab48556
+#: ../../docs/sites/site_theme.md:72
 msgid "![color option fields](../sites/sitesfiles/sitetheme_color.png)"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:74 026a3240301840bc841b6455e8f25427
+#: ../../docs/sites/site_theme.md:74
 msgid ""
 "The Main Accent color is used for link text and on-hover colors, as in "
 "the image below:  ![arrow points to instances of main accent color in "
 "use](../sites/sitesfiles/sitetheme_mainaccent.png)"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:77 33f06e18650546a9a81416c23f3f6e63
+#: ../../docs/sites/site_theme.md:77
 msgid ""
 "The navigation background color sets the color of the navigation sidebar "
 "for the theme.  ![arrow points to "
 "sidebar](../sites/sitesfiles/sitetheme_navcolor.png)"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:80 ff6d55005c02417ea3b7320252621d95
+#: ../../docs/sites/site_theme.md:80
 msgid ""
 "Edit either field by typing a [color "
 "value](https://en.wikipedia.org/wiki/Web_colors) into the field. Either a"
@@ -248,50 +248,50 @@ msgid ""
 "update to show the color entered, even without saving changes."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:82 e1ef89c4670e4c9c926c07fda935546b
+#: ../../docs/sites/site_theme.md:82
 msgid ""
 "The default values are stored in the prompt text for the field. For the "
 "Cozy theme, the default values are: main accent color is `087b94` and "
 "navigation background color is `bfdcdc`'"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:84 c708d5d7824f482c9fb8cb58ad7498c6
+#: ../../docs/sites/site_theme.md:84
 msgid "Layout for Browse Pages"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:85 91ec85e5776f43fbb76665866617b8ba
+#: ../../docs/sites/site_theme.md:85
 msgid ""
 "(Center Row, Foundation) Select how to display items within their browse "
 "views."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:88 94c47ab0907c4f338e634ee71d192446
+#: ../../docs/sites/site_theme.md:88
 msgid ""
 "**Grid**: Items are organized into rows and columns. This is recommended "
 "for items that prominently feature images."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:89 4c7fd026a22b4a64ae8d9b6aed20e3c6
+#: ../../docs/sites/site_theme.md:89
 msgid "**List**: Items are stacked into a single column."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:90 172cd4300f6b4f57b0f142c6db9841fd
+#: ../../docs/sites/site_theme.md:90
 msgid ""
 "**Toggle (default: grid):** Site visitors can choose to display the "
 "browse views as grids or lists, with grids as the default."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:91 6680fa2ad0844c5ea84b9be89cfbbcf8
+#: ../../docs/sites/site_theme.md:91
 msgid ""
 "**Toggle (default: list):** Site visitors can choose to display the "
 "browse views as grids or lists, with lists as the default."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:93 f043e8c79a15472a8cb90ba9bfe9c066
+#: ../../docs/sites/site_theme.md:93
 msgid "Foundation Theme Settings"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:94 d76a0af382c349aab3a02343d91e5cf5
+#: ../../docs/sites/site_theme.md:94
 msgid ""
 "Foundation is theme which comes with a few default stylesheets for fast "
 "prototyping or getting started with modifying themes. As a result it has "
@@ -300,124 +300,117 @@ msgid ""
 "file](https://github.com/omeka-s-themes/foundation-s/blob/master/README.md)."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:96 de74177337b743948c483805acd5190c
+#: ../../docs/sites/site_theme.md:96
 msgid "Settings not described above:"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:97 d6a291b3260d4cada0fff90d82438b01
+#: ../../docs/sites/site_theme.md:97
 msgid "**Stylesheet:** The theme provides 4 style options."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:98 302b4770f0eb4a5da43de7e29b02ba3a
+#: ../../docs/sites/site_theme.md:98
 msgid ""
 "**Default** uses ZURB Foundation's default styles for prototyping, which "
 "are all viewable in their documentation under the [Kitchen "
 "Sink](https://get.foundation/sites/docs/kitchen-sink.html)."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:99 721b4173ff8343d2a8ccda44091fb00d
+#: ../../docs/sites/site_theme.md:99
 msgid ""
 "**Revolution** aims to capture the feel of old documents and juxtaposes "
 "it with a bright red accent. It includes a textured paper background "
 "image."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:100 8fc255623db74b3d8c40720aa75c37c0
+#: ../../docs/sites/site_theme.md:100
 msgid "**Sea Foam** offers a clean, friendly look with a teal palette."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:101 4705a245461c4e6b8d06886258dcc4e2
+#: ../../docs/sites/site_theme.md:101
 msgid ""
 "**Inkwell** features a high contrast serif family for its typography, as "
 "well as sunny yellow accents."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:102 b9debe6a62e144919e06313243722d0f
+#: ../../docs/sites/site_theme.md:102
 msgid ""
 "**Navigation layouts:** Global navigation can display as a **horizontal "
 "top bar with optional dropdown menus** or a **left vertical column**."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:103 9999d43fc3664996bd141f2234d8cb30
+#: ../../docs/sites/site_theme.md:103
 msgid ""
 "**Show Top Navigation Child Pages:** Toggle display of child pages within"
 " the main navigation. If unchecked, only the top-level navigation will "
 "display."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:104 344726088ddd46dda2c1269dc97c9460
+#: ../../docs/sites/site_theme.md:104
 msgid ""
 "**Layout for Show Pages:** Resource metadata can show display as "
 "**stacked** with properties as headings above their values, or **inline**"
 " with properties as headings inline with their values."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:105 d002a98bc9b74aeb933967d1774fb805
+#: ../../docs/sites/site_theme.md:105
 msgid ""
 "**Truncate Body Property:** Set how much of the browse body property "
 "displays on the browse page. You can:"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:106 bd0a1e401216465f8b6dfc671b7a3696
+#: ../../docs/sites/site_theme.md:106
 msgid "**Show full value** which displays all of the property text."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:107 40617c8252f0478a9fb1c7d893bc7724
+#: ../../docs/sites/site_theme.md:107
 msgid ""
 "**Show 4 lines and fade out** which displays 4 lines of text with a fade "
 "at the end of the text block."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:108 c32e65803df24d9a9e498a0694f3aa69
+#: ../../docs/sites/site_theme.md:108
 msgid ""
 "**Show 4 lines and ellipses** which displays 4 lines of text concluding "
 "with an ellipses (...)"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:110 60614617373a4b17a4f8b5cd3be9aa71
+#: ../../docs/sites/site_theme.md:110
 msgid "Installing themes"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:111 8fcfd3a062354aa5925b036099868b2b
+#: ../../docs/sites/site_theme.md:111
 msgid ""
 "In order to appear in the *Themes* tab for sites, themes must be manually"
 " added to the `themes` folder of the installation, using an FTP program "
 "or an ssh connection."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:113 398e3017078d403aa76b76210c2ca7b2
+#: ../../docs/sites/site_theme.md:113
 msgid "To add a theme to the site using FTP"
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:115 b9c76669c1184a8d974523b67a5ee26f
+#: ../../docs/sites/site_theme.md:115
 msgid "Download the zipped theme to your computer."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:116 e7d33d2c33b240b4851303c37a83e128
+#: ../../docs/sites/site_theme.md:116
 msgid ""
 "Open your FTP client, log on to the server that houses the Omeka S "
 "install and navigate to the `/themes` folder (this should be located in "
 "the main folder of the install)."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:117 9e651a6def0b405a86d45f588257ac70
+#: ../../docs/sites/site_theme.md:117
 msgid "Upload the zipped theme to the `/themes` folder ."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:118 ec00de518fb24643bd5ef09332ce7827
+#: ../../docs/sites/site_theme.md:118
 msgid "Unzip the theme."
 msgstr ""
 
-#: ../../docs/sites/site_theme.md:120 b51b728b4cb44ff48cb67674bce1c06e
+#: ../../docs/sites/site_theme.md:120
 msgid ""
 "You can also use git to clone a theme directly from the git repository. "
 "Do this only if you are comfortable with git."
 msgstr ""
-
-#~ msgid ""
-#~ "**Truncate Body Property:** Set how much"
-#~ " of the [browse body property]( ) "
-#~ "displays on the browse page. You "
-#~ "can:"
-#~ msgstr ""
 

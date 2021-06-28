@@ -19,11 +19,11 @@ msgstr ""
 "Language: fr_FR\n"
 "X-Generator: Poedit 2.0.6\n"
 
-#: ../../docs/configuration.md:1 07595fc728ae4e6da1a55e46965be829
+#: ../../docs/configuration.md:1
 msgid "Configuration Options"
 msgstr "Options de configuration"
 
-#: ../../docs/configuration.md:3 b201a15dc6034b1180e857d114941192
+#: ../../docs/configuration.md:3
 msgid ""
 "The following are commonly requested options which can be configured in "
 "the file `local.config.php` located in the config directory."
@@ -32,7 +32,7 @@ msgstr ""
 "configurées dans le fichier `local.config.php` situé dans le répertoire "
 "`config`."
 
-#: ../../docs/configuration.md:5 24f19bc1edc24cca912ce1f735b5a1b9
+#: ../../docs/configuration.md:5
 msgid ""
 "For a full list of available configuration keys, please see the "
 "[developer documentation page on configuration settings](https://omeka."
@@ -43,11 +43,11 @@ msgstr ""
 "aux paramètres de configuration.](https://omeka.org/s/docs/developer/"
 "reference/configuration/)."
 
-#: ../../docs/configuration.md:7 29136500aab84dc7984cfc6d0016105f
+#: ../../docs/configuration.md:7
 msgid "Password settings"
 msgstr "Configuration des mots de passe"
 
-#: ../../docs/configuration.md:8 9bd356cb20ac4121b949c98429d725fb
+#: ../../docs/configuration.md:8
 msgid ""
 "You can change the requirements for user passwords in the config file. "
 "Options include minimum length, number of upper and lowercase letters, "
@@ -58,21 +58,21 @@ msgstr ""
 "longueur minimale, le nombre de lettres majuscules et minuscules et la "
 "définition des symboles autorisés."
 
-#: ../../docs/configuration.md:20 56f08fb271094640a3b95d2ddadd7926
+#: ../../docs/configuration.md:20
 msgid "Requirements will display on the user creation and edit pages."
 msgstr ""
 "Les conditions s'afficheront sur les pages de création et d'édition de "
 "l'utilisateur."
 
-#: ../../docs/configuration.md:22 df0ae8551b5742bb82a21b2d204bd8f3
+#: ../../docs/configuration.md:22
 msgid "Thumbnails"
 msgstr ""
 
-#: ../../docs/configuration.md:24 4a7a6693767b47978bb7a985f12d1f1b
+#: ../../docs/configuration.md:24
 msgid "The `thumbnails` configuration key holds most thumbnail settings:"
 msgstr ""
 
-#: ../../docs/configuration.md:39 708847366e4446638aaab577926bcc05
+#: ../../docs/configuration.md:39
 msgid ""
 "Under `types`, set the maximum dimensions for derivative images for "
 "media files. There are separate options for large, medium, and square. "
@@ -80,7 +80,7 @@ msgid ""
 "pixels)"
 msgstr ""
 
-#: ../../docs/configuration.md:43 a32a4dca5da84d65a822e56e31290843
+#: ../../docs/configuration.md:43
 msgid ""
 "`thumbnailer_options` is an array of options passed to the specific "
 "thumbnailer in use. For example, the `imagemagick_dir` thumbnail option "
@@ -89,13 +89,13 @@ msgid ""
 "correct path for ImageMagick."
 msgstr ""
 
-#: ../../docs/configuration.md:48 2e3885d4a35c4269b5fd5372614d4d58
+#: ../../docs/configuration.md:48
 msgid ""
 "The thumbnailer to use is set under the `service_manager` key, by "
 "setting the alias for `Omeka\\File\\Thumbnailer`:"
 msgstr ""
 
-#: ../../docs/configuration.md:59 b2a764c708954bffa9cfb3198be30291
+#: ../../docs/configuration.md:59
 msgid ""
 "The default thubnailer is `Omeka\\File\\Thumbnailer\\ImageMagick`.  Also "
 "available are `Omeka\\File\\Thumbnailer\\Imagick` (which uses the "
@@ -103,25 +103,25 @@ msgid ""
 "the commonly available `gd` PHP extension)."
 msgstr ""
 
-#: ../../docs/configuration.md:64 56742989c57d439d921a1df2a2fd98bb
+#: ../../docs/configuration.md:64
 msgid ""
 "You can also set the thumbnailer to `Omeka\\File\\Thumbnailer"
 "\\NoThumbnail`, which will prevent your Omeka S installation from "
 "generating thumbnails."
 msgstr ""
 
-#: ../../docs/configuration.md:67 38dee0ad088749b49d51b2893b43cb14
+#: ../../docs/configuration.md:67
 msgid "PHP Path"
 msgstr ""
 
-#: ../../docs/configuration.md:69 96387dd85ca048e0828dad79c18db765
+#: ../../docs/configuration.md:69
 msgid ""
 "Omeka S uses background jobs for some long-running tasks that operate on "
 "many items or just otherwise might take a long time. Omeka S uses the "
 "PHP CLI (command-line interface) to run these jobs, the `php` command."
 msgstr ""
 
-#: ../../docs/configuration.md:73 74c59e2c22ad455d9af39ba928614d56
+#: ../../docs/configuration.md:73
 msgid ""
 "Omeka S by default will try to automatically detect the path to the PHP "
 "CLI on the server, but for some servers this detection doesn't work, or "
@@ -130,28 +130,28 @@ msgid ""
 "configuration file:"
 msgstr ""
 
-#: ../../docs/configuration.md:84 a3b6092afe664c76aeb165402890db48
+#: ../../docs/configuration.md:84
 msgid ""
 "(Note: the path here is just an example; the proper path will be "
 "specific to your server)"
 msgstr ""
 
-#: ../../docs/configuration.md:87 d668a6c064e74642a67ac69695c8d2b7
+#: ../../docs/configuration.md:87
 msgid "Mail"
 msgstr ""
 
-#: ../../docs/configuration.md:89 872ab6fad01a432ba4d23909a54d4a8a
+#: ../../docs/configuration.md:89
 msgid "The `mail` key can be used to configure how Omeka S sends emails."
 msgstr ""
 
-#: ../../docs/configuration.md:91 a2bbc918da9047b2a468537c717af8b3
+#: ../../docs/configuration.md:91
 msgid ""
 "The default is to use sendmail, where the server is responsible for "
 "having mail delivery configured and set up. Sendmail generally requires "
 "no configuration on the Omeka S side."
 msgstr ""
 
-#: ../../docs/configuration.md:95 0517e02307ac49feab68eff4719c8971
+#: ../../docs/configuration.md:95
 msgid ""
 "Another option for some servers is to configure a direct SMTP connection "
 "for sending mail. An example configuration, to be added at the end of "

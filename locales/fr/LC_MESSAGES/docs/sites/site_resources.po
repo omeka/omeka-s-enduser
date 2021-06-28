@@ -18,34 +18,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../docs/sites/site_resources.md:1 027d8b3f4963485f9b1f2295ffe83a74
+#: ../../docs/sites/site_resources.md:1
 msgid "Resources"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:3 294142d707a24f4db91d7a37fa1d1b44
+#: ../../docs/sites/site_resources.md:3
 msgid ""
 "The Resources tab of the site context menu allows you to set what Items "
 "and Item Sets are available on your site's browse pages. The Items tab "
 "also sets which items are available in the sidebar when building pages."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:5 9124c35ddd4e418c86288b449e3e9450
+#: ../../docs/sites/site_resources.md:5
 msgid "Resources has two tabs across the top of the window: Items and Item Sets."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:7 c076499041a54c67994d8d17467ee9c5
+#: ../../docs/sites/site_resources.md:7
 msgid ""
 "Under the Items tab, you can set the items available for selection and "
 "browse in your site."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:9 8dd0972950794c2ca94497b879e9cdd7
+#: ../../docs/sites/site_resources.md:9
 msgid ""
 "Item Sets is where you select the sets which will show up on the  Browse "
 "Item Sets page, should you choose to include it"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:11 d8d5ebe2e1cf4779bfbf8579e1fbdcf4
+#: ../../docs/sites/site_resources.md:11
 msgid ""
 "**Note** The two tabs operate *independently* from each other. The "
 "selections made on one will have no effect on the other. The Items tab "
@@ -53,11 +53,11 @@ msgid ""
 "sets are visible for public browsing."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:13 2a1c139a87c74fde9963132829c046c2
+#: ../../docs/sites/site_resources.md:13
 msgid "Items"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:15 d5c4ea9770f54e05af3b7275ffe416a9
+#: ../../docs/sites/site_resources.md:15
 msgid ""
 "The Items tab determines what automatically appears in the resource "
 "selection options on the [pages](../sites/site_pages.md) of your Omeka S "
@@ -65,26 +65,26 @@ msgid ""
 " browse page on your site."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:17 23575f3580ab45f5b014c370af693c99
+#: ../../docs/sites/site_resources.md:17
 msgid ""
 "When you first navigate the to items tab, it will display information "
 "about the number of items in the site and give you options for making "
 "changes. You will see:"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:19 2c0c307cf52348ef9885ccc9a0692fb3
+#: ../../docs/sites/site_resources.md:19
 msgid ""
 "A statement of the number of items current assigned to the site. Click on"
 " the number to open a new browser tab showing all of those items."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:21 2d10cb9292484202ae1351a796e8fa66
+#: ../../docs/sites/site_resources.md:21
 msgid ""
 "A statement of whether the site automatically includes new items, and a "
 "link to the site admin to change that setting."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:23 886f626d6c6c40a9a3ef0ffb50b74c71
+#: ../../docs/sites/site_resources.md:23
 msgid ""
 "A table with the following options for managing your current items: \t- "
 "Do nothing: make no changes) \t- Add - keep existing items and assign "
@@ -93,26 +93,26 @@ msgid ""
 "Remove all - unassign all items"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:30 776e7fdd74c94faca8f9ac0d2e7c0476
+#: ../../docs/sites/site_resources.md:30
 msgid ""
 "![Item resources landing for a site with 28 "
 "items](../sites/sitesfiles/sites_resources1.png)"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:32 aa5bed2a81d84f50a0e10cc2970ab235
+#: ../../docs/sites/site_resources.md:32
 msgid ""
 "If you want to make changes to the item sources in your site, select the "
 "radio button for the action you want to take. For all but \"Do nothing\" "
 "and \"Remove all\", a search form will automatically load."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:34 fbcc97c475004cd586dcbf1297364d2c
+#: ../../docs/sites/site_resources.md:34
 msgid ""
 "![Item resources with \"replace\" selected and the search form "
 "loaded](../sites/sitesfiles/sites_resources2.png)"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:36 f42362b6950148c4b191b63011c10ef3
+#: ../../docs/sites/site_resources.md:36
 msgid ""
 "Note that the search options in the form work together to build an "
 "overall search. If you had the search in the image above, looking for "
@@ -121,108 +121,108 @@ msgid ""
 "matched *both* statements."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:38 dd5fb9443bfa4755a962070bdda4c6fb
+#: ../../docs/sites/site_resources.md:38
 msgid ""
 "Above the search fields is a button to Preview this search. Clicking the "
 "button after creating a search will open a new browser tab with the items"
 " which meet the criteria of the search."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:40 3a230719d6d445deb9bd836a34decda4
+#: ../../docs/sites/site_resources.md:40
 msgid ""
 "There is also a checkbox for \"keep this search\". Checking this box will"
 " re-load this search the next time you come to make changes to the site "
 "items."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:42 27ab84b4ab7e443493c6a122ebce3ea4
+#: ../../docs/sites/site_resources.md:42
 msgid "Search forms options are:"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:44 579d6999264a49719745d3c33d130417
+#: ../../docs/sites/site_resources.md:44
 msgid "*Search full-text:* search all values of all items."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:46 ccdb6395a05940089823c2ef92debc1e
+#: ../../docs/sites/site_resources.md:46
 msgid "*Search by value:* search for a term or phrase which you enter"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:48 3501c531ed3e455a9728e99e91749da0
+#: ../../docs/sites/site_resources.md:48
 msgid "The first selector allows you to specify a property to search."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:49 2d0d9b4bed7142f9aceb4865f4a52ce1
+#: ../../docs/sites/site_resources.md:49
 msgid ""
 "The second selector allows you to set the relationship the property has "
 "with the value. The options are:"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:50 b3cb841ab5f8453eb677f0a3c9ec8183
+#: ../../docs/sites/site_resources.md:50
 msgid "is exactly,"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:51 ebf7c6f3c7684051845372c1818958ef
+#: ../../docs/sites/site_resources.md:51
 msgid "is not exactly,"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:52 78ac1ccf1d9b4b4daed44fadf1f3e1ac
+#: ../../docs/sites/site_resources.md:52
 msgid "contains,"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:53 e0d06ade259d4a44b888657bae1f1661
+#: ../../docs/sites/site_resources.md:53
 msgid "does not contain,"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:54 c0659f43ab39472182705057cfc3c57a
+#: ../../docs/sites/site_resources.md:54
 msgid "is resource with ID,"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:55 5c3d1f91e2f64552a75d926506ff0813
+#: ../../docs/sites/site_resources.md:55
 msgid "is not resource with ID,"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:56 b3044637ce0547eeb926273584575ad0
+#: ../../docs/sites/site_resources.md:56
 msgid "has any value (there is something in the property), and"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:57 dc6dd0096d994016aaa041ead5115ffa
+#: ../../docs/sites/site_resources.md:57
 msgid "has no values."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:58 fdffd6f4ac174fef91b325eddd8d62bf
+#: ../../docs/sites/site_resources.md:58
 msgid ""
 "Finally, there is a text field for you to enter the value you want the "
 "property to have."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:60 9bdfde16b2234954ab955c161cdb2c4c
+#: ../../docs/sites/site_resources.md:60
 msgid ""
 "To find a resource ID, go to the resource and look at the url in your "
 "browser's address bar. The numbers at the end of the url are the resource"
 " ID."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:62 4d4093daf32b45d89e594675c5d44858
+#: ../../docs/sites/site_resources.md:62
 msgid ""
 "*Search by Class:* select one or more classes from the dropdown menu - "
 "the search will only return items with this class."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:64 9ae9ae2401754ffeab18077722fb787e
+#: ../../docs/sites/site_resources.md:64
 msgid ""
 "*Search by template:* select from existing resource templates and the "
 "search will only return items using this resource template or templates."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:66 373081b3e832468d933f1446b172daab
+#: ../../docs/sites/site_resources.md:66
 msgid "*Search by item set:* select from a dropdown of item sets."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:68 a9b34a62ed2b422fb0a5ef38817702a0
+#: ../../docs/sites/site_resources.md:68
 msgid "*Search by owner:* select from a dropdown of site users."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:70 7a3244cfb43c4038bd6fc2cbd2f62d48
+#: ../../docs/sites/site_resources.md:70
 msgid ""
 "Note that the fields for searches by value, class, template, and item set"
 " have a large red plus sign to the left of the select options. Use these "
@@ -230,75 +230,75 @@ msgid ""
 "red trash can icon to the right of the field to remove it."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:72 48468cad699e498295d291a5ffd6052e
+#: ../../docs/sites/site_resources.md:72
 msgid ""
 "![Select by class with two select fields "
 "loaded](../sites/sitesfiles/sites_resourcesSelectMulti.png)"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:74 1741f023f4e74cbd8fad029266d1699b
+#: ../../docs/sites/site_resources.md:74
 msgid "Item Sets"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:76 84de498a064e44e8b1a02da7157ff44b
+#: ../../docs/sites/site_resources.md:76
 msgid ""
 "On this tab you can select which Item Sets will display on a Browse Item "
 "Sets page when added to the [navigation](../sites/site_navigation.md)."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:78 924b969dab82483e879cba17205ca830
+#: ../../docs/sites/site_resources.md:78
 msgid ""
 "The table in the Item Sets tab shows any item sets already added, with "
 "their title and owner's email address."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:80 5cd6af42e3b04b1f9c4ee609d5849bb3
+#: ../../docs/sites/site_resources.md:80
 msgid "![Site resources Item Sets tab](../sites/sitesfiles/siteres_itemsets.png)"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:82 5555417c39b445b69c4cd9ea7e2a0413
+#: ../../docs/sites/site_resources.md:82
 msgid ""
 "To add an item set, select it in the right hand sidebar. You can find the"
 " desired item set by either:"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:84 f2624a5f1d1b446c81ffcf80cb9723d6
+#: ../../docs/sites/site_resources.md:84
 msgid ""
 "typing the name of the item set in the search bar and then clicking on "
 "the correct item set, or"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:85 4c01b671ea814eed84acceff6e13e7b8
+#: ../../docs/sites/site_resources.md:85
 msgid ""
 "click on the name of the item set owner, then clicking on the name of the"
 " item set."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:87 2d8fbcd7cedd49b1a457f34f161e608e
+#: ../../docs/sites/site_resources.md:87
 msgid ""
 "![Selecting an item set from the owner's section of the "
 "sidebar](../sites/sitesfiles/siteres_itemsetsel.png)"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:89 e25a51745808457dbb5d068f528043c1
+#: ../../docs/sites/site_resources.md:89
 msgid ""
 "Remove an item set by clicking the red delete button (trash can icon). It"
 " will still be available to re-add from the drawer on the right."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:91 993386d602244cfb886cf210a6ed87f3
+#: ../../docs/sites/site_resources.md:91
 msgid ""
 "You can change the order of the item sets by dragging and dropping using "
 "the three-bar icon on the left end of the row."
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:93 7618fb2059404976af8244f0b8682e2d
+#: ../../docs/sites/site_resources.md:93
 msgid ""
 "The following image shows a browse item sets public view using the "
 "default theme:"
 msgstr ""
 
-#: ../../docs/sites/site_resources.md:95 c25973cc64314d8bbe05b41cc2a62139
+#: ../../docs/sites/site_resources.md:95
 msgid "![browse item sets](../sites/sitesfiles/siteres_ispublic.png)"
 msgstr ""
 

@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../docs/s-planning-tips.md:1 12cdb94120fd4e56860546c4695b275c
+#: ../../docs/s-planning-tips.md:1
 msgid "Planning Tips"
 msgstr ""
 
-#: ../../docs/s-planning-tips.md:3 78799c25acf84140be051dee5c436b40
+#: ../../docs/s-planning-tips.md:3
 msgid ""
 "In Omeka S, you build your [sites](sites/index) page by page, using "
 "already existing resources on your installation. While it is best to have"
@@ -30,17 +30,17 @@ msgid ""
 "planning your site before you create the first item or item set."
 msgstr ""
 
-#: ../../docs/s-planning-tips.md:5 0ccbf791ca2b41b29a296d8c645ed09f
+#: ../../docs/s-planning-tips.md:5
 msgid ""
 "What follows are some questions and ideas to help guide you as you plan "
 "your sites in Omeka S."
 msgstr ""
 
-#: ../../docs/s-planning-tips.md:7 7becec599d3d4b44a617c929a9d802b3
+#: ../../docs/s-planning-tips.md:7
 msgid "Site audience and goals"
 msgstr ""
 
-#: ../../docs/s-planning-tips.md:9 8c41dad7eac84c499d0020323d9a1a05
+#: ../../docs/s-planning-tips.md:9
 msgid ""
 "**Who is the primary audience of this site?** Being specific will help "
 "you shape the site; \"people interested in historic architecture\" is "
@@ -49,18 +49,18 @@ msgid ""
 "they come to the site?"
 msgstr ""
 
-#: ../../docs/s-planning-tips.md:11 c7df5927457742cea8a1eb21c712d025
+#: ../../docs/s-planning-tips.md:11
 msgid ""
 "**What are the goals of your site?** What do you want your specific "
 "audiences to accomplish when they come to the site? What do you want "
 "people to take away from the site? What content do you want to highlight?"
 msgstr ""
 
-#: ../../docs/s-planning-tips.md:13 a255c7597e20424183082859f4bd9e4c
+#: ../../docs/s-planning-tips.md:13
 msgid "Resources"
 msgstr ""
 
-#: ../../docs/s-planning-tips.md:15 2a8709085b9b489cb44579e9d62d253f
+#: ../../docs/s-planning-tips.md:15
 msgid ""
 "**What will you do with items in this website?** [Items](content/items) "
 "are the building blocks of Omeka S. What sort of [resource "
@@ -70,7 +70,7 @@ msgid ""
 "item's metadata can stand on its own."
 msgstr ""
 
-#: ../../docs/s-planning-tips.md:18 8c49d2009dfb4a5db267851112004163
+#: ../../docs/s-planning-tips.md:18
 msgid ""
 "**What will you do with item sets?** You can use [item sets](content"
 "/item-sets) to group items to be included on a [site](sites/index), and "
@@ -78,14 +78,14 @@ msgid ""
 "sites, item sets are robust resources themselves."
 msgstr ""
 
-#: ../../docs/s-planning-tips.md:21 fb21f83c41194be487468a68c273b502
+#: ../../docs/s-planning-tips.md:21
 msgid ""
 "How do you want to group items into sets? What metadata fields will your "
 "item sets use? Do your item sets have relations to each other or to "
 "items?"
 msgstr ""
 
-#: ../../docs/s-planning-tips.md:23 53c98c609701400b85f5e7d5c049f0cc
+#: ../../docs/s-planning-tips.md:23
 msgid ""
 "**What do you want your data to do?** What properties are you going to "
 "want to consistently describe in your site? Do you want some of these to "
@@ -94,7 +94,7 @@ msgid ""
 " and change the label of the property."
 msgstr ""
 
-#: ../../docs/s-planning-tips.md:26 095840a549f141fc80a0133a10b66958
+#: ../../docs/s-planning-tips.md:26
 msgid ""
 "In Omeka S, items and item sets can use other resources - items, item "
 "sets, and media - as properties; for example, you can make an item for "
@@ -102,7 +102,7 @@ msgid ""
 "'Hamlet' item. How can your resources use this functionality?"
 msgstr ""
 
-#: ../../docs/s-planning-tips.md:28 84bf2470f6244ba69bc54e3289b283f3
+#: ../../docs/s-planning-tips.md:28
 msgid ""
 "Do you want to use a set of terms (controlled vocabulary) for certain "
 "items? You might want to use [Custom Vocab](modules/customvocab). Or do "
@@ -110,17 +110,17 @@ msgid ""
 "Getty? Then you might use [Vocab Suggest](modules/valuesuggest)."
 msgstr ""
 
-#: ../../docs/s-planning-tips.md:30 916b6009c5854dd0832e6ac8e663ba12
+#: ../../docs/s-planning-tips.md:30
 msgid "Building a site"
 msgstr ""
 
-#: ../../docs/s-planning-tips.md:31 dab2a98b241f4fe181aee412654a6b85
+#: ../../docs/s-planning-tips.md:31
 msgid ""
 "With Omeka S you will build your site from the ground up, which means you"
 " need to give some thought to how you want to organize your site."
 msgstr ""
 
-#: ../../docs/s-planning-tips.md:33 690c25b0604842faa5d64981adf96445
+#: ../../docs/s-planning-tips.md:33
 msgid ""
 "What pages do you want to include? What kind of content do you want on "
 "these pages? How do you want to arrange them? Try sketching out a sample "
@@ -128,89 +128,19 @@ msgid ""
 "pages."
 msgstr ""
 
-#: ../../docs/s-planning-tips.md:35 ab6fd28b00dd449baa8affcda6cf5988
+#: ../../docs/s-planning-tips.md:35
 msgid ""
-"Pages are made up of [blocks](../sites/site_pages/#page-blocks), which "
-"can include text, images, and much more. What kind of content do you want"
-" on the pages you build? Bear in mind that you can rearrange page blocks "
-"as you build, so you can play around with the order of the content on "
-"your pages if you need to."
+"Pages are made up of [blocks](sites/site_pages.md#page-blocks), which can"
+" include text, images, and much more. What kind of content do you want on"
+" the pages you build? Bear in mind that you can rearrange page blocks as "
+"you build, so you can play around with the order of the content on your "
+"pages if you need to."
 msgstr ""
 
-#: ../../docs/s-planning-tips.md:37 4ec148a8c9ba40d793a9494dfe1ad2ee
+#: ../../docs/s-planning-tips.md:37
 msgid ""
 "How do you want to interact with your visitors on your site? Do you want "
 "to [collect](modules/collecting) resources from your visitors? Allow them"
 " to [share](modules/sharing) your content on social media?"
 msgstr ""
-
-#~ msgid ""
-#~ "In Omeka S, you build your "
-#~ "[sites](../sites) page by page, using "
-#~ "already existing resources on your "
-#~ "installation. While it is best to "
-#~ "have some resources before you start "
-#~ "building out the pages, you can "
-#~ "begin planning your site before you "
-#~ "create the first item or item set."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "**What will you do with items in"
-#~ " this website?** [Items](../content/items/) are"
-#~ " the building blocks of Omeka S. "
-#~ "What sort of [resource templates](../content"
-#~ "/resource-template/) will you want to "
-#~ "create and use to fully describe "
-#~ "your items? Any item you include "
-#~ "on an Omeka S will have a "
-#~ "public item show page, so try to"
-#~ " ensure that the information in an"
-#~ " item's metadata can stand on its "
-#~ "own."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "**What will you do with item "
-#~ "sets?** You can use [item "
-#~ "sets](../content/item-sets) to group items "
-#~ "to be included on a [site](../sites),"
-#~ " and they can be a way to "
-#~ "guide visitors' browsing on your sites."
-#~ " For some sites, item sets are "
-#~ "robust resources themselves."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "**What do you want your data to"
-#~ " do?** What properties are you going"
-#~ " to want to consistently describe in"
-#~ " your site? Do you want some of"
-#~ " these to display with a different"
-#~ " label - for example 'author' instead"
-#~ " of 'creator' for books? Use a "
-#~ "[resource template](../content/resource-template/) "
-#~ "and change the label of the "
-#~ "property."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Do you want to use a set of"
-#~ " terms (controlled vocabulary) for certain"
-#~ " items? You might want to use "
-#~ "[Custom Vocab](../modules/customvocab/). Or do "
-#~ "you want to use a terms list "
-#~ "created by the Library of Congress "
-#~ "or the Getty? Then you might use"
-#~ " [Vocab Suggest](../modules/valuesuggest/)."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "How do you want to interact with"
-#~ " your visitors on your site? Do "
-#~ "you want to [collect](../modules/collecting/) "
-#~ "resources from your visitors? Allow them"
-#~ " to [share](../modules/sharing/) your content "
-#~ "on social media?"
-#~ msgstr ""
 

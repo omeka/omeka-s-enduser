@@ -11,7 +11,7 @@ The site info settings for an Omeka S site are where you can change the basic in
 
 * *title* - a text field. 
 * *slug* - the url for your site.
-* *summary* - the brief description of what it is about which will appear on your installation's landing page and on [List of Site](../sites/site_pages/#page-blocks) blocks. 
+* *summary* - the brief description of what it is about which will appear on your installation's landing page and on [List of Site](site_pages.md#page-blocks) blocks.
 
 ![Site info for the site “Jane Austen” with buttons across the top to View, Delete, and Save the site](../sites/sitesfiles/sites_siteinfo.png)
 
@@ -38,7 +38,7 @@ To implement any changes you make, click Save at the top right of the browser wi
 
 **Auto-assign new items** A checkbox which sets whether new items are automatically added to the site. If checked, every new item will be added to the site, regardless of the item's owner. Note that item owners may unassign their items from the site at any time, in the item's edit pages.
 
-**Attachment link type** Sets the target of links from attachments you add to [site page blocks](../sites/site_pages/#page-blocks) (for example, in an [item showcase](../sites/site_pages/#item-showcase). It offers a dropdown with the following options:
+**Attachment link type** Sets the target of links from attachments you add to [site page blocks](site_pages.md#page-blocks) (for example, in an [item showcase](site_pages.md#item-showcase). It offers a dropdown with the following options:
 
 - *item page:* clicking on the attachment takes users to the item page associated with the attached media;
 - *media page:* clicking on the attachment takes users to the media page; 

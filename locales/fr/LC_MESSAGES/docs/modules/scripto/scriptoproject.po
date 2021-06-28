@@ -19,31 +19,26 @@ msgstr ""
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../docs/modules/scripto/scriptoproject.md:1
-#: ab0201c4fdcb498996e9506b2c13542a
 msgid "Scripto Projects"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:3
-#: e23f1069eb0740089010902ec4d32a14
 msgid ""
 "Scripto is made up of projects. Every transcription, translation, or "
 "description effort you create can, and should, have its own project."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:5
-#: 0a9edb0bf1aa4a38bd7652fb1f14dd29
 msgid "Create a Project"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:6
-#: bed195b1a63048f1abed382773de558b
 msgid ""
 "This [screencast](https://vimeo.com/422818763) walks you through the "
 "process of creating a Scripto project in Omeka S."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:8
-#: feb6e0f8e1d64b42a32d207d8fb25ac0
 msgid ""
 "To create a new Scripto project, go to the Scripto dashboard (the Scripto"
 " tab in the left-hand navigation) and use the \"Actions\" dropdown menu "
@@ -51,21 +46,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:10
-#: 853e600a7d9d4d32b536afcaf86b59a4
 msgid ""
 "![Action dropdown open with a red arrow pointing to the Add New Project "
 "option](../modulesfiles/scripto-projectAdd.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:12
-#: 7e43ec3f20554f2cbb57b0a61cb73c20
 msgid ""
 "This will load the New project page, which has two tabs: Configuration "
 "and Reviewers."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:14
-#: a7787a56ad4444379a6586b75f11096e
 msgid ""
 "The eye symbol on the upper right by the \"add\" button sets the "
 "visibility of the project. If the button is set to private (eye with a "
@@ -73,26 +65,22 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:16
-#: f5325003938e48fdbcb5ca6d9e835175
 msgid ""
 "![Just the top of new project page, showing the two tabs and the eye "
 "symbol](../modulesfiles/scripto-projectAdd2.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:18
-#: 69fe9f5d67fd473a877e230311151785
 msgid ""
 "You can change these settings at any time by editing the project using "
 "the Actions dropdown on the project review."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:20
-#: 04c046c376da40c28e9e04b5293a5571
 msgid "Configuration options"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:21
-#: f0d09eb2643340f1a0d9c87904c8bc35
 msgid ""
 "Some of these configuration options are required to create your Scripto "
 "project; all of them can be changed later using the \"Edit project\" "
@@ -100,21 +88,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:23
-#: 43fdd78ccef544cc8ea446cd8e882737
 msgid ""
 "![Add New Project window open to the \"Configuration\" tab - all fields "
 "are blank](../../modules/modulesfiles/scripto-projectNewConfig.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:25
-#: 1a0b0af60e684571aa37efda007f6215
 msgid ""
 "**Title:** (required) the name of the Scripto project. This will display "
 "on public and admin sides."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:27
-#: 2784c1e2c53f4d1dbe8350e9b5d68417
 msgid ""
 "**Item set:** (required) select the item set with which the Scripto "
 "project should synch. This item set should contain all the items and/or "
@@ -122,7 +107,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:29
-#: f8c2c4d843af49ab9b49a0c5c31e46ff
 msgid ""
 "**Property:** (required) select from the dropdown which property should "
 "store the content created through Scripto when it is imported back into "
@@ -134,14 +118,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:31
-#: c72daac148fa49baa3c5d71e0fc4cf72
 msgid ""
 "**Description:** a description of the project. This will display on "
 "public and admin sides."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:33
-#: 365a14cedf654bef99e41cbe4c7a005d
 msgid ""
 "**Guidelines:** transcription guidelines. These can be formatted using "
 "the text formatting editor which will appear when typing inside this "
@@ -149,14 +131,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:35
-#: d19426ca0a7c41ceb6b294ddb8510e8e
 msgid ""
 "![Guidelines editor in action, displaying editor](../modulesfiles"
 "/scripto-projectGuideEdit.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:37
-#: 35aa0e303a37437c92bb3091c357d030
 msgid ""
 "**Create account text:** enter text which will appear on the public page "
 "where users sign up to transcribe; for example, a brief summary of the "
@@ -165,14 +145,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:39
-#: c8da7d44f7534c729829ab96b2a702a7
 msgid ""
 "**Language tag:** the language tag for the content being imported into "
 "the property selected above."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:41
-#: ff05ebd4c2f14622a69cd19ce417fb92
 msgid ""
 "**Import target:** select the resource level to store data when it is "
 "pushed from the Scripto project back to Omeka S metadata. Options are "
@@ -180,35 +158,30 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:43
-#: e84aae54e8094020b2ea482b6ad9ec74
 msgid ""
 "If you select Item, then content created in Scripto will appear in the "
 "Item metadata, in the property you selected earlier."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:45
-#: 6d606168d526483db50419c16b58ed15
 msgid ""
 "If you select Media, the content created in Scripto will appear in the "
 "media metadata, but not at the item level."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:47
-#: 3d19dcf22c7c49c1b1ce1ac3ae4a3f7a
 msgid ""
 "**Browse layout:** choose the default browse layout for the project, "
 "either Grid or List."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:49
-#: 34a01d8143a14fb493e4611dbb142d85
 msgid ""
 "**Filter approved:** when checked, approved items will not display in the"
 " public browse view."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:51
-#: 2ebbe24b661a46dab18794a0e2511c83
 msgid ""
 "**Item Type:** if you want, you can specify the type of item used in this"
 " project. What you select here will change the interface language for "
@@ -218,47 +191,38 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:53
-#: cb8b3d6279a044239b8dcd5d98bf5379
 msgid "Generic Item (default)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:54
-#: e215f4206da845e6a745e938869deab1
 msgid "Audio"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:55
-#: 666a94b3feb74e47962e6312a3667a4b
 msgid "Book"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:56
-#: c8e4aa8c499c46699b3412082ac4f36f
 msgid "Document"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:57
-#: d661c0a0628346bdaa1e6f0ca073903c
 msgid "Journal"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:58
-#: 5cb970fd47c7459087092f8a6a9b8626
 msgid "Manuscript"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:59
-#: cb2c5b25ee11487d8646aae53dc57d35
 msgid "Paper"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:60
-#: 3c425bc18d5f44518d4f0de6e8b31226
 msgid "Video"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:62
-#: 94e62d56afd94b0882a5c07435c00576
 msgid ""
 "**Media Type:** use this dropdown to specify the type of media used in "
 "the project, and change the way that media is referred to in scripto for "
@@ -266,79 +230,64 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:64
-#: f879c76f1538459794cf697254de42c1
 msgid "Generic Media"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:65
-#: bd2d6f068ba4405693c5a1ae694b2073
 msgid "Entry"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:66
-#: fb9acb90777a4f68a0e76ef7ec9cc830
 msgid "Folio"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:67
-#: e551071809c54ab0b9f98f376f2a29fa
 msgid "Image"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:68
-#: 05ed0a31bde8429c8ef111358b8fc602
 msgid "Page"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:69
-#: 38b1baade999481aa150cd1b0d8c603f
 msgid "Section"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:70
-#: e83b53ad32354eba8ba8b33322daf731
 msgid "Segment"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:71
-#: 0bd6330966044734b23054decb00fa38
 msgid "Sheet"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:73
-#: fa1e4237f26e47f09893488193f5bffa
 msgid ""
 "**Content Type:** use this to specify the kind of work in the project. "
 "Choose from:"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:75
-#: 0cb4c477699d409a9b0e261d0dc4c1dc
 msgid "Generic Content"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:76
-#: 81aed1b35b43461a8b754bb18b1c16c2
 msgid "Description"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:77
-#: baf7f6d31c3e416e9744735829432fe6
 msgid "Transcription"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:78
-#: 08e97f58d7fb4d20a3cd7e82b5883cc6
 msgid "Translation"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:80
-#: 6460d6e12b3a4208b797192e21517e5a
 msgid "Reviewers"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:81
-#: ee1569e8d9a849f6bc352e3eab95149a
 msgid ""
 "Add [Omeka S users](../../admin/users) to your Scripto project as "
 "reviewers, who can can access private projects, and mark media as "
@@ -347,7 +296,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:83
-#: 3080f19978f0406ea3ac0e4e236c85cc
 msgid ""
 "Only Omeka users with **site administrator** and g**lobal administrator**"
 " roles can sync and import projects, due to the destructive potential of "
@@ -355,14 +303,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:85
-#: 37ffc4c0f90c44f095207f3212acccc4
 msgid ""
 "Although reviewers do not need to have a MediaWiki account to review a "
 "Scripto project, it is recommended that they create one."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:87
-#: c002ce7fedcd4daa9d997f9d30306d2b
 msgid ""
 "![Add New Project window open to the \"Reviewers\" tab - the page is "
 "largely blank, with an alphabetical menu down one "
@@ -370,7 +316,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:89
-#: 4c7cf438c05d44f4a57616d3773fce53
 msgid ""
 "On the right-hand side of the window is a browsable list of Omeka S "
 "users, sorted alphabetically by username. To add a user as a Scripto "
@@ -379,36 +324,30 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:91
-#: a5091c454ba34607b3e3ea1d7e5229e1
 msgid "Be sure to add yourself as a reviewer if you plan to work on this project."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:93
-#: 65f19929669749bf95f79f9b08785241
 msgid ""
 "To remove a user as reviewer, click the trash can icon to the right of "
 "their email address in the table of reviewers."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:95
-#: b6a9a0561eb54c23a8524fa2235e196e
 msgid "Add project"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:96
-#: 23c3fce4fbca4714987b30fbbacdc820
 msgid ""
 "Once you have entered the required fields and lick \"Add\" to create the "
 "new project."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:98
-#: d3a3234750974b6ab5ee5d8392b5ae9f
 msgid "Initial Sync"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:99
-#: a2d2c7f429e647758ec03a614901b7e3
 msgid ""
 "Immediately upon creating a project, you will see the message: \"No "
 "Scripto items found. Do you need to sync the project? If you have "
@@ -416,12 +355,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:101
-#: 22dfa6c5b36b4f1395acd7d26336ec6b
 msgid "![New project sync message](../modulesfiles/scripto-newproject.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:103
-#: e58706679af44e428c797776b1e2d0d7
 msgid ""
 "To sync the project, go to the Actions dropdown button in the upper right"
 " corner of the window. From the options, select \"Sync project\" - this "
@@ -429,12 +366,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:105
-#: 35d58044209a4c4d96f63e0a8d63d2bb
 msgid "![](../modulesfiles/scripto-projectactions.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:107
-#: c42d50c00f4146cb9544330550a1e4a1
 msgid ""
 "Note that the first time you run the sync may take some time, and you may"
 " continue to see the \"No Scripto items found\" message. You should also "
@@ -443,12 +378,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:109
-#: 3b209fb805094be4a98dda52e45b4447
 msgid "Admin Project View"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:110
-#: 0699c80ed0054d00917c7052ad5d7f02
 msgid ""
 "From the Scripto dashboard you can access projects you own and those to "
 "which you have reviewer access. Regardless of your status for the "
@@ -457,14 +390,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:112
-#: 214fc720a1a54ff4b389a541273befb9
 msgid ""
 "![scripto review page, user not logged in to "
 "Scripto](../../modules/modulesfiles/scripto-admin-project1.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:114
-#: 740b226d5ae54e6ab1484f8d8ed6a0f6
 msgid ""
 "At the top of the page you will see the title of the project along with "
 "the label \"Review\". Underneath the project title will be the Scripto "
@@ -473,83 +404,68 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:116
-#: 0dbfe9b304b2460bb647a5cc868f3f0a
 msgid ""
 "In the top right corner is the Actions dropdown which has the following "
 "options:"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:118
-#: 9e904013b6084227a5dfad889f535533
 msgid "[Edit project](#edit-project)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:119
-#: 684d7e1a56fd43a4ad7a3dc31c8e518b
 msgid "[Sync project](#sync-project)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:120
-#: 8e1d7364d05548cda198f97bdf215394
 msgid "[Import content](#import-content)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:121
-#: 4105e8ac059346c2a3b468c00599020f
 msgid "[Unimport content](#unimport-content)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:123
-#: 8ed297be1bc04e229f060381afa6518f
 msgid ""
 "The sidebar on the right summarizes the metadata for the project. The "
 "project title, item set, and owner all act as links."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:125
-#: f3a7376e549648329872c7e88a4bcfa4
 msgid "Table of items"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:126
-#: 23efd320dbf84878bfe47a4053840d9f
 msgid ""
 "In the main work area is a table with all of the items in the project, "
 "with the following information:"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:128
-#: ff19d63353c14c208b4dc194405941b1
 msgid "Item* (first media thumbnail and title)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:129
-#: fd56f70c54434d41ad0e27470e038759
 msgid "Ellipses to see item metadata - this will open in a drawer on the right"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:130
-#: f6039ade8b264b30bcf9f1169fe3ae9a
 msgid "Date synced: date most recently synced."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:131
-#: b2301c655eb84194be64e80bcf4c8257
 msgid "Last edited. If the item's media has not been edited, this will be blank"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:132
-#: 4baec7225ed54040a17ba5bbdc824515
 msgid "Media* count: number of media associated with the item"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:133
-#: 728ba4706a2947928ef21db5b4cb166d
 msgid "Status: item status, which will be blank, completed, or approved."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:135
-#: 41bd68fbeb904d01a0b08b6867cd6b62
 msgid ""
 "*NB: If you changed the Item, Media, or Content in the project "
 "configuration, then you will see the terms you selected instead of "
@@ -557,79 +473,64 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:137
-#: 13cd1c97c53c473e83548f7795aa1628
 msgid "Above the table are options to:"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:139
-#: 1bea8cda13704b948d90f4aa602928c1
 msgid "search items and media in the project (search bar)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:140
-#: b46fc8c464684db198060adac9af95b7
 msgid "page through the project's items"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:141
-#: 7190bb8cb9884bb9a0791fab0347512c
 msgid "sort items and media, either ascending or descending, by:"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:142
-#: 8249c95d82484958865786c9e607525f
 msgid "Date synced"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:143
-#: 3b7ee193f09647728b80593676fadd68
 msgid "Last edited"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:144
-#: d693c2cd3c884067a067b173dcb7aa5d
 msgid "filter results by:"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:145
-#: 019c342ed13a4efa95f55779c8390794
 msgid "is approved"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:146
-#: 0bcc22f10ccc4cf3ae2d3046edef22e7
 msgid "is not approved"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:147
-#: 8f44688e191346fe8e8dca1679472d41
 msgid "is in progress"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:148
-#: fb576e45b501459694de3df0a558bfd0
 msgid "is new"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:149
-#: b86389c930834849903a2ae19d6a2c6e
 msgid "is edited after imported"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:151
-#: 28ba6351a98541bb831a6862090dad14
 msgid ""
 "To find items which have been edited and are ready for review, filter all"
 " items by \"is in progress.\" You may also want to sort by last edited."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:153
-#: 78d80ec6b460416dab238a933fc0f7e9
 msgid "Edit project"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:154
-#: e7299ef888b14711b5726563d9b6b415
 msgid ""
 "You can edit your project using the Actions dropdown in the upper right "
 "hand corner of the screen. It offers the same two tabs you used when "
@@ -638,24 +539,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:156
-#: 4f8a42d29f134082b17c9342b4ac6018
 msgid "Admin Item Review"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:157
-#: 154be6d627c241359f63399fdecb08f0
 msgid ""
 "[This screencast](https://vimeo.com/431828023) shows the process of "
 "reviewing an item and its media."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:159
-#: 9f7499dc448646daa0a20fb2bf10294a
 msgid "To review an item, click on its title in the project view."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:161
-#: 30681ac78f1444b291e05ae0ddc7e1c6
 msgid ""
 "The Item view page, like the project view, has near the top of the page a"
 " Scripto account bar, where you can either log in or navigate to the "
@@ -663,7 +560,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:163
-#: 6601266b61c5456e8a050c7a94aa318b
 msgid ""
 "On the right is a drawer summarizing the item's status and data. The "
 "properties for the Scripto Project and Omeka S item link back to their "
@@ -672,26 +568,22 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:165
-#: 2f6f9af7b4ff4d4b80ce5e162d6d5257
 msgid ""
 "![item admin side with drawer open](../../modules/modulesfiles/scripto-"
 "itemview.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:167
-#: 65325d5f7411400d8034c429811b07b6
 msgid ""
 "The main work area has two tabs: one summarizing Media information and "
 "one with the Omeka item metadata."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:169
-#: 528768efbd6042908fd929e3fae87862
 msgid "Media tab"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:170
-#: 3b9ac80f54ba43c2884745646279aadf
 msgid ""
 "On the Media tab, there is a table with all the media in an item. Users "
 "transcribe media by media, so Scripto allows you to review on the media "
@@ -699,51 +591,42 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:172
-#: 63959102d03a48678c06b1ef8927728c
 msgid "The table includes:"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:174
-#: 43c34e49d1bc4640b44f1280a6f6e125
 msgid "A **checkbox** for the media"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:175
-#: ec6f0131e6f046169db7669859265e52
 msgid "The **index number** of the media"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:176
-#: 99657707e5414a098a656a57845aab80
 msgid ""
 "The media's **thumbnail** and **title**. Click on this to review the "
 "media."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:177
-#: 0d1b55bb740643f18470e2c8cf97e8c1
 msgid ""
 "An ellpises (`...`) which opens a drawer on the right displaying the "
 "metadata for that media"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:178
-#: a861d57232c247a8ac69bd32c168f7dc
 msgid "**last edited** date"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:179
-#: cd55802d07a64f8888a6ba974589ecf2
 msgid "**status**"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:180
-#: b8acc4c2edf44604bae3faf04e89ed7c
 msgid "**Edit protection** (admin only, open to all)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:182
-#: 16293419ec7f4354921c53634795a3c2
 msgid ""
 "You can sort the table by last synced, last edited, last completed and "
 "last approved, either ascending or descending, using the drop-downs in "
@@ -751,49 +634,40 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:184
-#: f1a9ec7cd9c04042aded870655dc2652
 msgid ""
 "You can also filter which media are displayed using the dropdown to show "
 "only:"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:186
-#: 20d7c39e6a404af0bc2a6776ac60a5b2
 msgid "Is/is not edited"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:187
-#: 2643cd6bfe904a438c3aaf4dce86df96
 msgid "Is/is not completed"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:188
-#: c30f33e2924246728fa8233981085222
 msgid "Is/is not approved"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:189
-#: 306f5e7dea9d4e719650f38b7fec81c6
 msgid "Is edited after approved"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:190
-#: 29ced5ac4dca481699804f6dbbb29300
 msgid "Is edited after imported"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:191
-#: 57c17985b01e4044a2cdfe3367fbec9d
 msgid "Is synced after imported"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:193
-#: 4f2497037b18485bac82889daf90b60e
 msgid "Using the checkbox you can edit selected or all media."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:195
-#: 4f4a1d179923410ebe2782d8b454c45f
 msgid ""
 "To review a specific piece of media, click either on its title or "
 "thumbnail. This will take you to its [media review page](#media-review-"
@@ -801,29 +675,24 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:197
-#: 86d228eca60c43e3b4cdafe30cdd6853
 msgid "Batch edit media"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:198
-#: 6f8018ca415f46a7accd984bd2890a1a
 msgid ""
 "If you batch edit media from the Review item tab, you have the following "
 "options:"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:200
-#: f8e31a941ba542549ced1781c6bbe607
 msgid "Set completion status as Complete, incomplete, or no change."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:201
-#: 68ff39cee520483aaf59cb7210789737
 msgid "Set Approval status as Approved, not approved, or no change."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:202
-#: 90f380589fb140b49e9e6487972bc4db
 msgid ""
 "Change protection level for the selected media to one of the following: "
 "No change, Allow all users, Allow only confirmed users, or Allow only "
@@ -831,43 +700,36 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:203
-#: eaa7a921ffb64fa594308912c184580b
 msgid ""
 "Set an expiry date for the protection, choosing from: infinite, 1 hour, 1"
 " day, 1 week, 2 weeks, 1 month, 3 months, 6 months, 1 year."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:204
-#: 7ca79abbde5e4da1a008f32600802e2e
 msgid "Set watchlist status as watch, unwatch, or no change."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:206
-#: ede83d73477a4506b9af438f2d54b93d
 msgid "![batch edit](../../modules/modulesfiles/scripto_batcheditmedia.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:208
-#: 3f7443b9b4e048cf80ae0a41c36c16a1
 msgid ""
 "On the right side of the batch edit media view is a list of all of the "
 "media which you are editing."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:210
-#: a765209963424b8c8530db9345e0835f
 msgid ""
 "When you are done, either click Save or Cancel, in the upper right hand "
 "corner of the screen."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:212
-#: dd3551d56f5044b79465f74170fefbe8
 msgid "Omeka item metadata"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:213
-#: 7be2d0034d8a40bfa23b6ece20d11bb5
 msgid ""
 "This tab is a static display of the metadata for the Omeka S item with "
 "which the Scripto item is associated. When you sync the project, this is "
@@ -877,19 +739,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:215
-#: c5235f1931e2425a9710764c60a6ca1d
 msgid ""
 "![Omeka item metadata view](../../modules/modulesfiles/scripto-"
 "omekaitemmeta.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:217
-#: 8ce8ab494b6c42ca9250fc505846c43d
 msgid "Media Review page"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:218
-#: 0a6b37f589494ccc98c929d58999dca4
 msgid ""
 "Review of user-generated content takes place at the media level. To "
 "review the work for a specific piece of media, click on its title or "
@@ -898,41 +757,34 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:220
-#: c8d5962a5d574368b79de187fecea60f
 msgid ""
 "The Review media page consists of three tabs in the main work area and a "
 "drawer on the right hand side."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:222
-#: 02ef62ae24f84b90b6af3c004a6825fe
 msgid "Along the top of the page are the following buttons:"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:224
-#: d1a0540ab07c4522894f240f8b18ba0c
 msgid ""
 "A **star** to add this page to your watchlist (if you are logged in to "
 "Scripto)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:225
-#: c05f9894c28d4d3f97f312a221ae0335
 msgid "A button to go to the **Revision History**"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:226
-#: 3ca64fab8dbe4fffbeceb803c804ca21
 msgid "A button to **View notes** of the media"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:227
-#: 9c02fe239dbe4db99c173c47dab459c6
 msgid "A button to **Save** changes"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:229
-#: 2ab906ba9b914543867714c2f927daa6
 msgid ""
 "The first tab is **Wikitext** and displays the user-generated text from "
 "MediaWiki next to the media. You can use the Layout buttons to toggle "
@@ -943,19 +795,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:231
-#: 0f338396a09246629d5abef15dc1197a
 msgid ""
 "The second tab is an **HTML** display of the Wikitext content, showing "
 "the formatted text as it will display on the public side of a site."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:233
-#: afeeee51796144e79fea7f07199fd434
 msgid "The third tab is **Omeka media metadata** for the media."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:235
-#: 4091eb0434534ef391d96e82b2b81ca4
 msgid ""
 "To the right of the tabs is a set of foward-backward arrow buttons and "
 "numbers (1 of 2 in the image) which allow you to move through media "
@@ -963,19 +812,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:237
-#: b4a6d25409714cffa3cdc7920c220190
 msgid "![Media review](../../modules/modulesfiles/scripto_mediareview1.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:239
-#: 03c70ab94b224893baaca7a0795ca8dc
 msgid ""
 "The drawer on the right is where review actions take place, in the "
 "section titled \"Review Status.\""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:241
-#: dc9fc63591074328b10563de6625eb2e
 msgid ""
 "At the top of the drawer is the **This revision** section where you can "
 "move through revisions using the forward and back arrows. The first line "
@@ -987,31 +833,26 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:243
-#: 2449e0b211e842bbb58bfe94ab7de274
 msgid ""
 "![This revision section showing an old "
 "revision](../../modules/modulesfiles/scripto-thisrevold.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:245
-#: 5df35e35c31548818c1778f5ed9c26dd
 msgid "The next section is **Review status**."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:247
-#: 9deb4ca6681a42489d80955241480dfd
 msgid "You can move through revisions using the forward and backward arrows."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:248
-#: c29f905430a64cc081a15c34a236f92c
 msgid ""
 "You can view review status and modify using checkboxes if your Mediawiki "
 "role includes bureaucrat."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:249
-#: ab02fd805b97406e9b9ed8374cf54a8d
 msgid ""
 "You can edit the protection of the Wikitext page, choosing from all "
 "users, confirmed users, or only administrators, and set the protection to"
@@ -1021,19 +862,16 @@ msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:251
 #: ../../docs/modules/scripto/scriptoproject.md:278
-#: 9db60df723624999b03d4d076cc9f663 c69fc7abd6774e4da95406ad8f1fe7c4
 msgid ""
 "You can toggle the drawer open and closed using the open arrow `>` button"
 " in the middle of the divider between the drawer and the main work area."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:254
-#: 463198e5240f4d5ca9c0cb4752c03180
 msgid "Media status:"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:256
-#: 6b751b4e72804f439a490dab113ecb6a
 msgid ""
 "**Complete:** Community users have the ability to mark a media they are "
 "working on as \"complete.\" This serves as a flag to notify the project "
@@ -1043,7 +881,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:257
-#: 27ba89002dcd4b6ba57a23ddf50748d4
 msgid ""
 "**Approved:** Approval is granted by administrators and indicates that "
 "every media is complete and satisfactory. Items can only be considered "
@@ -1051,7 +888,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:258
-#: 4ff927374aa1469d8fc4ac16489743d5
 msgid ""
 "**Protected:** Protection is a [MediaWiki "
 "function](https://www.mediawiki.org/wiki/Manual:Administrators#Protection)."
@@ -1062,7 +898,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:259
-#: 0271c4f07cad45269879931dfdf9e619
 msgid ""
 "Protection can be limited to users, confirmed users, or administrators. "
 "In addition,  you can choose to protect the media infinitely or for a set"
@@ -1071,19 +906,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:261
-#: bbc7115b8f5f4b7c9987a429bc5db863
 msgid "Revision History"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:262
-#: d5fe05c84dbe492f8fa9d92797d4dd79
 msgid ""
 "Clicking the \"Revision History at the top of the Review media page takes"
 " you to a listing of the revision history for the media."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:264
-#: 3c650289ec7645e4b9bf44f690925c32
 msgid ""
 "Clicking on the timestamp for a revision will take you to that revision."
 "  ![Revision "
@@ -1091,12 +923,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:267
-#: f385546ed7304e7b9fc6cf4ab7fdc837
 msgid "Notes"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:268
-#: 74a395fa06e243b7bde2458738ad1ab1
 msgid ""
 "Notes are a way for project staff and transcribers to communicate. Access"
 " the notes for a specific media using the \"View notes\" button in the "
@@ -1104,7 +934,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:270
-#: 608601132a574823bacad4cf947d4c0a
 msgid ""
 "![a red arrow points to the \"View notes\" button in a close-up of the "
 "upper right hand "
@@ -1112,7 +941,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:272
-#: f3b951ae07224fd8bbb6d4fa35e806b1
 msgid ""
 "The note review options are similar to the media review options: there is"
 " a tab for wiktext where you can see the notes to the left of a small "
@@ -1122,7 +950,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:274
-#: f03d967102444b8695cbf015b7745717
 msgid ""
 "Using the drawer on the right hand side of the screen, you can change the"
 " protection of the notes page to allow only the selected level of users "
@@ -1131,17 +958,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:276
-#: 2faf94e63d1640a9894696f02a7490a1
 msgid "![Notes](../../modules/modulesfiles/scripto_notes.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:280
-#: 2e9a21f4e75c42d599d89113a1fa1bad
 msgid "Sharing data between Scripto and Omeka S"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:281
-#: 6ebf3f1a9aa9489ca0be26dcc50bdf86
 msgid ""
 "Scripto projects and the Omeka S items and item sets with which they are "
 "associated are separate entities. In order to update either Scripto or "
@@ -1152,29 +976,24 @@ msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:283
 #: ../../docs/modules/scripto/scriptoproject.md:291
-#: bdf161aa23f5424fb6d7800b2bc32b64 f2f8ad1f945b46c9934135d378400995
 msgid "Sync project"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:284
 #: ../../docs/modules/scripto/scriptoproject.md:298
-#: e26b32b941fd4c819c38f6cd1e556093 fd406eee98934e7aa9d480005b18634d
 msgid "Import content"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:285
 #: ../../docs/modules/scripto/scriptoproject.md:307
-#: 416e8cf063504832ba752e6c38bae931 7ee480cf86524d9987730347463fb892
 msgid "Unimport content"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:287
-#: 1e494fd37f9f48f19a2870ff5b15c6dd
 msgid "![Actions dropdown](../../modules/modulesfiles/scripto-actions.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:289
-#: 4e1c34ba90b94f6f8233b35a5c666f87
 msgid ""
 "All three of these actions open a drawer on the right side of the screen "
 "with a summary of what the action does. In order to complete the action, "
@@ -1183,14 +1002,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:292
-#: f872b7ab385e4a5ea7950d9079be232e
 msgid ""
 "Syncing a project updates the project in Scripto with information "
 "**from** the Omeka S item set."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:294
-#: de851376dc104f12beb6ef8f34eb2a14
 msgid ""
 "Use this option if you have made changes to the Omeka S item set, or the "
 "items in that set. You should synchronize periodically, any time items "
@@ -1199,7 +1016,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:296
-#: 0ab2972a743e47d9b207a4eb246955de
 msgid ""
 "![Sync content drawer with a message summarizing what it does. At the "
 "bottom is a button which says \"Sync project\"](../modulesfiles/scripto-"
@@ -1207,14 +1023,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:299
-#: fe5d952de80349e1a65c9f7ba760d48c
 msgid ""
 "This option is how you move content from your Scripto project **to** "
 "Omeka S metadata."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:301
-#: bdb72bf711704267b010a821b21534c8
 msgid ""
 "This will only move approved transcriptions (or similar content) to the "
 "Omeka S items. By default, the target are Scripto vocabulary properties "
@@ -1222,14 +1036,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:303
-#: e22a36188f054ecd8157ed2e9afeb104
 msgid ""
 "If you have a project which is fairly active, you should plan to import "
 "content weekly or monthly."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:305
-#: b6cb659d0a234579960b5299a81f0241
 msgid ""
 "![Import content drawer with a message summarizing what it does. At the "
 "bottom is a button which says \"Import project\"](../modulesfiles"
@@ -1237,12 +1049,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:308
-#: 70215d576fcc4bbe9c5b5f8ba2fcd157
 msgid "This option deletes all project content from Omeka S."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:310
-#: 1be70c78805b400da6c7299f733cd2af
 msgid ""
 "![Unimport content drawer with a message summarizing what it does. At the"
 " bottom is a button which says \"Unimport project\"](../modulesfiles"
@@ -1250,44 +1060,30 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:312
-#: e59a4c65b40b41f0a5ccd64a31c74adb
 msgid "Delete a project"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:313
-#: fe040619edd949bf924ff0ce7925c6fd
 msgid ""
 "To delete a project, choose the 'Edit project' option from the Actions "
 "dropdown in the upper right corner of the project dashboard."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:315
-#: 3c2c89b20d51438ea1b7697cd7c72b94
 msgid ""
 "Click the Delete button in the upper right hand corner of the editing "
 "window."
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:317
-#: d431015f0a364ff78d8ee7f8ecea044c
 msgid ""
 "![arrow pointing to the delete button](../modulesfiles/scripto-"
 "deleteProject.png)"
 msgstr ""
 
 #: ../../docs/modules/scripto/scriptoproject.md:319
-#: baae939a182240498cb78c54ef052ca2
 msgid ""
 "This will open a drawer asking you to confirm that you wish to delete the"
 " project. Click Confirm Delete to completely delete the project."
 msgstr ""
-
-#~ msgid ""
-#~ "Add [Omeka S users](../../../admin/users/) to"
-#~ " your Scripto project as reviewers, "
-#~ "who can can access private projects, "
-#~ "and mark media as approved and "
-#~ "unapproved. You can manage users after"
-#~ " adding a project (see below)"
-#~ msgstr ""
 

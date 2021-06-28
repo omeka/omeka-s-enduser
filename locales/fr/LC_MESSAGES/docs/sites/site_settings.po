@@ -18,87 +18,87 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../docs/sites/site_settings.md:1 2d69d80040cc42afb55dbfe6ff73e428
+#: ../../docs/sites/site_settings.md:1
 msgid "Site Admin"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:3 916b552c42d44c2693913475553823bf
+#: ../../docs/sites/site_settings.md:3
 msgid ""
 "The Site Admin page allows you to manage the main settings for the "
 "[site](../sites/index.md) on which you are working. Changes will only be "
 "applied to this site and will not change other sites' settings."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:5 e45d48ae9c7d492d9bc2cddf2994f6a1
+#: ../../docs/sites/site_settings.md:5
 msgid "It is the first tab under the site title, represented with a gear icon."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:7 a50d95778cab441885e8c6650912b778
+#: ../../docs/sites/site_settings.md:7
 msgid "The Site Admin page has two tabs, Info and Settings."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:9 e47d2c334a67416f82b59c3b938b297b
+#: ../../docs/sites/site_settings.md:9
 msgid "Info"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:10 63fe6266bccf4007bfd4f89b00ac3dc0
+#: ../../docs/sites/site_settings.md:10
 msgid ""
 "The site info settings for an Omeka S site are where you can change the "
 "basic info for the site - the same information you entered when you "
 "created the site. You can change the:"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:12 e7317143e2b740b1af05dc26a246cb0e
+#: ../../docs/sites/site_settings.md:12
 msgid "*title* - a text field."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:13 5e84fcea57804d6f8865f2e360264e3e
+#: ../../docs/sites/site_settings.md:13
 msgid "*slug* - the url for your site."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:14 fb26ca3b0d4a4382b7626bc8b5ac72af
+#: ../../docs/sites/site_settings.md:14
 msgid ""
 "*summary* - the brief description of what it is about which will appear "
-"on your installation's landing page and on [List of "
-"Site](../sites/site_pages/#page-blocks) blocks."
+"on your installation's landing page and on [List of Site](site_pages.md"
+"#page-blocks) blocks."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:16 2d826357bf6d4c86b9b3aa0b38672af9
+#: ../../docs/sites/site_settings.md:16
 msgid ""
 "![Site info for the site “Jane Austen” with buttons across the top to "
 "View, Delete, and Save the site](../sites/sitesfiles/sites_siteinfo.png)"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:18 c16c565b4aa94672bd0ef2db60f1ca97
+#: ../../docs/sites/site_settings.md:18
 msgid ""
 "In the upper right hand corner of the window on this tab, you can use "
 "buttons to:"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:20 3deccb75bbea46d7a82751b1b165ba54
+#: ../../docs/sites/site_settings.md:20
 msgid "set your site as public or private using the eye icon button (see below);"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:21 6d4926978611417b9d9c52d2d3722407
+#: ../../docs/sites/site_settings.md:21
 msgid "*delete* the site;"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:22 af9da1f5fb1249bf9bc14efc431b4357
+#: ../../docs/sites/site_settings.md:22
 msgid "*cancel* making changes; and"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:23 1903777b0c15488ab4e5b7b619c1f31e
+#: ../../docs/sites/site_settings.md:23
 msgid "*Ssave* changes."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:25 e936d451d7b64f49994f26938363aa4d
+#: ../../docs/sites/site_settings.md:25
 msgid ""
 "The *make public/private* button (eye icon) is used to both indicate and "
 "set whether the site is visible to the public or only to users of this "
 "Omeka S installation"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:27 75c82bf042b442cda453956452f90b0e
+#: ../../docs/sites/site_settings.md:27
 msgid ""
 "Site is public: ![make public button showing an eye "
 "icon](../content/contentfiles/item_public.png)    Site is Private: ![make"
@@ -106,34 +106,34 @@ msgid ""
 "it](../content/contentfiles/item_private.png)"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:30 b6dc487029974f75a0b65d009c96b8d8
+#: ../../docs/sites/site_settings.md:30
 msgid "Settings"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:31 67f388fd1fe9499eb2480ff7bb9b969f
+#: ../../docs/sites/site_settings.md:31
 msgid ""
 "The Settings page is divided into three sections: General, Browse, and "
 "Search."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:33 52c573bab98b413fb4911f15eace57ba
+#: ../../docs/sites/site_settings.md:33
 msgid ""
 "To implement any changes you make, click Save at the top right of the "
 "browser window when you are done. To leave without saving changes, click "
 "cancel."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:35 fd0dc6571a8640429816749d5d18fbfc
+#: ../../docs/sites/site_settings.md:35
 msgid "General settings"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:37 bf9905aa2daa4c7cb80d86606e73dc91
+#: ../../docs/sites/site_settings.md:37
 msgid ""
 "![general settings, all at "
 "default](../sites/sitesfiles/sites_settingsgen.png)"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:39 cecfe72c69ae48629e166761a6341b16
+#: ../../docs/sites/site_settings.md:39
 msgid ""
 "**Auto-assign new items** A checkbox which sets whether new items are "
 "automatically added to the site. If checked, every new item will be added"
@@ -141,38 +141,38 @@ msgid ""
 "unassign their items from the site at any time, in the item's edit pages."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:41 f434ec6a711e4a7384964d6ac7bd448c
+#: ../../docs/sites/site_settings.md:41
 msgid ""
 "**Attachment link type** Sets the target of links from attachments you "
-"add to [site page blocks](../sites/site_pages/#page-blocks) (for example,"
-" in an [item showcase](../sites/site_pages/#item-showcase). It offers a "
-"dropdown with the following options:"
+"add to [site page blocks](site_pages.md#page-blocks) (for example, in an "
+"[item showcase](site_pages.md#item-showcase). It offers a dropdown with "
+"the following options:"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:43 0a9cfae1ab3c4c0997d5181d125d7545
+#: ../../docs/sites/site_settings.md:43
 msgid ""
 "*item page:* clicking on the attachment takes users to the item page "
 "associated with the attached media;"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:44 d6760640d7224d00a16db4689df80f00
+#: ../../docs/sites/site_settings.md:44
 msgid "*media page:* clicking on the attachment takes users to the media page;"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:45 929ee6ff129248889a1ac5db1b582538
+#: ../../docs/sites/site_settings.md:45
 msgid ""
 "*direct link to file:* clicking on the attachment takes user to the file "
 "alone."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:47 83f16224ff3c49aca0532ef07cfe06f2
+#: ../../docs/sites/site_settings.md:47
 msgid ""
 "**Embed media on item pages** is a checkbox. When checked, any linked "
 "media (such as videos) will be embedded on the item pages. When "
 "unchecked, site visitors will click through to view playable media."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:49 06f7acee279347f5ab39aab6e08df1ca
+#: ../../docs/sites/site_settings.md:49
 msgid ""
 "**Show page pagination** is also a checkbox. When checked, \"Previous\" "
 "and \"Next\" links will display at the bottom of every page in the site, "
@@ -180,47 +180,47 @@ msgid ""
 "display."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:51 d38d7240135a475495506ed802d402f6
+#: ../../docs/sites/site_settings.md:51
 msgid ""
 "**Show user bar on public views** sets whether there is a bar across the "
 "top of public site pages which allow users to access the admin side of "
 "the site."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:53 ca6bb7d8f88f440db79dbaf1fdea6670
+#: ../../docs/sites/site_settings.md:53
 msgid "When users are logged in, the user bar has the following options:"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:55 9d48667a2c5d4d54b27c8f44f9fda2b3
+#: ../../docs/sites/site_settings.md:55
 msgid "Installation Title: takes you back to the installation admin"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:56 6592a40e6bfa43bdb4ff15d9355662be
+#: ../../docs/sites/site_settings.md:56
 msgid ""
 "Site Title: takes you back to the landing page for managing the site "
 "(site/show)."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:57 39d6d696f4b4472b9341311a03920d22
+#: ../../docs/sites/site_settings.md:57
 msgid ""
 "Resource view: depending on what you are viewing, this is a link to the "
 "admin side management for [Pages](site_pages), [Items](../content/items),"
 " or [Item Sets](../content/item-sets)"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:58 bf75e5749834430090c258b182060818
+#: ../../docs/sites/site_settings.md:58
 msgid "Edit link for that page, item set, or item."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:59 a0a39ec99cc947fd9496d6d5ee3b89e4
+#: ../../docs/sites/site_settings.md:59
 msgid "User's display name: takes you to your user page."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:60 f8f0ccaa331e42afaf584d9158655cb4
+#: ../../docs/sites/site_settings.md:60
 msgid "Logout: logs out current user."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:62 08ed81f89e6b4c709f86204a1cfdbe83
+#: ../../docs/sites/site_settings.md:62
 msgid ""
 "![a blue bar across the top of the image displays the following words in "
 "light blue text, indicating a link: Stackable Sandbox, Jane Austen, "
@@ -228,11 +228,11 @@ msgid ""
 "Logout.](../sites/sitesfiles/sites_userbarin.png)"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:64 ccdde1be5794437994896e130b2f3f94
+#: ../../docs/sites/site_settings.md:64
 msgid "When users are not logged, the user bar only displays a login option."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:66 fc6410727a984eeab5c9bc6983a542a3
+#: ../../docs/sites/site_settings.md:66
 msgid ""
 "![A blue bar across the top of the image only has a small button reading "
 "\"Log In\". Below this, the site's title \"A Tin Box\" is displayed in "
@@ -240,29 +240,29 @@ msgid ""
 "background.](../sites/sitesfiles/sites_userbarout.png)"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:68 57e1d758645f49d088aac8fec7ec7d0a
+#: ../../docs/sites/site_settings.md:68
 msgid "The options for this setting are:"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:70 a8b5cc2be00c43ca8b4622299f7a02a6
+#: ../../docs/sites/site_settings.md:70
 msgid "Never"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:71 aaa864fc7efb424493284559a9696dc2
+#: ../../docs/sites/site_settings.md:71
 msgid "When identified (when logged in)"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:72 7f7241a04f4948de94abbd8e0f83b91a
+#: ../../docs/sites/site_settings.md:72
 msgid "Always"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:74 296efc3babe047e998672d850f222dba
+#: ../../docs/sites/site_settings.md:74
 msgid ""
 "**Disable JSON-LD embed** Check this box to disable JSON-LD embedding on "
 "resource browse and show pages."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:76 b728cfe486914b5ca6edb5619787cda3
+#: ../../docs/sites/site_settings.md:76
 msgid ""
 "**Locale** is dropdown menu to select the language code for this site. By"
 " default this will be set to the same as the global locale setting for "
@@ -270,17 +270,17 @@ msgid ""
 "dropdown menu."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:78 e7c1999e9dfe4ba19286fc5a78c6c5e5
+#: ../../docs/sites/site_settings.md:78
 msgid "Browse settings"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:80 455e2d6a6f03421fa1022dbf69179a3a
+#: ../../docs/sites/site_settings.md:80
 msgid ""
 "![browse settings, all "
 "empty](../sites/sitesfiles/sites_settingsbrowse.png)"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:82 48a563acf8924f38b543964468b24e51
+#: ../../docs/sites/site_settings.md:82
 msgid ""
 "**Restrict browse to attached items** is a checkbox. If checked, the "
 "Browse functions of your site will only show items which have been added "
@@ -288,21 +288,21 @@ msgid ""
 "include all items in the Item Pool."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:84 d88e763ffccb466fb3d1c8cd994def02
+#: ../../docs/sites/site_settings.md:84
 msgid ""
 "**Results per page** sets the number of results per page on browse pages "
 "by entering a number. If left blank, the site will use the default from "
 "the [global settings](../admin/settings)."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:86 fd4a7bff79104d1c99f1abf05be318da
+#: ../../docs/sites/site_settings.md:86
 msgid ""
 "Depending on the [site theme](../sites/site_theme), you may want to make "
 "this a multiple of 4 for a more elegant display. Note that using very "
 "large numbers (50, 75, 100) may cause browse pages to load slowly."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:88 be453d2f4bba454ea72b83739a914ea6
+#: ../../docs/sites/site_settings.md:88
 msgid ""
 "**Browse heading property** sets which property to use as the heading for"
 " each resource on a browse page. By default, this is Dublin Core: Title. "
@@ -310,7 +310,7 @@ msgid ""
 "includes a search bar to quickly find the desired property."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:90 7652642827614a71884f57d9ad5672b7
+#: ../../docs/sites/site_settings.md:90
 msgid ""
 "![The browse heading property option is open. The current selection, "
 "Dublin Core: Title, is at the top. Immediately below it is a search bar, "
@@ -319,7 +319,7 @@ msgid ""
 "vocabulary.](../sites/sitesfiles/sites_setbrowseprop.png)"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:93 bc7d6c877df145cfbaae925c6d2b9240
+#: ../../docs/sites/site_settings.md:93
 msgid ""
 "**Browse body property** sets which property to use as the body text for "
 "each resource on a browse page. By default, this is Dublin Core: "
@@ -328,45 +328,45 @@ msgid ""
 "property."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:95 d996075c86b045a1ab58c905e0d80630
+#: ../../docs/sites/site_settings.md:95
 msgid "Show"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:96 87baf98c185a4c748fe0d5ead3c9167f
+#: ../../docs/sites/site_settings.md:96
 msgid ""
 "When this box is checked, site pages to which an item is attached will "
 "display on the public view of that item."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:98 11e884840c854cb0ba5377395e2dc448
+#: ../../docs/sites/site_settings.md:98
 msgid "![Show setting checked](../sites/sitesfiles/sites_settingShow.png)"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:100 8f507fb624b24204a20e2b5bf73e66c1
+#: ../../docs/sites/site_settings.md:100
 msgid "Search"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:102 756550b7bba2490990f72cfa5c44a802
+#: ../../docs/sites/site_settings.md:102
 msgid ""
 "![search settings, all "
 "empty](../sites/sitesfiles/sites_settingssearch.png)"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:104 e92cac9c651c4ef6ab4f079cb4a8b9cc
+#: ../../docs/sites/site_settings.md:104
 msgid ""
 "**Search type** is a dropdown which allows you to set from which site(s) "
 "the search bar generates results:"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:106 f964c578c8ef4aedb6e89f5f00e92ee3
+#: ../../docs/sites/site_settings.md:106
 msgid "This site: only return results from this site;"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:107 a3bdb837c3904f66b56b8b9c642ebcfb
+#: ../../docs/sites/site_settings.md:107
 msgid "All sites: return results for all sites on the installation."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:109 bf5a9c38c61244f69ddb942867d084d9
+#: ../../docs/sites/site_settings.md:109
 msgid ""
 "**Search resources** is a series of checkboxes which let you select which"
 " types of resources are searched from the main search field on the site. "
@@ -374,7 +374,7 @@ msgid ""
 "want."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:111 4ec39890d0884cd28e67b4b9f48d4f6c
+#: ../../docs/sites/site_settings.md:111
 msgid ""
 "**Templates** allows you to limit the properties for advanced item or "
 "item set search to only properties included in a template or templates. "
@@ -384,30 +384,22 @@ msgid ""
 "dropdown, it also includes your alternate labels for properties:"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:113 47a896cc8a9f455092f382e899cf47b5
+#: ../../docs/sites/site_settings.md:113
 msgid ""
 "![Detail view of a dropdown menu for the option 'Search by value\". "
 "Values loaded include Creator:Author, Date: Date of Publication, and "
 "Description.](../sites/sitesfiles/sites_settingtemp.png)"
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:115 0071d03988ec4006920838af92196f22
+#: ../../docs/sites/site_settings.md:115
 msgid ""
 "Click in the field to add a template; you can add more than one template "
 "by clicking in the field again."
 msgstr ""
 
-#: ../../docs/sites/site_settings.md:117 b8f1c7ba0b7e41108e65ffc158fb913f
+#: ../../docs/sites/site_settings.md:117
 msgid ""
 "**Restrict to templates** will restrict search results to only those "
 "items which are using the selected templates."
 msgstr ""
-
-#~ msgid ""
-#~ "Resource view: depending on what you "
-#~ "are viewing, this is a link to "
-#~ "the admin side management for "
-#~ "[Pages](../site/site_pages), [Items](../content/items), or"
-#~ " [Item Sets](../content/item-sets)"
-#~ msgstr ""
 

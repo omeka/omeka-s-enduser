@@ -163,7 +163,7 @@ Clicking this loads a new page with four options for search:
 *Search by value:* search for a term or phrase using multiple options.
 
 - The first selector allows you to specify a property to search. 
-	- Note that if you have have the [site settings](sites/site_settings/#search) to restrict search to templates, this will only display the properties used by those templates. 
+	- Note that if you have have the [site settings](sites/site_settings.md#search) to restrict search to templates, this will only display the properties used by those templates.
 - The second selector allows you to set the relationship the property has with the value. The options are:
 	- is exactly, 
 	- is not exactly, 
@@ -199,7 +199,7 @@ Clicking the advanced search link loads a new page with three options for search
 *Search by value:* search for a term or phrase using multiple options.
 
 - The first selector allows you to specify a property to search. 
-	- Note that if you have have the [site settings](sites/site_settings/#search) to restrict search to templates, this will only display the properties used by those templates. 
+	- Note that if you have have the [site settings](sites/site_settings.md#search) to restrict search to templates, this will only display the properties used by those templates.
 - The second selector allows you to set the relationship the property has with the value. The options are:
 	- is exactly, 
 	- is not exactly, 

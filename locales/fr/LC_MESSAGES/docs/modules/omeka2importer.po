@@ -18,72 +18,72 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../docs/modules/omeka2importer.md:1 fe41742360504b409ef2dd3d27cd71a1
+#: ../../docs/modules/omeka2importer.md:1
 msgid "Omeka 2 Importer"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:3 b3adfbf7215545c6a634f6e0251c5313
+#: ../../docs/modules/omeka2importer.md:3
 msgid ""
 "The Omeka 2 Importer module which enables you to import items from an "
 "Omeka 2.x site into an Omeka S installation."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:5 f2a916345c5d4762ab138ef59cf4d5d8
+#: ../../docs/modules/omeka2importer.md:5
 msgid ""
 "For information on installing, see the instructions on the general "
 "modules page."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:7 566cb51791964bc4b51b8220c65f40c6
+#: ../../docs/modules/omeka2importer.md:7
 msgid ""
 "Once installed, the Omeka 2 Importer module should appear toward the "
 "bottom of the left navigation menu on the main admin dashboard. When "
 "selected, there are sub-menu items for *Import* and *Past Imports*"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:9 2264e24ba9c0458798f8e95652e416e0
+#: ../../docs/modules/omeka2importer.md:9
 msgid ""
 "![Omeka 2 Importer menu options Import and Past "
 "Imports](../modules/modulesfiles/o2i_menu.png)"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:11 b8014ca99885449ea2cb7637a3924dad
+#: ../../docs/modules/omeka2importer.md:11
 msgid "**Notes**"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:13 5e75c91c67ff4aba9d63440999ac7f09
+#: ../../docs/modules/omeka2importer.md:13
 msgid ""
 "the module only imports Dublin Core metadata, Item Type metadata, and "
 "files. It *will not* import tags,  Geolocation data, Simple Page content,"
 " or Exhibit Builder content."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:14 3c956ce7665a4a7b89279a2f73e31268
+#: ../../docs/modules/omeka2importer.md:14
 msgid ""
 "Because resource properties in Omeka S do not have HTML formatting, any "
 "html in your Omeka Classic item properties (links, text formatting, etc) "
 "will be stripped during the import process."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:16 aa0f40c9253d43509742c77261df901f
+#: ../../docs/modules/omeka2importer.md:16
 msgid "Import"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:18 2ac5f1034fbb4c7fb6644da609945c57
+#: ../../docs/modules/omeka2importer.md:18
 msgid "From the Import tab you can start new imports."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:20 e088cea474d2439f9924f7ebe5240770
+#: ../../docs/modules/omeka2importer.md:20
 msgid ""
 "**Note** You must have API enabled on the source Omeka installation for "
 "the importer to work."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:22 0cdbe5e8d7cf45369dec8b6bb17c7578
+#: ../../docs/modules/omeka2importer.md:22
 msgid "Enter the API"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:23 e29242be535447ffb9bc17a26455c482
+#: ../../docs/modules/omeka2importer.md:23
 msgid ""
 "On the first page of the importer, enter the *Omeka 2 Api Endpoint* - the"
 " site URL for the API you wish to access (it should end with api). Make "
@@ -91,100 +91,100 @@ msgid ""
 "will not be able to access the items at that site. Click *next*."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:25 63b6206b568d4c3ba0ee917563a34d4d
+#: ../../docs/modules/omeka2importer.md:25
 msgid "![API import field](../modules/modulesfiles/o2i_enterapi.png)"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:27 4f7252eeb5034dfd895bd3cda254aa99
+#: ../../docs/modules/omeka2importer.md:27
 msgid ""
 "If you have entered a valid API endpoint, the next page will load with no"
 " issue. If you have entered an invalid endpoint, the module will display "
 "error messages “Warning: Invalid argument”."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:29 5ceea3046f0e4d519485cb82458b3cdf
+#: ../../docs/modules/omeka2importer.md:29
 msgid "Import Settings and Map Metadata"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:30 5896d6ea0ab74f08b57cf024cd42c2fe
+#: ../../docs/modules/omeka2importer.md:30
 msgid ""
 "On the second page of the importer there are tabs for basic import "
 "settings, mapping Omeka Classic elements to Omeka S properties, and "
 "mapping Omeka Classic item types to Omeka S classes."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:32 0a55fde4fee04e3e880b981c50c9e9cd
+#: ../../docs/modules/omeka2importer.md:32
 msgid ""
 "Move between all three tabs to ensure that the data is mapped as you want"
 " and the settings are correct before clicking Import."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:34 472b987e927043f8946e30dce88b6058
+#: ../../docs/modules/omeka2importer.md:34
 msgid ""
 "Clicking the Start Over button will take you back to the API import url "
 "field."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:36 cd263b60cc0a49e68a4ac3d048ffe069
+#: ../../docs/modules/omeka2importer.md:36
 msgid "Basic Import Settings"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:37 87992987624549138c616f1b65f3eb1b
+#: ../../docs/modules/omeka2importer.md:37
 msgid ""
 "*Omeka 2 Api Key*: This field can either be blank or filled, depending on"
 " whether you have an API key for the site you are attempting to import "
 "data from."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:38 849146391b6b430da424bf417dc73ac3
+#: ../../docs/modules/omeka2importer.md:38
 msgid ""
 "*Comment*: You can add a comment such as “Jane Doe’s API, no key” to help"
 " identify the specific import when viewing previous imports."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:39 d292a6771d0f4b6e8ca880fef25a4d53
+#: ../../docs/modules/omeka2importer.md:39
 msgid ""
 "*Import Into*: This option allows you to select the item set into which "
 "you want to import the items. Note that you can only import into item "
 "sets which you own."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:40 22e0784548fc44d6985e1012f8422087
+#: ../../docs/modules/omeka2importer.md:40
 msgid ""
 "*Per Page* is an option setting to limit the number of records per "
 "request that you retreive. Useful for sites which may have thousands of "
 "items per page."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:41 851757f73407477c991d4714b2b75091
+#: ../../docs/modules/omeka2importer.md:41
 msgid ""
 "*Update a previous import* allows you to update - and overwrite - a "
 "previous import from the same source."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:42 9a3c2b37f5f94066af975b30c61e82a0
+#: ../../docs/modules/omeka2importer.md:42
 msgid ""
 "*Import Collections*: Check this box if you wish to import the "
 "collections from the Omeka 2 site to the Omeka S site."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:44 e840555f03344ef0aca0ef5572e93da4
+#: ../../docs/modules/omeka2importer.md:44
 msgid ""
 "![Basic options for importing "
 "Omeka2](../modules/modulesfiles/o2i_basic.png)"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:46 1abd6392d9354c43877f9a612da8164e
+#: ../../docs/modules/omeka2importer.md:46
 msgid "Map to Omeka S Properties"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:47 23d4a63c48424a48bd41a10f2f4b7911
+#: ../../docs/modules/omeka2importer.md:47
 msgid ""
 "This tab features a table for mapping between Omeka @ elements and Omeka "
 "S properties."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:49 19818a92af064638bb2641c9cf0692b9
+#: ../../docs/modules/omeka2importer.md:49
 msgid ""
 "The Import module will automatically map many properties, but you may "
 "want to review the mapping in case you need to add or edit the automatic "
@@ -192,18 +192,18 @@ msgid ""
 "manually map them."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:52 fb1dc45514204c2cafe110a4b4c2a490
+#: ../../docs/modules/omeka2importer.md:52
 msgid "To clear the default mapping, click the *Clear Defaults* button."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:54 a5d1134456d247b58b89163f6db94211
+#: ../../docs/modules/omeka2importer.md:54
 msgid ""
 "The columns of the table are *Omeka 2 Element*, *Mapped Properties* and a"
 " checkbox option to *Import as HTML Media*.  ![Map Omeka "
 "properties](../modules/modulesfiles/o2i_mapprop.png)"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:57 ee56f1e7a7b24e24b388da7b7bd70485
+#: ../../docs/modules/omeka2importer.md:57
 msgid ""
 "The first set of the table is Dublin Core, followed by Item Type "
 "Metadata, but the import will also bring in any legacy or additional "
@@ -211,137 +211,136 @@ msgid ""
 msgstr ""
 
 #: ../../docs/modules/omeka2importer.md:59
-#: ../../docs/modules/omeka2importer.md:72 190766c5a89e4485bc055d0b90b9db7e
-#: 8e4fa8d58ae24e69b2f02a19be80b7a7
+#: ../../docs/modules/omeka2importer.md:72
 msgid "To map:"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:61 f41e96a5e36b4ab196feeb00911b58fe
+#: ../../docs/modules/omeka2importer.md:61
 msgid ""
 "Select the element or item type in the table by clicking on its row or "
 "label."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:62 1facd836678d408cbbd2754efebe6d00
+#: ../../docs/modules/omeka2importer.md:62
 msgid ""
 "In the  right-hand drawer, either click through or search for the "
 "property to which you want to map your element."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:63 c6f8bc54f446476ca5fb9ec93b7ed2ac
+#: ../../docs/modules/omeka2importer.md:63
 msgid "Click on the property in the drawer to map it."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:65 587431d688754ba593031135b1015c75
+#: ../../docs/modules/omeka2importer.md:65
 msgid ""
 "![Mapping the element Date of Birth to the foaf property “birthday”, "
 "showing the mapped "
 "relationship.](../modules/modulesfiles/o2i_mapping.png)"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:67 fb1c6d8c1141483db172d716e5da5c04
+#: ../../docs/modules/omeka2importer.md:67
 msgid ""
 "To remove a mapping, click the delete (trash can) icon in the "
 "element/property row."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:69 ec26e60356664783867aa0a0584c5716
+#: ../../docs/modules/omeka2importer.md:69
 msgid "Map to Omeka S Classes"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:70 266dc2f93e39409fbc77817deece5e68
+#: ../../docs/modules/omeka2importer.md:70
 msgid ""
 "In this tab you map Omeka Classic Item Types to Omeka S Resource Classes."
 " You can select from the classes for any of the installed vocabularies."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:74 2f7ecd8844e041838b75f796158a5d95
+#: ../../docs/modules/omeka2importer.md:74
 msgid "Select the item type in the table by clicking on its row or label."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:75 2b4c6ca827c84df3a13128e38bf2f491
+#: ../../docs/modules/omeka2importer.md:75
 msgid ""
 "In the  right-hand drawer, either click through or search for the "
 "resource class to which you want to map your element."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:76 35c90883c7124cce8365fe0cac948785
+#: ../../docs/modules/omeka2importer.md:76
 msgid "Click on the resource class in the drawer to map it."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:78 84e3b5c2cc964ef1a8323565b4238bd0
+#: ../../docs/modules/omeka2importer.md:78
 msgid "![Inactive classes mapping tab](../modules/modulesfiles/o2i_mapclass.png)"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:80 a372b0ff5f8549a385b82e8abb70938a
+#: ../../docs/modules/omeka2importer.md:80
 msgid "Complete Import"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:81 13bc63f1d42b484198f022b68bdc76c1
+#: ../../docs/modules/omeka2importer.md:81
 msgid ""
 "When you have finished customizing the mapping, click the *Import* button"
 " in the upper right corner of the window."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:83 c3f052482ea94c30b3e220b5b2aaff96
+#: ../../docs/modules/omeka2importer.md:83
 msgid ""
 "Are your jobs starting and not completing? You might need to [set the "
 "path for PHP](../configuration/) so that your system can perform the "
 "background process to make the items."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:85 a8378e27f37c4e5eae92ab3e7ccbafdc
+#: ../../docs/modules/omeka2importer.md:85
 msgid "Manage Past Imports"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:87 daebcd0f035d4032b7826142a690fbbb
+#: ../../docs/modules/omeka2importer.md:87
 msgid ""
 "The past imports section of the module allows you to view previous API "
 "imports."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:89 6d119f30387648458b3f5a5dbfca4c8f
+#: ../../docs/modules/omeka2importer.md:89
 msgid "Each import is a row. The table has the following columns."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:91 f2fa20dc6dcb47b69b49bd39e9d2e86b
+#: ../../docs/modules/omeka2importer.md:91
 msgid ""
 "![Table of past imports showing header row and one row of a past "
 "import.](../modules/modulesfiles/o2i_past.png)"
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:93 b3a06ac49e404a9c870de3de78f3ed2b
+#: ../../docs/modules/omeka2importer.md:93
 msgid ""
 "*Undo*: Check this box if you wish to undo the import. Once you click "
 "submit, the status for that specific import will be undone."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:94 347c78074f934bdbb193fa027f0f0850
+#: ../../docs/modules/omeka2importer.md:94
 msgid ""
 "*Job ID*: A numerical value assigned to each specific API import. You can"
 " also view the job under the Jobs tab on the administrative dashboard."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:95 7b918d5b68a84d259da4a78074a04c8f
+#: ../../docs/modules/omeka2importer.md:95
 msgid ""
 "*Comment*: If you entered a comment in the Comment field in the Import "
 "section of the module, that comment will appear. If you typed \"Jane "
 "Doe's API, no key\" in the import section you will see it as a comment."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:96 8c8aa334234d4f8fb432152ebad5b10f
+#: ../../docs/modules/omeka2importer.md:96
 msgid "*Items*: Lists the number of items added and updated with each import."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:97 94d08d0cb12145758a9fb4b405ab8c29
+#: ../../docs/modules/omeka2importer.md:97
 msgid "*Date*: The date on which the import took place."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:98 c7a962fb22b84c068259144cb3877b1e
+#: ../../docs/modules/omeka2importer.md:98
 msgid "*Status*: Will be in_progress, completed, or undone."
 msgstr ""
 
-#: ../../docs/modules/omeka2importer.md:99 900f39ac311a41f89b11b9d8a30ba2cd
+#: ../../docs/modules/omeka2importer.md:99
 msgid "*Owner*: The user who requested the import."
 msgstr ""
 

@@ -8,554 +8,510 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-28 20:27+0000\n"
+"POT-Creation-Date: 2021-06-28 23:20+0000\n"
 "PO-Revision-Date: 2021-06-28 22:48+0200\n"
 "Last-Translator: Julian Maurice <julian.maurice@biblibre.com>\n"
 "Language: fr_FR\n"
 "Language-Team: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
-"X-Generator: Poedit 2.2.1\n"
 
-#: ../../docs/search.md:1 ebc3c17ed5f84d56bf7a1992d9b066fe
+#: ../../docs/search.md:1
 msgid "Searching"
 msgstr "Recherche"
 
-#: ../../docs/search.md:3 9c30d5d30ec14c98b71da569dd5185fc
+#: ../../docs/search.md:3
 msgid ""
-"There are search functions on both the administrative and public sides of Omeka "
-"S installs and sites."
+"There are search functions on both the administrative and public sides of"
+" Omeka S installs and sites."
 msgstr ""
-"Il existe des fonctions de recherche sur les interfaces d'administration et "
-"publique des installations et des sites Omeka S."
+"Il existe des fonctions de recherche sur les interfaces d'administration "
+"et publique des installations et des sites Omeka S."
 
-#: ../../docs/search.md:5 5948eb1070844fba9f5eed47a043f138
+#: ../../docs/search.md:5
 msgid "Administrative interface"
 msgstr "Interface d'administration"
 
 #: ../../docs/search.md:7 ../../docs/search.md:143
-#: 30a2a79ec9604d66a087fda797275762 78eb4053665041c0afd65fab7c2ad463
 msgid "Basic search"
 msgstr "Recherche simple"
 
-#: ../../docs/search.md:9 496a0e693a9c407f906be70369b40c3b
+#: ../../docs/search.md:9
 msgid ""
-"There is a search field near the top of the left-hand menu, just underneath the "
-"user information. This search field works as a keyword search across all the "
-"properties for a resource."
+"There is a search field near the top of the left-hand menu, just "
+"underneath the user information. This search field works as a keyword "
+"search across all the properties for a resource."
 msgstr ""
-"Il y a un champ de recherche dans la partie supérieure du menu de gauche, juste "
-"en dessous des informations de l'utilisateur. Ce champ de recherche fonctionne "
-"comme une recherche par mot-clé parmi toutes les propriétés d'une ressource."
+"Il y a un champ de recherche dans la partie supérieure du menu de gauche,"
+" juste en dessous des informations de l'utilisateur. Ce champ de "
+"recherche fonctionne comme une recherche par mot-clé parmi toutes les "
+"propriétés d'une ressource."
 
-#: ../../docs/search.md:11 f1be618176934d0c905fe7f40cc5a147
+#: ../../docs/search.md:11
 msgid "![Search option in blue sidebar.](files/search1.png)"
 msgstr ""
 
-#: ../../docs/search.md:13 492ae6f83c3a4997893eacb61b4cd977
+#: ../../docs/search.md:13
 msgid ""
-"By default, this search operates on items in your installation. However, you "
-"can use the ellipses (three dots) to open a menu and change the resource type "
-"being searched, selecting from Items, Item Sets, or Media."
+"By default, this search operates on items in your installation. However, "
+"you can use the ellipses (three dots) to open a menu and change the "
+"resource type being searched, selecting from Items, Item Sets, or Media."
 msgstr ""
-"Par défaut, cette recherche concerne les contenus de votre instance. Toutefois, "
-"vous pouvez utiliser les trois petits points pour ouvrir un menu et modifier le "
-"type de ressource recherché, en sélectionnant Contenus, Collections ou Médias."
+"Par défaut, cette recherche concerne les contenus de votre instance. "
+"Toutefois, vous pouvez utiliser les trois petits points pour ouvrir un "
+"menu et modifier le type de ressource recherché, en sélectionnant "
+"Contenus, Collections ou Médias."
 
-#: ../../docs/search.md:15 839b0a001bc745cbae4146a0342a3ec5
+#: ../../docs/search.md:15
 msgid ""
-"![Close up on the search options, showing the expanded ellipses menu with "
-"selection options for Items, Item Sets, or Media.](files/search2.png)"
+"![Close up on the search options, showing the expanded ellipses menu with"
+" selection options for Items, Item Sets, or Media.](files/search2.png)"
 msgstr ""
 
-#: ../../docs/search.md:17 ec80a5fb818a4285971af400d1818feb
+#: ../../docs/search.md:17
 msgid "Item advanced search"
 msgstr "Recherche avancée de contenus"
 
-#: ../../docs/search.md:19 fd63eb06da014579b99f588537dc8fa3
+#: ../../docs/search.md:19
 #, fuzzy
 msgid ""
-"Advanced search for items only is available on the [Items](content/items) page, "
-"from the *Advanced Search* link above the table of items."
+"Advanced search for items only is available on the [Items](content/items)"
+" page, from the *Advanced Search* link above the table of items."
 msgstr ""
 "La recherche avancée de contenus est uniquement disponible sur la page "
 "*Contenus*, à\n"
-" partir du lien *Recherche avancée* situé au-dessus du tableau des contenus. "
-"[Items](/content/items.md)"
+" partir du lien *Recherche avancée* situé au-dessus du tableau des "
+"contenus. [Items](/content/items.md)"
 
-#: ../../docs/search.md:21 c5fb676d9b6d4ce1a820f89795daf0c0
+#: ../../docs/search.md:21
 msgid ""
-"![Advanced search button indicated with a red arrow.](files/advancedsearch2.png)"
+"![Advanced search button indicated with a red "
+"arrow.](files/advancedsearch2.png)"
 msgstr ""
 
 #: ../../docs/search.md:23 ../../docs/search.md:66 ../../docs/search.md:108
-#: 034a702e2ea64ccb9f437f0e59e1ae68 4bbe70361e11423a9557d51453cf7f49
-#: 933d6157d9864352b5c8c5b7d526c4d3
 msgid "The advanced search loads on a new page, and has the following options:"
 msgstr ""
-"La recherche avancée se charge sur une nouvelle page et comporte les options "
-"suivantes:"
+"La recherche avancée se charge sur une nouvelle page et comporte les "
+"options suivantes:"
 
-#: ../../docs/search.md:25 14ce40cb170a48c1870cf304024f4fe9
+#: ../../docs/search.md:25
 msgid "![Advanced item search options page.](files/advancedsearch3.png)"
 msgstr ""
 
 #: ../../docs/search.md:27 ../../docs/search.md:161
-#: 2b3f6b42474b402fa2c5518e504549d1 551513e8fec043da98c54e861b19adf5
 msgid ""
-"*Search full-text:* runs a full-text search on all of the text for every item "
-"in the installation."
+"*Search full-text:* runs a full-text search on all of the text for every "
+"item in the installation."
 msgstr ""
-"*Recherche en texte intégral*: exécute une recherche en texte intégral sur tout "
-"le texte pour chaque élément de l'installation."
+"*Recherche en texte intégral*: exécute une recherche en texte intégral "
+"sur tout le texte pour chaque élément de l'installation."
 
 #: ../../docs/search.md:29 ../../docs/search.md:70 ../../docs/search.md:112
-#: 09bd8f7e961a495da9bc7c714f7b5459 44942d0a12884e9dafb559f56464743c
-#: 7d69c762db3d4fd7997df03f5ce1506c
 msgid "*Search by value:* search for a term or phrase which you enter"
 msgstr "*Recherche par valeur*: rechercher un terme ou une phrase que vous entrez"
 
 #: ../../docs/search.md:31 ../../docs/search.md:72 ../../docs/search.md:114
 #: ../../docs/search.md:165 ../../docs/search.md:201
-#: 39b78d1e88954ac3b1d1f5dfaac89d2c 4464b30c11cd4fc689ce71410fb51e80
-#: 664554b0549a44839d120d366b128271 7b7526a835ea4593b2e63e688294d868
-#: e67ef66750f44676a04cba30920c7824
 msgid "The first selector allows you to specify a property to search."
 msgstr "Le premier sélecteur vous permet de spécifier une propriété à rechercher."
 
 #: ../../docs/search.md:32 ../../docs/search.md:73 ../../docs/search.md:115
 #: ../../docs/search.md:167 ../../docs/search.md:203
-#: 422b5d5a34174126bc011ea4ef3e53ce 5965db470185472da213812f5865111d
-#: 87721afe1fea4f438c32f3aa84c15d42 a0b99332fc7548dbaef7e093364be983
-#: cfb045fabdbb4b7c8e25dd3a55e77bc9
 msgid ""
-"The second selector allows you to set the relationship the property has with "
-"the value. The options are:"
+"The second selector allows you to set the relationship the property has "
+"with the value. The options are:"
 msgstr ""
-"Le second sélecteur vous permet de définir la relation entre la propriété et la "
-"valeur. Les options sont:"
+"Le second sélecteur vous permet de définir la relation entre la propriété"
+" et la valeur. Les options sont:"
 
 #: ../../docs/search.md:33 ../../docs/search.md:74 ../../docs/search.md:116
 #: ../../docs/search.md:168 ../../docs/search.md:204
-#: 07a9d28cb9a04b4fbdf63fe909184e3c 33e9ced03021499983d376ae68b561b6
-#: 6f9493d99c124c4693650747a31a762c e2b2e5f544a346f48b6d3a87eae6749c
-#: e52bbf1086f94d0ca546e1d7604b82c4
 msgid "is exactly,"
 msgstr "est exactement,"
 
 #: ../../docs/search.md:34 ../../docs/search.md:75 ../../docs/search.md:117
 #: ../../docs/search.md:169 ../../docs/search.md:205
-#: 287a2f62dd10472ab34e73973ad3d03c 3324e971afd04e13b64f0e723d491168
-#: 50ab8046002c453d96afa90c2c828659 a59f76b9d9c249d48aa237f25893577c
-#: b2c9447ed92d4acf87931da01ec2eada
 msgid "is not exactly,"
 msgstr "n'est pas exactement"
 
 #: ../../docs/search.md:35 ../../docs/search.md:76 ../../docs/search.md:118
 #: ../../docs/search.md:170 ../../docs/search.md:206
-#: 1a472eafa4ff490e988283062a65527e 751d2a470ba54e1d81bf87ddc3b8c62c
-#: 81c4b1034a994313b17de9e64f77ff67 8eae8f5aaa5548f0b7ac7a92049703e6
-#: 917e1f7b8351464e8704bb4a5388af42
 msgid "contains,"
 msgstr "contient"
 
 #: ../../docs/search.md:36 ../../docs/search.md:77 ../../docs/search.md:119
 #: ../../docs/search.md:171 ../../docs/search.md:207
-#: 110cbc3d861942ce80c694ceca432a9c 88fd2ccb50a447d68514910961fd8e63
-#: 8b21da8dd64c478ab229ab4f7ddcd52e d9d9c850cc544cd3a8baa1c4649a4849
-#: fbc19efff98e46ed8a42f68ccb7a42da
 msgid "does not contain,"
 msgstr "ne contient pas,"
 
 #: ../../docs/search.md:37 ../../docs/search.md:78 ../../docs/search.md:120
 #: ../../docs/search.md:172 ../../docs/search.md:208
-#: 38ccb02570de4ff08543924e8674db1e 3d76e29d76e74f619e95a07432fb6d12
-#: 8a0f3e2cb8e744baa6a3b32992120a25 8bf809b350604f5e9bf5641ce882df1b
-#: c468723f53314292b291e7671e81766e
 msgid "is resource with ID,"
 msgstr "est la ressource avec ID,"
 
 #: ../../docs/search.md:38 ../../docs/search.md:79 ../../docs/search.md:121
 #: ../../docs/search.md:173 ../../docs/search.md:209
-#: 16bc73c36d0047b1b408bc36464d719e b39f28e1885043358bd732ac072a97cf
-#: b95691ed84104b929057cbe72ce4669f d4ce9c3c57f44560898d8629b0b67ad7
-#: f051190f7edb49679d1993c36418fdcb
 msgid "is not resource with ID,"
 msgstr "n'est pas la ressource avec ID,"
 
 #: ../../docs/search.md:39 ../../docs/search.md:80 ../../docs/search.md:122
 #: ../../docs/search.md:174 ../../docs/search.md:210
-#: 0caa1c304f2e4704bb9984f8e9c9843d 65c757d6d6a64e09a3e215b27a5a75e0
-#: baa566e2fcad4891aa3100245f8f9611 dfa629b32856484e9b690b0c68e2b381
-#: e3101a889df045989ea31594b87ad544
 msgid "has any value (there is something in the property), and"
 msgstr "a une valeur quelconque (il y a quelque chose dans la propriété), et"
 
 #: ../../docs/search.md:40 ../../docs/search.md:81 ../../docs/search.md:123
 #: ../../docs/search.md:175 ../../docs/search.md:211
-#: 800c30ab599d4e8fb8eed0f687681c70 9e20655b8c1044bb9b47aca96fd1e56f
-#: a2205b7c0e4649b0a8b0837e133f557b a2b5b29ff07f499a99d2e376088d189d
-#: d9de04f0701842efb646d3fc5f31890d
 msgid "has no values."
 msgstr "n'a pas de valeurs."
 
 #: ../../docs/search.md:41 ../../docs/search.md:82 ../../docs/search.md:124
 #: ../../docs/search.md:176 ../../docs/search.md:212
-#: 03226eba3a1943819106780c91423f8f 1171bbd77cfc464f9f5c6341678b9b37
-#: 165ffc976aa24053969bb60ab1b020be 170c461642ed4a6d9be312bc30568104
-#: c4a0a29cdb62405d8a0ee462de726292
 msgid ""
-"Finally, there is a text field for you to enter the value you want the property "
-"to have."
+"Finally, there is a text field for you to enter the value you want the "
+"property to have."
 msgstr ""
-"Enfin, un champ de texte vous permet de saisir la valeur que vous souhaitez "
-"attribuer à la propriété."
+"Enfin, un champ de texte vous permet de saisir la valeur que vous "
+"souhaitez attribuer à la propriété."
 
 #: ../../docs/search.md:43 ../../docs/search.md:84 ../../docs/search.md:126
 #: ../../docs/search.md:178 ../../docs/search.md:214
-#: 55b8debd8a1e438b952b06a83a403c8b 67ab6dedf5d6482e9c0aa5969625810a
-#: 7e8505efbc0a44e2b0bbbe109ffe58cd 8201feaff76840829fd07ae04b2d99bc
-#: a020fd052d64494b9f06f2437689c54a
 msgid ""
-"To find a resource ID, go to the resource and look at the url in your browser's "
-"address bar. The numbers at the end of the url are the resource ID."
+"To find a resource ID, go to the resource and look at the url in your "
+"browser's address bar. The numbers at the end of the url are the resource"
+" ID."
 msgstr ""
-"Pour trouver un identifiant de ressource, allez à la ressource et regardez "
-"l'URL dans la barre d'adresse de votre navigateur. Les chiffres à la fin de "
-"l'URL sont l'ID de la ressource."
+"Pour trouver un identifiant de ressource, allez à la ressource et "
+"regardez l'URL dans la barre d'adresse de votre navigateur. Les chiffres "
+"à la fin de l'URL sont l'ID de la ressource."
 
 #: ../../docs/search.md:45 ../../docs/search.md:180 ../../docs/search.md:216
-#: c72d79af39f64ef7a71bd79813ca9be0 e4e861650b0f4d95913d66157fe3c375
-#: f0f776344cf743488a6d50b76161884b
 msgid ""
-"*Search by class:* select a class by which to search from the dropdown menu"
+"*Search by class:* select a class by which to search from the dropdown "
+"menu"
 msgstr ""
-"*Recherche par classe*: sélectionnez une classe à rechercher dans le menu "
-"déroulant."
+"*Recherche par classe*: sélectionnez une classe à rechercher dans le menu"
+" déroulant."
 
 #: ../../docs/search.md:47 ../../docs/search.md:90 ../../docs/search.md:132
-#: 25abfde11a524c29a964a6a13fc13e0d 418754c2af394ffcacd6d4780fe64cb1
-#: 8da34c8c8a3f4a4c94869bccd62b4571
 msgid ""
-"*Search by template:* select a resource template from the dropdown. Templates "
-"are arranged by owner, then alphabetically."
+"*Search by template:* select a resource template from the dropdown. "
+"Templates are arranged by owner, then alphabetically."
 msgstr ""
-"*Rechercher par modèle*: sélectionnez un modèle de ressource dans la liste "
-"déroulante. Les modèles sont classés par propriétaire, puis par ordre "
-"alphabétique."
+"*Rechercher par modèle*: sélectionnez un modèle de ressource dans la "
+"liste déroulante. Les modèles sont classés par propriétaire, puis par "
+"ordre alphabétique."
 
 #: ../../docs/search.md:49 ../../docs/search.md:182
-#: b7a3d9b9c3d04086b5625b418412ee97 b84eae4bd6ad40b4a1ff23c505caf230
 msgid "*Search by item set:* select from a dropdown of item sets."
 msgstr ""
 "*Rechercher par collection* : sélectionnez dans une liste déroulante "
 "d'ensembles d'é\n"
 "léments."
 
-#: ../../docs/search.md:51 8d15c09a0a734449844a6303eb2a633e
+#: ../../docs/search.md:51
 msgid ""
-"*Search by site:* select a site from a dropdown of sites in the installation. "
-"Note that you can only search for items from one site at a time."
+"*Search by site:* select a site from a dropdown of sites in the "
+"installation. Note that you can only search for items from one site at a "
+"time."
 msgstr ""
 
-#: ../../docs/search.md:53 bfabfe3a591543e194dc73eb6d54baac
+#: ../../docs/search.md:53
 msgid ""
-"*In site pool:* select from a dropdown menu of all the sites on the Omeka S "
-"installation, sorted by user-owner."
+"*In site pool:* select from a dropdown menu of all the sites on the Omeka"
+" S installation, sorted by user-owner."
 msgstr ""
-"*Dans le réservoir du site*: sélectionnez dans un menu déroulant tous les sites "
-"de l'installation Omeka S, triés par utilisateur."
+"*Dans le réservoir du site*: sélectionnez dans un menu déroulant tous les"
+" sites de l'installation Omeka S, triés par utilisateur."
 
-#: ../../docs/search.md:55 edb5f1f05c674a3984b987156905535b
+#: ../../docs/search.md:55
 msgid ""
-"Searches by value, class, template, and item set allow you to search by more "
-"than one input - use the large red *add new* buttons to search with more than "
-"one value or item set. These search terms build - searching for two item sets "
-"will return all items in either item set, rather than only those items which "
-"are in both."
+"Searches by value, class, template, and item set allow you to search by "
+"more than one input - use the large red *add new* buttons to search with "
+"more than one value or item set. These search terms build - searching for"
+" two item sets will return all items in either item set, rather than only"
+" those items which are in both."
 msgstr ""
 "Les recherches par valeur, classe, modèle et collection vous permettent "
 "d'effectuer une recherche selon plusieurs entrées. Utilisez les boutons "
-"*Ajouter de nouveaux boutons* pour effectuer une recherche avec plusieurs "
-"ensembles de valeurs ou d'éléments. Ces termes de recherche se cumulent - la "
-"recherche de deux ensembles d’articles renverra tous les éléments de l’un ou "
-"l’autre ensemble, plutôt que seulement les éléments qui se trouvent dans les "
-"deux."
+"*Ajouter de nouveaux boutons* pour effectuer une recherche avec plusieurs"
+" ensembles de valeurs ou d'éléments. Ces termes de recherche se cumulent "
+"- la recherche de deux ensembles d’articles renverra tous les éléments de"
+" l’un ou l’autre ensemble, plutôt que seulement les éléments qui se "
+"trouvent dans les deux."
 
 #: ../../docs/search.md:57 ../../docs/search.md:98
-#: 23c13e4da852489082105111752a37d5 52bfd3f55fd24bab9d12743bc75b5e10
 msgid ""
-"You can remove value and item set searches using the red trash can icon to the "
-"right of those search options."
+"You can remove value and item set searches using the red trash can icon "
+"to the right of those search options."
 msgstr ""
-"Vous pouvez supprimer les recherches de valeurs et d’ensembles d’articles à "
-"l’aide de l’icône de corbeille rouge située à droite de ces options de "
-"recherche."
+"Vous pouvez supprimer les recherches de valeurs et d’ensembles d’articles"
+" à l’aide de l’icône de corbeille rouge située à droite de ces options de"
+" recherche."
 
 #: ../../docs/search.md:59 ../../docs/search.md:100 ../../docs/search.md:138
-#: 0bbcda3fdb4e405aa0620aa20ab8b761 46a0245644a5499cbfa6f4b11fcae6cc
-#: a221db1e9f134943a27c31a61a8bc5de
 msgid ""
-"You can reset your search terms at any time by using the \"Reset\" button on "
-"the upper right next to the \"Search\" button."
+"You can reset your search terms at any time by using the \"Reset\" button"
+" on the upper right next to the \"Search\" button."
 msgstr ""
-"Vous pouvez réinitialiser vos termes de recherche à tout moment en utilisant le "
-"bouton \"Réinitialiser\" situé dans le coin supérieur droit, à côté du bouton "
-"\"Rechercher\"."
+"Vous pouvez réinitialiser vos termes de recherche à tout moment en "
+"utilisant le bouton \"Réinitialiser\" situé dans le coin supérieur droit,"
+" à côté du bouton \"Rechercher\"."
 
-#: ../../docs/search.md:61 e73761eef15e4bcfb4f0be9edcb2dd93
+#: ../../docs/search.md:61
 msgid "Media advanced search"
 msgstr "Recherche avancée de Médias"
 
-#: ../../docs/search.md:62 e1d62c9d1f05401bba33aa0a4308d019
+#: ../../docs/search.md:62
 #, fuzzy
 msgid ""
-"Advanced search for media is accessed from the [Media](content/media) browse "
-"page, from the *Advanced Search* link above the table of item sets."
+"Advanced search for media is accessed from the [Media](content/media) "
+"browse page, from the *Advanced Search* link above the table of item "
+"sets."
 msgstr ""
-"La recherche avancée de médias est accessible en cliquant sur la page Contenus/"
-"médias , à partir du lien *Recherche avancée* situé au-dessus du tableau des "
-"médias."
+"La recherche avancée de médias est accessible en cliquant sur la page "
+"Contenus/médias , à partir du lien *Recherche avancée* situé au-dessus du"
+" tableau des médias."
 
-#: ../../docs/search.md:64 cbd6422767a04d9a88c3f972de59c23d
+#: ../../docs/search.md:64
 msgid ""
-"![Advanced search button indicated with a red arrow.](files/"
-"search_mediaadvance1.png)"
+"![Advanced search button indicated with a red "
+"arrow.](files/search_mediaadvance1.png)"
 msgstr ""
 
-#: ../../docs/search.md:68 8f23f8e2c02443758bc2a8c341e8d4a5
+#: ../../docs/search.md:68
 msgid ""
-"*Search full-text:* runs a full-text search on all of the text for every media "
-"resource in the installation."
+"*Search full-text:* runs a full-text search on all of the text for every "
+"media resource in the installation."
 msgstr ""
-"*Recherche en texte intégral*: exécute une recherche en texte intégral sur tout "
-"le texte pour chaque élément de l'installation."
+"*Recherche en texte intégral*: exécute une recherche en texte intégral "
+"sur tout le texte pour chaque élément de l'installation."
 
 #: ../../docs/search.md:86 ../../docs/search.md:128
-#: 8424948064194749b18e0a11d1cabebe 90e351722a9b4b77acaddc06abbd8015
 msgid ""
-"You can remove value searches using the red trash can icon to the right of the "
-"value settings."
+"You can remove value searches using the red trash can icon to the right "
+"of the value settings."
 msgstr "*Recherche par valeur*: rechercher un terme ou une phrase que vous entrez"
 
 #: ../../docs/search.md:88 ../../docs/search.md:130
-#: 5d7cbcea45b5403ca8d2fa29fb77eb70 6f522023ace8427683c16b85438af35b
 msgid ""
-"*Search by Class:* select a class by which to search from the dropdown menu"
+"*Search by Class:* select a class by which to search from the dropdown "
+"menu"
 msgstr ""
 
-#: ../../docs/search.md:92 01c321fd7e184a8690fb6baaedaf3859
+#: ../../docs/search.md:92
 msgid ""
-"*Search by MIME type:* you can specify the media type for the search. For "
-"example, to find all tiff images, you would enter `image/tiff`."
+"*Search by MIME type:* you can specify the media type for the search. For"
+" example, to find all tiff images, you would enter `image/tiff`."
 msgstr ""
 
-#: ../../docs/search.md:94 48bddb6141444351bc8d2e2d5a346c7c
+#: ../../docs/search.md:94
 msgid ""
-"![Advanced media search options form, with fields as described above.](files/"
-"search_mediaadvance2.png)"
+"![Advanced media search options form, with fields as described "
+"above.](files/search_mediaadvance2.png)"
 msgstr ""
 
 #: ../../docs/search.md:96 ../../docs/search.md:136
-#: 1c8839e276924391b40e4e5d79e8e771 5e987f01f7ed440d94a90de073872dd7
 msgid ""
-"Searches by value, class, and template allow you to search by more than one "
-"input - use the *add new* buttons to search with more than one value or item "
-"set. These search terms build - searching for two templates will return all "
-"media using either template."
+"Searches by value, class, and template allow you to search by more than "
+"one input - use the *add new* buttons to search with more than one value "
+"or item set. These search terms build - searching for two templates will "
+"return all media using either template."
 msgstr ""
-"Les recherches par valeur, classe et modèle vous permettent d'effectuer une "
-"recherche sur plusieurs entrées. Utilisez les boutons *Ajouter de nouveaux "
-"boutons* pour effectuer une recherche avec plusieurs valeurs ou ensembles "
-"d'éléments. Ces termes de recherche se cumulent - la recherche de deux modèles "
-"renverra tous les médias en utilisant l'un ou l'autre modèle."
+"Les recherches par valeur, classe et modèle vous permettent d'effectuer "
+"une recherche sur plusieurs entrées. Utilisez les boutons *Ajouter de "
+"nouveaux boutons* pour effectuer une recherche avec plusieurs valeurs ou "
+"ensembles d'éléments. Ces termes de recherche se cumulent - la recherche "
+"de deux modèles renverra tous les médias en utilisant l'un ou l'autre "
+"modèle."
 
-#: ../../docs/search.md:102 e23483b4eefe4efe8266aa7cee01de10
+#: ../../docs/search.md:102
 msgid "Item Set advanced search"
 msgstr "Recherche avancée dans les collections"
 
-#: ../../docs/search.md:104 70aa636bb77a4d8db2e367fee2516c9c
+#: ../../docs/search.md:104
 msgid ""
-"Advanced search for item sets only is accessed on the [Item Sets](content/item-"
-"sets) page, from the *Advanced Search* link above the table of item sets."
+"Advanced search for item sets only is accessed on the [Item Sets](content"
+"/item-sets) page, from the *Advanced Search* link above the table of item"
+" sets."
 msgstr ""
 "La recherche avancée pour les collections est accessible sur la page "
-"[Collections](content/item-sets), à partir du lien *Recherche avancée* situé au-"
-"dessus du tableau des collections."
+"[Collections](content/item-sets), à partir du lien *Recherche avancée* "
+"situé au-dessus du tableau des collections."
 
-#: ../../docs/search.md:106 59b9418971c94356b40e9196265174d1
+#: ../../docs/search.md:106
 msgid ""
-"![Advanced search button indicated with a red arrow.](files/advancedsearchis1."
-"png)"
+"![Advanced search button indicated with a red "
+"arrow.](files/advancedsearchis1.png)"
 msgstr ""
 
 #: ../../docs/search.md:110 ../../docs/search.md:197
-#: 063652b1644c476fa1c141a81c824d6d 658958197c20445bb99fc661b99b51a4
 msgid ""
-"*Search full-text:* runs a full-text search on all of the text for every item "
-"set in the installation."
+"*Search full-text:* runs a full-text search on all of the text for every "
+"item set in the installation."
 msgstr ""
-"*Recherche en texte intégral*: exécute une recherche en texte intégral sur tout "
-"le texte pour chaque élément de l'installation."
+"*Recherche en texte intégral*: exécute une recherche en texte intégral "
+"sur tout le texte pour chaque élément de l'installation."
 
-#: ../../docs/search.md:134 66e1df831b724ca9a9485ce4b4f5cf37
+#: ../../docs/search.md:134
 msgid ""
-"![Advanced item set search options form, with fields as described above.](files/"
-"advancedsearchis2.png)"
+"![Advanced item set search options form, with fields as described "
+"above.](files/advancedsearchis2.png)"
 msgstr ""
 
-#: ../../docs/search.md:140 360d666b6af24ac7b8471c22494848d9
+#: ../../docs/search.md:140
 msgid "Public views"
 msgstr ""
 
-#: ../../docs/search.md:141 3c04415b6dfa4605b72ba7d9dd223f0d
+#: ../../docs/search.md:141
 msgid ""
-"The exact appearance of the search interface will vary based on the [theme]"
-"(sites/site_theme) selected. However, the way search works should be consistent "
-"regardless of theme. All of the screenshots in this section are from a site "
-"using the the Default theme."
+"The exact appearance of the search interface will vary based on the "
+"[theme](sites/site_theme) selected. However, the way search works should "
+"be consistent regardless of theme. All of the screenshots in this section"
+" are from a site using the the Default theme."
 msgstr ""
 
-#: ../../docs/search.md:144 f6ed29767c62400ca534406c41a007c9
+#: ../../docs/search.md:144
 msgid ""
-"There is a search bar near the menu for each site. In the default theme, it is "
-"located just beneath the main menu, as shown in the image below."
+"There is a search bar near the menu for each site. In the default theme, "
+"it is located just beneath the main menu, as shown in the image below."
 msgstr ""
 
-#: ../../docs/search.md:146 07fef1a05b5a42acab9cfac06c713079
+#: ../../docs/search.md:146
 msgid ""
-"![Homepage of the Jane Austen site, with a blue arrow pointing to the search "
-"bar below the main navigation menu](files/search_public1.png)"
+"![Homepage of the Jane Austen site, with a blue arrow pointing to the "
+"search bar below the main navigation menu](files/search_public1.png)"
 msgstr ""
 
-#: ../../docs/search.md:148 646ee18173304f178033eefb24dd25d0
+#: ../../docs/search.md:148
 msgid ""
-"This search bar works as a full-text search for the whole site. It will search "
-"all of the items, item sets, and media as well as the content of every page "
-"published on the site. Results are sorted by type, grouping together page "
-"results and item or item set results. From the initial results page, you can "
-"view all the results for that type (page, item) using the \"view all results\" "
-"link."
+"This search bar works as a full-text search for the whole site. It will "
+"search all of the items, item sets, and media as well as the content of "
+"every page published on the site. Results are sorted by type, grouping "
+"together page results and item or item set results. From the initial "
+"results page, you can view all the results for that type (page, item) "
+"using the \"view all results\" link."
 msgstr ""
-"Cette barre de recherche fonctionne comme une recherche en texte intégral pour "
-"l'ensemble du site. Il recherchera tous les contenus, collections et supports "
-"ainsi que le contenu de chaque page publiée sur le site. Les résultats sont "
-"triés par type, en regroupant les résultats de page et les résultats d'élément "
-"ou de jeu d'éléments. Depuis la page de résultats initiale, vous pouvez "
-"afficher tous les résultats pour ce type (page, élément) à l’aide du lien "
-"\"Afficher tous les résultats\"."
+"Cette barre de recherche fonctionne comme une recherche en texte intégral"
+" pour l'ensemble du site. Il recherchera tous les contenus, collections "
+"et supports ainsi que le contenu de chaque page publiée sur le site. Les "
+"résultats sont triés par type, en regroupant les résultats de page et les"
+" résultats d'élément ou de jeu d'éléments. Depuis la page de résultats "
+"initiale, vous pouvez afficher tous les résultats pour ce type (page, "
+"élément) à l’aide du lien \"Afficher tous les résultats\"."
 
-#: ../../docs/search.md:150 1459ca4ec6dc494ba66f4cc0c9d1b8af
+#: ../../docs/search.md:150
 msgid ""
-"![Search results for \"Cassandra\" showing one page and three items](files/"
-"search_public2.png)"
+"![Search results for \"Cassandra\" showing one page and three "
+"items](files/search_public2.png)"
 msgstr ""
 
-#: ../../docs/search.md:152 3a624aac9058455e9a605446926f6263
+#: ../../docs/search.md:152
 msgid "If the ["
 msgstr ""
 
-#: ../../docs/search.md:154 18d1391fcc7d45fa917eff1691a87129
+#: ../../docs/search.md:154
 msgid "Advanced item search"
 msgstr "Recherche avancée de contenus"
 
-#: ../../docs/search.md:155 b7a9af07f5704a2db45c475ecb9de2fb
+#: ../../docs/search.md:155
 msgid ""
-"Site visitors can access an advanced item search from the Browse Items page, if "
-"you have that page accessible. There is a link for Advanced search between the "
-"pagination and the sort options at the top of the item browse table."
+"Site visitors can access an advanced item search from the Browse Items "
+"page, if you have that page accessible. There is a link for Advanced "
+"search between the pagination and the sort options at the top of the item"
+" browse table."
 msgstr ""
-"Si cette page est accessible, les visiteurs du site peuvent accéder à une "
-"recherche avancée de contenus à partir de la page \"Parcourir\" (ou \"Parcourir "
-"les contenus selon les thèmes). Il existe un lien pour la recherche avancée "
-"entre la pagination et les options de tri en haut du tableau de navigation des "
-"articles."
+"Si cette page est accessible, les visiteurs du site peuvent accéder à une"
+" recherche avancée de contenus à partir de la page \"Parcourir\" (ou "
+"\"Parcourir les contenus selon les thèmes). Il existe un lien pour la "
+"recherche avancée entre la pagination et les options de tri en haut du "
+"tableau de navigation des articles."
 
-#: ../../docs/search.md:157 aee26228bcdc4ce9b77f28ccf670417a
+#: ../../docs/search.md:157
 msgid ""
-"![The Items page of the Jane Austen site, with a blue arrow pointing to the "
-"link for Advanced search](files/search_publicitems1.png)"
+"![The Items page of the Jane Austen site, with a blue arrow pointing to "
+"the link for Advanced search](files/search_publicitems1.png)"
 msgstr ""
 
-#: ../../docs/search.md:159 9acf339a8bd04ba08e0266d2226b62de
+#: ../../docs/search.md:159
 msgid "Clicking this loads a new page with four options for search:"
 msgstr ""
-"En cliquant dessus, une nouvelle page contenant quatre options de recherche est "
-"chargée:"
+"En cliquant dessus, une nouvelle page contenant quatre options de "
+"recherche est chargée:"
 
 #: ../../docs/search.md:163 ../../docs/search.md:199
-#: 7e583a2841c04aa180e3ad16158c5651 e673f3ba5bf44f5bb833a298c8c01bef
 msgid "*Search by value:* search for a term or phrase using multiple options."
 msgstr "*Recherche par valeur*: rechercher un terme ou une phrase que vous entrez"
 
 #: ../../docs/search.md:166 ../../docs/search.md:202
-#: 5ae9d97d52254924ae71c2695f3d9cfe da6472838546493db4c035b1f150e79e
 msgid ""
-"Note that if you have have the [site settings](sites/site_settings/#search) to "
-"restrict search to templates, this will only display the properties used by "
-"those templates."
+"Note that if you have have the [site "
+"settings](sites/site_settings.md#search) to restrict search to templates,"
+" this will only display the properties used by those templates."
 msgstr ""
 
-#: ../../docs/search.md:184 4bdc13467e23418cb3cd765bfe0c7115
+#: ../../docs/search.md:184
 msgid "![Advanced item search fields as described](files/search_publicitems2.png)"
 msgstr ""
 
-#: ../../docs/search.md:186 6d1151ba4e934594b42253760c55f0f7
+#: ../../docs/search.md:186
 msgid ""
-"Searches by value, class, and item set allow a visitor to search by more than "
-"one input; they can use the *add new* buttons to search with more than one "
-"search term. These search terms build - searching for two item sets will return "
-"all items in either item set, rather than only those items which are in both."
+"Searches by value, class, and item set allow a visitor to search by more "
+"than one input; they can use the *add new* buttons to search with more "
+"than one search term. These search terms build - searching for two item "
+"sets will return all items in either item set, rather than only those "
+"items which are in both."
 msgstr ""
 
 #: ../../docs/search.md:188 ../../docs/search.md:222
-#: 327f3c66620e41e5bc1426842cd10dc8 cbaabb6ea1174d18be96140772b9ef94
 msgid ""
-"Site visitors can remove value and item set searches using the red trash can "
-"icon to the right of those search options."
+"Site visitors can remove value and item set searches using the red trash "
+"can icon to the right of those search options."
 msgstr ""
 
-#: ../../docs/search.md:190 0e7461e260c3459c93651d7bae4267ea
+#: ../../docs/search.md:190
 msgid "Advanced item set search"
 msgstr ""
 
-#: ../../docs/search.md:191 6aed467654c94e9e95764120d988f51c
+#: ../../docs/search.md:191
 msgid ""
-"Site visitors can access an advanced item set search from the Browse Items Sets "
-"page, if you have that page accessible. There is a link for Advanced search on "
-"the upper left of the Item Sets page."
+"Site visitors can access an advanced item set search from the Browse "
+"Items Sets page, if you have that page accessible. There is a link for "
+"Advanced search on the upper left of the Item Sets page."
 msgstr ""
 
-#: ../../docs/search.md:193 f60d02ff65fc4fad9dc910c8a333f3ba
+#: ../../docs/search.md:193
 msgid ""
-"![Item sets page for the Jane Austen site. A blue arrow points to the advanced "
-"search link](files/search_publicitemsets1.png)"
+"![Item sets page for the Jane Austen site. A blue arrow points to the "
+"advanced search link](files/search_publicitemsets1.png)"
 msgstr ""
 
-#: ../../docs/search.md:195 0a44f0d7608f4e96b787528f68396609
+#: ../../docs/search.md:195
 msgid ""
-"Clicking the advanced search link loads a new page with three options for "
-"search:"
+"Clicking the advanced search link loads a new page with three options for"
+" search:"
 msgstr ""
 
-#: ../../docs/search.md:218 814019c2347241fcb7627b0fbf37e12a
+#: ../../docs/search.md:218
 msgid ""
-"![Item set advanced search options as described](files/search_publicitemsets2."
-"png)"
+"![Item set advanced search options as "
+"described](files/search_publicitemsets2.png)"
 msgstr ""
 
-#: ../../docs/search.md:220 525cfb7d9eb24d34a19fb64aa865e5f0
+#: ../../docs/search.md:220
 msgid ""
-"Searches by value and class allow a visitor to search by more than one input; "
-"they can use the *add new* buttons to search with more than one search term. "
-"These search terms build - searching for two classes will return all item sets "
-"which have either class."
+"Searches by value and class allow a visitor to search by more than one "
+"input; they can use the *add new* buttons to search with more than one "
+"search term. These search terms build - searching for two classes will "
+"return all item sets which have either class."
 msgstr ""
-"Les recherches par valeur, classe et modèle vous permettent d'effectuer une "
-"recherche sur plusieurs entrées. Utilisez les boutons *Ajouter de nouveaux "
-"boutons* pour effectuer une recherche avec plusieurs valeurs ou ensembles "
-"d'éléments. Ces termes de recherche se cumulent - la recherche de deux modèles "
-"renverra tous les médias en utilisant l'un ou l'autre modèle."
+"Les recherches par valeur, classe et modèle vous permettent d'effectuer "
+"une recherche sur plusieurs entrées. Utilisez les boutons *Ajouter de "
+"nouveaux boutons* pour effectuer une recherche avec plusieurs valeurs ou "
+"ensembles d'éléments. Ces termes de recherche se cumulent - la recherche "
+"de deux modèles renverra tous les médias en utilisant l'un ou l'autre "
+"modèle."
+

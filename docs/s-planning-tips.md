@@ -32,6 +32,6 @@ With Omeka S you will build your site from the ground up, which means you need t
 
 What pages do you want to include? What kind of content do you want on these pages? How do you want to arrange them? Try sketching out a sample menu or wireframes for the site. Use that as a guide as you build your pages.
 
-Pages are made up of [blocks](../sites/site_pages/#page-blocks), which can include text, images, and much more. What kind of content do you want on the pages you build? Bear in mind that you can rearrange page blocks as you build, so you can play around with the order of the content on your pages if you need to.
+Pages are made up of [blocks](sites/site_pages.md#page-blocks), which can include text, images, and much more. What kind of content do you want on the pages you build? Bear in mind that you can rearrange page blocks as you build, so you can play around with the order of the content on your pages if you need to.
 
 How do you want to interact with your visitors on your site? Do you want to [collect](modules/collecting) resources from your visitors? Allow them to [share](modules/sharing) your content on social media?

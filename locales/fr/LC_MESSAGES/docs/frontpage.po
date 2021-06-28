@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Omeka S end user manual \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"POT-Creation-Date: 2021-06-28 22:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../docs/frontpage.md:1 01e564325efe402e939fdd280a80fb6b
+#: ../../docs/frontpage.md:1
 msgid "Front Page"
 msgstr ""
 
-#: ../../docs/frontpage.md:3 85e2fe619b5d4832bdb0d39a7a08eeb0
+#: ../../docs/frontpage.md:3
 msgid ""
 "Omeka S allows users to build multiple sites per installation which are "
 "not necessarily connected. However, each installation has, by default, a "
@@ -33,7 +33,7 @@ msgid ""
 "`yourdomain.net/omekas/`"
 msgstr ""
 
-#: ../../docs/frontpage.md:5 74dcd5bc46fd4473bb9bb371759c4553
+#: ../../docs/frontpage.md:5
 msgid ""
 "The page displays all sites which a user has permission to see, along "
 "with the site's summary if one exists. If someone is not logged in, they "
@@ -41,24 +41,24 @@ msgid ""
 "see all existing sites on the installation."
 msgstr ""
 
-#: ../../docs/frontpage.md:7 d03e5dd727744dafb7c0624665c54dc9
+#: ../../docs/frontpage.md:7
 msgid ""
 "![Installation front page for the \"Stackable Sandbox\" showing seven "
 "sites, three of which have summaries.](files/frontpage-basic.png)"
 msgstr ""
 
-#: ../../docs/frontpage.md:9 865bf44687c6407596c9134ae549e7ec
+#: ../../docs/frontpage.md:9
 msgid ""
 "If you want this site to be hidden from site visitors, you can use the "
-"[setting Default Site](admin/settings/#global-settings) to select a "
+"[setting Default Site](admin/settings.md#global-settings) to select a "
 "public site on your installation to which visitors will be redirected "
 "when they navigate to your base url (`yourdomain.net/omekas/`)"
 msgstr ""
 
-#: ../../docs/frontpage.md:11 9b373d7b7b1b4aada78f8b66aae2ace1
+#: ../../docs/frontpage.md:11
 msgid ""
 "You can use the Default Site option in conjunction with the [site page "
-"block](sites/site_pages/#page-blocks) \"List of sites\" to create a "
+"block](sites/site_pages.md#page-blocks) \"List of sites\" to create a "
 "branded site index and to add an about page for the overall installation."
 msgstr ""
 
