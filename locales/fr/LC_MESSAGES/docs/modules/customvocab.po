@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/modules/customvocab.md:1 6aab330aabec4a3aa5c28348a6d38112
+msgid "Custom Vocab"
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:3 71cd42fb29dc4c4eb622a306388e94c4
+msgid ""
+"The Custom Vocab module allows you to create a controlled vocabulary and "
+"add it to a specific property in a resource template. When using that "
+"template for an item, the property will load with a dropdown limited to "
+"the options of the controlled vocabulary, rather than a text entry box."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:5 75382620b23e44a0a023a26f6626e288
+msgid "Create a Custom Vocab"
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:7 ee6f8ad9757d4b999db253da0ca49e33
+msgid ""
+"Once you have installed and activated the module, go to the Custom Vocab "
+"tab in the left-hand navigation, under the Modules heading."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:9 fce1e6b280574da2aff4a2c12f298f35
+msgid ""
+"Click the Add a New Vocab button in the upper right-hand corner of the "
+"window."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:11 ba5b60fcf3864414994b402fbf03a00a
+msgid ""
+"The Add Cusom Vocab page has four fields: Label, Language, Items, and "
+"Terms."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:13 dece61d010a24568bda15e7345284371
+msgid ""
+"![Add Custom Vocab with data entered in the label and terms "
+"fields](../modules/modulesfiles/customVocab_add.png)"
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:15 53be8dfcb9cb48cbba88a5189bdd1abe
+msgid ""
+"*Label* a name for the vocabulary, which you will use to find it when "
+"adding to a resource template."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:16 336254b59df340d1bbbcc25cf04ceec2
+msgid ""
+"*Language* (optional) of the vocab using the [ISO 639-1 language "
+"code.](http://www.iso.org/iso/language_codes)"
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:18 49303af563374435ac5a3edee2ceaf1a
+msgid ""
+"You can set the controlled vocabulary terms either to a list of existing "
+"items or to a list of entered terms:"
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:19 1a00cdb42b1947e6b66494d93b4ecc31
+msgid ""
+"*Items* offers a drop-down of Item Sets in your Omeka S installation. "
+"Choosing one of these will create a custom vocab populated by items from "
+"that item set. When used, the property is populated as an Omeka Resource,"
+" not text."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:20 3e4f2e8080444e64a7eb002f049fc79a
+msgid ""
+"*Terms* for the custom vocab, one word or phrase per line. This populates"
+" the property as text."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:22 7b1d5c330c174f2cb3109dbd3da89dcd
+msgid "Hit submit to save changes."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:24 db529609c8ba4d418fcf7ce2344161cd
+msgid "Manage Custom Vocabs"
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:26 b17b2fbc217c45e3b87cc677e728b2a0
+msgid ""
+"Once you have created at least one vocabulary, the Custom Vocab module "
+"tab will display a table of your existing vocabularies. The table "
+"displays the *Label*, the buttons for edit, delete, and display "
+"information, and the *Owner* or creator of the vocabulary."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:28 42c3eca6b3564ec9afa60d9358f232e2
+msgid ""
+"![Custom Vocab tab with two existing "
+"vocabularies](../modules/modulesfiles/customVocab_manage.png)"
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:30 eacfb8a1bfab41718da8b024ddd27ecd
+msgid ""
+"When editing a custom vocabulary, you can change the label, language, or "
+"terms."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:32 a767a4484be74cbcaecedf145bec08f1
+msgid "Using a Custom Vocab"
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:34 6237cbe81ee145809c3a7b12e163f3fd
+msgid ""
+"Custom Vocabularies are applied through [resource templates](../content"
+"/resource-template.md)."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:36 5024bfd3fd904ac9a8039a93f98b1518
+msgid ""
+"Go to the Resource Templates and either add new or edit an existing "
+"template. Once you are editing the template:"
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:38 eed914bcc529495daea2d3ef7bc0b7ad
+msgid "Add the property to which you want to apply the Custom Vocab."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:39 718b70cf867640b6a18f4d789d80d80a
+msgid "Edit the property"
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:40 7029202356e6442084c81468e27bc872
+msgid ""
+"In the drawer which opens on the right, go to the Other options section "
+"and find the Data type dropdown."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:41 292d32be5830453ba23d4b869b679ddc
+msgid ""
+"Scroll through the dropdown and select the Custom Vocabulary you want to "
+"use"
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:42 02d3254ef4b24a879385874d349a6cc7
+msgid "Click set changes at the bottom of the drawer."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:44 90ad48a81d8146c1bc3d6d18af81dff9
+msgid "Be sure to save your changes"
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:46 18cc4ecd1613470a81c5549f491414ac
+msgid ""
+"![Resource Template data being edited with dropdown open to show "
+"available vocabularies](../modules/modulesfiles/customVocab_select.png)"
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:48 398cb7facfcd4289b525f40cbef0fd01
+msgid ""
+"When you click the title of a Resource Template to see its details, the "
+"Custom Vocab will show up in the Data Type table heading."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:50 011892326d744d098848a345e82a212e
+msgid ""
+"![Resource Template \"National Park\" with the custom vocabulary State "
+"applied to Spatial "
+"Coverage](../modules/modulesfiles/customVocab_resource.png)"
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:52 5502da898fda4737a0f4657161811466
+msgid ""
+"When this Resource Template is used in an Item or Item Set, the "
+"designated properties will always load as a drop down menu with the "
+"values from the custom vocabulary."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:54 ab94ecef5a714b169bbbe1a3213ec27f
+msgid ""
+"In this image, the Resource Template modified earlier is loaded for a new"
+" item. See that Spatial Coverage has a \"select below\" message and "
+"arrows indicating the property input is a drop down menu."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:56 a7ca81ac02384561bc2f366c340aa8c8
+msgid "![as described](../modules/modulesfiles/customVocab_item1.png)"
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:58 11dfb6b5e43943429c06b6db48c7deb0
+msgid ""
+"This image shows the dropdown open, displaying the values from the \"US "
+"states & territories\"  vocabulary."
+msgstr ""
+
+#: ../../docs/modules/customvocab.md:60 26e359476f0f4959a3f3caa6321ca024
+msgid "![as described](../modules/modulesfiles/customVocab_item2.png)"
+msgstr ""
+

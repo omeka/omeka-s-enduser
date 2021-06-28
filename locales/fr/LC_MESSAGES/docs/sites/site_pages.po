@@ -1,0 +1,868 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/sites/site_pages.md:1 9aa642ab97054cf5aafd298c24cd15eb
+msgid "Pages Management"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:3 ebfeb1012c4440c086c178459a985007
+msgid ""
+"Pages form the content of your [sites](../sites/index.md). A site can "
+"have a single page or many pages."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:5 8891969f698f4873bad6430b17e88f05
+msgid ""
+"Manage the pages for a site by navigating to the Sites tab on the left-"
+"hand navigation of the admin dashboard. Select the site  for which you "
+"want to manage the pages and click either the title or the edit (pencil) "
+"button to edit that site."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:7 8c6152987cf24a78bf0f51e5f69352d8
+msgid ""
+"Once you are editing the site, click the Pages tab in the left hand "
+"navigation."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:9 9da44bc99da1421fbecfde55dc2676b2
+msgid ""
+"When you create a new site, Omeka S automatically adds a page titled "
+"*Welcome* with a single HTML block (see below). You can edit this page or"
+" delete it."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:11 1eaa2549823b43d1b3f0d3361bff1493
+msgid "Adding Pages"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:12 a8856d2d74cd4d0f9adf473fd3900597
+msgid ""
+"From the page for the site, click the Pages tab. Then click the *Add new "
+"page* button on the upper left side of the window."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:14 66051140c2d94caeae9b77c36f1dea6d
+msgid ""
+"![A red arrow points to a grey button labeled \"add new "
+"page\"](../sites/sitesfiles/sitepg_addnew.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:16 702e35c885e24fa1aff4def35590c5dc
+msgid "To add a page you must enter a *Title*.  You can also enter a *URL Slug*."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:19 be7894aebb9642d5b5076702af18e860
+msgid ""
+"Both of these can be edited later but are required to create the page. If"
+" you do not enter a slug, Omeka S will create one from the page title. A "
+"slug is the page’s portion of the url and can only contain letters, "
+"numbers, and hyphens; no other characters are allowed."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:21 6220600b77554496b8ffdce746b5e48d
+msgid ""
+"In addition, there is a checkbox for \"Add to navigation\". If checked, "
+"the page will automatically appear at the main "
+"[navigation](../sites/site_navigation.md) level for the site. If you do "
+"not check this box, you will have to manually add the page to the site "
+"navigation at a later point."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:23 37ed6f226c194e47acde028577c1b913
+msgid ""
+"![Page view showing the fields for Add "
+"Page](../sites/sitesfiles/sitepg_add.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:25 29790dee094c485e881cbb741ea53854
+msgid ""
+"The eye icon to the left of the Cancel and Add buttons is a toggle to set"
+" the visibility of your page. If the toggle is set to public (no line), "
+"then anyone can see the page. If the toggle is set to private (line "
+"through the eye icon), the page will only be visible to logged-in users "
+"of the Omeka S installation who have site permissions (Supervisors and "
+"Global Admins will always be able to see private pages)."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:27 36c78df055364aa1a1f164e87de0ae60
+msgid ""
+"Clicking or hitting enter on the eye icon toggles between public and "
+"private."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:29 ef636d9f565846d0b24fe4263821926d
+msgid ""
+"![make public button showing an eye "
+"icon](../content/contentfiles/item_public.png) Public"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:31 890a95b937a0440d8ab141c3c3a2d35d
+msgid ""
+"![make private button showing an eye icon with a diagonal slash through "
+"it](../content/contentfiles/item_private.png)  Private"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:33 d944167c7e874d07b044751482afe5eb
+msgid ""
+"Once you have entered this information and set visibility, click the Add "
+"button in the upper right hand corner of the browser window. You will be "
+"automatically taken to that page's edit view (see below)."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:35 dfc90d5555ba409ab14332aae942966e
+msgid "If you decide you do not want to create the page, click the Cancel button."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:37 33c88821c64e465981f346884fdb79f2
+msgid "Browse Pages"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:38 48cdaa1ba65c4cf8bf5a689e069434f3
+msgid ""
+"The pages tab (once you have at least one page) will display all of your "
+"pages in their navigation order. Child pages will display below the "
+"parent page with a `-` before the page title."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:40 8f2fb289a3ef4548a17ad25ca4853313
+msgid ""
+"Every page is listed with its *Title*, buttons to view (box with an arrow"
+" coming out), edit (pencil), or delete (trash can) the page, and the "
+"page's slug."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:42 d14cc01d90ff431c9682355c5e001368
+msgid ""
+"![A sites page browse view, with 12 pages listed, some of which are child"
+" pages of the others.](../sites/sitesfiles/sitepg_browse.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:44 2f9af1714bbd4884a98a287a3c0a1103
+msgid ""
+"Use the [Navigation](../sites/site_navigation/) tab of the site admin to "
+"set the order of pages, including setting child and parent pages."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:46 5f58e2a7c8614505ba3982558c530772
+msgid "Editing Pages"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:47 c2aa4392150f41f2bcd93f14826415e9
+msgid ""
+"After clicking the Pages tab, select the page you wish to edit by "
+"clicking the name of the page or the edit button (pencil). Note: clicking"
+" on the Page *title* will take you to the public view of that page."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:49 5b768df83a2c47c6bdf19a964ca3ce1e
+msgid ""
+"The edit view for a page will display the page's title across the top. In"
+" the upper left is the public/private toggle (the eye icon), and buttons "
+"to view the public version (opens in a new tab), delete the page, cancel "
+"changes, or save changes. Note that changes will not display on the "
+"public view until after they have been saved."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:51 e163a10ea0c0490a9b694d20f9f03bcd
+msgid ""
+"At the top of the work area are fields for the page title and URL slug. "
+"You can edit these at any time, but remember that the slug must be unique"
+" within the site (you cannot have two pages with the slug \"welcome\" on "
+"the same site)."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:53 dc9c9123872e41a2ba09180febe7406f
+msgid ""
+"![A page in edit view, with one media block "
+"added](../sites/sitesfiles/sitepg_edit.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:55 90a183325af04547936a5000f6982b8f
+msgid ""
+"On the right hand side you can choose to add a new block by selecting one"
+" of the following layouts:"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:56 ../../docs/sites/site_pages.md:92
+#: 94e7d9635ca74c27ab5b9d9aa582563c ed9cac2a8aef443690ad8188c6c6e9a7
+msgid "HTML"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:57 d69db79458174a8aa3d7627c8d827f4c
+msgid "Page title"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:58 ../../docs/sites/site_pages.md:117
+#: b872aa251b81412d872a1a60df867b81 f98000a36ee64819921b17e6ef98595c
+msgid "Media Embed"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:59 e2fbf030990d40e9b1185e6c4e29fd54
+msgid "Browse preview"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:60 6099863c0bbf4dd08d2229ab81197279
+msgid "Item showcase"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:61 ../../docs/sites/site_pages.md:223
+#: 524ce92bbf034d75b8ef0062c6148454 5bc6f3dcebac4574a7e75b5c1b02efac
+msgid "List of sites"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:62 be3c4ba977be4a15a8aeb19fddfad20c
+msgid "Table of contents"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:63 5a9eecc6c2f0413ca26f6c99e219c7ef
+msgid "Line break"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:64 3b556eac42a043d8a2632f887eb36efd
+msgid ""
+"Item with metadata If you have the relevant modules installed, you may "
+"also have:"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:67 9d195027103643b5bee712f33bb882d5
+msgid "Map"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:68 1da39ccb7b15413c83bae9118b81c46e
+msgid "Collecting"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:70 c53172888c77483eae1e97e5e7957c7a
+msgid ""
+"Once you have added blocks to your page, click the Save button in the "
+"right hand corner.  To leave without saving changes, click Cancel."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:72 37b29e1afd7a46e69490db04e4f517fb
+msgid ""
+"You can delete any of the blocks by clicking on the trash can icon "
+"located in the upper right corner of the block."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:74 fbb54fc7e5354ec4baed85258c396d37
+msgid ""
+"![The “media” block is marked for deletion and thus highlighted in "
+"red.](../sites/sitesfiles/sitepg_delblock.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:76 892d8f375c10486f8eeeccced36f5e35
+msgid ""
+"Change the order of blocks by clicking on the three horizontal lines on "
+"the upper left corner of the block and then dragging and dropping it to "
+"the desired location."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:78 189bfc5283934fb7befaf857bc1aeda2
+msgid ""
+"Some modules may create additional blocks for your site pages. For "
+"information on working with these blocks, please see the documentation "
+"for that [module](../modules/index.md)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:80 a9b5d67557744a7db384dbafbff5510e
+msgid "From the Public Side"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:81 9d49911faf6d4d0f80369111c71639ea
+msgid ""
+"If you are on the admin side and click \"View\" in the upper right-hand "
+"corner of a page, it will take you to the public view for that page."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:83 89106a974f944c769cc0b8571a40586d
+msgid ""
+"As you are browsing the public side of your site, you can edit the page "
+"you are viewing if you are currently logged in and the [user bar option "
+"is turned on in Site Settings](../sites/site_settings/#general-settings)."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:85 e9f729980ca54c549adf86a1d6afaae3
+msgid ""
+"The user bar, which appears across the top of the page, includes a link "
+"to edit the current page - circled in red in the below image."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:87 aafeca77df7243f0910305bcbe7b317e
+msgid ""
+"![User bar for a page from the site Jane Austen, with \"Edit page\" "
+"circled in red](../sites/sitesfiles/sitepg_edit_public.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:89 cbc9eadfd4504419bdd668f107ecf71c
+msgid "Page Blocks"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:90 0cb7cf8f3ebd4a13a5fba7d38eacbbdf
+msgid ""
+"Pages are made up of blocks, each of which has a different form of "
+"content."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:93 22065cb272e642598b01f7cf5b76c75b
+msgid ""
+"Creates an HTML box in which you can add formatted text and links. When "
+"you click in the box, a formatting menu will display above the text "
+"field."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:95 c3092c651e734c84983855cefb60958b
+msgid "Basic block:"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:97 a339d5a2d2db4d2ead403f806bed256b
+msgid "![Page block for HTML content](../sites/sitesfiles/sitepg_html.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:99 16a67e0380c44e378d701a34a91c147f
+msgid "With formatting menu open:"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:101 050440676bd8439abbb156a8fdc00aa5
+msgid ""
+"![Page block for HTML content with active field, showing formatting "
+"menu](../sites/sitesfiles/sitepg_html2.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:103 2e15ffb7f8a54722b6f069e15079a891
+msgid ""
+"You can embed content from elsewhere on the internet using iFrames or "
+"other embed codes in the HTML block."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:105 159e146f5ba04aedb09d35cfed2b9438
+msgid ""
+"Click into the HTML block content area to show the formatting menu and "
+"then click on the button labeled \"Source\". ![HTML block with formatting"
+" menu open. A red arrow points to the Source "
+"button](../sites/sitesfiles/sitepg_htmlSource1.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:106 98400a370b784ee2adfa0894ba489274
+msgid "This will open a dialog box where you can write HTML content."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:107 1e7b8d9a6a5a43be8091e426d72bed5a
+msgid ""
+"Copy and paste the embed code into the source code editor. ![Source box "
+"open with a short paragraph of text and an iframe from "
+"Vimeo](../sites/sitesfiles/sitepg_htmlSource2.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:108 189da99629da47478f2ac85b15c5848b
+msgid "Click the green OK button at the bottom of the editor."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:109 66fc63ee908d43c98b394b902439865c
+msgid ""
+"Your embed should show up in the HTML block either as a gray rectangle or"
+" as the embedded content. ![HTML block showing the text and an embedded "
+"video](../sites/sitesfiles/sitepg_htmlSource3.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:112 9d563434d90e46b1a27bb46ac9d2a3e9
+msgid "Page Title"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:113 eff4be134df549138f6bfa01ad42404c
+msgid "Displays the title of the current page."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:115 d6e1534a62a34b9989b9c8e3b9747574
+msgid "![Page block display site's title](../sites/sitesfiles/sitepg_title.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:118 86c3beb6b0664b1e926730ce538051b5
+msgid ""
+"Creates a block with one or more pieces of media associated with items in"
+" the item pool. In media blocks, multiple attachments stack vertically."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:120 04dc1a3873724c4ba9731acee198f02c
+msgid ""
+"![media block with no media "
+"attached](../sites/sitesfiles/sitepg_media.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:122 c82a71d4b56d4c3597fc211032068cba
+msgid "The Media block has options for the display of the media:"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:124 9d1190f1a0a34723a0f8b714ca87cd40
+msgid "Thumbnail type: choose from large, medium, and square."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:125 c90e3b2dfb884ddd98a4fc8d95556ba1
+msgid "Thumbnail alignment: float left, float right, and center."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:126 f949346a1791482297f1dcd7d64515a4
+msgid "Set the attachment title as:"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:127 ../../docs/sites/site_pages.md:191
+#: 544707519dfb416e80a32c247e3bd22a 96fdaf83743846d0ac1225a0ff430670
+msgid "item title (title of the attached item);"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:128 ../../docs/sites/site_pages.md:192
+#: 4cb85d6ecf5f4ddf9d2d7573f51f253f c588cf64603642a4a5c9a26384fe4cf4
+msgid ""
+"media title (title of the specific piece of media you select associated "
+"with the item); or"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:129 ../../docs/sites/site_pages.md:193
+#: 406904383a04456c8befe290622ef74b 5c294c1e617e43f48ab20dc51755b65f
+msgid "no title."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:131 245ef02f50074bc895cc5a1c4d51168b
+msgid ""
+"*Layout note:* If you want media to appear beside a block of text, place "
+"a media block *above* an HTML block, select a smaller thumbnail size, and"
+" choose either float left or right for alignment. In the example below, "
+"the media has a thumbnail type of \"medium\", alignment \"float right,\" "
+"and attachment title of the \"item title\":"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:134 5ed200369bff428984c5402d6f3560f7
+msgid ""
+"![A block of lorem ipsum text with a right-aligned small image embedded "
+"at the top of the paragraph](../sites/sitesfiles/sitepg_mediaalign.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:136 fe3a429cee8b409f84678bf9aeffdf02
+msgid ""
+"Placing a media block *after* an HTML block will cause the media to "
+"appear below the end of the HTML paragraphs."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:138 d7161b78f456497f9bde1c0b7e60fd60
+msgid "To **add media to the block**, click the *add attachment* button."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:140 5f80784d2d274389b90b8f053aca1cc7
+msgid ""
+"On loading, the drawer will show a list of your items, most recent first."
+" You can select from the first page, page through using the forward and "
+"back arrows, or search using the search bar. You can select from the "
+"first page, page through using the forward and back arrows, or search "
+"using the search bar."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:142 8214659b934447aeafefce9b5c91153e
+msgid "![Select item drawer](../sites/sitesfiles/sitepg_selectitem.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:144 ../../docs/sites/site_pages.md:197
+#: 101186171bef4e32aef93e06bc8d1296 35426f710626428e9b1607ad9c29a1ca
+msgid ""
+"If you have a large number of items to navigate, or multiple items with "
+"the same title, you can use the \"Filter search\" options by clicking the"
+" triangle button to the right of its label."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:146 ../../docs/sites/site_pages.md:199
+#: 0ccd75c3a3364dafadf3c46fea2c6f75 99cc7ec09040420ca4da2117ba7f8378
+msgid "These options are:"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:148 ../../docs/sites/site_pages.md:201
+#: 45317a11414749c8b43cf9c554454ff5 ae5e6b78684f42efa95bde57d99d3785
+msgid ""
+"Filter by class: opens a dropdown to select from all of the classes for "
+"the vocabularies in the Omeka S installation."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:149 ../../docs/sites/site_pages.md:202
+#: 565e7b9494104bf79288873e1452c435 72b65aefb2014fc59314f43baae7412a
+msgid ""
+"Filter by item set: opens a dropdown to select from all item sets in the "
+"installation, not just those associated with the site on which you are "
+"working."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:150 ../../docs/sites/site_pages.md:203
+#: 76a7c318548e4c0db02be8a532c6566b c556c128cd2845ebbb593e52d25aec39
+msgid ""
+"Filter by item id: you can put in the specific item id for an item (the "
+"number which appears in the url when you are looking at the item on the "
+"admin)."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:152 9caf8624bff443f69732b8ec51ef45bf
+msgid ""
+"Once you have applied your changes to the filter, you must click the "
+"search button (magnifying glass) to apply the filters or run the search."
+"   ![Select item drawer with filter options "
+"displayed](../sites/sitesfiles/sitepg_selectitemFilter.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:155 ../../docs/sites/site_pages.md:209
+#: 6a2d898acabf4cbb97c5c35165723cd0 a698924273a64a8dbe69af1be6278d67
+msgid ""
+"Once you’ve selected an item, the drawer will shift to that item’s "
+"information. You can add a caption and select which media (if more than "
+"one) you want to use. To return to the list of items, click the *Select "
+"item* button at the top of the drawer. To use the item displayed and "
+"apply the caption, etc, click the *Apply changes* button at the bottom of"
+" the drawer."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:157 ../../docs/sites/site_pages.md:211
+#: cdd270421752485086f8bed73e1d2998 defda345910f4cee9f31b5e267e71cf2
+msgid ""
+"![Item view with apply changes "
+"option](../sites/sitesfiles/sitepg_applyitem.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:159 ../../docs/sites/site_pages.md:213
+#: 635f180d4f3042cd8b38b0d3a24619b4 fd30482e8e4d459b9758249567e71d2b
+msgid ""
+"To add multiple items at once, click the \"quick add\" slider just above "
+"the list of items in the right hand drawer. This will add a checkbox to "
+"the left of each item. Check the boxes of those items you want to add to "
+"the block, then click the \"Add selected\" button at the bottom of the "
+"drawer."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:161 ../../docs/sites/site_pages.md:215
+#: 510dcfa9a29f4fc587c46b6f991873e1 9468e6e5b3014511bd0bdd9db2e817af
+msgid ""
+"![Select item drawer with quick add activated - every item in the view "
+"now has a checkbox.](../sites/sitesfiles/sitepg_selectitemQuick.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:163 f4fb483996a241f78615f185161f4751
+msgid "Browse Preview"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:164 4fca3e228fe44aecb1a2446db7240bbb
+msgid "Allows you to add a block of items on a site page."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:166 85471265481f4760a7f00e645d17c410
+msgid ""
+"In order to create a Browse Preview block, you'll first need to perform a"
+" search on your Omeka S installation for the items you want to include. "
+"You can use the general search on the left hand navigation or, if you "
+"want to show all items in an item set, use the Advanced Search from Items"
+" browse. NB: if you leave the search options blank, the browse preview "
+"will load all items in your site's item pool."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:168 c9c0990b1b4c4bfcab7ce51c930125af
+msgid ""
+"Once you have searched, highlight everything in your browser's address "
+"bar starting with the question mark all the way to the end of the search "
+"url (to the right)."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:170 edccc758bc864d7a84646e4d6f82c211
+msgid ""
+"![a search query url with the question mark and everything to its right "
+"highlighted](../sites/sitesfiles/sitespg_bpquery.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:172 b8f3d22f4b1c4fbe935a348418f3994c
+msgid ""
+"From the *Resource type* dropdown, choose the kind of resource you want "
+"to display in the block: Items, Item Sets, or Media."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:173 98f83324f27647b49240b33413aa1f97
+msgid ""
+"In the *Query* field of the Browse Preview block, paste the part of the "
+"url you just copied (everything from the question mark over)."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:174 2e461f72873a46948118116817faced7
+msgid ""
+"The *Limit* field lets you set the number of resources to display in the "
+"block; any additional results from your query can be accessed on a search"
+" page linked from the bottom of the block (you set the text of the link "
+"in the *browse link text* field below)."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:175 57aa2b395f024e9b9f5b1d3096928d6f
+msgid ""
+"The *Preview Title* field sets the heading above the browse section on "
+"the page."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:176 ed0a630baadc466491603db6a754d905
+msgid ""
+"The *Browse link text* field sets the link text at the bottom of the "
+"block - the block will only display as many results as you set in the "
+"*Limit* field above."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:178 487fafe499a6499fac6f6dbd04d945a7
+msgid "![Page block for Browse Preview](../sites/sitesfiles/sitepg_bpblock.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:180 ebddb17a94014c138896e7069500a2ec
+msgid "Item Showcase"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:181 fe6b21a0fe9941ab8a195675f20add61
+msgid "A list of items."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:183 e2a59b3734f744b5a10ee4bcd7d20168
+msgid ""
+"In item showcase blocks, multiple attachments build horizontally, "
+"creating rows across the page."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:185 4acc645defdf43878346f4290dc4acc8
+msgid ""
+"![Block for item showcase with one item "
+"added](../sites/sitesfiles/sitepg_showcase.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:187 a522ea9098074318afa5b743d8758177
+msgid "Using the drop-down menu in the block, you can:"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:189 9e5348421d3f4f989ef61e042c0d93f1
+msgid ""
+"set the thumbnail size for these items as large (default), medium, or "
+"square."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:190 3bf76686e3334ab0b6677c111112634f
+msgid "set the attachment title as:"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:195 0f6b4689c4624c39b409e54c19f0cb96
+msgid ""
+"Click the *Add Attachment* button to add an item to the block. This will "
+"open a drawer on the right side of the page to browse and select items."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:205 7011e2c64a9e4ef4b75df65304f752f5
+msgid ""
+"Once you have applied your changes to the filter, you must click the "
+"search button (magnifying glass) to apply the filters or run the search."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:207 a50f9912aab444e3803842dfe6be545d
+msgid ""
+"![Select item drawer with filter options "
+"displayed](../sites/sitesfiles/sitepg_selectitemFilter.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:217 9c1499587aed424596aa03969f28a5a3
+msgid ""
+"To cancel the item selection, click the X in the upper right corner of "
+"the drawer at any time."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:219 55a85a24405f42bd88008efcc4e490ff
+msgid ""
+"Once you’ve added an item, it will appear in the Item List block. You can"
+" edit the caption or media options by clicking the edit (wrench) button "
+"for that row, and you can delete the item using the delete (trash can) "
+"icon."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:221 d70c8f1118864e87b198ecad7d7a8752
+msgid "You can add multiple items to the list."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:224 2cb0c2cd028a421b9a577adb152159ea
+msgid ""
+"This block displays a list of all of the sites on your Omeka S install. "
+"This block has the following options:"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:226 2e53ad1550c244f28a6641afc3cacbef
+msgid "![List of sites block](../sites/sitesfiles/sitepg_slist1.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:228 a143548c936d4d9aab97b1cd8433ac60
+msgid ""
+"Sort sites by: Alphabetical order (A-Z); Oldest first; newest first. By "
+"default this is set to alphabetical."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:229 0a18d0fc0e3f437ba6147e2dcb9df2bc
+msgid ""
+"Max number of sites allows you to limit the number of sites which display"
+" at once. If left blank, all sites will display."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:230 f427988494c8435daf4ac60025f94ab8
+msgid "A checkbox to turn on pagination, applied only if you set a limit."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:231 183e0c58f43f42d4b0e2e89a4ce1fdb7
+msgid "A checkbox to show site summaries."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:232 65287ab9779145b89e313b3c446e05c0
+msgid "A checkbox to exclude the current site from the list."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:234 492a377f8ff44d35b242fcaaef622acd
+msgid ""
+"This image shows a List of sites block, sorted oldest first, with no "
+"limits:"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:236 dc31727411da4b1da4ce06fe1f0cf621
+msgid "![](../sites/sitesfiles/sitepg_slist2.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:238 8d08b628839249d2a26852fe0356e227
+msgid ""
+"This is the same block edited to have a limit of 5 and pagination is "
+"turned on:"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:240 e70d672b026345c691f468e679821a49
+msgid "![](../sites/sitesfiles/sitepg_slist3.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:242 e36d497b5c3a4ca895c19af9db454ef2
+msgid "The same block with pagination and site summaries turned on:"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:244 e3ee921874a642a39abbef98a1b06e78
+msgid "![](../sites/sitesfiles/sitepg_slist4.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:246 3e54721c716e4d279667266466a112d5
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:247 e921ebeddca545a2a6a275193d36ec68
+msgid ""
+"If the current page has child pages, you can add a table of content block"
+" for those pages."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:249 a9b478d7d2ef4eaca9290e9469d2dfc4
+msgid ""
+"The Depth option allows you to set how many levels of child pages you "
+"want to display. If left blank, it will display all possible levels. "
+"Please enter a whole number."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:251 86c4f7baa72c4a53a8e24828427f0760
+msgid ""
+"![Table of content block with no depth option "
+"set](../sites/sitesfiles/sitepg_toc.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:253 42da9dfc31d341a3a3fb269fcbbb0fad
+msgid ""
+"Add and arrange pages using the [Site "
+"Navigation](../sites/site_navigation.md) settings."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:255 ad0c9e5ca45d4932b65d5d7e86bf5e4f
+msgid "Line Break"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:256 cca2128c48ad4f42a24e8f11041d789d
+msgid ""
+"Line break creates a transparent or opaque line break on the page, "
+"clearing all blocks. Select whether the line is transparent or opaque "
+"from the dropdown."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:258 221fafc8a8f547e6af78bbb21fbad310
+msgid ""
+"![line break table, dropdown selected to "
+"transparent](../sites/sitesfiles/sitepg_line.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:260 9f252351af46430dbcbe8549a8e39348
+msgid ""
+"HTML blocks wrap around Media blocks and at times you may want to clear "
+"the page. You might also want to create a visual break on the page."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:262 4d42e9812e89486d88a6ce90658093bb
+msgid "Item with Metadata"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:263 2a39b2f7b7284e839c83fcc4cb556fa1
+msgid ""
+"This block displays an item along with all associated metadata (entered "
+"when creating or editing the [item](../content/items.md))."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:265 bb19f722986d465fb4a8191ea4d8d8ba
+msgid ""
+"Add attachments in the same manner as the "
+"[media](../sites/site_pages/#media) page block."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:267 7cd8976f6f4f467eae248428a5b242a8
+msgid ""
+"![Item with metadata block with nothing "
+"attached](../sites/sitesfiles/sitepg_iwm.png)"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:269 547fd3b86aa04745b34d790539ea49e9
+msgid "Other blocks"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:270 4e3754b00101440690947db029143ad7
+msgid ""
+"For module-specific blocks (like [Collecting](../modules/collecting.md) "
+"or [Map](../modules/mapping.md)) see the documentation for that module."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:272 49ac29be8fcd4dd2bc3ba666d38dc7c3
+msgid "Deleting Pages"
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:273 a4eae2ca2f5641b1be99341521f32f24
+msgid ""
+"To delete a page, go the to *Pages* tab of the site of which the page is "
+"a part. Click the delete (trash can) button at the right end of the row "
+"for that page."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:275 891563b6d3604e558f778a330caf4026
+msgid ""
+"A drawer will open on the right side of the page asking you to confirm "
+"that you wish to delete the page, with the name of the page displayed "
+"under the confirm button. To proceed, click the *Confirm delete* button. "
+"Otherwise, click the *X* in the upper right corner of the drawer to "
+"cancel."
+msgstr ""
+
+#: ../../docs/sites/site_pages.md:277 179aff4026f34b7baa8eddd4dfa765db
+msgid ""
+"![Delete drawer for the Novels "
+"page](../sites/sitesfiles/sitepg_delete.png)"
+msgstr ""
+

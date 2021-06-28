@@ -1,0 +1,231 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/modules/zoteroimport.md:1 545502efa7d24ec6a98a06076735e8e9
+msgid "Zotero Import"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:3 5dbd466b4c914585b91ebe328597ab95
+msgid ""
+"Zotero Import is a [module](index.md) for Omeka S which allows you to "
+"connect an Omeka S instance to a Zotero library and import items from "
+"that library."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:5 27320eaae7ba41ae9f3a7b6db6f1455e
+msgid ""
+"To install Zotero Import, follow the instructions for [Installing "
+"Modules](index.md#installing-modules)."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:7 271d407244fc45e19681e6cd1029be8a
+msgid "Prepare your Zotero Library"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:8 e3de5933142f4e5187cad188306d6984
+msgid ""
+"In order to import from a Zotero library, you must have API access to the"
+" library. To use Zotero Import, you will need the ID for the group or "
+"user"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:10 9147f8457cc34e53bd9753c9f5bbaff9
+msgid ""
+"Individual IDs are found on the Feeds/API tab of your Zotero Settings; "
+"there is a sentence stating “Your userID for use in API call is”."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:11 a7394065d1de4438ad28c3b9f38f5940
+msgid ""
+"Group IDs are found on the Zotero group library page by looking at the "
+"URL of the library - it will be `zotero.org/groups/<number>`. If you go "
+"to https://api.zotero.org/groups/<numer>`, you should get some "
+"information on that page."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:13 34d951099b244e459f3a4db0f4bf7c7d
+msgid ""
+"You may also want to have the id for a specific collection and an API key"
+" to import files."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:15 063cc81bc95e43569031b6dadd818fe3
+msgid ""
+"Collection keys appear in the url of a collection page - they are the "
+"alphanumeric sequence at the end of the url, following “collections/“"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:16 2cfc0af456794b82b64c5df017e830ad
+msgid ""
+"To generate an API key, go to Settings in your Zotero account, to the "
+"Feeds/API tab, and click the *Create new private key* link."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:18 2a26baeae03a4fafbbfcfe813753066b
+msgid "Import Data"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:20 bd749d7607574dec88c82d4e9d26ac7a
+msgid ""
+"To import, go to the Zotero Import tab on the left-hand navigation of the"
+" admin dashboard of your Omeka S install. This will automatically take "
+"you to the Import sub-tab, also in the left-hand navigation."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:22 e93013556daa436d83c5b4ddcc69f372
+msgid "![Zotero Import options](modulesfiles/zoteroimport_new.png)"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:24 f9ca99f3f1934fbd85bf4393a2a4d2a2
+msgid "To import from a Zotero library:"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:26 37d4b97a0fbd48e89ccad6ee5fed2461
+msgid "Choose an Item Set to which the imported items will be added (required);"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:27 77b930530fff41958bf6445d7e6b5aac
+msgid ""
+"Choose between *User* or *Group* libraries with the radio buttons "
+"(required);"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:28 429e7b3a5b3b4ae7880fa628ebaec4f7
+msgid ""
+"Enter the Library ID (this is either the Group or User ID number, "
+"discussed above)."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:29 4305fded144b46f2b15b22e5ede61b5f
+msgid "If importing a collection enter the collection key."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:30 e717cbd2abb84f14a614d0adbe6cd6e0
+msgid ""
+"Enter your API key to import private data and/or files (optional for "
+"import but necessary to import files)"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:31 b893391aa207409a861b8e7218017084
+msgid ""
+"Click the checkbox to import files. The API key is required to import "
+"files.   \t* HTML page snapshots will be imported as zip files."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:33 534ce4eee72d440ca0b959cbd185c1bd
+msgid ""
+"The “Added After”option allows you to import only those Zotero items "
+"added to the library after the date and time you choose. You can use this"
+" as a way to update from a previous import without re-adding files you "
+"already imported."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:35 14bc18a0773a419d9df1aaa3c83d095e
+msgid ""
+"When you have completed the form, click Submit in the upper right-hand "
+"corner of the browser window."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:37 6caf565b70094b2db412892362498f13
+msgid ""
+"Are your jobs starting and not completing? You might need to [set the "
+"path for PHP](../configuration/) so that your system can perform the "
+"background process to make the items."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:39 24cdc03d297c4f40929508fc5d863f36
+msgid ""
+"A note on files: The rules for importing an item are the same as creating"
+" an item in Omeka, so if your Zotero library has files which are a "
+"disallowed media type, the items will not be imported."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:41 bb95abc99d4842c2a7f1731da0ef5eb5
+msgid ""
+"The page will load on the Past Imports tab with a message \"Importing "
+"from Zotero\". To check the status of the import, reload the page or "
+"click to the [Jobs](../admin/jobs.md) tab of the left-hand navigation on "
+"the admin dashboard."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:43 adc2d71a71314f06ac0c71a48a7facf3
+msgid "Managing Past Imports"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:45 1ebd6ca43c0a40f593d8f31296937c7e
+msgid ""
+"To view and manage past imports, click on the Zotero Import tab in the "
+"left-hand navigation, and then click on the \"Past Imports\" sub-tab."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:47 146afddfe9cf4b80a6b85a128ecda173
+msgid ""
+"![red arrow points to past imports "
+"tab](modulesfiles/zoteroimport_pasttab.png)"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:49 491225c93b1847ad9c16dd795d216e5b
+msgid ""
+"The Past Imports shows a table of previous imports, whether successful, "
+"failed on error, or undone. The table has the following columns:"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:51 84d0b5591c67442d922810da31508480
+msgid "*Zotero Library* giving the User or Group library name;"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:52 32df9bfdffd042e0b002d1a9c0d50646
+msgid "The *Undo* button, which is a counter-clockwise curved arrow;"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:53 c510b80702bb4727bd2345e82479b083
+msgid "*Items Added Before* the date of the import;"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:54 66ca1bf651394eda93ca5e23e0f64652
+msgid ""
+"*Job Status* current status of job. Clicking on the text of a job status "
+"will take you to that job's page;"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:55 6c1cd7c4ca1d4ea491b5b135f9793fb5
+msgid "*Item count* the number of items added in the import."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:57 0571f663467645ea9088a20dab39f031
+msgid ""
+"To Undo an import, click the *Undo* button to the left of the *Items "
+"Added Before* timestamp. This will open a sidebar dialog asking you to "
+"confirm that you want to undo the import and delete all imported items. "
+"Click *Confirm* to continue."
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:59 fe9e8ffed2154dde902487ebe7ccadc9
+msgid ""
+"![past imports tab with sidebar open to confirm "
+"undo](modulesfiles/zoteroimport_undo.png)"
+msgstr ""
+
+#: ../../docs/modules/zoteroimport.md:61 b2cfce3b0ecf42828e4fc41ff454576b
+msgid ""
+"Past Imports which have already been undone will have a job status \"Undo"
+" Import Completed\"."
+msgstr ""
+

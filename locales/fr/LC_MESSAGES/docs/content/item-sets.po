@@ -1,0 +1,664 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/content/item-sets.md:1 47e4b09564dc460cadca845fea25822b
+msgid "Item Sets"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:3 e03c36656cee4f63afcedfd46e89bfb7
+msgid ""
+"Item sets are an aggregation of *items*, similar to collections in "
+"previous versions of Omeka. In Omeka S, items may belong to any number of"
+" sets, and an item set can have any number of items."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:5 b6b4d50ceea64e9cb2158700c57ef8e4
+msgid ""
+"Item sets are managed via the *Item Sets* tab (stacked boxes) located in "
+"the left navigation of the admin dashboard."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:7 4e154c6ef9ed4c89adc39afa4d4c63e5
+msgid ""
+"![Browse item sets view with four item "
+"sets.](contentfiles/itemsets_browse.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:9 0e8e8226ac5349bebccf7d88b78d7700
+msgid "After clicking on the tab, a table appears listing all item sets with:"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:11 6cb00e17a4c440d387971016f4cbdac2
+msgid "their *Title*;"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:12 0b07805228e0425ca64ae9dc2144bdde
+msgid ""
+"icons for each row representing options to *edit* (pencil), *delete* "
+"(trash can), or *view details* (ellipses);"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:13 19459460028a4373b1c9236daa521342
+msgid "the item set’s *Class*,"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:14 4997cf6731094703a46028537321ba1d
+msgid "the *Owner* of the set,"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:15 1e7e24bcca874ec295bf881b9e891610
+msgid "and the date the set was *Created*."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:17 0c28becbaf9044be951a0717996ba351
+msgid ""
+"Above this table on the left is the pagination for the item sets table, "
+"where you can click the left and right arrows to move forward and back or"
+" enter a page number to go a specific page of item sets."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:19 c9b7ef2d12a84a328867f240ee0f7313
+msgid "In the center above the table is the button for *advanced search*."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:21 e607069addff489cb16f21870c52cd7a
+msgid ""
+"On the right above the table are drop-down menus to re-order the table by"
+" *title, class, owner,* or *date created* in either *ascending* or "
+"*descending* order."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:23 d8e71aa01bd84e06b6f43f29e1d1ccb0
+msgid "In the upper right corner is the button to *Add new item set*."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:26 01253b94a07744d58bcf5ad6d35e46cf
+msgid "View Item Set"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:28 3c26e5c1b75c4ecdaf111fb590ea0440
+msgid ""
+"To quickly see information about an item set, click on the *view details*"
+" button (ellipses) for the item set on the item sets browse page. This "
+"will open a drawer on the right hand side of the page with the item set’s"
+" Title, Visibility, and number of Items."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:30 af8734db4f3643bea5682fd778bd2e28
+msgid ""
+"![Drawer view of an item, with description and "
+"title](contentfiles/itemsets_drawer.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:32 a038371f0b5a4953ada9e21cb9bb4e4a
+msgid ""
+"To view all the information for an item set, click on its name. On the "
+"item sets view page, there are tabs to see an item set’s *Metadata* and "
+"*Linked Resources*. On the right side of the item set’s view page is "
+"information about the date created, owner, and visibility. For item sets,"
+" visibility includes both whether the set is private or public and "
+"whether other users can add items to the set."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:34 989b833602b446d4be0169be22cfc72a
+msgid "![Reading view of a single item set](contentfiles/itemsets_view.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:36 b1055b743611445bbf3d08303d5afcde
+msgid "The item set’s *metadata* is entered by users."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:38 0c593d6147364e1d8de008d3636ae028
+msgid ""
+"*Linked resources* are items which have used the item set to populate "
+"specific metadata properties. When viewing linked resources, the table "
+"includes the predicate (property or description) and the object (linked "
+"item resource). Note that incoming resources (those used as properties "
+"for the item set being viewed) will *not* display here, as they already "
+"display in the item set's metadata."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:40 f652b76a8ab1453f828f5f660c5b3351
+msgid ""
+"To view the items in a set, either click on the number of items in the "
+"set on the item set browse page, or click the *view items* button in the "
+"upper right corner of the individual item set page."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:43 dfe8a25790b64d649cf7d08d2e032d5a
+msgid "Add an item set"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:45 096beb9a2ea1429e8f1755096bd812c6
+msgid ""
+"To add a new item set, click the Item Sets tab from the left navigation "
+"of the dashboard. Click the *add new item set* button on the right hand "
+"side of the screen."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:47 0aa07278f5bb4d30806a11fca46f632e
+msgid ""
+"Item sets may use the same resource templates available for items to "
+"provide pre-selected fields. Each set should contain at least one "
+"descriptive value, such as Dublin Core Description."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:49 ../../docs/content/item-sets.md:97
+#: 7b1ac6897ec442669d9aba8711316c5a 9429a28d5b7549f48a72847c0bdb181a
+msgid ""
+"You may add other fields by selecting a property from the list on the "
+"right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, "
+"etc), or search in the *filter properties* bar above the list of "
+"properties and vocabularies."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:51 ef8dd689ccc545559ff17182507a75d6
+msgid "Values tab"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:52 2f652aac9714430ab6320baa4a9306db
+msgid ""
+"You may add text, a resource from the installation, or an external link "
+"in each field."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:54 308b561d968646d1ae866a7f8c7bf214
+msgid "![Add item set, no properties selected](contentfiles/itemsets_add.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:56 918f73d0dfbd4415bb7e45de74a2a7b2
+msgid ""
+"By default, a new Item Set will load with the properties dcterms:Title "
+"and dcterms:description. You may add other fields by selecting a property"
+" from the list on the right. Browse fields by vocabulary (Dublin Core, "
+"Bibliographic Ontology, etc), or search in the *filter properties* bar "
+"above the list of properties and vocabularies."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:58 ce90ce8fade9440f8e21214eb1ad3df8
+msgid ""
+"You can set individual properties as Private or Publicly visible using "
+"the eye icon for each property. Note that properties set to private are "
+"still visible to Global Admins, Site Admins, and Editors will be able to "
+"see properties even when set to private. Authors will be able to see all "
+"properties on items they own, but will not see private properties created"
+" by other users."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:60 c821fba67e8047b9b809b89b09b33951
+msgid ""
+"In the image below, the first property (Title) is public as indicated by "
+"the open eye icon. The second property (Description) is private as "
+"indicated by the slashed-through eye icon. Clicking or hitting enter on "
+"the eye icon toggles between public and private."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:62 bb8e618827c94ef5a97520b863b9c51c
+msgid "![As described](contentfiles/item_propviz.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:64 fb232e6b7e414139854295af18e81252
+msgid "Text"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:65 12934ad144a74025b90ad866bda54637
+msgid ""
+"Text fields are entered with text. The keyboard at the top of the field "
+"input indicates text. You can indicate the language for the content of an"
+" input using the globe symbol above the input (see the red arrow in the "
+"image below). Click on the globe to activate a text field, then enter the"
+" [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code "
+"for the language in which the text is written."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:67 d59645acccb6440ea838041b0f138b89
+msgid "Omeka Resource"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:68 3973ef4253bc4a2cae7ec8a823a43b91
+msgid ""
+"These fields create an internal link between the resource you are "
+"creating and the resource which fills that field. You have the option to "
+"use either another item or an item set. Once you select an item or item "
+"set, detailed information will load, and you must click *select resource*"
+" to finish linking the resources. You can also click the *X* button in "
+"the upper right-hand corner to go back to the list of items or item sets."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:70 ecab90f338cf4afd9589fb5b34bcb2e8
+msgid ""
+"When creating an item set, you have the option to use either another item"
+" or an item set."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:72 4aebf54037944e3d8e84618c28c0070d
+msgid ""
+"Choosing a resource type will open a side drawer where you can browse all"
+" of those resources in the installation. You can use the search function "
+"at the top of the drawer to narrow down the list or to quickly find a "
+"specific item or item set"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:74 1a39d6ed9b16472482caae6343ddbc09
+msgid ""
+"Once you select an item or item set, detailed information will load, and "
+"you must click *select resource* to finish linking the resources. You can"
+" also click the *X* button in the upper right-hand corner to go back to "
+"the list of items or item sets."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:76 1a9275c81d9c4cd29301e6d68389e0a3
+msgid ""
+"![Select Item menu with list of items to link in edit item "
+"view](contentfiles/items_addresource.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:78 4569ac38287d47a28b88f7a1b7c31162
+msgid ""
+"If you are using an Item resource for the property, you will have "
+"additional options for finding the item you want in the drawer. Open "
+"these options by clicking the triangle button next to the phrase \"Filter"
+" search\""
+msgstr ""
+
+#: ../../docs/content/item-sets.md:80 7fa5a064e76a4c35aa01fd0c16b1ea93
+msgid ""
+"![Select Item drawer top options, with a red arrow around a gray triangle"
+" button to the right of the phrase \"Filter "
+"search\"](contentfiles/items_filtersearch.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:82 826c1ec19f974a9b99e6c8bc26947306
+msgid ""
+"This will open a menu below the button with the following options to "
+"filter the items in the drawer:"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:84 7dcf532d36a44749a7e8dbd36a3726ed
+msgid ""
+"Filter by class: a dropdown where you can select any class provided by "
+"the vocabularies on the installation;"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:85 ff5b9b15c90045c4a05d029096c8cc44
+msgid ""
+"Filter by item set: a dropdown where you can limit the items displayed in"
+" the drawer to only those associated with a particular item set"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:86 7bef4eb737af41b7818418cbecf72a2a
+msgid ""
+"Filter by item ID: a search field where you can input the ID of the item "
+"you want to use. You can find an item's ID in the url of it's edit page; "
+"if you are editing the item and the url is `admin/item/11547/edit` then "
+"the item's ID is 11547."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:88 d1ed06fb44a441d683203c1696c06cbb
+msgid "![options as above described](contentfiles/item_addresItem.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:90 2cb89dfe261c42ee868fa41a959287d3
+msgid ""
+"Item resources also have an option for \"Quick add\". When this switch is"
+" flipped, all of the items in the drawer have a checkbox. You can use "
+"these checkboxes to add multiple items as a property at once. Note that "
+"you can only edit one property at a time, so all of the items must "
+"populate the same property (ex, Creator, Has Part)."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:92 d5ccdb3285c54b169992f4085e22ed95
+msgid ""
+"![a red arrow points to the slider button for \"Quick add\". The two "
+"items visible have an empty checkbox to the left of their representative "
+"thumbnail](contentfiles/items_quickadd.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:94 356b658e04a64564a1ba828daeb422dc
+msgid "URI"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:95 cdf2d977b8e74ba7839dfaf48be8b1f5
+msgid "URI fields link to an external website or online resource."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:100 4cbcfa04e4ce4a1db3a6fd8cdb1ecac3
+msgid "Advanced tab"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:101 7cecda29271e46359c1e056aabdd9113
+msgid ""
+"By default, Omeka S will use the media from the first item added to an "
+"item set to generate a thumbnail for the set. If you want to use a non-"
+"media image for the thumbnail for an item set you can set it here."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:103 7a75079d8863458e9fb7336a3eecaefa
+msgid ""
+"![Thumbnail tab with no asset selected. The tab displays a message about "
+"thumbnail creation and a button to \"select\" an "
+"asset](contentfiles/itemset_thumb1.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:105 9b90e3f7728f417380373fb6e8d28253
+msgid ""
+"The assets you select from and upload as thumbnails in this tab are the "
+"same as those created for [site logos](../../sites/site_theme/#settings-"
+"options)."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:107 2952a6d042c74c02aa0bfa4fdbd362c2
+msgid ""
+"To assign an asset as a thumbnail, click on the Select button in the main"
+" work area of the tab. This will open a drawer on the right side."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:109 636dedf1e2814efa9df0209ef6c8c08f
+msgid ""
+"![Select drawer with upload option and two assets, both of which are "
+"images.](contentfiles/itemset_thumb2.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:111 4b9c438b9c004909bb5b9233bb76d014
+msgid ""
+"The drawer offers two options: upload a file using your browser, or "
+"select from existing assets. To select an existing asset, simply click on"
+" it and it will automatically be assigned to the item set."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:113 a23510cb74384cac8db4bd21c4330a2b
+msgid ""
+"![Add item set open to Thumbnail tab, where an asset which is an image of"
+" a quill pen on a scrolled piece of paper is in the main work area. Below"
+" it are buttons for Select and Clear](contentfiles/itemset_thumb3.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:115 55d66c20e55f4cc493d012d84ebb9c74
+msgid ""
+"To remove an asset which you have assigned as a thumbnail, click the "
+"\"Clear\" button below the image of the asset. To replace it, click "
+"select and either choose or upload a new thumbnail asset."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:118 068a4052136a4c449558fc5a1fc9ef08
+msgid "Access Settings"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:119 ffca2df7358246a6a0d6769270eaf274
+msgid ""
+"Item sets have two settings which control their access. They can be "
+"*public* or *not public* and they can be *open* or *closed*."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:121 5a345a7610af4cf9b4497eab77876dd3
+msgid ""
+"Use the *make public/private* button (eye icon) to make the item set "
+"visible to the public or only to all users of the Omeka S installation "
+"(not public)."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:123 e098ac377f4f4300b0ad0894f4c25f07
+msgid "*Open* sets can be edited and added to by any user on the install."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:125 52d74d8d5739480bae846eb993a7cb54
+msgid ""
+"*Closed* sets are available and editable only by its creator, site "
+"admins, and global admins."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:127 8a70b250715c4792a59bdd59cf04544e
+msgid ""
+"![a set which is open and public, with an open padlock icon and an icon "
+"of an open eye](contentfiles/setOpenPublic.png) Open and Public"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:129 a66bcc318bd24b529ae8e859829f4806
+msgid ""
+"![a set which is closed and private, with a closed padlock icon and  an "
+"icon of an eye with a slash through "
+"it](contentfiles/setClosedPrivate.png)  Closed and Private"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:131 7b604545fc504de0b0f3f75339e7fb9a
+msgid ""
+"Note that the public/private and open/closed settings operate "
+"independently - you can have an open and private item set, for example."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:133 f3f4d13aeb17491180f68ca5970ba8c8
+msgid "Edit an item set"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:134 ca0b7eaefae24cd1bc1b42f2877c5201
+msgid ""
+"Once you have created an item set, you can edit it at any time, either by"
+" clicking the edit icon (pencil button) or clicking on the item set's "
+"title and then clicking the Edit button in the upper right-hand corner of"
+" the screen."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:136 3b8f25c31dbb4001ab6e1d1183425314
+msgid "Options for editing an item set are the same as for creating an item set."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:138 d2d54a0155274862b7d75d8c67f887b5
+msgid ""
+"To cancel out of editing, click the Cancel button in the upper right "
+"corner, between the Delete and Save buttons."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:140 d311e39476dc49149be9c701797aa008
+msgid ""
+"![Detail view of the top row if information and buttons on an item edit "
+"view. A red arrow points to the Cancel button, on the far "
+"right](contentfiles/itemset_cancel.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:142 f7213ddaeac145fbab4c5f03da7f630b
+msgid "Batch Editing"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:144 8b206226de784a4da67f5ceb643ff50f
+msgid ""
+"From the browse page of item sets (admin/item-set) you can batch edit "
+"item sets, using the dropdown menu on the upper right near the \"Add new "
+"item set\" button. You can select multiple item sets using the checkboxes"
+" on the left of each set's row."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:146 b3fb97f43ba7419ea7b363cdc6641df1
+msgid ""
+"![A red arrow points to the dropdown for batch editing and deleting "
+"options](contentfiles/itemsets_batch.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:148 99cf3f2c95924479b361bf7b0b8f16c8
+msgid "Batch actions are as follows:"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:150 6fc5b3cb6f1944df9fe41d1a5b645b22
+msgid "Edit selected: edit only the item sets that are selected on the page"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:151 5b9d59957bb9441882a810a46c080f5f
+msgid ""
+"Edit all: edit all the item sets returned by a search (default is all "
+"item sets)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:152 1afd65ebf21e42ca9d0f552882e1060d
+msgid "Delete selected: delete only the item sets that are selected on the page"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:153 d69e5c8307f14964ab858ee4096084f0
+msgid ""
+"Delete all: delete all the item sets returned by a search (default is all"
+" item sets)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:155 9ceb3a006d8b4d1081d3a58a45b93e3a
+msgid "Choose one of these options and then click *Go*."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:157 727327f078e540bea7895f56f67f67ae
+msgid ""
+"**Batch editing** item sets takes you to a new page. The item sets being "
+"edited will display on the right side in a drawer, while the batch edit "
+"form gives you the following options:"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:159 8d77df587348445780107d797a4481df
+msgid "set visibility: a dropdown, select from public or not public."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:160 8d0766c0126048e89c4d66ebe10352b1
+msgid "set openness: a dropdown, select from open or not open."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:161 16b8e7fc853449f89dad32f1b3cdd35b
+msgid ""
+"set template: a dropdown, select from the installation's resource "
+"templates."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:162 68192907f083440dbc6f860cc0370ed3
+msgid "set class: a dropdown, select from classes of the installed vocabularies."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:163 3e993bae0da348d08618ddba2040c47b
+msgid ""
+"clear property values: a dropdown menu with all the properties in all "
+"vocabularies, selecting from this will remove any values in that property"
+" in the affected item sets. Clear additional properties using the *Clear "
+"another property* button."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:165 3b78268ac3574201ae380d489b4a7029
+msgid ""
+"![Batch edit items form, with options as described above. Everything is "
+"grayscale](contentfiles/itemsets_batchedit.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:167 5ffa966afc22441d84ab7fe89ddfc800
+msgid ""
+"In addition,  you can use the bottoms at the bottom of the batch edit "
+"form to add properties to every item set:"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:169 77398ab65eb74f9a8ea4fb9868dff601
+msgid "add text value"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:170 b0c28f16ed994eb396527aa96a95356e
+msgid "add resource value"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:171 1bfcd74d3f2f4fe786fc5ee3b34f2bf0
+msgid "add URI value"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:173 35aee975a4a04e88a519a89820d258fb
+msgid ""
+"Selecting any of these will add a block to the form where you can select "
+"a property from the installed vocabularies and enter the value for that "
+"property."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:175 019604786fd34dd0b48f276144da4ccd
+msgid ""
+"![Image depicts only the Add text value block of the batch edit form, "
+"with a dropdown labeled \"select property\" above an empty text "
+"field](contentfiles/itemsets_property.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:177 29190f1b59e341f4a27fb771bbdacb52
+msgid ""
+"For the **delete actions**, a drawer will open on the right side of the "
+"screen telling you the number of item sets which will be deleted. Nothing"
+" will be deleted unless you click the red *Confirm Delete* button. This "
+"action cannot be undone. To opt out of deleting the item sets, click the "
+"X in the upper right corner of the deletion drawer. To confirm delete, "
+"check the \"Are you sure\" checkbox and then click *Confirm Delete*. Note"
+" that deleting the item set will not delete the items associated with "
+"that set."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:179 c0e9dd94d37b4ac8b8cd7822df415c69
+msgid ""
+"![Close up of the warning, with the text describing the number of items "
+"to be deleted in red.](contentfiles/itemsets_bulkdelete.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:181 15bf061b5e26470ab40f15819a968e54
+msgid "Delete Item Set"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:182 8153c888d4e94e1cbf0c8229e0a46d59
+msgid ""
+"In addition to the batch delete function described above, you can also "
+"delete individual item sets."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:184 c0c0a0f1a31248bd9c1a91b65bb4e961
+msgid ""
+"Note that deleting item sets does not delete any items associated with "
+"the item set."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:186 4e17bdfba87f46b483c40a6182f65b09
+msgid ""
+"From the Item Set browse view, you can delete an item set by clicking the"
+" trash can icon in the row for the item set you want to delete. This will"
+" open a drawer on the right with a message at the top asking you to "
+"confirm that you want to delete the item set, with the metadata for the "
+"item set below the confirm delete button. Click *Confirm delete* to "
+"delete the item set, or close the drawer to cancel."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:188 462faf98cfc84f5084528d484e3a4065
+msgid ""
+"![Browse item sets view with two item sets and a red arrow pointing to "
+"the trash can icon](contentfiles/itemsets_browseDel.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:190 72d8546d219341038ffa18b40f173ae0
+msgid ""
+"![Drawer with a confirmation message to delete the an item set, including"
+" the Confirm delete button and the item set's basic descriptive metadata "
+"- title, description, and number of items in the set. "
+"](contentfiles/itemsets_browseDel2.png)"
+msgstr ""
+
+#: ../../docs/content/item-sets.md:193 35592824b8554520a6a500b3655930ca
+msgid ""
+"From the edit page for an Item Set, click the *Delete* button in the "
+"upper right-hand corner. This will open a drawer on the right side asking"
+" you to confirm that you want to delete the item set. Click *Confirm "
+"delete* to delete the item set, or close the drawer to cancel."
+msgstr ""
+
+#: ../../docs/content/item-sets.md:195 906be87a45584af8b7a5b757babb4bcd
+msgid ""
+"![Close up of the warning drawer, with text stating \"Are you sure you "
+"would like to delete this item set\" and below it a red button with white"
+" text stating \"Confirm delete\".](contentfiles/itemset-delete2.png)"
+msgstr ""
+

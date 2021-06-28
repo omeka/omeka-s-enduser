@@ -1,0 +1,378 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/content/vocabularies.md:1 c042ee2ce2ce4785a32493a2b02de621
+msgid "Vocabularies"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:3 42fdffa1965e46b992dcbe6e9b318cfd
+msgid ""
+"Vocabularies are a collection of published RDF metadata Classes and "
+"Properties for describing a Resource. These exist and are created "
+"externally to Omeka, and can be imported (with some limitations) into "
+"Omeka S for use throughout the Installation. The most-used Vocabulary is "
+"Dublin Core Terms (dcterms:)."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:5 5477f4fc3aa544cba13e7dd034657088
+msgid ""
+"Global and Site Administrators can manage their installation’s "
+"vocabularies from the *Vocabularies* tab on the left hand navigation of "
+"the Admin Dashboard. OmekaS comes pre-loaded with the following "
+"vocabularies: [Dublin Core](http://purl.org/dc/terms/); [Dublin Core "
+"Type](http://purl.org/dc/dcmitype/); [Bibliographic "
+"Ontology](http://purl.org/ontology/bibo/); and [Friend of a "
+"Friend](http://xmlns.com/foaf/0.1/)."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:7 792fbade0be44da89879e0fe9ec1db09
+msgid ""
+"This [screencast](https://vimeo.com/449764902) walks through managing and"
+" adding vocabularies. [ ![First frame of a Vimeo video showing the "
+"vocabularies interface](contentfiles/VocabsVideo-"
+"still.png)(https://vimeo.com/449764902)"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:10 840ea2be9d10457ba06f68f32a45236f
+msgid "Managing vocabularies"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:11 e7299d9d59f74d2f91196eba050c0a33
+msgid ""
+"The main view of the *Vocabularies* tab in the Admin Dashboard displays "
+"the existing vocabularies for the Omeka S install."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:13 8f88d65c6e914c8ebc2cd691d1ff33a8
+msgid ""
+"![Main view of vocabularies, with columns for label, prefix, classes, and"
+" properties counts and information](contentfiles/vocabularies.png)"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:15 172ff348ae754890bbb9b42891d52241
+msgid ""
+"Vocabularies are displayed in a table with headings for *Label* (name of "
+"vocabulary), *Prefix* (used by the database), *Classes* (number of "
+"classes in the vocabulary), and *Properties* (number of properties in the"
+" vocabulary). You can sort vocabularies by these columns using the up and"
+" down arrows at the right end of each column."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:17 f0b6d0fd418a4157bf747544045e4b1a
+msgid ""
+"You can use the icons at the right of the Label field to manage "
+"individual vocabularies. The edit icon (pencil) takes you to the edit "
+"page for that vocabulary, the delete icon (trash can) opens a sidebar to "
+"delete the vocabulary, and the details icon (ellipses) opens a sidebar "
+"with information about the vocabulary."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:19 8514fe433440454fa4b27fa263400b16
+msgid ""
+"When editing a vocabulary, you can make changes to the *label* and add "
+"*comments*."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:21 fbaa5da28c1e46719aeec85daab0c6b0
+msgid "Adding a vocabulary"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:22 04528bae76fe4f40b208e8e0f12c9f9f
+msgid ""
+"New vocabularies must be imported from an existing metadata standard "
+"source. In order to import a new vocabulary, you must have a vocabulary "
+"file or a stable link to a vocabulary."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:24 e9735d9f8ddf4394afb02ea505816128
+msgid ""
+"The New vocabulary page has three sections: Basic Info, File, and "
+"Advanced."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:26 3de0b0d84bcc4cee96aa6856835c3a20
+msgid ""
+"Note that you may have to research in order to find the prefix, namespace"
+" uri, and label for the vocabulary, as these are not standardized. In "
+"addition to the vocabulary's website, you might consult "
+"<http://lov.okfn.org/dataset/lov/vocabs>."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:28 88fbf9f8b9c1424c9952fc20ab00a35c
+msgid ""
+"After you have imported a vocabulary, you can use the Edit function to "
+"modify the vocabulary's Label and Comment, and to upload an updated "
+"vocabulary RDF file."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:30 a99dad461c8f42b8ae43b2d99f9bb8ad
+msgid "Basic info"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:31 a877f3b1cdba4cecac4e88ceac3abba3
+msgid "This section contains the basic information for the vocabulary"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:33 83b14b8d29dd40169ff5f0c74ea0bf07
+msgid ""
+"Label (required): the display name for the vocabulary in lists (ex "
+"\"Dublin Core,\" \"Friend of a Friend\""
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:34 2e9ab6b706ee4c9987b25c97342e6c73
+msgid "Comment: any comments you have."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:35 17a3602ec7a441229230148a99f1f12a
+msgid "Namespace uri (required): this should be provided by the vocabulary;"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:36 fa066ddd7d8540b7b7bd7ff25fed7aac
+msgid ""
+"Namespace prefix (required): This will display before the property, "
+"indicating which vocabulary (for example, the prefix for Dublin Core is "
+"dcterms)."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:38 a61620621e1e40bca5f99b996ee97d6c
+msgid ""
+"![New vocabulary basic settings, nothing "
+"entered](contentfiles/vocab_addBasicInfo.png)"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:40 8783fa8c3b8444bfb309cd9003c9193c
+msgid "File"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:41 5f68dfa48cd940c0b018d1f1d88b84bb
+msgid "This section deals with the file for the vocabulary."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:43 cc0d58b29a524711bdcbb9d1a3de1ff9
+msgid "Upload the file using your browser's file manager **or**"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:44 95b01faf0e864f179f3395dee0c2a37d
+msgid ""
+"Vocabulary URL: if not uploading a vocabulary file, enter the "
+"vocabulary's url here."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:45 e2b6e776ffa64e77b55c2e165f359a63
+msgid "File format: a dropdown, select from:"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:46 e81082f7957c428ea5f9f2079eff7477
+msgid "Autodetect"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:47 2ae1d02782a04e58bd21a3313a9a4841
+msgid "JSON-LD (.jsonld)"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:48 f8d5336d086a446cbbd2387266c37d9e
+msgid "N-Triples (.nt)"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:49 e3bbad7573ea4218b1da19b0642f10f0
+msgid "Notation3 (.n3)"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:50 dda05af4640e4f85a3c1214bd36333e0
+msgid "RDF/XML (.rdf)"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:51 9f0b51d2fb4646de973e056c8e180660
+msgid "Turtle (.ttl)"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:54 4bb7913c988a43aa896cbb91f6fec6bf
+msgid ""
+"![New vocabulary file settings, with no data entered and no file "
+"chosen](contentfiles/vocab_addFile.png)"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:56 80cc09efb0cf47bb96e1a39402806009
+msgid "Advanced"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:57 d99204c621ae480785c259cbd95c757e
+msgid "This section has advanced vocabulary settings"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:59 e2b6afbafebc4d43aff12c288e704e42
+msgid ""
+"Language: Enter the preferred language of the labels and comments using "
+"an IETF language tag."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:60 c06c0d22b3b34953b39b5299ff3e144c
+msgid ""
+"Label property: if this vocabulary uses an unconventional property for "
+"labels, enter the full property URI in angle brackets (`<`, `>`)in this "
+"field."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:61 2697713e462e4007a7e563c9898ddd59
+msgid ""
+"Comment property: if you are using the above label property, enter the "
+"corresponding property URI in angle brackets (`<`, `>`) in this field."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:63 468896a7396f47ae9f705974aafe0273
+msgid ""
+"![New vocabulary advanced settings, with no data "
+"entered](contentfiles/vocab_addAdvanced.png)"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:65 24ffe3c67c1244cf87f8893752148db6
+msgid "Editing a vocabulary"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:66 a384aa4fa6f64a8184cc80a11b04ca6e
+msgid ""
+"You can edit existing vocabularies by clicking the edit button (pencil "
+"icon) on the table of vocabularies."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:68 95cd452cf5b048c2b433b93292a82ea7
+msgid ""
+"You can also update the vocabulary by either uploading a new vocabulary "
+"file or entering the vocabulary url and saving changes. You will be able "
+"to review any changes when updating a vocabulary. If you decide you do "
+"not wish to save your changes, or click on the edit button by mistake, "
+"you can click the Cancel button next to the Save button."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:71 134965043cc04ee6afbdf6c2f802974e
+msgid ""
+"![Edit vocabulary page for OWL-Time "
+"Ontology.](contentfiles/vocab_edit.png)"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:73 23bd4ae11da94c74b4c3af4dcbd6aae0
+msgid "Vocabulary Import"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:74 60c94e0d9b2743cc9e425fa066cf8f08
+msgid ""
+"Omeka S will import properly formatted vocabularies/ontologies. "
+"rdfs:Class and rdfs:Property data will be available."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:76 0bbc56af997c4da58f854bbd62bc3d26
+msgid ""
+"For Web Ontology Language (OWL) data, Omeka S will store only the RDF/S "
+"super-Properties and -Classes. Omeka S does not enforce any declaration "
+"or inferencing rules from OWL. Thus, for example, an owl:Class is treated"
+" in Omeka S like an rdfs:Class."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:78 fbcc1333a6c84efb84b2fbe189ce42ec
+msgid ""
+"Similarly, the following are all treated only as rdfs:Property. OWL "
+"domains and ranges are also not enforced or stored."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:80 ../../docs/content/vocabularies.md:85
+#: b0548d769f484f2e9eab5c7e54459fc9 f6da4fbcae7449e5b356ccc453aaf2f5
+msgid "owl:ObjectProperty"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:81 ../../docs/content/vocabularies.md:86
+#: 023b9f1885dd40eabfaf7989602439e1 51957c539ac044048c762882c2f1aa14
+msgid "owl:DatatypeProperty"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:82 ../../docs/content/vocabularies.md:87
+#: 6c75db23537440b286d308b6a569ff68 e6446f5867fa4913abe96ac51b442252
+msgid "owl:SymmetricProperty"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:83 ../../docs/content/vocabularies.md:88
+#: 08085e402cf0486a98ad7c3b965a5354 5ffc5d779e9245868b355cca90df197c
+msgid "owl:TransitiveProperty"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:84 ../../docs/content/vocabularies.md:89
+#: 0ca8cdcae1984d2ab238bb350cdf61a1 58a1b34cb63f42f390afa2ed27d1dea6
+msgid "owl:FunctionalProperty"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:90 100ff30e76584adda9834344057281ab
+msgid "owl:InverseFunctionalProperty"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:92 a61d18f7ff9348339cbb59ad20482a4e
+msgid ""
+"For example, an imported ontology with an owl:ObjectProperty is not "
+"restricted to having objects that are URI’s: Omeka S will accept a "
+"Literal value without complaint."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:94 073be21ad52b4b66ae12bb03c5c0efaf
+msgid ""
+"It is up to the person entering metadata to adhere to the standards as "
+"best they can."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:96 13b0fcf0f2884c2c984264e2b0375c7f
+msgid "Deleting a vocabulary"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:97 426df738aecc473d800bc6723b89038f
+msgid ""
+"With the exception of Dublin Core and Dublin Core Type, you can delete "
+"any vocabulary from your Omeka S installation, either from the Vocabulary"
+" browse or the Vocabulary edit page."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:99 af5d89d5396d4b48be4e2fcf3a529930
+msgid ""
+"From the Vocabulary browse page, click the trash can/delete icon in the "
+"row for the vocabulary you want to delete (1). A drawer will open on the "
+"right side of the browser asking you to confirm that you want to delete "
+"the vocabulary (2). To delete, click the *Confirm delete* button, and to "
+"cancel, simply close the drawer."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:101 b371dff9e5f2474bb85e801c75d734bc
+msgid ""
+"![A view of the vocabularies browse page, with a drawer open on the left "
+"asking the user to confirm delete. There is a blue number 1 next to the "
+"trash can icon and a blue number 2 just to the left of the red \"Confirm "
+"delete\" button.](contentfiles/vocab-delete1.png)"
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:103 880a40402ca5462db3b3fafe44096768
+msgid ""
+"From the edit vocabulary page, you can click the large red *Delete* "
+"button in the upper right-hand corner of the page. This will open a "
+"drawer which will ask you to confirm the deletion. To delete, click the "
+"*Confirm delete* button, and to cancel, simply close the drawer."
+msgstr ""
+
+#: ../../docs/content/vocabularies.md:105 d7426b3e8f304ff9afeb18023546c770
+msgid ""
+"![Edit vocabulary page for \"Linked Gen. Data\". There is no data in the "
+"comments field. A red arrow points to a pale red button labelled "
+"\"Delete\"](contentfiles/vocab-delete2.png)"
+msgstr ""
+

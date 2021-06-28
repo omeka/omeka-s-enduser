@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: 2021-06-28 10:36+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Last-Translator: Julian Maurice <julian.maurice@biblibre.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.2.1\n"
+
+#: ../../index.rst:10
+msgid "Sites"
+msgstr "Sites"
+
+#: ../../index.rst:17
+msgid "Resources"
+msgstr "Ressources"
+
+#: ../../index.rst:24
+msgid "Admin"
+msgstr "Admin"
+
+#: ../../index.rst:31
+msgid "Modules"
+msgstr "Modules"
+
+#: ../../index.rst:2 cbb480058fc0454293d008ed32447cfc
+msgid "Welcome to Omeka S end user manual's documentation!"
+msgstr "Bienvenue dans la documentation Omeka S!"

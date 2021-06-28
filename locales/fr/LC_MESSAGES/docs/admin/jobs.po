@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/admin/jobs.md:1 bc737d17b7d1427bb02fd7807da8565b
+msgid "Jobs"
+msgstr ""
+
+#: ../../docs/admin/jobs.md:3 85b09a47eaff4ad0812b3a5d170f01b4
+msgid ""
+"When a user starts running a process which will take some time, such as "
+"an API import, the progress of the process is displayed in the *Jobs* tab"
+" of the admin dashboard.  The table also displays completed, stopped, and"
+" error-interrupted jobs."
+msgstr ""
+
+#: ../../docs/admin/jobs.md:5 00531563d55f4dd68c5d2cee6591bf2d
+msgid ""
+"The Jobs table shows a job’s *ID* number, *class* of job, *Status* and "
+"the *Owner*, or user who started the job."
+msgstr ""
+
+#: ../../docs/admin/jobs.md:7 987e8b15b8bc47a594125af9727c5247
+msgid ""
+"You can order the rows of the table by ID, Class, Status, or Owner "
+"(descending or ascending) using the drop-down menus just above the table "
+"on the upper right."
+msgstr ""
+
+#: ../../docs/admin/jobs.md:9 9990c78deb2a4437af47888d89721b53
+msgid "![Table of jobs including all status messages](adminfiles/jobstable.png)"
+msgstr ""
+
+#: ../../docs/admin/jobs.md:11 c451251baba4441189eabba51e5b98a2
+msgid "To see the details of a job, click on its id number."
+msgstr ""
+
+#: ../../docs/admin/jobs.md:13 3ab20091a2e84ba9beb6b3820b682b2b
+msgid "On a job’s details page, you will see the following information:"
+msgstr ""
+
+#: ../../docs/admin/jobs.md:15 cd02c6c99a664fb3a38d71732cb04f51
+msgid "*Status* (In Progress, Error, Completed, Stopped)"
+msgstr ""
+
+#: ../../docs/admin/jobs.md:16 4ec45a308de64fe1a4307b7a08aba101
+msgid "*Started* and *Ended* (date stamps)"
+msgstr ""
+
+#: ../../docs/admin/jobs.md:17 5368399152d24797bffea2c177d104e1
+msgid "*Class* (source of the job, for example `DspaceConnector\\Job\\Import`)"
+msgstr ""
+
+#: ../../docs/admin/jobs.md:18 4f90f9858d914c7d80b7bfcdf2d867e8
+msgid "*Owner*"
+msgstr ""
+
+#: ../../docs/admin/jobs.md:19 3ed4a223adc344e59c4fd8281da2a5b9
+msgid "*Args*"
+msgstr ""
+
+#: ../../docs/admin/jobs.md:20 c3c0163465494503958b0f2662cbb14c
+msgid "*Log* - click on *view log* to see any error or other messages."
+msgstr ""
+
+#: ../../docs/admin/jobs.md:22 8abff672c0054d09817876ee0af91d23
+msgid ""
+"![The Logs heading with “view logs” below in orange, indicating it is a "
+"link](adminfiles/jobs_viewlog.png)"
+msgstr ""
+

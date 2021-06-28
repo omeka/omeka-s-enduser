@@ -1,0 +1,888 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/modules/mapping.md:1 38412029145c491c93b26356f8b4ed2c
+msgid "Mapping"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:3 15e4f579f0994565ae4e68cf705a32f7
+msgid ""
+"Mapping is a [module](../modules/index.md) for Omeka S which allows you "
+"to geolocate Omeka S items and add interactive maps to [Site "
+"Pages](../sites/site_pages)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:5 74bf1ed69df04d0abcde3526bfe8a038
+msgid ""
+"To install Mapping, follow the instructions for [Installing "
+"Modules](../modules/index.md#installing-modules) on the Modules "
+"documentation."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:7 32f3badf77a941f590f93c3926ea8bc2
+msgid "Mapping is compatible with [CSV Import](../modules/csvimport.md)."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:9 257cb2d6530f40e5bf835fdc0e9e7d55
+msgid "Item Mapping"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:11 83267c0149844f56b20dc990143ff04d
+msgid ""
+"To add a map to a new or existing item, click to edit the item. Navigate "
+"to the  _Mapping_ tab to add a map to the item. Selecting the tab will "
+"open the map interface."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:13 5f1206588ca842f2abae65f516e0d7d7
+msgid ""
+"![Screenshot of the Add/Edit Item Page with Mapping tab selected. Large "
+"World Map with white buttons described "
+"below](../modules/modulesfiles/Mapping_Item_Add.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:15 0f157ce68cbb445e80310a6a4166c9be
+msgid "Manipulating the Map"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:16 fdfee2ea14634b7fb66d29021d872243
+msgid ""
+"Small white buttons on the left side of the map control and modify the "
+"appearance of the map. Hover over the buttons with the mouse to view "
+"tool-tips."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:18 1b6aa813aaa140c7885acad924957a9e
+msgid ""
+"![Screenshot of the buttons on the map described "
+"below](../modules/modulesfiles/Mapping_JustButtons.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:20 ca6c292c9709437991389f3cf3af16a4
+msgid ""
+"**Zoom in**: The small white square with a black plus sign. Each click "
+"zooms in one step."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:21 fc9263b4d92f43ca9ae71c154a367764
+msgid ""
+"**Zoom out**: The small white square with black minus sign. Each click "
+"zooms out one step."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:22 d7efbce9c03f4972ab2a1a872f1d528a
+msgid ""
+"**Draw a Marker**: The small white square with black bubble marker. When "
+"you click the button your pointer becomes a blue marker. Click again on "
+"the map to place the marker."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:23 14cecb53cc83476aa77f3d423b09a822
+msgid ""
+"**Move Marker**: The small white square with black box and pencil icon. "
+"This option is only available after a marker has been added. Click the "
+"button and a pink box appears around each marker. Click a marker to move "
+"it. Click again to place. Use the grey buttons to _Save_ or _Cancel_."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:24 fde750052e634897811fa700a42d64a1
+msgid ""
+"**Delete Marker**: The small white button with a trashcan icon. This "
+"option is only available after a marker has been added. Click the icon to"
+" select a marker. Click the marker to be removed and it will disappear. "
+"Use the grey buttons to _Save_ or _Cancel_ these changes."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:25 411b9ff220f44daca305d7b684ba5e4a
+msgid ""
+"**Search Address**: The small white square with a black magnifying glass "
+"icon. Click to enter an address in the search bar."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:26 8b4cc48f17674b46a016a8727f6183e5
+msgid ""
+"**Set the current view as default view**: The small white square with a "
+"target or crosshair symbol. The map will default to a zoomed out (global)"
+" view. Click to set the current view as the default view for this item."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:27 2542d09a9c854cc7bae31b0155a5f353
+msgid ""
+"**Go to current default view**: The small black square with a black box "
+"around a dot. The This option is only available after you have set a "
+"default view. Click to pan and zoom map to the selected view for this "
+"item."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:28 d0ed336f94ab4251929a5026b23fa2a0
+msgid ""
+"**Clear the default center and zoom level**: The small white square with "
+"a black \"X\". This option is only available after you have set a default"
+" view. Click to clear pan and zoom preferences and return to the initial "
+"global view."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:30 f3c6c9162f3241d2a3ed31f33bea6097
+msgid ""
+"In addition to these options, you can also navigate the map using your "
+"mouse or trackpad by scrolling to zoom and clicking and dragging to pan."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:32 7c3fd5f49f8743dd9bc25be22baab431
+msgid "Adding locations to an item"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:33 39cd39b994264f3c9df4048c80ed9013
+msgid "In order to add a location to an item, go to the Mapping tab."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:35 e77c15b821af41c8bae96705259751f8
+msgid ""
+"To find the point where you want to locate the marker, you can do one of "
+"the following:"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:37 755191c788714f5781b47e75b3d57e63
+msgid "Zoom and drag to find the location."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:38 b657a7926bd04213b302d151dbfb7d8f
+msgid "Type the place name into the Search Address field (see Figure 4 below)."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:39 af106b9820a445f788794dd0e6fdd46c
+msgid ""
+"Note that this will populate as you type, and will not search locations "
+"which do not match the formatting of the search function."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:40 6f700066110249e1bec2b4533e630433
+msgid ""
+"Enter latitude and longitude coordinates into the search box. These "
+"should be formatted as decimals, for example `38.897222, -77.064167`, not"
+" `38° 53′ 50″ N, 77° 3′ 51″ W`"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:42 998cd643e36349c3bd9d4f796fdd00ed
+msgid ""
+"![Mapping tab with a search for \"Roosevelt Island\" in the search view. "
+"Below the search field are a number of suggested "
+"locations.](../modules/modulesfiles/Mapping_itemSearch.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:44 b2cb34baed3e4195a4d89e0312572e90
+msgid ""
+"Click on the *Draw a Marker* tool in the right hand toolbar. Your cursor "
+"will become a marker which can move around the map. To set the point, "
+"click on the map."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:46 fb3221bd092d43e68a5f91a3bf84b1de
+msgid ""
+"![Mapping tab with an active marker being drawn. The marker has a tooltip"
+" saying \"click map to place marker\"](../modules/modulesfiles/Mapping-"
+"drawMarker.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:48 4e4822121fb443f0999f04c8aeb5250c
+msgid ""
+"You can now click on the marker to add a label which will display on "
+"[public map views](#public-view) of the item. Be aware that this will "
+"display in a large font."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:50 270a3691062f483ab14f0fdb611413d8
+msgid ""
+"![Close up of map with a marker selected. There is a field to enter the "
+"maker label.](../modules/modulesfiles/Mapping-addLabel.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:52 15b25fabcf9c4359942ac9146a2a34b0
+msgid ""
+"When you are adding a label, you can also add an image to display on the "
+"marker when clicked in the [public view](../modules/mapping/#public-"
+"view). You can only select from images which has already been [attached "
+"to the item as media](../content/items/#media). To remove the image, "
+"select \"no Image\" from the sidebar."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:54 c5e91f7bfb344defbeba94656f818221
+msgid ""
+"![Marker selected with Image added. The media is also visible in the "
+"sidebar, along with an option for \"no image\"](../modules/modulesfiles"
+"/Mapping-addImage.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:56 0a8af1beb74c4fd3a1892c317b0796fc
+msgid "Editing markers"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:57 5d59eecaa31143e7a6f76bce6a9ba1f7
+msgid ""
+"To edit the label or image, simply click on the marker. This will open "
+"the options for the label and image, as seen above."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:59 489e6e6ba498448fb2c751866caf41f4
+msgid ""
+"To **move a marker** you have added, use the \"Move marker\" button on "
+"the left hand toolbar (small white square with black box and pencil "
+"icon). Any marker on the map will become highlighted in a red, dotted-"
+"line outline. Click and drag the marker you want to move."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:61 7d3ded10e8024e0cb4778393a9fb2125
+msgid ""
+"To apply your changes, click the \"Save\" option which opens from the "
+"\"Move marker\" button. To cancel the changes, click \"Cancel.\" If you "
+"do not click save, the marker will not be moved."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:63 75130e75ad4f4890b3ffbd75dc13658d
+msgid "![Marker being moved](../modules/modulesfiles/Mapping-moveMarker.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:65 363e1cc7846e42b0be8cd6a073e8365b
+msgid ""
+"To **delete a marker**, first click the \"Delete a marker\" in the left "
+"hand toolbar (trash can icon). Click on the marker you want to delete; "
+"this will remove the marker from the map. In order to make the deletion "
+"permanent, you must click Save in the menu which opens from the \"Delete "
+"a marker\" button."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:67 41a116dda8264fcb865be4c75d8732c6
+msgid ""
+"Note that you can use the \"clear all\" button in the menu which opens "
+"form the \"delete a marker\" button to clear all markers on the map."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:69 aa15ab9f36814ee4af4a3ef2997ee986
+msgid "![Marker being deleted.](../modules/modulesfiles/Mapping-deleteMarker.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:71 9ab49f785e2443589656a3d308752fe0
+msgid "Adding Map blocks to a site"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:72 c27b8c08fd774e4f81239856124aa639
+msgid ""
+"There are two kinds of Mapping blocks which you can add to your site: Map"
+" by attachments, where you manually add resources to the map block; and "
+"Map by query, which allows you to use a search string to add resources to"
+" the map block."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:74 8e6943b152bb4a519e1acdd877c63520
+msgid ""
+"To add a map to a new or existing page, click to edit the page. On the "
+"right, under _Add New Block_ , click the  _Map_ tab to add a map to the "
+"item (1). Selecting the tab will open the map block to the page (2). This"
+" block includes customizable features for the map in collapsable panes. "
+"Click the triangle to expand or collapse these fields (3)."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:76 ac7d6ca2ac6b4fd4bb3122b6c1298691
+msgid ""
+"![Screenshot of the Page with Map Block selected. Block includes menu "
+"options Default View, WMS Overlays and "
+"attachments.](../modules/modulesfiles/Mapping_Page_MapBlock1.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:78 0c5ca166d28f4a1eafb1a1bb6715be5a
+msgid ""
+"The *Map by attachments* and *Map by query* blocks have largely the same "
+"settings, with the exception of the final option."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:80 ec912af1118c4e74b4a9b2d2ec191f43
+msgid "Default View"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:81 ac31e8e4f41e445787cae6f453f823a4
+msgid ""
+"This section lets you set the appearance and zoom level of the map. There"
+" are three fields and a preview map. Within the preview map are buttons "
+"which you can use to set the default zoom and location of the map. If you"
+" do not set a default zoom or location, the map will adjust to display "
+"all resources."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:83 ae949eafb62244a5baf85e063907a404
+msgid ""
+"![Map by attachments block open to Default Settings. There is no "
+"information in any field, and the preview map is zoomed in to level "
+"2](../modules/modulesfiles/mappingBlockDefaultView1.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:85 7f7a831eb4b04f91ad7c1b05827ab081
+msgid ""
+"*Basemap provider:* select from a dropdown of basemaps. Once selected, "
+"the preview map will update to show you the appearance of that map. The "
+"default is OpenStreetMap.Mapnik."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:87 40ea051d23d64a21801bbda2ae23e1f5
+msgid ""
+"Minimum zoom level:* set the minimum zoom for the map. Fully zoomed out "
+"is 0."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:89 7305562c184a4f64af4eb3d45741fbdc
+msgid ""
+"Maximum zoom level: set the maximum possible zoom level. The highest is "
+"19. Some basemaps do not function at higher levels; you will want to "
+"check to be sure you set your maximum at a level where you basemap is "
+"visible."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:91 49a5c0dd88734e06be282c1747629124
+msgid ""
+"Between the fields and the preview map is a message which tells you the "
+"current zoom level, as you zoom using the plus and minus buttons on the "
+"preview map or the scroll on your comptuer. Use this to help you "
+"determine where you want to set your minimum and maximum zoom levels."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:93 ba5a8a4deaa8496e9d5bc87adbd81dd9
+msgid "Within the preview map, there are five buttons:"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:95 0703df44ef824d958a4faba22fece50f
+msgid ""
+"*Zoom in:* The small white square with a black plus sign. Each click "
+"zooms in one step."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:96 5972e143de0a4283b7b007b4b0b7e0fe
+msgid ""
+"*Zoom out:* The small white square with black minus sign. Each click "
+"zooms out one step."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:97 d970bca96e2b432f8242dbc8f0679a6b
+msgid ""
+"*Set the current view as default view:* The small white square with a "
+"target or crosshair symbol. The map will default to a global view. Click "
+"to set the current view as the default view."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:98 ca0c74b8287446e19e1a6accb7e1d1d1
+msgid ""
+"*Go to current default view:* The small black square with a black box "
+"around a dot. This option is only available after a default view has been"
+" set. Click to pan and zoom map to the selected view."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:99 6e06d5b046874750af6b426a15228ad5
+msgid ""
+"*Clear the default center and zoom level:* The small white square with a "
+"black \"X\". Click to clear pan and zoom preferences and return to the "
+"initial global view."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:101 b852f4d5013c4c8887d709e9e6a74165
+msgid ""
+"![closeup of the mapping buttons with labels "
+"added](../modules/modulesfiles/mappingBlockDefMapButtons.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:103 c3bbac0739e347b7afd20031bca30f95
+msgid "WMS Overlays"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:105 2373195c45694bdfb697abaed6a13398
+msgid ""
+"Add, edit, and delete [Web Map Service "
+"(WMS)](https://mapserver.org/ogc/wms_server.html) overlays."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:107 152471fcc2ac4f7f8884846cd5d54919
+msgid ""
+"*Label:* Create a unique, descriptive label for the map overlay. This "
+"will be visible to visitors and should be used to differentiate between "
+"overlays."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:108 fe0850743ca748068a11cabd2b038ea6
+msgid "*Base URL:* Add a URL to the WMS map."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:109 6e18e7024ae74b71add95c3aee0b3dd9
+msgid "*Layers:* Any layers you wish to use, separated by commas."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:110 672845db57dd43b88af58f5fb880b1e5
+msgid "*Styles:* Any styles you wish to use, separated by commas."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:112 9d64ef5b0fdf42dba01d0be599dcb6d1
+msgid ""
+"Click Add Overlay to create the overlay. Click _Clear Inputs_ to clear "
+"each of the fields. Multiple overlays can be added."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:114 2e02e8ac8f9e4af0b67431bfbe8d0df1
+msgid ""
+"![Map page block with only the WMS Overlays section open. All of the "
+"mentioned fields are "
+"empty](../modules/modulesfiles/Mapping_Page_Overlays.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:116 5828543b4adc41eaa522beda7561e9f0
+msgid ""
+"Once you have added an overlay, it will appear above the fields for "
+"adding overlays."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:118 263fc4d13b5c47f2949dd6ff4d592525
+msgid ""
+"Choose a default overlay by checking the box next to it. Edit an overlay "
+"by clicking on on the red pencil edit button, or click the red trashcan "
+"icon to delete the overlay."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:120 a14881a1758c428a858b4c162b464e14
+msgid ""
+"![Screenshot of the WMS Overlays with empty fields and the US and "
+"Territories overlay above the fields. A blue arrow points to the "
+"overlay](../modules/modulesfiles/Mapping_Page_Overlays2.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:122 6d8f343c3b28461a89972cc55faf5ba6
+msgid "Timeline"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:123 0237b4292fe84b4584b3abbb31de1664
+msgid ""
+"Timeline adds a timeline display to the left of the map view. Note that "
+"this feature requires the "
+"[NumericDataTypes](../modules/numericdatatypes/) module and at least one "
+"item that has a property with a Timestamp or Interval value (applied via "
+"the [resource template](../../content/resource-template/))."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:125 af6d72370e5b4e67ade13ce56f6e41db
+msgid ""
+"*Title headline:* displays on the first slide of the timeline (see "
+"[\"Timeline public view\"](../../modules/mapping/#timeline-public-view) "
+"below). You can use this to name the timeline."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:126 2567f147227840e18b0531874e05547f
+msgid ""
+"*Title text:* appears below the title headline on the first slide of the "
+"timeline (see [\"Timeline public view\"](../../modules/mapping/#timeline-"
+"public-view) below). You can use this to provide context or narrative "
+"introduction for the timeline."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:127 3d139eb06f7b46c490b344e12bc74d7f
+msgid ""
+"*Fly to:* is a dropdown menu where you can set the zoom level for each "
+"point in the timeline on the map. Your options are default view, or zoom "
+"levels 0-18 (even numbers only). The higher the number, the more zoomed "
+"in the map will be."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:128 91653187af0a4bbe9ae1840fc5371de9
+msgid ""
+"Note that the transition between points is animated, so if you have very "
+"distant points the shift between them will involve a significant zoom out"
+" and in."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:129 8122112df6974543a6c812124457f867
+msgid ""
+"*Show contemporaneous events:* sets how two events with the same "
+"timestamp or interval are displayed. If checked, contemporaneous events "
+"will both display in the map when active in the story slider."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:130 b6a281a7f1804ac2a81d615dcb570546
+msgid ""
+"For timestamp properties, if two events have a date of \"1 January "
+"2000,\" both events will show on the map when either is in the story "
+"slider."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:131 e8f11b60ace844308b46e2a81a22bdf5
+msgid ""
+"For interval properties, if one event has an interval of \"28 July 1914 -"
+" 11 November 1918\" and another has an interval of \"January 1819- "
+"December 1920\" both events will show on the map when either is in the "
+"story slider."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:132 42755609740d4893a0eb8b282e2fe2b8
+msgid ""
+"Note that this setting only works with the default view of Timeline "
+"navigation position."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:133 eafac180277e48f187f187022abf0122
+msgid ""
+"*Timeline navigation position:* by default, the timeline displays with "
+"the story slider, to the left of the map. Using this dropdown, you can "
+"change where the story slider displays. Options are:"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:134 02168b8ce7c343fda3e2af76d47a8427
+msgid "Default position"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:135 8c8e0eca2f71437ea63c9912536668bc
+msgid "Full width, below story slider and map"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:136 9a4b99a84bcf41d78f3d53c02e8ff91c
+msgid "Full width, above story slider and map"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:137 c0382518b8894572b2f2d11c24083c87
+msgid ""
+"*Property:* a dropdown menu; select the timestamp or interval property to"
+" use when populating the timeline. The dropdown menu will populate with "
+"the properties which have been defined in a resource type as using "
+"numeric data types Interval or Timestamp."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:138 f0c30794f6de45d6abcf43a793814d46
+msgid ""
+"You may want to make a note of which property and numeric data type you "
+"are using before creating the map block. The dropdown only displays the "
+"term and data type but not which template it is associated with, for "
+"example `Date Created (numeric:timestamp)`."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:139 9646d51930114f399c10320976e5cbea
+msgid ""
+"Noted that you can only select *one* property per timeline. You cannot "
+"mix timestamp and interval data."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:141 c8f274b0a58f4347ab50b7c145fe90f3
+msgid ""
+"![Mapping block with all options collapsed except Timeline, which shows "
+"options as described, all empty](../modules/modulesfiles/mapping-"
+"timelineBlock.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:143 61c7bf95c4f6443a953b3edff165c6e6
+msgid ""
+"To remove the timeline from a map block, click the X on the far right of "
+"the Property dropdown."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:145 8eaff011060c4d2e8a6c411e7f32b5fc
+msgid ""
+"To see how the various settings of the timeline block appear on the "
+"public side, please see the [Timeline Public View](#timeline-public-view)"
+" section below."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:147 4e7e547d576043e68f7b339aa5cb2c08
+msgid "Attachments (Map by attachments block)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:149 4ed88b4d90514d62afa2f3091670e7ae
+msgid "Markers are added to the map using _Items_."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:151 454d32f1bd86466da4412ce4de13f648
+msgid ""
+"Click _Add Attachment_  (1) to select them from a list on the right (2). "
+"Note: This list will only be populated by items that have at least one "
+"location added to them (when editing the item)."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:152 8ceed785ee394175a59df9a4dc83e50e
+msgid "Clicking an item adds it to a list in the Attachments pane (3)."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:153 c26b2205326d4ceba5c7f7064d27f792
+msgid "Click and drag items in this list to reorder them."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:154 50cb6e6c520d499d9faef7328102723e
+msgid "Delete items by clicking the red trashcan."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:156 71235e2e5d5c4bb3801d763b462ecd6d
+msgid ""
+"![Screenshot of the map with Add Attachment selected. On the right a list"
+" of items.](../modules/modulesfiles/Mapping_pageAttachments.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:158 079d8f68fd3a4c08baa51058d6e1a2a1
+msgid ""
+"To add multiple items at once, click the \"quick add\" slider just above "
+"the list of items in the right hand drawer. This will add a checkbox to "
+"the left of each item. Check the boxes of those items you want to add to "
+"the map, then click the \"Add selected\" button at the bottom of the "
+"drawer."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:160 88b20e39814f4d039a44bd2698c0e6a9
+msgid ""
+"![Drawer with bulk add option activated](../modules/modulesfiles/Mapping-"
+"bulkAttachments.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:162 c5b2f05e329f4caeac77312b47310762
+msgid "Query (Map by query)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:163 04459925ee4c483d83b8b3451b21552e
+msgid ""
+"In order to use this block, you will need to run a query, or search, in "
+"your items. From the search results page, copy everything in your "
+"browser's address bar starting with the question mark all the way to the "
+"end of the search url (to the right)."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:165 d171f2e6994a43f89f823f683236108d
+msgid ""
+"![The address bar and very top of a search results "
+"page.](../sites/sitesfiles/sitespg_bpquery.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:167 dacd3d9e27814a76b359e214dc572305
+msgid ""
+"Paste the query string into the Query field in the Map by query block. "
+"Note that at no point will items display on the admin side. You will need"
+" to go to the public view to see the items which result from your query."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:169 5071b2829cdf41c68595a00c3cbce15d
+msgid ""
+"![A map by query block open to the Query section. There is a query pasted"
+" into the field.](../modules/modulesfiles/mapping-blockQuery.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:171 4f56a71327fb4752b154a7cf3e602e2e
+msgid "Public view"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:172 21291c49a5a54d2fbc032605321dedfa
+msgid ""
+"A map block will display on a public page at full page width. If you have"
+" settings in the [default view](#default-view) of the block, these should"
+" be applied. Otherwise the block will zoom so that all of the items are "
+"visible."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:174 8ce63933a5634d45b119cee71deb4aa7
+msgid ""
+"Viewers can zoom either using the scroll function of their computer or "
+"the Zoom in/out buttons on the left side of the map."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:176 20fecbb296174bae9c76afd71a2f3e2b
+msgid ""
+"![Map block with three individual markers and two green cluster circles "
+"of two markers. The map shows a portion of southern "
+"England.](../modules/modulesfiles/mapping-public.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:178 19460cf8b103460d8733d65a7c02de5d
+msgid ""
+"Each item will display as a marker on the map. Markers which are close "
+"together will display as a cluster circle, with a number indicating how "
+"many items share that location. As you zoom in, these clusters may break "
+"open."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:180 b85b412b86104089a96a30f38dd9693b
+msgid ""
+"Clicking on a marker will open a label for that marker. If you have not "
+"added a label or image for the marker, it will simply say \"view item.\" "
+"If you have added a label, it will show the label, as well as "
+"representative media and a link to the media if the marker has one."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:182 6b76e91b088749fdb64513461b032113
+msgid ""
+"Item mapping marker with label only: ![](../modules/modulesfiles/mapping-"
+"publicLabel.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:185 737ee1ef64684666b0451192ccd26b73
+msgid ""
+"Item mapping marker with label and image: ![](../modules/modulesfiles"
+"/mapping-publicLabelImg.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:188 ffa39d29adb84992b9906d227efe43b9
+msgid ""
+"Item mapping marker with no label or image:  ![](../modules/modulesfiles"
+"/mapping-publicNoLabel.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:191 297fe5387dc44840bbbd329ae357ed0a
+msgid "Timeline Public view"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:192 a5f3a7b41a9c4d43a0998e26657c6f1d
+msgid ""
+"On the public side, the timeline will display to the left of the map, or "
+"above the map on mobile views. Each item appears on both the map and the "
+"timeline."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:194 64d9f55ff1b94fea8c96ca598f57dd21
+msgid ""
+"On a map block with timeline, the block initially loads with the map "
+"either at default view or zoomed to display all markers. The timeline "
+"will display the title headline and text, as seen below:"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:196 79bf909a8e6f4728b4a8c27942b20954
+msgid ""
+"![Map block with timeline, displaying the first slide of the timeline. "
+"There are two lines of text, a larger font reading \"Title Headline\" and"
+" below it smaller font reading \"title text\".](../modules/modulesfiles"
+"/mapping-timelinePublic1.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:198 d48352d38563418c92b46466c93f71ba
+msgid ""
+"In the timeline half of the display, information appears on the top and "
+"the timeline on the bottom. The timeline viewer has zoom buttons which "
+"increase or decrease the horizontal display of time (zoom in for year by "
+"year, zoom out to see decades at once). The arrow below them returns the "
+"viewer to the title slide."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:200 5a529da3c9a24a6b985f4df3959f14b2
+msgid ""
+"When mousing over the timeline, the cursor changes to a four-directional "
+"arrow. Viewers can hold and drag left and right to scroll through the "
+"timeline. They can also navigate between items using the semi-opaque "
+"right and left arrows on the information area of the display."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:202 29127fd62b22443d812736b7005e39a2
+msgid ""
+"Clicking on a maker will display that item's date or interval, title, "
+"description, and attached image. The information area has a scroll bar "
+"for longer material. The title acts as a link to the item's show page."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:204 27bee86a7d6a4882955fe4356ddf4b36
+msgid ""
+"![Map block with timeline, displaying the interval item \"Steventon "
+"Rectory, 1775-1801\". The information area includes the beginning of a "
+"long paragraph describing the item. The marker for the rectory in the "
+"timeline runs off the right side of the timeline, which displays "
+"1760-1800.](../modules/modulesfiles/mapping-timelinePublic2.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:206 12a74fc7b40a4aaa86cc3ace67de848d
+msgid ""
+"Whenever an item is selected, its marker in the timeline will show up "
+"with a highlight to indicate that it is active."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:208 057035348fb747a18c5a9aee0b85010e
+msgid ""
+"**Numeric:Interval appearance** Interval properties display as a long bar"
+" running horizontally across the timeline, with bars reaching down to the"
+" timeline at the start and end dates of the interval. Overlapping "
+"intervals will stack."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:211 76123322be44431f980261a98fa455a7
+msgid ""
+"![Interval timeline with both Steventon Rectory and Reading Abbey Girls' "
+"School. The latter is open and highlighted in the timeline display; it is"
+" shorter than and nested under the timeline display for the "
+"Rectory.](../modules/modulesfiles/mapping-timelinePublic3.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:213 40035fcdd6234c06ad0d36630771559a
+msgid ""
+"**Numeric:Timestamp appearance** Timestamp properties display as a flag "
+"on the timeline, with one bar anchoring them to the timeline. Items which"
+" overlap either due to date or long text will stack."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:216 09c5704001ea422180eeef6d1727c8c9
+msgid ""
+"![Timestamp timeline showing markers for the births of Cassandra and Jane"
+" Austen in the 1770s](../modules/modulesfiles/mapping-"
+"timelinePublic4.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:218 ca805cf760924c13b596064d6fe6a26f
+msgid ""
+"**Timeline navigation position** If you select \"full width, below story "
+"slider and map\" in the \"Timeline navigation position\" dropdown, the "
+"timeline and map will display as follows:"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:221 883f1c4dd16b411a99a6971ae524a0d8
+msgid ""
+"![Timeline start page slide, with the timeline displaying full width "
+"below the map and story slider](../modules/modulesfiles/mapping-"
+"timelinePublicBelow.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:223 b8a330cc86fa40f8968a75b4c4ffb41e
+msgid ""
+"If you select \"full width, above story slider and map\", the display "
+"will be similar but with the timeline above."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:225 da35303761bd4c5295a0e3459d94b336
+msgid ""
+"**Show contemporaneous events** When \"show contemporaneous events\" is "
+"checked, the map zooms to display all events which take place on the same"
+" day."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:228 3838f9d82ac44ac29f0e9a628607159d
+msgid ""
+"In the image below, the timeline is using interval data. The event "
+"\"Reading Abbey Girls' School\" (March 1785 - December 1786) takes place "
+"within the same period as \"Steventon Rectory\" (1775-1801), so the map "
+"is zoomed out to display the location markers for both events."
+msgstr ""
+
+#: ../../docs/modules/mapping.md:230 701de8e742b140c8a5f0073b957001a9
+msgid ""
+"![image as described](../modules/modulesfiles/mapping-"
+"timelinePublicSCE.png)"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:232 5dc0bc73ac174c0dabe428310a42ddaa
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../docs/modules/mapping.md:233 998d139516794257b3215f1b05d06c44
+msgid ""
+"If you would like to remove the mapping location from an item, you must "
+"delete all the map modifications. First, click to delete each marker "
+"(click the Delete a Marker button, select the marker, click to save) and "
+"then click to clear the default center and zoom level (click the Clear "
+"the default and zoom level button. The map will return to a global view)."
+" Click to save the item and confirm that the map no longer appears."
+msgstr ""
+

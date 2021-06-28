@@ -1,0 +1,1708 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/modules/csvimport.md:1 22a754f812b6496480202d7988a5f5aa
+msgid "CSV Import"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:3 7be5f865226541ee91363d3fbc1cdba4
+msgid ""
+"The CSV Import module allows you to import items or users into your Omeka"
+" S install from a csv (comma separated values), tsv (tab-separated "
+"values) or odf (open document format) file."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:5 232347ae0cc04654bd721201f30ef375
+msgid "Please note that an import must have a specific import type."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:7 130b3dbabecd4214ba67428cb51e9914
+msgid "Preparing your CSV file"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:9 d37fbaf6de304e6d992ebc2bc9d8af6d
+msgid ""
+"Most spreadsheet editors (including Microsoft Excel, Google Sheets, and "
+"Apple Numbers) can export to csv format."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:11 71997a58c48d4db9beb64f5344954083
+msgid ""
+"CSV files for import must be encoded in UTF-8, so when exporting or "
+"saving a new document, be sure to check that the encoding is UTF-8."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:13 30d82bea8a0e4e0c916553e91d409f6b
+msgid ""
+"If the spreadsheet is already created, take a moment to think about which"
+" columns you want to match to which vocabulary properties."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:15 81fccb82293b42d282f2bb5a7ada3757
+msgid ""
+"*Note* Your csv file *must have a header row* in order for the module to "
+"process it correctly."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:17 4dd18032830f44ff821916e25bb03c2d
+msgid ""
+"If you have multiple inputs for a single property, you can separate them "
+"with a secondary *multivalue separator*. For example, a work with "
+"multiple authors (E.B. White and William Strunk Jr.) with the column for "
+"Creator containing \"E.B. White; William Strunk Jr\" has a semicolon (;) "
+"as the multivalue separator. When imported into Omeka S, each of these "
+"would appear as a separate entry in the property (Creator: E.B. White and"
+" Creator: William Strunk Jr.)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:19 92a1d107cd484567a99bdbfad80141c9
+msgid "Automapping"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:20 1bb551c3b21d43b7a58e67d8601a7066
+msgid ""
+"The module will automatically automap column headers if they conform to "
+"the property terms of your installation's "
+"[vocabularies](../content/vocabularies.md). For example, a CSV file with "
+"a column header \"dcterms:title\" would automap to the Dublin Core Title "
+"property when the CSV is loaded for mapping."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:22 1e59b84424df41c389a284c6a22d32ae
+msgid ""
+"To find the terms you should use for your column headers, go to the "
+"Vocabularies tab from the admin dashboard. Click on the number of "
+"properties for the vocabulary you want to use (Dublin Core in the image "
+"below)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:24 3b95736253a9485cbc66338245dfd2ab
+msgid ""
+"![Red arrow points to the properties link for Dublin "
+"Core](../modules/modulesfiles/csv_automap1.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:26 6d17eb3ca83d43548beb646c60addb95
+msgid ""
+"In the table of vocabulary properties, there is a column for *Term*. Use "
+"the Term for the property you want to automap in the CSV Import. For "
+"example, \"dcterms:abstract\" would automap to the Dublin Core property "
+"\"Absract\" and \"foaf:firstName\" would automap to the Friend of a "
+"Friend property \"firstName\""
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:28 b513b2ec952b4629b037fa0837f0a3bb
+msgid ""
+"![arrow points to the Term column for Dublin Core "
+"properties.](../modules/modulesfiles/csv_automap2.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:30 9b7a53fa37204c568a2b811c2d0af82a
+msgid ""
+"In addition, there is a setting in the inital import settings to automap "
+"with simple labels - this will work with columns whose names match a "
+"vocabulary label, for example \"Title\" or \"date\". Note that this "
+"option defaults to Dublin Core before proceeding through other installed "
+"vocabularies."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:32 069bc95edae6448da3af1f44d7334ba7
+msgid "Initial Import Settings"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:34 80f019735a6b4db6b33e06a50910b2ba
+msgid ""
+"Start an import by clicking on the CSV Importer tab on the left-hand "
+"navigation. This will open the initial Import Settings page."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:36 e748e6df0bb34ba3b7f0215386e3b826
+msgid ""
+"![A red arrow points to CSV Importer in the "
+"navigation](../modules/modulesfiles/csvimport_nav.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:38 b5986dbd11084f578b7145bac57c753e
+msgid ""
+"For the Spreadsheet option, use the *Choose File* button to select the "
+"file from your computer."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:39 669a90cabe92424e8b2b92cdab26c000
+msgid ""
+"From the *CSV Column delimiter* dropdown, choose from the following "
+"options (this should match the formatting of your file)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:40 381d44a90a1b40cab9f18a2d109abe91
+msgid "comma (default)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:41 142fbb0e18674b99ae62e7c56e25866b
+msgid "semi-colon"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:42 b31e8573a63440a7aa20277838ec65f1
+msgid "colon"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:43 4fa05422d37942d4a783a7a730435b67
+msgid "tabulation"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:44 de145d8668f7408789a66ede1ace3850
+msgid "carriage return"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:45 cd70850e540c4197a4d62c4378cfec8c
+msgid "space"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:46 f3e6e36ec2494d2ab42c87261196bce0
+msgid "pipe"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:48 e35f682e2cd14730a939e4b11baf2196
+msgid ""
+"From the *CSV column enclosure* dropdown, choose the option which "
+"encloses long text in your file:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:49 cfb6c0a4bf14429c95e39936f6198d2e
+msgid "double quote (default)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:50 7441b2f46e754eff9d0dfcd7c52e8b24
+msgid "quote"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:51 6952952fba4143d2b207b6828a2586d3
+msgid "hash"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:53 54a1cac1fd5c4125b47f6890e8d9f937
+msgid "From the *Import Type* dropdown, select what you are importing:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:54 a5f50e290e274d30a05c46fbb7c57f78
+msgid "Item Sets"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:55 7be735d7ecac45089bd6bf9f6fd08141
+msgid "Items"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:56 905c082cd3e34a70a77b785fbc20c8bc
+msgid "Media (must relate to already existing Items)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:57 8259c07396924347b9a0427842d7bc6b
+msgid "Mixed resources (spreadsheet can inlcude Item Sets, Items, and Media)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:58 1034bd83c5674cf9926bc581df55eb3f
+msgid "Users"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:60 aaeed8f332c048e98a30b19716dcb7ba
+msgid ""
+"Check the box to *Automap with simple labels.* This will automap not only"
+" specially formatted column headings but also column headings which match"
+" existing vocabulary property labels. Note that this option defaults to "
+"Dublin Core before proceeding through other installed vocabularies."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:62 030f8f19106b425eb7456bfe1662420f
+msgid ""
+"Comments are useful as they appear on the \"Past Imports\" page; make a "
+"note about what is being imported and any settings you may have on this "
+"page."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:64 d5c2e8a4614a47c486bedf21fb48e90d
+msgid ""
+"![Import settings as described, no "
+"entries](../modules/modulesfiles/csvimport_settings.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:66 8e681a5472534109971248f96f3a9440
+msgid "Click the *next* button to continue with the import process."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:68 d9e0a5ead2b946608a96339625dfac09
+msgid "Import Items"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:69 6fe80204b72f41d5a05c6f57e8f2e1b4
+msgid ""
+"To import items, select \"Items\" under the \"Import type\" on the first "
+"page."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:71 ../../docs/modules/csvimport.md:209
+#: ../../docs/modules/csvimport.md:338 871a7a667779446b96bda56f22b33a22
+#: a17a4f04ba13454e8e9e95440eb4761d e56aeee9dcca413b9cf9268cd2882769
+msgid "When you click next, the page will load with the following tabs:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:73 ../../docs/modules/csvimport.md:211
+#: ../../docs/modules/csvimport.md:340 ../../docs/modules/csvimport.md:475
+#: 336a9f70e6ac448989c0931d82b74ea8 9f70c9ba17004b699ce6f5be8d983824
+#: c9a3ab51f1474017bbf1d45a1aacc769 e00dc42ea6f84a1d991db07c82a4c597
+msgid "Map to Omeka S data"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:74 ../../docs/modules/csvimport.md:212
+#: ../../docs/modules/csvimport.md:341 4d5db76e25d3483e939e2d51aaff34ea
+#: 5fd032c207794982babf9796ff66308c 860e9d0be4614249a7ae72757cac5fec
+msgid ""
+"This tab displays a table with the columns from your spreadsheet as rows."
+" Each row displays:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:76 ../../docs/modules/csvimport.md:214
+#: ../../docs/modules/csvimport.md:343 ../../docs/modules/csvimport.md:478
+#: ../../docs/modules/csvimport.md:625 2ecbeeb3c0d343758d1101dc7cb52b4b
+#: 4a82a27b5a6c426d93aaebc6547fbbac 6edb0858d8704dc39ffcaf7fbccb355b
+#: c21ef15006ca430ba50184fa50308242 e0fbf1ed047343cbad56e3fcb33b33e6
+msgid "a Checkbox"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:77 ../../docs/modules/csvimport.md:215
+#: ../../docs/modules/csvimport.md:344 ../../docs/modules/csvimport.md:479
+#: ../../docs/modules/csvimport.md:626 09d2c8e86475454fbc93fb77073ba8ae
+#: 1cc27ea5863b4d5797c24af9c6d80b0b 75174a5249194d57aaa1a075661b0920
+#: a187ceb3edbf469584706be69b02fc6f eed7d48c4cbb41faa98be6dd04a29a89
+msgid "Column header from the spreadsheet"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:78 ../../docs/modules/csvimport.md:216
+#: ../../docs/modules/csvimport.md:345 ../../docs/modules/csvimport.md:480
+#: ../../docs/modules/csvimport.md:627 2faefd08a0d94101bd0574de4c1a4965
+#: 3d68a847b62b43e383fd0d74d5810a8c 7d0476085bf84b039b2314f084261200
+#: a25a8a295fa843cca5aabf35adabf1b5 c4cca8cc63834aeaa3f03e81fd104120
+msgid "A plus symbol button for adding or modifying a mapping"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:79 ../../docs/modules/csvimport.md:217
+#: ../../docs/modules/csvimport.md:346 ../../docs/modules/csvimport.md:481
+#: 028b8b59763e4dd29edcb72f7c645e36 434a08d1fada40b78f372a0da97a9fe7
+#: 8530bec9d7a04ee892f33bec4c84625f ffcf4e6cb1534a699bbb8200af3f5436
+msgid "A wrench symbol button for spreadsheet column options"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:80 ../../docs/modules/csvimport.md:218
+#: ../../docs/modules/csvimport.md:347 ../../docs/modules/csvimport.md:482
+#: ../../docs/modules/csvimport.md:628 7fdcff366f0749a7946c85642c99c2a5
+#: 9ce3d6f215f64056af19c55f0dd463dd 9dadd2e2fafe4951a63e468bdc50f887
+#: c905cf6fb60948ada0a9ec0b10b94631 e99d927267a746db9906c595805d5a4e
+msgid "A trash can to delete mappings"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:81 ../../docs/modules/csvimport.md:219
+#: ../../docs/modules/csvimport.md:348 ../../docs/modules/csvimport.md:483
+#: ../../docs/modules/csvimport.md:629 54d0901135fa40539b8c975a9e2f1e74
+#: 57d939e2a9014ead9d6dcc6abbb10e83 b843330620f340818e9a5a1d5ca11b22
+#: d9d8f4259b704784bbd0124c1c45793c ef0b5aff5b3b4d83bac7b15990eaa2ff
+msgid "A column to show options selected"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:83 449f8b59d196422484f79dbbdec0354f
+msgid ""
+"![Mappings for a spreadsheet with ten columns. Some of the columns, such "
+"as those named Description and Title have automatically been mapped to "
+"Dublin Core properties.](../modules/modulesfiles/csvimport_itemsMap1.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:85 ../../docs/modules/csvimport.md:223
+#: ../../docs/modules/csvimport.md:352 a7c898d12ce94ddeba60fba5122cb1bb
+#: b3f2664a727e4c2aadafd2eaf84b8bd7 ccf8e91e984b45b1a9c89cc71d18ed9d
+msgid "Mapping options"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:87 ../../docs/modules/csvimport.md:225
+#: ../../docs/modules/csvimport.md:354 ../../docs/modules/csvimport.md:491
+#: 41bab830b1aa45f8a48608bdab0159e2 6ca4b5c07f084843a7a193f898eff0eb
+#: 7ea27190f4bb44c4982f75318714edfd cb0d7f45b949422aae0a570e9c821f9f
+msgid ""
+"To map a column header to a vocabulary property, click on the plus symbol"
+" button to the left of the column header. This will open a drawer on the "
+"right-hand side of the screen."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:89 ../../docs/modules/csvimport.md:227
+#: ../../docs/modules/csvimport.md:356 ../../docs/modules/csvimport.md:493
+#: 466d65621d9a448da135c27204610c32 8145da10828247b89e860552ee24ad04
+#: 9e542ace508948209c3e773bfc21afb2 9fe05a6e235842c6aded8facea0874b3
+msgid ""
+"![A red arrow points to the plus sign button to the left of the word "
+"\"title\"](../modules/modulesfiles/csvimport_itemsMapButton.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:91 ../../docs/modules/csvimport.md:229
+#: ../../docs/modules/csvimport.md:358 ../../docs/modules/csvimport.md:495
+#: 3053006c386c4f1c915ea99e2490808e 7a428a48ea594267805e923ea9e33c30
+#: a3cf18fd246c47119c98a9faf2be8f82 a4e4cb7f210942f187f634a3584ca2c0
+msgid "The drawer has multiple options for mapping:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:93 ../../docs/modules/csvimport.md:231
+#: ../../docs/modules/csvimport.md:360 6bb6b4c64d1e4f95af3dea13bcb4d75b
+#: 9f7bedebccad419cb372c60473ec7a92 f5741b150c614551a2c6f0b8f503d901
+msgid ""
+"**Properties** select a property to map the column data to, from any of "
+"the installed vocabularies. Use the Filter field to search the available "
+"properties for a specific property."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:95 ../../docs/modules/csvimport.md:233
+#: ../../docs/modules/csvimport.md:362 0b3d51374607459b8683b8b99081bf70
+#: 644f975b10014e9088e753b19b97fb91 d7834cd3309e4b6da772a2de96d6e983
+msgid ""
+"![Properties option open showing all of the installed vocabularies for "
+"the Omeka S installation: Dublin Core, Bibliographic Ontology, Friend of "
+"a Friend, Scripto and OWL-Time "
+"Ontology.](../modules/modulesfiles/csvimport_itemsMapProp.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:97 ../../docs/modules/csvimport.md:500
+#: 3c82db7092c3439fa76c55792d051757 867f7507a0f243769b53259fb72ef421
+msgid ""
+"**Item-specific data** has a dropdown to set Item Set by selected "
+"property. If you have a column with data for an Item Set to which you "
+"want to add the item, you can set how it maps using this dropdown. You "
+"can either use the Item Set's internal ID, or any one of its properties "
+"(title, description)."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:99 ../../docs/modules/csvimport.md:502
+#: 6c44cc4f354a44b3bc830bc99bae2ab7 f37282781d2843ebb64e615c9aa3064b
+msgid ""
+"![dropdown as "
+"described](../modules/modulesfiles/csvimport_itemsMapISD.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:101 ../../docs/modules/csvimport.md:239
+#: ../../docs/modules/csvimport.md:368 7907d9ec045f4fa7af6f0775cbe7a2aa
+#: b0f59c76ddc9418e94502623621c4d0f bc0e5f0a1e2146dfa30813e9c3e1202e
+msgid ""
+"**Generic data** also has a dropdown where you can set one of four "
+"options:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:103 736c5596edbe4c6fb00c2492060bf3b3
+msgid ""
+"*Resource template (by label):* set the template for an item by name. The"
+" name of the template as entered in the spreadsheet and the name of the "
+"template in Omeka S must match exactly."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:104 d249bd3cacfe4fc9af35245be87bf65a
+msgid ""
+"*Resource class (by term):* set the resource class for an item. The term "
+"for the class in the spreadsheet and in the Omeka S installation must "
+"match exactly."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:105 895264e69dc04552b18e3b2b983f28ff
+msgid ""
+"*Owner (by email address):* set an item's owner by email address. This "
+"must be the email address associated with the user's account in the Omeka"
+" S installation."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:106 7074da7534814ea986d433290182fb2e
+msgid ""
+"*Visibility public/private:* set the visibility of the item. Use "
+"\"private\" or \"public\" in the spreadsheet."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:108 ../../docs/modules/csvimport.md:246
+#: ../../docs/modules/csvimport.md:375 ../../docs/modules/csvimport.md:519
+#: 216b7859ca6b414d9598c81eba2dae87 33b1ffd231824eaf8a438560cd4aef1d
+#: b0674391badc40ddafdf342ac1132f3e cea9574ffef94e26bbff12f2d208a0d1
+msgid ""
+"![Dropdown as "
+"described](../modules/modulesfiles/csvimport_itemsMapgeneric.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:110 1862bb8000734c2299b1cbd2ffe60917
+msgid ""
+"**Media source** If the column in your spreadsheet is a media source, "
+"select which kind from the dropdown:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:112 ../../docs/modules/csvimport.md:379
+#: ../../docs/modules/csvimport.md:523 17a10faddb3f43a3ac1601e392b53328
+#: 44507542290d44868660b933cf1ec0ee 8c94548be9994bd6b2c1078b357abe42
+msgid "HTML"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:113 ../../docs/modules/csvimport.md:380
+#: ../../docs/modules/csvimport.md:524 c0e337a68fa6475bb28ac76f03706501
+#: c1bf0260ba974bb7aa0a81955c173f94 ff153cecb000423c83a360caac5dc9b7
+msgid "IIIF Image (link)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:114 ../../docs/modules/csvimport.md:381
+#: ../../docs/modules/csvimport.md:525 3b18bf88c47e46acbd2388eebf55acf9
+#: 6f3bde0a295748cb96d2d2142f20cf2f e9c5fe4be90742388ec6326b1b2b1668
+msgid "oEmbed (link)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:115 ../../docs/modules/csvimport.md:382
+#: ../../docs/modules/csvimport.md:526 46eb35a8a60343b3aa20cce75f1f4eab
+#: a654099566e74bf5891327a21c656a04 b93cd930eb934871bd0148b879817da5
+msgid "URL"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:116 ../../docs/modules/csvimport.md:383
+#: ../../docs/modules/csvimport.md:527 6a4f9a250bc3439db901216b15e173d1
+#: d453f6fd36fd44728d3d6569171d4a5c e55db282a8fd4e6ca3df90b8fa21b074
+msgid "YouTube (link)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:118 ../../docs/modules/csvimport.md:385
+#: ../../docs/modules/csvimport.md:529 1967f0a0f168462dacd9b5920bd17cfa
+#: 245d3b7863254800a96139a01868fb4d dd7686bc66bf446da9bfd0af106bfac6
+msgid ""
+"![Dropdown as "
+"described](../modules/modulesfiles/csvimport_itemsMapMedia.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:120 ../../docs/modules/csvimport.md:248
+#: ../../docs/modules/csvimport.md:387 ../../docs/modules/csvimport.md:531
+#: 4c200846d87347529f7f30302f077cbb 62193b1b93a94e2c82478e6fd91701bb
+#: c125e4288b9245719cb13da13a6b80dd e28d45b504d043ddad36e9e465b302a6
+msgid ""
+"Be sure to click the \"Apply Changes\" at the bottom of the drawer or "
+"nothing you set here will be kept."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:122 ../../docs/modules/csvimport.md:250
+#: ../../docs/modules/csvimport.md:389 ../../docs/modules/csvimport.md:533
+#: 28fba8ad433141e1b33b4ee0411af17e 394b44d6bb8d4067920d6af32fccd6f0
+#: cc43ae926bb84d6786f9759e43f4df45 e0c35c2350544ac79acf2a987b706849
+msgid ""
+"To remove a mapping, click the trash can icon in the row for that data "
+"mapping. It will remove *only* the mapping, not the column data."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:124 ../../docs/modules/csvimport.md:252
+#: ../../docs/modules/csvimport.md:391 ../../docs/modules/csvimport.md:535
+#: 0f9ef1c6f9f84db7bc17cd948344734e 89577a7846c448a88742d5bae12605e0
+#: a4804d65b31f43e18a37b4b0cbe36192 ae6774fc57f54d52b168708cea36b850
+msgid ""
+"If you have data in a column in your CSV which you do not want to bring "
+"in to your Omeka S installation, simply do not map that column to a "
+"property or data type."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:126 ../../docs/modules/csvimport.md:254
+#: ../../docs/modules/csvimport.md:393 ../../docs/modules/csvimport.md:537
+#: 3acb64bbba604c61bddf0ca9814a9b8e 6cb15ac2a3514218acfabacfee50dbaf
+#: 76b9966af851452095c1567bc143b510 a4195edb1930404fbee22994b5526b59
+msgid "Column options"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:127 ../../docs/modules/csvimport.md:255
+#: ../../docs/modules/csvimport.md:394 ../../docs/modules/csvimport.md:538
+#: 235df121802d47cb890163e53bf53612 829de1530e8d424ca49b8e4396ef9e6a
+#: ad029bb762424865a45d4c4947e85580 bce6c1438e744f5db3dc6560b947763e
+msgid ""
+"To access options for data in a column of your csv (represented by a row "
+"in the import table), click the wrench icon for that column heading."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:129 ../../docs/modules/csvimport.md:257
+#: ../../docs/modules/csvimport.md:396 ../../docs/modules/csvimport.md:540
+#: 4472f71b8b6d4a5187a0fb06982a6cd0 c4d05e44324e46cbb359233a6e35dbd2
+#: f32d9d8201b4460880011d33562b294d f6cd7e747ad24d1e81a8e55ee24025f8
+msgid ""
+"![A red arrow points to the wrench button to the left of the word "
+"\"title\"](../modules/modulesfiles/csvimport_itemsMapOptions.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:131 ../../docs/modules/csvimport.md:259
+#: ../../docs/modules/csvimport.md:398 ../../docs/modules/csvimport.md:542
+#: 0f93ab49ca4447af86a35dc48b724a37 3c2d6e4a252e4354b50f1f73701aa7d3
+#: 63f62d64bc1e4ae4bd10a45c6cf1f9a6 fda3f24692c44702aab2312261c687c3
+msgid ""
+"Column options are in addition to mappings. If you add options without "
+"also mapping column data to resource, media, or other data, nothing will "
+"be imported."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:133 ../../docs/modules/csvimport.md:261
+#: ../../docs/modules/csvimport.md:400 ../../docs/modules/csvimport.md:544
+#: 9763b91006444f828e3d44aa374fb457 acfa7a15cc734ed89b028fc96014753a
+#: b7d3e26df3294f37a4561309096b69cf c4e177b1bf234cf1ba087c6516ca6383
+msgid ""
+"This will open a drawer on the right side of the browser window with the "
+"following options:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:135 ../../docs/modules/csvimport.md:263
+#: ../../docs/modules/csvimport.md:402 042f26bde0834b9490b1644bcf3f9bd1
+#: 980d4a820f5b45f19743533100a088d9 9adda6805fcf4633a186bccec9f4ee26
+msgid ""
+"**Use multivalve separator:** check this box to use the multivalue "
+"separator for data in this column. You set the multivalue separator in "
+"the initial import page, but you can change it in the Basic Settings tab."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:136 ../../docs/modules/csvimport.md:264
+#: ../../docs/modules/csvimport.md:403 ../../docs/modules/csvimport.md:547
+#: 0fbebe2b7ad44d39a142f269008e7fc8 37ec9576b3154f8490ff78f8a8ca7a0c
+#: a533ee8e1aaa435c880b9a0b954bb501 b24802564bda4b64948dbd7b06549cd5
+msgid ""
+"**Language:** is a field where you can set the language for this column "
+"using the [IETF Language "
+"tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in"
+" which the text is written. This will override what you have entered in "
+"basic settings."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:137 ../../docs/modules/csvimport.md:265
+#: ../../docs/modules/csvimport.md:404 ../../docs/modules/csvimport.md:548
+#: 01623f5237354f6d94617d146e81608c 18e0b52a07bc446897184e942f0f0e12
+#: 8598f3d8c9ba4e75af886e9eee0fd300 f4aefe68448a495898cb8e30b72a8d09
+msgid ""
+"**Data type:** is a dropdown with at least three options, which "
+"correspond to the [values](../content/items/#values) one can use when "
+"adding properties to an item:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:138 ../../docs/modules/csvimport.md:266
+#: ../../docs/modules/csvimport.md:405 50cf4bd758934d3a94c869dfdfe1060f
+#: ebe501ce90e94da9aaf2087f04803621 f98564f9756b4018a85c12550ea50c24
+msgid "Import as text (default)."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:139 ../../docs/modules/csvimport.md:267
+#: ../../docs/modules/csvimport.md:406 ../../docs/modules/csvimport.md:550
+#: 56db15e1a52e414ca5b44a71bda04d23 59416fcd79c944629cdb1347a78c41d6
+#: a27571aa4deb4f5b9176c8afd17f65e4 c7271056e9ff4eb48a86f92797644407
+msgid ""
+"Import as URL reference. You can set the label for the URI by including "
+"the desired text after a space, for example:  `http://example.com This Is"
+" The Label`"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:140 ../../docs/modules/csvimport.md:268
+#: ../../docs/modules/csvimport.md:407 ../../docs/modules/csvimport.md:551
+#: 18d7bfd72e4a4bb5a8f5908b618d900a 56019eccdb07410595ad337202a1a7c2
+#: 7dde97c0f4ae495591ea854a30e64a18 f4e5406ee01941c2944e704a768ce0d0
+msgid ""
+"Import as Omeka S resource ID. Note that you must have the correct ID for"
+" the resource. A resources' ID is the number sequence at the end of the "
+"url when on the view or edit page, so for `/admin/item/11576` the ID is "
+"11576."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:141 ../../docs/modules/csvimport.md:269
+#: ../../docs/modules/csvimport.md:408 ../../docs/modules/csvimport.md:552
+#: 1aca5d0157ec485fab0c2df9d04b7208 1cece33a781941f3a32c473d2826d55c
+#: c23734e97111485a80fe6fd9b7e98426 f0e7a30830694c8a9fc62d3214e3480b
+msgid ""
+"If you have certain modules installed, such as Numeric Data Types, there "
+"may be additional data type options supplied by those modules."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:142 ../../docs/modules/csvimport.md:270
+#: ../../docs/modules/csvimport.md:409 ../../docs/modules/csvimport.md:553
+#: 268e3027c00e46d8929b1f63e0402745 9460f2ae09b148bcb635733225ab8b35
+#: d4dfc0202b1f42f58a6f33cc715b3039 d75ba27e0cfe4424b397367645f6897d
+msgid ""
+"**Import values as private**: check this box to set all property values "
+"*in this column* private."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:144 d1712c4f5d7743eea2402fa1dfa91eeb
+msgid ""
+"![drawer with options as described "
+"above](../modules/modulesfiles/csvimport_ItemColOpt.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:146 ../../docs/modules/csvimport.md:155
+#: ../../docs/modules/csvimport.md:281 ../../docs/modules/csvimport.md:420
+#: ../../docs/modules/csvimport.md:564 2188840924ce472c8505abfe2d939a01
+#: 671ab20f6b8e4999b0cd772bfbc19f1a a1c467795e614cd5966ad62c1d89ecd4
+#: b75f4a9abb1a4f3f8424cc125f241ac2 eb8cbedab4794f1a89a3023db3a5e40e
+msgid ""
+"Be sure to click the Apply Changes button at the bottom of the drawer in "
+"order to save your changes."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:148 ../../docs/modules/csvimport.md:274
+#: ../../docs/modules/csvimport.md:413 ../../docs/modules/csvimport.md:557
+#: 08adec9fd5ec4d7bb545c459e792d9c3 2195074f229d4b78b4dd157c5dbe5f60
+#: ae58d351e21a481c9587bf913959663c e2f9aad29171425489c10cbe08caa2ae
+msgid ""
+"To remove a column option setting, click the wrench icon again and undo "
+"your changes manually."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:150 ../../docs/modules/csvimport.md:276
+#: ../../docs/modules/csvimport.md:415 ../../docs/modules/csvimport.md:559
+#: 68bea95bee154868b347ddfa922d11b9 8993a1032f844bbe84c142d0e580453a
+#: ae02d440f46c47a5aadc4f7b41303c0a fd16893de2214992a1760dfe7d63673b
+msgid "Batch edit"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:151 20f31e516ded40d2af040dbd7cee4d71
+msgid ""
+"When you select one or more rows in the table (columns from your csv "
+"file), you can use the \"Batch edit options\" button to apply the column "
+"options described above - multivalue separator, language, data type, and "
+"property privacy - to multiple csv columns at once."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:153 5d8399455ecc422796cac456c690acf7
+msgid ""
+"![a screenshot of the Mapping tab, with the boxes for Columns Title and "
+"Creator checked. A red arrow points to the Batch edit options button. On "
+"the right side of the screen, a drawer offers options for changing the "
+"settings as "
+"described](../modules/modulesfiles/csvimport_batchEditItems.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:157 306a7f226b5d489285f9da7757c69bbb
+msgid "Item import Basic Settings"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:158 ../../docs/modules/csvimport.md:284
+#: ../../docs/modules/csvimport.md:423 ../../docs/modules/csvimport.md:567
+#: 516db07e3fbf437a918a820ce57fe398 a32eb53f19ee48e997bc2f769d76dc3c
+#: b1c088726f8d40ac8a1e56210abc4a6b bcb7e32a0fd142baafed8ddd7cd19722
+msgid ""
+"These settings apply to the entire csv which you are importing. Note that"
+" some of these settings can be overwritten by column options in the Map "
+"to Omeka S data tab."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:160 676202743c7a4343939033b5655c71ce
+msgid ""
+"![options as described "
+"below](../modules/modulesfiles/csvimport_itemsbasic.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:162 6e35888d7eec4a02bcfe9940bf1bdf3d
+msgid ""
+"**Resource Template:** select a resource template from the drop-down menu"
+" to apply to the imported items. You can use the search field at the top "
+"of the dropdown to narrow results or find a particular template."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:163 c89084f079864043b48cf4df2b6a2a8c
+msgid ""
+"**Class:** select a class from the drop-down menu to apply to the "
+"imported items. You can use the search field at the top of the dropdown "
+"to narrow results or find a particular class."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:164 266e351d30ae45cba0945d1efe1c05d5
+msgid ""
+"**Owner:** set the owner for the Items by selecting a user from the drop-"
+"down menu. You can use the search field at the top of the dropdown to "
+"narrow results or find a particular user."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:165 12b09fe28b9b4a3c9c4ffeeea8679682
+msgid ""
+"**Visibility:** set the visibility of the imported items as public  or "
+"private."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:166 ../../docs/modules/csvimport.md:431
+#: 0024c67d8baf4f14865c0fc72ec166a6 98874112318743fb95faf36ef059b866
+msgid ""
+"**Item Sets:** add the imported items to a specific item set or sets "
+"using the dropdown menu."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:167 ../../docs/modules/csvimport.md:293
+#: ../../docs/modules/csvimport.md:432 ../../docs/modules/csvimport.md:577
+#: 856affb83cea4a92bb7beca28b3d2ef9 ade60ebe1c3246be9c65022d347638b7
+#: b2277b35478c4f2ea8d663d3f270efd1 c8631dbd9c1b488d8055a475a04289b0
+msgid ""
+"**Multivalue Separator:** enter the multivalue separator character here, "
+"if you have used one.      - The columns of data in your CSV should be "
+"separated by commas, however within those columns you can add a special "
+"character to create multiple inputs, for example a semicolon."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:169 ../../docs/modules/csvimport.md:295
+#: ../../docs/modules/csvimport.md:434 ../../docs/modules/csvimport.md:579
+#: 7784e415cf654e4e8b3cb75ba714b2cf 9092ed4de3ec4957b95b7cd6a7058d82
+#: b42e92c78b414d798e9e386854b0eff2 bbe3c74a31c74edca0042eb25e0a9a20
+msgid ""
+"**Language:** set the language of the values in the spreadsheet using the"
+" appropriate [IETF Language "
+"tag](https://en.wikipedia.org/wiki/IETF_language_tag)."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:171 83166ac7f95b437582bcb1e4201d39a4
+msgid "Item import Advanced Settings"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:173 ../../docs/modules/csvimport.md:299
+#: ../../docs/modules/csvimport.md:437 ../../docs/modules/csvimport.md:582
+#: 33b997fc3ffc47c8bb616ec1792698c1 77987451cddc477a9c52f9a5392b50c0
+#: 9a0f8767e2ec45bca1253e087d289777 ac42a50a3c7f4cc08fe2a1139b287c5a
+msgid "There are two options on this tab which are only for advanced use."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:175 75870aa89b884ceab59dd76b206451ab
+msgid ""
+"![Advanced settings page showing only the Action dropdown and the field "
+"for number of rows to process. "
+"](../modules/modulesfiles/csvimport_ItemsAdvanced.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:177 ../../docs/modules/csvimport.md:303
+#: ../../docs/modules/csvimport.md:441 ../../docs/modules/csvimport.md:586
+#: 0a1fdbe24a3349749b45d55a384b861c 87e8e60a860e46e1bc3595b55520ffb5
+#: b655688ea9f74d5b81eaede0f122fc10 d296c5783abb42a0a3d37d1bb0446dae
+msgid "Action"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:179 ../../docs/modules/csvimport.md:305
+#: ../../docs/modules/csvimport.md:443 ../../docs/modules/csvimport.md:588
+#: 1bd631ec47f844bc82d41912d5dd5b47 3604c43098344993854b3867f20e9b2b
+#: 53d87f2340f940f3b9fe150dc058ea3e 5aa8d03fa4664b999404693144480343
+msgid ""
+"This setting allows you to change the action of process from a straight "
+"import to one of the following options:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:181 ../../docs/modules/csvimport.md:307
+#: ../../docs/modules/csvimport.md:445 ../../docs/modules/csvimport.md:590
+#: 55e47d0f7fdc463888225333d456b657 98885c8ff65b42af8855c0d5181f1cc2
+#: d3c4536315cf455a860fe63345ab2c34 e7b85522994a4f2894fceafbccbd8396
+msgid ""
+"**Create a new resource:** default option. Each row in the CSV will "
+"become a new resource."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:182 ../../docs/modules/csvimport.md:308
+#: ../../docs/modules/csvimport.md:446 ../../docs/modules/csvimport.md:591
+#: 10797f7deab246809af6d90f5caf9eba 144adb41360340bdb943b2211f75f29d
+#: 452f73cfb871430ea6f3740209e878f2 6eafd65bb83f4652b66a07b615c9f6cb
+msgid "**Append data to the resource:** add new data to the resource."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:183 ../../docs/modules/csvimport.md:309
+#: ../../docs/modules/csvimport.md:447 ../../docs/modules/csvimport.md:592
+#: 156ac053c00e48cc81d4ae01e6ead677 3828c86ff09040c38b575796d09e7471
+#: 84f6ef32a360427e833e32b81a8926cb ab3d7b96d5644b388ddd52ded6e86875
+msgid ""
+"**Revise data of the resource:** replace existing data in the resource "
+"with data from the csv, except if empty."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:184 ../../docs/modules/csvimport.md:310
+#: ../../docs/modules/csvimport.md:448 ../../docs/modules/csvimport.md:593
+#: 2691b89943fc4748b01a32cc3e6f6712 9594cf6fbd564f7a84fc39b65638dcbf
+#: a4d3e994f9c140a98718e97ab9b8c629 e94eb6f0f6b64a948133f930d1cab763
+msgid ""
+"**Update data of the resource:** replace existing data in the resource "
+"with data from the csv, even when the cell is empty."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:185 ../../docs/modules/csvimport.md:311
+#: ../../docs/modules/csvimport.md:449 ../../docs/modules/csvimport.md:594
+#: 0deb4750da464f07bc63ddbc6682f285 8284e412773c40fea46d8b69c0e9b34a
+#: a083399e870c42aca3fd57ea8a023856 b070e451481b40f38497fa780270c095
+msgid ""
+"**Replace all data of the resource:** remove all properties of the "
+"resource, and fill with new information from the sheet."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:186 ../../docs/modules/csvimport.md:312
+#: ../../docs/modules/csvimport.md:450 ../../docs/modules/csvimport.md:595
+#: 73cfe8be5c764cf49679b673e9461ab4 ee5babc5bdf84aa1bbaea3a54caaec8c
+#: f1a9ff0ad5cc419ab49e44dccbe95e05 f4d6b8cd748b4f3f9aa3f7ede036a728
+msgid "**Delete the resource:** delete all matching resources"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:188 ../../docs/modules/csvimport.md:314
+#: ../../docs/modules/csvimport.md:452 ../../docs/modules/csvimport.md:597
+#: 3facba5663a045ff9972715cf9015fb5 473691b55aa243598c4f2f956786618d
+#: 56b9ebae02eb46809bc2df0ebd24b63f e5cf2476accb40249e7426a415db7b40
+msgid ""
+"If you select one of these options from the dropdown, three additional "
+"settings will appear on the tab. These settings help the process "
+"determine which resources to take action on."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:190 ../../docs/modules/csvimport.md:318
+#: ../../docs/modules/csvimport.md:456 ../../docs/modules/csvimport.md:601
+#: 338b977ee27c409086e9987d4295f854 c93c6a9a75124e27bc2684d4f183515a
+#: fa70712577894ada91a4cb3ac764a5f7 fd06c33577ba46c980332fef81bec94f
+msgid ""
+"**Resource identifier column:** Select from a dropdown of the columns in "
+"your CSV. This is the data from your spreadsheet which maps to existing "
+"data in your Omeka S installation."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:191 ../../docs/modules/csvimport.md:319
+#: ../../docs/modules/csvimport.md:457 ../../docs/modules/csvimport.md:602
+#: 373f3d5f2a8740579d0597c448286670 731784e8513b4dbf9a7281490e389dbb
+#: a9d2fceacfe342d0a51d9880686f013a da44992030e448eba7d85ea06f5b7002
+msgid ""
+"**Resource identifier property:** select from a dropdown of all "
+"properties in your Omeka S installation. This should be the property in "
+"which you already have data, that you used to create the column data "
+"above."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:192 ../../docs/modules/csvimport.md:320
+#: ../../docs/modules/csvimport.md:458 ../../docs/modules/csvimport.md:603
+#: 4ec1fac1b8084092ba77a51997d4735d 80acfdce523d4ea08adfd2ce9582a094
+#: 9e460af166094cb390b368d83ee010ff c4133376b11549e9aee2b9d659b69fdb
+msgid ""
+"Example: if the data in the Resource identifier column is \"Title\" with "
+"the first row of data having a title \"A Study in Scarlet,\" and you set "
+"Resource identifier property to \"Dublin Core: Title,\" then the actions "
+"will operate on a resource already in your Omeka S installation whose "
+"dc:title property is \"A Study in Scarlet\"."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:193 ../../docs/modules/csvimport.md:321
+#: ../../docs/modules/csvimport.md:459 ../../docs/modules/csvimport.md:604
+#: 09c577a151454b44b92acbd74a2a5210 1286043b47114e90955b3c64711f4506
+#: 1ff474fd1e434c31bc26ae65de7ee2d3 d80bf9f252694477bc5850f4abb75207
+msgid "This will only work with exact matches."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:194 ../../docs/modules/csvimport.md:322
+#: ../../docs/modules/csvimport.md:460 ../../docs/modules/csvimport.md:605
+#: 8079a92a3a1c405a96da5665c86dac6f b5bd76356a5141e68c80fa0d36547327
+#: ddfb8dc311b149899f18237d5e2eea7f f4500761bb4349038d9abca1ec14b59f
+msgid ""
+"If you have more than one resource with matching data, it will only take "
+"action on the oldest resource."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:195 ../../docs/modules/csvimport.md:323
+#: ../../docs/modules/csvimport.md:461 ../../docs/modules/csvimport.md:606
+#: 126a08531fe14cbfb99f40489d2155e1 69ebc0036c8e42918e57b47296462999
+#: 8fb7d4ee30da45838c7606d16166f252 9820f1e7b4a64bc7a8e7790973e12b88
+msgid ""
+"**Action on unidentified resources:** This option determines what to do "
+"when no matching resource exists in the Omeka S installation, but the "
+"selected action only applies to an existing resource (\"Append\", "
+"\"Revise\", \"Update\", or \"Replace\"). This option is not used when the"
+" main action is \"Create\" or \"Delete\" Your options are two radio "
+"buttons:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:196 ../../docs/modules/csvimport.md:324
+#: ../../docs/modules/csvimport.md:462 ../../docs/modules/csvimport.md:607
+#: 0f94b799730446eabe39704306fc1485 97c1aab4a2fd4d8598f3ce7a548b293b
+#: 9d7e2d7b012a405f812801cf246c36d9 dd2d9fd4cb2b4946b708b7df2c494d0b
+msgid "Skip the row"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:197 ../../docs/modules/csvimport.md:325
+#: ../../docs/modules/csvimport.md:463 ../../docs/modules/csvimport.md:608
+#: 35ad0e8fb5124250bfc925b1b4248c42 53953bb47beb4ffc8f562644e0a1792e
+#: 5dd5fb2693ec46dbbd643398301b9458 c6766fb300084ca89c2360bbcddbce33
+msgid "Create a new resource"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:199 ../../docs/modules/csvimport.md:327
+#: ../../docs/modules/csvimport.md:465 ../../docs/modules/csvimport.md:610
+#: 0dd6336cdb1c4986ac17b4af03b62426 335c39e7e1084c63a23af6944a2ea60f
+#: 663bf4d9667549ae96e0835b225fd7ac cc05c3275e9a4216ae7bd6df618bf746
+msgid "Other advanced settings"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:201 ../../docs/modules/csvimport.md:328
+#: ../../docs/modules/csvimport.md:467 ../../docs/modules/csvimport.md:612
+#: 169a97a172d8490e9d2ec4d6b317e993 b9d4b26421aa4c5b91ddfa7dead3520b
+#: ba50318c6d6a4891b38df309c018d320 cc93cdbd486c4b8cbdc45687ff5b2903
+msgid ""
+"In addition to the above, the Advanced Settings tab has an option to set "
+"the number of rows to process by batch. By default this is set to 20. "
+"However, if you are running into errors with an import you may want to "
+"set it to 5 or even 1 in order to troubleshoot and determine the source "
+"of the error."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:203 ../../docs/modules/csvimport.md:330
+#: ../../docs/modules/csvimport.md:469 ../../docs/modules/csvimport.md:614
+#: 30100e0fab2946238be2199423ed8bd3 66e1f787b22d4d2da18faac7661ee481
+#: ae5417808aaa48c49c27b871501e7580 b2ed387eb469493babcfe2df6372b7c5
+msgid "Complete import"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:204 ../../docs/modules/csvimport.md:331
+#: ../../docs/modules/csvimport.md:470 ../../docs/modules/csvimport.md:615
+#: 5f55bfe6cdf5425a801c2bfc969727f8 68f5fd1050fd4c86aa002f239515124d
+#: 69c6afc859fa479fa6bd7e6980bfbdee aa0e1dcb0b9d4c43be017d689dbb50f2
+msgid ""
+"Once you have completed mappings, column options, and any settings, click"
+" the Import button in the upper right corner of the browser window. This "
+"should start the import and redirect you to the Past Imports tab. You "
+"should see a confirmation message saying \"Importing in Job ID [number]\""
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:206 da31ec4b99f74203ae5ebad20e5349df
+msgid "Import Item Sets"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:207 525669c3cd7e4dd0b1c0ef478629a7fe
+msgid ""
+"To import item sets, select \"Item Set\" under the \"Import type\" on the"
+" first page."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:221 ce1d6eca02d34820bf7ae366cac92507
+msgid ""
+"![Mappings for a spreadsheet with four columns, all of which have been "
+"automapped](../modules/modulesfiles/csvimport_ItemSet1.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:235 ../../docs/modules/csvimport.md:504
+#: 05fc97edb4f84403affe01d10fdb4721 c2dab6596727415987f9df7ef2918830
+msgid ""
+"**Item set-specific data** is a checkbox for \"Open to additions.\" Check"
+" to allow other users to edit or add to the item set. Leave unchecked to "
+"have the item set be editable only by its creator, site admins, and "
+"global admins."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:237 ../../docs/modules/csvimport.md:506
+#: 3ee75b56a7b441cc8c2541b2cbd28bc4 4756cbdc52554fc9a3f27d8d951a0933
+msgid ""
+"![Add mapping drawer showing the section \"Item set-specific data\". "
+"Below the section header is a single, unselected checkbox option labeled "
+"\"Open to additions\".](../modules/modulesfiles/csvimport_itemSetSD.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:241 089a43eb58e14aac8e1d84c1925926e0
+msgid ""
+"*Resource template (by label):* set the template for an item  set by "
+"name. The name of the template as entered in the spreadsheet and the name"
+" of the template in Omeka S must match exactly."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:242 af691fcc2847473b8f49b1f91e26b17a
+msgid ""
+"*Resource class (by term):* set the resource class for an item set. The "
+"term for the class in the spreadsheet and in the Omeka S installation "
+"must match exactly."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:243 a3e533ccbe744aa2a0e3e6d9356eb8ad
+msgid ""
+"*Owner (by email address):* set an item set's owner by email address. "
+"This must be the email address associated with the user's account in the "
+"Omeka S installation."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:244 8da87bd3cddb4a85a9767aab1695f601
+msgid ""
+"*Visibility public/private:* set the visibility of the item set. Use "
+"\"private\" or \"public\" in the spreadsheet."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:272 75a11ab9cee24d389b59805787d5ecc9
+msgid ""
+"![drawer with options as described "
+"above](../modules/modulesfiles/csvimport_ItemSetCol.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:277 ../../docs/modules/csvimport.md:416
+#: ../../docs/modules/csvimport.md:560 7367d282b33b438cbb773b35e8836375
+#: 82e229c9d61d4f739d7d31d61254856f 82e5f8f0b0f644d688f3f3f4ca5b8941
+msgid ""
+"When you select one or more rows in the table (columns from your csv "
+"file), you can use the \"Batch edit options\" button to apply the column "
+"options described above to multiple csv columns at once."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:279 5570acecd1bf450c837f58cf3fbc17d4
+msgid ""
+"![a screenshot of the Mapping tab, with the boxes for Columns Title and "
+"Creator checked. A red arrow points to the Batch edit options button. On "
+"the right side of the screen, a drawer offers options for changing the "
+"settings as "
+"described](../modules/modulesfiles/csvimport_batchEditItemSet.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:283 ba521fecb83d43bfa02b1c83272a2a39
+msgid "Item Set import Basic Settings"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:286 2659daf4e9724c469817ae2a84db24ae
+msgid ""
+"![options as described "
+"below](../modules/modulesfiles/csvimport_ItemSetBasic.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:288 ../../docs/modules/csvimport.md:571
+#: 742028cef6f94dafb15634fe3817e5b4 cc2e69ea1b294102898f134074f3919e
+msgid ""
+"**Resource Template:** select a resource template from the drop-down menu"
+" to apply to the imported item sets. You can use the search field at the "
+"top of the dropdown to narrow results or find a particular template."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:289 ../../docs/modules/csvimport.md:572
+#: 38adaf77ddf34ebaa01643e194c518e8 4149789764ac41ea8bf6c27e2a01f94d
+msgid ""
+"**Class:** select a class from the drop-down menu to apply to the "
+"imported item sets. You can use the search field at the top of the "
+"dropdown to narrow results or find a particular class."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:290 ../../docs/modules/csvimport.md:573
+#: 2a2be1fceec346ef97f94ab79dcf6b6f 2dd02737f81f4e33b6945bad1c17425d
+msgid ""
+"**Owner:** set the owner for the item sets by selecting a user from the "
+"drop-down menu. You can use the search field at the top of the dropdown "
+"to narrow results or find a particular user."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:291 ../../docs/modules/csvimport.md:574
+#: 2c1ff836d40a47069b99397935774153 a370ec6d401c47db93f52cde37ea409d
+msgid ""
+"**Visibility:** set the visibility of the imported item sets as public  "
+"or private."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:292 9c85dbaabf674711870cec485a4220e0
+msgid ""
+"**Open/Closed to additions:** set whether users other than the owner (and"
+" site & global admins) will be able to add or edit the item sets."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:297 f8270786ca2e4463b8f39e9e27723356
+msgid "Item Set import Advanced Settings"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:301 7a06242ef12c4943b68bb86a7ad80210
+msgid ""
+"![Advanced settings page showing only the Action dropdown and the field "
+"for number of rows to process. "
+"](../modules/modulesfiles/csvimport_ItemSetAdv.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:316 37b5b9efbf9e48289cbb36b3355dc172
+msgid ""
+"![Advanced options tab with options as described "
+"below](../modules/modulesfiles/csvimport_itemSetAdvAct.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:333 fa37f3397bd2482593d448bcedf32369
+msgid "Import Media"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:334 babe2615feeb4052896afdc2a0bf1b9d
+msgid ""
+"To import media, select \"media\" under the \"Import type\" on the first "
+"page."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:336 e22eb933c1a74cf6bd7175f16b74cb1e
+msgid ""
+"In order to import media, you must have a column in the csv which will "
+"map to item data. Media cannot exist unless associated with an item. Note"
+" that if you are running an advanced job, such as an update or replace, "
+"then you do not have to have a column with associated item data."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:350 a915f4af0296403e8f455171d943464a
+msgid ""
+"![Mappings for a spreadsheet with ten columns. Some of the columns, such "
+"as those named Description and Title have automatically been mapped to "
+"Dublin Core properties.](../modules/modulesfiles/csvimport_mediaMap1.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:364 ../../docs/modules/csvimport.md:508
+#: 018fd15ef47f4f1a8554a5401d4be1d3 021efce77f084376ae853fa603b671f7
+msgid ""
+"**Media-specific data** has a dropdown to set the item to which the media"
+" should be added. You can either use the item's internal ID, or any one "
+"of its properties (title, description). A resources' interal ID is the "
+"number sequence at the end of the url when on the view or edit page, so "
+"for `/admin/item/11576` the ID is 11576"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:366 ../../docs/modules/csvimport.md:510
+#: 2a0c428151a544baab2c065f4e0fd267 d5c1745a2f304c73affe7b621aa66959
+msgid ""
+"![Media-specific data with "
+"dropdown](../modules/modulesfiles/csvimport_mediaMapData.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:370 ../../docs/modules/csvimport.md:514
+#: 2090a765ac7a4661b044b0fdada3b45b ec5a596055694f80ad8b2397c3479407
+msgid ""
+"*Resource template (by label):* set the template for the media by name. "
+"The name of the template as entered in the spreadsheet and the name of "
+"the template in Omeka S must match exactly."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:371 ../../docs/modules/csvimport.md:515
+#: 1e359db10d154310a8335519ef7c523e 3192e61c4e5a4af7ac8c6c8b89b1c9c8
+msgid ""
+"*Resource class (by term):* set the resource class for the media. The "
+"term for the class in the spreadsheet and in the Omeka S installation "
+"must match exactly."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:372 ../../docs/modules/csvimport.md:516
+#: 17341f090fa7455bbeed56e4b25cec54 663824f0c96c45688094a94af7ced383
+msgid ""
+"*Owner (by email address):* set the media's owner by email address. This "
+"must be the email address associated with the user's account in the Omeka"
+" S installation."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:373 ../../docs/modules/csvimport.md:517
+#: a2f1e43f109248d5806ed2659ee754be cc9853ac1ebf490985bdaa6d6c4e4107
+msgid ""
+"*Visibility public/private:* set the visibility of the media. Use "
+"\"private\" or \"public\" in the spreadsheet."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:377 bb3153c0a0924e6fbb8c2b28742a6206
+msgid ""
+"**Media source** For the column in your spreadsheet which points to the "
+"media you are creating, select which kind of media it is from the "
+"dropdown:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:411 cc9af1a8f24647cf991f23414cdaf699
+msgid ""
+"![drawer with options as described "
+"above](../modules/modulesfiles/csvimport_mediaColOpt.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:418 94b29e63e6b14b40abc401a17d46d872
+msgid ""
+"![a screenshot of the Mapping tab, with the boxes for Columns Title and "
+"Creator checked. A red arrow points to the Batch edit options button. On "
+"the right side of the screen, a drawer offers options for changing the "
+"settings as "
+"described](../modules/modulesfiles/csvimport_batchEditMedia.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:422 369458370e1b459da16abb5a060a02ba
+msgid "Media import Basic Settings"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:425 439a31bd50954cdc8e0a882f09eb1c74
+msgid ""
+"![options as described "
+"below](../modules/modulesfiles/csvimport_mediaBasic.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:427 eaf382f1f892427ca4a7ec26f8a556b5
+msgid ""
+"**Resource Template:** select a resource template from the drop-down menu"
+" to apply to the imported media. You can use the search field at the top "
+"of the dropdown to narrow results or find a particular template."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:428 76c3977488e0444fae8514072ff0e09b
+msgid ""
+"**Class:** select a class from the drop-down menu to apply to the "
+"imported media. You can use the search field at the top of the dropdown "
+"to narrow results or find a particular class."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:429 0f73f369558d469dbc48769acdbfbf4f
+msgid ""
+"**Owner:** set the owner for the media by selecting a user from the drop-"
+"down menu. You can use the search field at the top of the dropdown to "
+"narrow results or find a particular user."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:430 e8e4e59154824d688412610952126baf
+msgid ""
+"**Visibility:** set the visibility of the imported media as public or "
+"private."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:436 b9646737db6b463fb0da236ff2152fce
+msgid "Media import Advanced Settings"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:439 a62b2cb682704718a90c644039ea906e
+msgid ""
+"![Advanced settings page showing only the Action dropdown and the field "
+"for number of rows to process. "
+"](../modules/modulesfiles/csvimport_mediaAdv.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:454 1df4a6b1b73b49d9b9419daa954550f6
+msgid ""
+"![Options described "
+"below](../modules/modulesfiles/csvimport_mediaAdvAct.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:472 19c4b540c9634855b96451a252f3d624
+msgid "Mixed Resource Import"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:473 3ee73762bc6c472382fb08a493096ae0
+msgid ""
+"This resource option allows you to import a sheet with a mix of resource "
+"types: items, item sets, and media."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:476 ../../docs/modules/csvimport.md:623
+#: 2d4b6bc5288443258a72dc6046e26b2c 6d4fcd2844d64b8dbbd82584b255a973
+msgid ""
+"This tab displays an initial dropdown above a table with the columns from"
+" your spreadsheet as rows. Each row displays:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:485 3b5009d47e3f4e69807ffa6ac91f360f
+msgid ""
+"![Mappings for a spreadsheet with nine "
+"columns.](../modules/modulesfiles/csvimport_mixedR1.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:487 6c50128e1c8c47eeb83ed1a6266b8218
+msgid ""
+"The dropdown above the table is where you set which column in the csv "
+"file indicates whether the data in that row is an item, item set, or "
+"media. *You do not need to map this data in the table on this tab*"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:489 d0d2db7d4fa54fb18a7ec259ea8f2fd1
+msgid "Mapping options TK"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:497 01e821bca7894c3ab468271ffb5af4a7
+msgid ""
+"**Properties** select a property to map the column data to, from any of "
+"the installed vocabularies. Use the Filter field to search the available "
+"properties for a specific property. ![Properties option open showing all "
+"of the installed vocabularies for the Omeka S installation: Dublin Core, "
+"Bibliographic Ontology, Friend of a Friend, Scripto and OWL-Time "
+"Ontology.](../modules/modulesfiles/csvimport_itemsMapProp.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:512 ebcb3c407cff4994b5a38f2f532442b2
+msgid "**Generic data** has a dropdown where you can set one of four options:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:521 ec94828e6b5d432ba752c2024f7c9e6f
+msgid ""
+"**Media source** For the column in your spreadsheet which points to the "
+"media, select which kind of media it is from the dropdown:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:546 910daa568b14436ea8b56c801689d601
+msgid ""
+"**Use multivalue separator:** check this box to use the multivalue "
+"separator for data in this column. You set the multivalue separator "
+"character in the initial import page, but you can change it in the Basic "
+"Settings tab."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:549 dbe5a6774b4c4ca59a1d94c8f0275622
+msgid "Import as text (default);"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:555 e50e4c2fc18d45acb12f82287eccf116
+msgid ""
+"![drawer with options as described "
+"above](../modules/modulesfiles/csvimport_mixedR2.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:562 a560e6de41fa43a0bd04fb24b5d97b09
+msgid ""
+"![a screenshot of the Mapping tab, with the boxes for Columns Title and "
+"Creator checked. A red arrow points to the Batch edit options button. On "
+"the right side of the screen, a drawer offers options for changing the "
+"settings as "
+"described](../modules/modulesfiles/csvimport_batchEditMixed.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:566 68ad68f16c1f4d178fd428de7998662a
+msgid "Mixed resources import Basic Settings"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:569 be6c7cc4abb14bfb87c6cbdb861248d0
+msgid ""
+"![options as described "
+"below](../modules/modulesfiles/csvimport_mixedRBasic.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:575 c8cb762b01b747bd90dc0b8e9d1a4c89
+msgid ""
+"**Item Set open/Closed to additions:** set whether users other than the "
+"owner (and site & global admins) will be able to add or edit the item "
+"sets."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:576 0c26b41ca2e74b99a4add276854218c8
+msgid "**Item set for items:** select from a dropdown of existing item sets."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:581 082a199e1b424ec894fa615f4f2c1d03
+msgid "Mixed resources import Advanced Settings"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:584 02cfe5d7e0e04cfbb6080d67f7479abd
+msgid ""
+"![Advanced settings page showing only the Action dropdown and the field "
+"for number of rows to process. "
+"](../modules/modulesfiles/csvimport_mixedRAdv.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:599 4c5487c1a6f94352ab1731d811c87e49
+msgid ""
+"![Options described "
+"below](../modules/modulesfiles/csvimport_mixedRAdvAct.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:617 ba5abc18b55f4ab5b7be6729dd3a93d7
+msgid "Import Users"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:618 14c7a7cc3ff54277897851203ce329f2
+msgid ""
+"When importing users, you can only bring in data related to the user "
+"table in Omeka S: the user's email, display name, and role. Any "
+"additional data in your CSV will not be imported."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:620 e3e005e5f3324b99998c821c424e5663
+msgid "Map user import to Omeka S data"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:621 531deda5631643839d10e98b14b849f5
+msgid ""
+"This is the only active tab for User import. The Basic and Advanced "
+"settings tabs are present but empty."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:631 a890c16be3cb4e3097e3354c35b057a8
+msgid ""
+"![Table as described above, with rows for User, email, and "
+"role.](../modules/modulesfiles/csvimport_users.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:633 f66ccf10712a46c2b5c5761985dde830
+msgid ""
+"To map a column header to user information, click on the plus symbol "
+"button to the left of the column header. This will open a drawer on the "
+"right-hand side of the screen."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:635 792518fa1f294fb1adb51553e657d7d0
+msgid ""
+"![A red arrow points to the plus sign button to the left of the word "
+"\"title\"](../modules/modulesfiles/csvimport_usersMapButton.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:637 279dcc3d4a114025a6513d89603fc155
+msgid "The drawer has a dropdown for Users info, with three options:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:639 652cfddbd84d4927bd412f4021371268
+msgid "*Email:* the email address for the user;"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:640 1c5b68ba1c2e4b5b8b97aa4f1296feb4
+msgid "*Display name:* the user's display name"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:641 d8f5abfea0cc46ddae3052d31cf667fa
+msgid ""
+"*Role:* the user's [role](../admin/users/#roles-and-permissions) - for "
+"this column, use the role labels exactly as they appear in Omeka S."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:643 efc11b6968b042f9b30725759f539792
+msgid ""
+"![The same table as above, now with the mapping drawer open and the "
+"dropdown activated to show the three "
+"options.](../modules/modulesfiles/csvimport_usersMap.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:645 e53ad944566a4c4ab944bc7567955d61
+msgid "Once you have completed the mappings, click the Import button."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:647 78d441c9a76a464293ad90629f8ae6ad
+msgid ""
+"The CSV Import for Users does not have tabs for Basic or Advanced "
+"Settings."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:649 0318bf4379a9483482071ea3bc3fcd4f
+msgid "Manage Past Imports"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:651 7e9587689b7b4d9c8a43e2b0276a0bcc
+msgid ""
+"To review past imports, click on the CSV Importer module tab and select "
+"the Past Imports subtab."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:653 83c2c70ad7524680aa09936c5e76036e
+msgid ""
+"![CSV Import subtab options on left hand "
+"nav](../modules/modulesfiles/csvimport_pastimportsnav.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:655 fbc7aff3117f4422a72cd1e5e9e1eee4
+msgid "This will display a table with the following columns:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:657 16f547ca7e5e4ba485095782c40d20bd
+msgid "An *Undo* Checkbox"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:658 14c3028009ff4d31ba2eeca351475f24
+msgid "*Date* of import"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:659 ccc34a65d5d54ab7a2eae75897417abd
+msgid ""
+"*Action* of the import (create, append, revise, update, replace, or "
+"delete)."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:660 c78ec592516f4111a638ca58e2f4a05a
+msgid ""
+"Beneath the action description there are links to the job details and job"
+" log."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:661 50022d9eeffb43248e10c05dd16ef453
+msgid "*Comment* entered on import or indicating an error"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:662 6d89231ac20a47c18681c306e0a1028f
+msgid "*Result* the items updated, added, or deleted"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:663 f96df99dac4846cda1ef4d6f65d9267d
+msgid "*Status* of import"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:664 7bce8fa54d59460192e3fa22c93395ff
+msgid "Import *Owner*"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:666 73ec2b01938342218ce531aee4523f67
+msgid ""
+"![CSV Import past imports "
+"table](../modules/modulesfiles/csvimport_pastimports.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:668 6252729125fd4a89a0546bf95c09f134
+msgid ""
+"To see the details of an import, click the \"Job details\" link below the"
+" action description. To review logs, particularly in cases where an error"
+" occurred, click the \"Log\" link below the action description."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:670 3b84ab3900bf4da2b6fdee611ac2582a
+msgid "Undo an Import"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:672 5a311a94077644fcab7f07831fc16c36
+msgid ""
+"To undo an import, click on the CSV Importer module tab and select the "
+"Past Imports subtab."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:674 3e2ede1bc7104d2281def7595c240018
+msgid ""
+"Check the *Undo* box in the row of the import which you want to undo, and"
+" click Submit."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:676 83e6349db60143fcb29318426ff30cca
+msgid ""
+"![a red arrow points to a checked Undo box on the Past Imports "
+"page](../modules/modulesfiles/csvimport_undo.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:678 24e48b973aab41abafb7ad670afbb336
+msgid ""
+"Depending on the size of the import, it may take some time to undo. On "
+"complete, the status of the import on the CSV Importer Past Imports table"
+" will say \"Undone\" followed by the date the import was reversed."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:680 1f205102ac594410a29fd5a6ac738a0e
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:681 09efd6e0924d457190601e0f9870a483
+msgid "The following are known errors that can occur during an import:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:683 293a27ad3c6445dca6ea6928cfc7491d
+msgid "**Encoding**: CSVs for import must be UTF-8 encoded."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:684 5d612ee1a58d4e0e942c06dd3ff6e0d2
+msgid ""
+"Are your jobs starting and not completing? You might need to [set the "
+"path for PHP](../configuration/) so that your system can perform the "
+"background process to make the items."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:686 684c3de6c87143a3b0a217ef5a9340b0
+msgid "CSV Import with other modules"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:687 4a3af4d0be7d479fb69f05b2a0b3bf6a
+msgid ""
+"Some other modules add functionality to CSV import. If you have these "
+"modules installed and active, you will have access to the following "
+"options when using CSV import."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:689 784435c856af4f6d851c9bbdae419142
+msgid "Mapping"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:690 388dcf9b74314d58a450a41d51a40f6d
+msgid ""
+"If you have [Mapping](../modules/mapping/) (minimum version 1.1.0) "
+"installed and active, you will have two additional options in the \"Map "
+"to Omeka S data\" tab when importing Items. Note that these options do "
+"not appear for any other import, including Mixed Resources."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:692 256e385a131e4575bc5af939c3ee284b
+msgid ""
+"![Add mapping drawer with additional options for \"Resource location\" "
+"and \"default map view\"](../modules/modulesfiles/csvimport_mapping1.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:694 7997f2de57914dac90f96bcd6951ee99
+msgid ""
+"**Resource location:** set the location for the resource. Your column for"
+" this option can include one of the following forms of data:"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:696 eafc069b803c44a794b2bc0db2ff082c
+msgid "*Latitude* must be written as a single number (23.43 not 23° 26′)."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:697 2f999f28aaf547bcb7123844881b7e9e
+msgid ""
+"*Longitude* must be written as a decimal fraction using negative and "
+"positive to indicate west or east. (−91 rather than 91°W)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:698 63df78a87bee4fe2b9c5bebec639b376
+msgid ""
+"*Latitude/longitude* must be inputted as numbers separated by a slash, ex"
+" `52.19/ -1.71`"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:700 e78de2d4366f46d5a6bce5a03b71cb6c
+msgid ""
+"![dropdown with the options described "
+"above](../modules/modulesfiles/csvimport_mapping2.png)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:702 4b95db964bb94f578fb97f6ed180f50b
+msgid ""
+"**Default map view:** sets the default map view for the item to which you"
+" are adding Mapping information."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:704 5722f84dd5a942139a76c65043523459
+msgid ""
+"*Map center latitude* must be written as a single number (23.43 not 23° "
+"26′)."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:705 19374f716c0c4611b811cca2bccac8f7
+msgid ""
+"*Map center longitude* must be written as a decimal fraction using "
+"negative and positive to indicate west or east. (−91 rather than 91°W)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:706 de41f0df68b246be827c2209b7ad57b7
+msgid ""
+"*Default zoom* should be a number between 1 (most zoomed out) and 18 "
+"(most zoomed in)"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:708 36be90769c2844a299fb9ae0f87b95d3
+msgid "File Sideload"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:709 5d6d79fbf6f14eb0910d97a9ae00cbb5
+msgid ""
+"If you have [File Sideload](../filesideload) (minimum version 1.2.0) "
+"installed and active, you can use it as a source for media when running a"
+" csv import."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:711 7852b6f614164f1aa27e31946001b509
+msgid ""
+"Everything on the *Map to Omeka S data* tab will be the same. When you "
+"add a mapping and choose the \"Media source\" option, you will see that "
+"there is now an option for \"Sideload\""
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:713 f1af9a0aca504399a3be42c8bea01041
+msgid ""
+"![Dropdown menu for media source, with Sideload highlighted in "
+"blue](../modules/modulesfiles/csvimport_sideload.png)."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:715 39ce28e71bda4c388976584ff7d503a1
+msgid ""
+"For the data in this column, you need to include the full file name, "
+"including extension. So, for example, if you want to import a jpg file "
+"which is named \"Jekyll_and_Hyde_Title\" then the data in the media "
+"column of the csv you are importing should be "
+"`Jekyll_and_Hyde_Title.jpg`."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:717 73d3d192e3d145e399eedd7176614ddb
+msgid "Numeric Data Types"
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:718 c89113ef3fcc4900a1f9ef977cd871d4
+msgid ""
+"If you have [Numeric Data Types](modules/numericdatatypes/) installed and"
+" active, it will add the option to set a column data type as numeric "
+"data."
+msgstr ""
+
+#: ../../docs/modules/csvimport.md:720 99cc1f7c271b430b9bde8beacdc31d43
+msgid ""
+"![Column options drawer with the data type dropdown open, showing options"
+" for numeric data types as well as the standard "
+"options](../modules/modulesfiles/csvimport-numericdata.png)"
+msgstr ""
+

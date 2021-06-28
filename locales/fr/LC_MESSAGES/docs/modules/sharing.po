@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/modules/sharing.md:1 bae3a17afc32455ea7937364e1acb2d2
+msgid "Sharing"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:3 aefdb26ef0bc46de82295cd8abab449d
+msgid ""
+"The Sharing [module](../modules/index.md) allows you to add buttons to "
+"site pages which visitors can use to share and embed content from your "
+"site on social media or via email."
+msgstr ""
+
+#: ../../docs/modules/sharing.md:5 96413d7de71c4a7d87cf134108edf9ee
+msgid "Currently, Sharing supports the following options:"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:6 774aba98e8034603a8e77b8e042d24aa
+msgid "Facebook"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:7 40dcee4b764348858f14ef0090776d8a
+msgid "Twitter"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:8 e4439e5ea7cd4d76956f4d099b356d43
+msgid "Tumblr"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:9 6211bc6fc44a4c0faca27866ea57aa38
+msgid "Pinterest"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:10 077d3c4d7a4745ac83bcb7c69bd9353e
+msgid "Email"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:11 623393f29d8d4a8da01a1ac5776f90be
+msgid "Embed codes"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:13 9fefd314c1a4418692c7241b5621f0dd
+msgid ""
+"Once sharing has been [installed](../modules/index.md#installing-modules)"
+"  and activated for an Omeka S install, it is available for all sites on "
+"the install."
+msgstr ""
+
+#: ../../docs/modules/sharing.md:15 2ee04232f2564faa919642478244db1b
+msgid ""
+"![Sharing module installed and activated in the general settings module "
+"page](../modules/modulesfiles/sharing1.png)"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:17 c640bcb0997c4048baeb0e02ce6dcadc
+msgid "Configuration"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:19 f25f3defe5954438b54728c8eca0aed9
+msgid "Sharing settings are configured on a site by site basis."
+msgstr ""
+
+#: ../../docs/modules/sharing.md:21 50089eecb5904a2498887f4aa856f98a
+msgid ""
+"Go to the site for which you want to configure the plugin and click "
+"through to the edit site dashboard. Click on the Site Settings."
+msgstr ""
+
+#: ../../docs/modules/sharing.md:23 111b71b4dd1e4ac898012d6132a3dfcb
+msgid ""
+"![Left hand navigation options for sites: settings is at the "
+"bottom](../modules/modulesfiles/sharing2.png)"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:25 fc283325e13f475584ab9b2743bb6e85
+msgid ""
+"There should be a section labelled \"Sharing\" (see the image  below) "
+"with two options:"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:27 f7c9bd0b8034468ab6d9c04df9b31e19
+msgid ""
+"*Enable Sharing module for these methods*: gives a series of checkboxes, "
+"one for each service or option (Facebook, twitter, etc)"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:29 6eb25a8a9a8a44f0aca73175865ca3d3
+msgid ""
+"*Sharing buttons placement on the page*: sets the placement of the "
+"sharing buttons either at the top of the content (below the navigation "
+"and page header) or at the bottom (just above the footer)."
+msgstr ""
+
+#: ../../docs/modules/sharing.md:31 c8ab7413ef994fa3a8d0e3e6227353de
+msgid ""
+"![Checkboxes for the sharing options listed above, in two "
+"rows](../modules/modulesfiles/sharing_options.png)"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:33 b98112c45c3d42c7a41c202cd16dc8e2
+msgid ""
+"Ensure that the correct boxes are checked for your site. You can uncheck "
+"all of the boxes to turn off sharing for your site. Be sure to save your "
+"changes."
+msgstr ""
+
+#: ../../docs/modules/sharing.md:35 8e71fe302c904edc977801705830964d
+msgid "Public Side"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:37 e8587ce884984345b550cf60625576c8
+msgid ""
+"Sharing icons for enabled services and options will display at the bottom"
+" of pages you build as well as individual item/show pages on your site."
+msgstr ""
+
+#: ../../docs/modules/sharing.md:39 5dcf5e313cd94c469436473007f04dd5
+msgid ""
+"![Share buttons for Facebook, twitter, and email displayed above an "
+"item's title, just under the page "
+"header](../modules/modulesfiles/sharing_buttons.png)"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:41 ea308654ffd94f86bac98bd974a7eb82
+msgid ""
+"By default, the module will share the page title, name of site, and name "
+"of installation."
+msgstr ""
+
+#: ../../docs/modules/sharing.md:43 aed867c0d36c4f84825d0cec28077ae1
+msgid ""
+"![An example tweet for the page, listing the page’s title then a dot, "
+"followed by the site’s title then a dot, followed by the installation "
+"title, ending with a dummy url for the "
+"site](../modules/modulesfiles/sharing_display1.png)"
+msgstr ""
+

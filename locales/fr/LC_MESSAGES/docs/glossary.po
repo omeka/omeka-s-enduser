@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/glossary.md:1 6fee47b3c2e34e3fb09c3a9dec26c2ec
+msgid "Glossary"
+msgstr ""
+
+#: ../../docs/glossary.md:3 0909315fe24140bea53bf28f9f9b7efe
+msgid ""
+"The following glossary should help to clarify some of the less-familiar "
+"terms in Omeka S. Where appropriate, we have provided a roughly analogous"
+" term from Omeka Classic, although some analogies are stronger than "
+"others."
+msgstr ""
+
+#: ../../docs/glossary.md:6 0dc47fe2451346f3af9b43f58fbccc99
+msgid ""
+"**Class**: A kind of Resource, as defined by a Vocabulary. Often, "
+"Vocabularies expect particular Properties to be used with particular "
+"Classes. For example, a `foaf:Person` would not have a "
+"`dcterms:publisher` Property, but could be expected to have a "
+"`foaf:familyName` Property.   *Omeka Classic analogy*: Item Type"
+msgstr ""
+
+#: ../../docs/glossary.md:9 f3b734bcbb004142880cec2dee4e8d3c
+msgid ""
+"**File**: Data uploaded to an Omeka S installation and associated "
+"directly with an Item (see also: Media).     *Omeka Classic analogy*: "
+"File (but the analogy is weak)"
+msgstr ""
+
+#: ../../docs/glossary.md:12 3da603376d604f07adab4d2d3a307ee9
+msgid ""
+"**Global Admin**: An administrator who controls everything, and is "
+"typically the person who created the Installation.   *Omeka Classic "
+"analogy*: Superuser"
+msgstr ""
+
+#: ../../docs/glossary.md:15 f9c3eb1f12bb48ff83ba29680cc15f92
+msgid ""
+"**Installation**: An instance of Omeka S. Typically, a central IT "
+"department of an institution does the process of installing, and probably"
+" also creates sites for others."
+msgstr ""
+
+#: ../../docs/glossary.md:17 3be462ac0d6e433bb113285e8d4d56e4
+msgid ""
+"**Item**: The records used to build an Omeka S Site. Items are shared and"
+" available to any Site in an Installation, unless explicitly excluded "
+"from sharing.   *Omeka Classic analogy*: Item"
+msgstr ""
+
+#: ../../docs/glossary.md:20 b9c71835ea3542e9ae4ba0049284fb25
+msgid ""
+"**Item Set**: An aggregation of Items. Items can belong to any number of "
+"Item Sets.   *Omeka Classic analogy*: Collection, Items with the same tag"
+msgstr ""
+
+#: ../../docs/glossary.md:23 0fe14e5dcb4444c6ae9b402b7b42af60
+msgid ""
+"**Media**: Additional representations or descriptions of an Item, beyond "
+"metadata from vocabularies. Typically, this refers to a File (of any "
+"type, including, e.g., text or HTML snippets), but could also refer to "
+"external data sources such as a YouTube video, Slideshare deck, Dspace "
+"bitstream, etc.       - *Omeka Classic analogy*: File (but the analogy "
+"the weak)"
+msgstr ""
+
+#: ../../docs/glossary.md:26 279f2ac3cca7409ba7ae2f56ae072a86
+msgid ""
+"**Property**: A defined — to one degree or another — kind of metadata "
+"used to describe a Resource. The most common is dcterms:title, for the "
+"written, human-readable title of an Item. The Values for Properties can "
+"be written language intended for humans or other sentient beings to read "
+"(‘Literals’), Resources (understood here as internal to an Omeka S "
+"Installation), or External URIs (e.g., a URI to a DBpedia resource page)."
+"   *Omeka Classic analogy*: Element"
+msgstr ""
+
+#: ../../docs/glossary.md:29 f771c01c0fec48d9968acc4d2ced19a4
+msgid ""
+"**Resource Template**: A set of pre-defined Properties, and optionally a "
+"Class, to use to guide Item creation and interpretation of Properties. "
+"Typical usage is to create a template for, e.g., a `foaf:Person` that "
+"makes Items using that template show the inputs for the expected or "
+"desired `foaf: properties`, and sets the Class of the Item to "
+"`foaf:Person`.   *Omeka Classic analogy*: Item Type (but the analogy is "
+"weak) cf. Class"
+msgstr ""
+
+#: ../../docs/glossary.md:32 6a4abd6af64745fcb853c6e4d0d7f4b5
+msgid ""
+"**Site Admin**: An administrator of a single Site within an Omeka S "
+"Installation.   *Omeka Classic analogy*: Superuser role"
+msgstr ""
+
+#: ../../docs/glossary.md:35 782e410e2cf641d1a16d360f214dacea
+msgid ""
+"**Value**: The actual data that fills out the Resource-Property-Value "
+"triple. If the property is 'dcterms:title', a reasonable Value might be "
+"“Heart of Darkness”. Literal Values might also have information about the"
+" language in which that Value is expressed attached. Values can also be "
+"Resources or URIs to external data (preferably URIs that return RDF data,"
+" but I don’t think we’re going to enforce that).    *Omeka Classic "
+"analogy*: Element Text"
+msgstr ""
+
+#: ../../docs/glossary.md:38 afe33101869b47af8712a435daf80dd1
+msgid ""
+"**Vocabulary**: A collection of published RDF metadata Classes and "
+"Properties for describing a Resource. These exist and are created "
+"externally to Omeka, and can be imported (with some limitations) into "
+"Omeka S for use throughout the Installation. The most-used Vocabulary is "
+"Dublin Core Terms (dcterms:).   *Omeka Classic analogy*: Element Set"
+msgstr ""
+

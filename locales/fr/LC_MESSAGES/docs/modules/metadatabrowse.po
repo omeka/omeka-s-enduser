@@ -1,0 +1,320 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/modules/metadatabrowse.md:1 8bc87fc959964bb4a54e1fbce0018c96
+msgid "Metadata Browse"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:3 b73797ef9b7542c08ce1d43c43958d80
+msgid ""
+"The Metadata Browse module makes it possible to browse all resources that"
+" share a value for a particular metadata property."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:5 0be0aa07be7c459cb4c478cab35aaa42
+msgid ""
+"It does this by adding a link below selected properties that reads \"See "
+"all items with this value\"; when clicked, the module returns the results"
+" of that search (property value is equal to input). In function it is "
+"similar to the Omeka Classic plugin [Search by Metadata](http://omeka.org"
+"/add-ons/plugins/search-by-metadata/)."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:7 18aebca6a31c448597a16e53075c75a5
+msgid ""
+"The module's browse function is applied on the admin side when the module"
+" is active, and can be enabled on the public side of individual sites,  "
+"on a site-by-site basis."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:9 cdd106e99ba94e8eace874297f545d57
+msgid "Configuration Options"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:10 84481286700a4d638e407f8d82265fa3
+msgid ""
+"Once you have installed and activated the module, you can configure it "
+"from the Modules tab of the left-hand navigation. Click the Configure "
+"button, with the wrench icon, to the right of the Metadata Browse label."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:12 45bdb87bbdc2447b80f2cc0c9306e78e
+msgid ""
+"The module has two checkbox configuration options, Global Configuration "
+"and Direct Links. If Use global configuration is checked, you will also "
+"be able to select properties from a right-hand sidebar."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:14 ad2dd8b68a774e0abec0e405151e77c6
+msgid ""
+"![Metadata Browse configuration "
+"settings](../modules/modulesfiles/mdbr_config2.png)"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:16 1b848a2ec78842358c6b7bcc7e776a4b
+msgid "Global Configuration checkbox"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:17 28537901f4964cd5b98082245072565c
+msgid ""
+"The \"Use global configuration on admin side\" checkbox determines how "
+"the properties available for *admin side* metadata browsing (on items and"
+" item sets views) are determined: by aggregating the properties selected "
+"on all of the sites in the installation (unchecked) or limited to only "
+"the properties."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:19 0663d9823d6e43bc8b11d056a74a90e7
+msgid ""
+"When the box is *unchecked*, metadata browse on the admin side (and only "
+"the admin side) aggregates the metadata browse settings for all "
+"individual sites and applies them to every item and item set in the "
+"installation."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:21 a0c4fd25ba81459e97d66bab908237b9
+msgid ""
+"Leaving the box unchecked allows installation users to browse the "
+"properties on the admin side which they have set as key on their sites. "
+"For example, a site about various artists might have the Metadata Browse "
+"enabled for 'Creator' (Dublin Core), while a site collecting conference "
+"papers might enable Metadata Browse for 'presented at' (Bibliographic "
+"Ontology); with the box unchecked, both 'Creator' and 'presented at' "
+"would have Metadata Browse enabled on the admin views of all items and "
+"item sets on the installation."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:23 20a78de7dfe345dd98587ca3cc33e595
+msgid ""
+"When the box is *checked*, individual site settings still apply on the "
+"public views of those sites, but are not used on the admin side. Instead,"
+" only those properties selected in the Metadata Browse module "
+"configuration settings (the current page) are used on the admin side. So "
+"if the global admin of the installation example above checked the Global "
+"Configuration box and only enabled the properties 'Title' and 'Creator', "
+"then the 'presented at' property would not include a \"See all items with"
+" this value\" option on the admin side item browse."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:25 e26d79106ac640eb8f5a20c84fa98b61
+msgid ""
+"Checking the box can be used to limit the number of properties which have"
+" Metadata Browse enabled on the admin side. If, for example, the site "
+"about various artists mentioned above was using Metadata Browse on every "
+"possible property, those Metadata Browse links would still be visible on "
+"their site, but would not show up on the admin side. Instead, the Global "
+"Administrator(s) could decided which properties to enable browsing on for"
+" the admin side, thus reducing visual clutter."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:27 1dc524c975874b98a9ec0ff2fbcba43c
+msgid "Direct Links checkbox"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:28 8b8bf83b0c0a4b5fac421a6df6855742
+msgid ""
+"The \"Direct Links\" checkbox sets how metadata browse links are "
+"displayed on both the admin side and across all sites."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:30 c5353738d4f44479aa2ed259250cde1e
+msgid ""
+"If this box is unchecked, the properties which have been selected for "
+"metadata browse will display with a red textual link under them which "
+"reads \"see all items with this value\". Clicking on the link text opens "
+"the page of items with matching metadata."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:32 d8f191829572462d9620d9232aa476fb
+msgid ""
+"In this example, metadata browse is active for the \"Date of "
+"Publication\" property:"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:34 5e0465b8eb82447dad9cbd581cfe4892
+msgid ""
+"![The item *Sense and Sensibility*. The date property has text as "
+"described, and is indicated with a blue arrow.](../modules/modulesfiles"
+"/mdbr-directlinkNo.png)"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:36 d94c3c70f22a402da6cc2571e40dd0a2
+msgid ""
+"If this box is checked, the values of the properties themselves become "
+"the link, similar to how a property populated by a resource displays. In "
+"this case, clicking on the property value itself opens the page of items "
+"with matching metadata."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:38 d012f010c67f41e0960104a379fda42a
+msgid ""
+"![The item *Sense and Sensibility*. The date property displays as a link,"
+" and is indicated with a blue arrow.](../modules/modulesfiles/mdbr-"
+"directlinkYes.png)"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:40 d51947ce85b64fa8a10c5650d80df188
+msgid "Choose properties"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:41 30ab6c35842b4da8af08bd97916a2fc3
+msgid ""
+"Selecting properties for Metadata Browse in the Module configuration will"
+" only work if the *use global configuration*  checkbox is checked (see "
+"[above](#global-configuration-checkbox))."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:43 94ced36526e14528960cb0d854fa8b87
+msgid ""
+"Select the properties from the sidebar by clicking on the desired "
+"property. It will load under the prompt \"Choose properties\"."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:45 f592163f26cc48709730016b635c4122
+msgid ""
+"![Metadata Browse configuration, some properties "
+"selected](../modules/modulesfiles/mdbr_config4.png)"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:47 898f970bb5c842b3b4952a4bf46013c9
+msgid ""
+"To remove a property simply click the trash can/delete icon to the right "
+"of the property label."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:49 1e605b15ab9a444da5842c2f60cc4559
+msgid "Admin side browse"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:51 4ebcd0bb3c594b0b813e6933d4d588c9
+msgid ""
+"Once you have selected properties for Metadata Browse, either in the "
+"configuration for the module or on at least one site, you will be able to"
+" search for exact matches to item and item set properties on the admin "
+"side."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:53 db2f9c9c4a1d47b3bcc003b145ee1a6a
+msgid ""
+"When viewing the metadata of any item (not when editing), you will be "
+"able to browse those properties as exact match for any other item in the "
+"installation with that value in that property. If the direct [direct link"
+" checkbox](#direct-links) is active, these properties will display as "
+"links; if not, they will display with the text \"see all items with this "
+"value\" just below the value for the property."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:55 48121e4642434d2c891dc31e8223b8d7
+msgid ""
+"![Admin side view of item with red arrows pointing to the metadata browse"
+" links](../modules/modulesfiles/mdbr_admin1.png)"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:58 d5732fba66074d099079351841725cb3
+msgid "Metadata Browse on Sites"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:59 90610b8530f14832bf3214c28d36b127
+msgid ""
+"Once the module is activated and installed, it will show up in the "
+"context menu for [sites](../sites/index.md) on your installation."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:61 f9a7147bc7bb4118a02990743ceeda73
+msgid ""
+"To set up Metadata Browse for a site, click on the Metadata Browse tab in"
+" the site's context menu."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:63 024ae11fe4064f40935619098e98e990
+msgid ""
+"![A red arrow points to the Metadata Browse "
+"tab](../modules/modulesfiles/mdbr_sites1.png)"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:65 f7437c99fb944b0db9813be94e03fdea
+msgid ""
+"On the page which loads, select properties from the sidebar to enable "
+"metadata browse by clicking on them in the sidebar."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:67 987b78ff5d254ba69406a62fdb8ec1db
+msgid "![Metadata Browse site options](../modules/modulesfiles/mdbr_sites2.png)"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:69 e189e1144fec4b919099ae13f61c7c0a
+msgid ""
+"Delete any selected properties by clicking the trash can/delete icon. If "
+"you accidentally click the delete button, simply click the undo button "
+"which replaces it to keep that property."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:71 c2cd939ffb4a4a01ad0bb2e19d8dffbd
+msgid ""
+"![A property set to be deleted, showing the undo "
+"button](../modules/modulesfiles/mdbr_sites3.png)"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:73 468b27c4f45c4b4083a57f148b48a659
+msgid "Remember to click the *Save* button to save changes."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:75 e81f95bb506c451ab645c657c120c7c7
+msgid "Public View"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:76 3b119ac66e2846f0a8d1b372b480bb83
+msgid ""
+"Once you have selected properties and saved changes, visitors to your "
+"site can use the Metadata Browse properties to search for all items on "
+"the site with matching properties."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:78 2d1b5956fd174cdca5d2a22e5af44173
+msgid ""
+"The browse will either display with the property as a link or with the "
+"link text \"see all items with this value\", depending on whether the "
+"[direct link checkbox](#direct-links) in the global module configuration."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:80 2a24c3e11ba448598f99a2e847153ff7
+msgid ""
+"In the example below, Metadata Browse is available for Title, Date of "
+"Publication, and Publisher, and Direct Links is not active."
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:82 3f0d667b084541b0baf8ff25cf96f918
+msgid ""
+"![An item with arrows pointing to the links for \"see all items with this"
+" value\"](../modules/modulesfiles/mdbr_public1.png)"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:84 654c39892b2a46bebe8a6e7cace27775
+msgid ""
+"Clicking on \"See all items with this value\" under creator takes a "
+"visitor to a page of exact match search results. For example, this is the"
+" result for clicking \"see all items with this value\" for the Publisher "
+"property in the previous image:"
+msgstr ""
+
+#: ../../docs/modules/metadatabrowse.md:86 a1ed16a313ab44f3aaff665054fe90db
+msgid "![Beginning of search results](../modules/modulesfiles/mdbr_public2.png)"
+msgstr ""
+

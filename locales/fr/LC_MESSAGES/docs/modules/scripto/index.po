@@ -1,0 +1,408 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/modules/scripto/index.md:1 e7c9e4ffab634f50b2b3e3c221c05c61
+msgid "Set up Scripto"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:3 685c16a3310d4b8086fe841272a9902c
+msgid ""
+"The Scripto module for Omeka S allows you to create projects which allow "
+"members of the public to transcribe, translate, or describe media "
+"attached to items in your Omeka S installation."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:5 9853c1957a9e4995ad8ca6b564c92f5c
+msgid ""
+"The items and media are organized into an item set and then synced with a"
+" project in Scripto. Content made within Scripto can be periodically "
+"imported into Omeka S as item and media metadata."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:7 37e1596d22044adabf2628632fd70d53
+msgid ""
+"All content creation (transcription, translation, or description) takes "
+"place on the [public face](../../modules/scripto/scriptoPublicView/) of "
+"your Scripto [project](../../modules/scripto/scriptoproject/)"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:9 a9ade3de88074c9bb95b8a7927d1a402
+msgid "Concepts and Terminology"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:11 09f4c299e3064affaea5b2da53c12390
+msgid ""
+"A Scripto **Project** allows you to organize the materials you want to "
+"work with, and set how you intend to work with them. A project can either"
+" transcribe, translate, or describe; it cannot do more than one."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:13 f685bcb8bea54e6cb6fe8772190263bc
+msgid ""
+"However, the Omeka S Scripto module allows you to create multiple "
+"projects on a single Scripto installation. Like sites in Omeka S, Scripto"
+" projects can exist independently of each other. This means that you can "
+"support a manuscript transcription project and a document translation "
+"project through the same Omeka S installation."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:15 d8c97ced80f54ed286626560dccd9160
+msgid ""
+"An **Item** in Scripto corresponds to an item in Omeka S. When browsing "
+"projects, community members will page through items. Items can also be "
+"labeled as: audio, book, document, journal, manuscript, paper, or video."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:17 86d0267ebb804047892bde83e1dc15fd
+msgid ""
+"The **Media** associated with an item are the level at which community "
+"members transcribe, translate, or describe. Every piece of media is "
+"associated with an item. Media can also be called: entry, folio, image, "
+"page, segment, section, or sheet."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:19 04244846737144be80d319b7c9acc6a4
+msgid "Installation and Configuration"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:20 79b9c80cbc0642debf7d19ae408c386e
+msgid "To install Scripto, you must:"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:22 fa17d3b9100f42d293047831e6849416
+msgid "be running Omeka S v2.0.0 or higher;"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:23 f94461b7163c4cc1b1b1d495df8d7587
+msgid ""
+"have a [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) installation"
+" running on the same server as the Omeka S installation. Minimum "
+"MediaWiki version is 1.30.0."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:25 5098056f3d974828963361ae3b243477
+msgid ""
+"Create the MediaWiki installation on your server using [their "
+"instructions](https://www.mediawiki.org/wiki/Manual:FAQ#Installation_and_configuration)."
+" Install the Scripto module using the [documentation for installing "
+"modules](../../modules/#installing-modules)."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:27 15f396eb4f4642ffa49b65106e4fa726
+msgid ""
+"Once you have installed the module and created your MediaWiki "
+"installation, go to the Modules tab of your Omeka S installation and "
+"activate the Scripto module."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:29 0b2e524394a941c08c25af9acaddfb42
+msgid ""
+"Staying on the Modules tab, click the Configure button for the Scripto "
+"module. There is a single, required field for you to enter the url for "
+"your MediaWiki API."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:31 330845ca1770446290024dee170d9986
+msgid ""
+"![Scripto module configuration page, with the field empty and highlighted"
+" in red](../modulesfiles/scripto-configure.png)"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:33 3b366573007442d0b5d64a208e8e17e0
+msgid ""
+"Enter the url for your [MediaWiki API "
+"endpoint](https://www.mediawiki.org/wiki/API:Main_page#Endpoint) in the "
+"field; this should be along the lines of `<your mediawiki url>/api.php`. "
+"Be sure to click \"Submit\" to save your changes."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:35 14676e0795694a25b9ab9029a85e2984
+msgid "Scripto Vocabulary"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:36 817af91260bb444d9c51cf35506fc3e0
+msgid ""
+"Once Scripto is installed and active, it will add the Scripto "
+"[Vocabulary](../../content/vocabularies/) to your Omeka S installation. "
+"This vocabulary contains the following properties:"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:38 a0d4aba881374962b1413c13322b77aa
+msgid "Content: A plain text representation of the content of a resource."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:39 3756365c15c642e18dc01f16c1491174
+msgid "Transcription: A transcription of a resource"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:40 2f4a58f6f9a64e6c96e8e8b928801911
+msgid "Translation: A translation of a resource."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:42 db647ed8d33149cfa772daf268b1a736
+msgid "Do not edit this vocabulary."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:44 20091eab260e4bc6ab00fcc545da2b94
+msgid "Create an item set"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:45 968c6316f2f7454999b2e79be4507b29
+msgid ""
+"The Scripto module uses [item sets](../../content/item-sets) to manage "
+"the content coming to and from your Omeka installation."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:47 5baecc397aaa405a96119b67ef4d187d
+msgid ""
+"Each Scripto project needs its own item set with which it can sync. "
+"Create the item set using items from your Omeka S installation which you "
+"want to be included in the project. You can add items to this item set "
+"later if you need to."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:49 68e070d26e3448b79d51b8d4df26debc
+msgid "Scripto Admin Dashboard"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:50 7da2826f0d6b4507b8354105cedb9445
+msgid ""
+"The Scripto tab which appears under the Modules section of the left-hand "
+"navigation on the Omeka S installation admin side takes you to the "
+"Scripto Dashboard."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:52 ef255fb774f84029ba005a675c80fe19
+msgid ""
+"From the dashboard, you can log in to Scripto using the bar across the "
+"top:"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:54 0f127368220c4cc9993f14e4d69abd8e
+msgid ""
+"![Scripto dashboard header and log in fields](../../modules/modulesfiles"
+"/scripto-dash-login.png)"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:56 f8c0d599d631481d82f2b2cb9437a1bd
+msgid "Once you are logged in, the dashboard will include:"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:58 b2556b33d26548f98805d809bc512eb2
+msgid ""
+"A bar across the top with your username and links to the dashboard, your "
+"contributions, your watchlist, and a button to Log Out of Scripto."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:59 bc31fe3b3bf346cfba07933ce7d0038e
+msgid ""
+"A view of all the [Projects](../../modules/scripto/scriptoproject/) you "
+"own."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:60 5526d45965ee4c2ea9d69cf1aaa7fccf
+msgid ""
+"A view of all the [Projects](../../modules/scripto/scriptoproject/) you "
+"review"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:61 749d0114f6554b6b8b5910967e0d4b0a
+msgid "A view of your recent Contributions"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:62 59c9805a2382447084ac0c08958529d9
+msgid "A view of your watchlist."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:64 7fe3f12d79db4346aa8283e72b914e5f
+msgid ""
+"![Scripto dashboard with three projects, two of which the user reviews, "
+"and a series of recent "
+"contributions.](../../modules/modulesfiles/scripto_dash.png)"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:66 21906b75c5904ac0b091d9cbcd738b47
+msgid ""
+"From the dropdown in the upper right, Omeka S global and site admins can:"
+" browse all [Projects](../../modules/scripto/scriptoproject/); add a new "
+"[Project](../../modules/scripto/scriptoproject/), and browse all Scripto "
+"users."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:68 0bace235d4c342e691c6c8291422398c
+msgid ""
+"![Dropdown showing the options to browse projects, add a project, or "
+"browse users](../../modules/modulesfiles/scripto-dash-actions.png)"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:70 119180b578df473eb8764f61d1d11742
+msgid "Users"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:71 3c498ff527dc47aca6de94d89c6d7783
+msgid ""
+"In addition to an Omeka S user account, any individual working on Scripto"
+" will need to have a MediaWiki user account as well. They can sign up for"
+" this account from the public side of the Scripto interface: `<your omeka"
+" S url>/scripto/create-account`."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:73 05f5c1efeef3489cbd0f4171c9551449
+msgid ""
+"In order to change the status of transcriptions and sync projects to and "
+"from Omeka S, users must have [Bureaucrat level "
+"permissions](https://www.mediawiki.org/wiki/Manual:User_rights) on the "
+"MediaWiki installation. This *must be done on MediaWiki* and cannot be "
+"managed through the Scripto dashboard on Omeka S."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:75 4eb66bfc39e54010a611c98f6c61ca9e
+msgid ""
+"You may find it easiest to have administrators of Scripto projects use "
+"the same or similar user names on both installations, in order to keep "
+"track of who is doing what."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:77 2fa8f7334d8842e5b656f343eea8330c
+msgid "Browse users"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:78 9c61cd6d70c94d27bfe3be3329aecd87
+msgid ""
+"From the \"actions\" dropdown in the upper right corner of the Scripto "
+"Dashboard, you can select \"Browse users\""
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:80 001bfbec7d0949f19332d15d71ec6e32
+msgid ""
+"This will take you to a user browse page showing all of the Scripto users"
+" on this installation (from MediaWiki)."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:82 e3b660ee6e2d4ab4ad31ccfea2b09ff9
+msgid ""
+"![Browse users table with two users, one regular and one "
+"admin](../../modules/modulesfiles/scripto-browseUsers.png)"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:84 08c5b94baba741308cfa0529e4ac8208
+msgid "The users are displayed in a table listing their:"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:86 779be8befa554a88a8269fc30c0f8960
+msgid "Name"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:87 04d14ca8ad7b4dadafc659f556f07bb9
+msgid "MediaWiki Groups, which will indicate their roles"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:88 1e46ee7744664b2c94685f7b14f700e4
+msgid "Edit count (how many media they have edited)"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:89 9c73134ae127467782da1954522dd011
+msgid "Date the account was created."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:91 3f9b4459e94b437a97a287200be30835
+msgid "User contributions"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:92 9d1ca4a0561844778a3b2b81a17f90b6
+msgid ""
+"Clicking on a user's name will take you to a page with a summary of their"
+" contributions."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:94 155ef71cbf984196b2cf469410be1945
+msgid ""
+"![Contributions of the user DemoUser - one edit dated 15 October "
+"2019](../../modules/modulesfiles/scripto-user-contributions.png)"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:96 1edbc370d9b54127af876675691eb588
+msgid ""
+"For each user, there will be a table with a row for every edit they have "
+"made to a piece of media. The columns are:"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:98 153bce8bce854e0491373c3458dc9263
+msgid "Revision, with a timestamp which links to that revision;"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:99 a6443c13bd69462da346aeda0501c7ab
+msgid "Media #, with a link to the media;"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:100 db47ce5e48674829a859782a8a641fc4
+msgid "Type;"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:101 3edc766fb7f0474d8725dc60fab906dd
+msgid "Item, which links to the item *in Scripto*;"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:102 5a0505514357489ea7af2255fe0884e0
+msgid "Project with which the item is associated;"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:103 70cf249d3b2c48528191262020bc2e5d
+msgid "Size of the edit;"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:104 ebf622c757b9445c8eafe77780192203
+msgid "Comment, if any."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:106 4948bbef2f30408da007ac14ea151328
+msgid "Public and Admin views"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:107 64df34e1a5f745958faa169967b6c64c
+msgid ""
+"To toggle between the public and admin views of a project, delete the "
+"`/admin` from the url of any Scripto site, or add it in directly after "
+"the name of your Omeka S installation."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:109 80c5bb0623544e5d982e9fb404ee6ae5
+msgid ""
+"The admin side is `youromekaurl.net/admin/scripto` and the public side is"
+" `youromekaurl.net/scripto`."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:111 c2fc184e9f9e40bfbf7ac56b6a5a90eb
+msgid ""
+"All transcription activity takes place on the **public** side of the "
+"Scripto project. You cannot edit a transcription from the admin "
+"dashboard."
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:113 8179b1b3d3ac48949ee95524aeea3644
+msgid "Uninstalling Scripto"
+msgstr ""
+
+#: ../../docs/modules/scripto/index.md:115 012c6392015f45758aa92ecf9dec53a4
+msgid ""
+"In order to successfully uninstall Scripto, the module must be still be "
+"active. Do not deactivate Scripto prior to uninstalling."
+msgstr ""
+

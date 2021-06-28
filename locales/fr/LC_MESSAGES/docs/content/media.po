@@ -1,0 +1,610 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/content/media.md:1 0657d5db4875497abaf37e724d9c9340
+msgid "Media"
+msgstr ""
+
+#: ../../docs/content/media.md:3 aab99daa35794f079cbf6c13b2c0d399
+msgid ""
+"Media are only created by adding them to an Item. Media cannot exist "
+"independently."
+msgstr ""
+
+#: ../../docs/content/media.md:5 66c5a9df1c154c51bb14886557f32d59
+msgid ""
+"To view the media associated with an item, click on the media’s name in "
+"the right-hand sidebar on the item view page."
+msgstr ""
+
+#: ../../docs/content/media.md:7 e8ff8d2fd6b04ceabdc230e7d3e48120
+msgid ""
+"To view all media in the installation, navigate to the Items browse "
+"first. The media browse will appear below Items in the left-hand "
+"navigation."
+msgstr ""
+
+#: ../../docs/content/media.md:9 b08ed75d340a448d971871363f14d056
+msgid "Add Media"
+msgstr ""
+
+#: ../../docs/content/media.md:11 455d6bb739234ff3bfc0f32504ca5ea1
+msgid ""
+"Adding media includes uploading a file, or directly attaching content "
+"with oEmbed, YouTube URLs, IIIF URLs, or writing HTML."
+msgstr ""
+
+#: ../../docs/content/media.md:13 e5cbc7a142e54ded8f97012427fafb2e
+msgid "Media can only be added via an [item](../content/items.md)."
+msgstr ""
+
+#: ../../docs/content/media.md:15 d73c938ad37b40578e7d7371c1856057
+msgid "Browse media"
+msgstr ""
+
+#: ../../docs/content/media.md:16 f16109feccf8463792dcfb6019b68cf5
+msgid ""
+"To browse media, first go to the admin item browse. In the left hand "
+"navigation, an option for Media browse will appear under the Item browse "
+"(you may have to click on the triangle to expand the menu below Items)"
+msgstr ""
+
+#: ../../docs/content/media.md:18 7272a86435204fc7b4102f07af9d94de
+msgid ""
+"![The Resources section of the navigation, with light blue text on a dark"
+" blue background. Below the option for items, indented, is a navigation "
+"option for Media. It has no representative icon, unlike the other "
+"options.](contentfiles/media-browsenav.png)"
+msgstr ""
+
+#: ../../docs/content/media.md:20 8ded179962ac47b48dec98084760bd0e
+msgid "Media are displayed in a table. Each media is a row, with columns for:"
+msgstr ""
+
+#: ../../docs/content/media.md:22 2b91b805a97f48e1a7a14fa69b0b7b6e
+msgid "Select media (a checkbox)"
+msgstr ""
+
+#: ../../docs/content/media.md:23 7e0712eb47dc4d23985f38d0a425a835
+msgid "Media *title*"
+msgstr ""
+
+#: ../../docs/content/media.md:24 e3960403044a43199755aed4ac3362e6
+msgid ""
+"icons to *edit* (pencil), *delete* (trash can), or *view details* "
+"(ellipses)"
+msgstr ""
+
+#: ../../docs/content/media.md:25 8704224800a141059374501072a80ed4
+msgid "the media's *Class*"
+msgstr ""
+
+#: ../../docs/content/media.md:26 ea41c0a85d494e77bad9afa3cccf96c9
+msgid "the media's *Owner*"
+msgstr ""
+
+#: ../../docs/content/media.md:27 29e41d91e65d45ac85e13021675576ae
+msgid "and the date the media was *Created*."
+msgstr ""
+
+#: ../../docs/content/media.md:29 110bede1b20a491d84c5f19993492f7a
+msgid ""
+"![The browse media table as described above. All of the media are named "
+"with a mediawiki url and owned by the user "
+"Megan.](contentfiles/media_browse.png)"
+msgstr ""
+
+#: ../../docs/content/media.md:31 9852f196fbe64feb880d51a408bdab75
+msgid ""
+"Options for navigating and creating items display above the table of "
+"items."
+msgstr ""
+
+#: ../../docs/content/media.md:33 d974054d1d504acfb4fbdc6cdab0324d
+msgid ""
+"On the left side is a display for the number of pages of media, with "
+"forward and back arrows. The current page number is an editable field - "
+"enter any valid page number and hit return/enter on your keyboard to go "
+"to that page."
+msgstr ""
+
+#: ../../docs/content/media.md:35 5898ea44466b4754a2759350b51204e4
+msgid ""
+"In the center top is a button for [Advanced Search](../../search#media-"
+"advanced-search)."
+msgstr ""
+
+#: ../../docs/content/media.md:37 68718eda11a348439f5b3219a3a925e0
+msgid ""
+"Just above the table on the right are options for sorting media, with two"
+" dropdown menus. The first lets you select between *Title*, *Class*, "
+"*Owner,* and *(date)Created*; the second allows you to sort ascending or "
+"descending. To apply, click the *sort* button."
+msgstr ""
+
+#: ../../docs/content/media.md:39 84f8cf20a84441898870c8151b8f1547
+msgid ""
+"Clicking on the title of any media will take you to its metadata page. "
+"This page displays any metadata in the main work area, with a sidebar on "
+"the right listing the visibility, associated item (an active link), date "
+"created, MIME type, Size, Ingester, Source, and links to the file "
+"derivatives."
+msgstr ""
+
+#: ../../docs/content/media.md:41 2f9690ccf08c49dd96e7064b7c71b873
+msgid ""
+"![Media view page for a mediawiki file. The image is of a grup of people "
+"in late 19th century clothing, from left to right a a women standing and "
+"facing a standing man holding a small child while reaching out to the "
+"woman, with another man standing and smiling behind the man with the "
+"child. On the right hand side of the image is the database information "
+"for the media.](../content/contentfiles/media_view.png)"
+msgstr ""
+
+#: ../../docs/content/media.md:44 675c8823799845b09eaf64909d01dc61
+msgid "Edit Media"
+msgstr ""
+
+#: ../../docs/content/media.md:45 b7a07115552a482fa0c8af93c0fbaad1
+msgid "To edit existing media, you can:"
+msgstr ""
+
+#: ../../docs/content/media.md:47 5670622ddf6043fa9fdc3f9db5deabd0
+msgid "Go to the Browse page and click the pencil/edit icon for the media's row"
+msgstr ""
+
+#: ../../docs/content/media.md:48 d63fc54a733341d4adcefbb604dd194e
+msgid ""
+"Go to the Media browse page, click on the title to view the media's "
+"metadata and then click the \"*Edit media* button in the upper right hand"
+" corner"
+msgstr ""
+
+#: ../../docs/content/media.md:49 a4eefdfb760747ed9db979eacbb7b609
+msgid ""
+"Click on the media's name in the right-hand sidebar of an item's page to "
+"go to the media's metadata, and then click on *Edit media* from there."
+msgstr ""
+
+#: ../../docs/content/media.md:51 b4f9b01662ef40da9e19076f5c6f4a89
+msgid ""
+"Editing media is very similar to editing [items](../../content/items) or "
+"[item sets](../../content/item-sets)."
+msgstr ""
+
+#: ../../docs/content/media.md:53 5ec13eff373f4ccdb6aeebf60277c4af
+msgid ""
+"![Edit media page, with no properties "
+"loaded](../content/contentfiles/media_edit.png)"
+msgstr ""
+
+#: ../../docs/content/media.md:55 f781a4df4d2442a699785870bba9c138
+msgid "Values"
+msgstr ""
+
+#: ../../docs/content/media.md:57 a77f6cec641740ebb38f5d3a112d72be
+msgid ""
+"If desired, you can select a resource template from the drop-down menu. "
+"Resource templates are defined by site administrators and editors."
+msgstr ""
+
+#: ../../docs/content/media.md:59 98f1d622d43249ee9c1c55badba7c344
+msgid "If using a resource template, the class should automatically load."
+msgstr ""
+
+#: ../../docs/content/media.md:60 f05c0f3064b84a559e6f77e44f134f42
+msgid ""
+"If not using a resource template, you may select a class from the "
+"dropdown menu (these are populated from the "
+"[Vocabularies](vocabularies.md) in your installation)."
+msgstr ""
+
+#: ../../docs/content/media.md:62 5a5224f647c54d07a8c08e3e64339e4a
+msgid ""
+"Add information to the properties which load. If you do not select a "
+"resource template or class, the Dublin Core properties Title and "
+"Description will load automatically."
+msgstr ""
+
+#: ../../docs/content/media.md:64 907a5b956e754e0889248eb57a063b64
+msgid ""
+"You may add text, a resource from the installation, or an external link "
+"in each field."
+msgstr ""
+
+#: ../../docs/content/media.md:66 07de50e365664d4e82ae6a57e0692cdc
+msgid ""
+"Note that if you add the property `dcterms:title`, its contents will "
+"replace the autogenerated title of the media. This is useful if dealing "
+"with url or media uploads with auto-generated names."
+msgstr ""
+
+#: ../../docs/content/media.md:68 53b9f3bd6113405481153df3a1d6776c
+msgid "**Text** fields allow for unformatted text entry."
+msgstr ""
+
+#: ../../docs/content/media.md:70 3e0fbf66e1174dc28a6e092a49894708
+msgid ""
+"![image of text input field with keyboard icon indicating text input, the"
+" globe icon for setting language, and a trashcan delete "
+"icon](contentfiles/items_textedit.png)"
+msgstr ""
+
+#: ../../docs/content/media.md:72 0384c09fe10342d999cb2e3328a42000
+msgid ""
+"You can indicate the language for the content of an input using the globe"
+" symbol above the input (see the red arrow in the image below). Click on "
+"the globe to activate a text field, then enter the [ISO "
+"639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code for "
+"the language in which the text is written."
+msgstr ""
+
+#: ../../docs/content/media.md:74 ../../docs/content/media.md:104
+#: 07238edb027c45aaa71729b4a0518073 6f3d6ed65dea4b2b82fb962e5e53d82c
+msgid ""
+"![Red arrow points to the globe icon and a text entry field highlighted "
+"in blue](contentfiles/item_lang.png)"
+msgstr ""
+
+#: ../../docs/content/media.md:76 39f06db4692045ad883028b41d25fae8
+msgid ""
+"**Omeka Resource** fields create an internal link between the resource "
+"you are creating and the resource which fills that field."
+msgstr ""
+
+#: ../../docs/content/media.md:78 1807fbf8a3aa45d485e1d1245238852a
+msgid ""
+"You have the option to use either an item, another media, or an item set."
+" Once you select an item or item set, detailed information will load, and"
+" you must click *select resource* to finish linking the resources. You "
+"can also click the *X* button in the upper right-hand corner to go back "
+"to the list of items or item sets."
+msgstr ""
+
+#: ../../docs/content/media.md:80 1ae545ca4c454772987927773c20164f
+msgid ""
+"![Select Item menu with list of items to link in edit media "
+"view](contentfiles/media_addresource.png)"
+msgstr ""
+
+#: ../../docs/content/media.md:82 a71e1eba7b0f44ffadeeee47e76acc96
+msgid ""
+"If you are using an Item resource for the property, you will have "
+"additional options for finding the item you want in the drawer. Open "
+"these options by clicking the triangle button next to the phrase \"Filter"
+" search\""
+msgstr ""
+
+#: ../../docs/content/media.md:84 6309c3063b6542679d13b0a078e69923
+msgid ""
+"![Select Item drawer top options, with a red arrow around a gray triangle"
+" button to the right of the phrase \"Filter "
+"search\"](contentfiles/items_filtersearch.png)"
+msgstr ""
+
+#: ../../docs/content/media.md:86 27f2d02eb82a4bb28cb8c938b118bf97
+msgid ""
+"This will open a menu below the button with the following options to "
+"filter the items in the drawer:"
+msgstr ""
+
+#: ../../docs/content/media.md:88 2f342fb3ff77458099b0b4dcfff46a62
+msgid ""
+"Filter by class: a dropdown where you can select any class provided by "
+"the vocabularies on the installation;"
+msgstr ""
+
+#: ../../docs/content/media.md:89 0d54dc1238ce407d9a53bf28fad0a093
+msgid ""
+"Filter by item set: a dropdown where you can limit the items displayed in"
+" the drawer to only those associated with a particular item set"
+msgstr ""
+
+#: ../../docs/content/media.md:90 97d008a387ef4d7badbdee083b731f4a
+msgid ""
+"Filter by item ID: a search field where you can input the ID of the item "
+"you want to use. You can find an item's ID in the url of it's edit page; "
+"if you are editing the item and the url is `admin/item/11547/edit` then "
+"the item's ID is 11547."
+msgstr ""
+
+#: ../../docs/content/media.md:92 206524c035964a9082798387cef9a34f
+msgid "![options as above described](contentfiles/item_addresItem.png)"
+msgstr ""
+
+#: ../../docs/content/media.md:94 22015a78bde346cca52b776d33610a85
+msgid ""
+"Item resources also have an option for \"Quick add\". When this switch is"
+" flipped, all of the items in the drawer have a checkbox. You can use "
+"these checkboxes to add multiple items as a property at once. Note that "
+"you can only edit one property at a time, so all of the items must "
+"populate the same property (ex, Creator, Has Part)."
+msgstr ""
+
+#: ../../docs/content/media.md:96 be53d83b9e494a3fa7cf0b0a351c786a
+msgid ""
+"![a red arrow points to the slider button for \"Quick add\". The two "
+"items visible have an empty checkbox to the left of their representative "
+"thumbnail](contentfiles/items_quickadd.png)"
+msgstr ""
+
+#: ../../docs/content/media.md:98 513b5fbaad7d43509d90595b05341867
+msgid "**URI** fields link to an external website or online resource."
+msgstr ""
+
+#: ../../docs/content/media.md:100 870aa9d05ce040859fb5427c6b6e6f6c
+msgid ""
+"You may add other fields by selecting a property from the list on the "
+"right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, "
+"etc), or search in the *filter properties* bar above the list of "
+"properties and vocabularies."
+msgstr ""
+
+#: ../../docs/content/media.md:102 145380020475415d9b289cabea945fa9
+msgid ""
+"**Language** You can indicate the language for the content of an input "
+"using the globe symbol above the input (see the red arrow in the image "
+"below). Click on the globe to activate a text field, then enter the [ISO "
+"639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code for "
+"the language in which the text is written."
+msgstr ""
+
+#: ../../docs/content/media.md:106 f04b645981e14bf7b91ed1296be257b2
+msgid ""
+"You can add properties by selecting from the list on the right side of "
+"the screen. You can either browse fields by vocabulary (Dublin Core, "
+"Bibliographic Ontology, etc), or search in the *filter properties* bar "
+"above the list of properties and vocabularies."
+msgstr ""
+
+#: ../../docs/content/media.md:108 05c33d6f68864689913096b4bf366c70
+msgid ""
+"Automatically generated metadata, such as source, visibility, and part of"
+" item, cannot be edited."
+msgstr ""
+
+#: ../../docs/content/media.md:110 c9a24ec169144f68bf482f1c5127e913
+msgid ""
+"Use the *make public/private* button (eye icon) to set whether the media "
+"is visible to the public or only to users of the OmekaS install."
+msgstr ""
+
+#: ../../docs/content/media.md:112 85ef942de88a4e0cb272635393c97c78
+msgid ""
+"![make public button showing an eye "
+"icon](../content/contentfiles/item_public.png) Public"
+msgstr ""
+
+#: ../../docs/content/media.md:114 1f5c15c6e4ad4f9694df3421a3a1beb7
+msgid ""
+"![make private button showing an eye icon with a diagonal slash through "
+"it](../content/contentfiles/item_private.png)  Private"
+msgstr ""
+
+#: ../../docs/content/media.md:116 c33399487d25402e9f40a79a7c5e6c48
+msgid ""
+"Note that if an item is private, all the media attached is private, but "
+"an item which is public can have attached media which are set to be "
+"either public or private."
+msgstr ""
+
+#: ../../docs/content/media.md:118 dc3cc05e1bbf46b18cc41b7670f2ca47
+msgid ""
+"You can set individual properties as Private or Publicly visible using "
+"the eye icon for each property. Note that properties set to private are "
+"still visible to Global Admins, Site Admins, and Editors will be able to "
+"see properties even when set to private. Authors will be able to see all "
+"properties on items they own, but will not see private properties created"
+" by other users."
+msgstr ""
+
+#: ../../docs/content/media.md:120 6d986aac92b94f8fa7589a708cb567dd
+msgid ""
+"In the image below, the first property (Title) is public as indicated by "
+"the open eye icon. The second property (Description) is private as "
+"indicated by the slashed-through eye icon. Clicking or hitting enter on "
+"the eye icon toggles between public and private."
+msgstr ""
+
+#: ../../docs/content/media.md:122 737c423023e643599c130e7fb4904e93
+msgid "![As described](contentfiles/item_propviz.png)"
+msgstr ""
+
+#: ../../docs/content/media.md:124 8c23530e2e1649948b9b2731276ce7b9
+msgid "Thumbnail"
+msgstr ""
+
+#: ../../docs/content/media.md:125 f1543a60b9514a588324b157965e9e86
+msgid ""
+"Not all media generate an elegant thumbnail, for example pdf or text file"
+" documents or some video files. You can use this tab to set a "
+"representative thumbnail for the media which will be used on browse pages"
+" but not on the page for the item or its media."
+msgstr ""
+
+#: ../../docs/content/media.md:127 a6ccf6de326548b3a656f4381073f5a9
+msgid ""
+"The assets you select from and upload as thumbnails in this tab are the "
+"same as those created for [site logos](../../sites/site_theme/#settings-"
+"options)."
+msgstr ""
+
+#: ../../docs/content/media.md:129 a78f08c23f544af5aed36d8f6c3f396c
+msgid ""
+"To assign an asset as a thumbnail, click on the Select button in the main"
+" work area of the tab. This will open a drawer on the right side."
+msgstr ""
+
+#: ../../docs/content/media.md:131 19841c243bf6422a9873e9f27488fbac
+msgid ""
+"![Select drawer with upload option and two assets, both of which are "
+"images.](contentfiles/media_thumbnail1.png)"
+msgstr ""
+
+#: ../../docs/content/media.md:133 2470ea554f974eab978e2bc491169cd2
+msgid ""
+"The drawer offers two options: upload a file using your browser, or "
+"select from existing assets. To select an existing asset, simply click on"
+" it and it will automatically be assigned to the media."
+msgstr ""
+
+#: ../../docs/content/media.md:135 9420cd5c0f4448e7950c81e84f318069
+msgid ""
+"![Edit media open to Thumbnail tab, where an asset which is an image of a"
+" quill pen on a scrolled piece of paper is in the main work area. Below "
+"it are buttons for Select and Clear](contentfiles/media_thumbnail2.png)"
+msgstr ""
+
+#: ../../docs/content/media.md:137 20c0225ae77943d7a444155662a6abf7
+msgid ""
+"To remove an asset which you have assigned as a thumbnail, click the "
+"\"Clear\" button below the image of the asset. To replace it, click "
+"select and either choose or upload a new thumbnail asset."
+msgstr ""
+
+#: ../../docs/content/media.md:139 d1052d4b36ae40dcb1f021f3080d462d
+msgid "Batch editing"
+msgstr ""
+
+#: ../../docs/content/media.md:141 5027db95d0304a8a87b8b0bb468630a1
+msgid ""
+"From the media browse page, you can batch edit media, using the dropdown "
+"menu on left just above the table of media. You can select multiple items"
+" using the checkboxes on the left of each item's row."
+msgstr ""
+
+#: ../../docs/content/media.md:143 87966557d1b24b4db3e3df7af30f3dbf
+msgid ""
+"![A red arrow points to the dropdown for batch editing and deleting "
+"options](contentfiles/media_batch1.png)"
+msgstr ""
+
+#: ../../docs/content/media.md:145 4d1868e4bfca40ddaefc34f284fe978c
+msgid "Batch actions are as follows:"
+msgstr ""
+
+#: ../../docs/content/media.md:147 bdeda88bd19145bfad34b5fe9a041edc
+msgid "Edit selected: edit only the items that are selected on the page"
+msgstr ""
+
+#: ../../docs/content/media.md:148 674b39cd3be143cebc3237e037f627a6
+msgid "Edit all: edit all the items returned by a search (default is all items)"
+msgstr ""
+
+#: ../../docs/content/media.md:149 a2da0e8057064eb6ac14c79a6f3e7941
+msgid "Delete selected: delete only the items that are selected on the page"
+msgstr ""
+
+#: ../../docs/content/media.md:150 a5f889f33a2543d7b310a335e30a063f
+msgid ""
+"Delete all: delete all the items returned by a search (default is all "
+"items)"
+msgstr ""
+
+#: ../../docs/content/media.md:152 1329a10dd13b432cabe2ac8bae5832bf
+msgid "Choose one of these options and then click *Go*."
+msgstr ""
+
+#: ../../docs/content/media.md:154 49bf8de7573940a886d440299b1c3108
+msgid ""
+"**Batch editing** media takes you to a new page. The media being edited "
+"will display on the right side in a drawer, while the batch edit form "
+"gives you the following options:"
+msgstr ""
+
+#: ../../docs/content/media.md:156 b45352c12f0941198c0b1c378aa3e46d
+msgid ""
+"set visibility: radio buttons, select from Public, Not public, or No "
+"change"
+msgstr ""
+
+#: ../../docs/content/media.md:157 79251452d7744a548516e290e64d9862
+msgid ""
+"set template: a dropdown, select from the installation's resource "
+"templates."
+msgstr ""
+
+#: ../../docs/content/media.md:158 d4525a1ecf1b4b7fa7d7fa6d1afc65d4
+msgid "set class: a dropdown, select from classes of the installed vocabularies."
+msgstr ""
+
+#: ../../docs/content/media.md:159 fe5d21f072f643829184e2f316ab1634
+msgid "Clear language: a checkbox"
+msgstr ""
+
+#: ../../docs/content/media.md:160 e7b4096ff32542ce99f15f2b7874dc58
+msgid "Set language: a text entry box."
+msgstr ""
+
+#: ../../docs/content/media.md:161 ad60ecddb3954a9982b1ce3ccb9c847b
+msgid ""
+"Clear property values: a dropdown menu with all the properties in all "
+"vocabularies, selecting from this will remove any values in that property"
+" in the affected items. Clear additional properties using the *Clear "
+"another property* button."
+msgstr ""
+
+#: ../../docs/content/media.md:163 da55f450256548d59963da9681072269
+msgid ""
+"![Batch edit medias form, with options as described above. Everything is "
+"grayscale](contentfiles/media_batchedit.png)"
+msgstr ""
+
+#: ../../docs/content/media.md:165 3eeb0c4ecefa43c3bd04b4aa52eaa9da
+msgid ""
+"In addition, you can use the bottoms at the bottom of the batch edit form"
+" to add properties to every media:"
+msgstr ""
+
+#: ../../docs/content/media.md:167 65fc5429f87a43239273b1f7ba86fde7
+msgid "add text value"
+msgstr ""
+
+#: ../../docs/content/media.md:168 00701982646e4aed8ac92c6ad9a5f5ca
+msgid "add resource value"
+msgstr ""
+
+#: ../../docs/content/media.md:169 aa0bdfffbd444f369e8875420e9e2d5d
+msgid "add URI value"
+msgstr ""
+
+#: ../../docs/content/media.md:171 ad32f2a00e2746b3b687bb1adca82160
+msgid ""
+"Selecting any of these will add a block to the form where you can select "
+"a property from the installed vocabularies and enter the value for that "
+"property."
+msgstr ""
+
+#: ../../docs/content/media.md:173 d0fc5396f0874918b9253990d873377d
+msgid ""
+"For the **delete actions**, a drawer will open on the right side of the "
+"screen telling you the number of media which will be deleted. Nothing "
+"will be deleted unless you click the red *Confirm Delete* button. This "
+"action cannot be undone. To opt out of deleting the media, click the X in"
+" the upper right corner of the deletion drawer. To confirm delete, check "
+"the \"Are you sure\" checkbox and then click *Confirm Delete*"
+msgstr ""
+
+#: ../../docs/content/media.md:175 f3d4bae3f16a48c7a25cfe5e61732036
+msgid ""
+"![Close up of the warning that 2 medias will be "
+"deleted.](contentfiles/media_batchdelwarn.png)"
+msgstr ""
+

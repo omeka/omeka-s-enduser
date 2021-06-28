@@ -1,0 +1,653 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/modules/valuesuggest.md:1 f3f914f8620f42d983d7d757b13b7510
+msgid "ValueSuggest"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:3 6ee6a641ba5c4dc7b2674d15d36c1d5b
+msgid ""
+"The ValueSuggest module adds an auto-complete feature to a specific "
+"property in a resource template and draws on controlled vocabularies (see"
+" the end of this page for a complete list)."
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:5 12238f578e2b40dab34f3939ed919671
+msgid ""
+"This functionality helps those building an Omeka site to encourage "
+"consistent metadata input and data compatibility with other databases of "
+"records. Please note that ValueSuggest offers  but cannot require that "
+"users select values from the autosuggest feature. Users will always have "
+"the option of creating their own value instead."
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:7 8e5342e0efc5419b927b98fabf79b228
+msgid ""
+"To install ValueSuggest follow the instructions for Installing Modules on"
+" the Modules documentation."
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:9 dc0f0a87e1064637934787e2d4e6ac67
+msgid "Create a Resource Template"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:11 8266648aeca74753a2fa69a5dd6de080
+msgid ""
+"ValueSuggest vocabularies are applied through Resource Templates. For "
+"additional information on Resource Templates, see the [Resource Template "
+"Documentation](../content/resource-template.md)."
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:13 f820928e7ec242208a606e9c0e156b55
+msgid ""
+"From the Resources templates tab in the Admin Dashboard, either add a new"
+" [template](../content/resource-template.md) or edit an existing one."
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:14 4fa4b5a175a64a1c92d36bd905eb292b
+msgid "Add the property to which you want to apply the ValueSuggest."
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:15 7d9072c903e34241b6af886764948301
+msgid ""
+"Once the property is added to the template, click the pencil/edit icon "
+"for that property."
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:16 ecc7db82b8db4bae8c3eff66d44fd7f0
+msgid ""
+"At the bottom of the drawer which opens on the right, open the *Data "
+"type* dropdown. Below the standard options, you will see the ValueSuggest"
+" options. Select the vocabulary you want to use from the dropdown."
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:17 00dc533e68334af3a0243abed9f66af3
+msgid ""
+"Note that you can also add alternate labels and comments for the property"
+" in this drawer."
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:18 6f33000367b84e2cb8f48a7c3380f392
+msgid ""
+"Click the *Set changes* button at the bottom of the drawer to assign the "
+"Values to the property."
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:19 663760e57a5e437a8fc449eb0a610b59
+msgid "Save changes to the resource template."
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:22 b8d5a16125b741cdae4a0463ebb142eb
+msgid ""
+"![Editing the property subject, and the dropdown is open to show the "
+"Value Suggest vocabularies from the Library of "
+"Congress](../modules/modulesfiles/ValSug-ResTemplate1.png)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:24 3467dc4d207a437a8a21b60d07946787
+msgid ""
+"When you click the title of a Resource Template to see its details, the "
+"ValueSuggest vocabulary will appear under the Data Type table heading."
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:26 951f15e49dc646d78e7cdfe633ffa50a
+msgid ""
+"![A red rectangle highlights the fact that the data type for Subject is "
+"\"LC: Subject Headings\"](../modules/modulesfiles/ValSug-"
+"ResTemplate2.png)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:29 c96c634419554aa69b01bb94e79a145c
+msgid "Adding ValueSuggest to an Item"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:31 842169e6c0a741f681fd7d7c8d203821
+msgid ""
+"When this Resource Template is used in an Item or Item Set, the "
+"designated properties will auto-suggest values from the vocabulary "
+"specified in the template."
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:33 0fb36290cbca4d0abadc0d165ddb3501
+msgid ""
+"Users must start typing in the open text box of that specific property to"
+" prompt the auto-suggest feature. There may be a slight delay, but a "
+"drop-down menu will appear with choices drawn directly from the authority"
+" or vocabulary list you have associated with that property."
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:35 588e017a88eb4dd0b86b6334fded31b9
+msgid ""
+"![Item property Subject with \"fashion\" typed in the field. A dropdown "
+"menu auto-suggests terms, including \"fashion design,\" which is "
+"selected.](../modules/modulesfiles/ValSug-ItemProperty1.png)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:37 cf006c20c16745f696062c068954da52
+msgid ""
+"Hover over selections in the dropdown menu for a description of that "
+"vocabulary."
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:39 5b2f8009f3124e5093adefdd9800c8b5
+msgid ""
+"![Item property Material with \"lithograph\" typed in the field. A "
+"dropdown menu auto-suggests terms, including \"color lithographs,\" which"
+" is selected. Helper text in a small overlaid window reads, \"Lithographs"
+" printed in several colors.\"](../modules/modulesfiles/ValSug-"
+"ItemProperty2.png)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:41 891271df04524ed684678781ab016ee2
+msgid ""
+"Note: after selecting a value, a box containing a URL should appear under"
+" the value. This link will direct visitors to a webpage with additional "
+"information on the value selected. This box can be removed by clicking "
+"the “X”."
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:43 4b7991394e084a329bff6e43de007308
+msgid ""
+"![Item property Work Type with \"Fashion Illustrations (layout "
+"features)\" selected. Below, in red is a hyperlink to Getty Collections, "
+"with a small red \"X\".](../modules/modulesfiles/ValSug-"
+"ItemProperty3.png)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:45 d1c4019cbfa04a1aaae09c8f8f044ef6
+msgid "Available Vocabularies"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:47 4c83e720da1f4e9689900aac2c870006
+msgid "This module includes the following vocabularies:"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:49 43e037a6ff144ef48ee41562fca0474f
+msgid "GeoNames"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:50 548d44e3364042469eb2b18dc77340a9
+msgid "The Getty Vocabularies"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:51 3dfa1cc6b0dc45af867e266c99b4ecb3
+msgid "Homosaurus"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:52 61a368656c62469d9ae9f60f39d37c3c
+msgid "Library of Congress Linked Data Service"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:53 90b0958d7062439d98693d6ac0340f19
+msgid "OCLC Metadata Services"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:54 e92d9e4e6c204b278baa5cfd818cdefc
+msgid "PACTOLS of Frantiq"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:55 c275efffa4d8456cab0cf16175ddf26a
+msgid "PeriodO"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:56 0966a72eee16478c914a149eabb6efad
+msgid "RDA Value Vocabularies"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:57 bbf52868f73248aa9733784b07fae7b0
+msgid "Tesauros del patrimonio cultural de España"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:58 48cc004811fc4326823f7bd18f75d603
+msgid "UNESCO"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:61 9b4567b07e494f4ab6e3ea79d3142ecd
+msgid "[GeoNames](http://www.geonames.org/)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:63 d3507f249d044a0db94437fc055ec2e0
+msgid "The GeoNames geographical database"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:65 3b8d09ad361f47dfb26f2c7d66d04cbf
+msgid "[The Getty Vocabularies](http://vocab.getty.edu/)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:67 55924a56cfb14dd9b9f94514882f54c9
+msgid "The Art & Architecture Thesaurus (AAT)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:68 2b91a89b21a04061a8d1952e34862cd0
+msgid "The Getty Thesaurus of Geographic Names (TGN)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:69 f6167cb9e27e47f4b8b528cdbfd60302
+msgid "The Union List of Artist Names (ULAN)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:71 69d6cdb9a18f42ab93ee5a24f2d5e427
+msgid "[Homosaurus](http://homosaurus.org/)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:73 fba90374282149e8891fdae591a29592
+msgid "Homosaurus.org linked data vocabulary"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:75 dc09f08094554428880416340ead3b7e
+msgid "[Library of Congress Linked Data Service](http://id.loc.gov/)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:77 c870eaa3f2394ea28ac06cbed84c9799
+msgid "AFS Ethnographic Thesaurus"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:78 e109d4ceb6c548938486c5533b51b79b
+msgid "All"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:79 49c08f1ab3c44ab0ae030831933f1d67
+msgid "Children's Subject Heading"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:80 6017d122aaee40a09025b252d31b4ff7
+msgid "Classification"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:81 4c25df6d3a304b58a09f1607d1a78447
+msgid "Cultural Heritage Organizations"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:82 46d0e9f7a0a54fb7b84ab4de7f757bb5
+msgid "Demographic Group Terms"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:83 d04389775b7b49a7bf8b9783bb72ce50
+msgid "Genre/Form Terms"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:84 0d076106475943eea0579076b2ecd858
+msgid "ISO639-1 Languages"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:85 41ecd54fe57a4fae833409918e7629b3
+msgid "ISO639-2 Languages"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:86 b840d20a85c2453a8e6af8509841d65d
+msgid "ISO639-5 Languages"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:87 3365626dd9c24860bb85b19aa0f45020
+msgid "MARC Countries"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:88 0ab98212533e4bfa9b64ea571f881d9d
+msgid "MARC Geographic Areas"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:89 4af5a64dc8114a5fb162086929cfbb7f
+msgid "MARC Languages"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:90 0553f6bafbf44ff0bbd6d3f1bce51f75
+msgid "MARC Relators"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:91 a2eb3cff41b44c6f872cdb8a8828307c
+msgid "Medium of Performance Thesaurus for Music"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:92 f20d236081854d6d96891b1da2dfe3de
+msgid "Name Authority File"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:93 5ca586b15ba14fffbac8afb89ec492df
+msgid "Subject Headings"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:94 1e97b908af5b4114b59970ec6ea99ff9
+msgid "Thesaurus for Graphic Materials"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:96 1b613b4b009c4a149a9cf03c1d0ab724
+msgid ""
+"[OCLC Metadata "
+"Services](https://www.oclc.org/en/services/a-z.html/:F2664:/)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:98 21573a27e3de4cd9ba22c8323e77df8a
+msgid "Faceted Application of Subject Terminologies (FAST)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:99 9d82d547421f438da716debb6c2416c2
+msgid "The Virtual International Authority File (VIAF)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:101 e3d2fc379a784aa7b60144d87334e103
+msgid "[PACTOLS of Frantiq](https://pactols.frantiq.fr/)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:103 004e6470f40d4d3695127315038a9576
+msgid "The entire pactols thesaurus"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:104 7fe517908eb14aca9815db6598417931
+msgid "The subject group only"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:106 92ee4091e2714b678ea6dd1167685a68
+msgid "[PeriodO](http://perio.do/en/)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:108 57c87ede409a4947af0b5891aa6e712e
+msgid "A gazetteer of period definitions for linking and visualizing data"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:110 c3f928e9fd6f45bc850bceadbc9f57c5
+msgid "[RDA Value Vocabularies](http://www.rdaregistry.info/termList/)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:112 f032e1103b3946bea8a6943ae57b3524
+msgid "RDA Reference value vocabularies"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:114 050bbc41bb52444ea6ca9f32966ed308
+msgid "Aspect Ratio Designation"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:115 a2e6969fc39a446c9a08bd3ae62c9cd6
+msgid "Bibliographic Format"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:116 c50c7468a04248d797087de6299ec1db
+msgid "Broadcast Standard"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:117 75ca2606f20545b4bb937f121c309902
+msgid "Carrier Extent Unit"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:118 69c267e8347e48d6bfe465bd9cf0936b
+msgid "Carrier Type"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:119 497d2ec692a5428b8e0fd6dd4f4c79e2
+msgid "Cartographic Data Type"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:120 aeb8abc8e77849809e3526351571ba6d
+msgid "Colour Content"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:121 8fe4f0dc14d24f899a9155bdf9256666
+msgid "Configuration of Playback Channels"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:122 e91fe9657a2e4cc0a68f8c56b6fef7c6
+msgid "Content Type"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:123 003ca2a8465c479f9251cd8741b5016f
+msgid "Conventional Collective Title"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:124 ea295eb27a144dad8a017ca04b534b6c
+msgid "File Type"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:125 ea64aa79a5564bffbe9884c020bd005d
+msgid "Font Size"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:126 b80620ea92a449da9e16ad9559a8b628
+msgid "Form of Musical Notation"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:127 29137b1d9a8f430cbbbe7940828e3aba
+msgid "Form of Notated Movement"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:128 939b06c91ffb4373ad4a54c454df888c
+msgid "Form of Tactile Notation"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:129 860ccc4a0990443fa335f9aa63de2bc7
+msgid "Format of Notated Music"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:130 8940b3b08963486a9565fb26f9eb2ecb
+msgid "Frequency"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:131 19357d65adaf4df58196e4f87b045c38
+msgid "Generation"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:132 6c363e6ad4644d65a4436476422d8950
+msgid "Groove Pitch of an Analog Cylinder"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:133 4a19e5b9e094467fa0b9bdacc1995b4c
+msgid "Groove Width of an Analog Disc"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:134 c807fff14e2e44d988a53182b92dcbf7
+msgid "Illustrative Content"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:135 6b71dad47eab495da353db8da016f350
+msgid "Layout"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:136 d41a5ec2c2ca4e03afd72322f4874b59
+msgid "Material"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:137 70df5c68827948798fcc19fdfcd21d33
+msgid "Media Type"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:138 1f20b1c73e234f77b2fb4bfd480a42da
+msgid "Mode of Issuance"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:139 e9731172ac0d4e6e98ccfc354591a7a0
+msgid "Polarity"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:140 fe553bf13a9349bb8c67aea32a1293ee
+msgid "Presentation Format"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:141 1ca931270cd345ad96a98b0c7bced448
+msgid "Production Method"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:142 8cf507775f0745bc962d72bc6d785b2c
+msgid "Recording Medium"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:143 695747f9b0d34a3aa3d447450b988ceb
+msgid "Reduction Ratio Designation"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:144 ec47f4a512d74818b6dfe5e710978b46
+msgid "Regional Encoding"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:145 fd64c3ba179847caad08da696ca8076c
+msgid "Scale Designation"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:146 c8d35a78452349ec911f14328f7aac32
+msgid "Sound Content"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:147 4fcd10cbef714c9e9cd10dc5e69f8218
+msgid "Special Playback Characteristics"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:148 769c9c5417e842aa8463caf668ff4965
+msgid "Status of Identification"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:149 8bc37c655ce44fe89693d1d723e21ade
+msgid "Terms"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:150 7dbebb17f2ee41a1b06d0804b6837417
+msgid "Track Configuration"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:151 c053bb4df20843c89df2ee6012bd14a4
+msgid "Type of Recording"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:152 c2111e1d9120479b8e0b971994141d71
+msgid "Video Format"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:154 4b7eff1ab35a496b9d0512f6e1b551dc
+msgid "RDA Local value vocabularies"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:156 c563be6c16694d808711f90ced8fb9f3
+msgid "Gender"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:158 e8a3f49a4e3a4178a8afd2741f078374
+msgid "RDA/ONIX Framework value vocabularies"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:160 61f5975ea14f46c0a7034e7fcfc05c51
+msgid "Character"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:161 b946f288be6d449e960aff67ad4a1e9b
+msgid "Extension Mode"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:162 ee5f7f176f4d4ab49a537f1b46d04aee
+msgid "Extension Requirement"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:163 319af17fdb12418981eefff1f1c5a5f5
+msgid "Extension Termination"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:164 0873637fc7404de99fa0db01063f0199
+msgid "Housing Format"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:165 a98c7e57d6b14a34adee31c5d3b8f68f
+msgid "Image Dimensionality"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:166 d4db896469d845acb04652c2b9f20521
+msgid "Image Movement"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:167 8525511fc04d42038ecde5876f7c8211
+msgid "Interaction"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:168 ce88a87674fe4f54afe8115a060b36a9
+msgid "Intermediation Tool"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:169 f1fc95ba74714a919af273656306ac16
+msgid "Revision Mode"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:170 3a2ecbb846284e3abe4bdb636737b303
+msgid "Revision Requirement"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:171 3ed37dd3a8e7411583b7c98e7533e28a
+msgid "Revision Termination"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:172 1670d173f3274cb8b063a1d18cf55db4
+msgid "Sensory Mode"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:173 ecafc31867e94d15ad36316b9ad2dd70
+msgid "Storage Medium Format"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:175 b5210c83039e4f53b2c66f2a4ba140bf
+msgid ""
+"[Tesauros del patrimonio cultural de "
+"España](http://tesauros.mecd.es/tesauros)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:177 6a1f995daf5445118935d35dfc086359
+msgid "Diccionario de Bienes Culturales"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:178 cb4f6eeb038b445c854920b36f782fc3
+msgid "Diccionario de Materias"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:179 2bd582bf8c7746168000cc3d0b29ddce
+msgid "Diccionario de Técnicas"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:180 1ba104006fcc4a69b5b4300774ff1e0f
+msgid "Diccionario de Contextos Culturales"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:181 a3e8f5b306134e3d95225d1358bcf109
+msgid "Diccionario Geográfico"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:182 383b5c7b5a7b4be5a7d8b8322e521c93
+msgid "Diccionario de Toponimia Histórica"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:183 e3b3a1cbcfe9496cbeaaa70d5da5f700
+msgid "Diccionario de Cerámica"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:184 93844d45a64d4c4a902bee3f621ecfce
+msgid "Diccionario de Numismática"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:185 a9c95da8104f475da71410c29c3d1f77
+msgid "Diccionario de Mobiliario"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:187 fe4289299a654c2390506d5686313b6a
+msgid "[UNESCO](http://skos.um.es/)"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:189 8af9070f85f247d6b19c278b31171dfc
+msgid "Tesauro"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:190 cfdbc9b80fbb41fba61f9b4e7a18b247
+msgid "Nomenclatura de Ciencia y Tecnología"
+msgstr ""
+
+#: ../../docs/modules/valuesuggest.md:191 0293a7e7eef047f79028730913b48bc5
+msgid "Biblioteca Digital Floridablanca"
+msgstr ""
+

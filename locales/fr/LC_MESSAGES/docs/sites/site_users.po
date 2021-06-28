@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/sites/site_users.md:1 407ba79a9959474d8fb14f407361fa59
+msgid "User Permissions"
+msgstr ""
+
+#: ../../docs/sites/site_users.md:3 b36a781491944b3b8597b29469ed732f
+msgid "To add a user to a site, navigate to the *User Permissions* tab."
+msgstr ""
+
+#: ../../docs/sites/site_users.md:5 71e5def4d60644b3911d1f70df483028
+msgid ""
+"![User permissions tab with no added users and an alphabetical directory "
+"on the right](../sites/sitesfiles/sites_users.png)"
+msgstr ""
+
+#: ../../docs/sites/site_users.md:7 9e2b9d734e014f54967635bbb13a8fd7
+msgid ""
+"A drawer on the right hand side of the screen shows all of the users for "
+"your install, sorted by the first letter of their first name."
+msgstr ""
+
+#: ../../docs/sites/site_users.md:9 7c959d2a7c4f460782003de22e48e184
+msgid "To add a user, click on their name."
+msgstr ""
+
+#: ../../docs/sites/site_users.md:11 4e02e46c20204df8a454a2d900622fce
+msgid "Then select their role from the dropdown:"
+msgstr ""
+
+#: ../../docs/sites/site_users.md:13 3b81e3aba4114be3bdc2cf6f45edac13
+msgid "*Viewer:* user can see the site’s backend but cannot edit."
+msgstr ""
+
+#: ../../docs/sites/site_users.md:14 9b73d32caedc4c598e6781c3147e4e43
+msgid ""
+"*Creator:* user can access and edit the site’s backend (this role is "
+"called \"Editor\" in Omeka S versions 1.x-2.x)."
+msgstr ""
+
+#: ../../docs/sites/site_users.md:15 3bd75760590041b38980c4639dc6dd61
+msgid ""
+"*Manager:* user has full administrative privileges for the site, "
+"including adding users and deleting the site (this role is called "
+"\"Admin\" in Omeka S versions 1.x-2.x)."
+msgstr ""
+
+#: ../../docs/sites/site_users.md:17 352e04a3268c4dbebd8b249bac99a8ae
+msgid ""
+"You can add or revoke privileges for users by going back to the User "
+"permissions tab and selecting or deselecting the boxes and clicking Save."
+" Users can be deleted from the site by clicking the trash can icon on "
+"their row."
+msgstr ""
+
+#: ../../docs/sites/site_users.md:19 a94e768d2ed04d30aa274fdf30e47295
+msgid ""
+"Once you've added one or more users, click the Save button located in the"
+" upper right hand corner. To cancel your changes, click the Cancel button"
+" in the upper right hand corner."
+msgstr ""
+

@@ -1,0 +1,941 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/content/items.md:1 c1c08cafdebd484488f5ae526f828338
+msgid "Items"
+msgstr ""
+
+#: ../../docs/content/items.md:3 fe219da6716f4b64af55cdeb4d69ab9c
+msgid "Items are the building blocks of the Omeka system."
+msgstr ""
+
+#: ../../docs/content/items.md:5 33e4d62c648f44e0a28145c3daaddecb
+msgid ""
+"In Omeka S, items can be made available to you from the system "
+"administrator, and you may add items to your own site."
+msgstr ""
+
+#: ../../docs/content/items.md:7 4df6cbfdbde6477a80667cfe3042658a
+msgid ""
+"Items are listed in the *Items* tab (one box icon), found on the left-"
+"hand navigation of the administrative dashboard."
+msgstr ""
+
+#: ../../docs/content/items.md:9 17d0da7ac3df46c4b6c4b74334ac5aa1
+msgid ""
+"![Basic view of admin items page, showing a handful of item "
+"resources](contentfiles/items_browse.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:11 0fafc70082784b7f9c0b6346f4fda178
+msgid "Each item appears as a row, with columns for:"
+msgstr ""
+
+#: ../../docs/content/items.md:13 ace08897337640179cabfcc7cc53a7ee
+msgid "the *Title*"
+msgstr ""
+
+#: ../../docs/content/items.md:14 b76391a2a3d640c1b4b56e647ae14f9d
+msgid ""
+"icons to *edit* (pencil), *delete* (trash can), or *view details* "
+"(ellipses)"
+msgstr ""
+
+#: ../../docs/content/items.md:15 cecaf9419e654e6dbad5d90746c6d210
+msgid "the *Class*"
+msgstr ""
+
+#: ../../docs/content/items.md:16 09d6e365d8054ff185ce4ab58df5fe06
+msgid "the item’s *Owner*"
+msgstr ""
+
+#: ../../docs/content/items.md:17 4aac1cd6b7aa4ab4aa0826dab9e4fad5
+msgid "and the date the item was *Created*."
+msgstr ""
+
+#: ../../docs/content/items.md:19 61d6031873d74891b5c19564b63e99a7
+msgid ""
+"Options for navigating and creating items display above the table of "
+"items."
+msgstr ""
+
+#: ../../docs/content/items.md:21 5f05c1c0374e45319efc568f99dd7a98
+msgid "On the right top of the Items window is the *Add new item* button."
+msgstr ""
+
+#: ../../docs/content/items.md:23 b6f18ceaee0f4f058ae9002d77ced1bc
+msgid ""
+"On the left side is a display for the number of pages of items, with "
+"forward and back arrows. The current page number is an editable field — "
+"enter any valid page number and hit return/enter on your keyboard to go "
+"to that page."
+msgstr ""
+
+#: ../../docs/content/items.md:25 648a92ef064245e3953683366669a8f7
+msgid "In the center top is a button for [Advanced Search](../search.md)."
+msgstr ""
+
+#: ../../docs/content/items.md:27 eeb8c6e7d042467396c12a28d8d9f692
+msgid ""
+"Just above the table on the right are options for sorting the table of "
+"items, with two dropdown menus. The first lets you select between "
+"*Title*, *Identifier*, *Class*, *Owner,* and *(Date) Created*; the second"
+" allows you to sort ascending or descending. To apply, click the *sort* "
+"button."
+msgstr ""
+
+#: ../../docs/content/items.md:29 56268f6d71da4aeb9d2e8a7d03aaf1c8
+msgid ""
+"Between these and the table, on the left, is a dropdown for batch "
+"actions, including edit selected, edit all, delete selected, and delete "
+"all."
+msgstr ""
+
+#: ../../docs/content/items.md:31 5ca37ef911774bb4a6bafdf03098c8b9
+msgid "View"
+msgstr ""
+
+#: ../../docs/content/items.md:32 54d6588a41104f588dabcc0edd0e00b8
+msgid ""
+"To quickly view the basic information about an item, click the *view "
+"details* (ellipses) button in the row for the item, located next to the "
+"edit and delete buttons. This will open a drawer to the right of the list"
+" which displays the item’s title,  description, visibility, any sites it "
+"is used in, and its associated media.."
+msgstr ""
+
+#: ../../docs/content/items.md:34 22667fde89164d2592815c5ffb366b68
+msgid ""
+"For a more detailed look at an individual item, click on its title in the"
+" items browse table or when viewing its details."
+msgstr ""
+
+#: ../../docs/content/items.md:36 3954d3b6229743fdb1d96824f36c873f
+msgid ""
+"![Item browse view with details open for \"Behold, Here's Poison\". Links"
+" to item view page squared in blue](contentfiles/items_detailview.png) "
+"The blue squares indicate where to click to open the full item view."
+msgstr ""
+
+#: ../../docs/content/items.md:38 eee4c266828c49e19bc5fc1ccf504cae
+msgid ""
+"When you view an individual item , there are tabs for the item’s "
+"*Metadata* and its *Linked Resources*. The right side of the page "
+"displays the item’s media, any *item sets* to which it belongs, its "
+"creation date, owner, and visibility."
+msgstr ""
+
+#: ../../docs/content/items.md:40 0f3ce1418b434843addd2844a0ec82f0
+msgid ""
+"An item’s *linked resources* (shown below) are resources, which are "
+"linked to this item through properties. Note that this section only shows"
+" resources which have been linked *to* this item (which have it for a "
+"property); resources which are linked *from* this item will display in "
+"the property which they fill."
+msgstr ""
+
+#: ../../docs/content/items.md:42 5b5644be488c45e7a5d1d7888f5b37d4
+msgid ""
+"Linked items are grouped by the property for which they use the current "
+"item. In the example below, the item William Shakespeare is used for the "
+"properties \"Creator,\" \"References,\" and \"list of authors\" for the "
+"linked resources."
+msgstr ""
+
+#: ../../docs/content/items.md:44 9f053c91dc6143aa930726e98b2854d3
+msgid ""
+"You can filter linked resources to only display those referencing a "
+"specific property using the dropdown \"Filter by property.\" It will only"
+" display properties actively in use."
+msgstr ""
+
+#: ../../docs/content/items.md:46 48507fa692954ac7ad14ea45022704a0
+msgid ""
+"![Item linked resources view for William Shakespeare, with six plays "
+"using Shakespeare as Creator, the item Folger Shakespeare Library listed "
+"as 'references' Shakespeare, and the Globe Theatre using Shakespeare for "
+"'list of authors'. Each property cluster is in a separate rectangle, "
+"headed by the property being referenced.](contentfiles/items_linked.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:48 c81647046f2843e29b73ca4e04b354e6
+msgid "Adding an Item"
+msgstr ""
+
+#: ../../docs/content/items.md:50 99e58246068e4715ae93fea3e6048e15
+msgid "To add a new item, begin by selecting the the *Add new item* button."
+msgstr ""
+
+#: ../../docs/content/items.md:52 384c85776a5d4a4bbd936da447b94ad6
+msgid ""
+"Before creating items, supervisors may want to create [Resource Templates"
+"](resource-template.md), which will load specific fields for various item"
+" types."
+msgstr ""
+
+#: ../../docs/content/items.md:54 563cc07a719847609e1262d44132154c
+msgid "Values"
+msgstr ""
+
+#: ../../docs/content/items.md:55 d7ec3bec783e4d1a8b83e5957089d342
+msgid ""
+"The Values tab is where you enter metadata, such as title, description, "
+"etc."
+msgstr ""
+
+#: ../../docs/content/items.md:57 38c851334e4744a5a4f9c08dd5a35b48
+msgid ""
+"![Basic view of add items page, with no content "
+"entered](contentfiles/items_add.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:59 19c5a16ed38646df87a03fe573fe1def
+msgid ""
+"You can select a resource template from the drop-down menu. Resource "
+"templates are defined by the supervisors and editors."
+msgstr ""
+
+#: ../../docs/content/items.md:61 6d84fe36dd7b4a858aae9136c2ed2145
+msgid "If using a resource template, the class should automatically load."
+msgstr ""
+
+#: ../../docs/content/items.md:62 81b3ec483b8b43b68a1315a8517ab812
+msgid ""
+"If not using a resource template, you may select a class from the "
+"dropdown menu (these are populated from the "
+"[Vocabularies](vocabularies.md) in your installation)."
+msgstr ""
+
+#: ../../docs/content/items.md:64 070dfca8a9424e7fbd5b85c3bc3dcd6a
+msgid ""
+"Add information to the properties which load. If you do not select a "
+"resource template or class, the Dublin Core properties Title and "
+"Description will load automatically."
+msgstr ""
+
+#: ../../docs/content/items.md:66 e3e1e07620ea448495c85e7b17f73b5d
+msgid ""
+"You may add text, a resource from the installation, or an external link "
+"in each field."
+msgstr ""
+
+#: ../../docs/content/items.md:68 aaaa02643f6948b4abce23941d1ae2fc
+msgid ""
+"Whether or not you use a resource template, you can add more properties "
+"to the item using the drawer on the right side of the screen. You can "
+"simply click open one of the vocabularies and click on the property you "
+"want to add, or you can use the “Filter properties” box to search for a "
+"specific property (this is helpful when you have multiple large "
+"vocabularies)."
+msgstr ""
+
+#: ../../docs/content/items.md:70 3477a158bba145a0a6f7412c91a5ad3b
+msgid ""
+"![Close up of the right hand drawer with the text \"date\" entered into "
+"the filter properties box and a series of properties containing the word "
+"\"date\" loaded from Dublin Core and Bibliographic "
+"Ontology](contentfiles/items_filterprop.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:72 6b06731d53204c43a3347976fad19787
+msgid ""
+"Clicking on the property label in the drawer will automatically add it to"
+" the Item. If you add a property by accident, leave it blank and it will "
+"be removed from the item when you save changes."
+msgstr ""
+
+#: ../../docs/content/items.md:74 c123544b5fdf4a0bb04b7c3104948094
+msgid ""
+"You can set individual properties as Private or Publicly visible using "
+"the eye icon for each property. Note that properties set to private are "
+"still visible to Global Admins, Supervisors, and Editors will be able to "
+"see properties even when set to private. Authors will be able to see all "
+"properties on items they own, but will not see private properties created"
+" by other users."
+msgstr ""
+
+#: ../../docs/content/items.md:76 753000ac331543339fdc3c77df266b69
+msgid ""
+"In the image below, the first property (Title) is public as indicated by "
+"the open eye icon. The second property (Description) is private as "
+"indicated by the slashed-through eye icon. Clicking or hitting enter on "
+"the eye icon toggles between public and private."
+msgstr ""
+
+#: ../../docs/content/items.md:78 28d54ca7609a48d59855b150b526af14
+msgid "![As described](contentfiles/item_propviz.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:80 a0d99759d90a414d8621b5cf75988630
+msgid "Text"
+msgstr ""
+
+#: ../../docs/content/items.md:81 fca924a14d834080a71c583aa53883e6
+msgid "Text fields allow for unformatted text entry."
+msgstr ""
+
+#: ../../docs/content/items.md:83 12a7c438d86c4d72b63b01dc0167f04c
+msgid ""
+"![image of text input field with keyboard icon indicating text input, the"
+" globe icon for setting language, and a trashcan delete "
+"icon](contentfiles/items_textedit.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:85 c948e3294b414bb981035add641d4398
+msgid ""
+"You can indicate the language for the content of an input using the globe"
+" symbol above the input (see the red arrow in the image below). Click on "
+"the globe to activate a text field, then enter the [IETF Language "
+"tag](https://en.wikipedia.org/wiki/IETF_language_tag) code for the "
+"language in which the text is written."
+msgstr ""
+
+#: ../../docs/content/items.md:87 ../../docs/content/items.md:124
+#: 5b2139b8ffda4905a6a9064ba2dd1ac6 87329514298f4421992387f293988dbc
+msgid ""
+"![Red arrow points to the globe icon and a text entry field highlighted "
+"in blue](contentfiles/item_lang.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:89 ad5d8d200b294e359fd6ca03512b3e47
+msgid "Omeka Resource"
+msgstr ""
+
+#: ../../docs/content/items.md:90 86a4527bd162419bb26f4abc00a1bb9d
+msgid ""
+"Omeka Resource fields create an internal link between the resource you "
+"are creating and the resource which fills that field."
+msgstr ""
+
+#: ../../docs/content/items.md:92 33c680efddae498ca06f50454a0a866b
+msgid ""
+"When creating an item, you have the option to use either another item or "
+"an item set."
+msgstr ""
+
+#: ../../docs/content/items.md:94 3548bcbba3934071b0900902f8d22877
+msgid ""
+"Choosing a resource type will open a side drawer where you can browse all"
+" of those resources in the installation. You can use the search function "
+"at the top of the drawer to narrow down the list or to quickly find a "
+"specific item."
+msgstr ""
+
+#: ../../docs/content/items.md:96 834cd11476e0414495178ecc919f3dac
+msgid ""
+"Once you select an item or item set, detailed information will load, and "
+"you must click *select resource* to finish linking the resources. You can"
+" also click the *X* button in the upper right-hand corner to go back to "
+"the list of items or item sets."
+msgstr ""
+
+#: ../../docs/content/items.md:98 3f25af5621c845e7935e3da106a1125b
+msgid ""
+"![Select Item menu with list of items to link in edit item "
+"view](contentfiles/items_addresource.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:100 b5ee1be0b1974dd1a3b196b2f44ebe8d
+msgid ""
+"If you are using an Item resource for the property, you will have "
+"additional options for finding the item you want in the drawer. Open "
+"these options by clicking the triangle button next to the phrase \"Filter"
+" search\""
+msgstr ""
+
+#: ../../docs/content/items.md:102 c73b24c8053b4ef89160f5436686b513
+msgid ""
+"![Select Item drawer top options, with a red arrow around a gray triangle"
+" button to the right of the phrase \"Filter "
+"search\"](contentfiles/items_filtersearch.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:104 cde50e14b9854acd9b8b7a66bf774d40
+msgid ""
+"This will open a menu below the button with the following options to "
+"filter the items in the drawer:"
+msgstr ""
+
+#: ../../docs/content/items.md:106 74ebe60382d141afaa7953a36655a422
+msgid ""
+"Filter by class: a dropdown where you can select any class provided by "
+"the vocabularies on the installation;"
+msgstr ""
+
+#: ../../docs/content/items.md:107 154edb2404914cc6a68e01bc8efb588a
+msgid ""
+"Filter by item set: a dropdown where you can limit the items displayed in"
+" the drawer to only those associated with a particular item set"
+msgstr ""
+
+#: ../../docs/content/items.md:108 2587543e1a9b4cccb33f5029231f8e58
+msgid ""
+"Filter by item ID: a search field where you can input the ID of the item "
+"you want to use. You can find an item's ID in the url of it's edit page; "
+"if you are editing the item and the url is `admin/item/11547/edit` then "
+"the item's ID is 11547."
+msgstr ""
+
+#: ../../docs/content/items.md:110 8c1b463c6a804c91b4a0b7fe574f531e
+msgid "![options as above described](contentfiles/item_addresItem.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:112 0189df91b2944936aae4f3e5e3f114cf
+msgid ""
+"Item resources also have an option for \"Quick add\". When this switch is"
+" flipped, all of the items in the drawer have a checkbox. You can use "
+"these checkboxes to add multiple items as a property at once. Note that "
+"you can only edit one property at a time, so all of the items must "
+"populate the same property (ex, Creator, Has Part)."
+msgstr ""
+
+#: ../../docs/content/items.md:114 9c2ef2850bf0402aa7b545d94673bb7d
+msgid ""
+"![a red arrow points to the slider button for \"Quick add\". The two "
+"items visible have an empty checkbox to the left of their representative "
+"thumbnail](contentfiles/items_quickadd.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:116 6eda8ecc008f4d7998c2172ecabb3ffa
+msgid "URI"
+msgstr ""
+
+#: ../../docs/content/items.md:117 30e85570786b490da4f1a1e8c66e5c2a
+msgid "URI fields link to an external website or online resource."
+msgstr ""
+
+#: ../../docs/content/items.md:119 fcd463fc4754412a9af269452870c3a9
+msgid ""
+"You may add other fields by selecting a property from the list on the "
+"right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, "
+"etc), or search in the *filter properties* bar above the list of "
+"properties and vocabularies."
+msgstr ""
+
+#: ../../docs/content/items.md:121 6bc94cf5422043fb9c8adc5490629738
+msgid "Language"
+msgstr ""
+
+#: ../../docs/content/items.md:122 986a6c60a8bc411283a81833010bb61a
+msgid ""
+"You can indicate the language for the content of an input using the globe"
+" symbol above the input (see the red arrow in the image below). Click on "
+"the globe to activate a text field, then enter the [IETF Language "
+"tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in"
+" which the text is written."
+msgstr ""
+
+#: ../../docs/content/items.md:126 8516f2e9d5014c01ba2e713368c6def0
+msgid "Value order"
+msgstr ""
+
+#: ../../docs/content/items.md:127 c94d617d3a274368b4170151f2f29f72
+msgid ""
+"If you have multiple values for a property, you can reorder them by "
+"dragging and dropping. Click on the bar on the left of the value to grab "
+"that value, and drag it into the order that you want it."
+msgstr ""
+
+#: ../../docs/content/items.md:129 fb418c993fa146aebfc63d9cca5cc46d
+msgid ""
+"![Close up of the Subject property with two values. A red circle shows "
+"the location of the grab bar for the "
+"value.](contentfiles/item_valuereorder.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:132 e82019d3bccb48799023f038cdb7a5f6
+msgid "Media"
+msgstr ""
+
+#: ../../docs/content/items.md:133 aef6664824d94616aab20482ce1a4389
+msgid ""
+"Use the *Media* tab to add images, video, or other files. Using the "
+"buttons on the *Add New Media* menu on the right side of the screen, "
+"select a media type (Upload, URL, oEmbed, YouTube, or HTML)"
+msgstr ""
+
+#: ../../docs/content/items.md:136 9d161629fbf8404e8a1e2e33cb07ccb1
+msgid ""
+"![“Add new media” drawer showing the "
+"options](contentfiles/items_mediaadd2.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:138 322c4eb9d640441aa82d83f59900c4b6
+msgid "*Upload*: select a file to upload from your computer."
+msgstr ""
+
+#: ../../docs/content/items.md:139 43d907adae9347c6be7a8406842674cb
+msgid "*URL*: import media via a uri."
+msgstr ""
+
+#: ../../docs/content/items.md:140 44d39d3611ed4088b10b48a4a961398b
+msgid "*HTML*: add html content as a media resource for your item."
+msgstr ""
+
+#: ../../docs/content/items.md:141 cedca80704f94da1ad851c8672ef1184
+msgid "*IIIF*: Add an IIIF image via url."
+msgstr ""
+
+#: ../../docs/content/items.md:142 c141bf2e23884d618385cc88942d8a9d
+msgid ""
+"*oEmbed*: insert an embedded representation of an external URL. Note that"
+" this will only work with content from [existing oEmbed "
+"implementations](http://oembed.com/#section7) - use the url in your "
+"browser’s location bar."
+msgstr ""
+
+#: ../../docs/content/items.md:143 ede43a8063564fd88b4e60044c0bde66
+msgid ""
+"*YouTube*: add a link to embed a YouTube video. Use the url from your "
+"browser’s location bar (with `/watch/` in it) rather than the `youtu.be` "
+"link."
+msgstr ""
+
+#: ../../docs/content/items.md:145 d91f0bea19b148669a2a59b0af552c13
+msgid ""
+"You can edit media later by going by editing an item, navigating to the "
+"*media* tab, and clicking the edit button (pencil) for a media when "
+"editing the item."
+msgstr ""
+
+#: ../../docs/content/items.md:147 913cb20a7bfc48088a30e338755cf22f
+msgid ""
+"You can delete any media instance from the item's edit page using the "
+"delete button (trashcan) on the upper right corner of the media block."
+msgstr ""
+
+#: ../../docs/content/items.md:149 fe40ad1342f14534a432611ae25eb99a
+msgid ""
+"![Image shows a close up of a media item being removed - it is red and "
+"has an undo curling arrow at the right end of the "
+"block](contentfiles/item_mediablockdelete.JPG)"
+msgstr ""
+
+#: ../../docs/content/items.md:151 70b4e12994a6449998c258d13505e479
+msgid ""
+"If you have more than one media instance for an item, you can reorder "
+"them by dragging and drop each media instance block, using the icon of "
+"three lines in the upper left corner of the block as the anchor when "
+"dragging."
+msgstr ""
+
+#: ../../docs/content/items.md:153 d3263dcbb6554037931427a3266cb253
+msgid ""
+"Omeka S uses the topmost media for an item to create thumbnail images for"
+" that item on browse and show pages."
+msgstr ""
+
+#: ../../docs/content/items.md:155 75ef2d4d1c8e4a019f3ee67a72f74d2e
+msgid "Item Sets"
+msgstr ""
+
+#: ../../docs/content/items.md:156 130c70c2335e462a8b177c15b74e28eb
+msgid "You can only add items to existing item sets."
+msgstr ""
+
+#: ../../docs/content/items.md:158 7a653f2044c94c8fb5331d21740eae04
+msgid ""
+"From the right-hand menu, click on the owner of an item set, then click "
+"the name of the item set to add the item to that set."
+msgstr ""
+
+#: ../../docs/content/items.md:160 47cb2fd8bd684e46af41ecc5e7e90d43
+msgid ""
+"You can also filter item sets using the text entry bar above the list of "
+"users."
+msgstr ""
+
+#: ../../docs/content/items.md:162 71bd6d332e954165af875bbdc9924f05
+msgid ""
+"To remove a connection between an item and item set, click the delete "
+"(trash can) button to the right of the item set title."
+msgstr ""
+
+#: ../../docs/content/items.md:164 53773abb281743319fbd6b58288a6c74
+msgid "![item set tab with no item sets assigned](contentfiles/items_itemset.JPG)"
+msgstr ""
+
+#: ../../docs/content/items.md:166 cb69ae7643d24f7faf660ffa820e742c
+msgid "Sites"
+msgstr ""
+
+#: ../../docs/content/items.md:167 7670b7e9e08847c9b0b7fdfae2d64c8e
+msgid "Select sites to which to add your items."
+msgstr ""
+
+#: ../../docs/content/items.md:169 1a05f2435ad0469287c90d7f6e3726e8
+msgid ""
+"![item 'sites' tab with the item added to two sites. Each site is in its "
+"own row, with a delete icon on the far right of the "
+"row](contentfiles/items_addItemSite.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:171 220fcee9ee594b5398c044a8dcf0cbd0
+msgid ""
+"To add an item to a site, select a site from the menu in the right-hand "
+"drawer. You can filter sites by searching in the field at the top of the "
+"drawer."
+msgstr ""
+
+#: ../../docs/content/items.md:173 9a32eccc7f4f4ba5a8132020d1851243
+msgid ""
+"If there are sites which have \"auto-assign new items\" turned on in "
+"their settings, you can use this tab to remove this item from those "
+"sites. Click the trash can icon on the right side of the site's row to "
+"remove it."
+msgstr ""
+
+#: ../../docs/content/items.md:175 421a51a2bc2b445fa9f1b700dba58b96
+msgid "Advanced"
+msgstr ""
+
+#: ../../docs/content/items.md:176 efc5c725dec94c60bf89b5548da18135
+msgid ""
+"The advanced tab has two options. One lets you set a custom thumbnail for"
+" the item. The other allows you to change which user has ownership of the"
+" item."
+msgstr ""
+
+#: ../../docs/content/items.md:178 f0741c11c80841a398aff55f4b452840
+msgid "**Thumbnail**"
+msgstr ""
+
+#: ../../docs/content/items.md:180 52bfa9f4d79b43949c955afb2c74f7d3
+msgid ""
+"By default, Omeka S will use the topmost media to generate a thumbnail "
+"for the item. If you want to use a non-media image for the thumbnail for "
+"an item you can set it here."
+msgstr ""
+
+#: ../../docs/content/items.md:182 196e17326d5d486d8683639f5dec10a1
+msgid ""
+"![Advanced tab with no asset selected. The tab displays a message about "
+"thumbnail creation and a button to \"select\" an "
+"asset](contentfiles/item_advtab.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:184 72b45cd0d26c47869e812bc40d625a85
+msgid ""
+"When you use an asset thumbnail instead of uploading media, the asset "
+"thumbnail does not display on the item's public show page. This makes "
+"such thumbnails useful for items which have no media but which would "
+"benefit from a thumbnail for the browse view, or for items whose media "
+"does not render an elegant thumbnail, such as audio or visual files."
+msgstr ""
+
+#: ../../docs/content/items.md:186 432af109b7fe437ca56d2fa201b050b8
+msgid ""
+"The assets you select from and upload as thumbnails in this tab are the "
+"same as those created for [site logos](../../sites/site_theme/#settings-"
+"options)."
+msgstr ""
+
+#: ../../docs/content/items.md:188 db6af2df6fac48eca8c8be949080d1f8
+msgid ""
+"To assign an asset as a thumbnail, click on the Select button in the main"
+" work area of the tab. This will open a drawer on the right side."
+msgstr ""
+
+#: ../../docs/content/items.md:190 6a560f24914e48379ecabc292d62df91
+msgid ""
+"![Select drawer with upload option and two assets, both of which are "
+"images.](contentfiles/item_thumbdrawer.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:192 23526408453e4d1db4a812909a363286
+msgid ""
+"The drawer offers two options: upload a file using your browser, or "
+"select from existing assets. To select an existing asset, simply click on"
+" it and it will automatically be assigned to the item."
+msgstr ""
+
+#: ../../docs/content/items.md:194 c68a66a1117a49cabf91c2cb1c5bd0da
+msgid ""
+"To remove an asset which you have assigned as a thumbnail, click the "
+"\"Clear\" button below the image of the asset. To replace it, click "
+"select and either choose or upload a new thumbnail asset."
+msgstr ""
+
+#: ../../docs/content/items.md:196 c79ec34686704d4e94660a6c73789065
+msgid "**Owner**"
+msgstr ""
+
+#: ../../docs/content/items.md:198 3e14d23ab3ef4283a462dfcfcc4db67f
+msgid ""
+"The ownership of an item is usually assigned to the user account which "
+"creates the item. You can use this dropdown to reassign ownership. The "
+"dropdown will load the user names (not email addresses) of users in the "
+"installation. Select a new user and save changes."
+msgstr ""
+
+#: ../../docs/content/items.md:200 eac4dcdc30ce4797aa354f6aa98d2152
+msgid "Visibility"
+msgstr ""
+
+#: ../../docs/content/items.md:201 9c061ccac00249e782ac77ed82ce379f
+msgid ""
+"Use the *make public/private* button (eye icon) to set whether the item "
+"is visible to the public or only to users of the Omeka S system."
+msgstr ""
+
+#: ../../docs/content/items.md:203 bdfc8ccd6b354bd1b6d3d7241066e691
+msgid ""
+"![make public button showing an eye icon](contentfiles/item_public.png) "
+"Public"
+msgstr ""
+
+#: ../../docs/content/items.md:205 5b554f86bb424f309fa08f1e69715a79
+msgid ""
+"![make private button showing an eye icon with a diagonal slash through "
+"it](contentfiles/item_private.png)  Private"
+msgstr ""
+
+#: ../../docs/content/items.md:207 5a5689a3b89746858c77a5cc1916922e
+msgid ""
+"Note that if an item is private, all the media attached is private, but "
+"an item which is public can have attached media which are set to be "
+"either public or private."
+msgstr ""
+
+#: ../../docs/content/items.md:209 54cceed4cec64e8080525da9c977f21b
+msgid "Edit an item"
+msgstr ""
+
+#: ../../docs/content/items.md:210 5791313f4e6c4ddb8aed0efd2675d3fd
+msgid ""
+"Once you have created an item, you can edit it at any time, either by "
+"clicking the edit icon (pencil button) or clicking on the item's title "
+"and then clicking the Edit button in the upper right-hand corner of the "
+"screen."
+msgstr ""
+
+#: ../../docs/content/items.md:212 29eb8f7f3e0746b78f88f88f1aada645
+msgid ""
+"To cancel out of editing, click the Cancel button in the upper right "
+"corner, between the Delete and Save buttons."
+msgstr ""
+
+#: ../../docs/content/items.md:214 1e26cfa01139454199cb645bd0dde8b1
+msgid ""
+"![Detail view of the top row if information and buttons on an item edit "
+"view. A red arrow points to the Cancel button, on the far "
+"right](contentfiles/items_cancel.JPG)"
+msgstr ""
+
+#: ../../docs/content/items.md:216 90f9a7268a6d4432b6af0f4f3cdcd224
+msgid ""
+"Editing options are the same as when creating a new item, with the "
+"addition of the ability to add any media which has been saved to an item "
+"as a property:"
+msgstr ""
+
+#: ../../docs/content/items.md:218 8899ebc8b77a470393abd5ba96a5622c
+msgid "Media as property"
+msgstr ""
+
+#: ../../docs/content/items.md:219 459d0f46188e47679dc224a497e5a741
+msgid ""
+"Once you have created an item and added media to it, you will also have "
+"the option to use media *attached to that item* for a property."
+msgstr ""
+
+#: ../../docs/content/items.md:221 2b49f0f1ce394c78bf2b275c2aacd80d
+msgid ""
+"![A blue outline of a rectangle highlights resource options for Items, "
+"Item sets, and Media to be used as the input for the element "
+"\"Description\"](contentfiles/items_addmediaresource.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:223 62dfb9448c3e477c95d819926516d558
+msgid ""
+"To use a media resource for a property, select the media option for the "
+"element (1). The drawer which opens will display all media attached to "
+"the item. Select the media which you want to use(2); this will switch the"
+" drawer to just that media (second image). Click the *Select Resource* "
+"button at the bottom of the drawer to complete the process (3)."
+msgstr ""
+
+#: ../../docs/content/items.md:225 3c6291ac236d4d759ea8a25cb48f14a2
+msgid ""
+"![Focus on the editing portion of a window for the item \"Sense and "
+"Sensibility\", with the elements Title and Description visible. On the "
+"right side of the window, a vertical rectangle (the drawer) is open on "
+"the right displaying five media which are attached to the item, including"
+" video, images, and text. This image contains steps 1 and "
+"2.](contentfiles/items_mediaresource1.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:227 2483adbfb7264d128f5f9f02a7a6e8e3
+msgid ""
+"![The same window as before, but now the drawer on the right displays a "
+"thumbnail of the media \"Sense and Sensibility DVD Trailer\" with a dark "
+"gray button labeled \"select resource\" at the bottom of the drawer area."
+" This image contains step 3](contentfiles/items_mediaresource2.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:230 3ac679cf3a754f1ab0a9b6f06179745b
+msgid "Batch actions"
+msgstr ""
+
+#: ../../docs/content/items.md:232 2cd1cbecf3e345b082cc44f5d21ef4ac
+msgid ""
+"From the browse page of items (admin/item) you can batch edit items, "
+"using the dropdown menu on the left near the pagination buttons. You can "
+"select multiple items using the checkboxes on the left of each item's "
+"row."
+msgstr ""
+
+#: ../../docs/content/items.md:234 47302e61abd34afa8dc5b981cc9c1c00
+msgid ""
+"![A red arrow points to the dropdown for batch editing and deleting "
+"options](contentfiles/items_batch.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:236 baae877d92f14d839610c0a61491bc88
+msgid "Batch actions are as follows:"
+msgstr ""
+
+#: ../../docs/content/items.md:238 533badfa20404eddacf96a74a1471349
+msgid "Edit selected: edit only the items that are selected on the page"
+msgstr ""
+
+#: ../../docs/content/items.md:239 b1271a5497964840badb4b91d4c134a8
+msgid "Edit all: edit all the items returned by a search (default is all items)"
+msgstr ""
+
+#: ../../docs/content/items.md:240 da28e891f32848759d90a2b6ffbce4a6
+msgid "Delete selected: delete only the items that are selected on the page"
+msgstr ""
+
+#: ../../docs/content/items.md:241 d40ed4bf9dae41199d26fff34ccf20b3
+msgid ""
+"Delete all: delete all the items returned by a search (default is all "
+"items)"
+msgstr ""
+
+#: ../../docs/content/items.md:243 568e7921e80648ec97a66730c98a0b4f
+msgid "Choose one of these options and then click *Go*."
+msgstr ""
+
+#: ../../docs/content/items.md:245 d3256e9d5faf4cdf9b447474d0fc5484
+msgid ""
+"**Batch editing** items takes you to a new page. The items being edited "
+"will display on the right side in a drawer, while the batch edit form "
+"gives you the following options:"
+msgstr ""
+
+#: ../../docs/content/items.md:247 78f28ebe86584ca594e0ea01e111bb56
+msgid "set visibility: a dropdown, select from public or not public."
+msgstr ""
+
+#: ../../docs/content/items.md:248 eed93dc106be4d71876679ca9d5558da
+msgid ""
+"set template: a dropdown, select from the installation's resource "
+"templates."
+msgstr ""
+
+#: ../../docs/content/items.md:249 e264d83fd1fe4c72b9c2f5329a1070c3
+msgid "set class: a dropdown, select from classes of the installed vocabularies."
+msgstr ""
+
+#: ../../docs/content/items.md:250 f636aab17b3345588d637d4c00594121
+msgid ""
+"add to item set: a dropdown, select from item sets on the installation. "
+"Add to an additional item set using the *add another item set* button."
+msgstr ""
+
+#: ../../docs/content/items.md:251 2051f948b7b54ddbb707c5214cfab356
+msgid ""
+"remove from item set: a dropdown, select from item sets on the "
+"installation. Remove from an additional item set using the *remove "
+"another item set* button."
+msgstr ""
+
+#: ../../docs/content/items.md:252 e2e03dd55ecb4d9daa79b51b79bcd28c
+msgid ""
+"clear property values: a dropdown menu with all the properties in all "
+"vocabularies, selecting from this will remove any values in that property"
+" in the affected items. Clear additional properties using the *Clear "
+"another property* button."
+msgstr ""
+
+#: ../../docs/content/items.md:253 293709b99f1b47918f414470b13251d5
+msgid ""
+"Set value visibility: set the visibility of a specific property to either"
+" public or not public. Unlike the radio buttons at the top of the form, "
+"this will only affect a single property instead of the entire item. "
+"Select a property from the text field (type to begin searching), and the "
+"choose either the *public* or *not public* radio button for this option."
+msgstr ""
+
+#: ../../docs/content/items.md:255 fee9351828034b429df2b3f58425c1d8
+msgid ""
+"![Batch edit items form, with options as described above. Everything is "
+"grayscale](contentfiles/items_batchedit.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:257 65b07d12920b440389a2446e01735886
+msgid ""
+"In addition,  you can use the buttons at the bottom of the batch edit "
+"form to add properties to every item:"
+msgstr ""
+
+#: ../../docs/content/items.md:259 0fc1dcfbd09c4e279cb8594714b2c089
+msgid "add text value"
+msgstr ""
+
+#: ../../docs/content/items.md:260 f2d5a567ea944272b7cc48ebfbcb89d8
+msgid "add resource value"
+msgstr ""
+
+#: ../../docs/content/items.md:261 a8bf6c34a87144308f16899284bb02b4
+msgid "add URI value"
+msgstr ""
+
+#: ../../docs/content/items.md:263 f375eeb64dfd4334a79f7774270bc633
+msgid ""
+"Selecting any of these will add a block to the form where you can select "
+"a property from the installed vocabularies and enter the value for that "
+"property."
+msgstr ""
+
+#: ../../docs/content/items.md:265 2c94181a9326454d8656453ce54efe7c
+msgid ""
+"![Image depicts only the Add text value block of the batch edit form, "
+"with a dropdown labeled \"select property\" above an empty text "
+"field](contentfiles/items_beproperty.png)"
+msgstr ""
+
+#: ../../docs/content/items.md:267 ef02dc1a336f484fbce131ab921e4a30
+msgid ""
+"For the **delete actions**, a drawer will open on the right side of the "
+"screen telling you the number of items which will be deleted. Nothing "
+"will be deleted unless you click the red *Confirm Delete* button. This "
+"action cannot be undone. To opt out of deleting the items, click the X in"
+" the upper right corner of the deletion drawer. To confirm delete, check "
+"the \"Are you sure\" checkbox and then click *Confirm Delete*"
+msgstr ""
+
+#: ../../docs/content/items.md:269 b0ffffc0c5f84eff87410008d38fa242
+msgid ""
+"![Close up of the warning, with the text describing the number of items "
+"to be deleted in red.](contentfiles/items_batchdelwarn.png)"
+msgstr ""
+

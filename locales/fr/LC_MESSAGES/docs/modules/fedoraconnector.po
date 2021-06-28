@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/modules/fedoraconnector.md:1 a6358de28bb24157ade70b38a835a8a5
+msgid "Fedora Connector"
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:3 afdd8ea3931640fa96566ce01b852ad1
+msgid ""
+"Fedora Connector is a [module](../modules/index.md) for Omeka S which "
+"allows you to connect an Omeka S instance to a "
+"[Fedora](https://duraspace.org/fedora/) 4 repository in order to import "
+"items from containers in that repository. In addition to importing "
+"information, the Omeka S item will include a link back to the original "
+"item."
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:5 5e6ca4b1c25a48d69d0a3caf6213c56c
+msgid ""
+"To install Fedora Connector, follow the instructions for [Installing "
+"Modules](../modules/index.md#installing-modules) on the Modules "
+"documentation. Following a successful installation you should be "
+"redirected to the configuration page for Fedora Connector."
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:7 1811ec4f4fa64001b6c959268e8428f2
+msgid "Note that Fedora Connector only works with version 4 of Fedora."
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:9 89cb0581d7794656869a805f7948b2b7
+msgid "Configuration"
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:10 7dbf3a00569d43e88541327ac7774d68
+msgid ""
+"There are two options for configuring Fedora Connector, both of which "
+"enable the creation of [vocabularies](../content/vocabularies.md) in your"
+" Omeka S install."
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:12 b67b40ec4bd041278f7b425183ca1111
+msgid ""
+"![Two checkbox options, the first being “Import Fedora Vocabulary” and "
+"the second “Import Linked Data Platform "
+"Vocabulary”](../modules/modulesfiles/mods_fcconfig.png)"
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:14 49453133da984c56b533f244c8f939da
+msgid ""
+"The first checkbox offers the option to import the Fedora Vocabulary into"
+" your Omeka S install’s Vocabularies. The second checkbox offers the "
+"option to import the Linked Data Platform Vocabulary into your Omeka S "
+"install’s Vocabularies. If you do so, data in these vocabularies will "
+"also be imported into Omeka S."
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:16 ab09b0ae923e4a289ecce2ebde7331fa
+msgid ""
+"You can check these boxes when you first install Fedora Connector, or at "
+"a later point via the `Configure` button in the "
+"[Modules](../modules/index.md#managing-modules) list"
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:18 b23583c589a248498b156a1f172ff364
+msgid "Import Data"
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:19 e655cdce1c124a6c9a4c3a7c2e61b591
+msgid ""
+"To use Fedora Connector, navigate to the tab labelled *Fedora Connector* "
+"on the left-hand navigation of the admin dashboard. This will "
+"automatically take you to the Import sub-tab."
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:21 698ca58f91314aa5b3d57d5d59cd9b59
+msgid ""
+"![Fedora Connector navigation option with two sub-tab options for Import "
+"and Past Imports](../modules/modulesfiles/mods_fcnav.png)"
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:23 61fcac215ea942bfb4387c1605996793
+msgid "You should see a screen with the following options:"
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:25 a289dc7f88bf4e928bbc9ea4fd267e72
+msgid ""
+"*Fedora Container URI* for the Repository, Collection or Resource you "
+"wish to import (required)"
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:26 6a5e07250b0549c3adef14e648bd0493
+msgid ""
+"*Import files into Omeka* checkbox, check yes if you want to import media"
+" and other files attached to content (optional, recommended)"
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:27 89451ce6e7824ad4b7e75537bf7b74fd
+msgid ""
+"*Ignore parent container* checkbox, check yes to only import descendents "
+"of the parent container given in Container URI, not the parent container "
+"itself (optional)"
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:28 2013e89b6d024fa2bca8ad09722cd691
+msgid ""
+"*Import direct descendents only* checkbox, check yes to only import "
+"direct descendents of the container given in Container URI (no children "
+"of children). If unchecked, all resources below container will be "
+"imported recursively (optional)"
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:29 18ef8c0b74294c448649e2652343e8e8
+msgid ""
+"*Comment* for example, any notes to yourself or other users of the "
+"installation (optional)"
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:30 1ea1690e5a33441e9653b7ac6a79dcab
+msgid ""
+"*Import into* a selected [Item Set](../content/item-sets.md), if desired "
+"(optional--note that the Item Set must already exist in order to import "
+"into it)"
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:32 83728018c35f40b1ab136513a5782bfa
+msgid ""
+"![Screenshot of the field options for Fedora "
+"Connector](../modules/modulesfiles/mods_fcimport.png)"
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:34 6a75b34691454e43b9068ba6a6011540
+msgid ""
+"When the data is complete, press submit. You can track the status of the "
+"import by navigating to the Fedora Connector > Past Imports tab or on the"
+" [Jobs](../admin/jobs.md) tab of the left-hand navigation on the admin "
+"dashboard."
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:36 b64c12b5ead54727962032543054827e
+msgid ""
+"Are your jobs starting and not completing? You might need to [set the "
+"path for PHP](../configuration/) so that your system can perform the "
+"background process to make the items."
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:38 a673a75e03dd4e58b648b696b379bc98
+msgid "Undo an Import"
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:39 44106aa629f8452cbe3db17e652106b3
+msgid ""
+"To undo a completed import and remove all associated items, go to the "
+"Fedora Connector tab on the left-hand navigation of the admin dashboard, "
+"click on Fedora Connector and then click on Past Imports, which should "
+"appear below the Fedora Connector tab."
+msgstr ""
+
+#: ../../docs/modules/fedoraconnector.md:41 aba1db641f0941ddbe6fe3c727a3b992
+msgid "Check the box for each import you wish to undo and click submit."
+msgstr ""
+

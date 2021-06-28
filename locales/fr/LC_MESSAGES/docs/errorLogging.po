@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/errorLogging.md:1 cf7a793facb141a6826d1895cbc9fed6
+msgid "Retrieving Error Messages"
+msgstr ""
+
+#: ../../docs/errorLogging.md:3 ed95ff9f2ad242cab7ea74d0b7b4cee1
+msgid ""
+"If you are experiencing problems with your Omeka S installation, or you "
+"want to turn on development-style error tracking, you can do so in two "
+"different ways. You will need to edit the `.htaccess` and/or "
+"`local.config.php` files, depending on which way you choose. You must use"
+" a ftp or terminal client to do so; if you're not sure how to do this, "
+"please contact your system administrator or hosting provider."
+msgstr ""
+
+#: ../../docs/errorLogging.md:5 494b5654318c46d896d6780ca8ba6f0e
+msgid "Display Error Details"
+msgstr ""
+
+#: ../../docs/errorLogging.md:7 5329ce393a0b491db79ae524ef9e1752
+msgid ""
+"One option is to enable on-page display of error details. This will cause"
+" \"Omeka S has encountered an error\" pages to show the error message and"
+" details instead of a generic message, and also will display PHP-level "
+"errors and warnings on pages if they occur."
+msgstr ""
+
+#: ../../docs/errorLogging.md:9 7c077787619f4dabade3f7c5786bde08
+msgid "To enable this display, edit your `.htaccess` file."
+msgstr ""
+
+#: ../../docs/errorLogging.md:11 1af8cbaafe4447129ef7805613cc20b5
+msgid ""
+"The `.htaccess` file is located in the main folder of your Omeka S "
+"installation."
+msgstr ""
+
+#: ../../docs/errorLogging.md:12 91338791aa684154b16f87de74adf883
+msgid ""
+"Change line 1 of that file from `SetEnv APPLICATION_ENV \"production\"` "
+"to `SetEnv APPLICATION_ENV \"development\"`"
+msgstr ""
+
+#: ../../docs/errorLogging.md:14 5d72d05bf8574f3084e569873db30af6
+msgid "Log Errors"
+msgstr ""
+
+#: ../../docs/errorLogging.md:16 69129ed70fec41a78ea7a780677b0d9d
+msgid ""
+"Another option for retrieving error detail information is enabling "
+"logging in Omeka S. With logging enabled, Omeka S will write out the "
+"details of all errors to a file. Any \"Omeka S has encountered an error\""
+" page will have its details logged, and additional debugging/warning "
+"information may also be logged. You may want to choose this option if you"
+" want to get detailed error information but do not want to expose error "
+"messages to visitors or other users."
+msgstr ""
+
+#: ../../docs/errorLogging.md:18 468b4c412e954b5ca6adaafe7ba86d78
+msgid "To enable error logging, edit your `local.config.php` file."
+msgstr ""
+
+#: ../../docs/errorLogging.md:20 a21610b2af094f0384fda451489009e3
+msgid "The `local.config.php` file is located in the `config` folder."
+msgstr ""
+
+#: ../../docs/errorLogging.md:21 ab0cdc17d526496f9eb5c6426bc11060
+msgid "Change line 4 from `'log' => false,` to `'log' => true,`"
+msgstr ""
+
+#: ../../docs/errorLogging.md:22 aac529f9740d456ea62acc01fe4da86d
+msgid ""
+"Errors will be logged to the file `log/application.log`. Make sure this "
+"file is writable by your web server."
+msgstr ""
+

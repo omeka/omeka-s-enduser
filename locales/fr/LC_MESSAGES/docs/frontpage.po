@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/frontpage.md:1 01e564325efe402e939fdd280a80fb6b
+msgid "Front Page"
+msgstr ""
+
+#: ../../docs/frontpage.md:3 85e2fe619b5d4832bdb0d39a7a08eeb0
+msgid ""
+"Omeka S allows users to build multiple sites per installation which are "
+"not necessarily connected. However, each installation has, by default, a "
+"front page which lists the sites in the installation. This page is "
+"accessed by going to the main url of your Omeka S installation; if your "
+"[admin dashboard](admin-dashboard.md) was at "
+"`yourdomain.net/omekas/admin`, then you would find this page a "
+"`yourdomain.net/omekas/`"
+msgstr ""
+
+#: ../../docs/frontpage.md:5 74dcd5bc46fd4473bb9bb371759c4553
+msgid ""
+"The page displays all sites which a user has permission to see, along "
+"with the site's summary if one exists. If someone is not logged in, they "
+"will only see public sites. A logged in Global Admin, by contrast, would "
+"see all existing sites on the installation."
+msgstr ""
+
+#: ../../docs/frontpage.md:7 d03e5dd727744dafb7c0624665c54dc9
+msgid ""
+"![Installation front page for the \"Stackable Sandbox\" showing seven "
+"sites, three of which have summaries.](files/frontpage-basic.png)"
+msgstr ""
+
+#: ../../docs/frontpage.md:9 865bf44687c6407596c9134ae549e7ec
+msgid ""
+"If you want this site to be hidden from site visitors, you can use the "
+"[setting Default Site](admin/settings/#global-settings) to select a "
+"public site on your installation to which visitors will be redirected "
+"when they navigate to your base url (`yourdomain.net/omekas/`)"
+msgstr ""
+
+#: ../../docs/frontpage.md:11 9b373d7b7b1b4aada78f8b66aae2ace1
+msgid ""
+"You can use the Default Site option in conjunction with the [site page "
+"block](sites/site_pages/#page-blocks) \"List of sites\" to create a "
+"branded site index and to add an about page for the overall installation."
+msgstr ""
+

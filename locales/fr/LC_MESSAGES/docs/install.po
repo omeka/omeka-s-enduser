@@ -1,0 +1,285 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/install.md:1 b56410b5e9da43aa9f8598374e498055
+msgid "Installing"
+msgstr ""
+
+#: ../../docs/install.md:3 6d725cb0b6c746d7be4c4c0e7e6a730b
+msgid ""
+"Basic instructions for installing and updating from GitHub can be found "
+"in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md) "
+"of the Omeka S github repository."
+msgstr ""
+
+#: ../../docs/install.md:5 929bfa55f2e24abc97e5ce459734ea36
+msgid "System Requirements"
+msgstr ""
+
+#: ../../docs/install.md:6 80a216e7c59a46b58403e55ef64405cf
+msgid "In order to install Omeka S, you will need a server running the following:"
+msgstr ""
+
+#: ../../docs/install.md:8 a564fa03b9d5446e83779278dfbf2a7b
+msgid "Linux"
+msgstr ""
+
+#: ../../docs/install.md:9 10b926de285c49e493a5f735317a2e22
+msgid ""
+"Apache (with "
+"[AllowOverride](https://httpd.apache.org/docs/2.4/mod/core.html#allowoverride)"
+" set to \"All\" and [mod_rewrite "
+"](http://httpd.apache.org/docs/current/mod/mod_rewrite.html) enabled)"
+msgstr ""
+
+#: ../../docs/install.md:10 aefc2283887a46f394ff9248577d0a0d
+msgid "MySQL, minimum version 5.6.4 (or MariaDB, minimum version 10.0.5)"
+msgstr ""
+
+#: ../../docs/install.md:11 df319eb220f34bd8af46efa90ad844e5
+msgid ""
+"PHP, minumum version 7.1, with "
+"[PDO](http://php.net/manual/en/intro.pdo.php), "
+"[pdo_mysql](http://php.net/manual/en/ref.pdo-mysql.php), and "
+"[xml](http://php.net/manual/en/intro.xml.php) extensions installed"
+msgstr ""
+
+#: ../../docs/install.md:12 50d4a341ae4c4c69b739346cc41c131e
+msgid ""
+"Optional, to create thumbnails: ImageMagick version 6.7.5 or greater, the"
+" PHP `imagick` extension, or the PHP `gd` extension"
+msgstr ""
+
+#: ../../docs/install.md:14 a018d5fc9b5841f7bcc9ca7c44234cf5
+msgid "Installing from released zip file"
+msgstr ""
+
+#: ../../docs/install.md:15 da2fd6947e0a4cb8afef7066f1ff63ed
+msgid ""
+"NB: Before you install Omeka S, you need to create a MySQL database and "
+"user. Omeka S must have a dedicated database (you cannot use a prefix for"
+" a database used by another system or Omeka S or Classic installation). "
+"For more information on creating a database and user, please see your "
+"hosting's support documentation or talk to your system administratory."
+msgstr ""
+
+#: ../../docs/install.md:17 ../../docs/install.md:50
+#: 3d169204d9db41909bc1a8203f14cb8f f6dfb4e8f1ce4eefbcff09c91c814711
+msgid "Download the latest release from the release page"
+msgstr ""
+
+#: ../../docs/install.md:18 f5a320e166264080817156e85d3f233b
+msgid ""
+"Open config/database.ini and add your MySQL username, password, database "
+"name, and host name. The user and database must be created before this "
+"step."
+msgstr ""
+
+#: ../../docs/install.md:19 0c65ed3c02ca45c796ebaa7c1a81dd33
+msgid "Make sure the files/ directory is writable by Apache."
+msgstr ""
+
+#: ../../docs/install.md:20 05d73d148f234e27b62591340362d385
+msgid ""
+"In your web browser, navigate to the admin page for your Omeka S "
+"installation (yoururl/admin), where you can complete installation."
+msgstr ""
+
+#: ../../docs/install.md:22 0494bcae2a5243a68623d6c3b6d4263f
+msgid "Initial setup"
+msgstr ""
+
+#: ../../docs/install.md:23 e42e1bb1dcc942f3bf3b4cf26295da8d
+msgid ""
+"Once you have successfully installed and configured the database.ini "
+"file, you can navigate to the admin location of your Omeka S "
+"installation. If your installation is `/myomekas/` then your admin "
+"dashboard would be located at `/myomekas/admin`"
+msgstr ""
+
+#: ../../docs/install.md:25 e2c57175f5e0400e9c596496fa6ed449
+msgid ""
+"The first time you to the install site, you will need to enter "
+"information for the first user, along with basic information for your "
+"install. There are two sections on this page: *Create the first user* and"
+" *Settings*."
+msgstr ""
+
+#: ../../docs/install.md:27 113d9ecf936a45718c72359e24b74c22
+msgid "In the First User section, enter:"
+msgstr ""
+
+#: ../../docs/install.md:29 5e2aad88c0f845e28f45cb12814ff4f1
+msgid "an *email* address, and type again to confirm."
+msgstr ""
+
+#: ../../docs/install.md:30 87e1120c881b4477a0b4aaf9dbcdf752
+msgid "confirm the *password* and type again in the next input to confirm."
+msgstr ""
+
+#: ../../docs/install.md:31 e61d0b51ecb343dd92a83016f317a853
+msgid "a *display name* for the user"
+msgstr ""
+
+#: ../../docs/install.md:33 e3e089098caf402b82e39c90046e9def
+msgid ""
+"Note that you can change all of these later in the [User](admin/users.md)"
+" management section of your install."
+msgstr ""
+
+#: ../../docs/install.md:35 a1012c5be7c74fbe912432c81e5a42d2
+msgid "![First user section with fields as described](files/installOmekaS1.png)"
+msgstr ""
+
+#: ../../docs/install.md:37 cc09a49e2c8544adac67ae13ebff3e7e
+msgid "In the Settings section, enter:"
+msgstr ""
+
+#: ../../docs/install.md:39 4f6d4e5a7e554a8aa6f913fa79dd1507
+msgid "An *installation title* which will display on the admin site,"
+msgstr ""
+
+#: ../../docs/install.md:40 911ddf2b94c94d699de3e1c5f328e36b
+msgid "The installation's *time zone* (select from dropdown), and"
+msgstr ""
+
+#: ../../docs/install.md:41 cee9dcfe85ff40ada56e83c96b1f4081
+msgid "select a *locale* for the language of the admin side of the installation."
+msgstr ""
+
+#: ../../docs/install.md:43 871f005d2db84ecea5105e53acf7482b
+msgid "![Settings section with fields as described](files/installOmekaS2.png)"
+msgstr ""
+
+#: ../../docs/install.md:45 132bad35fa674e72a8b13849acbe2a45
+msgid ""
+"You can changes these at any time in the in the "
+"[Settings](admin/settings.md) section of your [Admin Dashboard](admin-"
+"dashboard.md)"
+msgstr ""
+
+#: ../../docs/install.md:47 cd368c04d72f498b8de2518cbcd0a28b
+msgid ""
+"See [Configuration Options](configuration.md) for information on settings"
+" for thumbnail generation, php path, and more."
+msgstr ""
+
+#: ../../docs/install.md:49 e6dda11aaa7f49ad9582abd8d717967f
+msgid "Updating"
+msgstr ""
+
+#: ../../docs/install.md:51 8c427362bc3c41ae85d1d7a976ce1b7b
+msgid ""
+"Make a copy of your `/config` directory. You will need to restore your "
+"`local.config.php` and `database.ini` files from that copy."
+msgstr ""
+
+#: ../../docs/install.md:52 5b7493ad73964c418292675509887768
+msgid "Make a copy of your `/modules` and `/themes` directories."
+msgstr ""
+
+#: ../../docs/install.md:53 e7d16f1ce43b4c44a57165325406840a
+msgid "Make a copy of your `/files` directory."
+msgstr ""
+
+#: ../../docs/install.md:54 f13eb94cc00940d4ac40c0c1211c035b
+msgid ""
+"Remove all Omeka S files, and replace them with the files from the "
+"updated zip file."
+msgstr ""
+
+#: ../../docs/install.md:55 f54af5a3067748c29804c83f18554548
+msgid ""
+"Replace your original `/config/local.config.php` and "
+"`/config/database.ini` file, and the `/modules`, `/themes`, and `/files` "
+"directories that you copied."
+msgstr ""
+
+#: ../../docs/install.md:56 ff179914d2234d6d89839d93e022a1da
+msgid ""
+"In your web browser, go to your site's admin page (yoururl/admin) and run"
+" any migrations that are needed."
+msgstr ""
+
+#: ../../docs/install.md:58 f40e86205426420989bd77916437ca41
+msgid "Install on Windows or Mac OS (basic development purpose only)"
+msgstr ""
+
+#: ../../docs/install.md:59 7d56b286b3994aa2a8078480202a823d
+msgid ""
+"Omeka S does not support proprietary or closed source operating systems. "
+"However, for **basic development purposes** or for quick training, Omeka "
+"can run with [WAMP](http://www.wampserver.com), "
+"[MAMP](https://www.mamp.info) or similar tools."
+msgstr ""
+
+#: ../../docs/install.md:61 0b0b91f7358940d897582791b95ce676
+msgid ""
+"Follow the standard installation instructions. You will need to make the "
+"following [configuration](configuration.md) changes to the file "
+"`config/local.config.php` to work."
+msgstr ""
+
+#: ../../docs/install.md:63 19b28167ba2c40fd8adb1f30726c6339
+msgid ""
+"First, the php path may need to be set if php. Edit the config file and "
+"fill the `phpcli_path` at line 12 with the appropriate path for your "
+"operating system."
+msgstr ""
+
+#: ../../docs/install.md:65 7817a1e5f0e747cca67ad636e464143d
+msgid ""
+"Second, you need to configure Omeka S to use the thumbnailer which is "
+"available in your server. Edit the `local.config.php` file with the "
+"following, based on what is available for your system:"
+msgstr ""
+
+#: ../../docs/install.md:67 6d6dbe24a792410989905bc55dedbb2a
+msgid ""
+"replace the default thumbnailer `Omeka\\File\\Thumbnailer\\ImageMagick` "
+"by `Omeka\\File\\Thumbnailer\\Gd`."
+msgstr ""
+
+#: ../../docs/install.md:68 15e30aed27e24d9b9ba4752ed6cf28eb
+msgid ""
+"replace the default thumbnailer `Omeka\\File\\Thumbnailer\\ImageMagick` "
+"by `Omeka\\File\\Thumbnailer\\Imagick`, and enable Imagick in the file "
+"`php.ini` of your server via the server admin interface or directly in "
+"the file."
+msgstr ""
+
+#: ../../docs/install.md:69 174da39e14c1464b948da838edc2e27f
+msgid ""
+"keep the default thumbnailer, but install the command line tool "
+"`imagemagick` and set its directory as value of `imagemagick_dir`. To "
+"install imagemagick, see the documentation of your server."
+msgstr ""
+
+#: ../../docs/install.md:71 e489793024fd40b494125f54a122b92a
+msgid ""
+"[GD](https://secure.php.net/manual/en/intro.image.php) is a basic graphic"
+" library installed by default with PHP. It can create thumbnails for "
+"common image formats only (jpeg, gif, png). [Imagick and "
+"ImageMagick](https://www.imagemagick.org) are the same library and can "
+"create thumbnails for more than 200 formats. The difference is that the "
+"first is integrated in php and generally older than the command-line "
+"version."
+msgstr ""
+
