@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 08:33+0000\n"
-"PO-Revision-Date: 2021-06-28 14:36+0200\n"
+"PO-Revision-Date: 2021-06-28 16:10+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,6 +28,8 @@ msgid ""
 "The administrative dashboard manages the content shared by all OmekaS "
 "sites and the core functionalities of the OmekaS installation."
 msgstr ""
+"Le tableau de bord gère le contenu partagé par tous les sites OmekaS et "
+"les fonctionnalités de base de l'installation OmekaS."
 
 #: ../../docs/admin-dashboard.md:5 c8965985834d4c248a7d1b181f86a054
 msgid ""
@@ -43,11 +45,13 @@ msgstr ""
 
 #: ../../docs/admin-dashboard.md:9 32083aec08e44696942f65f0c6bbbc52
 msgid "Admin Main Page"
-msgstr ""
+msgstr "Page principale de l'administrateur"
 
 #: ../../docs/admin-dashboard.md:11 eb2327907277499f848b72c91b9297fd
 msgid "When a user logs in, the first page they see is the Admin Dashboard."
 msgstr ""
+"Lorsqu'un utilisateur se connecte, la première page qu'il voit est le "
+"tableau de bord de l'administrateur."
 
 #: ../../docs/admin-dashboard.md:13 a07cd79e1a4942d5a6da308abbc154ec
 msgid ""
@@ -55,6 +59,9 @@ msgid ""
 "options in the left-hand navigation. See [below](#left-hand-navigation) "
 "for details*"
 msgstr ""
+"*Remarque: selon le rôle de l'utilisateur, il est possible que vous ne "
+"voyiez pas exactement les mêmes options dans la navigation de gauche. "
+"Voir [ci-dessous](#left-hand-navigation) pour plus de détails*"
 
 #: ../../docs/admin-dashboard.md:15 57f5e41ea1314f6d98ee8a0234b00d7e
 msgid "![Admin dashboard full view](files/admindashfullview.png)"
@@ -66,6 +73,9 @@ msgid ""
 "the admin dashboard presents users with two boxes: Manage Resources and "
 "Manage Sites."
 msgstr ""
+"Outre la navigation de gauche présente sur toutes les pages (voir ci-"
+"dessous), le tableau de bord de l'administrateur propose aux utilisateurs "
+"deux zones: *Gérer les ressources* et *Gérer les sites*."
 
 #: ../../docs/admin-dashboard.md:19 4d1cac7fd5834f53b0a61bf427773d57
 msgid ""
@@ -76,6 +86,13 @@ msgid ""
 "will take you to the browse page; clicking the Plus button to the right "
 "of the label will take you to the add page for that resource type."
 msgstr ""
+"La zone *Gérer les ressources* affiche les ressources suivantes avec leur "
+"nombre total: [Contenus](/content/items.md) , [Collections](/content/item-"
+"sets.md) , [Vocabulaires](/content/vocabularies.md), et [Modèles de "
+"ressources](/content/resource-template.md). En cliquant sur le libellé "
+"des ces entrées, vous accédez à la page de navigation. En cliquant sur le "
+"bouton \"Plus\" situé à droite de l'étiquette, vous accédez à la page "
+"d'ajout pour ce type de ressource."
 
 #: ../../docs/admin-dashboard.md:21 5065a615eec040b4816b4bf26279ce11
 msgid ""
@@ -90,16 +107,22 @@ msgid ""
 "clicking the edit (pencil) button will take you to the Edit Site Info "
 "page for that site."
 msgstr ""
+"La zone *Gérer les sites* répertorie les [Sites](/sites/index.md) sur "
+"l’instance. En cliquant sur le nom du site, vous accédez à la vue "
+"publique du site. En cliquant sur le bouton Modifier (crayon), vous "
+"accédez à la page Modifier les informations sur le site de ce site."
 
 #: ../../docs/admin-dashboard.md:26 ac5d072acd2a46ea9a6b34c71c236fce
 msgid "Left-hand navigation"
-msgstr ""
+msgstr "Navigation à gauche"
 
 #: ../../docs/admin-dashboard.md:28 351c818ed9d04d3e96ac0b7131b209ae
 msgid ""
 "The following content appears on the left side of the admin dashboard and "
 "on all administrative pages."
 msgstr ""
+"Le contenu suivant apparaît sur le côté gauche du tableau de bord de "
+"l'administrateur et sur toutes les pages administratives."
 
 #: ../../docs/admin-dashboard.md:30 3d50fc9a7498472e927876c0adea5c07
 msgid ""
@@ -113,6 +136,9 @@ msgid ""
 "In the upper left corner of the screen is a link displaying the title of "
 "the installation which will always take you back to the admin dashboard."
 msgstr ""
+"Dans le coin supérieur gauche de l'écran se trouve un lien affichant le "
+"titre de l'installation, qui vous ramène toujours au tableau de bord de "
+"l'administrateur."
 
 #: ../../docs/admin-dashboard.md:34 dc9991c9ee4e4378a4cf0495468f93af
 msgid ""
@@ -121,6 +147,11 @@ msgid ""
 "the username (below or to the right, depending on window width) is the "
 "button to *Logout*."
 msgstr ""
+"Directement sous le titre de l'installation, vous trouverez le message "
+"«Connecté en tant qu'utilisateur », où *Utilisateur* correspond au nom "
+"complet de la personne connectée. À proximité du nom d'utilisateur (en "
+"bas ou à droite, en fonction de la largeur de la fenêtre) se trouve le "
+"bouton permettant de *se déconnecter* ."
 
 #: ../../docs/admin-dashboard.md:36 4c235e31201649b4888330a727ccbf9c
 msgid ""
@@ -128,6 +159,10 @@ msgid ""
 "advanced search (ellipses) in addition to the button to search "
 "(magnifying glass). Use this to search all items in the installation."
 msgstr ""
+"Au-dessous des informations utilisateur se trouve un champ de recherche "
+"avec une option de recherche avancée (ellipses) en plus du bouton de "
+"recherche (loupe). Utilisez-le pour rechercher toutes les ressources de "
+"l'instance."
 
 #: ../../docs/admin-dashboard.md:38 f21b1ae86a3444629ea8d8cc2c3c2e49
 msgid ""
@@ -135,6 +170,10 @@ msgid ""
 "Resource Type, limiting it to *Items*, *Item Sets*, or *Media* by "
 "clicking the radio button next to the Resource Type you want to search."
 msgstr ""
+"Les options de recherche avancées (les ellipses) vous permettent "
+"d’affiner la recherche par type de ressources, en la limitant aux "
+"contenus, collections ou supports en cliquant sur le bouton radio situé "
+"en regard du type de ressource que vous souhaitez rechercher."
 
 #: ../../docs/admin-dashboard.md:40 b48ca93a4db649efb59576dd2fa78ac9
 msgid "![Advanced search options](files/search.png)"
@@ -145,34 +184,44 @@ msgid ""
 "The left hand navigation of the dashboard is divided into sections "
 "related to function and user access:"
 msgstr ""
+"La navigation de gauche du tableau de bord est divisée en sections "
+"relatives aux fonctions et aux accès des utilisateurs:"
 
 #: ../../docs/admin-dashboard.md:44 c0dace43139f48078bf46b2f2e567522
 msgid ""
 "[Sites](sites/index.md): lists and provides access to all of the sites on "
 "the OmekaS install. (Computer icon)"
 msgstr ""
+"[Sites](/sites/index.md): répertorie et donne accès à tous les sites de "
+"l'installation d'OmekaS. (Icône \"ordinateur\")"
 
 #: ../../docs/admin-dashboard.md:45 c3513bd7fa3e453584f14ca611597314
 msgid "Resources: content creation and metadata management"
-msgstr ""
+msgstr "Ressources : création de contenu et gestion des métadonnées"
 
 #: ../../docs/admin-dashboard.md:46 027fbd78a9da46879de9b032e8c7e1ef
 msgid ""
 "[Items](content/items.md): manage the individual resources of your "
 "install. (Box icon)"
 msgstr ""
+"[Contenus](/content/items.md) : gérer les contenus individuels de votre "
+"instance. (Icône \"boîte\")"
 
 #: ../../docs/admin-dashboard.md:47 97b68c1c42a64167a6f319d2dea9e6c0
 msgid ""
 "[Item Sets](content/item-sets.md): manage aggregated groups of items. "
 "(Multiple boxes icon)"
 msgstr ""
+"[Collections](/content/item-sets.md): gérer des groupes d'éléments "
+"agrégés. (Icône \"Plusieurs cases\")"
 
 #: ../../docs/admin-dashboard.md:48 4e5f0581d3ed4c059910ea1295e97311
 msgid ""
 "[Vocabularies](content/vocabularies.md): manage the metadata standards "
 "for your install. (Closed book icon)"
 msgstr ""
+"[Vocabulaires](/content/vocabularies.md) : gérez les normes de "
+"métadonnées pour votre installation. (Icône \"livre fermé\")"
 
 #: ../../docs/admin-dashboard.md:49 4e1bae49bb0d46b7a95d445a55880047
 msgid ""
@@ -180,24 +229,35 @@ msgid ""
 "sets of properties (fields) to use when creating items. (Pencil in a "
 "square icon)"
 msgstr ""
+"[Modèles de ressources](/content/resource-template.md) : gestion des "
+"ensembles prédéfinis (champs) à utiliser lors de la création d'éléments. "
+"(Crayon \"icône carrée\")"
 
 #: ../../docs/admin-dashboard.md:50 519a8006484d4e3aa9d0cac8ac4a0e7b
 msgid ""
 "Admin: installation-level administration (note that some of these tabs "
 "may not be visible to all user levels)"
 msgstr ""
+"Admin: administration au niveau de l'installation (notez que certains de "
+"ces onglets peuvent ne pas être visibles à tous les niveaux "
+"d'utilisateurs)"
 
 #: ../../docs/admin-dashboard.md:51 23b3f47a84e0472aa7d586d75883386a
 msgid ""
 "[Users](admin/users.md): manage users for the whole install and "
 "individual sites. (head and shoulders person icon)"
 msgstr ""
+"[Utilisateurs](/admin/users.md) : gérez les utilisateurs pour l'ensemble "
+"de l'installation et des sites individuels. (icône \"personne tête et "
+"épaules\")"
 
 #: ../../docs/admin-dashboard.md:52 69bc3a60be884b488b6a06c66bb792a2
 msgid ""
 "[Modules](modules/index.md): add functionality to your sites. (Plus sign "
 "in square icon)"
 msgstr ""
+"[Modules](/modules/index.md) : ajouter des fonctionnalités à vos sites. "
+"(icône \"signe plus dans une icône carrée\")"
 
 #: ../../docs/admin-dashboard.md:53 409647c6765d42f68472868ff9a4732f
 msgid ""
@@ -205,28 +265,38 @@ msgid ""
 "currently running. NB: jobs only display when they are running. (Three "
 "bars icon)"
 msgstr ""
+"[Tâches](/admin/jobs.md) : affiche les tâches activées par l'utilisateur "
+"en cours d'exécution. NB: les tâches ne s'affichent que lorsqu'elles sont "
+"en cours d'exécution. (Icône \"trois barres\")"
 
 #: ../../docs/admin-dashboard.md:54 03490f60865c46f19a33c80fac5a3b12
 msgid ""
 "[Settings](admin/settings.md): manage the global settings for all sites, "
 "the admin dashboard and the site dashboards. (Gears icon)"
 msgstr ""
+"[Paramètres](/admin/settings.md) : gérez les paramètres globaux de tous "
+"les sites, le tableau de bord de l'administrateur et les tableaux de bord "
+"du site. (Icône \"rouages\")"
 
 #: ../../docs/admin-dashboard.md:56 a3c7ed3781be4287a0c90fa2a6646f4f
 msgid ""
 "If you have installed modules, they may appear in the admin section of "
 "the left navigation below settings."
 msgstr ""
+"Si vous avez installé des modules, ils peuvent apparaître dans la section "
+"admin de la navigation de gauche, sous les paramètres."
 
 #: ../../docs/admin-dashboard.md:58 595c0c83b0a34c32ab682eda78058344
 msgid ""
 "Note that users with more limited permissions will see only some of these "
 "navigation options."
 msgstr ""
+"Notez que les utilisateurs avec des autorisations plus limitées ne "
+"verront que certaines de ces options de navigation."
 
 #: ../../docs/admin-dashboard.md:60 ae93960386bf4b328aff4e4d972f1ddf
 msgid "System Information"
-msgstr ""
+msgstr "Informations système"
 
 #: ../../docs/admin-dashboard.md:62 88069d0c90be4931a14ae1f2339d6744
 msgid ""
@@ -234,6 +304,9 @@ msgid ""
 "Omeka S. Click the link labelled *System Information* to see a full page "
 "with details."
 msgstr ""
+"Dans le coin inférieur droit se trouve un court affichage de la version "
+"actuelle d’Omeka S. Cliquez sur le lien intitulé *Informations système* "
+"pour afficher une page complète avec des détails."
 
 #: ../../docs/admin-dashboard.md:64 a8efe60108924b8eafc22da29282bf27
 msgid "![Example system information page](files/systeminfo.png)"
