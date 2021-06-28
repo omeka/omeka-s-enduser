@@ -32,7 +32,7 @@ Options for navigating and creating items display above the table of items.
 
 On the left side is a display for the number of pages of media, with forward and back arrows. The current page number is an editable field - enter any valid page number and hit return/enter on your keyboard to go to that page. 
 
-In the center top is a button for [Advanced Search](../../search#media-advanced-search). 
+In the center top is a button for [Advanced Search](../search.md#media-advanced-search).
 
 Just above the table on the right are options for sorting media, with two dropdown menus. The first lets you select between *Title*, *Class*, *Owner,* and *(date)Created*; the second allows you to sort ascending or descending. To apply, click the *sort* button.
 
@@ -124,7 +124,7 @@ In the image below, the first property (Title) is public as indicated by the ope
 ### Thumbnail
 Not all media generate an elegant thumbnail, for example pdf or text file documents or some video files. You can use this tab to set a representative thumbnail for the media which will be used on browse pages but not on the page for the item or its media.
 
-The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../../sites/site_theme/#settings-options). 
+The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../sites/site_theme.md#settings-options).
 
 To assign an asset as a thumbnail, click on the Select button in the main work area of the tab. This will open a drawer on the right side. 
 

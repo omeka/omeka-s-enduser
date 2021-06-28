@@ -22,7 +22,7 @@ To change which page is used as the homepage, select a different page from the d
 
 
 ## Adding Navigation
-Add to the navigation of the site using the options on the right hand side of the page. There are two sections: [Add a custom link](../sites/site_navigation/#custom-link) and [Add a link to a site page](../sites/site_navigation/#site-page)
+Add to the navigation of the site using the options on the right hand side of the page. There are two sections: [Add a custom link](#add-a-custom-link) and [Add a link to a site page](#site-page)
 
 ### Add a custom link
 To add a link you can use the *Add a custom link* options on the right hand drawer to add:
@@ -48,7 +48,7 @@ Note that you **must** enter a query for the block to function.
 
 To create a Browse Item Set navigation for all the item sets which you have already assigned to the [resources](../sites/site_resources/) with the site on which you are working:
 
-- (In a separate window): conduct an [advanced item set search](../search/#advanced-item-set-search) using your site for the "In site pool" option.
+- (In a separate window): conduct an [advanced item set search](../search.md#advanced-item-set-search) using your site for the "In site pool" option.
 - Once the search results load, highlight everything in your browser's address bar starting with the question mark all the way to the end of the search url (to the right).
 
 ![Browser address bar with a query string highlighted](../sites/sitesfiles/sitenav_itemsetsearch.png)

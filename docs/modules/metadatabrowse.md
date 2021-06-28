@@ -50,7 +50,7 @@ To remove a property simply click the trash can/delete icon to the right of the 
 
 Once you have selected properties for Metadata Browse, either in the configuration for the module or on at least one site, you will be able to search for exact matches to item and item set properties on the admin side.
 
-When viewing the metadata of any item (not when editing), you will be able to browse those properties as exact match for any other item in the installation with that value in that property. If the direct [direct link checkbox](#direct-links) is active, these properties will display as links; if not, they will display with the text "see all items with this value" just below the value for the property.
+When viewing the metadata of any item (not when editing), you will be able to browse those properties as exact match for any other item in the installation with that value in that property. If the direct [direct link checkbox](#direct-links-checkbox) is active, these properties will display as links; if not, they will display with the text "see all items with this value" just below the value for the property.
 
 ![Admin side view of item with red arrows pointing to the metadata browse links](../modules/modulesfiles/mdbr_admin1.png)
 
@@ -75,7 +75,7 @@ Remember to click the *Save* button to save changes.
 ### Public View
 Once you have selected properties and saved changes, visitors to your site can use the Metadata Browse properties to search for all items on the site with matching properties.
 
-The browse will either display with the property as a link or with the link text "see all items with this value", depending on whether the [direct link checkbox](#direct-links) in the global module configuration.
+The browse will either display with the property as a link or with the link text "see all items with this value", depending on whether the [direct link checkbox](#direct-links-checkbox) in the global module configuration.
 
 In the example below, Metadata Browse is available for Title, Date of Publication, and Publisher, and Direct Links is not active.
 
