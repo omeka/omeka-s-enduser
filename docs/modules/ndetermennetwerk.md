@@ -6,7 +6,7 @@ This module requires the Value Suggest module to be installed and active in orde
 
 It adds the following vocabularies as data types:
 
-### [Dutch Digital Heritage Network of Terms: NDE Termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/){target=_blank} (`nl`)
+## [Dutch Digital Heritage Network of Terms: NDE Termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/){target=_blank} (`nl`)
 
 - Art & Architecture Thesaurus - materialen
 - Art & Architecture Thesaurus - processen en technieken

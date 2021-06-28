@@ -12,7 +12,7 @@ Depending on your purpose, you can annotate the media files themselves as attach
 
 If you only wish to annotate images in the course of building exhibits, you can skip to the [section on page blocks](#page-blocks). 
 
-### Permissions
+## Permissions
 
 Users at the Author level and above can annotate images. Authors can only annotate media that they own; users at Reviewer or higher can annotate any media in the installation. 
 

@@ -10,7 +10,7 @@ Some inverse properties are obvious (Dublin Core's "Has Part" is the intended in
 
 Inverse links created in this way can save time on data entry and be useful in [data visualizations](datavisualization.md), advanced or faceted browsing, and [batch-importing](csvimport.md) resource relationships.
 
-### Suggested inverse properties
+## Suggested inverse properties
 
 - Dublin Core (`dcterms:`):
 	- Replaces & Is Replaced By (`dcterms:replaces`; `dcterms:isreplacedby`)

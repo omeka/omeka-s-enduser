@@ -10,7 +10,7 @@ Once an export has been produced, you can edit its CSS or other code to customiz
 
 Static sites can be useful as a backup and record of your site's content, and for reducing server load for legacy web projects. 
 
-### Requirements and permissions
+## Requirements and permissions
 
 Exports can be created and managed by any user with site-specific permissions. 
 

@@ -12,7 +12,7 @@ Sites and site pages will have the same name, but their URL slugs will be unique
 
 Some content will not copy exactly - be sure you review duplicated resources thoroughly and look for anything missing before making the new resource public. 
 
-### Permissions
+## Permissions
 
 Global Administrators, Supervisors, and Editors can use this module to copy items, item sets, sites, and site pages.
 
@@ -24,7 +24,7 @@ Users with site-specific permissions of Creator and Manager can copy pages.
 
 Users can copy resources that they do not own. When a resource is copied, the user who made the duplicate will become its owner; the resource will not retain the owner of the original. 
 
-### Requirements
+## Requirements
 
 Copy Resources requires Omeka S 4.1.0 or later. 
 
