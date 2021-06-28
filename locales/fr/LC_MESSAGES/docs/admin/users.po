@@ -4,23 +4,24 @@
 # manual package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Omeka S end user manual \n"
+"Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 08:33+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-06-28 21:15+0200\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../../docs/admin/users.md:1 03c0fa2a63e740cfb05745d316becc55
 msgid "Users"
-msgstr ""
+msgstr "Utilisateurs"
 
 #: ../../docs/admin/users.md:3 fdcc77536f054e53bac224082896c946
 msgid ""
@@ -28,229 +29,301 @@ msgid ""
 "Editors, Reviewers, Authors, and Researchers can edit their own user "
 "information but cannot change the information of other users."
 msgstr ""
+"Seuls les administrateurs de site et globaux peuvent créer, éditer et supprimer "
+"des utilisateurs. Les éditeurs, les relecteurs, les auteurs et les chercheurs "
+"peuvent modifier leurs propres informations utilisateur mais ne peuvent pas "
+"modifier les informations des autres utilisateurs."
 
 #: ../../docs/admin/users.md:5 8298aab0919249a1859edeee6e06113c
 msgid ""
 "Administrators manage and create users from the User tab of the main "
 "administrative dashboard (head and shoulders icon)."
 msgstr ""
+"Les administrateurs gèrent et créent des utilisateurs à partir de l'onglet "
+"Utilisateur du tableau de bord administratif principal (icône personnage)."
 
 #: ../../docs/admin/users.md:7 8b53de1b116b411c8729089f116c9b82
 msgid ""
 "This Users section displays the user’s email followed by full name in "
 "parentheses, as well as their role and the date the account was created."
 msgstr ""
+"Cette section Utilisateurs affiche le courrier électronique de l’utilisateur "
+"suivi du nom complet entre parenthèses, ainsi que leur rôle et la date de "
+"création du compte."
 
 #: ../../docs/admin/users.md:9 234342ce21fc4946bc6af6726e14a74f
 msgid "There are six user roles in Omeka S:"
-msgstr ""
+msgstr "Omeka S comprend six rôles d'utilisateur"
 
 #: ../../docs/admin/users.md:11 4f78fe5c01c442c7ac8b6a8bb6d034d1
 msgid "Global Admin: full installation privileges"
-msgstr ""
+msgstr "Administrateur global: tous les droits."
 
 #: ../../docs/admin/users.md:12 fc8f423d472c4b31a588402a11c08719
 msgid "Supervisor: robust site and content privileges"
-msgstr ""
+msgstr "Administrateur de site: droits de gestion de site et des ressources."
 
 #: ../../docs/admin/users.md:13 3aff4bf4e06943eaa259d38025b26ce5
 msgid "Editor (Content Expert): full privileges for content creation"
-msgstr ""
+msgstr "Éditeur (Expert du contenu): droits complets sur toutes les ressources."
 
 #: ../../docs/admin/users.md:14 71093db718cc41d3b066f8548d9a4325
 msgid "Reviewer: robust content privileges but can only delete own content."
 msgstr ""
+"Relecteur: droits sur les ressources mais peut uniquement supprimer ses propres "
+"ressources."
 
 #: ../../docs/admin/users.md:15 2672fe9b0e654ce38e3cbbc9ef720a4b
 msgid "Author: Create own content."
-msgstr ""
+msgstr "Auteur: créer ses propres ressources."
 
 #: ../../docs/admin/users.md:16 dbda2cf0c767432faeb283165e970b67
 msgid "Researcher: Search and read privileges only."
-msgstr ""
+msgstr "Chercheur: rechercher et droits en lecture uniquement."
 
 #: ../../docs/admin/users.md:19 1c11cc10be7c48d1a84bad8e8c5316af
 msgid "Create a New User"
-msgstr ""
+msgstr "Créer un nouvel utilisateur"
 
 #: ../../docs/admin/users.md:20 169e4dac9e914b87a9a0799a8b86c6f8
 msgid ""
-"To create a new user, select the *Add new user* button in the upper right"
-" hand corner of the Users section in the main administrative dashboard."
+"To create a new user, select the *Add new user* button in the upper right hand "
+"corner of the Users section in the main administrative dashboard."
 msgstr ""
+"Pour créer un nouvel utilisateur, sélectionnez le bouton *Ajouter un nouvel "
+"utilisateur* dans le coin supérieur droit de la section Utilisateurs du tableau "
+"de bord."
 
 #: ../../docs/admin/users.md:22 100391d8c5834310b9e084e22a5b5896
 msgid "On the Add User page, enter the following:"
-msgstr ""
+msgstr "Sur la page Ajouter un utilisateur, entrez les informations suivantes:"
 
 #: ../../docs/admin/users.md:24 0a5fe90f48d6474cbc9a7a5994895a0a
 msgid "*Name* (full name or credit name)"
-msgstr ""
+msgstr "*Nom à afficher* (nom complet ou pseudo)"
 
 #: ../../docs/admin/users.md:25 ce50ca6e218d4227a5a9c26a64040482
 msgid "*Email address*"
-msgstr ""
+msgstr "*Email*"
 
 #: ../../docs/admin/users.md:26 149437b106e4460f8b21ceede54c1f5b
 msgid ""
-"Select a *Role* using the dropdown menu (see above for user role "
-"privileges)"
+"Select a *Role* using the dropdown menu (see above for user role privileges)"
 msgstr ""
+"Choisissez un *Rôle* en utilisant la liste déroulante (voir les droits ci-"
+"dessus)"
 
 #: ../../docs/admin/users.md:27 585f0dddf9bb4227a1553e8ee54d0b9e
 msgid "Check the *Is Active* box to confirm that the user is active."
-msgstr ""
+msgstr "Cochez la case *Est actif* pour confirmer que l'utilisateur est actif."
 
 #: ../../docs/admin/users.md:29 05726991fdfd409283d0a42acfb122e0
 msgid "![Add new user form with fields as described](adminfiles/users_addnew.png)"
 msgstr ""
+"![Ajouter un nouveau formulaire utilisateur avec les champs comme décrit](/"
+"admin/adminfiles/users_addnew.png)"
 
 #: ../../docs/admin/users.md:31 27dc133b4d97465abc2b73add5b8c80b
 msgid "Managing Users"
-msgstr ""
+msgstr "Gérer les utilistateurs"
 
 #: ../../docs/admin/users.md:32 4215f1fdd0fd4a4c81d7ea415be9840d
 msgid "To manage an existing user, go to the Users section."
-msgstr ""
+msgstr "Pour gérer un utilisateur existant, accédez à la section Utilisateurs."
 
 #: ../../docs/admin/users.md:34 98d01d0c3a8a465ea2fda45df89330f4
 msgid ""
-"![Manage users view, top row is the Omeka Devs account. The drawer "
-"showing the number of items and item sets created by the Omeka Devs user "
-"is opened.](adminfiles/users_table.png)"
+"![Manage users view, top row is the Omeka Devs account. The drawer showing the "
+"number of items and item sets created by the Omeka Devs user is opened.]"
+"(adminfiles/users_table.png)"
 msgstr ""
+"![Gérer la vue des utilisateurs, la première ligne correspond au compte Omeka "
+"Devs. L'onglet indiquant le nombre d'éléments et de jeux d'éléments créés par "
+"l'utilisateur Omeka Devs est ouvert.](/admin/adminfiles/users_table.png)"
 
 #: ../../docs/admin/users.md:36 09e47b98e430476483d4893bbb2c7939
 msgid "To view the name, email, and role of a user, click on the username."
 msgstr ""
+"Pour afficher le nom, l'adresse électronique et le rôle d'un utilisateur, "
+"cliquez sur le nom d'utilisateur."
 
 #: ../../docs/admin/users.md:38 26fb441cb9a347dfa12d5b94818be7c3
 msgid ""
-"To see the items and item sets owned by a user, click the *more* "
-"(ellipses) button located between the *delete* (trash can) button and the"
-" user role label. This will open a drawer on the right side of the screen"
-" with this information; you can click on the number of items or item sets"
-" to go to the items or item sets created by that user."
+"To see the items and item sets owned by a user, click the *more* (ellipses) "
+"button located between the *delete* (trash can) button and the user role label. "
+"This will open a drawer on the right side of the screen with this information; "
+"you can click on the number of items or item sets to go to the items or item "
+"sets created by that user."
 msgstr ""
+"Pour afficher les contenus et les collections appartenant à un utilisateur, "
+"cliquez sur le bouton *plus* (trois petits points) situé entre le bouton "
+"*supprimer* (corbeille) et le libellé du rôle de l'utilisateur. Cela ouvrira un "
+"onglet sur le côté droit de l'écran avec cette information; vous pouvez cliquer "
+"sur le nombre de contenus ou de collections pour accéder aux contenus ou aux "
+"collections créés par cet utilisateur."
 
 #: ../../docs/admin/users.md:40 77bb898fa09f4f7e978d8d8cebc6e52f
 msgid "Edit User"
-msgstr ""
+msgstr "Modifier l'utilisateur"
 
 #: ../../docs/admin/users.md:42 a29927258ef843e69989d29b90ed1de4
 msgid ""
-"To edit a user’s information, change their password, or access API keys, "
-"go to the Users section. Find the user on the table and click the edit "
-"icon (pencil) on their row in the table."
+"To edit a user’s information, change their password, or access API keys, go to "
+"the Users section. Find the user on the table and click the edit icon (pencil) "
+"on their row in the table."
 msgstr ""
+"Pour modifier les informations d’un utilisateur, modifier son mot de passe ou "
+"accéder aux clés de l’API, accédez à la section Utilisateurs. Recherchez "
+"l'utilisateur dans le tableau et cliquez sur l'icône d'édition (crayon) située "
+"sur sa ligne dans le tableau."
 
 #: ../../docs/admin/users.md:44 4e7f89338343479589e7a479e9c26009
 msgid ""
-"![A single row of the user table, with the user's email blanked out. A "
-"blue circle highlights the edit icon, represented as a red "
-"pencil.](adminfiles/users_editbutton.png)"
+"![A single row of the user table, with the user's email blanked out. A blue "
+"circle highlights the edit icon, represented as a red pencil.](adminfiles/"
+"users_editbutton.png)"
 msgstr ""
+"! Une seule ligne du tableau utilisateur, avec le courrier électronique de "
+"l'utilisateur masqué. Un cercle bleu surplombe l'icône d'édition, représentée "
+"par un crayon rouge.](/Admin/adminfiles/users_editbutton.png)"
 
 #: ../../docs/admin/users.md:46 e44bdd924b1e41ee9fd0f422b9d98eaa
 msgid ""
 "The Edit User page has four tabs: *User Information*, *User Settings*, "
-"*Password*, and *API Keys*. After making changes on any of these tabs, be"
-" sure to click the save button in the upper right hand corner of the "
-"browser window. At any time you may cancel your edits by clicking the "
-"cancel button next to the save button."
+"*Password*, and *API Keys*. After making changes on any of these tabs, be sure "
+"to click the save button in the upper right hand corner of the browser window. "
+"At any time you may cancel your edits by clicking the cancel button next to the "
+"save button."
 msgstr ""
+"La page Modifier un utilisateur comporte quatre onglets: *Informations de "
+"l'utilisateur*, *Paramètres utilisateur*, *Mot de passe* et *Clé API*. Après "
+"avoir apporté des modifications à l’un de ces onglets, veillez à cliquer sur le "
+"bouton Enregistrer dans le coin supérieur droit de la fenêtre du navigateur. À "
+"tout moment, vous pouvez annuler vos modifications en cliquant sur le bouton "
+"Annuler situé en regard du bouton Enregistrer."
 
 #: ../../docs/admin/users.md:48 e41817b7ca14421e95b9369b5583de7d
 msgid "User information"
-msgstr ""
+msgstr "Informations de l'utilisateur"
 
 #: ../../docs/admin/users.md:49 ec6a76315e9243ee8831b6e1d3a10627
 msgid ""
-"On this tab, you can edit the display *Name* and *Email* for the user, "
-"select or change the user *Role* and click the checkbox to confirm that "
-"the user *Is Active* (or uncheck the checkbox to render the user "
-"inactive)"
+"On this tab, you can edit the display *Name* and *Email* for the user, select "
+"or change the user *Role* and click the checkbox to confirm that the user *Is "
+"Active* (or uncheck the checkbox to render the user inactive)"
 msgstr ""
+"Sur cet onglet, vous pouvez modifier l'affichage *Nom* et *Email* de "
+"l'utilisateur, sélectionner ou modifier le *Rôle* de l'utilisateur et cliquer "
+"sur la case à cocher pour confirmer que l'utilisateur *est actif* (ou décocher "
+"la case pour rendre l'utilisateur inactif)"
 
 #: ../../docs/admin/users.md:51 ea8df1341589474f8ddcae17ed834e3b
 msgid ""
-"![User information tab for the Omeka Devs user with completed fields for "
-"email, display name, role, and an active checkbox for Is "
-"Active](adminfiles/users_info.png)"
+"![User information tab for the Omeka Devs user with completed fields for email, "
+"display name, role, and an active checkbox for Is Active](adminfiles/users_info."
+"png)"
 msgstr ""
+"![Onglet informations utilisateur pour l'utilisateur Omeka avec les champs "
+"remplis pour l'email, le nom complet, le rôle et la case à cocher active pour "
+"Est actif](/admin/adminfiles/users_info.png)"
 
 #: ../../docs/admin/users.md:53 f117b54ef50e4a34b1058c6be030145a
 msgid "User settings"
-msgstr ""
+msgstr "Paramètres utilisateur"
 
 #: ../../docs/admin/users.md:54 c6e320c31de24eecbc16f249f614a0a7
 msgid "This tab allows a user or global admin to set the following:"
 msgstr ""
+"Cet onglet permet à un utilisateur ou à un administrateur général de définir "
+"les élé\n"
+"ments suivants:"
 
 #: ../../docs/admin/users.md:56 377aeb83f279429ba33168192476f9b6
 msgid ""
-"*Locale*: select from a dropdown of available languages. This will change"
-" the language in which the installation's admin site displays for that "
-"user."
+"*Locale*: select from a dropdown of available languages. This will change the "
+"language in which the installation's admin site displays for that user."
 msgstr ""
+"*Paramètres régionaux*: sélectionnez un menu déroulant parmi les langues "
+"disponibles. Cela modifiera la langue d'affichage du site d'administration pour "
+"cet utilisateur."
 
 #: ../../docs/admin/users.md:57 f3705f48f43e485d83751bfb0b97b8e1
 msgid ""
-"*Default resource template*: select from existing templates to have a "
-"template auto-load whenever the user creates a new item."
+"*Default resource template*: select from existing templates to have a template "
+"auto-load whenever the user creates a new item."
 msgstr ""
+"*Modèle de ressource par défaut*: sélectionnez parmi les modèles existants pour "
+"charger automatiquement un modèle à chaque fois que l'utilisateur crée un "
+"nouveau contenu."
 
 #: ../../docs/admin/users.md:59 43a441f3b44e4de0aea17ede46ba04a1
 msgid ""
-"![User settings for Omeka Dev with default options "
-"selected](adminfiles/users_settings.png)"
+"![User settings for Omeka Dev with default options selected](adminfiles/"
+"users_settings.png)"
 msgstr ""
+"![Paramètres utilisateur pour Omeka avec les options par défaut sélectionnées](/"
+"admin/adminfiles/users_settings.png)"
 
 #: ../../docs/admin/users.md:61 e3ec357c9c564217995142f1fbc3d650
 msgid "Password"
-msgstr ""
+msgstr "Mot de passe"
 
 #: ../../docs/admin/users.md:62 7218a3ce586c4b7abd6bb29cec64fb19
 msgid ""
-"On this tab, create a new password. It must be entered twice, in both the"
-" *new password* and *confirm new password* fields to take."
+"On this tab, create a new password. It must be entered twice, in both the *new "
+"password* and *confirm new password* fields to take."
 msgstr ""
+"Sur cet onglet, créez un nouveau mot de passe. Il doit être saisi deux fois, "
+"dans les champs *nouveau mot de passe* et *confirmer le nouveau mot de passe*."
 
 #: ../../docs/admin/users.md:64 0c942b85d76a45baaa4d133b549a7027
 msgid ""
-"![Empty password reset fields for the user "
-"outreach](adminfiles/users_password.png)"
+"![Empty password reset fields for the user outreach](adminfiles/users_password."
+"png)"
 msgstr ""
+"![Champs vides de réinitialisation du mot de passe pour l'utilisateur](/admin/"
+"adminfiles/users_password.png)"
 
 #: ../../docs/admin/users.md:66 5fc7f671afa049dbba89fffa337bad33
 msgid ""
-"To see the password requirements, click the arrow next to the New "
-"Password field. This will display a list of "
-"[requirements](../../configuration) if any have been configured."
+"To see the password requirements, click the arrow next to the New Password "
+"field. This will display a list of [requirements](../../configuration) if any "
+"have been configured."
 msgstr ""
+"Pour voir les exigences en matière de mot de passe, cliquez sur la flèche en "
+"regard du champ Nouveau mot de passe. Cela affichera une liste de [conditions "
+"requises](../ configuration), le cas échéant."
 
 #: ../../docs/admin/users.md:68 020a2d3299944357aff8ff4af37b52d1
 msgid "API Key"
-msgstr ""
+msgstr "Clé API"
 
 #: ../../docs/admin/users.md:69 1811b4a4cf16465ea821b3e5f9a9d221
 msgid ""
-"Use this tab to generate an API key for the user. You must provide a "
-"label for the key - this could be a date or the purpose of the key. Click"
-" save to generate the key."
+"Use this tab to generate an API key for the user. You must provide a label for "
+"the key - this could be a date or the purpose of the key. Click save to "
+"generate the key."
 msgstr ""
+"Utilisez cet onglet pour générer une clé API pour l'utilisateur. Vous devez "
+"fournir un libellé pour la clé - il peut s’agir d’une date ou du but de la clé. "
+"Cliquez sur Enregistrer pour générer la clé."
 
 #: ../../docs/admin/users.md:71 d86c8dba4bf54a7b9de276f71656189d
 msgid ""
-"To remove existing API keys, check the *Delete?* box on the row for that "
-"key and click save."
+"To remove existing API keys, check the *Delete?* box on the row for that key "
+"and click save."
 msgstr ""
+"Pour supprimer les clés d'API existantes, cochez la case *Supprimer?* sur la "
+"ligne correspondant à cette clé, puis cliquez sur Enregistrer."
 
 #: ../../docs/admin/users.md:73 e953da224e81404ab8d0d74423c0acbd
 msgid ""
-"![API tab for user Omeka Devs with one generated but hidden api key, and "
-"below it the ability to create a new key](adminfiles/users_apikey.png)"
+"![API tab for user Omeka Devs with one generated but hidden api key, and below "
+"it the ability to create a new key](adminfiles/users_apikey.png)"
 msgstr ""
+"![Onglet API pour l'utilisateur Omeka avec une clé d'API générée mais cachée "
+"et, en dessous, la possibilité de créer une nouvelle clé](/admin/adminfiles/"
+"users_apikey.png)"
 
 #: ../../docs/admin/users.md:75 f84d102b017b4c3eb73ea20e380cff96
 msgid "Batch edit users"
@@ -258,284 +331,367 @@ msgstr ""
 
 #: ../../docs/admin/users.md:77 77223b233ad042ec8d4298470ead7dcb
 msgid ""
-"You can edit multiple users at one time by using the checkboxes to the "
-"left of each user's email in the User table."
+"You can edit multiple users at one time by using the checkboxes to the left of "
+"each user's email in the User table."
 msgstr ""
+"Vous pouvez modifier plusieurs utilisateurs à la fois en utilisant les cases à "
+"cocher situées à gauche du courrier électronique de chaque utilisateur dans le "
+"tableau Utilisateurs."
 
 #: ../../docs/admin/users.md:79 388766517cf24dae8d2c66baef71b73e
 msgid "Click the checkboxes to select the users you want to edit."
 msgstr ""
+"Cliquez sur les cases à cocher pour sélectionner les utilisateurs que vous "
+"souhaitez modifier."
 
 #: ../../docs/admin/users.md:81 492fc09c30f5456bb7f4a86c5e9993f8
 msgid ""
-"![A close up of the users table showing only the checkboxes and email "
-"column, with three users' emails. Two of the user's boxes are checked, "
-"and the third is unchecked.](adminfiles/users_batch1.png)"
+"![A close up of the users table showing only the checkboxes and email column, "
+"with three users' emails. Two of the user's boxes are checked, and the third is "
+"unchecked.](adminfiles/users_batch1.png)"
 msgstr ""
+"![Un gros plan du tableau des utilisateurs ne montrant que les cases à cocher "
+"et la colonne email, avec les emails de trois utilisateurs. Deux des cases de "
+"l'utilisateur sont cochées et la troisième est désélectionnée.](/admin/"
+"adminfiles/users_batch1.png)"
 
 #: ../../docs/admin/users.md:83 2c36fb7bbc83478c8b6357a7a8fd3a27
 msgid ""
 "Then, using the dropdown just above the table, select from the following "
 "options:"
 msgstr ""
+"Ensuite, à l'aide du menu déroulant situé juste au-dessus du tableau, "
+"sélectionnez l'une des options suivantes:"
 
 #: ../../docs/admin/users.md:85 e32099b422c540e5a47d77e7b07f1dbc
 msgid "Edit selected (users)"
-msgstr ""
+msgstr "Modifier sélectionnés (utilisateurs)"
 
 #: ../../docs/admin/users.md:86 afb21577d18b4acdab09f74e807f2845
 msgid "Edit all (users)"
-msgstr ""
+msgstr "Modifier tout (utilisateurs)"
 
 #: ../../docs/admin/users.md:87 d7a804d26e6f4f71bd7d02ae510eab8d
 msgid "Delete selected (users)"
-msgstr ""
+msgstr "Supprimer sélectionnés (utilisateurs)"
 
 #: ../../docs/admin/users.md:88 2abec0253d494dde9ddadfdf700c8d83
 msgid "Delete all (users)"
-msgstr ""
+msgstr "Supprimer tout (utilisateurs)"
 
 #: ../../docs/admin/users.md:90 fcfb6b5db02f4783b5aa77dcec8d28b1
 msgid ""
-"To edit only the users whose checkboxes you have ticked, choose \"Edit "
-"selected\" from the dropdown and then click \"Go\". You will be directed "
-"to the Batch Edit Users page."
+"To edit only the users whose checkboxes you have ticked, choose \"Edit selected"
+"\" from the dropdown and then click \"Go\". You will be directed to the Batch "
+"Edit Users page."
 msgstr ""
+"Pour éditer uniquement les utilisateurs dont les cases à cocher sont cochées, "
+"choisissez \"Modifier sélectionnés \" dans le menu déroulant, puis cliquez sur "
+"\"OK\". Vous serez dirigé vers la page Modifier les utilisateurs par lot."
 
 #: ../../docs/admin/users.md:92 769c71adf37e46ef9380e20f6e2c5342
 msgid "![Batch edit users page](adminfiles/users_batch2.png)"
 msgstr ""
+"![Editer par lot la page des utilisateurs](/admin/adminfiles/users_batch2.png)"
 
 #: ../../docs/admin/users.md:94 52e52e0081f74abf98712a455983037c
 msgid ""
-"On the right hand side of the page are the emails for the users you are "
-"editing and to whom any changes you make will be applied."
+"On the right hand side of the page are the emails for the users you are editing "
+"and to whom any changes you make will be applied."
 msgstr ""
+"Sur le côté droit de la page se trouvent les courriers électroniques des "
+"utilisateurs que vous modifiez et auxquels les modifications que vous apportez "
+"seront appliquées."
 
 #: ../../docs/admin/users.md:96 2843546416614110b4c6e1d6102cff91
 msgid "On this page you can:"
-msgstr ""
+msgstr "Sur cette page, vous pouvez:"
 
 #: ../../docs/admin/users.md:98 b7120401bb5b476fbe289d9358a70ffb
 msgid ""
-"Set role: select from a dropdown of all roles (see below) to change the "
-"role for all selected users."
+"Set role: select from a dropdown of all roles (see below) to change the role "
+"for all selected users."
 msgstr ""
+"Définir le rôle: sélectionnez dans un menu déroulant tous les rôles (voir ci-"
+"dessous) pour modifier le rôle de tous les utilisateurs sélectionnés.\n"
+"+- Définir l'activité: définissez les utilisateurs sélectionnés comme actifs, "
+"non actifs ou sans changement."
 
 #: ../../docs/admin/users.md:99 212b68d9b56b4eb6af9860da15f1dd3b
 msgid "Set activity: set selected users as active, not active, or no change."
 msgstr ""
+"Supprimer des autorisations de site: sélectionnez dans un menu déroulant les "
+"sites de l'installation d'Omeka S ou utilisez l'option \"Tous les sites\" pour "
+"supprimer les utilisateurs sélectionnés de tous les sites."
 
 #: ../../docs/admin/users.md:100 fe151115096d49e5a132b061a23fc8da
 msgid ""
-"Remove from site permissions: select from a dropdown menu of the sites on"
-" the Omeka S install, or use the option \"all sites\" to remove the "
-"selected users from all sites."
+"Remove from site permissions: select from a dropdown menu of the sites on the "
+"Omeka S install, or use the option \"all sites\" to remove the selected users "
+"from all sites."
 msgstr ""
+"Ajouter aux autorisations du site: sélectionnez dans un menu déroulant les "
+"sites de l'installation d'Omeka S ou utilisez l'option \"Tous les sites\" pour "
+"ajouter les utilisateurs sélectionnés à tous les sites."
 
 #: ../../docs/admin/users.md:101 8892fa9da46b4f2e99c96d06ae9b9696
 msgid ""
-"Add to site permissions: select from a dropdown menu of the sites on the "
-"Omeka S install, or use the option \"all sites\" to add the selected "
-"users to all sites."
+"Add to site permissions: select from a dropdown menu of the sites on the Omeka "
+"S install, or use the option \"all sites\" to add the selected users to all "
+"sites."
 msgstr ""
+"Ajouter aux autorisations du site sous forme de: une liste déroulante avec des "
+"options pour le visualiseur, l'éditeur ou l'administrateur - sélectionnez le "
+"rôle que les utilisateurs auront sur les sites auxquels vous les avez ajoutés."
 
 #: ../../docs/admin/users.md:102 fbe611a40ffe46e5a837917b328d8d92
 msgid ""
-"Add to site permission as: a dropdown with options for viewer, editor, or"
-" admin - select which role the users will have on the sites to which you "
-"have added them."
+"Add to site permission as: a dropdown with options for viewer, editor, or admin "
+"- select which role the users will have on the sites to which you have added "
+"them."
 msgstr ""
 
 #: ../../docs/admin/users.md:104 a7c990c717e64354b1e9094b21b49ddf
 msgid "Once you are done, click save changes."
 msgstr ""
+"Une fois que vous avez terminé, cliquez sur Enregistrer les modifications."
 
 #: ../../docs/admin/users.md:106 2849ba29f1ab4ac799b23c2fc2a6d55f
 msgid ""
-"If you choose \"Edit all\" rather than \"edit selected\" you can apply "
-"changes to all users - excluding yourself - on the Omeka S installation. "
-"Use this feature carefully!"
+"If you choose \"Edit all\" rather than \"edit selected\" you can apply changes "
+"to all users - excluding yourself - on the Omeka S installation. Use this "
+"feature carefully!"
 msgstr ""
+"Si vous choisissez \"Modifier tout\" plutôt que \"Modifié sélectionnés\", vous "
+"pouvez appliquer les modifications à tous les utilisateurs - dont vous-même - "
+"sur l’installation de Omeka S. Utilisez donc cette fonctionnalité avec la plus "
+"grande précaution !"
 
 #: ../../docs/admin/users.md:108 edd60767fc77463e962abc4122d0ac77
 msgid "Delete a User"
-msgstr ""
+msgstr "Supprimer un utilisateurSupprimer un utilisateur"
 
 #: ../../docs/admin/users.md:109 e089bf74ff8647458e2312cbdec78eff
 msgid ""
-"On the User page of the administrative dashboard, click the trash can "
-"icon in the user’s row, to the left of their role information, to delete "
-"the user. Confirm the deletion in the dialog box which will appear on the"
-" right of the screen."
+"On the User page of the administrative dashboard, click the trash can icon in "
+"the user’s row, to the left of their role information, to delete the user. "
+"Confirm the deletion in the dialog box which will appear on the right of the "
+"screen."
 msgstr ""
+"Sur la page Utilisateur du tableau de bord administratif, cliquez sur l'icône "
+"corbeille située dans la ligne de l'utilisateur, à gauche des informations sur "
+"leur rôle, pour supprimer l'utilisateur. Confirmez la suppression dans la boîte "
+"de dialogue qui apparaîtra à droite de l'écran."
 
 #: ../../docs/admin/users.md:111 537da61575dc494d9d9fc6ff4ee2a880
 msgid ""
-"![Delete confirmation for user Megan2, giving the number of items and "
-"item sets that user has created - in this case, zero for "
-"both.](adminfiles/users_delete.png)"
+"![Delete confirmation for user Megan2, giving the number of items and item sets "
+"that user has created - in this case, zero for both.](adminfiles/users_delete."
+"png)"
 msgstr ""
 
 #: ../../docs/admin/users.md:113 4ce48a3f092c4b98b33eb4ea6101de9e
 msgid "Batch delete users"
-msgstr ""
+msgstr "Suppression par lot d'utilisateurs"
 
 #: ../../docs/admin/users.md:114 be82cf53e77f4cdba1b253f6bfdeb2fd
 msgid ""
-"To delete a number of users at once, click the checkboxes next to their "
-"names on the Users table (see Batch edit users, above)."
+"To delete a number of users at once, click the checkboxes next to their names "
+"on the Users table (see Batch edit users, above)."
 msgstr ""
+"Pour supprimer plusieurs utilisateurs à la fois, cochez les cases en regard de "
+"leurs noms dans le tableau Utilisateurs (voir Modification par lot "
+"d'utilisateurs, ci-dessus)."
 
 #: ../../docs/admin/users.md:116 5cc30fc687b74683a6aaeee9c2a5eb8c
 msgid ""
-"From the dropdown menu just above the email column, select \"delete "
-"selected\" and click Go."
+"From the dropdown menu just above the email column, select \"delete selected\" "
+"and click Go."
 msgstr ""
+"Dans le menu déroulant situé juste au-dessus de la colonne de courrier "
+"électronique, sélectionnez \"Supprimer la sélection\", puis cliquez sur OK."
 
 #: ../../docs/admin/users.md:118 f7704a52e5bd4f4bb05a7c277266ed01
 msgid ""
-"![A red arrow points to the dropdown where \"delete selected\" is "
-"displayed](adminfiles/users_batchdel1.png)"
+"![A red arrow points to the dropdown where \"delete selected\" is displayed]"
+"(adminfiles/users_batchdel1.png)"
 msgstr ""
+"![Une flèche rouge pointe vers la liste déroulante où \"supprimer la sélection"
+"\" est affiché](/admin/adminfiles/users_batchdel1.png)"
 
 #: ../../docs/admin/users.md:120 f60a8e1de43644b5be9ddec887c30abd
 msgid ""
-"This will open a drawer on the right side of the screen with a message "
-"telling you the number of users you are about to delete. This action "
-"*cannot be undone.* To permanently delete these users, click the red "
-"Confirm Delete button. To cancel, click the x in the upper right corner "
-"of the drawer."
+"This will open a drawer on the right side of the screen with a message telling "
+"you the number of users you are about to delete. This action *cannot be undone."
+"* To permanently delete these users, click the red Confirm Delete button. To "
+"cancel, click the x in the upper right corner of the drawer."
 msgstr ""
+"Cela ouvrira un onglet sur le côté droit de l'écran avec un message vous "
+"indiquant le nombre d'utilisateurs que vous êtes sur le point de supprimer. "
+"Cette action *ne peut pas être annulée.* Pour supprimer définitivement ces "
+"utilisateurs, cliquez sur le bouton rouge Confirmer la suppression. Pour "
+"annuler, cliquez sur le x dans le coin supérieur droit du tiroir."
 
 #: ../../docs/admin/users.md:122 6d39acbd4df84410926db62230d01406
 msgid "![Confirm delete message for 5 users](adminfiles/users_batchdel2.png)"
 msgstr ""
+"![Confirmer la suppression du message pour 5 utilisateurs](/admin/adminfiles/"
+"users_batchdel2.png)"
 
 #: ../../docs/admin/users.md:124 7a396b5ba664422ebe924507a9d6d037
 msgid ""
-"The \"delete all\" action in the dropdown will delete all users excluding"
-" yourself. This action *cannot be undone* and should be used with extreme"
-" caution."
+"The \"delete all\" action in the dropdown will delete all users excluding "
+"yourself. This action *cannot be undone* and should be used with extreme "
+"caution."
 msgstr ""
+"L'action \"Tout supprimer\" dans le menu déroulant supprimera tous les "
+"utilisateurs, à\n"
+" l'exclusion de vous-même. Cette action * ne peut pas être annulée * et doit "
+"être utilisée avec une extrême prudence."
 
 #: ../../docs/admin/users.md:126 c43db2cdd4c741fb870f20cde70fd66d
 msgid ""
-"To permanently delete these users, you must check the \"Are you sure\" "
-"box before clicking the \"Confirm Delete\" button. To cancel, click the x"
-" in the upper right corner of the drawer."
+"To permanently delete these users, you must check the \"Are you sure\" box "
+"before clicking the \"Confirm Delete\" button. To cancel, click the x in the "
+"upper right corner of the drawer."
 msgstr ""
+"Pour supprimer définitivement ces utilisateurs, vous devez cocher la case "
+"\"Êtes-vous sûr\" avant de cliquer sur le bouton \"Confirmer la suppression\". "
+"Pour annuler, cliquez sur le x dans le coin supérieur droit du tiroir."
 
 #: ../../docs/admin/users.md:128 84ad187cc33846fea7481aafb597c1aa
 msgid "Roles and Permissions"
-msgstr ""
+msgstr "Rôles et autorisations"
 
 #: ../../docs/admin/users.md:129 8d0bde1590734d7d9b0cfda6ca55cd0f
 msgid "The following is a detailed breakdown of permissions for each user role:"
 msgstr ""
+"Voici une liste détaillée des autorisations pour chaque rôle d'utilisateur:"
 
 #: ../../docs/admin/users.md:131 0820ce37912243d994a238ca8d5cb364
 msgid "**Global Admin**"
-msgstr ""
+msgstr "**Administrateur global**"
 
 #: ../../docs/admin/users.md:133 ../../docs/admin/users.md:139
 #: a6fb4d230d73454fb6bab23c8528229d ab86d8fea0ff47fc85e08238c22c63fd
 msgid ""
-"Full privileges (create, edit, delete) of item, item sets, media, "
-"resource templates, site pages, sites, and users."
+"Full privileges (create, edit, delete) of item, item sets, media, resource "
+"templates, site pages, sites, and users."
 msgstr ""
+"Droits complets (création, modification, suppression) sur les contenus, les "
+"collections, les médias, les modèles de contenus, les pages de site, les sites "
+"et les utilisateurs."
 
 #: ../../docs/admin/users.md:134 adb6a0ed47e94a22a08f9ff38240ee32
 msgid "Full privileges for modules - install, activate, configure."
-msgstr ""
+msgstr "Droits complets sur les modules - installer, activer, configurer."
 
 #: ../../docs/admin/users.md:135 33c33a7dadb24c99b171b0200ddcb477
 msgid "Search, read, create, and delete privileges for Vocabularies"
-msgstr ""
+msgstr "Rechercher, lire, créer et supprimer des droits sur les vocabulaires."
 
 #: ../../docs/admin/users.md:137 a6c9d5c242d948edba8bd17df6208249
 msgid "**Supervisor**"
-msgstr ""
+msgstr "**Administrateur du site**"
 
 #: ../../docs/admin/users.md:140 a21257a0374942bdb3cebf5555fe2d56
 msgid ""
-"Browse-only privileges for modules in the module tab. Can interact with "
-"active modules where appropriate."
+"Browse-only privileges for modules in the module tab. Can interact with active "
+"modules where appropriate."
 msgstr ""
+"Droits complets (création, modification, suppression) sur les contenus, les "
+"collections, les médias, les modèles de contenus, les pages de site, les sites "
+"et les utilisateurs."
 
 #: ../../docs/admin/users.md:141 ed5bb872e6ec4b42b432e5c440c71c29
 msgid "Search, read, and create privileges for Vocabularies (cannot delete)"
 msgstr ""
+"Droits de navigation dans les modules. Les administrateurs de site peuvent "
+"interagir avec les modules actifs, le cas échéant."
 
 #: ../../docs/admin/users.md:143 ca0f852a2b77483cba19d0185ee2d0f0
 msgid "**Editor**"
-msgstr ""
+msgstr "**Éditeur**"
 
 #: ../../docs/admin/users.md:145 42529aa9ab4c4cd8bac5574eadd84531
 msgid ""
-"Full privileges (create, edit, delete) of item, item sets, media, "
-"resource templates, and site pages"
+"Full privileges (create, edit, delete) of item, item sets, media, resource "
+"templates, and site pages"
 msgstr ""
+"Droits complets (création, modification, suppression) sur les contenus, les "
+"collections, les médias, les modèles de contenus, les pages de site."
 
 #: ../../docs/admin/users.md:146 1f9a9470c4e44ff294164176200649d9
 msgid ""
-"Can search, read, and create sites and users, and edit or delete sites "
-"they own. Can only delete their own user profile."
+"Can search, read, and create sites and users, and edit or delete sites they "
+"own. Can only delete their own user profile."
 msgstr ""
+"Peut rechercher, lire et créer des sites et des utilisateurs, et modifier ou "
+"supprimer des sites qu’ils possèdent. Ne peut supprimer que son propre profil "
+"utilisateur."
 
 #: ../../docs/admin/users.md:147 eb211267184a496c83c7187b8f055c5e
 msgid "Search and read only privileges for vocabularies."
-msgstr ""
+msgstr "Rechercher et lire uniquement les droits sur les vocabulaires."
 
 #: ../../docs/admin/users.md:148 ../../docs/admin/users.md:155
 #: ../../docs/admin/users.md:162 ../../docs/admin/users.md:167
 #: 4f531dccb37849b4bbaee4051846391f 5c567fe078034c408c2d13e9320ed9c1
 #: 9998310585eb4659873a096095b53e57 eee0cf765cfe4645892d657350032216
 msgid "No privileges for modules"
-msgstr ""
+msgstr "Pas de droits sur les modules."
 
 #: ../../docs/admin/users.md:150 075754d9fca74195a4953fd198e0d275
 msgid "**Reviewer**"
-msgstr ""
+msgstr "**Relecteur**"
 
 #: ../../docs/admin/users.md:152 d39c1fecdf904c44aa6128eafb2ef3a5
 msgid ""
-"Can search, read, create, and edit all items, item sets, and media. Can "
-"only delete those items, item sets, and media."
+"Can search, read, create, and edit all items, item sets, and media. Can only "
+"delete those items, item sets, and media."
 msgstr ""
+"Peut rechercher, lire, créer et éditer tous les contenus, collections, médias, "
+"sites et pages de sites. Ne peut supprimer que les contenus, collections, "
+"supports, sites et pages de site dont il est propriétaire."
 
 #: ../../docs/admin/users.md:153 ../../docs/admin/users.md:160
 #: 19a73cabe6d448109374c0d3a6d84829 bbf70f4d99b143589a8c225911866eeb
 msgid ""
-"Can be added to a site at the Creator or Manager levels, which enables "
-"them to search, read, create, edit, and delete site pages. If a Reviewer "
-"has not beed added as a site user, they will have read-only access to "
-"that site's content."
+"Can be added to a site at the Creator or Manager levels, which enables them to "
+"search, read, create, edit, and delete site pages. If a Reviewer has not beed "
+"added as a site user, they will have read-only access to that site's content."
 msgstr ""
 
 #: ../../docs/admin/users.md:154 8a1b1c9e9fdf4cacae4d389abc0369f3
 msgid "Search and read only privileges for vocabularies and resource templates."
 msgstr ""
+"Rechercher et lire uniquement les droits sur les vocabulaires et les modèles de "
+"ressources."
 
 #: ../../docs/admin/users.md:157 c6928c3a2ff74b558f978712b486ae4a
 msgid "**Author**"
-msgstr ""
+msgstr "**Auteur**"
 
 #: ../../docs/admin/users.md:159 e32452475a3749a79db6620675ed9439
 msgid ""
-"Can search, read, and create items, item sets, and media. Can only edit "
-"or delete content which the user has created."
+"Can search, read, and create items, item sets, and media. Can only edit or "
+"delete content which the user has created."
 msgstr ""
+"Peut rechercher, lire et créer des contenus, des collections, des supports et "
+"des pages de site. Ne peut modifier ou supprimer que le contenu dont il est le "
+"créateur."
 
 #: ../../docs/admin/users.md:161 29e397376bee48f39ef35f7489e8bb45
 msgid "Search and read only privileges for vocabularies and sites."
 msgstr ""
+"Rechercher et lire uniquement les droits sur les vocabulaires et les sites."
 
 #: ../../docs/admin/users.md:164 c4aec43c3581445b9474f902f6237912
 msgid "**Researcher**"
-msgstr ""
+msgstr "**Chercheur**"
 
 #: ../../docs/admin/users.md:166 b56e66cb07ce49cc99a72c21f9e5ad66
 msgid "Search and read-only privileges for all content, sites, and users."
 msgstr ""
-
+"Droits de recherche et de lecture seule pour tout le contenu, les sites et les "
+"utilisateurs."
