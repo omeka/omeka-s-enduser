@@ -102,7 +102,7 @@ Settings not described above:
 * **Navigation layouts:** Global navigation can display as a **horizontal top bar with optional dropdown menus** or a **left vertical column**.
 * **Show Top Navigation Child Pages:** Toggle display of child pages within the main navigation. If unchecked, only the top-level navigation will display. 
 * **Layout for Show Pages:** Resource metadata can show display as **stacked** with properties as headings above their values, or **inline** with properties as headings inline with their values.
-* **Truncate Body Property:** Set how much of the [browse body property]( ) displays on the browse page. You can:
+* **Truncate Body Property:** Set how much of the browse body property displays on the browse page. You can:
 	* **Show full value** which displays all of the property text. 
 	* **Show 4 lines and fade out** which displays 4 lines of text with a fade at the end of the text block.
 	* **Show 4 lines and ellipses** which displays 4 lines of text concluding with an ellipses (...) 

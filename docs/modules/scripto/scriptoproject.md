@@ -78,7 +78,7 @@ If you select Media, the content created in Scripto will appear in the media met
 - Translation
 
 ### Reviewers
-Add [Omeka S users](../../../admin/users/) to your Scripto project as reviewers, who can can access private projects, and mark media as approved and unapproved. You can manage users after adding a project (see below)
+Add [Omeka S users](../../admin/users) to your Scripto project as reviewers, who can can access private projects, and mark media as approved and unapproved. You can manage users after adding a project (see below)
 
 Only Omeka users with **site administrator** and g**lobal administrator** roles can sync and import projects, due to the destructive potential of those actions. 
 
@@ -251,7 +251,7 @@ The next section is **Review status**.
 You can toggle the drawer open and closed using the open arrow `>` button in the middle of the divider between the drawer and the main work area. 
 
 
-#### Media status:
+### Media status:
 
 * **Complete:** Community users have the ability to mark a media they are working on as "complete." This serves as a flag to notify the project team that the media is ready for review. If a media is not completely transcribed/translated/described, adminstrators can reverse the Complete status.
 * **Approved:** Approval is granted by administrators and indicates that every media is complete and satisfactory. Items can only be considered approved when all child media are approved.
