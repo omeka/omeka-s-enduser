@@ -4,23 +4,25 @@
 # manual package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Omeka S end user manual \n"
+"Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 22:35+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-06-29 16:53+0200\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Julian Maurice <julian.maurice@biblibre.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../docs/frontpage.md:1
 msgid "Front Page"
-msgstr ""
+msgstr "Page d'accueil"
 
 #: ../../docs/frontpage.md:3
 msgid ""
@@ -28,10 +30,16 @@ msgid ""
 "not necessarily connected. However, each installation has, by default, a "
 "front page which lists the sites in the installation. This page is "
 "accessed by going to the main url of your Omeka S installation; if your "
-"[admin dashboard](admin-dashboard.md) was at "
-"`yourdomain.net/omekas/admin`, then you would find this page a "
-"`yourdomain.net/omekas/`"
+"[admin dashboard](admin-dashboard.md) was at `yourdomain.net/omekas/"
+"admin`, then you would find this page a `yourdomain.net/omekas/`"
 msgstr ""
+"Omeka S permet aux utilisateurs de construire plusieurs sites par "
+"installation qui ne sont pas nécessairement connectés. Cependant, chaque "
+"installation a, par défaut, une page d'accueil qui liste les sites de "
+"l'installation. Cette page est accessible en allant à l'URL principale "
+"de votre installation Omeka S; si votre [tableau de bord "
+"d'administration](admin-dashboard.md) était à `votredomaine.net/omekas/"
+"admin`, alors vous trouverez cette page à `votredomaine.net/omekas`"
 
 #: ../../docs/frontpage.md:5
 msgid ""
@@ -40,12 +48,19 @@ msgid ""
 "will only see public sites. A logged in Global Admin, by contrast, would "
 "see all existing sites on the installation."
 msgstr ""
+"La page affiche tous les sites qu'un utilisateur a la permission de "
+"voir, ainsi que le résumé du site s'il existe. Si une personne n'est pas "
+"connectée, elle ne verra que les sites publiques. Un administrateur "
+"global, par contre, verra tous les sites existants sur l'installation."
 
 #: ../../docs/frontpage.md:7
 msgid ""
 "![Installation front page for the \"Stackable Sandbox\" showing seven "
 "sites, three of which have summaries.](files/frontpage-basic.png)"
 msgstr ""
+"![Page d'accueil de l'installation pour « Stackable Sandbox » montrant "
+"sept sites, trois d'entre eux ayant un résumé.](files/frontpage-basic."
+"png)"
 
 #: ../../docs/frontpage.md:9
 msgid ""
@@ -54,6 +69,11 @@ msgid ""
 "public site on your installation to which visitors will be redirected "
 "when they navigate to your base url (`yourdomain.net/omekas/`)"
 msgstr ""
+"Si vous voulez que ce site soit caché des visiteurs, vous pouvez "
+"utiliser le [paramètre site par défaut](admin/settings.md#global-"
+"settings) pour sélectionner un site public sur votre installation vers "
+"lequel les visiteurs seront redirigés quand ils navigueront vers votre "
+"URL de base (`votredomaine.net/omekas`)"
 
 #: ../../docs/frontpage.md:11
 msgid ""
@@ -61,4 +81,7 @@ msgid ""
 "block](sites/site_pages.md#page-blocks) \"List of sites\" to create a "
 "branded site index and to add an about page for the overall installation."
 msgstr ""
-
+"Vous pouvez utiliser l'option Site par défaut conjointement au [bloc de "
+"page](sites/site_pages.md#page-blocks) « Liste des sites » pour créer un "
+"index de site et pour ajouter une page « à propos » pour l'installation "
+"dans son ensemble."
