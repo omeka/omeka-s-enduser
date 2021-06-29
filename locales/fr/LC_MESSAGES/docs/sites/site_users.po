@@ -4,77 +4,103 @@
 # manual package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Omeka S end user manual \n"
+"Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 08:33+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-06-29 17:45+0200\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Julian Maurice <julian.maurice@biblibre.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../docs/sites/site_users.md:1
 msgid "User Permissions"
-msgstr ""
+msgstr "Permissions utilisateur"
 
 #: ../../docs/sites/site_users.md:3
 msgid "To add a user to a site, navigate to the *User Permissions* tab."
 msgstr ""
+"Pour ajouter un utilisateur à un site, naviguez vers l'onglet "
+"*Permissions utilisateur*."
 
 #: ../../docs/sites/site_users.md:5
 msgid ""
 "![User permissions tab with no added users and an alphabetical directory "
 "on the right](../sites/sitesfiles/sites_users.png)"
 msgstr ""
+"![L'onglet permissions utilisateur avec aucun utilisateur ajouté et un "
+"répertoire alphabétique sur la droite](../sites/sitesfiles/sites_users."
+"png)"
 
 #: ../../docs/sites/site_users.md:7
 msgid ""
 "A drawer on the right hand side of the screen shows all of the users for "
 "your install, sorted by the first letter of their first name."
 msgstr ""
+"Un tiroir sur la droite de l'écran montre tous les utilisateurs de votre "
+"installation, triés par la première lettre de leur prénom."
 
 #: ../../docs/sites/site_users.md:9
 msgid "To add a user, click on their name."
-msgstr ""
+msgstr "Pour ajouter un utilisateur, cliquez sur son nom."
 
 #: ../../docs/sites/site_users.md:11
 msgid "Then select their role from the dropdown:"
-msgstr ""
+msgstr "Puis sélectionnez son rôle depuis la liste déroulante:"
 
 #: ../../docs/sites/site_users.md:13
 msgid "*Viewer:* user can see the site’s backend but cannot edit."
 msgstr ""
+"*Observateur:* l'utilisateur peut voir le côté administration du site "
+"mais ne peut pas le modifier."
 
 #: ../../docs/sites/site_users.md:14
 msgid ""
 "*Creator:* user can access and edit the site’s backend (this role is "
 "called \"Editor\" in Omeka S versions 1.x-2.x)."
 msgstr ""
+"*Créateur:* l'utilisateur peut accéder au côté administration du site et "
+"le modifier (ce rôle est nommé « Éditeur » dans les version 1.x-2.x "
+"d'Omeka S)."
 
 #: ../../docs/sites/site_users.md:15
 msgid ""
 "*Manager:* user has full administrative privileges for the site, "
-"including adding users and deleting the site (this role is called "
-"\"Admin\" in Omeka S versions 1.x-2.x)."
+"including adding users and deleting the site (this role is called \"Admin"
+"\" in Omeka S versions 1.x-2.x)."
 msgstr ""
+"*Responsable:* l'utilisateur a les pleins pouvoirs administratifs pour "
+"ce site, ce qui inclut l'ajout d'utilisateur et la suppression du site "
+"(ce rôle est nommé « Administrateur » dans les version 1.x-2.x d'Omeka "
+"S)."
 
 #: ../../docs/sites/site_users.md:17
 msgid ""
 "You can add or revoke privileges for users by going back to the User "
-"permissions tab and selecting or deselecting the boxes and clicking Save."
-" Users can be deleted from the site by clicking the trash can icon on "
-"their row."
+"permissions tab and selecting or deselecting the boxes and clicking "
+"Save. Users can be deleted from the site by clicking the trash can icon "
+"on their row."
 msgstr ""
+"Vous pouvez ajouter ou révoquer des permissions pour les utilisateur en "
+"revenant dans l'onglet permissions utilisateur et en sélectionnant ou "
+"désélectionnant les boîtes et en cliquant sur Enregistrer. Les "
+"utilisateurs peuvent être supprimés du site en cliquant sur l'icône de "
+"poubelle sur leur ligne."
 
 #: ../../docs/sites/site_users.md:19
 msgid ""
-"Once you've added one or more users, click the Save button located in the"
-" upper right hand corner. To cancel your changes, click the Cancel button"
-" in the upper right hand corner."
+"Once you've added one or more users, click the Save button located in "
+"the upper right hand corner. To cancel your changes, click the Cancel "
+"button in the upper right hand corner."
 msgstr ""
-
+"Une fois que vous avez ajoutez un ou plusieurs utilisateurs, cliquez sur "
+"le bouton Enregistrer situé dans le coin supérieur droit. Pour annuler "
+"vos changements, cliquez sur le bouton Annuler dans le coin supérieur "
+"droit."
