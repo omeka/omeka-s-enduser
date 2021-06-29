@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/modules/dspaceconnector.md:1
+msgid "DSpace Connector"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:3
+msgid ""
+"DSpace Connector is a [module](index.md) for Omeka S which allows you to "
+"connect an Omeka S instance to a DSpace repository to import items from "
+"that repository. In addition to importing information, the Omeka S item "
+"will include a link back to the original item."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:5
+msgid ""
+"To install DSpace Connector, follow the instructions for [Installing "
+"Modules](index.md#installing-modules) on the Modules documentation."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:7
+msgid "Note that DSpace Connector only works with DSpace versions 5.6 and higher."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:9
+msgid ""
+"You can view past imports by going to the DSpace Connector tab on the "
+"left-hand navigation of the admin dashboard and clicking the *Past "
+"Imports* sub-tab."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:11
+msgid ""
+"![DSpace Connector navigation option with two sub-tab options for Import "
+"and Past Imports](../modules/modulesfiles/dspace_nav.png)"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:13
+msgid "Import Data"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:14
+msgid ""
+"To use DSpace Connector, navigate to the tab labelled *DSpace Connector* "
+"on the left-hand navigation of the admin dashboard."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:16
+msgid ""
+"![Screenshot of the field options for DSpace Connector with collections "
+"loaded from a university "
+"library](../modules/modulesfiles/dspace_import.png)"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:18
+msgid "To import from a DSpace Repository:"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:20
+msgid "On the first form, enter the following information:"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:22
+msgid ""
+"*DSpace site URL* for the Repository - note that you have to enter the "
+"entire url, including the `http://` (required);"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:23
+msgid ""
+"*Endpoint* for the api (required. by default this is \"rest\" but may be "
+"changed in the DSpace instance);"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:24
+msgid "*Limit* or maximum number of results to retrieve at once."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:26
+msgid "Then click *Get collections and communities*"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:28
+msgid ""
+"If the information above has been correctly entered, you will proceed to "
+"the DSpace Connector Import Options page. This has three tabs."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:30
+msgid "Basic Import Settings"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:31
+msgid "This tab has three options:"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:33
+msgid ""
+"*Import files into Omeka S*: click this checkbox to import files in "
+"addition to metadata."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:34
+msgid ""
+"*Item Set*: select an item set from the dropdown into which to import the"
+" items."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:35
+msgid ""
+"*Ignored Fields*: DSpace metadata fields to ignore on import, separated "
+"by commas."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:36
+msgid "*Comment*: for any comments you have."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:38
+msgid ""
+"![basic import settings, nothing entered and no boxes "
+"checked.](../modules/modulesfiles/dspace_importset.png)"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:40
+msgid "Collections"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:41
+msgid ""
+"This tab will display the list of collections for the DSpace repository, "
+"organized by containing community. You can import either one collection "
+"at a time or the entire DSpace repository."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:43
+msgid ""
+"To import a single collection, click the Import button to the left of its"
+" name. This will automatically begin the import."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:45
+msgid ""
+"![First few collections from mars.gmu.edu's DSpace "
+"repository](../modules/modulesfiles/dspace_coll.png)"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:47
+msgid ""
+"To import the entire repository, click 'Import entire repository' at the "
+"top of the form."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:49
+msgid ""
+"**NOTE:** Importing an entire DSpace repository with a large number of "
+"items (>5,000) is likely to flood the DSpace hosting server with requests"
+" until failure. Consider importing collection by collection if at all "
+"possible. If you still wish to import an entire large repository at once,"
+" the following might help:"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:51
+msgid ""
+"On the initial Import Settings menu, set *Limit* to a smaller number such"
+" as 50 or 25"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:52
+msgid ""
+"Run the import at night and/or whenever there may be less traffic on your"
+" DSpace server"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:53
+msgid ""
+"Consider temporarily inserting a `sleep()` function between the import of"
+" each record in `Import.php` to slow the process down slightly (not "
+"recommended for production)"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:55
+msgid ""
+"You can track the status of the import by navigating to the DSpace "
+"Connector > Past Imports tab or on the [Jobs](../admin/jobs.md) tab of "
+"the left-hand navigation on the admin dashboard."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:57
+msgid ""
+"Are your jobs starting and not completing? You might need to [set the "
+"path for PHP](../configuration/) so that your system can perform the "
+"background process to make the items."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:59
+msgid "Review Imports"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:60
+msgid ""
+"Go to the DSpace Connector tab on the left-hand navigation of the admin "
+"dashboard, click on DSpace Connector and then click on Past Imports, "
+"which should appear below the DSpace Connector tab."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:62
+msgid ""
+"This page displays a table of Past DSpace Imports, with a checkbox option"
+" to *Undo*, the *Job ID* for the import, the repository’s *Dspace "
+"Collection Link*, any *Comments* made during import, the number of "
+"*Items* imported, the *Date* of the import, the import *Status*, and the "
+"*Owner*, or user who initiated the import."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:64
+#: ../../docs/modules/dspaceconnector.md:72
+msgid ""
+"![Table of past imports showing two from "
+"mars.gmu.edu](../modules/modulesfiles/mods_dspacepast.png)"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:66
+msgid "Update Imported Resources"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:67
+msgid ""
+"To update resources created using the DSpace Connector, simply re-run an "
+"import from the same source. The resources will be updated, not "
+"reimported. This allows you to use the Connector to synch data between "
+"your DSpace and Omeka S installations."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:69
+msgid "Undo an Import"
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:70
+msgid ""
+"To undo a completed import and remove all associated items, go to the "
+"DSpace Connector tab on the left-hand navigation of the admin dashboard, "
+"click on DSpace Connector and then click on Past Imports, which should "
+"appear below the DSpace Connector tab."
+msgstr ""
+
+#: ../../docs/modules/dspaceconnector.md:74
+msgid "Check the box for each import you wish to undo and click submit."
+msgstr ""
+

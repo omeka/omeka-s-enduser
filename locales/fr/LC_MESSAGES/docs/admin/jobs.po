@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/admin/jobs.md:1
+msgid "Jobs"
+msgstr ""
+
+#: ../../docs/admin/jobs.md:3
+msgid ""
+"When a user starts running a process which will take some time, such as "
+"an API import, the progress of the process is displayed in the *Jobs* tab"
+" of the admin dashboard.  The table also displays completed, stopped, and"
+" error-interrupted jobs."
+msgstr ""
+
+#: ../../docs/admin/jobs.md:5
+msgid ""
+"The Jobs table shows a job’s *ID* number, *class* of job, *Status* and "
+"the *Owner*, or user who started the job."
+msgstr ""
+
+#: ../../docs/admin/jobs.md:7
+msgid ""
+"You can order the rows of the table by ID, Class, Status, or Owner "
+"(descending or ascending) using the drop-down menus just above the table "
+"on the upper right."
+msgstr ""
+
+#: ../../docs/admin/jobs.md:9
+msgid "![Table of jobs including all status messages](adminfiles/jobstable.png)"
+msgstr ""
+
+#: ../../docs/admin/jobs.md:11
+msgid "To see the details of a job, click on its id number."
+msgstr ""
+
+#: ../../docs/admin/jobs.md:13
+msgid "On a job’s details page, you will see the following information:"
+msgstr ""
+
+#: ../../docs/admin/jobs.md:15
+msgid "*Status* (In Progress, Error, Completed, Stopped)"
+msgstr ""
+
+#: ../../docs/admin/jobs.md:16
+msgid "*Started* and *Ended* (date stamps)"
+msgstr ""
+
+#: ../../docs/admin/jobs.md:17
+msgid "*Class* (source of the job, for example `DspaceConnector\\Job\\Import`)"
+msgstr ""
+
+#: ../../docs/admin/jobs.md:18
+msgid "*Owner*"
+msgstr ""
+
+#: ../../docs/admin/jobs.md:19
+msgid "*Args*"
+msgstr ""
+
+#: ../../docs/admin/jobs.md:20
+msgid "*Log* - click on *view log* to see any error or other messages."
+msgstr ""
+
+#: ../../docs/admin/jobs.md:22
+msgid ""
+"![The Logs heading with “view logs” below in orange, indicating it is a "
+"link](adminfiles/jobs_viewlog.png)"
+msgstr ""
+

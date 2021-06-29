@@ -1,2 +1,4 @@
+_build/
+locales/**/*.mo
 site/
 .DS_Store

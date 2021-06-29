@@ -84,7 +84,7 @@ Clicking on this dropdown will reveal multiple options, including all of the pro
 
 
 ## Bulk edit numeric data
-The module adds an additional option to the [item batch edit](../../content/items/#batch-editing): convert to numeric.
+The module adds an additional option to the [item batch edit](../content/items.md#batch-actions): convert to numeric.
 
 ![Batch edit items form with a red rectangle outline surrounding the convert to numeric option](../modules/modulesfiles/ndt-batchoption
 

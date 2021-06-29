@@ -6,6 +6,6 @@ The page displays all sites which a user has permission to see, along with the s
 
 ![Installation front page for the "Stackable Sandbox" showing seven sites, three of which have summaries.](files/frontpage-basic.png)
 
-If you want this site to be hidden from site visitors, you can use the [setting Default Site](admin/settings/#global-settings) to select a public site on your installation to which visitors will be redirected when they navigate to your base url (`yourdomain.net/omekas/`)
+If you want this site to be hidden from site visitors, you can use the [setting Default Site](admin/settings.md#global-settings) to select a public site on your installation to which visitors will be redirected when they navigate to your base url (`yourdomain.net/omekas/`)
 
-You can use the Default Site option in conjunction with the [site page block](sites/site_pages/#page-blocks) "List of sites" to create a branded site index and to add an about page for the overall installation. 
+You can use the Default Site option in conjunction with the [site page block](sites/site_pages.md#page-blocks) "List of sites" to create a branded site index and to add an about page for the overall installation.

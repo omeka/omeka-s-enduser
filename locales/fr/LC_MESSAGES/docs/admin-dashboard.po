@@ -1,0 +1,241 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/admin-dashboard.md:1
+msgid "Admin Dashboard"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:3
+msgid ""
+"The administrative dashboard manages the content shared by all OmekaS "
+"sites and the core functionalities of the OmekaS installation."
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:5
+msgid ""
+"This [screencast](https://vimeo.com/455708039) walks you through the main"
+" features of the dashboard and navigating your Omeka S installation."
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:7
+msgid ""
+"[![Still image of the first frame of a vimeo video](files"
+"/navigatingOmekaS-still.png)](https://vimeo.com/455708039)"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:9
+msgid "Admin Main Page"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:11
+msgid "When a user logs in, the first page they see is the Admin Dashboard."
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:13
+msgid ""
+"*Note: depending on the user role, you may not see precisely the same "
+"options in the left-hand navigation. See [below](#left-hand-navigation) "
+"for details*"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:15
+msgid "![Admin dashboard full view](files/admindashfullview.png)"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:17
+msgid ""
+"In addition to the left-hand navigation present on all pages (see below),"
+" the admin dashboard presents users with two boxes: Manage Resources and "
+"Manage Sites."
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:19
+msgid ""
+"The *Manage Resources* box displays the following resources with their "
+"total count: [Items](content/items.md), [Item Sets](content/item-"
+"sets.md), [Vocabularies](content/vocabularies.md), and [Resource "
+"Templates](content/resource-template.md). Clicking on the label of the "
+"Resource will take you to the browse page; clicking the Plus button to "
+"the right of the label will take you to the add page for that resource "
+"type."
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:21
+msgid ""
+"![Close up of manage resources and manage sites "
+"boxes](files/admindashmanage.png)"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:23
+msgid ""
+"The *Manage Sites* box lists the [Sites](sites/index.md) on the install. "
+"Clicking on the site name will take you to the public view of the site; "
+"clicking the edit (pencil) button will take you to the Edit Site Info "
+"page for that site."
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:26
+msgid "Left-hand navigation"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:28
+msgid ""
+"The following content appears on the left side of the admin dashboard and"
+" on all administrative pages."
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:30
+msgid ""
+"![View of the left hand navigation on the admin dashboard, which also "
+"appears consistently throughout the admin interface, with options as "
+"described below](files/leftnav.png)"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:32
+msgid ""
+"In the upper left corner of the screen is a link displaying the title of "
+"the installation which will always take you back to the admin dashboard."
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:34
+msgid ""
+"Directly below the installation title is the message “Signed in as "
+"*User*” where *User* is the display name of the person logged in. Near "
+"the username (below or to the right, depending on window width) is the "
+"button to *Logout*."
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:36
+msgid ""
+"Underneath the user information is a search field which has an option for"
+" advanced search (ellipses) in addition to the button to search "
+"(magnifying glass). Use this to search all items in the installation."
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:38
+msgid ""
+"Advanced search options (the ellipses) allow you to refine the search by "
+"Resource Type, limiting it to *Items*, *Item Sets*, or *Media* by "
+"clicking the radio button next to the Resource Type you want to search."
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:40
+msgid "![Advanced search options](files/search.png)"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:42
+msgid ""
+"The left hand navigation of the dashboard is divided into sections "
+"related to function and user access:"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:44
+msgid ""
+"[Sites](sites/index.md): lists and provides access to all of the sites on"
+" the OmekaS install. (Computer icon)"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:45
+msgid "Resources: content creation and metadata management"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:46
+msgid ""
+"[Items](content/items.md): manage the individual resources of your "
+"install. (Box icon)"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:47
+msgid ""
+"[Item Sets](content/item-sets.md): manage aggregated groups of items. "
+"(Multiple boxes icon)"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:48
+msgid ""
+"[Vocabularies](content/vocabularies.md): manage the metadata standards "
+"for your install. (Closed book icon)"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:49
+msgid ""
+"[Resource Templates](content/resource-template.md): manage predefined "
+"sets of properties (fields) to use when creating items. (Pencil in a "
+"square icon)"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:50
+msgid ""
+"Admin: installation-level administration (note that some of these tabs "
+"may not be visible to all user levels)"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:51
+msgid ""
+"[Users](admin/users.md): manage users for the whole install and "
+"individual sites. (head and shoulders person icon)"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:52
+msgid ""
+"[Modules](modules/index.md): add functionality to your sites. (Plus sign "
+"in square icon)"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:53
+msgid ""
+"[Jobs](admin/jobs.md): displays the user-activated tasks which are "
+"currently running. NB: jobs only display when they are running. (Three "
+"bars icon)"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:54
+msgid ""
+"[Settings](admin/settings.md): manage the global settings for all sites, "
+"the admin dashboard and the site dashboards. (Gears icon)"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:56
+msgid ""
+"If you have installed modules, they may appear in the admin section of "
+"the left navigation below settings."
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:58
+msgid ""
+"Note that users with more limited permissions will see only some of these"
+" navigation options."
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:60
+msgid "System Information"
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:62
+msgid ""
+"In the bottom right corner is a short display of the current version of "
+"Omeka S. Click the link labelled *System Information* to see a full page "
+"with details."
+msgstr ""
+
+#: ../../docs/admin-dashboard.md:64
+msgid "![Example system information page](files/systeminfo.png)"
+msgstr ""
+

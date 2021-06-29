@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/modules/sharing.md:1
+msgid "Sharing"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:3
+msgid ""
+"The Sharing [module](../modules/index.md) allows you to add buttons to "
+"site pages which visitors can use to share and embed content from your "
+"site on social media or via email."
+msgstr ""
+
+#: ../../docs/modules/sharing.md:5
+msgid "Currently, Sharing supports the following options:"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:6
+msgid "Facebook"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:7
+msgid "Twitter"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:8
+msgid "Tumblr"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:9
+msgid "Pinterest"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:10
+msgid "Email"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:11
+msgid "Embed codes"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:13
+msgid ""
+"Once sharing has been [installed](../modules/index.md#installing-modules)"
+"  and activated for an Omeka S install, it is available for all sites on "
+"the install."
+msgstr ""
+
+#: ../../docs/modules/sharing.md:15
+msgid ""
+"![Sharing module installed and activated in the general settings module "
+"page](../modules/modulesfiles/sharing1.png)"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:17
+msgid "Configuration"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:19
+msgid "Sharing settings are configured on a site by site basis."
+msgstr ""
+
+#: ../../docs/modules/sharing.md:21
+msgid ""
+"Go to the site for which you want to configure the plugin and click "
+"through to the edit site dashboard. Click on the Site Settings."
+msgstr ""
+
+#: ../../docs/modules/sharing.md:23
+msgid ""
+"![Left hand navigation options for sites: settings is at the "
+"bottom](../modules/modulesfiles/sharing2.png)"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:25
+msgid ""
+"There should be a section labelled \"Sharing\" (see the image  below) "
+"with two options:"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:27
+msgid ""
+"*Enable Sharing module for these methods*: gives a series of checkboxes, "
+"one for each service or option (Facebook, twitter, etc)"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:29
+msgid ""
+"*Sharing buttons placement on the page*: sets the placement of the "
+"sharing buttons either at the top of the content (below the navigation "
+"and page header) or at the bottom (just above the footer)."
+msgstr ""
+
+#: ../../docs/modules/sharing.md:31
+msgid ""
+"![Checkboxes for the sharing options listed above, in two "
+"rows](../modules/modulesfiles/sharing_options.png)"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:33
+msgid ""
+"Ensure that the correct boxes are checked for your site. You can uncheck "
+"all of the boxes to turn off sharing for your site. Be sure to save your "
+"changes."
+msgstr ""
+
+#: ../../docs/modules/sharing.md:35
+msgid "Public Side"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:37
+msgid ""
+"Sharing icons for enabled services and options will display at the bottom"
+" of pages you build as well as individual item/show pages on your site."
+msgstr ""
+
+#: ../../docs/modules/sharing.md:39
+msgid ""
+"![Share buttons for Facebook, twitter, and email displayed above an "
+"item's title, just under the page "
+"header](../modules/modulesfiles/sharing_buttons.png)"
+msgstr ""
+
+#: ../../docs/modules/sharing.md:41
+msgid ""
+"By default, the module will share the page title, name of site, and name "
+"of installation."
+msgstr ""
+
+#: ../../docs/modules/sharing.md:43
+msgid ""
+"![An example tweet for the page, listing the page’s title then a dot, "
+"followed by the site’s title then a dot, followed by the installation "
+"title, ending with a dummy url for the "
+"site](../modules/modulesfiles/sharing_display1.png)"
+msgstr ""
+

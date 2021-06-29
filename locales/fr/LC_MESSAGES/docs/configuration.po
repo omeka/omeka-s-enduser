@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/configuration.md:1
+msgid "Configuration Options"
+msgstr ""
+
+#: ../../docs/configuration.md:3
+msgid ""
+"The following are commonly requested options which can be configured in "
+"the file `local.config.php` located in the config directory."
+msgstr ""
+
+#: ../../docs/configuration.md:5
+msgid ""
+"For a full list of available configuration keys, please see the "
+"[developer documentation page on configuration "
+"settings](https://omeka.org/s/docs/developer/configuration/)."
+msgstr ""
+
+#: ../../docs/configuration.md:7
+msgid "Password settings"
+msgstr ""
+
+#: ../../docs/configuration.md:8
+msgid ""
+"You can change the requirements for user passwords in the config file. "
+"Options include minimum length, number of upper and lowercase letters, "
+"and setting allowed symbols."
+msgstr ""
+
+#: ../../docs/configuration.md:20
+msgid "Requirements will display on the user creation and edit pages."
+msgstr ""
+
+#: ../../docs/configuration.md:22
+msgid "Thumbnails"
+msgstr ""
+
+#: ../../docs/configuration.md:24
+msgid "The `thumbnails` configuration key holds most thumbnail settings:"
+msgstr ""
+
+#: ../../docs/configuration.md:39
+msgid ""
+"Under `types`, set the maximum dimensions for derivative images for media"
+" files. There are separate options for large, medium, and square. "
+"Defaults for these are 800, 200, and 200 respectively (all sizes are "
+"pixels)"
+msgstr ""
+
+#: ../../docs/configuration.md:43
+msgid ""
+"`thumbnailer_options` is an array of options passed to the specific "
+"thumbnailer in use. For example, the `imagemagick_dir` thumbnail option "
+"sets the path to the folder where ImageMagick's `convert` command can be "
+"found on the server. This can be useful if Omeka S can't auto-detect the "
+"correct path for ImageMagick."
+msgstr ""
+
+#: ../../docs/configuration.md:48
+msgid ""
+"The thumbnailer to use is set under the `service_manager` key, by setting"
+" the alias for `Omeka\\File\\Thumbnailer`:"
+msgstr ""
+
+#: ../../docs/configuration.md:59
+msgid ""
+"The default thubnailer is `Omeka\\File\\Thumbnailer\\ImageMagick`.  Also "
+"available are `Omeka\\File\\Thumbnailer\\Imagick` (which uses the "
+"`imagick` PHP extension) and `Omeka\\File\\Thumbnailer\\Gd` (which uses "
+"the commonly available `gd` PHP extension)."
+msgstr ""
+
+#: ../../docs/configuration.md:64
+msgid ""
+"You can also set the thumbnailer to "
+"`Omeka\\File\\Thumbnailer\\NoThumbnail`, which will prevent your Omeka S "
+"installation from generating thumbnails."
+msgstr ""
+
+#: ../../docs/configuration.md:67
+msgid "PHP Path"
+msgstr ""
+
+#: ../../docs/configuration.md:69
+msgid ""
+"Omeka S uses background jobs for some long-running tasks that operate on "
+"many items or just otherwise might take a long time. Omeka S uses the PHP"
+" CLI (command-line interface) to run these jobs, the `php` command."
+msgstr ""
+
+#: ../../docs/configuration.md:73
+msgid ""
+"Omeka S by default will try to automatically detect the path to the PHP "
+"CLI on the server, but for some servers this detection doesn't work, or "
+"there are multiple different `php` commands to choose from. In these "
+"situations you can manually configure the correct path in the "
+"configuration file:"
+msgstr ""
+
+#: ../../docs/configuration.md:84
+msgid ""
+"(Note: the path here is just an example; the proper path will be specific"
+" to your server)"
+msgstr ""
+
+#: ../../docs/configuration.md:87
+msgid "Mail"
+msgstr ""
+
+#: ../../docs/configuration.md:89
+msgid "The `mail` key can be used to configure how Omeka S sends emails."
+msgstr ""
+
+#: ../../docs/configuration.md:91
+msgid ""
+"The default is to use sendmail, where the server is responsible for "
+"having mail delivery configured and set up. Sendmail generally requires "
+"no configuration on the Omeka S side."
+msgstr ""
+
+#: ../../docs/configuration.md:95
+msgid ""
+"Another option for some servers is to configure a direct SMTP connection "
+"for sending mail. An example configuration, to be added at the end of "
+"`local.config.php` follows (see the [laminas-mail "
+"docs](https://docs.laminas.dev/laminas-mail/transport/smtp-options/) for "
+"clarification):"
+msgstr ""
+

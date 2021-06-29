@@ -63,7 +63,7 @@ On this tab, create a new password. It must be entered twice, in both the *new p
 
 ![Empty password reset fields for the user outreach](adminfiles/users_password.png)
 
-To see the password requirements, click the arrow next to the New Password field. This will display a list of [requirements](../../configuration) if any have been configured.
+To see the password requirements, click the arrow next to the New Password field. This will display a list of [requirements](../configuration) if any have been configured.
 
 ### API Key
 Use this tab to generate an API key for the user. You must provide a label for the key - this could be a date or the purpose of the key. Click save to generate the key.

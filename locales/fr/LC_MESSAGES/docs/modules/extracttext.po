@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/modules/extracttext.md:1
+msgid "Extract Text"
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:3
+msgid ""
+"Once installed, this module will extract text from files to make them "
+"searchable and machine readable. The extracted text will be added to a "
+"property called \"extracted text\" in a vocabulary unique to that module."
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:5
+msgid "Supported file formats for this module are:"
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:7
+msgid "doc"
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:8
+msgid "docx"
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:9
+msgid "html"
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:10
+msgid "odt"
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:11
+msgid "pdf"
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:12
+msgid "rtf"
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:13
+msgid "txt"
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:15
+msgid ""
+"Please note that you must have the necessary extractors available on your"
+" server for the module to run for these filetypes. To see which filetypes"
+" will run on your installation, go to the Modules tab on your Omeka S "
+"installation and click the configure button for Extract Text. This will "
+"load a table showing you which extractors are available:"
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:17
+msgid ""
+"![A table of extractors, as described below. All except docx2txt display "
+"with the text Yes in green to the right of the extractor name. Docx2txt "
+"displays with a red no.](../modules/modulesfiles/extracttext.png)"
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:19
+msgid "The extractors are:"
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:21
+msgid "catdoc, used to extract text from DOC and RTF files."
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:22
+msgid "docx2txt, used to extract text from DOCX files."
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:23
+msgid "lynx, used to extract text from HTML files."
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:24
+msgid "odt2txt, used to extract text from ODT files."
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:25
+msgid "pdftotext, used to extract text from PDF files."
+msgstr ""
+
+#: ../../docs/modules/extracttext.md:26
+msgid "filegetcontents, used to extract text from TXT files."
+msgstr ""
+

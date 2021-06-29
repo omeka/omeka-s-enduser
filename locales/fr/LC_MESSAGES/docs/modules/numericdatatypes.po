@@ -1,0 +1,428 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Omeka Team
+# This file is distributed under the same license as the Omeka S end user
+# manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka S end user manual \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 22:35+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/modules/numericdatatypes.md:1
+msgid "Numeric Data Types"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:3
+msgid ""
+"This module allows you to set certain properties as numeric data, using "
+"resource templates. You can designate properties as either date and time "
+"(ISO) or integers."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:5
+msgid ""
+"To install Numeric Data Types, follow the instructions for [Installing "
+"Modules](../modules/index.md#installing-modules) on the Modules "
+"documentation."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:7
+msgid "Create numeric properties"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:8
+msgid ""
+"To implement the module, you will need to create or edit a [resource "
+"template](../content/resource-template.md) to set specific properties as "
+"having numeric data types."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:10
+msgid ""
+"When creating or editing a resource template, find the property you want "
+"to set as numeric in the right hand sidebar. Click on the property to add"
+" it to the template."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:12
+msgid ""
+"Once the property has been added to the template, click the pencil/edit "
+"icon to edit the property. In the right hand drawer which opens, look for"
+" the dropdown \"Data type\" under the heading \"Other options\"."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:14
+msgid ""
+"![Close up of the Other Options section, showing a dropdown for data "
+"type. A red arrow points to the header for the Numeric data "
+"types](../modules/modulesfiles/ndt-selectdata.png)"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:16
+msgid ""
+"In the dropdown, select from the following options under the heading for "
+"\"Numeric\":"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:18
+msgid ""
+"Timestamp, which can be as broad as year or as defined as the date and "
+"time;"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:19
+msgid "Integer, a whole number;"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:20
+msgid ""
+"Duration, for how long something lasted, with options for years down to "
+"seconds;"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:21
+msgid ""
+"Interval, a date-based range with start and end dates in each instance of"
+" the property."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:23
+msgid ""
+"Be sure to click \"set changes\" at the bottom of the drawer to save this"
+" setting."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:25
+msgid ""
+"When you save changes to your resource template, the numeric type you "
+"chose should show up in the column \"Data type\" for the template."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:27
+msgid ""
+"![Newly created resource template with a green-highlighted update success"
+" message. There are four properties - Title, Description, Date, and "
+"Spatial Coverage. In the column for Data Type, Date has Timestamp type "
+"and Spatial Coverage has Integer.](../modules/modulesfiles/ndt-"
+"review.png)"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:29
+msgid ""
+"Note: these fields will display only the numeric data entered. If you "
+"want to indicate what the integers represent, edit the property's label "
+"to include the scale you are using, for example creating an alternate "
+"label for \"Spatial Coverage\" which reads \"Height (cm)\"."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:31
+msgid "Add numeric data"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:32
+msgid ""
+"When you add or edit an item using the template you created above, the "
+"properties you set as numeric will appear as follows:"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:34
+msgid "Timestamp data"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:35
+msgid ""
+"A Timestamp property automatically loads with fields for Year, Month, and"
+" Day. Note that the Month input is a dropdown where you select from the "
+"months' names."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:37
+msgid "If you enter a day without a month, the day information will not be saved."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:39
+msgid ""
+"![Empty timestamp fields, for property Date](../modules/modulesfiles/ndt-"
+"timestamp1.png)"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:41
+msgid ""
+"Clicking on the \"time\" button to the right of the day input field will "
+"load additional dropdown fields for Hour, Minute, and Second. Note that "
+"there is no AM/PM option so you will want to use twenty-four hour time "
+"entries (14 for 2pm, etc)"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:43
+msgid ""
+"![Empty timestamp fields, for property Date, with a row of time entry "
+"options below the date entry options](../modules/modulesfiles/ndt-"
+"timestamp2.png)"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:45
+msgid "Entries must be whole numbers, with no decimal points."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:47
+msgid "Integer data"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:48
+msgid ""
+"An integer property has a narrow input which, once you have data in it, "
+"will display up and down arrows on the right hand side to  increase or "
+"decrease the value."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:50
+msgid ""
+"![Field for property Spatial Coverage with the number 1 in the integer "
+"entry field, and up or down toggle button on the right side of the "
+"field](../modules/modulesfiles/ndt-integer.png)"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:52
+msgid ""
+"Your entry must be whole number; decimal points are not supported and "
+"will be rounded up to the nearest number."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:54
+msgid "Duration data"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:55
+msgid ""
+"A Duration property has a series of fields in which to enter the duration"
+" of the resource. There are fields for:"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:57
+msgid "Years"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:58
+msgid "Months"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:59
+msgid "Days"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:60
+msgid "Hours"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:61
+msgid "Minutes"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:62
+msgid ""
+"Seconds By default, only the first three of these fields display. "
+"Clicking on the \"time\" button to the right of the day input field will "
+"load the fields for Hour, Minute, and Second. Note that there is no AM/PM"
+" option so you will want to use twenty-four hour time entries (14 for "
+"2pm, etc)"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:65
+msgid ""
+"![A property labelled duration, using the vocabulary dcterms \"extent\". "
+"There fields described are in a stack, with year on "
+"top.](../modules/modulesfiles/ndt-duration.png)"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:67
+msgid ""
+"You do not need to enter every field. For example, you can enter a "
+"duration of 1 year and 5 days, leaving the month field blank."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:69
+msgid "Interval data"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:70
+msgid ""
+"Interval data allows you to enter the beginning and end dates for a "
+"resource. There are two sets of timestamp fields, one for the start date "
+"and one for the end."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:72
+msgid ""
+"![Interval property with no times entered](../modules/modulesfiles/ndt-"
+"interval.png)"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:74
+msgid "Sort"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:75
+msgid ""
+"Once you have active resource templates using numeric data types, you can"
+" use these to sort on the Item, Media, and Item Set browse views."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:77
+msgid ""
+"Click the first dropdown on the upper right above the table of resources,"
+" which defaults to \"Created\""
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:79
+msgid ""
+"![A closeup of the options above the resource table, with a red arrow "
+"points to the \"created\" dropdown option\"](../modules/modulesfiles/ndt-"
+"browsesort1.png)"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:81
+msgid ""
+"Clicking on this dropdown will reveal multiple options, including all of "
+"the properties using numeric data types. These options display as the "
+"property with the data type in parentheses, for example \"Date "
+"(numeric:timestamp)\""
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:83
+msgid ""
+"![The contents of the dropdown, with the normal options in addition to "
+"eight properties using numeric data types.](../modules/modulesfiles/ndt-"
+"browsesort2.png)"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:86
+msgid "Bulk edit numeric data"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:87
+msgid ""
+"The module adds an additional option to the [item batch "
+"edit](../content/items.md#batch-actions): convert to numeric."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:89
+msgid ""
+"![Batch edit items form with a red rectangle outline surrounding the "
+"convert to numeric option](../modules/modulesfiles/ndt-batchoption"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:91
+msgid ""
+"The convert to numeric option lets you convert an existing text input "
+"property to a numeric data type. It will not work on properties where the"
+" data is currently an Omeka resource or a URI."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:93
+msgid ""
+"In the first field, select a property from the dropdown. You can type to "
+"search through the properties. Note that this dropdown loads the property"
+" names from the vocabulary and will not have the additional labels from "
+"your resource template, so be sure you know which vocabulary term you are"
+" looking for."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:95
+msgid "In the second field, select from the following options:"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:97
+msgid "convert to timestamp"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:98
+msgid "convert to interval"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:99
+msgid "convert to duration"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:100
+msgid "convert to integer"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:102
+msgid "Search numeric data"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:103
+msgid ""
+"When the module is active, it adds additional search options to the "
+"Advanced Search for items."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:105
+msgid ""
+"![Numeric data type search options, no data "
+"entered](../modules/modulesfiles/ndt-search.png)"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:107
+msgid ""
+"For each search option, you must select a specific property from the "
+"dropdown; if you are using Duration in two resource templates, one for "
+"film (ex `time:hasDuration`) and one for events (ex, `dcterms:extent`), "
+"you would need to select the correct property from the resource template "
+"which you want to search. The dropdown will display the original property"
+" labels (`Extent` or `hasDuration` in the examples above). If you hover "
+"over the properties in the dropdown, it will show you the resource "
+"templates which are using that property and to which the search will "
+"apply."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:110
+msgid ""
+"![Close up of the \"Date comes before\" search, displaying the hovertext "
+"for the Date property](../modules/modulesfiles/ndt-searchhelper.png)"
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:113
+msgid ""
+"**Timestamp** data has two search options, one for \"Date comes before\" "
+"and \"Date comes after\". Select the property for timestamp from the "
+"dropdown - only properties which are being used for timestamp will appear"
+" in the dropdown."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:115
+msgid ""
+"**Duration** data, like timestamp data, has two options, for Duration is "
+"greater than and duration is less than. After selecting the property you "
+"want to search on, enter values for years, months, days, hours, minutes, "
+"or seconds."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:117
+msgid ""
+"**Date in interval** searches for a date within an interval. When "
+"searching on an interval, be as precise as possible. Because of the way "
+"that the module stores timestamps, the date you are searching must fall "
+"*within* the interval. So a search for the year 1814 would not turn up an"
+" event with interval September 12-15, 1814, because of the way the data "
+"reads the two dates."
+msgstr ""
+
+#: ../../docs/modules/numericdatatypes.md:119
+msgid ""
+"**Integer** data is searchable with \"Value is less than\" and \"Value is"
+" greater than.\" As with the timestamp data, only properties which have "
+"numeric data will load in the dropdown."
+msgstr ""
+
