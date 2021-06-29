@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 20:27+0000\n"
-"PO-Revision-Date: 2021-06-28 22:32+0200\n"
+"PO-Revision-Date: 2021-06-29 13:02+0200\n"
 "Last-Translator: Julian Maurice <julian.maurice@biblibre.com>\n"
 "Language: fr_FR\n"
 "Language-Team: \n"
@@ -125,7 +125,7 @@ msgstr ""
 
 #: ../../docs/accessibility.rst:31
 msgid "Back End (Administrative view)"
-msgstr "Back End (vue administrative"
+msgstr "Back End (vue administrative)"
 
 #: ../../docs/accessibility.rst:33
 msgid ""
