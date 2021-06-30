@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 08:33+0000\n"
-"PO-Revision-Date: 2021-06-30 11:37+0200\n"
+"PO-Revision-Date: 2021-06-30 16:17+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
-"Last-Translator: \n"
+"Last-Translator: Julian Maurice <julian.maurice@biblibre.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../docs/content/item-sets.md:1
 msgid "Item Sets"
@@ -46,8 +46,8 @@ msgstr ""
 msgid ""
 "![Browse item sets view with four item sets.](contentfiles/itemsets_browse.png)"
 msgstr ""
-"![Vue des collections avec quatre collections.](/content/contentfiles/"
-"itemsets_browse.png)"
+"![Vue des collections avec quatre collections.](contentfiles/itemsets_browse."
+"png)"
 
 #: ../../docs/content/item-sets.md:9
 msgid "After clicking on the tab, a table appears listing all item sets with:"
@@ -133,8 +133,8 @@ msgid ""
 "![Drawer view of an item, with description and title](contentfiles/"
 "itemsets_drawer.png)"
 msgstr ""
-"![Vue de l'onglet d'une collection, avec description et titre](/content/"
-"contentfiles/itemsets_drawer.png)"
+"![Vue de l'onglet d'une collection, avec description et titre](contentfiles/"
+"itemsets_drawer.png)"
 
 #: ../../docs/content/item-sets.md:32
 msgid ""
@@ -155,8 +155,7 @@ msgstr ""
 
 #: ../../docs/content/item-sets.md:34
 msgid "![Reading view of a single item set](contentfiles/itemsets_view.png)"
-msgstr ""
-"![Vue du détail d'une collection](/content/contentfiles/itemsets_view.png)"
+msgstr "![Vue du détail d'une collection](contentfiles/itemsets_view.png)"
 
 #: ../../docs/content/item-sets.md:36
 msgid "The item set’s *metadata* is entered by users."
@@ -239,7 +238,7 @@ msgstr ""
 #: ../../docs/content/item-sets.md:54
 msgid "![Add item set, no properties selected](contentfiles/itemsets_add.png)"
 msgstr ""
-"![Ajout d'une collection, aucune propriété sélectionnée](/content/contentfiles/"
+"![Ajout d'une collection, aucune propriété sélectionnée](contentfiles/"
 "itemsets_add.png)"
 
 #: ../../docs/content/item-sets.md:56
@@ -289,7 +288,7 @@ msgstr ""
 
 #: ../../docs/content/item-sets.md:62
 msgid "![As described](contentfiles/item_propviz.png)"
-msgstr "![Comme décrit précedemment](/content/contentfiles/item_propviz.png)"
+msgstr "![Comme décrit précedemment](contentfiles/item_propviz.png)"
 
 #: ../../docs/content/item-sets.md:64
 msgid "Text"
@@ -348,6 +347,10 @@ msgid ""
 "top of the drawer to narrow down the list or to quickly find a specific item "
 "or item set"
 msgstr ""
+"Choisir un type de ressource ouvrira un tiroir où vous pourrez parcourir "
+"toutes ces ressource dans l'installation. Vous pouvez utiliser la fonction de "
+"recherche en haut du tiroir pour restreindre la liste ou pour trouver "
+"rapidement un contenu ou une collection spécifique"
 
 #: ../../docs/content/item-sets.md:74
 msgid ""
@@ -366,8 +369,8 @@ msgid ""
 "![Select Item menu with list of items to link in edit item view](contentfiles/"
 "items_addresource.png)"
 msgstr ""
-"![Menu Sélectionner un contenu avec une collection à lier](/content/"
-"contentfiles/items_addresource.png)"
+"![Menu Sélectionner un contenu avec une collection à lier](contentfiles/"
+"items_addresource.png)"
 
 #: ../../docs/content/item-sets.md:78
 msgid ""
@@ -386,8 +389,8 @@ msgid ""
 "items_filtersearch.png)"
 msgstr ""
 "![Sélection des options supérieures de l'onglet, avec une flèche rouge autour "
-"d'un bouton triangle gris à droite de la phrase \"Filtre de recherche\".](/"
-"content/contentfiles/items_filtersearch.png)"
+"d'un bouton triangle gris à droite de la phrase \"Filtre de recherche\".]"
+"(contentfiles/items_filtersearch.png)"
 
 #: ../../docs/content/item-sets.md:82
 msgid ""
@@ -403,8 +406,8 @@ msgid ""
 "vocabularies on the installation;"
 msgstr ""
 "Filtrer par classe: une liste déroulante dans laquelle vous pouvez "
-"sélectionner n’\n"
-"importe quelle classe fournie par les vocabulaires de l’instance;"
+"sélectionner n’importe quelle classe fournie par les vocabulaires de "
+"l’instance;"
 
 #: ../../docs/content/item-sets.md:85
 msgid ""
@@ -413,7 +416,7 @@ msgid ""
 msgstr ""
 "Filtrer par collection: une liste déroulante dans laquelle vous pouvez limiter "
 "les contenus affichés dans l'onglet à ceux associés à une collection "
-"particuliere."
+"particulière."
 
 #: ../../docs/content/item-sets.md:86
 msgid ""
@@ -430,7 +433,7 @@ msgstr ""
 
 #: ../../docs/content/item-sets.md:88
 msgid "![options as above described](contentfiles/item_addresItem.png)"
-msgstr "![options décrites ci-dessus](/content/contentfiles/item_addresItem.png)"
+msgstr "![options décrites ci-dessus](contentfiles/item_addresItem.png)"
 
 #: ../../docs/content/item-sets.md:90
 msgid ""
@@ -454,8 +457,8 @@ msgid ""
 "(contentfiles/items_quickadd.png)"
 msgstr ""
 "![une flèche rouge pointe sur le curseur pour \"Ajout rapide\". Les contenus "
-"visibles ont une case à cocher vide à gauche de la vignette](/content/"
-"contentfiles/items_quickadd.png)"
+"visibles ont une case à cocher vide à gauche de la vignette](contentfiles/"
+"items_quickadd.png)"
 
 #: ../../docs/content/item-sets.md:94
 msgid "URI"
@@ -468,7 +471,7 @@ msgstr ""
 
 #: ../../docs/content/item-sets.md:100
 msgid "Advanced tab"
-msgstr ""
+msgstr "Onglet avancé"
 
 #: ../../docs/content/item-sets.md:101
 msgid ""
@@ -487,8 +490,8 @@ msgid ""
 "itemset_thumb1.png)"
 msgstr ""
 "![Onglet Vignette sans valeur sélectionnée. L'onglet affiche un message sur la "
-"création de vignettes et un bouton pour \"sélectionner\" une valeur.](/content/"
-"contentfiles/itemset_thumb1.png)"
+"création de vignettes et un bouton pour \"sélectionner\" une valeur.]"
+"(contentfiles/itemset_thumb1.png)"
 
 #: ../../docs/content/item-sets.md:105
 msgid ""
@@ -497,7 +500,7 @@ msgid ""
 msgstr ""
 "Les ressources que vous avez sélectionnées et téléchargées sous forme de "
 "vignettes dans cet onglet sont les mêmes que celles créées pour [les logos du "
-"site](../sites/site_theme/#settings-options)."
+"site](../sites/site_theme.md#settings-options)."
 
 #: ../../docs/content/item-sets.md:107
 msgid ""
@@ -511,7 +514,7 @@ msgstr ""
 msgid ""
 "![Select drawer with upload option and two assets, both of which are images.]"
 "(contentfiles/itemset_thumb2.png)"
-msgstr "![Option de téléchargement.](/content/contentfiles/itemset_thumb2.png)"
+msgstr "![Option de téléchargement.](contentfiles/itemset_thumb2.png)"
 
 #: ../../docs/content/item-sets.md:111
 msgid ""
@@ -531,7 +534,7 @@ msgid ""
 "buttons for Select and Clear](contentfiles/itemset_thumb3.png)"
 msgstr ""
 "![Ajout d'une collection ouvert. En dessous, des boutons pour sélectionner et "
-"effacer](/content/contentfiles/itemset_thumb3.png)"
+"effacer](contentfiles/itemset_thumb3.png)"
 
 #: ../../docs/content/item-sets.md:115
 msgid ""
@@ -584,8 +587,8 @@ msgid ""
 "open eye](contentfiles/setOpenPublic.png) Open and Public"
 msgstr ""
 "![une collection ouverte et publique, avec une icône de cadenas ouvert et une "
-"icône représentant un œil ouvert](/content/contentfiles/setOpenPublic.png) "
-"Open and Public."
+"icône représentant un œil ouvert](contentfiles/setOpenPublic.png) Ouvert et "
+"Public"
 
 #: ../../docs/content/item-sets.md:129
 msgid ""
@@ -594,8 +597,8 @@ msgid ""
 "and Private"
 msgstr ""
 "![une collection fermée et privée, avec une icône de cadenas fermé et une "
-"icône représentant un œil barré](/content/contentfiles/setClosedPrivate.png)  "
-"Closed and Private"
+"icône représentant un œil barré](contentfiles/setClosedPrivate.png) Fermé et "
+"Privé"
 
 #: ../../docs/content/item-sets.md:131
 msgid ""
@@ -641,7 +644,7 @@ msgid ""
 "itemset_cancel.png)"
 msgstr ""
 "![Vue détaillée. Une flèche rouge pointe vers le bouton Annuler, à l'extrême "
-"droite](/content/contentfiles/itemset_cancel.png)"
+"droite](contentfiles/itemset_cancel.png)"
 
 #: ../../docs/content/item-sets.md:142
 msgid "Batch Editing"
@@ -666,7 +669,7 @@ msgid ""
 "(contentfiles/itemsets_batch.png)"
 msgstr ""
 "![Une flèche rouge pointe vers la liste déroulante pour les options d'édition "
-"et de suppression par lots](/content/contentfiles/itemsets_batch.png)"
+"et de suppression par lots](contentfiles/itemsets_batch.png)"
 
 #: ../../docs/content/item-sets.md:148
 msgid "Batch actions are as follows:"
@@ -759,7 +762,7 @@ msgid ""
 "grayscale](contentfiles/itemsets_batchedit.png)"
 msgstr ""
 "![L'édition en lot mène au formulaire avec les options décrites ci-dessus. "
-"Tout est en niveaux de gris](/content/contentfiles/itemsets_batchedit.png)"
+"Tout est en niveaux de gris](contentfiles/itemsets_batchedit.png)"
 
 #: ../../docs/content/item-sets.md:167
 msgid ""
@@ -798,9 +801,8 @@ msgid ""
 msgstr ""
 "![L'image représente uniquement le bloc Ajouter une valeur de texte du "
 "formulaire de modification par lot, avec une liste déroulante intitulée "
-"\"Sélectionner la propriété\n"
-"\" au-dessus d'un champ de texte vide.](/content/contentfiles/"
-"itemsets_property.png)"
+"\"Sélectionner la propriété\" au-dessus d'un champ de texte vide.]"
+"(contentfiles/itemsets_property.png)"
 
 #: ../../docs/content/item-sets.md:177
 msgid ""
@@ -827,7 +829,7 @@ msgid ""
 "deleted in red.](contentfiles/itemsets_bulkdelete.png)"
 msgstr ""
 "![Gros plan sur l'avertissement, avec le texte décrivant le nombre d'éléments "
-"à supprimer en rouge.](/content/contentfiles/itemsets_bulkdelete.png)"
+"à supprimer en rouge.](contentfiles/itemsets_bulkdelete.png)"
 
 #: ../../docs/content/item-sets.md:181
 msgid "Delete Item Set"
@@ -859,12 +861,11 @@ msgid ""
 "the drawer to cancel."
 msgstr ""
 "Dans l'écran Collections, vous pouvez supprimer une collection en cliquant sur "
-"l'icô\n"
-"ne corbeille sur la ligne correspondante à la collection que vous souhaitez "
-"supprimer. Cela ouvrira un onglet sur la droite avec un message en haut vous "
-"demandant de confirmer que vous souhaitez supprimer la collection avec les "
-"métadonnées pour la collection situées sous le bouton de confirmation de "
-"suppression. Cliquez sur *Confirmer la suppression* pour supprimer la "
+"l'icône corbeille sur la ligne correspondante à la collection que vous "
+"souhaitez supprimer. Cela ouvrira un onglet sur la droite avec un message en "
+"haut vous demandant de confirmer que vous souhaitez supprimer la collection "
+"avec les métadonnées pour la collection situées sous le bouton de confirmation "
+"de suppression. Cliquez sur *Confirmer la suppression* pour supprimer la "
 "collection ou fermez l'onglet pour annuler."
 
 #: ../../docs/content/item-sets.md:188
@@ -873,7 +874,7 @@ msgid ""
 "trash can icon](contentfiles/itemsets_browseDel.png)"
 msgstr ""
 "![Vue des collections avec deux collections et une flèche rouge pointant sur "
-"l'icône de la corbeille](/content/contentfiles/itemsets_browseDel.png)"
+"l'icône de la corbeille](contentfiles/itemsets_browseDel.png)"
 
 #: ../../docs/content/item-sets.md:190
 msgid ""
@@ -884,8 +885,7 @@ msgid ""
 msgstr ""
 "![Onglet avec un message de confirmation pour supprimer une collection et les "
 "métadonnées descriptives de base de la collection - titre, description et "
-"nombre d'éléments dans la collection. ](/content/contentfiles/"
-"itemsets_browseDel2.png)"
+"nombre d'éléments dans la collection. ](contentfiles/itemsets_browseDel2.png)"
 
 #: ../../docs/content/item-sets.md:193
 msgid ""
@@ -908,5 +908,5 @@ msgid ""
 msgstr ""
 "![Gros plan sur l'onglet d'avertissement, avec le texte \"Voulez-vous vraiment "
 "supprimer cette collection\" et en dessous, un bouton rouge avec du texte "
-"blanc indiquant \"Confirmer la suppression\".](/content/contentfiles/itemset-"
-"delete2.png)"
+"blanc indiquant \"Confirmer la suppression\".](contentfiles/itemset-delete2."
+"png)"
