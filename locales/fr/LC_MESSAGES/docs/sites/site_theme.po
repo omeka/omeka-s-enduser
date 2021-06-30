@@ -4,413 +4,541 @@
 # manual package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Omeka S end user manual \n"
+"Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 20:27+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-07-01 00:00+0200\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Julian Maurice <julian.maurice@biblibre.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../docs/sites/site_theme.md:1
 msgid "Theme Selection"
-msgstr ""
+msgstr "Sélection du thème"
 
 #: ../../docs/sites/site_theme.md:3
 msgid ""
-"The Theme tab of the site context menu allows you to select the theme for"
-" your site, and to set theme-specific settings."
+"The Theme tab of the site context menu allows you to select the theme for your "
+"site, and to set theme-specific settings."
 msgstr ""
+"L'onglet thème du menu contextuel du site vous permet de sélectionner le thème "
+"de votre site, et de définir les paramètres spécifiques du thème."
 
 #: ../../docs/sites/site_theme.md:5
 msgid "Select a Theme"
-msgstr ""
+msgstr "Sélectionner un thème"
 
 #: ../../docs/sites/site_theme.md:7
 msgid ""
-"When you navigate to the Theme tab, the currently active theme will "
-"appear on the top of the page. If you did not select a theme when adding "
-"the site, this will be the Default theme."
+"When you navigate to the Theme tab, the currently active theme will appear on "
+"the top of the page. If you did not select a theme when adding the site, this "
+"will be the Default theme."
 msgstr ""
+"Quand vous naviguez vers l'onglet Thème, le thème actuellement actif "
+"apparaîtra en haut de la page. Si vous n'aviez pas sélectionné de thème à la "
+"création du site, ce sera le thème par défaut."
 
 #: ../../docs/sites/site_theme.md:9
 msgid ""
 "A large image of the active appears on the left, with the theme Title, "
 "creator, and a button for Theme Settings on the right."
 msgstr ""
+"Une grande image du thème actif apparaît sur la gauche, avec le titre du "
+"thème, le créateur, et un bouton pour les paramètres du thème sur la droite."
 
 #: ../../docs/sites/site_theme.md:11
 msgid ""
-"![Theme tab with Center Row as the current "
-"theme](../sites/sitesfiles/sitetheme_tab.png)"
+"![Theme tab with Center Row as the current theme](../sites/sitesfiles/"
+"sitetheme_tab.png)"
 msgstr ""
+"![Onglet thème avec Center Row comme thème actuel](../sites/sitesfiles/"
+"sitetheme_tab.png)"
 
 #: ../../docs/sites/site_theme.md:13
 msgid ""
 "Below the current theme are buttons for all other installed themes. The "
-"buttons have a small image of the theme in action, the theme name, and a "
-"link to the creator of the theme."
+"buttons have a small image of the theme in action, the theme name, and a link "
+"to the creator of the theme."
 msgstr ""
+"Sous le thème actuel se trouvent des boutons pour tous les autres thèmes "
+"installés. Les boutons ont une petite image du thème en action, le nom du "
+"thème et un lien vers le créateur du thème."
 
 #: ../../docs/sites/site_theme.md:15
 msgid ""
 "To switch themes, click on the theme which you want to use. It should "
-"highlight slightly in gray, with a checkbox in the lower right-hand "
-"corner of the theme button."
+"highlight slightly in gray, with a checkbox in the lower right-hand corner of "
+"the theme button."
 msgstr ""
+"Pour changer de thème, cliquez sur le thème souhaité. Il devrait être "
+"légèrement mis en évidence en gris, avec une case à cocher dans le coin "
+"inférieur droit du bouton du thème."
 
 #: ../../docs/sites/site_theme.md:17
 msgid ""
-"![A selected theme showing the highlight and "
-"checkmark](../sites/sitesfiles/sites_themeselect.png)"
+"![A selected theme showing the highlight and checkmark](../sites/sitesfiles/"
+"sites_themeselect.png)"
 msgstr ""
+"![Un thème sélectionné montrant la mise en évidence et la case cochée](../"
+"sites/sitesfiles/sites_themeselect.png)"
 
 #: ../../docs/sites/site_theme.md:19
 msgid ""
-"Click the Save button in the upper right-hand corner of the window to "
-"save changes. Click the Cancel button to leave without saving changes."
+"Click the Save button in the upper right-hand corner of the window to save "
+"changes. Click the Cancel button to leave without saving changes."
 msgstr ""
+"Cliquez sur le bouton Enregistrer dans le coin supérieur droit de la fenêtre "
+"pour enregistrer les changements. Cliquez sur le bouton Annuler pour partir "
+"sans enregistrer les changements."
 
 #: ../../docs/sites/site_theme.md:21
 msgid "Theme Settings"
-msgstr ""
+msgstr "Paramètres du thème"
 
 #: ../../docs/sites/site_theme.md:23
 msgid ""
-"Theme settings allow you to customize aspects of the site's theme, such "
-"as adding a logo to the top or writing footer text."
+"Theme settings allow you to customize aspects of the site's theme, such as "
+"adding a logo to the top or writing footer text."
 msgstr ""
+"Les paramètres du thème vous permettent de personnaliser l'aspect du thème du "
+"site, par exemple en ajoutant un logo, ou en rédigeant un texte de pied de "
+"page."
 
 #: ../../docs/sites/site_theme.md:25
 msgid ""
-"To edit the settings of your selected theme, click on the button labeled "
-"*edit theme settings* to the right of the current theme thumbnail "
-"(highlighted with an arrow in the below image)."
+"To edit the settings of your selected theme, click on the button labeled *edit "
+"theme settings* to the right of the current theme thumbnail (highlighted with "
+"an arrow in the below image)."
 msgstr ""
+"Pour modifier les paramètres de votre thème sélectionné, cliquez sur le bouton "
+"libellé *modifier les paramètres du thème* à droite de la vignette du thème "
+"actuel (mis en évidence par une flèche dans l'image ci-dessous)."
 
 #: ../../docs/sites/site_theme.md:27
 msgid "![Theme settings button](../sites/sitesfiles/sitetheme_settings.png)"
 msgstr ""
+"![Bouton des paramètres du thème](../sites/sitesfiles/sitetheme_settings.png)"
 
 #: ../../docs/sites/site_theme.md:29
 msgid ""
-"Note that your settings for a specific theme on a site will be saved even"
-" if you change themes. For example, if you customized the footer for the "
-"default theme, then switched to using The Daily for a while, then "
-"switched back to the default theme, your custom footer would still be "
-"there."
+"Note that your settings for a specific theme on a site will be saved even if "
+"you change themes. For example, if you customized the footer for the default "
+"theme, then switched to using The Daily for a while, then switched back to the "
+"default theme, your custom footer would still be there."
 msgstr ""
+"Notez que vos paramètres pour un thème spécifique sur un site seront conservés "
+"même si vous changez de thème. Par exemple, si vous aviez personnalisé le pied "
+"de page du thème par défaut, puis changé pour le thème The Daily pendant un "
+"moment, puis changé encore pour le thème par défaut, votre pied de page "
+"personnalisé serait toujours là."
 
 #: ../../docs/sites/site_theme.md:31
 msgid "Settings Options"
-msgstr ""
+msgstr "Options de paramétrage"
 
 #: ../../docs/sites/site_theme.md:32
 msgid ""
-"Depending on which theme you have selected, you may see any of the "
-"following setting options:"
+"Depending on which theme you have selected, you may see any of the following "
+"setting options:"
 msgstr ""
+"Selon le thème que vous avez sélectionné, vous pouvez voir certaines des "
+"options suivantes:"
 
 #: ../../docs/sites/site_theme.md:34
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: ../../docs/sites/site_theme.md:35
 msgid ""
-"(All themes) Upload a asset (file) to function as a logo in the header of"
-" your site. Allowed file types are: jpg, gif, png, svg, and svgz."
+"(All themes) Upload a asset (file) to function as a logo in the header of your "
+"site. Allowed file types are: jpg, gif, png, svg, and svgz."
 msgstr ""
+"(Tous les thèmes) Téléchargez une ressource (un fichier) comme logo dans l'en-"
+"tête de votre site. Les types de fichier autorisés sont: jpg, gif, png, svg, "
+"et svgz."
 
 #: ../../docs/sites/site_theme.md:38
 msgid ""
 "This asset is not associated with any of the items, and will be stored "
 "separately; once uploaded to a site you will be able to select it again "
-"without re-uploading even if you change themes for a while. Any asset "
-"uploaded to one site will be available for all sites on the installation."
+"without re-uploading even if you change themes for a while. Any asset uploaded "
+"to one site will be available for all sites on the installation."
 msgstr ""
+"Cette ressource n'est associée à aucun des contenus, et sera stockée "
+"séparément; une fois téléchargée pour un site vous pourrez le sélectionner à "
+"nouveau sans le re-télécharger même si vous changer de thème pour un moment. "
+"Toutes les ressources téléchargées pour un site seront disponibles pour tous "
+"les sites de l'installation."
 
 #: ../../docs/sites/site_theme.md:40
 msgid "![Logo option](../sites/sitesfiles/sitetheme_logo.png)"
-msgstr ""
+msgstr "![Option Logo](../sites/sitesfiles/sitetheme_logo.png)"
 
 #: ../../docs/sites/site_theme.md:42
 msgid ""
-"To upload a logo, click the Select button. This will open a sidebar where"
-" you can either upload a new file from your computer or choose from "
-"assets already uploaded to the installation."
+"To upload a logo, click the Select button. This will open a sidebar where you "
+"can either upload a new file from your computer or choose from assets already "
+"uploaded to the installation."
 msgstr ""
+"Pour télécharger un logo, cliquez sur le bouton Sélectionner. Cela ouvrira une "
+"barre latérale où vous pouvez soit télécharger un nouveau fichier depuis votre "
+"ordinateur ou choisir parmi les ressources déjà téléchargées dans "
+"l'installation."
 
 #: ../../docs/sites/site_theme.md:44
 msgid "![Logo option with sidebar open](../sites/sitesfiles/sitetheme_logo2.png)"
 msgstr ""
+"![Option Logo avec la barre latérale ouverte](../sites/sitesfiles/"
+"sitetheme_logo2.png)"
 
 #: ../../docs/sites/site_theme.md:46
 msgid ""
-"Note that the logo completely replaces the header, including the site "
-"title, for the site, so you may want to consider an image with text if it"
-" is important to you that users see the site title."
+"Note that the logo completely replaces the header, including the site title, "
+"for the site, so you may want to consider an image with text if it is "
+"important to you that users see the site title."
 msgstr ""
+"Notez que le logo remplace complètement l'en-tête, y compris le titre du site, "
+"pour le site, donc envisagez une image avec du texte si c'est important pour "
+"vous que les utilisateurs voient le titre du site."
 
 #: ../../docs/sites/site_theme.md:48
 msgid ""
-"To remove a logo, click the *clear* button in that block (only visible "
-"when a logo is active) and save changes."
+"To remove a logo, click the *clear* button in that block (only visible when a "
+"logo is active) and save changes."
 msgstr ""
+"Pour supprimer un logo, cliquez sur le bouton *retirer* dans ce bloc (visible "
+"uniquement si un logo est actif) et enregistrer les changements."
 
 #: ../../docs/sites/site_theme.md:50
 msgid "Footer Content"
-msgstr ""
+msgstr "Contenu de pied de page"
 
 #: ../../docs/sites/site_theme.md:51
 msgid ""
-"(All themes) A text field in which you can enter content to appear in the"
-" footer of the site."
+"(All themes) A text field in which you can enter content to appear in the "
+"footer of the site."
 msgstr ""
+"(Tous les thèmes) Un champ texte dans lequel vous pouvez saisir du contenu qui "
+"apparaîtra dans le pied de page du site."
 
 #: ../../docs/sites/site_theme.md:54
 msgid ""
-"![footer text field with prompt "
-"visible](../sites/sitesfiles/sitetheme_footer.png)"
+"![footer text field with prompt visible](../sites/sitesfiles/sitetheme_footer."
+"png)"
 msgstr ""
+"![champ de texte de pied de page avec l'invite visible](../sites/sitesfiles/"
+"sitetheme_footer.png)"
 
 #: ../../docs/sites/site_theme.md:56
 msgid "By default the message is Powered by Omeka S."
-msgstr ""
+msgstr "Par défaut le message est Powered by Omeka S."
 
 #: ../../docs/sites/site_theme.md:58
 msgid "You can add HTML formatting to the text by manually adding the tags."
 msgstr ""
+"Vous pouvez ajouter du formatage HTML au texte en ajoutant manuellement des "
+"tags."
 
 #: ../../docs/sites/site_theme.md:61
 msgid "Top Navigation Depth"
-msgstr ""
+msgstr "Profondeur de la navigation du haut"
 
 #: ../../docs/sites/site_theme.md:62
 msgid ""
-"(Default, Cozy, Foundation) Top Navigation Depth allows you the limit the"
-" depth of the top navigation menu on the public side of the site.  The "
-"default setting, 0, does not restrict the number of levels of the top "
-"navigation menu. Setting it to one would only show the top-level pages or"
-" links of your site."
+"(Default, Cozy, Foundation) Top Navigation Depth allows you the limit the "
+"depth of the top navigation menu on the public side of the site.  The default "
+"setting, 0, does not restrict the number of levels of the top navigation menu. "
+"Setting it to one would only show the top-level pages or links of your site."
 msgstr ""
+"(Défaut, Cozy, Foundation) La profondeur de la navigation du haut vous permet "
+"de limiter la profondeur du menu de navigation du haut de la partie publique "
+"du site. La valeur par défaut, 0, ne limite pas le nombre de niveaux du menu "
+"de navigation du haut. Le définir à un montrerait uniquement les pages ou "
+"liens de premier niveau de votre site."
 
 #: ../../docs/sites/site_theme.md:65
 msgid ""
-"![Theme settings with Top Navigation depth at "
-"0](../sites/sitesfiles/sitetheme_depth.png)"
+"![Theme settings with Top Navigation depth at 0](../sites/sitesfiles/"
+"sitetheme_depth.png)"
 msgstr ""
+"![Paramètres du thème avec la profondeur de la navigation du haut à 0](../"
+"sites/sitesfiles/sitetheme_depth.png)"
 
 #: ../../docs/sites/site_theme.md:67
 msgid "Color Selection"
-msgstr ""
+msgstr "Sélection de la couleur"
 
 #: ../../docs/sites/site_theme.md:68
 msgid "(Default, Cozy, The Daily)"
-msgstr ""
+msgstr "(Défaut, Cozy, The Daily)"
 
 #: ../../docs/sites/site_theme.md:70
 msgid ""
-"The themes Default, Cozy, and The Daily include an option to enter values"
-" for the *main accent color*; Cozy also has an option for the *navigation"
-" background color*."
+"The themes Default, Cozy, and The Daily include an option to enter values for "
+"the *main accent color*; Cozy also has an option for the *navigation "
+"background color*."
 msgstr ""
+"Les thèmes Défaut, Cozy, et The Daily incluent une option pour saisir des "
+"valeurs pour la *couleur d'emphase principale*; Cozy a aussi une option pour "
+"la *couleur d'arrière-plan de la navigation*."
 
 #: ../../docs/sites/site_theme.md:72
 msgid "![color option fields](../sites/sitesfiles/sitetheme_color.png)"
-msgstr ""
+msgstr "![champs d'options de couleur](../sites/sitesfiles/sitetheme_color.png)"
 
 #: ../../docs/sites/site_theme.md:74
 msgid ""
-"The Main Accent color is used for link text and on-hover colors, as in "
-"the image below:  ![arrow points to instances of main accent color in "
-"use](../sites/sitesfiles/sitetheme_mainaccent.png)"
+"The Main Accent color is used for link text and on-hover colors, as in the "
+"image below:  ![arrow points to instances of main accent color in use](../"
+"sites/sitesfiles/sitetheme_mainaccent.png)"
 msgstr ""
+"La couleur d'emphase principale est utilisée pour les liens texte et les "
+"couleurs de survol, comme dans l'image ci-dessous: ![une flèche pointe vers "
+"les instances de la couleur d'emphase principale en action](../sites/"
+"sitesfiles/sitetheme_mainaccent.png)"
 
 #: ../../docs/sites/site_theme.md:77
 msgid ""
-"The navigation background color sets the color of the navigation sidebar "
-"for the theme.  ![arrow points to "
-"sidebar](../sites/sitesfiles/sitetheme_navcolor.png)"
+"The navigation background color sets the color of the navigation sidebar for "
+"the theme.  ![arrow points to sidebar](../sites/sitesfiles/sitetheme_navcolor."
+"png)"
 msgstr ""
+"La couleur d'arrière plan de la navigation définit la couleur de la barre "
+"latérale de navigation pour le thème. ![une flèche pointe vers la barre "
+"latérale](../sites/sitesfiles/sitetheme_navcolor.png)"
 
 #: ../../docs/sites/site_theme.md:80
 msgid ""
-"Edit either field by typing a [color "
-"value](https://en.wikipedia.org/wiki/Web_colors) into the field. Either a"
-" triplet or a six-character hexadecimal code will work. Once you have "
-"entered a valid value, the color bar on the left will automatically "
-"update to show the color entered, even without saving changes."
+"Edit either field by typing a [color value](https://en.wikipedia.org/wiki/"
+"Web_colors) into the field. Either a triplet or a six-character hexadecimal "
+"code will work. Once you have entered a valid value, the color bar on the left "
+"will automatically update to show the color entered, even without saving "
+"changes."
 msgstr ""
+"Modifiez le champ en saisissant une [valeur de couleur](https://en.wikipedia."
+"org/wiki/Web_colors) dans le champ. Soit un triplet soit un code hexadécimal "
+"sur six caractères fonctionnera. Une fois que vous avez saisi une valeur "
+"valide, la barre de couleur sur la gauche sera automatiquement mise à jour "
+"pour afficher la couleur saisie, même sans enregistrer les changements."
 
 #: ../../docs/sites/site_theme.md:82
 msgid ""
-"The default values are stored in the prompt text for the field. For the "
-"Cozy theme, the default values are: main accent color is `087b94` and "
-"navigation background color is `bfdcdc`'"
+"The default values are stored in the prompt text for the field. For the Cozy "
+"theme, the default values are: main accent color is `087b94` and navigation "
+"background color is `bfdcdc`'"
 msgstr ""
+"Les valeurs par défaut sont stockées dans le texte d'invite du champ. Pour le "
+"thème Cozy, les valeurs par défaut sont: la couleur d'emphase principale est "
+"`087b94` et la couleur d'arrière-plan de navigation est `bfdcdc`"
 
 #: ../../docs/sites/site_theme.md:84
 msgid "Layout for Browse Pages"
-msgstr ""
+msgstr "Disposition pour les pages de liste"
 
 #: ../../docs/sites/site_theme.md:85
 msgid ""
-"(Center Row, Foundation) Select how to display items within their browse "
-"views."
+"(Center Row, Foundation) Select how to display items within their browse views."
 msgstr ""
+"(Center Row, Foundation) Sélectionnez comment afficher les contenus à "
+"l'intérieur des vues de liste."
 
 #: ../../docs/sites/site_theme.md:88
 msgid ""
-"**Grid**: Items are organized into rows and columns. This is recommended "
-"for items that prominently feature images."
+"**Grid**: Items are organized into rows and columns. This is recommended for "
+"items that prominently feature images."
 msgstr ""
+"**Grille**: Les contenus sont organisés en lignes et colonnes. C'est "
+"recommandé pour les contenus qui présentent des images de manière notable."
 
 #: ../../docs/sites/site_theme.md:89
 msgid "**List**: Items are stacked into a single column."
-msgstr ""
+msgstr "**Liste**: Les contenus sont empilés en une seule colonne."
 
 #: ../../docs/sites/site_theme.md:90
 msgid ""
-"**Toggle (default: grid):** Site visitors can choose to display the "
-"browse views as grids or lists, with grids as the default."
+"**Toggle (default: grid):** Site visitors can choose to display the browse "
+"views as grids or lists, with grids as the default."
 msgstr ""
+"**Bouton (défaut: grille):** Les visiteurs du site peuvent choisir d'afficher "
+"les vues liste en grille ou en liste, les grilles étant la vue par défaut."
 
 #: ../../docs/sites/site_theme.md:91
 msgid ""
-"**Toggle (default: list):** Site visitors can choose to display the "
-"browse views as grids or lists, with lists as the default."
+"**Toggle (default: list):** Site visitors can choose to display the browse "
+"views as grids or lists, with lists as the default."
 msgstr ""
+"**Bouton (défaut: liste):** Les visiteurs du site peuvent choisir d'afficher "
+"les vues liste en grille ou en liste, les listes étant la vue par défaut."
 
 #: ../../docs/sites/site_theme.md:93
 msgid "Foundation Theme Settings"
-msgstr ""
+msgstr "Paramètres du thème Foundation"
 
 #: ../../docs/sites/site_theme.md:94
 msgid ""
 "Foundation is theme which comes with a few default stylesheets for fast "
-"prototyping or getting started with modifying themes. As a result it has "
-"some unique settings. For more information on using Foundation, including"
-" working with Sass, see the [theme ReadMe "
-"file](https://github.com/omeka-s-themes/foundation-s/blob/master/README.md)."
+"prototyping or getting started with modifying themes. As a result it has some "
+"unique settings. For more information on using Foundation, including working "
+"with Sass, see the [theme ReadMe file](https://github.com/omeka-s-themes/"
+"foundation-s/blob/master/README.md)."
 msgstr ""
+"Foundation est un thème qui vient avec quelques feuilles de style par défaut "
+"pour un prototypage rapide ou pour débuter avec la modification de thèmes. Par "
+"conséquent, il a des paramètres uniques. Pour plus d'informations sur "
+"l'utilisation de Foundation, y compris l'utilisation de Sass, voir le [fichier "
+"Readme du thème](https://github.com/omeka-s-themes/foundation-s/blob/master/"
+"README.md)."
 
 #: ../../docs/sites/site_theme.md:96
 msgid "Settings not described above:"
-msgstr ""
+msgstr "Paramètres non décrits ci-dessus:"
 
 #: ../../docs/sites/site_theme.md:97
 msgid "**Stylesheet:** The theme provides 4 style options."
-msgstr ""
+msgstr "**Feuille de style:** Le thème fournit 4 options de style."
 
 #: ../../docs/sites/site_theme.md:98
 msgid ""
-"**Default** uses ZURB Foundation's default styles for prototyping, which "
-"are all viewable in their documentation under the [Kitchen "
-"Sink](https://get.foundation/sites/docs/kitchen-sink.html)."
+"**Default** uses ZURB Foundation's default styles for prototyping, which are "
+"all viewable in their documentation under the [Kitchen Sink](https://get."
+"foundation/sites/docs/kitchen-sink.html)."
 msgstr ""
+"**Défaut** utilise les styles par défaut de ZURB Foundation pour le "
+"prototypage, qui sont tous visualisables dans leur documentation [Kitchen Sink]"
+"(https://get.foundation/sites/docs/kitchen-sink.html)."
 
 #: ../../docs/sites/site_theme.md:99
 msgid ""
-"**Revolution** aims to capture the feel of old documents and juxtaposes "
-"it with a bright red accent. It includes a textured paper background "
-"image."
+"**Revolution** aims to capture the feel of old documents and juxtaposes it "
+"with a bright red accent. It includes a textured paper background image."
 msgstr ""
+"**Revolution** a pour but de capture la sensation des vieux documents et la "
+"juxtapose avec une emphase rouge vif. Il inclus une image d'arrière-plan de "
+"papier texturé."
 
 #: ../../docs/sites/site_theme.md:100
 msgid "**Sea Foam** offers a clean, friendly look with a teal palette."
 msgstr ""
+"**Sea foam** fournit un look clair et convivial avec une palette sarcelle."
 
 #: ../../docs/sites/site_theme.md:101
 msgid ""
-"**Inkwell** features a high contrast serif family for its typography, as "
-"well as sunny yellow accents."
+"**Inkwell** features a high contrast serif family for its typography, as well "
+"as sunny yellow accents."
 msgstr ""
+"**Inkwell* comporte une famille serif à haut contraste pour sa typographie, "
+"ainsi qu'une emphase jaune ensoleillée."
 
 #: ../../docs/sites/site_theme.md:102
 msgid ""
-"**Navigation layouts:** Global navigation can display as a **horizontal "
-"top bar with optional dropdown menus** or a **left vertical column**."
+"**Navigation layouts:** Global navigation can display as a **horizontal top "
+"bar with optional dropdown menus** or a **left vertical column**."
 msgstr ""
+"**Dispositions de la navigation:** La navigation globale peut être affichée "
+"comme une **barre haute horizontale avec des menus déroulants optionnels* ou "
+"comme une **colonne verticale gauche**."
 
 #: ../../docs/sites/site_theme.md:103
 msgid ""
-"**Show Top Navigation Child Pages:** Toggle display of child pages within"
-" the main navigation. If unchecked, only the top-level navigation will "
-"display."
+"**Show Top Navigation Child Pages:** Toggle display of child pages within the "
+"main navigation. If unchecked, only the top-level navigation will display."
 msgstr ""
+"**Afficher les pages enfant de la navigation supérieure:** Active l'affichage "
+"des pages enfant dans la navigation principale. Si non cochée, seule la "
+"navigation de premier niveau sera affichée."
 
 #: ../../docs/sites/site_theme.md:104
 msgid ""
-"**Layout for Show Pages:** Resource metadata can show display as "
-"**stacked** with properties as headings above their values, or **inline**"
-" with properties as headings inline with their values."
+"**Layout for Show Pages:** Resource metadata can show display as **stacked** "
+"with properties as headings above their values, or **inline** with properties "
+"as headings inline with their values."
 msgstr ""
+"**Disposition pour les pages de ressources:** Les métadonnées de ressources "
+"peuvent être affichées **empilées** avec les propriétés comme des titres au-"
+"dessus de leur valeurs, ou **en ligne** avec les propriétés comme des titres "
+"alignés avec leurs valeurs."
 
 #: ../../docs/sites/site_theme.md:105
 msgid ""
-"**Truncate Body Property:** Set how much of the browse body property "
-"displays on the browse page. You can:"
+"**Truncate Body Property:** Set how much of the browse body property displays "
+"on the browse page. You can:"
 msgstr ""
+"**Tronquer la propriété de corps:** Définit quelle portion de la propriété de "
+"corps est affichée sur la page de liste. Vous pouvez:"
 
 #: ../../docs/sites/site_theme.md:106
 msgid "**Show full value** which displays all of the property text."
 msgstr ""
+"**Afficher la valeur complète** qui affiche tout le texte de la propriété."
 
 #: ../../docs/sites/site_theme.md:107
 msgid ""
-"**Show 4 lines and fade out** which displays 4 lines of text with a fade "
-"at the end of the text block."
+"**Show 4 lines and fade out** which displays 4 lines of text with a fade at "
+"the end of the text block."
 msgstr ""
+"**Afficher 4 lignes et s'estomper** qui affiche 4 lignes de texte avec un "
+"fondu à la fin du bloc de texte."
 
 #: ../../docs/sites/site_theme.md:108
 msgid ""
-"**Show 4 lines and ellipses** which displays 4 lines of text concluding "
-"with an ellipses (...)"
+"**Show 4 lines and ellipses** which displays 4 lines of text concluding with "
+"an ellipses (...)"
 msgstr ""
+"**Afficher 4 lignes et des ellipses** qui affiche 4 lignes de texte qui "
+"finissent par une ellipse (...)"
 
 #: ../../docs/sites/site_theme.md:110
 msgid "Installing themes"
-msgstr ""
+msgstr "Installer des thèmes"
 
 #: ../../docs/sites/site_theme.md:111
 msgid ""
-"In order to appear in the *Themes* tab for sites, themes must be manually"
-" added to the `themes` folder of the installation, using an FTP program "
-"or an ssh connection."
+"In order to appear in the *Themes* tab for sites, themes must be manually "
+"added to the `themes` folder of the installation, using an FTP program or an "
+"ssh connection."
 msgstr ""
+"Pour apparaître dans l'onglet *Thèmes* des sites, les thèmes doivent être "
+"manuellement ajouté au dossier `themes` de l'installation, en utilisant un "
+"programme FTP ou une connexion SSH."
 
 #: ../../docs/sites/site_theme.md:113
 msgid "To add a theme to the site using FTP"
-msgstr ""
+msgstr "Pour ajouter un thème au site en utilisant FTP"
 
 #: ../../docs/sites/site_theme.md:115
 msgid "Download the zipped theme to your computer."
-msgstr ""
+msgstr "Téléchargez le thème zippé sur votre ordinateur."
 
 #: ../../docs/sites/site_theme.md:116
 msgid ""
-"Open your FTP client, log on to the server that houses the Omeka S "
-"install and navigate to the `/themes` folder (this should be located in "
-"the main folder of the install)."
+"Open your FTP client, log on to the server that houses the Omeka S install and "
+"navigate to the `/themes` folder (this should be located in the main folder of "
+"the install)."
 msgstr ""
+"Ouvrez votre client FTP, connectez vous au serveur qui héberge l'installation "
+"Omeka S et naviguez vers le dossier `/themes` (il doit être situé dans le "
+"dossier principal de l'installation)."
 
 #: ../../docs/sites/site_theme.md:117
 msgid "Upload the zipped theme to the `/themes` folder ."
-msgstr ""
+msgstr "Téléchargez le thème zippé dans le dossier `/themes`."
 
 #: ../../docs/sites/site_theme.md:118
 msgid "Unzip the theme."
-msgstr ""
+msgstr "Dézippez le thème."
 
 #: ../../docs/sites/site_theme.md:120
 msgid ""
-"You can also use git to clone a theme directly from the git repository. "
-"Do this only if you are comfortable with git."
+"You can also use git to clone a theme directly from the git repository. Do "
+"this only if you are comfortable with git."
 msgstr ""
-
+"Vous pouvez aussi utiliser git pour cloner un thème directement depuis le "
+"dépôt git. Faites cela uniquement si vous êtes à l'aise avec git."
