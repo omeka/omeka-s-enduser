@@ -4,850 +4,1091 @@
 # manual package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Omeka S end user manual \n"
+"Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 22:35+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-06-30 15:57+0200\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Julian Maurice <julian.maurice@biblibre.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../docs/sites/site_pages.md:1
 msgid "Pages Management"
-msgstr ""
+msgstr "Gestion des pages"
 
 #: ../../docs/sites/site_pages.md:3
 msgid ""
-"Pages form the content of your [sites](../sites/index.md). A site can "
-"have a single page or many pages."
+"Pages form the content of your [sites](../sites/index.md). A site can have a "
+"single page or many pages."
 msgstr ""
+"Les pages forment le contenu de vos [sites](../sites/index.md). Un site peu "
+"avoir une ou plusieurs pages."
 
 #: ../../docs/sites/site_pages.md:5
 msgid ""
-"Manage the pages for a site by navigating to the Sites tab on the left-"
-"hand navigation of the admin dashboard. Select the site  for which you "
-"want to manage the pages and click either the title or the edit (pencil) "
-"button to edit that site."
+"Manage the pages for a site by navigating to the Sites tab on the left-hand "
+"navigation of the admin dashboard. Select the site  for which you want to "
+"manage the pages and click either the title or the edit (pencil) button to edit "
+"that site."
 msgstr ""
+"Gérez les pages de votre site en naviguant vers l'onglet Sites dans la "
+"navigation à gauche du tableau de bord d'administration. Sélectionnez le site "
+"pour lequel vous voulez gérer les pages et cliquez soit sur le titre soit sur "
+"le bouton modifier (crayon) pour modifier ce site."
 
 #: ../../docs/sites/site_pages.md:7
 msgid ""
-"Once you are editing the site, click the Pages tab in the left hand "
-"navigation."
+"Once you are editing the site, click the Pages tab in the left hand navigation."
 msgstr ""
+"Maintenant que vous êtes en train de modifier le site, cliquez sur l'onglet "
+"Pages dans la navigation à gauche."
 
 #: ../../docs/sites/site_pages.md:9
 msgid ""
-"When you create a new site, Omeka S automatically adds a page titled "
-"*Welcome* with a single HTML block (see below). You can edit this page or"
-" delete it."
+"When you create a new site, Omeka S automatically adds a page titled *Welcome* "
+"with a single HTML block (see below). You can edit this page or delete it."
 msgstr ""
+"Quand vous créez un nouveau site, Omeka S ajoute automatiquement une page "
+"intitulée *Bienvenue* avec un seul bloc HTML (voir ci-dessous). Vous pouvez "
+"modifier cette page ou la supprimer."
 
 #: ../../docs/sites/site_pages.md:11
 msgid "Adding Pages"
-msgstr ""
+msgstr "Ajouter des pages"
 
 #: ../../docs/sites/site_pages.md:12
 msgid ""
-"From the page for the site, click the Pages tab. Then click the *Add new "
-"page* button on the upper left side of the window."
+"From the page for the site, click the Pages tab. Then click the *Add new page* "
+"button on the upper left side of the window."
 msgstr ""
+"Depuis la page du site, cliquez sur l'onglet Pages. Puis cliquez sur le bouton "
+"*Ajouter une nouvelle page* dans le coin supérieur droit de la fenêtre."
 
 #: ../../docs/sites/site_pages.md:14
 msgid ""
-"![A red arrow points to a grey button labeled \"add new "
-"page\"](../sites/sitesfiles/sitepg_addnew.png)"
+"![A red arrow points to a grey button labeled \"add new page\"](../sites/"
+"sitesfiles/sitepg_addnew.png)"
 msgstr ""
+"![Une flèche rouge pointe vers un bouton gris libellé « ajouter une nouvelle "
+"page »](../sites/sitesfiles/sitepg_addnew.png)"
 
 #: ../../docs/sites/site_pages.md:16
 msgid "To add a page you must enter a *Title*.  You can also enter a *URL Slug*."
 msgstr ""
+"Pour ajouter une page vous devez saisir un *Titre*. Vous pouvez aussi saisir un "
+"*identifiant d'URL*."
 
 #: ../../docs/sites/site_pages.md:19
 msgid ""
-"Both of these can be edited later but are required to create the page. If"
-" you do not enter a slug, Omeka S will create one from the page title. A "
-"slug is the page’s portion of the url and can only contain letters, "
-"numbers, and hyphens; no other characters are allowed."
+"Both of these can be edited later but are required to create the page. If you "
+"do not enter a slug, Omeka S will create one from the page title. A slug is the "
+"page’s portion of the url and can only contain letters, numbers, and hyphens; "
+"no other characters are allowed."
 msgstr ""
+"Ces deux éléments peuvent être modifiés plus tard mais sont nécessaires pour "
+"créer la page. Si vous ne saisissez pas d'identifiant, Omeka S en créera un à "
+"partir du titre de la page. L'identifiant est la portion d'URL pour la page et "
+"peut contenir uniquement des lettres, des chiffres et des tirets; aucun autre "
+"caractère n'est autorisé."
 
 #: ../../docs/sites/site_pages.md:21
 msgid ""
-"In addition, there is a checkbox for \"Add to navigation\". If checked, "
-"the page will automatically appear at the main "
-"[navigation](../sites/site_navigation.md) level for the site. If you do "
-"not check this box, you will have to manually add the page to the site "
-"navigation at a later point."
+"In addition, there is a checkbox for \"Add to navigation\". If checked, the "
+"page will automatically appear at the main [navigation](../sites/"
+"site_navigation.md) level for the site. If you do not check this box, you will "
+"have to manually add the page to the site navigation at a later point."
 msgstr ""
+"En outre, il y a une case à cocher pour « Ajouter à la navigation ». Si elle "
+"est cochée, la page apparaîtra automatiquement au niveau principal de la "
+"[navigation](../sites/site_navigation.md) du site. Si vous ne cochez pas cette "
+"case, vous devrez manuellement ajouter la page à la navigation du site plus "
+"tard."
 
 #: ../../docs/sites/site_pages.md:23
 msgid ""
-"![Page view showing the fields for Add "
-"Page](../sites/sitesfiles/sitepg_add.png)"
+"![Page view showing the fields for Add Page](../sites/sitesfiles/sitepg_add.png)"
 msgstr ""
+"![Vue de la page montrant les champs pour Ajouter une page](../sites/sitesfiles/"
+"sitepg_add.png)"
 
 #: ../../docs/sites/site_pages.md:25
 msgid ""
-"The eye icon to the left of the Cancel and Add buttons is a toggle to set"
-" the visibility of your page. If the toggle is set to public (no line), "
-"then anyone can see the page. If the toggle is set to private (line "
-"through the eye icon), the page will only be visible to logged-in users "
-"of the Omeka S installation who have site permissions (Supervisors and "
-"Global Admins will always be able to see private pages)."
+"The eye icon to the left of the Cancel and Add buttons is a toggle to set the "
+"visibility of your page. If the toggle is set to public (no line), then anyone "
+"can see the page. If the toggle is set to private (line through the eye icon), "
+"the page will only be visible to logged-in users of the Omeka S installation "
+"who have site permissions (Supervisors and Global Admins will always be able to "
+"see private pages)."
 msgstr ""
+"L'icône d’œil à gauche des boutons Annuler et Ajouter permet de définir la "
+"visibilité de votre page. Si la visibilité est définie à publique (pas de "
+"ligne), alors tout le monde pourra voir la page. Si elle est définie à privée "
+"(une ligne traverse l'icône d’œil), la page sera visible uniquement aux "
+"utilisateurs authentifiés de l'installation Omeka S qui ont des droits sur le "
+"site (les Superviseurs et les Administrateurs Globaux pourront toujours voir "
+"les pages privées)."
 
 #: ../../docs/sites/site_pages.md:27
 msgid ""
-"Clicking or hitting enter on the eye icon toggles between public and "
-"private."
+"Clicking or hitting enter on the eye icon toggles between public and private."
 msgstr ""
+"Cliquer ou appuyer sur Entrée sur l'icône d’œil bascule entre publique et privé."
 
 #: ../../docs/sites/site_pages.md:29
 msgid ""
-"![make public button showing an eye "
-"icon](../content/contentfiles/item_public.png) Public"
+"![make public button showing an eye icon](../content/contentfiles/item_public."
+"png) Public"
 msgstr ""
+"![bouton rendre public montrant une icône d’œil](../content/contentfiles/"
+"item_public.png) Publique"
 
 #: ../../docs/sites/site_pages.md:31
 msgid ""
-"![make private button showing an eye icon with a diagonal slash through "
-"it](../content/contentfiles/item_private.png)  Private"
+"![make private button showing an eye icon with a diagonal slash through it](../"
+"content/contentfiles/item_private.png)  Private"
 msgstr ""
+"![bouton rendre privé montrant une icône d'œil traversé par une barre oblique]"
+"(../content/contentfiles/item_private.png) Privé"
 
 #: ../../docs/sites/site_pages.md:33
 msgid ""
-"Once you have entered this information and set visibility, click the Add "
-"button in the upper right hand corner of the browser window. You will be "
-"automatically taken to that page's edit view (see below)."
+"Once you have entered this information and set visibility, click the Add button "
+"in the upper right hand corner of the browser window. You will be automatically "
+"taken to that page's edit view (see below)."
 msgstr ""
+"Une fois que vous avez saisi ces informations et défini la visibilité, cliquez "
+"sur le bouton Ajouter dans le coin supérieur droit de la fenêtre du navigateur. "
+"Vous serez automatiquement dirigé vers la vue de modification de la page (voir "
+"ci-dessous)."
 
 #: ../../docs/sites/site_pages.md:35
 msgid "If you decide you do not want to create the page, click the Cancel button."
-msgstr ""
+msgstr "Si vous décidez de ne pas créer la page, cliquez sur le bouton Annuler."
 
 #: ../../docs/sites/site_pages.md:37
 msgid "Browse Pages"
-msgstr ""
+msgstr "Parcourir les pages"
 
 #: ../../docs/sites/site_pages.md:38
 msgid ""
-"The pages tab (once you have at least one page) will display all of your "
-"pages in their navigation order. Child pages will display below the "
-"parent page with a `-` before the page title."
+"The pages tab (once you have at least one page) will display all of your pages "
+"in their navigation order. Child pages will display below the parent page with "
+"a `-` before the page title."
 msgstr ""
+"L'onglet pages (une fois que vous avez au moins une page) affichera toutes vos "
+"pages dans leur ordre de navigation. Les pages enfant seront affichées sous "
+"leur parent avec un `-` devant le titre de la page."
 
 #: ../../docs/sites/site_pages.md:40
 msgid ""
-"Every page is listed with its *Title*, buttons to view (box with an arrow"
-" coming out), edit (pencil), or delete (trash can) the page, and the "
-"page's slug."
+"Every page is listed with its *Title*, buttons to view (box with an arrow "
+"coming out), edit (pencil), or delete (trash can) the page, and the page's slug."
 msgstr ""
+"Chaque page est listée avec son *Titre*, des boutons pour voir (boîte avec une "
+"flèche sortante), modifier (crayon), ou supprimer (poubelle) la page, ainsi que "
+"l'identifiant de la page."
 
 #: ../../docs/sites/site_pages.md:42
 msgid ""
-"![A sites page browse view, with 12 pages listed, some of which are child"
-" pages of the others.](../sites/sitesfiles/sitepg_browse.png)"
+"![A sites page browse view, with 12 pages listed, some of which are child pages "
+"of the others.](../sites/sitesfiles/sitepg_browse.png)"
 msgstr ""
+"![La vue parcourir les pages, avec 12 pages listées, dont certaines sont des "
+"pages enfant.](../sites/sitesfiles/sitepg_browse.png)"
 
 #: ../../docs/sites/site_pages.md:44
 msgid ""
-"Use the [Navigation](../sites/site_navigation/) tab of the site admin to "
-"set the order of pages, including setting child and parent pages."
+"Use the [Navigation](../sites/site_navigation/) tab of the site admin to set "
+"the order of pages, including setting child and parent pages."
 msgstr ""
+"Utilisez l'onglet [Navigation](../sites/site_navigation/) de l'administration "
+"du site pour définir l'ordre des pages, y compris définir la parenté des pages."
 
 #: ../../docs/sites/site_pages.md:46
 msgid "Editing Pages"
-msgstr ""
+msgstr "Modifier les pages"
 
 #: ../../docs/sites/site_pages.md:47
 msgid ""
-"After clicking the Pages tab, select the page you wish to edit by "
-"clicking the name of the page or the edit button (pencil). Note: clicking"
-" on the Page *title* will take you to the public view of that page."
+"After clicking the Pages tab, select the page you wish to edit by clicking the "
+"name of the page or the edit button (pencil). Note: clicking on the Page "
+"*title* will take you to the public view of that page."
 msgstr ""
+"Après avoir cliquer sur l'onglet Pages, sélectionnez la page que vous voulez "
+"modifier en cliquant sur le nom de la page ou le bouton modifier (crayon). "
+"Note: cliquer sur le *titre* de la page vous emmènera vers la vue publique de "
+"cette page."
 
 #: ../../docs/sites/site_pages.md:49
 msgid ""
-"The edit view for a page will display the page's title across the top. In"
-" the upper left is the public/private toggle (the eye icon), and buttons "
-"to view the public version (opens in a new tab), delete the page, cancel "
-"changes, or save changes. Note that changes will not display on the "
-"public view until after they have been saved."
+"The edit view for a page will display the page's title across the top. In the "
+"upper left is the public/private toggle (the eye icon), and buttons to view the "
+"public version (opens in a new tab), delete the page, cancel changes, or save "
+"changes. Note that changes will not display on the public view until after they "
+"have been saved."
 msgstr ""
+"La vue modification d'une page affichera le titre de la page en haut. Dans le "
+"coin supérieur gauche se situe le bouton public/privé (l'icône d'oeil), et les "
+"boutons pour voir la version publique (s'ouvre dans un nouvel onglet), "
+"supprimer la page, annuler les modifications, ou enregistrer les modifications. "
+"Notez que les modifications ne s'afficheront pas sur la vue publique tant "
+"qu'elles n'auront pas été enregistrées."
 
 #: ../../docs/sites/site_pages.md:51
 msgid ""
-"At the top of the work area are fields for the page title and URL slug. "
-"You can edit these at any time, but remember that the slug must be unique"
-" within the site (you cannot have two pages with the slug \"welcome\" on "
-"the same site)."
+"At the top of the work area are fields for the page title and URL slug. You can "
+"edit these at any time, but remember that the slug must be unique within the "
+"site (you cannot have two pages with the slug \"welcome\" on the same site)."
 msgstr ""
+"En haut de la zone de travail se situent les champs pour le titre de la page et "
+"l'identifiant d'URL. Vous pouvez les modifier à n'importe quel moment, mais "
+"souvenez-vous que l'identifiant doit être unique dans tout le site (vous ne "
+"pouvez pas avoir deux pages avec l'identifiant « bienvenue » sur un même site)."
 
 #: ../../docs/sites/site_pages.md:53
 msgid ""
-"![A page in edit view, with one media block "
-"added](../sites/sitesfiles/sitepg_edit.png)"
+"![A page in edit view, with one media block added](../sites/sitesfiles/"
+"sitepg_edit.png)"
 msgstr ""
+"![Une page en vue modification, avec un bloc media ajouté](../sites/sitesfiles/"
+"sitepg_edit.png)"
 
 #: ../../docs/sites/site_pages.md:55
 msgid ""
-"On the right hand side you can choose to add a new block by selecting one"
-" of the following layouts:"
+"On the right hand side you can choose to add a new block by selecting one of "
+"the following layouts:"
 msgstr ""
+"Sur la droite vous pouvez choisir d'ajouter un nouveau bloc en sélectionnant "
+"parmi les configurations suivantes:"
 
 #: ../../docs/sites/site_pages.md:56 ../../docs/sites/site_pages.md:92
 msgid "HTML"
-msgstr ""
+msgstr "HTML"
 
 #: ../../docs/sites/site_pages.md:57
 msgid "Page title"
-msgstr ""
+msgstr "Titre de page"
 
 #: ../../docs/sites/site_pages.md:58 ../../docs/sites/site_pages.md:117
 msgid "Media Embed"
-msgstr ""
+msgstr "Media embarqué"
 
 #: ../../docs/sites/site_pages.md:59
 msgid "Browse preview"
-msgstr ""
+msgstr "Aperçu des ressources"
 
 #: ../../docs/sites/site_pages.md:60
 msgid "Item showcase"
-msgstr ""
+msgstr "Vitrine de contenus"
 
 #: ../../docs/sites/site_pages.md:61 ../../docs/sites/site_pages.md:223
 msgid "List of sites"
-msgstr ""
+msgstr "Liste des sites"
 
 #: ../../docs/sites/site_pages.md:62
 msgid "Table of contents"
-msgstr ""
+msgstr "Table des matières"
 
 #: ../../docs/sites/site_pages.md:63
 msgid "Line break"
-msgstr ""
+msgstr "Saut de ligne"
 
 #: ../../docs/sites/site_pages.md:64
 msgid ""
-"Item with metadata If you have the relevant modules installed, you may "
-"also have:"
+"Item with metadata If you have the relevant modules installed, you may also "
+"have:"
 msgstr ""
+"Contenus avec métadonnées Si vous avez les modules correspondants installés, "
+"vous pouvez aussi avoir:"
 
 #: ../../docs/sites/site_pages.md:67
 msgid "Map"
-msgstr ""
+msgstr "Carte"
 
 #: ../../docs/sites/site_pages.md:68
 msgid "Collecting"
-msgstr ""
+msgstr "Collectes"
 
 #: ../../docs/sites/site_pages.md:70
 msgid ""
-"Once you have added blocks to your page, click the Save button in the "
-"right hand corner.  To leave without saving changes, click Cancel."
+"Once you have added blocks to your page, click the Save button in the right "
+"hand corner.  To leave without saving changes, click Cancel."
 msgstr ""
+"Une fois que vous avez ajouté des blocs à votre page, cliquez sur le bouton "
+"Enregistrer dans le coin supérieur droit. Pour partir sans enregistrer les "
+"changements, cliquez sur Annuler."
 
 #: ../../docs/sites/site_pages.md:72
 msgid ""
-"You can delete any of the blocks by clicking on the trash can icon "
-"located in the upper right corner of the block."
+"You can delete any of the blocks by clicking on the trash can icon located in "
+"the upper right corner of the block."
 msgstr ""
+"Vous pouvez supprimer n'importe quel bloc en cliquant sur l'icône de poubelle "
+"située dans le coin supérieur droit du bloc."
 
 #: ../../docs/sites/site_pages.md:74
 msgid ""
-"![The “media” block is marked for deletion and thus highlighted in "
-"red.](../sites/sitesfiles/sitepg_delblock.png)"
+"![The “media” block is marked for deletion and thus highlighted in red.](../"
+"sites/sitesfiles/sitepg_delblock.png)"
 msgstr ""
+"![Le bloc « media » est marqué pour la suppression et donc mis en évidence en "
+"rouge.](../sites/sitesfiles/sitepg_delblock.png)"
 
 #: ../../docs/sites/site_pages.md:76
 msgid ""
-"Change the order of blocks by clicking on the three horizontal lines on "
-"the upper left corner of the block and then dragging and dropping it to "
-"the desired location."
+"Change the order of blocks by clicking on the three horizontal lines on the "
+"upper left corner of the block and then dragging and dropping it to the desired "
+"location."
 msgstr ""
+"Changez l'ordre des blocs en cliquant sur les trois lignes horizontales dans le "
+"coin supérieur gauche du bloc puis en le glissant et en le déposant à l'endroit "
+"souhaité."
 
 #: ../../docs/sites/site_pages.md:78
 msgid ""
-"Some modules may create additional blocks for your site pages. For "
-"information on working with these blocks, please see the documentation "
-"for that [module](../modules/index.md)"
+"Some modules may create additional blocks for your site pages. For information "
+"on working with these blocks, please see the documentation for that [module](../"
+"modules/index.md)"
 msgstr ""
+"Certains modules peuvent créer des blocs supplémentaires pour vos pages de "
+"site. Pour plus d'informations sur ces blocs, veuillez vous référer à la "
+"documentation de ce [module](../modules/index.md)"
 
 #: ../../docs/sites/site_pages.md:80
 msgid "From the Public Side"
-msgstr ""
+msgstr "Du côté public"
 
 #: ../../docs/sites/site_pages.md:81
 msgid ""
-"If you are on the admin side and click \"View\" in the upper right-hand "
-"corner of a page, it will take you to the public view for that page."
+"If you are on the admin side and click \"View\" in the upper right-hand corner "
+"of a page, it will take you to the public view for that page."
 msgstr ""
+"Si vous êtes du côté administration et que vous cliquez sur « Voir » dans le "
+"coin supérieur droit de la page, vous allez être redirigé vers la vue publique "
+"de cette page."
 
 #: ../../docs/sites/site_pages.md:83
 msgid ""
-"As you are browsing the public side of your site, you can edit the page "
-"you are viewing if you are currently logged in and the [user bar option "
-"is turned on in Site Settings](site_settings.md#general-settings)."
+"As you are browsing the public side of your site, you can edit the page you are "
+"viewing if you are currently logged in and the [user bar option is turned on in "
+"Site Settings](site_settings.md#general-settings)."
 msgstr ""
+"Pendant que vous naviguez sur le côté public de votre site, vous pouvez "
+"modifier la page que vous êtes en train de regarder si vous êtes authentifié et "
+"que [l'option de la barre utilisateur est activée dans les paramètres du site]"
+"(site_settings.md#general-settings)."
 
 #: ../../docs/sites/site_pages.md:85
 msgid ""
-"The user bar, which appears across the top of the page, includes a link "
-"to edit the current page - circled in red in the below image."
+"The user bar, which appears across the top of the page, includes a link to edit "
+"the current page - circled in red in the below image."
 msgstr ""
+"La barre utilisateur, qui apparaît en haut de la page, contient un lien qui "
+"permet de modifier la page actuelle - entourée en rouge dans l'image ci-dessous."
 
 #: ../../docs/sites/site_pages.md:87
 msgid ""
-"![User bar for a page from the site Jane Austen, with \"Edit page\" "
-"circled in red](../sites/sitesfiles/sitepg_edit_public.png)"
+"![User bar for a page from the site Jane Austen, with \"Edit page\" circled in "
+"red](../sites/sitesfiles/sitepg_edit_public.png)"
 msgstr ""
+"![La barre utilisateur pour le site Jane Austen, avec « Modifier la page » "
+"entouré en rouge](../sites/sitesfiles/sitepg_edit_public.png)"
 
 #: ../../docs/sites/site_pages.md:89
 msgid "Page Blocks"
-msgstr ""
+msgstr "Blocs de page"
 
 #: ../../docs/sites/site_pages.md:90
 msgid ""
-"Pages are made up of blocks, each of which has a different form of "
-"content."
+"Pages are made up of blocks, each of which has a different form of content."
 msgstr ""
+"Les pages sont faites de blocs, chacun d'eux ayant une forme différente de "
+"contenu."
 
 #: ../../docs/sites/site_pages.md:93
 msgid ""
-"Creates an HTML box in which you can add formatted text and links. When "
-"you click in the box, a formatting menu will display above the text "
-"field."
+"Creates an HTML box in which you can add formatted text and links. When you "
+"click in the box, a formatting menu will display above the text field."
 msgstr ""
+"Crée une boîte HTML dans laquelle vous pouvez ajouter du texte formaté et des "
+"liens. Quand vous cliquez dans la boîte, un menu de formatage s'affichera au "
+"dessus du champ texte."
 
 #: ../../docs/sites/site_pages.md:95
 msgid "Basic block:"
-msgstr ""
+msgstr "Bloc basique:"
 
 #: ../../docs/sites/site_pages.md:97
 msgid "![Page block for HTML content](../sites/sitesfiles/sitepg_html.png)"
-msgstr ""
+msgstr "![Bloc de page pour du contenu HTML](../sites/sitesfiles/sitepg_html.png)"
 
 #: ../../docs/sites/site_pages.md:99
 msgid "With formatting menu open:"
-msgstr ""
+msgstr "Avec le menu de formatage ouvert:"
 
 #: ../../docs/sites/site_pages.md:101
 msgid ""
-"![Page block for HTML content with active field, showing formatting "
-"menu](../sites/sitesfiles/sitepg_html2.png)"
+"![Page block for HTML content with active field, showing formatting menu](../"
+"sites/sitesfiles/sitepg_html2.png)"
 msgstr ""
+"![Bloc de page pour du contenu HTML avec le champ actif, montrant le menu de "
+"formatage](../sites/sitesfiles/sitepg_html2.png)"
 
 #: ../../docs/sites/site_pages.md:103
 msgid ""
-"You can embed content from elsewhere on the internet using iFrames or "
-"other embed codes in the HTML block."
+"You can embed content from elsewhere on the internet using iFrames or other "
+"embed codes in the HTML block."
 msgstr ""
+"Vous pouvez intégrer du contenu depuis n'importe où sur internet en utilisant "
+"des iframes ou d'autres codes d'intégrations dans le bloc HTML."
 
 #: ../../docs/sites/site_pages.md:105
 msgid ""
-"Click into the HTML block content area to show the formatting menu and "
-"then click on the button labeled \"Source\". ![HTML block with formatting"
-" menu open. A red arrow points to the Source "
-"button](../sites/sitesfiles/sitepg_htmlSource1.png)"
+"Click into the HTML block content area to show the formatting menu and then "
+"click on the button labeled \"Source\". ![HTML block with formatting menu open. "
+"A red arrow points to the Source button](../sites/sitesfiles/sitepg_htmlSource1."
+"png)"
 msgstr ""
+"Cliquez dans la zone de contenu du bloc HTML pour afficher le menu de formatage "
+"puis cliquez sur le bouton libellé « Source ». ![Bloc HTML avec le menu de "
+"formatage ouvert. Une flèche rouge pointe vers le bouton Source](../sites/"
+"sitesfiles/sitepg_htmlSource1.png)"
 
 #: ../../docs/sites/site_pages.md:106
 msgid "This will open a dialog box where you can write HTML content."
-msgstr ""
+msgstr "Cela ouvrira une boîte de dialogue où vous pouvez écrire du contenu HTML."
 
 #: ../../docs/sites/site_pages.md:107
 msgid ""
-"Copy and paste the embed code into the source code editor. ![Source box "
-"open with a short paragraph of text and an iframe from "
-"Vimeo](../sites/sitesfiles/sitepg_htmlSource2.png)"
+"Copy and paste the embed code into the source code editor. ![Source box open "
+"with a short paragraph of text and an iframe from Vimeo](../sites/sitesfiles/"
+"sitepg_htmlSource2.png)"
 msgstr ""
+"Copiez et collez le code d'intégration dans l'éditeur de code source. ![La "
+"boîte de source ouverte avec un court paragraphe de texte et une iframe venant "
+"de Vimeo](../sites/sitesfiles/sitepg_htmlSource2.png)"
 
 #: ../../docs/sites/site_pages.md:108
 msgid "Click the green OK button at the bottom of the editor."
-msgstr ""
+msgstr "Cliquez sur le bouton vert OK en bas de l'éditeur."
 
 #: ../../docs/sites/site_pages.md:109
 msgid ""
-"Your embed should show up in the HTML block either as a gray rectangle or"
-" as the embedded content. ![HTML block showing the text and an embedded "
-"video](../sites/sitesfiles/sitepg_htmlSource3.png)"
+"Your embed should show up in the HTML block either as a gray rectangle or as "
+"the embedded content. ![HTML block showing the text and an embedded video](../"
+"sites/sitesfiles/sitepg_htmlSource3.png)"
 msgstr ""
+"Votre code d'intégration devrait s'afficher dans le bloc HTML soit comme un "
+"rectangle gris soit comme le contenu intégré. ![Bloc HTML montrant le texte et "
+"une vidéo intégrée](../sites/sitesfiles/sitepg_htmlSource3.png)"
 
 #: ../../docs/sites/site_pages.md:112
 msgid "Page Title"
-msgstr ""
+msgstr "Titre de page"
 
 #: ../../docs/sites/site_pages.md:113
 msgid "Displays the title of the current page."
-msgstr ""
+msgstr "Affiche le titre de la page actuelle."
 
 #: ../../docs/sites/site_pages.md:115
 msgid "![Page block display site's title](../sites/sitesfiles/sitepg_title.png)"
 msgstr ""
+"![Le bloc de page affiche le titre du site](../sites/sitesfiles/sitepg_title."
+"png)"
 
 #: ../../docs/sites/site_pages.md:118
 msgid ""
-"Creates a block with one or more pieces of media associated with items in"
-" the item pool. In media blocks, multiple attachments stack vertically."
+"Creates a block with one or more pieces of media associated with items in the "
+"item pool. In media blocks, multiple attachments stack vertically."
 msgstr ""
+"Crée un bloc avec un ou plusieurs media associés à des contenus du réservoir de "
+"contenus. Dans les blocs media, les pièces jointes s'empilent de manière "
+"verticale."
 
 #: ../../docs/sites/site_pages.md:120
 msgid ""
-"![media block with no media "
-"attached](../sites/sitesfiles/sitepg_media.png)"
-msgstr ""
+"![media block with no media attached](../sites/sitesfiles/sitepg_media.png)"
+msgstr "![bloc media sans media attaché](../sites/sitesfiles/sitepg_media.png)"
 
 #: ../../docs/sites/site_pages.md:122
 msgid "The Media block has options for the display of the media:"
-msgstr ""
+msgstr "Le bloc Media a des options pour l'affichage des media:"
 
 #: ../../docs/sites/site_pages.md:124
 msgid "Thumbnail type: choose from large, medium, and square."
-msgstr ""
+msgstr "Type de vignette: choisissez entre grand, moyen, et carré."
 
 #: ../../docs/sites/site_pages.md:125
 msgid "Thumbnail alignment: float left, float right, and center."
-msgstr ""
+msgstr "Alignement de la vignette: gauche, droite, et centré."
 
 #: ../../docs/sites/site_pages.md:126
 msgid "Set the attachment title as:"
-msgstr ""
+msgstr "Définissez le titre de la pièce jointe:"
 
 #: ../../docs/sites/site_pages.md:127 ../../docs/sites/site_pages.md:191
 msgid "item title (title of the attached item);"
-msgstr ""
+msgstr "le titre du contenu (le titre du contenu attaché);"
 
 #: ../../docs/sites/site_pages.md:128 ../../docs/sites/site_pages.md:192
 msgid ""
-"media title (title of the specific piece of media you select associated "
-"with the item); or"
+"media title (title of the specific piece of media you select associated with "
+"the item); or"
 msgstr ""
+"le titre du media (le titre du media spécifique que vous sélectionnez pour être "
+"associé au contenu); or"
 
 #: ../../docs/sites/site_pages.md:129 ../../docs/sites/site_pages.md:193
 msgid "no title."
-msgstr ""
+msgstr "aucun titre."
 
 #: ../../docs/sites/site_pages.md:131
 msgid ""
-"*Layout note:* If you want media to appear beside a block of text, place "
-"a media block *above* an HTML block, select a smaller thumbnail size, and"
-" choose either float left or right for alignment. In the example below, "
-"the media has a thumbnail type of \"medium\", alignment \"float right,\" "
-"and attachment title of the \"item title\":"
+"*Layout note:* If you want media to appear beside a block of text, place a "
+"media block *above* an HTML block, select a smaller thumbnail size, and choose "
+"either float left or right for alignment. In the example below, the media has a "
+"thumbnail type of \"medium\", alignment \"float right,\" and attachment title "
+"of the \"item title\":"
 msgstr ""
+"*Note de mise en page:* Si vous voulez que le media apparaisse à côté d'un bloc "
+"de texte, placez le bloc de media au-dessus d'un bloc HTML, sélectionnez une "
+"taille de vignette plus petite, et choisissez l'alignement gauche ou droite. "
+"Dans l'exemple ci-dessous, le media a un type de vignette « moyen », "
+"l'alignement est « droite », et le titre de la pièce jointe est « titre du "
+"contenu »:"
 
 #: ../../docs/sites/site_pages.md:134
 msgid ""
-"![A block of lorem ipsum text with a right-aligned small image embedded "
-"at the top of the paragraph](../sites/sitesfiles/sitepg_mediaalign.png)"
+"![A block of lorem ipsum text with a right-aligned small image embedded at the "
+"top of the paragraph](../sites/sitesfiles/sitepg_mediaalign.png)"
 msgstr ""
+"![Un block de texte lorem ipsum avec une petite image alignée à droite et "
+"intégrée dans le haut du paragraphe](../sites/sitesfiles/sitepg_mediaalign.png)"
 
 #: ../../docs/sites/site_pages.md:136
 msgid ""
-"Placing a media block *after* an HTML block will cause the media to "
-"appear below the end of the HTML paragraphs."
+"Placing a media block *after* an HTML block will cause the media to appear "
+"below the end of the HTML paragraphs."
 msgstr ""
+"Placer un bloc de media après un bloc HTML provoquera l'affichage du media sous "
+"les paragraphes HTML."
 
 #: ../../docs/sites/site_pages.md:138
 msgid "To **add media to the block**, click the *add attachment* button."
 msgstr ""
+"Pour **ajouter un media au bloc**, cliquez sur le bouton *ajouter une pièce "
+"jointe*."
 
 #: ../../docs/sites/site_pages.md:140
 msgid ""
-"On loading, the drawer will show a list of your items, most recent first."
-" You can select from the first page, page through using the forward and "
-"back arrows, or search using the search bar. You can select from the "
-"first page, page through using the forward and back arrows, or search "
-"using the search bar."
+"On loading, the drawer will show a list of your items, most recent first. You "
+"can select from the first page, page through using the forward and back arrows, "
+"or search using the search bar. You can select from the first page, page "
+"through using the forward and back arrows, or search using the search bar."
 msgstr ""
+"Au chargement, le tiroir montrera une liste de vos contenus, les plus récents "
+"d'abord. Vous pouvez sélectionner depuis la première page, naviguer à travers "
+"les pages en utilisant les flèche avant et arrière, ou rechercher en utilisant "
+"la barre de recherche."
 
 #: ../../docs/sites/site_pages.md:142
 msgid "![Select item drawer](../sites/sitesfiles/sitepg_selectitem.png)"
 msgstr ""
+"![Tiroir de sélection de contenu](../sites/sitesfiles/sitepg_selectitem.png)"
 
 #: ../../docs/sites/site_pages.md:144 ../../docs/sites/site_pages.md:197
 msgid ""
-"If you have a large number of items to navigate, or multiple items with "
-"the same title, you can use the \"Filter search\" options by clicking the"
-" triangle button to the right of its label."
+"If you have a large number of items to navigate, or multiple items with the "
+"same title, you can use the \"Filter search\" options by clicking the triangle "
+"button to the right of its label."
 msgstr ""
+"Si vous avez un grand nombre de contenus à parcourir, ou plusieurs contenus "
+"avec le même titre, vous pouvez utiliser les options « Filtrer la recherche » "
+"en cliquant le bouton triangulaire à droite de son libellé."
 
 #: ../../docs/sites/site_pages.md:146 ../../docs/sites/site_pages.md:199
 msgid "These options are:"
-msgstr ""
+msgstr "Ces options sont:"
 
 #: ../../docs/sites/site_pages.md:148 ../../docs/sites/site_pages.md:201
 msgid ""
-"Filter by class: opens a dropdown to select from all of the classes for "
-"the vocabularies in the Omeka S installation."
+"Filter by class: opens a dropdown to select from all of the classes for the "
+"vocabularies in the Omeka S installation."
 msgstr ""
+"Filtrer par classe: ouvre une liste déroulante pour sélectionner parmi toutes "
+"les classes des vocabulaires de l'installation Omeka S."
 
 #: ../../docs/sites/site_pages.md:149 ../../docs/sites/site_pages.md:202
 msgid ""
 "Filter by item set: opens a dropdown to select from all item sets in the "
-"installation, not just those associated with the site on which you are "
-"working."
+"installation, not just those associated with the site on which you are working."
 msgstr ""
+"Filtrer par collection: ouvre une liste déroulante pour sélectionner parmi "
+"toutes les collections de l'installation, pas seulement celles associées au "
+"site sur lequel vous êtes en train de travailler."
 
 #: ../../docs/sites/site_pages.md:150 ../../docs/sites/site_pages.md:203
 msgid ""
-"Filter by item id: you can put in the specific item id for an item (the "
-"number which appears in the url when you are looking at the item on the "
-"admin)."
+"Filter by item id: you can put in the specific item id for an item (the number "
+"which appears in the url when you are looking at the item on the admin)."
 msgstr ""
+"Filtrer par identifiant de contenu: vous pouvez saisir un identifiant de "
+"contenu spécifique (le numéro qui apparaît dans l'URL quand vous regardez le "
+"contenu depuis l'administration)."
 
 #: ../../docs/sites/site_pages.md:152
 msgid ""
-"Once you have applied your changes to the filter, you must click the "
-"search button (magnifying glass) to apply the filters or run the search."
-"   ![Select item drawer with filter options "
-"displayed](../sites/sitesfiles/sitepg_selectitemFilter.png)"
+"Once you have applied your changes to the filter, you must click the search "
+"button (magnifying glass) to apply the filters or run the search.   ![Select "
+"item drawer with filter options displayed](../sites/sitesfiles/"
+"sitepg_selectitemFilter.png)"
 msgstr ""
+"Une fois que vous avez appliqué vos modifications au filtre, vous devez cliquez "
+"sur le bouton de recherche (loupe) pour appliquer les filtres ou lancer la "
+"rechercher. ![Tiroir de sélection de contenu avec les options de filtre "
+"affichées](../sites/sitesfiles/sitepg_selectitemFilter.png)"
 
 #: ../../docs/sites/site_pages.md:155 ../../docs/sites/site_pages.md:209
 msgid ""
-"Once you’ve selected an item, the drawer will shift to that item’s "
-"information. You can add a caption and select which media (if more than "
-"one) you want to use. To return to the list of items, click the *Select "
-"item* button at the top of the drawer. To use the item displayed and "
-"apply the caption, etc, click the *Apply changes* button at the bottom of"
-" the drawer."
+"Once you’ve selected an item, the drawer will shift to that item’s information. "
+"You can add a caption and select which media (if more than one) you want to "
+"use. To return to the list of items, click the *Select item* button at the top "
+"of the drawer. To use the item displayed and apply the caption, etc, click the "
+"*Apply changes* button at the bottom of the drawer."
 msgstr ""
+"Une fois que vous avez sélectionner un contenu, le tiroir va basculer vers les "
+"informations de ce contenu. Vous pouvez ajouter une légende et sélectionner "
+"quel media (s'il y en a plusieurs) vous voulez utiliser. Pour revenir à la "
+"liste des contenus, cliquez sur le bouton *Changer le contenu* en haut du "
+"tiroir. Pour utiliser le contenu affiché et appliquer la légende, etc., cliquez "
+"sur le bouton *Appliquer les changements* en bas du tiroir."
 
 #: ../../docs/sites/site_pages.md:157 ../../docs/sites/site_pages.md:211
 msgid ""
-"![Item view with apply changes "
-"option](../sites/sitesfiles/sitepg_applyitem.png)"
+"![Item view with apply changes option](../sites/sitesfiles/sitepg_applyitem.png)"
 msgstr ""
+"![Vue de contenu avec l'option appliquer les changements](../sites/sitesfiles/"
+"sitepg_applyitem.png)"
 
 #: ../../docs/sites/site_pages.md:159 ../../docs/sites/site_pages.md:213
 msgid ""
-"To add multiple items at once, click the \"quick add\" slider just above "
-"the list of items in the right hand drawer. This will add a checkbox to "
-"the left of each item. Check the boxes of those items you want to add to "
-"the block, then click the \"Add selected\" button at the bottom of the "
-"drawer."
+"To add multiple items at once, click the \"quick add\" slider just above the "
+"list of items in the right hand drawer. This will add a checkbox to the left of "
+"each item. Check the boxes of those items you want to add to the block, then "
+"click the \"Add selected\" button at the bottom of the drawer."
 msgstr ""
+"Pour ajouter plusieurs contenus en même temps, cliquez sur le curseur « ajout "
+"rapide » au-dessus de la liste des contenus dans le tiroir à droite. Cela "
+"ajoutera une case à cocher à la gauche de chaque contenu. Cochez les cases des "
+"contenus que vous voulez ajouter au bloc, puis cliquez sur le bouton « Ajouter "
+"la sélection » en bas du tiroir."
 
 #: ../../docs/sites/site_pages.md:161 ../../docs/sites/site_pages.md:215
 msgid ""
-"![Select item drawer with quick add activated - every item in the view "
-"now has a checkbox.](../sites/sitesfiles/sitepg_selectitemQuick.png)"
+"![Select item drawer with quick add activated - every item in the view now has "
+"a checkbox.](../sites/sitesfiles/sitepg_selectitemQuick.png)"
 msgstr ""
+"![Tiroir de sélection de contenu avec l'ajout rapide activé - chaque contenu "
+"dans la vue a maintenant une case à cocher.](../sites/sitesfiles/"
+"sitepg_selectitemQuick.png)"
 
 #: ../../docs/sites/site_pages.md:163
 msgid "Browse Preview"
-msgstr ""
+msgstr "Aperçu des ressources"
 
 #: ../../docs/sites/site_pages.md:164
 msgid "Allows you to add a block of items on a site page."
-msgstr ""
+msgstr "Permet d'ajouter un bloc de contenus dans une page de site."
 
 #: ../../docs/sites/site_pages.md:166
 msgid ""
-"In order to create a Browse Preview block, you'll first need to perform a"
-" search on your Omeka S installation for the items you want to include. "
-"You can use the general search on the left hand navigation or, if you "
-"want to show all items in an item set, use the Advanced Search from Items"
-" browse. NB: if you leave the search options blank, the browse preview "
-"will load all items in your site's item pool."
+"In order to create a Browse Preview block, you'll first need to perform a "
+"search on your Omeka S installation for the items you want to include. You can "
+"use the general search on the left hand navigation or, if you want to show all "
+"items in an item set, use the Advanced Search from Items browse. NB: if you "
+"leave the search options blank, the browse preview will load all items in your "
+"site's item pool."
 msgstr ""
+"Pour créer un bloc Aperçu des ressources, vous devez d'abord effectuer une "
+"recherche dans votre installation Omeka S pour les contenus que vous voulez "
+"inclure. Vous pouvez utilisez la recherche générale dans la navigation à gauche "
+"ou, si vous voulez montrer tous les contenus d'une collection, utilisez la "
+"recherche avancée depuis la page de parcours des contenus. NB: si vous laissez "
+"l'option de recherche vide, l'aperçu des ressource chargera tous les contenus "
+"du réservoir de contenus de votre site."
 
 #: ../../docs/sites/site_pages.md:168
 msgid ""
-"Once you have searched, highlight everything in your browser's address "
-"bar starting with the question mark all the way to the end of the search "
-"url (to the right)."
+"Once you have searched, highlight everything in your browser's address bar "
+"starting with the question mark all the way to the end of the search url (to "
+"the right)."
 msgstr ""
+"Une fois que vous avez effectué la recherche, sélectionnez tout ce qui se "
+"trouve dans la barre d'adresse du navigateur en commençant par le point "
+"d'interrogation jusqu'à la fin de l'URL de recherche (vers la droite)."
 
 #: ../../docs/sites/site_pages.md:170
 msgid ""
 "![a search query url with the question mark and everything to its right "
 "highlighted](../sites/sitesfiles/sitespg_bpquery.png)"
 msgstr ""
+"![une URL de requête de recherche avec le point d'interrogation et tout ce qui "
+"est à sa droite sélectionné](../sites/sitesfiles/sitespg_bpquery.png)"
 
 #: ../../docs/sites/site_pages.md:172
 msgid ""
-"From the *Resource type* dropdown, choose the kind of resource you want "
-"to display in the block: Items, Item Sets, or Media."
+"From the *Resource type* dropdown, choose the kind of resource you want to "
+"display in the block: Items, Item Sets, or Media."
 msgstr ""
+"Depuis la liste déroulante *Type de ressource*, choisissez le type de ressource "
+"que vous voulez afficher dans le bloc: Contenus, Collections, ou Media."
 
 #: ../../docs/sites/site_pages.md:173
 msgid ""
-"In the *Query* field of the Browse Preview block, paste the part of the "
-"url you just copied (everything from the question mark over)."
+"In the *Query* field of the Browse Preview block, paste the part of the url you "
+"just copied (everything from the question mark over)."
 msgstr ""
+"Dans le champ *Requête* du bloc d'aperçu de ressources, collez la partie de "
+"l'URL que vous venez de copier (tout à partir du point d'interrogation)."
 
 #: ../../docs/sites/site_pages.md:174
 msgid ""
-"The *Limit* field lets you set the number of resources to display in the "
-"block; any additional results from your query can be accessed on a search"
-" page linked from the bottom of the block (you set the text of the link "
-"in the *browse link text* field below)."
+"The *Limit* field lets you set the number of resources to display in the block; "
+"any additional results from your query can be accessed on a search page linked "
+"from the bottom of the block (you set the text of the link in the *browse link "
+"text* field below)."
 msgstr ""
+"Le champ *Limite* vous permet de définir le nombre de ressources à afficher "
+"dans le bloc; les autres contenus seront accessibles sur une page de recherche "
+"liée au bas du bloc (vous pouvez définir le texte du lien dans le champ *Texte "
+"du lien* en dessous)."
 
 #: ../../docs/sites/site_pages.md:175
 msgid ""
-"The *Preview Title* field sets the heading above the browse section on "
-"the page."
+"The *Preview Title* field sets the heading above the browse section on the page."
 msgstr ""
+"Le champ *Titre du bloc* défini le titre de la section aperçu sur la page."
 
 #: ../../docs/sites/site_pages.md:176
 msgid ""
-"The *Browse link text* field sets the link text at the bottom of the "
-"block - the block will only display as many results as you set in the "
-"*Limit* field above."
+"The *Browse link text* field sets the link text at the bottom of the block - "
+"the block will only display as many results as you set in the *Limit* field "
+"above."
 msgstr ""
+"Le champ *Texte du lien* défini le texte du lien en bas du bloc - le bloc "
+"affichera au maximum le nombre de résultats que vous avez défini dans le champ "
+"*Limite*."
 
 #: ../../docs/sites/site_pages.md:178
 msgid "![Page block for Browse Preview](../sites/sitesfiles/sitepg_bpblock.png)"
 msgstr ""
+"![Bloc de page pour l'aperçu des ressources](../sites/sitesfiles/sitepg_bpblock."
+"png)"
 
 #: ../../docs/sites/site_pages.md:180
 msgid "Item Showcase"
-msgstr ""
+msgstr "Vitrine de contenus"
 
 #: ../../docs/sites/site_pages.md:181
 msgid "A list of items."
-msgstr ""
+msgstr "Une liste de contenus."
 
 #: ../../docs/sites/site_pages.md:183
 msgid ""
-"In item showcase blocks, multiple attachments build horizontally, "
-"creating rows across the page."
+"In item showcase blocks, multiple attachments build horizontally, creating rows "
+"across the page."
 msgstr ""
+"Dans les blocs vitrine de contenus, les pièces jointes s'empilent de manière "
+"horizontale, ce qui crée des lignes sur la page."
 
 #: ../../docs/sites/site_pages.md:185
 msgid ""
-"![Block for item showcase with one item "
-"added](../sites/sitesfiles/sitepg_showcase.png)"
+"![Block for item showcase with one item added](../sites/sitesfiles/"
+"sitepg_showcase.png)"
 msgstr ""
+"![Bloc pour une vitrine de contenus avec un contenu ajouté](../sites/sitesfiles/"
+"sitepg_showcase.png)"
 
 #: ../../docs/sites/site_pages.md:187
 msgid "Using the drop-down menu in the block, you can:"
-msgstr ""
+msgstr "En utilisant le menu déroulant dans le bloc, vous pouvez:"
 
 #: ../../docs/sites/site_pages.md:189
 msgid ""
-"set the thumbnail size for these items as large (default), medium, or "
-"square."
+"set the thumbnail size for these items as large (default), medium, or square."
 msgstr ""
+"définir la taille de vignette pour ces images à grand (par défaut), moyen, ou "
+"carré."
 
 #: ../../docs/sites/site_pages.md:190
 msgid "set the attachment title as:"
-msgstr ""
+msgstr "définir le titre de la pièce jointe à:"
 
 #: ../../docs/sites/site_pages.md:195
 msgid ""
-"Click the *Add Attachment* button to add an item to the block. This will "
-"open a drawer on the right side of the page to browse and select items."
+"Click the *Add Attachment* button to add an item to the block. This will open a "
+"drawer on the right side of the page to browse and select items."
 msgstr ""
+"Cliquez sur le bouton *Ajouter une pièce jointe* pour ajouter un contenu au "
+"bloc. Cela ouvrira un tiroir sur le côté droit de la page pour parcourir et "
+"sélectionner des contenus."
 
 #: ../../docs/sites/site_pages.md:205
 msgid ""
-"Once you have applied your changes to the filter, you must click the "
-"search button (magnifying glass) to apply the filters or run the search."
+"Once you have applied your changes to the filter, you must click the search "
+"button (magnifying glass) to apply the filters or run the search."
 msgstr ""
+"Une fois que vous avez appliqué vos modifications au filtre, vous devez cliquez "
+"sur le bouton de recherche (loupe) pour appliquer les filtres ou lancer la "
+"rechercher."
 
 #: ../../docs/sites/site_pages.md:207
 msgid ""
-"![Select item drawer with filter options "
-"displayed](../sites/sitesfiles/sitepg_selectitemFilter.png)"
+"![Select item drawer with filter options displayed](../sites/sitesfiles/"
+"sitepg_selectitemFilter.png)"
 msgstr ""
+"![Tiroir de sélection de contenu avec les options de filtre affichées](../sites/"
+"sitesfiles/sitepg_selectitemFilter.png)"
 
 #: ../../docs/sites/site_pages.md:217
 msgid ""
-"To cancel the item selection, click the X in the upper right corner of "
-"the drawer at any time."
+"To cancel the item selection, click the X in the upper right corner of the "
+"drawer at any time."
 msgstr ""
+"Pour annuler la sélection du contenu, cliquez sur le X dans le coin supérieur "
+"droit du tiroir à n'importe quel moment."
 
 #: ../../docs/sites/site_pages.md:219
 msgid ""
-"Once you’ve added an item, it will appear in the Item List block. You can"
-" edit the caption or media options by clicking the edit (wrench) button "
-"for that row, and you can delete the item using the delete (trash can) "
-"icon."
+"Once you’ve added an item, it will appear in the Item List block. You can edit "
+"the caption or media options by clicking the edit (wrench) button for that row, "
+"and you can delete the item using the delete (trash can) icon."
 msgstr ""
+"Une fois que vous avez ajouté un contenu, il apparaîtra dans le bloc Liste de "
+"contenus. Vous pouvez modifier la légende ou les options de media en cliquant "
+"sur le bouton modifier (clé à molette) pour cette ligne, et vous pouvez "
+"supprimer le contenu en utilisant l'icône supprimer (poubelle)."
 
 #: ../../docs/sites/site_pages.md:221
 msgid "You can add multiple items to the list."
-msgstr ""
+msgstr "Vous pouvez ajouter plusieurs contenus à la liste."
 
 #: ../../docs/sites/site_pages.md:224
 msgid ""
-"This block displays a list of all of the sites on your Omeka S install. "
-"This block has the following options:"
+"This block displays a list of all of the sites on your Omeka S install. This "
+"block has the following options:"
 msgstr ""
+"Ce bloc affiche une liste de tous les sites de votre installation Omeka S. Ce "
+"bloc a les options suivantes:"
 
 #: ../../docs/sites/site_pages.md:226
 msgid "![List of sites block](../sites/sitesfiles/sitepg_slist1.png)"
-msgstr ""
+msgstr "![Bloc Liste de sites](../sites/sitesfiles/sitepg_slist1.png)"
 
 #: ../../docs/sites/site_pages.md:228
 msgid ""
-"Sort sites by: Alphabetical order (A-Z); Oldest first; newest first. By "
-"default this is set to alphabetical."
+"Sort sites by: Alphabetical order (A-Z); Oldest first; newest first. By default "
+"this is set to alphabetical."
 msgstr ""
+"Trier les sites par: Ordre alphabétique (A-Z); Plus ancien d'abord; Plus récent "
+"d'abord. Par défaut l'ordre est alphabétique."
 
 #: ../../docs/sites/site_pages.md:229
 msgid ""
-"Max number of sites allows you to limit the number of sites which display"
-" at once. If left blank, all sites will display."
+"Max number of sites allows you to limit the number of sites which display at "
+"once. If left blank, all sites will display."
 msgstr ""
+"Le nombre maximum de sites vous permet de limiter le nombre de sites qui "
+"s'affichent en même temps. Si vide, tous les sites seront affichés."
 
 #: ../../docs/sites/site_pages.md:230
 msgid "A checkbox to turn on pagination, applied only if you set a limit."
 msgstr ""
+"Une case à cocher pour activer la pagination, appliqué seulement si vous "
+"définissez une limite."
 
 #: ../../docs/sites/site_pages.md:231
 msgid "A checkbox to show site summaries."
-msgstr ""
+msgstr "Une case à cocher pour afficher le résumé des sites."
 
 #: ../../docs/sites/site_pages.md:232
 msgid "A checkbox to exclude the current site from the list."
-msgstr ""
+msgstr "Une case à cocher pour exclure le site actuel de la liste."
 
 #: ../../docs/sites/site_pages.md:234
 msgid ""
-"This image shows a List of sites block, sorted oldest first, with no "
-"limits:"
+"This image shows a List of sites block, sorted oldest first, with no limits:"
 msgstr ""
+"Cette image montre un bloc Liste des sites, trié par le plus ancien d'abord, "
+"sans limite:"
 
 #: ../../docs/sites/site_pages.md:236
 msgid "![](../sites/sitesfiles/sitepg_slist2.png)"
-msgstr ""
+msgstr "![](../sites/sitesfiles/sitepg_slist2.png)"
 
 #: ../../docs/sites/site_pages.md:238
 msgid ""
-"This is the same block edited to have a limit of 5 and pagination is "
-"turned on:"
+"This is the same block edited to have a limit of 5 and pagination is turned on:"
 msgstr ""
+"C'est le même bloc modifié pour avoir une limite de 5 et la pagination activée:"
 
 #: ../../docs/sites/site_pages.md:240
 msgid "![](../sites/sitesfiles/sitepg_slist3.png)"
-msgstr ""
+msgstr "![](../sites/sitesfiles/sitepg_slist3.png)"
 
 #: ../../docs/sites/site_pages.md:242
 msgid "The same block with pagination and site summaries turned on:"
-msgstr ""
+msgstr "Le même bloc avec la pagination et le résumé des sites activés:"
 
 #: ../../docs/sites/site_pages.md:244
 msgid "![](../sites/sitesfiles/sitepg_slist4.png)"
-msgstr ""
+msgstr "![](../sites/sitesfiles/sitepg_slist4.png)"
 
 #: ../../docs/sites/site_pages.md:246
 msgid "Table of Contents"
-msgstr ""
+msgstr "Table des matières"
 
 #: ../../docs/sites/site_pages.md:247
 msgid ""
-"If the current page has child pages, you can add a table of content block"
-" for those pages."
+"If the current page has child pages, you can add a table of content block for "
+"those pages."
 msgstr ""
+"Si la page actuelle a des pages enfant, vous pouvez ajouter un bloc Table des "
+"matières pour ces pages."
 
 #: ../../docs/sites/site_pages.md:249
 msgid ""
-"The Depth option allows you to set how many levels of child pages you "
-"want to display. If left blank, it will display all possible levels. "
-"Please enter a whole number."
+"The Depth option allows you to set how many levels of child pages you want to "
+"display. If left blank, it will display all possible levels. Please enter a "
+"whole number."
 msgstr ""
+"L'option profondeur vous permet de définir combien de niveaux de pages enfant "
+"vous souhaitez afficher. Si vide, tous les niveaux seront affichés. Veuillez "
+"saisir un nombre entier."
 
 #: ../../docs/sites/site_pages.md:251
 msgid ""
-"![Table of content block with no depth option "
-"set](../sites/sitesfiles/sitepg_toc.png)"
+"![Table of content block with no depth option set](../sites/sitesfiles/"
+"sitepg_toc.png)"
 msgstr ""
+"![Bloc Table des matières avec l'option profondeur non définie](../sites/"
+"sitesfiles/sitepg_toc.png)"
 
 #: ../../docs/sites/site_pages.md:253
 msgid ""
-"Add and arrange pages using the [Site "
-"Navigation](../sites/site_navigation.md) settings."
+"Add and arrange pages using the [Site Navigation](../sites/site_navigation.md) "
+"settings."
 msgstr ""
+"Ajoutez et organisez les pages en utilisant les paramètres de la [Navigation du "
+"site](../sites/site_navigation.md)"
 
 #: ../../docs/sites/site_pages.md:255
 msgid "Line Break"
-msgstr ""
+msgstr "Saut de ligne"
 
 #: ../../docs/sites/site_pages.md:256
 msgid ""
-"Line break creates a transparent or opaque line break on the page, "
-"clearing all blocks. Select whether the line is transparent or opaque "
-"from the dropdown."
+"Line break creates a transparent or opaque line break on the page, clearing all "
+"blocks. Select whether the line is transparent or opaque from the dropdown."
 msgstr ""
+"Le saut de ligne crée un saut de ligne transparent ou opaque sur la page. "
+"Choisissez si la ligne doit être transparente ou opaque depuis la liste "
+"déroulante."
 
 #: ../../docs/sites/site_pages.md:258
 msgid ""
-"![line break table, dropdown selected to "
-"transparent](../sites/sitesfiles/sitepg_line.png)"
+"![line break table, dropdown selected to transparent](../sites/sitesfiles/"
+"sitepg_line.png)"
 msgstr ""
+"![tableau saut de ligne, liste déroulante définie à transparent](../sites/"
+"sitesfiles/sitepg_line.png)"
 
 #: ../../docs/sites/site_pages.md:260
 msgid ""
-"HTML blocks wrap around Media blocks and at times you may want to clear "
-"the page. You might also want to create a visual break on the page."
+"HTML blocks wrap around Media blocks and at times you may want to clear the "
+"page. You might also want to create a visual break on the page."
 msgstr ""
+"Les blocs HTML enveloppent les blocs Media et par moment vous pouvez avoir "
+"envie d'aérer la page. Vous pouvez aussi avoir envie de créer une cassure "
+"visuelle sur la page."
 
 #: ../../docs/sites/site_pages.md:262
 msgid "Item with Metadata"
-msgstr ""
+msgstr "Contenu avec métadonnées"
 
 #: ../../docs/sites/site_pages.md:263
 msgid ""
-"This block displays an item along with all associated metadata (entered "
-"when creating or editing the [item](../content/items.md))."
+"This block displays an item along with all associated metadata (entered when "
+"creating or editing the [item](../content/items.md))."
 msgstr ""
+"Ce bloc affiche un contenu avec ses métadonnées associées (saisie à la création "
+"ou modification du [contenu](../content/items.md))."
 
 #: ../../docs/sites/site_pages.md:265
 msgid ""
-"Add attachments in the same manner as the [media](#media-embed) page "
-"block."
+"Add attachments in the same manner as the [media](#media-embed) page block."
 msgstr ""
+"Ajoutez des pièces jointes de la même manière que le bloc [media](#media-embed)."
 
 #: ../../docs/sites/site_pages.md:267
 msgid ""
-"![Item with metadata block with nothing "
-"attached](../sites/sitesfiles/sitepg_iwm.png)"
+"![Item with metadata block with nothing attached](../sites/sitesfiles/"
+"sitepg_iwm.png)"
 msgstr ""
+"![Bloc Contenu avec métadonnées et aucune pièce jointe](../sites/sitesfiles/"
+"sitepg_iwm.png)"
 
 #: ../../docs/sites/site_pages.md:269
 msgid "Other blocks"
-msgstr ""
+msgstr "Autres blocs"
 
 #: ../../docs/sites/site_pages.md:270
 msgid ""
-"For module-specific blocks (like [Collecting](../modules/collecting.md) "
-"or [Map](../modules/mapping.md)) see the documentation for that module."
+"For module-specific blocks (like [Collecting](../modules/collecting.md) or [Map]"
+"(../modules/mapping.md)) see the documentation for that module."
 msgstr ""
+"Pour les blocs spécifiques à un module (comme [Collecting](../modules/"
+"collecting.md) ou [Map](../modules/mapping.md)) voir la documentation de ce "
+"module."
 
 #: ../../docs/sites/site_pages.md:272
 msgid "Deleting Pages"
-msgstr ""
+msgstr "Supprimer des pages"
 
 #: ../../docs/sites/site_pages.md:273
 msgid ""
-"To delete a page, go the to *Pages* tab of the site of which the page is "
-"a part. Click the delete (trash can) button at the right end of the row "
-"for that page."
+"To delete a page, go the to *Pages* tab of the site of which the page is a "
+"part. Click the delete (trash can) button at the right end of the row for that "
+"page."
 msgstr ""
+"Pour supprimer une page, allez vers l'onglet *Pages* du site qui contient cette "
+"page. Cliquez sur le bouton supprimer (poubelle) à l'extrémité droite de la "
+"ligne pour cette page."
 
 #: ../../docs/sites/site_pages.md:275
 msgid ""
-"A drawer will open on the right side of the page asking you to confirm "
-"that you wish to delete the page, with the name of the page displayed "
-"under the confirm button. To proceed, click the *Confirm delete* button. "
-"Otherwise, click the *X* in the upper right corner of the drawer to "
-"cancel."
+"A drawer will open on the right side of the page asking you to confirm that you "
+"wish to delete the page, with the name of the page displayed under the confirm "
+"button. To proceed, click the *Confirm delete* button. Otherwise, click the *X* "
+"in the upper right corner of the drawer to cancel."
 msgstr ""
+"Un tiroir apparaîtra à droite de la page et vous demandera de confirmer que "
+"vous souhaitez supprimer la page, avec le nom de la page affiché sous le bouton "
+"de confirmation. Pour continuer, cliquez sur le bouton *Confirmer la "
+"suppression*. Sinon, cliquez sur le *X* dans le coin supérieur droit du tiroir "
+"pour annuler."
 
 #: ../../docs/sites/site_pages.md:277
 msgid ""
-"![Delete drawer for the Novels "
-"page](../sites/sitesfiles/sitepg_delete.png)"
+"![Delete drawer for the Novels page](../sites/sitesfiles/sitepg_delete.png)"
 msgstr ""
-
+"![Tiroir de suppression pour la page Novels](../sites/sitesfiles/sitepg_delete."
+"png)"
