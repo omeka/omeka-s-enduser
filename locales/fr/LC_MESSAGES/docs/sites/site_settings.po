@@ -4,402 +4,526 @@
 # manual package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Omeka S end user manual \n"
+"Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 20:27+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-06-30 20:35+0200\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Julian Maurice <julian.maurice@biblibre.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../docs/sites/site_settings.md:1
 msgid "Site Admin"
-msgstr ""
+msgstr "Administration du site"
 
 #: ../../docs/sites/site_settings.md:3
 msgid ""
-"The Site Admin page allows you to manage the main settings for the "
-"[site](../sites/index.md) on which you are working. Changes will only be "
-"applied to this site and will not change other sites' settings."
+"The Site Admin page allows you to manage the main settings for the [site](../"
+"sites/index.md) on which you are working. Changes will only be applied to this "
+"site and will not change other sites' settings."
 msgstr ""
+"La page d'administration du site vous permet de gérer les paramètres "
+"principaux du [site](../sites/index.md) sur lequel vous travaillez. Les "
+"modifications seront uniquement appliquées à ce site et ne modifieront pas les "
+"paramètres des autres sites."
 
 #: ../../docs/sites/site_settings.md:5
 msgid "It is the first tab under the site title, represented with a gear icon."
 msgstr ""
+"C'est le premier onglet sous le titre du site, représenté par une icône "
+"d'engrenage."
 
 #: ../../docs/sites/site_settings.md:7
 msgid "The Site Admin page has two tabs, Info and Settings."
 msgstr ""
+"La page d'administration du site a deux onglets, Informations et Paramètres."
 
 #: ../../docs/sites/site_settings.md:9
 msgid "Info"
-msgstr ""
+msgstr "Informations"
 
 #: ../../docs/sites/site_settings.md:10
 msgid ""
-"The site info settings for an Omeka S site are where you can change the "
-"basic info for the site - the same information you entered when you "
-"created the site. You can change the:"
+"The site info settings for an Omeka S site are where you can change the basic "
+"info for the site - the same information you entered when you created the "
+"site. You can change the:"
 msgstr ""
+"Les paramètres d'informations du site pour un site Omeka S sont l'endroit où "
+"vous pouvez modifier les informations basiques du site - les mêmes "
+"informations que vous saisissez à la création d'un site. Vous pouvez changer:"
 
 #: ../../docs/sites/site_settings.md:12
 msgid "*title* - a text field."
-msgstr ""
+msgstr "le *titre* - un champ texte."
 
 #: ../../docs/sites/site_settings.md:13
 msgid "*slug* - the url for your site."
-msgstr ""
+msgstr "*l'identifiant* - l'URL de votre site."
 
 #: ../../docs/sites/site_settings.md:14
 msgid ""
-"*summary* - the brief description of what it is about which will appear "
-"on your installation's landing page and on [List of Site](site_pages.md"
-"#page-blocks) blocks."
+"*summary* - the brief description of what it is about which will appear on "
+"your installation's landing page and on [List of Site](site_pages.md#page-"
+"blocks) blocks."
 msgstr ""
+"le *résumé* - une description brève du site qui apparaîtra sur la page "
+"d'accueil de votre installation et sur les blocs [Liste des sites](site_pages."
+"md#page-blocks)."
 
 #: ../../docs/sites/site_settings.md:16
 msgid ""
-"![Site info for the site “Jane Austen” with buttons across the top to "
-"View, Delete, and Save the site](../sites/sitesfiles/sites_siteinfo.png)"
+"![Site info for the site “Jane Austen” with buttons across the top to View, "
+"Delete, and Save the site](../sites/sitesfiles/sites_siteinfo.png)"
 msgstr ""
+"![Informations du site « Jane Austen » avec les boutons en haut pour Voir, "
+"Supprimer et Enregistrer le site](../sites/sitesfiles/sites_siteinfo.png)"
 
 #: ../../docs/sites/site_settings.md:18
 msgid ""
-"In the upper right hand corner of the window on this tab, you can use "
-"buttons to:"
+"In the upper right hand corner of the window on this tab, you can use buttons "
+"to:"
 msgstr ""
+"Dans le coin supérieur droit de la fenêtre de cet onglet, vous pouvez utiliser "
+"les boutons pour:"
 
 #: ../../docs/sites/site_settings.md:20
 msgid "set your site as public or private using the eye icon button (see below);"
 msgstr ""
+"rendre votre site public ou privé en utilisant l'icône d’œil (voir ci-dessous);"
 
 #: ../../docs/sites/site_settings.md:21
 msgid "*delete* the site;"
-msgstr ""
+msgstr "*supprimer* le site;"
 
 #: ../../docs/sites/site_settings.md:22
 msgid "*cancel* making changes; and"
-msgstr ""
+msgstr "*annuler* les changements; et"
 
 #: ../../docs/sites/site_settings.md:23
 msgid "*Ssave* changes."
-msgstr ""
+msgstr "*Enregistrer* les changements."
 
 #: ../../docs/sites/site_settings.md:25
 msgid ""
-"The *make public/private* button (eye icon) is used to both indicate and "
-"set whether the site is visible to the public or only to users of this "
-"Omeka S installation"
+"The *make public/private* button (eye icon) is used to both indicate and set "
+"whether the site is visible to the public or only to users of this Omeka S "
+"installation"
 msgstr ""
+"Le bouton *rendre public/privé* (icône d’œil) est utilisé à la fois pour "
+"indiquer et modifier si le site est visible publiquement ou uniquement par les "
+"utilisateurs de cette installation Omeka S"
 
 #: ../../docs/sites/site_settings.md:27
 msgid ""
-"Site is public: ![make public button showing an eye "
-"icon](../content/contentfiles/item_public.png)    Site is Private: ![make"
-" private button showing an eye icon with a diagonal slash through "
-"it](../content/contentfiles/item_private.png)"
+"Site is public: ![make public button showing an eye icon](../content/"
+"contentfiles/item_public.png)    Site is Private: ![make private button "
+"showing an eye icon with a diagonal slash through it](../content/contentfiles/"
+"item_private.png)"
 msgstr ""
+"Le site est public: ![bouton rendre public montrant une icône d’œil](../"
+"content/contentfiles/item_public.png)   Le site est privé: ![bouton rendre "
+"privé montrant une icône d’œil traversée par une barre oblique](../content/"
+"contentfiles/item_private.png)"
 
 #: ../../docs/sites/site_settings.md:30
 msgid "Settings"
-msgstr ""
+msgstr "Paramètres"
 
 #: ../../docs/sites/site_settings.md:31
 msgid ""
-"The Settings page is divided into three sections: General, Browse, and "
-"Search."
+"The Settings page is divided into three sections: General, Browse, and Search."
 msgstr ""
+"La page Paramètres est divisé en trois sections: Général, Parcourir, et "
+"Recherche."
 
 #: ../../docs/sites/site_settings.md:33
 msgid ""
-"To implement any changes you make, click Save at the top right of the "
-"browser window when you are done. To leave without saving changes, click "
-"cancel."
+"To implement any changes you make, click Save at the top right of the browser "
+"window when you are done. To leave without saving changes, click cancel."
 msgstr ""
+"Pour mettre en œuvre les changements que vous faites, cliquez sur Enregistrer "
+"dans le coin supérieur droit de la fenêtre du navigateur quand vous avez "
+"terminé. Pour partir sans enregistrer les changements, cliquez sur Annuler."
 
 #: ../../docs/sites/site_settings.md:35
 msgid "General settings"
-msgstr ""
+msgstr "Paramètres généraux"
 
 #: ../../docs/sites/site_settings.md:37
 msgid ""
-"![general settings, all at "
-"default](../sites/sitesfiles/sites_settingsgen.png)"
+"![general settings, all at default](../sites/sitesfiles/sites_settingsgen.png)"
 msgstr ""
+"![paramètres généraux, tous à leur valeur par défaut](../sites/sitesfiles/"
+"sites_settingsgen.png)"
 
 #: ../../docs/sites/site_settings.md:39
 msgid ""
 "**Auto-assign new items** A checkbox which sets whether new items are "
-"automatically added to the site. If checked, every new item will be added"
-" to the site, regardless of the item's owner. Note that item owners may "
-"unassign their items from the site at any time, in the item's edit pages."
+"automatically added to the site. If checked, every new item will be added to "
+"the site, regardless of the item's owner. Note that item owners may unassign "
+"their items from the site at any time, in the item's edit pages."
 msgstr ""
+"**Assigner automatiquement les nouveaux contenus** Une case à cocher qui "
+"détermine si les nouveaux contenus sont automatiquement ajoutés au site. Si "
+"cochée, chaque nouveau contenu sera ajouté au site, sans tenir compte du "
+"propriétaire du contenu. Notez que les propriétaires de contenu peuvent "
+"retirer leurs contenus du site à n'importe quel moment, depuis la page de "
+"modification du contenu."
 
 #: ../../docs/sites/site_settings.md:41
 msgid ""
-"**Attachment link type** Sets the target of links from attachments you "
-"add to [site page blocks](site_pages.md#page-blocks) (for example, in an "
-"[item showcase](site_pages.md#item-showcase). It offers a dropdown with "
-"the following options:"
+"**Attachment link type** Sets the target of links from attachments you add to "
+"[site page blocks](site_pages.md#page-blocks) (for example, in an [item "
+"showcase](site_pages.md#item-showcase). It offers a dropdown with the "
+"following options:"
 msgstr ""
+"**Type de lien des pièces jointes** Définit la cible des liens des pièces "
+"jointes que vous ajoutez au [blocs de page de site](site_pages.md#page-blocks) "
+"(par example, dans une [vitrine de contenus](site_pages.md#item-showcase). Il "
+"propose une liste déroulante avec les options suivantes:"
 
 #: ../../docs/sites/site_settings.md:43
 msgid ""
 "*item page:* clicking on the attachment takes users to the item page "
 "associated with the attached media;"
 msgstr ""
+"*page de contenu:* cliquer sur la pièce jointe emmène l'utilisateur vers la "
+"page du contenu associé au media joint;"
 
 #: ../../docs/sites/site_settings.md:44
 msgid "*media page:* clicking on the attachment takes users to the media page;"
 msgstr ""
+"*page de media:* cliquer sur la pièce jointe emmène l'utilisateur vers la page "
+"de media;"
 
 #: ../../docs/sites/site_settings.md:45
 msgid ""
-"*direct link to file:* clicking on the attachment takes user to the file "
-"alone."
+"*direct link to file:* clicking on the attachment takes user to the file alone."
 msgstr ""
+"*lien direct vers le fichier:* cliquer sur la pièce jointe emmène "
+"l'utilisateur vers le fichier."
 
 #: ../../docs/sites/site_settings.md:47
 msgid ""
-"**Embed media on item pages** is a checkbox. When checked, any linked "
-"media (such as videos) will be embedded on the item pages. When "
-"unchecked, site visitors will click through to view playable media."
+"**Embed media on item pages** is a checkbox. When checked, any linked media "
+"(such as videos) will be embedded on the item pages. When unchecked, site "
+"visitors will click through to view playable media."
 msgstr ""
+"**Intégrer le media sur les pages de contenu** est une case à cocher. Si "
+"cochée, tous les media liés (tels que des vidéos) seront intégrés dans les "
+"pages de contenu. Si non cochée, les visiteurs du site cliqueront dessus pour "
+"voir le media."
 
 #: ../../docs/sites/site_settings.md:49
 msgid ""
-"**Show page pagination** is also a checkbox. When checked, \"Previous\" "
-"and \"Next\" links will display at the bottom of every page in the site, "
-"proceeding through your navigation. If unchecked, these links will not "
-"display."
+"**Show page pagination** is also a checkbox. When checked, \"Previous\" and "
+"\"Next\" links will display at the bottom of every page in the site, "
+"proceeding through your navigation. If unchecked, these links will not display."
 msgstr ""
+"**Afficher la pagination de page** est aussi une case à cocher. Si cochée, les "
+"liens « Précédent » et « Suivant » seront affichés en bas de chaque page du "
+"site, pour pouvoir continuer votre navigation. Si non cochée, ces liens ne "
+"seront pas affichés."
 
 #: ../../docs/sites/site_settings.md:51
 msgid ""
-"**Show user bar on public views** sets whether there is a bar across the "
-"top of public site pages which allow users to access the admin side of "
-"the site."
+"**Show user bar on public views** sets whether there is a bar across the top "
+"of public site pages which allow users to access the admin side of the site."
 msgstr ""
+"**Afficher la barre utilisateur sur les vues publiques** détermine si il y a "
+"une barre au-dessus des pages du site public ce qui permet aux utilisateurs "
+"d'accéder à la partie administration du site."
 
 #: ../../docs/sites/site_settings.md:53
 msgid "When users are logged in, the user bar has the following options:"
 msgstr ""
+"Quand les utilisateurs sont authentifiés, la barre utilisateur a les options "
+"suivantes:"
 
 #: ../../docs/sites/site_settings.md:55
 msgid "Installation Title: takes you back to the installation admin"
 msgstr ""
+"Titre de l'installation: vous amène vers l'administration de l'installation"
 
 #: ../../docs/sites/site_settings.md:56
 msgid ""
-"Site Title: takes you back to the landing page for managing the site "
-"(site/show)."
+"Site Title: takes you back to the landing page for managing the site (site/"
+"show)."
 msgstr ""
+"Titre du site: vous amène à la page principale de gestion du site (site/show)"
 
 #: ../../docs/sites/site_settings.md:57
 msgid ""
-"Resource view: depending on what you are viewing, this is a link to the "
-"admin side management for [Pages](site_pages), [Items](../content/items),"
-" or [Item Sets](../content/item-sets)"
+"Resource view: depending on what you are viewing, this is a link to the admin "
+"side management for [Pages](site_pages), [Items](../content/items), or [Item "
+"Sets](../content/item-sets)"
 msgstr ""
+"Vue ressource: selon ce que vous êtes en train de visualiser, il y a un lien "
+"vers la partie administration pour les [pages](site_pages), les [contenus](../"
+"content/items), ou les [collections](../content/item-sets)"
 
 #: ../../docs/sites/site_settings.md:58
 msgid "Edit link for that page, item set, or item."
-msgstr ""
+msgstr "Lien de modification pour cette page, cette collection, ou ce contenu."
 
 #: ../../docs/sites/site_settings.md:59
 msgid "User's display name: takes you to your user page."
-msgstr ""
+msgstr "Nom d'affichage de l'utilisateur: vous amène vers la page utilisateur."
 
 #: ../../docs/sites/site_settings.md:60
 msgid "Logout: logs out current user."
-msgstr ""
+msgstr "Déconnexion: déconnecte l'utilisateur actuel."
 
 #: ../../docs/sites/site_settings.md:62
 msgid ""
-"![a blue bar across the top of the image displays the following words in "
-"light blue text, indicating a link: Stackable Sandbox, Jane Austen, "
-"Pages, Edit Page, Signed in as Megan, and a button to "
-"Logout.](../sites/sitesfiles/sites_userbarin.png)"
+"![a blue bar across the top of the image displays the following words in light "
+"blue text, indicating a link: Stackable Sandbox, Jane Austen, Pages, Edit "
+"Page, Signed in as Megan, and a button to Logout.](../sites/sitesfiles/"
+"sites_userbarin.png)"
 msgstr ""
+"![une barre bleue en haut de l'image affiche les mots suivants en bleu clair, "
+"indiquant un lien: Stackable Sandbox, Jane Austen, Pages, Modifier la page, "
+"Connecté en tant que Megan, et un bouton pour se déconnecter.](../sites/"
+"sitesfiles/sites_userbarin.png)"
 
 #: ../../docs/sites/site_settings.md:64
 msgid "When users are not logged, the user bar only displays a login option."
 msgstr ""
+"Quand les utilisateurs ne sont pas authentifiés, la barre utilisateur affiche "
+"uniquement une option de connexion."
 
 #: ../../docs/sites/site_settings.md:66
 msgid ""
-"![A blue bar across the top of the image only has a small button reading "
-"\"Log In\". Below this, the site's title \"A Tin Box\" is displayed in "
-"black text on a white "
-"background.](../sites/sitesfiles/sites_userbarout.png)"
+"![A blue bar across the top of the image only has a small button reading \"Log "
+"In\". Below this, the site's title \"A Tin Box\" is displayed in black text on "
+"a white background.](../sites/sitesfiles/sites_userbarout.png)"
 msgstr ""
+"![Une barre bleue en haut de l'image a seulement un petit bouton intitulé \"Se "
+"connecter\". En dessous, le titre du site « A Tin Box » est affiché en texte "
+"noir sur un fond blanc.](../sites/sitesfiles/sites_userbarout.png)"
 
 #: ../../docs/sites/site_settings.md:68
 msgid "The options for this setting are:"
-msgstr ""
+msgstr "Les options pour ce paramètre sont:"
 
 #: ../../docs/sites/site_settings.md:70
 msgid "Never"
-msgstr ""
+msgstr "Jamais"
 
 #: ../../docs/sites/site_settings.md:71
 msgid "When identified (when logged in)"
-msgstr ""
+msgstr "Si identifié (si connecté)"
 
 #: ../../docs/sites/site_settings.md:72
 msgid "Always"
-msgstr ""
+msgstr "Toujours"
 
 #: ../../docs/sites/site_settings.md:74
 msgid ""
 "**Disable JSON-LD embed** Check this box to disable JSON-LD embedding on "
 "resource browse and show pages."
 msgstr ""
+"**Désactivé le JSON-LD intégré** Cochez cette case pour désactivé "
+"l'intégration de JSON-LD sur les pages de ressources."
 
 #: ../../docs/sites/site_settings.md:76
 msgid ""
-"**Locale** is dropdown menu to select the language code for this site. By"
-" default this will be set to the same as the global locale setting for "
-"the entire Omeka S installation. To change, select a language from the "
-"dropdown menu."
+"**Locale** is dropdown menu to select the language code for this site. By "
+"default this will be set to the same as the global locale setting for the "
+"entire Omeka S installation. To change, select a language from the dropdown "
+"menu."
 msgstr ""
+"**Paramètres régionaux** est un menu déroulant qui permet de sélectionner la "
+"langue du site. Par défaut ce sera la même valeur que le paramètre global de "
+"l'installation Omeka S. Pour modifier, sélectionnez une langue dans le menu "
+"déroulant."
 
 #: ../../docs/sites/site_settings.md:78
 msgid "Browse settings"
-msgstr ""
+msgstr "Paramètres de consultation"
 
 #: ../../docs/sites/site_settings.md:80
 msgid ""
-"![browse settings, all "
-"empty](../sites/sitesfiles/sites_settingsbrowse.png)"
+"![browse settings, all empty](../sites/sitesfiles/sites_settingsbrowse.png)"
 msgstr ""
+"![paramètres de consultation, tous vides](../sites/sitesfiles/"
+"sites_settingsbrowse.png)"
 
 #: ../../docs/sites/site_settings.md:82
 msgid ""
-"**Restrict browse to attached items** is a checkbox. If checked, the "
-"Browse functions of your site will only show items which have been added "
-"to a page block. If unchecked, browse pages and blocks on your site will "
-"include all items in the Item Pool."
+"**Restrict browse to attached items** is a checkbox. If checked, the Browse "
+"functions of your site will only show items which have been added to a page "
+"block. If unchecked, browse pages and blocks on your site will include all "
+"items in the Item Pool."
 msgstr ""
+"**Restreindre la consultation aux contenus attachés** est une case à cocher. "
+"Si cochée, les fonctions de consultation de votre site montreront uniquement "
+"les contenus qui ont été ajoutés à un bloc de page. Si non cochée, les pages "
+"de consultation et les blocs sur votre site incluront tous les contenus du "
+"réservoir de contenus."
 
 #: ../../docs/sites/site_settings.md:84
 msgid ""
-"**Results per page** sets the number of results per page on browse pages "
-"by entering a number. If left blank, the site will use the default from "
-"the [global settings](../admin/settings)."
+"**Results per page** sets the number of results per page on browse pages by "
+"entering a number. If left blank, the site will use the default from the "
+"[global settings](../admin/settings)."
 msgstr ""
+"**Résultats par page** définit le nombre de résultats par page sur les pages "
+"de consultation en saisissant un nombre. Si laissé vide, le site utilisera la "
+"valeur par défaut définit dans les [paramètres globaux](../admin/settings)."
 
 #: ../../docs/sites/site_settings.md:86
 msgid ""
-"Depending on the [site theme](../sites/site_theme), you may want to make "
-"this a multiple of 4 for a more elegant display. Note that using very "
-"large numbers (50, 75, 100) may cause browse pages to load slowly."
+"Depending on the [site theme](../sites/site_theme), you may want to make this "
+"a multiple of 4 for a more elegant display. Note that using very large numbers "
+"(50, 75, 100) may cause browse pages to load slowly."
 msgstr ""
+"En fonction du [thème du site](../sites/site_theme), vous voudrez peut-être "
+"mettre un multiple de 4 pour un affichage plus élégant. Notez qu'utiliser de "
+"très grands nombres (50, 75, 100) peut provoquer des lenteurs au chargement "
+"des pages."
 
 #: ../../docs/sites/site_settings.md:88
 msgid ""
-"**Browse heading property** sets which property to use as the heading for"
-" each resource on a browse page. By default, this is Dublin Core: Title. "
-"The dropdown allows you to select from all available vocabularies, and "
-"includes a search bar to quickly find the desired property."
+"**Browse heading property** sets which property to use as the heading for each "
+"resource on a browse page. By default, this is Dublin Core: Title. The "
+"dropdown allows you to select from all available vocabularies, and includes a "
+"search bar to quickly find the desired property."
 msgstr ""
+"**Propriété pour le titre** détermine quelle propriété sera utilisé comme "
+"titre pour chaque ressource sur une page de parcours. Par défaut, c'est Dublin "
+"Core: Title. La liste déroulante vous permet de sélectionner parmi tous les "
+"vocabulaires disponibles, et contient une barre de recherche pour trouver "
+"rapidement la propriété voulue."
 
 #: ../../docs/sites/site_settings.md:90
 msgid ""
-"![The browse heading property option is open. The current selection, "
-"Dublin Core: Title, is at the top. Immediately below it is a search bar, "
-"indicated by a magnifying glass symbol. Below that are some properties "
-"from the the friend of a friend "
-"vocabulary.](../sites/sitesfiles/sites_setbrowseprop.png)"
+"![The browse heading property option is open. The current selection, Dublin "
+"Core: Title, is at the top. Immediately below it is a search bar, indicated by "
+"a magnifying glass symbol. Below that are some properties from the the friend "
+"of a friend vocabulary.](../sites/sitesfiles/sites_setbrowseprop.png)"
 msgstr ""
+"![L'option de propriété pour le titre est ouverte. La sélection actuelle, "
+"Dublin Core: Title, est en haut. Immédiatement en dessous se trouve la barre "
+"de recherche, indiquée par un symbole de loupe. Sous celle-ci se trouvent "
+"certaines propriétés du vocabulaire « friend of a friend ».](../sites/"
+"sitesfiles/sites_setbrowseprop.png)"
 
 #: ../../docs/sites/site_settings.md:93
 msgid ""
-"**Browse body property** sets which property to use as the body text for "
-"each resource on a browse page. By default, this is Dublin Core: "
-"Description. The dropdown allows you to select from all available "
-"vocabularies, and includes a search bar to quickly find the desired "
-"property."
+"**Browse body property** sets which property to use as the body text for each "
+"resource on a browse page. By default, this is Dublin Core: Description. The "
+"dropdown allows you to select from all available vocabularies, and includes a "
+"search bar to quickly find the desired property."
 msgstr ""
+"**Propriété définissant le corps, dans les listes** détermine quelle propriété "
+"sera utilisée comme corps de texte pour chaque ressource sur une page de "
+"liste. Par défaut, c'est Dublin Core: Description. La liste déroulante vous "
+"permet de sélectionner parmi tous les vocabulaires disponibles, et contient "
+"une barre de recherche pour trouver rapidement la propriété voulue."
 
 #: ../../docs/sites/site_settings.md:95
 msgid "Show"
-msgstr ""
+msgstr "Afficher"
 
 #: ../../docs/sites/site_settings.md:96
 msgid ""
-"When this box is checked, site pages to which an item is attached will "
-"display on the public view of that item."
+"When this box is checked, site pages to which an item is attached will display "
+"on the public view of that item."
 msgstr ""
+"Quand cette case est cochée, les pages de site auxquelles un contenu est "
+"attaché seront affichées sur la vue publique de ce contenu."
 
 #: ../../docs/sites/site_settings.md:98
 msgid "![Show setting checked](../sites/sitesfiles/sites_settingShow.png)"
-msgstr ""
+msgstr "![Paramètre afficher coché](../sites/sitesfiles/sites_settingShow.png)"
 
 #: ../../docs/sites/site_settings.md:100
 msgid "Search"
-msgstr ""
+msgstr "Recherche"
 
 #: ../../docs/sites/site_settings.md:102
 msgid ""
-"![search settings, all "
-"empty](../sites/sitesfiles/sites_settingssearch.png)"
+"![search settings, all empty](../sites/sitesfiles/sites_settingssearch.png)"
 msgstr ""
+"![Paramètres de recherche, tous vides](../sites/sitesfiles/"
+"sites_settingssearch.png)"
 
 #: ../../docs/sites/site_settings.md:104
 msgid ""
-"**Search type** is a dropdown which allows you to set from which site(s) "
-"the search bar generates results:"
+"**Search type** is a dropdown which allows you to set from which site(s) the "
+"search bar generates results:"
 msgstr ""
+"**Type de recherche** est une liste déroulante qui vous permet de définir pour "
+"quel(s) site(s) la barre de recherche génère des résultats:"
 
 #: ../../docs/sites/site_settings.md:106
 msgid "This site: only return results from this site;"
-msgstr ""
+msgstr "Ce site: retourne uniquement des résultats depuis ce site;"
 
 #: ../../docs/sites/site_settings.md:107
 msgid "All sites: return results for all sites on the installation."
 msgstr ""
+"Tous les sites: retourne des résultats pour tous les sites de l'installation."
 
 #: ../../docs/sites/site_settings.md:109
 msgid ""
-"**Search resources** is a series of checkboxes which let you select which"
-" types of resources are searched from the main search field on the site. "
-"Select from: site pages, items, and item sets. You can select all if you "
-"want."
+"**Search resources** is a series of checkboxes which let you select which "
+"types of resources are searched from the main search field on the site. Select "
+"from: site pages, items, and item sets. You can select all if you want."
 msgstr ""
+"**Rechercher les ressources** est une série de cases à cocher qui vous permet "
+"de sélectionner quels types de ressources sont recherchées depuis le champ de "
+"recherche principal sur le site. Sélectionnez parmi: pages de site, contenus, "
+"et collections. Vous pouvez tous les sélectionner si vous voulez."
 
 #: ../../docs/sites/site_settings.md:111
 msgid ""
-"**Templates** allows you to limit the properties for advanced item or "
-"item set search to only properties included in a template or templates. "
-"When this field is empty, the \"Search by Value\" on the advanced search "
-"will display all properties from all vocabularies in the Omeka S "
-"installation. Applying a template not only limits the options in the "
-"dropdown, it also includes your alternate labels for properties:"
+"**Templates** allows you to limit the properties for advanced item or item set "
+"search to only properties included in a template or templates. When this field "
+"is empty, the \"Search by Value\" on the advanced search will display all "
+"properties from all vocabularies in the Omeka S installation. Applying a "
+"template not only limits the options in the dropdown, it also includes your "
+"alternate labels for properties:"
 msgstr ""
+"**Modèles** vous permet de limiter les propriétés pour la recherche avancée de "
+"contenus ou de collections aux propriétés incluses dans un ou plusieurs "
+"modèles. Si ce champ est vide, la « Recherche par Valeur » sur la recherche "
+"avancée affichera toutes les propriétés de tous les vocabulaires de "
+"l'installation Omeka S. Appliquer un modèle non seulement limite les options "
+"de la liste déroulante, mais cela apporte aussi vos libellés alternatifs pour "
+"les propriétés:"
 
 #: ../../docs/sites/site_settings.md:113
 msgid ""
-"![Detail view of a dropdown menu for the option 'Search by value\". "
-"Values loaded include Creator:Author, Date: Date of Publication, and "
-"Description.](../sites/sitesfiles/sites_settingtemp.png)"
+"![Detail view of a dropdown menu for the option 'Search by value\". Values "
+"loaded include Creator:Author, Date: Date of Publication, and Description.](../"
+"sites/sitesfiles/sites_settingtemp.png)"
 msgstr ""
+"![Vue détaillée d'un menu déroulant pour l'option « Recherche par valeur ». "
+"Les valeurs chargées incluent Créateur:Auteur, Date: Date de publication, et "
+"Description.](../sites/sitesfiles/sites_settingtemp.png)"
 
 #: ../../docs/sites/site_settings.md:115
 msgid ""
-"Click in the field to add a template; you can add more than one template "
-"by clicking in the field again."
+"Click in the field to add a template; you can add more than one template by "
+"clicking in the field again."
 msgstr ""
+"Cliquez dans le champ pour ajouter un modèle; vous pouvez ajouter plusieurs "
+"modèles en cliquant à nouveau dans le champ."
 
 #: ../../docs/sites/site_settings.md:117
 msgid ""
-"**Restrict to templates** will restrict search results to only those "
-"items which are using the selected templates."
+"**Restrict to templates** will restrict search results to only those items "
+"which are using the selected templates."
 msgstr ""
-
+"**Restreindre aux modèles** restreindra les résultats de recherche aux "
+"contenus utilisant les modèles sélectionnés."
