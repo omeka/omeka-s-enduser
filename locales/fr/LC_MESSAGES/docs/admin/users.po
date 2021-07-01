@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 20:27+0000\n"
-"PO-Revision-Date: 2021-06-28 22:49+0200\n"
+"PO-Revision-Date: 2021-07-01 09:00+0200\n"
 "Last-Translator: Julian Maurice <julian.maurice@biblibre.com>\n"
 "Language: fr_FR\n"
 "Language-Team: \n"
@@ -326,7 +326,7 @@ msgstr ""
 
 #: ../../docs/admin/users.md:75
 msgid "Batch edit users"
-msgstr ""
+msgstr "Modifier les utilisateurs par lot"
 
 #: ../../docs/admin/users.md:77
 msgid ""
@@ -446,6 +446,9 @@ msgid ""
 "- select which role the users will have on the sites to which you have added "
 "them."
 msgstr ""
+"Ajouter aux autorisations du site en tant que: une liste déroulante avec des "
+"options pour l'observateur, l'éditeur, ou l'administrateur - sélectionnez quel "
+"rôle les utilisateurs auront sur les sites auxquels vous les ajoutez."
 
 #: ../../docs/admin/users.md:104
 msgid "Once you are done, click save changes."
@@ -484,6 +487,9 @@ msgid ""
 "that user has created - in this case, zero for both.](adminfiles/users_delete."
 "png)"
 msgstr ""
+"![Confirmation de suppression pour l'utilisateur Megan2, indiquant le nombre de "
+"contenus et de collections que l'utilisateur a créé - dans le cas présent, zéro "
+"pour les deux.](adminfiles/users_delete.png)"
 
 #: ../../docs/admin/users.md:113
 msgid "Batch delete users"
@@ -650,6 +656,10 @@ msgid ""
 "search, read, create, edit, and delete site pages. If a Reviewer has not beed "
 "added as a site user, they will have read-only access to that site's content."
 msgstr ""
+"Peut être ajouté à un site aux niveaux Créateur ou Gestionnaire, ce qui les "
+"autorise à rechercher, voir, créer, modifier, et supprimer les pages du site. Si "
+"un relecteur n'a pas été ajouté aux utilisateurs du site, il n'aura qu'un accès "
+"en lecture seule au contenu de ce site."
 
 #: ../../docs/admin/users.md:154
 msgid "Search and read only privileges for vocabularies and resource templates."

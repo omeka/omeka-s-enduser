@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 08:33+0000\n"
-"PO-Revision-Date: 2021-06-28 22:56+0200\n"
+"PO-Revision-Date: 2021-07-01 08:52+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../docs/admin/settings.md:5
 msgid "Global Settings"
-msgstr ""
+msgstr "Paramètres globaux"
 
 #: ../../docs/admin/settings.md:7
 msgid ""
@@ -260,13 +260,13 @@ msgstr ""
 
 #: ../../docs/admin/settings.md:49 ../../docs/admin/settings.md:52
 msgid "Separate additions to the list with a comma."
-msgstr "Ajouts à la liste séparés par une virgule"
+msgstr "Ajouts à la liste séparés par une virgule."
 
 #: ../../docs/admin/settings.md:50
 msgid "To return to defaults, click the *restore default media types* button."
 msgstr ""
 "Pour revenir aux paramètres par défaut, cliquez sur le bouton *Restaurer "
-"les types de média par défaut*"
+"les types de média par défaut*."
 
 #: ../../docs/admin/settings.md:51
 msgid ""
@@ -282,7 +282,7 @@ msgstr ""
 msgid "To return to defaults, click the *restore default extensions* button."
 msgstr ""
 "Pour revenir aux paramètres par défaut, cliquez sur le bouton *Restaurer "
-"les extensions par défaut"
+"les extensions par défaut."
 
 #: ../../docs/admin/settings.md:55
 msgid ""
