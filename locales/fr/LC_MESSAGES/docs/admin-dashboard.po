@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 08:33+0000\n"
-"PO-Revision-Date: 2021-06-28 22:53+0200\n"
+"PO-Revision-Date: 2021-07-01 22:08+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,12 +36,17 @@ msgid ""
 "This [screencast](https://vimeo.com/455708039) walks you through the main "
 "features of the dashboard and navigating your Omeka S installation."
 msgstr ""
+"Ce [screencast](https://vimeo.com/455708039) vous guide à travers les "
+"fonctions principales du tableau de bord et la navigation dans votre "
+"installation Omeka S."
 
 #: ../../docs/admin-dashboard.md:7
 msgid ""
 "[![Still image of the first frame of a vimeo video](files/"
 "navigatingOmekaS-still.png)](https://vimeo.com/455708039)"
 msgstr ""
+"[![Première image d'une vidéo Vimeo](files/navigatingOmekaS-still.png)]"
+"(https://vimeo.com/455708039)"
 
 #: ../../docs/admin-dashboard.md:9
 msgid "Admin Main Page"
@@ -66,6 +71,8 @@ msgstr ""
 #: ../../docs/admin-dashboard.md:15
 msgid "![Admin dashboard full view](files/admindashfullview.png)"
 msgstr ""
+"![Vue complète du tableau de bord d'administration](files/"
+"admindashfullview.png)"
 
 #: ../../docs/admin-dashboard.md:17
 msgid ""
@@ -99,6 +106,8 @@ msgid ""
 "![Close up of manage resources and manage sites boxes](files/"
 "admindashmanage.png)"
 msgstr ""
+"![Gros plan des boîtes de gestion de ressources et de gestion des sites]"
+"(files/admindashmanage.png)"
 
 #: ../../docs/admin-dashboard.md:23
 msgid ""
@@ -130,6 +139,10 @@ msgid ""
 "appears consistently throughout the admin interface, with options as "
 "described below](files/leftnav.png)"
 msgstr ""
+"![Vue de la navigation gauche sur le tableau de bord d'administration, "
+"qui apparaît également constamment dans toute l'interface "
+"d'administration, avec les options telles que décrites ci-dessous](files/"
+"leftnav.png)"
 
 #: ../../docs/admin-dashboard.md:32
 msgid ""
@@ -177,7 +190,7 @@ msgstr ""
 
 #: ../../docs/admin-dashboard.md:40
 msgid "![Advanced search options](files/search.png)"
-msgstr ""
+msgstr "![Options de la recherche avancée](files/search.png)"
 
 #: ../../docs/admin-dashboard.md:42
 msgid ""
@@ -310,4 +323,4 @@ msgstr ""
 
 #: ../../docs/admin-dashboard.md:64
 msgid "![Example system information page](files/systeminfo.png)"
-msgstr ""
+msgstr "![Exemple de page informations système](files/systeminfo.png)"
