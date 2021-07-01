@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 08:33+0000\n"
-"PO-Revision-Date: 2021-06-28 21:17+0200\n"
+"PO-Revision-Date: 2021-07-01 22:02+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
-"Last-Translator: \n"
+"Last-Translator: Julian Maurice <julian.maurice@biblibre.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../docs/configuration.md:1
 msgid "Configuration Options"
@@ -66,11 +66,13 @@ msgstr ""
 
 #: ../../docs/configuration.md:22
 msgid "Thumbnails"
-msgstr ""
+msgstr "Vignettes"
 
 #: ../../docs/configuration.md:24
 msgid "The `thumbnails` configuration key holds most thumbnail settings:"
 msgstr ""
+"La clé de configuration `thumbnails` contient la plupart des paramètres "
+"des vignettes:"
 
 #: ../../docs/configuration.md:39
 msgid ""
@@ -79,6 +81,10 @@ msgid ""
 "Defaults for these are 800, 200, and 200 respectively (all sizes are "
 "pixels)"
 msgstr ""
+"Sous `types`, définissez les dimensions maximum pour les images dérivées "
+"des fichiers media. Il y a des options séparées pour grandes (*large*), "
+"moyennes (*medium*), et carrées (*square*). Leurs valeurs par défaut "
+"sont 800, 200, et 200 respectivement (toutes les tailles sont en pixels)"
 
 #: ../../docs/configuration.md:43
 msgid ""
@@ -88,12 +94,19 @@ msgid ""
 "found on the server. This can be useful if Omeka S can't auto-detect the "
 "correct path for ImageMagick."
 msgstr ""
+"`thumbnailer_options` est un tableau d'options passées au vignettiste "
+"spécifique. Par exemple, l'option `imagemagick_dir` définit le chemin "
+"vers le dossier où la commande `convert` d'ImageMagick est située. Ça "
+"peut être utile si Omeka S n'arrive pas à détecter automatiquement le "
+"chemin correct pour ImageMagick."
 
 #: ../../docs/configuration.md:48
 msgid ""
 "The thumbnailer to use is set under the `service_manager` key, by "
 "setting the alias for `Omeka\\File\\Thumbnailer`:"
 msgstr ""
+"Le vignettiste à utiliser est défini sous la clé `service_manager`, en "
+"définissant l'alias pour `Omeka\\File\\Thumbnailer`:"
 
 #: ../../docs/configuration.md:59
 msgid ""
@@ -102,6 +115,10 @@ msgid ""
 "`imagick` PHP extension) and `Omeka\\File\\Thumbnailer\\Gd` (which uses "
 "the commonly available `gd` PHP extension)."
 msgstr ""
+"Le vignettiste par défaut est `Omeka\\File\\Thumbnailer\\ImageMagick`. "
+"Sont aussi disponibles `Omeka\\File\\Thumbnailer\\Imagick` (qui utilise "
+"l'extension PHP `imagick`) et `Omeka\\File\\Thumbnailer\\Gd` (qui "
+"utilise l'extension PHP `gd` couramment disponible)."
 
 #: ../../docs/configuration.md:64
 msgid ""
@@ -109,10 +126,13 @@ msgid ""
 "\\NoThumbnail`, which will prevent your Omeka S installation from "
 "generating thumbnails."
 msgstr ""
+"Vous pouvez aussi définir le vignettiste à `Omeka\\File\\Thumbnailer"
+"\\NoThumbnail`, ce qui empêchera votre installation Omeka S de générer "
+"des vignettes."
 
 #: ../../docs/configuration.md:67
 msgid "PHP Path"
-msgstr ""
+msgstr "Chemin PHP"
 
 #: ../../docs/configuration.md:69
 msgid ""
@@ -120,6 +140,10 @@ msgid ""
 "many items or just otherwise might take a long time. Omeka S uses the "
 "PHP CLI (command-line interface) to run these jobs, the `php` command."
 msgstr ""
+"Omeka S utilise des tâches de fond pour certaines tâches longues qui "
+"manipulent beaucoup de contenus ou simplement parce que ça peut prendre "
+"beaucoup de temps. Omeka S utilise la CLI (interface en ligne de "
+"commande) PHP pour exécuter ces tâches, la commande `php`."
 
 #: ../../docs/configuration.md:73
 msgid ""
@@ -129,20 +153,29 @@ msgid ""
 "situations you can manually configure the correct path in the "
 "configuration file:"
 msgstr ""
+"Omeka S essaiera par défaut de détecter automatiquement le chemin vers "
+"la CLI PHP sur le serveur, mais sur certains serveurs cette détection ne "
+"fonctionne pas, ou il y a plusieurs commandes `php` différentes. Dans "
+"ces situations vous pouvez configurer manuellement le chemin correct "
+"dans le fichier de configuration:"
 
 #: ../../docs/configuration.md:84
 msgid ""
 "(Note: the path here is just an example; the proper path will be "
 "specific to your server)"
 msgstr ""
+"(Note: le chemin ici est juste un exemple; le chemin correct sera "
+"spécifique à votre serveur)"
 
 #: ../../docs/configuration.md:87
 msgid "Mail"
-msgstr ""
+msgstr "E-mail"
 
 #: ../../docs/configuration.md:89
 msgid "The `mail` key can be used to configure how Omeka S sends emails."
 msgstr ""
+"La clé `mail` peut être utilisée pour configurer comment Omeka S envoie "
+"des e-mails."
 
 #: ../../docs/configuration.md:91
 msgid ""
@@ -150,6 +183,9 @@ msgid ""
 "having mail delivery configured and set up. Sendmail generally requires "
 "no configuration on the Omeka S side."
 msgstr ""
+"Le comportement par défaut est d'utiliser sendmail, où le serveur est "
+"responsable d'avoir une distribution des e-mails configurée et en place. "
+"Sendmail ne demande généralement aucune configuration du côté d'Omeka S."
 
 #: ../../docs/configuration.md:95
 msgid ""
@@ -158,3 +194,8 @@ msgid ""
 "`local.config.php` follows (see the [laminas-mail docs](https://docs."
 "laminas.dev/laminas-mail/transport/smtp-options/) for clarification):"
 msgstr ""
+"Une autre options pour certains serveurs et de configurer une connexion "
+"SMTP directe pour envoyer les e-mails. Un exemple de configuration, à "
+"ajouter à la fin du fichier `local.config.php`, suit (voir la "
+"[documentation de laminas-mail](https://docs.laminas.dev/laminas-mail/"
+"transport/smtp-options/) pour des précisions):"
