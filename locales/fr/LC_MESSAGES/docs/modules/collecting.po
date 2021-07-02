@@ -4,525 +4,677 @@
 # manual package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Omeka S end user manual \n"
+"Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 08:33+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-07-02 19:41+0200\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Julian Maurice <julian.maurice@biblibre.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../docs/modules/collecting.md:1
 msgid "Collecting"
-msgstr ""
+msgstr "Collecting"
 
 #: ../../docs/modules/collecting.md:3
 msgid ""
-"The Collecting module allows you to gather public contributions through "
-"your sites."
+"The Collecting module allows you to gather public contributions through your "
+"sites."
 msgstr ""
+"Le module Collecting vous permet de rassembler des contributions du public via "
+"vos sites."
 
 #: ../../docs/modules/collecting.md:5
 msgid ""
 "Once activated on the [modules](index.md) tab of the admin dashboard, "
 "Collecting is configured on a site-by-site basis."
 msgstr ""
+"Une fois activé dans l'onglet [modules](index.md) du tableau de bord "
+"d'administration, Collecting se configure site par site."
 
 #: ../../docs/modules/collecting.md:7
 msgid "Site settings"
-msgstr ""
+msgstr "Paramètres du site"
 
 #: ../../docs/modules/collecting.md:9
 msgid ""
-"Collecting adds a section to your [site "
-"settings](../sites/site_settings.md) where you can manage terms of "
-"service and email for the collecting forms for this site."
+"Collecting adds a section to your [site settings](../sites/site_settings.md) "
+"where you can manage terms of service and email for the collecting forms for "
+"this site."
 msgstr ""
+"Collecting ajoute une section à vos [paramètres de site](../sites/"
+"site_settings.md) où vous pouvez gérer les conditions d'utilisation et l'e-"
+"mail pour les formulaires de collecte pour ce site."
 
 #: ../../docs/modules/collecting.md:11
 msgid ""
-"![The Collecting section in site settings with two fields as described "
-"below.](modulesfiles/collecting_settingsSite.png)"
+"![The Collecting section in site settings with two fields as described below.]"
+"(modulesfiles/collecting_settingsSite.png)"
 msgstr ""
+"![La section Collectes des paramètres du site avec deux champs comme décrits "
+"ci-dessous.](modulesfiles/collecting_settingsSite.png)"
 
 #: ../../docs/modules/collecting.md:13
 msgid "In this section are two fields:"
-msgstr ""
+msgstr "Dans cette section il y a deux champs:"
 
 #: ../../docs/modules/collecting.md:15
 msgid ""
 "**Terms of service** is a multi-line field where you can enter terms of "
-"services for material collected through this site. This text is linked "
-"from the form just above the submit button:"
+"services for material collected through this site. This text is linked from "
+"the form just above the submit button:"
 msgstr ""
+"**Conditions d'utilisation** est un champ multi-ligne où vous pouvez saisir "
+"les conditions d'utilisation pour le contenu collecté via ce site. Ce texte "
+"est lié au formulaire juste au dessus du bouton de soumission:"
 
 #: ../../docs/modules/collecting.md:17
 msgid ""
-"![from the collecting form, the words \"I accept the Terms of Service\" "
-"over a button that says submit. The phrase Terms of Service are a "
-"link.](modulesfiles/collecting-ToSlink.png)"
+"![from the collecting form, the words \"I accept the Terms of Service\" over a "
+"button that says submit. The phrase Terms of Service are a link.](modulesfiles/"
+"collecting-ToSlink.png)"
 msgstr ""
+"![dans le formulaire de collecte, les mots « J'accepte les conditions "
+"d'utilisation » au dessus d'un bouton soumettre. Les mots conditions "
+"d'utilisation sont un lien.](modulesfiles/collecting-ToSlink.png)"
 
 #: ../../docs/modules/collecting.md:19
 msgid ""
-"Clicking on the phrase \"Terms of Service\" will open a new window so "
-"that people filling out the form do not lose the information they have "
-"entered."
+"Clicking on the phrase \"Terms of Service\" will open a new window so that "
+"people filling out the form do not lose the information they have entered."
 msgstr ""
+"Cliquer sur les mots « conditions d'utilisation » ouvrira une nouvelle fenêtre "
+"pour que les personnes remplissant le formulaire ne perdent pas les "
+"informations saisies."
 
 #: ../../docs/modules/collecting.md:21
 msgid ""
-"**Email address** allows you to set a custom address from which "
-"submission emails will be sent. If left blank, these emails will be sent "
-"from the administrator email address in the [Global "
-"Settings](../admin/settings.md) for the Omeka S installation."
+"**Email address** allows you to set a custom address from which submission "
+"emails will be sent. If left blank, these emails will be sent from the "
+"administrator email address in the [Global Settings](../admin/settings.md) for "
+"the Omeka S installation."
 msgstr ""
+"**Adresse e-mail** vous permet de définir une adresse personnalisée à partir "
+"de laquelle les e-mails de soumission seront envoyés. Si laissé vide, ces e-"
+"mails seront envoyés de l'adresse e-mail de l'administrateur dans les "
+"[paramètres globaux](../admin/settings.md) de l'installation Omeka S."
 
 #: ../../docs/modules/collecting.md:23
 msgid "Managing Collecting Forms"
-msgstr ""
+msgstr "Gestion des formulaires de collecte"
 
 #: ../../docs/modules/collecting.md:25
 msgid ""
-"If Collecting is active, then a tab for Collecting will appear in the "
-"context menu for every site.  ![Red arrow points to the Collecting tab of"
-" the site National Parks](modulesfiles/collecting_nav.png)"
+"If Collecting is active, then a tab for Collecting will appear in the context "
+"menu for every site.  ![Red arrow points to the Collecting tab of the site "
+"National Parks](modulesfiles/collecting_nav.png)"
 msgstr ""
+"Si Collecting est actif, alors un onglet pour les collectes apparaîtra dans le "
+"menu contextuel de chaque site. ![Une flèche rouge pointe vers l'onglet "
+"Collectes du site de National Parks](modulesfiles/collecting_nav.png)"
 
 #: ../../docs/modules/collecting.md:28
 msgid ""
-"Clicking on this will take you to a list of your collecting forms for "
-"that site. If you have just installed the module, the Collecting Forms "
-"page will display the message \"This site has no collecting forms.\" To "
-"add a new form, click the *Add new form* in the upper right hand corner "
-"of the window."
+"Clicking on this will take you to a list of your collecting forms for that "
+"site. If you have just installed the module, the Collecting Forms page will "
+"display the message \"This site has no collecting forms.\" To add a new form, "
+"click the *Add new form* in the upper right hand corner of the window."
 msgstr ""
+"Cliquer dessus vous emmènera vers la liste de vos formulaires de collecte pour "
+"ce site. Si vous venez d'installer le module, la page Formulaires de collecte "
+"affichera le message « Ce site n'a pas de formulaire de collecte ». Pour "
+"ajouter un nouveau formulaire, cliquez sur le bouton *Ajouter un nouveau "
+"formulaire* dans le coin supérieur droit de la fenêtre."
 
 #: ../../docs/modules/collecting.md:30
 msgid ""
-"![Collecting tab, no forms, red arrow points to the Add New "
-"button](modulesfiles/collecting_addnew.png)"
+"![Collecting tab, no forms, red arrow points to the Add New button]"
+"(modulesfiles/collecting_addnew.png)"
 msgstr ""
+"![Onglet collecte, aucun formulaire, une flèche rouge pointe vers le bouton "
+"Ajouter Nouveau](modulesfiles/collecting_addnew.png)"
 
 #: ../../docs/modules/collecting.md:32
 msgid "Add New Form"
-msgstr ""
+msgstr "Ajouter un nouveau formulaire"
 
 #: ../../docs/modules/collecting.md:33
 msgid ""
-"The Add Collecting Form page has two sections: the first has a set of "
-"fields and options for you to complete; the second is where you add and "
-"edit the prompts which will make up the form that site visitors see and "
-"fill out."
+"The Add Collecting Form page has two sections: the first has a set of fields "
+"and options for you to complete; the second is where you add and edit the "
+"prompts which will make up the form that site visitors see and fill out."
 msgstr ""
+"La page Ajouter un formulaire de collecte a deux sections: la première a un "
+"ensemble de champs et d'options à compléter; la deuxième est l'endroit où vous "
+"ajouter et modifier les invites qui composeront le formulaire que les "
+"visiteurs verront et rempliront."
 
 #: ../../docs/modules/collecting.md:35
 msgid "![Add Collecting Form page](modulesfiles/collecting_addform.png)"
 msgstr ""
+"![Page Ajouter un formulaire de collecte](modulesfiles/collecting_addform.png)"
 
 #: ../../docs/modules/collecting.md:37
 msgid "Fields and Settings"
-msgstr ""
+msgstr "Champs et paramètres"
 
 #: ../../docs/modules/collecting.md:38
 msgid ""
-"*Label:* name the collecting form. The label will appear as a header "
-"above the form on the public side, so the label should be descriptive and"
-" helpful to both you and site visitors."
+"*Label:* name the collecting form. The label will appear as a header above the "
+"form on the public side, so the label should be descriptive and helpful to "
+"both you and site visitors."
 msgstr ""
+"*Libellé:* le nom du formulaire de collecte. Le libellé apparaîtra en en-tête "
+"au-dessus du formulaire sur la partie publique, donc le libellé doit être "
+"descriptif et utile à vous et vos visiteurs."
 
 #: ../../docs/modules/collecting.md:39
 msgid "*Item Set:* select the item set to which you want to add collected items."
 msgstr ""
+"*Collection:* sélectionnez la collection à laquelle ajouter les contenus "
+"collectés."
 
 #: ../../docs/modules/collecting.md:40
 msgid "*Anonymity Type:* a dropdown with three options:"
-msgstr ""
+msgstr "*Type d'anonymat:* une liste déroulante avec trois options:"
 
 #: ../../docs/modules/collecting.md:41
 msgid ""
 "\"User sets own anonymity\": users can decide whether they contribute "
 "anonymously and whether their items can be published)."
 msgstr ""
+"« L'utilisateur définit son propre anonymat »: les utilisateurs peuvent "
+"décider de contribuer anonymement ou non et si leur contenu peut être publié "
+"ou non."
 
 #: ../../docs/modules/collecting.md:42
 msgid ""
-"\"User Public and User Name inputs are publicly visible\": both the "
-"user's name and their items will be made public"
+"\"User Public and User Name inputs are publicly visible\": both the user's "
+"name and their items will be made public"
 msgstr ""
+"« Les valeurs Utilisateur public et Nom d’utilisateur sont visibles "
+"publiquement »: le nom d'utilisateur et les contenus seront rendus publics"
 
 #: ../../docs/modules/collecting.md:43
 msgid ""
-"\"User Public and User Name inputs are private\": both inputs remain "
-"public."
+"\"User Public and User Name inputs are private\": both inputs remain public."
 msgstr ""
+"« Les valeurs Utilisateur public et Nom d’utilisateur sont privées: les deux "
+"entrées restent privées."
 
 #: ../../docs/modules/collecting.md:44
 msgid ""
 "*Success Text*: the message that displays on a new page if the item is "
 "successfully collected."
 msgstr ""
+"*Texte de succès*: le message qui s'affiche sur une nouvelle page si le "
+"contenu a bien été collecté."
 
 #: ../../docs/modules/collecting.md:45
 msgid ""
-"*Email text*: the message in the email that will be sent to site visitors"
-" who submit an item, if you collect an email address from them."
+"*Email text*: the message in the email that will be sent to site visitors who "
+"submit an item, if you collect an email address from them."
 msgstr ""
+"*Texte e-mail*: le message de l'e-mail qui sera envoyé au visiteurs du site "
+"qui soumettent un contenu, si vous collectez leur adresse e-mail."
 
 #: ../../docs/modules/collecting.md:47
 msgid "Prompts"
-msgstr ""
+msgstr "Champs"
 
 #: ../../docs/modules/collecting.md:48
 msgid ""
-"Prompts are listed in a table which gives their *Type* and the display "
-"*Text* on the public form. These prompts make up the form which site "
-"visitors will see (in addition to the label, discussed above)."
+"Prompts are listed in a table which gives their *Type* and the display *Text* "
+"on the public form. These prompts make up the form which site visitors will "
+"see (in addition to the label, discussed above)."
 msgstr ""
+"Les champs sont listés dans un tableau qui donne leur *Type* et le *Texte* "
+"affiché sur le formulaire public. Ces champs constituent le formulaire que les "
+"visiteurs du site verront (en plus du libellé, évoqué ci-dessus)."
 
 #: ../../docs/modules/collecting.md:50
 msgid ""
-"To add a new prompt, click the *Add prompt* button just below the Prompts"
-" header. This will open a side drawer with a dropdown to select Prompt "
-"type."
+"To add a new prompt, click the *Add prompt* button just below the Prompts "
+"header. This will open a side drawer with a dropdown to select Prompt type."
 msgstr ""
+"Pour ajouter un nouveau champ, cliquez sur le bouton *Ajouter un champ* sous "
+"le titre Champs. Cela ouvrira un tiroir sur le côté avec une liste déroulante "
+"pour sélectionner le type de champ."
 
 #: ../../docs/modules/collecting.md:52
 msgid ""
-"On selection, the options for that type will load in the sidebar for you "
-"to edit, with a Save Changes button at the bottom of the options."
+"On selection, the options for that type will load in the sidebar for you to "
+"edit, with a Save Changes button at the bottom of the options."
 msgstr ""
+"À la sélection, les options pour ce type de champ seront chargés dans la barre "
+"latérale pour que vous puissiez les modifier, avec un bouton Enregistrer les "
+"changements en bas des options."
 
 #: ../../docs/modules/collecting.md:54
 msgid "![Add prompt dropdown](modulesfiles/collecting_prompts.png)"
 msgstr ""
+"![La liste déroulante Ajouter un champ](modulesfiles/collecting_prompts.png)"
 
 #: ../../docs/modules/collecting.md:56
 msgid "The Collecting module has Prompt Types with options as follows:"
-msgstr ""
+msgstr "Le module Collecting a des types de champs avec des options comme suit:"
 
 #: ../../docs/modules/collecting.md:58
 msgid ""
-"**Item Property**: select a property from the installation's vocabularies"
-" for the visitor to use to describe the item."
+"**Item Property**: select a property from the installation's vocabularies for "
+"the visitor to use to describe the item."
 msgstr ""
+"**Propriété de contenu**: sélectionnez une propriété parmi les vocabulaires de "
+"l'installation que les visiteurs pourront utiliser pour décrire le contenu."
 
 #: ../../docs/modules/collecting.md:60
 msgid "Property: select a property from the vocabularies (example: Description)"
 msgstr ""
+"Propriété: sélectionnez une propriété parmi les vocabulaires (exemple: "
+"Description)"
 
 #: ../../docs/modules/collecting.md:61 ../../docs/modules/collecting.md:86
 #: ../../docs/modules/collecting.md:91 ../../docs/modules/collecting.md:101
 #: ../../docs/modules/collecting.md:106 ../../docs/modules/collecting.md:111
 #: ../../docs/modules/collecting.md:121
 msgid ""
-"Prompt Text: If you want the prompt to be something other than the "
-"property label."
+"Prompt Text: If you want the prompt to be something other than the property "
+"label."
 msgstr ""
+"Texte du champ: Si vous voulez que le champ soit autre chose que le libellé de "
+"la propriété."
 
 #: ../../docs/modules/collecting.md:62 ../../docs/modules/collecting.md:92
 #: ../../docs/modules/collecting.md:112 ../../docs/modules/collecting.md:122
 msgid "Input type: length and kind of input box. Choose from:"
-msgstr ""
+msgstr "Type de champ: taille et type de champ. Choisissez parmi:"
 
 #: ../../docs/modules/collecting.md:63 ../../docs/modules/collecting.md:93
 #: ../../docs/modules/collecting.md:113 ../../docs/modules/collecting.md:123
 msgid "Text box (one line)"
-msgstr ""
+msgstr "Champ texte (une ligne)"
 
 #: ../../docs/modules/collecting.md:64 ../../docs/modules/collecting.md:94
 #: ../../docs/modules/collecting.md:114 ../../docs/modules/collecting.md:124
 msgid "Text box (multiple line)"
-msgstr ""
+msgstr "Champ texte (plusieurs lignes)"
 
 #: ../../docs/modules/collecting.md:65 ../../docs/modules/collecting.md:95
 #: ../../docs/modules/collecting.md:115 ../../docs/modules/collecting.md:125
 msgid "Select menu (dropdown)"
-msgstr ""
+msgstr "Menu de sélection"
 
 #: ../../docs/modules/collecting.md:66 ../../docs/modules/collecting.md:96
 #: ../../docs/modules/collecting.md:116 ../../docs/modules/collecting.md:126
 msgid ""
-"If you choose \"Select menu,\" you will need to enter the options for the"
-" menu in the *Select Menu Options* field that will appear, with one "
-"option per line."
+"If you choose \"Select menu,\" you will need to enter the options for the menu "
+"in the *Select Menu Options* field that will appear, with one option per line."
 msgstr ""
+"Si vous choisissez « menu de sélection », vous devrez saisir les options du "
+"menu dans le champ *options du menu de sélection* qui apparaîtra, avec une "
+"option par ligne."
 
 #: ../../docs/modules/collecting.md:67
 msgid "Item resource (will appear as dropdown)"
-msgstr ""
+msgstr "Ressource de contenu (apparaîtra comme une liste déroulante)"
 
 #: ../../docs/modules/collecting.md:68
 msgid ""
-"This will offer the user the choice of existing items to add as a "
-"property value. You can paste anything after the `admin/` in the url of "
-"an advanced search to load specific items."
+"This will offer the user the choice of existing items to add as a property "
+"value. You can paste anything after the `admin/` in the url of an advanced "
+"search to load specific items."
 msgstr ""
+"Cela donnera la possibilité à l'utilisateur de choisir parmi les contenus "
+"existants un contenu à ajouter en tant valeur de propriété. Vous pouvez collez "
+"tout ce qui se trouve après `admin/` dans l'URL d'une recherche avancée pour "
+"charger des contenus spécifiques."
 
 #: ../../docs/modules/collecting.md:69
 msgid ""
 "[Custom Vocab](../modules/customvocab/) (requires that plugin to be "
-"installed). If selected, an additional dropdown will load. Use this to "
-"select from your existing Custom Vocabs. This will load as a dropdown for"
-" the users on the public side of the form."
+"installed). If selected, an additional dropdown will load. Use this to select "
+"from your existing Custom Vocabs. This will load as a dropdown for the users "
+"on the public side of the form."
 msgstr ""
+"[Custom Vocab](../modules/customvocab/) (nécessite que ce plugin soit "
+"installé). Si sélectionné, une liste déroulante supplémentaire sera chargée. "
+"Utilisez la pour sélectionner parmi vos Vocabulaires Personnalisés existants. "
+"Cela sera chargé comme une liste déroulante pour les utilisateurs de la partie "
+"publique du formulaire."
 
 #: ../../docs/modules/collecting.md:70
 msgid ""
-"If you have [Numeric data types](../modules/numericdatatypes/) installed,"
-" you will also have the options:"
+"If you have [Numeric data types](../modules/numericdatatypes/) installed, you "
+"will also have the options:"
 msgstr ""
+"Si vous avez installé [Numeric data types](../modules/numericdatatypes/), vous "
+"aurez aussi ces options:"
 
 #: ../../docs/modules/collecting.md:71
 msgid "Numeric timestamp"
-msgstr ""
+msgstr "Horodatage numérique"
 
 #: ../../docs/modules/collecting.md:72
 msgid "Numeric interval"
-msgstr ""
+msgstr "Période"
 
 #: ../../docs/modules/collecting.md:73
 msgid "Numeric duration"
-msgstr ""
+msgstr "Durée"
 
 #: ../../docs/modules/collecting.md:74
 msgid "Numeric integer"
-msgstr ""
+msgstr "Entier"
 
 #: ../../docs/modules/collecting.md:75 ../../docs/modules/collecting.md:87
 #: ../../docs/modules/collecting.md:97 ../../docs/modules/collecting.md:102
 #: ../../docs/modules/collecting.md:107 ../../docs/modules/collecting.md:117
 #: ../../docs/modules/collecting.md:127
 msgid "Check the Required? box if the prompt is required."
-msgstr ""
+msgstr "Cochez la case « Requis ? » si le champ est obligatoire."
 
 #: ../../docs/modules/collecting.md:77
 msgid "**Item Media** allows visitors to add media to their item. Media Type:"
 msgstr ""
+"**Media de contenu** permet aux visiteurs d'ajouter des media à leur contenu. "
+"Type de media:"
 
 #: ../../docs/modules/collecting.md:80
 msgid "A dropdown for Media type, with the following options:"
-msgstr ""
+msgstr "Une liste déroulante pour le type de media, avec les options suivantes:"
 
 #: ../../docs/modules/collecting.md:81
 msgid "Upload one, which allows users to upload one file;"
 msgstr ""
+"Téléversement simple, qui permet aux utilisateurs de téléverser un fichier;"
 
 #: ../../docs/modules/collecting.md:82
 msgid ""
-"Upload multiple, which allows users to upload multiple files at once "
-"using the browser's native file picker (with shift or control keys);"
+"Upload multiple, which allows users to upload multiple files at once using the "
+"browser's native file picker (with shift or control keys);"
 msgstr ""
+"Téléversement multiple, qui permet aux utilisateurs de téléverser plusieurs "
+"fichiers en même temps en utilisant le sélecteur de fichier natif du "
+"navigateur (avec les touches Majuscule ou Contrôle);"
 
 #: ../../docs/modules/collecting.md:83
 msgid "Map (requires Mapping module);"
-msgstr ""
+msgstr "Carte (nécessite le module Mapping);"
 
 #: ../../docs/modules/collecting.md:84
 msgid "URL;"
-msgstr ""
+msgstr "URL;"
 
 #: ../../docs/modules/collecting.md:85
 msgid "HTML."
-msgstr ""
+msgstr "HTML."
 
 #: ../../docs/modules/collecting.md:89
 msgid ""
-"**Item Supplementary** additional information for the item, not linked to"
-" any particularly vocabulary or property."
+"**Item Supplementary** additional information for the item, not linked to any "
+"particularly vocabulary or property."
 msgstr ""
+"**Contenu complémentaire** information supplémentaire sur le contenu, sans "
+"lien avec un vocabulaire ou une propriété particulière."
 
 #: ../../docs/modules/collecting.md:99
 msgid ""
-"**User Name** which will be used to assign the item owner. If the person "
-"using the form is a logged-in user of the Omeka S installation, this will"
-" autopopulate."
+"**User Name** which will be used to assign the item owner. If the person using "
+"the form is a logged-in user of the Omeka S installation, this will "
+"autopopulate."
 msgstr ""
+"**Nom d'utilisateur** qui sera utilisé pour assigner un propriétaire au "
+"contenu. Si la personne utilisant le formulaire est authentifié, le champ sera "
+"pré-rempli."
 
 #: ../../docs/modules/collecting.md:104
 msgid ""
-"**User Email** where the person adding the item can give their email. If "
-"this is left blank, they will not receive an email with the text in the "
-"*Email Text* field."
+"**User Email** where the person adding the item can give their email. If this "
+"is left blank, they will not receive an email with the text in the *Email "
+"Text* field."
 msgstr ""
+"**E-mail utilisateur** où la personne ajoutant le contenu peut donner son "
+"adresse e-mail. Si le champ est laissé vide, la personne ne recevra pas d'e-"
+"mail avec le texte du champ *Texte d'e-mail*."
 
 #: ../../docs/modules/collecting.md:109
 msgid ""
-"**User Private** collect additional information from the user which will "
-"be kept private."
+"**User Private** collect additional information from the user which will be "
+"kept private."
 msgstr ""
+"**Info utilisateur privée** collecte des informations supplémentaires sur "
+"l'utilisateur qui seront conservées de manière privée."
 
 #: ../../docs/modules/collecting.md:119
 msgid ""
-"**User Public** collect additional information from the user which can be"
-" made public"
+"**User Public** collect additional information from the user which can be made "
+"public"
 msgstr ""
+"**Info utilisateur publique** collecte des informations supplémentaires sur "
+"l'utilisateur qui pourront être rendues publiques"
 
 #: ../../docs/modules/collecting.md:129
 msgid ""
-"**HTML** insert a block of HTML text into the form, for additional "
-"guidance, information, etc. The Prompt Text field for this prompt has "
-"WYSIWG formatting options."
+"**HTML** insert a block of HTML text into the form, for additional guidance, "
+"information, etc. The Prompt Text field for this prompt has WYSIWG formatting "
+"options."
 msgstr ""
+"**HTML** insère un bloc de texte HTML, pour des conseils supplémentaires, des "
+"informations, etc. Le champ Texte du champ a des options de formatage WYSIWYG."
 
 #: ../../docs/modules/collecting.md:131
 msgid ""
-"You can rearrange the order of prompts by dragging and dropping them "
-"using the three-line icon on the far left of the Prompt Type label."
+"You can rearrange the order of prompts by dragging and dropping them using the "
+"three-line icon on the far left of the Prompt Type label."
 msgstr ""
+"Vous pouvez réorganiser l'ordre des champs en les glissant et les déposant via "
+"l'utilisation de l'icône des trois lignes tout à gauche de libellé du type de "
+"champ."
 
 #: ../../docs/modules/collecting.md:133 ../../docs/modules/collecting.md:154
 msgid ""
-"![Prompts with a red arrow pointing to the icon for dragging and "
-"dropping](modulesfiles/collecting_dragthis.png)"
+"![Prompts with a red arrow pointing to the icon for dragging and dropping]"
+"(modulesfiles/collecting_dragthis.png)"
 msgstr ""
+"![Des champs avec une flèche rouge qui pointe vers l'icône de glisser/déposer]"
+"(modulesfiles/collecting_dragthis.png)"
 
 #: ../../docs/modules/collecting.md:135
 msgid "Manage an existing form"
-msgstr ""
+msgstr "Gérer un formulaire existant"
 
 #: ../../docs/modules/collecting.md:136
 msgid ""
-"Once you have at least one Collecting form, they will appear on the "
-"Collecting Forms page. Click the edit button (pencil) to edit the form. "
-"Click on the form label to see more information about the form and view "
-"collected items."
+"Once you have at least one Collecting form, they will appear on the Collecting "
+"Forms page. Click the edit button (pencil) to edit the form. Click on the form "
+"label to see more information about the form and view collected items."
 msgstr ""
+"Une fois que vous avez au moins un formulaire de collecte, ils apparaîtront "
+"sur la page des formulaires de collecte. Cliquez sur le bouton modifier "
+"(crayon) pour modifier le formulaire. Cliquez sur le libellé du formulaire "
+"pour voir plus d'informations à son sujet et pour voir les contenus collectés."
 
 #: ../../docs/modules/collecting.md:138
 msgid "The form page has two tabs: Form Information and Collected Items"
 msgstr ""
+"La page du formulaire a deux onglets: Informations du formulaire et Contenus "
+"collectés"
 
 #: ../../docs/modules/collecting.md:140
 msgid ""
-"Form tabs show you the existing data for label, anonymity type, and item "
-"set, along with a table of all of the prompts, in order, with their type,"
-" text, and whether they prompt is required."
+"Form tabs show you the existing data for label, anonymity type, and item set, "
+"along with a table of all of the prompts, in order, with their type, text, and "
+"whether they prompt is required."
 msgstr ""
+"Les onglets du formulaire vous montre les données existantes pour le libellé, "
+"le type d'anonymat, et la collection, ainsi qu'un tableau de tous les champs, "
+"dans l'ordre, avec leur type, texte, et s'ils sont obligatoires ou non."
 
 #: ../../docs/modules/collecting.md:142
 msgid ""
-"![Form info page for \"share a quote\" "
-"form](modulesfiles/collecting_forminfo.png)"
+"![Form info page for \"share a quote\" form](modulesfiles/collecting_forminfo."
+"png)"
 msgstr ""
+"![Page d'informations pour le formulaire « share a quote »](modulesfiles/"
+"collecting_forminfo.png)"
 
 #: ../../docs/modules/collecting.md:144
 msgid ""
-"To edit the form, click the *Edit form* button in the upper right hand "
-"corner."
+"To edit the form, click the *Edit form* button in the upper right hand corner."
 msgstr ""
+"Pour modifier le formulaire, cliquez sur le bouton *Modifier le formulaire* "
+"dans le coin supérieur droit."
 
 #: ../../docs/modules/collecting.md:146
 msgid "The options are in the edit form page are the same as when adding a form."
 msgstr ""
+"Les options dans la page de modification du formulaire sont les même qu'à la "
+"création du formulaire."
 
 #: ../../docs/modules/collecting.md:148
 msgid ""
-"To edit a prompt, click the edit button (pencil) for the prompt. This "
-"will open the sidebar drawer for that prompt."
+"To edit a prompt, click the edit button (pencil) for the prompt. This will "
+"open the sidebar drawer for that prompt."
 msgstr ""
+"Pour modifier un champ, cliquez sur le bouton modifier (crayon) en face du "
+"champ. Cela ouvrira le tiroir latéral pour ce champ."
 
 #: ../../docs/modules/collecting.md:150
 msgid ""
-"![Prompts with a red arrow pointing at the column of edit "
-"buttons](modulesfiles/collecting_edit2.png)"
+"![Prompts with a red arrow pointing at the column of edit buttons]"
+"(modulesfiles/collecting_edit2.png)"
 msgstr ""
+"![Des champs avec une flèche rouge pointant vers la colonne des boutons de "
+"modification](modulesfiles/collecting_edit2.png)"
 
 #: ../../docs/modules/collecting.md:152
 msgid ""
-"Rearrange the order of prompts by dragging and dropping them using the "
-"three-line icon on the far left of the Prompt Type label."
+"Rearrange the order of prompts by dragging and dropping them using the three-"
+"line icon on the far left of the Prompt Type label."
 msgstr ""
+"Réorganisez l'ordre des champs en les glissant et déposant via l'utilisateur "
+"de l'icône des trois lignes tout à gauche du libellé du type du champ."
 
 #: ../../docs/modules/collecting.md:157
 msgid "Add a Collecting Form to Site Pages"
-msgstr ""
+msgstr "Ajouter une formulaire de collecte aux pages de site"
 
 #: ../../docs/modules/collecting.md:159
 msgid "To add a collecting form to a page:"
-msgstr ""
+msgstr "Pour ajouter un formulaire de collecte à une page:"
 
 #: ../../docs/modules/collecting.md:161
 msgid ""
-"Go to the page on which you want the form to appear (or add a new page "
-"for the form)"
+"Go to the page on which you want the form to appear (or add a new page for the "
+"form)"
 msgstr ""
+"Allez sur la page sur laquelle vous voulez que le formulaire apparaisse (ou "
+"ajoutez une nouvelle page pour le formulaire)"
 
 #: ../../docs/modules/collecting.md:162
 msgid "From the *Add New Block* sidebar select the *Collecting* block"
 msgstr ""
+"À partir de la barre latérale *Ajouter un nouveau bloc* sélectionnez le bloc "
+"*Collecte*"
 
 #: ../../docs/modules/collecting.md:163
 msgid ""
-"On the Collecting block, click the box for the form you want to include. "
-"You can add more than one form to the page by checking more than one box."
+"On the Collecting block, click the box for the form you want to include. You "
+"can add more than one form to the page by checking more than one box."
 msgstr ""
+"Sur le bloc Collecte, cliquez sur la case pour le formulaire que vous voulez "
+"inclure. Vous pouvez ajouter plusieurs formulaires sur la page en cochant "
+"plusieurs cases."
 
 #: ../../docs/modules/collecting.md:165
 msgid ""
-"![Collecting block with one form, its box "
-"checked](modulesfiles/collecting_pageblock.png)"
+"![Collecting block with one form, its box checked](modulesfiles/"
+"collecting_pageblock.png)"
 msgstr ""
+"![Bloc Collecte pour un formulaire, avec sa case cochée](modulesfiles/"
+"collecting_pageblock.png)"
 
 #: ../../docs/modules/collecting.md:167
 msgid "Managing Collected Items"
-msgstr ""
+msgstr "Gérer les contenus collectés"
 
 #: ../../docs/modules/collecting.md:169
 msgid ""
-"Items added via a collecting form will appear in the Items section of the"
-" Admin Dashboard, but you will likely find it easier to manage them "
-"through the Collecting tab of the site to which through which they were "
-"collected."
+"Items added via a collecting form will appear in the Items section of the "
+"Admin Dashboard, but you will likely find it easier to manage them through the "
+"Collecting tab of the site to which through which they were collected."
 msgstr ""
+"Les contenus ajoutés via un formulaire de collecte apparaîtront dans la "
+"section Contenus du tableau de bord d'administration, mais vous trouverez "
+"probablement plus facile de les gérer depuis l'onglet Collectes du site via "
+"lequel ils ont été collectés."
 
 #: ../../docs/modules/collecting.md:171
 msgid ""
-"To see the items collected with a specific form, go to the Collecting tab"
-" in the context menu for the site and click on the form label. Then click"
-" the *Collected Items* tab."
+"To see the items collected with a specific form, go to the Collecting tab in "
+"the context menu for the site and click on the form label. Then click the "
+"*Collected Items* tab."
 msgstr ""
+"Pour voir les contenus collectés depuis un formulaire spécifique, allez dans "
+"l'onglet Collectes du menu contextuel du site et cliquez sur le libellé du "
+"formulaire. Puis cliquez sur l'onglet *Contenus collectés*."
 
 #: ../../docs/modules/collecting.md:173
 msgid ""
-"![Collected Items tab with a number of "
-"items](modulesfiles/collecting_items.png)"
+"![Collected Items tab with a number of items](modulesfiles/collecting_items."
+"png)"
 msgstr ""
+"![L'onglet Contenus collectés avec un certain nombre de contenus](modulesfiles/"
+"collecting_items.png)"
 
 #: ../../docs/modules/collecting.md:175
 msgid ""
-"This tab has a table of collected items with their: Title, the Date "
-"Submitted, Reviewed By, Status, and ellipses (three dots)."
+"This tab has a table of collected items with their: Title, the Date Submitted, "
+"Reviewed By, Status, and ellipses (three dots)."
 msgstr ""
+"Cet onglet a un tableau des contenus collectés avec les champs suivants: "
+"Titre, Date de soumission, Examiné par, Statut, et ellipses (trois points)."
 
 #: ../../docs/modules/collecting.md:177
 msgid ""
-"To see the collected information, including user name, email, etc, for "
-"any item, click on the more info ellipses. Clicking on an item title will"
-" take you to the item's edit page (under Items  not the site's context "
-"menu)."
+"To see the collected information, including user name, email, etc, for any "
+"item, click on the more info ellipses. Clicking on an item title will take you "
+"to the item's edit page (under Items  not the site's context menu)."
 msgstr ""
+"Pour voir les informations collectées, y compris le nom d'utilisateur, "
+"l'adresse e-mail, etc., pour chacun des contenus, cliquez sur les trois "
+"points. Cliquez le titre du contenu vous emmènera vers la page de modification "
+"du contenu (dans la section Contenus, et non le menu contextuel du site)."
 
 #: ../../docs/modules/collecting.md:179
 msgid ""
-"A collected item can have one of three status messages: Needs Review, "
-"Public, and Private. To change the status of an item, select the desired "
-"status from the dropdown and then click the *Update statuses* button in "
-"the upper right corner."
+"A collected item can have one of three status messages: Needs Review, Public, "
+"and Private. To change the status of an item, select the desired status from "
+"the dropdown and then click the *Update statuses* button in the upper right "
+"corner."
 msgstr ""
+"Un contenu collecté peut avoir l'un de ces trois messages de statut: A besoin "
+"d'une revue, Public, Privé. Pour modifier le statut d'un contenu, sélectionnez "
+"le statut voulu depuis la liste déroulante et cliquez sur le bouton *Mettre à "
+"jour les statuts* dans le coin supérieur droit."
 
 #: ../../docs/modules/collecting.md:181
 msgid ""
-"When you update the status of an item from \"Needs Review\" to either "
-"\"Public\" or \"Private\", your name will appear in the row for that item"
-" as the user the item has been *Reviewed by*. If you have multiple people"
-" working on a site, this can help you keep track of who has approved the "
-"collected items."
+"When you update the status of an item from \"Needs Review\" to either \"Public"
+"\" or \"Private\", your name will appear in the row for that item as the user "
+"the item has been *Reviewed by*. If you have multiple people working on a "
+"site, this can help you keep track of who has approved the collected items."
 msgstr ""
-
+"Quand vous mettez à jour le statut d'un contenu de « A besoin d'une revue » à "
+"« Public » ou « Privé », votre nom apparaîtra dans la ligne de ce contenu en "
+"tant que l'utilisateur qui a révisé le contenu. Si vous avez plusieurs "
+"personnes qui travaillent sur un site, ça peut vous aider à suivre qui a "
+"approuvé les contenus collectés."
