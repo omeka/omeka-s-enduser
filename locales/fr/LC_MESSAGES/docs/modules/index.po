@@ -4,352 +4,461 @@
 # manual package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Omeka S end user manual \n"
+"Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 08:33+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-07-02 12:46+0200\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Julian Maurice <julian.maurice@biblibre.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../docs/modules/index.md:1
 msgid "Modules Management"
-msgstr ""
+msgstr "Gestion des modules"
 
 #: ../../docs/modules/index.md:3
 msgid "Modules extend the functionality of your Omeka S installation and sites."
 msgstr ""
+"Les modules étendent les fonctionnalités de votre installation et vos sites "
+"Omeka S."
 
 #: ../../docs/modules/index.md:5
 msgid "Managing Modules"
-msgstr ""
+msgstr "Gérer les modules"
 
 #: ../../docs/modules/index.md:7
 msgid ""
-"To see what modules are installed on your Omeka S site, click on the "
-"Modules link on the left-hand navigation of your [admin dashboard"
-"](../admin-dashboard.md)"
+"To see what modules are installed on your Omeka S site, click on the Modules "
+"link on the left-hand navigation of your [admin dashboard](../admin-dashboard."
+"md)"
 msgstr ""
+"Pour voir quels modules sont installés sur votre site Omeka S, cliquez sur le "
+"lien Modules dans la navigation à gauche de votre [tableau de bord "
+"d'administration](../admin-dashboard.md)"
 
 #: ../../docs/modules/index.md:9
 msgid ""
-"Note that only Global Administrators can install and manage modules. Site"
-" Administrators can browse installed modules. Other users do not have "
-"access to this tab."
+"Note that only Global Administrators can install and manage modules. Site "
+"Administrators can browse installed modules. Other users do not have access "
+"to this tab."
 msgstr ""
+"Notez que seuls les Administrateurs Globaux peuvent installer et gérer les "
+"modules. Les Administrateurs de Site peuvent parcourir les modules installés. "
+"Les autres utilisateurs n'ont pas accès à cet onglet."
 
 #: ../../docs/modules/index.md:11
 msgid ""
-"![Screen capture of admin dashboard showing Modules tab "
-"active.](modulesfiles/modulesbrowse.png)"
+"![Screen capture of admin dashboard showing Modules tab active.](modulesfiles/"
+"modulesbrowse.png)"
 msgstr ""
+"![Capture d'écran du tableau de bord d'administration montrant l'onglet "
+"Modules actif.](modulesfiles/modulesbrowse.png)"
 
 #: ../../docs/modules/index.md:13
 msgid ""
-"Any modules which have been installed on the Omeka S install should "
-"appear in the list of Modules. Each module displays the name of the "
-"module with the version number, creator, and a summary of its function."
+"Any modules which have been installed on the Omeka S install should appear in "
+"the list of Modules. Each module displays the name of the module with the "
+"version number, creator, and a summary of its function."
 msgstr ""
+"Tous les modules installés dans l'installation Omeka S doivent apparaître "
+"dans la liste des modules. Chaque module affiche le nom du module ainsi que "
+"le numéro de version, le créateur, et un résumé de ses fonctionnalités."
 
 #: ../../docs/modules/index.md:15
 msgid ""
-"![CSV import module label. It is version 0.1 alpha, created by RRCHNM, "
-"and is summaries as \"import content from a CSV "
-"file.\"](modulesfiles/moduleLabel.png)"
+"![CSV import module label. It is version 0.1 alpha, created by RRCHNM, and is "
+"summaries as \"import content from a CSV file.\"](modulesfiles/moduleLabel."
+"png)"
 msgstr ""
+"![Libellé du module CSV Import. C'est la version 0.1 alpha, il a été créé par "
+"RRCHNM, et son résumé est « importer du contenu depuis un fichier CSV »]"
+"(modulesfiles/moduleLabel.png)"
 
 #: ../../docs/modules/index.md:18
 msgid ""
-"There are multiple buttons which can appear to the right of a module’s "
-"label. Each button has both an icon and a label describing its action:"
+"There are multiple buttons which can appear to the right of a module’s label. "
+"Each button has both an icon and a label describing its action:"
 msgstr ""
+"Il y a plusieurs boutons qui apparaissent à droite du libellé du module. "
+"Chaque bouton possède une icône et un libellé décrivant son action:"
 
 #: ../../docs/modules/index.md:20
 msgid ""
 "*Configure* (a wrench icon): some modules have settings which can be "
 "adjusted. Click this icon to adjust settings for the module in this row."
 msgstr ""
+"*Configurer* (une icône de clé à molette): certains modules ont des "
+"paramètres pouvant être ajustés. Cliquez sur l'icône pour modifier les "
+"paramètres du module de cette ligne."
 
 #: ../../docs/modules/index.md:21
 msgid ""
-"*Activate/Deactivate* (sliding switch): when a module is active, the "
-"slider area background is transparent and the switch is to the left. When"
-" inactive, the background of the slider area background is opaque and the"
-" switch is to the right."
+"*Activate/Deactivate* (sliding switch): when a module is active, the slider "
+"area background is transparent and the switch is to the left. When inactive, "
+"the background of the slider area background is opaque and the switch is to "
+"the right."
 msgstr ""
+"*Activer/Désactiver* (interrupteur coulissant): quand un module est actif, "
+"l'arrière plan de l'interrupteur est transparent et l'interrupteur est "
+"positionné à gauche. Quand le module est inactif, l'arrière plan est opaque "
+"et l'interrupteur est positionné à droite."
 
 #: ../../docs/modules/index.md:22
 msgid ""
 "*Install/Uninstall* (arrow and rectangle): use this button to install or "
-"uninstall a module. When the arrow is coming from the rectangle, the "
-"button will uninstall the module. When the arrow is pointing into the "
-"rectangle, the button will install the module."
+"uninstall a module. When the arrow is coming from the rectangle, the button "
+"will uninstall the module. When the arrow is pointing into the rectangle, the "
+"button will install the module."
 msgstr ""
+"*Installer/Désinstaller* (une flèche et un rectangle): utilisez ce bouton "
+"pour installer ou désinstaller un module. Quand la flèche part du rectangle, "
+"le bouton désinstallera le module. Quand la flèche pointe vers le rectangle, "
+"le bouton désinstallera le module."
 
 #: ../../docs/modules/index.md:24
 msgid ""
 "![Icons described above, from right to left: configure, activate and "
 "deactivate, install and uninstall](modulesfiles/moduleButtons.png)"
 msgstr ""
+"![Icônes telles que décrites ci-dessus, de droite à gauche: configurer, "
+"activer et désactiver, installer et désinstaller](modulesfiles/moduleButtons."
+"png)"
 
 #: ../../docs/modules/index.md:26
 msgid ""
-"When a module has a new release, it will display on the browse page with "
-"a message in green stating \"A new version of this module is available. "
-"Get the new version,\" with a link to the download page for the module. "
-"(See updating, below, for more information)"
+"When a module has a new release, it will display on the browse page with a "
+"message in green stating \"A new version of this module is available. Get the "
+"new version,\" with a link to the download page for the module. (See "
+"updating, below, for more information)"
 msgstr ""
+"Quand un module a une nouvelle version, ce sera affiché sur la page des "
+"modules avec un message en vert déclarant « Une nouvelle version de ce module "
+"est disponible. Téléchargez la nouvelle version », avec un lien vers la page "
+"de téléchargement du module. (Voir mise à jour, ci-dessous, pour plus "
+"d'informations)"
 
 #: ../../docs/modules/index.md:28
 msgid ""
-"![File Sideload module row on the module browse page. Below the "
-"information about the module's version and function is the message quoted"
-" above, written in dark green text on a bright green "
-"highlight.](modulesfiles/moduleUpdatemsg.png)"
+"![File Sideload module row on the module browse page. Below the information "
+"about the module's version and function is the message quoted above, written "
+"in dark green text on a bright green highlight.](modulesfiles/moduleUpdatemsg."
+"png)"
 msgstr ""
+"![La ligne du module File Sideload sur la page des modules. Sous les "
+"informations de la version et des fonctionnalités du module se situe le "
+"message cité ci-dessus, écrit en vert foncé sur un fond vert clair.]"
+"(modulesfiles/moduleUpdatemsg.png)"
 
 #: ../../docs/modules/index.md:30
 msgid "Installing Modules"
-msgstr ""
+msgstr "Installer des modules"
 
 #: ../../docs/modules/index.md:31
 msgid "Add the Module to Omeka S"
-msgstr ""
+msgstr "Ajouter le module à Omeka S"
 
 #: ../../docs/modules/index.md:32
 msgid ""
-"In order to appear in the *Modules* table on the Modules tab of the Admin"
-" Dashboard for your Omeka S installation, modules must be manually added "
-"to the modules folder of the installation, using an FTP program or an ssh"
-" connection."
+"In order to appear in the *Modules* table on the Modules tab of the Admin "
+"Dashboard for your Omeka S installation, modules must be manually added to "
+"the modules folder of the installation, using an FTP program or an ssh "
+"connection."
 msgstr ""
+"Pour apparaître dans le tableau des *Modules* sur l'onglet Module du tableau "
+"de bord d'administration de votre installation Omeka S, les modules doivent "
+"être ajoutés manuellement au dossier modules de votre installation, en "
+"utilisant un programme FTP ou une connexion SSH."
 
 #: ../../docs/modules/index.md:34
 msgid ""
-"Modules which have been registered with Omeka are available on the "
-"[Modules](https://omeka.org/s/modules/) page of the Omeka S site. Other "
-"modules may be made available by their authors in other locations."
+"Modules which have been registered with Omeka are available on the [Modules]"
+"(https://omeka.org/s/modules/) page of the Omeka S site. Other modules may be "
+"made available by their authors in other locations."
 msgstr ""
+"Les modules qui ont été enregistrés sont disponible sur la page [Modules]"
+"(https://omeka.org/s/modules/) du site Omeka S. D'autres modules peuvent être "
+"mis à disposition par leurs auteurs à d'autres endroits."
 
 #: ../../docs/modules/index.md:36
 msgid "To add a module to the site using FTP"
-msgstr ""
+msgstr "Pour ajouter un module au site en utilisant FTP"
 
 #: ../../docs/modules/index.md:38
 msgid "Download the zipped module to your computer."
-msgstr ""
+msgstr "Téléchargez le module zippé sur votre ordinateur."
 
 #: ../../docs/modules/index.md:39
 msgid ""
-"Open your FTP client, log on to the server that houses  the Omeka S "
-"install and navigate to the `/modules` folder (this should be located in "
-"the main folder of the install)."
+"Open your FTP client, log on to the server that houses  the Omeka S install "
+"and navigate to the `/modules` folder (this should be located in the main "
+"folder of the install)."
 msgstr ""
+"Ouvrez votre client FTP, connectez vous au serveur qui héberge l'installation "
+"Omeka S et naviguez vers le dossier `/modules` (il doit être situé dans le "
+"dossier principal de l'installation)."
 
 #: ../../docs/modules/index.md:40
 msgid "Upload the zipped module to the `/modules` folder"
-msgstr ""
+msgstr "Téléchargez le module zippé dans le dossier `/modules`"
 
 #: ../../docs/modules/index.md:41
 msgid "Unzip the module"
-msgstr ""
+msgstr "Dézippez le module"
 
 #: ../../docs/modules/index.md:43
 msgid ""
-"Please note that if you are downloading the folder for a module from "
-"GitHub rather than the [Module Directory](https://omeka.org/s/modules/), "
-"you need to be sure to download the [latest "
-"release](https://help.github.com/en/articles/linking-to-releases) rather "
-"than the version in active development. If you are unsure how to do this,"
-" please consult the [GitHub help files](https://help.github.com/en)."
+"Please note that if you are downloading the folder for a module from GitHub "
+"rather than the [Module Directory](https://omeka.org/s/modules/), you need to "
+"be sure to download the [latest release](https://help.github.com/en/articles/"
+"linking-to-releases) rather than the version in active development. If you "
+"are unsure how to do this, please consult the [GitHub help files](https://"
+"help.github.com/en)."
 msgstr ""
+"Veuillez noter que si téléchargez le dossier d'un module depuis GitHub au "
+"lieu du [répertoire de modules](https://omeka.org/s/modules/), vous devez "
+"vous assurez de télécharger la [dernière version](https://help.github.com/en/"
+"articles/linking-to-releases) plutôt que la version en développement. Si vous "
+"n'êtes pas sûr de ce que vous faites, veuillez consulter les [fichiers d'aide "
+"GitHub](https://help.github.com/en)."
 
 #: ../../docs/modules/index.md:45
 msgid ""
 "You can also use ssh to clone a module directly from that module's git "
-"repository. Do this only if you are comfortable with git, github, and "
-"working with ssh."
+"repository. Do this only if you are comfortable with git, github, and working "
+"with ssh."
 msgstr ""
+"Vous pouvez aussi utiliser SSH pour cloner un module directement depuis le "
+"dépôt git de ce module. Ne faites ça que si vous êtes à l'aise avec git, "
+"github, et SSH."
 
 #: ../../docs/modules/index.md:47
 msgid "Install the Module"
-msgstr ""
+msgstr "Installer le module"
 
 #: ../../docs/modules/index.md:48
 msgid ""
-"To install a module, navigate to the Modules tab on the left-hand "
-"navigation of the admin dashboard of your Omeka S installation."
+"To install a module, navigate to the Modules tab on the left-hand navigation "
+"of the admin dashboard of your Omeka S installation."
 msgstr ""
+"Pour installer un module, naviguez vers l'onglet Modules dans la navigation à "
+"gauche du tableau de bord d'administration de votre installation Omeka S."
 
 #: ../../docs/modules/index.md:50
 msgid "Find the module in the table and click the install button."
-msgstr ""
+msgstr "Trouvez le module dans le tableau et cliquez sur le bouton installer."
 
 #: ../../docs/modules/index.md:52
 msgid ""
-"The module is now installed. You should see a success message once the "
-"page reloads. For modules with configuration options, you will be taken "
-"immediately to the configuration page for that module. For all other "
-"modules the Modules page will simply reload. On the Modules page, the "
-"*Status* of the module should change from “Not Installed” to “Not Active”"
+"The module is now installed. You should see a success message once the page "
+"reloads. For modules with configuration options, you will be taken "
+"immediately to the configuration page for that module. For all other modules "
+"the Modules page will simply reload. On the Modules page, the *Status* of the "
+"module should change from “Not Installed” to “Not Active”"
 msgstr ""
+"Le module est maintenant installé. Vous devriez voir un message de réussite "
+"après le rechargement de la page. Pour les modules qui ont des options de "
+"configuration, vous serez automatiquement redirigé vers la page de "
+"configuration de ce module. Pour tous les autres modules, la page des modules "
+"va simplement se recharger. Sur la page des modules, le *statut* du module "
+"doit changer de « Non installé » à « Inactif »"
 
 #: ../../docs/modules/index.md:54
 msgid ""
-"![Success message with green highlight reading “The module was "
-"successfully installed”](modulesfiles/mods_insuccess.png)"
+"![Success message with green highlight reading “The module was successfully "
+"installed”](modulesfiles/mods_insuccess.png)"
 msgstr ""
+"![Message de réussite avec une emphase verte « Le module a été installé avec "
+"succès »](modulesfiles/mods_insuccess.png)"
 
 #: ../../docs/modules/index.md:56
 msgid "Modules are automatically activated when installed."
-msgstr ""
+msgstr "Les modules sont automatiquement activés après l'installation."
 
 #: ../../docs/modules/index.md:58
 msgid "Activating Module"
-msgstr ""
+msgstr "Activer un module"
 
 #: ../../docs/modules/index.md:59
 msgid ""
 "If you have a module which is installed but inactive, click the activate "
 "button to use the module."
 msgstr ""
+"Si vous avez un module qui est installé mais inactif, cliquez sur le bouton "
+"activer pour utiliser ce module."
 
 #: ../../docs/modules/index.md:61
 msgid ""
-"You should see a success message once the page reloads, and the *Status* "
-"of the module should change from “Not Active” to “Active”"
+"You should see a success message once the page reloads, and the *Status* of "
+"the module should change from “Not Active” to “Active”"
 msgstr ""
+"Vous devriez voir un message de réussite après le rechargement de la page, et "
+"le *Statut* du module doit changer de « Inactif » à « Actif »"
 
 #: ../../docs/modules/index.md:63
 msgid ""
-"![Success message with green highlight reading “The module was "
-"successfully activated”](modulesfiles/mods_acsuccess.png)"
+"![Success message with green highlight reading “The module was successfully "
+"activated”](modulesfiles/mods_acsuccess.png)"
 msgstr ""
+"![Message de réussite avec une emphase verte « Le module a été activé avec "
+"succès »](modulesfiles/mods_acsuccess.png)"
 
 #: ../../docs/modules/index.md:65
 msgid "Configuring a module"
-msgstr ""
+msgstr "Configurer un module"
 
 #: ../../docs/modules/index.md:66
 msgid ""
-"Some, but not all, modules include the option to configure settings for "
-"that module. If an active module displays the *configure* (wrench) "
-"button, you may configure that module."
+"Some, but not all, modules include the option to configure settings for that "
+"module. If an active module displays the *configure* (wrench) button, you may "
+"configure that module."
 msgstr ""
+"Certains modules, mais pas tous, incluent la possibilité de configurer les "
+"paramètres de ce module. Si un module actif affiche le bouton *configurer* "
+"(clé à molette), vous pouvez configurer ce module."
 
 #: ../../docs/modules/index.md:68
 msgid ""
-"Information regarding configuration options for individual modules can be"
-" found on the documentation page for those modules."
+"Information regarding configuration options for individual modules can be "
+"found on the documentation page for those modules."
 msgstr ""
+"Les informations concernant les options de configuration pour ces modules "
+"peuvent être trouvées dans la documentation de ces modules."
 
 #: ../../docs/modules/index.md:70
 msgid "Uninstalling a module"
-msgstr ""
+msgstr "Désinstaller un module"
 
 #: ../../docs/modules/index.md:71
 msgid "Removing a module is essentially installing in reverse:"
-msgstr ""
+msgstr "Retirer un module est essentiellement l'inverse de l'installation:"
 
 #: ../../docs/modules/index.md:73
 msgid "Deactivate the module by clicking the *deactivate* button"
-msgstr ""
+msgstr "Désactivez le module en cliquant sur le bouton *désactiver*"
 
 #: ../../docs/modules/index.md:74
 msgid "Uninstall the module by clicking the *uninstall* button"
-msgstr ""
+msgstr "Désinstaller le module en cliquant sur le bouton *désinstaller*"
 
 #: ../../docs/modules/index.md:75
 msgid ""
-"A drawer will open on the right side of the window asking you to confirm "
-"that you want to uninstall the module. Click “Confirm Uninstall” to "
-"continue."
+"A drawer will open on the right side of the window asking you to confirm that "
+"you want to uninstall the module. Click “Confirm Uninstall” to continue."
 msgstr ""
+"Un tiroir s'ouvrira sur la droite de la fenêtre vous demandant de confirmer "
+"que vous voulez désinstaller le module. Cliquez sur le bouton « Confirmer la "
+"désinstallation » pour continuer."
 
 #: ../../docs/modules/index.md:77
 msgid ""
-"![Uninstall module dialogue with the message “Are you sure you would like"
-" to uninstall this module?”](modulesfiles/mods_confirmuninstall.png)"
+"![Uninstall module dialogue with the message “Are you sure you would like to "
+"uninstall this module?”](modulesfiles/mods_confirmuninstall.png)"
 msgstr ""
+"![Dialogue de désinstallation du module avec le message « Êtes-vous sûr de "
+"vouloir désinstaller ce module ? »](modulesfiles/mods_confirmuninstall.png)"
 
 #: ../../docs/modules/index.md:79
 msgid ""
-"The uninstalled module will continue to appear on your Modules page "
-"unless the folder for the module is removed from the /modules folder on "
-"the Omeka S installation, which can be done via FTP or SSH."
+"The uninstalled module will continue to appear on your Modules page unless "
+"the folder for the module is removed from the /modules folder on the Omeka S "
+"installation, which can be done via FTP or SSH."
 msgstr ""
+"Le module désinstallé continuera d'apparaître dans la page de vos modules "
+"sauf si le dossier du module est retiré du dossier /modules dans "
+"l'installation Omeka S, ce qui peut être fait via FTP ou SSH."
 
 #: ../../docs/modules/index.md:81
 msgid "Updating a module"
-msgstr ""
+msgstr "Mettre à jour un module"
 
 #: ../../docs/modules/index.md:82
 msgid "To update a module using FTP:"
-msgstr ""
+msgstr "Pour mettre à jour un module en utilisant FTP:"
 
 #: ../../docs/modules/index.md:84
 msgid ""
 "From the Modules tab on your Omeka S installation, deactivate the module "
 "you're going to update."
 msgstr ""
+"Depuis l'onglet Modules de votre installation Omeka S, désactivez le module "
+"que vous vous apprêtez à mettre à jour."
 
 #: ../../docs/modules/index.md:85
 msgid ""
 "From the Omeka S website or other source, download the latest release of "
 "zipped module to your computer."
 msgstr ""
+"Depuis le site web Omeka S ou une autre source, téléchargez la dernière "
+"version du module zippé sur votre ordinateur."
 
 #: ../../docs/modules/index.md:86
 msgid ""
-"Open your FTP client and log on to the server that houses the Omeka S "
-"install."
+"Open your FTP client and log on to the server that houses the Omeka S install."
 msgstr ""
+"Ouvrez votre client FTP et connectez vous sur le serveur qui héberge "
+"l'installation Omeka S."
 
 #: ../../docs/modules/index.md:87
 msgid ""
-"Navigate to the /modules folder (this should be located in the main "
-"folder of the install)."
+"Navigate to the /modules folder (this should be located in the main folder of "
+"the install)."
 msgstr ""
+"Naviguez vers le dossier /modules (il doit être situé dans le dossier "
+"principal de l'installation)."
 
 #: ../../docs/modules/index.md:88
 msgid ""
-"Move the old copy of the module to your desktop (or somewhere else on "
-"your local machine where you will be able to find it)."
+"Move the old copy of the module to your desktop (or somewhere else on your "
+"local machine where you will be able to find it)."
 msgstr ""
+"Déplacez l'ancienne copie du module vers votre bureau (ou ailleurs sur votre "
+"machine locale où vous serez capable de le retrouver)."
 
 #: ../../docs/modules/index.md:89
 msgid ""
-"Use your FTP client to upload the zipped folder for the latest version of"
-" the module to the /modules folder"
+"Use your FTP client to upload the zipped folder for the latest version of the "
+"module to the /modules folder"
 msgstr ""
+"Utilisez votre client FTP pour télécharger le dossier zippé de la dernière "
+"version du module vers le dossier /modules"
 
 #: ../../docs/modules/index.md:90
 msgid "In your FTP client, unzip the new version module"
-msgstr ""
+msgstr "Dans votre client FTP, dézippez la nouvelle version du module"
 
 #: ../../docs/modules/index.md:91
 msgid ""
-"On the Omeka S installation dashboard, go to the Modules tab and activate"
-" the new version of the module."
+"On the Omeka S installation dashboard, go to the Modules tab and activate the "
+"new version of the module."
 msgstr ""
+"Sur le tableau de bord de l'installation Omeka S, allez dans l'onglet Modules "
+"et activez la nouvelle version du module."
 
 #: ../../docs/modules/index.md:93
 msgid ""
 "If you are concerned about problems with the update, be sure to keep the "
-"older version of the module on your local machine in case you have to "
-"switch them back. You would roll back in the same way you updated."
+"older version of the module on your local machine in case you have to switch "
+"them back. You would roll back in the same way you updated."
 msgstr ""
+"Si vous êtes inquiets des potentiels problèmes de la mise à jour, assurez "
+"vous de garder une copie de l'ancienne version du module sur votre machine "
+"locale au cas où vous devriez revenir à cette version. Vous feriez le retour "
+"en arrière de la même manière que pour la mise à jour."
 
 #: ../../docs/modules/index.md:95
 msgid ""
-"If you run into problems while updating, turn on [error "
-"logging](../errorLogging) and post on the [Omeka "
-"Forum](https://forum.omeka.org/c/omeka-s/modules)."
+"If you run into problems while updating, turn on [error logging](../"
+"errorLogging) and post on the [Omeka Forum](https://forum.omeka.org/c/omeka-s/"
+"modules)."
 msgstr ""
-
+"Si vous rencontrez des problèmes pendant la mise à jour, activez [la "
+"journalisation des erreurs](../errorLogging) et demandez de l'aide sur le "
+"[Forum Omeka](https://forum.omeka.org/c/omeka-s/modules)."
