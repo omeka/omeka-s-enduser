@@ -55,6 +55,7 @@ This tab allows a user or global admin to set the following:
 
 - *Locale*: select from a dropdown of available languages. This will change the language in which the installation's admin site displays for that user.
 - *Default resource template*: select from existing templates to have a template auto-load whenever the user creates a new item.
+- *Default sites for items*: select from available sites to automatically attach new items to the sites when created by the user.
 
 ![User settings for Omeka Dev with default options selected](adminfiles/users_settings.png)
 
