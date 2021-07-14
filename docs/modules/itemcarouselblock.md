@@ -28,6 +28,7 @@ Using the drop-down menu within the block, you can access a number of advance op
 ![An item carousel block detail image focused on the advanced options settings.](../../modules/modulesfiles/itemcarouselblock-advancedoptions.png)
 
 You can use those settings to:
+
 - select the Thumbnail Type for the attachment. The options are large, medium, or square.
 - decide which attachment title to show. The setting options include item title, media title, or no title.
 - decide whether or not to show an attachment caption.
