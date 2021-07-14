@@ -267,3 +267,5 @@ Selecting any of these will add a block to the form where you can select a prope
 For the **delete actions**, a drawer will open on the right side of the screen telling you the number of items which will be deleted. Nothing will be deleted unless you click the red *Confirm Delete* button. This action cannot be undone. To opt out of deleting the items, click the X in the upper right corner of the deletion drawer. To confirm delete, check the "Are you sure" checkbox and then click *Confirm Delete*
 
 ![Close up of the warning, with the text describing the number of items to be deleted in red.](contentfiles/items_batchdelwarn.png)
+
+Individual modules may also add batch edit actions. Those options are noted within the documentation for each module.
