@@ -32,25 +32,25 @@ To add a link you can use the *Add a custom link* options on the right hand draw
 
 Or you can add one of your [pages](../sites/site_pages), which should be listed in the right-hand drawer below the *Add a custom link* dropdown. If you need to find a specific page, begin typing the page title in the search box with the helper text *Filter pages* which appears directly below the text “Add a link to a site page.” 
 
-**Custom URL** link blocks display three pieces of information: the block *type* (Custom URL), the *label* which is the text which will appear in the site navigation menu, and the *url*. 
+**Custom URL** link option displays three pieces of information: the link *type* (Custom URL), the *label* which is the text which will appear in the site navigation menu, and the *url*. 
 
-![URL block with the label “RRCHNM” and url chnm.gmu.edu](../sites/sitesfiles/sitenav_url.png) URL Block
+![URL link option with the label “RRCHNM” and url chnm.gmu.edu](../sites/sitesfiles/sitenav_url.png) URL Block
 
-**Browse** blocks create a browse page for [resources](../sites/site_resources.md) already associated with your site. There are blocks to create a browse items page and a block to browse item sets page.  
+**Browse** links create a browse page for [resources](../sites/site_resources.md) already associated with your site. There are options to create a browse items page and a browse item sets page.  
 
-You can change the *label* of the block to reflect what, specifically, site visitors will browse. 
+You can change the *label* of the link to reflect what, specifically, site visitors will browse. 
 
-![Browse block with the query element](../sites/sitesfiles/sitenav_query.png)
+![Browse page form with the query element](../sites/sitesfiles/sitenav_query.png)
 
-To refine the Browse block, you can use the Query to create a search query that returns the desired results. Note that you **must** enter a query for the block to function.
+To refine the Browse page, you can use the Query interface to create a search query that returns the desired results. 
 
-Click the Edit button to reveal the advanced search interface in the drawer. Once you are satisfied with the universe of items in your search, clicking the Apply button will set the universe of items for the Browse block.
+Click the Edit button to reveal the advanced search interface in the drawer. Once you are satisfied with the pool of items in your search, clicking the Apply button will set the pool of items for the Browse page.
 
 ![Advanced search query drawer](../sites/sitesfiles/sitenav_query_search.png)
 
-Once a query has been set, you can click Edit to update the universe of items. You can click Advanced Edit to directly edit the query string. Finally, you can Clear a query to start over. If you have cleared a search in error, you can Restore it. 
+Once a query has been set, you can click Edit to update the pool of items. You can click Advanced Edit to directly edit the query string. Finally, you can Clear a query to start over. If you have cleared a search in error, you can Restore it. 
 
-![Browse block with the edit query element](../sites/sitesfiles/sitenav_query_update.png)
+![Browse page form with the edit query element](../sites/sitesfiles/sitenav_query_update.png)
 
 ### Site Page
 Site page blocks create links to pages you have built for your site. The *page* field indicates which page is in use, as does the block title. You can change the *label* for the page link in the navigation, as in the example image below. Note that changing the label does not change the page title. 

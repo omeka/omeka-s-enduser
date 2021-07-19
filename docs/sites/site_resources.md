@@ -40,8 +40,6 @@ Clicking edit will reveal an advanced search form in the drawer.
 
 Note that the search options in the form work together to build an overall search. If you had the search in the image above, looking for items where "Creator" contains the word "Doyle" and you added a criteria where Class=Text, it would only add items to your pool which matched *both* statements.
 
-Above the search fields is a button to Preview this search. Clicking the button after creating a search will open a new drawer with the items which meet the criteria of the search.
-
 Search forms options are:
 
 *Search full-text:* search all values of all items. 
@@ -72,9 +70,9 @@ To find a resource ID, go to the resource and look at the url in your browser's 
 
 Note that the fields for searches by value, class, template, and item set have a large red plus sign to the left of the select options. Use these to add more than one search of this kind to your form. You can use the red trash can icon to the right of the field to remove it.
 
-If you would like to clear your search, select Reset. Once you are satisfied with your items, select Apply to set the universe. 
+At the bottom of search fields within the draw are a set of buttons to control what happens with your search. Clicking the Preview button after creating a search will open a new drawer with the items which meet the criteria of the search. If you would like to clear your search, select Reset. Once you are satisfied with your items, select Apply to set the universe. 
 
-Even after you've applied your query, you can still Edit, Restore your previous query, or Clear your query. Also, if this is a query that you are likely to repeat, you can select the checkbox to *Keep this query*.
+Even after you have applied your query, you can still Edit, Restore your previous query, or Clear your query. Also, if this is a query that you are likely to repeat, you can select the checkbox to *Keep this query*.
 
 ![Item resource query element with update options ](../sites/sitesfiles/sites_resources_query_update.png)
 
