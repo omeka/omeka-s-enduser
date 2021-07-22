@@ -16,6 +16,7 @@ The Add Cusom Vocab page has four fields: Label, Language, Items, and Terms.
 - *Language* (optional) of the vocab using the [ISO 639-1 language code.](http://www.iso.org/iso/language_codes)
 
 You can set the controlled vocabulary terms either to a list of existing items or to a list of entered terms:
+
 - *Items* offers a drop-down of Item Sets in your Omeka S installation. Choosing one of these will create a custom vocab populated by items from that item set. When used, the property is populated as an Omeka Resource, not text.
 - *Terms* for the custom vocab, one word or phrase per line. This populates the property as text.
 
