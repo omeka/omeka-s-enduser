@@ -18,7 +18,11 @@ In this section are two fields:
  
 Clicking on the phrase "Terms of Service" will open a new window so that people filling out the form do not lose the information they have entered.
 
-**Email address** allows you to set a custom address from which submission emails will be sent. If left blank, these emails will be sent from the administrator email address in the [Global Settings](../admin/settings.md) for the Omeka S installation. 
+**Terms of service URL** is an input for a link to an existing external terms of service page.
+
+**Submission email address** allows you to set a custom address from which submission emails will be sent. If left blank, these emails will be sent from the administrator email address in the [Global Settings](../admin/settings.md) for the Omeka S installation. 
+
+**Notification email address** allows you to set a custom address to which notifications of new submissions will be sent. If left blank, no notification email will be sent.
 
 ## Managing Collecting Forms
 
