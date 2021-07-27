@@ -4,6 +4,10 @@ The Collecting module allows you to gather public contributions through your sit
 
 Once activated on the [modules](index.md) tab of the admin dashboard, Collecting is configured on a site-by-site basis.
 
+### Integrations
+
+Collecting integrates with the [Custom Vocab](../modules/customvocab/) and the [Numeric data types](../modules/numericdatatypes/) modules.
+
 ## Site settings
 
 Collecting adds a section to your [site settings](../sites/site_settings.md) where you can manage terms of service and email for the collecting forms for this site.
@@ -71,7 +75,7 @@ The Collecting module has Prompt Types with options as follows:
 	 - Item resource (will appear as dropdown)
 		 - This will offer the user the choice of existing items to add as a property value. You can paste anything after the `admin/` in the url of an advanced search to load specific items.
 	 - [Custom Vocab](../modules/customvocab/) (requires that plugin to be installed). If selected, an additional dropdown will load. Use this to select from your existing Custom Vocabs. This will load as a dropdown for the users on the public side of the form.
-	 - If you have [Numeric data types](../modules/numericdatatypes/) installed, you will also have the options:
+	 - If you have [Numeric Data Types](../modules/numericdatatypes/) installed, you will also have the options:
 		 - Numeric timestamp
 		 - Numeric interval
 		 - Numeric duration
