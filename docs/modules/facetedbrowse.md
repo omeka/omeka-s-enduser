@@ -40,7 +40,9 @@ You can add more than one type of facet to each page.
 **Value**
 
 Give the facet a name (required).
+
 Select a property for the facet. 
+
 Use the Query type to narrow the facet: 
 
 - Is exactly; 
@@ -124,6 +126,7 @@ Give the facet a name (required).
 When you are satisfied with your settings, click the *Set facet* button.
 
 ### Columns
+
 The display of the browse list of results defaults to include the title and description for the resource, just as is the case with other browse lists. You can configure the information displayed about the results by adding columns of metadata to the display for your faceted browse.
 
 Select a type of column to add from the dropdown menu: Title (link to resource); Value; Resource class; Resource template; Item set; ID. 
@@ -165,6 +168,7 @@ Give the column a name (required).
 When you are satisfied with configuring the column, click the *Set column* button.
 
 ## Add a Faceted Browse page to the Site Navigation.
+
 Click on the Navigation tab for your site. Select *Faceted browse* from the *Add a custom link* list in the page sidebar. 
 
 Give your custom link a label (required), and select from your dropdown list of faceted browse pages (required). 
