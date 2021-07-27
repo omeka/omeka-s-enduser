@@ -52,7 +52,8 @@ At the top of the work area are fields for the page title and URL slug. You can 
 
 ![A page in edit view, with one media block added](../sites/sitesfiles/sitepg_edit.png)
 
-On the right hand side you can choose to add a new block by selecting one of the following layouts: 
+On the right hand side you can choose to add a new block by selecting one of the following page elements: 
+
 - HTML
 - Page title
 - Media Embed
@@ -62,6 +63,7 @@ On the right hand side you can choose to add a new block by selecting one of the
 - Table of contents
 - Line break
 - Item with metadata
+  
 If you have the relevant modules installed, you may also have:
 
 - Map
@@ -130,7 +132,6 @@ The Media block has options for the display of the media:
 
 *Layout note:* If you want media to appear beside a block of text, place a media block *above* an HTML block, select a smaller thumbnail size, and choose either float left or right for alignment. In the example below, the media has a thumbnail type of "medium", alignment "float right," and attachment title of the "item title": 
 
-
 ![A block of lorem ipsum text with a right-aligned small image embedded at the top of the paragraph](../sites/sitesfiles/sitepg_mediaalign.png)
 
 Placing a media block *after* an HTML block will cause the media to appear below the end of the HTML paragraphs. 
@@ -150,6 +151,7 @@ These options are:
 - Filter by item id: you can put in the specific item id for an item (the number which appears in the url when you are looking at the item on the admin). 
 
 Once you have applied your changes to the filter, you must click the search button (magnifying glass) to apply the filters or run the search.  
+
 ![Select item drawer with filter options displayed](../sites/sitesfiles/sitepg_selectitemFilter.png)
 
 Once you’ve selected an item, the drawer will shift to that item’s information. You can add a caption and select which media (if more than one) you want to use. To return to the list of items, click the *Select item* button at the top of the drawer. To use the item displayed and apply the caption, etc, click the *Apply changes* button at the bottom of the drawer.
@@ -267,7 +269,7 @@ Add attachments in the same manner as the [media](../sites/site_pages/#media) pa
 ![Item with metadata block with nothing attached](../sites/sitesfiles/sitepg_iwm.png)
 
 ### Other blocks
-For module-specific blocks (like [Collecting](../modules/collecting.md) or [Map](../modules/mapping.md)) see the documentation for that module.
+For module-specific blocks (like [Collecting](../modules/collecting.md) or [Mapping](../modules/mapping.md)) see the documentation for that module.
 
 ## Deleting Pages
 To delete a page, go the to *Pages* tab of the site of which the page is a part. Click the delete (trash can) button at the right end of the row for that page. 
