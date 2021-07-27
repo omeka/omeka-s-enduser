@@ -165,19 +165,25 @@ To add multiple items at once, click the "quick add" slider just above the list 
 ### Browse Preview
 Allows you to add a block of items on a site page.
 
-In order to create a Browse Preview block, you'll first need to perform a search on your Omeka S installation for the items you want to include. You can use the general search on the left hand navigation or, if you want to show all items in an item set, use the Advanced Search from Items browse. NB: if you leave the search options blank, the browse preview will load all items in your site's item pool.
+![Browse Preview block with the query element](../sites/sitesfiles/sitepg_browsepreview_query.png)
 
-Once you have searched, highlight everything in your browser's address bar starting with the question mark all the way to the end of the search url (to the right).
+From the *Resource type* dropdown, choose the kind of resource you want to display in the block: Items, Item Sets, or Media. 
 
-![a search query url with the question mark and everything to its right highlighted](../sites/sitesfiles/sitespg_bpquery.png) 
+Using the *Query* element interface, select your universe of items.
 
-- From the *Resource type* dropdown, choose the kind of resource you want to display in the block: Items, Item Sets, or Media. 
-- In the *Query* field of the Browse Preview block, paste the part of the url you just copied (everything from the question mark over). 
-- The *Limit* field lets you set the number of resources to display in the block; any additional results from your query can be accessed on a search page linked from the bottom of the block (you set the text of the link in the *browse link text* field below).
-- The *Preview Title* field sets the heading above the browse section on the page.
-- The *Browse link text* field sets the link text at the bottom of the block - the block will only display as many results as you set in the *Limit* field above.
+Click the Edit button to reveal the advanced search interface in the drawer. Once you are satisfied with the universe of items in your search, clicking the Apply button will set the universe of items for the Browse block.
 
-![Page block for Browse Preview](../sites/sitesfiles/sitepg_bpblock.png)
+![Advanced search query drawer](../sites/sitesfiles/sitepg_query_search.png)
+
+Once a query has been set, you can click Edit to update the universe of items. You can click Advanced Edit to directly edit the query string. Finally, you can Clear a query to start over. If you have cleared a search in error, you can Restore it.
+
+![Browse block with the edit query element](../sites/sitesfiles/sitepg_query_update.png)
+
+The *Limit* field lets you set the number of resources to display in the block; any additional results from your query can be accessed on a search page linked from the bottom of the block (you set the text of the link in the *browse link text* field below).
+
+The *Preview Title* field sets the heading above the browse section on the page.
+
+The *Browse link text* field sets the link text at the bottom of the block - the block will only display as many results as you set in the *Limit* field above.
 
 ### Item Showcase
 A list of items. 
