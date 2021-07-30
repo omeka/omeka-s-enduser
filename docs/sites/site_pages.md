@@ -52,7 +52,8 @@ At the top of the work area are fields for the page title and URL slug. You can 
 
 ![A page in edit view, with one media block added](../sites/sitesfiles/sitepg_edit.png)
 
-On the right hand side you can choose to add a new block by selecting one of the following page elements: 
+On the right hand side you can choose to add a new block by selecting one of the following page elements:
+
 
 - HTML
 - Page title
@@ -63,11 +64,14 @@ On the right hand side you can choose to add a new block by selecting one of the
 - Table of contents
 - Line break
 - Item with metadata
+- List of pages
   
 If you have the relevant modules installed, you may also have:
 
-- Map
+- Map by attachment
+- Map by query
 - Collecting
+- Item Carousel
 
 Once you have added blocks to your page, click the Save button in the right hand corner.  To leave without saving changes, click Cancel.
 
@@ -180,10 +184,11 @@ Once a query has been set, you can click Edit to update the universe of items. Y
 ![Browse block with the edit query element](../sites/sitesfiles/sitepg_query_update.png)
 
 The *Limit* field lets you set the number of resources to display in the block; any additional results from your query can be accessed on a search page linked from the bottom of the block (you set the text of the link in the *browse link text* field below).
+The *Components* field lets you decide what to display in your browse for each resource: the Heading, the Body, and or the Thumbnail. If not set in Site Settings, Heading defaults to resource Title and Body to resource Description.
 
 The *Preview Title* field sets the heading above the browse section on the page.
 
-The *Browse link text* field sets the link text at the bottom of the block - the block will only display as many results as you set in the *Limit* field above.
+The *Link text* field sets the link text at the bottom of the block - the block will only display as many results as you set in the *Limit* field above.
 
 ### Item Showcase
 A list of items. 
@@ -237,19 +242,8 @@ This block displays a list of all of the sites on your Omeka S install. This blo
 - Max number of sites allows you to limit the number of sites which display at once. If left blank, all sites will display.
 - A checkbox to turn on pagination, applied only if you set a limit.
 - A checkbox to show site summaries.  
+- A checkbox to show site thumbnail.
 - A checkbox to exclude the current site from the list. 
-
-This image shows a List of sites block, sorted oldest first, with no limits:
-
-![](../sites/sitesfiles/sitepg_slist2.png)
-
-This is the same block edited to have a limit of 5 and pagination is turned on:
-
-![](../sites/sitesfiles/sitepg_slist3.png)
-
-The same block with pagination and site summaries turned on:
-
-![](../sites/sitesfiles/sitepg_slist4.png)
 
 ### Table of Contents
 If the current page has child pages, you can add a table of content block for those pages.
@@ -273,6 +267,17 @@ This block displays an item along with all associated metadata (entered when cre
 Add attachments in the same manner as the [media](../sites/site_pages/#media) page block.
 
 ![Item with metadata block with nothing attached](../sites/sitesfiles/sitepg_iwm.png)
+
+### List of pages
+This block displays a linked list of pages. You may select from pages that are within the site but custom links such as Custom URL, Browse, and Browse Item Set are not available.
+
+Clicking the Add pages button in the block, which will reveal a draw that contains all of the pages in the site. Click on the individual page to add it to the list.
+
+![Page edit interface with List of pages block activated to open page select drawer](../sites/sitesfiles/sitespg_listPagesAdd.png)
+
+You may drag and nest pages into any order.
+
+![List of pages block with three pages showing nesting](../sites/sitesfiles/sitespg_listPagesOrder.png)
 
 ### Other blocks
 For module-specific blocks (like [Collecting](../modules/collecting.md) or [Mapping](../modules/mapping.md)) see the documentation for that module.
