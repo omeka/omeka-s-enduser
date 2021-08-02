@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../docs/modules/metadatabrowse.md:9
 msgid "Configuration Options"
-msgstr ""
+msgstr "Options de configuration"
 
 #: ../../docs/modules/metadatabrowse.md:10
 msgid ""
