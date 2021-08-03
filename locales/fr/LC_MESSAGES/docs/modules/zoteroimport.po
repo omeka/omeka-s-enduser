@@ -4,78 +4,95 @@
 # manual package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Omeka S end user manual \n"
+"Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 08:33+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-08-03 14:55+0200\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.3\n"
 
 #: ../../docs/modules/zoteroimport.md:1
 msgid "Zotero Import"
-msgstr ""
+msgstr "Zotero Import"
 
 #: ../../docs/modules/zoteroimport.md:3
 msgid ""
-"Zotero Import is a [module](index.md) for Omeka S which allows you to "
-"connect an Omeka S instance to a Zotero library and import items from "
-"that library."
+"Zotero Import is a [module](index.md) for Omeka S which allows you to connect "
+"an Omeka S instance to a Zotero library and import items from that library."
 msgstr ""
+"Zotero Import est un [module](index.md) pour Omeka S qui vous permet de "
+"connecter une instance Omeka S à une bibliothèque Zotero et d'importer des "
+"contenus depuis cette bibliothèque."
 
 #: ../../docs/modules/zoteroimport.md:5
 msgid ""
-"To install Zotero Import, follow the instructions for [Installing "
-"Modules](index.md#installing-modules)."
+"To install Zotero Import, follow the instructions for [Installing Modules]"
+"(index.md#installing-modules)."
 msgstr ""
+"Pour installer Zotero Import, suivez les instructions pour [Installer les "
+"modules](index.md#installing-modules)."
 
 #: ../../docs/modules/zoteroimport.md:7
 msgid "Prepare your Zotero Library"
-msgstr ""
+msgstr "Préparer votre bibliothèque Zotero"
 
 #: ../../docs/modules/zoteroimport.md:8
 msgid ""
-"In order to import from a Zotero library, you must have API access to the"
-" library. To use Zotero Import, you will need the ID for the group or "
-"user"
+"In order to import from a Zotero library, you must have API access to the "
+"library. To use Zotero Import, you will need the ID for the group or user"
 msgstr ""
+"Afin d'importer une bibliothèque Zotero, vous devez avoir accès à l'API de "
+"votre bibliothèque. Pour utiliser Zotero Import, vous aurez besoin de l'ID du "
+"groupe ou de l'utilisateur."
 
 #: ../../docs/modules/zoteroimport.md:10
 msgid ""
-"Individual IDs are found on the Feeds/API tab of your Zotero Settings; "
-"there is a sentence stating “Your userID for use in API call is”."
+"Individual IDs are found on the Feeds/API tab of your Zotero Settings; there "
+"is a sentence stating “Your userID for use in API call is”."
 msgstr ""
+"Les ID individuels sont situés dans l'onglet Feeds/API de vos Paramètres "
+"Zotero; il y a une phrase indiquant \"Votre userID pour utiliser l'API est\"."
 
 #: ../../docs/modules/zoteroimport.md:11
 msgid ""
-"Group IDs are found on the Zotero group library page by looking at the "
-"URL of the library - it will be `zotero.org/groups/<number>`. If you go "
-"to https://api.zotero.org/groups/<numer>`, you should get some "
-"information on that page."
+"Group IDs are found on the Zotero group library page by looking at the URL of "
+"the library - it will be `zotero.org/groups/<number>`. If you go to https://"
+"api.zotero.org/groups/<numer>`, you should get some information on that page."
 msgstr ""
+"Les ID de groupes sont situés dans la page de la bibliothèque de groupe "
+"Zotero en regardant l'URL de la bibliothèque - ce serait `zotero.org/groups/"
+"<number>`. Si vous aller sur  https://api.zotero.org/groups/<numer>`, vous "
+"devriez avoir les informations sur cette page."
 
 #: ../../docs/modules/zoteroimport.md:13
 msgid ""
-"You may also want to have the id for a specific collection and an API key"
-" to import files."
+"You may also want to have the id for a specific collection and an API key to "
+"import files."
 msgstr ""
+"Vous pourriez vouloir avoir l'ID d'une collection en particulier ou une clef "
+"API pour importer des fichiers."
 
 #: ../../docs/modules/zoteroimport.md:15
 msgid ""
 "Collection keys appear in the url of a collection page - they are the "
 "alphanumeric sequence at the end of the url, following “collections/“"
 msgstr ""
+"Les clefs des collections apparaissent dans l'URL d'une page collections - ce "
+"sont les séquences alphanumériques à la fin de l'url, suivre “collections/“"
 
 #: ../../docs/modules/zoteroimport.md:16
 msgid ""
-"To generate an API key, go to Settings in your Zotero account, to the "
-"Feeds/API tab, and click the *Create new private key* link."
+"To generate an API key, go to Settings in your Zotero account, to the Feeds/"
+"API tab, and click the *Create new private key* link."
 msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:18
@@ -84,9 +101,9 @@ msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:20
 msgid ""
-"To import, go to the Zotero Import tab on the left-hand navigation of the"
-" admin dashboard of your Omeka S install. This will automatically take "
-"you to the Import sub-tab, also in the left-hand navigation."
+"To import, go to the Zotero Import tab on the left-hand navigation of the "
+"admin dashboard of your Omeka S install. This will automatically take you to "
+"the Import sub-tab, also in the left-hand navigation."
 msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:22
@@ -103,14 +120,13 @@ msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:27
 msgid ""
-"Choose between *User* or *Group* libraries with the radio buttons "
-"(required);"
+"Choose between *User* or *Group* libraries with the radio buttons (required);"
 msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:28
 msgid ""
-"Enter the Library ID (this is either the Group or User ID number, "
-"discussed above)."
+"Enter the Library ID (this is either the Group or User ID number, discussed "
+"above)."
 msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:29
@@ -119,8 +135,8 @@ msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:30
 msgid ""
-"Enter your API key to import private data and/or files (optional for "
-"import but necessary to import files)"
+"Enter your API key to import private data and/or files (optional for import "
+"but necessary to import files)"
 msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:31
@@ -131,38 +147,37 @@ msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:33
 msgid ""
-"The “Added After”option allows you to import only those Zotero items "
-"added to the library after the date and time you choose. You can use this"
-" as a way to update from a previous import without re-adding files you "
-"already imported."
+"The “Added After”option allows you to import only those Zotero items added to "
+"the library after the date and time you choose. You can use this as a way to "
+"update from a previous import without re-adding files you already imported."
 msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:35
 msgid ""
-"When you have completed the form, click Submit in the upper right-hand "
-"corner of the browser window."
+"When you have completed the form, click Submit in the upper right-hand corner "
+"of the browser window."
 msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:37
 msgid ""
-"Are your jobs starting and not completing? You might need to [set the "
-"path for PHP](../configuration/) so that your system can perform the "
-"background process to make the items."
+"Are your jobs starting and not completing? You might need to [set the path "
+"for PHP](../configuration/) so that your system can perform the background "
+"process to make the items."
 msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:39
 msgid ""
-"A note on files: The rules for importing an item are the same as creating"
-" an item in Omeka, so if your Zotero library has files which are a "
-"disallowed media type, the items will not be imported."
+"A note on files: The rules for importing an item are the same as creating an "
+"item in Omeka, so if your Zotero library has files which are a disallowed "
+"media type, the items will not be imported."
 msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:41
 msgid ""
-"The page will load on the Past Imports tab with a message \"Importing "
-"from Zotero\". To check the status of the import, reload the page or "
-"click to the [Jobs](../admin/jobs.md) tab of the left-hand navigation on "
-"the admin dashboard."
+"The page will load on the Past Imports tab with a message \"Importing from "
+"Zotero\". To check the status of the import, reload the page or click to the "
+"[Jobs](../admin/jobs.md) tab of the left-hand navigation on the admin "
+"dashboard."
 msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:43
@@ -171,14 +186,13 @@ msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:45
 msgid ""
-"To view and manage past imports, click on the Zotero Import tab in the "
-"left-hand navigation, and then click on the \"Past Imports\" sub-tab."
+"To view and manage past imports, click on the Zotero Import tab in the left-"
+"hand navigation, and then click on the \"Past Imports\" sub-tab."
 msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:47
 msgid ""
-"![red arrow points to past imports "
-"tab](modulesfiles/zoteroimport_pasttab.png)"
+"![red arrow points to past imports tab](modulesfiles/zoteroimport_pasttab.png)"
 msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:49
@@ -201,8 +215,8 @@ msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:54
 msgid ""
-"*Job Status* current status of job. Clicking on the text of a job status "
-"will take you to that job's page;"
+"*Job Status* current status of job. Clicking on the text of a job status will "
+"take you to that job's page;"
 msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:55
@@ -211,21 +225,20 @@ msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:57
 msgid ""
-"To Undo an import, click the *Undo* button to the left of the *Items "
-"Added Before* timestamp. This will open a sidebar dialog asking you to "
-"confirm that you want to undo the import and delete all imported items. "
-"Click *Confirm* to continue."
+"To Undo an import, click the *Undo* button to the left of the *Items Added "
+"Before* timestamp. This will open a sidebar dialog asking you to confirm that "
+"you want to undo the import and delete all imported items. Click *Confirm* to "
+"continue."
 msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:59
 msgid ""
-"![past imports tab with sidebar open to confirm "
-"undo](modulesfiles/zoteroimport_undo.png)"
+"![past imports tab with sidebar open to confirm undo](modulesfiles/"
+"zoteroimport_undo.png)"
 msgstr ""
 
 #: ../../docs/modules/zoteroimport.md:61
 msgid ""
-"Past Imports which have already been undone will have a job status \"Undo"
-" Import Completed\"."
+"Past Imports which have already been undone will have a job status \"Undo "
+"Import Completed\"."
 msgstr ""
-
