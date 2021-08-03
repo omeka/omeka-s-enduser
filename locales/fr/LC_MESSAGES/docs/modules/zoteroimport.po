@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Omeka S end user manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 08:33+0000\n"
-"PO-Revision-Date: 2021-08-03 14:55+0200\n"
+"PO-Revision-Date: 2021-08-03 15:34+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -38,8 +38,8 @@ msgid ""
 "To install Zotero Import, follow the instructions for [Installing Modules]"
 "(index.md#installing-modules)."
 msgstr ""
-"Pour installer Zotero Import, suivez les instructions pour [Installer les "
-"modules](index.md#installing-modules)."
+"Pour installer Zotero Import, suivez les instructions [Installer les modules]"
+"(index.md#installing-modules)."
 
 #: ../../docs/modules/zoteroimport.md:7
 msgid "Prepare your Zotero Library"
@@ -52,7 +52,7 @@ msgid ""
 msgstr ""
 "Afin d'importer une bibliothèque Zotero, vous devez avoir accès à l'API de "
 "votre bibliothèque. Pour utiliser Zotero Import, vous aurez besoin de l'ID du "
-"groupe ou de l'utilisateur."
+"groupe ou de l'utilisateur"
 
 #: ../../docs/modules/zoteroimport.md:10
 msgid ""
@@ -94,10 +94,13 @@ msgid ""
 "To generate an API key, go to Settings in your Zotero account, to the Feeds/"
 "API tab, and click the *Create new private key* link."
 msgstr ""
+"Pour générer une clef API, aller dans Paramètres dans votre compte Zotero, "
+"puis dans Flux/API tab, et cliquez sur le lien *Créer une nouvelle clef "
+"privée*."
 
 #: ../../docs/modules/zoteroimport.md:18
 msgid "Import Data"
-msgstr ""
+msgstr "Importer des données"
 
 #: ../../docs/modules/zoteroimport.md:20
 msgid ""
