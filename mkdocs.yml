@@ -36,6 +36,7 @@ nav:
         - admin/users.md
         - admin/jobs.md
         - admin/settings.md
+        - admin/assets.md
     - Modules:
         - modules/index.md
         - modules/collecting.md

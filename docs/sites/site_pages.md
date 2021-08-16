@@ -114,6 +114,7 @@ Once a query has been set, you can click Edit to update the universe of items. Y
 ![Browse block with the edit query element](../sites/sitesfiles/sitepg_query_update.png)
 
 The *Limit* field lets you set the number of resources to display in the block; any additional results from your query can be accessed on a search page linked from the bottom of the block (you set the text of the link in the *browse link text* field below).
+
 The *Components* field lets you decide what to display in your browse for each resource: the Heading, the Body, and or the Thumbnail. If not set in Site Settings, Heading defaults to resource Title and Body to resource Description.
 
 The *Preview Title* field sets the heading above the browse section on the page.
@@ -138,6 +139,8 @@ You can embed content from elsewhere on the internet using iFrames or other embe
 3. Copy and paste the embed code into the source code editor. ![Source box open with a short paragraph of text and an iframe from Vimeo](../sites/sitesfiles/sitepg_htmlSource2.png)
 4. Click the green OK button at the bottom of the editor.
 5. Your embed should show up in the HTML block either as a gray rectangle or as the embedded content. ![HTML block showing the text and an embedded video](../sites/sitesfiles/sitepg_htmlSource3.png)
+
+Finally, you can assign a Class to the HTML block for styling by your theme.
 
 ### Item Showcase
 A list of items. 
