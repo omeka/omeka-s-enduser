@@ -8,7 +8,7 @@ In order to install Omeka S, you will need a server running the following:
 - Linux
 - Apache (with [AllowOverride](https://httpd.apache.org/docs/2.4/mod/core.html#allowoverride) set to "All" and [mod_rewrite ](http://httpd.apache.org/docs/current/mod/mod_rewrite.html) enabled)
 - MySQL, minimum version 5.6.4 (or MariaDB, minimum version 10.0.5)
-- PHP, minumum version 7.2, with [PDO](http://php.net/manual/en/intro.pdo.php), [pdo_mysql](http://php.net/manual/en/ref.pdo-mysql.php), and [xml](http://php.net/manual/en/intro.xml.php) extensions installed
+- PHP, minumum version 7.2 and maximum version 8.0, with [PDO](http://php.net/manual/en/intro.pdo.php), [pdo_mysql](http://php.net/manual/en/ref.pdo-mysql.php), and [xml](http://php.net/manual/en/intro.xml.php) extensions installed
 - Optional, to create thumbnails: ImageMagick version 6.7.5 or greater, the PHP `imagick` extension, or the PHP `gd` extension
 
 ## Installing from released zip file

@@ -54,7 +54,6 @@ At the top of the work area are fields for the page title and URL slug. You can 
 
 On the right hand side you can choose to add a new block by selecting one of the following page elements:
 
-
 - Browse preview
 - HTML
 - Item showcase
