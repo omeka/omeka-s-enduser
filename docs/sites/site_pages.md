@@ -54,6 +54,7 @@ At the top of the work area are fields for the page title and URL slug. You can 
 
 On the right hand side you can choose to add a new block by selecting one of the following page elements:
 
+- Asset
 - Browse preview
 - HTML
 - Item showcase
@@ -94,6 +95,26 @@ The user bar, which appears across the top of the page, includes a link to edit 
 
 ## Page Blocks
 Pages are made up of blocks, each of which has a different form of content.
+
+### Asset
+Allows a user to include files on a page that are not media attached to idems (i.e. logos or other illustrative materials). Users may upload new assets or select from existing assets.
+
+![Asset block with asset selection sidebar open which includes an asset upload option and an asset selection option](sitesfiles/sitepg_asset_selection.png)
+
+Once an asset is selected, the user has the option to include additional asset information:
+
+- Page link: allows the user to set a link so that when the asset is clicked by an end-user they are directed to that page.
+- Alternative link title: allows the user to set a link title. If the link title is unset, the system will default to the file name.
+- Caption: allows the user to set a caption to print to the page with the asset.
+
+Click *Apply changes* to set the asset information. Should a user wish to revisit that material, they should click the wrench icon to open the edit sidebar.
+
+![Asset options sidebar with inputs for page link, alternative link title, and caption](sitesfiles/sitepg_asset_sidebar.png)
+
+Additionally, the Asset block includes a set of options for controlling the display of the file on the page:
+
+- Class: allows the user to indicate a style class to control the display of the file.
+- Alignment: allows the user to select the positioning of the file on the page: *default*, *float left*, *float right*, and *center*.
 
 ### Browse Preview
 Allows you to add a block of items on a site page.
