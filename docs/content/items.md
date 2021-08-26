@@ -247,8 +247,10 @@ Choose one of these options and then click *Go*.
 - set visibility: a dropdown, select from public or not public.
 - set template: a dropdown, select from the installation's resource templates.
 - set class: a dropdown, select from classes of the installed vocabularies.
-- add to item set: a dropdown, select from item sets on the installation. Add to an additional item set using the *add another item set* button.
-- remove from item set: a dropdown, select from item sets on the installation. Remove from an additional item set using the *remove another item set* button.
+- add to item set: a dropdown, select from item sets on the installation. Add to an additional item set click in the input box again to see the remaining options.
+- remove from item set: a dropdown, select from item sets on the installation. Remove from an additional item set click in the input box again to see the remaining options.
+- add to sites: a dropdown, select from sites on the installation. Add to an additional site click in the input box again to see the remaining options.
+- remove from sites: a dropdown, select from sites on the installation. Remove from an additional site click in the input box again to see the remaining options.
 - clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected items. Clear additional properties using the *Clear another property* button.
 - Set value visibility: set the visibility of a specific property to either public or not public. Unlike the radio buttons at the top of the form, this will only affect a single property instead of the entire item. Select a property from the text field (type to begin searching), and the choose either the *public* or *not public* radio button for this option.
 

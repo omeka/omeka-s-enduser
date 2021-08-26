@@ -1,6 +1,8 @@
 # Vocabularies
 
-Vocabularies are a collection of published RDF metadata Classes and Properties for describing a Resource. These exist and are created externally to Omeka, and can be imported (with some limitations) into Omeka S for use throughout the Installation. The most-used Vocabulary is Dublin Core Terms (dcterms:).
+Vocabularies are a collection of published RDF metadata Classes and Properties for describing a Resource. In some cases, these vocabularies are referred to as ontologies. They exist and are created externally to Omeka, and can be imported (with some limitations) into Omeka S for use throughout the Installation. The most-used Vocabulary is Dublin Core Terms (dcterms:). 
+
+It is important to distinguish Linked Data Vocabularies from controlled vocabularies or authority files, which consist of terms and concepts, rather than Classes and Properties. In Omeka S, Controlled Vocabularies can be managed using the Value Suggest and Custom Vocab modules. 
 
 Global and Site Administrators can manage their installation’s vocabularies from the *Vocabularies* tab on the left hand navigation of the Admin Dashboard. OmekaS comes pre-loaded with the following vocabularies: [Dublin Core](http://purl.org/dc/terms/); [Dublin Core Type](http://purl.org/dc/dcmitype/); [Bibliographic Ontology](http://purl.org/ontology/bibo/); and [Friend of a Friend](http://xmlns.com/foaf/0.1/). 
 

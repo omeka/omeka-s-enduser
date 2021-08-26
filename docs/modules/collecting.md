@@ -4,6 +4,10 @@ The Collecting module allows you to gather public contributions through your sit
 
 Once activated on the [modules](index.md) tab of the admin dashboard, Collecting is configured on a site-by-site basis.
 
+### Integrations
+
+Collecting integrates with the [Custom Vocab](../modules/customvocab/) and the [Numeric data types](../modules/numericdatatypes/) modules.
+
 ## Site settings
 
 Collecting adds a section to your [site settings](../sites/site_settings.md) where you can manage terms of service and email for the collecting forms for this site.
@@ -18,7 +22,11 @@ In this section are two fields:
  
 Clicking on the phrase "Terms of Service" will open a new window so that people filling out the form do not lose the information they have entered.
 
-**Email address** allows you to set a custom address from which submission emails will be sent. If left blank, these emails will be sent from the administrator email address in the [Global Settings](../admin/settings.md) for the Omeka S installation. 
+**Terms of service URL** is an input for a link to an existing external terms of service page.
+
+**Submission email address** allows you to set a custom address from which submission emails will be sent. If left blank, these emails will be sent from the administrator email address in the [Global Settings](../admin/settings.md) for the Omeka S installation. 
+
+**Notification email address** allows you to set a custom address to which notifications of new submissions will be sent. If left blank, no notification email will be sent.
 
 ## Managing Collecting Forms
 
@@ -67,7 +75,7 @@ The Collecting module has Prompt Types with options as follows:
 	 - Item resource (will appear as dropdown)
 		 - This will offer the user the choice of existing items to add as a property value. You can paste anything after the `admin/` in the url of an advanced search to load specific items.
 	 - [Custom Vocab](../modules/customvocab/) (requires that plugin to be installed). If selected, an additional dropdown will load. Use this to select from your existing Custom Vocabs. This will load as a dropdown for the users on the public side of the form.
-	 - If you have [Numeric data types](../modules/numericdatatypes/) installed, you will also have the options:
+	 - If you have [Numeric Data Types](../modules/numericdatatypes/) installed, you will also have the options:
 		 - Numeric timestamp
 		 - Numeric interval
 		 - Numeric duration

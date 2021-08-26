@@ -8,17 +8,17 @@ Once you have installed and activated the module, go to the Custom Vocab tab in 
 
 Click the Add a New Vocab button in the upper right-hand corner of the window. 
 
-The Add Cusom Vocab page has four fields: Label, Language, Items, and Terms. 
+The Add Cusom Vocab page has four fields: Label, Language, Vocab Type, and Terms/Items/URI input. 
 
-![Add Custom Vocab with data entered in the label and terms fields](../modules/modulesfiles/customVocab_add.png)
+![Add Custom Vocab with data entered in the label and terms fields](../modules/modulesfiles/customVocab_add-URI.png)
 
 - *Label* a name for the vocabulary, which you will use to find it when adding to a resource template.
 - *Language* (optional) of the vocab using the [ISO 639-1 language code.](http://www.iso.org/iso/language_codes)
 
-You can set the controlled vocabulary terms either to a list of existing items or to a list of entered terms:
-
-- *Items* offers a drop-down of Item Sets in your Omeka S installation. Choosing one of these will create a custom vocab populated by items from that item set. When used, the property is populated as an Omeka Resource, not text.
-- *Terms* for the custom vocab, one word or phrase per line. This populates the property as text.
+You can set the controlled vocabulary terms to a list of entered terms, to a list of existing items, or to a list of external URIs with or without labels:
+- *Terms:* a list of plain-text terms, one word or phrase per line. This populates the property as text.
+- *Items:* a drop-down of Item Sets in your Omeka S installation. Choosing one of these will create a custom vocab populated by items from that item set. When used, the property is populated as an Omeka Resource, not text.
+- *URIs:* a list of URIs with or without labels. Enter one URI per line. To include a label, add a space and the label after the URI. When used, the property will populate as a link to the external resource.
 
 Hit submit to save changes.
 

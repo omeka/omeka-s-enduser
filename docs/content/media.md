@@ -34,7 +34,7 @@ On the left side is a display for the number of pages of media, with forward and
 
 In the center top is a button for [Advanced Search](../../search#media-advanced-search). 
 
-Just above the table on the right are options for sorting media, with two dropdown menus. The first lets you select between *Title*, *Class*, *Owner,* and *(date)Created*; the second allows you to sort ascending or descending. To apply, click the *sort* button.
+Just above the table on the right are options for sorting media, with two dropdown menus. The first lets you select between *Title*, *Class*, *Owner*, *(date)Created*, and *Size*; the second allows you to sort ascending or descending. To apply, click the *sort* button.
 
 Clicking on the title of any media will take you to its metadata page. This page displays any metadata in the main work area, with a sidebar on the right listing the visibility, associated item (an active link), date created, MIME type, Size, Ingester, Source, and links to the file derivatives.
 
@@ -121,8 +121,9 @@ In the image below, the first property (Title) is public as indicated by the ope
 
 ![As described](contentfiles/item_propviz.png)
 
-### Thumbnail
-Not all media generate an elegant thumbnail, for example pdf or text file documents or some video files. You can use this tab to set a representative thumbnail for the media which will be used on browse pages but not on the page for the item or its media.
+### Advanced
+
+**Thumbnail** Not all media generate an elegant thumbnail, for example pdf or text file documents or some video files. You can use this option to set a representative thumbnail for the media which will be used on browse pages but not on the page for the item or its media.
 
 The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../../sites/site_theme/#settings-options). 
 
@@ -132,9 +133,15 @@ To assign an asset as a thumbnail, click on the Select button in the main work a
 
 The drawer offers two options: upload a file using your browser, or select from existing assets. To select an existing asset, simply click on it and it will automatically be assigned to the media. 
 
-![Edit media open to Thumbnail tab, where an asset which is an image of a quill pen on a scrolled piece of paper is in the main work area. Below it are buttons for Select and Clear](contentfiles/media_thumbnail2.png)
+![Edit media open to Advanced tab, where an asset which is an image of a map of the National Mall is in the main work area. Below it are buttons for Select and Clear](contentfiles/media_thumbnail2.png)
 
 To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click select and either choose or upload a new thumbnail asset.
+
+**Owner** You can assign an owner for the media by selecting from the dropdown menu.
+
+**Alt Text** You can provide alternate text for all media by typing descriptive text into the input area.
+
+![Edit media open to Advanced tab, showing the Alt Text input box] (contentfiles/media_alttext.png)
 
 ## Batch editing
 
