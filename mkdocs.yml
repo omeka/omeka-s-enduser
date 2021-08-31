@@ -45,6 +45,7 @@ nav:
         - modules/customvocab.md
         - modules/dspaceconnector.md
         - modules/extracttext.md
+        - modules/facetedbrowse.md
         - modules/fedoraconnector.md
         - modules/filesideload.md
         - modules/itemcarouselblock.md
