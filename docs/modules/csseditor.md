@@ -18,7 +18,7 @@ The first large text area is where you write your individual styles. Use that te
 
 If you are new to working with CSS, we recommend the following free resources for getting started:
 
-* [Mozilla's "Intro to CSS"](https://learning.mozilla.org/en-US/activities/intermediate-web-lit/)
+* [Mozilla's "Learn CSS"](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Codecademy's "Learn CSS" course](https://www.codecademy.com/learn/learn-css)
 * [Marksheet's "CSS Basics"](https://marksheet.io/css-basics.html)
 
