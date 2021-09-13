@@ -46,17 +46,34 @@ Note: after selecting a value, a box containing a URL should appear under the va
 
 This module includes the following vocabularies:
 
+- Dublin Core
+- Gemeinsame Normdatie (GND)
 - GeoNames
 - The Getty Vocabularies
 - Homosaurus
+- IdRef
 - Library of Congress Linked Data Service
+- Nuovo Soggettario
 - OCLC Metadata Services
 - PACTOLS of Frantiq
 - PeriodO
 - RDA Value Vocabularies
+- RightsStatements.org
 - Tesauros del patrimonio cultural de España
 - UNESCO
+- Les vocabulaires du Ministère de la Culture
 
+
+### [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) (DCMI Metadata Terms)
+
+- Classes
+- Elements
+- Terms
+- Types
+
+### [Gemeinsame Normdatei (GND)](http://lobid.org/gnd)
+
+- The GND contains standardized entries for persons, corporations, congresses, geographical areas, key words and work titles.
 
 ### [GeoNames](http://www.geonames.org/)
 
@@ -71,6 +88,23 @@ This module includes the following vocabularies:
 ### [Homosaurus](http://homosaurus.org/)
 
 - Homosaurus.org linked data vocabulary
+
+### [IdRef](https://www.idref.fr/)
+
+- The French national database of identifiers for research (all repositories)
+- Person names
+- Corporations
+- Conferences
+- Subject headings (all)
+- Subject headings [RAMEAU](https://rameau.bnf.fr), (Répertoire d’autorité-matière encyclopédique et alphabétique unifié, or Unified encyclopaedic and alphabetical list of subject authorities)
+- Subject headings [F-MeSH](http://mesh.inserm.fr/FrenchMesh) (French version of the medical subject headings)
+- Geographic names
+- Family names
+- Titles
+- Author-Titles
+- Trademarks
+- PPN (unique identifier used for any item in all the database)
+- Libraries (RCR: Répertoire des centres de ressources)
 
 ### [Library of Congress Linked Data Service](http://id.loc.gov/)
 
@@ -92,6 +126,22 @@ This module includes the following vocabularies:
 - Name Authority File
 - Subject Headings
 - Thesaurus for Graphic Materials
+
+### [Nuovo Soggettario](https://thes.bncf.firenze.sbn.it/)
+
+- Agenti: Organismi
+- Agenti: Organizzazioni
+- Agenti: Persone e gruppi
+- Azioni: Attività
+- Azioni: Discipline
+- Azioni: Processi
+- Cose: Forme
+- Cose: Materia
+- Cose: Oggetti
+- Cose: Spazio
+- Cose: Strumenti
+- Cose: Strutture
+- Tempo
 
 ### [OCLC Metadata Services](https://www.oclc.org/en/services/a-z.html/:F2664:/)
 
@@ -172,6 +222,10 @@ This module includes the following vocabularies:
 - Sensory Mode
 - Storage Medium Format
 
+### [RightsStatements.org](https://rightsstatements.org/)
+
+- Provides a set of standardized rights statements for cultural heritage institutions that can be used to communicate the copyright and re-use status of digital objects to the public
+
 ### [Tesauros del patrimonio cultural de España](http://tesauros.mecd.es/tesauros)
 
 - Diccionario de Bienes Culturales
@@ -189,3 +243,46 @@ This module includes the following vocabularies:
 - Tesauro
 - Nomenclatura de Ciencia y Tecnología
 - Biblioteca Digital Floridablanca
+
+### [Les vocabulaires du Ministère de la Culture](http://data.culture.fr/thesaurus/)
+
+- Catégories techniques et domaines - Inventaire/MH
+- Domaines archivistiques pour l'indexation des circulaires
+- Etat de conservation du patrimoine mobilier - Inventaire/MH
+- Inscriptions, marques, emblématique et poinçons - Inventaire/MH
+- Liste d'autorité Actions pour l'indexation des archives locales
+- Liste d'autorité Contexte historique pour l'indexation des archives locales
+- Liste d'autorité Typologie documentaire pour l'indexation des archives locales
+- Liste d'autorités Auteurs - Joconde
+- Liste d'autorités Domaines - Joconde
+- Liste d'autorités Découverte - Joconde
+- Liste d'autorités Dénomination - Joconde
+- Liste d'autorités Genèse - Joconde
+- Liste d'autorités Inscriptions - Joconde
+- Liste d'autorités Lieux - Joconde
+- Liste d'autorités Localisation - Joconde
+- Liste d'autorités Périodes - Joconde
+- Liste d'autorités Représentation - Joconde
+- Liste d'autorités Sources de la représentation - Joconde
+- Liste d'autorités Techniques – Joconde
+- Liste d'autorités Utilisation - Joconde
+- Liste d'autorités Écoles - Joconde
+- Liste d'autorités Époques - Joconde
+- Matériau de la couverture - Inventaire/MH
+- Matériau du gros-oeuvre et mise en oeuvre - Inventaire/MH
+- Matériaux et techniques du patrimoine mobilier - Inventaire/MH
+- Nomenclatures HADOC
+- Référentiel de communicabilité des archives publiques
+- Stade de la création des objets mobiliers - Inventaire/MH
+- Statut de la propriété des Biens culturels - Inventaire/MH
+- Techniques photographiques
+- Thésaurus de la désignation des objets mobiliers
+- Thésaurus de la désignation des œuvres architecturales et des espaces aménagés
+- Thésaurus-matières pour l'indexation des archives locales
+- Type de la couverture - Inventaire/MH
+- Type de protection MH - Inventaire/MH
+- Vocabulaire des activités des entités productrices d'archives
+- Vocabulaire des altérations
+- Vocabulaire des domaines d'action ou objets des entités productrices d'archives
+- Vocabulaire pour les techniques photographiques
+
