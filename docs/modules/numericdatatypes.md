@@ -117,3 +117,7 @@ For each search option, you must select a specific property from the dropdown; i
 **Date in interval** searches for a date within an interval. When searching on an interval, be as precise as possible. Because of the way that the module stores timestamps, the date you are searching must fall *within* the interval. So a search for the year 1814 would not turn up an event with interval September 12-15, 1814, because of the way the data reads the two dates. 
 
 **Integer** data is searchable with "Value is less than" and "Value is greater than." As with the timestamp data, only properties which have numeric data will load in the dropdown. 
+
+## Integration with Other Modules
+
+Numeric Data Types functions with [Collecting](../modules/collecting/), [CSVImport](../modules/csvimport/), [Faceted Browse](../modules/facetedbrowse/), and [Mapping](../modules/mapping/).

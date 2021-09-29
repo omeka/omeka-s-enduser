@@ -15,6 +15,8 @@ Save the page and select *Stay on this page*.
 
 If you are returning to edit existing pages, you can also save your edits and return to the list of pages by selecting Save and *Return to page*.
 
+![Create page interface showing save page dropdown](../modules/modulesfiles/FacetedBrowse-AddPage.png)
+
 ### Adding and Editing Categories
 
 Once the page has been created, the user can create a Category, which is a logical grouping of resources that can be described using faceted classification.
@@ -25,6 +27,8 @@ Give your category a name.
 
 Use the search query interface to set the pool of resources that users will browse.
 
+![Add category form with name filled in and search query Edit buttons interface](../modules/modulesfiles/FacetedBrowse-SearchQuery.png)
+
 After setting the pool of resources, you can create facets and add columns to your browse display. Once you are done creating your facets and setting your display columns, save your category.
 
 You may repeat the category creation and configuration process to add as many categories to your page as you like.  
@@ -33,7 +37,11 @@ You may repeat the category creation and configuration process to add as many ca
 
 Select a type of facet to add: Value; Resource class; Resource Template; Item Set; Full text.
 
+![Facet Type dropdown menu showing options](../modules/modulesfiles/FacetedBrowse-SelectFacetType.png)
+
 Once the type is selected, click the *Add* button. A drawer will open with options to configure the facet. 
+
+![Configure Facet draw for the Values facet type](../modules/modulesfiles/FacetedBrowse-ConfigureFacet.png)
 
 You can add more than one type of facet to each page.
 
@@ -125,6 +133,18 @@ Give the facet a name (required).
 
 When you are satisfied with your settings, click the *Set facet* button.
 
+#### Numeric Data Types
+
+If you are using the Numerica Data Types module, you will have additional facet types to work with, including Date after, Date before, Value greater than, Value less than, Duration greater than, Duration less than, Date in interval.
+
+![Facet Type dropdown menu showing options including Numeric Date Types](../modules/modulesfiles/FacetedBrowse-NumericDataTypesSelect.png)
+
+Once you have selected a facet type, you will be able to configure the facet to operate with the properties that use a numeric data type. 
+
+In the public view, the faceting will be controlled through a dropdown menu
+
+![Public Faceted Browse page with radio button selects for a list of Status values and a "Birth Data Before" dropdown menu in the left column. In the right column is a table of items with information for Title, Location, and Spouse](../modules/modulesfiles/FacetedBrowse-SelectFacetType.png)
+
 ### Columns
 
 The display of the browse list of results defaults to include the title and description for the resource, just as is the case with other browse lists. You can configure the information displayed about the results by adding columns of metadata to the display for your faceted browse.
@@ -170,6 +190,8 @@ When you are satisfied with configuring the column, click the *Set column* butto
 ## Add a Faceted Browse page to the Site Navigation.
 
 Click on the Navigation tab for your site. Select *Faceted browse* from the *Add a custom link* list in the page sidebar. 
+
+![Custom links in the right drawer to add elements to the navigation](../modules/modulesfiles/FacetedBrowse-AddPageNav.png)
 
 Give your custom link a label (required), and select from your dropdown list of faceted browse pages (required). 
 
