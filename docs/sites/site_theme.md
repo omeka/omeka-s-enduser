@@ -94,6 +94,7 @@ Select how to display items within their browse views.
 Foundation is theme which comes with a few default stylesheets for fast prototyping or getting started with modifying themes. As a result it has some unique settings. For more information on using Foundation, including working with Sass, see the [theme ReadMe file](https://github.com/omeka-s-themes/foundation-s/blob/master/README.md).
 
 Settings not described above: 
+
 * **Stylesheet:** The theme provides 4 style options.
   * **Default** uses ZURB Foundation's default styles for prototyping, which are all viewable in their documentation under the [Kitchen Sink](https://get.foundation/sites/docs/kitchen-sink.html).
   * **Revolution** aims to capture the feel of old documents and juxtaposes it with a bright red accent. It includes a textured paper background image.
