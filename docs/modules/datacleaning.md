@@ -22,7 +22,7 @@ This will open the Prepare audit form, which allows you to zero in on the data t
 
 - **Property:** selects the property to audit. This dropdown will load all properties from all vocabularies on your installation. When open, the top of the dropdown functions as a search to allow you to locate a property more quickly. 
 
-- **Audit column:** sets what kind of data be audited with in the resource pool. Select from a dropdown for _value_, _uri_, or _value-resource-id_. In general, data types may use these columns for different reasons. But, in particular, the "literal" data type uses the _value_ column to store the value; the "uri" data type uses the _uri_ column to store the URI and the _value_ column to store the URI label; and the "resource" data type uses the _value-resource-id_ to store the resource ID. Modules that add data types assign those data types to one of these three columns. 
+- **Audit column:** sets what kind of data be audited with in the resource pool. Select from a dropdown for _value_, _uri_, or _value-resource-id_. In general, data types may use these columns for different reasons. But, in particular, the "literal" data type uses the _value_ column to store the value; the "uri" data type uses the _uri_ column to store the URI and the _value_ column to store the URI label; and the "resource" data type uses the _value-resource-id_ to store the resource ID. Modules that add data types assign data to one or more of these three columns. 
 
 - **Data type:** select from a dropdown of data types to audit. This includes standard data types for Omeka S, as well as any additional data types added by other modules, for example Numeric Data Types. 
 
@@ -39,7 +39,7 @@ Once you have entered information in all relevant fields, click the Submit butto
 
 You can exit out at any time by clicking the Cancel button. 
 
-![The Prepare Audit screen with Items set as the Resource Type; a Resource Query for Item set Events; the Property set to Schema:location; the Audit column set to value_resource_id;  and the Data type set to Resource](../modules/modulesfiles/dataclean_prepareAudit.png)
+![The Prepare Audit screen with Items set as the Resource Type; a Resource Query for Item set Events; the Property set to Schema:location; the Audit column set to value_resource_id;  and the Data type set to Resource](../modules/modulesfiles/datacleaning_prepareAudit.png)
 
 ### Audit data
 Clicking submit in the Prepare audit page will take you to the Audit Data page. 
@@ -48,13 +48,13 @@ At the top of the page, just under the header, will be a message telling you how
 
 Below this message is a table stating the data being audited. There are three columns: Audit Column, Property, and Data Type.  There are two rows, From and To. Be sure to double check the information in this table before proceeding. 
 
-![Strings message and table for an audit. This audit has 18 unique strings for 66 resources, and the to and from information is identical](../modules/modulesfiles/dataclean_auditTable1.png) 
+![Strings message and table for an audit. This audit has 18 unique strings for 66 resources, and the to and from information is identical](../modules/modulesfiles/datacleaning_auditTable1.png) 
 
 Below you will see a row of buttons that allow you to operate on all of the strings you are auditing.
 
 - Copy All: copies the data in the _From_ column to the _To_ column for all of the unique strings
 - Clear all: removes all of the data from the _To_ column
-- Validate all: checks all of the proposed changes to make sure that they are possible within the bounds of the current column and data type, i.e. you cannot set a value_resource_id to a literal string of text because the data type is looking for an Omeka S ID. The validation only checks that the input is structurally possible, not that the inputted edit exists, i.e. one could change and a value_resource_id to a number that did not correspond to an actual Omeka S ID.
+- Validate all: checks all of the proposed changes to make sure that they are possible within the bounds of the current column and data type, i.e. you cannot set a value_resource_id to a literal string of text because the data type is looking for a number. The validation only checks that the input is structurally possible, not that the inputted edit exists, i.e. one could change and a value_resource_id to a number that did not correspond to an actual Omeka S ID.
 - Remove all: checks the _Remove_ box for all of the unique strings. This will set the data from the property being audited to null. Use extreme caution when applying this option.
 - Unremove all: unchecks the _Remove_ box for all of the unique strings.
 
