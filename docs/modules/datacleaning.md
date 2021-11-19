@@ -1,8 +1,9 @@
 ---
 title: Data Cleaning
 ---
+# Data Cleaning
 
-An Omeka S module for low-level auditing and cleaning of resource metadata. It is designed to be used to prepare resource metadata for use in visualizations.
+Data Cleaning An Omeka S module for low-level auditing and cleaning of resource metadata. It is designed to be used to prepare resource metadata for use in visualizations.
 
 Changes made in Data Cleaning cannot be easily undone, and can be destructive. Due to the powerful nature of the module, it can only be used by Global Administrator users. 
 
@@ -52,17 +53,17 @@ Below this message is a table stating the data being audited. There are three co
 
 Below you will see a row of buttons that allow you to operate on all of the strings you are auditing.
 
-- Copy All: copies the data in the _From_ column to the _To_ column for all of the unique strings
-- Clear all: removes all of the data from the _To_ column
-- Validate all: checks all of the proposed changes to make sure that they are possible within the bounds of the current column and data type, i.e. you cannot set a value_resource_id to a literal string of text because the data type is looking for a number. The validation only checks that the input is structurally possible, not that the inputted edit exists, i.e. one could change and a value_resource_id to a number that did not correspond to an actual Omeka S ID.
-- Remove all: checks the _Remove_ box for all of the unique strings. This will set the data from the property being audited to null. Use extreme caution when applying this option.
-- Unremove all: unchecks the _Remove_ box for all of the unique strings.
+- **Copy all**: copies the data in the _From_ column to the _To_ column for all of the unique strings
+- **Clear all**: removes all of the data from the _To_ column
+- **Validate all**: checks all of the proposed changes to make sure that they are possible within the bounds of the current column and data type, i.e. you cannot set a value_resource_id to a literal string of text because the data type is looking for a number. The validation only checks that the input is structurally possible, not that the inputted edit exists, i.e. one could change and a value_resource_id to a number that did not correspond to an actual Omeka S ID.
+- **Remove all**: checks the _Remove_ box for all of the unique strings. This will set the data from the property being audited to null. Use extreme caution when applying this option.
+- **Unremove all**: unchecks the _Remove_ box for all of the unique strings.
 
 Next you will see a table of all of the unique strings within your audit. If you have an audit result with a lot of unique strings, you can use the filters to zero in on the strings that you wish to edit. Additionally, the columns with current audit data can be sorted by clicking on the column header.
 
 The table provides you with a Count of the number of resources per string, the unique string as it currently exists (From:), an input box to edit the current strings (To:), and a remove check box to set the data to null.The edit input cell for each row also has buttons to allow you to copy, clear, and validate your proposed changes.
 
-![Audit edit table with invalid string in the first row of the To column, the validate button is red indicating a data type mismatch; the second row of the To column has valid integer data and a green validate button](../modules/modulefiles/datacleaning_auditTableValidation.png)
+![Audit edit table with invalid string in the first row of the To column, the validate button is red indicating a data type mismatch; the second row of the To column has valid integer data and a green validate button](../modules/modulesfiles/datacleaning_auditTableValidation.png)
 
 Once you have carefully edited the content in your _To_ column, click the Submit button to execute the update of your data. Given the powerful nature of the module, you will be asked to confirm your decisions. The data cleaning process will run in the background, and while the job can be reviewed, it cannot be undone.
 
@@ -74,8 +75,8 @@ This is a sample workflow for a user who wants to audit the titles of items in a
 - Select criteria (expand arrows for info):
 	- Resource type: "Item"
 	- Resource query: item_set_id[]=1234
-	- Audit column: "value"
 	- Property: "Dublin Core: Title"
+	- Audit column: "value"
 	- Data type: "Text"
 - Ignore the "Advanced" section
 - Click "Submit" (top right)

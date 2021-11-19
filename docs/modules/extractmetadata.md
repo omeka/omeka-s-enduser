@@ -1,16 +1,17 @@
 ---
 title: Extract Metadata
 ---
+# Extract Metadata
 
 Once [installed](index.md#installing-modules) and active, the Extract Metadata module allows site administrators to extract embedded metadata from media. 
 
 ## Configuring the module
 
 When configuring the module, you can:
+
 + View and enable/disable extractors: You can choose from four different extractors, including ExifTool, Tika, Exif, and getID3.
 + View and enable/disable mappers: You can either select to enable no mappers or JSON Pointer.
 + Configure the metadata crosswalk for the JSON Pointer mapper (if enabled).If you decided to use the JSON pointer mapper, you will need to define the metadata crosswalk. 
-
     1. Click _Add map+_. 
     2. Then you will be asked to select the Resource, Extractor, and Property from dropdown menus.
     3. You will also to provide a Pointer formatted using a JSON pointer as defined by the [IETF standard](https://datatracker.ietf.org/doc/html/rfc6901). 

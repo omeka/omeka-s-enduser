@@ -1,8 +1,9 @@
 ---
 title: Data Visualization
 ---
+# Data Visualization
 
-The Data Visualization module allows site administrators are able to generate datasets and render diagrams that reflect their data. Once activated on the modules tab of the admin dashboard, Data Visualization is managed on site by site basis. 
+The Data Visualization module allows site administrators are able to generate datasets and render diagrams that reflect their data. Once installed and activated on the modules tab of the admin dashboard, Data Visualization is managed on site by site basis. 
 
 ## Creating Data Visualizations
 If the Data Visualization module is active, a tab for Data Visualization will appear in the menu for individual sites. Clicking this tab will take you to a list of all visualizations created for the site. You can sort the visualizations by either date or title in ascending or descending order.
@@ -11,11 +12,12 @@ If the Data Visualization module is active, a tab for Data Visualization will ap
 After clicking the Data Visualization tab, you can create a new visualization by clicking the *Add new visualization* button.
 
 You will then have the option select what you would like to visualize. The five options include:
-1. Count of items in item set, which visualizes the count of items that are assigned to selected item sets;
-2. Count of items with classes, which visualizes the count of items that are instances of selected resource classes;
-3. Count of items with properties, which visualizes the count of items that have selected properties;
-4. Count of items with property values, which visualizes the count of items that have selected values of a selected property; 
-5. County of property values, which visualizes the count of values of a selected property.
+
+1. **Count of items in item set**, which visualizes the count of items that are assigned to selected item sets;
+2. **Count of items with classes**, which visualizes the count of items that are instances of selected resource classes;
+3. **Count of items with properties**, which visualizes the count of items that have selected properties;
+4. **Count of items with property values**, which visualizes the count of items that have selected values of a selected property; 
+5. **County of property values**, which visualizes the count of values of a selected property.
 
 Once you select what you would like to visualize, click the *Next* button. You will then be on the "Add visualization" page, where you can describe and configure visualization.
 
@@ -49,9 +51,9 @@ When configuring your data set for counting property values, you must select a v
 ### Diagram configuration
 Under Diagram Configuration, you will be able to select the kind of diagram you would like to produce for your visualization. Options include _bar chart_, _column chart_, and _pie chart_. 
 
-If you select _bar chart or column chart_, you will be asked to input the width and height of your visualization as well as the top, right, bottom, and left margins. Additionally, you will be able to use a dropdown menu to order your data by value (ascending), by value (descending), by label (ascending), or by label (descending).
+If you select **bar chart** or **column chart**, you will be asked to input the width and height of your visualization as well as the top, right, bottom, and left margins. Additionally, you will be able to use a dropdown menu to order your data by value (ascending), by value (descending), by label (ascending), or by label (descending).
 
-If you select _pie chart_, you will only be asked to input the width, height, and margins.
+If you select **pie chart**, you will only be asked to input the width, height, and margins.
 
 If you edit your visualization to change the Diagram Configuration after your initial visualization is produced, you will lose your current diagram configuration.
 
@@ -60,7 +62,7 @@ If you edit your visualization to change the Diagram Configuration after your in
 ## Generating your visualization
 Once you've configured your visualization, click the "Save and..." button. Then, select the box to "Generate dataset" and click "Stay on this visualization." 
 
-![Save menu with Generate dataset checked](../module/modulefiles/datavis_saveGenerate.png)
+![Save menu with Generate dataset checked](../modules/modulesfiles/dataviz_saveGenerate.png)
 
 Once your visualization is complete, you can click the "View..." button and select "Dataset" or "Diagram."
 
