@@ -2,27 +2,29 @@
 title: Extract Metadata
 ---
 
-Once installed and active, the Extract Metadata module allows site administrators to extract embedded metadata from media. 
+Once [installed](index.md#installing-modules) and active, the Extract Metadata module allows site administrators to extract embedded metadata from media. 
 
 ## Configuring the module
 
 When configuring the module, you can:
-+ View and enable/disable extractors;
-+ View and enable/disable mappers;
-+ Configure the metadata crosswalk for the JSON Pointer mapper (if enabled).
-    
-You can choose from four different extractors, including ExifTool, Tika, Exif, and getID3. 
++ View and enable/disable extractors: You can choose from four different extractors, including ExifTool, Tika, Exif, and getID3.
++ View and enable/disable mappers: You can either select to enable no mappers or JSON Pointer.
++ Configure the metadata crosswalk for the JSON Pointer mapper (if enabled).If you decided to use the JSON pointer mapper, you will need to define the metadata crosswalk. 
 
-For mappers you can either select to enable no mappers or JSON Pointer. If you decided to use the JSON pointer mapper, you will need to define the metadata crosswalk. You will be asked to select the Resource, Extractor, and Property from a dropdown menu as well as provide a Pointer formatted using a JSON pointer as defined by the [IETF standard](https://datatracker.ietf.org/doc/html/rfc6901). If you would like to replace the metadata values through this pointer, make sure to select the checkbox to the right of these fields.
+    1. Click _Add map+_. 
+    2. Then you will be asked to select the Resource, Extractor, and Property from dropdown menus.
+    3. You will also to provide a Pointer formatted using a JSON pointer as defined by the [IETF standard](https://datatracker.ietf.org/doc/html/rfc6901). 
+    4. If you would like to replace the metadata values through this pointer, make sure to select the checkbox to the right of these fields.
 
 When you are finished configuring the module, click the Submit button in the upper right corner of the screen.
 
-![extractmetadata_configsubmit](https://user-images.githubusercontent.com/84726696/138010740-3a7c3697-25bb-4d66-8576-bfff71fdb60d.png)
+![Extract Metadata module configuration view with JSON Pointer crosswalk and submit button indicated](../modules/modulesfiles/extractMetadata_config.png)
 
 
 ## Adding media
 
-When adding media, the module will automatically:
+Once the module is configured it will act on medias as you add it to a an item or as an asset. The module will automatically:
+
 + Extract metadata from the file using enabled extractors;
 + Save the metadata alongside the media;
 + Map metadata to resource values.
@@ -31,21 +33,25 @@ You can view the extracted metadata on the media show and edit pages.
 
 ## Editing media and items
 
-When editing a media/item or batch editing media/item, the user can choose to perform a number of actions:
+A user can edit media metadata attached to items by directly editing the individual item or by using the batch edit functions. 
+
+### Editing Items
+When editing a media/item, a user can choose to perform a number of actions, accessed through the Extract Metadata tab on the Item edit view. Select one of the four options from the dropdown menu.
+
 + Refresh metadata: (re)extract metadata from files;
 + Refresh and map metadata: (re)extract metadata from files and map metadata to resource values;
 + Map metadata: Map extracted metadata to resource values;
 + Delete metadata: Delete extracted metadata.
 
-You can access these options on the Extract Metadata tab on the item edit screen. Then, you can select one of the four options from the dropdown menu.
+![Item edit view with the Extract metadata tab active and the actions dropdown menu open](../modules/modulesfiles/extractMetadata_actions.png)
 
-![extractmetadata_tabdropdown](https://user-images.githubusercontent.com/84726696/138012355-dda4f40e-cae8-406b-a5b3-32b98bf695a0.png)
+Be sure to click the "Save" button in the top right corner of the screen to execute the selected action.
 
-Be sure to click the "Save" button in the top right corner of the screen. 
+### Batch Editing
 
-When viewing and editing media, the user can see the extracted metadata and perform actions in the "Extract metadata" tab of individual items. However, you can also perform these actions via batch editing. After selecting the items you'd like to batch edit and going to the batch edit page, you can select any of the four action options from a dropdown menu. This will perform the action on all items selected for inclusion in the batch edit. 
+From the Items Browse screen, selecting the items you'd like to batch edit. From the batch edit page, you can select any of the four action options from the Extract metadata dropdown menu. This will perform the action on all items selected for inclusion in the batch edit. 
 
-![extractmetadata_batchedit](https://user-images.githubusercontent.com/84726696/138021786-dd736cda-aa92-4ec8-a498-1b43ae483a16.png)
+![Batch edit view with Extract metadata dropdown open](../modules/modulesfiles/extractMetadata_batchEdit.png)
 
 
 ## Extractors
