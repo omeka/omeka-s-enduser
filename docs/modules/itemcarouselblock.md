@@ -16,7 +16,7 @@ Attachments may be reordered by dragging and dropping.
 ## Basic Configuration
 The block includes two basic configuration settings. 
 
-![An item carousel block with attached items and configuration settings.](../../modules/modulesfiles/itemcarouselblock-basicconfiguration.png)
+![An item carousel block with attached items and configuration settings.](../modules/modulesfiles/itemcarouselblock-basicconfiguration.png)
 
 You may add a title for the carousel.
 
@@ -25,7 +25,7 @@ You can select the number of items that appear on the page at one time. The bloc
 ## Advanced Options
 Using the drop-down menu within the block, you can access a number of advance options to further configure the appearance of the block. 
 
-![An item carousel block detail image focused on the advanced options settings.](../../modules/modulesfiles/itemcarouselblock-advancedoptions.png)
+![An item carousel block detail image focused on the advanced options settings.](../modules/modulesfiles/itemcarouselblock-advancedoptions.png)
 
 You can use those settings to:
 

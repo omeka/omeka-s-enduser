@@ -43,7 +43,10 @@ nav:
         - modules/csseditor.md
         - modules/csvimport.md
         - modules/customvocab.md
+        - modules/datacleaning.md
+        - modules/datavisualization.md
         - modules/dspaceconnector.md
+        - modules/extractmetadata.md
         - modules/extracttext.md
         - modules/facetedbrowse.md
         - modules/fedoraconnector.md
