@@ -31,7 +31,7 @@ If the information above has been correctly entered, you will proceed to the DSp
 This tab has three options:
 
 * *Import files into Omeka S*: click this checkbox to import files in addition to metadata.
-* *Item Set*: select an item set from the dropdown into which to import the items. 
+* *Item Set*: select an item set from the dropdown into which to import the items, or create a new item set named for the imported Dspace Collection. 
 * *Ignored Fields*: DSpace metadata fields to ignore on import, separated by commas. 
 * *Comment*: for any comments you have.
 
