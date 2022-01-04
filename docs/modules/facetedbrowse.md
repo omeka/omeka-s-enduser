@@ -4,23 +4,33 @@ The Faceted Browse module lets you create browse resource pages with facts - fil
 
 With this module, site managers are able to configure faceted browse pages and add them to their sites. End users are then able to browse through categories of resources and use the facets to narrow the results in a logical and intuitive manner.
 
-Faceted browse pages are pages, which can be added to the [navigation](../sites/site_navigation.md) in a similar fashion to default browse pages. You cannot add faceted browsing to a page as a block, or as part of an existing browse page.
+In this image, the facet is Era, displayed as a single-choice list. The items for this page are displayed in columns with the title and era for each item.
+
+![Faceted browse page with a list of events which happened on the National Mall. On the left side of the image is a list of eras with radio buttons.](../modules/modulesfiles/FacetedBrowse_publicView.png)
+
+Faceted browse pages exist as separate [pages](../sites/site_pages.md), which can be added to the [navigation](../sites/site_navigation.md) in a similar fashion to default browse pages. You *cannot* add faceted browsing to a page as a block, or as part of an existing browse page.
 
 Once activated on the [modules](index.md) tab of the admin dashboard, Faceted Browse is configured on a site-by-site basis. 
 
-## Creating and managing Faceted Browse pages 
+## Creating and managing Faceted Browse pages
 
 Once the Facet Browse module is active, a tab for Faceted Browse will appear in the context menu for every site. Clicking on this tab will take you to a list of all of your Faceted Browse pages for that site.
 
 Site managers must create Faceted Browse pages before they can be added to the site's navigation.
 
-Create a new page by clicking the *Add a page* button. This takes you to a new page where you can add 
+### Adding a Faceted Browse Page
+
+Create a new page by clicking the *Add a page* button. This takes you to a new page where you can add basic information for the page and start adding categories. 
+
 ![Create page interface showing save page dropdown](../modules/modulesfiles/FacetedBrowse-AddPage.png)
-Give the page a title. Select the resource type that you would like to let users browse on this page: Items, Item Sets, or Media. 
+
+The **title** functions the same as the title of a regular page: it will show up in navigation and display when the page is active. 
+
+Use the **resource type** dropdown to select the resource type that you would like to let users browse on this page: Items, Item Sets, or Media.
 
 Save the page and select *Stay on this page*.
 
-If you are returning to edit existing pages, you can also save your edits and return to the list of pages by selecting Save and *Return to page*.
+If you are returning to edit existing pages, you can also save your edits and return to the list of pages by selecting *Save and Return to page*.
 
 ### Adding and Editing Categories
 
@@ -205,3 +215,4 @@ You may add as many Faceted browse custom links as you desire.
 Drag and drop your pages into the desired place in your site navigation, and then save your work. 
 
 ## Public view
+
