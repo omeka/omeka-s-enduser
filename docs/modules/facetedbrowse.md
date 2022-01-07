@@ -12,6 +12,14 @@ Faceted browse pages exist as separate [pages](../sites/site_pages.md), which ca
 
 Once activated on the [modules](index.md) tab of the admin dashboard, Faceted Browse is configured on a site-by-site basis. 
 
+## Terminology
+
+A quick guide to the terms used to describe the aspects of a faceted browse page.
+
+- Category: a group of resources (items, item sets, or media) to which facets are applied on a specific page.
+- Column: information to display for each resource in the category. Once you have at least one column, the items will display in a table form (not a grid).
+- Facet: an aspect of a resource - usually part of the metadata - which becomes a way to filter the resources in the category.
+
 ## Creating and managing Faceted Browse pages
 
 Once the Facet Browse module is active, a tab for Faceted Browse will appear in the context menu for every site. Clicking on this tab will take you to a list of all of your Faceted Browse pages for that site.
@@ -28,27 +36,29 @@ The **title** functions the same as the title of a regular page: it will show up
 
 Use the **resource type** dropdown to select the resource type that you would like to let users browse on this page: Items, Item Sets, or Media.
 
-Save the page and select *Stay on this page*.
+Save the page and select *Stay on this page* to continue creating the faceted browse.
 
 If you are returning to edit existing pages, you can also save your edits and return to the list of pages by selecting *Save and Return to page*.
 
-### Adding and Editing Categories
+### Categories
 
-Once the page has been created, the user can create a Category, which is a group of resources which you want users to be able to browse with facets. 
+Once the page has been created, the user can create a Category, which is a group of resources which you want users to be able to browse with facets.
 
 Click the *Add* button.
 
 Give your category a name.
 
-Use the search query interface to set the pool of resources that users will browse. The *Edit* button opens a drawer on the right hand side of the browser window which works exactly like advanced search forms for items, media, and item sets. The *advanced edit* button allows you to input a query string.
+Use the search query interface to set the pool of resources that users will browse. The *Edit* button opens a drawer on the right hand side of the browser window which works exactly like [advanced search forms](https://omeka.org/s/docs/user-manual/search/#item-advanced-search) for items, media, and item sets. The *advanced edit* button allows you to input a query string.
 
 ![Add category form with name filled in and search query Edit buttons interface](../modules/modulesfiles/FacetedBrowse-SearchQuery.png)
 
 After setting the pool of resources, you can create facets and add columns to your browse display. Once you are done creating your facets and setting your display columns, save your category.
 
-You may repeat the category creation and configuration process to add as many categories to your page as you like.  
+You can have more than one category per page. See "Multiple categories on one page" for how this functions on the public view.
 
-#### Facets
+### Facets
+
+Facets work within the categories you have created. You can have one or more facets for each category.
 
 Select a type of facet to add: Value; Resource class; Resource Template; Item Set; Full text.
 
@@ -150,7 +160,7 @@ When you are satisfied with your settings, click the *Set facet* button.
 
 #### Numeric Data Types
 
-If you are using the Numerica Data Types module, you will have additional facet types to work with, including Date after, Date before, Value greater than, Value less than, Duration greater than, Duration less than, Date in interval.
+If you are using the Numeric Data Types module, you will have additional facet types to work with, including Date after, Date before, Value greater than, Value less than, Duration greater than, Duration less than, Date in interval.
 
 ![Facet Type dropdown menu showing options including Numeric Date Types](../modules/modulesfiles/FacetedBrowse-NumericDataTypesSelect.png)
 
@@ -212,7 +222,16 @@ Give your custom link a label (required), and select from your dropdown list of 
 
 You may add as many Faceted browse custom links as you desire.
 
-Drag and drop your pages into the desired place in your site navigation, and then save your work. 
+Drag and drop your pages into the desired place in your site navigation, and then save your work.
 
-## Public view
+## Public views
 
+### Multiple categories on one page
+
+When there are multiple categories on a page, it will load with all of the resources from all categories displayed and the categories available in a submenu.
+
+![Faceted browse page with two categories. The categories are highlighted in a red annotation box labelled "Categories"](../modules/modulesfiles/FacetedBrowse-multiCatView1.png)
+
+Once a user clicks on a category, the resource list will change to display only that category, and the facets will replace the categories in the submenu. Users can use a "back" button on the page to return to the full list of categories.
+
+![A faceted browse page with facets visible. The category heading shows up above the facets. Over that is a button labelled "back." Annotations indicate the button, category, and facet headings.](../modules/modulesfiles/FacetedBrowse-multiCatView1.png)
