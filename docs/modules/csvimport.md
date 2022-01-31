@@ -179,11 +179,11 @@ There are two options on this tab which are only for advanced use.
 This setting allows you to change the action of process from a straight import to one of the following options:
 
 - **Create a new resource:** default option. Each row in the CSV will become a new resource.
-- **Append data to the resource:** add new data to the resource.
-- **Revise data of the resource:** replace existing data in the resource with data from the csv, except if empty.
-- **Update data of the resource:** replace existing data in the resource with data from the csv, even when the cell is empty.
-- **Replace all data of the resource:** remove all properties of the resource, and fill with new information from the sheet.
-- **Delete the resource:** delete all matching resources
+- **Append data to the resource:** add new data to the resource. (Cannot be undone.)
+- **Revise data of the resource:** replace existing data in the resource with data from the csv, except if empty. (Cannot be undone.)
+- **Update data of the resource:** replace existing data in the resource with data from the csv, even when the cell is empty. (Cannot be undone.)
+- **Replace all data of the resource:** remove all properties of the resource, and fill with new information from the sheet. (Cannot be undone.)
+- **Delete the resource:** delete all matching resources. (Cannot be undone.)
 
 If you select one of these options from the dropdown, three additional settings will appear on the tab. These settings help the process determine which resources to take action on.
 
