@@ -2,11 +2,9 @@
 
 The Faceted Browse module lets you create browse resource pages with facts - filter and sort functions - that site visitors can use.
 
-With this module, site managers are able to configure faceted browse pages and add them to their sites. End users are then able to browse through categories of resources and use the facets to narrow the results in a logical and intuitive manner.
+With this module, site managers are able to configure faceted browse pages and add them to their sites. End users are then able to browse through categories of resources and use the facets to narrow the results in a logical and intuitive manner. This functionality is similar to the filtering options on many websites and should be easy for users to manage as long as you have clear language. 
 
-In this image, the facet is Era, displayed as a single-choice list. The items for this page are displayed in columns with the title and era for each item.
-
-![Faceted browse page with a list of events which happened on the National Mall. On the left side of the image is a list of eras with radio buttons.](../modules/modulesfiles/FacetedBrowse_publicView.png)
+The [public view]() section below shows how these facets display for single and multi-category pages. 
 
 Faceted browse pages exist as separate [pages](../sites/site_pages.md), which can be added to the [navigation](../sites/site_navigation.md) in a similar fashion to default browse pages. You *cannot* add faceted browsing to a page as a block, or as part of an existing browse page.
 
@@ -64,15 +62,15 @@ You can create facets from the following options: Value; Resource class; Resourc
 
 ![Facet Type dropdown menu showing options](../modules/modulesfiles/FacetedBrowse-SelectFacetType.png)
 
-Once the type is selected, click the *Add* button. A drawer will open on the right side of the browser window with options to configure the facet.
+Once the type is selected, click the *Add* button. A drawer will open on the right side of the browser window with options to configure the facet. The image below shows the drawer options for the Value facet:
+
+![Configure Facet draw for the Values facet type](../modules/modulesfiles/FacetedBrowse-ConfigureFacetV.png)
 
 You can add more than one type of facet to each page and category.
 
 **Value** facets correspond to the [values](../content/items/#values) within a specific property for each item.
 
 Give the facet a name (required). This will display on the public view, so make sure it will be legible to your visitors.
-
-![Configure Facet draw for the Values facet type](../modules/modulesfiles/FacetedBrowse-ConfigureFacetV.png)
 
 Use the dropdown to select which property to use for the facet
 
@@ -108,8 +106,6 @@ When you are satisfied with your settings, click the *Set facet* button.
 
 Give the facet a name (required).
 
-![Configure facet drawer for resource class with options as described below but no inputs](../modules/modulesfiles/FacetedBrowse-configureFactCl.png)
-
 Set the Select type for the browse faceting:
 
 - Single (list). Visitors can select only one, all options are displayed in a list.
@@ -122,7 +118,7 @@ Check the *Show all available classes* box to get a sense of the data that is av
 
 When you are satisfied with your settings, click the *Set facet* button.
 
-**Resource template**
+**Resource template** allow visitors to narrow items by their [resource class](../content/resource-template/)
 
 Give the facet a name (required).
 
@@ -138,7 +134,7 @@ Check the *Show all available templates* box to get a sense of the data that is 
 
 When you are satisfied with your settings, click the *Set facet* button.
 
-**Item set**
+**Item set** allow visitors to narrow items by [item set](../content/item-sets/)
 
 Give the facet a name (required).
 
@@ -148,13 +144,13 @@ Set the Select type for the browse faceting:
 - Multiple (list). Visitors can select multiple, all options are displayed in a list.
 - Single Dropdown. Visitors can select only one, all options are given in a dropdown menu.
 
-Select the Item sets that will make up the facets. 
+Select the item sets that will make up the facets. 
 
 Check the *Show all available item sets* box to get a sense of the data that is available for input.
 
 When you are satisfied with your settings, click the *Set facet* button.
 
-**Full-text**
+**Full-text** adds a text search bar which will narrow down the displayed items based on what the visitor inputs.
 
 Give the facet a name (required).
 
@@ -174,23 +170,21 @@ In the public view, the faceting will be controlled through a dropdown menu
 
 ### Columns
 
-The display of the browse list of results defaults to include the title and description for the resource, just as is the case with other browse lists. You can configure the information displayed about the results by adding columns of metadata to the display for your faceted browse.
+If you do not set any columns, the items on the page will initially just display in the default format for your site (grid or list). Once filtered, items will display in a table. The display of the browse list of results defaults to include the title and description for the resource, just as is the case with other browse lists. 
 
-Select a type of column to add from the dropdown menu: Title (link to resource); Value; Resource class; Resource template; Item set; ID.
+You can configure the information displayed about the results by adding columns of metadata to the display for your faceted browse.
+
+Select a type of column to add from the dropdown menu: Title (link to resource); Value; Resource class; Resource template; Item set; ID. 
 
 Once the type is selected, click the *Add* button. A drawer will open with options to configure the column.
 
-**Title (link to resource)**
+**Title (link to resource)** 
 
-Give the column a name (required).
-
-When you are satisfied with configuring the column, click the *Set column* button.
+Give the column a name (required). When you are satisfied with configuring the column, click the *Set column* button.
 
 **Value** 
 
-Give the column a name (required).
-
-Select a Property to be displayed (required). Then, set the maximum number of values for that property. To display all values, set the input to blank.
+Give the column a name (required). Select a Property to be displayed (required). Then, set the maximum number of values for that property. To display all values, set the input to blank.
 
 When you are satisfied with configuring the column, click the *Set column* button.
 
@@ -202,21 +196,17 @@ When you are satisfied with configuring the column, click the *Set column* butto
 
 **Item set**
 
-Give the column a name. (Required)
-
-Set the maximum number of item sets to be displayed. To display all values, set the input to blank.
+Give the column a name. (Required) Set the maximum number of item sets to be displayed. To display all values, set the input to blank.
 
 When you are satisfied with configuring the column, click the *Set column* button.
 
 **ID**
 
-Give the column a name (required).
-
-When you are satisfied with configuring the column, click the *Set column* button.
+Give the column a name (required). When you are satisfied with configuring the column, click the *Set column* button.
 
 ## Add a Faceted Browse page to the Site Navigation.
 
-Click on the Navigation tab for your site. Select *Faceted browse* from the *Add a custom link* list in the page sidebar. 
+Click on the Navigation tab for your site. Select *Faceted browse* from the *Add a custom link* list in the page sidebar.
 
 ![Custom links in the right drawer to add elements to the navigation](../modules/modulesfiles/FacetedBrowse-AddPageNav.png)
 
@@ -227,6 +217,12 @@ You may add as many Faceted browse custom links as you desire.
 Drag and drop your pages into the desired place in your site navigation, and then save your work.
 
 ## Public views
+
+The public view of a faceted browse should look familiar to many viewers:
+
+![Faceted browse page with a list of events which happened on the National Mall. On the left side of the image is a list of eras with radio buttons.](../modules/modulesfiles/FacetedBrowse_publicView.png)
+
+In this image, the facet is Era, displayed as a single-choice list. The items for this page are displayed in columns with the title and era for each item.
 
 ### Multiple categories on one page
 
