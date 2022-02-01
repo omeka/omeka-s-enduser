@@ -58,40 +58,40 @@ You can have more than one category per page. See "Multiple categories on one pa
 
 ### Facets
 
-Facets work within the categories you have created. You can have one or more facets for each category.
+Facets work within the categories you have created. You can have one or more facets for each category. These are the selections that site visitors will use to narrow down the list of items. 
 
-Select a type of facet to add: Value; Resource class; Resource Template; Item Set; Full text.
+You can create facets from the following options: Value; Resource class; Resource Template; Item Set; Full text.
 
 ![Facet Type dropdown menu showing options](../modules/modulesfiles/FacetedBrowse-SelectFacetType.png)
 
-Once the type is selected, click the *Add* button. A drawer will open with options to configure the facet. 
+Once the type is selected, click the *Add* button. A drawer will open on the right side of the browser window with options to configure the facet.
 
-![Configure Facet draw for the Values facet type](../modules/modulesfiles/FacetedBrowse-ConfigureFacet.png)
+You can add more than one type of facet to each page and category.
 
-You can add more than one type of facet to each page.
+**Value** facets correspond to the [values](../content/items/#values) within a specific property for each item.
 
-**Value**
+Give the facet a name (required). This will display on the public view, so make sure it will be legible to your visitors.
 
-Give the facet a name (required).
+![Configure Facet draw for the Values facet type](../modules/modulesfiles/FacetedBrowse-ConfigureFacetV.png)
 
-Select a property for the facet. 
+Use the dropdown to select which property to use for the facet
 
-Use the Query type to narrow the facet: 
+Use the Query type to narrow the facet. These options apply to the search which the facet will apply to the property value (based on what you put in the Values field below). You can choose from:
 
-- Is exactly; 
-- Is not exactly; 
-- Contains; 
-- Does not contain; 
-- Is resource with ID; 
-- Is not resource with ID; 
-- Has any value; 
+- Is exactly;
+- Is not exactly;
+- Contains;
+- Does not contain;
+- Is resource with ID;
+- Is not resource with ID;
+- Has any value;
 - Has no values;
 
-Set the Select type for the browse faceting:
+Set the Select type for the browse faceting. This sets how site visitors interact with the options in the Values field:
 
-- Single (list)
-- Multiple (list)
-- Single Dropdown
+- Single (list). Visitors can select only one, all options are displayed in a list.
+- Multiple (list). Visitors can select multiple, all options are displayed in a list.
+- Single Dropdown. Visitors can select only one, all options are given in a dropdown menu.
 
 Enter the Values that will make up the facets. Each value should be on a separate line. The format of each value depends on the query type you have selected above. If the query type is
 
@@ -100,21 +100,23 @@ Enter the Values that will make up the facets. Each value should be on a separat
 - "Is resource with ID": enter the resource ID followed by any value (usually the resource title), separated by a single space.
 - "Has any value": enter the property ID followed by any value (usually the property label), separated by a single space.
 
-Check the *Show all available values* box to get a sense of the data that is available for input.
+Check the *Show all available values* box to get a sense of the data that is available for input. This will return existing values in the property you selected above.
 
 When you are satisfied with your settings, click the *Set facet* button.
 
-**Resource class**
+**Resource class** allow visitors to narrow items by their [resource class](../content/vocabularies/)
 
 Give the facet a name (required).
 
+![Configure facet drawer for resource class with options as described below but no inputs](../modules/modulesfiles/FacetedBrowse-configureFactCl.png)
+
 Set the Select type for the browse faceting:
 
-- Single (list)
-- Multiple (list)
-- Single Dropdown
+- Single (list). Visitors can select only one, all options are displayed in a list.
+- Multiple (list). Visitors can select multiple, all options are displayed in a list.
+- Single Dropdown. Visitors can select only one, all options are given in a dropdown menu.
 
-Select the Classes that will make up the facets. 
+Select the Classes that will make up the facets.
 
 Check the *Show all available classes* box to get a sense of the data that is available for input.
 
