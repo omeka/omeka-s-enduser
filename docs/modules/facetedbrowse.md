@@ -4,7 +4,7 @@ The Faceted Browse module lets you create browse resource pages with facts - fil
 
 With this module, site managers are able to configure faceted browse pages and add them to their sites. End users are then able to browse through categories of resources and use the facets to narrow the results in a logical and intuitive manner. This functionality is similar to the filtering options on many websites and should be easy for users to manage as long as you have clear language. 
 
-The [public view]() section below shows how these facets display for single and multi-category pages. 
+The [public view](facetedbrowse.md#public-views) section below shows how these facets display for single and multi-category pages. 
 
 Faceted browse pages exist as separate [pages](../sites/site_pages.md), which can be added to the [navigation](../sites/site_navigation.md) in a similar fashion to default browse pages. You *cannot* add faceted browsing to a page as a block, or as part of an existing browse page.
 
