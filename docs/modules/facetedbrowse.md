@@ -116,7 +116,7 @@ Set the Select type for the browse faceting:
 - Multiple (list). Visitors can select multiple, all options are displayed in a list.
 - Single Dropdown. Visitors can select only one, all options are given in a dropdown menu.
 
-Select the Classes that will make up the facets.
+Select the Classes that will make up the facets from the dropdown menu.
 
 Check the *Show all available classes* box to get a sense of the data that is available for input.
 
@@ -128,9 +128,9 @@ Give the facet a name (required).
 
 Set the Select type for the browse faceting:
 
-- Single (list)
-- Multiple (list)
-- Single Dropdown
+- Single (list). Visitors can select only one, all options are displayed in a list.
+- Multiple (list). Visitors can select multiple, all options are displayed in a list.
+- Single Dropdown. Visitors can select only one, all options are given in a dropdown menu.
 
 Select the Resource templates that will make up the facets. 
 
@@ -144,9 +144,9 @@ Give the facet a name (required).
 
 Set the Select type for the browse faceting:
 
-- Single (list)
-- Multiple (list)
-- Single Dropdown
+- Single (list). Visitors can select only one, all options are displayed in a list.
+- Multiple (list). Visitors can select multiple, all options are displayed in a list.
+- Single Dropdown. Visitors can select only one, all options are given in a dropdown menu.
 
 Select the Item sets that will make up the facets. 
 
@@ -166,17 +166,17 @@ If you are using the Numeric Data Types module, you will have additional facet t
 
 ![Facet Type dropdown menu showing options including Numeric Date Types](../modules/modulesfiles/FacetedBrowse-NumericDataTypesSelect.png)
 
-Once you have selected a facet type, you will be able to configure the facet to operate with the properties that use a numeric data type. 
+Once you have selected a facet type, you will be able to configure the facet to operate with the properties that use a numeric data type.
 
 In the public view, the faceting will be controlled through a dropdown menu
 
-![Public Faceted Browse page with radio button selects for a list of Status values and a "Birth Data Before" dropdown menu in the left column. In the right column is a table of items with information for Title, Location, and Spouse](../modules/modulesfiles/FacetedBrowse-SelectFacetType.png)
+![Public Faceted Browse page with radio button selects for a list of Status values and a "Birth Data Before" dropdown menu in the left column. In the right column is a table of items with information for Title, Location, and Spouse](../modules/modulesfiles/FacetedBrowse-DatesPublic.png)
 
 ### Columns
 
 The display of the browse list of results defaults to include the title and description for the resource, just as is the case with other browse lists. You can configure the information displayed about the results by adding columns of metadata to the display for your faceted browse.
 
-Select a type of column to add from the dropdown menu: Title (link to resource); Value; Resource class; Resource template; Item set; ID. 
+Select a type of column to add from the dropdown menu: Title (link to resource); Value; Resource class; Resource template; Item set; ID.
 
 Once the type is selected, click the *Add* button. A drawer will open with options to configure the column.
 
@@ -220,7 +220,7 @@ Click on the Navigation tab for your site. Select *Faceted browse* from the *Add
 
 ![Custom links in the right drawer to add elements to the navigation](../modules/modulesfiles/FacetedBrowse-AddPageNav.png)
 
-Give your custom link a label (required), and select from your dropdown list of faceted browse pages (required). 
+Give your custom link a label (required), and select from your dropdown list of faceted browse pages (required).
 
 You may add as many Faceted browse custom links as you desire.
 
