@@ -46,7 +46,7 @@ Click the *Add* button.
 
 Give your category a name.
 
-Use the search query interface to set the pool of resources that users will browse. The *Edit* button opens a drawer on the right hand side of the browser window which works exactly like [advanced search forms](https://omeka.org/s/docs/user-manual/search/#item-advanced-search) for items, media, and item sets. The *advanced edit* button allows you to input a query string.
+Use the search query interface to set the pool of resources that users will browse. The *Edit* button opens a drawer on the right hand side of the browser window which works exactly like [advanced search forms](../search.md#item-advanced-search) for items, media, and item sets. The *advanced edit* button allows you to input a query string.
 
 ![Add category form with name filled in and search query Edit buttons interface](../modules/modulesfiles/FacetedBrowse-SearchQuery.png)
 
@@ -68,7 +68,7 @@ Once the type is selected, click the *Add* button. A drawer will open on the rig
 
 You can add more than one type of facet to each page and category.
 
-**Value** facets correspond to the [values](../content/items/#values) within a specific property for each item.
+**Value** facets correspond to the [values](../content/items.md#values) within a specific property for each item.
 
 Give the facet a name (required). This will display on the public view, so make sure it will be legible to your visitors.
 
@@ -102,7 +102,7 @@ Check the *Show all available values* box to get a sense of the data that is ava
 
 When you are satisfied with your settings, click the *Set facet* button.
 
-**Resource class** allow visitors to narrow items by their [resource class](../content/vocabularies/)
+**Resource class** allow visitors to narrow items by their resource class
 
 Give the facet a name (required).
 
@@ -118,7 +118,7 @@ Check the *Show all available classes* box to get a sense of the data that is av
 
 When you are satisfied with your settings, click the *Set facet* button.
 
-**Resource template** allow visitors to narrow items by their [resource class](../content/resource-template/)
+**Resource template** allow visitors to narrow items by their [resource template](../content/resource-template.md).
 
 Give the facet a name (required).
 
@@ -134,7 +134,7 @@ Check the *Show all available templates* box to get a sense of the data that is 
 
 When you are satisfied with your settings, click the *Set facet* button.
 
-**Item set** allow visitors to narrow items by [item set](../content/item-sets/)
+**Item set** allow visitors to narrow items by [item set](../content/item-sets.md)
 
 Give the facet a name (required).
 
