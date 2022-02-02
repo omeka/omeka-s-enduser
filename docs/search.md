@@ -1,6 +1,6 @@
 # Searching
 
-There are search functions on both the administrative and public sides of Omeka S installs and sites. 
+There are search functions on both the administrative and public sides of Omeka S installs and sites.
 
 ## Administrative interface
 
