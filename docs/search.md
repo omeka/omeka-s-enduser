@@ -91,7 +91,7 @@ You can remove value searches using the red trash can icon to the right of the v
 
 *Search by MIME type:* you can specify the media type for the search. For example, to find all tiff images, you would enter `image/tiff`. 
 
-![Advanced media search options form, with fields as described above.](/files/search_mediaadvance2.png)
+![Advanced media search options form, with fields as described above.](files/search_mediaadvance2.png)
 
 Searches by value, class, and template allow you to search by more than one input - use the *add new* buttons to search with more than one value or item set. These search terms build - searching for two templates will return all media using either template. 
 
@@ -103,7 +103,7 @@ You can reset your search terms at any time by using the "Reset" button on the u
 
 Advanced search for item sets only is accessed on the [Item Sets](content/item-sets) page, from the *Advanced Search* link above the table of item sets.
 
-![Advanced search button indicated with a red arrow.](/files/advancedsearchis1.png)
+![Advanced search button indicated with a red arrow.](files/advancedsearchis1.png)
 
 The advanced search loads on a new page, and has the following options:
 
