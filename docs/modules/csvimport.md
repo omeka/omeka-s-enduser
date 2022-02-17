@@ -164,6 +164,7 @@ These settings apply to the entire csv which you are importing. Note that some o
 - **Owner:** set the owner for the Items by selecting a user from the drop-down menu. You can use the search field at the top of the dropdown to narrow results or find a particular user.
 - **Visibility:** set the visibility of the imported items as public  or private. 
 - **Item Sets:** add the imported items to a specific item set or sets using the dropdown menu.
+- **Sites:** add the imported items to the specified site or sites. Global and user-specific default sites will be preselected here.
 - **Multivalue Separator:** enter the multivalue separator character here, if you have used one. 
       - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon.
 - **Language:** set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag).
