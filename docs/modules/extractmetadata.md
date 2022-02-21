@@ -52,7 +52,7 @@ Be sure to click the "Save" button in the top right corner of the screen to exec
 
 From the Items Browse screen, selecting the items you'd like to batch edit. From the batch edit page, you can select any of the four action options from the Extract metadata dropdown menu. This will perform the action on all items selected for inclusion in the batch edit. 
 
-![Batch edit view with Extract metadata dropdown open](../modules/modulesfiles/extractMetadata_batchEdit.png)
+![Batch edit view with Extract metadata dropdown open](../modules/modulesfiles/extractmetadata_batchedit.png)
 
 
 ## Extractors
