@@ -123,7 +123,7 @@ When you input a value for a property associated with a resource, you may wish t
 
 To create an annotation, click on the ellipses on the right side of the value input interface, and then click on the annotation icon (a dialogue bubble). 
 
-![a detail of the property with the annotation bubble highlighted](annotaton_add.png)
+![a detail of the property with the annotation bubble highlighted](contentfiles/annotation_add.png)
 
 The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property DCterms:Contributor might be annotated with the property Schema:jobTitle. 
 
