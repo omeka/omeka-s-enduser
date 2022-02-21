@@ -8,7 +8,7 @@ File Sideload is compatible with [CSV Import](../modules/csvimport.md).
 
 Create a directory (folder) on your server. It can be within the File Sideload module directory or on the same level as the Omeka S installation. 
 
-Upload files into this directory using your File Transfer Protocol (ftp) client. All files must be in this directory to be accessible; any content in a subdirectory will not register with the module. 
+Upload files into this directory using your File Transfer Protocol (ftp) client. All files or directories must be in this directory to be accessible.  
 
 Note that when browsing these files from the module to add as media, you will only see the filenames, so you should name the files as clearly as possible ("StudyInScarlet_coverpapge" is better than "img001").
 
