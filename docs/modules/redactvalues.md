@@ -1,5 +1,5 @@
 # Redact Values
-The Value suggest module allows administrators to redact property values. Administrators will be able to choose a resource type, build a query to filter the resources, select the property from which to redact text, select the pattern to use for redaction, enter the replacement text, and choose what lower roles will be allowed to view redacted text.
+The Redact Values module allows administrators to redact property values. Administrators will be able to choose a resource type, build a query to filter the resources, select the property from which to redact text, select the pattern to use for redaction, enter the replacement text, and choose what lower roles will be allowed to view redacted text.
 
 To install Redact Values follow the instructions for Installing Modules on the Modules documentation.
 
