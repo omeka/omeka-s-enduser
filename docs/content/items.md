@@ -119,7 +119,15 @@ URI fields link to an external website or online resource.
 You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
 
 #### Value annotation
-When you input a value for a property associated with a resource, you may wish to include additional statements about that property. In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification). Each value can have any number of annotations.
+When you input a value for a property associated for a resource, you are making a statement about that resource. If you choose, Omeka allows you to make statements about that statement. We call this value annotation. The advantage of value annotation is that you can choose to make ambiguous facts more concrete by annotating things like:
+
+- Provenance: Where is this fact from?
+- Time: When did this fact occur?
+- Location: What is the location associated with this fact?
+- Certainty: What is the confidence of this fact?
+- Type: What type of concept/thing is this fact?
+
+In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification). Each value can have any number of annotations.
 
 To create an annotation, click on the ellipses on the right side of the value input interface, and then click on the annotation icon (a dialogue bubble). 
 
