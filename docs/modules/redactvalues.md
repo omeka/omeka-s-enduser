@@ -28,9 +28,11 @@ If you'd like, you can also add a query to filter the resources from which to re
 
 There is also a field to include the replacement text that will appear in place of the redacted values. If you leave this blank, the redacted field will not be visible to roles who do not have permission to view redactions.
 
-You also have the option to give certain role types permissions in viewing redactions. Note that any user with permission to update a resource can automatically view its redacted text. You can allow Authors or Researchers by checking their respective boxes.
+You also have the option to give certain role types permissions in viewing redactions. Note that any user with permission to update a resource can automatically view its redacted text. You can allow authors or researchers by checking their respective boxes. Normally, values will be redacted for authors except for resources that they own and researchers unless you grant them permissions in individual redactions.
 
 ![redactValues_roles](../modules/modulesfiles/redactValues_roles.png)
+
+One thing to note is that the module does not apply redactions for users who have permission to update the resource. That means that values will never be redacted for global administrators, supervisors, and editors. Users who are not logged in will never be able to view redacted values.
 
 Be sure to click "Submit" in the upper right corner to save your changes.
 
