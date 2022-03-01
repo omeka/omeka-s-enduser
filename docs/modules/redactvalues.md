@@ -38,7 +38,7 @@ Be sure to click "Submit" in the upper right corner to save your changes.
 
 You can manage your already created redactions from the main module screen. To edit a previously added redaction, click the "Edit" icon next to the redaction you would like to change. 
 
-![redactValues_edit](..modules/modulesfiles/redactValues_edit.png)
+![redactValues_edit](../modules/modulesfiles/redactValues_edit.png)
 
 Be sure to submit the form again after you have made any changes. 
 
