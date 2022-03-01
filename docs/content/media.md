@@ -141,7 +141,7 @@ To remove an asset which you have assigned as a thumbnail, click the "Clear" but
 
 **Alt Text** You can provide alternate text for all media by typing descriptive text into the input area.
 
-![Edit media open to Advanced tab, showing the Alt Text input box] (contentfiles/media_alttext.png)
+![Edit media open to Advanced tab, showing the Alt Text input box](contentfiles/media_alttext.png)
 
 ## Batch editing
 
