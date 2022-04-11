@@ -99,6 +99,32 @@ Item resources also have an option for "Quick add". When this switch is flipped,
 
 You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
 
+**Value annotation**
+
+When you input a value for a property associated for a resource, you are making a statement about that resource. If you choose, Omeka allows you to make statements about that statement. We call this value annotation. The advantage of value annotation is that you can choose to make ambiguous facts more concrete by annotating things like:
+
+- Provenance: Where is this fact from?
+- Time: When did this fact occur?
+- Location: What is the location associated with this fact?
+- Certainty: What is the confidence of this fact?
+- Type: What type of concept/thing is this fact?
+
+In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification). Each value can have any number of annotations.
+
+To create an annotation, click on the ellipses on the right side of the value input interface, and then click on the annotation icon (a dialogue bubble). 
+
+![a detail of the property with the annotation bubble highlighted](contentfiles/annotation_add.png)
+
+The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property DCterms:Contributor might be annotated with the property Schema:jobTitle. 
+
+Then select a date type for the annotation: Text, URI, or and Omeka S Resource. Installed modules may make additional data types available. Click the Add Annotation button. 
+
+Input the annotation, and click Set Annotations to finalize the process. 
+
+![a picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
+
+Sites include a setting to indicate whether or not value annotations are visible to the public. 
+
 **Language** You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code for the language in which the text is written.
 
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)

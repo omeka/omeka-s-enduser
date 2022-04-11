@@ -141,6 +141,8 @@ Input the annotation, and click Set Annotations to finalize the process.
 
 ![a picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
 
+Sites include a setting to indicate whether or not value annotations are visible to the public. 
+
 #### Language 
 You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written.
 
