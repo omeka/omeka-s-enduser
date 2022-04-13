@@ -98,10 +98,15 @@ Depending on the [site theme](../sites/site_theme), you may want to make this a 
 
 **Browse body property** sets which property to use as the body text for each resource on a browse page. By default, this is Dublin Core: Description. The dropdown allows you to select from all available vocabularies, and includes a search bar to quickly find the desired property.
 
-### Show
+### Show 
+
+#### Attached Pages
 When this box is checked, site pages to which an item is attached will display on the public view of that item.
 
 ![Show setting checked](../sites/sitesfiles/sites_settingShow.png)
+
+#### Value Annotation
+When this box is checked, Value Annotations will be visible on the public views for resources (items, item sets, media).
 
 ### Search 
 

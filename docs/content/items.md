@@ -118,6 +118,31 @@ URI fields link to an external website or online resource.
 
 You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
 
+#### Value annotation
+When you input a value for a property associated for a resource, you are making a statement about that resource. If you choose, Omeka allows you to make statements about that statement. We call this value annotation. The advantage of value annotation is that you can choose to make ambiguous facts more concrete by annotating things like:
+
+- Provenance: Where is this fact from?
+- Time: When did this fact occur?
+- Location: What is the location associated with this fact?
+- Certainty: What is the confidence of this fact?
+- Type: What type of concept/thing is this fact?
+
+In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification). Each value can have any number of annotations.
+
+To create an annotation, click on the ellipses on the right side of the value input interface, and then click on the annotation icon (a dialogue bubble). 
+
+![a detail of the property with the annotation bubble highlighted](contentfiles/annotation_add.png)
+
+The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property DCterms:Contributor might be annotated with the property Schema:jobTitle. 
+
+Then select a date type for the annotation: Text, URI, or and Omeka S Resource. Installed modules may make additional data types available. Click the Add Annotation button. 
+
+Input the annotation, and click Set Annotations to finalize the process. 
+
+![a picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
+
+Sites include a setting to indicate whether or not value annotations are visible to the public. 
+
 #### Language 
 You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written.
 
@@ -127,7 +152,6 @@ You can indicate the language for the content of an input using the globe symbol
 If you have multiple values for a property, you can reorder them by dragging and dropping. Click on the bar on the left of the value to grab that value, and drag it into the order that you want it. 
 
 ![Close up of the Subject property with two values. A red circle shows the location of the grab bar for the value.](contentfiles/item_valuereorder.png)
-
 
 ### Media
 Use the *Media* tab to add images, video, or other files.
