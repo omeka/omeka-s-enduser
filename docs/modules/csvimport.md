@@ -14,16 +14,16 @@ If the spreadsheet is already created, take a moment to think about which column
 
 *Note* Your csv file *must have a header row* in order for the module to process it correctly.
 
-If you have multiple inputs for a single property, you can separate them with a secondary *multivalue separator*. For example, a work with multiple authors (E.B. White and William Strunk Jr.) with the column for Creator containing "E.B. White; William Strunk Jr" has a semicolon (;) as the multivalue separator. When imported into Omeka S, each of these would appear as a separate entry in the property (Creator: E.B. White and Creator: William Strunk Jr.)
+If you have multiple inputs for a single property, you can separate them with a secondary *multivalue separator*. For example, a work with multiple authors (E.B. White and William Strunk Jr.) with the column for Creator containing "E.B. White; William Strunk Jr" has a semicolon (;) as the multivalue separator. When imported into Omeka S, each of these would appear as a separate entry in the property (Creator: E.B. White and Creator: William Strunk Jr.).
 
 ### Automapping 
 The module will automatically automap column headers if they conform to the property terms of your installation's [vocabularies](../content/vocabularies.md). For example, a CSV file with a column header "dcterms:title" would automap to the Dublin Core Title property when the CSV is loaded for mapping.
 
-To find the terms you should use for your column headers, go to the Vocabularies tab from the admin dashboard. Click on the number of properties for the vocabulary you want to use (Dublin Core in the image below)
+To find the terms you should use for your column headers, go to the Vocabularies tab from the admin dashboard. Click on the number of properties for the vocabulary you want to use (Dublin Core in the image below).
 
 ![Red arrow points to the properties link for Dublin Core](../modules/modulesfiles/csv_automap1.png)
 
-In the table of vocabulary properties, there is a column for *Term*. Use the Term for the property you want to automap in the CSV Import. For example, "dcterms:abstract" would automap to the Dublin Core property "Absract" and "foaf:firstName" would automap to the Friend of a Friend property "firstName"
+In the table of vocabulary properties, there is a column for *Term*. Use the Term for the property you want to automap in the CSV Import. For example, "dcterms:abstract" would automap to the Dublin Core property "Absract" and "foaf:firstName" would automap to the Friend of a Friend property "firstName".
 
 ![arrow points to the Term column for Dublin Core properties.](../modules/modulesfiles/csv_automap2.png)
 
@@ -134,7 +134,7 @@ This will open a drawer on the right side of the browser window with the followi
 
 - **Use multivalve separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
 - **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with at least three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
+- **Data type:** is a dropdown with at least three options, which correspond to the [values](../../content/items/#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
 	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576.
@@ -202,7 +202,7 @@ If you select one of these options from the dropdown, three additional settings 
 In addition to the above, the Advanced Settings tab has an option to set the number of rows to process by batch. By default this is set to 20. However, if you are running into errors with an import you may want to set it to 5 or even 1 in order to troubleshoot and determine the source of the error. 
 
 ### Complete import
-Once you have completed mappings, column options, and any settings, click the Import button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]"
+Once you have completed mappings, column options, and any settings, click the Import button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]".
 
 ## Import Item Sets
 To import item sets, select "Item Set" under the "Import type" on the first page.
@@ -639,7 +639,17 @@ The drawer has a dropdown for Users info, with three options:
 
 - *Email:* the email address for the user;
 - *Display name:* the user's display name
-- *Role:* the user's [role](../admin/users/#roles-and-permissions) - for this column, use the role labels exactly as they appear in Omeka S. 
+- *Role:* the user's [role](../../admin/users/#roles-and-permissions)
+
+Role values are as follows:
+
+- `global_admin`
+- `site_admin`
+- `editor`
+- `reviewer`
+- `author`
+- `researcher`
+
 
 ![The same table as above, now with the mapping drawer open and the dropdown activated to show the three options.](../modules/modulesfiles/csvimport_usersMap.png)
 
@@ -682,19 +692,19 @@ Depending on the size of the import, it may take some time to undo. On complete,
 The following are known errors that can occur during an import:  
 
 - **Encoding**: CSVs for import must be UTF-8 encoded. 
-- Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration/) so that your system can perform the background process to make the items.
+- Are your jobs starting and not completing? You might need to [set the path for PHP](../../configuration/) so that your system can perform the background process to make the items.
 
 ## CSV Import with other modules
 Some other modules add functionality to CSV import. If you have these modules installed and active, you will have access to the following options when using CSV import.
 
 ### Mapping
-If you have [Mapping](../modules/mapping/) (minimum version 1.1.0) installed and active, you will have two additional options in the "Map to Omeka S data" tab when importing Items. Note that these options do not appear for any other import, including Mixed Resources. 
+If you have [Mapping](../mapping/) (minimum version 1.1.0) installed and active, you will have two additional options in the "Map to Omeka S data" tab when importing Items. Note that these options do not appear for any other import, including Mixed Resources. 
 
 ![Add mapping drawer with additional options for "Resource location" and "default map view"](../modules/modulesfiles/csvimport_mapping1.png)
 
 **Resource location:** set the location for the resource. Your column for this option can include one of the following forms of data:
 
-- *Latitude* must be written as a single number (23.43 not 23° 26′).
+- *Latitude* must be written as a single number (23.43, not 23° 26′).
 - *Longitude* must be written as a decimal fraction using negative and positive to indicate west or east. (−91 rather than 91°W) 
 - *Latitude/longitude* must be inputted as numbers separated by a slash, ex `52.19/ -1.71`
 
@@ -709,13 +719,13 @@ If you have [Mapping](../modules/mapping/) (minimum version 1.1.0) installed and
 ### File Sideload
 If you have [File Sideload](../filesideload) (minimum version 1.2.0) installed and active, you can use it as a source for media when running a csv import.
 
-Everything on the *Map to Omeka S data* tab will be the same. When you add a mapping and choose the "Media source" option, you will see that there is now an option for "Sideload"
+Everything on the *Map to Omeka S data* tab will be the same. When you add a mapping and choose the "Media source" option, you will see that there is now an option for "Sideload".
 
 ![Dropdown menu for media source, with Sideload highlighted in blue](../modules/modulesfiles/csvimport_sideload.png). 
 
 For the data in this column, you need to include the full file name, including extension. So, for example, if you want to import a jpg file which is named "Jekyll_and_Hyde_Title" then the data in the media column of the csv you are importing should be `Jekyll_and_Hyde_Title.jpg`.
 
 ### Numeric Data Types
-If you have [Numeric Data Types](modules/numericdatatypes/) installed and active, it will add the option to set a column data type as numeric data.
+If you have [Numeric Data Types](../numericdatatypes) installed and active, it will add the option to set a column data type as numeric data.
 
 ![Column options drawer with the data type dropdown open, showing options for numeric data types as well as the standard options](../modules/modulesfiles/csvimport-numericdata.png)
