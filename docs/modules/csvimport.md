@@ -134,7 +134,7 @@ This will open a drawer on the right side of the browser window with the followi
 
 - **Use multivalve separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
 - **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with at least three options, which correspond to the [values](../../content/items/#values) one can use when adding properties to an item:
+- **Data type:** is a dropdown with at least three options, which correspond to the [values](../../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
 	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576.
@@ -263,7 +263,7 @@ This will open a drawer on the right side of the browser window with the followi
 
 - **Use multivalve separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
 - **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with at least three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
+- **Data type:** is a dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
 	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576.
@@ -329,7 +329,7 @@ If you select one of these options from the dropdown, three additional settings 
 In addition to the above, the Advanced Settings tab has an option to set the number of rows to process by batch. By default this is set to 20. However, if you are running into errors with an import you may want to set it to 5 or even 1 in order to troubleshoot and determine the source of the error. 
 
 ### Complete import
-Once you have completed mappings, column options, and any settings, click the Import button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]"
+Once you have completed mappings, column options, and any settings, click the Import button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]".
 
 ## Import Media
 To import media, select "media" under the "Import type" on the first page.
@@ -402,7 +402,7 @@ This will open a drawer on the right side of the browser window with the followi
 
 - **Use multivalve separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
 - **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with at least three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
+- **Data type:** is a dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
 	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576.
@@ -546,7 +546,7 @@ This will open a drawer on the right side of the browser window with the followi
 
 - **Use multivalue separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator character in the initial import page, but you can change it in the Basic Settings tab. 
 - **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with at least three options, which correspond to the [values](../content/items/#values) one can use when adding properties to an item:
+- **Data type:** is a dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default);
 	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
 	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576.
@@ -613,7 +613,7 @@ If you select one of these options from the dropdown, three additional settings 
 In addition to the above, the Advanced Settings tab has an option to set the number of rows to process by batch. By default this is set to 20. However, if you are running into errors with an import you may want to set it to 5 or even 1 in order to troubleshoot and determine the source of the error. 
 
 ### Complete import
-Once you have completed mappings, column options, and any settings, click the Import button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]"
+Once you have completed mappings, column options, and any settings, click the Import button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]".
 
 ## Import Users
 When importing users, you can only bring in data related to the user table in Omeka S: the user's email, display name, and role. Any additional data in your CSV will not be imported.
@@ -623,8 +623,8 @@ This is the only active tab for User import. The Basic and Advanced settings tab
 
 This tab displays an initial dropdown above a table with the columns from your spreadsheet as rows. Each row displays:
 
-- a Checkbox
-- Column header from the spreadsheet
+- a checkbox
+- A column header from the spreadsheet
 - A plus symbol button for adding or modifying a mapping
 - A trash can to delete mappings
 - A column to show options selected
@@ -639,7 +639,7 @@ The drawer has a dropdown for Users info, with three options:
 
 - *Email:* the email address for the user;
 - *Display name:* the user's display name
-- *Role:* the user's [role](../../admin/users/#roles-and-permissions)
+- *Role:* the user's [role](../../admin/users.md#roles-and-permissions)
 
 Role values are as follows:
 
@@ -692,7 +692,7 @@ Depending on the size of the import, it may take some time to undo. On complete,
 The following are known errors that can occur during an import:  
 
 - **Encoding**: CSVs for import must be UTF-8 encoded. 
-- Are your jobs starting and not completing? You might need to [set the path for PHP](../../configuration/) so that your system can perform the background process to make the items.
+- Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration.md#php-path) so that your system can perform the background process to make the items.
 
 ## CSV Import with other modules
 Some other modules add functionality to CSV import. If you have these modules installed and active, you will have access to the following options when using CSV import.
