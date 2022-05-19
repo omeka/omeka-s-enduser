@@ -1,4 +1,4 @@
-# Zotero Citation
+# Zotero Citations
 
 This module allows you to access your Zotero library to add citations using the built-in rich-text editor.
 
@@ -18,7 +18,7 @@ The Zotero Citation module adds a number of configuration options to the User Se
 
 ## Accessing Zotero for Citations and Bibliographies
 
-Within site pages, citations and bibliographies can be added to any element that has a rich-text editor, such as the HTML Block or with captions for Items.
+Within site pages, citations and bibliographies can be added to any element that has a rich-text editor, such as the [HTML Block](..sites/site_pages.md#html) or with captions for Items.
 
 When the module is active, it will add a red "Z" icon to the rich-text editor. Place your cursor in the desired place in the editing window and click on the icon to open the Zotero selection dialog box that has three tabs: 
 
