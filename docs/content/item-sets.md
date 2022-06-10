@@ -8,24 +8,23 @@ Item sets are managed via the *Item Sets* tab (stacked boxes) located in the lef
 
 After clicking on the tab, a table appears listing all item sets with: 
 
-- their *Title*; 
-- icons for each row representing options to *edit* (pencil), *delete* (trash can), or *view details* (ellipses); 
-- the item set’s *Class*, 
-- the *Owner* of the set, 
-- and the date the set was *Created*.
+- the *Title*
+- icons to *edit* (pencil), *delete* (trash can), or *details* (ellipsis)
+- the item set’s *Class*
+- the *Owner* of the set
+- the date the set was *Created*.
 
-Above this table on the left is the pagination for the item sets table, where you can click the left and right arrows to move forward and back or enter a page number to go a specific page of item sets. 
+In the top right corner of the Item Sets screen is the button to *Add new item set*. 
 
-In the center above the table is the button for *advanced search*. 
+Options for navigating and creating items sit in the header of the table of items. 
 
-On the right above the table are drop-down menus to re-order the table by *title, class, owner,* or *date created* in either *ascending* or *descending* order. 
+- On the left side are controls for the pages of items sets, with forward and back arrows, and a field to go a specific page of item sets. 
+- In the center is the button for *Advanced search*. 
+- On the right are options to re-order the table by *title, class, owner,* or *date created* in either *ascending* or *descending* order. 
 
-In the upper right corner is the button to *Add new item set*. 
+## View item set
 
-
-## View Item Set
-
-To quickly see information about an item set, click on the *view details* button (ellipses) for the item set on the item sets browse page. This will open a drawer on the right hand side of the page with the item set’s Title, Visibility, and number of Items.
+To quickly see information about an item set, click on the *Details* button (the ellipsis icon) for the item set on the item sets browse page. This will open a column on the right hand side of the page with the item set’s title, visibility, and number of items.
 
 ![Drawer view of an item, with description and title](contentfiles/itemsets_drawer.png)
 
@@ -53,7 +52,7 @@ You may add text, a resource from the installation, or an external link in each 
 
 ![Add item set, no properties selected](contentfiles/itemsets_add.png)
 
-By default, a new Item Set will load with the properties dcterms:Title and dcterms:description. You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
+By default, a new Item Set will load with the properties dcterms:Title and dcterms:description. You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc.), or search in the *filter properties* bar above the list of properties and vocabularies.
 
 You can set individual properties as Private or Publicly visible using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Site Admins, and Editors will be able to see properties even when set to private. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
 
@@ -62,7 +61,7 @@ In the image below, the first property (Title) is public as indicated by the ope
 ![As described](contentfiles/item_propviz.png)
  
 ### Text
-Text fields are entered with text. The keyboard at the top of the field input indicates text. You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code for the language in which the text is written.
+Text fields are entered with text. The keyboard at the top of the field input indicates text. You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
 
 ### Omeka Resource
 These fields create an internal link between the resource you are creating and the resource which fills that field. You have the option to use either another item or an item set. Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
@@ -87,14 +86,14 @@ This will open a menu below the button with the following options to filter the 
 
 ![options as above described](contentfiles/item_addresItem.png)
 
-Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (ex, Creator, Has Part). 
+Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. Creator, or Has Part). 
 
 ![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](contentfiles/items_quickadd.png)
 
 #### URI
 URI fields link to an external website or online resource.
 
-You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
+You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc.), or search in the *filter properties* bar above the list of properties and vocabularies.
 
 #### Value annotation
 When you input a value for a property associated for a resource, you are making a statement about that resource. If you choose, Omeka allows you to make statements about that statement. We call this value annotation. The advantage of value annotation is that you can choose to make ambiguous facts more concrete by annotating things like:
@@ -105,9 +104,9 @@ When you input a value for a property associated for a resource, you are making 
 - Certainty: What is the confidence of this fact?
 - Type: What type of concept/thing is this fact?
 
-In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification). Each value can have any number of annotations.
+In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification){target=_blank}. Each value can have any number of annotations.
 
-To create an annotation, click on the ellipses on the right side of the value input interface, and then click on the annotation icon (a dialogue bubble). 
+To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (a dialogue bubble). 
 
 ![a detail of the property with the annotation bubble highlighted](contentfiles/annotation_add.png)
 
@@ -149,9 +148,9 @@ Use the *make public/private* button (eye icon) to make the item set visible to 
 
 *Closed* sets are available and editable only by its creator, site admins, and global admins.
 
-![a set which is open and public, with an open padlock icon and an icon of an open eye](contentfiles/setOpenPublic.png) Open and Public 
+Open and Public: ![a set which is open and public, with an open padlock icon and an icon of an open eye](contentfiles/setOpenPublic.png){style="display:inline;"}
 
-![a set which is closed and private, with a closed padlock icon and  an icon of an eye with a slash through it](contentfiles/setClosedPrivate.png)  Closed and Private
+Closed and Private: ![a set which is closed and private, with a closed padlock icon and  an icon of an eye with a slash through it](contentfiles/setClosedPrivate.png){style="display:inline;"}  
 
 Note that the public/private and open/closed settings operate independently - you can have an open and private item set, for example.
 
@@ -175,7 +174,7 @@ Batch actions are as follows:
 - Edit selected: edit only the item sets that are selected on the page
 - Edit all: edit all the item sets returned by a search (default is all item sets)
 - Delete selected: delete only the item sets that are selected on the page
-- Delete all: delete all the item sets returned by a search (default is all item sets)
+- Delete all: delete all the item sets returned by a search (default is all item sets).
 
 Choose one of these options and then click *Go*.
 

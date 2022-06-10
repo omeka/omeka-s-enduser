@@ -35,7 +35,7 @@ To manage an existing user, go to the Users section.
 
 To view the name, email, and role of a user, click on the username. 
 
-To see the items and item sets owned by a user, click the *more* (ellipses) button located between the *delete* (trash can) button and the user role label. This will open a drawer on the right side of the screen with this information; you can click on the number of items or item sets to go to the items or item sets created by that user.
+To see the items and item sets owned by a user, click the *more* (ellipsis) button located between the *delete* (trash can) button and the user role label. This will open a drawer on the right side of the screen with this information; you can click on the number of items or item sets to go to the items or item sets created by that user.
 
 ## Edit User
 

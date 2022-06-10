@@ -1,6 +1,6 @@
 # Assets
 
-Digital files added to Omeka S that are not media attached to items can be managed in the Assets section. Examples of assets include site logos, images that are purely illustrations, and custom-made thumbnails. The Assets section provides users with a browse list of all of the assets for the entire installation, listed with a thumbnail, a title, icons to edit (pencil), delete (trash can) or view details (ellipses), and the asset's Owner.
+Digital files added to Omeka S that are not media attached to items can be managed in the Assets section. Examples of assets include site logos, images that are purely illustrations, and custom-made thumbnails. The Assets section provides users with a browse list of all of the assets for the entire installation, listed with a thumbnail, a title, icons to edit (pencil), delete (trash can) or view details (ellipsis), and the asset's Owner.
 
 ![Admin section of the Navigation menu showing Assets section](adminfiles/assets_menu.png)
 

@@ -4,32 +4,32 @@ Items are the building blocks of the Omeka system.
 
 In Omeka S, items can be made available to you from the system administrator, and you may add items to your own site.
 
-Items are listed in the *Items* tab (one box icon), found on the left-hand navigation of the administrative dashboard. 
+Items are listed in the *Items* tab (the box icon) in the left-hand navigation of the administrative dashboard. 
 
 ![Basic view of admin items page, showing a handful of item resources](contentfiles/items_browse.png)
 
 Each item appears as a row, with columns for:
 
 - the *Title*
-- icons to *edit* (pencil), *delete* (trash can), or *view details* (ellipses)
+- icons to *edit* (pencil), *delete* (trash can), or *details* (ellipsis)
 - the *Class*
 - the item’s *Owner*
-- and the date the item was *Created*. 
+- the date the item was *Created*. 
 
-Options for navigating and creating items display above the table of items. 
+In the top right corner of the Items screen is the *Add new item* button. 
 
-On the right top of the Items window is the *Add new item* button. 
+Options for navigating and creating items sit in the header of the table of items. 
 
-On the left side is a display for the number of pages of items, with forward and back arrows. The current page number is an editable field — enter any valid page number and hit return/enter on your keyboard to go to that page. 
+- On the left side are controls for the pages of items, with forward and back arrows, and an editable box for the current page number — enter a valid page number and hit Enter to go to that page. 
 
-In the center top is a button for [Advanced Search](../search.md). 
+- In the center is a link for [Advanced Search](../search.md#item-advanced-search). 
 
-Just above the table on the right are options for sorting the table of items, with two dropdown menus. The first lets you select between *Title*, *Identifier*, *Class*, *Owner,* and *(Date) Created*; the second allows you to sort ascending or descending. To apply, click the *sort* button.
+- On the right are options for sorting the table of items, with two dropdown menus. By default, items in the table are sorted by most recently-added items at the top (Created & Descending). The first lets you select between *Title*, *Identifier*, *Class*, *Owner,* and *(Date) Created*; the second allows you to sort by ascending (A-Z or earliest to latest) or descending (Z-A or latest to earliest). To apply, click the *Sort* button.
 
 Between these and the table, on the left, is a dropdown for batch actions, including edit selected, edit all, delete selected, and delete all. 
 
 ## View
-To quickly view the basic information about an item, click the *view details* (ellipses) button in the row for the item, located next to the edit and delete buttons. This will open a drawer to the right of the list which displays the item’s title,  description, visibility, any sites it is used in, and its associated media..
+To quickly view the basic information about an item, click the *Details* (ellipsis) button in the row for the item, located next to the edit and delete buttons. This will open a drawer to the right of the list which displays the item’s title,  description, visibility, any sites it is used in, and its associated media..
 
 For a more detailed look at an individual item, click on its title in the items browse table or when viewing its details.
  
@@ -82,7 +82,7 @@ Text fields allow for unformatted text entry.
 
 ![image of text input field with keyboard icon indicating text input, the globe icon for setting language, and a trashcan delete icon](contentfiles/items_textedit.png)
 
-You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) code for the language in which the text is written.
+You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} code for the language in which the text is written.
 
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
 
@@ -97,14 +97,14 @@ Once you select an item or item set, detailed information will load, and you mus
 
 ![Select Item menu with list of items to link in edit item view](contentfiles/items_addresource.png)
 
-If you are using an Item resource for the property, you will have additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search"
+If you are using an Item resource for the property, you will have additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search".
 
 ![Select Item drawer top options, with a red arrow around a gray triangle button to the right of the phrase "Filter search"](contentfiles/items_filtersearch.png)
 
 This will open a menu below the button with the following options to filter the items in the drawer:
 
-- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation;
-- Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set
+- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation.
+- Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set.
 - Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the url of it's edit page; if you are editing the item and the url is `admin/item/11547/edit` then the item's ID is 11547.
 
 ![options as above described](contentfiles/item_addresItem.png)
@@ -114,11 +114,13 @@ Item resources also have an option for "Quick add". When this switch is flipped,
 ![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](contentfiles/items_quickadd.png)
 
 #### URI
+
 URI fields link to an external website or online resource.
 
-You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
+You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc.), or search in the *filter properties* bar above the list of properties and vocabularies.
 
 #### Value annotation
+
 When you input a value for a property associated for a resource, you are making a statement about that resource. If you choose, Omeka allows you to make statements about that statement. We call this value annotation. The advantage of value annotation is that you can choose to make ambiguous facts more concrete by annotating things like:
 
 - Provenance: Where is this fact from?
@@ -127,9 +129,9 @@ When you input a value for a property associated for a resource, you are making 
 - Certainty: What is the confidence of this fact?
 - Type: What type of concept/thing is this fact?
 
-In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification). Each value can have any number of annotations.
+In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification){target=_blank}. Each value can have any number of annotations.
 
-To create an annotation, click on the ellipses on the right side of the value input interface, and then click on the annotation icon (a dialogue bubble). 
+To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (a dialogue bubble). 
 
 ![a detail of the property with the annotation bubble highlighted](contentfiles/annotation_add.png)
 
@@ -144,16 +146,18 @@ Input the annotation, and click Set Annotations to finalize the process.
 Sites include a setting to indicate whether or not value annotations are visible to the public. 
 
 #### Language 
-You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written.
+You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written.
 
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
 
 #### Value order
+
 If you have multiple values for a property, you can reorder them by dragging and dropping. Click on the bar on the left of the value to grab that value, and drag it into the order that you want it. 
 
 ![Close up of the Subject property with two values. A red circle shows the location of the grab bar for the value.](contentfiles/item_valuereorder.png)
 
 ### Media
+
 Use the *Media* tab to add images, video, or other files.
 Using the buttons on the *Add New Media* menu on the right side of the screen, select a media type (Upload, URL, oEmbed, YouTube, or HTML)
 
@@ -163,7 +167,7 @@ Using the buttons on the *Add New Media* menu on the right side of the screen, s
 - *URL*: import media via a uri.
 - *HTML*: add html content as a media resource for your item.
 - *IIIF*: Add an IIIF image via url.
-- *oEmbed*: insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7) - use the url in your browser’s location bar.
+- *oEmbed*: insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7){target=_blank} - use the url in your browser’s location bar.
 - *YouTube*: add a link to embed a YouTube video. Use the url from your browser’s location bar (with `/watch/` in it) rather than the `youtu.be` link.
 
 You can edit media later by going by editing an item, navigating to the *media* tab, and clicking the edit button (pencil) for a media when editing the item. 
@@ -224,9 +228,9 @@ The ownership of an item is usually assigned to the user account which creates t
 ### Visibility
 Use the *make public/private* button (eye icon) to set whether the item is visible to the public or only to users of the Omeka S system. 
 
-![make public button showing an eye icon](contentfiles/item_public.png) Public 
+Item is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png){style="display:inline;"}
 
-![make private button showing an eye icon with a diagonal slash through it](contentfiles/item_private.png)  Private
+Item is private: ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png){style="display:inline;"}
 
 Note that if an item is private, all the media attached is private, but an item which is public can have attached media which are set to be either public or private.
 
@@ -284,7 +288,7 @@ In addition,  you can use the buttons at the bottom of the batch edit form to ad
 
 - add text value
 - add resource value
-- add URI value  
+- add URI value.  
 
 Selecting any of these will add a block to the form where you can select a property from the installed vocabularies and enter the value for that property.
 

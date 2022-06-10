@@ -8,7 +8,7 @@ Once you are editing the site, click the Pages tab in the left hand navigation.
 
 When you create a new site, Omeka S automatically adds a page titled *Welcome* with a single HTML block (see below). You can edit this page or delete it.
 
-## Adding Pages
+## Adding pages
 From the page for the site, click the Pages tab. Then click the *Add new page* button on the upper left side of the window.
 
 ![A red arrow points to a grey button labeled "add new page"](../sites/sitesfiles/sitepg_addnew.png)  
@@ -26,24 +26,24 @@ The eye icon to the left of the Cancel and Add buttons is a toggle to set the vi
 
 Clicking or hitting enter on the eye icon toggles between public and private. 
 
-![make public button showing an eye icon](../content/contentfiles/item_public.png) Public 
+Page is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png){style="display:inline;"}
 
-![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)  Private
+Page is private: ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png){style="display:inline;"}
 
 Once you have entered this information and set visibility, click the Add button in the upper right hand corner of the browser window. You will be automatically taken to that page's edit view (see below). 
 
 If you decide you do not want to create the page, click the Cancel button.
 
-## Browse Pages
+## Browse pages
 The pages tab (once you have at least one page) will display all of your pages in their navigation order. Child pages will display below the parent page with a `-` before the page title.
 
 Every page is listed with its *Title*, buttons to view (box with an arrow coming out), edit (pencil), or delete (trash can) the page, and the page's slug. 
 
 ![A sites page browse view, with 12 pages listed, some of which are child pages of the others.](../sites/sitesfiles/sitepg_browse.png)
 
-Use the [Navigation](../sites/site_navigation/) tab of the site admin to set the order of pages, including setting child and parent pages.
+Use the [Navigation](../sites/site_navigation.md) tab of the site admin to set the order of pages, including setting child and parent pages.
 
-## Editing Pages  
+## Editing pages  
 After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page *title* will take you to the public view of that page. 
 
 The edit view for a page will display the page's title across the top. In the upper left is the public/private toggle (the eye icon), and buttons to view the public version (opens in a new tab), delete the page, cancel changes, or save changes. Note that changes will not display on the public view until after they have been saved.
@@ -82,18 +82,18 @@ You can delete any of the blocks by clicking on the trash can icon located in th
 
 Change the order of blocks by clicking on the three horizontal lines on the upper left corner of the block and then dragging and dropping it to the desired location.
 
-Some modules may create additional blocks for your site pages. For information on working with these blocks, please see the documentation for that [module](../modules/index.md)
+Some modules may create additional blocks for your site pages. For information on working with these blocks, please see the documentation for that [module](../modules/index.md).
 
-### From the Public Side
+### From the public side
 If you are on the admin side and click "View" in the upper right-hand corner of a page, it will take you to the public view for that page. 
 
-As you are browsing the public side of your site, you can edit the page you are viewing if you are currently logged in and the [user bar option is turned on in Site Settings](../sites/site_settings/#general-settings). 
+As you are browsing the public side of your site, you can edit the page you are viewing if you are currently logged in and the [user bar option is turned on in Site Settings](../sites/site_settings.md#general-settings). 
 
 The user bar, which appears across the top of the page, includes a link to edit the current page - circled in red in the below image. 
 
 ![User bar for a page from the site Jane Austen, with "Edit page" circled in red](../sites/sitesfiles/sitepg_edit_public.png)
 
-## Page Blocks
+## Page blocks
 Pages are made up of blocks, each of which has a different form of content.
 
 ### Asset
@@ -116,7 +116,7 @@ Additionally, the Asset block includes a set of options for controlling the disp
 - Class: allows the user to indicate a style class to control the display of the file.
 - Alignment: allows the user to select the positioning of the file on the page: *default*, *float left*, *float right*, and *center*.
 
-### Browse Preview
+### Browse preview
 Allows you to add a block of items on a site page.
 
 ![Browse Preview block with the query element](../sites/sitesfiles/sitepg_browsepreview_query.png)
@@ -162,7 +162,7 @@ You can embed content from elsewhere on the internet using iFrames or other embe
 
 Finally, you can assign a Class to the HTML block for styling by your theme.
 
-### Item Showcase
+### Item showcase
 A list of items. 
 
 In item showcase blocks, multiple attachments build horizontally, creating rows across the page.
@@ -205,20 +205,19 @@ Once you’ve added an item, it will appear in the Item List block. You can edit
 
 You can add multiple items to the list.
 
-### Item with Metadata
+### Item with metadata
 This block displays an item along with all associated metadata (entered when creating or editing the [item](../content/items.md)).
 
-Add attachments in the same manner as the [media](../sites/site_pages/#media) page block.
+Add attachments in the same manner as the [media embed](../sites/site_pages.md#media-embed) page block.
 
 ![Item with metadata block with nothing attached](../sites/sitesfiles/sitepg_iwm.png)
 
-### Line Break
+### Line break
 Line break creates a transparent or opaque line break on the page, clearing all blocks. Select whether the line is transparent or opaque from the dropdown.
 
 ![line break table, dropdown selected to transparent](../sites/sitesfiles/sitepg_line.png)
 
 HTML blocks wrap around Media blocks and at times you may want to clear the page. You might also want to create a visual break on the page. 
-
 
 ### List of pages
 This block displays a linked list of pages. You may select from pages that are within the site but custom links such as Custom URL, Browse, and Browse Item Set are not available.
@@ -234,8 +233,6 @@ You may drag and nest pages into any order.
 ### List of sites
 This block displays a list of all of the sites on your Omeka S install. This block has the following options:
 
-![List of sites block](../sites/sitesfiles/sitepg_slist1.png)
-
 - Sort sites by: Alphabetical order (A-Z); Oldest first; newest first. By default this is set to alphabetical. 
 - Max number of sites allows you to limit the number of sites which display at once. If left blank, all sites will display.
 - A checkbox to turn on pagination, applied only if you set a limit.
@@ -243,7 +240,9 @@ This block displays a list of all of the sites on your Omeka S install. This blo
 - A checkbox to show site thumbnail.
 - A checkbox to exclude the current site from the list. 
 
-### Media Embed
+![List of sites block](../sites/sitesfiles/sitepg_slist1.png)
+
+### Media embed
 Creates a block with one or more pieces of media associated with items in the item pool. In media blocks, multiple attachments stack vertically.
 
 ![media block with no media attached](../sites/sitesfiles/sitepg_media.png)
@@ -289,12 +288,12 @@ To add multiple items at once, click the "quick add" slider just above the list 
 
 ![Select item drawer with quick add activated - every item in the view now has a checkbox.](../sites/sitesfiles/sitepg_selectitemQuick.png)
 
-### Page Title
+### Page title
 Displays the title of the current page.
 
 ![Page block display site's title](../sites/sitesfiles/sitepg_title.png)
 
-### Table of Contents
+### Table of contents
 If the current page has child pages, you can add a table of content block for those pages.
 
 The Depth option allows you to set how many levels of child pages you want to display. If left blank, it will display all possible levels. Please enter a whole number.  
@@ -304,9 +303,9 @@ The Depth option allows you to set how many levels of child pages you want to di
 Add and arrange pages using the [Site Navigation](../sites/site_navigation.md) settings. 
 
 ### Other blocks
-For module-specific blocks (like [Collecting](../modules/collecting.md) or [Mapping](../modules/mapping.md)) see the documentation for that module.
+For module-specific blocks, such as [Collecting](../modules/collecting.md) or [Mapping](../modules/mapping.md), see the documentation for that module.
 
-## Deleting Pages
+## Deleting pages
 To delete a page, go the to *Pages* tab of the site of which the page is a part. Click the delete (trash can) button at the right end of the row for that page. 
 
 A drawer will open on the right side of the page asking you to confirm that you wish to delete the page, with the name of the page displayed under the confirm button. To proceed, click the *Confirm delete* button. Otherwise, click the *X* in the upper right corner of the drawer to cancel.

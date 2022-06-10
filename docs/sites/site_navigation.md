@@ -9,7 +9,7 @@ For every item in the navigation, you have three options: view (box with arrow i
 
 ![Close up of two navigation sections. The top is "Quotes" which has a dark gray square on the end of it containing a black triangle pointing down. The bottom navigation section is called "Share a quote" and does not have the gray square](../sites/sitesfiles/sitenav_detail.png)
 
-## Set Homepage
+## Set homepage
 By default, the topmost page in the navigation acts the main page for your site. Note that custom URLs will not work as a home page - the topmost item in your navigation must be a page.
 
 You can set the homepage without changing the order of your pages using the *Select a homepage* section in the righthand drawer. This section has a dropdown which lists all the pages in your site. Simply select the page which you want to use as your homepage.
@@ -21,8 +21,8 @@ To change which page is used as the homepage, select a different page from the d
 ![Select a homepage set to Map page](../sites/sitesfiles/sitenav_homedel.png)
 
 
-## Adding Navigation
-Add to the navigation of the site using the options on the right hand side of the page. There are two sections: [Add a custom link](../sites/site_navigation/#custom-link) and [Add a link to a site page](../sites/site_navigation/#site-page)
+## Adding navigation
+Add to the navigation of the site using the options on the right hand side of the page. There are two sections: Add a custom link and Add a link to a site page.
 
 ### Add a custom link
 To add a link you can use the *Add a custom link* options on the right hand drawer to add:
@@ -30,7 +30,7 @@ To add a link you can use the *Add a custom link* options on the right hand draw
  * a Browse page for items on your site;
  * a Browse page for item sets on your site. 
 
-Or you can add one of your [pages](../sites/site_pages), which should be listed in the right-hand drawer below the *Add a custom link* dropdown. If you need to find a specific page, begin typing the page title in the search box with the helper text *Filter pages* which appears directly below the text “Add a link to a site page.” 
+Or you can add one of your [pages](../sites/site_pages.md), which should be listed in the right-hand drawer below the *Add a custom link* dropdown. If you need to find a specific page, begin typing the page title in the search box with the helper text *Filter pages* which appears directly below the text “Add a link to a site page.” 
 
 **Custom URL** link option displays three pieces of information: the link *type* (Custom URL), the *label* which is the text which will appear in the site navigation menu, and the *url*. 
 
@@ -52,7 +52,7 @@ Once a query has been set, you can click Edit to update the pool of items. You c
 
 ![Browse page form with the edit query element](../sites/sitesfiles/sitenav_query_update.png)
 
-### Site Page
+### Site page
 Site page blocks create links to pages you have built for your site. The *page* field indicates which page is in use, as does the block title. You can change the *label* for the page link in the navigation, as in the example image below. Note that changing the label does not change the page title. 
 
 ![Page block with for the page Custard Page 2 labeled “More Custard”](../sites/sitesfiles/sitenav_pages.png) Site Page block
@@ -61,7 +61,7 @@ If you have many pages, you can use the *Filter pages* field to find the names a
 
 Be sure to click Save before leaving the Navigation tab to save changes. If you do not want to save changes, click the Cancel button.
 
-## Editing and Arranging Navigation
+## Editing and arranging navigation
 When you add a link block it is automatically expanded. To collapse an open link block, click the edit (pencil) icon in the  upper right corner of each block, next to the delete (trash) icon. When you arrive at the Navigation tab after saving changes or from the main site edit page, the navigation items should be collapsed; open the block by clicking the edit (pencil) icon.
 
 The topmost item in the navigation is the main page for your site.
@@ -72,7 +72,7 @@ You can arrange your navigation links by dragging and dropping them into your pr
 
 Omeka S allows for multiple levels of nested navigation.
 
-## Deleting Navigation
+## Deleting navigation
 To delete a link from the navigation, click the delete (trash can) icon and then click *Save*. If you accidentally click the delete icon, you can click the undo (back looped arrow) icon before click save to cancel the deletion.
 
 ![Two link blocks, one of which is highlighted in red and marked for deletion](../sites/sitesfiles/sitenav_del.png) 
