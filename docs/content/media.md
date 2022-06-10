@@ -13,33 +13,30 @@ Adding media includes uploading a file, or directly attaching content with oEmbe
 Media can only be added via an [item](../content/items.md). 
 
 ## Browse media
-To browse media, first go to the admin item browse. In the left hand navigation, an option for Media browse will appear under the Item browse (you may have to click on the triangle to expand the menu below Items)
+To browse media, first click on Items in the left-hand navigation. In that sidebar, an option for Media browse will appear under the Item button (you may have to click on the triangle to expand the menu below Items).
 
 ![The Resources section of the navigation, with light blue text on a dark blue background. Below the option for items, indented, is a navigation option for Media. It has no representative icon, unlike the other options.](contentfiles/media-browsenav.png)
 
 Media are displayed in a table. Each media is a row, with columns for:
 
-- Select media (a checkbox)
-- Media *title*
-- icons to *edit* (pencil), *delete* (trash can), or *view details* (ellipses)
+- a checkbox to select the media
+- the *Title*
+- icons to *edit* (pencil), *delete* (trash can), or *details* (ellipsis)
 - the media's *Class*
 - the media's *Owner*
 - and the date the media was *Created*. 
 
-![The browse media table as described above. All of the media are named with a mediawiki url and owned by the user Megan.](contentfiles/media_browse.png)
+![The browse media table displaying 5 items. All of the media have titles that are mediawiki URLs, and all are owned by the user Megan.](contentfiles/media_browse.png)
 
-Options for navigating and creating items display above the table of items. 
+Options for navigating and creating items display above the table of items:
 
-On the left side is a display for the number of pages of media, with forward and back arrows. The current page number is an editable field - enter any valid page number and hit return/enter on your keyboard to go to that page. 
-
-In the center top is a button for [Advanced Search](../../search#media-advanced-search). 
-
-Just above the table on the right are options for sorting media, with two dropdown menus. The first lets you select between *Title*, *Class*, *Owner*, *(date)Created*, and *Size*; the second allows you to sort ascending or descending. To apply, click the *sort* button.
+- On the left side is a display for the number of pages of media, with forward and back arrows. The current page number is an editable field - enter any valid page number and hit return/enter on your keyboard to go to that page. 
+- In the center top is a button for [Advanced Search](../../search#media-advanced-search). 
+- Just above the table on the right are options for sorting media, with two dropdown menus. The first lets you select between *Title*, *Class*, *Owner*, *(date)Created*, and *Size*; the second allows you to sort ascending or descending. To apply, click the *sort* button.
 
 Clicking on the title of any media will take you to its metadata page. This page displays any metadata in the main work area, with a sidebar on the right listing the visibility, associated item (an active link), date created, MIME type, Size, Ingester, Source, and links to the file derivatives.
 
 ![Media view page for a mediawiki file. The image is of a grup of people in late 19th century clothing, from left to right a a women standing and facing a standing man holding a small child while reaching out to the woman, with another man standing and smiling behind the man with the child. On the right hand side of the image is the database information for the media.](../content/contentfiles/media_view.png)
-
 
 ## Edit Media
 To edit existing media, you can:
@@ -69,11 +66,11 @@ Note that if you add the property `dcterms:title`, its contents will replace the
 
 ![image of text input field with keyboard icon indicating text input, the globe icon for setting language, and a trashcan delete icon](contentfiles/items_textedit.png)
 
-You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code for the language in which the text is written.
+You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe icon to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
 
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
 
-**Omeka Resource** fields create an internal link between the resource you are creating and the resource which fills that field. 
+**Omeka Resource** fields create an internal link between the resource you are creating and the resource that fills that field. 
 
 You have the option to use either an item, another media, or an item set. Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
 
@@ -109,9 +106,9 @@ When you input a value for a property associated for a resource, you are making 
 - Certainty: What is the confidence of this fact?
 - Type: What type of concept/thing is this fact?
 
-In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification). Each value can have any number of annotations.
+In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification){target=_blank}. Each value can have any number of annotations.
 
-To create an annotation, click on the ellipses on the right side of the value input interface, and then click on the annotation icon (a dialogue bubble). 
+To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (a dialogue bubble). 
 
 ![a detail of the property with the annotation bubble highlighted](contentfiles/annotation_add.png)
 
@@ -125,7 +122,7 @@ Input the annotation, and click Set Annotations to finalize the process.
 
 Sites include a setting to indicate whether or not value annotations are visible to the public. 
 
-**Language** You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code for the language in which the text is written.
+**Language** You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
 
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
 
@@ -133,23 +130,25 @@ You can add properties by selecting from the list on the right side of the scree
 
 Automatically generated metadata, such as source, visibility, and part of item, cannot be edited. 
 
-Use the *make public/private* button (eye icon) to set whether the media is visible to the public or only to users of the OmekaS install. 
+Use the *make public/private* button (eye icon) to set whether the media is visible to the public or only to users of the Omeka S install. 
 
-![make public button showing an eye icon](../content/contentfiles/item_public.png) Public 
+Media is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png){style="display:inline;"}
 
-![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png)  Private
+Media is private: ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png){style="display:inline;"}
 
-Note that if an item is private, all the media attached is private, but an item which is public can have attached media which are set to be either public or private.
+Note that if an item is private, all the media attached is private, but an item that is public can have attached media which are set to be either public or private.
 
-You can set individual properties as Private or Publicly visible using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Site Admins, and Editors will be able to see properties even when set to private. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
+You can set individual properties as visible using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Site Admins, and Editors will be able to see properties even when set to private. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
 
 In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
 
-![As described](contentfiles/item_propviz.png)
+![Individual properties have a red eye icon to the right to allow you to toggle visibility - a red arrow points to the icon](contentfiles/item_propviz.png)
 
 ### Advanced
 
-**Thumbnail** Not all media generate an elegant thumbnail, for example pdf or text file documents or some video files. You can use this option to set a representative thumbnail for the media which will be used on browse pages but not on the page for the item or its media.
+**Thumbnail** 
+
+Not all media generate an elegant thumbnail, for example pdf or text file documents or some video files. You can use this option to set a representative thumbnail for the media which will be used on browse pages but not on the page for the item or its media.
 
 The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../../sites/site_theme/#settings-options). 
 
@@ -163,9 +162,13 @@ The drawer offers two options: upload a file using your browser, or select from 
 
 To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click select and either choose or upload a new thumbnail asset.
 
-**Owner** You can assign an owner for the media by selecting from the dropdown menu.
+**Owner** 
 
-**Alt Text** You can provide alternate text for all media by typing descriptive text into the input area.
+You can assign an owner for the media by selecting from the dropdown menu.
+
+**Alt Text** 
+
+You can provide alternate text for all media by typing descriptive text into the input area.
 
 ![Edit media open to Advanced tab, showing the Alt Text input box](contentfiles/media_alttext.png)
 
@@ -180,16 +183,16 @@ Batch actions are as follows:
 - Edit selected: edit only the items that are selected on the page
 - Edit all: edit all the items returned by a search (default is all items)
 - Delete selected: delete only the items that are selected on the page
-- Delete all: delete all the items returned by a search (default is all items)
+- Delete all: delete all the items returned by a search (default is all items).
 
 Choose one of these options and then click *Go*.
 
 **Batch editing** media takes you to a new page. The media being edited will display on the right side in a drawer, while the batch edit form gives you the following options:  
 
-- set visibility: radio buttons, select from Public, Not public, or No change
-- set template: a dropdown, select from the installation's resource templates.
-- set class: a dropdown, select from classes of the installed vocabularies.
-- Clear language: a checkbox
+- Set visibility: radio buttons, select from Public, Not public, or No change.
+- Set template: a dropdown, select from the installation's resource templates.
+- Set class: a dropdown, select from classes of the installed vocabularies.
+- Clear language: a checkbox.
 - Set language: a text entry box.
 - Clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected items. Clear additional properties using the *Clear another property* button.
 
@@ -199,11 +202,11 @@ In addition, you can use the bottoms at the bottom of the batch edit form to add
 
 - add text value
 - add resource value
-- add URI value  
+- add URI value.  
 
 Selecting any of these will add a block to the form where you can select a property from the installed vocabularies and enter the value for that property.
 
-For the **delete actions**, a drawer will open on the right side of the screen telling you the number of media which will be deleted. Nothing will be deleted unless you click the red *Confirm Delete* button. This action cannot be undone. To opt out of deleting the media, click the X in the upper right corner of the deletion drawer. To confirm delete, check the "Are you sure" checkbox and then click *Confirm Delete*
+For the **delete actions**, a drawer will open on the right side of the screen telling you the number of media which will be deleted. Nothing will be deleted unless you click the red *Confirm Delete* button. This action cannot be undone. To opt out of deleting the media, click the X in the upper right corner of the deletion drawer. To confirm delete, check the "Are you sure" checkbox and then click *Confirm Delete*.
 
 ![Close up of the warning that 2 medias will be deleted.](contentfiles/media_batchdelwarn.png)
 

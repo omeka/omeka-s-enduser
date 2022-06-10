@@ -126,7 +126,7 @@ The sidebar on the right summarizes the metadata for the project. The project ti
 In the main work area is a table with all of the items in the project, with the following information:
 
 - Item* (first media thumbnail and title)
-- Ellipses to see item metadata - this will open in a drawer on the right
+- Ellipsis to see item metadata - this will open in a drawer on the right
 - Date synced: date most recently synced.
 - Last edited. If the item's media has not been edited, this will be blank
 - Media* count: number of media associated with the item

@@ -180,9 +180,9 @@ To see the items collected with a specific form, go to the Collecting tab in the
 
 ![Collected Items tab with a number of items](modulesfiles/collecting_items.png)
 
-This tab has a table of collected items with their: Title, the Date Submitted, Reviewed By, Status, and ellipses (three dots).
+This tab has a table of collected items with their: Title, the Date Submitted, Reviewed By, Status, and ellipsis (three dots).
 
-To see the collected information, including user name, email, etc, for any item, click on the more info ellipses. Clicking on an item title will take you to the item's edit page (under Items  not the site's context menu). 
+To see the collected information, including user name, email, etc, for any item, click on the more info ellipsis. Clicking on an item title will take you to the item's edit page (under Items  not the site's context menu). 
 
 A collected item can have one of three status messages: Needs Review, Public, and Private. To change the status of an item, select the desired status from the dropdown and then click the *Update statuses* button in the upper right corner.
 

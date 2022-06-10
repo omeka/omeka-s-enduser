@@ -44,7 +44,7 @@ Search forms options are:
 
 *Search full-text:* search all values of all items. 
 
-*Search by value:* search for a term or phrase which you enter 
+*Search by value:* search for a term or phrase which you enter. 
 
 - The first selector allows you to specify a property to search. 
 - The second selector allows you to set the relationship the property has with the value. The options are:

@@ -11,6 +11,10 @@ a:visited {
     color: #984646;
 }
 
+.rst-content code {
+color:revert!important;
+}
+
 .wy-side-nav-search {
     background-color: #404E61;
 }
@@ -36,6 +40,17 @@ a:visited {
 .wy-menu-vertical a:visited {
     color: #b3b3b3;
 }
+
+.wy-nav-content {
+	max-width:1400px;
+}
+
+.wy-nav-content img {
+	border:1px solid #000000;
+	margin:0 auto;
+	display:block;
+}
+
 
 .wy-nav-content div[role="main"] a {
   border-bottom: 1px dotted;
