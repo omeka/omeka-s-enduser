@@ -3,7 +3,7 @@
 Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md) of the Omeka S GitHub repository.
 
 ## System requirements
-In order to install Omeka S, you will need a server running the following: 
+In order to install Omeka S, you will need a server running the following:
 
 - Linux
 - Apache (with [AllowOverride](https://httpd.apache.org/docs/2.4/mod/core.html#allowoverride){target=_blank} set to "All" and [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html){target=_blank} enabled)
@@ -24,7 +24,7 @@ NB: Before you install Omeka S, you need to create a MySQL database and user. Om
 ## Initial setup
 Once you have successfully installed and configured the database.ini file, you can navigate to the admin location of your Omeka S installation. If your installation is `/myomekas/` then your admin dashboard would be located at `/myomekas/admin`.
 
-The first time you point your browser to the newly installed site, you will need to enter information for the first user, along with basic information for your install. There are two sections on this page: *Create the first user* and *Settings*. 
+The first time you point your browser to the newly installed site, you will need to enter information for the first user, along with basic information for your install. There are two sections on this page: *Create the first user* and *Settings*.
 
 In the First User section:
 
@@ -49,7 +49,7 @@ You can changes these at any time in the in the [Settings](admin/settings.md) se
 See [Configuration Options](configuration.md) for information on settings for thumbnail generation, setting the PHP path manually, and more.
 
 !!! note
-	If you have an existing Omeka Classic or S installation, you may wish to look at modules such as the [Omeka Classic Importer](modules/omekaCimporter.md), which helps you move items and collections from Omeka Classic, or the [CSV Import module](modules/csvimport.md), which can import other types of data. 
+	If you have an existing Omeka Classic or S installation, you may wish to look at modules such as the [Omeka Classic Importer](modules/omekaCimporter.md), which helps you move items and collections from Omeka Classic, or the [CSV Import module](modules/csvimport.md), which can import other types of data.
 
 ## Updating
 1. Download the latest release from the release page.
@@ -57,8 +57,8 @@ See [Configuration Options](configuration.md) for information on settings for th
 1. Make a copy of your `/modules` and `/themes` directories.
 1. Make a copy of your `/files` directory.
 1. Remove all Omeka S files, and replace them with the files from the updated zip file.
-1. Replace your original `/config/local.config.php` and `/config/database.ini` file, and the `/modules`, `/themes`, and `/files` directories that you copied. 
-    - For significant version updates, you may also have to install an updated version of your modules and themes. The release notes for the version will indicate whether or not those updates will be likely. Additionally, once you complete your migrations using your browser, the modules and themes that require new versions will be clearly marked on their respective pages. 
+1. Replace your original `/config/local.config.php` and `/config/database.ini` file, and the `/modules`, `/themes`, and `/files` directories that you copied.
+    - For significant version updates, you may also have to install an updated version of your modules and themes. The release notes for the version will indicate whether or not those updates will be likely. Additionally, once you complete your migrations using your browser, the modules and themes that require new versions will be clearly marked on their respective pages.
 1. In your web browser, go to your site's admin page (`/myomekas/admin`) and run any migrations that are needed.
 
 ## Install on Windows or Mac OS (basic development purpose only)
@@ -89,3 +89,5 @@ Edit the `Omeka\File\Thumbnailer` value to the following, based on what is avail
 - Replace the default thumbnailer with `Omeka\File\Thumbnailer\Gd`.
 - Replace the default thumbnailer with `Omeka\File\Thumbnailer\Imagick`, and enable Imagick in the file `php.ini` of your server via the server admin interface or directly in the file.
 - Keep the default thumbnailer `Omeka\File\Thumbnailer\ImageMagick`, but install the command line tool `imagemagick` and change the `imagemagick_dir` value to its directory. To install imagemagick, see the documentation of your server.
+
+[GD](https://secure.php.net/manual/en/intro.image.php){target=_blank} is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). [Imagick and ImageMagick](https://www.imagemagick.org){target=_blank} are the same library and can create thumbnails for more than 200 formats. The difference is that the first is integrated in PHP and generally older than the command-line version.

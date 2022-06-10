@@ -19,19 +19,19 @@ In this section are two fields:
 **Terms of service** is a multi-line field where you can enter terms of services for material collected through this site. This text is linked from the form just above the submit button:
 
 ![from the collecting form, the words "I accept the Terms of Service" over a button that says submit. The phrase Terms of Service are a link.](modulesfiles/collecting-ToSlink.png)
- 
+
 Clicking on the phrase "Terms of Service" will open a new window so that people filling out the form do not lose the information they have entered.
 
 **Terms of service URL** is an input for a link to an existing external terms of service page.
 
-**Submission email address** allows you to set a custom address from which submission emails will be sent. If left blank, these emails will be sent from the administrator email address in the [Global Settings](../admin/settings.md) for the Omeka S installation. 
+**Submission email address** allows you to set a custom address from which submission emails will be sent. If left blank, these emails will be sent from the administrator email address in the [Global Settings](../admin/settings.md) for the Omeka S installation.
 
 **Notification email address** allows you to set a custom address to which notifications of new submissions will be sent. If left blank, no notification email will be sent.
 
 ## Managing collecting forms
 
 If Collecting is active, then a tab for Collecting will appear in the context menu for every site.
- 
+
 ![Red arrow points to the Collecting tab of the site National Parks](modulesfiles/collecting_nav.png)
 
 Clicking on this will take you to a list of your collecting forms for that site. If you have just installed the module, the Collecting Forms page will display the message "This site has no collecting forms." To add a new form, click the *Add new form* in the upper right hand corner of the window.
@@ -44,12 +44,12 @@ The Add Collecting Form page has two sections: the first has a set of fields and
 ![Add Collecting Form page](modulesfiles/collecting_addform.png)
 
 #### Fields and settings
-- *Label:* name the collecting form. The label will appear as a header above the form on the public side, so the label should be descriptive and helpful to both you and site visitors. 
+- *Label:* name the collecting form. The label will appear as a header above the form on the public side, so the label should be descriptive and helpful to both you and site visitors.
 - *Item Set:* select the item set to which you want to add collected items.
 - *Anonymity Type:* a dropdown with three options:
      - "User sets own anonymity": users can decide whether they contribute anonymously and whether their items can be published).
      - "User Public and User Name inputs are publicly visible": both the user's name and their items will be made public.
-     - "User Public and User Name inputs are private": both inputs remain public. 
+     - "User Public and User Name inputs are private": both inputs remain public.
 - *Success Text*: the message that displays on a new page if the item is successfully collected.
 - *Email text*: if you collect an email address in the form, it will receive a confirmation message about the submission of their item.
 
@@ -58,7 +58,7 @@ Prompts are listed in a table which gives their *Type* and the display *Text* on
 
 To add a new prompt, click the *Add prompt* button just below the Prompts header. This will open a side drawer with a dropdown to select Prompt type.
 
-On selection, the options for that type will load in the sidebar for you to edit, with a Save Changes button at the bottom of the options. 
+On selection, the options for that type will load in the sidebar for you to edit, with a Save Changes button at the bottom of the options.
 
 ![Add prompt dropdown](modulesfiles/collecting_prompts.png)
 
@@ -83,7 +83,7 @@ The Collecting module has Prompt Types with options as follows:
 
 **Item Media** allows visitors to add media to their submission.
 
-Media Type: 
+Media Type:
 
 - A dropdown for Media type, with the following options:
 	- Upload one, which allows users to upload one file
@@ -142,13 +142,13 @@ Once you have at least one Collecting form, they will appear on the Collecting F
 
 The form page has two tabs: Form Information and Collected Items.
 
-Form tabs show you the existing data for label, anonymity type, and item set, along with a table of all of the prompts, in order, with their type, text, and whether they prompt is required. 
+Form tabs show you the existing data for label, anonymity type, and item set, along with a table of all of the prompts, in order, with their type, text, and whether they prompt is required.
 
 ![Form info page for "share a quote" form](modulesfiles/collecting_forminfo.png)
 
 To edit the form, click the *Edit form* button in the upper right hand corner.
 
-The options are in the edit form page are the same as when adding a form. 
+The options are in the edit form page are the same as when adding a form.
 
 To edit a prompt, click the edit button (pencil) for the prompt. This will open the sidebar drawer for that prompt.
 
@@ -171,7 +171,7 @@ To add a collecting form to a page:
 
 ## Managing collected items
 
-Items added via a collecting form will appear in the Items section of the Admin Dashboard, but you will likely find it easier to manage them through the Collecting tab of the site through which they were collected. 
+Items added via a collecting form will appear in the Items section of the Admin Dashboard, but you will likely find it easier to manage them through the Collecting tab of the site through which they were collected.
 
 To see the items collected with a specific form, go to the Collecting tab in the context menu for the site and click on the form label. Then click the *Collected Items* tab.
 
@@ -179,9 +179,8 @@ To see the items collected with a specific form, go to the Collecting tab in the
 
 This tab has a table of collected items listed by Title, the Date Submitted, Reviewed By, Status, and ellipsis (three dots).
 
-To see the collected information, including user name, email, etc., for any item, click on the more info ellipsis. Clicking on an item title will take you to the item's edit page (under Items, not the site's context menu). 
+To see the collected information, including user name, email, etc., for any item, click on the more info ellipsis. Clicking on an item title will take you to the item's edit page (under Items, not the site's context menu).
 
 A collected item can have one of three status messages: Needs Review, Public, and Private. To change the status of an item, select the desired status from the dropdown and then click the *Update statuses* button in the upper right corner.
 
-When you update the status of an item from "Needs Review" to either "Public" or "Private", your name will appear in the row for that item as the user the item has been *Reviewed by*. If you have multiple people working on a site, this can help you keep track of who has approved the collected items. 
-
+When you update the status of an item from "Needs Review" to either "Public" or "Private", your name will appear in the row for that item as the user the item has been *Reviewed by*. If you have multiple people working on a site, this can help you keep track of who has approved the collected items.
