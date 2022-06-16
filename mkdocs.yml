@@ -56,7 +56,7 @@ nav:
         - modules/metadatabrowse.md
         - modules/numericdatatypes.md
         - modules/omeka2importer.md
-        - modules/osii.md
+        - modules/ositemimporter.md
         - modules/redactvalues.md
         - Scripto:
             - modules/scripto/index.md
