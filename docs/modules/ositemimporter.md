@@ -54,6 +54,8 @@ Even though this is an error, this URL is the root endpoint.
 
  **Submit** your configuration choices by clicking on the button in the upper righthand corner of the interface. Once that import is configured, it will be saved for future editing or rerunning. 
 
+![Add Import configuration form with data filled in for root endpoint, query, import label, item set and remote site URL](../modules/modulesfiles/osii_ConfigureImportFormWithData.png "Add Import configuration form with data filled in for root endpoint, query, import label, item set and remote site URL")
+
 ## Manage Import
 
 Once an Import is configured, the user is taken to an interface with three areas:
@@ -63,11 +65,17 @@ Once an Import is configured, the user is taken to an interface with three areas
 
 Upon the initial configuration of an import, the user will find a message in the main area of the interface that says "Prepare import is not available now." 
 
+![Import is successfully added result screen with Import Actions and Import Metadata sections in the right sidebar](../modules/modulefiles/osii_ImportSuccessfullyAdded.png "Import is successfully added result screen with Import Actions and Import Metadata sections in the right sidebar")
+
 ### Taking the Snapshot
 
 Proceed to the Import actions section of the sidebar.  The "Import actions" section contains most of the actions you'll need to successfully run and troubleshoot an import. Click the **Take a snapshot** link, and the subsequent confirmation button to take a snapshot of the current resources in the remote installation. This will gather the data needed to import the resources and reconcile the local installation with the remote one. 
 
+![Import actions section of right sidebar with Take Snapshot link highlighted with a red rectangle](../modules/modulesfiles/osii_TakeSnaphot.png "Import actions section of right sidebar with Take Snapshot link highlighted with a red rectangle")
+
 The Status indicator on the snapshot will change from [n/a] to "In progress." The import may take some time depending on the scope of the universe to be examined. You can click on the **Refresh Status** link to check on the progress. If the Status indicator changes to "Error," you can click **View job** to inspect the snapshot processing.
+
+![Import actions section with snapshot Status as In Progress](../modules/modulesfiles/osii_SnapshotInProgress.png "Import actions section with snapshot Status as In Progress")
 
 You have the option to **Stop snapshot** if you wish. The Status for the snapshot will change to "Stopping." Click **Refresh Status** until the Status has changed to "Stopped."
 
@@ -79,6 +87,8 @@ Located in the main panel of the interface, the Mapping area provides users with
 
 - *Resources tab*: This view offers an overview of the resources within the import universe on both the remote installation and the local installation.
 
+![Manage import overview table with tabs for Resources, Data Types, Templates, Media Ingestors, Properties and Classes](../modules/modulesfiles/osii_ManageImportOverview.png "Manage import overview table with tabs for Resources, Data Types, Media Ingestors, Properties and Classes")
+
 - *Data types tab*: This view offers a view of the remote data types and their value count. The user can select from a dropdown menu of locally available data types (e.g.literal, resource, URI, numeric:timestamp) to map the local installation to the remote installation. If you find the there are data types available remotely that are not available locally, you will need to add them to your installation before proceeding to avoid data loss. If a remote data type is not mapped to a local one, the values will not be imported.
 
 - *Templates tab*: This view shows the remote resource templates and their count. The user can select from a dropdown menu of locally available resource templates to to map the local installation to the remote installation.
@@ -86,6 +96,8 @@ Located in the main panel of the interface, the Mapping area provides users with
 - *Media ingesters tab*: This view shows a list of the remote media ingesters and whether they are available on the local installation. Media will be imported only if their ingester is available.
 
 - *Properties tab*: This view includes a list of the remote properties and whether they are on the local installation. Values will be imported only if their respective properties are on the local installation. If you find the there are properties available remotely that are not available locally, you will need to add their vocabularies to your installation before proceeding to avoid data loss.
+
+![Manage import table with property inventory table with two red rectangular highlight boxes showing properties that are present and not present in the local installation](../modules/modulesfiles/osii_PropertyInventory.png "Manage import table with property inventory table with two red rectangular highlight boxes showing properties that are present and not present in the local installation")
 
 - *Classes tab*: This view shows a list of the remote classes and whether they are on the local installation. Items will be assigned these classes only if they're on the local installation. If you find the there are classes available remotely that are not available locally, you will need to add them to your installation before proceeding to avoid data loss.
 
@@ -96,6 +108,8 @@ Then, you should return to the Import actions area to complete the import of the
 ### Importing the Snapshot
 
 Under the Snapshot information in the Import actions panel, you will find the Import information. Initially the Status for the import should report [n/a]. Click the **Import Snapshot** link to begin the import. Just as with the snapshotting process, the import status will change to "In progress," and may take some time to complet. Click the **Refresh Status** link to check on progress. Similarly, you may stop an import that is in progress by clicking **Stop import**. Should the Status change to "Error," then you can click on the **View job** link to review the issue and any log message.
+
+![Import action secton of the right sidebar with the Import Snapshot link highlighted by a red rectangle](../modules/modulesfiles/osii_ImportSnapshot.png "Import action secton of the right sidebar with the Import Snapshot link highlighted by a red rectangle")
 
 Once the import Status reaches "Complete," you will be able to click through to **View items**, **View media**, or **View item sets** from the import. Additionally, the completed import will receive a timestamp indicating the point of import.
 
