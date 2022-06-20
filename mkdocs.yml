@@ -58,7 +58,7 @@ nav:
         - modules/mapping.md
         - modules/metadatabrowse.md
         - modules/numericdatatypes.md
-        - modules/omeka2importer.md
+        - modules/omekaCimporter.md
         - modules/redactvalues.md
         - Scripto:
             - modules/scripto/index.md

@@ -8,7 +8,7 @@ You can order the rows of the table by ID, Class, Status, or Owner (descending o
 
 ![Table of jobs including all status messages](adminfiles/jobstable.png)
 
-To see the details of a job, click on its id number. 
+To see the details of a job, click on its ID number. 
 
 On a job’s details page, you will see the following information: 
 

@@ -1,12 +1,12 @@
 # Set up Scripto
 
-The Scripto module for Omeka S allows you to create projects which allow members of the public to transcribe, translate, or describe media attached to items in your Omeka S installation. 
+The [Scripto module](https://omeka.org/s/modules/Scripto/){target=_blank} allows you to create projects that allow members of the public to transcribe, translate, or describe media attached to items in your Omeka S installation. 
 
 The items and media are organized into an item set and then synced with a project in Scripto. Content made within Scripto can be periodically imported into Omeka S as item and media metadata.
 
-All content creation (transcription, translation, or description) takes place on the [public face](../../modules/scripto/scriptoPublicView/) of your Scripto [project](../../modules/scripto/scriptoproject/)
+All content creation (transcription, translation, or description) takes place on the [public face](scriptoPublicView/) of your Scripto [project](scriptoproject/).
 
-## Concepts and Terminology
+## Concepts and terminology
 
 A Scripto **Project** allows you to organize the materials you want to work with, and set how you intend to work with them. A project can either transcribe, translate, or describe; it cannot do more than one. 
 
@@ -16,7 +16,7 @@ An **Item** in Scripto corresponds to an item in Omeka S. When browsing projects
 
 The **Media** associated with an item are the level at which community members transcribe, translate, or describe. Every piece of media is associated with an item. Media can also be called: entry, folio, image, page, segment, section, or sheet. 
 
-## Installation and Configuration
+## Installation and configuration
 To install Scripto, you must:
 
 - be running Omeka S v2.0.0 or higher;
@@ -46,7 +46,7 @@ The Scripto module uses [item sets](../../content/item-sets) to manage the conte
 
 Each Scripto project needs its own item set with which it can sync. Create the item set using items from your Omeka S installation which you want to be included in the project. You can add items to this item set later if you need to. 
 
-## Scripto Admin Dashboard
+## Scripto admin dashboard
 The Scripto tab which appears under the Modules section of the left-hand navigation on the Omeka S installation admin side takes you to the Scripto Dashboard. 
 
 From the dashboard, you can log in to Scripto using the bar across the top:
@@ -103,7 +103,7 @@ For each user, there will be a table with a row for every edit they have made to
 - Size of the edit;
 - Comment, if any. 
 
-## Public and Admin views
+## Public and admin views
 To toggle between the public and admin views of a project, delete the `/admin` from the url of any Scripto site, or add it in directly after the name of your Omeka S installation. 
 
 The admin side is `youromekaurl.net/admin/scripto` and the public side is `youromekaurl.net/scripto`.

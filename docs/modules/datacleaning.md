@@ -3,19 +3,19 @@ title: Data Cleaning
 ---
 # Data Cleaning
 
-Data Cleaning An Omeka S module for low-level auditing and cleaning of resource metadata. It is designed to be used to prepare resource metadata for use in visualizations.
+The [Data Cleaning module](https://omeka.org/s/modules/DataCleaning){target=_blank} is for low-level auditing and cleaning of resource metadata. It is designed to prepare resource metadata for use in visualizations.
 
-Changes made in Data Cleaning cannot be easily undone, and can be destructive. Due to the powerful nature of the module, it can only be used by Global Administrator users. 
+Changes made by Data Cleaning cannot be easily undone, and can be destructive. Due to the powerful nature of the module, it can only be used by Global Administrators. 
 
 **Before running any audit, make sure you have a recent backup of your data.** 
 
-Once you have [installed](index.md#installing-modules) DataCleaning, it will be added to the modules available on the left-hand navigation of your administrative view.
+Once you have [installed](index.md#installing-modules) Data Cleaning, it will be added to the modules available on the left-hand navigation of your administrative view.
 
 ## Running an audit
-From the main tab for Data Cleaning (found under modules in the left-hand navigation), click the "Prepare new audit" button in the upper right corner of the page. 
+From the tab for Data Cleaning under Modules, click the "Prepare new audit" button in the upper right corner of the page. 
 
-### Prepare Audit
-This will open the Prepare audit form, which allows you to zero in on the data that you want to review and perhaps correct. The form has the following Basic options: 
+### Prepare audit
+This will open the "Prepare audit" form, which allows you to zero in on the data you want to review and perhaps correct. The form has the following Basic options: 
 
 - **Resource type:** select the resource type you want to audit from a dropdown. Options are items, item sets, or media.
 
@@ -36,9 +36,9 @@ Should you want to audit the data contained in one property but store the correc
 
 - **Target data type:** Select the data type that corrections will be stored as. You do not need to select a target if it is the same as the data type above. This dropdown includes standard data types for Omeka S, as well as any additional data types added by other modules, for example Numeric Data Types. 
 
-Once you have entered information in all relevant fields, click the Submit button in the upper right corner. 
+Once you have entered information in all relevant fields, click the "Submit" button in the upper right corner. 
 
-You can exit out at any time by clicking the Cancel button. 
+You can exit out at any time by clicking the "Cancel" button. 
 
 ![The Prepare Audit screen with Items set as the Resource Type; a Resource Query for Item set Events; the Property set to Schema:location; the Audit column set to value_resource_id;  and the Data type set to Resource](../modules/modulesfiles/datacleaning_prepareAudit.png)
 
@@ -67,23 +67,23 @@ The table provides you with a Count of the number of resources per string, the u
 
 Once you have carefully edited the content in your _To_ column, click the Submit button to execute the update of your data. Given the powerful nature of the module, you will be asked to confirm your decisions. The data cleaning process will run in the background, and while the job can be reviewed, it cannot be undone.
 
-## Sample Workflow
+## Sample workflow
 This is a sample workflow for a user who wants to audit the titles of items in a specific item set:
 
-- In the left-hand navigation, go to the Data Cleaning module
-- Click on "Prepare new audit" button (top right)
+- In the left-hand navigation, go to the Data Cleaning module.
+- Click on "Prepare new audit" button (top right).
 - Select criteria (expand arrows for info):
 	- Resource type: "Item"
 	- Resource query: item_set_id[]=1234
 	- Property: "Dublin Core: Title"
 	- Audit column: "value"
-	- Data type: "Text"
-- Ignore the "Advanced" section
-- Click "Submit" (top right)
-- Audit the "From: value" column for potential corrections or removals
-- Make corrections by entering the correct text into the "To: value" column
-- Make removals by checking the "Remove" checkbox
-- Click "Submit" (top right)
-- Click to confirm the submission
-- Refresh the "Past audits" page until the job is marked as "Completed"
+	- Data type: "Text".
+- Ignore the "Advanced" section.
+- Click "Submit" (top right).
+- Audit the "From: value" column for potential corrections or removals.
+- Make corrections by entering the correct text into the "To: value" column.
+- Make removals by checking the "Remove" checkbox.
+- Click "Submit" (top right).
+- Click to confirm the submission.
+- Refresh the "Past audits" page until the job is marked as "Completed".
 - Check the items to see if the values were corrected and removed.

@@ -11,24 +11,26 @@ In order to install Omeka S, you will need a server running the following:
 - PHP, minumum version 7.2, with [PDO](http://php.net/manual/en/intro.pdo.php){target=_blank}, [pdo_mysql](http://php.net/manual/en/ref.pdo-mysql.php){target=_blank}, and [xml](http://php.net/manual/en/intro.xml.php){target=_blank} extensions installed
 - Optional, to create thumbnails: ImageMagick version 6.7.5 or greater, the PHP `imagick` extension, or the PHP `gd` extension.
 
+[GD](https://secure.php.net/manual/en/intro.image.php){target=_blank} is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). [Imagick and ImageMagick](https://www.imagemagick.org){target=_blank} are the same library and can create thumbnails for more than 200 formats. The difference is that the first is integrated in PHP and generally older than the command-line version.
+
 ## Installing from released zip file
 NB: Before you install Omeka S, you need to create a MySQL database and user. Omeka S must have a dedicated database (you cannot use a prefix for a database used by another system or Omeka S or Classic installation). For more information on creating a database and user, please see your hosting's support documentation or talk to your system administratory.
 
-1. Download the latest release from the release page
-1. Open config/database.ini and add your MySQL username, password, database name, and host name. The user and database must be created before this step.
-1. Make sure the files/ directory is writable by Apache.
+1. Download the latest release from the release page.
+1. Open `config/database.ini` and add your MySQL username, password, database name, and host name. The user and database must be created before this step.
+1. Make sure the `files/` directory is writable by Apache.
 1. In your web browser, navigate to the admin page for your Omeka S installation (`/myomekas/admin`), where you can complete installation.
 
 ## Initial setup
 Once you have successfully installed and configured the database.ini file, you can navigate to the admin location of your Omeka S installation. If your installation is `/myomekas/` then your admin dashboard would be located at `/myomekas/admin`.
 
-The first time you to the install site, you will need to enter information for the first user, along with basic information for your install. There are two sections on this page: *Create the first user* and *Settings*. 
+The first time you point your browser to the newly installed site, you will need to enter information for the first user, along with basic information for your install. There are two sections on this page: *Create the first user* and *Settings*. 
 
-In the First User section, enter:
+In the First User section:
 
-- An *email* address, and type again to confirm
+- Enter an *email* address, and type again to confirm
 - Confirm the *password* and type again in the next input to confirm
-- A *display name* for the user.
+- Enter a *display name* for the user.
 
 Note that you can change all of these later in the [User](admin/users.md) management section of your install.
 
@@ -45,6 +47,9 @@ In the Settings section, enter:
 You can changes these at any time in the in the [Settings](admin/settings.md) section of your [Admin Dashboard](admin-dashboard.md).
 
 See [Configuration Options](configuration.md) for information on settings for thumbnail generation, setting the PHP path manually, and more.
+
+!!! note
+	If you have an existing Omeka Classic or S installation, you may wish to look at modules such as the [Omeka Classic Importer](../modules/omekaCimporter.md), which helps you move items and collections from Omeka Classic, or the [CSV Import module](../modules/CSVImport.md), which can import other types of data. 
 
 ## Updating
 1. Download the latest release from the release page.
@@ -70,7 +75,7 @@ First, the PHP path may need to be set if Omeka S cannot automatically detect th
 
 Fill out the `phpcli_path` value with the appropriate path for your operating system. For example, if you are using a MAMP environment, you may find the PHP utilities inside the MAMP installation folder at `MAMP\bin\php\php7`.
 
-Second, you need to configure Omeka S to use the thumbnail-generating utility available in your server. Open the `local.config.php` file and look for the following section:
+Second, you need to configure Omeka S to use the thumbnail-generating utility available on your server. Open the `local.config.php` file and look for the following section:
 ```
     'service_manager' => [
         'aliases' => [
@@ -84,5 +89,3 @@ Edit the `Omeka\File\Thumbnailer` value to the following, based on what is avail
 - Replace the default thumbnailer with `Omeka\File\Thumbnailer\Gd`.
 - Replace the default thumbnailer with `Omeka\File\Thumbnailer\Imagick`, and enable Imagick in the file `php.ini` of your server via the server admin interface or directly in the file.
 - Keep the default thumbnailer `Omeka\File\Thumbnailer\ImageMagick`, but install the command line tool `imagemagick` and change the `imagemagick_dir` value to its directory. To install imagemagick, see the documentation of your server.
-
-[GD](https://secure.php.net/manual/en/intro.image.php){target=_blank} is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). [Imagick and ImageMagick](https://www.imagemagick.org){target=_blank} are the same library and can create thumbnails for more than 200 formats. The difference is that the first is integrated in PHP and generally older than the command-line version.
