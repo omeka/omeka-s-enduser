@@ -41,6 +41,8 @@ To create a new user, select the *Add new user* button in the upper right hand c
 
 ![Add new user form with fields as described](adminfiles/users_addnew.png)
 
+![Add new user form with fields as described](adminfiles/users_addnew.png)
+
 On the Add User page, enter the following:
 
 - *Name* (full name or credit name)

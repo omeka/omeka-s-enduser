@@ -49,7 +49,7 @@ You can changes these at any time in the in the [Settings](admin/settings.md) se
 See [Configuration Options](configuration.md) for information on settings for thumbnail generation, setting the PHP path manually, and more.
 
 !!! note
-	If you have an existing Omeka Classic or S installation, you may wish to look at modules such as the [Omeka Classic Importer](modules/omekaCimporter.md), which helps you move items and collections from Omeka Classic, or the [CSV Import module](modules/csvimport.md), which can import other types of data.
+	If you have an existing Omeka Classic or S installation, you may wish to look at modules such as the [Omeka Classic Importer](../modules/omekaCimporter.md), which helps you move items and collections from Omeka Classic, or the [CSV Import module](../modules/CSVImport.md), which can import other types of data.
 
 ## Updating
 1. Download the latest release from the release page.
@@ -89,5 +89,3 @@ Edit the `Omeka\File\Thumbnailer` value to the following, based on what is avail
 - Replace the default thumbnailer with `Omeka\File\Thumbnailer\Gd`.
 - Replace the default thumbnailer with `Omeka\File\Thumbnailer\Imagick`, and enable Imagick in the file `php.ini` of your server via the server admin interface or directly in the file.
 - Keep the default thumbnailer `Omeka\File\Thumbnailer\ImageMagick`, but install the command line tool `imagemagick` and change the `imagemagick_dir` value to its directory. To install imagemagick, see the documentation of your server.
-
-[GD](https://secure.php.net/manual/en/intro.image.php){target=_blank} is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). [Imagick and ImageMagick](https://www.imagemagick.org){target=_blank} are the same library and can create thumbnails for more than 200 formats. The difference is that the first is integrated in PHP and generally older than the command-line version.
