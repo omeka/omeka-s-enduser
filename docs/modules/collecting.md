@@ -1,16 +1,16 @@
 # Collecting
 
-The Collecting module allows you to gather public contributions through your sites. 
+The [Collecting module](https://omeka.org/s/modules/Collecting/){target=_blank} allows you to gather public contributions through your sites. Users can upload files or submit textual entries along with some identifying metadata, which your site administrators can then moderate and approve for inclusion.
 
 Once activated on the [modules](index.md) tab of the admin dashboard, Collecting is configured on a site-by-site basis.
 
 ### Integrations
 
-Collecting integrates with the [Custom Vocab](../modules/customvocab/) and the [Numeric data types](../modules/numericdatatypes/) modules.
+Collecting integrates with the [Custom Vocab](../modules/customvocab.md) and the [Numeric Data Types](../modules/numericdatatypes.md) modules.
 
 ## Site settings
 
-Collecting adds a section to your [site settings](../sites/site_settings.md) where you can manage terms of service and email for the collecting forms for this site.
+Collecting adds a section to your [site settings](../sites/site_settings.md) where you can manage terms of service and emails for the collecting forms for this site.
 
 ![The Collecting section in site settings with two fields as described below.](modulesfiles/collecting_settingsSite.png)
 
@@ -28,29 +28,30 @@ Clicking on the phrase "Terms of Service" will open a new window so that people 
 
 **Notification email address** allows you to set a custom address to which notifications of new submissions will be sent. If left blank, no notification email will be sent.
 
-## Managing Collecting Forms
+## Managing collecting forms
 
-If Collecting is active, then a tab for Collecting will appear in the context menu for every site. 
+If Collecting is active, then a tab for Collecting will appear in the context menu for every site.
+ 
 ![Red arrow points to the Collecting tab of the site National Parks](modulesfiles/collecting_nav.png)
 
 Clicking on this will take you to a list of your collecting forms for that site. If you have just installed the module, the Collecting Forms page will display the message "This site has no collecting forms." To add a new form, click the *Add new form* in the upper right hand corner of the window.
 
 ![Collecting tab, no forms, red arrow points to the Add New button](modulesfiles/collecting_addnew.png)
 
-### Add New Form
+### Add new form
 The Add Collecting Form page has two sections: the first has a set of fields and options for you to complete; the second is where you add and edit the prompts which will make up the form that site visitors see and fill out.
 
 ![Add Collecting Form page](modulesfiles/collecting_addform.png)
 
-#### Fields and Settings
+#### Fields and settings
 - *Label:* name the collecting form. The label will appear as a header above the form on the public side, so the label should be descriptive and helpful to both you and site visitors. 
 - *Item Set:* select the item set to which you want to add collected items.
 - *Anonymity Type:* a dropdown with three options:
      - "User sets own anonymity": users can decide whether they contribute anonymously and whether their items can be published).
-     - "User Public and User Name inputs are publicly visible": both the user's name and their items will be made public
+     - "User Public and User Name inputs are publicly visible": both the user's name and their items will be made public.
      - "User Public and User Name inputs are private": both inputs remain public. 
 - *Success Text*: the message that displays on a new page if the item is successfully collected.
-- *Email text*: the message in the email that will be sent to site visitors who submit an item, if you collect an email address from them.
+- *Email text*: if you collect an email address in the form, it will receive a confirmation message about the submission of their item.
 
 #### Prompts
 Prompts are listed in a table which gives their *Type* and the display *Text* on the public form. These prompts make up the form which site visitors will see (in addition to the label, discussed above).
@@ -65,46 +66,44 @@ The Collecting module has Prompt Types with options as follows:
 
 **Item Property**: select a property from the installation's vocabularies for the visitor to use to describe the item.
 
-- Property: select a property from the vocabularies (example: Description)
+- Property: select a property from the vocabularies (example: Description).
 - Prompt Text: If you want the prompt to be something other than the property label.
 - Input type: length and kind of input box. Choose from:
-     - Text box (one line)
-     - Text box (multiple line)
-     - Select menu (dropdown)
-	     - If you choose "Select menu," you will need to enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
-	 - Item resource (will appear as dropdown)
-		 - This will offer the user the choice of existing items to add as a property value. You can paste anything after the `admin/` in the url of an advanced search to load specific items.
-	 - [Custom Vocab](../modules/customvocab/) (requires that plugin to be installed). If selected, an additional dropdown will load. Use this to select from your existing Custom Vocabs. This will load as a dropdown for the users on the public side of the form.
-	 - If you have [Numeric Data Types](../modules/numericdatatypes/) installed, you will also have the options:
+	- Text box (one line)
+	- Text box (multiple line)
+	- Select menu (dropdown): enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
+	- Item resource (dropdown): will offer the user the choice of existing items to add as a property value. You can paste anything after the `admin/` in the url of an advanced search to load specific items.
+	- If you have [Custom Vocab](../modules/customvocab.md) installed, an additional dropdown can select from your existing Custom Vocabs. This will load as a dropdown for the users on the public side of the form.
+	- If you have [Numeric Data Types](../modules/numericdatatypes.md) installed, you will also have the options:
 		 - Numeric timestamp
 		 - Numeric interval
 		 - Numeric duration
-		 - Numeric integer
+		 - Numeric integer.
  - Check the Required? box if the prompt is required.
 
-**Item Media** allows visitors to add media to their item.
+**Item Media** allows visitors to add media to their submission.
+
 Media Type: 
 
 - A dropdown for Media type, with the following options:
-	- Upload one, which allows users to upload one file;
-	- Upload multiple, which allows users to upload multiple files at once using the browser's native file picker (with shift or control keys); 
-	- Map (requires Mapping module); 
-	- URL;
+	- Upload one, which allows users to upload one file
+	- Upload multiple, which allows users to upload multiple files at once using the browser's native file picker (with shift or control keys)
+	- Map (requires Mapping module)
+	- URL
 	- HTML.
 - Prompt Text: If you want the prompt to be something other than the property label.
 - Check the Required? box if the prompt is required.
 
-**Item Supplementary** additional information for the item, not linked to any particularly vocabulary or property.
+**Item Supplementary** adds additional information for the item, not linked to any particularly vocabulary or property.
 
 - Prompt Text: If you want the prompt to be something other than the property label.
 - Input type: length and kind of input box. Choose from:
      - Text box (one line)
      - Text box (multiple line)
-     - Select menu (dropdown)
-	     - If you choose "Select menu," you will need to enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
+     - Select menu (dropdown): enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
  - Check the Required? box if the prompt is required.
 
-**User Name** which will be used to assign the item owner. If the person using the form is a logged-in user of the Omeka S installation, this will autopopulate.
+**User Name** to assign as the owner of the item. If the person using the form is a logged-in user of the Omeka S installation, this will autopopulate.
 
 - Prompt Text: If you want the prompt to be something other than the property label.
 - Check the Required? box if the prompt is required.
@@ -120,8 +119,7 @@ Media Type:
 - Input type: length and kind of input box. Choose from:
      - Text box (one line)
      - Text box (multiple line)
-     - Select menu (dropdown)
-	     - If you choose "Select menu," you will need to enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
+     - Select menu (dropdown): enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
  - Check the Required? box if the prompt is required.
 
 **User Public** collect additional information from the user which can be made public
@@ -130,8 +128,7 @@ Media Type:
 - Input type: length and kind of input box. Choose from:
      - Text box (one line)
      - Text box (multiple line)
-     - Select menu (dropdown)
-	     - If you choose "Select menu," you will need to enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
+     - Select menu (dropdown): enter the options for the menu in the *Select Menu Options* field that will appear, with one option per line.
  - Check the Required? box if the prompt is required.
 
 **HTML** insert a block of HTML text into the form, for additional guidance, information, etc. The Prompt Text field for this prompt has WYSIWG formatting options.
@@ -143,7 +140,7 @@ You can rearrange the order of prompts by dragging and dropping them using the t
 ### Manage an existing form
 Once you have at least one Collecting form, they will appear on the Collecting Forms page. Click the edit button (pencil) to edit the form. Click on the form label to see more information about the form and view collected items.
 
-The form page has two tabs: Form Information and Collected Items
+The form page has two tabs: Form Information and Collected Items.
 
 Form tabs show you the existing data for label, anonymity type, and item set, along with a table of all of the prompts, in order, with their type, text, and whether they prompt is required. 
 
@@ -162,27 +159,27 @@ Rearrange the order of prompts by dragging and dropping them using the three-lin
 ![Prompts with a red arrow pointing to the icon for dragging and dropping](modulesfiles/collecting_dragthis.png)
 
 
-## Add a Collecting Form to Site Pages
+## Add a collecting form to site pages
 
 To add a collecting form to a page:
 
-1. Go to the page on which you want the form to appear (or add a new page for the form)
-2. From the *Add New Block* sidebar select the *Collecting* block
+1. Go to the page on which you want the form to appear (or add a new page for the form).
+2. From the *Add New Block* sidebar select the *Collecting* block.
 3. On the Collecting block, click the box for the form you want to include. You can add more than one form to the page by checking more than one box.
 
 ![Collecting block with one form, its box checked](modulesfiles/collecting_pageblock.png)
 
-## Managing Collected Items
+## Managing collected items
 
-Items added via a collecting form will appear in the Items section of the Admin Dashboard, but you will likely find it easier to manage them through the Collecting tab of the site to which through which they were collected. 
+Items added via a collecting form will appear in the Items section of the Admin Dashboard, but you will likely find it easier to manage them through the Collecting tab of the site through which they were collected. 
 
 To see the items collected with a specific form, go to the Collecting tab in the context menu for the site and click on the form label. Then click the *Collected Items* tab.
 
 ![Collected Items tab with a number of items](modulesfiles/collecting_items.png)
 
-This tab has a table of collected items with their: Title, the Date Submitted, Reviewed By, Status, and ellipsis (three dots).
+This tab has a table of collected items listed by Title, the Date Submitted, Reviewed By, Status, and ellipsis (three dots).
 
-To see the collected information, including user name, email, etc, for any item, click on the more info ellipsis. Clicking on an item title will take you to the item's edit page (under Items  not the site's context menu). 
+To see the collected information, including user name, email, etc., for any item, click on the more info ellipsis. Clicking on an item title will take you to the item's edit page (under Items, not the site's context menu). 
 
 A collected item can have one of three status messages: Needs Review, Public, and Private. To change the status of an item, select the desired status from the dropdown and then click the *Update statuses* button in the upper right corner.
 
