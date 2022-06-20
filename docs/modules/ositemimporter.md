@@ -1,79 +1,87 @@
 # Omeka S Item Importer
 
-This module makes it possible to import items from one Omeka S installation into another Omeka S installation. Transfering data from one installation to another creates a situation where there is significant potential for data loss, but careful planning and preparation by the user of the recieving installation can prevent that from happening.
+The [Omeka S Item Importer module](https://omeka.org/s/modules/Osii){target=_blank} makes it possible to import items from one Omeka S installation into another Omeka S installation. Transfering data from one installation to another creates a situation where there is significant potential for data loss, but careful planning and preparation by the user of the receiving installation can prevent that from happening.
 
 ## Prepare for your import
 
-To minimize data loss, the local installation must be prepared carefully  to accept the data from the providing installation. As much as possible the administrator of the recieiving installation should work to recreate the remote installation's data model. To do so, the administrator should:
+To minimize data loss, the local installation must be prepared carefully to accept the data from the providing installation. As much as possible the administrator of the recieiving installation should work to recreate the remote installation's data model. To do so, the administrator should:
 
-- Import any linked data [vocabularies](..content/vocabularies.md) that are used by the remote installation's items.
-- [Install and configure modules](index.md) that control the data types used as values in the remote installation's items, such as 
-     - [Custom Vocab](..modules/customvocab.md) In addition to installing this module, the administrator will have to create custom vocab value lists that match those used in the remote installation.
-     - [Numeric Data Types](..modules/numericdatatypes.md)
-     - [Value Suggest](..modules/valuesuggest.md)
-- [Import any Resource Templates](..content/resource-template.md#import-resource-template) used by the remote installation
+- Import any linked data [vocabularies](../content/vocabularies.md) that are used by the remote installation's items.
+- [Install and configure modules](../modules/index.md) that control the data types used as values in the remote installation's items, such as: 
+     - [Custom Vocab](../modules/customvocab.md): In addition to installing this module, the administrator will have to create custom vocab value lists that match those used in the remote installation.
+     - [Numeric Data Types](../modules/numericdatatypes.md)
+     - [Value Suggest](../modules/valuesuggest.md)
+- [Import any Resource Templates](../content/resource-template.md#import-a-resource-template) used by the remote installation.
 
 Once all of that infrastructure is in place, the local installation is ready to begin importing items.
 
-## Add an Import
+## Add an import
 
-Start the import process by clicking the Add an Import button on the module's landing page in the adminstrative interface of the local installation. You will then be presented with two types of configuration settings: Remote and local.
+Start the import process by clicking the "Add an Import" button on the module's landing page in the adminstrative interface. You will then be presented with two types of configuration settings: remote and local.
 
-### Remote Configuration
+### Remote configuration
 
-*Root endpoint (required)*: Input the endpoint for the API of the installation from which you wish to import. To find the "Root endpoint" you'll need to navigate to the installation and replace the part of the URL that includes and comes after the "/s/" with "/api".
+**Root endpoint (required)**: Input the endpoint for the API of the installation from which you wish to import. To find the "Root endpoint" you'll need to navigate to the installation and replace the part of the URL that includes and comes after the "/s/" with "/api".
 
-For example, change this URL: http://your-domain-name.edu/omeka-s/s/sitename/page/home to http://your-domain-name.org/omeka-s/api/
+For example, change this URL: 
+
+`http://your-domain-name.edu/omeka-s/s/sitename/page/home`
+
+to 
+
+`http://your-domain-name.edu/omeka-s/api/`
 
 If you click on an API URL, you should see something like this:
 
 ```
 {"errors":{"error":"The API request resource must be a string. Type \u0022NULL\u0022 given."}}
 ```
+
 Even though this is an error, this URL is the root endpoint. 
 
-*Query*: You have the option to include a "Query" to filter the items to be imported. If you don't provide a query, the module will import all items from the remote installation. One way to generate a query is by performing an advanced search in a site. Once the results have loaded, you can select the portion of the URL to the right of the "?" to get the query string. 
+**Query**: You have the option to include a "Query" to filter the items to be imported. If you don't provide a query, the module will import all items from the remote installation. One way to generate a query is by performing an advanced search in a site. Once the results have loaded, you can select the portion of the URL to the right of the "?" to get the query string. 
 
-*Key Identity* and *Key Credential*: If you want to import resources that are marked as private, you will need to provide a "Key identity" and "Key credential" generated by the base installation. The only way to obtain these strings is by having an account on the remote installation or by asking someone who has an account to provide them.
+**Key Identity** and **Key Credential**: If you want to import resources that are marked as private, you will need to provide a "Key identity" and "Key credential" generated by the base installation. The only way to obtain these strings is by having an account on the remote installation or by asking someone who has an account to provide them.
 
-### Local Configuration
+### Local configuration
 
-*Import Label (required)*: Input and identifying label for the import.
+**Import Label (required)**: Input and identifying label for the import.
 
-*Item set*: If you wish, select one or more item sets to which the imported items will be assigned.
+**Item set**: If you wish, select one or more item sets to which the imported items will be assigned.
 
-*Exclude Media*: Check this if you want the import to exclude media. If not checked, media will be imported as normal. If you decide to change this configuration at a later date, you will need to take a new snapshot and process a new import for those changes to take place. There is no capacity for continuous automatic syncing of data.
+**Exclude Media**: Check this if you want the import to exclude media. If not checked, media will be imported as normal. If you decide to change this configuration at a later date, you will need to take a new snapshot and process a new import for those changes to take place. There is no capacity for continuous automatic syncing of data.
 
-*Exclude item sets*: Check this if you want the import to exclude item sets that exist within the parameters. If not checked, item sets will be imported as normal. 
+**Exclude item sets**: Check this if you want the import to exclude item sets that exist within the parameters. If not checked, item sets will be imported as normal. 
 
-*Keep removed resources*: Check this if, during import, you want to keep local resources from a previous import that were removed from the current remote snapshot. If checked, removed resources will remain locally but will no longer be managed by this import. If not checked, removed resources will be deleted locally as normal.
+**Keep removed resources**: Check this if, during import, you want to keep local resources from a previous import that were removed from the current remote snapshot. If checked, removed resources will remain locally but will no longer be managed by this import. If not checked, removed resources will be deleted locally as normal.
 
-*Add remote site URL*: If you would like to indicate the general source of the imported item, enter the URL to the site from which the imported resources are derived. If entered, this will be added to every imported resource, saved as a value using property osii:source_site. 
+**Add remote site URL**: If you would like to indicate the general source of the imported item, enter the URL to the site from which the imported resources are derived. If entered, this will be added to every imported resource, saved as a value using property osii:source_site. 
 
-*Add remote resource URL*: Check this if you want to add the remote item's canonical URL to every imported item, saved as a value using property osii:source_resource. This will provide a direct link to the original item.
+**Add remote resource URL**: Check this if you want to add the remote item's canonical URL to every imported item, saved as a value using property osii:source_resource. This will provide a direct link to the original item.
 
- **Submit** your configuration choices by clicking on the button in the upper righthand corner of the interface. Once that import is configured, it will be saved for future editing or rerunning. 
+Save your configuration choices by clicking on the "Submit" button in the upper righthand corner of the interface. Once that import is configured, it will be saved for future editing or re-running. 
 
 ![Add Import configuration form with data filled in for root endpoint, query, import label, item set and remote site URL](../modules/modulesfiles/osii_ConfigureImportFormWithData.png "Add Import configuration form with data filled in for root endpoint, query, import label, item set and remote site URL")
 
-## Manage Import
+## Manage import
 
-Once an Import is configured, the user is taken to an interface with three areas:
-- Mapping area: provides options to map the remote installation data to the local installation
-- Import actions: provides the action options for the import process and offers access to the results of those actions
-- Import metadata: shows the configuration choices for the import
+Once an import is configured, the user is taken to an interface with three areas:
+
+- **Mapping area**: provides options to map the remote installation data to the local installation
+- **Import actions**: provides the action options for the import process and offers access to the results of those actions
+- **Import metadata**: shows the configuration choices for the import
 
 Upon the initial configuration of an import, the user will find a message in the main area of the interface that says "Prepare import is not available now." 
 
-![Import is successfully added result screen with Import Actions and Import Metadata sections in the right sidebar](../modules/modulefiles/osii_ImportSuccessfullyAdded.png "Import is successfully added result screen with Import Actions and Import Metadata sections in the right sidebar")
+![Import is successfully added result screen with Import Actions and Import Metadata sections in the right sidebar](../modules/modulesfiles/osii_ImportSuccessfullyAdded.png "Import is successfully added result screen with Import Actions and Import Metadata sections in the right sidebar")
 
-### Taking the Snapshot
+### Taking the snapshot
 
-Proceed to the Import actions section of the sidebar.  The "Import actions" section contains most of the actions you'll need to successfully run and troubleshoot an import. Click the **Take a snapshot** link, and the subsequent confirmation button to take a snapshot of the current resources in the remote installation. This will gather the data needed to import the resources and reconcile the local installation with the remote one. 
+Proceed to the Import actions section of the sidebar. The "Import actions" section contains most of the actions you'll need to successfully run and troubleshoot an import. Click the **Take snapshot** link, and the subsequent confirmation button to take a snapshot of the current resources in the remote installation. This will gather the data needed to import the resources and reconcile the local installation with the remote one. 
 
-![Import actions section of right sidebar with Take Snapshot link highlighted with a red rectangle](../modules/modulesfiles/osii_TakeSnaphot.png "Import actions section of right sidebar with Take Snapshot link highlighted with a red rectangle")
+![Import actions section of right sidebar with Take Snapshot link highlighted with a red rectangle](../modules/modulesfiles/osii_TakeS.png "Import actions section of right sidebar with Take Snapshot link highlighted with a red rectangle")
 
-The Status indicator on the snapshot will change from [n/a] to "In progress." The import may take some time depending on the scope of the universe to be examined. You can click on the **Refresh Status** link to check on the progress. If the Status indicator changes to "Error," you can click **View job** to inspect the snapshot processing.
+The Status indicator on the snapshot will change from [n/a] to "In progress." The import may take some time depending on the scope of the universe to be examined. You can click on the **Refresh Status** link to check on the progress. If the Status changes to "Error," you can click **View job** to inspect the snapshot processing.
 
 ![Import actions section with snapshot Status as In Progress](../modules/modulesfiles/osii_SnapshotInProgress.png "Import actions section with snapshot Status as In Progress")
 
@@ -81,39 +89,39 @@ You have the option to **Stop snapshot** if you wish. The Status for the snapsho
 
 Once you have successfully taken a snapshot, the Status will change to "Completed," and the main panel of the interface will contain quite a bit of metadata about the snapshot. Use this to reconcile differences between the remote and local installations, to the extent desired.
 
-### Preparing the Import
+### Preparing the import
 
 Located in the main panel of the interface, the Mapping area provides users with an interface to specify the elements of the data for import. The tabbed interface provides a comparison between the information about the remote installation and the local data configuration.
 
-- *Resources tab*: This view offers an overview of the resources within the import universe on both the remote installation and the local installation.
+- **Resources tab**: This view offers an overview of the resources within the import universe on both the remote installation and the local installation.
 
 ![Manage import overview table with tabs for Resources, Data Types, Templates, Media Ingestors, Properties and Classes](../modules/modulesfiles/osii_ManageImportOverview.png "Manage import overview table with tabs for Resources, Data Types, Media Ingestors, Properties and Classes")
 
-- *Data types tab*: This view offers a view of the remote data types and their value count. The user can select from a dropdown menu of locally available data types (e.g.literal, resource, URI, numeric:timestamp) to map the local installation to the remote installation. If you find the there are data types available remotely that are not available locally, you will need to add them to your installation before proceeding to avoid data loss. If a remote data type is not mapped to a local one, the values will not be imported.
+- **Data types tab**: This view offers a view of the remote data types and their value count. The user can select from a dropdown menu of locally available data types (e.g.literal, resource, URI, numeric:timestamp) to map the local installation to the remote installation. If you find the there are data types available remotely that are not available locally, you will need to add them to your installation before proceeding to avoid data loss. If a remote data type is not mapped to a local one, the values will not be imported.
 
-- *Templates tab*: This view shows the remote resource templates and their count. The user can select from a dropdown menu of locally available resource templates to to map the local installation to the remote installation.
+- **Templates tab**: This view shows the remote resource templates and their count. The user can select from a dropdown menu of locally available resource templates to to map the local installation to the remote installation.
 
-- *Media ingesters tab*: This view shows a list of the remote media ingesters and whether they are available on the local installation. Media will be imported only if their ingester is available.
+- **Media ingesters tab**: This view shows a list of the remote media ingesters and whether they are available on the local installation. Media will be imported only if their ingester is available.
 
-- *Properties tab*: This view includes a list of the remote properties and whether they are on the local installation. Values will be imported only if their respective properties are on the local installation. If you find the there are properties available remotely that are not available locally, you will need to add their vocabularies to your installation before proceeding to avoid data loss.
+- **Properties tab**: This view includes a list of the remote properties and whether they are on the local installation. Values will be imported only if their respective properties are on the local installation. If you find the there are properties available remotely that are not available locally, you will need to add their vocabularies to your installation before proceeding to avoid data loss.
 
 ![Manage import table with property inventory table with two red rectangular highlight boxes showing properties that are present and not present in the local installation](../modules/modulesfiles/osii_PropertyInventory.png "Manage import table with property inventory table with two red rectangular highlight boxes showing properties that are present and not present in the local installation")
 
-- *Classes tab*: This view shows a list of the remote classes and whether they are on the local installation. Items will be assigned these classes only if they're on the local installation. If you find the there are classes available remotely that are not available locally, you will need to add them to your installation before proceeding to avoid data loss.
+- **Classes tab**: This view shows a list of the remote classes and whether they are on the local installation. Items will be assigned these classes only if they're on the local installation. If you find the there are classes available remotely that are not available locally, you will need to add them to your installation before proceeding to avoid data loss.
 
 After mapping the elements of the data model, click on the **Submit** button at the top righthand corner of the page. You will receive a confirmation message that the import has been successfully prepared. 
 
 Then, you should return to the Import actions area to complete the import of the resources.
 
-### Importing the Snapshot
+### Importing the snapshot
 
 Under the Snapshot information in the Import actions panel, you will find the Import information. Initially the Status for the import should report [n/a]. Click the **Import Snapshot** link to begin the import. Just as with the snapshotting process, the import status will change to "In progress," and may take some time to complet. Click the **Refresh Status** link to check on progress. Similarly, you may stop an import that is in progress by clicking **Stop import**. Should the Status change to "Error," then you can click on the **View job** link to review the issue and any log message.
 
 ![Import action secton of the right sidebar with the Import Snapshot link highlighted by a red rectangle](../modules/modulesfiles/osii_ImportSnapshot.png "Import action secton of the right sidebar with the Import Snapshot link highlighted by a red rectangle")
 
-Once the import Status reaches "Complete," you will be able to click through to **View items**, **View media**, or **View item sets** from the import. Additionally, the completed import will receive a timestamp indicating the point of import.
+Once the import Status reaches "Complete", you will be able to click through to **View items**, **View media**, or **View item sets** from the import. Additionally, the completed import will receive a timestamp indicating the point of import.
 
-## Revisiting an Import
+## Revisiting an import
 
 Once you have successfully launched an import, the main screen for the module will list that action on a table of attempted imports. That table includes the label for the import, the root endpoint, the snapshot status, the import status, and the owner of the import.
 
