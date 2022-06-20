@@ -3,13 +3,13 @@ title: Data Visualization
 ---
 # Data Visualization
 
-The Data Visualization module allows site administrators are able to generate datasets and render diagrams that reflect their data. Once installed and activated on the modules tab of the admin dashboard, Data Visualization is managed on site by site basis. 
+The [Data Visualization module](https://omeka.org/s/modules/Datavis){target=_blank} allows site administrators are able to generate datasets and render diagrams that reflect their data. Once installed and activated on the Modules tab of the admin dashboard, Data Visualization is managed on a site-by-site basis. 
 
-## Creating Data Visualizations
+## Creating data visualizations
 If the Data Visualization module is active, a tab for Data Visualization will appear in the menu for individual sites. Clicking this tab will take you to a list of all visualizations created for the site. You can sort the visualizations by either date or title in ascending or descending order.
 
-## Adding a Data Visualization
-After clicking the Data Visualization tab, you can create a new visualization by clicking the *Add new visualization* button.
+### Adding a data visualization
+After clicking the Data Visualization tab under a site, you can create a new visualization by clicking the *Add new visualization* button.
 
 You will then have the option select what you would like to visualize. The five options include:
 
@@ -30,25 +30,25 @@ Once you select what you would like to visualize, click the *Next* button. You w
 
 ![Add Data Visualization form including Title, Description, Search Queary and Data configuration options for a Count of Items with Property Values visualization](../modules/modulesfiles/dataviz_editVisualization.png)
 
-### Data configuration
+#### Data configuration
 The options for data configuration will reflect the "Dataset type" you selected initially: 
 
-#### Count of items in item sets
+##### Count of items in item sets
 If you are creating a count of items in a item set, you will be able to select the item sets by clicking inside the item sets box and selecting from the dropdown menu. If you do not complete this step, you will receive an error when attempting to generate your data set.
 
-#### Count of items with classes
+##### Count of items with classes
 If you are creating a count of items with classes, you will be able to select the classes by clicking inside the classes box and selecting from the dropdown menu. If you do not complete this step, you will receive an error when attempting to generate your data set.
 
-#### Count of items with properties
+##### Count of items with properties
 If you are creating a count of items with properties, you will be able to select the property by clicking inside the "Property" box and selecting from the dropdown menu. You may add more than one property. If you do not complete this step, you will receive an error when attempting to generate your data set.
 
-#### Count of items with property values
+##### Count of items with property values
 There are two fields you need to complete under "Dataset configuration" when creating a count of items with properties: "Value property" and "Values". First, you must use the drop down menu to select the value property from the dropdown menu. Then, you can enter the specific values, separated by new lines, into the textbox. If you fail to fill out either of these fields you will receive an error when attempting to generate your data set.
 
-#### Count of property values
+##### Count of property values
 When configuring your data set for counting property values, you must select a value property from the dropdown menu. If you do not complete this step, you will receive an error when attempting to generate your dataset. There are additionally two other optional configuration fields: "Minimum count" and "Maximum count." You can set the minimum and maximum counts by either typing the desired number or using the up and down arrows on the right side of the box.
 
-### Diagram configuration
+#### Diagram configuration
 Under Diagram Configuration, you will be able to select the kind of diagram you would like to produce for your visualization. Options include _bar chart_, _column chart_, and _pie chart_. 
 
 If you select **bar chart** or **column chart**, you will be asked to input the width and height of your visualization as well as the top, right, bottom, and left margins. Additionally, you will be able to use a dropdown menu to order your data by value (ascending), by value (descending), by label (ascending), or by label (descending).
@@ -70,18 +70,20 @@ If you select "Dataset," a new window will open that contains your dataset.
 
 If you select "Diagram," a new tab will open containing your diagram. Diagrams will only generate in the context of a public site.
 
+<!--- really? new window, and new tab? what is the difference between a dataset and a diagram?  can we get some images and more detail here? do you need to generate a dataset before you can see a diagram of it? why would anyone want to view their dataset? can you have lots of diagrams from one dataset, or can you duplicate datasets easily to make different diagrams? NEED EXAMPLE IMAGES OF THE OUTPUT --->
+
 ![View menu with Dataset and Diagram](../modules/modulesfiles/dataviz_viewMenu.png)
 
 If the text is cramped in the axes of your graph, you will need to go back and adjust the margins.
 
-You can save your work and select "Return to Visualizations," which will bring you to a browse list of all of your visualizations where you can view the diagram or dataset, or edit the visualization.
+You can save your work and select "Return to Visualizations," which will bring you to a browse list of all of your visualizations, where you can view the diagram or dataset, or edit the visualization.
 
 ![Browse list of two visualizations](../modules/modulesfiles/dataviz_browse.png)
 
 ## Publishing your visualization
-Data Visualizations are published by adding them to site pages. 
+Data Visualizations are published by adding them to site pages, as page blocks. 
 
-When creating a page within a site, add a new "Data visualization" block. In the new block, use the dropdown menu to select the visualization you would like to add to the page. 
+To a new or existing page, add a "Data visualization" block. In the new block, use the dropdown menu to select the visualization you would like to add to the page. 
 
 Then, save the page edits. To remove the block, click the trash can icon in the block heading.
 

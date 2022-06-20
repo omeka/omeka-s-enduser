@@ -1,14 +1,10 @@
 # Mapping 
 
-Mapping is a [module](../modules/index.md) for Omeka S which allows you to geolocate Omeka S items and add interactive maps to [Site Pages](../sites/site_pages)
+The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows you to geolocate Omeka S items and add interactive maps to [Site Pages](../sites/site_pages). Maps can also include timelines that allow you to scroll through items on a map in chronological order. 
 
-To install Mapping, follow the instructions for [Installing Modules](../modules/index.md#installing-modules) on the Modules documentation.
+## Item mapping
 
-Mapping is compatible with [CSV Import](../modules/csvimport.md). 
-
-## Item Mapping
-
-To add a map to a new or existing item, click to edit the item. Navigate to the  _Mapping_ tab to add a map to the item. Selecting the tab will open the map interface.
+To add a map to a new or existing item, click to edit the item. Navigate to the _Mapping_ tab to add a map to the item. Selecting the tab will open the map interface.
 
 ![Screenshot of the Add/Edit Item Page with Mapping tab selected. Large World Map with white buttons described below](../modules/modulesfiles/Mapping_Item_Add.png)
 
@@ -37,7 +33,7 @@ To find the point where you want to locate the marker, you can do one of the fol
 * Zoom and drag to find the location.
 * Type the place name into the Search Address field (see Figure 4 below). 
 	* Note that this will populate as you type, and will not search locations which do not match the formatting of the search function.
-* Enter latitude and longitude coordinates into the search box. These should be formatted as decimals, for example `38.897222, -77.064167`, not `38° 53′ 50″ N, 77° 3′ 51″ W`
+* Enter latitude and longitude coordinates into the search box. These should be formatted as decimals, for example `38.897222, -77.064167`, not `38° 53′ 50″ N, 77° 3′ 51″ W`.
 
 ![Mapping tab with a search for "Roosevelt Island" in the search view. Below the search field are a number of suggested locations.](../modules/modulesfiles/Mapping_itemSearch.png)
 
@@ -49,7 +45,7 @@ You can now click on the marker to add a label which will display on [public map
 
 ![Close up of map with a marker selected. There is a field to enter the maker label.](../modules/modulesfiles/Mapping-addLabel.png)
 
-When you are adding a label, you can also add an image to display on the marker when clicked in the [public view](../modules/mapping/#public-view). You can only select from images which has already been [attached to the item as media](../content/items/#media). To remove the image, select "no Image" from the sidebar. 
+When you are adding a label, you can also add an image to display on the marker when clicked in the [public view](#public-view). You can only select from images which have already been [attached to the item as media](../content/items.md#media). To remove the image, select "No Image" from the sidebar. 
 
 ![Marker selected with Image added. The media is also visible in the sidebar, along with an option for "no image"](../modules/modulesfiles/Mapping-addImage.png)
 
@@ -68,8 +64,23 @@ Note that you can use the "clear all" button in the menu which opens form the "d
 
 ![Marker being deleted.](../modules/modulesfiles/Mapping-deleteMarker.png)
 
-## Adding Map blocks to a site
-There are two kinds of Mapping blocks which you can add to your site: Map by attachments, where you manually add resources to the map block; and Map by query, which allows you to use a search string to add resources to the map block. 
+### Batch-importing mapping information
+
+Mapping is compatible with [CSV Import](../modules/csvimport.md) when importing items (not item sets, media, or mixed resources). 
+
+If the two modules are enabled, two new dropdown menus will appear in the "Add mapping" sidebar when you are connecting a column to a property. 
+
+The "Resource location" dropdown menu includes three options for pinning the item geographically (latitude, longitude, and latitude/longitude). You can import multiple values for these fields. 
+
+The "Default map view" dropdown menu allows you to set a centerpoint and zoom level for the map that displays for that item. Without a map centerpoint, the map will center on the item's pin.
+
+You cannot batch-set a marker label or marker image in CSV Import. 
+
+You cannot batch-edit mapping values after items are in your system, only edit them manually, one item at a time. So, CSV Import can help you do things like set a standard map zoom level on each item, by supplying a spreadsheet with every item and the same zoom level number in each row. 
+
+## Adding map blocks to a site
+
+Mapping creates two blocks you can add to your site: Map by attachments, where you manually add resources to the map block; and Map by query, which allows you to use a search string to add resources to the map block. 
 
 To add a map to a new or existing page, click to edit the page. On the right, under _Add New Block_ , click the  _Map_ tab to add a map to the item (1). Selecting the tab will open the map block to the page (2). This block includes customizable features for the map in collapsable panes. Click the triangle to expand or collapse these fields (3). 
 
@@ -77,14 +88,14 @@ To add a map to a new or existing page, click to edit the page. On the right, un
 
 The *Map by attachments* and *Map by query* blocks have largely the same settings, with the exception of the final option. 
 
-### Default View 
+### Default view 
 This section lets you set the appearance and zoom level of the map. There are three fields and a preview map. Within the preview map are buttons which you can use to set the default zoom and location of the map. If you do not set a default zoom or location, the map will adjust to display all resources.
 
 ![Map by attachments block open to Default Settings. There is no information in any field, and the preview map is zoomed in to level 2](../modules/modulesfiles/mappingBlockDefaultView1.png)
 
-*Basemap provider:* select from a dropdown of basemaps. Once selected, the preview map will update to show you the appearance of that map. The default is OpenStreetMap.Mapnik.
+*Basemap provider*: select from a dropdown of basemaps. Once selected, the preview map will update to show you the appearance of that map. The default is OpenStreetMap.Mapnik.
 
-Minimum zoom level:* set the minimum zoom for the map. Fully zoomed out is 0. 
+Minimum zoom level: set the minimum zoom for the map. Fully zoomed out is 0. 
 
 Maximum zoom level: set the maximum possible zoom level. The highest is 19. Some basemaps do not function at higher levels; you will want to check to be sure you set your maximum at a level where you basemap is visible.
 
@@ -100,9 +111,9 @@ Within the preview map, there are five buttons:
 
 ![closeup of the mapping buttons with labels added](../modules/modulesfiles/mappingBlockDefMapButtons.png)
 
-### WMS Overlays
+### WMS overlays
 
- Add, edit, and delete [Web Map Service (WMS)](https://mapserver.org/ogc/wms_server.html) overlays.
+ Add, edit, and delete [Web Map Service (WMS)](https://mapserver.org/ogc/wms_server.html){target=_blank} overlays.
  
  * *Label:* Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays. 
  * *Base URL:* Add a URL to the WMS map.
@@ -120,10 +131,10 @@ Within the preview map, there are five buttons:
   ![Screenshot of the WMS Overlays with empty fields and the US and Territories overlay above the fields. A blue arrow points to the overlay](../modules/modulesfiles/Mapping_Page_Overlays2.png)
  
 ### Timeline
-Timeline adds a timeline display to the left of the map view. Note that this feature requires the [NumericDataTypes](../modules/numericdatatypes/) module and at least one item that has a property with a Timestamp or Interval value (applied via the [resource template](../../content/resource-template/)). 
+Timeline adds a timeline display to the left of the map view. Note that this feature requires the [Numeric Data Types](../modules/numericdatatypes.md) module and at least one item that has a property with a Timestamp or Interval value (applied via the [resource template](../content/resource-template.md)). 
 
-- *Title headline:* displays on the first slide of the timeline (see ["Timeline public view"](../../modules/mapping/#timeline-public-view) below). You can use this to name the timeline.
-- *Title text:* appears below the title headline on the first slide of the timeline (see ["Timeline public view"](../../modules/mapping/#timeline-public-view) below). You can use this to provide context or narrative introduction for the timeline.
+- *Title headline:* displays on the first slide of the timeline (see ["Timeline public view"](#timeline-public-view) below). You can use this to name the timeline.
+- *Title text:* appears below the title headline on the first slide of the timeline (see ["Timeline public view"](#timeline-public-view) below). You can use this to provide context or narrative introduction for the timeline.
 - *Fly to:* is a dropdown menu where you can set the zoom level for each point in the timeline on the map. Your options are default view, or zoom levels 0-18 (even numbers only). The higher the number, the more zoomed in the map will be. 
 	- Note that the transition between points is animated, so if you have very distant points the shift between them will involve a significant zoom out and in. 
 - *Show contemporaneous events:* sets how two events with the same timestamp or interval are displayed. If checked, contemporaneous events will both display in the map when active in the story slider. 
@@ -133,7 +144,7 @@ Timeline adds a timeline display to the left of the map view. Note that this fea
 - *Timeline navigation position:* by default, the timeline displays with the story slider, to the left of the map. Using this dropdown, you can change where the story slider displays. Options are:
 	- Default position
 	- Full width, below story slider and map
-	- Full width, above story slider and map
+	- Full width, above story slider and map.
 - *Property:* a dropdown menu; select the timestamp or interval property to use when populating the timeline. The dropdown menu will populate with the properties which have been defined in a resource type as using numeric data types Interval or Timestamp. 
 	- You may want to make a note of which property and numeric data type you are using before creating the map block. The dropdown only displays the term and data type but not which template it is associated with, for example `Date Created (numeric:timestamp)`.
 	- Noted that you can only select *one* property per timeline. You cannot mix timestamp and interval data. 
@@ -159,7 +170,7 @@ To add multiple items at once, click the "quick add" slider just above the list 
 
 ![Drawer with bulk add option activated](../modules/modulesfiles/Mapping-bulkAttachments.png)
 
-### Query (Map by query)
+### Query (Map by query block)
 In order to use this block, you will need to run a query, or search, in your items. From the search results page, copy everything in your browser's address bar starting with the question mark all the way to the end of the search url (to the right). 
 
 ![The address bar and very top of a search results page.](../sites/sitesfiles/sitespg_bpquery.png)
@@ -188,7 +199,7 @@ Item mapping marker with label and image:
 Item mapping marker with no label or image: 
 ![](../modules/modulesfiles/mapping-publicNoLabel.png)
 
-### Timeline Public view
+### Timeline public view
 On the public side, the timeline will display to the left of the map, or above the map on mobile views. Each item appears on both the map and the timeline.
 
 On a map block with timeline, the block initially loads with the map either at default view or zoomed to display all markers. The timeline will display the title headline and text, as seen below:

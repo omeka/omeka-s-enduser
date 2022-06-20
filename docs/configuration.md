@@ -64,6 +64,8 @@ extension).
 You can also set the thumbnailer to `Omeka\File\Thumbnailer\NoThumbnail`, which
 will prevent your Omeka S installation from generating thumbnails. 
 
+[GD](https://secure.php.net/manual/en/intro.image.php){target=_blank} is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). [Imagick and ImageMagick](https://www.imagemagick.org){target=_blank} are the same library and can create thumbnails for more than 200 formats. The difference is that the first is integrated in PHP and generally older than the command-line version.
+
 ## PHP Path
 
 Omeka S uses background jobs for some long-running tasks that operate on many
