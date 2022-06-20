@@ -1,11 +1,11 @@
 # Configuration Options
 
-The following are commonly requested options which can be configured in the file `local.config.php` located in the config directory. 
+The following are commonly requested options which can be configured in the file `local.config.php`, located in the `/config` directory. 
 
-For a full list of available configuration keys, please see the [developer documentation page on configuration settings](https://omeka.org/s/docs/developer/configuration/). 
+For a full list of available configuration keys, please see the [developer documentation page on configuration settings](https://omeka.org/s/docs/developer/configuration/){target=_blank}. 
 
 ## Password settings
-You can change the requirements for user passwords in the config file. Options include minimum length, number of upper and lowercase letters, and setting allowed symbols.
+You can change the requirements for user passwords. The options include minimum length, number of upper and lowercase letters, and setting allowed symbols.
 
 ```
     'password' => [
@@ -17,7 +17,9 @@ You can change the requirements for user passwords in the config file. Options i
         'symbol_list' => '`~!@#$%^&*()-=_+[]\{}|;:",./<>?\'',
     ],
 ```
-Requirements will display on the user creation and edit pages.
+Requirements will [display on the user creation and edit pages](admin/users.md#password).
+
+
 
 ## Thumbnails
 
@@ -36,9 +38,9 @@ The `thumbnails` configuration key holds most thumbnail settings:
     ],
 ```
 
-Under `types`, set the maximum dimensions for derivative images for media files.
+Under `types`, set the maximum pixel dimensions for derivative images for media files.
 There are separate options for large, medium, and square. Defaults for these are
-800, 200, and 200 respectively (all sizes are pixels)
+800, 200, and 200 pixels respectively.
 
 `thumbnailer_options` is an array of options passed to the specific thumbnailer
 in use. For example, the `imagemagick_dir` thumbnail option sets the path to the
@@ -83,20 +85,18 @@ manually configure the correct path in the configuration file:
     ],
 ```
 
-(Note: the path here is just an example; the proper path will be specific to
-your server)
+Note: the path here is just an example; the proper path will be specific to
+your server. Many hosting providers have been asked this question for a large variety of software installations. Try searching online to see if your hosting provider has published their PHP paths on their website, or answered the question on an online forum. If not, get in touch with their support team to find out what path to use.
 
 ## Mail
 
 The `mail` key can be used to configure how Omeka S sends emails.
 
-The default is to use sendmail, where the server is responsible for having
-mail delivery configured and set up. Sendmail generally requires no
-configuration on the Omeka S side.
+The default is to use sendmail, where the server is responsible for having mail delivery configured and set up. Sendmail generally requires no configuration on the Omeka S side. Another option for some servers is to configure a direct SMTP connection for
+sending mail. 
 
-Another option for some servers is to configure a direct SMTP connection for
-sending mail. An example configuration, to be added at the end of
-`local.config.php` follows (see the [laminas-mail docs](https://docs.laminas.dev/laminas-mail/transport/smtp-options/) for clarification):
+An example configuration, to be added at the end of `local.config.php`, will look something like this:
+
 ```
     'mail' => [
         'transport' => [
@@ -116,3 +116,5 @@ sending mail. An example configuration, to be added at the end of
         ],
     ],
 ```
+
+See the [laminas-mail documentation](https://docs.laminas.dev/laminas-mail/transport/smtp-options/){target=_blank} for clarification.
