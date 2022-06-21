@@ -37,6 +37,10 @@ color:revert!important;
     background-color: #A91919;
 }
 
+.wy-menu-vertical ul.current li a:hover {
+	color:#404040 !important;
+}
+
 .wy-menu-vertical a:visited {
     color: #b3b3b3;
 }
@@ -50,7 +54,6 @@ color:revert!important;
 	margin:0 auto;
 	display:block;
 }
-
 
 .wy-nav-content div[role="main"] a {
   border-bottom: 1px dotted;
@@ -83,3 +86,8 @@ color:revert!important;
 .rst-content td {
     vertical-align: middle;
 }
+
+footer {
+	color:#111;
+}
+
