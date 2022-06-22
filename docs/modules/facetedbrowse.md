@@ -72,33 +72,36 @@ You can add more than one type of facet to each page and category.
 
 Give the facet a name (required). This will display on the public view, so make sure it will be legible to your visitors.
 
-Use the dropdown to select which property to use for the facet
-
-Use the Query type to narrow the facet. These options apply to the search which the facet will apply to the property value (based on what you put in the Values field below). You can choose from:
-
-- Is exactly;
-- Is not exactly;
-- Contains;
-- Does not contain;
-- Is resource with ID;
-- Is not resource with ID;
-- Has any value;
-- Has no values;
+Use the dropdown to select which property to use for the facet.
 
 Set the Select type for the browse faceting. This sets how site visitors interact with the options in the Values field:
 
-- Single (list). Visitors can select only one, all options are displayed in a list.
-- Multiple (list). Visitors can select multiple, all options are displayed in a list.
+- Single (list). Visitors can select only one, all options are displayed in a list. 
+- Multiple (list). Visitors can select multiple, all options are displayed in a list. 
 - Single Dropdown. Visitors can select only one, all options are given in a dropdown menu.
+ - Text Input. Visitors can type in text to search items that have property values corresponding to that text input. 
+  
+ For the Select types that include a list or a dropdown menu you will need to set a Query type. If the query type is
 
-Enter the Values that will make up the facets. Each value should be on a separate line. The format of each value depends on the query type you have selected above. If the query type is
+- "Is exactly": Visitors will have to enter a value that is an exact match to the property value.
+- "Is not exactly": Visitors can enter an exact value to be excluded from the the property values.
+- "Contains": Visitors can enter a value that matches any part of the property value.
+- "Does not contain": Visitors can enter a value to be exluded from any part of the property value.
+-  "Is resource with ID": Visitors will enter the resource ID. 
+-  "Is not resource with ID": Visitors will enter a resource ID to be excluded. 
+-  "Has any value": Visitors will enter the property label.
+-  "Has no values": Visitors will enter the property label.
 
-- "Is exactly": enter a value that is an exact match to the property value.
-- "Contains": enter a value that matches any part of the property value.
-- "Is resource with ID": enter the resource ID followed by any value (usually the resource title), separated by a single space.
-- "Has any value": enter the property ID followed by any value (usually the property label), separated by a single space.
+For the Single (list) and Multiple (list) Select types, Page creators can choose to truncate the values available on this list that is visible to the site visitor by setting a number in the "Truncate values" option. Leaving the input blank will list all values.
 
-Check the *Show all available values* box to get a sense of the data that is available for input. This will return existing values in the property you selected above.
+Next, enter the Values that will make up the facets. Each value should be on a separate line.
+   -  Check the *Show all available values* box to get a sense of the data that is available for input. This will return existing values in the property you selected above. You may click the "Add all" button to populate the list of values.
+   -  The formatting of the value input will depend up on the query type selected above. If the query type is
+
+      -  "Is exactly": enter a value that is an exact match to the property value.
+      -  "Contains": enter a value that matches any part of the property value.
+      -  "Is resource with ID": enter the resource ID followed by any value (usually the resource title), separated by a single space.
+      -  "Has any value": enter the property ID followed by any value (usually the property label), separated by a single space.
 
 When you are satisfied with your settings, click the *Set facet* button.
 
