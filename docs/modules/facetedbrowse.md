@@ -84,7 +84,9 @@ Set the Select type for the browse faceting. This sets how site visitors interac
  For the Select types that include a list or a dropdown menu you will need to set a Query type. If the query type is
 
 - "Is exactly": Visitors will have to enter a value that is an exact match to the property value.
+- "Is not exactly": Visitors can enter an exact value to be excluded from the the property values.
 - "Contains": Visitors can enter a value that matches any part of the property value.
+- "Does not contain": Visitors can enter a value to be exluded from any part of the property value.
 -  "Is resource with ID": Visitors will enter the resource ID. 
 -  "Is not resource with ID": Visitors will enter a resource ID to be excluded. 
 -  "Has any value": Visitors will enter the property label.
