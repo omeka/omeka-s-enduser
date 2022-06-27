@@ -6,13 +6,7 @@ To view the media associated with an item, click on the media’s name in the ri
 
 To view all media in the installation, navigate to the Items browse first. The media browse will appear below Items in the left-hand navigation.
 
-## Add Media
-
-Adding media includes uploading a file, or directly attaching content with oEmbed, YouTube URLs, IIIF URLs, or writing HTML.
-
-Media can only be added via an [item](../content/items.md). 
-
-## Browse media
+## View media
 To browse media, first click on Items in the left-hand navigation. In that sidebar, an option for Media browse will appear under the Item button (you may have to click on the triangle to expand the menu below Items).
 
 ![The Resources section of the navigation, with light blue text on a dark blue background. Below the option for items, indented, is a navigation option for Media. It has no representative icon, unlike the other options.](contentfiles/media-browsenav.png)
@@ -20,11 +14,11 @@ To browse media, first click on Items in the left-hand navigation. In that sideb
 Media are displayed in a table. Each media is a row, with columns for:
 
 - a checkbox to select the media
-- the *Title*
-- icons to *edit* (pencil), *delete* (trash can), or *details* (ellipsis)
-- the media's *Class*
-- the media's *Owner*
-- and the date the media was *Created*. 
+- the **Title**
+- icons to **edit** (pencil), **delete** (trash can), or see **details** (ellipsis)
+- the media's **Class**
+- the media's **Owner**
+- and the date the media was **Created**. 
 
 ![The browse media table displaying 5 items. All of the media have titles that are mediawiki URLs, and all are owned by the user Megan.](contentfiles/media_browse.png)
 
@@ -32,18 +26,25 @@ Options for navigating and creating items display above the table of items:
 
 - On the left side is a display for the number of pages of media, with forward and back arrows. The current page number is an editable field - enter any valid page number and hit return/enter on your keyboard to go to that page. 
 - In the center top is a button for [Advanced Search](../../search#media-advanced-search). 
-- Just above the table on the right are options for sorting media, with two dropdown menus. The first lets you select between *Title*, *Class*, *Owner*, *(date)Created*, and *Size*; the second allows you to sort ascending or descending. To apply, click the *sort* button.
+- Just above the table on the right are options for sorting media, with two dropdown menus. The first lets you select between **Title**, **Class**, **Owner**, **(date) Created**, and **Size**; the second allows you to sort ascending or descending. To apply, click the "Sort" button.
 
 Clicking on the title of any media will take you to its metadata page. This page displays any metadata in the main work area, with a sidebar on the right listing the visibility, associated item (an active link), date created, MIME type, Size, Ingester, Source, and links to the file derivatives.
 
-![Media view page for a mediawiki file. The image is of a grup of people in late 19th century clothing, from left to right a a women standing and facing a standing man holding a small child while reaching out to the woman, with another man standing and smiling behind the man with the child. On the right hand side of the image is the database information for the media.](../content/contentfiles/media_view.png)
+![Media view page for a mediawiki file. The image is of a grup of people in late 19th century clothing, from left to right a a women standing and facing a standing man holding a small child while reaching out to the woman, with another man standing and smiling behind the man with the child. On the right hand side of the image is the database information for the media](../content/contentfiles/media_view.png).
 
-## Edit Media
+## Add media
+
+Options for adding media to your items include uploading a file, or directly attaching content with oEmbed, YouTube URLs, IIIF URLs, or writing HTML.
+
+Media can only be added via an [item](../content/items.md). 
+
+
+## Edit media
 To edit existing media, you can:
 
 - Go to the Browse page and click the pencil/edit icon for the media's row
-- Go to the Media browse page, click on the title to view the media's metadata and then click the "*Edit media* button in the upper right hand corner
-- Click on the media's name in the right-hand sidebar of an item's page to go to the media's metadata, and then click on *Edit media* from there.
+- Go to the Media browse page, click on the title to view the media's metadata and then click the "Edit media" button in the upper right hand corner
+- Click on the media's name in the right-hand sidebar of an item's page to go to the media's metadata, and then click on "Edit media" from there.
 
 Editing media is very similar to editing [items](../../content/items) or [item sets](../../content/item-sets).
 
@@ -72,11 +73,11 @@ You can indicate the language for the content of an input using the globe symbol
 
 **Omeka Resource** fields create an internal link between the resource you are creating and the resource that fills that field. 
 
-You have the option to use either an item, another media, or an item set. Once you select an item or item set, detailed information will load, and you must click *select resource* to finish linking the resources. You can also click the *X* button in the upper right-hand corner to go back to the list of items or item sets.
+You have the option to use either an item, another media, or an item set. Once you select an item or item set, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of items or item sets.
 
 ![Select Item menu with list of items to link in edit media view](contentfiles/media_addresource.png)
 
-If you are using an Item resource for the property, you will have additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search"
+If you are using an Item resource for the property, you will have additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search".
 
 ![Select Item drawer top options, with a red arrow around a gray triangle button to the right of the phrase "Filter search"](contentfiles/items_filtersearch.png)
 
@@ -94,7 +95,7 @@ Item resources also have an option for "Quick add". When this switch is flipped,
      
 **URI** fields link to an external website or online resource.
 
-You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
+You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the **Filter properties** bar above the list of properties and vocabularies.
 
 **Value annotation**
 
@@ -114,9 +115,9 @@ To create an annotation, click on the ellipsis on the right side of the value in
 
 The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property DCterms:Contributor might be annotated with the property Schema:jobTitle. 
 
-Then select a date type for the annotation: Text, URI, or and Omeka S Resource. Installed modules may make additional data types available. Click the Add Annotation button. 
+Then select a date type for the annotation: Text, URI, or and Omeka S Resource. Installed modules may make additional data types available. Click the "Add Annotation" button. 
 
-Input the annotation, and click Set Annotations to finalize the process. 
+Input the annotation, and click "Set Annotations" to finalize the process. 
 
 ![a picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
 
@@ -126,11 +127,11 @@ Sites include a setting to indicate whether or not value annotations are visible
 
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
 
-You can add properties by selecting from the list on the right side of the screen. You can either browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the *filter properties* bar above the list of properties and vocabularies.
+You can add properties by selecting from the list on the right side of the screen. You can either browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the **Filter properties** bar above the list of properties and vocabularies.
 
 Automatically generated metadata, such as source, visibility, and part of item, cannot be edited. 
 
-Use the *make public/private* button (eye icon) to set whether the media is visible to the public or only to users of the Omeka S install. 
+Use the **make public/private** button (eye icon) to set whether the media is visible to the public or only to users of the Omeka S install. 
 
 Media is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png){style="display:inline;"}
 
@@ -185,7 +186,7 @@ Batch actions are as follows:
 - Delete selected: delete only the items that are selected on the page
 - Delete all: delete all the items returned by a search (default is all items).
 
-Choose one of these options and then click *Go*.
+Choose one of these options and then click "Go".
 
 **Batch editing** media takes you to a new page. The media being edited will display on the right side in a drawer, while the batch edit form gives you the following options:  
 
@@ -194,7 +195,7 @@ Choose one of these options and then click *Go*.
 - Set class: a dropdown, select from classes of the installed vocabularies.
 - Clear language: a checkbox.
 - Set language: a text entry box.
-- Clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected items. Clear additional properties using the *Clear another property* button.
+- Clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected items. Clear additional properties using the "Clear another property" button.
 
 ![Batch edit medias form, with options as described above. Everything is grayscale](contentfiles/media_batchedit.png)
 
@@ -206,7 +207,7 @@ In addition, you can use the bottoms at the bottom of the batch edit form to add
 
 Selecting any of these will add a block to the form where you can select a property from the installed vocabularies and enter the value for that property.
 
-For the **delete actions**, a drawer will open on the right side of the screen telling you the number of media which will be deleted. Nothing will be deleted unless you click the red *Confirm Delete* button. This action cannot be undone. To opt out of deleting the media, click the X in the upper right corner of the deletion drawer. To confirm delete, check the "Are you sure" checkbox and then click *Confirm Delete*.
+For the **delete actions**, a drawer will open on the right side of the screen telling you the number of media which will be deleted. Nothing will be deleted unless you click the red "Confirm Delete" button. This action cannot be undone. To opt out of deleting the media, click the "X" in the upper right corner of the deletion drawer. To confirm delete, check the "Are you sure" checkbox and then click "Confirm Delete".
 
 ![Close up of the warning that 2 medias will be deleted.](contentfiles/media_batchdelwarn.png)
 

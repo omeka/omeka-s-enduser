@@ -17,7 +17,7 @@ When a user logs in, the first page they see is the Admin Dashboard.
 
 In addition to the left-hand navigation present on all pages (see below), the admin dashboard presents users with two boxes: **Manage Resources** and **Manage Sites**.
 
-The **Manage Resources** box displays the following resources with their total count: [Items](content/items.md), [Item Sets](content/item-sets.md), [Vocabularies](content/vocabularies.md), and [Resource Templates](content/resource-template.md). Clicking on the label of the Resource will take you to the browse page; clicking the Plus button to the right of the label will take you to the add page for that resource type. 
+The **Manage Resources** box displays the following resources with their total count: [Items](content/items.md), [Item Sets](content/item-sets.md), [Vocabularies](content/vocabularies.md), and [Resource Templates](content/resource-template.md). Clicking on the label of the Resource will take you to the browse page; clicking the plus-symbol button to the right of the label will take you to the add page for that resource type. 
 
 ![Close up of manage resources and manage sites boxes](files/admindashmanage.png)
 
@@ -32,7 +32,7 @@ The following content appears on the left side of the admin dashboard and on all
 
 In the upper left corner of the screen is a link displaying the title of the installation which will always take you back to the admin dashboard. 
 
-Directly below the installation title is the message “Signed in as *User*” where *User* is the display name of the person logged in. Near the username (below or to the right, depending on window width) is the button to **Logout**. 
+Directly below the installation title is the message “Signed in as [User]” where [User] is the display name of the person logged in. Near the username (below or to the right, depending on window width) is the button to **Logout**. 
 
 Underneath the user information is a search field which has an option for advanced search (ellipsis) in addition to the button to search (magnifying glass). Use this to search all items in the installation. 
 
@@ -49,7 +49,7 @@ The left hand navigation of the dashboard is divided into sections related to fu
     - [Vocabularies](content/vocabularies.md): manage the metadata standards for your install. (Closed book icon)
     - [Resource Templates](content/resource-template.md): manage predefined sets of properties (fields) to use when creating items. (Pencil in a square icon)
 - Admin: installation-level administration (note that some of these tabs may not be visible to all user levels).
-    - [Users](admin/users.md): manage users for the whole install and individual sites. (head and shoulders person icon)
+    - [Users](admin/users.md): manage users for the whole install and individual sites. (Human silhouette icon)
     - [Modules](modules/index.md): add functionality to your sites. (Plus sign in square icon)
     - [Jobs](admin/jobs.md): displays the user-activated tasks which are currently running. NB: jobs only display when they are running. (Three bars icon)
     - [Settings](admin/settings.md): manage the global settings for all sites, the admin dashboard and the site dashboards. (Gears icon)

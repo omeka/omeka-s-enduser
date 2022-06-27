@@ -9,21 +9,21 @@ The Site Admin page has two tabs, Info and Settings.
 ## Info 
 The site info settings for an Omeka S site are where you can change the basic info for the site - the same information you entered when you created the site. You can change the:
 
-* *Title* - a text field. 
-* *Slug* - the url for your site.
-* *Summary* - the brief description of what it is about which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites). 
-* *Thumbnail* - an image for your site which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
+* **Title** - a text field. 
+* **Slug** - the url for your site.
+* **Summary** - the brief description of what it is about which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites). 
+* **Thumbnail** - an image for your site which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
 
 ![Site info for the site “Jane Austen” with buttons across the top to Delete and Save the site](../sites/sitesfiles/sites_siteinfo.png)
 
 In the upper right hand corner of the window on this tab, you can use buttons to:
 
-- set your site as public or private using the eye icon button
-- *Delete* the site
-- *Cancel* making changes
-- *Save* changes.
+- Set your site as public or private using the eye icon
+- Delete the site
+- Cancel making changes
+- Save your changes.
 
-The *make public/private* button (eye icon) is used to both indicate and set whether the site is visible to the public or only to users of this Omeka S installation 
+The **make public/private** button (eye icon) is used to both indicate and set whether the site is visible to the public or only to users of this Omeka S installation 
 
 Site is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png){style="display:inline;"}
 
@@ -42,9 +42,9 @@ To implement any changes you make, click Save at the top right of the browser wi
 
 **Attachment link type**: sets the target of links from attachments you add to [site page blocks](../sites/site_pages.md#page-blocks) (for example, in an [item showcase](../sites/site_pages.md#item-showcase)). It offers a dropdown with the following options:
 
-- *item page*: clicking on the attachment takes users to the item page associated with the attached media
-- *media page*: clicking on the attachment takes users to the media page 
-- *direct link to file*: clicking on the attachment takes user to the file alone. 
+- Item page: clicking on the attachment takes users to the item page associated with the attached media
+- Media page: clicking on the attachment takes users to the media page 
+- Direct link to file: clicking on the attachment takes user to the file alone. 
 
 **Embed media on item pages**: when checked, any linked media (such as videos) will be embedded on the item pages. When unchecked, site visitors will click through to view playable media.
 
@@ -73,7 +73,7 @@ The options for this setting are:
 - When identified (when logged in) 
 - Always.
 
-**Disable JSON-LD embed** Check this box to disable JSON-LD embedding on resource browse and show pages.
+**Disable JSON-LD embed**: Check this box to disable JSON-LD embedding on resource browse and show pages.
 
 ### Language
 
@@ -102,13 +102,11 @@ Depending on the [site theme](../sites/site_theme.md), you may want to make this
 
 ### Show 
 
-#### Attached Pages
-When this box is checked, site pages to which an item is attached will display on the public view of that item.
+**Attached Pages**: When this box is checked, site pages to which an item is attached will display on the public view of that item.
 
 ![Show setting checked](../sites/sitesfiles/sites_settingShow.png)
 
-#### Value Annotation
-When this box is checked, Value Annotations will be visible on the public views for resources (items, item sets, media).
+**Value Annotation**: When this box is checked, Value Annotations will be visible on the public views for resources (items, item sets, media).
 
 ### Search 
 

@@ -1,7 +1,5 @@
 # Installing
 
-Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md) of the Omeka S GitHub repository.
-
 ## System requirements
 In order to install Omeka S, you will need a server running the following:
 
@@ -13,24 +11,52 @@ In order to install Omeka S, you will need a server running the following:
 
 [GD](https://secure.php.net/manual/en/intro.image.php){target=_blank} is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). [Imagick and ImageMagick](https://www.imagemagick.org){target=_blank} are the same library and can create thumbnails for more than 200 formats. The difference is that the first is integrated in PHP and generally older than the command-line version.
 
-## Installing from released zip file
-NB: Before you install Omeka S, you need to create a MySQL database and user. Omeka S must have a dedicated database (you cannot use a prefix for a database used by another system or Omeka S or Classic installation). For more information on creating a database and user, please see your hosting's support documentation or talk to your system administratory.
+## Installation methods
 
-1. Download the latest release from the release page.
-1. Open `config/database.ini` and add your MySQL username, password, database name, and host name. The user and database must be created before this step.
-1. Make sure the `files/` directory is writable by Apache.
-1. In your web browser, navigate to the admin page for your Omeka S installation (`/myomekas/admin`), where you can complete installation.
+### Installing from download
+
+!!! note
+	Before you install Omeka S, you need to create a MySQL database and user. Omeka S must have a dedicated database (you cannot use a prefix for a database used by another system or Omeka S or Classic installation). For more information on creating a database and user, please see your hosting's support documentation or talk to your system administrator.
+
+1. [Download the latest release from the release page](https://omeka.org/s/download/){target=_blank}.
+1. Extract this downloaded zip file to your computer. 
+1. Inside the directory, open the `config/database.ini` file and add your MySQL username, password, database name, and host name. The user and database must be created before this step.
+1. Upload this entire directory to your server, into the folder of your choice. For example, if your server is `https://yourwebsite.org/`, you may wish to install Omeka S into a folder located at `https://yourwebsite.org/myomekas/`. Make sure it has your updated `database.ini` file (do not upload the original zip file you downloaded). 
+1. Make sure the `files/` directory on the server is writable by Apache.
+1. In your web browser, navigate to the `admin` page for your Omeka S installation, where you can complete the installation. For example, if you uploaded the directory contents to `https://yourwebsite.org/myomekas/`, then navigate to `https://yourwebsite.org/myomekas/admin`.
+
+### Installing from Github
+
+Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md){target=_blank} of the Omeka S GitHub repository. 
+
+Then, in your web browser, navigate to the admin page for your Omeka S installation (`https://yourwebsite.org/myomekas/admin`), where you can complete the installation.
+
+### One-click installation
+
+Hosting companies that use [Softaculous](https://softaculous.com/){target=_blank} should offer a one-click install of [Omeka Classic](https://www.softaculous.com/softaculous/apps/educational/Omeka){target=_blank} and [Omeka S](https://www.softaculous.com/softaculous/apps/others/Omeka_S){target=_blank}.
+
+Suggestions from our users include:
+
+-   [Reclaim Hosting](https://reclaimhosting.com/){target=_blank} - offers one-click Omeka S installations, with support for other open-source software platforms
+-   [Dotblock](http://www.dotblock.com){target=_blank} - uses Softaculous
+-   [HostGator](http://hostgator.com){target=_blank} - uses Softaculous
+-   [TMD Hosting](https://www.tmdhosting.com){target=_blank} - uses Softaculous
+-   [Webuzo](http://webuzo.com){target=_blank} - uses Softaculous.
+
+!!! note
+	If you are doing a one-click install through Installatron, you may need to edit the `config/database.ini` file in the Omeka directory (see the steps for [installing from a download](#installing-from-download) above). The one-click installation process through Softaculous may allow you to create a database and user at the same time, and will edit the `config/database.ini` file for you.
 
 ## Initial setup
-Once you have successfully installed and configured the database.ini file, you can navigate to the admin location of your Omeka S installation. If your installation is `/myomekas/` then your admin dashboard would be located at `/myomekas/admin`.
 
-The first time you point your browser to the newly installed site, you will need to enter information for the first user, along with basic information for your install. There are two sections on this page: *Create the first user* and *Settings*.
+Once you have successfully installed Omeka S and configured the `database.ini` file, you must navigate to the admin URL of your Omeka S installation (something like `https://yourwebsite.org/myomekas/admin`). 
+
+The first time you point your browser to the newly installed site, you will need to enter information for the first user, along with basic information for your install. There are two sections on this page: **Create the first user** and **Settings**.
 
 In the First User section:
 
-- Enter an *email* address, and type again to confirm
-- Confirm the *password* and type again in the next input to confirm
-- Enter a *display name* for the user.
+- Enter an **email** address, and type again to confirm
+- Confirm the **password** and type again in the next input to confirm
+- Enter a **display name** for the user.
 
 Note that you can change all of these later in the [User](admin/users.md) management section of your install.
 
@@ -38,9 +64,9 @@ Note that you can change all of these later in the [User](admin/users.md) manage
 
 In the Settings section, enter:
 
-- An *installation title* which will display on the admin site
-- The installation's *time zone* (select from dropdown)
-- select a *locale* for the language of the admin side of the installation.
+- An **installation title** which will display on the admin site
+- The installation's **time zone** (select from dropdown)
+- select a **locale** for the language of the admin side of the installation.
 
 ![Settings section with fields as described](files/installOmekaS2.png)
 
@@ -52,6 +78,9 @@ See [Configuration Options](configuration.md) for information on settings for th
 	If you have an existing Omeka Classic or S installation, you may wish to look at modules such as the [Omeka Classic Importer](modules/omekaCimporter.md), which helps you move items and collections from Omeka Classic, or the [CSV Import module](modules/csvimport.md), which can import other types of data.
 
 ## Updating
+
+### Updating manually
+
 1. Download the latest release from the release page.
 1. Make a copy of your `/config` directory. You will need to restore your `local.config.php` and `database.ini` files from that copy.
 1. Make a copy of your `/modules` and `/themes` directories.
@@ -61,7 +90,12 @@ See [Configuration Options](configuration.md) for information on settings for th
     - For significant version updates, you may also have to install an updated version of your modules and themes. The release notes for the version will indicate whether or not those updates will be likely. Additionally, once you complete your migrations using your browser, the modules and themes that require new versions will be clearly marked on their respective pages.
 1. In your web browser, go to your site's admin page (`/myomekas/admin`) and run any migrations that are needed.
 
-## Install on Windows or Mac OS (basic development purpose only)
+### Updating from Github
+
+Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md){target=_blank} of the Omeka S GitHub repository. 
+
+
+## Install on Windows or Mac OS (basic development only)
 Omeka S does not support proprietary or closed-source operating systems. However, for **basic development purposes** or for quick training, Omeka can run with [WAMP](http://www.wampserver.com){target=_blank}, [MAMP](https://www.mamp.info){target=_blank}, or similar tools.
 
 Follow the standard installation instructions. You will need to make the following [configuration](configuration.md) changes to the file `config/local.config.php` to work.
