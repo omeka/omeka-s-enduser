@@ -57,7 +57,6 @@ By default the message is Powered by Omeka S.
 
 You can add HTML formatting to the text by manually adding the tags. 
 
-
 #### Top Navigation Depth
 (Default, Cozy, Foundation)
 Top Navigation Depth allows you the limit the depth of the top navigation menu on the public side of the site.  The default setting, 0, does not restrict the number of levels of the top navigation menu. Setting it to one would only show the top-level pages or links of your site.
@@ -81,7 +80,7 @@ Edit either field by typing a [color value](https://en.wikipedia.org/wiki/Web_co
 
 The default values are stored in the prompt text for the field. For the Cozy theme, the default values are: main accent color is `087b94` and navigation background color is `bfdcdc`'
 
-### Layout for Browse Pages
+#### Layout for Browse Pages
 (Center Row, Foundation)
 Select how to display items within their browse views.
 
@@ -90,7 +89,7 @@ Select how to display items within their browse views.
 * **Toggle (default: grid):** Site visitors can choose to display the browse views as grids or lists, with grids as the default.
 * **Toggle (default: list):** Site visitors can choose to display the browse views as grids or lists, with lists as the default.
 
-#### Foundation Theme Settings
+##### Foundation Theme Settings
 Foundation is theme which comes with a few default stylesheets for fast prototyping or getting started with modifying themes. As a result it has some unique settings. For more information on using Foundation, including working with Sass, see the [theme ReadMe file](https://github.com/omeka-s-themes/foundation-s/blob/master/README.md).
 
 Settings not described above: 
@@ -113,7 +112,7 @@ Within a site it is possible to configure the blocks of content that appear on t
 
 Individual themes will define the available regions (i.e. Main, Sidebar) where blocks maybe placed. 
 
-#### Selecting Regions and Blocks
+### Selecting Regions and Blocks
 In the right side bar, select a region from the dropdown menu, and then select a block from the list of available blocks by clicking on the element. Blocks maybe reordered within a region by dragging and dropping. To remove a block click the delete icon.
 
 ![Configure resource pages screen with the Item page tab selected and Lightbox gallery, Values, and Linked Resources listed under the Main regon in the center of the page. The right side bar includes a dropdown menu to select a region and a list of the remaining possible blocks to be added to the page](../sites/sitesfiles/sitetheme_configureResourcePages.png)
