@@ -1,4 +1,4 @@
-# Theme Selection
+# Themes
 
 The Theme tab of the site context menu allows you to select the theme for your site, and to set theme-specific settings. 
 
@@ -108,8 +108,44 @@ Settings not described above:
 	* **Show 4 lines and fade out** which displays 4 lines of text with a fade at the end of the text block.
 	* **Show 4 lines and ellipses** which displays 4 lines of text concluding with an ellipses (...) 
 
+## Configuring Resource Pages
+Within a site it is possible to configure the blocks of content that appear on the resource pages (item page, media page, and  item set page). 
+
+Individual themes will define the available regions (i.e. Main, Sidebar) where blocks maybe placed. 
+
+#### Selecting Regions and Blocks
+In the right side bar, select a region from the dropdown menu, and then select a block from the list of available blocks by clicking on the element. Blocks maybe reordered within a region by dragging and dropping. To remove a block click the delete icon.
+
+![Configure resource pages screen with the Item page tab selected and Lightbox gallery, Values, and Linked Resources listed under the Main regon in the center of the page. The right side bar includes a dropdown menu to select a region and a list of the remaining possible blocks to be added to the page](../sites/sitesfiles/sitetheme_configureResourcePages.png)
+
+A basic Omeka S installation will create the following configurable blocks, but modules may also add their own blocks.
+
+#### Item page
+Available blocks:
+
+- Item sets: list of item sets that contain the item
+- Lightbox gallery: show attached media using the lightbox gallery viewer 
+- Linked resources: table of resources that are linked to the item
+- Media embeds: show all of the attached media as embeded files 
+- Media lists: show the attached media as a list with thumbnail and title 
+- Site pages: show the site pages where the item is attached
+- Values: all item property values
+
+#### Media page
+Available blocks:
+
+- Lightbox gallery: show the media using the lightbox gallery viewer
+- Linked resources: table of resources that are linked to the media
+- Media render: show the current media 
+ - Values: all media property values 
+
+#### Item set page
+Available blocks:
+
+- Values: all media property values 
+
 ## Installing themes
-In order to appear in the *Themes* tab for sites, themes must be manually added to the `themes` folder of the installation, using an FTP program or an ssh connection.
+In order to appear on the *Theme* page for sites, themes must be manually added to the `themes` folder of the installation, using an FTP program or an ssh connection.
 
 To add a theme to the site using FTP
 
