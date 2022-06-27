@@ -22,8 +22,8 @@ Advanced search for items only is available on the [Items](content/items.md) pag
 
 The advanced search loads on a new page, and has the following options:
 
-- *Search full-text*: runs a full-text search on all of the text for every item in the installation.
-- *Search by value*: search for a term or phrase which you enter. 
+- **Search full-text**: runs a full-text search on all of the text for every item in the installation.
+- **Search by value**: search for a term or phrase which you enter. 
 	- The first selector allows you to specify a property to search. 
 	- The second selector allows you to set the relationship the property has with the value. The options are:
 		- is exactly, 
@@ -35,11 +35,11 @@ The advanced search loads on a new page, and has the following options:
 		- has any value (there is something in the property), and
 		- has no values.
 	- Finally, there is a text field for you to enter the value you want the property to have. To find a resource ID, go to the resource and look at the URL in your browser's address bar. The numbers at the end of the URL are the resource ID. 
-- *Search by class*: select a class by which to search from the dropdown menu.
-- *Search by template*: select a resource template from the dropdown. Templates are arranged by owner, then alphabetically. 
-- *Search by item set*: select from a dropdown of item sets.
-- *Search by site*: select a site from a dropdown of sites in the installation. Note that you can only search for items from one site at a time.
-- *Search by owner*: select a user from a dropdown of users in the installation.
+- **Search by class**: select a class by which to search from the dropdown menu.
+- **Search by template**: select a resource template from the dropdown. Templates are arranged by owner, then alphabetically. 
+- **Search by item set**: select from a dropdown of item sets.
+- **Search by site**: select a site from a dropdown of sites in the installation. Note that you can only search for items from one site at a time.
+- **Search by owner**: select a user from a dropdown of users in the installation.
 
 ![Advanced item search options page.](files/advancedsearch3.png)
 
@@ -50,14 +50,14 @@ You can remove value and item set searches using the red trash can icon to the r
 You can reset your search terms at any time by using the "Reset" button on the upper right next to the "Search" button.
 
 ### Media advanced search
-Advanced search for media is accessed from the [Media](content/media.md) browse page, from the *Advanced Search* link above the table of item sets.
+Advanced search for media is accessed from the [Media](content/media.md) browse page, from the **Advanced Search** link above the table of item sets.
 
 ![Advanced search button indicated with a red arrow.](files/search_mediaadvance1.png)
 
 The advanced search loads on a new page, and has the following options:
 
-- *Search full-text:* runs a full-text search on all of the text for every media resource in the installation.
-- *Search by value:* search for a term or phrase which you enter 
+- **Search full-text**: runs a full-text search on all of the text for every media resource in the installation.
+- **Search by value**: search for a term or phrase which you enter 
 	- The first selector allows you to specify a property to search. 
 	- The second selector allows you to set the relationship the property has with the value. The options are:
 		- is exactly, 
@@ -71,9 +71,9 @@ The advanced search loads on a new page, and has the following options:
 	- Finally, there is a text field for you to enter the value you want the property to have.
 	- To find a resource ID, go to the resource and look at the URL in your browser's address bar. The numbers at the end of the URL are the resource ID. 
 	- You can remove value searches using the red trash can icon to the right of the value settings.
-- *Search by Class:* select a class by which to search from the dropdown menu.
-- *Search by template:* select a resource template from the dropdown. Templates are arranged by owner, then alphabetically.
-- *Search by MIME type:* you can specify the media type for the search. For example, to find all tiff images, you would enter `image/tiff`. 
+- **Search by Class**: select a class by which to search from the dropdown menu.
+- **Search by template**: select a resource template from the dropdown. Templates are arranged by owner, then alphabetically.
+- **Search by MIME type**: you can specify the media type for the search. For example, to find all tiff images, you would enter `image/tiff`. 
 
 ![Advanced media search options form, with fields as described above.](files/search_mediaadvance2.png)
 
@@ -91,8 +91,8 @@ Advanced search for item sets only is accessed on the [Item Sets](content/item-s
 
 The advanced search loads on a new page, and has the following options:
 
-- *Search full-text*: runs a full-text search on all of the text for every item set in the installation.
-- *Search by value*: search for a term or phrase which you enter 
+- **Search full-text**: runs a full-text search on all of the text for every item set in the installation.
+- **Search by value**: search for a term or phrase which you enter 
 	- The first selector allows you to specify a property to search. 
 	- The second selector allows you to set the relationship the property has with the value. The options are:
 		- is exactly, 
@@ -106,8 +106,8 @@ The advanced search loads on a new page, and has the following options:
 	- Finally, there is a text field for you to enter the value you want the property to have.
 	- To find a resource ID, go to the resource and look at the URL in your browser's address bar. The numbers at the end of the URL are the resource ID. 
 	- You can remove value searches using the red trash can icon to the right of the value settings.
-- *Search by Class*: select a class by which to search from the dropdown menu
-- *Search by template*: select a resource template from the dropdown. Templates are arranged by owner, then alphabetically.
+- **Search by Class**: select a class by which to search from the dropdown menu
+- **Search by template**: select a resource template from the dropdown. Templates are arranged by owner, then alphabetically.
 
 ![Advanced item set search options form, with fields as described above.](files/advancedsearchis2.png)
 
@@ -134,8 +134,8 @@ Site visitors can access an advanced item search from the Browse Items page, if 
 
 Clicking this loads a new page with four options for search:
 
-- *Search full-text*: runs a full-text search on all of the text for every item in the installation.
-- *Search by value*: search for a term or phrase using multiple options.
+- **Search full-text**: runs a full-text search on all of the text for every item in the installation.
+- **Search by value**: search for a term or phrase using multiple options.
 	- The first selector allows you to specify a property to search. 
 		- Note that if you have have the [site settings](sites/site_settings.md#search) to restrict search to templates, this will only display the properties used by those templates. 
 	- The second selector allows you to set the relationship the property has with the value. The options are:
@@ -149,12 +149,12 @@ Clicking this loads a new page with four options for search:
 		- has no values.
 	- Finally, there is a text field for you to enter the value you want the property to have.
 	- To find a resource ID, go to the resource and look at the URL in your browser's address bar. The numbers at the end of the URL are the resource ID. 
-- *Search by class*: select a class by which to search from the dropdown menu. 
-- *Search by item set*: select from a dropdown of item sets.
+- **Search by class**: select a class by which to search from the dropdown menu. 
+- **Search by item set**: select from a dropdown of item sets.
 
 ![Advanced item search fields as described](files/search_publicitems2.png)
 
-Searches by value, class, and item set allow a visitor to search by more than one input; they can use the *add new* buttons to search with more than one search term. These search terms build - searching for two item sets will return all items in either item set, rather than only those items which are in both. 
+Searches by value, class, and item set allow a visitor to search by more than one input; they can use the "Add new" buttons to search with more than one search term. These search terms build - searching for two item sets will return all items in either item set, rather than only those items which are in both. 
 
 Site visitors can remove value and item set searches using the red trash can icon to the right of those search options.
 
@@ -165,8 +165,8 @@ Site visitors can access an advanced item set search from the Browse Items Sets 
 
 Clicking the advanced search link loads a new page with three options for search:
 
-- *Search full-text*: runs a full-text search on all of the text for every item set in the installation.
-- *Search by value*: search for a term or phrase using multiple options.
+- **Search full-text**: runs a full-text search on all of the text for every item set in the installation.
+- **Search by value**: search for a term or phrase using multiple options.
 	- The first selector allows you to specify a property to search. 
 		- Note that if you have have the [site settings](sites/site_settings.md#search) to restrict search to templates, this will only display the properties used by those templates. 
 	- The second selector allows you to set the relationship the property has with the value. The options are:
@@ -180,10 +180,10 @@ Clicking the advanced search link loads a new page with three options for search
 		- has no values.
 	- Finally, there is a text field for you to enter the value you want the property to have.
 	- To find a resource ID, go to the resource and look at the URL in your browser's address bar. The numbers at the end of the URL are the resource ID. 
-- *Search by class*: select a class by which to search from the dropdown menu. 
+- **Search by class**: select a class by which to search from the dropdown menu. 
 
 ![Item set advanced search options as described](files/search_publicitemsets2.png)
 
-Searches by value and class allow a visitor to search by more than one input; they can use the *add new* buttons to search with more than one search term. These search terms build - searching for two classes will return all item sets which have either class. 
+Searches by value and class allow a visitor to search by more than one input; they can use the "Add new" buttons to search with more than one search term. These search terms build - searching for two classes will return all item sets which have either class. 
 
 Site visitors can remove value and item set searches using the red trash can icon to the right of those search options.

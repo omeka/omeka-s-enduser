@@ -8,7 +8,7 @@ a:active {
 }
 
 a:visited {
-    color: #984646;
+    color: #ba1c1c;
 }
 
 .rst-content code {
@@ -37,7 +37,7 @@ color:revert!important;
     background-color: #A91919;
 }
 
-.wy-menu-vertical ul.current li a:hover {
+.wy-menu-vertical ul.current>li.current>ul.current> li a:hover, .wy-menu-vertical ul.current>li.current>a.current:hover {
 	color:#404040 !important;
 }
 
@@ -85,6 +85,11 @@ color:revert!important;
 
 .rst-content td {
     vertical-align: middle;
+}
+
+.rst-content code, .rst-content tt, code {
+	font-size:revert;
+	padding:1px 2px;
 }
 
 footer {

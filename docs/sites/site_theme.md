@@ -2,8 +2,8 @@
 
 The Theme tab of the site context menu allows you to select the theme for your site, and to set theme-specific settings. 
 
-## Installing themes
-In order to appear in the *Themes* tab for sites, themes must be manually added to the `themes` folder of the installation, using an FTP program or an ssh connection.
+## Install a theme
+In order to appear in the **Themes** tab for sites, themes must be manually added to the `/themes` folder of the installation, using an FTP program or an SSH connection.
 
 To add a theme to the site using FTP
 
@@ -23,13 +23,13 @@ A large image of the active theme appears on the left, with the theme title, ver
 
 ![Theme tab with Center Row as the current theme](../sites/sitesfiles/sitetheme_tab.png)
 
-Below the current theme are buttons for all other installed themes. The buttons have a small image of the theme in action, the theme name & version, and a link to the creator of the theme. 
+Below the current theme are tiles for all other installed themes. The tiles have a small image of the theme in action, the theme name & version, and a link to the creator of the theme. 
 
-To switch themes, click on the theme which you want to use. It should highlight slightly in gray, with a checkbox in the lower right-hand corner of the theme button. 
+To switch themes, click on the theme which you want to use. It should highlight slightly in gray, with a checkbox in the lower right-hand corner of the theme tile. 
 
 ![A selected theme showing the highlight and checkmark](../sites/sitesfiles/sites_themeselect.png)
 
-Click the Save button in the upper right-hand corner of the window to save changes. Click the Cancel button to leave without saving changes. 
+Click the "Save" button in the upper right-hand corner of the window to save changes. Click the "Cancel" button to leave without saving changes. 
 
 ## Theme settings
 
@@ -52,13 +52,13 @@ This asset is not associated with any of the items, and will be stored separatel
 
 ![Logo option](../sites/sitesfiles/sitetheme_logo.png)
 
-To upload a logo, click the Select button. This will open a sidebar where you can either upload a new file from your computer or choose from assets already uploaded to the installation.
+To upload a logo, click the "Select" button. This will open a sidebar where you can either upload a new file from your computer or choose from assets already uploaded to the installation.
 
 ![Logo option with sidebar open](../sites/sitesfiles/sitetheme_logo2.png)
 
 Note that the logo completely replaces the header, including the site title, for the site, so you may want to consider an image with text if it is important to you that users see the site title.
 
-To remove a logo, click the *clear* button in that block (only visible when a logo is active) and save changes.
+To remove a logo, click the "Clear" button in that block (only visible when a logo is active) and save changes.
 
 #### Footer content
 
@@ -90,9 +90,11 @@ The themes Default, Cozy, and The Daily include an option to enter values for th
 ![color option fields](../sites/sitesfiles/sitetheme_color.png)
 
 The Main Accent color is used for link text and on-hover colors, as in the image below: 
+
 ![arrow points to instances of main accent color in use](../sites/sitesfiles/sitetheme_mainaccent.png)
 
 The navigation background color sets the color of the navigation sidebar for the theme. 
+
 ![arrow points to sidebar](../sites/sitesfiles/sitetheme_navcolor.png)
 
 Edit either field by typing a color value into the field. Either a triplet or a six-character hexadecimal code will work. Once you have entered a valid value, the color bar on the left will automatically update to show the color entered, even without saving changes.
