@@ -26,12 +26,12 @@ On the Add User page, enter the following:
 - Select a *Role* using the dropdown menu (see above for user role privileges)
 - Check the *Is Active* box to confirm that the user is active.
 
-![Add new user form with fields as described](adminfiles/users_addnew.png)
+![Add new user form with fields as described](../admin/adminfiles/users_addnew.png)
 
 ## Managing Users
 To manage an existing user, go to the Users section.
 
-![Manage users view, top row is the Omeka Devs account. The drawer showing the number of items and item sets created by the Omeka Devs user is opened.](adminfiles/users_table.png)
+![Manage users view, top row is the Omeka Devs account. The drawer showing the number of items and item sets created by the Omeka Devs user is opened.](../admin/adminfiles/users_table.png)
 
 To view the name, email, and role of a user, click on the username. 
 
@@ -41,14 +41,14 @@ To see the items and item sets owned by a user, click the *more* (ellipses) butt
 
 To edit a user’s information, change their password, or access API keys, go to the Users section. Find the user on the table and click the edit icon (pencil) on their row in the table.
 
-![A single row of the user table, with the user's email blanked out. A blue circle highlights the edit icon, represented as a red pencil.](adminfiles/users_editbutton.png) 
+![A single row of the user table, with the user's email blanked out. A blue circle highlights the edit icon, represented as a red pencil.](../admin/adminfiles/users_editbutton.png) 
 
 The Edit User page has four tabs: *User Information*, *User Settings*, *Password*, and *API Keys*. After making changes on any of these tabs, be sure to click the save button in the upper right hand corner of the browser window. At any time you may cancel your edits by clicking the cancel button next to the save button.
 
 ### User information
 On this tab, you can edit the display *Name* and *Email* for the user, select or change the user *Role* and click the checkbox to confirm that the user *Is Active* (or uncheck the checkbox to render the user inactive)
 
-![User information tab for the Omeka Devs user with completed fields for email, display name, role, and an active checkbox for Is Active](adminfiles/users_info.png)
+![User information tab for the Omeka Devs user with completed fields for email, display name, role, and an active checkbox for Is Active](../admin/adminfiles/users_info.png)
 
 ### User settings
 This tab allows a user or global admin to set the following:
@@ -57,12 +57,71 @@ This tab allows a user or global admin to set the following:
 - *Default resource template*: select from existing templates to have a template auto-load whenever the user creates a new item.
 - *Default sites for items*: select from available sites to automatically attach new items to the sites when created by the user.
 
-![User settings for Omeka Dev with default options selected](adminfiles/users_settings.png)
+![User settings for Omeka Dev with default options selected](../admin/adminfiles/users_settings.png)
+
+#### Admin browse columns
+Users can decide which columns of information form their resource browse views within the administrative interface. The view have the following default columns
+
+- Item browse columns
+  - Resource class
+  - Owner (User)
+  - Created (Date)
+- Item set browse columns
+  - Resource class
+  - Owner
+  - Created
+- Media browse columns
+  - Resource class
+  - Owner
+  - Created
+- Site browse columns
+  - URL slug
+  - Owner
+  - Created
+
+Columns can be added, deleted and reordered. To add a column select it from the available dropdown menu. Columns may be reordered by dragging and dropping, and they may be deleted by clicking the delete icon.
+
+![Admin browse column interface in the main interface area with the Add a column dropdown menu for the Item browse column open](../admin/adminfiles/users_settings_browsecolumns.png)
+
+Additional available browse columns include:
+
+- Item browse columns
+  - ID
+  - Is public
+  - Modified
+  - Resource template
+  - Value
+- Item set browse columns
+  - ID
+  - Is open
+  - Is public
+  - Modified
+  - Resource template
+  - Value
+- Media browse columns
+  - ID
+  - Is public
+  - Media type
+  - Modified
+  - Resource template
+  - Size
+  - Value
+- Site browse columns
+  - Is public
+  - Modified
+  - Theme
+
+Each column maybe edited by clicking the pencil icon, which will reviewl the right sidebar. There, users may add a Header for the column. The Default input allows a user to decide what information prints in a column cell if there is no data available. When editing the Value column option, users will be able to a property to make visible, and to set the maximum number of values for that property that will be visible in the column.
+
+![Right sidebar image with the edit interface for the Values column showing a form to define the Header, the default output, the property selection, and the maximum number of values](../admin/adminfiles/users_settings_edit_browsecolumn.png)
+
+#### Admin browse defaults
+In addition to setting the columns that will be visible in the resource browse interfaces in the admin, a user can set the default sort column and action for each browse. Using may select a column to sort by and choose between an ascending or descending sort order. 
 
 ### Password
 On this tab, create a new password. It must be entered twice, in both the *new password* and *confirm new password* fields to take.
 
-![Empty password reset fields for the user outreach](adminfiles/users_password.png)
+![Empty password reset fields for the user outreach](../admin/adminfiles/users_password.png)
 
 To see the password requirements, click the arrow next to the New Password field. This will display a list of [requirements](../../configuration) if any have been configured.
 
@@ -71,7 +130,7 @@ Use this tab to generate an API key for the user. You must provide a label for t
 
 To remove existing API keys, check the *Delete?* box on the row for that key and click save.
 
-![API tab for user Omeka Devs with one generated but hidden api key, and below it the ability to create a new key](adminfiles/users_apikey.png)
+![API tab for user Omeka Devs with one generated but hidden api key, and below it the ability to create a new key](../admin/adminfiles/users_apikey.png)
 
 ## Batch edit users
 
@@ -79,7 +138,7 @@ You can edit multiple users at one time by using the checkboxes to the left of e
 
 Click the checkboxes to select the users you want to edit.
 
-![A close up of the users table showing only the checkboxes and email column, with three users' emails. Two of the user's boxes are checked, and the third is unchecked.](adminfiles/users_batch1.png)
+![A close up of the users table showing only the checkboxes and email column, with three users' emails. Two of the user's boxes are checked, and the third is unchecked.](../admin/adminfiles/users_batch1.png)
 
 Then, using the dropdown just above the table, select from the following options:
 
@@ -90,7 +149,7 @@ Then, using the dropdown just above the table, select from the following options
 
 To edit only the users whose checkboxes you have ticked, choose "Edit selected" from the dropdown and then click "Go". You will be directed to the Batch Edit Users page.
 
-![Batch edit users page](adminfiles/users_batch2.png)
+![Batch edit users page](../admin/adminfiles/users_batch2.png)
 
 On the right hand side of the page are the emails for the users you are editing and to whom any changes you make will be applied. 
 
@@ -109,18 +168,18 @@ If you choose "Edit all" rather than "edit selected" you can apply changes to al
 ## Delete a User
 On the User page of the administrative dashboard, click the trash can icon in the user’s row, to the left of their role information, to delete the user. Confirm the deletion in the dialog box which will appear on the right of the screen.
 
-![Delete confirmation for user Megan2, giving the number of items and item sets that user has created - in this case, zero for both.](adminfiles/users_delete.png)
+![Delete confirmation for user Megan2, giving the number of items and item sets that user has created - in this case, zero for both.](../admin/adminfiles/users_delete.png)
 
 ### Batch delete users
 To delete a number of users at once, click the checkboxes next to their names on the Users table (see Batch edit users, above). 
 
 From the dropdown menu just above the email column, select "delete selected" and click Go.
 
-![A red arrow points to the dropdown where "delete selected" is displayed](adminfiles/users_batchdel1.png)
+![A red arrow points to the dropdown where "delete selected" is displayed](../admin/adminfiles/users_batchdel1.png)
 
 This will open a drawer on the right side of the screen with a message telling you the number of users you are about to delete. This action *cannot be undone.* To permanently delete these users, click the red Confirm Delete button. To cancel, click the x in the upper right corner of the drawer. 
 
-![Confirm delete message for 5 users](adminfiles/users_batchdel2.png)
+![Confirm delete message for 5 users](../admin/adminfiles/users_batchdel2.png)
 
 The "delete all" action in the dropdown will delete all users excluding yourself. This action *cannot be undone* and should be used with extreme caution. 
 
