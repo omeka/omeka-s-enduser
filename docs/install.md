@@ -52,7 +52,7 @@ Once you have successfully installed Omeka S and configured the `database.ini` f
 
 The first time you point your browser to the newly installed site, you will need to enter information for the first user, along with basic information for your install. There are two sections on this page: **Create the first user** and **Settings**.
 
-In the First User section:
+In the **Create the first user** section:
 
 - Enter an **email** address, and type again to confirm
 - Confirm the **password** and type again in the next input to confirm
@@ -62,7 +62,7 @@ Note that you can change all of these later in the [User](admin/users.md) manage
 
 ![First user section with fields as described](files/installOmekaS1.png)
 
-In the Settings section, enter:
+In the **Settings** section, enter:
 
 - An **installation title** which will display on the admin site
 - The installation's **time zone** (select from dropdown)
@@ -95,12 +95,12 @@ See [Configuration Options](configuration.md) for information on settings for th
 Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md){target=_blank} of the Omeka S GitHub repository. 
 
 
-## Install on Windows or Mac OS (basic development only)
+## Install on Windows or Mac OS (development only)
 Omeka S does not support proprietary or closed-source operating systems. However, for **basic development purposes** or for quick training, Omeka can run with [WAMP](http://www.wampserver.com){target=_blank}, [MAMP](https://www.mamp.info){target=_blank}, or similar tools.
 
 Follow the standard installation instructions. You will need to make the following [configuration](configuration.md) changes to the file `config/local.config.php` to work.
 
-First, the PHP path may need to be set if Omeka S cannot automatically detect the location of your PHP utilities on your server. Open the `local.config.php` file and look for line 12:
+First, the PHP path may need to be set if Omeka S cannot automatically detect the location of your PHP utilities on your local server. Open the `local.config.php` file and look for line 12:
 ```
     'cli' => [
         'phpcli_path' => null,
@@ -109,7 +109,7 @@ First, the PHP path may need to be set if Omeka S cannot automatically detect th
 
 Fill out the `phpcli_path` value with the appropriate path for your operating system. For example, if you are using a MAMP environment, you may find the PHP utilities inside the MAMP installation folder at `MAMP\bin\php\php7`.
 
-Second, you need to configure Omeka S to use the thumbnail-generating utility available on your server. Open the `local.config.php` file and look for the following section:
+Second, you need to configure Omeka S to use the thumbnail-generating utility available on your local server. Open the `local.config.php` file and look for the following section:
 ```
     'service_manager' => [
         'aliases' => [
