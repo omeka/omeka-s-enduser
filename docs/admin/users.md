@@ -22,7 +22,7 @@ Behind the scenes, role values use the following slugs:
 - `editor`
 - `reviewer`
 - `author`
-- `researcher`
+- `researcher`.
 
 These roles are separate from the [user roles assigned at a site-specific level](../sites/site_users.md), which allow registered users of the installation to have site access to build exhibit pages.
 
@@ -33,7 +33,14 @@ One example for how you may wish to manage the users of your site:
 - Reviewer staff members who are responsible for manually adding digitized or collected items and describing them according to institutional guidelines, and editing the additions of others.
 - Authors and Researchers who are given site-specific permissions to create exhibits and publish their research using digitized items in the collection.
 
-## Create a new user
+- A **Global Admin** user who installs, manages, and upgrades the modules and themes, and controls fundamental installation settings and server utilities.
+- A **Supervisor** who manages user accounts on the installation and sites.
+- One or more **Editors** who are responsible for the design and management of items, item sets, and resource templates.
+- **Reviewer** staff members who are responsible for manually adding digitized or collected items and describing them according to institutional guidelines, and editing the additions of others.
+- **Authors** who can add and edit their own items, and who are also given site-specific permissions to create exhibits and publish their research using items in the collection.
+- **Researchers** who can be given site-specific permissions, but cannot add items.
+
+## Create a user
 
 Only Supervisors and Global Administrators can create, edit, and delete users. Editors, Reviewers, Authors, and Researchers can edit their own user information but cannot change the information of other users.
 
@@ -41,16 +48,14 @@ To create a new user, select the *Add new user* button in the upper right hand c
 
 ![Add new user form with fields as described](adminfiles/users_addnew.png)
 
-![Add new user form with fields as described](adminfiles/users_addnew.png)
-
 On the Add User page, enter the following:
 
-- *Name* (full name or credit name)
-- *Email address*
-- A *Role* from the dropdown menu (see above for user role privileges)
-- Check the *Is Active* box to confirm that the user is active. A user who is inactive cannot log in.
+- **Email address**
+- **Name** (full name or a display name)
+- A **Role** from the dropdown menu (see above for user role privileges)
+- Check the **Is active** box to confirm that the user is active. A user who is inactive cannot log in.
 
-The user is then sent a notification email to set up their account & password. Each email will expire 14 days after being sent. If the email expires, an administrator can manually set up a user's temporary password and email them.
+The user is then sent a notification email to set up their account & password. The email will appear to come from what is set as the Administrator email in the [General settings of the installation](settings.md#general). Each email will expire 14 days after being sent. If the email expires, an administrator can manually set up a user's temporary password and email them.
 
 > *Greetings!*
 >
@@ -62,7 +67,10 @@ The user is then sent a notification email to set up their account & password. E
 >
 > *Your activation link will expire on [date and time]. If you have not completed the user activation process by the time the link expires, you will need to request another activation email from your site administrator.*
 
-## Managing users
+!!! note
+	If you are having problems sending emails from your Omeka S installation, check with your hosting provider. Some hosting setups may require that the domain name for the administrator email matches the domain name of the installation (if your domain is `yourinstall.org`, the administrator email must be `user@yourinstall.org`). Omeka S relies on the server’s underlying `sendmail` utility for sending email.
+
+## Manage users
 To manage an existing user, go to the Users section.
 
 ![Manage users view, top row is the Omeka Devs account. The drawer showing the number of items and item sets created by the Omeka Devs user is opened.](adminfiles/users_table.png)
@@ -77,33 +85,33 @@ To edit a user’s information, change their password, or access their API keys,
 
 ![A single row of the user table, with the user's email blanked out. A blue circle highlights the edit icon, represented as a red pencil.](adminfiles/users_editbutton.png)
 
-The Edit User page has four tabs: *User Information*, *User Settings*, *Password*, and *API Keys*. After making changes on any of these tabs, be sure to click the save button in the upper right hand corner of the browser window. At any time you may cancel your edits by clicking the cancel button next to the save button.
+The Edit User page has four tabs: **User information**, **User settings**, **Password**, and **API keys**. After making changes on any of these tabs, be sure to click the save button in the upper right hand corner of the browser window. At any time you may cancel your edits by clicking the cancel button next to the save button.
 
 ### User information
-On this tab, you can edit the display *Name* and *Email* for the user, select or change the user *Role* and click the checkbox to confirm that the user *Is Active* (or uncheck the checkbox to render the user inactive). A user who is inactive can keep accessing the admin interface until they log in, then they will not be able to log back in.
+On this tab, you can edit the display **Name** and **Email** for the user, select or change the user **Role** and click the checkbox to confirm that the user **Is active** (or uncheck the checkbox to render the user inactive). A user who is inactive can keep accessing the admin interface until they log in, then they will not be able to log back in.
 
 ![User information tab for the Omeka Devs user with completed fields for email, display name, role, and an active checkbox for Is Active](adminfiles/users_info.png)
 
 ### User settings
 This tab allows a user or global admin to set the following:
 
-- *Locale*: select from a dropdown of available languages. This will change the language of the installation's admin & public interfaces for that user. (This depends on [how many interface strings have been translated](../translateOmekaS.md). Untranslated strings default to English.)
-- *Default resource template*: select from existing templates to have a template auto-load whenever the user creates a new item.
-- *Default sites for items*: select from available sites to automatically attach new items to the sites when created by the user. Setting this will not give the user a site-specific role.
+- **Locale**: select from a dropdown of available languages. This will change the language of the installation's admin & public interfaces for that user. (This depends on [how many interface strings have been translated](../translateOmekaS.md). Untranslated strings default to English.)
+- **Default resource template**: select from existing templates to have a template auto-load whenever the user creates a new item.
+- **Default sites for items**: select from available sites to automatically attach new items to the sites when created by the user. Setting this will not give the user a site-specific role.
 
 ![User settings for Omeka Dev with default options selected](adminfiles/users_settings.png)
 
 ### Password
-On this tab, create a new password. It must be entered twice, in both the *new password* and *confirm new password* fields, to save properly.
+On this tab, create a new password. It must be entered twice, in both the New Password and Confirm New Password fields, to save properly.
 
 ![Empty password reset fields for the user outreach](adminfiles/users_password.png)
 
 To see the password requirements, click the arrow next to the New Password field. This will display a list of [requirements](../../configuration) if any have been configured.
 
-### API key
+### API keys
 Use this tab to generate an API key for the user. To generate one, you must provide a label for the key - this could be a date or the purpose of the key. Save the page to generate the key.
 
-To remove existing API keys, check the *Delete?* box on the row for that key and click Save.
+To remove existing API keys, check the "Delete?" box on the row for that key and click Save.
 
 ![API tab for user Omeka Devs with one generated but hidden API key, and below it the ability to create a new key](adminfiles/users_apikey.png)
 
@@ -134,11 +142,11 @@ On this page you can:
 - Set activity: set selected users as active, not active, or no change.
 - Remove from [site permissions](../sites/site_users.md): select from a dropdown menu of the sites on the Omeka S install, or use the option "all sites" to remove the selected users from all sites.
 - Add to [site permissions](../sites/site_users.md): select from a dropdown menu of the sites on the Omeka S install, or use the option "all sites" to add the selected users to all sites.
-- Add to [site permission](../sites/site_users.md) as: a dropdown with options for viewer, editor, or admin - select which role the users will have on the sites to which you have added them.
+- Add to [site permission](../sites/site_users.md) as: a dropdown with options for viewer, manager, or creator - select which role the users will have on the sites to which you have added them.
 
 Once you are done, click save changes.
 
-If you choose "Edit all" rather than "edit selected" you can apply changes to all users - excluding yourself - on the Omeka S installation. Use this feature carefully!
+If you choose "Edit all" rather than "Edit selected" you can apply changes to all users - excluding yourself - on the Omeka S installation. Use this feature carefully!
 
 ## Delete a user
 On the User page of the administrative dashboard, click the trash can icon in the user’s row, to the left of their role information, to delete the user. Confirm the deletion in the dialog box which will appear on the right of the screen.
@@ -148,17 +156,17 @@ On the User page of the administrative dashboard, click the trash can icon in th
 ### Batch delete users
 To delete a number of users at once, click the checkboxes next to their names on the Users table (see Batch edit users, above).
 
-From the dropdown menu just above the email column, select "delete selected" and click Go.
+From the dropdown menu just above the email column, select "Delete selected" and click Go.
 
-![A red arrow points to the dropdown where "delete selected" is displayed](adminfiles/users_batchdel1.png)
+![A red arrow points to the dropdown where "Delete selected" is displayed](adminfiles/users_batchdel1.png)
 
-This will open a drawer on the right side of the screen with a message telling you the number of users you are about to delete. This action *cannot be undone.* To permanently delete these users, click the red Confirm Delete button. To cancel, click the x in the upper right corner of the drawer.
+This will open a drawer on the right side of the screen with a message telling you the number of users you are about to delete. This action *cannot be undone*. To permanently delete these users, click the red "Confirm Delete" button. To cancel, click the "X" in the upper right corner of the drawer.
 
 ![Confirm delete message for 5 users](adminfiles/users_batchdel2.png)
 
-The "delete all" action in the dropdown will delete all users excluding yourself. This action *cannot be undone* and should be used with extreme caution.
+The "Delete all" action in the dropdown will delete all users excluding yourself. This action *cannot be undone* and should be used with extreme caution.
 
-To permanently delete these users, you must check the "Are you sure" box before clicking the "Confirm Delete" button. To cancel, click the X in the upper right corner of the drawer.
+To permanently delete these users, you must check the "Are you sure" box before clicking the "Confirm Delete" button. To cancel, click the "X" in the upper right corner of the drawer.
 
 ## Roles and permissions
 The following is a detailed breakdown of permissions for each user role:
@@ -209,34 +217,6 @@ The following is a detailed breakdown of permissions for each user role:
 - Cannot see objects marked private, unless the object is a site that they have site-specific permissions for.
 - No access to modules.
 - Can see other users of the installation and their email addresses.
-
-
-| Category | Permission | Global Admin | Supervisor | Editor | Reviewer | Author | Researcher |
-|-----|-----|---|---|---|---|---|---|
-| Items & media | Add | Yes | Yes | Yes | Yes | Yes | No |
-| | Edit | All | All | All | All | Their own | No |
-| | Delete | All | All | All | Their own | Their own | No |
-| Item sets | Add | Yes | Yes | Yes | Yes | Yes | No |
-| | Edit | All | All | All | All | Their own | No |
-| | Delete | All | All | All | Their own | Their own | No |
-| Vocabularies | Import | Yes | No | No | No | No | No |
-|  | Edit | Yes | No | No | No | No | No |
-|  | Delete | Yes | No | No | No | No | No |
-| Resource templates | Add | Yes | Yes | Yes | No | Yes | No |
-| | Edit  | Yes | Yes | Yes | No | Their own | No |
-| | Delete | Yes | Yes | Yes | No | Their own | No |
-| **View private objects** | | Yes | Yes | Yes | Yes | No | No |
-| Users | Add | Yes | Yes | No | No | No | No |
-|  | Edit | Yes | Yes | No | No | No | No |
-|  | Delete | Yes | Yes | No | No | No | No |
-| Modules |  | Install & use | Use | No | No | No | No |
-| Jobs | View | Yes | Yes | No | No | No | No |
-| Admin settings |  | Yes | No | No | No | No | No |
-| Assets |  | Yes | Yes | No | No | No | No |
-|  |  |  |  |  |  |  |  |
-| Site user roles | Modify | Yes | Yes | No | No | No | No |
-|  |  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |  |
 
 
 A user at any role can be added to a site at any level (Viewer, Creator, Manager). This will determine whether, say, a Researcher-level user added to a site as Manager can see all the other users added to that site.
