@@ -45,6 +45,7 @@ nav:
         - modules/customvocab.md
         - modules/datacleaning.md
         - modules/datavisualization.md
+        - modules/datarepositoryconnector.md
         - modules/dspaceconnector.md
         - modules/extractmetadata.md
         - modules/extracttext.md
@@ -57,6 +58,7 @@ nav:
         - modules/numericdatatypes.md
         - modules/omeka2importer.md
         - modules/ositemimporter.md
+        - modules/persistentidentifiers.md
         - modules/redactvalues.md
         - Scripto:
             - modules/scripto/index.md
