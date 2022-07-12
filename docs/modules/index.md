@@ -27,7 +27,7 @@ When a module has a new release, it will display on the browse page with a messa
 
 ## Installing modules
 ### Add the module to Omeka S
-In order to appear in the **Modules** tab of the Admin Dashboard for your Omeka S installation, modules must be manually added to the `modules` folder of the installation, using an FTP program or SSH connection.
+In order to appear in the **Modules** tab of the admin dashboard for your Omeka S installation, modules must be manually added to the `/modules` folder of the installation, using an FTP program or SSH connection.
 
 Modules registered with Omeka are available on the [Modules](https://omeka.org/s/modules/){target=_blank} page of the Omeka S site. Other modules may be made available by their authors in other locations.
 
@@ -48,34 +48,29 @@ You can also use SSH to clone a module directly from that module's git repositor
 ### Install a module
 To install a module, navigate to the Modules tab on the left-hand navigation of the admin dashboard of your Omeka S installation.
 
-Find the module in the table and click the "Install" button.
+Find the module in the table and click the "Install" button. The module is now installed and will automatically be activated. For modules with configuration options, you will be taken to the configuration page for that module. For modules without configuration options, the Modules page will simply reload, with a success message at the top.
 
-The module is now installed. You should see a success message once the page reloads. For modules with configuration options, you will be taken immediately to the configuration page for that module. For all other modules the Modules page will simply reload. On the Modules page, the *Status* of the module should change from “Not Installed” to “Not Active”.
-
-![Success message with green highlight reading “The module was successfully installed”](modulesfiles/mods_insuccess.png)
-
-Modules are automatically activated when installed. 
+![Success message with green highlight reading "The module was successfully installed"](modulesfiles/mods_insuccess.png)
 
 ### Activating a module
-If you have a module which is installed but inactive, click the activate button to use the module.
 
-You should see a success message once the page reloads, and the *Status* of the module should change from “Not Active” to “Active”.
+If you have a module which is installed but inactive, click the "Activate" button to use the module. You should see a success message once the page reloads. The "Activate" button will now read "Deactivate".
 
-![Success message with green highlight reading “The module was successfully activated”](modulesfiles/mods_acsuccess.png)
+![Success message with green highlight reading "The module was successfully activated"](modulesfiles/mods_acsuccess.png)
 
 ## Configuring a module
-Some, but not all, modules include the option to configure settings for that module. If an active module displays the *configure* (wrench) button, you may configure that module.
+Some, but not all, modules include the option to configure settings for that module. If an active module displays the "Configure" button with a wrench icon, you should click through to understand the configuration settings for that module.
 
 Information regarding configuration options for individual modules can be found on the documentation page for those modules.
 
 ## Uninstalling a module
 Removing a module is essentially installing in reverse:
 
-1. Deactivate the module by clicking the *deactivate* button.
-1. Uninstall the module by clicking the *uninstall* button.
-1. A drawer will open on the right side of the window asking you to confirm that you want to uninstall the module. Click “Confirm Uninstall” to continue.
+1. Deactivate the module by clicking the "Deactivate" button.
+1. Uninstall the module by clicking the "Uninstall" button.
+1. A drawer will open on the right side of the window asking you to confirm that you want to uninstall the module. Click "Confirm uninstall" to continue.
 
-![Uninstall module dialogue with the message “Are you sure you would like to uninstall this module?”](modulesfiles/mods_confirmuninstall.png)
+![Uninstall module dialogue with the message "Are you sure you would like to uninstall this module?"](modulesfiles/mods_confirmuninstall.png)
 
 The uninstalled module will continue to appear on your Modules page (with the option to install it) unless the folder for the module is removed from the `/modules` folder on the Omeka S installation, which can be done via FTP or SSH.
 
@@ -83,13 +78,14 @@ The uninstalled module will continue to appear on your Modules page (with the op
 To update a module using FTP:
 
 1. From the Modules tab on your Omeka S installation, deactivate the module you're going to update.
-2. Download the latest release of the module to your computer.
+1. Download the latest release of the module to your computer.
 1. Open your FTP client and log on to the server that houses the Omeka S install.
-2. Navigate to the `/modules` folder (this should be located in the main folder of the install).
-3. Move the old copy of the module to your desktop (or somewhere else on your local machine where you will be able to find it).
-4. Use your FTP client to upload the zipped folder for the latest version of the module to the `/modules` folder. 
-5. In your FTP client, unzip the new version module.
-6. On the Omeka S installation dashboard, go to the Modules tab and activate the new version of the module.
+1. Navigate to the `/modules` folder (this should be located in the main folder of the install).
+1. Move the old copy of the module to your computer.
+1. Upload the zipped folder for the latest version of the module to the `/modules` folder. 
+1. In your FTP client, unzip the new version module.
+1. On the Omeka S installation dashboard, go to the Modules tab and activate the new version of the module.
+1. Check to be sure your settings have been preserved and there are no errors. After this, you can safely delete the old module folder that you saved to your computer. 
 
 If you are concerned about problems with the update, be sure to keep the older version of the module on your local machine in case you have to switch them back. Follow the same update steps with the earlier version of the module.
 

@@ -1,23 +1,25 @@
 # Mapping 
 
-The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows you to geolocate Omeka S items and add interactive maps to [Site Pages](../sites/site_pages). Maps can also include timelines that allow you to scroll through items on a map in chronological order. 
+The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows you to geolocate Omeka S items. Maps can also include timelines that allow you to scroll through items on a map in chronological order. 
+
+The Mapping module has no global configuration settings. It adds geolocating capabilities to each item, and also adds page blocks to [Site Pages](../sites/site_pages.md) that can be used to display maps for browsing.
 
 ## Item mapping
 
-To add a map to a new or existing item, click to edit the item. Navigate to the _Mapping_ tab to add a map to the item. Selecting the tab will open the map interface.
+To add a map to a new or existing item, click to edit the item. Navigate to the "Mapping" tab to add a map to the item. Selecting the tab will open the map interface.
 
 ![Screenshot of the Add/Edit Item Page with Mapping tab selected. Large World Map with white buttons described below](../modules/modulesfiles/Mapping_Item_Add.png)
 
-### Manipulating the Map
+### Manipulating the map
 Small white buttons on the left side of the map control and modify the appearance of the map. Hover over the buttons with the mouse to view tool-tips.
 
 ![Screenshot of the buttons on the map described below](../modules/modulesfiles/Mapping_JustButtons.png) 
 
-* **Zoom in**: The small white square with a black plus sign. Each click zooms in one step.
-* **Zoom out**: The small white square with black minus sign. Each click zooms out one step.
+* **Zoom in**: The small white square with a black plus sign. Each click zooms in one step (between 0 and 19).
+* **Zoom out**: The small white square with black minus sign. Each click zooms out one step (between 0 and 19).
 * **Draw a Marker**: The small white square with black bubble marker. When you click the button your pointer becomes a blue marker. Click again on the map to place the marker.
-* **Move Marker**: The small white square with black box and pencil icon. This option is only available after a marker has been added. Click the button and a pink box appears around each marker. Click a marker to move it. Click again to place. Use the grey buttons to _Save_ or _Cancel_. 
-* **Delete Marker**: The small white button with a trashcan icon. This option is only available after a marker has been added. Click the icon to select a marker. Click the marker to be removed and it will disappear. Use the grey buttons to _Save_ or _Cancel_ these changes. 
+* **Move Marker**: The small white square with black box and pencil icon. This option is only available after a marker has been added. Click the button and a pink box appears around each marker. Click a marker to move it. Click again to place. Use the grey buttons to "Save" or "Cancel". 
+* **Delete Marker**: The small white button with a trashcan icon. This option is only available after a marker has been added. Click the icon to select a marker. Click the marker to be removed and it will disappear. Use the grey buttons to "Save" or "Cancel" these changes. 
 * **Search Address**: The small white square with a black magnifying glass icon. Click to enter an address in the search bar.
 * **Set the current view as default view**: The small white square with a target or crosshair symbol. The map will default to a zoomed out (global) view. Click to set the current view as the default view for this item.
 * **Go to current default view**: The small black square with a black box around a dot. The This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
@@ -26,7 +28,7 @@ Small white buttons on the left side of the map control and modify the appearanc
 In addition to these options, you can also navigate the map using your mouse or trackpad by scrolling to zoom and clicking and dragging to pan.
 
 ### Adding locations to an item
-In order to add a location to an item, go to the Mapping tab.
+In order to add a location to an item, edit the item and go to the "Mapping" tab.
 
 To find the point where you want to locate the marker, you can do one of the following: 
 
@@ -37,7 +39,7 @@ To find the point where you want to locate the marker, you can do one of the fol
 
 ![Mapping tab with a search for "Roosevelt Island" in the search view. Below the search field are a number of suggested locations.](../modules/modulesfiles/Mapping_itemSearch.png)
 
-Click on the *Draw a Marker* tool in the right hand toolbar. Your cursor will become a marker which can move around the map. To set the point, click on the map.
+Click on the **Draw a Marker** tool in the right hand toolbar. Your cursor will become a marker which can move around the map. To set the point, click on the map.
 
 ![Mapping tab with an active marker being drawn. The marker has a tooltip saying "click map to place marker"](../modules/modulesfiles/Mapping-drawMarker.png)
 
@@ -54,7 +56,7 @@ To edit the label or image, simply click on the marker. This will open the optio
 
 To **move a marker** you have added, use the "Move marker" button on the left hand toolbar (small white square with black box and pencil icon). Any marker on the map will become highlighted in a red, dotted-line outline. Click and drag the marker you want to move. 
 
-To apply your changes, click the "Save" option which opens from the "Move marker" button. To cancel the changes, click "Cancel." If you do not click save, the marker will not be moved.
+To apply your changes, click the "Save" option which opens from the "Move marker" button. To cancel the changes, click "Cancel". If you do not click save, the marker will not be moved.
 
 ![Marker being moved](../modules/modulesfiles/Mapping-moveMarker.png)
 
@@ -64,11 +66,15 @@ Note that you can use the "clear all" button in the menu which opens form the "d
 
 ![Marker being deleted.](../modules/modulesfiles/Mapping-deleteMarker.png)
 
-### Batch-importing mapping information
+### Setting the map display
 
-Mapping is compatible with [CSV Import](../modules/csvimport.md) when importing items (not item sets, media, or mixed resources). 
+You can also set the map's default display zoom level and center, independently of the marker(s) you place. The default is to center on one marker and zoom fully in, or to zoom out far enough to contain all markers in the map view. 
 
-If the two modules are enabled, two new dropdown menus will appear in the "Add mapping" sidebar when you are connecting a column to a property. 
+## CSV Import integration
+
+Mapping is compatible with [CSV Import](../modules/csvimport.md) when importing items (not mixed resources). 
+
+If the two modules are enabled, your CSV Import setup will have two new dropdown menus in the "Add mapping" sidebar when you are connecting a spreadsheet column to a property. 
 
 The "Resource location" dropdown menu includes three options for pinning the item geographically (latitude, longitude, and latitude/longitude). You can import multiple values for these fields. 
 
@@ -80,20 +86,20 @@ You cannot batch-edit mapping values after items are in your system, only edit t
 
 ## Adding map blocks to a site
 
-Mapping creates two blocks you can add to your site: Map by attachments, where you manually add resources to the map block; and Map by query, which allows you to use a search string to add resources to the map block. 
+Mapping creates two page blocks you can add to your pages: "Map by attachments", where you manually add resources to the map block; and "Map by query", which allows you to use a search string to add resources to the map block. 
 
-To add a map to a new or existing page, click to edit the page. On the right, under _Add New Block_ , click the  _Map_ tab to add a map to the item (1). Selecting the tab will open the map block to the page (2). This block includes customizable features for the map in collapsable panes. Click the triangle to expand or collapse these fields (3). 
+To add a map to a new or existing page, click to edit the page. On the right, under "Add new block", click either the "Map by attachments" or "Map by query" option (1). Selecting one will open the map block to the page (2). The blocks include customizable features for the map in collapsable panes. Click the triangle to expand or collapse these fields (3). 
 
 ![Screenshot of the Page with Map Block selected. Block includes menu options Default View, WMS Overlays and attachments.](../modules/modulesfiles/Mapping_Page_MapBlock1.png)
 
-The *Map by attachments* and *Map by query* blocks have largely the same settings, with the exception of the final option. 
+The "Map by attachments" and "Map by query" blocks have largely the same settings, with the exception of the final option. 
 
 ### Default view 
 This section lets you set the appearance and zoom level of the map. There are three fields and a preview map. Within the preview map are buttons which you can use to set the default zoom and location of the map. If you do not set a default zoom or location, the map will adjust to display all resources.
 
 ![Map by attachments block open to Default Settings. There is no information in any field, and the preview map is zoomed in to level 2](../modules/modulesfiles/mappingBlockDefaultView1.png)
 
-*Basemap provider*: select from a dropdown of basemaps. Once selected, the preview map will update to show you the appearance of that map. The default is OpenStreetMap.Mapnik.
+Basemap provider: select from a dropdown of basemaps. Once selected, the preview map will update to show you the appearance of that map. The default is "OpenStreetMap.Mapnik".
 
 Minimum zoom level: set the minimum zoom for the map. Fully zoomed out is 0. 
 
@@ -103,11 +109,11 @@ Between the fields and the preview map is a message which tells you the current 
 
 Within the preview map, there are five buttons: 
  
- * *Zoom in:* The small white square with a black plus sign. Each click zooms in one step.
- * *Zoom out:* The small white square with black minus sign. Each click zooms out one step.
- * *Set the current view as default view:* The small white square with a target or crosshair symbol. The map will default to a global view. Click to set the current view as the default view.
- * *Go to current default view:* The small black square with a black box around a dot. This option is only available after a default view has been set. Click to pan and zoom map to the selected view.
- * *Clear the default center and zoom level:* The small white square with a black "X". Click to clear pan and zoom preferences and return to the initial global view.
+ * Zoom in: The small white square with a black plus sign. Each click zooms in one step (between 0 and 19).
+ * Zoom out: The small white square with black minus sign. Each click zooms out one step (between 0 and 19).
+ * Set the current view as default view: The small white square with a target or crosshair symbol. The map will default to a global view. Click to set the current view as the default view.
+ * Go to current default view: The small black square with a black box around a dot. This option is only available after a default view has been set. Click to pan and zoom map to the selected view.
+ * Clear the default center and zoom level: The small white square with a black "X". Click to clear pan and zoom preferences and return to the initial global view.
 
 ![closeup of the mapping buttons with labels added](../modules/modulesfiles/mappingBlockDefMapButtons.png)
 

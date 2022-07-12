@@ -26,7 +26,7 @@ This line will appear after the stylesheets that come from Omeka's defaults and 
 
 ![Screenshot of CSS Editor module interface.](modulesfiles/csseditor_interface.jpg)
 
-Next, CSS Editor also allows you to include external stylesheets by entering their URLs. There is no limit to the number of external stylesheet URLs you can enter. Each text input can take a single URL, and additional inputs can be created by clicking the "Add another stylesheet" button.
+CSS Editor also allows you to include external stylesheets by entering their URLs. There is no limit to the number of external stylesheet URLs you can enter. Each text input can take a single URL, and additional inputs can be created by clicking the "Add another stylesheet" button.
 
 To remove external stylesheets, either clear the text inputs, or click on the trash can icon if there are multiple stylesheet fields.
 

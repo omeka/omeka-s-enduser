@@ -166,7 +166,11 @@ This will open a drawer on the right side of the screen with a message telling y
 
 The "Delete all" action in the dropdown will delete all users excluding yourself. This action *cannot be undone* and should be used with extreme caution.
 
+<<<<<<< Updated upstream
 To permanently delete these users, you must check the "Are you sure" box before clicking the "Confirm Delete" button. To cancel, click the "X" in the upper right corner of the drawer.
+=======
+To permanently delete all users, you must check the "Are you sure" box before clicking the "Confirm Delete" button. To cancel, click the "X" in the upper right corner of the drawer. 
+>>>>>>> Stashed changes
 
 ## Roles and permissions
 The following is a detailed breakdown of permissions for each user role:

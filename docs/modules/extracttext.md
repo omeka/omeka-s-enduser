@@ -2,9 +2,9 @@
 
 The [Extract Text module](https://omeka.org/s/modules/ExtractText){target=_blank} will extract text from files to make them searchable and machine readable. The extracted text will be added to a property called "extracted text" in a vocabulary unique to that module.
 
-When enabled, Extract Text adds a new metadata field, with a textual data type, at the item level and at the media level, with the name "extracted text" and the slug "extracttext:extracted_text". It is set to public by default on item view pages. 
+When enabled, Extract Text adds a new metadata field, with a textual data type, at the item level and at the media level, with the name "extracted text" and the slug `extracttext:extracted_text`. It is set to public by default on item view pages. 
 
-It also adds an "Extract text" tab to each item editing page, where you can refresh or remove extracted text. It adds a batch-editing option to extract or clear text from existing files in your database. And, when active, it will automatically extract text from files uploaded in [batch imports](../modules/csvimport.md). 
+It also adds an "Extract text" tab to each item editing page, where you can refresh or remove extracted text. It adds a batch-editing option to extract or clear text from existing files in your database. When active, it will automatically extract text from files uploaded in [batch imports](../modules/csvimport.md). 
 
 When the module is deactivated, items with text in the "extracted text" fields will not be changed; the field will still display.
 
@@ -22,7 +22,7 @@ Potential supported file formats for this module are:
 - rtf
 - txt.
 
-You must have the necessary extractors available on your server for the module to run for these filetypes. To see which filetypes will run on your installation, go to the Extract Text entry under Modules, and click the "Configure" button. This will load a table showing you which extractors are available on your server.
+You must have the necessary extractors available on your server for the module to run for these filetypes. To see which filetypes will run on your installation, go to the "Extract Text" entry under Modules, and click the "Configure" button. This will load a table showing you which extractors are available on your server.
 
 The extractors required are:
 

@@ -14,20 +14,20 @@ The Add Custom Vocab page has four fields: Label, Language, Vocab Type, and Term
 
 ![Add Custom Vocab with data entered in the label and terms fields](../modules/modulesfiles/customVocab-add-URI.png)
 
-- *Label*: A name for the vocabulary, which you will use to find it when adding to a resource template.
-- *Language* (optional): The language of the vocab, using the [ISO 639-1 language code](http://www.iso.org/iso/language_codes){target=_blank}.
+- **Label**: A name for the vocabulary, which you will use to find it when adding to a resource template.
+- **Language** (optional): The language of the vocab, using the [ISO 639-1 language code](http://www.iso.org/iso/language_codes){target=_blank}.
 
 You can set the controlled vocabulary terms to a list of entered terms, to a list of existing items, or to a list of external URIs with or without labels:
 
-- *Terms*: a list of plain-text terms, one word or phrase per line. This populates the property as text.
-- *Items*: a drop-down of Item Sets in your Omeka S installation. Choosing one of these will create a custom vocab populated by items from that item set. When used, the property is populated as an Omeka Resource, not text.
-- *URIs*: a list of URIs with or without labels, one URI per line. To include a label, add a space and the label after the URI (for example, "https://jesuitplantationproject.org/s/jpp/item/1119 Finagle"). When used, the property will populate as a link to the external resource.
+- **Terms**: a list of plain-text terms, one word or phrase per line. This populates the property as text.
+- **Items**: a drop-down of Item Sets in your Omeka S installation. Choosing one of these will create a custom vocab populated by items from that item set. When used, the property is populated as an Omeka Resource, not text.
+- **URIs**: a list of URIs with or without labels, one URI per line. To include a label, add a space and the label after the URI (for example, "https://jesuitplantationproject.org/s/jpp/item/1119 Finagle"). When used, the property will populate as a link to the external resource.
 
-Hit submit to save changes.
+Hit "Submit" to save changes.
 
 ## Manage custom vocabs
 
-Once you have created at least one vocabulary, the Custom Vocab module tab will display a table of your existing vocabularies. The table displays the *Label*, the buttons for edit, delete, and display information, and the *Owner* or creator of the vocabulary. 
+Once you have created at least one vocabulary, the Custom Vocab module tab will display a table of your existing vocabularies. The table displays the **Label**, the buttons for edit, delete, and display information, and the **Owner** or creator of the vocabulary. 
 
 ![Custom Vocab tab with two existing vocabularies](../modules/modulesfiles/customVocab_manage.png)
 

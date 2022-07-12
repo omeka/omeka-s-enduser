@@ -12,7 +12,7 @@ Most import options rely on you only importing one type of data: a list of items
 
 If the spreadsheet is already created, take a moment to think about which columns you want to match to which vocabulary properties. Your CSV file **must have a header row** in order for the module to process it correctly, so you may need to add a row at the top with column names. 
 
-If you have multiple inputs for a single property, you can separate them with a secondary *multivalue separator*. For example, a work with multiple authors (E.B. White and William Strunk Jr.) with the column for Creator containing "E.B. White;William Strunk Jr" has a semicolon (;) as the multivalue separator. When imported into Omeka S, each of these would appear as a separate entry in the property (Creator: E.B. White and Creator: William Strunk Jr.). Note that the import will be the same whether you leave a space after your separator (as in "E.B. White; William Strunk Jr") or not.
+If you have multiple inputs for a single property, you can separate them with a secondary **multivalue separator**. For example, a work with multiple authors (E.B. White and William Strunk Jr.) with the column for Creator containing "E.B. White;William Strunk Jr" has a semicolon (;) as the multivalue separator. When imported into Omeka S, each of these would appear as a separate entry in the property (Creator: "E.B. White" and Creator: "William Strunk Jr."). Note that the import will be the same whether you leave a space after your separator (as in "E.B. White; William Strunk Jr") or not.
 
 ### Column names
 
@@ -22,24 +22,24 @@ To find the terms you should use for your column headers, go to the Vocabularies
 
 ![Red arrow points to the properties link for Dublin Core](../modules/modulesfiles/csv_automap1.png)
 
-In the table of vocabulary properties, there is a column for *Term*. Use the Term for the property you want to automap in the CSV Import. For example, "dcterms:abstract" would automap to the Dublin Core property "Abstract" and "foaf:firstName" would automap to the Friend of a Friend property "firstName".
+In the table of vocabulary properties, there is a column for **Term**. Use the Term as the column heading for the property you want to automap in CSV Import. For example, "dcterms:abstract" would automap to the Dublin Core property "Abstract" and "foaf:firstName" would automap to the Friend of a Friend property "firstName".
 
 ![arrow points to the Term column for Dublin Core properties.](../modules/modulesfiles/csv_automap2.png)
 
 There is a setting in the inital import settings to automap with simple labels - this will work with columns whose names match a vocabulary label, for example "title" or "abstract", without supplying the term. Note that this option defaults to Dublin Core (`dcterms:title` and `dcterms:abstract`) before proceeding through other installed vocabularies. 
 
-If your column names are not exact and the automapping feature does not recognize them, you should still label them something clear and helpful so that you can manually map them while importing.
+If your column names are not exact and the automapping feature does not recognize them, you should still label them something helpful so that you can manually map them while importing.
 
-If you have plans to batch-import metadata or properties that come with a module (such as latitude and longitude from the Mapping module) or using structured vocabularies that come from modules (such as the data types from the ValueSuggest module), install and configure those modules first to ensure that the fields exist in your site's data model, before trying to enter information into those fields. Data may be lost if you uninstall those modules later.
+If you have plans to batch-import metadata or properties that come with a module (such as latitude and longitude from the Mapping module) or using structured vocabularies that come from modules (such as the data types from the Value Suggest module), install and configure those modules first to ensure that the fields exist in your site's data model, before trying to enter information into those fields. Data may be lost if you uninstall those modules later.
 
 ## Initial import settings
 
-Start an import by clicking on the CSV Importer tab on the left-hand navigation. This will open the initial "Import Settings" page. 
+Start an import by clicking on the CSV Import tab on the left-hand navigation. This will open the initial "Import Settings" page. 
 
-![A red arrow points to CSV Importer in the navigation](../modules/modulesfiles/csvimport_nav.png)
+![A red arrow points to CSV Import in the navigation](../modules/modulesfiles/csvimport_nav.png)
 
-- For the Spreadsheet option, use the *Choose File* button to select the file from your computer. 
-- From the *CSV Column delimiter* dropdown, choose from the following options (this should match the formatting of your file) that separates different values in a row:
+- For the Spreadsheet option, use the "Choose File" button to select the file from your computer. 
+- From the **CSV column delimiter** dropdown, choose from the following options (this should match the formatting of your file) that separates different values in a row:
 	- comma (default)
 	- semi-colon
 	- colon
@@ -48,25 +48,25 @@ Start an import by clicking on the CSV Importer tab on the left-hand navigation.
 	- space
 	- pipe (`|`).
 
-- From the *CSV column enclosure* dropdown, choose the option that encloses long text in your file, if applicable:
+- From the **CSV column enclosure** dropdown, choose the option that encloses long text in your file, if applicable:
 	- double quote (default)
 	- quote
 	- hash (#).
 
-- From the *Import Type* dropdown, select what you are importing:
+- From the **Import type** dropdown, select what you are importing:
 	- Item Sets
 	- Items
 	- Media (must relate to already existing Items)
 	- Mixed resources (spreadsheet can inlcude Item Sets, Items, and Media)
 	- Users.
 
-- Check the box to *Automap with simple labels*. This will automap not only specially formatted column headings but also column headings which match existing vocabulary property labels. 
+- Check the box to **Automap with simple labels**. This will automap not only specially formatted column headings but also column headings which match existing vocabulary property labels. 
 
-- Comments will appear on the "Past Imports" page; you may find this useful to make a note about what is being imported and any settings you have chosen on this page. 
+- **Comments** will appear on the "Past Imports" page; you may find this useful to make a note about what is being imported and any settings you have chosen on this page. 
 
 ![Import settings as described, no entries](../modules/modulesfiles/csvimport_settings.png)
 
-Click the *next* button to continue with the import process. 
+Click the "Next" button to continue with the import process. 
 
 ## Import items
 To import items, select "Items" under the "Import type" on the first page.
@@ -103,10 +103,10 @@ The drawer has multiple options for mapping:
 
 **Generic data** also has a dropdown where you can set one of four options:
 
-- *Resource template (by label):* set the template for an item by name. The name of the template as entered in the spreadsheet and the name of the template in Omeka S must match exactly.
-- *Resource class (by term):* set the resource class for an item. The term for the class in the spreadsheet and in the Omeka S installation must match exactly.
-- *Owner (by email address):* set an item's owner by email address. This must be the email address associated with the user's account in the Omeka S installation.
-- *Visibility public/private:* set the visibility of the item. Use "private" or "public" in the spreadsheet. 
+- **Resource template (by label)**: set the template for an item by name. The name of the template as entered in the spreadsheet and the name of the template in Omeka S must match exactly.
+- **Resource class (by term)**: set the resource class for an item. The term for the class in the spreadsheet and in the Omeka S installation must match exactly.
+- **Owner (by email address)**: set an item's owner by email address. This must be the email address associated with the user's account in the Omeka S installation.
+- **Visibility public/private**: set the visibility of the item. Use "private" or "public" in the spreadsheet. 
 
 ![Dropdown as described](../modules/modulesfiles/csvimport_itemsMapgeneric.png)
 
@@ -162,15 +162,15 @@ These settings apply to the entire CSV you are importing. Note that some of thes
 
 ![options as described below](../modules/modulesfiles/csvimport_itemsbasic.png)
 
-- **Resource Template:** select a resource template from the drop-down menu to apply to the imported items. You can use the search field at the top of the dropdown to narrow results or find a particular template.
-- **Class:** select a class from the drop-down menu to apply to the imported items. You can use the search field at the top of the dropdown to narrow results or find a particular class.
-- **Owner:** set the owner for the Items by selecting a user from the drop-down menu. You can use the search field at the top of the dropdown to narrow results or find a particular user.
-- **Visibility:** set the visibility of the imported items as public  or private. 
-- **Item Sets:** add the imported items to a specific item set or sets using the dropdown menu.
-- **Sites:** add the imported items to the specified site or sites. Global and user-specific default sites will be preselected here.
-- **Multivalue Separator:** enter the multivalue separator character here, if you have used one. 
+- **Resource Template**: select a resource template from the drop-down menu to apply to the imported items. You can use the search field at the top of the dropdown to narrow results or find a particular template.
+- **Class**: select a class from the drop-down menu to apply to the imported items. You can use the search field at the top of the dropdown to narrow results or find a particular class.
+- **Owner**: set the owner for the Items by selecting a user from the drop-down menu. You can use the search field at the top of the dropdown to narrow results or find a particular user.
+- **Visibility**: set the visibility of the imported items as public  or private. 
+- **Item Sets**: add the imported items to a specific item set or sets using the dropdown menu.
+- **Sites**: add the imported items to the specified site or sites. Global and user-specific default sites will be preselected here.
+- **Multivalue Separator**: enter the multivalue separator character here, if you have used one. 
       - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon. This is where you can specify multiple creators, multiple subjects, or other common uses. 
-- **Language:** set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank}.
+- **Language**: set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank}.
 
 !!! note
 	If you are uploading different formats of data (for example, some text-based creator names and some URI-based creator links) into the same field (`dcterms:creator`, in this case), use two columns (named something helpful like "dcterms:creator-text" and "dcterms:creator-uri"), and upon import, map those two columns to different data types. Use the wrench icon to open up column mappings and select the correct data type for each column.
@@ -239,10 +239,10 @@ The drawer has multiple options for mapping:
 
 **Generic data** also has a dropdown where you can set one of four options:
 
-- *Resource template (by label):* set the template for an item  set by name. The name of the template as entered in the spreadsheet and the name of the template in Omeka S must match exactly.
-- *Resource class (by term):* set the resource class for an item set. The term for the class in the spreadsheet and in the Omeka S installation must match exactly.
-- *Owner (by email address):* set an item set's owner by email address. This must be the email address associated with the user's account in the Omeka S installation.
-- *Visibility public/private:* set the visibility of the item set. Use "private" or "public" in the spreadsheet. 
+- **Resource template (by label)**: set the template for an item  set by name. The name of the template as entered in the spreadsheet and the name of the template in Omeka S must match exactly.
+- **Resource class (by term)**: set the resource class for an item set. The term for the class in the spreadsheet and in the Omeka S installation must match exactly.
+- **Owner (by email address)**: set an item set's owner by email address. This must be the email address associated with the user's account in the Omeka S installation.
+- **Visibility public/private**: set the visibility of the item set. Use "private" or "public" in the spreadsheet. 
 
 ![Dropdown as described](../modules/modulesfiles/csvimport_itemsMapgeneric.png)
 
@@ -261,12 +261,12 @@ Column options are in addition to mappings. If you add options without also mapp
 
 This will open a drawer on the right side of the browser window with the following options: 
 
-- **Use multivalve separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
-- **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
+- **Use multivalve separator**: check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
+- **Language**: is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written. This will override what you have entered in basic settings. 
+- **Data type**: is a dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
-	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576.
+	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resource's ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576.
 	- If you have certain modules installed, such as Numeric Data Types, there may be additional data type options supplied by those modules.
 - **Import values as private**: check this box to set all property values *in this column* private.
 
@@ -286,14 +286,14 @@ These settings apply to the entire CSV which you are importing. Note that some o
 
 ![options as described below](../modules/modulesfiles/csvimport_ItemSetBasic.png)
 
-- **Resource Template:** select a resource template from the drop-down menu to apply to the imported item sets. You can use the search field at the top of the dropdown to narrow results or find a particular template.
-- **Class:** select a class from the drop-down menu to apply to the imported item sets. You can use the search field at the top of the dropdown to narrow results or find a particular class.
-- **Owner:** set the owner for the item sets by selecting a user from the drop-down menu. You can use the search field at the top of the dropdown to narrow results or find a particular user.
-- **Visibility:** set the visibility of the imported item sets as public  or private. 
-- **Open/Closed to additions:** set whether users other than the owner (and site & global admins) will be able to add or edit the item sets.
-- **Multivalue Separator:** enter the multivalue separator character here, if you have used one. 
+- **Resource Template**: select a resource template from the drop-down menu to apply to the imported item sets. You can use the search field at the top of the dropdown to narrow results or find a particular template.
+- **Class**: select a class from the drop-down menu to apply to the imported item sets. You can use the search field at the top of the dropdown to narrow results or find a particular class.
+- **Owner**: set the owner for the item sets by selecting a user from the drop-down menu. You can use the search field at the top of the dropdown to narrow results or find a particular user.
+- **Visibility**: set the visibility of the imported item sets as public or private. 
+- **Open/Closed to additions**: set whether users other than the owner (and site & global admins) will be able to add or edit the item sets.
+- **Multivalue Separator**: enter the multivalue separator character here, if you have used one. 
       - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon.
-- **Language:** set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank}.
+- **Language**: set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank}.
 
 ### Item Set import advanced settings
 
@@ -305,23 +305,23 @@ There are two options on this tab which are only for advanced use.
 
 This setting allows you to change the action of process from a straight import to one of the following options:
 
-- **Create a new resource:** default option. Each row in the CSV will become a new resource.
-- **Append data to the resource:** add new data to the resource.
-- **Revise data of the resource:** replace existing data in the resource with data from the CSV, except if empty.
-- **Update data of the resource:** replace existing data in the resource with data from the CSV, even when the cell is empty.
-- **Replace all data of the resource:** remove all properties of the resource, and fill with new information from the sheet.
-- **Delete the resource:** delete all matching resources
+- **Create a new resource**: default option. Each row in the CSV will become a new resource.
+- **Append data to the resource**: add new data to the resource.
+- **Revise data of the resource**: replace existing data in the resource with data from the CSV, except if empty.
+- **Update data of the resource**: replace existing data in the resource with data from the CSV, even when the cell is empty.
+- **Replace all data of the resource**: remove all properties of the resource, and fill with new information from the sheet.
+- **Delete the resource**: delete all matching resources
 
 If you select one of these options from the dropdown, three additional settings will appear on the tab. These settings help the process determine which resources to take action on.
 
 ![Advanced options tab with options as described below](../modules/modulesfiles/csvimport_itemSetAdvAct.png)
 
-- **Resource identifier column:** Select from a dropdown of the columns in your CSV. This is the data from your spreadsheet which maps to existing data in your Omeka S installation. 
-- **Resource identifier property:** select from a dropdown of all properties in your Omeka S installation. This should be the property in which you already have data, that you used to create the column data above. 
+- **Resource identifier column**: Select from a dropdown of the columns in your CSV. This is the data from your spreadsheet which maps to existing data in your Omeka S installation. 
+- **Resource identifier property**: select from a dropdown of all properties in your Omeka S installation. This should be the property in which you already have data, that you used to create the column data above. 
 	- Example: if the data in the Resource identifier column is "Title" with the first row of data having a title "A Study in Scarlet," and you set Resource identifier property to "Dublin Core: Title," then the actions will operate on a resource already in your Omeka S installation whose dc:title property is "A Study in Scarlet".
 	- This will only work with exact matches.
 	- If you have more than one resource with matching data, it will only take action on the oldest resource.
-- **Action on unidentified resources:** This option determines what to do when no matching resource exists in the Omeka S installation, but the selected action only applies to an existing resource ("Append", "Revise", "Update", or "Replace"). This option is not used when the main action is "Create" or "Delete" Your options are two radio buttons:
+- **Action on unidentified resources**: This option determines what to do when no matching resource exists in the Omeka S installation, but the selected action only applies to an existing resource ("Append", "Revise", "Update", or "Replace"). This option is not used when the main action is "Create" or "Delete" Your options are two radio buttons:
 	- Skip the row 
 	- Create a new resource
 
@@ -346,7 +346,7 @@ This tab displays a table with the columns from your spreadsheet as rows. Each r
 - A plus symbol button for adding or modifying a mapping
 - A wrench symbol button for spreadsheet column options
 - A trash can to delete mappings
-- A column to show options selected
+- A column to show options selected.
 
 ![Mappings for a spreadsheet with ten columns. Some of the columns, such as those named Description and Title have automatically been mapped to Dublin Core properties.](../modules/modulesfiles/csvimport_mediaMap1.png)
 
@@ -368,10 +368,10 @@ The drawer has multiple options for mapping:
 
 **Generic data** also has a dropdown where you can set one of four options:
 
-- *Resource template (by label):* set the template for the media by name. The name of the template as entered in the spreadsheet and the name of the template in Omeka S must match exactly.
-- *Resource class (by term):* set the resource class for the media. The term for the class in the spreadsheet and in the Omeka S installation must match exactly.
-- *Owner (by email address):* set the media's owner by email address. This must be the email address associated with the user's account in the Omeka S installation.
-- *Visibility public/private:* set the visibility of the media. Use "private" or "public" in the spreadsheet. 
+- **Resource template (by label)**: set the template for the media by name. The name of the template as entered in the spreadsheet and the name of the template in Omeka S must match exactly.
+- **Resource class (by term)**: set the resource class for the media. The term for the class in the spreadsheet and in the Omeka S installation must match exactly.
+- **Owner (by email address)**: set the media's owner by email address. This must be the email address associated with the user's account in the Omeka S installation.
+- **Visibility public/private**: set the visibility of the media. Use "private" or "public" in the spreadsheet. 
 
 ![Dropdown as described](../modules/modulesfiles/csvimport_itemsMapgeneric.png)
 
@@ -400,11 +400,11 @@ Column options are in addition to mappings. If you add options without also mapp
 
 This will open a drawer on the right side of the browser window with the following options: 
 
-- **Use multivalve separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
-- **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
+- **Use multivalve separator**: check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
+- **Language**: set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written. This will override what you have entered in basic settings. 
+- **Data type**: a dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default).
-	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
+	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`.
 	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576.
 	- If you have certain modules installed, such as Numeric Data Types, there may be additional data type options supplied by those modules.
 - **Import values as private**: check this box to set all property values *in this column* private.
@@ -425,39 +425,39 @@ These settings apply to the entire CSV which you are importing. Note that some o
 
 ![options as described below](../modules/modulesfiles/csvimport_mediaBasic.png)
 
-- **Resource Template:** select a resource template from the drop-down menu to apply to the imported media. You can use the search field at the top of the dropdown to narrow results or find a particular template.
-- **Class:** select a class from the drop-down menu to apply to the imported media. You can use the search field at the top of the dropdown to narrow results or find a particular class.
-- **Owner:** set the owner for the media by selecting a user from the drop-down menu. You can use the search field at the top of the dropdown to narrow results or find a particular user.
-- **Visibility:** set the visibility of the imported media as public or private. 
-- **Item Sets:** add the imported items to a specific item set or sets using the dropdown menu.
-- **Multivalue Separator:** enter the multivalue separator character here, if you have used one. 
+- **Resource Template**: select a resource template from the drop-down menu to apply to the imported media. You can use the search field at the top of the dropdown to narrow results or find a particular template.
+- **Class**: select a class from the drop-down menu to apply to the imported media. You can use the search field at the top of the dropdown to narrow results or find a particular class.
+- **Owner**: set the owner for the media by selecting a user from the drop-down menu. You can use the search field at the top of the dropdown to narrow results or find a particular user.
+- **Visibility**: set the visibility of the imported media as public or private. 
+- **Item Sets**: add the imported items to a specific item set or sets using the dropdown menu.
+- **Multivalue Separator**: enter the multivalue separator character here, if you have used one. 
       - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon.
-- **Language:** set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank}.
+- **Languag:**: set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank}.
 
 ### Media import advanced settings
 There are two options on this tab which are only for advanced use. 
 
-![Advanced settings page showing only the Action dropdown and the field for number of rows to process. ](../modules/modulesfiles/csvimport_mediaAdv.png)
+![Advanced settings page showing only the Action dropdown and the field for number of rows to process.](../modules/modulesfiles/csvimport_mediaAdv.png)
 
 The Action setting allows you to change the action of process from a straight import to one of the following options:
 
-- **Create a new resource:** default option. Each row in the CSV will become a new resource.
-- **Append data to the resource:** add new data to the resource.
-- **Revise data of the resource:** replace existing data in the resource with data from the CSV, except if empty.
-- **Update data of the resource:** replace existing data in the resource with data from the CSV, even when the cell is empty.
-- **Replace all data of the resource:** remove all properties of the resource, and fill with new information from the sheet.
-- **Delete the resource:** delete all matching resources
+- **Create a new resource**: default option. Each row in the CSV will become a new resource.
+- **Append data to the resource**: add new data to the resource.
+- **Revise data of the resource**: replace existing data in the resource with data from the CSV, except if empty.
+- **Update data of the resource**: replace existing data in the resource with data from the CSV, even when the cell is empty.
+- **Replace all data of the resource**: remove all properties of the resource, and fill with new information from the sheet.
+- **Delete the resource**: delete all matching resources
 
 If you select one of these options from the dropdown, three additional settings will appear on the tab. These settings help the process determine which resources to take action on.
 
 ![Options described below](../modules/modulesfiles/csvimport_mediaAdvAct.png)
 
-- **Resource identifier column:** Select from a dropdown of the columns in your CSV. This is the data from your spreadsheet which maps to existing data in your Omeka S installation. 
-- **Resource identifier property:** select from a dropdown of all properties in your Omeka S installation. This should be the property in which you already have data, that you used to create the column data above. 
+- **Resource identifier column**: Select from a dropdown of the columns in your CSV. This is the data from your spreadsheet which maps to existing data in your Omeka S installation. 
+- **Resource identifier property**: Select from a dropdown of all properties in your Omeka S installation. This should be the property in which you already have data, that you used to create the column data above. 
 	- Example: if the data in the Resource identifier column is "Title" with the first row of data having a title "A Study in Scarlet," and you set Resource identifier property to "Dublin Core: Title," then the actions will operate on a resource already in your Omeka S installation whose dc:title property is "A Study in Scarlet".
 	- This will only work with exact matches.
 	- If you have more than one resource with matching data, it will only take action on the oldest resource. 
-- **Action on unidentified resources:** This option determines what to do when no matching resource exists in the Omeka S installation, but the selected action only applies to an existing resource ("Append", "Revise", "Update", or "Replace"). This option is not used when the main action is "Create" or "Delete" Your options are two radio buttons:
+- **Action on unidentified resources**: This option determines what to do when no matching resource exists in the Omeka S installation, but the selected action only applies to an existing resource ("Append", "Revise", "Update", or "Replace"). This option is not used when the main action is "Create" or "Delete" Your options are two radio buttons:
 	- Skip the row 
 	- Create a new resource
 
@@ -481,7 +481,7 @@ This tab displays an initial dropdown above a table with the columns from your s
 
 ![Mappings for a spreadsheet with nine columns.](../modules/modulesfiles/csvimport_mixedR1.png)
 
-The dropdown above the table is where you set which column in the CSV file indicates whether the data in that row is an item, item set, or media. *You do not need to map this data in the table on this tab*. Values in this column can be `item` or `items`, `item set` or `itemset` or `itemsets` or `item sets`, or `media`. Other values, or empty fields, will lead to the row not being imported. 
+The dropdown above the table is where you set which column in the CSV file indicates whether the data in that row is an item, item set, or media. You do not need to map this data in the table on this tab. Values in this column can be `item` or `items`, `item set` or `itemset` or `itemsets` or `item sets`, or `media`. Other values, or empty fields, will lead to the row not being imported. 
 
 Rows with `media` in the resource type column need to indicate which item they are to be attached to, as in the [Media section above](#import-media), and require a media source to be included.
 
@@ -510,10 +510,10 @@ The drawer has multiple options for mapping:
 
 **Generic data** has a dropdown where you can set one of four options:
 
-- *Resource template (by label):* set the template for the media by name. The name of the template as entered in the spreadsheet and the name of the template in Omeka S must match exactly.
-- *Resource class (by term):* set the resource class for the media. The term for the class in the spreadsheet and in the Omeka S installation must match exactly.
-- *Owner (by email address):* set the media's owner by email address. This must be the email address associated with the user's account in the Omeka S installation.
-- *Visibility public/private:* set the visibility of the media. Use "private" or "public" in the spreadsheet. 
+- **Resource template (by label)**: set the template for the media by name. The name of the template as entered in the spreadsheet and the name of the template in Omeka S must match exactly.
+- **Resource class (by term)**: set the resource class for the media. The term for the class in the spreadsheet and in the Omeka S installation must match exactly.
+- **Owner (by email address)**: set the media's owner by email address. This must be the email address associated with the user's account in the Omeka S installation.
+- **Visibility public/private**: set the visibility of the media. Use "private" or "public" in the spreadsheet. 
 
 ![Dropdown as described](../modules/modulesfiles/csvimport_itemsMapgeneric.png)
 
@@ -542,9 +542,9 @@ Column options are in addition to mappings. If you add options without also mapp
 
 This will open a drawer on the right side of the browser window with the following options: 
 
-- **Use multivalue separator:** check this box to use the multivalue separator for data in this column. You set the multivalue separator character in the initial import page, but you can change it in the Basic Settings tab. 
-- **Language:** is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written. This will override what you have entered in basic settings. 
-- **Data type:** is a dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
+- **Use multivalue separator**: check this box to use the multivalue separator for data in this column. You set the multivalue separator character in the initial import page, but you can change it in the Basic Settings tab. 
+- **Language**: is a field where you can set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written. This will override what you have entered in basic settings. 
+- **Data type**: is a dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default);
 	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
 	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resources' ID is the number sequence at the end of the url when on the view or edit page, so for `/admin/item/11576` the ID is 11576.
@@ -567,15 +567,15 @@ These settings apply to the entire CSV you are importing. Note that some of thes
 
 ![options as described below](../modules/modulesfiles/csvimport_mixedRBasic.png)
 
-- **Resource Template:** select a resource template from the drop-down menu to apply to the imported item sets. You can use the search field at the top of the dropdown to narrow results or find a particular template.
-- **Class:** select a class from the drop-down menu to apply to the imported item sets. You can use the search field at the top of the dropdown to narrow results or find a particular class.
-- **Owner:** set the owner for the item sets by selecting a user from the drop-down menu. You can use the search field at the top of the dropdown to narrow results or find a particular user.
-- **Visibility:** set the visibility of the imported item sets as public  or private. 
-- **Item Set open/Closed to additions:** set whether users other than the owner (and site & global admins) will be able to add or edit the item sets.
-- **Item set for items:** select from a dropdown of existing item sets. 
-- **Multivalue Separator:** enter the multivalue separator character here, if you have used one. 
+- **Resource Template**: select a resource template from the drop-down menu to apply to the imported item sets. You can use the search field at the top of the dropdown to narrow results or find a particular template.
+- **Class**: select a class from the drop-down menu to apply to the imported item sets. You can use the search field at the top of the dropdown to narrow results or find a particular class.
+- **Owner**: set the owner for the item sets by selecting a user from the drop-down menu. You can use the search field at the top of the dropdown to narrow results or find a particular user.
+- **Visibility**: set the visibility of the imported item sets as public  or private. 
+- **Item Set open/Closed to additions**: set whether users other than the owner (and site & global admins) will be able to add or edit the item sets.
+- **Item set for items**: select from a dropdown of existing item sets. 
+- **Multivalue Separator**: enter the multivalue separator character here, if you have used one. 
       - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon.
-- **Language:** set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank}.
+- **Language**: set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank}.
 
 ### Mixed resources import advanced settings
 There are two options on this tab which are only for advanced use. 
@@ -584,25 +584,25 @@ There are two options on this tab which are only for advanced use.
 
 The Action setting allows you to change the action of process from a straight import to one of the following options:
 
-- **Create a new resource:** default option. Each row in the CSV will become a new resource.
-- **Append data to the resource:** add new data to the resource.
-- **Revise data of the resource:** replace existing data in the resource with data from the CSV, except if empty.
-- **Update data of the resource:** replace existing data in the resource with data from the CSV, even when the cell is empty.
-- **Replace all data of the resource:** remove all properties of the resource, and fill with new information from the sheet.
-- **Delete the resource:** delete all matching resources
+- **Create a new resource**: default option. Each row in the CSV will become a new resource.
+- **Append data to the resource**: add new data to the resource.
+- **Revise data of the resource**: replace existing data in the resource with data from the CSV, except if empty.
+- **Update data of the resource**: replace existing data in the resource with data from the CSV, even when the cell is empty.
+- **Replace all data of the resource**: remove all properties of the resource, and fill with new information from the sheet.
+- **Delete the resource**: delete all matching resources
 
 If you select one of these options from the dropdown, three additional settings will appear on the tab. These settings help the process determine which resources to take action on.
 
 ![Options described below](../modules/modulesfiles/csvimport_mixedRAdvAct.png)
 
-- **Resource identifier column:** Select from a dropdown of the columns in your CSV. This is the data from your spreadsheet which maps to existing data in your Omeka S installation. 
-- **Resource identifier property:** select from a dropdown of all properties in your Omeka S installation. This should be the property in which you already have data, that you used to create the column data above. 
+- **Resource identifier column**: Select from a dropdown of the columns in your CSV. This is the data from your spreadsheet which maps to existing data in your Omeka S installation. 
+- **Resource identifier property**: select from a dropdown of all properties in your Omeka S installation. This should be the property in which you already have data, that you used to create the column data above. 
 	- Example: if the data in the Resource identifier column is "Title" with the first row of data having a title "A Study in Scarlet," and you set Resource identifier property to "Dublin Core: Title," then the actions will operate on a resource already in your Omeka S installation whose dc:title property is "A Study in Scarlet".
 	- This will only work with exact matches.
 	- If you have more than one resource with matching data, it will only take action on the oldest resource. 
-- **Action on unidentified resources:** This option determines what to do when no matching resource exists in the Omeka S installation, but the selected action only applies to an existing resource ("Append", "Revise", "Update", or "Replace"). This option is not used when the main action is "Create" or "Delete" Your options are two radio buttons:
+- **Action on unidentified resources**: This option determines what to do when no matching resource exists in the Omeka S installation, but the selected action only applies to an existing resource ("Append", "Revise", "Update", or "Replace"). This option is not used when the main action is "Create" or "Delete" Your options are two radio buttons:
 	- Skip the row 
-	- Create a new resource
+	- Create a new resource.
 
 In addition to the above, the Advanced Settings tab has an option to set the number of rows to process by batch. By default this is set to 20. However, if you are running into errors with an import you may want to set it to 5 or even 1 in order to troubleshoot and determine the source of the error. 
 
@@ -628,9 +628,9 @@ To map a column header to user information, click on the plus symbol button to t
 
 The drawer has a dropdown for Users info, with three options:
 
-- *Email:* the email address for the user
-- *Display name:* the user's display name
-- *Role:* the user's [role](../admin/users.md#roles-and-permissions).
+- **Email**: the email address for the user
+- **Display name**: the user's display name
+- **Role**: the user's [role](../admin/users.md#roles-and-permissions).
 
 Role values to use in this import are as follows:
 
@@ -639,31 +639,31 @@ Role values to use in this import are as follows:
 - `editor`
 - `reviewer`
 - `author`
-- `researcher`
+- `researcher`.
 
 ![The same table as above, now with the mapping drawer open and the dropdown activated to show the three options.](../modules/modulesfiles/csvimport_usersMap.png)
 
-Once you have completed the mappings, click the Import button.
+Once you have completed the mappings, click the "Import" button.
 
 !!! note
-	Users will not be notified via email when an account is created for them using CSV Import. Normally, when you create an account manually, the email address is sent a notification including a link to set their password. Currently, CSV Import does not send those emails and so users cannot set their own passwords. Site administrators must set passwords and then email them manually once users are created via CSV Import. 
+	Users will not be notified via email when an account is created for them using CSV Import. Normally, when you create an account manually, the email address is sent a notification including a link to set their password. Currently, CSV Import does not send those emails and so users cannot set their own passwords. Site administrators must set passwords and then share them manually once users are created via CSV Import. 
 
 ## Manage past imports
 
-To review past imports, click on the CSV Importer module and select the "Past Imports" tab. 
+To review past imports, click on the CSV Import module and select the "Past Imports" tab. 
 
 ![CSV Import subtab options on left hand nav](../modules/modulesfiles/csvimport_pastimportsnav.png)
 
 This will display a table with the following columns:
 
-- An *Undo* Checkbox
-- *Date* of import
-- *Action* of the import (create, append, revise, update, replace, or delete).
+- An **Undo** Checkbox
+- **Date** of import
+- **Action** of the import (create, append, revise, update, replace, or delete).
 	- Beneath the action description there are links to the job details and job log. 
-- *Comment* entered on import or indicating an error
-- *Result* the items updated, added, or deleted
-- *Status* of import
-- Import *Owner*.
+- **Comment** entered on import or indicating an error
+- **Result** the items updated, added, or deleted
+- **Status** of import
+- Import **Owner**.
 
 ![CSV Import past imports table](../modules/modulesfiles/csvimport_pastimports.png)
 
@@ -673,7 +673,7 @@ To see the details of an import, click the "Job details" link below the action d
 
 To undo an import, click on the CSV Import module and select the "Past Imports" tab. 
 
-Check the *Undo* box in the row of the import which you want to undo, and click Submit.
+Check the "Undo" box in the row of the import which you want to undo, and click "Submit".
 
 ![a red arrow points to a checked Undo box on the Past Imports page](../modules/modulesfiles/csvimport_undo.png)
 
@@ -695,22 +695,22 @@ If you have [Mapping](../mapping/) (minimum version 1.1.0) installed and active,
 
 **Resource location** sets the location for the resource. Your column for this option can include one of the following forms of data:
 
-- *Latitude* must be written as a single number ("23.43", not "23° 26′").
-- *Longitude* must be written as a decimal fraction using negative and positive to indicate west or east ("−91" rather than "91°W"). 
-- *Latitude/longitude* must be inputted as numbers separated by a slash (`52.19/-1.71`).
+- **Latitude** must be written as a single number ("23.43", not "23° 26′").
+- **Longitude** must be written as a decimal fraction using negative and positive to indicate west or east ("−91" rather than "91°W"). 
+- **Latitude/longitude** must be inputted as numbers separated by a slash (`52.19/-1.71`).
 
 ![dropdown with the options described above](../modules/modulesfiles/csvimport_mapping2.png)
 
 **Default map view** sets the default map view for the item to which you are adding Mapping information. 
 
-- *Map center latitude* must be written as a single number ("23.43", not "23° 26′").
-- *Map center longitude* must be written as a decimal fraction using negative and positive to indicate west or east ("−91" rather than "91°W"). 
-- *Default zoom* must be a number between 1 (most zoomed out) and 18 (most zoomed in).
+- **Map center latitude** must be written as a single number ("23.43", not "23° 26′").
+- **Map center longitude** must be written as a decimal fraction using negative and positive to indicate west or east ("−91" rather than "91°W"). 
+- **Default zoom** must be a number between 1 (most zoomed out) and 18 (most zoomed in).
 
 ### File Sideload
 If you have [File Sideload](../filesideload) (minimum version 1.2.0) installed and active, you can use it as a source for media when running a CSV import.
 
-Everything on the *Map to Omeka S data* tab will be the same. When you add a mapping and choose the "Media source" option, you will see that there is now an option for "Sideload".
+Everything on the **Map to Omeka S data** tab will be the same. When you add a mapping and choose the "Media source" option, you will see that there is now an option for "Sideload".
 
 ![Dropdown menu for media source, with Sideload highlighted in blue](../modules/modulesfiles/csvimport_sideload.png). 
 
