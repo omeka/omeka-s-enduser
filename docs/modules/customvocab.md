@@ -1,16 +1,16 @@
 # Custom Vocab
 
-The [Custom Vocab module](https://omeka.org/s/modules/CustomVocab){target=_blank} allows you to create a controlled vocabulary and add it to a specific property in a resource template. When using that template for an item, the property will load with a dropdown limited to the options of the controlled vocabulary, rather than a text entry box. 
+The [Custom Vocab module](https://omeka.org/s/modules/CustomVocab){target=_blank} allows you to create a controlled vocabulary and add it to a specific property in a resource template. When using that template for an item, the property will load with a dropdown limited to the options of the controlled vocabulary, rather than a text entry box.
 
 For example, you may want to create an institution-specific list of locations that correspond to different collections on your campus, or a controlled list of people or places related to your holdings. This can help reduce typos and name variations, and can allow you to offer [metadata browsing](../modules/metadatabrowse.md) for more fields.
 
 ## Create a custom vocab
 
-Once you have installed and activated the module, go to the Custom Vocab tab in the left-hand navigation, under Modules. 
+Once you have installed and activated the module, go to the Custom Vocab tab in the left-hand navigation, under Modules.
 
-Click the "Add a New Vocab" button in the upper right-hand corner of the window. 
+Click the "Add a New Vocab" button in the upper right-hand corner of the window.
 
-The Add Custom Vocab page has four fields: Label, Language, Vocab Type, and Terms/Items/URI input. 
+The Add Custom Vocab page has four fields: Label, Language, Vocab Type, and Terms/Items/URI input.
 
 ![Add Custom Vocab with data entered in the label and terms fields](../modules/modulesfiles/customVocab-add-URI.png)
 
@@ -27,7 +27,7 @@ Hit "Submit" to save changes.
 
 ## Manage custom vocabs
 
-Once you have created at least one vocabulary, the Custom Vocab module tab will display a table of your existing vocabularies. The table displays the **Label**, the buttons for edit, delete, and display information, and the **Owner** or creator of the vocabulary. 
+Once you have created at least one vocabulary, the Custom Vocab module tab will display a table of your existing vocabularies. The table displays the **Label**, the buttons for edit, delete, and display information, and the **Owner** or creator of the vocabulary.
 
 ![Custom Vocab tab with two existing vocabularies](../modules/modulesfiles/customVocab_manage.png)
 
@@ -35,7 +35,7 @@ When editing a custom vocabulary, you can change the label, language, or terms.
 
 ## Using a custom vocab
 
-Custom Vocabularies are applied through [resource templates](../content/resource-template.md). 
+Custom Vocabularies are applied through [resource templates](../content/resource-template.md).
 
 Go to the Resource Templates and either add new or edit an existing template. Once you are editing the template:
 

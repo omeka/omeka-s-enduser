@@ -1,9 +1,9 @@
 # Modules Management
 
-Modules extend the functionality of your Omeka S installation and sites. A list of modules available for download is on the [Modules Directory](https://omeka.org/s/modules/){target=_blank}. Instructions are available on each module's documentation page. 
+Modules extend the functionality of your Omeka S installation and sites. A list of modules available for download is on the [Modules Directory](https://omeka.org/s/modules/){target=_blank}. Instructions are available on each module's documentation page.
 
 !!! Note
-    Not every module will work with every version of Omeka, especially newer modules on old installations. Older versions of modules may be available on their Github pages. Use the Modules Directory to find the "Github" link on the right side of the screen for each plugin, then look on the right hand side of the Github page for the "Releases" section. 
+    Not every module will work with every version of Omeka, especially newer modules on old installations. Older versions of modules may be available on their Github pages. Use the Modules Directory to find the "Github" link on the right side of the screen for each plugin, then look on the right hand side of the Github page for the "Releases" section.
 
 ![Screen capture of admin dashboard showing Modules tab active.](modulesfiles/modulesbrowse.png)
 
@@ -11,7 +11,7 @@ To manage the modules installed on your Omeka S site, click on the **Modules** l
 
 Note that only [Global Administrators](../admin/users.md) can install and manage modules; Supervisors can browse installed modules but not modify them. Other users do not have access to this tab.
 
-Any modules that have been uploaded into the `/modules` folder of the installation should appear in the list of modules. Each module displays the name of the module with the version number, creator, and a summary of its function. 
+Any modules that have been uploaded into the `/modules` folder of the installation should appear in the list of modules. Each module displays the name of the module with the version number, creator, and a summary of its function.
 
 Multiple buttons can appear to the right of a module’s label. Each button has both an icon and a label describing its action:
 
@@ -82,11 +82,11 @@ To update a module using FTP:
 1. Open your FTP client and log on to the server that houses the Omeka S install.
 1. Navigate to the `/modules` folder (this should be located in the main folder of the install).
 1. Move the old copy of the module to your computer.
-1. Upload the zipped folder for the latest version of the module to the `/modules` folder. 
+1. Upload the zipped folder for the latest version of the module to the `/modules` folder.
 1. In your FTP client, unzip the new version module.
 1. On the Omeka S installation dashboard, go to the Modules tab and activate the new version of the module.
-1. Check to be sure your settings have been preserved and there are no errors. After this, you can safely delete the old module folder that you saved to your computer. 
+1. Check to be sure your settings have been preserved and there are no errors. After this, you can safely delete the old module folder that you saved to your computer.
 
 If you are concerned about problems with the update, be sure to keep the older version of the module on your local machine in case you have to switch them back. Follow the same update steps with the earlier version of the module.
 
-If you run into problems while updating, turn on [error logging](../errorLogging) and post on the [Omeka Forum](https://forum.omeka.org/c/omeka-s/modules){target=_blank}. 
+If you run into problems while updating, turn on [error logging](../errorLogging) and post on the [Omeka Forum](https://forum.omeka.org/c/omeka-s/modules){target=_blank}.

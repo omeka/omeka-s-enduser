@@ -19,15 +19,15 @@ In order to install Omeka S, you will need a server running the following:
 	Before you install Omeka S, you need to create a MySQL database and user. Omeka S must have a dedicated database (you cannot use a prefix for a database used by another system or Omeka S or Classic installation). For more information on creating a database and user, please see your hosting's support documentation or talk to your system administrator.
 
 1. [Download the latest release from the release page](https://omeka.org/s/download/){target=_blank}.
-1. Extract this downloaded zip file to your computer. 
+1. Extract this downloaded zip file to your computer.
 1. Inside the directory, open the `config/database.ini` file and add your MySQL username, password, database name, and host name. The user and database must be created before this step.
-1. Upload this entire directory to your server, into the folder of your choice. For example, if your server is `https://yourwebsite.org/`, you may wish to install Omeka S into a folder located at `https://yourwebsite.org/myomekas/`. Make sure it has your updated `database.ini` file (do not upload the original zip file you downloaded). 
+1. Upload this entire directory to your server, into the folder of your choice. For example, if your server is `https://yourwebsite.org/`, you may wish to install Omeka S into a folder located at `https://yourwebsite.org/myomekas/`. Make sure it has your updated `database.ini` file (do not upload the original zip file you downloaded).
 1. Make sure the `files/` directory on the server is writable by Apache.
 1. In your web browser, navigate to the `admin` page for your Omeka S installation, where you can complete the installation. For example, if you uploaded the directory contents to `https://yourwebsite.org/myomekas/`, then navigate to `https://yourwebsite.org/myomekas/admin`.
 
 ### Installing from Github
 
-Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md){target=_blank} of the Omeka S GitHub repository. 
+Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md){target=_blank} of the Omeka S GitHub repository.
 
 Then, in your web browser, navigate to the admin page for your Omeka S installation (`https://yourwebsite.org/myomekas/admin`), where you can complete the installation.
 
@@ -48,7 +48,7 @@ Suggestions from our users include:
 
 ## Initial setup
 
-Once you have successfully installed Omeka S and configured the `database.ini` file, you must navigate to the admin URL of your Omeka S installation (something like `https://yourwebsite.org/myomekas/admin`). 
+Once you have successfully installed Omeka S and configured the `database.ini` file, you must navigate to the admin URL of your Omeka S installation (something like `https://yourwebsite.org/myomekas/admin`).
 
 The first time you point your browser to the newly installed site, you will need to enter information for the first user, along with basic information for your install. There are two sections on this page: **Create the first user** and **Settings**.
 
@@ -92,7 +92,7 @@ See [Configuration Options](configuration.md) for information on settings for th
 
 ### Updating from Github
 
-Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md){target=_blank} of the Omeka S GitHub repository. 
+Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md){target=_blank} of the Omeka S GitHub repository.
 
 
 ## Install on Windows or Mac OS (development only)

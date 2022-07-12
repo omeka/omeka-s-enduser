@@ -1,12 +1,12 @@
 # Metadata Browse
 
-The [Metadata Browse module](https://omeka.org/s/modules/MetadataBrowse){target=_blank} makes it possible to browse all resources that share a value for a particular metadata property. 
+The [Metadata Browse module](https://omeka.org/s/modules/MetadataBrowse){target=_blank} makes it possible to browse all resources that share a value for a particular metadata property.
 
-It does this by either turning selected properties into a link, or by adding a link below properties that reads "See all items with this value". These links appear only on item view pages. When the link is clicked, the module returns the results of that search (property value is equal to input). It is similar to the Omeka Classic plugin [Search by Metadata](http://omeka.org/add-ons/plugins/search-by-metadata/){target=_blank}. 
+It does this by either turning selected properties into a link, or by adding a link below properties that reads "See all items with this value". These links appear only on item view pages. When the link is clicked, the module returns the results of that search (property value is equal to input). It is similar to the Omeka Classic plugin [Search by Metadata](http://omeka.org/add-ons/plugins/search-by-metadata/){target=_blank}.
 
 ![The item "Sense and Sensibility". The date property displays as a link, and is indicated with a blue arrow.](../modules/modulesfiles/mdbr-directlinkYes.png)
 
-The module adds a site-specific configuration menu that allows you to make properties browseable on each site. It can also make specific properties browseable in the admin interface. The choice of directly-linked properties, or the display of a separate link, is a universal setting and cannot be changed from site to site. 
+The module adds a site-specific configuration menu that allows you to make properties browseable on each site. It can also make specific properties browseable in the admin interface. The choice of directly-linked properties, or the display of a separate link, is a universal setting and cannot be changed from site to site.
 
 These settings are only available to users at the level of Global Admin, Supervisor, or Editor. Site Managers cannot change site-specific settings.
 
@@ -19,11 +19,11 @@ On the page that displays, the main section displays all currently enabled prope
 
 ![Metadata Browse site options](../modules/modulesfiles/mdbr_sites2.png)
 
-Delete any selected properties by clicking the trash can icon. If you accidentally click the delete button, simply click the undo button that replaces it to keep that property. 
+Delete any selected properties by clicking the trash can icon. If you accidentally click the delete button, simply click the undo button that replaces it to keep that property.
 
 ![A property set to be deleted, showing the undo button](../modules/modulesfiles/mdbr_sites3.png)
 
-Remember to click the "Save" button to save changes. 
+Remember to click the "Save" button to save changes.
 
 ### Public view
 Once you have selected properties and saved changes, visitors to your site can use the selected properties to browse all items on the site with matching values.
@@ -39,7 +39,7 @@ Clicking on "See all items with this value" under creator takes a visitor to a p
 ![An Items search result screen showing that the search is "Publisher is exactly: Thomas Egerton" with two results visible](../modules/modulesfiles/mdbr_public2.png)
 
 ## Admin configuration
-Global site settings and admin-side settings can be changed from the module's configuration page, under the Modules tab of the left-hand navigation. Click the "Configure" button, with the wrench icon, to the right of the Metadata Browse label. 
+Global site settings and admin-side settings can be changed from the module's configuration page, under the Modules tab of the left-hand navigation. Click the "Configure" button, with the wrench icon, to the right of the Metadata Browse label.
 
 The module has two checkbox configuration options: Global Configuration and Direct Links.
 
@@ -50,10 +50,10 @@ The "Use global configuration on admin side" checkbox determines how the propert
 
 Leaving the box unchecked modifies the admin side for . For example, a site about various artists might have the Metadata Browse enabled for "Creator" (Dublin Core), while a site collecting conference papers might enable Metadata Browse for "presented at" (Bibliographic Ontology); with the box unchecked, both "Creator" and "presented at" would have Metadata Browse enabled on the admin views of all items and item sets on the installation.
 
-Checking the box can be used to limit the number of properties which have Metadata Browse enabled on the admin side. If, for example, the site about various artists mentioned above was using Metadata Browse on every possible property, those Metadata Browse links would still be visible on their site, but would not show up on the admin side. Instead, the Global Administrator(s) could decided which properties to enable browsing on for the admin side, thus reducing visual clutter. 
+Checking the box can be used to limit the number of properties which have Metadata Browse enabled on the admin side. If, for example, the site about various artists mentioned above was using Metadata Browse on every possible property, those Metadata Browse links would still be visible on their site, but would not show up on the admin side. Instead, the Global Administrator(s) could decided which properties to enable browsing on for the admin side, thus reducing visual clutter.
 
 ### Direct links
-The "Direct Links" checkbox sets how metadata-browsing links are displayed on both the admin side and across all sites. 
+The "Direct Links" checkbox sets how metadata-browsing links are displayed on both the admin side and across all sites.
 
 If this box is unchecked, the properties selected for metadata browse will display with a textual link under them which reads "See all items with this value". Clicking on the link text opens the page of items with matching metadata.
 
@@ -63,7 +63,7 @@ In this example, metadata browsing is active for the "Date of Publication" prope
 
 If this box is checked, the values of the properties themselves become the link, similar to how a property populated by a resource displays. In this case, clicking on the property value itself opens the page of items with matching metadata.
 
-![The item "Sense and Sensibility". The date property displays as a link, and is indicated with a blue arrow.](../modules/modulesfiles/mdbr-directlinkYes.png) 
+![The item "Sense and Sensibility". The date property displays as a link, and is indicated with a blue arrow.](../modules/modulesfiles/mdbr-directlinkYes.png)
 
 ### Choose properties
 Selecting properties for Metadata Browse in the Module configuration will only work if the ["Use global configuration" checkbox](#global-configuration) is checked.

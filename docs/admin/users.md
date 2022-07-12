@@ -8,12 +8,12 @@ Administrators manage and create users from the User tab of the main administrat
 
 There are six user roles in Omeka S:
 
-- Global Administrator: full installation privileges.
-- Supervisor: robust site and content privileges.
-- Editor (Content Expert): full privileges for content creation.
-- Reviewer: robust content privileges but can only delete own content.
-- Author: Create own content.
-- Researcher: Search and read privileges only.
+- **Global Administrator**: full installation privileges.
+- **Supervisor**: robust site and content privileges.
+- **Editor** (Content Expert): full privileges for content creation.
+- **Reviewer**: robust content privileges but can only delete own content.
+- **Author**: Create own content.
+- **Researcher**: Search and read privileges only.
 
 Behind the scenes, role values use the following slugs:
 
@@ -26,12 +26,7 @@ Behind the scenes, role values use the following slugs:
 
 These roles are separate from the [user roles assigned at a site-specific level](../sites/site_users.md), which allow registered users of the installation to have site access to build exhibit pages.
 
-One example for how you may wish to manage the users of your site:
-- A Global Admin user who installs, manages, and upgrades the modules and themes and controls fundamental installation settings and server utilities.
-- A Supervisor who manages user accounts on the installation and sites.
-- One or more Editors who are responsible for the design and management of items, item sets, and resource templates.
-- Reviewer staff members who are responsible for manually adding digitized or collected items and describing them according to institutional guidelines, and editing the additions of others.
-- Authors and Researchers who are given site-specific permissions to create exhibits and publish their research using digitized items in the collection.
+One example of how you may wish to manage the users of your site:
 
 - A **Global Admin** user who installs, manages, and upgrades the modules and themes, and controls fundamental installation settings and server utilities.
 - A **Supervisor** who manages user accounts on the installation and sites.
@@ -44,7 +39,7 @@ One example for how you may wish to manage the users of your site:
 
 Only Supervisors and Global Administrators can create, edit, and delete users. Editors, Reviewers, Authors, and Researchers can edit their own user information but cannot change the information of other users.
 
-To create a new user, select the *Add new user* button in the upper right hand corner of the Users section in the main administrative dashboard.
+To create a new user, select the "Add new user" button in the upper right hand corner of the Users section in the main administrative dashboard.
 
 ![Add new user form with fields as described](adminfiles/users_addnew.png)
 
@@ -160,17 +155,15 @@ From the dropdown menu just above the email column, select "Delete selected" and
 
 ![A red arrow points to the dropdown where "Delete selected" is displayed](adminfiles/users_batchdel1.png)
 
-This will open a drawer on the right side of the screen with a message telling you the number of users you are about to delete. This action *cannot be undone*. To permanently delete these users, click the red "Confirm Delete" button. To cancel, click the "X" in the upper right corner of the drawer.
+This will open a drawer on the right side of the screen with a message telling you the number of users you are about to delete. This action *cannot be undone*.
+
+To permanently delete these users, click the red "Confirm Delete" button. To cancel, click the "X" in the upper right corner of the drawer.
 
 ![Confirm delete message for 5 users](adminfiles/users_batchdel2.png)
 
 The "Delete all" action in the dropdown will delete all users excluding yourself. This action *cannot be undone* and should be used with extreme caution.
 
-<<<<<<< Updated upstream
-To permanently delete these users, you must check the "Are you sure" box before clicking the "Confirm Delete" button. To cancel, click the "X" in the upper right corner of the drawer.
-=======
 To permanently delete all users, you must check the "Are you sure" box before clicking the "Confirm Delete" button. To cancel, click the "X" in the upper right corner of the drawer. 
->>>>>>> Stashed changes
 
 ## Roles and permissions
 The following is a detailed breakdown of permissions for each user role:

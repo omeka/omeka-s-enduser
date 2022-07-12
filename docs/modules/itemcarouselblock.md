@@ -10,19 +10,19 @@ Once activated, Item Carousel Block adds an "Item Carousel" page block to the li
 
 When editing a page, insert the Item Carousel page block. Click the "Add Attachment" button to add an item to the block. This will open a sidebar on the right side of the page to browse and select items.
 
-Once you have selected the items to attach, you can click the configuration wrench to select the media thumbnail to show and to add a caption. Attachments may be reordered by dragging and dropping. 
+Once you have selected the items to attach, you can click the configuration wrench to select the media thumbnail to show and to add a caption. Attachments may be reordered by dragging and dropping.
 
 ![The page editing interface, with Item Carousel appearing in the blocks menu on the right, and a blank Item Carousel block on the page.](modulesfiles/itemcarouselblock.png)
 
 ## Basic configuration
-The block includes two basic configuration settings. 
+The block includes two basic configuration settings.
 
 ![An item carousel block with attached items and configuration settings.](modulesfiles/itemcarouselblock-basicconfiguration.png)
 
 Add a title for the carousel, and select the number of items that appear on the page at one time. The block must show at least 1 item, and can show a maximum of 10 items.
 
 ## Advanced options
-Using the drop-down menu within the block, you can access a number of advance options to further configure the appearance of the block. 
+Using the drop-down menu within the block, you can access a number of advance options to further configure the appearance of the block.
 
 ![An item carousel block detail image focused on the advanced options settings.](modulesfiles/itemcarouselblock-advancedoptions.png)
 

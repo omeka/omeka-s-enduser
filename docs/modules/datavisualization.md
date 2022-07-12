@@ -3,7 +3,7 @@ title: Data Visualization
 ---
 # Data Visualization
 
-The [Data Visualization module](https://omeka.org/s/modules/Datavis){target=_blank} allows site administrators are able to generate datasets and render diagrams that reflect their data. Once installed and activated on the Modules tab of the admin dashboard, Data Visualization is managed on a site-by-site basis. 
+The [Data Visualization module](https://omeka.org/s/modules/Datavis){target=_blank} allows site administrators are able to generate datasets and render diagrams that reflect their data. Once installed and activated on the Modules tab of the admin dashboard, Data Visualization is managed on a site-by-site basis.
 
 ## Creating data visualizations
 If the Data Visualization module is active, a tab for Data Visualization will appear in the menu for individual sites. Clicking this tab will take you to a list of all visualizations created for the site. You can sort the visualizations by either date or title in ascending or descending order.
@@ -16,7 +16,7 @@ You will then have the option select what you would like to visualize. The five 
 1. **Count of items in item set**, which visualizes the count of items that are assigned to selected item sets;
 2. **Count of items with classes**, which visualizes the count of items that are instances of selected resource classes;
 3. **Count of items with properties**, which visualizes the count of items that have selected properties;
-4. **Count of items with property values**, which visualizes the count of items that have selected values of a selected property; 
+4. **Count of items with property values**, which visualizes the count of items that have selected values of a selected property;
 5. **County of property values**, which visualizes the count of values of a selected property.
 
 Once you select what you would like to visualize, click the "Next" button. You will then be on the "Add visualization" page, where you can describe and configure visualization.
@@ -24,14 +24,14 @@ Once you select what you would like to visualize, click the "Next" button. You w
 - Each visualization requires a Title.
 - You may add a prose Description of the visualization.
 - Use the Search Query interface to set the pool if resources to visualized. To input a search query, select either the "Edit" button or the "Advanced edit" button. If you choose to leave this blank, the visualization will incorporate all items assigned to that site.
-    - If you select "Edit", a sidebar will open allowing you to search full-text, search by value, search by class, search by template, search by item set, or search by owner. You can either "Preview", "Reset", or "Apply" your search by selecting the corresponding button at the bottom of the search sidebar. 
+    - If you select "Edit", a sidebar will open allowing you to search full-text, search by value, search by class, search by template, search by item set, or search by owner. You can either "Preview", "Reset", or "Apply" your search by selecting the corresponding button at the bottom of the search sidebar.
     - If you select "Advanced edit", you will only need to fill in the provided textbook. To save your search query click "Apply", or you can "Cancel" your search.
 
 
 ![Add Data Visualization form including Title, Description, Search Queary and Data configuration options for a Count of Items with Property Values visualization](../modules/modulesfiles/dataviz_editVisualization.png)
 
 #### Data configuration
-The options for data configuration will reflect the "Dataset type" you selected initially: 
+The options for data configuration will reflect the "Dataset type" you selected initially:
 
 ##### Count of items in item sets
 If you are creating a count of items in a item set, you will be able to select the item sets by clicking inside the item sets box and selecting from the dropdown menu. If you do not complete this step, you will receive an error when attempting to generate your data set.
@@ -49,7 +49,7 @@ There are two fields you need to complete under "Dataset configuration" when cre
 When configuring your data set for counting property values, you must select a value property from the dropdown menu. If you do not complete this step, you will receive an error when attempting to generate your dataset. There are additionally two other optional configuration fields: "Minimum count" and "Maximum count." You can set the minimum and maximum counts by either typing the desired number or using the up and down arrows on the right side of the box.
 
 #### Diagram configuration
-Under Diagram Configuration, you will be able to select the kind of diagram you would like to produce for your visualization. Options include bar chart, column chart, and pie chart. 
+Under Diagram Configuration, you will be able to select the kind of diagram you would like to produce for your visualization. Options include bar chart, column chart, and pie chart.
 
 If you select **bar chart** or **column chart**, you will be asked to input the width and height of your visualization as well as the top, right, bottom, and left margins. Additionally, you will be able to use a dropdown menu to order your data by value (ascending), by value (descending), by label (ascending), or by label (descending).
 
@@ -60,7 +60,7 @@ If you edit your visualization to change the Diagram Configuration after your in
 ![Diagram configuration form for a Column chart](../modules/modulesfiles/dataviz_diagramConfig.png)
 
 ## Generating your visualization
-Once you've configured your visualization, click the "Save and..." button. Then, select the box to "Generate dataset" and click "Stay on this visualization." 
+Once you've configured your visualization, click the "Save and..." button. Then, select the box to "Generate dataset" and click "Stay on this visualization."
 
 ![Save menu with Generate dataset checked](../modules/modulesfiles/dataviz_saveGenerate.png)
 
@@ -81,9 +81,9 @@ You can save your work and select "Return to Visualizations," which will bring y
 ![Browse list of two visualizations](../modules/modulesfiles/dataviz_browse.png)
 
 ## Publishing your visualization
-Data Visualizations are published by adding them to site pages, as page blocks. 
+Data Visualizations are published by adding them to site pages, as page blocks.
 
-To a new or existing page, add a "Data visualization" block. In the new block, use the dropdown menu to select the visualization you would like to add to the page. 
+To a new or existing page, add a "Data visualization" block. In the new block, use the dropdown menu to select the visualization you would like to add to the page.
 
 Then, save the page edits. To remove the block, click the trash can icon in the block heading.
 

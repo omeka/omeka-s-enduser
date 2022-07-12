@@ -10,7 +10,7 @@ If you are new to working with CSS, we recommend the following free resources fo
 * [Codecademy's "Learn CSS" course](https://www.codecademy.com/learn/learn-css){target=_blank}
 * [Marksheet's "CSS Basics"](https://marksheet.io/css-basics.html){target=_blank}
 
-The easiest way to learn Omeka S page components for the sake of CSS editing is to use your browser's Inspect tool when looking at your chosen theme. 
+The easiest way to learn Omeka S page components for the sake of CSS editing is to use your browser's Inspect tool when looking at your chosen theme.
 
 ## Using the CSS Editor interface
 
@@ -22,7 +22,7 @@ The first large text area is where you write your individual styles. Use that te
 
 ` <link href="/yoursiteslug/css-editor" media="screen" rel="stylesheet" type="text/css"> `
 
-This line will appear after the stylesheets that come from Omeka's defaults and from your chosen theme. So, entries here should override other styles set in those files, unless they have been marked as `!important`. There may be other custom CSS loading in the header below this line, particularly from theme configurations such as the main accent color or banner height, that may override your custom CSS in turn. 
+This line will appear after the stylesheets that come from Omeka's defaults and from your chosen theme. So, entries here should override other styles set in those files, unless they have been marked as `!important`. There may be other custom CSS loading in the header below this line, particularly from theme configurations such as the main accent color or banner height, that may override your custom CSS in turn.
 
 ![Screenshot of CSS Editor module interface.](modulesfiles/csseditor_interface.jpg)
 
@@ -42,13 +42,13 @@ For reference, the "Default" theme begins looking like this, using the "Open San
 
 This tutorial will override "Open Sans" with the "Lato" font family.
 
-1. Navigate to [Google Fonts](https://fonts.google.com/){target=_blank}. Find the "Lato" font family and click on the orange "+" button to select it. 
+1. Navigate to [Google Fonts](https://fonts.google.com/){target=_blank}. Find the "Lato" font family and click on the orange "+" button to select it.
   ![Google Fonts main page with "Lato" font family highlighted](modulesfiles/csseditor_tutorial1.jpg)<br>
-2. A bar labeled "1 Family Selected" will appear in the lower right corner. Click on this bar. 
+2. A bar labeled "1 Family Selected" will appear in the lower right corner. Click on this bar.
   ![Cropped view of Google Fonts page with selected font family bar highlighted](modulesfiles/csseditor_tutorial2.jpg)<br>
-3. The bar will open a panel with the information you'll need to use Lato in your site. The first section, "Embed this font", has the external stylesheet URL you need. Select the URL in the `href` attribute, as pictured. 
+3. The bar will open a panel with the information you'll need to use Lato in your site. The first section, "Embed this font", has the external stylesheet URL you need. Select the URL in the `href` attribute, as pictured.
   ![Screenshot of "Embed this font" section with external stylesheet url ("https://fonts.googleapis.com/css?family=Lato&display=swap") highlighted.](modulesfiles/csseditor_tutorial3.jpg)<br>
-4. Copy this URL into one of the "External stylesheets" inputs in CSS Editor. 
+4. Copy this URL into one of the "External stylesheets" inputs in CSS Editor.
   ![Screenshot of CSS Editor module interface, cropped to focus on external stylesheet field with pasted stylesheet url.](modulesfiles/csseditor_tutorial4.jpg)<br>
 5. Back in the Google Fonts panel, there is the second section titled "Specify in CSS". Copy the `font-family` rule.
   ![Screenshot of "Specify in CSS" section with font-family rule ("font-family: 'Lato', sans-serif;") highlighted.](modulesfiles/csseditor_tutorial5.jpg)<br>
@@ -56,4 +56,3 @@ This tutorial will override "Open Sans" with the "Lato" font family.
   ![Screenshot of CSS Editor module interface, cropped to focus on CSS text area with pasted body font-family rule ('body {font-family: "Lato", sans-serif;}').](modulesfiles/csseditor_tutorial6.jpg)<br>
 7. Click the "Save" button in the top right corner. Now the "Default" theme should look like this.
 ![Screenshot of Omeka S site with "Default" theme, where all the text is displaying in the "Lato" font](modulesfiles/csseditor_after.jpg)
-

@@ -6,28 +6,28 @@ Note that DSpace Connector only works with DSpace versions 5.6 and higher. This 
 
 ## Import data
 
-Navigate to the tab labelled "DSpace Connector" under Modules. 
+Navigate to the tab labelled "DSpace Connector" under Modules.
 
 ![Screenshot of the field options for DSpace Connector with collections loaded from a university library](../modules/modulesfiles/dspace_import.png)
 
-On the first form, enter the following information: 
+On the first form, enter the following information:
 
 * **DSpace site URL** for the repository - the entire URL, including the `http://`
 * **Endpoint** for the API (by default this is "rest" but may be changed in the DSpace instance)
-* **Limit** or maximum number of results to retrieve at once. 
+* **Limit** or maximum number of results to retrieve at once.
 
-Click the "Get collections and communities" button. If the information above has been correctly entered, you will proceed to the DSpace Connector Import Options page. This has "Basic import settings" and "Collections" tabs. 
+Click the "Get collections and communities" button. If the information above has been correctly entered, you will proceed to the DSpace Connector Import Options page. This has "Basic import settings" and "Collections" tabs.
 
 ### Basic import settings
 This tab has five options:
 
 * **Import files into Omeka S**: click this checkbox to import files in addition to metadata.
 * **Item Set**: select an item set from the dropdown into which to import the items, or create a new item set named for the imported DSpace collection.
-* **Sites**: add the imported items to the specified site or sites. Global and user-specific default sites will be pre-selected here. 
-* **Ignored Fields**: DSpace metadata fields to ignore on import, separated by commas. 
+* **Sites**: add the imported items to the specified site or sites. Global and user-specific default sites will be pre-selected here.
+* **Ignored Fields**: DSpace metadata fields to ignore on import, separated by commas.
 * **Comment**: comments to attach to the import batch, which will appear on the "Past DSpace Imports" page.
 
-![basic import settings, nothing entered and no boxes checked.](../modules/modulesfiles/dspace_importset.png) 
+![basic import settings, nothing entered and no boxes checked.](../modules/modulesfiles/dspace_importset.png)
 
 ### Collections
 This tab will display the list of collections for the DSpace repository, organized by the containing community. You can import either one collection at a time or the entire DSpace repository.
@@ -62,4 +62,3 @@ To manually update resources created using the DSpace Connector, simply re-run a
 ## Undo an import
 
 You can view past imports from the "Past DSpace Imports" page. To undo a completed import and remove all associated items, check the box for each import you wish to undo and click the "Submit" button.
-
