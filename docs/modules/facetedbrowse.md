@@ -26,11 +26,7 @@ Site managers must create Faceted Browse pages before they can be added to the s
 
 ### Adding a Faceted Browse page
 
-<<<<<<< Updated upstream
-Create a new page by clicking the *Add a page* button. This takes you to a new page where you can add basic information for the page and start adding categories.
-=======
 Create a new page by clicking the "Add a page" button. This takes you to a new page where you can add basic information for the page and start adding categories. 
->>>>>>> Stashed changes
 
 ![Create page interface showing save page dropdown](../modules/modulesfiles/FacetedBrowse-AddPage.png)
 
@@ -97,17 +93,13 @@ Set the Select type for the browse faceting. This sets how site visitors interac
 For the Single (list) and Multiple (list) Select types, Page creators can choose to truncate the values available on this list that is visible to the site visitor by setting a number in the "Truncate values" option. Leaving the input blank will list all values.
 
 Next, enter the Values that will make up the facets. Each value should be on a separate line.
-   -  Check the *Show all available values* box to get a sense of the data that is available for input. This will return existing values in the property you selected above. You may click the "Add all" button to populate the list of values.
+   -  Check the "Show all available values" box to get a sense of the data that is available for input. This will return existing values in the property you selected above. You may click the "Add all" button to populate the list of values.
    -  The formatting of the value input will depend up on the query type selected above. If the query type is
 
-<<<<<<< Updated upstream
       -  "Is exactly": enter a value that is an exact match to the property value.
       -  "Contains": enter a value that matches any part of the property value.
       -  "Is resource with ID": enter the resource ID followed by any value (usually the resource title), separated by a single space.
       -  "Has any value": enter the property ID followed by any value (usually the property label), separated by a single space.
-=======
-Check the "Show all available values" box to get a sense of the data that is available for input. This will return existing values in the property you selected above.
->>>>>>> Stashed changes
 
 When you are satisfied with your settings, click the "Set facet" button.
 
