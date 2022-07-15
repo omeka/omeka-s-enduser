@@ -46,11 +46,11 @@ The module has two checkbox configuration options: Global Configuration and Dire
 ![Metadata Browse configuration settings](../modules/modulesfiles/mdbr_config2.png)
 
 ### Global configuration
-The "Use global configuration on admin side" checkbox determines how the properties available for **admin side** metadata browsing (on items and item sets views) are determined: by aggregating the properties selected on all of the sites in the installation (unchecked), or limited to only the properties chosen on this page (checked).
+The "Use global configuration on admin side" checkbox determines how the properties available for **administrative side** metadata browsing (on items and item sets views) are determined: by aggregating the properties selected on all of the sites in the installation (unchecked), or by limiting to only the properties chosen on this page (checked).
 
-Leaving the box unchecked modifies the admin side for . For example, a site about various artists might have the Metadata Browse enabled for "Creator" (Dublin Core), while a site collecting conference papers might enable Metadata Browse for "presented at" (Bibliographic Ontology); with the box unchecked, both "Creator" and "presented at" would have Metadata Browse enabled on the admin views of all items and item sets on the installation.
+This checkbox modifies the admin side for all users. For example, a site about artists might have the Metadata Browse enabled for "Creator" (Dublin Core), while a site collecting conference papers might enable Metadata Browse for "presented at" (Bibliographic Ontology). With the box unchecked, both "Creator" and "presented at" would have Metadata Browse enabled on the admin views of all items and item sets across the entire installation.
 
-Checking the box can be used to limit the number of properties which have Metadata Browse enabled on the admin side. If, for example, the site about various artists mentioned above was using Metadata Browse on every possible property, those Metadata Browse links would still be visible on their site, but would not show up on the admin side. Instead, the Global Administrator(s) could decided which properties to enable browsing on for the admin side, thus reducing visual clutter.
+Checking the box can be used to limit the number of properties that have Metadata Browse enabled on the admin side. If, for example, the site about artists was using Metadata Browse on every possible property, those Metadata Browse links would be visible on the public site but would not show up on the admin side. Instead, the Global Administrator(s) could decide which properties to enable browsing for on the admin side.
 
 ### Direct links
 The "Direct Links" checkbox sets how metadata-browsing links are displayed on both the admin side and across all sites.
