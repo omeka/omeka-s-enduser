@@ -4,7 +4,7 @@ Admin users may change the settings for the admin dashboard and general settings
 
 Global settings are only available to Global Administrator users.
 
-The settings are as follows divided into two sections: **General** and **Security** settings.
+Settings are divided into two sections: **General** and **Security** settings.
 
 ## General
 
