@@ -5,10 +5,16 @@ The following are advanced options and troubleshooting tips for Scripto for Omek
 ## Disable anonymous editing
 By default, Scripto for Omeka S allows anonymous users to edit the content on your projects. 
 
-To prevent this, you will need to edit the files in the directory containing your MediaWiki installation. Add the line `$wgGroupPermissions['*']['edit'] = false;` to LocalSettings.php
+To prevent this, you will need to edit the files in the directory containing your MediaWiki installation. Add the line 
 
-For more information, see the [MediaWiki manual on preventing access](https://www.mediawiki.org/wiki/Manual:Preventing_access)
+```
+$wgGroupPermissions['*']['edit'] = false;
+```
+
+to the file `LocalSettings.php`.
+
+For more information, see the [MediaWiki manual on preventing access](https://www.mediawiki.org/wiki/Manual:Preventing_access){target=_blank}.
 
 ## Troubleshooting
 ### Project sync stuck
-If your project sync will not start or remains in process, check that you have [correctly configured the PHP-CLI path for your Omeka S installation](https://omeka.org/s/docs/developer/configuration/config_reference/#cli). 
+If your project sync will not start or remains in process, check that you have [correctly configured the PHP-CLI path for your Omeka S installation](https://omeka.org/s/docs/developer/configuration/config_reference/#cli){target=_blank}. 

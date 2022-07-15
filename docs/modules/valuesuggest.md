@@ -9,11 +9,10 @@ This functionality helps those building an Omeka site encourage consistent metad
 Value Suggest vocabularies are applied through Resource Templates. For additional information on Resource Templates, see the [Resource Template Documentation](../content/resource-template.md).
 
 1. From the Resources templates tab in the Admin Dashboard, either add a new [template](../content/resource-template.md) or edit an existing one.
-2. Add the property to which you want to apply the ValueSuggest. 
+2. Add the property to which you want to apply the Value Suggest. 
 3. Once the property is added to the template, click the pencil/edit icon for that property.
-4. At the bottom of the drawer which opens on the right, open the *Data type* dropdown. Below the standard options, you will see the Value Suggest options. Select the vocabulary you want to use from the dropdown.
-	- Note that you can also add alternate labels and comments for the property in this drawer.
-6. Click the *Set changes* button at the bottom of the drawer to assign the Values to the property. 
+4. At the bottom of the drawer which opens on the right, open the "Data type" dropdown. Below the standard options, you will see the Value Suggest options. Select the vocabulary you want to use from the dropdown. Note that you can add alternate labels and comments for the property in this drawer.
+6. Click the "Set changes" button at the bottom of the drawer to assign the values to the property. 
 7. Save changes to the resource template. 
 
 
@@ -26,7 +25,7 @@ When you click the title of a Resource Template to see its details, the Value Su
 
 ## Adding Value Suggest to an item
 
-When this Resource Template is used in an Item or Item Set, the designated properties will auto-suggest values from the vocabulary specified in the template. 
+When this Resource Template is used in an item or item set, the designated properties will auto-suggest values from the vocabulary specified in the template. 
 
 Users must start typing in the open text box of that specific property to prompt the auto-suggest feature. There may be a slight delay, but a drop-down menu will appear with choices drawn directly from the authority or vocabulary list you have associated with that property.
 
@@ -36,7 +35,7 @@ Hover over selections in the dropdown menu for a description of that vocabulary.
 
 ![Item property Material with "lithograph" typed in the field. A dropdown menu auto-suggests terms, including "color lithographs," which is selected. Helper text in a small overlaid window reads, "Lithographs printed in several colors."](../modules/modulesfiles/ValSug-ItemProperty2.png)
 
-Note: after selecting a value, a box containing a URL should appear under the value. This link will direct visitors to a webpage with additional information on the value selected. This box can be removed by clicking the “X”.
+Note: after selecting a value, a box containing a URL should appear under the value. This link will direct visitors to a webpage with additional information on the value selected. This box can be removed by clicking the "X".
 
 ![Item property Work Type with "Fashion Illustrations (layout features)" selected. Below, in red is a hyperlink to Getty Collections, with a small red "X".](../modules/modulesfiles/ValSug-ItemProperty3.png)
 

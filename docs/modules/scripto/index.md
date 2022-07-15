@@ -19,7 +19,7 @@ The **Media** associated with an item are the level at which community members t
 ## Installation and configuration
 To install Scripto, you must:
 
-- be running Omeka S v2.0.0 or higher;
+- be running Omeka S v2.0.0 or higher
 - have a [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) installation running on the same server as the Omeka S installation. Minimum MediaWiki version is 1.30.0.
 
 Create the MediaWiki installation on your server using [their instructions](https://www.mediawiki.org/wiki/Manual:FAQ#Installation_and_configuration). Install the Scripto module using the [documentation for installing modules](../../modules/#installing-modules). 
@@ -36,7 +36,7 @@ Enter the url for your [MediaWiki API endpoint](https://www.mediawiki.org/wiki/A
 Once Scripto is installed and active, it will add the Scripto [Vocabulary](../../content/vocabularies/) to your Omeka S installation. This vocabulary contains the following properties:
 
 - Content: A plain text representation of the content of a resource.
-- Transcription: A transcription of a resource
+- Transcription: A transcription of a resource.
 - Translation: A translation of a resource.
 
 Do not edit this vocabulary.
@@ -57,8 +57,8 @@ Once you are logged in, the dashboard will include:
 
 - A bar across the top with your username and links to the dashboard, your contributions, your watchlist, and a button to Log Out of Scripto.
 - A view of all the [Projects](../../modules/scripto/scriptoproject/) you own.
-- A view of all the [Projects](../../modules/scripto/scriptoproject/) you review
-- A view of your recent Contributions
+- A view of all the [Projects](../../modules/scripto/scriptoproject/) you review.
+- A view of your recent Contributions.
 - A view of your watchlist.
 
 ![Scripto dashboard with three projects, two of which the user reviews, and a series of recent contributions.](../../modules/modulesfiles/scripto_dash.png)
@@ -75,7 +75,7 @@ In order to change the status of transcriptions and sync projects to and from Om
 You may find it easiest to have administrators of Scripto projects use the same or similar user names on both installations, in order to keep track of who is doing what. 
 
 ### Browse users
-From the "actions" dropdown in the upper right corner of the Scripto Dashboard, you can select "Browse users"
+From the "actions" dropdown in the upper right corner of the Scripto Dashboard, you can select "Browse users".
 
 This will take you to a user browse page showing all of the Scripto users on this installation (from MediaWiki). 
 
@@ -95,12 +95,12 @@ Clicking on a user's name will take you to a page with a summary of their contri
 
 For each user, there will be a table with a row for every edit they have made to a piece of media. The columns are:
 
-- Revision, with a timestamp which links to that revision;
-- Media #, with a link to the media;
-- Type;
-- Item, which links to the item *in Scripto*;
-- Project with which the item is associated;
-- Size of the edit;
+- Revision, with a timestamp which links to that revision
+- Media #, with a link to the media
+- Type
+- Item, which links to the item in Scripto
+- Project with which the item is associated
+- Size of the edit
 - Comment, if any. 
 
 ## Public and admin views

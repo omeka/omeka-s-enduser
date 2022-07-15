@@ -133,7 +133,7 @@ While an import might have technically been successful, you might have suffered 
 
 You may have an import that needs to be re-run to capture new resources from remote installation. In this case you can edit the import to retake the snapshot and execute a new import.
 
-The import is not a two-way synchronization, so changes made to the local items are not pushed to the remote items. Note, also, that the module does not preserve local changes after subsequent imports. Imported items will always reflect their state on the remote installation at the time of the snapshot. *Do not run a subsequent import if you need to preserve local changes.* This does not apply to site and block assignments, which are preserved.
+The import is not a two-way synchronization, so changes made to the local items are not pushed to the remote items. Note, also, that the module does not preserve local changes after subsequent imports. Imported items will always reflect their state on the remote installation at the time of the snapshot. **Do not run a subsequent import if you need to preserve local changes.** This does not apply to site and block assignments, which are preserved.
 
 You may begin the new import process by clicking on the pencil icon to the right of the label for the import of your choice.
 
