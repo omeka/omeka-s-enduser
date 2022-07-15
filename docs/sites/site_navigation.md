@@ -84,4 +84,4 @@ Deleting a parent block from the navigation will also delete any child blocks, w
 
 ![Parent and child block marked for deletion](../sites/sitesfiles/sitenav_del2.png) 
 
-In this imade, the delete icon for "Adaptations" has been clicked; "Adaptations" and its child page "Sense and Sensibility" are both shown in red, and "Adaptations" now shows the undo button where the trash can used to be. 
+In this image, the delete icon for "Adaptations" has been clicked; "Adaptations" and its child page "Sense and Sensibility" are both shown in red, and "Adaptations" now shows the undo button where the trash can used to be. 
