@@ -2,7 +2,7 @@
 
 Pages form the content of your [sites](../sites/index.md). A site can have a single page or many pages.
 
-Manage the pages for a site by navigating to the Sites tab on the left-hand navigation of the admin dashboard. Select the site  for which you want to manage the pages and click either the title or the edit (pencil) button to edit that site. 
+Manage the pages for a site by navigating to the Sites section on the left-hand navigation of the admin dashboard. Select the site for which you want to manage the pages and click either the title or the edit (pencil) button to edit that site. 
 
 Once you are editing the site, click the Pages tab in the left hand navigation.
 
@@ -33,7 +33,7 @@ Once you have entered this information and set visibility, click the "Add" butto
 If you decide you do not want to create the page, click the "Cancel" button.
 
 ## Browse pages
-The pages tab (once you have at least one page) will display all of your pages in their navigation order. Child pages will display below the parent page with a `-` before the page title.
+The Pages tab (once you have at least one page) will display all of your pages in their navigation order. Child pages will display below the parent page with a `-` before the page title.
 
 Every page is listed with its Title, buttons to view (box with an arrow coming out), edit (pencil), or delete (trash can) the page, and the page's slug. 
 
@@ -308,7 +308,7 @@ Add and arrange pages using the [Site Navigation](../sites/site_navigation.md) s
 For module-specific blocks, such as [Collecting](../modules/collecting.md) or [Mapping](../modules/mapping.md), see the documentation for that module.
 
 ## Deleting pages
-To delete a page, go the to *Pages* tab of the site of which the page is a part. Click the delete (trash can) button at the right end of the row for that page. 
+To delete a page, go the to Pages tab of the site of which the page is a part. Click the delete (trash can) button at the right end of the row for that page. 
 
 A drawer will open on the right side of the page asking you to confirm that you wish to delete the page, with the name of the page displayed under the confirmation button. To proceed, click the "Confirm delete" button. Otherwise, click the "X" in the upper right corner of the drawer to cancel.
 

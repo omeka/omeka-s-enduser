@@ -18,7 +18,7 @@ To add a user, click on their name. Then select their role from the dropdown:
 * **Creator**: Can access and edit all of the site's properties, that is, everything available from the site-specific submenu. (This role was called "Editor" in Omeka S versions 1.x-2.x.)
 * **Manager**: Has full administrative privileges for the site, including adding/removing users and deleting the site. (This role was called "Admin" in Omeka S versions 1.x-2.x.)
 
-You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking Save. Users can be deleted from the site by clicking the trash can icon on their row, and confirming the deletion in the drawer that appears.
+You can add or revoke privileges for users by going back to the User permissions tab and selecting or deselecting the boxes and clicking "Save". Users can be deleted from the site by clicking the trash can icon on their row, and confirming the deletion in the drawer that appears.
 
 Once you've added one or more users, click the "Save" button located in the upper right hand corner. To cancel your changes, click the "Cancel" button in the upper right hand corner. 
 

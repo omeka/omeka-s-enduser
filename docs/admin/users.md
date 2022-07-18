@@ -4,7 +4,7 @@ User accounts in an Omeka S installation allow your staff and audience to do thi
 
 User roles set at the installation level are separate from [site-specific user roles](../sites/site_users.md). A user must be created for the installation and then given site roles. This allows you to give minimal site-wide permissions to someone who will be drafting and publishing a virtual exhibit on your installation.
 
-Administrators manage and create users from the User tab of the main administrative dashboard (head and shoulders icon). The Users section displays the user’s email followed by full name in parentheses, as well as their role and the date the account was created.
+Administrators manage and create users from the Users section of the main administrative dashboard (head and shoulders icon). The Users section displays the user’s email followed by full name in parentheses, as well as their role and the date the account was created.
 
 There are six user roles in Omeka S:
 
@@ -39,7 +39,7 @@ One example of how you may wish to manage the users of your site:
 
 Only Supervisors and Global Administrators can create, edit, and delete users. Editors, Reviewers, Authors, and Researchers can edit their own user information but cannot change the information of other users.
 
-To create a new user, select the "Add new user" button in the upper right hand corner of the Users section in the main administrative dashboard.
+To create a new user, select the "Add new user" button in the upper right hand corner of the Users section in the administrative dashboard.
 
 ![Add new user form with fields as described](adminfiles/users_addnew.png)
 

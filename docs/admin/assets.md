@@ -1,14 +1,14 @@
 # Assets
 
-Digital files added to Omeka S that are not media attached to items can be managed in the **Assets** tab of the administrative interface. Examples of assets include site logos, images that are purely illustrations, and custom-made thumbnails. 
+Digital files added to Omeka S that are not media attached to items can be managed in the **Assets** section of the administrative interface. Examples of assets include site logos, images that are purely illustrations, and custom-made thumbnails. 
 
-The Assets tab provides users with a browseable list of all of the assets for the entire installation, listed with a thumbnail, a title, icons to edit (pencil), delete (trash can) or view details (ellipsis), and the asset's owner. There are no batch-editing options available for assets. 
+The Assets section provides users with a browseable list of all of the assets for the entire installation, listed with a thumbnail, a title, icons to edit (pencil), delete (trash can) or view details (ellipsis), and the asset's owner. There are no batch-editing options available for assets. 
 
 ![Admin section of the Navigation menu showing Assets section](adminfiles/assets_menu.png)
 
 ## Add an asset
 
-To add a new asset to the installation, click the "Add new asset" button in the upper right hand corner of the screen. A drawer will open that allows the user to browse their computer for an asset file, and to create alternative text for that file (alt text will be available to screen-readers and whenever an image cannot load). Click the "Upload" button to complete the process.
+To add a new asset to the installation, click the "Add new asset" button in the upper right hand corner of the Assets screen. A drawer will open that allows the user to browse their computer for an asset file, and to create alternative text for that file (alt text will be available to screen-readers and whenever an image cannot load). Click the "Upload" button to complete the process.
 
 ![Asset browse list with Add a New Asset drawer open with an image selected for upload](adminfiles/assets_add.png)
 

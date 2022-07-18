@@ -1,6 +1,6 @@
 # Settings
 
-Admin users may change the settings for the admin dashboard and general settings for all sites using the **Settings** tab on the left side of the admin dashboard (gear icon). 
+Admin users may change the settings for the admin dashboard and general settings for all sites using the **Settings** section on the left side of the admin dashboard (gear icon). 
 
 Global settings are only available to Global Administrator users.
 
