@@ -16,7 +16,7 @@ In order to install Omeka S, you will need a server running the following:
 ### Installing from download
 
 !!! note
-	Before you install Omeka S, you need to create a MySQL database and user. Omeka S must have a dedicated database (you cannot use a prefix for a database used by another system or Omeka S or Classic installation). For more information on creating a database and user, please see your hosting's support documentation or talk to your system administrator.
+	Before you install Omeka S, you need to create a MySQL database and user. Omeka S must have a dedicated database; you cannot use a prefix for a database used by another system or Omeka S or Classic installation. For more information on creating a database and user, please see your hosting's support documentation or talk to your system administrator.
 
 1. [Download the latest release from the release page](https://omeka.org/s/download/){target=_blank}.
 1. Extract this downloaded zip file to your computer.
@@ -33,7 +33,7 @@ Then, in your web browser, navigate to the admin page for your Omeka S installat
 
 ### One-click installation
 
-Hosting companies that use [Softaculous](https://softaculous.com/){target=_blank} should offer a one-click install of [Omeka Classic](https://www.softaculous.com/softaculous/apps/educational/Omeka){target=_blank} and [Omeka S](https://www.softaculous.com/softaculous/apps/others/Omeka_S){target=_blank}.
+Hosting companies that use [Softaculous](https://softaculous.com/){target=_blank} should offer a one-click install of [Omeka Classic](https://www.softaculous.com/softaculous/apps/educational/Omeka){target=_blank} and [Omeka S](https://www.softaculous.com/softaculous/apps/others/Omeka_S){target=_blank}. The one-click installation process through Softaculous may allow you to create a database and user at the same time, and will edit the `config/database.ini` file for you.
 
 Suggestions from our users include:
 
@@ -42,9 +42,6 @@ Suggestions from our users include:
 -   [HostGator](http://hostgator.com){target=_blank} - uses Softaculous
 -   [TMD Hosting](https://www.tmdhosting.com){target=_blank} - uses Softaculous
 -   [Webuzo](http://webuzo.com){target=_blank} - uses Softaculous.
-
-!!! note
-	If you are doing a one-click install through Installatron, you may need to edit the `config/database.ini` file in the Omeka directory (see the steps for [installing from a download](#installing-from-download) above). The one-click installation process through Softaculous may allow you to create a database and user at the same time, and will edit the `config/database.ini` file for you.
 
 ## Initial setup
 
