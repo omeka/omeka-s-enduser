@@ -64,6 +64,9 @@ Some, but not all, modules include the option to configure settings for that mod
 Information regarding configuration options for individual modules can be found on the documentation page for those modules.
 
 ## Uninstalling a module
+
+If a module is removed properly from an Omeka installation, all of the tables it created in the database will be deleted, and you will lose any data that has been generated in conjunction with that module while it was installed. For example, if you use the Mapping module to add geolocation data to all of your items, all of those fields will be deleted if you uninstall Mapping. 
+
 Removing a module is essentially installing in reverse:
 
 1. Deactivate the module by clicking the "Deactivate" button.

@@ -3,20 +3,24 @@ title: Data Visualization
 ---
 # Data Visualization
 
-The [Data Visualization module](https://omeka.org/s/modules/Datavis){target=_blank} allows site administrators are able to generate datasets and render diagrams that reflect their data. Once installed and activated on the Modules tab of the admin dashboard, Data Visualization is managed on a site-by-site basis.
+The [Data Visualization module](https://omeka.org/s/modules/Datavis){target=_blank} allows site administrators are able to generate datasets and render diagrams that reflect their data. Once installed and activated on the Modules section of the admin dashboard, Data Visualization is managed on a site-by-site basis. You can add your data diagrams to site pages using page blocks.
 
-## Creating data visualizations
-If the Data Visualization module is active, a tab for Data Visualization will appear in the menu for individual sites. Clicking this tab will take you to a list of all visualizations created for the site. You can sort the visualizations by either date or title in ascending or descending order.
+## Data visualizations by site
+If the Data Visualization module is active, a section for Data Visualization will appear in the menu for individual sites. Clicking this link will take you to a list of all visualizations created for the site. 
+
+![Browse list of two visualizations](../modules/modulesfiles/dataviz_browse.png)
+
+You can sort the visualizations by either date or title in ascending or descending order. You cannot batch-edit visualizations, including deletion, nor can you duplicate existing visualizations or copy them to other sites.
 
 ### Adding a data visualization
-After clicking the Data Visualization tab under a site, you can create a new visualization by clicking the "Add new visualization" button.
+After clicking the Data Visualization link under a site, you can create a new visualization by clicking the "Add new visualization" button.
 
 You will then have the option select what you would like to visualize. The five options include:
 
-1. **Count of items in item set**, which visualizes the count of items that are assigned to selected item sets;
-2. **Count of items with classes**, which visualizes the count of items that are instances of selected resource classes;
-3. **Count of items with properties**, which visualizes the count of items that have selected properties;
-4. **Count of items with property values**, which visualizes the count of items that have selected values of a selected property;
+1. **Count of items in item set**, which visualizes the count of items that are assigned to selected item sets.
+2. **Count of items with classes**, which visualizes the count of items that are instances of selected resource classes.
+3. **Count of items with properties**, which visualizes the count of items that have selected properties.
+4. **Count of items with property values**, which visualizes the count of items that have selected values of a selected property.
 5. **County of property values**, which visualizes the count of values of a selected property.
 
 Once you select what you would like to visualize, click the "Next" button. You will then be on the "Add visualization" page, where you can describe and configure visualization.
@@ -26,7 +30,6 @@ Once you select what you would like to visualize, click the "Next" button. You w
 - Use the Search Query interface to set the pool if resources to visualized. To input a search query, select either the "Edit" button or the "Advanced edit" button. If you choose to leave this blank, the visualization will incorporate all items assigned to that site.
     - If you select "Edit", a sidebar will open allowing you to search full-text, search by value, search by class, search by template, search by item set, or search by owner. You can either "Preview", "Reset", or "Apply" your search by selecting the corresponding button at the bottom of the search sidebar.
     - If you select "Advanced edit", you will only need to fill in the provided textbook. To save your search query click "Apply", or you can "Cancel" your search.
-
 
 ![Add Data Visualization form including Title, Description, Search Queary and Data configuration options for a Count of Items with Property Values visualization](../modules/modulesfiles/dataviz_editVisualization.png)
 
@@ -57,28 +60,28 @@ If you select **pie chart**, you will only be asked to input the width, height, 
 
 If you edit your visualization to change the Diagram Configuration after your initial visualization is produced, you will lose your current diagram configuration.
 
+You can only generate one diagram per dataset; if you wish to present multiple diagrams of the same information, create more visualizations with the same queries and settings.
+
 ![Diagram configuration form for a Column chart](../modules/modulesfiles/dataviz_diagramConfig.png)
 
 ## Generating your visualization
-Once you've configured your visualization, click the "Save and..." button. Then, select the box to "Generate dataset" and click "Stay on this visualization."
+Once you have configured your visualization, click the "Save and..." button, select the box to "Generate dataset" and click "Stay on this visualization."
 
 ![Save menu with Generate dataset checked](../modules/modulesfiles/dataviz_saveGenerate.png)
 
 Once your visualization is complete, you can click the "View..." button and select "Dataset" or "Diagram."
 
-If you select "Dataset," a new window will open that contains your dataset.
+If you select "Dataset," a new browser tab will open that displays your dataset in JSON.
 
-If you select "Diagram," a new tab will open containing your diagram. Diagrams will only generate in the context of a public site.
+If you select "Diagram," a new browser tab will open to a new public page on your site, containing your diagram. This page will continue to be publicly available on your site as long as the visualization exists, but you don't need to link to it from anywhere. You can insert your visualizations as page blocks instead (see below).
 
-<!--- really? new window, and new tab? what is the difference between a dataset and a diagram?  can we get some images and more detail here? do you need to generate a dataset before you can see a diagram of it? why would anyone want to view their dataset? can you have lots of diagrams from one dataset, or can you duplicate datasets easily to make different diagrams? NEED EXAMPLE IMAGES OF THE OUTPUT --->
+![An example pie chart from the "Count of items with classes" option.](modulesfiles/dataViz_piechart.png)
 
-![View menu with Dataset and Diagram](../modules/modulesfiles/dataviz_viewMenu.png)
-
-If the text is cramped in the axes of your graph, you will need to go back and adjust the margins.
+If the text is cramped in the axes of your graph, go back and adjust the margins.
 
 You can save your work and select "Return to Visualizations," which will bring you to a browse list of all of your visualizations, where you can view the diagram or dataset, or edit the visualization.
 
-![Browse list of two visualizations](../modules/modulesfiles/dataviz_browse.png)
+![View menu with Dataset and Diagram](../modules/modulesfiles/dataviz_viewMenu.png)
 
 ## Publishing your visualization
 Data Visualizations are published by adding them to site pages, as page blocks.
