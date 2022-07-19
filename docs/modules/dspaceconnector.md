@@ -6,7 +6,7 @@ Note that DSpace Connector only works with DSpace versions 5.6 and higher. This 
 
 ## Import data
 
-Navigate to the tab labelled "DSpace Connector" under Modules.
+Navigate to the section labelled "DSpace Connector" under Modules.
 
 ![Screenshot of the field options for DSpace Connector with collections loaded from a university library](../modules/modulesfiles/dspace_import.png)
 

@@ -76,7 +76,7 @@ Set the Select type for the browse faceting. This sets how site visitors interac
 
 - Single (list). Visitors can select only one, all options are displayed in a list.
 - Multiple (list). Visitors can select multiple, all options are displayed in a list.
-- Single Dropdown. Visitors can select only one, all options are given in a dropdown menu.
+- Single (dropdown menu). Visitors can select only one, all options are given in a dropdown menu.
  - Text Input. Visitors can type in text to search items that have property values corresponding to that text input.
 
  For the Select types that include a list or a dropdown menu you will need to set a Query type. If the query type is
@@ -111,7 +111,7 @@ Set the Select type for the browse faceting:
 
 - Single (list). Visitors can select only one, all options are displayed in a list.
 - Multiple (list). Visitors can select multiple, all options are displayed in a list.
-- Single Dropdown. Visitors can select only one, all options are given in a dropdown menu.
+- Single (dropdown menu). Visitors can select only one, all options are given in a dropdown menu.
 
 Select the Classes that will make up the facets from the dropdown menu.
 
@@ -127,7 +127,7 @@ Set the Select type for the browse faceting:
 
 - Single (list). Visitors can select only one, all options are displayed in a list.
 - Multiple (list). Visitors can select multiple, all options are displayed in a list.
-- Single (dropdown). Visitors can select only one, all options are given in a dropdown menu.
+- Single (dropdown menu). Visitors can select only one, all options are given in a dropdown menu.
 
 Select the Resource templates that will make up the facets.
 
@@ -143,7 +143,7 @@ Set the Select type for the browse faceting:
 
 - Single (list). Visitors can select only one, all options are displayed in a list.
 - Multiple (list). Visitors can select multiple, all options are displayed in a list.
-- Single Dropdown. Visitors can select only one, all options are given in a dropdown menu.
+- Single (dropdown menu). Visitors can select only one, all options are given in a dropdown menu.
 
 Select the item sets that will make up the facets.
 

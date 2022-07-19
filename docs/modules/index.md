@@ -7,7 +7,7 @@ Modules extend the functionality of your Omeka S installation and sites. A list 
 
 ![Screen capture of admin dashboard showing Modules tab active.](modulesfiles/modulesbrowse.png)
 
-To manage the modules installed on your Omeka S site, click on the **Modules** link on the left-hand navigation of your [admin dashboard](../admin-dashboard.md).
+To manage the modules installed on your Omeka S site, click on the **Modules** section in the left-hand navigation of your [admin dashboard](../admin-dashboard.md).
 
 Note that only [Global Administrators](../admin/users.md) can install and manage modules; Supervisors can browse installed modules but not modify them. Other users do not have access to this tab.
 
@@ -27,9 +27,9 @@ When a module has a new release, it will display on the browse page with a messa
 
 ## Installing modules
 ### Add the module to Omeka S
-In order to appear in the **Modules** tab of the admin dashboard for your Omeka S installation, modules must be manually added to the `/modules` folder of the installation, using an FTP program or SSH connection.
+In order to appear in the **Modules** section of the admin dashboard for your Omeka S installation, modules must be manually added to the `/modules` folder of the installation, using an FTP program or SSH connection.
 
-Modules registered with Omeka are available on the [Modules](https://omeka.org/s/modules/){target=_blank} page of the Omeka S site. Other modules may be made available by their authors in other locations.
+Modules registered with Omeka are available on the [Modules](https://omeka.org/s/modules/){target=_blank} directory of the Omeka S site. Other modules may be made available by their authors in other locations.
 
 To add a module to the site using FTP:
 

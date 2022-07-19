@@ -14,9 +14,9 @@ The first checkbox offers the option to import the Fedora Vocabulary into your O
 You can check these boxes when you first install Fedora Connector, or at a later point via the "Configure" button in the [Modules](../modules/index.md#managing-modules) list.
 
 ## Import data
-To use Fedora Connector, navigate to the tab labelled *Fedora Connector* on the left-hand navigation of the admin dashboard. This will automatically take you to the Import sub-tab.
+To use Fedora Connector, navigate to the section labelled "Fedora Connector" under Modules in the left-hand navigation of the admin dashboard. This will automatically take you to the Import page.
 
-![Fedora Connector navigation option with two sub-tab options for Import and Past Imports](../modules/modulesfiles/mods_fcnav.png)
+![Fedora Connector navigation option with two options for Import and Past Imports](../modules/modulesfiles/mods_fcnav.png)
 
 You should see a screen with the following options:
 
@@ -30,12 +30,12 @@ You should see a screen with the following options:
 
 ![Screenshot of the field options for Fedora Connector](../modules/modulesfiles/mods_fedoraconnect.png)
 
-When the data is complete, press submit. You can track the status of the import by navigating to the Fedora Connector > Past Imports tab, or on the [Jobs](../admin/jobs.md) tab.
+When the data is complete, press "Submit". You can track the status of the import by navigating to the Fedora Connector > Past Imports page, or on the [Jobs](../admin/jobs.md) section.
 
 !!! note
 	Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration.md#php-path) so that your system can perform the background process to make the items.
 
 ## Undo an import
-To undo a completed import and remove all associated items, go to the Fedora Connector tab on the left-hand navigation of the admin dashboard, click on Fedora Connector and then click on Past Imports, which should appear below the Fedora Connector tab.
+To undo a completed import and remove all associated items, go to the Fedora Connector section under Modules, then click on the Past Imports page.
 
-Check the box for each import you wish to undo and click submit.
+Check the box for each import you wish to undo and click "Submit".
