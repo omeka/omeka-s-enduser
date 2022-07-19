@@ -121,10 +121,10 @@ Within the preview map, there are five buttons:
 
  Add, edit, and delete [Web Map Service (WMS)](https://mapserver.org/ogc/wms_server.html){target=_blank} overlays.
 
- * *Label:* Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays.
- * *Base URL:* Add a URL to the WMS map.
- * *Layers:* Any layers you wish to use, separated by commas.
- * *Styles:* Any styles you wish to use, separated by commas.
+ * **Label**: Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays.
+ * **Base URL**: Add a URL to the WMS map.
+ * **Layers**: Any layers you wish to use, separated by commas.
+ * **Styles**: Any styles you wish to use, separated by commas.
 
  Click Add Overlay to create the overlay. Click _Clear Inputs_ to clear each of the fields. Multiple overlays can be added.
 
@@ -139,19 +139,19 @@ Within the preview map, there are five buttons:
 ### Timeline
 Timeline adds a timeline display to the left of the map view. Note that this feature requires the [Numeric Data Types](../modules/numericdatatypes.md) module and at least one item that has a property with a Timestamp or Interval value (applied via the [resource template](../content/resource-template.md)).
 
-- *Title headline:* displays on the first slide of the timeline (see ["Timeline public view"](#timeline-public-view) below). You can use this to name the timeline.
-- *Title text:* appears below the title headline on the first slide of the timeline (see ["Timeline public view"](#timeline-public-view) below). You can use this to provide context or narrative introduction for the timeline.
-- *Fly to:* is a dropdown menu where you can set the zoom level for each point in the timeline on the map. Your options are default view, or zoom levels 0-18 (even numbers only). The higher the number, the more zoomed in the map will be.
+- **Title headline**: displays on the first slide of the timeline (see ["Timeline public view"](#timeline-public-view) below). You can use this to name the timeline.
+- **Title text**: appears below the title headline on the first slide of the timeline (see ["Timeline public view"](#timeline-public-view) below). You can use this to provide context or narrative introduction for the timeline.
+- **Fly to**: is a dropdown menu where you can set the zoom level for each point in the timeline on the map. Your options are default view, or zoom levels 0-18 (even numbers only). The higher the number, the more zoomed in the map will be.
 	- Note that the transition between points is animated, so if you have very distant points the shift between them will involve a significant zoom out and in.
-- *Show contemporaneous events:* sets how two events with the same timestamp or interval are displayed. If checked, contemporaneous events will both display in the map when active in the story slider.
+- **Show contemporaneous events**: sets how two events with the same timestamp or interval are displayed. If checked, contemporaneous events will both display in the map when active in the story slider.
 	- For timestamp properties, if two events have a date of "1 January 2000," both events will show on the map when either is in the story slider.
 	- For interval properties, if one event has an interval of "28 July 1914 - 11 November 1918" and another has an interval of "January 1819- December 1920" both events will show on the map when either is in the story slider.
 	- Note that this setting only works with the default view of Timeline navigation position.
-- *Timeline navigation position:* by default, the timeline displays with the story slider, to the left of the map. Using this dropdown, you can change where the story slider displays. Options are:
+- **Timeline navigation position**: by default, the timeline displays with the story slider, to the left of the map. Using this dropdown, you can change where the story slider displays. Options are:
 	- Default position
 	- Full width, below story slider and map
 	- Full width, above story slider and map.
-- *Property:* a dropdown menu; select the timestamp or interval property to use when populating the timeline. The dropdown menu will populate with the properties which have been defined in a resource type as using numeric data types Interval or Timestamp.
+- **Property**: a dropdown menu; select the timestamp or interval property to use when populating the timeline. The dropdown menu will populate with the properties which have been defined in a resource type as using numeric data types Interval or Timestamp.
 	- You may want to make a note of which property and numeric data type you are using before creating the map block. The dropdown only displays the term and data type but not which template it is associated with, for example `Date Created (numeric:timestamp)`.
 	- Noted that you can only select *one* property per timeline. You cannot mix timestamp and interval data.
 
