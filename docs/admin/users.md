@@ -83,7 +83,7 @@ To edit a user’s information, change their password, or access their API keys,
 The Edit User page has four tabs: **User information**, **User settings**, **Password**, and **API keys**. After making changes on any of these tabs, be sure to click the save button in the upper right hand corner of the browser window. At any time you may cancel your edits by clicking the cancel button next to the save button.
 
 ### User information
-On this tab, you can edit the display **Name** and **Email** for the user, select or change the user **Role** and click the checkbox to confirm that the user **Is active** (or uncheck the checkbox to render the user inactive). A user who is inactive can keep accessing the admin interface until they log in, then they will not be able to log back in.
+On this tab, you can edit the display **Name** and **Email** for the user, select or change the user **Role** and click the checkbox to confirm that the user **Is active** (or uncheck the checkbox to render the user inactive). A user who is inactive can keep accessing the admin interface until they log out, then they will not be able to log back in.
 
 ![User information tab for the Omeka Devs user with completed fields for email, display name, role, and an active checkbox for Is Active](adminfiles/users_info.png)
 
@@ -168,13 +168,13 @@ To permanently delete all users, you must check the "Are you sure" box before cl
 ## Roles and permissions
 The following is a detailed breakdown of permissions for each user role:
 
-**Global Admin** (`global_admin`)
+**Global Admin**
 
 - Full privileges (create, edit, delete) of item, item sets, media, resource templates, site pages, sites, and users.
 - Full privileges for modules - install, activate, configure, and use.
 - Search, read, import, and delete privileges for vocabularies.
 
-**Supervisor** (`site_admin`)
+**Supervisor**
 
 - Full privileges (create, edit, delete) of item, item sets, media, resource templates.
 - Full power over all sites, including adding users, changing navigation and themes, using site-specific module utilities, and editing resources.
@@ -183,7 +183,7 @@ The following is a detailed breakdown of permissions for each user role:
 - View-only privileges for modules in the Admin > Modules tab.
 - View-only privileges for vocabularies.
 
-**Editor** (`editor`)
+**Editor**
 
 - Full privileges (create, edit, delete) of items, item sets, media, resource templates, and site pages.
 - Can search, view, and create sites, and edit or delete sites they own.
@@ -191,7 +191,7 @@ The following is a detailed breakdown of permissions for each user role:
 - No access to modules, installation settings, or jobs.
 - Can see other users of the installation and their email addresses, but not add users.
 
-**Reviewer** (`reviewer`)
+**Reviewer**
 
 - Can search, view, create, and edit all items, item sets, and media. Can only delete those items, item sets, and media they have created.
 - No access to sites unless they have been added as a site-specific user.
@@ -199,7 +199,7 @@ The following is a detailed breakdown of permissions for each user role:
 - No access to modules.
 - Can see other users of the installation and their email addresses.
 
-**Author** (`author`)
+**Author**
 
 - Can search, view, and create items, item sets, resource templates, and media. Can only edit or delete content the user has created.
 - Cannot see objects marked private, unless the object is a site that they have site-specific permissions for.
@@ -208,15 +208,13 @@ The following is a detailed breakdown of permissions for each user role:
 - No access to modules.
 - Can see other users of the installation and their email addresses.
 
-**Researcher** (`researcher`)
+**Researcher**
 
 - Search and view privileges for all public items, item sets, resource templates, and media.
 - Cannot see objects marked private, unless the object is a site that they have site-specific permissions for.
 - No access to modules.
 - Can see other users of the installation and their email addresses.
 
-
 A user at any role can be added to a site at any level (Viewer, Creator, Manager). This will determine whether, say, a Researcher-level user added to a site as Manager can see all the other users added to that site.
 
-
-<!--- note that a couple of modules display themselves to users who don't have permission. two so far: Item Sets Tree displays its Item Sets Tree page (under Modules at the bottom) to anyone, which is probably fine since it's just a display and not an editing page. Metadata Browse shows under a Site but when clicked creates an error page. true of authors and researchers. Researcher and Reviewer can see the "Import" button for resource templates, but it creates an error page (import works for authors). --->
+<!--- note that a couple of modules display themselves to users who don't have permission. two so far: Item Sets Tree displays its Item Sets Tree page (under Modules at the bottom) to anyone, which is probably fine since it's just a display and not an editing page. Researcher and Reviewer can see the "Import" button for resource templates, but it creates an error page (import works for authors). --->
