@@ -11,7 +11,7 @@ This module only imports items and their metadata (including tags), attached fil
 If plugins/modules are installed on both the source site and the target site, Omeka Classic Importer can import module-specific metadata. For example, geolocation data facilitated by the Mapping module in S and the Geolocation plugin in Classic will automatically be imported. PDF Text elements can be imported and mapped to Extract Text fields. The data may not automap properly, so be sure to check the mappings manually.
 
 !!! note
-	- Because resource properties in Omeka S do not have HTML formatting, any HTML in your Omeka Classic item properties (links, text formatting, etc.) will be stripped during the import process.
+	Because resource properties in Omeka S do not have HTML formatting, any HTML in your Omeka Classic item properties (links, text formatting, etc.) will be stripped during the import process.
 
 ## Import
 

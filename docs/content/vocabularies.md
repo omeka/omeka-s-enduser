@@ -11,7 +11,9 @@ The most-used [Linked Open Vocabulary](https://lov.linkeddata.es/dataset/lov/abo
 !!! note
 	Vocabularies in Omeka S are not the same thing as controlled vocabularies or authority files, which consist of terms and concepts, rather than Classes and Properties. In Omeka S, controlled vocabularies can be managed using the [Value Suggest](../modules/valuesuggest.md) and [Custom Vocab](../modules/customvocab.md) modules.  
 
-Global and Site Administrators can manage their installation’s vocabularies from the **Vocabularies** tab on the left hand navigation of the Admin Dashboard. Omeka S comes pre-loaded with the following vocabularies: [Dublin Core](http://purl.org/dc/terms/){target=_blank}; [Dublin Core Type](http://purl.org/dc/dcmitype/){target=_blank}; [Bibliographic Ontology](https://bibliontology.com/){target=_blank}; and [Friend of a Friend](http://xmlns.com/foaf/0.1/){target=_blank}. 
+Global Administrators can manage their installation’s vocabularies from the **Vocabularies** tab on the left hand navigation of the Admin Dashboard. Supervisors can add, edit, and delete their own vocabularies. 
+
+Omeka S comes pre-loaded with the following vocabularies: [Dublin Core](http://purl.org/dc/terms/){target=_blank}; [Dublin Core Type](http://purl.org/dc/dcmitype/){target=_blank}; [Bibliographic Ontology](https://bibliontology.com/){target=_blank}; and [Friend of a Friend](https://en.wikipedia.org/wiki/FOAF_(ontology)){target=_blank}. 
 
 This [screencast](https://vimeo.com/449764902){target=_blank} walks through managing and adding vocabularies.
 
@@ -33,7 +35,7 @@ New vocabularies must be imported from an existing metadata standard source. In 
 
 The New vocabulary page has three sections: Basic Info, File, and Advanced. 
 
-Note that you may have to research in order to find the prefix, namespace uri, and label for the vocabulary, as these are not standardized. In addition to the vocabulary's website, you might consult <https://lov.linkeddata.es/dataset/lov/vocabs>{target=_blank}.
+Note that you may have to research in order to find the prefix, namespace URI, and label for the vocabulary, as these are not standardized. In addition to the vocabulary's website, you might consult <https://lov.linkeddata.es/dataset/lov/vocabs>{target=_blank}.
 
 After you have imported a vocabulary, you can use the Edit function to modify the vocabulary's Label and Comment, and to upload an updated vocabulary RDF file. 
 
@@ -76,7 +78,7 @@ This section has advanced vocabulary settings.
 You can edit existing vocabularies by clicking the edit button (pencil icon) on the table of vocabularies.
 
 You can also update the vocabulary by either uploading a new vocabulary file or entering the vocabulary URL and saving changes. You will be able to review any changes when updating a vocabulary.
-If you decide you do not wish to save your changes, or click on the Edit button by mistake, you can click the Cancel button next to the Save button.
+If you decide you do not wish to save your changes, or clicked on the edit button by mistake, you can click the "Cancel" button next to the "Save" button.
 
 ![Edit vocabulary page for OWL-Time Ontology.](contentfiles/vocab_edit.png)
 
@@ -99,12 +101,13 @@ Similarly, the following are all treated only as `rdfs:Property`. OWL domains an
 * `owl:FunctionalProperty`
 * `owl:InverseFunctionalProperty`.
 
-For example, an imported ontology with an `owl:ObjectProperty` is not restricted to having objects that are URIs: Omeka S will accept a Literal value without complaint.
+For example, an imported ontology with an `owl:ObjectProperty` is not restricted to having objects that are URIs; Omeka S will accept a Literal value without complaint. You can use [resource template](../content/resource-template.md) settings to require a data type on properties, so that someone filling out, for example, the `owl:ObjectProperty` field in a template is required to enter a URI value.
 
 It is up to the person entering metadata to adhere to the standards as best they can.
 
 ## Delete a vocabulary
-With the exception of Dublin Core and Dublin Core Type, global administrators can delete any vocabulary from the Omeka S installation, either from the Vocabulary browse or the Vocabulary edit page. 
+
+With the exception of Dublin Core and Dublin Core Type, Global Administrators can delete any vocabulary from the Omeka S installation, either from the Vocabulary browse or the Vocabulary edit page. Supervisors can delete vocabularies they have imported, but not others' vocabularies or the default ones included with Omeka S.
 
 From the Vocabulary browse page, click the trash can/delete icon in the row for the vocabulary you want to delete (labelled as 1 in the image below). A drawer will open on the right side of the browser asking you to confirm that you want to delete the vocabulary (labelled as 2 in the image below). To delete, click the "Confirm delete" button, and to cancel, simply close the drawer. 
 

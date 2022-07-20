@@ -106,9 +106,9 @@ If you are using an Item resource for the property, you will have additional opt
 
 This will open a menu below the button with the following options to filter the items in the drawer:
 
-- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation.
-- Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set.
-- Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the URL of its edit page; if you are editing the item and the URL is `admin/item/11547/edit` then the item's ID is 11547.
+- Filter by class: A dropdown where you can select any class provided by the vocabularies on the installation.
+- Filter by item set: A dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set.
+- Filter by item ID: A search field where you can input the ID of the item you want to use. You can find an item's ID in the URL of its edit page; if you are editing the item and the URL is `admin/item/11547/edit` then the item's ID is 11547. An item ID will also appear in the right-hand drawer on its view page.
 
 ![options as above described](contentfiles/item_addresItem.png)
 
@@ -167,10 +167,10 @@ Using the buttons on the **Add New Media** menu on the right side of the screen,
 ![“Add new media” drawer showing the options](contentfiles/items_mediaadd2.png)
 
 - **Upload**: select a file to upload from your computer.
-- **URL**: import media via a uri.
+- **URL**: import media via a URI.
 - **HTML**: add html content as a media resource for your item.
-- **IIIF**: Add an IIIF image via url.
-- **oEmbed**: insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7){target=_blank} - use the url in your browser’s location bar.
+- **IIIF**: Add an IIIF image via URL.
+- **oEmbed**: insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7){target=_blank} - use the URL in your browser’s location bar.
 - **YouTube**: add a link to embed a YouTube video. Use the URL from your browser’s location bar (with `/watch/` in it) rather than the `youtu.be` link.
 
 You can edit media later by going by editing an item, navigating to the **Media** tab, and clicking the edit button (pencil) for a media when editing the item. 
@@ -251,7 +251,7 @@ Once you have created an item and added media to it, you will also have the opti
 
 ![A blue outline of a rectangle highlights resource options for Items, Item sets, and Media to be used as the input for the element "Description"](contentfiles/items_addmediaresource.png)
 
-To use a media resource for a property, select the media option for the element (1). The drawer which opens will display all media attached to the item. Select the media which you want to use(2); this will switch the drawer to just that media (second image). Click the "Select Resource" button at the bottom of the drawer to complete the process (3).
+To use a media resource for a property, select the media option for the element (1). The drawer which opens will display all media attached to the item. Select the media which you want to use (2); this will switch the drawer to just that media (second image). Click the "Select Resource" button at the bottom of the drawer to complete the process (3).
 
 ![Focus on the editing portion of a window for the item "Sense and Sensibility", with the elements Title and Description visible. On the right side of the window, a vertical rectangle (the drawer) is open on the right displaying five media which are attached to the item, including video, images, and text. This image contains steps 1 and 2.](contentfiles/items_mediaresource1.png)
 
@@ -275,23 +275,23 @@ Choose one of these options and then click "Go".
 
 **Batch editing** items takes you to a new page. The items being edited will display on the right side in a drawer, while the batch edit form gives you the following options:  
 
-- set visibility: a dropdown, select from public or not public.
-- set template: a dropdown, select from the installation's resource templates.
-- set class: a dropdown, select from classes of the installed vocabularies.
-- add to item set: a dropdown, select from item sets on the installation. Add to an additional item set click in the input box again to see the remaining options.
-- remove from item set: a dropdown, select from item sets on the installation. Remove from an additional item set click in the input box again to see the remaining options.
-- add to sites: a dropdown, select from sites on the installation. Add to an additional site click in the input box again to see the remaining options.
-- remove from sites: a dropdown, select from sites on the installation. Remove from an additional site click in the input box again to see the remaining options.
-- clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected items. Clear additional properties using the "Clear another property" button.
+- Set visibility: a dropdown, select from public or not public.
+- Set template: a dropdown, select from the installation's resource templates.
+- Set class: a dropdown, select from classes of the installed vocabularies.
+- Add to item set: a dropdown, select from item sets on the installation. Add to an additional item set click in the input box again to see the remaining options.
+- Remove from item set: a dropdown, select from item sets on the installation. Remove from an additional item set click in the input box again to see the remaining options.
+- Add to sites: a dropdown, select from sites on the installation. Add to an additional site click in the input box again to see the remaining options.
+- Remove from sites: a dropdown, select from sites on the installation. Remove from an additional site click in the input box again to see the remaining options.
+- Clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected items. Clear additional properties using the "Clear another property" button.
 - Set value visibility: set the visibility of a specific property to either public or not public. Unlike the radio buttons at the top of the form, this will only affect a single property instead of the entire item. Select a property from the text field (type to begin searching), and the choose either the *public* or *not public* radio button for this option.
 
 ![Batch edit items form, with options as described above. Everything is grayscale](contentfiles/items_batchedit.png)
 
 In addition,  you can use the buttons at the bottom of the batch edit form to add properties to every item:
 
-- add text value
-- add resource value
-- add URI value.  
+- Add text value
+- Add resource value
+- Add URI value.  
 
 Selecting any of these will add a block to the form where you can select a property from the installed vocabularies and enter the value for that property.
 

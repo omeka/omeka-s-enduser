@@ -38,13 +38,9 @@ The `thumbnails` configuration key holds most thumbnail settings:
     ],
 ```
 
-Under `types`, set the maximum pixel dimensions for derivative images for media files.
-There are separate options for large, medium, and square. Defaults for these are
-800, 200, and 200 pixels respectively.
+Under `types`, set the maximum pixel dimensions for derivative images for media files. There are separate options for large, medium, and square. Defaults for these are 800, 200, and 200 pixels respectively.
 
-`thumbnailer_options` is an array of options passed to the specific thumbnailer
-in use. For example, the `imagemagick_dir` thumbnail option sets the path to the
-folder where ImageMagick's `convert` command can be found on the server. This can
+`thumbnailer_options` is an array of options passed to the specific thumbnailer in use. For example, the `imagemagick_dir` thumbnail option sets the path to the folder where ImageMagick's `convert` command can be found on the server. This can
 be useful if Omeka S can't auto-detect the correct path for ImageMagick.
 
 The thumbnailer to use is set under the `service_manager` key, by setting the
@@ -58,26 +54,17 @@ alias for `Omeka\File\Thumbnailer`:
     ],
 ```
 
-The default thubnailer is `Omeka\File\Thumbnailer\ImageMagick`.  Also available
-are `Omeka\File\Thumbnailer\Imagick` (which uses the `imagick` PHP extension)
-and `Omeka\File\Thumbnailer\Gd` (which uses the commonly available `gd` PHP
-extension).
+The default thubnailer is `Omeka\File\Thumbnailer\ImageMagick`.  Also available are `Omeka\File\Thumbnailer\Imagick` (which uses the `imagick` PHP extension) and `Omeka\File\Thumbnailer\Gd` (which uses the commonly available `gd` PHP extension).
 
-You can also set the thumbnailer to `Omeka\File\Thumbnailer\NoThumbnail`, which
-will prevent your Omeka S installation from generating thumbnails. 
+You can also set the thumbnailer to `Omeka\File\Thumbnailer\NoThumbnail`, which will prevent your Omeka S installation from generating thumbnails. 
 
 [GD](https://secure.php.net/manual/en/intro.image.php){target=_blank} is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). [Imagick and ImageMagick](https://www.imagemagick.org){target=_blank} are the same library and can create thumbnails for more than 200 formats. The difference is that the first is integrated in PHP and generally older than the command-line version.
 
-## PHP Path
+## PHP path
 
-Omeka S uses background jobs for some long-running tasks that operate on many
-items or just otherwise might take a long time. Omeka S uses the PHP CLI
-(command-line interface) to run these jobs, the `php` command.
+Omeka S uses background jobs for some long-running tasks that operate on many items or just otherwise might take a long time. Omeka S uses the PHP CLI (command-line interface) to run these jobs, the `php` command. An invalid PHP path can cause a number of problems for your Omeka Classic installation. 
 
-Omeka S by default will try to automatically detect the path to the PHP CLI on
-the server, but for some servers this detection doesn't work, or there are
-multiple different `php` commands to choose from. In these situations you can
-manually configure the correct path in the configuration file:
+Omeka S by default will try to automatically detect the path to the PHP CLI on the server, but for some servers this detection doesn't work, or there are multiple different `php` commands to choose from. In these situations you can manually configure the correct path in the file `local.config.php`, located in the `/config` directory:
 
 ```
     'cli' => [
@@ -85,15 +72,17 @@ manually configure the correct path in the configuration file:
     ],
 ```
 
-Note: the path here is just an example; the proper path will be specific to
-your server. Many hosting providers have been asked this question for a large variety of software installations. Try searching online to see if your hosting provider has published their PHP paths on their website, or answered the question on an online forum. If not, get in touch with their support team to find out what path to use.
+This path commonly looks like `/usr/local/php80/bin/php`, `/usr/local/bin/php`, or `/usr/local/bin/ea-php74`.
+
+The paths here are just examples; the proper path will be specific to your server. Search the help documentation or knowledge base for your hosting provider for the correct PHP path; this is a frequently asked question for a large variety of software installations. If you can't find anything, contact your hosting provider or sysadmin and ask them.
+
+If you have downloaded the file in order to edit it, be sure to upload the changed version back to your Omeka installation.
 
 ## Mail
 
 The `mail` key can be used to configure how Omeka S sends emails.
 
-The default is to use sendmail, where the server is responsible for having mail delivery configured and set up. Sendmail generally requires no configuration on the Omeka S side. Another option for some servers is to configure a direct SMTP connection for
-sending mail. 
+The default is to use sendmail, where the server is responsible for having mail delivery configured and set up. Sendmail generally requires no configuration on the Omeka S side. Another option for some servers is to configure a direct SMTP connection for sending mail. 
 
 An example configuration, to be added at the end of `local.config.php`, will look something like this:
 

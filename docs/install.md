@@ -25,7 +25,7 @@ In order to install Omeka S, you will need a server running the following:
 1. Make sure the `files/` directory on the server is writable by Apache.
 1. In your web browser, navigate to the `admin` page for your Omeka S installation, where you can complete the installation. For example, if you uploaded the directory contents to `https://yourwebsite.org/myomekas/`, then navigate to `https://yourwebsite.org/myomekas/admin`.
 
-### Installing from Github
+### Installing from GitHub
 
 Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md){target=_blank} of the Omeka S GitHub repository.
 
@@ -67,12 +67,12 @@ In the **Settings** section, enter:
 
 ![Settings section with fields as described](files/installOmekaS2.png)
 
-You can changes these at any time in the in the [Settings](admin/settings.md) section of your [Admin Dashboard](admin-dashboard.md).
+You can changes these at any time in the in the [Settings](admin/settings.md) section of your [admin dashboard](admin-dashboard.md).
 
-See [Configuration Options](configuration.md) for information on settings for thumbnail generation, setting the PHP path manually, and more.
+See [Configuration Options](configuration.md) to learn about settings for thumbnail generation, setting the PHP path manually, and more. 
 
 !!! note
-	If you have an existing Omeka Classic or S installation, you may wish to look at modules such as the [Omeka Classic Importer](modules/omekaCimporter.md), which helps you move items and collections from Omeka Classic, or the [CSV Import module](modules/csvimport.md), which can import other types of data.
+	If you have an existing Omeka Classic or S installation, you may wish to look at modules such as the [Omeka Classic Importer](modules/omekaCimporter.md), the [Omeka S Item Importer](modules/ositemimporter.md), or the [CSV Import module](modules/csvimport.md), which can help you copy other types of data.
 
 ## Updating
 
@@ -87,10 +87,9 @@ See [Configuration Options](configuration.md) for information on settings for th
     - For significant version updates, you may also have to install an updated version of your modules and themes. The release notes for the version will indicate whether or not those updates will be likely. Additionally, once you complete your migrations using your browser, the modules and themes that require new versions will be clearly marked on their respective pages.
 1. In your web browser, go to your site's admin page (`/myomekas/admin`) and run any migrations that are needed.
 
-### Updating from Github
+### Updating from GitHub
 
 Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md){target=_blank} of the Omeka S GitHub repository.
-
 
 ## Install on Windows or Mac OS (development only)
 Omeka S does not support proprietary or closed-source operating systems. However, for **basic development purposes** or for quick training, Omeka can run with [WAMP](http://www.wampserver.com){target=_blank}, [MAMP](https://www.mamp.info){target=_blank}, or similar tools.

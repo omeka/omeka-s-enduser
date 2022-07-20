@@ -11,10 +11,10 @@ Creating, editing, and managing sites, the public-facing parts of an Omeka S ins
 Creating, editing, and managing the content of an installation: items, item sets, media, vocabularies, and resource templates.
 
 **Admin**  
-Access to functionality in the administrative interface varies by user role, but can include: users, jobs, and settings.
+Access to functionality in the administrative interface varies by user role, but can include: users, jobs, assets, and settings.
 
 **Modules**  
-This section opens with basic information on managing the modules that extend the functionality of your Omeka S installation and sites. It then offers specific documentaiton for Omeka S modules created by RRCHNM, listed in alphabetial order.
+This section opens with basic information on managing the modules that extend the functionality of your Omeka S installation and sites. It then offers specific documentaiton for Omeka S modules created by the Omeka Team, listed in alphabetial order.
 
 This manual also includes a [glossary](glossary.md), instructions on conducting [searches](search.md), and how to turn on [error logging](errorLogging.md).
 

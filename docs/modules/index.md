@@ -25,9 +25,8 @@ When a module has a new release, it will display on the browse page with a messa
 
 ![A list of modules in different states. One is uninstalled, one is installed but not active, two are active but only one is showing a Configure button. The last module on the list has a "new version" banner in green.](modulesfiles/moduleUpdatemsg.png)
 
-## Installing modules
-### Add the module to Omeka S
-In order to appear in the **Modules** section of the admin dashboard for your Omeka S installation, modules must be manually added to the `/modules` folder of the installation, using an FTP program or SSH connection.
+## Adding modules to Omeka S
+In order to appear in the **Modules** section of the admin dashboard for your Omeka S installation, module files must be manually added to the `/modules` folder of the installation, using an FTP program or SSH connection.
 
 Modules registered with Omeka are available on the [Modules](https://omeka.org/s/modules/){target=_blank} directory of the Omeka S site. Other modules may be made available by their authors in other locations.
 
@@ -45,7 +44,7 @@ Please note that if you are downloading the folder for a module from GitHub rath
 
 You can also use SSH to clone a module directly from that module's git repository. Do this only if you are comfortable with git, GitHub, and working with SSH.
 
-### Install a module
+### Installing modules
 To install a module, navigate to the Modules tab on the left-hand navigation of the admin dashboard of your Omeka S installation.
 
 Find the module in the table and click the "Install" button. The module is now installed and will automatically be activated. For modules with configuration options, you will be taken to the configuration page for that module. For modules without configuration options, the Modules page will simply reload, with a success message at the top.

@@ -2,7 +2,7 @@
 
 A **Resource template** is a set of pre-defined properties, optionally with a Class, to guide item creation and the interpretation of properties. 
 
-Resource templates are managed from the Admin Dashboard, accessed through the left-hand navigation under the tab labeled **Resource templates**. 
+Resource templates are managed from the administrative dashboard, accessed through the left-hand navigation under the section labeled **Resources**. 
 
 ![Basic view of resource templates tab, showing the column titles and one template](contentfiles/templates_browse.png)
 
@@ -61,7 +61,7 @@ The "Private" checkbox sets the visibility of the data for this property. If che
 
 **Note**: users working with the template will be able to toggle the visibility of this property on a case-by-case basis.
 
-Using the "Data type" dropdown, you can designate the data types for the property. Whichever you choose will be automatically loaded once someone selects that resource Type and they will only be able to use these data type for the element when using this resource template. 
+Using the "Data type" dropdown, you can designate the data types for the property. Whichever you choose will be automatically loaded once someone selects that resource type and they will only be able to use these data type for the element when using this resource template. 
 
   - Text: textual and/or HTML input.
   - URI: a link with label.
@@ -92,11 +92,11 @@ Clicking on the title of a resource template takes you to a table view of all th
 
 Each property displays as a row in the table, with columns for:
 
-- Original label, with an ellipsis button to see which the property's vocabulary, term, and original comment;
-- Data type;
-- Alternate label;
-- Alternate comment;
-- Whether the property is required;
+- Original label, with an ellipsis button to see which the property's vocabulary, term, and original comment
+- Data type
+- Alternate label
+- Alternate comment
+- Whether the property is required
 - Whether the property's data is set to private.
 
 Click the ellipsis next to the original label to open a draw displaying the property's vocabulary, term, and original comment.
@@ -110,8 +110,8 @@ It is possible to share a resource template between Omeka S installations by exp
 To export a resource template from your Omeka S installation:
 
 1. Go to the "Resource templates" menu on the main navigation.
-2. Click the Label of the template you want to export.
-3. On the resource template view page, click the Export button in the upper right corner of the screen.
+1. Click the Label of the template you want to export.
+1. On the resource template view page, click the "Export" button in the upper right corner of the screen.
 
 ![A red arrow points to the export button on a screen showing a resource template labelled "Textual Work"](contentfiles/templates_export.png)
 
