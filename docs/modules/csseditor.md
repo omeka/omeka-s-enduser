@@ -2,7 +2,7 @@
 
 The [CSS Editor module](https://omeka.org/s/modules/CSSEditor){target=_blank} allows you to write CSS from the Omeka S admin interface.
 
-Once activated on the [modules](https://omeka.org/s/docs/user-manual/modules/){target=_blank} tab of the admin dashboard, CSS Editor is used on a site-by-site basis.
+Once activated on the [modules](https://omeka.org/s/docs/user-manual/modules/){target=_blank} section of the admin dashboard, CSS Editor is used on a site-by-site basis.
 
 If you are new to working with CSS, we recommend the following free resources for getting started:
 
@@ -14,7 +14,7 @@ The easiest way to learn Omeka S page components for the sake of CSS editing is 
 
 ## Using the CSS Editor interface
 
-If CSS Editor is active, then a tab for CSS Editor will appear in the context menu for every site.
+If CSS Editor is active, then a link for CSS Editor will appear in the context menu for every site.
 
 ![Screenshot of Omeka S site context menu witth CSS Editor navigation item highlighted.](modulesfiles/csseditor_contextmenu.jpg)
 

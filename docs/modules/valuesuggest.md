@@ -1,31 +1,29 @@
 # Value Suggest
 
-The [Value Suggest module](https://omeka.org/s/modules/ValueSuggest){target=_blank} adds an auto-complete feature to specific properties in a resource template, and draws on controlled vocabularies (see the end of this page for a complete list) to help users fill them out.
+The [Value Suggest module](https://omeka.org/s/modules/ValueSuggest){target=_blank} adds an auto-complete feature to specific properties in a resource template, and draws on controlled vocabularies (see the end of this page for a complete list) to help users fill them out. Value Suggest appears when a user is editing the metadata of a resource (an item, a piece of media, or an item set) that uses the enabled resource template.
 
 This functionality helps those building an Omeka site encourage consistent metadata input and data compatibility with other databases of records. Note that Value Suggest offers, but cannot require, that users select values from the autosuggest feature. Users will always have the option of creating their own value instead.
 
-## Create a Resource Template
+## Create a resource template
 
-Value Suggest vocabularies are applied through Resource Templates. For additional information on Resource Templates, see the [Resource Template Documentation](../content/resource-template.md).
+Value Suggest vocabularies are applied through resource templates. For additional information on resource templates, see the [resource template documentation](../content/resource-template.md).
 
-1. From the Resources templates tab in the Admin Dashboard, either add a new [template](../content/resource-template.md) or edit an existing one.
+1. From the Resources templates page in the admin dashboard, either add a new [template](../content/resource-template.md) or edit an existing one.
 2. Add the property to which you want to apply the Value Suggest. 
 3. Once the property is added to the template, click the pencil/edit icon for that property.
 4. At the bottom of the drawer which opens on the right, open the "Data type" dropdown. Below the standard options, you will see the Value Suggest options. Select the vocabulary you want to use from the dropdown. Note that you can add alternate labels and comments for the property in this drawer.
 6. Click the "Set changes" button at the bottom of the drawer to assign the values to the property. 
 7. Save changes to the resource template. 
 
-
 ![Editing the property subject, and the dropdown is open to show the Value Suggest vocabularies from the Library of Congress](../modules/modulesfiles/ValSug-ResTemplate1.png)
 
-When you click the title of a Resource Template to see its details, the Value Suggest vocabulary will appear under the Data Type table heading.
+When you click the title of a resource template to see its details, the Value Suggest vocabulary will appear under the Data type table heading.
 
 ![A red rectangle highlights the fact that the data type for Subject is "LC: Subject Headings"](../modules/modulesfiles/ValSug-ResTemplate2.png)
 
+## Adding Value Suggest to resources
 
-## Adding Value Suggest to an item
-
-When this Resource Template is used in an item or item set, the designated properties will auto-suggest values from the vocabulary specified in the template. 
+When a Value Suggest resource template is used in an item, media, or item set, the designated properties will auto-suggest values from the vocabulary specified in the template. 
 
 Users must start typing in the open text box of that specific property to prompt the auto-suggest feature. There may be a slight delay, but a drop-down menu will appear with choices drawn directly from the authority or vocabulary list you have associated with that property.
 
@@ -35,7 +33,7 @@ Hover over selections in the dropdown menu for a description of that vocabulary.
 
 ![Item property Material with "lithograph" typed in the field. A dropdown menu auto-suggests terms, including "color lithographs," which is selected. Helper text in a small overlaid window reads, "Lithographs printed in several colors."](../modules/modulesfiles/ValSug-ItemProperty2.png)
 
-Note: after selecting a value, a box containing a URL should appear under the value. This link will direct visitors to a webpage with additional information on the value selected. This box can be removed by clicking the "X".
+After selecting a value, a box containing a URL should appear under the value. This link will direct visitors to a webpage with additional information on the value selected. This box can be removed by clicking the "X".
 
 ![Item property Work Type with "Fashion Illustrations (layout features)" selected. Below, in red is a hyperlink to Getty Collections, with a small red "X".](../modules/modulesfiles/ValSug-ItemProperty3.png)
 
@@ -281,4 +279,3 @@ This module includes the following vocabularies:
 - Vocabulaire des altérations
 - Vocabulaire des domaines d'action ou objets des entités productrices d'archives
 - Vocabulaire pour les techniques photographiques.
-

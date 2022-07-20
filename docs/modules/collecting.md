@@ -92,7 +92,7 @@ Media Type:
 	- URL
 	- HTML.
 - Prompt Text: If you want the prompt to be something other than the property label.
-- Check the Required? box if the prompt is required.
+- Check the "Required?" box if the prompt is required.
 
 **Item Supplementary** adds additional information for the item, not linked to any particularly vocabulary or property.
 
@@ -101,17 +101,17 @@ Media Type:
      - Text box (one line)
      - Text box (multiple line)
      - Select menu (dropdown): enter the options for the menu in the "Select Menu Options" field that will appear, with one option per line.
- - Check the Required? box if the prompt is required.
+ - Check the "Required?" box if the prompt is required.
 
-**User Name** to assign as the owner of the item. If the person using the form is a logged-in user of the Omeka S installation, this will autopopulate.
+**User Name** to become the owner of the item. If the person using the form is a logged-in user of the Omeka S installation, this will autopopulate.
 
 - Prompt Text: If you want the prompt to be something other than the property label.
-- Check the Required? box if the prompt is required.
+- Check the "Required?" box if the prompt is required.
 
 **User Email** where the person adding the item can give their email. If this is left blank, they will not receive an email with the text in the "Email Text" field.
 
 - Prompt Text: If you want the prompt to be something other than the property label.
-- Check the Required? box if the prompt is required.
+- Check the "Required?" box if the prompt is required.
 
 **User Private** collect additional information from the user which will be kept private.
 
@@ -120,7 +120,7 @@ Media Type:
      - Text box (one line)
      - Text box (multiple line)
      - Select menu (dropdown): enter the options for the menu in the "Select Menu Options" field that will appear, with one option per line.
- - Check the Required? box if the prompt is required.
+ - Check the "Required?" box if the prompt is required.
 
 **User Public** collect additional information from the user which can be made public
 
@@ -129,7 +129,7 @@ Media Type:
      - Text box (one line)
      - Text box (multiple line)
      - Select menu (dropdown): enter the options for the menu in the "Select Menu Options" field that will appear, with one option per line.
- - Check the Required? box if the prompt is required.
+ - Check the "Required?" box if the prompt is required.
 
 **HTML**: Insert a block of HTML text into the form, for additional guidance, information, etc. The "Prompt Text" field for this prompt has WYSIWG formatting options.
 
