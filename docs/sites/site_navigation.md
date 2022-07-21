@@ -1,6 +1,8 @@
 # Navigation
 
-Use the **Navigation** tab of the [Sites](../sites/index.md) to manage the navigation, or menu, or your site. You can add links, browse pages, and your [pages](../sites/site_pages.md) to the navigation, arrange them, and delete links from the navigation.
+Once you click [Sites](../sites/index.md) and select a site to work on, you can use the Navigation link the left sidebar to manage the navigation, or menu, of your site. You can add or delete links, browse pages, and your [pages](../sites/site_pages.md) to the navigation, as well as arrange and nest them. 
+
+Themes present your navigation links in different ways. You can also modify navigation settings under [Theme settings](../sites/site_theme.md#theme-settings), such as the depth of nested links to display. Be sure to refresh and check your public pages to ensure the navigation is working correctly after you make changes.
 
 ![Editing navigation with a drawer on the right side of the screen for adding links](../sites/sitesfiles/sitenav_main.png)
 
@@ -8,10 +10,10 @@ For every item in the navigation, you have three options: view (box with arrow i
 
 ![Close up of two navigation sections. The top is "Quotes" which has a dark gray square on the end of it containing a black triangle pointing down. The bottom navigation section is called "Share a quote" and does not have the gray square](../sites/sitesfiles/sitenav_detail.png)
 
-## Set homepage
-By default, the topmost page in the navigation acts the main page for your site. Note that custom URLs will not work as a home page - the topmost item in your navigation must be a page.
+## Homepage
+By default, the topmost page in the navigation acts the main page for your site. Note that custom URLs will not work as a homepage - Omeka will ignore these entries in your navigation and select the first page.
 
-You can set the homepage without changing the order of your pages using the **Select a homepage** section in the righthand drawer. This section has a dropdown which lists all the pages in your site. Simply select the page which you want to use as your homepage.
+You can set the homepage without changing the order of your pages using the **Select a homepage** section in the righthand drawer. This section has a dropdown which lists all the pages in your site. Simply select the page you want to use as your homepage.
 
 ![Select a homepage dropdown open to show all the pages in this site](../sites/sitesfiles/sitenav_homeselect.png)
 
@@ -19,19 +21,20 @@ To change which page is used as the homepage, select a different page from the d
 
 ![Select a homepage set to Map page](../sites/sitesfiles/sitenav_homedel.png)
 
-## Adding navigation
+## Adding links
 Add to the navigation of the site using the options on the right hand side of the page. There are two sections: Add a custom link and Add a link to a site page.
 
 ### Add a custom link
 To add a link you can use the **Add a custom link** options on the right hand drawer to add:
 
- * a Custom URL to any web address;
- * a Browse page for items on your site;
- * a Browse page for item sets on your site. 
+* A Custom URL to any web address
+* A "Browse" page for items on your site
+* A "Browse item sets" page for item sets on your site
+* Other pages added by modules you have installed.
 
-Or you can add one of your [pages](../sites/site_pages.md), which should be listed in the right-hand drawer below the "Add a custom link" dropdown. If you need to find a specific page, begin typing the page title in the search box with the helper text "Filter pages" which appears directly below the text "Add a link to a site page". 
+You can add one of your [pages](../sites/site_pages.md), which will be listed in the right-hand drawer, under "Add a link to a site page". If you would like to search for a specific page, begin typing the page title in the search box with the helper text "Filter pages".
 
-**Custom URL** link option displays three pieces of information: the link **type** (Custom URL), the **label** which is the text which will appear in the site navigation menu, and the **URL**. 
+The **Custom URL** link option, when added to your navigation, have three fields: the link **type** (showing as "Custom URL"), the **label** (the text that will appear in the site navigation menu), and the **URL**. 
 
 ![URL link option with the label "RRCHNM" and URL chnm.gmu.edu](../sites/sitesfiles/sitenav_url.png)
 
@@ -60,7 +63,7 @@ If you have many pages, you can use the **Filter pages** field to find the names
 
 Be sure to click Save before leaving the Navigation tab to save changes. If you do not want to save changes, click the Cancel button.
 
-## Editing and arranging navigation
+## Editing and arranging links
 When you add a link block it is automatically expanded. To collapse an open link block, click the edit (pencil) icon in the  upper right corner of each block, next to the delete (trash) icon. When you arrive at the Navigation tab after saving changes or from the main site edit page, the navigation items should be collapsed; open the block by clicking the edit (pencil) icon.
 
 The topmost item in the navigation is the main page for your site.
@@ -73,7 +76,7 @@ In this image, "Film Adaptations" is the child link; "Adaptations" will be the p
 
 Omeka S allows for multiple levels of nested navigation.
 
-## Deleting navigation
+## Deleting links
 To delete a link from the navigation, click the delete (trash can) icon and then click "Save". If you accidentally click the delete icon, you can click the undo (back looped arrow) icon before click "Save" to cancel the deletion.
 
 ![Two link blocks, one of which is highlighted in red and marked for deletion](../sites/sitesfiles/sitenav_del.png) 

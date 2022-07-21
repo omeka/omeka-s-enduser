@@ -2,7 +2,7 @@
 
 The Site Admin page allows you to manage the main settings for the site on which you are working. Changes will only be applied to this site and will not change other sites' settings. 
 
-It is the first tab under the site title, represented with a gear icon. 
+In the left-hand navigation, once you have select a site from the Sites page, it is the first link under the site title, represented with a gear icon. 
 
 The Site Admin page has two tabs, Info and Settings.
 

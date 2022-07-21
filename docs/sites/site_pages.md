@@ -1,22 +1,23 @@
-# Pages Management
+# Site Pages
 
-Pages form the content of your [sites](../sites/index.md). A site can have a single page or many pages.
+Pages form the content of your [sites](../sites/index.md). A site can have one or many pages.
 
 Manage the pages for a site by navigating to the Sites section on the left-hand navigation of the admin dashboard. Select the site for which you want to manage the pages and click either the title or the edit (pencil) button to edit that site. 
 
-Once you are editing the site, click the Pages tab in the left hand navigation.
+Once you are editing the site, click the Pages link in the left-hand navigation.
 
 When you create a new site, Omeka S automatically adds a page titled "Welcome" with a single HTML block (see below). You can edit this page or delete it.
 
 ## Adding pages
-From the page for the site, click the Pages tab. Then click the "Add new page" button on the upper left side of the window.
+From the page for the site, click the Pages link. Then click the "Add new page" button on the upper left side of the window.
 
 ![A red arrow points to a grey button labeled "add new page"](../sites/sitesfiles/sitepg_addnew.png)  
 
-To add a page you must enter a **Title**. 
-You can also enter a **URL Slug**. Both of these can be edited later but are required to create the page. If you do not enter a slug, Omeka S will create one from the page title. A slug is the page’s portion of the url and can only contain letters, numbers, and hyphens; no other characters are allowed.
+To add a page you must enter a **Title**. You can also enter a **URL Slug**. Both of these can be edited later.
 
-In addition, there is a checkbox for "Add to navigation". If checked, the page will automatically appear at the main [navigation](../sites/site_navigation.md) level for the site. If you do not check this box, you will have to manually add the page to the site navigation at a later point. 
+A title is required to create the page. If you do not enter a slug, Omeka S will create one from the page title. A slug is the page’s portion of the URL and can only contain letters, numbers, and hyphens; no other characters are allowed.
+
+In addition, there is a checkbox for "Add to navigation". If checked, the page will automatically be added to the end of the main [navigation](../sites/site_navigation.md) level for the site. If you do not check this box, you can manually add the page to the site navigation and arrange it from the Navigation page. 
 
 ![Page view showing the fields for Add Page](../sites/sitesfiles/sitepg_add.png)
 
@@ -33,16 +34,16 @@ Once you have entered this information and set visibility, click the "Add" butto
 If you decide you do not want to create the page, click the "Cancel" button.
 
 ## Browse pages
-The Pages tab (once you have at least one page) will display all of your pages in their navigation order. Child pages will display below the parent page with a `-` before the page title.
+The Pages page (once you have at least one page) will display all of your pages in their navigation order. Child pages will display below the parent page with a `-` before the page title.
 
 Every page is listed with its Title, buttons to view (box with an arrow coming out), edit (pencil), or delete (trash can) the page, and the page's slug. 
 
 ![A sites page browse view, with 12 pages listed, some of which are child pages of the others.](../sites/sitesfiles/sitepg_browse.png)
 
-Use the [Navigation](../sites/site_navigation.md) tab of the site admin to set the order of pages, including setting child and parent pages.
+Use the [Navigation](../sites/site_navigation.md) screen of the site to set the order of pages, including setting child and parent pages.
 
 ## Editing pages  
-After clicking the Pages tab, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page title will take you to the public view of that page. 
+After clicking the Pages link, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page title will take you to the public view of that page. 
 
 The edit view for a page will display the page's title across the top. In the upper left is the public/private toggle (the eye icon), and buttons to view the public version (opens in a new tab), delete the page, cancel changes, or save changes. Note that changes will not display on the public view until after they have been saved.
 
@@ -172,8 +173,8 @@ In item showcase blocks, multiple attachments build horizontally, creating rows 
 
 Using the drop-down menu in the block, you can:
 
-- set the thumbnail size for these items as large (default), medium, or square. 
-- set the attachment title as:
+- Set the thumbnail size for these items as large (default), medium, or square. 
+- Set the attachment title as:
 	- item title (title of the attached item);
 	- media title (title of the specific piece of media you select associated with the item); or
 	- no title.
@@ -308,7 +309,7 @@ Add and arrange pages using the [Site Navigation](../sites/site_navigation.md) s
 For module-specific blocks, such as [Collecting](../modules/collecting.md) or [Mapping](../modules/mapping.md), see the documentation for that module.
 
 ## Deleting pages
-To delete a page, go the to Pages tab of the site of which the page is a part. Click the delete (trash can) button at the right end of the row for that page. 
+To delete a page, go to the Pages section of the relevant site. Click the delete (trash can) button at the right end of the row for that page. 
 
 A drawer will open on the right side of the page asking you to confirm that you wish to delete the page, with the name of the page displayed under the confirmation button. To proceed, click the "Confirm delete" button. Otherwise, click the "X" in the upper right corner of the drawer to cancel.
 

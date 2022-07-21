@@ -1,11 +1,11 @@
 # Theme Selection
 
-The Theme tab of the site context menu allows you to select the theme for your site, and to set theme-specific settings. 
+The Theme section of the Site menu allows you to select the theme for your site, and to set theme-specific settings. 
 
 ## Install a theme
-In order to appear in the **Themes** tab for sites, themes must be manually added to the `/themes` folder of the installation, using an FTP program or an SSH connection.
+In order to appear on the **Themes** page for sites, themes must be manually added to the `/themes` folder of the installation, using an FTP program or an SSH connection.
 
-To add a theme to the site using FTP
+To add a theme to the site using FTP:
 
 1. Download the zipped theme to your computer.
 1. Open your FTP client, log on to the server that houses the Omeka S install and navigate to the `/themes` folder (this should be located in the main folder of the install).
@@ -14,22 +14,21 @@ To add a theme to the site using FTP
 
 You can also use git to clone a theme directly from the git repository. Do this only if you are comfortable with git.
 
-
 ## Select a theme
 
-When you navigate to the Theme tab, the currently active theme will appear on the top of the page. If you did not select a theme when adding the site, this will be the Default theme. 
+When you navigate to the Theme screen, the currently active theme will appear on the top of the page. If you did not select a theme when adding the site, this will be the Default theme. 
 
 A large image of the active theme appears on the left, with the theme title, version, creator, and a button to "Edit theme settings" on the right.
 
 ![Theme tab with Center Row as the current theme](../sites/sitesfiles/sitetheme_tab.png)
 
-Below the current theme are tiles for all other installed themes. The tiles have a small image of the theme in action, the theme name & version, and a link to the creator of the theme. 
+Below the current theme are tiles for all other installed themes. The tiles have a small image of the theme in action, the theme name and version, and a link to the creator of the theme. 
 
-To switch themes, click on the theme which you want to use. It should highlight slightly in gray, with a checkbox in the lower right-hand corner of the theme tile. 
+To switch themes, click on the theme which you want to use. It will highlight slightly in gray, with a checkbox in the lower right-hand corner of the theme tile. 
 
 ![A selected theme showing the highlight and checkmark](../sites/sitesfiles/sites_themeselect.png)
 
-Click the "Save" button in the upper right-hand corner of the window to save changes. Click the "Cancel" button to leave without saving changes. 
+Click the "Save" button in the upper right-hand corner of the window to save changes. Click the "Cancel" button to leave without saving your changes. 
 
 ## Theme settings
 
@@ -113,8 +112,6 @@ Select how to display items within their browse views.
 * **Toggle (default: list)**: Site visitors can choose to display the browse views as grids or lists, with lists as the default.
 
 #### Foundation theme settings
-
-<!--- can the Foundation-specific info just go to its ReadMe page and not be here? --->
 
 Foundation is a theme that comes with a few default stylesheets for fast prototyping or getting started with modifying themes. As a result, it has some unique settings. For more information on using Foundation, including working with Sass, see the [theme ReadMe file](https://github.com/omeka-s-themes/foundation-s/blob/master/README.md){target=_blank}.
 
