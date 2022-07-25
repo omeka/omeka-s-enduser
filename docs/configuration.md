@@ -40,8 +40,7 @@ The `thumbnails` configuration key holds most thumbnail settings:
 
 Under `types`, set the maximum pixel dimensions for derivative images for media files. There are separate options for large, medium, and square. Defaults for these are 800, 200, and 200 pixels respectively.
 
-`thumbnailer_options` is an array of options passed to the specific thumbnailer in use. For example, the `imagemagick_dir` thumbnail option sets the path to the folder where ImageMagick's `convert` command can be found on the server. This can
-be useful if Omeka S can't auto-detect the correct path for ImageMagick.
+`thumbnailer_options` is an array of options passed to the specific thumbnailer in use. For example, the `imagemagick_dir` thumbnail option sets the path to the folder where ImageMagick's `convert` command can be found on the server. This can be useful if Omeka S can't auto-detect the correct path for ImageMagick.
 
 The thumbnailer to use is set under the `service_manager` key, by setting the
 alias for `Omeka\File\Thumbnailer`:
@@ -54,11 +53,15 @@ alias for `Omeka\File\Thumbnailer`:
     ],
 ```
 
-The default thubnailer is `Omeka\File\Thumbnailer\ImageMagick`.  Also available are `Omeka\File\Thumbnailer\Imagick` (which uses the `imagick` PHP extension) and `Omeka\File\Thumbnailer\Gd` (which uses the commonly available `gd` PHP extension).
+The default thumbnailer is `Omeka\File\Thumbnailer\ImageMagick`.  Also available are `Omeka\File\Thumbnailer\Imagick` (which uses the `imagick` PHP extension) and `Omeka\File\Thumbnailer\Gd` (which uses the commonly available `gd` PHP extension).
 
 You can also set the thumbnailer to `Omeka\File\Thumbnailer\NoThumbnail`, which will prevent your Omeka S installation from generating thumbnails. 
 
-[GD](https://secure.php.net/manual/en/intro.image.php){target=_blank} is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). [Imagick and ImageMagick](https://www.imagemagick.org){target=_blank} are the same library and can create thumbnails for more than 200 formats. The difference is that the first is integrated in PHP and generally older than the command-line version.
+[GD](https://secure.php.net/manual/en/intro.image.php){target=_blank} is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). 
+
+[Imagick and ImageMagick](https://www.imagemagick.org){target=_blank} are the same library and can create thumbnails for more than 200 formats. The difference is that Imagick is integrated into PHP and ImageMagick is the command-line version. ImageMagick requires Imagick to run.
+
+You can use the ["System information" link](admin-dashboard.md#system-information) at the very bottom of the admin interface to double-check whether GD and imagick are enabled as PHP extensions on your server.
 
 ## PHP path
 

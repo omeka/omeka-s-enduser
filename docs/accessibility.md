@@ -11,7 +11,7 @@ The following statements apply to Omeka S version 1.0.1 and higher:
 
 ## Front End (Public view)
 
-The Omeka S themes produced by the Omeka team have has the following features to improve accessibility:
+The Omeka S themes produced by the Omeka team have the following features to improve accessibility:
 
 -   [ARIA](http://www.w3.org/WAI/intro/aria){target=_blank} (Accessible Rich Internet Applications) landmarks for tabbing through page content, when not using a mouse or using a screen reader;
 -   Semantic HTML5 markup.

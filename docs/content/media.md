@@ -6,10 +6,10 @@ Media are only created by adding them to an item; media cannot exist independent
 
 To view the media associated with an item, click on the media’s name in the right-hand sidebar on the item view page.
 
-To view all media in the installation, navigate to the **Items** tab first. The **Media** tab will appear below Items in the left-hand navigation.
+To view all media in the installation, navigate to the **Items** section first. The **Media** subsection will appear below Items in the left-hand navigation.
 
 ## View media
-To browse media, first click on Items in the left-hand navigation. In that sidebar, an option for Media browse will appear under the Item button (you may have to click on the triangle to expand the menu below Items).
+To browse media, first click on Items in the left-hand navigation. In that sidebar, an option for Media will appear under the Item button (you may have to click on the triangle to expand the menu below Items).
 
 ![The Resources section of the navigation, with light blue text on a dark blue background. Below the option for items, indented, is a navigation option for Media. It has no representative icon, unlike the other options.](contentfiles/media-browsenav.png)
 
@@ -36,13 +36,15 @@ Clicking on the title of any media will take you to its metadata page. This page
 
 ## Add media
 
-Media can only be added via an [item](../content/items.md). Options for adding media to your items include uploading a file, or directly attaching content with oEmbed, YouTube URLs, IIIF URLs, or writing HTML.
+Media can only be added via an [item](../content/items.md). Options for adding media to your items include uploading a file, or directly attaching content with a URL, oEmbed, YouTube URL, IIIF URL, or by writing HTML using the HTML editor.
 
 At the media adding stage, the only metadata that can be entered is a Title. If you wish to further describe each file, you can edit it after it has been uploaded. 
 
 ### Media thumbnails
 
-Thumbnails are automatically created for many file types. Thumbnail creation relies on the ability of your [chosen thumbnail utility](../install.md) (the default being ImageMagick) and which file types it can process. Look up the utility you are using (such as ImageMagick, Imagick, or GD) to find out which file types it supports.
+Thumbnails are automatically created for many file types. Thumbnail creation relies on the ability of your [chosen thumbnail utility](../configuration.md#thumbnails) (the default being ImageMagick) and which file types it can process. Look up the utility you are using (such as ImageMagick, Imagick, or GD) to find out which file types it supports.
+
+If you wish your item to have a generic thumbnail (such as an icon of a book, or a musical note for an audio file), you can upload those default images as assets, then attach them manually to files using the [Advanced tab in the Item editing screen](../content/items.md#advanced).
 
 ### File size limitations
 

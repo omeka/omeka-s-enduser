@@ -64,7 +64,7 @@ You can select a resource template from the drop-down menu. Resource templates a
 - If using a resource template, the class should automatically load.
 - If not using a resource template, you may select a class from the dropdown menu (these are populated from the [Vocabularies](vocabularies.md) in your installation).
 
-Add information to the properties which load. If you do not select a resource template or class, the Dublin Core properties Title and Description will load automatically.
+Add information to the properties that load. If you do not select a resource template or class, the Dublin Core properties Title and Description will load automatically.
 
 You may add text, a resource from the installation, or an external link in each field.  
 
@@ -89,8 +89,8 @@ You can indicate the language for the content of an input using the globe symbol
 
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
 
-#### Omeka Resource
-Omeka Resource fields create an internal link between the resource you are creating and the resource which fills that field. 
+#### Omeka resource
+Omeka resource fields create an internal link between the resource you are creating and the resource which fills that field. 
 
 When creating an item, you have the option to use either another item or an item set. 
 
@@ -258,7 +258,7 @@ To use a media resource for a property, select the media option for the element 
 ![The same window as before, but now the drawer on the right displays a thumbnail of the media "Sense and Sensibility DVD Trailer" with a dark gray button labeled "select resource" at the bottom of the drawer area. This image contains step 3](contentfiles/items_mediaresource2.png)
 
 
-## Batch editing
+## Batch actions
 
 From the browse page of items (admin/item) you can batch edit items, using the dropdown menu on the left near the pagination buttons. You can select multiple items using the checkboxes on the left of each item's row.
 
@@ -269,9 +269,11 @@ Batch actions are as follows:
 - Edit selected: edit only the items that are selected on the page
 - Edit all: edit all the items returned by a search (default is all items)
 - Delete selected: delete only the items that are selected on the page
-- Delete all: delete all the items returned by a search (default is all items)
+- Delete all: delete all the items returned by a search (default is all items).
 
 Choose one of these options and then click "Go".
+
+### Batch editing
 
 **Batch editing** items takes you to a new page. The items being edited will display on the right side in a drawer, while the batch edit form gives you the following options:  
 
@@ -297,8 +299,10 @@ Selecting any of these will add a block to the form where you can select a prope
 
 ![Image depicts only the Add text value block of the batch edit form, with a dropdown labeled "select property" above an empty text field](contentfiles/items_beproperty.png)
 
-For the **delete actions**, a drawer will open on the right side of the screen telling you the number of items which will be deleted. Nothing will be deleted unless you click the red "Confirm Delete" button. This action cannot be undone. To opt out of deleting the items, click the "X" in the upper right corner of the deletion drawer. To confirm delete, check the "Are you sure" checkbox (for "Delete all" but not "Delete selected") and then click "Confirm Delete".
+### Batch deleting
+
+For the **delete actions**, a drawer will open on the right side of the screen telling you the number of items which will be deleted. Nothing will be deleted unless you click the red "Confirm Delete" button. This action cannot be undone. To opt out of deleting the items, click the "X" in the upper right corner of the deletion drawer. To confirm this action, check the "Are you sure" checkbox (for "Delete all" but not "Delete selected") and then click "Confirm Delete".
 
 ![Close up of the warning, with the text describing the number of items to be deleted in red.](contentfiles/items_batchdelwarn.png)
 
-Individual modules may also add batch edit actions. Those options are noted within the documentation for each module.
+Individual modules may also add batch-edit actions. Those options are noted within the documentation for each module.
