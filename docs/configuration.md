@@ -53,15 +53,26 @@ alias for `Omeka\File\Thumbnailer`:
     ],
 ```
 
-The default thumbnailer is `Omeka\File\Thumbnailer\ImageMagick`.  Also available are `Omeka\File\Thumbnailer\Imagick` (which uses the `imagick` PHP extension) and `Omeka\File\Thumbnailer\Gd` (which uses the commonly available `gd` PHP extension).
+The default thumbnailer is `Omeka\File\Thumbnailer\ImageMagick`. Also available are `Omeka\File\Thumbnailer\Imagick` (which uses the `imagick` PHP extension) and `Omeka\File\Thumbnailer\Gd` (which uses the commonly available `gd` PHP extension).
 
 You can also set the thumbnailer to `Omeka\File\Thumbnailer\NoThumbnail`, which will prevent your Omeka S installation from generating thumbnails. 
 
 [GD](https://secure.php.net/manual/en/intro.image.php){target=_blank} is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). 
 
-[Imagick and ImageMagick](https://www.imagemagick.org){target=_blank} are the same library and can create thumbnails for more than 200 formats. The difference is that Imagick is integrated into PHP and ImageMagick is the command-line version. ImageMagick requires Imagick to run.
+[Imagick and ImageMagick](https://www.imagemagick.org){target=_blank} are the same library and can create thumbnails for more than 200 formats. Imagick is integrated into PHP and ImageMagick is the command-line version. 
 
-You can use the ["System information" link](admin-dashboard.md#system-information) at the very bottom of the admin interface to double-check whether GD and imagick are enabled as PHP extensions on your server.
+ImageMagick may require you to manually set a path in `imagemagick_dir`, whereas Imagick and GD do not require paths.
+
+You can use the ["System information" link](admin-dashboard.md#system-information) at the very bottom of the admin interface to double-check whether GD and Imagick are enabled as PHP extensions on your server.
+
+!!! note
+	Some servers will not allow applications to run command-line programs via PHP. You may see an error message such as 
+
+	`Laminas\ServiceManager\Exception\ServiceNotCreatedException`
+
+	`Service with name “Omeka\Cli” could not be created. Reason: Neither “proc_open()” nor “exec()” are available.`
+
+	In this case, ImageMagick will not work but Imagick and GD will.
 
 ## PHP path
 
