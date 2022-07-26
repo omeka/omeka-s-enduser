@@ -4,7 +4,7 @@ Sites have specific user settings that are separate from the [user roles set at 
 
 Global Admins and Supervisors have all permissions on all sites. Other user roles in Omeka S (Editor, Reviewer, Author, Researcher) are unrelated to site-specific user roles (Manager, Creator, Viewer). For example, a user set to Researcher in the installation can nevertheless be set as a Manager of a site, which means they can delete that site. 
 
-Setting a user at the installation level to have a default site for their items will not give them a site role. 
+Setting a user (at the installation level) to have a default site for their items will not give them a site role. 
 
 To add a user to a single site, navigate to the **User Permissions** tab after selecting your intended site.
 
@@ -14,7 +14,7 @@ A drawer on the right hand side of the screen shows all of the users for your in
 
 To add a user, click on their name. Then select their role from the dropdown:
 
-* **Viewer**: Can see the site’s backend (site admin, pages, navigation, resources, users, theme, modules) but cannot edit.
+* **Viewer**: Can see a site's entry in the list of sites, even if the site's visibility is set to private, but cannot make any modifications.
 * **Creator**: Can access and edit all of the site's properties, that is, everything available from the site-specific submenu. (This role was called "Editor" in Omeka S versions 1.x-2.x.)
 * **Manager**: Has full administrative privileges for the site, including adding/removing users and deleting the site. (This role was called "Admin" in Omeka S versions 1.x-2.x.)
 

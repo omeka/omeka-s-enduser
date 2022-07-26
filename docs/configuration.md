@@ -94,9 +94,9 @@ If you have downloaded the file in order to edit it, be sure to upload the chang
 
 ## Mail
 
-The `mail` key can be used to configure how Omeka S sends emails.
+The `mail` key can be used to configure how Omeka S sends emails. Omeka sends emails to users upon registration and when they reset their passwords; modules can add other email functions, such as [confirming submissions](modules/collecting.md). 
 
-The default is to use sendmail, where the server is responsible for having mail delivery configured and set up. Sendmail generally requires no configuration on the Omeka S side. Another option for some servers is to configure a direct SMTP connection for sending mail. 
+The default is to use [sendmail](https://en.wikipedia.org/wiki/Sendmail){target=_blank}, where the server is responsible for having mail delivery configured and set up. Sendmail generally requires no configuration on the Omeka S side. Another option for some servers is to configure a direct SMTP connection for sending mail. 
 
 An example configuration, to be added at the end of `local.config.php`, will look something like this:
 

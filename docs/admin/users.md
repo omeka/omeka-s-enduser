@@ -63,7 +63,7 @@ The user is then sent a notification email to set up their account & password. T
 > *Your activation link will expire on [date and time]. If you have not completed the user activation process by the time the link expires, you will need to request another activation email from your site administrator.*
 
 !!! note
-	If you are having problems sending emails from your Omeka S installation, check with your hosting provider. Some hosting setups may require that the domain name for the administrator email matches the domain name of the installation (if your domain is `yourinstall.org`, the administrator email must be `user@yourinstall.org`). Omeka S relies on the server’s underlying `sendmail` utility for sending email.
+	If you are having problems sending emails from your Omeka S installation, check with your hosting provider. Some hosting setups may require that the domain name for the administrator email matches the domain name of the installation (if your domain is `yourinstall.org`, the administrator email must be `user@yourinstall.org`). Omeka S relies on the server’s underlying `sendmail` utility for sending email; see the [Mail section on the Configuration page](../configuration.md#mail) for more information.
 
 ## Manage users
 To manage an existing user, go to the Users section.
