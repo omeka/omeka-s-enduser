@@ -76,19 +76,27 @@ You can use the ["System information" link](admin-dashboard.md#system-informatio
 
 ## PHP path
 
-Omeka S uses background jobs for some long-running tasks that operate on many items or just otherwise might take a long time. Omeka S uses the PHP CLI (command-line interface) to run these jobs, the `php` command. An invalid PHP path can cause a number of problems for your Omeka Classic installation. 
+Omeka S uses background jobs for some long-running tasks that operate on many items or just otherwise might take a long time. Omeka S uses the PHP CLI (command-line interface) to run these jobs, the `php` command. An invalid PHP path can cause a number of problems for your Omeka installation. 
 
-Omeka S by default will try to automatically detect the path to the PHP CLI on the server, but for some servers this detection doesn't work, or there are multiple different `php` commands to choose from. In these situations you can manually configure the correct path in the file `local.config.php`, located in the `/config` directory:
+Omeka S by default will try to automatically detect the path to the PHP CLI on the server, but for some servers this detection doesn't work, or there are multiple different `php` commands to choose from. 
+
+If you begin to see errors once you start working with Omeka, reading something like "PHP-CLI error: invalid PHP path", or have [jobs](admin/jobs.md) that start but do not finish, you will need to manually set the PHP path.
+
+You may also wish to manually select an earlier stable PHP version, rather than a new version that may be causing unexpected behavior in your Omeka site.
+
+To set your PHP path you will need access to the server where your Omeka S site lives; you set the path by editing files in the Omeka site. You cannot set the PHP path from the admin dashboard.
+
+Manually configure the correct path in the file `local.config.php`, located in the `/config` directory:
 
 ```
     'cli' => [
-        'phpcli_path' => '/usr/local/bin/php',
+        'phpcli_path' => null,
     ],
 ```
 
-This path commonly looks like `/usr/local/php80/bin/php`, `/usr/local/bin/php`, or `/usr/local/bin/ea-php74`.
+Replace the word "null" with a path, contained in single quotes ('usr/local/bin/php'). This path commonly looks like `/usr/local/php80/bin/php`, `/usr/local/bin/php`, or `/usr/local/bin/ea-php74`.
 
-The paths here are just examples; the proper path will be specific to your server. Search the help documentation or knowledge base for your hosting provider for the correct PHP path; this is a frequently asked question for a large variety of software installations. If you can't find anything, contact your hosting provider or sysadmin and ask them.
+These are just examples; the proper path will be specific to your server. Search the help documentation or knowledge base for your hosting provider for the correct PHP path; this is a frequently asked question for a large variety of software installations. If you can't find anything, contact your hosting provider or sysadmin and ask them.
 
 If you have downloaded the file in order to edit it, be sure to upload the changed version back to your Omeka installation.
 

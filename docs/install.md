@@ -37,7 +37,7 @@ Hosting companies that use [Softaculous](https://softaculous.com/){target=_blank
 
 Suggestions from our users include:
 
--   [Reclaim Hosting](https://reclaimhosting.com/){target=_blank} - offers one-click Omeka S installations, with support for other open-source software platforms
+-   [Reclaim Hosting](https://reclaimhosting.com/){target=_blank} - offers [simple Omeka S installations](https://support.reclaimhosting.com/hc/en-us/sections/204007617-Omeka){target=_blank} with some steps (including [manually setting the PHP path](#test-and-set-the-php-path)), and support for other open-source software platforms
 -   [Dotblock](http://www.dotblock.com){target=_blank} - uses Softaculous
 -   [HostGator](http://hostgator.com){target=_blank} - uses Softaculous
 -   [TMD Hosting](https://www.tmdhosting.com){target=_blank} - uses Softaculous
@@ -74,6 +74,8 @@ You can changes these at any time in the in the [Settings](admin/settings.md) se
 Omeka S uses background jobs for some long-running tasks that operate on many items or just otherwise might take a long time. Omeka S uses the PHP CLI (command-line interface) to run these jobs, the `php` command. An invalid PHP path can cause a number of problems for your Omeka Classic installation. 
 
 Omeka S by default will try to automatically detect the path to the PHP CLI on the server, but for some servers this detection doesn't work, or there are multiple different `php` commands to choose from. 
+
+If you are [using Reclaim Hosting](#one-click-installation), you will have to manually set the PHP path when you install. See [their instructions here](https://support.reclaimhosting.com/hc/en-us/articles/1500005620481#omeka-s){target=_blank}.
 
 If you begin to see errors once you start working with Omeka, particularly errors with something like "PHP-CLI error: invalid PHP path", you will need to manually set the PHP path. See [Configuration Options](configuration.md) to learn about modifying thumbnail generation, setting the PHP path manually, and more. 
 

@@ -21,7 +21,7 @@ You can set the controlled vocabulary terms to a list of entered terms, to a lis
 
 - **Terms**: a list of plain-text terms, one word or phrase per line. This populates the property as text.
 - **Items**: a drop-down of Item Sets in your Omeka S installation. Choosing one of these will create a custom vocab populated by items from that item set. When used, the property is populated as an Omeka Resource, not text.
-- **URIs**: a list of URIs with or without labels, one URI per line. To include a label, add a space and the label after the URI (for example, "https://youromekainstall.org/item/1119 "). When used, the property will populate as a link to the external resource.
+- **URIs**: a list of URIs with or without labels, one URI per line. To include a label, add a space and the label after the URI (for example, "https://youromekainstall.org/item/1119 Canada"). When used, the property will populate as a link to the external resource.
 
 Hit "Submit" to save changes.
 
