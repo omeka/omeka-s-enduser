@@ -4,6 +4,8 @@ The [Custom Vocab module](https://omeka.org/s/modules/CustomVocab){target=_blank
 
 For example, you may want to create an institution-specific list of locations that correspond to different collections on your campus, or a controlled list of people or places related to your holdings. This can help reduce typos and name variations, and can allow you to offer [metadata browsing](../modules/metadatabrowse.md) for more fields.
 
+Custom Vocab is available to users who are at the [Editor role and above](../admin/users.md).
+
 ## Create a custom vocab
 
 Once you have installed and activated the module, go to the Custom Vocab section in the left-hand navigation, under Modules.
