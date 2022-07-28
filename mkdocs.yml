@@ -1,12 +1,15 @@
 site_name: Omeka S User Manual
-theme: 
+theme:
     name: 'readthedocs'
     custom_dir: 'omeka/'
     include_homepage_in_sidebar: false
+site_url: 'https://omeka.org/s/'
 repo_url: 'http://github.com/omeka/omeka-s-enduser'
 extra_css:
     - css/extra.css
 markdown_extensions:
+    - admonition
+    - attr_list
     - toc:
         permalink: 
 nav:
@@ -56,7 +59,7 @@ nav:
         - modules/mapping.md
         - modules/metadatabrowse.md
         - modules/numericdatatypes.md
-        - modules/omeka2importer.md
+        - modules/omekaCimporter.md
         - modules/ositemimporter.md
         - modules/persistentidentifiers.md
         - modules/redactvalues.md

@@ -1,11 +1,11 @@
 # Configuration Options
 
-The following are commonly requested options which can be configured in the file `local.config.php` located in the config directory. 
+The following are commonly requested options which can be configured in the file `local.config.php`, located in the `/config` directory. 
 
-For a full list of available configuration keys, please see the [developer documentation page on configuration settings](https://omeka.org/s/docs/developer/configuration/). 
+For a full list of available configuration keys, please see the [developer documentation page on configuration settings](https://omeka.org/s/docs/developer/configuration/){target=_blank}. 
 
 ## Password settings
-You can change the requirements for user passwords in the config file. Options include minimum length, number of upper and lowercase letters, and setting allowed symbols.
+You can change the requirements for user passwords. The options include minimum length, number of upper and lowercase letters, and setting allowed symbols.
 
 ```
     'password' => [
@@ -17,7 +17,9 @@ You can change the requirements for user passwords in the config file. Options i
         'symbol_list' => '`~!@#$%^&*()-=_+[]\{}|;:",./<>?\'',
     ],
 ```
-Requirements will display on the user creation and edit pages.
+Requirements will [display on the user creation and edit pages](admin/users.md#password).
+
+
 
 ## Thumbnails
 
@@ -36,14 +38,9 @@ The `thumbnails` configuration key holds most thumbnail settings:
     ],
 ```
 
-Under `types`, set the maximum dimensions for derivative images for media files.
-There are separate options for large, medium, and square. Defaults for these are
-800, 200, and 200 respectively (all sizes are pixels)
+Under `types`, set the maximum pixel dimensions for derivative images for media files. There are separate options for large, medium, and square. Defaults for these are 800, 200, and 200 pixels respectively.
 
-`thumbnailer_options` is an array of options passed to the specific thumbnailer
-in use. For example, the `imagemagick_dir` thumbnail option sets the path to the
-folder where ImageMagick's `convert` command can be found on the server. This can
-be useful if Omeka S can't auto-detect the correct path for ImageMagick.
+`thumbnailer_options` is an array of options passed to the specific thumbnailer in use. For example, the `imagemagick_dir` thumbnail option sets the path to the folder where ImageMagick's `convert` command can be found on the server. This can be useful if Omeka S can't auto-detect the correct path for ImageMagick.
 
 The thumbnailer to use is set under the `service_manager` key, by setting the
 alias for `Omeka\File\Thumbnailer`:
@@ -56,45 +53,61 @@ alias for `Omeka\File\Thumbnailer`:
     ],
 ```
 
-The default thubnailer is `Omeka\File\Thumbnailer\ImageMagick`.  Also available
-are `Omeka\File\Thumbnailer\Imagick` (which uses the `imagick` PHP extension)
-and `Omeka\File\Thumbnailer\Gd` (which uses the commonly available `gd` PHP
-extension).
+The default thumbnailer is `Omeka\File\Thumbnailer\ImageMagick`. Also available are `Omeka\File\Thumbnailer\Imagick` (which uses the `imagick` PHP extension) and `Omeka\File\Thumbnailer\Gd` (which uses the commonly available `gd` PHP extension).
 
-You can also set the thumbnailer to `Omeka\File\Thumbnailer\NoThumbnail`, which
-will prevent your Omeka S installation from generating thumbnails. 
+You can also set the thumbnailer to `Omeka\File\Thumbnailer\NoThumbnail`, which will prevent your Omeka S installation from generating thumbnails. 
 
-## PHP Path
+[GD](https://secure.php.net/manual/en/intro.image.php){target=_blank} is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). 
 
-Omeka S uses background jobs for some long-running tasks that operate on many
-items or just otherwise might take a long time. Omeka S uses the PHP CLI
-(command-line interface) to run these jobs, the `php` command.
+[Imagick and ImageMagick](https://www.imagemagick.org){target=_blank} are the same library and can create thumbnails for more than 200 formats. Imagick is integrated into PHP and ImageMagick is the command-line version. 
 
-Omeka S by default will try to automatically detect the path to the PHP CLI on
-the server, but for some servers this detection doesn't work, or there are
-multiple different `php` commands to choose from. In these situations you can
-manually configure the correct path in the configuration file:
+ImageMagick may require you to manually set a path in `imagemagick_dir`, whereas Imagick and GD do not require paths.
+
+You can use the ["System information" link](admin-dashboard.md#system-information) at the very bottom of the admin interface to double-check whether GD and Imagick are enabled as PHP extensions on your server.
+
+!!! note
+	Some servers will not allow applications to run command-line programs via PHP. You may see an error message such as 
+
+	`Laminas\ServiceManager\Exception\ServiceNotCreatedException`
+
+	`Service with name “Omeka\Cli” could not be created. Reason: Neither “proc_open()” nor “exec()” are available.`
+
+	In this case, ImageMagick will not work but Imagick and GD will.
+
+## PHP path
+
+Omeka S uses background jobs for some long-running tasks that operate on many items or just otherwise might take a long time. Omeka S uses the PHP CLI (command-line interface) to run these jobs, the `php` command. An invalid PHP path can cause a number of problems for your Omeka installation. 
+
+Omeka S by default will try to automatically detect the path to the PHP CLI on the server, but for some servers this detection doesn't work, or there are multiple different `php` commands to choose from. 
+
+If you begin to see errors once you start working with Omeka, reading something like "PHP-CLI error: invalid PHP path", or have [jobs](admin/jobs.md) that start but do not finish, you will need to manually set the PHP path.
+
+You may also wish to manually select an earlier stable PHP version, rather than a new version that may be causing unexpected behavior in your Omeka site.
+
+To set your PHP path you will need access to the server where your Omeka S site lives; you set the path by editing files in the Omeka site. You cannot set the PHP path from the admin dashboard.
+
+Manually configure the correct path in the file `local.config.php`, located in the `/config` directory:
 
 ```
     'cli' => [
-        'phpcli_path' => '/usr/local/bin/php',
+        'phpcli_path' => null,
     ],
 ```
 
-(Note: the path here is just an example; the proper path will be specific to
-your server)
+Replace the word "null" with a path, contained in single quotes ('usr/local/bin/php'). This path commonly looks like `/usr/local/php80/bin/php`, `/usr/local/bin/php`, or `/usr/local/bin/ea-php74`.
+
+These are just examples; the proper path will be specific to your server. Search the help documentation or knowledge base for your hosting provider for the correct PHP path; this is a frequently asked question for a large variety of software installations. If you can't find anything, contact your hosting provider or sysadmin and ask them.
+
+If you have downloaded the file in order to edit it, be sure to upload the changed version back to your Omeka installation.
 
 ## Mail
 
-The `mail` key can be used to configure how Omeka S sends emails.
+The `mail` key can be used to configure how Omeka S sends emails. Omeka sends emails to users upon registration and when they reset their passwords; modules can add other email functions, such as [confirming submissions](modules/collecting.md). 
 
-The default is to use sendmail, where the server is responsible for having
-mail delivery configured and set up. Sendmail generally requires no
-configuration on the Omeka S side.
+The default is to use [sendmail](https://en.wikipedia.org/wiki/Sendmail){target=_blank}, where the server is responsible for having mail delivery configured and set up. Sendmail generally requires no configuration on the Omeka S side. Another option for some servers is to configure a direct SMTP connection for sending mail. 
 
-Another option for some servers is to configure a direct SMTP connection for
-sending mail. An example configuration, to be added at the end of
-`local.config.php` follows (see the [laminas-mail docs](https://docs.laminas.dev/laminas-mail/transport/smtp-options/) for clarification):
+An example configuration, to be added at the end of `local.config.php`, will look something like this:
+
 ```
     'mail' => [
         'transport' => [
@@ -114,3 +127,5 @@ sending mail. An example configuration, to be added at the end of
         ],
     ],
 ```
+
+See the [laminas-mail documentation](https://docs.laminas.dev/laminas-mail/transport/smtp-options/){target=_blank} for clarification.

@@ -8,12 +8,12 @@ The admin side is `youromekaurl.net/admin/scripto` and the public side is `youro
 
 All transcription activity takes place on the **public** side of the Scripto project. You cannot edit a transcription from the admin dashboard.
 
-For an example of how to orient community members to the interface, see the [Guide to transcribing the *Papers of the War Department*](http://wardepartmentpapers.org/s/home/page/transcribing-guide)
+For an example of how to orient community members to the interface, see the [Guide to transcribing the *Papers of the War Department*](http://wardepartmentpapers.org/s/home/page/transcribing-guide){target=_blank}.
 
 ## Linking between Scripto and an Omeka S site
 While the Scripto public interface exists somewhat separately from the sites you build in your Omeka S installation, it is possible to move between them.
 
-From your Omeka S sites, you can create direct links to your Scripto projects using the [custom link](../../../sites/site_navigation/#custom-link) in site Navigation or as a link in any [HTML page block text](../../../sites/site_pages/#html).  
+From your Omeka S sites, you can create direct links to your Scripto projects using the [custom link](../../../sites/site_navigation/#custom-link) in site Navigation or as a link in any [HTML page block text](../../../sites/site_pages/#html).
 
 ### Scripto page block
 When you add the Scripto module, it creates a new [page block](../../../sites/site_pages/#page-blocks) called "Scripto"
@@ -88,7 +88,7 @@ The table has two display options. The default view is set in the project's conf
 	- transcription status; and
 	- number of approved pages, shown as a bar and a numeric count.
 
-Transcription stat
+### Transcription stat
 
 On the public side, projects display a progress bar for all items, so that community users can easily identify media or items to work on. 
 
@@ -111,10 +111,10 @@ At the top of the page is the title of the item, which functions as a link back 
 
 On the left above the media and metadata are a series of buttons:
 
-- *Edit*
-- *Browse revision history*
-- *View notes*
-- And *track/stop tracking media* with a star button which toggles this option.
+- **Edit**
+- **Browse revision history**
+- **View notes**
+- **Track/stop tracking media** with a star button which toggles this option.
 
 On the right above the media and metadata is a pagination button which allows users to easily move between media for a single item
 
@@ -131,7 +131,7 @@ The area between the media title and the workspace and viewer has a combination 
 
 - On the far left is a button to track or stop tracking media, with a star icon.
 - In the center is an information display with the media's Protection, protection expiration, and status, and a checkbox where the user can mark the media as completed. 
-- On the far right are buttons to *save* or *cancel* changes. 
+- On the far right are buttons to save or cancel changes. 
 - Users can rotate the media and zoom in and out using the controls within the media viewer.
 - Users can use the layout buttons to toggle between side by side and top and bottom views. 
 
