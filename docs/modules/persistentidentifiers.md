@@ -7,7 +7,7 @@ The current PID services available for this module are:
 + EZID (used to mint and manage Archival Resource Keys [ARKs])
 + DataCite (used to mint and manage Digital Object Identifiers [DOIs]).
 
-## General Settings
+## General settings
 
 After installation, Persistent Identifiers should appear in the left-hand navigation under **Modules**. The "Settings" subpage features general settings, including:
 
@@ -17,7 +17,7 @@ After installation, Persistent Identifiers should appear in the left-hand naviga
 
 ![Configuration options for general settings](../modules/modulesfiles/PID_settings.png)
 
-## EZID Configuration
+## EZID configuration
 
 When completing the configuration process for EZID, you will need to provide the:
 
@@ -27,7 +27,7 @@ When completing the configuration process for EZID, you will need to provide the
 
 ![EZID specific configuration options](../modules/modulesfiles/PID_EZIDconfig.png)
 
-## DataCite Configuration
+## DataCite configuration
 
 When completing the configuration process for DataCite, you will need to provide the:
 
@@ -37,11 +37,11 @@ When completing the configuration process for DataCite, you will need to provide
 
 ![DataCite specific configuration options](../modules/modulesfiles/PID_DataCiteconfig.png)
 
-### DataCite Required Metadata
+### DataCite required metadata
 
 DataCite requires five descriptive metadata values in order to generate a DOI: Title, Creators, Publisher, Publication Year, and Resource Type. All of these fields must be mapped to an existing metadata field that you select from the list of available vocabularies in your Omeka S instance. The Resource Type General property must conform to a [ResourceTypeGeneral controlled vocabulary](https://support.datacite.org/docs/datacite-metadata-schema-v44-mandatory-properties#101-resourcetypegeneral){target=_blank} value exactly.
 
-## Minting and Removing PIDs
+## Minting and removing PIDs
 
 To mint a PID from the item edit page, click on an item and select "Edit Item." Navigate to the Advanced tab, and click "Mint PID." 
 

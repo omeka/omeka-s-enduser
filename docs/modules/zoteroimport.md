@@ -13,7 +13,7 @@ You may also want to have the ID for a specific collection and an API key to imp
 * Collection keys appear in the url of a collection page - they are the alphanumeric sequence at the end of the url, following "collections/".
 * To generate an API key, go to Settings in your Zotero account, to the Feeds/API tab, and click the *Create new private key* link.
 
-## Import Data
+## Import data
 
 To import, go to the Zotero Import section on the left-hand navigation of the admin dashboard of your Omeka S install. This will automatically take you to the Import subsection, also in the left-hand navigation.
 

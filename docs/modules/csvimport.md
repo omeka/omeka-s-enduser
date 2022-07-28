@@ -685,7 +685,7 @@ The following are known errors that can occur during an import:
 - **Encoding**: CSVs for import must be UTF-8 encoded.
 - Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration.md#php-path) so that your system can perform the background process to make the items.
 
-## CSV Import with other modules
+## Integration with other modules
 Some other modules add functionality to the CSV import process. If you have these modules installed and active, you will have access to the following options when using CSV Import.
 
 ### Mapping

@@ -4,7 +4,7 @@ The [Redact Values module](https://omeka.org/s/modules/RedactValues/){target=_bl
 
 Administrators will be able to choose a resource type, build a query to filter the resources, select the property from which to redact text, select the pattern to use for redaction, and enter the replacement text.
 
-## Adding a Redaction
+## Adding a redaction
 
 Select Redact Values from the Modules tab of the left-hand navigation. From the "Browse Redactions" page, click the "Add Redaction" button in the upper right corner.
 
@@ -47,7 +47,7 @@ You can also sort your existing redactions by date or label in ascending or desc
 
 ![Sort function for list of existing redactions.](../modules/modulesfiles/redactValues_sort.png)
 
-## Adding Patterns
+## Adding patterns
 
 You can customize the patterns available for redactions by selecting "Patterns" under Redact Values in the Modules tab of the left-hand navigation. To create a new pattern, select the "Add Pattern" button in the upper right corner. You will be asked to provide both a **Label** and a **Pattern**.
 

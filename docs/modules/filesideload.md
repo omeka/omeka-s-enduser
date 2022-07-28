@@ -53,6 +53,6 @@ Clicking on the button adds a Sideload media block. There are two fields:
 
 ![Sideload media options with the dropdown open, displaying file names](../modules/modulesfiles/filesideload_addfile.png)
 
-## CSV Import
+## CSV Import integration
 
 With CSV Import, you can add media to items via File Sideload. Provide a column with full file names, not URLs, pointing to the files in your sideload directory. Add the mapping to Media source > Sideload.
