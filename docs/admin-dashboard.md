@@ -2,9 +2,10 @@
 
 The administrative dashboard manages the content shared by all Omeka S sites and the core functionalities of the Omeka S installation. 
 
-This [screencast](https://vimeo.com/455708039){target=_blank} walks you through the main features of the dashboard and navigating your Omeka S installation.
+This [screencast](https://vimeo.com/455708039){target=_blank} walks you through the main features of the dashboard and navigating your Omeka S installation:
 
-[![Still image of the first frame of a vimeo video](files/navigatingOmekaS-still.png)](https://vimeo.com/455708039)
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/455708039?h=438143f0d3" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/455708039">Navigating Omeka S</a> from <a href="https://vimeo.com/omeka">Omeka</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 ## Admin main page
 

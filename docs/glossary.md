@@ -23,7 +23,7 @@ The following glossary should help to clarify some of the less-familiar terms in
 **Media**: Additional representations or descriptions of an Item, beyond metadata from vocabularies. Typically, this refers to a File (of any type, including, e.g., text or HTML snippets), but could also refer to external data sources such as a YouTube video, Slideshare deck, Dspace bitstream, etc.  
 *Omeka Classic analogy*: File (but the analogy is weak).
 
-**Module**: An add-on to your Omeka S installation which extends the functionality of Omeka S. Modules can add options to data entry and interaction on the back end and add new features to your sites. 
+**Module**: An add-on to your Omeka S installation which extends the functionality of Omeka S. Modules can add options to data entry and interaction on the back end and add new features to your sites.  
 *Omeka Classic analogy*: Plugin.
 
 **Property**: A defined — to one degree or another — kind of metadata used to describe a Resource. The most common is dcterms:title, for the written, human-readable title of an Item. The Values for Properties can be written language intended for humans or other sentient beings to read (‘Literals’), Resources (understood here as internal to an Omeka S installation), or External URIs (e.g., a URI to a DBpedia resource page).  

@@ -3,7 +3,10 @@
 Scripto is made up of projects. Every transcription, translation, or description effort you create can, and should, have its own project. 
 
 ## Create a Project
-This [screencast](https://vimeo.com/422818763){target=_blank} walks you through the process of creating a Scripto project in Omeka S. 
+This [screencast](https://vimeo.com/422818763){target=_blank} walks you through the process of creating a Scripto project in Omeka S: 
+
+<div style="padding:56.64% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/422818763?h=1a3fc18046" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/422818763">Creating a Scripto project</a> from <a href="https://vimeo.com/omeka">Omeka</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 To create a new Scripto project, go to the Scripto dashboard (the Scripto tab in the left-hand navigation) and use the "Actions" dropdown menu in the upper right corner to select "Add new project".
 
@@ -154,7 +157,10 @@ To find items which have been edited and are ready for review, filter all items 
 You can edit your project using the Actions dropdown in the upper right hand corner of the screen. It offers the same two tabs you used when [creating your project](#create-a-project) - [Configuration](#configuration-options) and [Reviewers](#reviewers). 
 
 ## Admin Item Review
-[This screencast](https://vimeo.com/431828023){target=_blank} shows the process of reviewing an item and its media.
+[This screencast](https://vimeo.com/431828023){target=_blank} shows the process of reviewing an item and its media:
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/431828023?h=2716938c78" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/431828023">Reviewing Scripto Content</a> from <a href="https://vimeo.com/omeka">Omeka</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 To review an item, click on its title in the project view.
 
