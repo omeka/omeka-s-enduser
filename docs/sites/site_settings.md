@@ -4,14 +4,14 @@ The Site Admin page allows you to manage the main settings for the site on which
 
 In the left-hand navigation, once you have select a site from the Sites page, it is the first link under the site title, represented with a gear icon. 
 
-The Site Admin page has two tabs, Info and Settings.
+The Site Admin page has two tabs: Info and Settings.
 
 ## Info 
 The site info settings for an Omeka S site are where you can change the basic info for the site - the same information you entered when you created the site. You can change the:
 
-* **Title** - a text field. 
-* **Slug** - the url for your site.
-* **Summary** - the brief description of what it is about which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites). 
+* **Title**: a text field. 
+* **Slug**: the URL for your site.
+* **Summary**: the brief description of what it is about which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites). 
 * **Thumbnail** - an image for your site which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
 
 ![Site info for the site “Jane Austen” with buttons across the top to Delete and Save the site](../sites/sitesfiles/sites_siteinfo.png)
@@ -30,9 +30,9 @@ Site is public: ![make public button showing an eye icon](../content/contentfile
 Site is private: ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png){style="display:inline;"}
 
 ## Settings
-The Settings page is divided into three sections: General, Browse, and Search. 
+The Settings page is divided into three sections: **General**, **Browse**, and **Search**. 
 
-To implement any changes you make, click Save at the top right of the browser window when you are done. To leave without saving changes, click Cancel.
+To implement any changes you make, click "Save" at the top right of the browser window when you are done. To leave without saving changes, click "Cancel".
 
 ### General settings
 
@@ -42,8 +42,8 @@ To implement any changes you make, click Save at the top right of the browser wi
 
 **Attachment link type**: sets the target of links from attachments you add to [site page blocks](../sites/site_pages.md#page-blocks) (for example, in an [item showcase](../sites/site_pages.md#item-showcase)). It offers a dropdown with the following options:
 
-- Item page: clicking on the attachment takes users to the item page associated with the attached media
-- Media page: clicking on the attachment takes users to the media page 
+- Item page: clicking on the attachment takes users to the item page associated with the attached media.
+- Media page: clicking on the attachment takes users to the media page.
 - Direct link to file: clicking on the attachment takes user to the file alone. 
 
 **Embed media on item pages**: when checked, any linked media (such as videos) will be embedded on the item pages. When unchecked, site visitors will click through to view playable media.
@@ -114,7 +114,7 @@ Depending on the [site theme](../sites/site_theme.md), you may want to make this
 
 **Search type** is a dropdown which allows you to set from which site(s) the search bar generates results: 
 
-- This site: only return results from this site;
+- This site: only return results from this site.
 - All sites: return results for all sites on the installation. 
 
 **Search resources** is a series of checkboxes which let you select which types of resources are searched from the main search field on the site. Select from: site pages, items, and item sets. You can select all if you want.
