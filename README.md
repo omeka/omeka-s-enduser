@@ -31,9 +31,9 @@ If you are cloning the user manuals to your local computer and creating a branch
  
 Links to external websites require the full URL as well as the addition of "{target=_blank}" after the link syntax: for example, `[create a new issue](https://github.com/omeka/omeka-s-enduser/issues){target=_blank}`.
 
-**Images** for a file go into the `files` directory of the directory in which the file sits (so, for content files, images go into the `contentfiles` directory). Name images clearly, starting with an indicator of the relevant page, and use an underscore to separate out the image's purpose (for example, `items_addItem.png`).
+**Images** for a page go into the `files` folder of the directory in which the page sits (so, for "Content" pages, images go into the `contentfiles` directory). Name images clearly, starting with an indicator of the relevant page, and use an underscore to separate out the image's purpose (for example, `items_addItem.png`).
 
-Images should never give information that is not enumerated in the text (or in the image alt text and title). No one with vision problems should be missing out. Think of images as a shortcut, not the only route, to understanding how to do something. 
+Images should never give information that is not provided in the text (or in the image alt text and title). No one with vision problems should be missing out. Think of images as a shortcut, not the only route, to understanding how to do something. 
 
 All images should have alt text. A title can also be supplied if having some pop-up text would be useful to readers. An image entered in Markdown looks like this:
 
@@ -47,9 +47,17 @@ More text picks up here.
 
 The maximum display width of an image in the user manuals currently is around 1300px (actually 1296px). A screenshot of the full Omeka interface (public or admin side) should be large. Images can be saved larger (up to 2000px wide) so that readers can open them in new tabs and inspect them in full-scale detail if desired. 
 
-A screenshot of a portion of the interface, such as the left-hand navigation, or the right-hand drawer, should appear at full scale for maximum readability. Currently, Omeka S has a left-side nav width of about 320px, and a right-side drawer width of about 450px, on a 1920x1080 screen. Screenshots should represent these elements accurately.
+A screenshot of a portion of the interface, such as the left-hand navigation, or the right-hand drawer, should appear at full scale for maximum readability. Currently, Omeka S has a left-side nav width of about 320px, and a right-side drawer width of about 450px, on a 1920x1080 screen.
 
-**Format your text** as follows: Buttons appear in quotes, as in the "Save" button. You can highlight interface features (such as page titles, page tabs, links, dropdown menus, and checkboxes) in **bold**. URLs, file paths, bits of code, and metadata fields are highlighted using `code formatting`. Describe icons based on their tooltip. For example, say "edit (pencil icon)", "delete (trash can icon)", "details (ellipsis icon)". This way the text is useful for people using screen readers as well as those who are not.
+**Format your text** as follows: 
+
+Buttons appear in quotes, as in the "Save" button. 
+
+You can highlight interface features (such as page titles, page tabs, links, dropdown menus, and checkboxes) in **bold**. 
+
+URLs, file paths, bits of code, and metadata fields are highlighted using `code formatting`. 
+
+Describe icons based on their tooltip. For example, say "edit (pencil icon)", "delete (trash can icon)", "details (ellipsis icon)". This way the text is useful for people using screen readers as well as those who are not.
 
 Use the [language found in the Glossary](https://omeka.org/s/docs/user-manual/glossary/) to refer to elements in the Omeka S interface.
 
@@ -69,4 +77,4 @@ A member of the Omeka team will review your suggested edits. If your pull reques
 
 ## Rights
 
-This documentation is CC-BY-NC.
+This documentation is [CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/).
