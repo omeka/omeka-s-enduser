@@ -68,7 +68,7 @@ These fields create an internal link between the resource you are creating and t
 
 When creating an item set, you have the option to use either another item or an item set. 
 
-Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific item or item set 
+Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific item or item set. 
 
 Once you select an item or item set, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of items or item sets.
 
@@ -153,11 +153,11 @@ Closed and Private: ![a set which is closed and private, with a closed padlock i
 Note that the public/private and open/closed settings operate independently - you can have an open and private item set, for example.
 
 ## Edit an item set
-Once you have created an item set, you can edit it at any time, either by clicking the edit icon (pencil button) or clicking on the item set's title and then clicking the Edit button in the upper right-hand corner of the screen.
+Once you have created an item set, you can edit it at any time, either by clicking the edit icon (pencil button) or clicking on the item set's title and then clicking the "Edit" button in the upper right-hand corner of the screen.
 
 Options for editing an item set are the same as for creating an item set. 
 
-To cancel out of editing, click the Cancel button in the upper right corner, between the Delete and Save buttons. 
+To cancel out of editing, click the "Cancel" button in the upper right corner, between the "Delete" and "Save" buttons. 
 
 ![Detail view of the top row if information and buttons on an item edit view. A red arrow points to the Cancel button, on the far right](contentfiles/itemset_cancel.png)
 
@@ -182,11 +182,11 @@ Choose one of these options and then click "Go".
 - set openness: a dropdown, select from open or not open.
 - set template: a dropdown, select from the installation's resource templates.
 - set class: a dropdown, select from classes of the installed vocabularies.
-- clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected item sets. Clear additional properties using the *Clear another property* button.
+- clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected item sets. Clear additional properties using the "Clear another property" button.
 
 ![Batch edit items form, with options as described above. Everything is grayscale](contentfiles/itemsets_batchedit.png)
 
-In addition,  you can use the bottoms at the bottom of the batch edit form to add properties to every item set:
+In addition, you can use the bottoms at the bottom of the batch edit form to add properties to every item set:
 
 - add text value
 - add resource value

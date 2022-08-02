@@ -233,4 +233,4 @@ When there are multiple categories on a page, it will load with all of the resou
 
 Once a user clicks on a category, the resource list will change to display only that category, and the facets will replace the categories in the submenu. Users can use a "back" button on the page to return to the full list of categories.
 
-![A faceted browse page with facets visible. The category heading shows up above the facets. Over that is a button labelled "back." Annotations indicate the button, category, and facet headings.](../modules/modulesfiles/FacetedBrowse-multiCatView1.png)
+![A faceted browse page with facets visible. The category heading shows up above the facets. Over that is a button labelled "back." Annotations indicate the button, category, and facet headings.](../modules/modulesfiles/FacetedBrowse-multiCatView2.png)

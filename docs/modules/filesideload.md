@@ -10,7 +10,7 @@ Create a directory (folder) on your server. It can be within the File Sideload m
 
 Upload files into this directory. All files or directories must be in this directory to be accessible.
 
-Note that when browsing these files from the module to add as media, you will only see the filenames, so you should name the files as clearly as possible ("StudyInScarlet_coverpapge.jpg" will be more helpful than "img001.jpg").
+Note that when browsing these files from the module to add as media, you will only see the filenames, so you should name the files as clearly as possible (for example, "StudyInScarlet_coverpage.jpg" will be more helpful than "img001.jpg").
 
 ## Configuration
 
