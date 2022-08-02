@@ -32,7 +32,8 @@ To import from a Zotero library:
 
 When you have completed the form, click "Submit" in the upper right-hand corner of the browser window.
 
-- Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration.md) so that your system can perform the background process to make the items.
+!!! note
+	Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration.md#php-path) so that your system can perform the background process to make the items.
 
 A note on files: The rules for importing an item are the same as creating an item in Omeka, so if your Zotero library has files which are a disallowed media type, the items will not be imported.
 
