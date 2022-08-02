@@ -35,12 +35,12 @@ Links to external websites require the full URL as well as the addition of "{tar
 
 Images should never give information that is not enumerated in the text (or in the image alt text and title). No one with vision problems should be missing out. Think of images as a shortcut, not the only route, to understanding how to do something. 
 
-All images should have alt text. An image entered in Markdown looks like this:
+All images should have alt text. A title can also be supplied if having some pop-up text would be useful to readers. An image entered in Markdown looks like this:
 
 ```
 Some text ends here.
 
-![Alt text for the image goes here.](../modulesfiles/animage_pathGoesHere.png)
+![Alt text for the image goes here.](../modulesfiles/animage_pathGoesHere.png "An optional title which will appear when a user mouses over the image.")
 
 More text picks up here.
 ```
@@ -48,8 +48,6 @@ More text picks up here.
 The maximum display width of an image in the user manuals currently is around 1300px (actually 1296px). A screenshot of the full Omeka interface (public or admin side) should be large. Images can be saved larger (up to 2000px wide) so that readers can open them in new tabs and inspect them in full-scale detail if desired. 
 
 A screenshot of a portion of the interface, such as the left-hand navigation, or the right-hand drawer, should appear at full scale for maximum readability. Currently, Omeka S has a left-side nav width of about 320px, and a right-side drawer width of about 450px, on a 1920x1080 screen. Screenshots should represent these elements accurately.
-
-
 
 **Format your text** as follows: Buttons appear in quotes, as in the "Save" button. You can highlight interface features (such as page titles, page tabs, links, dropdown menus, and checkboxes) in **bold**. URLs, file paths, bits of code, and metadata fields are highlighted using `code formatting`. Describe icons based on their tooltip. For example, say "edit (pencil icon)", "delete (trash can icon)", "details (ellipsis icon)". This way the text is useful for people using screen readers as well as those who are not.
 
@@ -61,7 +59,7 @@ Omeka S terms:
 - Drawer: the menus that open from the right.
 - Admin dashboard
 - Modules
- -Properties
+- Properties
 - Item sets
 - Classes.
 
