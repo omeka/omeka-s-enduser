@@ -23,7 +23,7 @@ In the upper right hand corner of the window on this tab, you can use buttons to
 - Cancel making changes
 - Save your changes.
 
-The **make public/private** button (eye icon) is used to both indicate and set whether the site is visible to the public or only to users of this Omeka S installation 
+The **make public/private** button (eye icon) is used to both indicate and set whether the site is visible to the public or only to users of this Omeka S installation. 
 
 Site is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png){style="display:inline;"}
 
