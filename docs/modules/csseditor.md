@@ -32,7 +32,7 @@ To remove external stylesheets, either clear the text inputs, or click on the tr
 
 ![Screenshot of CSS Editor module interface, cropped to focus on external stylesheet field with remove button (trash can icon) highlighted.](modulesfiles/csseditor_remove.jpg)
 
-### Tutorial: Using a Google webfont
+## Tutorial: Using a Google webfont
 
 You can make your Omeka S site more distinct by using a custom font. [Google provides a free library of webfonts](https://fonts.google.com/){target=_blank}, and this tutorial will demonstrate how to apply a webfont to an Omeka S site using the "Default" theme through the CSS Editor interface.
 
