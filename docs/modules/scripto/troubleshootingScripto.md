@@ -17,4 +17,4 @@ For more information, see the [MediaWiki manual on preventing access](https://ww
 
 ## Troubleshooting
 ### Project sync stuck
-If your project sync will not start or remains in process, check that you have [correctly configured the PHP-CLI path for your Omeka S installation](https://omeka.org/s/docs/developer/configuration/config_reference/#cli){target=_blank}. 
+If your project sync will not start or remains in process, check that you have [correctly configured the PHP-CLI path for your Omeka S installation](../configuration.md#php-path). 
