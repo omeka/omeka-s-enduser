@@ -27,7 +27,7 @@ If you are cloning the user manuals to your local computer and creating a branch
 
 **Section headings** should start with H2 (`##`) and go down to H4. Create sections where it is logical in the documentation structure; they will appear in the left navigation of the documentation. (See [Pages Management](http://omeka.org/s/docs/user-manual/sites/site_pages/) for an example of extensive section use.) Use "Sentence case for section headings", not "Camel Case".
   
-**Links** should be composed as relative to the current file. They will look something like `../modules/csvimport.md` if you are linking to another page within a section, or `../admin/users.md#manage-users` if you are linking to a section of a page. Do not forget the `.md` part of the page.
+**Links** should be composed as relative to the current file. They will look something like `../modules/csvimport.md` if you are linking to a page that sits within a folder, or `../admin/users.md#manage-users` if you are linking to a section of a page. Do not forget the `.md` part of the page.
  
 Links to external websites require the full URL as well as the addition of "{target=_blank}" after the link syntax: for example, `[create a new issue](https://github.com/omeka/omeka-s-enduser/issues){target=_blank}`.
 
@@ -63,8 +63,8 @@ Use the [language found in the Glossary](https://omeka.org/s/docs/user-manual/gl
 
 Omeka S terms:
 - Left-hand navigation: the bar on the left with options for resources, admin, etc.
-- Main work area: center of window, to the right of the left-hand navigation.
-- Drawer: the menus that open from the right.
+- Main work area: center of window, to the right of the left-hand navigation
+- Drawer: the menus that open from the right
 - Admin dashboard
 - Modules
 - Properties
