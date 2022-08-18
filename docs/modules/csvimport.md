@@ -730,7 +730,7 @@ Options are:
 
 When importing data as numeric, it must be formatted precisely. Always check to be sure your data has imported correctly into the format of your choice; CSV Import will leave values empty if the formatting isn't recognized. 
 
-Use the following formats for importing [dates and times](https://en.wikipedia.org/wiki/ISO_8601#Dates){target=_blank}, including dashes between values:
+Use the following formats for importing [dates](https://en.wikipedia.org/wiki/ISO_8601#Dates){target=_blank}, including dashes between values:
 
 - `2022`
 - `2022-08` (year and month, no date)
