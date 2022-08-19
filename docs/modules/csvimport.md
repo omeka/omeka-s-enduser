@@ -719,7 +719,41 @@ For the data in this column, you need to include the full file name, including e
 ### Numeric Data Types
 If you have [Numeric Data Types](../numericdatatypes) installed and active, it will add the option to set a column data type as numeric data.
 
+Options are:
+
+- Date/Time (ISO 8601)
+- Interval (ISO 8601)
+- Duration (ISO 8601)
+- Integer.
+
 ![Column options drawer with the data type dropdown open, showing options for numeric data types as well as the standard options](../modules/modulesfiles/csvimport-numericdata.png)
+
+When importing data as numeric, it must be formatted precisely. Always check to be sure your data has imported correctly into the format of your choice; CSV Import will leave values empty if the formatting isn't recognized. 
+
+Use the following formats for importing [dates](https://en.wikipedia.org/wiki/ISO_8601#Dates){target=_blank}, including dashes between values:
+
+- `2022`
+- `2022-08` (year and month, no date)
+- `2022-08-18`.
+
+Use the following formats to add [times](https://en.wikipedia.org/wiki/ISO_8601#Times){target=_blank} to your date values:
+
+- `2022-08-18T17:26:49+00:00` ([time offset from UTC](https://en.wikipedia.org/wiki/ISO_8601#Time_offsets_from_UTC){target=_blank})
+- `2022-08-18T17:26:49Z` ([coordinated universal time](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_(UTC)){target=_blank}). 
+
+You cannot omit the year while providing a month and/or day. You cannot supply ordinal dates (as in, `2000-175` for the 175th day of the year 2000). 
+
+Use the following formats for importing [intervals](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals){target=_blank} either as start and end points, or with one time point and a duration:
+
+- `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (Start and end)
+- `2007-03-01T13:00:00Z/P1Y2M10DT2H30M` (Start time/date and duration)
+- `P1Y2M10DT2H30M/2008-05-11T15:30:00Z` (Duration and end time/date).
+
+Use the following formats for importing [durations](https://en.wikipedia.org/wiki/ISO_8601#Durations){target=_blank}, expressed as number of years, number of months, number of days, etc.:
+
+- `P23DT23H` (23 days & 23 hours)
+- `P3Y6M4DT12H30M5S` (3 years, 6 months, 4 days, 12 hours, 30 minutes, & 5 seconds).
+
 
 ### Custom Vocab
 If you have [Custom Vocab](../customvocab) installed and active, it will add your custom vocabularies as data types in Omeka. You can select these data types during your CSV Import. 
