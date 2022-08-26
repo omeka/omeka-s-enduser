@@ -127,3 +127,5 @@ Edit the `Omeka\File\Thumbnailer` value to the following, based on what is avail
 - Replace the default thumbnailer with `Omeka\File\Thumbnailer\Gd`.
 - Replace the default thumbnailer with `Omeka\File\Thumbnailer\Imagick`, and enable Imagick in the file `php.ini` of your server via the server admin interface or directly in the file.
 - Keep the default thumbnailer `Omeka\File\Thumbnailer\ImageMagick`, but install the command line tool `imagemagick` and change the `imagemagick_dir` value to its directory. To install imagemagick, see the documentation of your server.
+
+If you see the error `no input file specified`, you may need to edit the `.htaccess` file. Comment out line 8, `RewriteRule !\.(php[0-9]?|phtml|phps)$ - [NC,C]`. You may also need to comment out the lines following the block comment at line 17 ( “The following rewrites”) and replace them with `RewriteRule ^(.*)$ index.php`. 
