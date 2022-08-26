@@ -2,11 +2,13 @@
 
 The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows you to geolocate Omeka S items. Maps can also include timelines that allow you to scroll through items on a map in chronological order.
 
-The Mapping module has no global configuration settings. It adds geolocating capabilities to each item, and also adds page blocks to [Site Pages](../sites/site_pages.md) that can be used to display maps for browsing.
+![Map with timeline](../modules/modulesfiles/mapping-timelinePublic1.png)
+
+The Mapping module has no global configuration settings. It adds a new "Mapping" tab to each item edit screen, and also adds page blocks to [Site Pages](../sites/site_pages.md) that can be used to display maps for browsing.
 
 ## Item mapping
 
-To add a map to a new or existing item, click to edit the item. Navigate to the "Mapping" tab to add a map to the item. Selecting the tab will open the map interface.
+To add a map to a new or existing item, click to edit the item. Navigate to the "Mapping" tab to add location data to the item. Selecting the tab will open the map interface.
 
 ![Screenshot of the Add/Edit Item Page with Mapping tab selected. Large World Map with white buttons described below](../modules/modulesfiles/Mapping_Item_Add.png)
 
@@ -22,7 +24,7 @@ Small white buttons on the left side of the map control and modify the appearanc
 * **Delete Marker**: The small white button with a trashcan icon. This option is only available after a marker has been added. Click the icon to select a marker. Click the marker to be removed and it will disappear. Use the grey buttons to "Save" or "Cancel" these changes.
 * **Search Address**: The small white square with a black magnifying glass icon. Click to enter an address in the search bar.
 * **Set the current view as default view**: The small white square with a target or crosshair symbol. The map will default to a zoomed out (global) view. Click to set the current view as the default view for this item.
-* **Go to current default view**: The small black square with a black box around a dot. The This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
+* **Go to current default view**: The small black square with a black box around a dot. This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
 * **Clear the default center and zoom level**: The small white square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
 
 In addition to these options, you can also navigate the map using your mouse or trackpad by scrolling to zoom and clicking and dragging to pan.
@@ -70,19 +72,23 @@ Note that you can use the "clear all" button in the menu which opens form the "d
 
 You can also set the map's default display zoom level and center, independently of the marker(s) you place. The default is to center on one marker and zoom fully in, or to zoom out far enough to contain all markers in the map view.
 
+* **Set the current view as default view**: The small white square with a target or crosshair symbol. The map will default to a zoomed out (global) view. Click to set the current view as the default view for this item.
+* **Go to current default view**: The small black square with a black box around a dot. This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
+* **Clear the default center and zoom level**: The small white square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
+
 ## CSV Import integration
 
 Mapping is compatible with [CSV Import](../modules/csvimport.md) when importing items (not mixed resources).
 
-If the two modules are enabled, your CSV Import setup will have two new dropdown menus in the "Add mapping" sidebar when you are connecting a spreadsheet column to a property.
+If the two modules are enabled, your CSV Import process will have two new dropdown menus in the "Add mapping" sidebar when you are connecting a spreadsheet column to a property.
 
 The "Resource location" dropdown menu includes three options for pinning the item geographically (latitude, longitude, and latitude/longitude). You can import multiple values for these fields.
 
 The "Default map view" dropdown menu allows you to set a centerpoint and zoom level for the map that displays for that item. Without a map centerpoint, the map will center on the item's pin.
 
-You cannot batch-set a marker label or marker image in CSV Import.
+You cannot set marker labels or marker images in CSV Import.
 
-You cannot batch-edit mapping values after items are in your system, only edit them manually, one item at a time. So, CSV Import can help you do things like set a standard map zoom level on each item, by supplying a spreadsheet with every item and the same zoom level number in each row.
+You cannot [batch-edit](../content/items.md#batch-actions) mapping values after items are in your system, only edit them manually one item at a time. So, CSV Import can help you do things such as set a consistent map zoom level on each item, by supplying a spreadsheet with every item and the same zoom level number in each row.
 
 ## Adding map blocks to a site
 
@@ -157,22 +163,22 @@ Timeline adds a timeline display to the left of the map view. Note that this fea
 
 ![Mapping block with all options collapsed except Timeline, which shows options as described, all empty](../modules/modulesfiles/mapping-timelineBlock.png)
 
-To remove the timeline from a map block, click the X on the far right of the Property dropdown.
+To remove the timeline from a map block, click the "X" on the far right of the Property dropdown.
 
 To see how the various settings of the timeline block appear on the public side, please see the [Timeline Public View](#timeline-public-view) section below.
 
 ### Attachments (Map by attachments block)
 
-Markers are added to the map using _Items_.
+Markers are added to the map using Items.
 
-* Click _Add Attachment_  (1) to select them from a list on the right (2). Note: This list will only be populated by items that have at least one location added to them (when editing the item).
+* Click "Add Attachment" (1) to select them from a list on the right (2). Note: This list will only be populated by items that have at least one location added to them (when editing the item).
 * Clicking an item adds it to a list in the Attachments pane (3).
 * Click and drag items in this list to reorder them.
 * Delete items by clicking the red trashcan.
 
 ![Screenshot of the map with Add Attachment selected. On the right a list of items.](../modules/modulesfiles/Mapping_pageAttachments.png)
 
-To add multiple items at once, click the "quick add" slider just above the list of items in the right hand drawer. This will add a checkbox to the left of each item. Check the boxes of those items you want to add to the map, then click the "Add selected" button at the bottom of the drawer.
+To add multiple items at once, click the "Quick add" slider just above the list of items in the right hand drawer. This will add a checkbox to the left of each item. Check the boxes of those items you want to add to the map, then click the "Add selected" button at the bottom of the drawer.
 
 ![Drawer with bulk add option activated](../modules/modulesfiles/Mapping-bulkAttachments.png)
 
@@ -247,4 +253,4 @@ In the image below, the timeline is using interval data. The event "Reading Abbe
 ![image as described](../modules/modulesfiles/mapping-timelinePublicSCE.png)
 
 ## Troubleshooting
-If you would like to remove the mapping location from an item, you must delete all the map modifications. First, click to delete each marker (click the Delete a Marker button, select the marker, click to save) and then click to clear the default center and zoom level (click the Clear the default and zoom level button. The map will return to a global view). Click to save the item and confirm that the map no longer appears.
+If you would like to remove the mapping location from an item, you must delete all the map modifications. First, delete each marker (click the "Delete a Marker" button, select the markers, click to save). Then clear the map view settings (click the "Clear the default center and zoom level" button). The map will return to a global view. Save the item and confirm that the map no longer appears.
