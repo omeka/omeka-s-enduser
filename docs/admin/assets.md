@@ -12,6 +12,8 @@ To add a new asset to the installation, click the "Add new asset" button in the 
 
 ![Asset browse list with Add a New Asset drawer open with an image selected for upload](adminfiles/assets_add.png)
 
+Assets are maintained at only their original size; they are not duplicated and resized like media attached to items. You will need to manually upload other sizes as desired. 
+
 ## Edit an asset
 
 Existing assets may be edited by clicking on the pencil icon. Users have the option to change the file name and to create or edit alternative text. Users can also delete assets by clicking on the red "Delete" button in the upper right hand corner. 
