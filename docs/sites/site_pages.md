@@ -61,7 +61,7 @@ There are two options for laying out the blocks on your page: **Normal flow** an
 
 **Normal flow** provides a view where the blocks stack one upon the next to build the page. With this layout, you can set blocks to float right and left, take up the full width, or center the content in the full width. When blocks (such as media) are floated alongside an HTML block, the text will flow and wrap around the floated block. Floated blocks take up a maximum of one-third of the page's total width. 
 
-**Grid** is a user-defined column system, based on [the CSS Grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout){target=_blank}, that allows the user to finely-tune the placement and width of the blocks in a page. With this choice you can define the number of columns you want to work with in your page, from 1 to 12; blocks can be set to occupy one or more of the columns, next to each other in rows. 
+**Grid** is a user-defined column system, based on [the CSS Grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout), that allows the user to finely-tune the placement and width of the blocks in a page. With this choice you can define the number of columns you want to work with in your page, from 1 to 12; blocks can be set to occupy one or more of the columns, next to each other in rows. 
 
 #### Configuration
 Next you will have the option to apply configuration settings to the entire page. Clicking on the gear icon will open the Page layout configuration menu. 
@@ -76,7 +76,7 @@ In **Grid**, you will see two buttons:
 
 ##### Page templates
 
-Themes offer the ability to provide shortcuts on page development. By selecting a page template from the dropdown in the configuration menu, you can apply different design variations as provided by theme developers. Read the [developer documentation](https://github.com/omeka/omeka-s/wiki/4.1-RC){target=_blank} for more information on how to offer page templates. 
+Themes offer the ability to provide shortcuts on page development. By selecting a page template from the dropdown in the configuration menu, you can apply different design variations as provided by theme developers. Read the [developer documentation](https://github.com/omeka/omeka-s/wiki/4.1-RC) for more information on how to offer page templates. 
 
 Once you have selected a site theme with page templates included, such as [Foundation](site_theme.md#foundation-theme-settings), you can select a page to edit and use the configuration menu to view available templates. Foundation currently offers a fixed-width (default) or full-width template option (visible where the navigation menu is set as a horizontal dropdown rather than a column). 
 
@@ -149,13 +149,13 @@ Text alignment will affect the contents of the block, including images, text, an
 
 **Padding** allows you to enter numbers for the top, left, right, and bottom padding inside the block. The default (a number without any units) is in pixels; you can also enter `em`, `rem`, `cm`, `ct`, `%` values, etc. You may wish to utilize this when setting a background image or color on a block filled with text; the background will extend to the full width of the block, while padding can be used to keep text from touching the edges.
 
-**Background** allows you to select a background for the block: either a color ([using a hexadecimal, with a hashtag character (`#`), or word value](https://www.w3schools.com/html/html_colors.asp){target=_blank}) or an image, from the assets available in the installation. 
+**Background** allows you to select a background for the block: either a color ([using a hexadecimal, with a hashtag character (`#`), or word value](https://www.w3schools.com/html/html_colors.asp)) or an image, from the assets available in the installation. 
 
 If you choose an image, the three dropdown menus below will be useful: 
 
-- The **Vertical** anchor position allows you to select [Default, Top, Center, or Bottom positioning for the background asset](https://www.w3schools.com/cssref/pr_background-position.php){target=_blank}.
+- The **Vertical** anchor position allows you to select [Default, Top, Center, or Bottom positioning for the background asset](https://www.w3schools.com/cssref/pr_background-position.php).
 - The **Horizontal** anchor position allows you to select Default, Left, Center or Right positioning for the background asset.
-- **Size** allows you to you select [Default, Cover, or Contain for the background asset](https://www.w3schools.com/cssref/css3_pr_background-size.php){target=_blank}.
+- **Size** allows you to you select [Default, Cover, or Contain for the background asset](https://www.w3schools.com/cssref/css3_pr_background-size.php).
 
 Once you have configured the block, click "Apply changes". You must save the block settings and then save the page settings in order to see your changes on the public side. 
 
@@ -378,7 +378,7 @@ Displays one or more pieces of media associated with items in the site's item po
 The Media block has the following options: 
 
 - Layout: choose from vertical or horizontal layout. A horizontal row of items will contain a maximum of 4 before wrapping to a new row, depending on the width of the page block.
-- Media display: choose to display the original uploaded media, or the Omeka-generated thumbnails only. If you embed media, videos, IIIF manifests, and other rich files will display at their original size, as well as audio players, depending on the width of the page block. If you choose thumbnails only, you will see derivative video thumbnails, and fallback images for media such as audio. Images will always show a derivative, the size chosen from one of the thumbnail sizes in the next dropdown. Note that you can only embed a PDF viewer using this block if the [PDF Embed module is installed and active](https://omeka.org/s/modules/PdfEmbed/){target=_blank}; otherwise a derivative image will display. 
+- Media display: choose to display the original uploaded media, or the Omeka-generated thumbnails only. If you embed media, videos, IIIF manifests, and other rich files will display at their original size, as well as audio players, depending on the width of the page block. If you choose thumbnails only, you will see derivative video thumbnails, and fallback images for media such as audio. Images will always show a derivative, the size chosen from one of the thumbnail sizes in the next dropdown. Note that you can only embed a PDF viewer using this block if the [PDF Embed module is installed and active](https://omeka.org/s/modules/PdfEmbed/); otherwise a derivative image will display. 
 - Image type: choose from large, medium, and square thumbnail sizes for any images you have added to the set. These sizes are set [at an installation level](../configuration.md#thumbnails), but may appear smaller depending on the width of the page block.
 - Set the attachment title as:
 	- item title (title of the attached item);
@@ -450,7 +450,7 @@ Depending on which site the embed is from, there will be different features avai
 - Vimeo: includes buttons to like, add to watch later, and share. In addition to the play and volume controls, there are options to enable closed captions, view a transcript, view settings, make the video full screen, or view the video on Vimeo.
 - Youtube: includes buttons to make the video full screen and watch the video on YouTube.
 
-You may find [oEmbed's provider list](https://oembed.com/providers.json){target=_blank} helpful.
+You may find [oEmbed's provider list](https://oembed.com/providers.json) helpful.
 
 !!! note
 	Note that you can embed media from many of the oEmbed-enabled sites in other ways, which may allow you more styling and customization control. For example, you can add a Youtube video to an item and then display it with the Media embed block, or paste the embed code offered on Vimeo or Flickr into an HTML page block.

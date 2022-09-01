@@ -1,8 +1,8 @@
 # Metadata Browse
 
-The [Metadata Browse module](https://omeka.org/s/modules/MetadataBrowse){target=_blank} makes it possible to browse all resources that share a value for a particular metadata property.
+The [Metadata Browse module](https://omeka.org/s/modules/MetadataBrowse) makes it possible to browse all resources that share a value for a particular metadata property.
 
-It does this by either turning selected properties into a link, or by adding a link below properties that reads "See all items with this value". These links appear only on item view pages. When the link is clicked, the module returns the results of that search (property value is equal to input). It is similar to the Omeka Classic plugin [Search by Metadata](http://omeka.org/add-ons/plugins/search-by-metadata/){target=_blank}.
+It does this by either turning selected properties into a link, or by adding a link below properties that reads "See all items with this value". These links appear only on item view pages. When the link is clicked, the module returns the results of that search (property value is equal to input). It is similar to the Omeka Classic plugin [Search by Metadata](http://omeka.org/add-ons/plugins/search-by-metadata/).
 
 ![The item "Sense and Sensibility". The date property displays as a link, and is indicated with a blue arrow.](../modules/modulesfiles/mdbr-directlinkYes.png)
 

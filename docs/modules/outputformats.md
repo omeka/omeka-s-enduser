@@ -1,16 +1,16 @@
 # Output Formats 
 
-The [Output Formats module](https://omeka.org/s/modules/OutputFormats/){target=_blank} allows site administrators and/or site visitors to export datasets from the collections. Outputs are added to administrative interfaces for items, media, and item sets, and can be added to public site pages for items and item sets. 
+The [Output Formats module](https://omeka.org/s/modules/OutputFormats/) allows site administrators and/or site visitors to export datasets from the collections. Outputs are added to administrative interfaces for items, media, and item sets, and can be added to public site pages for items and item sets. 
 
 ![Public view of the module buttons at the bottom of an item browse page](modulesfiles/outputFormats_public.png)
 
 The output formats available for this module are:
 
-- [JSON-LD](https://json-ld.org/){target=_blank}
-- [Notation3](https://www.w3.org/wiki/NotationThree){target=_blank}
-- [N-Triples](https://dbpedia.org/page/N-Triples){target=_blank}
-- [RDF/XML](https://www.w3schools.com/XML/xml_rdf.asp){target=_blank}
-- [Turtle](https://www.w3.org/TR/rdf12-turtle/){target=_blank}.
+- [JSON-LD](https://json-ld.org/)
+- [Notation3](https://www.w3.org/wiki/NotationThree)
+- [N-Triples](https://dbpedia.org/page/N-Triples)
+- [RDF/XML](https://www.w3schools.com/XML/xml_rdf.asp)
+- [Turtle](https://www.w3.org/TR/rdf12-turtle/).
 
 ## Settings
 
@@ -51,4 +51,4 @@ We advise administrators to test each output thoroughly and look for errors befo
 
 You may also see "Maximum execution time exceeded" as an error on some formats. In this case, your server is incompatible with generating the amount of information in the given dataset. This may be fixed by lowering the number of resources showing in a page, in the site pagination settings. In some cases this issue may be unavoidable. 
 
-It may help to review the information available for the tool we use, [EasyRDF](https://github.com/sweetrdf/easyrdf){target=_blank}.
+It may help to review the information available for the tool we use, [EasyRDF](https://github.com/sweetrdf/easyrdf).

@@ -1,8 +1,8 @@
 # Copy Resources
 
-The [Copy Resources module](https://omeka.org/s/modules/CopyResources){target=_blank} allows you to duplicate Omeka S sites, site pages, items, and item sets.
+The [Copy Resources module](https://omeka.org/s/modules/CopyResources) allows you to duplicate Omeka S sites, site pages, items, and item sets.
 
-Once activated on the [modules](https://omeka.org/s/docs/user-manual/modules/){target=_blank} section of the admin dashboard, Copy Resources inserts a "copy" button into the interface of several pages in the admin side, including when viewing the resource, and on the table of sites, each site's table of pages, and the items and item sets tables. 
+Once activated on the [modules](https://omeka.org/s/docs/user-manual/modules/) section of the admin dashboard, Copy Resources inserts a "copy" button into the interface of several pages in the admin side, including when viewing the resource, and on the table of sites, each site's table of pages, and the items and item sets tables. 
 
 ![The pages table in the admin side, showing "copy" buttons next to each page in the table.](modulesfiles/copyResources_pages.png)
 

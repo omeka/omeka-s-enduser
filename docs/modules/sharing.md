@@ -1,6 +1,6 @@
 # Sharing
 
-The [Sharing module](https://omeka.org/s/modules/Sharing){target=_blank} allows you to add buttons to site pages which visitors can use to share and embed content from your site on social media or via email. Sharing also includes [Open Graph](https://ogp.me/){target=_blank} and [oEmbed](https://oembed.com/){target=_blank} meta elements in the `<head>` of each item page on your site, so that preview cards will display when shared on social media. 
+The [Sharing module](https://omeka.org/s/modules/Sharing) allows you to add buttons to site pages which visitors can use to share and embed content from your site on social media or via email. Sharing also includes [Open Graph](https://ogp.me/) and [oEmbed](https://oembed.com/) meta elements in the `<head>` of each item page on your site, so that preview cards will display when shared on social media. 
 
 Currently, Sharing supports the following options:
 

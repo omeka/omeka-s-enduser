@@ -13,7 +13,7 @@ $wgGroupPermissions['*']['edit'] = false;
 
 to the file `LocalSettings.php`.
 
-For more information, see the [MediaWiki manual on preventing access](https://www.mediawiki.org/wiki/Manual:Preventing_access){target=_blank}.
+For more information, see the [MediaWiki manual on preventing access](https://www.mediawiki.org/wiki/Manual:Preventing_access).
 
 ## Troubleshooting
 ### Project sync stuck

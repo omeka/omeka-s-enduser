@@ -1,6 +1,6 @@
 # Data Repository Connector
 
-The [Data Repository Connector module](https://omeka.org/s/modules/DataRepositoryConnector/){target=_blank} allows users to import records and/or data files from several different data repository platforms: Dataverse, Zenodo, Invenio, and CKAN. Once imported, these items can be updated at any time by re-running the original import from the Past Imports page.
+The [Data Repository Connector module](https://omeka.org/s/modules/DataRepositoryConnector/) allows users to import records and/or data files from several different data repository platforms: Dataverse, Zenodo, Invenio, and CKAN. Once imported, these items can be updated at any time by re-running the original import from the Past Imports page.
 
 The Data Repository Connector adds an entry in the left-hand Modules menu. When you click on the name of the module or the plus-sign icon to the left, the menu will expand to display links for the four import options. The module opens to the Past Imports page by default.
 
@@ -31,14 +31,14 @@ If you select Dataverse, you will see a screen with the following options:
 
 + **Main Dataverse URL**: The URL of the main Dataverse site. (This field is required.)
 + **Dataverse Identifier**: The identifier of the Dataverse to import from. If blank, all datasets under the **Main Dataverse URL** will be imported, which could be large.
-+ **Metadata format**: The metadata format to export from Dataverse. The options for Dataverse are "dcterms", "oai_dc", and "schema.org". The format must exist as a [vocabulary](../content/vocabularies.md) in your Omeka instance before import, which you can retrieve from [purl.org](http://purl.org/dc/elements/1.1/){target=_blank} and [schema.org](https://schema.org/docs/developers.html){target=_blank}. (This field is required.)
++ **Metadata format**: The metadata format to export from Dataverse. The options for Dataverse are "dcterms", "oai_dc", and "schema.org". The format must exist as a [vocabulary](../content/vocabularies.md) in your Omeka instance before import, which you can retrieve from [purl.org](http://purl.org/dc/elements/1.1/) and [schema.org](https://schema.org/docs/developers.html). (This field is required.)
 
 ### Zenodo
 
 If you select Zenodo, you will see a screen with the following options:
 
 + **Zenodo Community ID**: The short string identifying which Zenodo community to import from. Found in the URL after "https://zenodo.org/communities/" and before any search parameters. (This field is required.)
-+ **Metadata format**: The metadata format to export from Zenodo. The only option for Zenodo is "oai_dc". The format must exist as a [vocabulary](../content/vocabularies.md) in your Omeka instance before import, which you can retrieve from [purl.org](http://purl.org/dc/elements/1.1/){target=_blank}. (This field is required.)
++ **Metadata format**: The metadata format to export from Zenodo. The only option for Zenodo is "oai_dc". The format must exist as a [vocabulary](../content/vocabularies.md) in your Omeka instance before import, which you can retrieve from [purl.org](http://purl.org/dc/elements/1.1/). (This field is required.)
 
 ### Invenio
 
@@ -47,7 +47,7 @@ If you select Zenodo, you will see a screen with the following options:
 If you select Invenio, you will see a screen with the following options:
 
 + **Main Invenio URL**: The URL of the main Invenio site. (This field is required.)
-+ **Search Query**: A term that will narrow the imported results. If blank, all datasets under the **Main Invenio URL** will be imported, which could be large. You can use the [ElasticSearch query syntax](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-your-data.html){target=_blank}. Examples: "oceanography", "access_right:open".
++ **Search Query**: A term that will narrow the imported results. If blank, all datasets under the **Main Invenio URL** will be imported, which could be large. You can use the [ElasticSearch query syntax](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-your-data.html). Examples: "oceanography", "access_right:open".
 
 ### CKAN
 

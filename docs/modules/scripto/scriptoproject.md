@@ -3,7 +3,7 @@
 Scripto is made up of projects. Every transcription, translation, or description effort you create can, and should, have its own project. 
 
 ## Create a Project
-This [screencast](https://vimeo.com/422818763){target=_blank} walks you through the process of creating a Scripto project in Omeka S: 
+This [screencast](https://vimeo.com/422818763) walks you through the process of creating a Scripto project in Omeka S: 
 
 <div style="padding:56.64% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/422818763?h=1a3fc18046" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <p><a href="https://vimeo.com/422818763">Creating a Scripto project</a> from <a href="https://vimeo.com/omeka">Omeka</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
@@ -157,7 +157,7 @@ To find items which have been edited and are ready for review, filter all items 
 You can edit your project using the Actions dropdown in the upper right hand corner of the screen. It offers the same two tabs you used when [creating your project](#create-a-project) - [Configuration](#configuration-options) and [Reviewers](#reviewers). 
 
 ## Admin Item Review
-[This screencast](https://vimeo.com/431828023){target=_blank} shows the process of reviewing an item and its media:
+[This screencast](https://vimeo.com/431828023) shows the process of reviewing an item and its media:
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/431828023?h=2716938c78" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <p><a href="https://vimeo.com/431828023">Reviewing Scripto Content</a> from <a href="https://vimeo.com/omeka">Omeka</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
@@ -262,7 +262,7 @@ You can toggle the drawer open and closed using the open arrow `>` button in the
 
 * **Complete**: Community users have the ability to mark a media they are working on as "complete." This serves as a flag to notify the project team that the media is ready for review. If a media is not completely transcribed/translated/described, adminstrators can reverse the Complete status.
 * **Approved**: Approval is granted by administrators and indicates that every media is complete and satisfactory. Items can only be considered approved when all child media are approved.
-* **Protected**: Protection is a [MediaWiki function](https://www.mediawiki.org/wiki/Manual:Administrators#Protection){target=_blank}. In the context of Scripto, it is a way for project owners to close editing on a media or item at a certain point, either because it is complete or because of a need to deal with that particular media or item (bad scan, for example). 
+* **Protected**: Protection is a [MediaWiki function](https://www.mediawiki.org/wiki/Manual:Administrators#Protection). In the context of Scripto, it is a way for project owners to close editing on a media or item at a certain point, either because it is complete or because of a need to deal with that particular media or item (bad scan, for example). 
 	* Protection can be limited to users, confirmed users, or administrators. In addition,  you can choose to protect the media infinitely or for a set amount of time: 1 hour; 1 day; 1 week; 2 weeks; 1 month; 3 months; 6 months; or 1 year. 
 
 ### Revision History

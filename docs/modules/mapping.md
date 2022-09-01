@@ -1,6 +1,6 @@
 # Mapping 
 
-The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows you to geolocate Omeka S items and display interactive maps throughout your public sites. Maps can also include timelines that allow you to scroll through items on a map in chronological order.
+The [Mapping module](https://omeka.org/s/modules/Mapping) allows you to geolocate Omeka S items and display interactive maps throughout your public sites. Maps can also include timelines that allow you to scroll through items on a map in chronological order.
 
 ![Map with timeline](../modules/modulesfiles/Mapping_timelinePublic1.png)
 
@@ -254,13 +254,13 @@ You can add supplementary information to your maps using the Overlays options.
 
 Omeka provides three formats for adding custom overlays or non-Omeka data: 
 
-- [Web Map Service (WMS)](https://mapserver.org/ogc/wms_server.html){target=_blank}
-- [International Image Interoperability Framework (IIIF) Georeference Annotation](https://iiif.io/api/extension/georef/){target=_blank}
-- [GeoJSON](https://geojson.org/){target=_blank}.
+- [Web Map Service (WMS)](https://mapserver.org/ogc/wms_server.html)
+- [International Image Interoperability Framework (IIIF) Georeference Annotation](https://iiif.io/api/extension/georef/)
+- [GeoJSON](https://geojson.org/).
 
 WMS and IIIF overlays appear as optional visual layers that site visitors can display or hide. Overlays frequently only cover one part of the world map - for example, a historical map of northern Africa that has been digitized and mapped precisely with coordinates. You can have multiple layers all set to be visible by default, whether they overlap each other or not. 
 
-GeoJSON overlays are datasets for adding map features. Rather than display items from your Omeka collection, this option can display information on a map using markers and shapes generated from [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON){target=_blank}-formatted data. You can provide supplemental clickable pins to your site maps using this tool; pins are not tied to Omeka items, but can be used to add context, such as important buildings. You can manually create GeoJSON for your own use, or copy GeoJSON from other sources. See below for more information about GeoJSON.
+GeoJSON overlays are datasets for adding map features. Rather than display items from your Omeka collection, this option can display information on a map using markers and shapes generated from [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON)-formatted data. You can provide supplemental clickable pins to your site maps using this tool; pins are not tied to Omeka items, but can be used to add context, such as important buildings. You can manually create GeoJSON for your own use, or copy GeoJSON from other sources. See below for more information about GeoJSON.
 
 First, you can set whether you wish the overlays to display exclusively (one at a time) or inclusively (multiple at the same time). Then choose one of the three formats to begin entering information.
 
@@ -295,7 +295,7 @@ GeoJSON provides map features as well as metadata information about each feature
 Five fields are available for GeoJSON overlays:
 
 * **Label**: Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays. (Required.)
-- **GeoJSON**: Enter the GeoJSON data in full. This should look something like [the example data below](https://geojson.org/){target=_blank}:
+- **GeoJSON**: Enter the GeoJSON data in full. This should look something like [the example data below](https://geojson.org/):
 
 ```
 {

@@ -1,6 +1,6 @@
 # Local Contexts
 
-The [Local Contexts module](https://omeka.org/s/modules/LocalContexts){target=_blank} allows users to apply [Local Contexts](https://localcontexts.org/){target=_blank} Notices and Labels to Omeka S sites, pages, and resources. This requires setting up a Local Contexts account and creating Projects in the registry. Then enter the API key into Omeka to import the chosen [Notices](https://localcontexts.org/notices/about-the-notices/){target=_blank} and [Labels](https://localcontexts.org/labels/about-the-labels/){target=_blank} and apply them to items, sites, and pages. 
+The [Local Contexts module](https://omeka.org/s/modules/LocalContexts) allows users to apply [Local Contexts](https://localcontexts.org/) Notices and Labels to Omeka S sites, pages, and resources. This requires setting up a Local Contexts account and creating Projects in the registry. Then enter the API key into Omeka to import the chosen [Notices](https://localcontexts.org/notices/about-the-notices/) and [Labels](https://localcontexts.org/labels/about-the-labels/) and apply them to items, sites, and pages. 
 
 ![](modulesfiles/localcontexts_itemPublic.png)
 
@@ -10,7 +10,7 @@ Local Contexts is a global initiative that supports Indigenous communities with 
 
 ### Notices
 
-This text is from the [Local Contexts website](https://localcontexts.org/notices/about-the-notices/){target=_blank}:
+This text is from the [Local Contexts website](https://localcontexts.org/notices/about-the-notices/):
 
 > *The Notices are tools for institutions and researchers to identify Indigenous collections and data and recognize Indigenous rights and interests. The Notices were developed to create pathways for partnership, collaboration, and support of Indigenous cultural authority.*
 
@@ -22,7 +22,7 @@ This text is from the [Local Contexts website](https://localcontexts.org/notices
 
 ### Labels
 
-This text is from the [Local Contexts website](https://localcontexts.org/labels/about-the-labels/){target=_blank}:
+This text is from the [Local Contexts website](https://localcontexts.org/labels/about-the-labels/):
 
 > *The Traditional Knowledge (TK) and Biocultural (BC) Labels are tools for Indigenous communities and local organizations. Developed through sustained partnership and testing within Indigenous communities across multiple countries, the Labels allow communities to express local and specific conditions for sharing and engaging in future research and relationships in ways that are consistent with already existing community rules, governance, and protocols for using, sharing, and circulating knowledge and data.*
 
@@ -32,7 +32,7 @@ This text is from the [Local Contexts website](https://localcontexts.org/labels/
 
 ### Projects
 
-This text is from the [Local Contexts website](https://localcontexts.org/support/getting-started-on-the-hub/){target=_blank}:
+This text is from the [Local Contexts website](https://localcontexts.org/support/getting-started-on-the-hub/):
 
 > *What is a Local Contexts Project?*
 
@@ -54,7 +54,7 @@ The Local Contexts module is meant to encourage engagement with members of Indig
 
 To use this module, you must have a Local Contexts Hub account. Creating a profile there allows you to have one or more Projects, which can then be connected to your Omeka installation with an API key.
 
-[Go to the Local Contexts website to learn more and set up your Projects](https://localcontexts.org/support/getting-started-on-the-hub/#about-projects){target=_blank}. 
+[Go to the Local Contexts website to learn more and set up your Projects](https://localcontexts.org/support/getting-started-on-the-hub/#about-projects). 
 
 A Project can be designed for one single object, a collection, an exhibit, or for your entire institution. You may have simple needs - adding an "Open to Collaborate" Notice in your Omeka site footer - or complex ones, such as separate and unique sets of Labels for each of hundreds of items. Familiarize yourself with all of the Local Contexts Notice and Label options, and plan which set of Projects you will need to express your organization's situation. 
 

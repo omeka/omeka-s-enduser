@@ -1,6 +1,6 @@
 # Extract Text
 
-The [Extract Text module](https://omeka.org/s/modules/ExtractText){target=_blank} will extract text from files to make them searchable and machine readable.
+The [Extract Text module](https://omeka.org/s/modules/ExtractText) will extract text from files to make them searchable and machine readable.
 
 When enabled, Extract Text adds a new metadata vocabulary with one field, with a textual data type, at both the item level and at the media level, with the name "extracted text" and the slug `extracttext:extracted_text`. It is set to public by default on item view pages.
 
@@ -150,7 +150,7 @@ The following extractors have configuration options:
 - psm: Page segmentation mode (default 3)
 - oem: OCR Engine mode (default 3). 
 
-You can also refer to the [Tesseract manual](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc){target=_blank} for more information.
+You can also refer to the [Tesseract manual](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc) for more information.
 
 ### Extract in the background
 
@@ -170,7 +170,7 @@ Note that extractors set as background only will not automatically extract text 
 
 ### Languages
 
-Extract Text's extractors, particularly Tesseract's optical character recognition, are configured to recognize English text by default. To set other languages for recognition, refer to the [Tesseract manual](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc){target=_blank} for the language codes needed.
+Extract Text's extractors, particularly Tesseract's optical character recognition, are configured to recognize English text by default. To set other languages for recognition, refer to the [Tesseract manual](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc) for the language codes needed.
 
 ### Disable by media type
 

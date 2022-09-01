@@ -8,7 +8,7 @@ The admin side is `youromekaurl.net/admin/scripto` and the public side is `youro
 
 All transcription activity takes place on the **public** side of the Scripto project. You cannot edit a transcription from the admin dashboard.
 
-For an example of how to orient community members to the interface, see the [Guide to transcribing the *Papers of the War Department*](http://wardepartmentpapers.org/s/home/page/transcribing-guide){target=_blank}.
+For an example of how to orient community members to the interface, see the [Guide to transcribing the *Papers of the War Department*](http://wardepartmentpapers.org/s/home/page/transcribing-guide).
 
 ## Linking between Scripto and an Omeka S site
 While the Scripto public interface exists somewhat separately from the sites you build in your Omeka S installation, it is possible to move between them.

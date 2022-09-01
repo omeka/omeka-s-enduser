@@ -1,6 +1,6 @@
 # Hierarchy
 
-The [Hierarchy module](https://omeka.org/s/modules/Hierarchy){target=_blank} adds the ability to organize your Omeka S item sets into trees. This module is similar to [Collection Tree](https://omeka.org/classic/plugins/CollectionTree/){target=_blank} for Omeka Classic - you can create ordered or multi-level organizational systems.
+The [Hierarchy module](https://omeka.org/s/modules/Hierarchy) adds the ability to organize your Omeka S item sets into trees. This module is similar to [Collection Tree](https://omeka.org/classic/plugins/CollectionTree/) for Omeka Classic - you can create ordered or multi-level organizational systems.
 
 ![A hierarchy in action on a public page.](modulesfiles/hierarchy_public.png)
 

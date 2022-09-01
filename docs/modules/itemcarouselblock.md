@@ -1,6 +1,6 @@
 # Item Carousel Block
 
-The [Item Carousel Block module](https://omeka.org/s/modules/ItemCarouselBlock){target=_blank} allows you to add a slideshow block to [Site Pages](../sites/site_pages.md#page-blocks).
+The [Item Carousel Block module](https://omeka.org/s/modules/ItemCarouselBlock) allows you to add a slideshow block to [Site Pages](../sites/site_pages.md#page-blocks).
 
 Once activated, Item Carousel Block adds an "Item Carousel" page block to the list available from the page editing interface.
 

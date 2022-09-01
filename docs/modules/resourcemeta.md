@@ -1,6 +1,6 @@
 # Resource Meta
 
-The [Resource Meta module](https://omeka.org/s/modules/ResourceMeta/){target=_blank} allows installation users to output resource metadata (items, item sets, and media) as [`<meta>` elements in the HTML](https://www.w3schools.com/tags/tag_meta.asp){target=_blank} of their site pages. Meta values are applied via [resource templates](../content/resource-template.md): a metadata property in a template, such as `dcterms:creator`, can be set to output as a meta tag, such as `<meta name="dcterms.creator" content="Shakespeare, William">` inside the `<head>` tag of the public page. 
+The [Resource Meta module](https://omeka.org/s/modules/ResourceMeta/) allows installation users to output resource metadata (items, item sets, and media) as [`<meta>` elements in the HTML](https://www.w3schools.com/tags/tag_meta.asp) of their site pages. Meta values are applied via [resource templates](../content/resource-template.md): a metadata property in a template, such as `dcterms:creator`, can be set to output as a meta tag, such as `<meta name="dcterms.creator" content="Shakespeare, William">` inside the `<head>` tag of the public page. 
 
 Resource Meta settings can be viewed by users at every level, and can be modified by users at the Editor, Supervisor, and Global Admin levels. 
 
@@ -39,8 +39,8 @@ To check that the module is working as intended, go to a public page for an item
 
 ## Uses
 
-If you are using Omeka to make academic resources available, for example with intent to [have items indexed by Google Scholar](https://scholar.google.com/intl/en/scholar/inclusion.html#indexing){target=_blank}, you may wish to select one of the four publishing options, all of which are supported. [More information about these four options and academic resource discoverability can be found here](http://div.div1.com.au/div-thoughts/div-commentaries/66-div-commentary-metadata){target=_blank}.
+If you are using Omeka to make academic resources available, for example with intent to [have items indexed by Google Scholar](https://scholar.google.com/intl/en/scholar/inclusion.html#indexing), you may wish to select one of the four publishing options, all of which are supported. [More information about these four options and academic resource discoverability can be found here](http://div.div1.com.au/div-thoughts/div-commentaries/66-div-commentary-metadata).
 
-For another example, if you wish your Omeka items to be [indexed and imported by Zotero](https://zotero-manual.github.io/adding-items/#generic-translators){target=_blank}, you may wish to use Highwire Press, Dublin Core, and PRISM. 
+For another example, if you wish your Omeka items to be [indexed and imported by Zotero](https://zotero-manual.github.io/adding-items/#generic-translators), you may wish to use Highwire Press, Dublin Core, and PRISM. 
 
 For meta elements that serve up Omeka resources for dynamic display on social media websites, install the [Sharing module](sharing.md).

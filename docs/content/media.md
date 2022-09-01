@@ -52,7 +52,7 @@ Clicking on the title of any media will take you to its metadata page. This page
 
 ## Add media to an item
 
-Media can only be added via an [item](../content/items.md). Options for adding media to your items include uploading a file, or directly attaching content with a URL, [oEmbed](https://oembed.com/){target=_blank}, YouTube URL, an [IIIF image](https://iiif.io/api/image/3.0/){target=_blank} by URL, an [IIIF presentation](https://iiif.io/api/presentation/3.0/){target=_blank} by URL, or by writing HTML using the HTML editor.
+Media can only be added via an [item](../content/items.md). Options for adding media to your items include uploading a file, or directly attaching content with a URL, [oEmbed](https://oembed.com/), YouTube URL, an [IIIF image](https://iiif.io/api/image/3.0/) by URL, an [IIIF presentation](https://iiif.io/api/presentation/3.0/) by URL, or by writing HTML using the HTML editor.
 
 An IIIF image URL example:
 
@@ -148,7 +148,7 @@ In the image below, the first property (Title) is public as indicated by the ope
 #### Text
 Text fields allow for unformatted text entry.
 
-You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe icon to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
+You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe icon to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code for the language in which the text is written.
 
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/items_lang.png)
 
@@ -188,7 +188,7 @@ When you input a value for a property associated for a resource, you are making 
 - Certainty: What is the confidence of this fact?
 - Type: What type of concept/thing is this fact?
 
-In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification){target=_blank}. Each value can have any number of annotations.
+In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification). Each value can have any number of annotations.
 
 To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (the speech bubble).
 
@@ -234,7 +234,7 @@ You can provide alternate text for all media by typing descriptive text into the
 
 #### Language
 
-You can indicate the language of a media file by entering the two-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} language code into this field. This field does not accept multiple values.
+You can indicate the language of a media file by entering the two-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) language code into this field. This field does not accept multiple values.
 
 ## Batch actions
 From the media browse page (`admin/media`), you can batch edit media, using the dropdown menu on the left near the pagination buttons. You can select media manually for batch editing using the checkboxes on the left, or select all of the media on the page, or use the dropdown to edit all media that are currently in the subset.
@@ -269,7 +269,7 @@ The batch edit form gives you the following options:
 - Set class: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected files with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
 - Set owner: a dropdown. Select from users of the installation to choose who should be set as the owner of the selected media. Changing media ownership will not change the associated items' ownership. Ownership determines [who can edit and delete those media](#media-permissions), outside the higher [user permission levels](../admin/users.md#roles-and-permissions).
 - Clear language: a checkbox to remove existing language settings.
-- Set language: a text field. Enter in a two-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} language code. You can only indicate one language here.
+- Set language: a text field. Enter in a two-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) language code. You can only indicate one language here.
 - Clear property values: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected media. You can remove multiple property values at once: click in the text field again to see the remaining options.
 - Set value visibility: a dropdown and text field, with radio buttons. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire media (for example, you may wish to hide the "Creator" value on some public media). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
 

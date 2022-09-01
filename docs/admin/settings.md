@@ -19,13 +19,13 @@ Settings are divided into five sections: **General**, **Display**, **Editing**, 
 
 **Time zone**: Sets the default time zone for the install, which will be used for error logging messages and to determine creation dates for items, item sets, and other materials on the install. This is a dropdown menu. 
 
-**Locale**: A dropdown that lets you select from a dropdown of [available languages](https://www.transifex.com/omeka/omeka-s/){target=_blank} for the Omeka S core to change the language in which your installation's admin side displays.
+**Locale**: A dropdown that lets you select from a dropdown of [available languages](https://www.transifex.com/omeka/omeka-s/) for the Omeka S core to change the language in which your installation's admin side displays.
 
 **Enable version notifications**: Check this box to enable warning banners for new versions of Omeka S, themes, and modules. If it is unchecked, no user (at any role) will see update warnings, not even the Global Administrator. If it is checked, every applicable user can see them (i.e. Supervisor users who can see the Modules page, Site Managers who can see the Themes pages, and every user on the `/admin` homepage).
 
-**Disable JSON-LD @reverse**: Disable [JSON-LD reverse properties](https://www.w3.org/TR/json-ld11/#reverse-properties){target=_blank} in the API output for resources. 
+**Disable JSON-LD @reverse**: Disable [JSON-LD reverse properties](https://www.w3.org/TR/json-ld11/#reverse-properties) in the API output for resources. 
 
-**Favicon**: Choose from your assets, or upload a file, to appear in the small browser window/tab icon space. A [favicon](https://www.w3schools.com/html/html_favicon.asp){target=_blank} should be a small image around 32x32 pixels in size uploaded specifically for this purpose. Favicons can be [set at an installation level](../sites/site_settings.md#general-settings) as well as on each individual site.
+**Favicon**: Choose from your assets, or upload a file, to appear in the small browser window/tab icon space. A [favicon](https://www.w3schools.com/html/html_favicon.asp) should be a small image around 32x32 pixels in size uploaded specifically for this purpose. Favicons can be [set at an installation level](../sites/site_settings.md#general-settings) as well as on each individual site.
 
 ## Display
 
@@ -49,7 +49,7 @@ Settings are divided into five sections: **General**, **Display**, **Editing**, 
 
 **Suggested languages for values**: List of languages to facilitate filling of the values in the resource form.
 
-**Media alt text property**: Select a field (for example, `dc:title` or `dc:description`) from the media description to use as alternative text if no alt text is explicitly set. [Alt text](https://webaim.org/techniques/alttext/){target=_blank} is used in lieu of images (including thumbnails on browsing and search results pages) when a user is employing a screen reader and is an important part of meeting accessibility expectations.
+**Media alt text property**: Select a field (for example, `dc:title` or `dc:description`) from the media description to use as alternative text if no alt text is explicitly set. [Alt text](https://webaim.org/techniques/alttext/) is used in lieu of images (including thumbnails on browsing and search results pages) when a user is employing a screen reader and is an important part of meeting accessibility expectations.
 
 ## Search
 
@@ -59,7 +59,7 @@ Settings are divided into five sections: **General**, **Display**, **Editing**, 
 
 ![Security settings with fields as described below](adminfiles/settings_security.png)
 
-- **Use HTMLPurifier** checkbox. If checked, the service [HTMLPurifier](http://htmlpurifier.org/){target=_blank} will clean up any user-entered HTML. 
+- **Use HTMLPurifier** checkbox. If checked, the service [HTMLPurifier](http://htmlpurifier.org/) will clean up any user-entered HTML. 
 - **Disable file validation**: a checkbox, unchecked by default. When unchecked, file uploads are limited by the following two fields. When this box is checked, any type of media or MIME type can be uploaded.
 - **Allowed media types**: The default list contains the most common media types. Only files with media types included in this list may be uploaded to the installation.
 	- Separate additions to the list with a comma.
@@ -68,7 +68,7 @@ Settings are divided into five sections: **General**, **Display**, **Editing**, 
 	- Separate additions to the list with a comma.
 	- To return to defaults, click the "Restore default extensions" button.
 
-The final two fields relate to setting up [Google reCAPTCHA](https://www.google.com/recaptcha/intro/index.html){target=_blank} for your site. You will need both a site key and a secret key. Enter them in the corresponding fields after signing up with reCAPTCHA:
+The final two fields relate to setting up [Google reCAPTCHA](https://www.google.com/recaptcha/intro/index.html) for your site. You will need both a site key and a secret key. Enter them in the corresponding fields after signing up with reCAPTCHA:
 
 - **reCAPTCHA site key** enables display of the widget on your install's sites.
 - **reCAPTCHA secret key** allows communication between your install and reCAPTCHA's server. 

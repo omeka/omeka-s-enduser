@@ -1,6 +1,6 @@
 # Value Suggest
 
-The [Value Suggest module](https://omeka.org/s/modules/ValueSuggest){target=_blank} adds an auto-complete feature to specific properties in a resource template, and draws on controlled vocabularies (see the end of this page for a complete list) to help users fill them out. 
+The [Value Suggest module](https://omeka.org/s/modules/ValueSuggest) adds an auto-complete feature to specific properties in a resource template, and draws on controlled vocabularies (see the end of this page for a complete list) to help users fill them out. 
 
 Value Suggest appears when a user is editing the metadata of a resource (an item, a piece of media, or an item set) that uses the enabled resource template. It functions as a [data type](../content/resource-template.md#data-types), but works like a modification to a text field: a user can start typing and select a suggestion from the dropdown, or ignore the dropdown and enter in a textual entry manually.
 
@@ -89,23 +89,23 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 
 - Provides a standardized way to grant the public permission to use their creative work under copyright law.
 
-### [Dublin Core (DCMI Metadata Terms)](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/){target=_blank}
+### [Dublin Core (DCMI Metadata Terms)](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)
 
 - Classes
 - Elements
 - Terms
 - Types.
 
-### [Gemeinsame Normdatei (GND)](http://lobid.org/gnd){target=_blank} (`de`)
+### [Gemeinsame Normdatei (GND)](http://lobid.org/gnd) (`de`)
 
 - The GND contains standardized entries for persons, corporations, congresses, geographical areas, keywords and work titles.
 
-### [GeoNames](http://www.geonames.org/){target=_blank}
+### [GeoNames](http://www.geonames.org/)
 
 - The GeoNames geographical database
 - GeoNames features.
 
-### [The Getty Vocabularies](https://www.getty.edu/research/tools/vocabularies/index.html){target=_blank}
+### [The Getty Vocabularies](https://www.getty.edu/research/tools/vocabularies/index.html)
 
 - The Art & Architecture Thesaurus (AAT)
 - The Getty Thesaurus of Geographic Names (TGN)
@@ -113,19 +113,19 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 - Cultural Objects Name Authority (CONA)
 - Getty Iconography Authority (IA).
 
-### [Homosaurus](http://homosaurus.org/){target=_blank}
+### [Homosaurus](http://homosaurus.org/)
 
 - Homosaurus.org linked data vocabulary.
 
-### [IdRef](https://www.idref.fr/){target=_blank} (`fr`)
+### [IdRef](https://www.idref.fr/) (`fr`)
 
 - The French national database of identifiers for research (all repositories)
 - Person names
 - Collectivities (Corporations)
 - Conferences
 - Subject headings (all)
-- Subject headings [RAMEAU](https://rameau.bnf.fr){target=_blank} (Répertoire d’autorité-matière encyclopédique et alphabétique unifié, or Unified encyclopaedic and alphabetical list of subject authorities)
-- Subject headings [F-MeSH](http://mesh.inserm.fr/FrenchMesh){target=_blank} (French version of the medical subject headings)
+- Subject headings [RAMEAU](https://rameau.bnf.fr) (Répertoire d’autorité-matière encyclopédique et alphabétique unifié, or Unified encyclopaedic and alphabetical list of subject authorities)
+- Subject headings [F-MeSH](http://mesh.inserm.fr/FrenchMesh) (French version of the medical subject headings)
 - Geographic names
 - Family names
 - Titles
@@ -134,7 +134,7 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 - PPN (unique identifier used for any item in all the database)
 - Libraries (RCR: Répertoire des centres de ressources).
 
-### [Library of Congress Linked Data Service](http://id.loc.gov/){target=_blank}
+### [Library of Congress Linked Data Service](http://id.loc.gov/)
 
 - All
 - Subject Headings
@@ -156,7 +156,7 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 - MARC Relators
 - LC Rare Materials Cataloging.
 
-### [Nomenclature for Museum Cataloging](https://page.nomenclature.info/apropos-about.app?lang=en){target=_blank}
+### [Nomenclature for Museum Cataloging](https://page.nomenclature.info/apropos-about.app?lang=en)
 
 - All
 - Category 01: Built Environment Objects
@@ -170,7 +170,7 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 - Category 09: Recreational Objects
 - Category 10: Unclassifiable Objects.
 
-### [Nuovo Soggettario](https://thes.bncf.firenze.sbn.it/){target=_blank} (`it`)
+### [Nuovo Soggettario](https://thes.bncf.firenze.sbn.it/) (`it`)
 
 - Agenti: Organismi
 - Agenti: Organizzazioni
@@ -186,12 +186,12 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 - Cose: Strutture
 - Tempo.
 
-### [OCLC Metadata Services](https://www.oclc.org/en/services/a-z.html/:F2664:/){target=_blank}
+### [OCLC Metadata Services](https://www.oclc.org/en/services/a-z.html/:F2664:/)
 
 - The Virtual International Authority File (VIAF)
 - Faceted Application of Subject Terminologies (FAST).
 
-### [ORCID (Open Researcher and Contributor ID)](https://info.orcid.org/){target=_blank}
+### [ORCID (Open Researcher and Contributor ID)](https://info.orcid.org/)
 
 - ORCID. Search by name or by entering in an ORCID number and selecting the name from the dropdown.
 
@@ -211,16 +211,16 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 - instantiationMediaType
 - instantiationGenerations.
 
-### [PACTOLS of Frantiq](https://pactols.frantiq.fr/){target=_blank} (`fr`)
+### [PACTOLS of Frantiq](https://pactols.frantiq.fr/) (`fr`)
  
 - The entire PACTOLS thesaurus
 - The subject group only.
 
-### [PeriodO](http://perio.do/en/){target=_blank}
+### [PeriodO](http://perio.do/en/)
 
 - A gazetteer of period definitions for linking and visualizing data.
 
-### [RDA Value Vocabularies](http://www.rdaregistry.info/termList/){target=_blank}
+### [RDA Value Vocabularies](http://www.rdaregistry.info/termList/)
 
 #### RDA Reference value vocabularies
 
@@ -285,15 +285,15 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 - Sensory Mode
 - Storage Medium Format.
 
-### [RightsStatements.org](https://rightsstatements.org/){target=_blank}
+### [RightsStatements.org](https://rightsstatements.org/)
 
 - Standardized rights statements for cultural heritage institutions that can be used to communicate the copyright and re-use status of digital objects to the public.
 
-### [Research Organization Registry (ROR)](https://ror.org/){target=_blank}
+### [Research Organization Registry (ROR)](https://ror.org/)
 
 - The Research Organization Registry (ROR) is a global, community-led registry of open persistent identifiers for research organizations.
 
-### [Tesauros del patrimonio cultural de España](http://tesauros.mecd.es/tesauros){target=_blank} (`es`)
+### [Tesauros del patrimonio cultural de España](http://tesauros.mecd.es/tesauros) (`es`)
 
 - Diccionario de Bienes Culturales
 - Diccionario de Materias
@@ -305,13 +305,13 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 - Diccionario de Numismática
 - Diccionario de Mobiliario.
 
-### [UNESCO](http://skos.um.es/){target=_blank} (`es`)
+### [UNESCO](http://skos.um.es/) (`es`)
 
 - Tesauro
 - Nomenclatura de Ciencia y Tecnología
 - Biblioteca Digital Floridablanca.
 
-### [Les vocabulaires du Ministère de la Culture](http://data.culture.fr/thesaurus/){target=_blank} (`fr`)
+### [Les vocabulaires du Ministère de la Culture](http://data.culture.fr/thesaurus/) (`fr`)
 
 - Catégories techniques et domaines - Inventaire/MH
 - Domaines archivistiques pour l'indexation des circulaires
@@ -353,6 +353,6 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 - Vocabulaire des domaines d'action ou objets des entités productrices d'archives
 - Vocabulaire pour les techniques photographiques.
 
-### [Thesaurus de la Universitat de Barcelona (THUB)](https://vocabularis.crai.ub.edu/ca/thub){target=_blank} (`es`)
+### [Thesaurus de la Universitat de Barcelona (THUB)](https://vocabularis.crai.ub.edu/ca/thub) (`es`)
  
 - Thesaurus de la Universitat de Barcelona (THUB).

@@ -149,7 +149,7 @@ Text fields allow for unformatted text entry. No markup is allowed in these fiel
 
 ![image of text input field with keyboard icon indicating text input, the globe icon for setting language, and a trashcan delete icon](contentfiles/items_textedit.png)
 
-You can indicate the language for the content of a text input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF two-letter Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} code for the language in which the text is written.
+You can indicate the language for the content of a text input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF two-letter Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) code for the language in which the text is written.
 
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/items_lang.png)
 
@@ -192,7 +192,7 @@ Item set resources also have an option for "Quick add". When this switch is flip
 
 URI fields link to an external website or online resource. You can use this to indicate an authority file from elsewhere on the web, or even indicate resources in other Omeka platforms.
 
-You can optionally provide a label that will obfuscate the URI, which is required. You can also enter in a [IETF two-letter Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} to identify the language of whatever the URI points to.
+You can optionally provide a label that will obfuscate the URI, which is required. You can also enter in a [IETF two-letter Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) to identify the language of whatever the URI points to.
 
 ![Adding a URI as a property value to an item, and adding a value annotation to that property.](contentfiles/items_addURI.png)
 
@@ -208,7 +208,7 @@ When you input a value for a property associated with a resource, you are making
 - Certainty: What is the confidence of this fact?
 - Type: What type of concept/thing is this fact?
 
-In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification){target=_blank}. Each value can have any number of annotations.
+In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification). Each value can have any number of annotations.
 
 To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (the speech bubble).
 
@@ -237,9 +237,9 @@ Using the buttons on the **Add New Media** menu on the right side of the screen,
 - **Upload**: Select one or more files to upload from your computer.
 - **URL**: Import media via a URI.
 - **HTML**: Add HTML content as a media resource for your item.
-- **IIIF image**: Add an [IIIF image](https://iiif.io/api/image/3.0/){target=_blank} via URL.
-- **IIIF presentation**: Add an [IIIF presentation](https://iiif.io/api/presentation/3.0/){target=_blank} via URL.
-- **oEmbed**: Insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7){target=_blank} - use the URL in your browser’s location bar.
+- **IIIF image**: Add an [IIIF image](https://iiif.io/api/image/3.0/) via URL.
+- **IIIF presentation**: Add an [IIIF presentation](https://iiif.io/api/presentation/3.0/) via URL.
+- **oEmbed**: Insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7) - use the URL in your browser’s location bar.
 - **YouTube**: Add a link to embed a YouTube video. Use the URL from your browser’s location bar (with `/watch/` in it) rather than a `youtu.be` link.
 
 You can edit media later by going by editing an item, navigating to the **Media** tab, and clicking the edit button (pencil icon) for a media when editing the item.

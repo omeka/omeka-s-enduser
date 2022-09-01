@@ -29,8 +29,6 @@ If you are cloning the user manuals to your local computer and creating a branch
   
 **Links** should be composed as relative to the current file. They will look something like `../modules/csvimport.md` if you are linking to a page that sits within a folder, or `../admin/users.md#manage-users` if you are linking to a section of a page. Do not forget the `.md` part of the page.
  
-Links to external websites require the full URL as well as the addition of "{target=_blank}" after the link syntax: for example, `[create a new issue](https://github.com/omeka/omeka-s-enduser/issues){target=_blank}`.
-
 **Images** for a page go into the `files` folder of the directory in which the page sits (so, for "Content" pages, images go into the `contentfiles` directory). Name images clearly, starting with an indicator of the relevant page, and use an underscore to separate out the image's purpose (for example, `items_addItem.png`).
 
 Images should never give information that is not provided in the text (or in the image alt text and title). No one with vision problems should be missing out. Think of images as a shortcut, not the only route, to understanding how to do something. 
