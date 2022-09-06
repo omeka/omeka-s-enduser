@@ -94,13 +94,13 @@ If you are using an Item resource for the property, you will have additional opt
 
 This will open a menu below the button with the following options to filter the items in the drawer:
 
-- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation;
-- Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set
-- Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the url of it's edit page; if you are editing the item and the url is `admin/item/11547/edit` then the item's ID is 11547.
+- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation.
+- Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set.
+- Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the url of its edit page; if you are editing the item and the URL is `admin/item/11547/edit` then the item's ID is 11547.
 
 ![options as above described](contentfiles/item_addresItem.png)
 
-Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (ex, Creator, Has Part). 
+Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. "Creator", "Has Part"). 
 
 ![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](contentfiles/items_quickadd.png)
      
@@ -124,9 +124,9 @@ To create an annotation, click on the ellipsis on the right side of the value in
 
 ![a detail of the property with the annotation bubble highlighted](contentfiles/annotation_add.png)
 
-The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property DCterms:Contributor might be annotated with the property Schema:jobTitle. 
+The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property `DCterms:Contributor` might be annotated with the property `Schema:jobTitle`. 
 
-Then select a date type for the annotation: Text, URI, or and Omeka S Resource. Installed modules may make additional data types available. Click the "Add Annotation" button. 
+Then select a date type for the annotation: Text, URI, or an Omeka S Resource. Installed modules may make additional data types available. Click the "Add Annotation" button. 
 
 Input the annotation, and click "Set Annotations" to finalize the process. 
 
@@ -158,7 +158,7 @@ In the image below, the first property (Title) is public as indicated by the ope
 
 ### Advanced
 
-**Thumbnail** 
+#### Thumbnail
 
 Not all media generate elegant thumbnails, for example PDF or text file documents, or some video files. You can use this option to set a representative thumbnail for the media which will be used on browse pages but not on the page for the item or its media.
 
@@ -174,15 +174,19 @@ The drawer offers two options: upload a file using your browser, or select from 
 
 To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click select and either choose or upload a new thumbnail asset.
 
-**Owner** 
+#### Owner
 
 You can assign an owner for the media by selecting from the dropdown menu.
 
-**Alt text** 
+#### Alt text
 
 You can provide alternate text for all media by typing descriptive text into the input area.
 
 ![Edit media open to Advanced tab, showing the Alt Text input box](contentfiles/media_alttext.png)
+
+#### Language
+
+You can indicate the language of a media file by entering the two-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} language code into this field. This field does not accept multiple values. 
 
 ## Batch actions
 From the media browse page (`admin/media`), you can batch edit media, using the dropdown menu on the left near the pagination buttons. You can select media manually for batch editing using the checkboxes on the left, or select all of the media on the page, or use the dropdown to edit all media that are currently in the subset. 
@@ -214,7 +218,7 @@ The batch edit form gives you the following options:
 - Set template: a dropdown. Select from the installation's resource templates. You can remove templates from the selected items with the "[Unset template]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
 - Set class: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected files with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
 - Clear language: a checkbox to remove existing language settings.
-- Set language: a text field. Enter in a two-letter language code. You can only indicate one language here.
+- Set language: a text field. Enter in a two-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} language code. You can only indicate one language here.
 - Clear property values: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected media. You can remove multiple property values at once: click in the text field again to see the remaining options.
 - Set value visibility: a dropdown and text field, with radio buttons. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire media (for example, you may wish to hide the "Creator" value on some public media). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
 
