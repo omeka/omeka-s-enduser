@@ -260,7 +260,7 @@ To use a media resource for a property, select the media option for the element 
 
 ## Batch actions
 
-From the browse page of items (admin/item) you can batch edit items, using the dropdown menu on the left near the pagination buttons. You can select items manually for batch editing using the checkboxes on the left, or select all of the items on the page, or use the dropdown to edit all items that are currently in the subset. 
+From the browse page of items (`admin/item`) you can batch edit items, using the dropdown menu on the left near the pagination buttons. You can select items manually for batch editing using the checkboxes on the left, or select all of the items on the page, or use the dropdown to edit all items that are currently in the subset. 
 
 ![A red arrow points to the dropdown for batch editing and deleting options](contentfiles/items_batch.png)
 

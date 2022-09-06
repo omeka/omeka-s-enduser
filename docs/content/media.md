@@ -185,7 +185,7 @@ You can provide alternate text for all media by typing descriptive text into the
 ![Edit media open to Advanced tab, showing the Alt Text input box](contentfiles/media_alttext.png)
 
 ## Batch actions
-From the media browse page, you can batch edit media, using the dropdown menu on the left near the pagination buttons. You can select media manually for batch editing using the checkboxes on the left, or select all of the media on the page, or use the dropdown to edit all media that are currently in the subset. 
+From the media browse page (`admin/media`), you can batch edit media, using the dropdown menu on the left near the pagination buttons. You can select media manually for batch editing using the checkboxes on the left, or select all of the media on the page, or use the dropdown to edit all media that are currently in the subset. 
 
 ![A red arrow points to the dropdown for batch editing and deleting options](contentfiles/media_batch1.png)
 
