@@ -37,7 +37,7 @@ The advanced search loads on a new page, and has the following options:
 	- Finally, there is a text field for you to enter the value you want the property to have. To find a resource ID, go to the resource and look at the URL in your browser's address bar. The numbers at the end of the URL are the resource ID. 
 - **Search by class**: select a class by which to search from the dropdown menu.
 - **Search by template**: select a resource template from the dropdown. Templates are arranged by owner, then alphabetically. 
-- **Search by item set**: select from a dropdown of item sets.
+- **Search by item set**: Select whether the intended results are included in or excluded from the given item set. Pick an item set from the dropdown, or type to search. You can add multiple parameters; these will narrow the search (i.e., return all items that are not in set X AND also not in set Y; all items that are in set X AND also in set Y; all items that are in set X AND also not in set Y).
 - **Search by site**: select a site from a dropdown of sites in the installation. Note that you can only search for items from one site at a time.
 - **Search by owner**: select a user from a dropdown of users in the installation.
 
