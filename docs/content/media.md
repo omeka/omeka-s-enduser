@@ -204,7 +204,9 @@ If you perform a search, you will once again see the browse page, with your sele
 
 If you complete a batch action from the next screen, you will return back to this same media subset. 
 
-**Batch editing** media takes you to a new page. The media being edited will display on the right side in a drawer. Be sure to confirm the number of media being edited looks correct. 
+### Batch editing
+
+Batch editing media takes you to a new page. The media being edited will display on the right side in a drawer. Be sure to confirm the number of media being edited looks correct. 
 
 The batch edit form gives you the following options:  
 
@@ -226,9 +228,11 @@ In addition, you can use the bottoms at the bottom of the batch edit form to add
 
 Selecting any of these will add a block to the form where you can select a property from the installed vocabularies and enter the value for that property.
 
-For the **delete actions**, a drawer will open on the right side of the screen telling you the number of media which will be deleted. Nothing will be deleted unless you click the red "Confirm Delete" button. This action cannot be undone. To opt out of deleting the media, click the "X" in the upper right corner of the deletion drawer. To confirm delete, check the "Are you sure" checkbox and then click "Confirm Delete".
+### Batch deleting
 
-![Close up of the warning that 2 medias will be deleted.](contentfiles/media_batchdelwarn.png)
+For the **delete actions**, a drawer will open on the right side of the screen telling you the number of media which will be deleted. Nothing will be deleted unless you click the red "Confirm Delete" button. This action cannot be undone. To opt out of deleting the media, click the "X" in the upper right corner of the deletion drawer. To confirm a "delete all" action, check the "Are you sure" checkbox and then click "Confirm Delete".
+
+![Close up of the warning that all media will be deleted.](contentfiles/media_batchdelwarn.png)
 
 ## Media file types
 
