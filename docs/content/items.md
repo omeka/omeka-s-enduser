@@ -271,21 +271,31 @@ Batch actions are as follows:
 - Delete selected: delete only the items that are selected on the page
 - Delete all: delete all the items returned by a search (default is all items).
 
-Choose one of these options and then click "Go".
+The number of results per page is set in the [installation's global settings](../admin/settings.md#general).
+
+You can first use the "🔍 Advanced search" link to narrow down the items to a subset for editing. For example, you can use [Advanced search](../search.md#item-advanced-search) to limit to items that are not in any item sets, or items that are owned by a specific user. In the image below, the search is set to capture any item without a "Date created" value. 
+
+![The Advanced search screen for Items, with one field filled out.](contentfiles/items_advSearch.png)
+
+If you perform a search, or end up on the Items browse page from an Item set or other filter, you will see your selected parameters appear at the top of the screen. From here you can select items manually for batch editing using the checkboxes on the left, or select all of the items on the page, or use the dropdown to edit or select all items that are currently in the subset. 
+
+If you complete a batch action from the next screen, you will return back to this same item subset. 
 
 ### Batch editing
 
-**Batch editing** items takes you to a new page. The items being edited will display on the right side in a drawer, while the batch edit form gives you the following options:  
+**Batch editing** items takes you to a new page. The items being edited will display on the right side in a drawer. Be sure to confirm the number of items being edited looks correct.
 
-- Set visibility: a dropdown, select from public or not public.
-- Set template: a dropdown, select from the installation's resource templates.
-- Set class: a dropdown, select from classes of the installed vocabularies.
-- Add to item set: a dropdown, select from item sets on the installation. Add to an additional item set click in the input box again to see the remaining options.
-- Remove from item set: a dropdown, select from item sets on the installation. Remove from an additional item set click in the input box again to see the remaining options.
-- Add to sites: a dropdown, select from sites on the installation. Add to an additional site click in the input box again to see the remaining options.
-- Remove from sites: a dropdown, select from sites on the installation. Remove from an additional site click in the input box again to see the remaining options.
-- Clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected items. Clear additional properties using the "Clear another property" button.
-- Set value visibility: set the visibility of a specific property to either public or not public. Unlike the radio buttons at the top of the form, this will only affect a single property instead of the entire item. Select a property from the text field (type to begin searching), and the choose either the *public* or *not public* radio button for this option.
+The batch edit form gives you the following options:  
+
+- Set visibility: a radio button. Select from public or not public to make the item visible or not visible to logged-out users.
+- Set template: a dropdown. Select from the installation's resource templates. You can remove templates from the selected items with the "[Unset template]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- Set class: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected items with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- Add to item set: a dropdown and text field. Select from item sets on the installation, organized by owner, or type to search. You can add the selected items to multiple item sets: click in the text field again to see the remaining options.
+- Remove from item set: a dropdown and text field. Select from item sets on the installation, organized by owner, or type to search. You can remove the selected items from multiple item sets: click in the text field again to see the remaining options.
+- Add to sites: a dropdown and text field. Select from sites on the installation, or type to search. You can add the selected items to multiple sites: click in the text field again to see the remaining options.
+- Remove from sites: a dropdown and text field. Select from sites on the installation, or type to search. You can remove the selected items from multiple sites: click in the text field again to see the remaining options.
+- Clear property values: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected items. You can remove multiple property values at once: click in the text field again to see the remaining options. 
+- Set value visibility: a dropdown and text field. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire item (for example, you may wish to hide the "Creator" value on some public items). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
 
 ![Batch edit items form, with options as described above. Everything is grayscale](contentfiles/items_batchedit.png)
 
