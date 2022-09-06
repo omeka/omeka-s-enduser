@@ -83,7 +83,7 @@ To edit a user’s information, change their password, or access their API keys,
 The Edit User page has four tabs: **User information**, **User settings**, **Password**, and **API keys**. After making changes on any of these tabs, be sure to click the save button in the upper right hand corner of the browser window. At any time you may cancel your edits by clicking the cancel button next to the save button.
 
 ### User information
-On this tab, you can edit the display **Name** and **Email** for the user, select or change the user **Role** and click the checkbox to confirm that the user **Is active** (or uncheck the checkbox to render the user inactive). A user who is inactive can keep accessing the admin interface until they log out, then they will not be able to log back in.
+On this tab, you can edit the display **Name** and **Email** for the user, select or change the user **Role** and click the checkbox to confirm that the user **Is active** (or uncheck the checkbox to render the user inactive). A user who is made inactive will be immediately logged out.
 
 ![User information tab for the Omeka Devs user with completed fields for email, display name, role, and an active checkbox for Is Active](adminfiles/users_info.png)
 
