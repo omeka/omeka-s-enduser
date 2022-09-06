@@ -260,7 +260,7 @@ To use a media resource for a property, select the media option for the element 
 
 ## Batch actions
 
-From the browse page of items (admin/item) you can batch edit items, using the dropdown menu on the left near the pagination buttons. You can select multiple items using the checkboxes on the left of each item's row.
+From the browse page of items (admin/item) you can batch edit items, using the dropdown menu on the left near the pagination buttons. You can select items manually for batch editing using the checkboxes on the left, or select all of the items on the page, or use the dropdown to edit all items that are currently in the subset. 
 
 ![A red arrow points to the dropdown for batch editing and deleting options](contentfiles/items_batch.png)
 
@@ -277,7 +277,7 @@ You can first use the "🔍 Advanced search" link to narrow down the items to a 
 
 ![The Advanced search screen for Items, with one field filled out.](contentfiles/items_advSearch.png)
 
-If you perform a search, or end up on the Items browse page from an Item set or other filter, you will see your selected parameters appear at the top of the screen. From here you can select items manually for batch editing using the checkboxes on the left, or select all of the items on the page, or use the dropdown to edit or select all items that are currently in the subset. 
+If you perform a search, or end up on the Items browse page from an Item set or other filter, you will once again see the browse page, with your selected parameters appearing at the top of the screen. From this browse screen you can select items manually for batch editing using the checkboxes on the left, or select all of the items on the page, or use the dropdown to edit all items that are currently in the subset. 
 
 If you complete a batch action from the next screen, you will return back to this same item subset. 
 
@@ -295,7 +295,7 @@ The batch edit form gives you the following options:
 - Add to sites: a dropdown and text field. Select from sites on the installation, or type to search. You can add the selected items to multiple sites: click in the text field again to see the remaining options.
 - Remove from sites: a dropdown and text field. Select from sites on the installation, or type to search. You can remove the selected items from multiple sites: click in the text field again to see the remaining options.
 - Clear property values: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected items. You can remove multiple property values at once: click in the text field again to see the remaining options. 
-- Set value visibility: a dropdown and text field. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire item (for example, you may wish to hide the "Creator" value on some public items). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
+- Set value visibility: a dropdown and text field, with radio buttons. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire item (for example, you may wish to hide the "Creator" value on some public items). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
 
 ![Batch edit items form, with options as described above. Everything is grayscale](contentfiles/items_batchedit.png)
 

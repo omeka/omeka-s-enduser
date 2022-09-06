@@ -73,7 +73,7 @@ The advanced search loads on a new page, and has the following options:
 	- You can remove value searches using the red trash can icon to the right of the value settings.
 - **Search by Class**: select a class by which to search from the dropdown menu.
 - **Search by template**: select a resource template from the dropdown. Templates are arranged by owner, then alphabetically.
-- **Search by MIME type**: you can specify the media type for the search. For example, to find all tiff images, you would enter `image/tiff`. 
+- **Search by MIME type**: you can specify the [media type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types){target=_blank} for the search in the format `type/subtype`. For example, enter `image/tiff`, `text/csv`, `video/mp4`, or `audio/wav`. 
 
 ![Advanced media search options form, with fields as described above.](files/search_mediaadvance2.png)
 

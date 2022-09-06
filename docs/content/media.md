@@ -178,37 +178,45 @@ To remove an asset which you have assigned as a thumbnail, click the "Clear" but
 
 You can assign an owner for the media by selecting from the dropdown menu.
 
-**Alt Text** 
+**Alt text** 
 
 You can provide alternate text for all media by typing descriptive text into the input area.
 
 ![Edit media open to Advanced tab, showing the Alt Text input box](contentfiles/media_alttext.png)
 
-## Batch editing
-
-From the media browse page, you can batch edit media, using the dropdown menu on left just above the table of media. You can select multiple items using the checkboxes on the left of each item's row.
+## Batch actions
+From the media browse page, you can batch edit media, using the dropdown menu on the left near the pagination buttons. You can select media manually for batch editing using the checkboxes on the left, or select all of the media on the page, or use the dropdown to edit all media that are currently in the subset. 
 
 ![A red arrow points to the dropdown for batch editing and deleting options](contentfiles/media_batch1.png)
 
 Batch actions are as follows:  
 
-- Edit selected: edit only the items that are selected on the page
-- Edit all: edit all the items returned by a search (default is all items)
-- Delete selected: delete only the items that are selected on the page
-- Delete all: delete all the items returned by a search (default is all items).
+- Edit selected: edit only the media that are selected on the page
+- Edit all: edit all the media returned by a search (default is all media)
+- Delete selected: delete only the media that are selected on the page
+- Delete all: delete all the media returned by a search (default is all media).
 
-Choose one of these options and then click "Go".
+The number of results per page is set in the [installation's global settings](../admin/settings.md#general).
 
-**Batch editing** media takes you to a new page. The media being edited will display on the right side in a drawer, while the batch edit form gives you the following options:  
+You can first use the "🔍 Advanced search" link to narrow down the media to a subset for editing. For example, you can use [Advanced search](../search.md#media-advanced-search) to limit to media of a specific MIME type, or media owned by a specific user.
 
-- Set visibility: radio buttons, select from Public, Not public, or No change.
-- Set template: a dropdown, select from the installation's resource templates.
-- Set class: a dropdown, select from classes of the installed vocabularies.
-- Clear language: a checkbox.
-- Set language: a text entry box.
-- Clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected items. Clear additional properties using the "Clear another property" button.
+If you perform a search, you will once again see the browse page, with your selected parameters appearing at the top of the screen. From this browse screen you can select media manually for batch editing using the checkboxes on the left, or select all of the media on the page, or use the dropdown to edit all media that are currently in the subset. 
 
-![Batch edit medias form, with options as described above. Everything is grayscale](contentfiles/media_batchedit.png)
+If you complete a batch action from the next screen, you will return back to this same media subset. 
+
+**Batch editing** media takes you to a new page. The media being edited will display on the right side in a drawer. Be sure to confirm the number of media being edited looks correct. 
+
+The batch edit form gives you the following options:  
+
+- Set visibility: a radio button. Select from public or not public to make the file visible or not visible to logged-out users.
+- Set template: a dropdown. Select from the installation's resource templates. You can remove templates from the selected items with the "[Unset template]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- Set class: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected files with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- Clear language: a checkbox to remove existing language settings.
+- Set language: a text field. Enter in a two-letter language code. You can only indicate one language here.
+- Clear property values: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected media. You can remove multiple property values at once: click in the text field again to see the remaining options.
+- Set value visibility: a dropdown and text field, with radio buttons. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire media (for example, you may wish to hide the "Creator" value on some public media). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
+
+![Batch edit media form, with options as described above.](contentfiles/media_batchedit.png)
 
 In addition, you can use the bottoms at the bottom of the batch edit form to add properties to every media:
 
