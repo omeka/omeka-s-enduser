@@ -291,6 +291,36 @@ To add multiple items at once, click the "quick add" slider just above the list 
 
 ![Select item drawer with quick add activated - every item in the view now has a checkbox.](../sites/sitesfiles/sitepg_selectitemQuick.png)
 
+### Page date and time
+
+Displays the first-created date and/or time, and/or last-modified date and/or time, for a given page. 
+
+![Page date and time settings box with radio buttons.](../sites/sitesfiles/sitepg_pageDateTime.png)
+
+You have the option of displaying the created, modified, or both dates, as well as formatting for dates and times. If you choose to display both date and time, it will appear with "at" between the two values:
+
+```
+<p>Page created: September 6, 2022 at 7:17:35 PM GMT</p>
+
+<p>Page modified: September 7, 2022 at 9:38:39 PM GMT</p>
+```
+
+Date format options:
+
+- None
+- Short (`7/6/22`)
+- Medium (`Sep 6, 2022`)
+- Long (`September 6, 2022`)
+- Full (`Tuesday, September 6, 2022`).
+
+Time format options:
+
+- None
+- Short (`7:17 PM`)
+- Medium (`7:17:35 PM`)
+- Long (`7:17:35 PM GMT`)
+- Full (`7:17:35 PM GMT`).
+
 ### Page title
 Displays the title of the current page.
 
