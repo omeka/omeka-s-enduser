@@ -64,3 +64,11 @@ In this image, the Resource Template modified earlier is loaded for a new item. 
 This image shows the dropdown open, displaying the values from the "US states & territories" vocabulary.
 
 ![as described](../modules/modulesfiles/customVocab_item2.png)
+
+## Accessing custom vocab through the API
+
+If you are a developer trying to access the custom vocabulary list through the API, the end points are the following: 
+
+- List of custom vocabularies are at `/api/custom_vocabs`
+- The details of a specific custom vocabulary is at `/api/custom_vocabs/<id>`
+
