@@ -77,7 +77,9 @@ Omeka S by default will try to automatically detect the path to the PHP CLI on t
 
 If you are [using Reclaim Hosting](#one-click-installation), you will have to manually set the PHP path when you install. See [their instructions here](https://support.reclaimhosting.com/hc/en-us/articles/1500005620481#omeka-s){target=_blank}.
 
-If you begin to see errors once you start working with Omeka, particularly errors with something like "PHP-CLI error: invalid PHP path", you will need to manually set the PHP path. See [Configuration Options](configuration.md) to learn about modifying thumbnail generation, setting the PHP path manually, and more. 
+Use the [System Information page](admin-dashboard.md#system-information) to verify that you installation has identified the correct PHP path. If there is an error when you click the button, that can indicate whether you need to set the configuration manually. 
+
+See [Configuration Options](configuration.md) to learn about modifying thumbnail generation, setting the PHP path manually, and more. 
 
 !!! note
 	If you have an existing Omeka Classic or S installation, you may wish to look at modules such as the [Omeka Classic Importer](modules/omekaCimporter.md), the [Omeka S Item Importer](modules/ositemimporter.md), or the [CSV Import module](modules/csvimport.md), which can help you copy other types of data.
