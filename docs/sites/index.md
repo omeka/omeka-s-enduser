@@ -35,7 +35,7 @@ The "New site" page has two tabs: **Info** and **Theme**.
 ![Admin tab for a new site with nothing entered](../sites/sitesfiles/sitesadd_admin.png)
 
 ### Theme tab
-Select from the installed themes. Each theme appears as a tile with a screenshot of the theme, the theme name, and a link to its creator. When a theme is selected, it will highlight in gray and a checkbox will appear in the bottom right corner of the tile.
+Select from the [installed themes](site_theme.md). Each theme appears as a tile with a screenshot of the theme, the theme name, and a link to its creator. When a theme is selected, it will highlight in gray and a checkbox will appear in the bottom right corner of the tile.
 
 ![Theme tab with default theme selected](../sites/sitesfiles/sitesadd_theme.png)
 

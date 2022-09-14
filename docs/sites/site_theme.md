@@ -2,7 +2,7 @@
 
 The Theme section of each Site menu allows you to select the theme for your site, and to set theme-specific settings. Each site on your Omeka S installation can have a separate theme and numerous customizations. A fresh Omeka S install comes with one theme, called Default.
 
-## Installing themes
+## Installing a theme
 In order to appear on the **Themes** page for sites, themes must be manually added to the `/themes` folder of the installation, using an FTP program or an SSH connection.
 
 To add a theme to the site using FTP:
@@ -13,8 +13,6 @@ To add a theme to the site using FTP:
 1. Unzip the theme.
 1. You can delete the zipped file if it remains on your server.
 1. When you navigate to the Themes page of the Sites menu, you should see your newly added theme represented there. 
-
-
 
 !!! note
 	The folder that appears in the `/themes` folder should show the name of the theme, without any version numbers. If you are having issues installing a theme, check that you have unzipped the theme correctly, without creating extra folder levels.
@@ -90,21 +88,21 @@ Top Navigation Depth allows you the limit the depth of the top navigation menu o
 
 The themes Default, Cozy, and The Daily include an option to enter values for the *main accent color*; Cozy also has an option for the *navigation background color*.
 
-![color option fields](../sites/sitesfiles/sitetheme_color.png)
+![Color option fields](../sites/sitesfiles/sitetheme_color.png)
 
 The Main Accent color is used for link text and on-hover colors, as in the image below:
 
-![arrow points to instances of main accent color in use](../sites/sitesfiles/sitetheme_mainaccent.png)
+![Arrow points to instances of main accent color in use](../sites/sitesfiles/sitetheme_mainaccent.png)
 
 The navigation background color sets the color of the navigation sidebar for the theme.
 
-![arrow points to sidebar](../sites/sitesfiles/sitetheme_navcolor.png)
+![Arrow points to sidebar](../sites/sitesfiles/sitetheme_navcolor.png)
 
 Edit either field by typing a color value into the field. Either a triplet or a six-character hexadecimal code will work. Once you have entered a valid value, the color bar on the left will automatically update to show the color entered, even without saving changes.
 
 The default values are stored in the prompt text for the field. For the Cozy theme, the main accent color is `087b94` and the navigation background color is `bfdcdc`.
 
-### Layout for browse pages
+#### Layout for browse pages
 
 (Center Row, Foundation)
 
@@ -136,9 +134,11 @@ Settings not described above:
 
 ## Configure resource pages
 
-Within a site it is possible to configure the blocks of content that appear on the resource pages (the item page, the media page, and the item set page). 
+Within a site it is possible to configure the blocks of content that appear on the resource pages: the item page, the media page, and the item set page. 
 
-Individual themes will define the available regions (for example, Main or Sidebar) where blocks may be placed.
+Individual themes will define the available regions (for example, Main or Sidebar) where blocks may be placed. Some themes may not offer these options.
+
+These settings are available to [site Managers](../sites/site_users.md), as well as [installation Supervisors and Global Administrators](../admin/users.md).
 
 When on the Theme page of a Site, your current theme will appear at the top, with two buttons on the right: "Edit theme settings" and "Configure resource pages." Select the "Configure resource pages" button to modify how these pages will display in this theme.
 
@@ -147,19 +147,28 @@ Note that your settings for a specific theme on a site will be saved if you chan
 ### Selecting regions and blocks
 In the right sidebar, select a region from the dropdown menu, and then add a block to it from the list of available blocks by clicking on the block name. Blocks may be reordered or moved to other regions by dragging and dropping. 
 
-To remove a block, click the delete icon and then save the page. It will appear back in the right sidebar.
+To remove a block, click the delete icon and then save the page. It will once again appear in the right sidebar.
 
 The image below shows the "Configure resource pages" screen with the "Item page" tab selected. The right sidebar includes a dropdown menu to select a region and a list of the remaining possible blocks to be added to the page. The Foundation theme is being used and there are four regions: Full-width main, Main with sidebar, Right sidebar, and Left sidebar.
 
 ![A screenshot of the Foundation theme resource page configuration options.](../sites/sitesfiles/sitetheme_configureResourcePages.png)
 
-A basic Omeka S installation will create the following configurable blocks, but modules may also add their own blocks. For example, the Mapping module will allow you to reposition the map on the item page.
+If you put no content in a specific region, such as a sidebar, it will not appear, and the other regions will expand to occupy the space. 
+
+You can use the [CSS Editor module](../modules/CSS_Editor.md) to modify the relative widths or other display properties of regions you choose to use, such as setting different background colors, adding borders, or configuring separate text styles. Use your browser inspection tool to identify regions to call: for example, in the Foundation theme, the regions are `.full-width-main`, `.left-sidebar`, `.main-with-sidebar`, and `.right-sidebar`. 
+
+### Available blocks
+
+A basic Omeka S installation will create the following configurable blocks, but modules may also add their own blocks. For example, the [Mapping module](../modules/Mapping.md) will allow you to reposition the map on the resource pages.
+
+If a block would be empty of content (for example, if there are no linked resources, no media, nothing set as a resource class, or no site pages), it will not display on that particular item. 
 
 #### Item page
+
 Available blocks:
 
 - Item sets: display the list of item sets that contain the item.
-- Lightbox gallery: show attached media using the lightbox gallery viewer.
+- Lightbox gallery: show attached media using the Lightbox gallery viewer.
 - Linked resources: display a filterable table of resources that are linked to the item.
 - Media embeds: show all of the attached media as embedded files.
 - Media list: show the attached media as a list with thumbnail and title.
@@ -172,16 +181,18 @@ The image below displays the public item page in the Foundation theme, with the 
 ![A screenshot of an item titled "Spigelia marilandica" with the lightbox gallery displaying a book's page scan of a flower, and information in the three regions below.](../sites/sitesfiles/sitetheme_configureResourcePages2.png)
 
 #### Media page
+
 Available blocks:
 
-- Lightbox gallery: show the media using the lightbox gallery viewer.
+- Lightbox gallery: show the media using the Lightbox gallery viewer.
 - Linked resources: display a filterable table of resources that are linked to the media.
 - Media render: show the current media.
-- Resource class: show the resource class of the media, if applicable.
+- Resource class: show the resource class of the media.
 - Values: display all media property values.
 
 #### Item set page
+
 Available blocks:
 
 - Values: display all media property values.
-- Resource class: show the resource class of the item set, if applicable.
+- Resource class: show the resource class of the item set.
