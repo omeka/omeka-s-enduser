@@ -124,9 +124,9 @@ Settings not described above:
 	  * **Revolution** aims to capture the feel of old documents and juxtaposes it with a bright red accent. It includes a textured paper background image.
 	  * **Sea Foam** offers a clean, friendly look with a teal palette.
 	  * **Inkwell** features a high contrast serif family for its typography, as well as sunny yellow accents.
-* **Navigation layouts:** Global navigation can display as a **horizontal top bar with optional dropdown menus** or a **left vertical column**.
+* **Navigation layout:** Global navigation can display as a **horizontal top bar with optional dropdown menus** or a **left vertical column**.
 * **Show Top Navigation Child Pages:** Toggle display of child pages within the main navigation. If unchecked, only the top-level navigation will display.
-* **Layout for Show Pages:** Resource metadata can show display as **stacked** with properties as headings above their values, or **inline** with properties as headings inline with their values.
+* **Metadata Layout for Show Pages:** Resource metadata can show display as **stacked** with properties as headings above their values, or **inline** with properties as headings inline with their values.
 * **Truncate Body Property:** Set how much of the browse body property displays on the browse page. You can:
 	* **Show full value** which displays all of the property text.
 	* **Show 4 lines and fade out** which displays 4 lines of text with a fade at the end of the text block.
@@ -142,7 +142,7 @@ These settings are available to [site Managers](../sites/site_users.md), as well
 
 When on the Theme page of a Site, your current theme will appear at the top, with two buttons on the right: "Edit theme settings" and "Configure resource pages." Select the "Configure resource pages" button to modify how these pages will display in this theme.
 
-Note that your settings for a specific theme on a site will be saved if you change themes. For example, if you customized the item page for the Default theme, then switched to using Foundation for a while, then switched back to the Default theme, your custom resource page would still be there.
+Note that your settings for a specific theme on a site will be saved if you change themes. For example, if you customized the item page for the Default theme, then switched to using Foundation for a while, then switched back to the Default theme, your item page settings would be retained. 
 
 ### Selecting regions and blocks
 In the right sidebar, select a region from the dropdown menu, and then add a block to it from the list of available blocks by clicking on the block name. Blocks may be reordered or moved to other regions by dragging and dropping. 
@@ -156,6 +156,8 @@ The image below shows the "Configure resource pages" screen with the "Item page"
 If you put no content in a specific region, such as a sidebar, it will not appear, and the other regions will expand to occupy the space. 
 
 You can use the [CSS Editor module](../modules/CSS_Editor.md) to modify the relative widths or other display properties of regions you choose to use, such as setting different background colors, adding borders, or configuring separate text styles. Use your browser inspection tool to identify regions to call: for example, in the Foundation theme, the regions are `.full-width-main`, `.left-sidebar`, `.main-with-sidebar`, and `.right-sidebar`. 
+
+Keep in mind that other theme settings and site settings may also combine with how these pages display information. For example, the Foundation theme includes a setting on whether to stack a property and its value (e.g. displaying "Description" on one line and the description content on the next line, or the two on the same line) that may influence your decision of where to place the Values block in the page regions. 
 
 ### Available blocks
 
