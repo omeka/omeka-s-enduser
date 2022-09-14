@@ -95,29 +95,40 @@ Omeka resource fields create an internal link between the resource you are creat
 
 This can be useful, for example, if you are using items as nodes to represent people, places, institutions, or events. One person item can be the Creator of many textual items, and themself be linked to an institution, which is the Publisher of those items. Or you can use item sets to represent these entities: an item set of items published by an institution, and another overlapping item set of items created by a person.
 
-When creating an item, you have the option to use either another item or an item set as a linked resource in a property value. 
+When creating an item, you have the option to use either another item or an item set as a linked resource in a property value. After you have finished creating an item and have added media to that item, you can also use those media files as linked resources in the same way.
 
-Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific item. 
+Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search and filter functions to narrow down the list or quickly find a specific item. 
 
 Once you select an item or item set, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of items or item sets.
 
 ![Select Item menu with list of items to link in edit item view](contentfiles/items_addresource.png)
 
-If you are using an Item resource for the property, you will have additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search".
+If you are using an **Item** resource for the property, you will have three additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search".
 
 ![Select Item drawer top options, with a red arrow around a gray triangle button to the right of the phrase "Filter search"](contentfiles/items_filtersearch.png)
 
-This will open a menu below the button with the following options to filter the items in the drawer:
+This will open a menu with the following options to filter the items in the drawer:
 
 - Filter by class: A dropdown where you can select any class provided by the vocabularies on the installation.
 - Filter by item set: A dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set.
-- Filter by item ID: A search field where you can input the ID of the item you want to use. You can find an item's ID in the URL of its edit page; if you are editing the item and the URL is `admin/item/11547/edit` then the item's ID is 11547. An item ID will also appear in the right-hand drawer on its view page.
+- Filter by item ID: A text field where you can input the ID of the item you want to use. You can find an item's ID in the URL of its edit page; if you are editing the item and the URL is `admin/item/11547/edit` then the item's ID is 11547. An item ID will also appear in the right-hand drawer on its view page. You cannot enter a range or search by a partial number or a wild card - only an exact ID.
+
+Once you enter something into a filter, you need to click on the magnifying glass icon in the search bar to apply your filters. 
 
 ![options as above described](contentfiles/item_addresItem.png)
 
-Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. Creator, Has Part). 
+Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as properties. Note that you can only edit one property at a time, so all of the items will populate the same property (e.g. Creator). 
 
 ![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](contentfiles/items_quickadd.png)
+
+If you are using an **Item set** resource for the property, you will have two options for finding the item set you want in the drawer:
+
+- Filter by class: A dropdown where you can select any class provided by the vocabularies on the installation.
+- Filter by item set ID: A text field where you can input the ID of the item set you want to use. You can find an item set's ID in the URL of its edit page; if you are editing the item and the URL is `admin/item-set/15/edit` then the item set's ID is 15. An item set ID will also appear in the right-hand drawer on its view page. You cannot enter a range or search by a partial number or a wild card - only an exact ID.
+
+Once you enter something into a filter, you need to click on the magnifying glass icon in the search bar to apply your filters. 
+
+Item set resources also have an option for "Quick add". When this switch is flipped, all of the item sets in the drawer have a checkbox. You can use these checkboxes to add multiple item sets as properties. Note that you can only edit one property at a time, so all of the item sets will populate the same property (e.g. Creator). 
 
 #### URI
 
