@@ -90,9 +90,12 @@ You can indicate the language for the content of an input using the globe symbol
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
 
 #### Omeka resource
-Omeka resource fields create an internal link between the resource you are creating and the resource which fills that field. 
 
-When creating an item, you have the option to use either another item or an item set. 
+Omeka resource fields create an internal link between the resource you are creating and the resource that fills that field. 
+
+This can be useful, for example, if you are using items as nodes to represent people, places, institutions, or events. One person item can be the Creator of many textual items, and themself be linked to an institution, which is the Publisher of those items. Or you can use item sets to represent these entities: an item set of items published by an institution, and another overlapping item set of items created by a person.
+
+When creating an item, you have the option to use either another item or an item set as a linked resource in a property value. 
 
 Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific item. 
 
