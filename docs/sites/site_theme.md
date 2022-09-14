@@ -155,13 +155,13 @@ The image below shows the "Configure resource pages" screen with the "Item page"
 
 If you put no content in a specific region, such as a sidebar, it will not appear, and the other regions will expand to occupy the space. 
 
-You can use the [CSS Editor module](../modules/CSS_Editor.md) to modify the relative widths or other display properties of regions you choose to use, such as setting different background colors, adding borders, or configuring separate text styles. Use your browser inspection tool to identify regions to call: for example, in the Foundation theme, the regions are `.full-width-main`, `.left-sidebar`, `.main-with-sidebar`, and `.right-sidebar`. 
+You can use the [CSS Editor module](../modules/csseditor.md) to modify the relative widths or other display properties of regions you choose to use, such as setting different background colors, adding borders, or configuring separate text styles. Use your browser inspection tool to identify regions to call: for example, in the Foundation theme, the regions are `.full-width-main`, `.left-sidebar`, `.main-with-sidebar`, and `.right-sidebar`. 
 
 Keep in mind that other theme settings and site settings may also combine with how these pages display information. For example, the Foundation theme includes a setting on whether to stack a property and its value (e.g. displaying "Description" on one line and the description content on the next line, or the two on the same line) that may influence your decision of where to place the Values block in the page regions. 
 
 ### Available blocks
 
-A basic Omeka S installation will create the following configurable blocks, but modules may also add their own blocks. For example, the [Mapping module](../modules/Mapping.md) will allow you to reposition the map on the resource pages.
+A basic Omeka S installation will create the following configurable blocks, but modules may also add their own blocks. For example, the [Mapping module](../modules/mapping.md) will allow you to reposition the map on the resource pages.
 
 If a block would be empty of content (for example, if there are no linked resources, no media, nothing set as a resource class, or no site pages), it will not display on that particular item. 
 
