@@ -39,13 +39,15 @@ The advanced search loads on a new page, and has the following options:
 - **Search by template**: select a resource template from the dropdown. Templates are arranged by owner, then alphabetically. 
 - **Search by item set**: select from a dropdown of item sets.
 - **Search by site**: select a site from a dropdown of sites in the installation. Note that you can only search for items from one site at a time.
+- **Search by media presence**: select whether the results have media or do not have media.
 - **Search by owner**: select a user from a dropdown of users in the installation.
+- **Search by visibility**: select whether the results are public or private items.
+
+You can also select how to order your search results.
 
 ![Advanced item search options page.](files/advancedsearch3.png)
 
-Searches by value, class, template, and item set allow you to search by more than one input - use the large red plus-sign icons to search with more than one value or item set. These search terms build - searching for two item sets will return all items in either item set, rather than only those items which are in both. 
-
-You can remove value and item set searches using the red trash can icon to the right of those search options.
+Searches by value, class, template, and item set allow you to search by more than one input - use the large red plus-sign icons to add more parameters. These search terms build - searching for two item sets will return all items in either item set, rather than only those items which are in both. You can remove those searches using the red trash can icon to the right of the lines.
 
 You can reset your search terms at any time by using the "Reset" button on the upper right next to the "Search" button.
 
