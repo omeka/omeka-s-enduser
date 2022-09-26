@@ -73,9 +73,13 @@ The advanced search loads on a new page, and has the following options:
 	- Finally, there is a text field for you to enter the value you want the property to have.
 	- To find a resource ID, go to the resource and look at the URL in your browser's address bar. The numbers at the end of the URL are the resource ID. 
 	- You can remove value searches using the red trash can icon to the right of the value settings.
-- **Search by Class**: select a class by which to search from the dropdown menu.
+- **Search by class**: select a class by which to search from the dropdown menu.
 - **Search by template**: select a resource template from the dropdown. Templates are arranged by owner, then alphabetically.
-- **Search by MIME type**: you can specify the media type for the search. For example, to find all tiff images, you would enter `image/tiff`. 
+- **Search by MIME type**: you can specify the media type for the search. For example, to find all tiff images, you would enter `image/tiff`.
+- **Search by owner**: select a user from a dropdown of users in the installation.
+- **Search by visibility**: select whether the results are public or private media.
+
+You can also select how to order your search results.
 
 ![Advanced media search options form, with fields as described above.](files/search_mediaadvance2.png)
 
