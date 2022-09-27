@@ -2,11 +2,11 @@
 
 Omeka S accepts most files and file types, and can be customized to accept or reject file types of your choice. You may wish to format your multimedia files according to what can best be embedded and streamed in modern browsers; see the [Media file types section at the end of this page](#media-file-types). If you are having difficulty or are seeing file-validation errors, you can adjust the accepted file types and extensions in the [Allowed media and files options of the Security Settings](../admin/settings.md#security).
 
-Media are only created by adding them to an item; media cannot exist independently. If you wish to upload files unattached to items, see the [Assets page](../admin/assets.md). 
+Media are only created by adding them to an item; media cannot exist independently. If you wish to upload files unattached to items, such as logos and banners, see the [Assets page](../admin/assets.md). 
 
 To view the media associated with an item, click on the media’s name in the right-hand sidebar on the item view page.
 
-To view all media in the installation, navigate to the **Items** section first. The **Media** subsection will appear below Items in the left-hand navigation.
+To view all media in the installation, navigate to the **Items** section first. Then click on the **Media** subsection that appears below Items in the left-hand navigation.
 
 ## View media
 To browse media, first click on Items in the left-hand navigation. In that sidebar, an option for Media will appear under the Item button (you may have to click on the triangle to expand the menu below Items).
@@ -34,11 +34,30 @@ Clicking on the title of any media will take you to its metadata page. This page
 
 ![Media view page for a mediawiki file. The image is of a grup of people in late 19th century clothing, from left to right a a women standing and facing a standing man holding a small child while reaching out to the woman, with another man standing and smiling behind the man with the child. On the right hand side of the image is the database information for the media](../content/contentfiles/media_view.png)
 
-## Add media
+## Add media to an item
 
 Media can only be added via an [item](../content/items.md). Options for adding media to your items include uploading a file, or directly attaching content with a URL, oEmbed, YouTube URL, IIIF URL, or by writing HTML using the HTML editor.
 
-At the media adding stage, the only metadata that can be entered is a Title. If you wish to further describe each file, you can edit it after it has been uploaded. 
+At the media adding stage, the only metadata that can be entered is a Title. If you wish to further describe each file, you can edit it after it has been uploaded. If you do not supply a title, the original filename will appear as the media title. Note that the media's actual filename will have changed when uploaded into Omeka S; this filename retained as the title is just for your reference, and can be changed at any time. 
+
+You can upload multiple files at once, or by adding more files each time you save. They will appear in the order they were uploaded. 
+
+You can drag and drop media into the order of your choice, while adding or after they have been added. On the item edit screen, click the "Media" tab and use the horizontal bars at the left of each file to move files up and down in the list. 
+
+### Primary media
+
+You can select one file to be the **primary media** of the item. To do so, go to the item edit screen, select the "Media" tab, and use the radio button that appears to the right of each file title to select one file. 
+
+![An item being edited, on the Media tab, with multiple files showing. The first file, a PDF, is shown as being the current primary media.](../content/contentfiles/media_primary.png)
+
+This will cause your chosen primary media to:
+
+- become the item thumbnail (if a thumbnail has not been manually selected on the Advanced tab), and
+- appear as the main media in slideshows, showcases, and other page blocks where the item has been added.
+
+It will not change the order of the files when displayed on admin or public pages. For example, selecting the last file as the primary media will not influence the order of files in the gallery viewer on the item's public page. 
+
+By default, the first media uploaded (at the top of the list) is the primary media. If your chosen primary media is deleted, the item will default back to the file at the top of the list as the primary media.
 
 ### Media thumbnails
 
@@ -46,15 +65,18 @@ Thumbnails are automatically created for many file types. Thumbnail creation rel
 
 If you wish your item to have a generic thumbnail (such as an icon of a book, or a musical note for an audio file), you can upload those default images as assets, then attach them manually to files using the [Advanced tab in the Item editing screen](../content/items.md#advanced).
 
+Thumbnails selected through the Advanced tab of an item edit screen (from an installation's Assets collection) will override any other thumbnails that have been generated for the item from its media. 
+
 ### File size limitations
 
 Omeka S imposes no file size limitations. Your server, however, may have restrictions on file upload sizes or speeds that may be causing problems. These limitations vary from server to server and we cannot change this for you. If you have a problem uploading media, please first check with your hosting service or your local server administrator. 
 
-## Edit media
+## Edit media metadata
+
 To edit existing media, you can:
 
-- Go to the Browse page and click the pencil/edit icon for the media's row
-- Go to the Media browse page, click on the title to view the media's metadata and then click the "Edit media" button in the upper right hand corner
+- Go to the Media browse page and click the pencil/edit icon for the media's row
+- Go to the Media browse page, click on the title to view the media's metadata, then click the "Edit media" button in the upper right hand corner, or
 - Click on the media's name in the right-hand sidebar of an item's page to go to the media's metadata, and then click on "Edit media" from there.
 
 Editing media is very similar to editing [items](../../content/items) or [item sets](../../content/item-sets).
@@ -68,7 +90,7 @@ If desired, you can select a resource template from the drop-down menu. Resource
 - If using a resource template, the class should automatically load.
 - If not using a resource template, you may select a class from the dropdown menu (these are populated from the [Vocabularies](vocabularies.md) in your installation).
 
-Add information to the properties which load. If you do not select a resource template or class, the Dublin Core properties Title and Description will load automatically.
+Add information to the properties that load. If you do not select a resource template or class, the Dublin Core properties Title and Description will load automatically.
 
 You may add text, a resource from the installation, or an external link in each field.  
 
@@ -108,32 +130,6 @@ Item resources also have an option for "Quick add". When this switch is flipped,
 
 You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the **Filter properties** bar above the list of properties and vocabularies.
 
-**Value annotation**
-
-When you input a value for a property associated for a resource, you are making a statement about that resource. If you choose, Omeka allows you to make statements about that statement. We call this value annotation. The advantage of value annotation is that you can choose to make ambiguous facts more concrete by annotating things like:
-
-- Provenance: Where is this fact from?
-- Time: When did this fact occur?
-- Location: What is the location associated with this fact?
-- Certainty: What is the confidence of this fact?
-- Type: What type of concept/thing is this fact?
-
-In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification){target=_blank}. Each value can have any number of annotations.
-
-To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (a dialogue bubble). 
-
-![a detail of the property with the annotation bubble highlighted](contentfiles/annotation_add.png)
-
-The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property DCterms:Contributor might be annotated with the property Schema:jobTitle. 
-
-Then select a date type for the annotation: Text, URI, or and Omeka S Resource. Installed modules may make additional data types available. Click the "Add Annotation" button. 
-
-Input the annotation, and click "Set Annotations" to finalize the process. 
-
-![a picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
-
-Sites include a setting to indicate whether or not value annotations are visible to the public. 
-
 **Language**: You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
 
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
@@ -156,9 +152,35 @@ In the image below, the first property (Title) is public as indicated by the ope
 
 ![Individual properties have a red eye icon to the right to allow you to toggle visibility - a red arrow points to the icon](contentfiles/item_propviz.png)
 
+#### Value annotation
+
+When you input a value for a property associated for a resource, you are making a statement about that resource. If you choose, Omeka allows you to make statements about that statement. We call this value annotation. The advantage of value annotation is that you can choose to make ambiguous facts more concrete by annotating things like:
+
+- Provenance: Where is this fact from?
+- Time: When did this fact occur?
+- Location: What is the location associated with this fact?
+- Certainty: What is the confidence of this fact?
+- Type: What type of concept/thing is this fact?
+
+In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification){target=_blank}. Each value can have any number of annotations.
+
+To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (a dialogue bubble). 
+
+![Detail of the property with the annotation bubble highlighted](contentfiles/annotation_add.png)
+
+The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property DCterms:Contributor might be annotated with the property Schema:jobTitle. 
+
+Then select a date type for the annotation: Text, URI, or an Omeka S Resource. Installed modules may make additional data types available. Click the "Add Annotation" button. 
+
+Input the annotation, and click "Set Annotations" to finalize the process. 
+
+![a picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
+
+Sites include a setting to indicate whether or not value annotations are visible to the public. 
+
 ### Advanced
 
-**Thumbnail** 
+#### Thumbnail
 
 Not all media generate elegant thumbnails, for example PDF or text file documents, or some video files. You can use this option to set a representative thumbnail for the media which will be used on browse pages but not on the page for the item or its media.
 
@@ -174,11 +196,11 @@ The drawer offers two options: upload a file using your browser, or select from 
 
 To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click select and either choose or upload a new thumbnail asset.
 
-**Owner** 
+#### Owner
 
 You can assign an owner for the media by selecting from the dropdown menu.
 
-**Alt Text** 
+#### Alt text
 
 You can provide alternate text for all media by typing descriptive text into the input area.
 
