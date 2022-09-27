@@ -191,6 +191,8 @@ You can indicate the language of a media file by entering the two-letter [ISO 63
 ## Batch actions
 From the media browse page (`admin/media`), you can batch edit media, using the dropdown menu on the left near the pagination buttons. You can select media manually for batch editing using the checkboxes on the left, or select all of the media on the page, or use the dropdown to edit all media that are currently in the subset. 
 
+Editors, Supervisors, and Global Admins can batch-edit and batch-delete all media in the installation. Users that have Author-level permissions can batch-edit or batch-delete their own media, but not media of others. In this case, selecting all of the media on the page, or selecting all media, will only include media they own. Users at the Reviewer level cannot batch-delete all resources, but can batch-delete selected resources.
+
 ![A red arrow points to the dropdown for batch editing and deleting options](contentfiles/media_batch1.png)
 
 Batch actions are as follows:  

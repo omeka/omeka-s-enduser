@@ -261,6 +261,8 @@ To use a media resource for a property, select the media option for the element 
 
 From the browse page of items (`admin/item`) you can batch edit items, using the dropdown menu on the left near the pagination buttons. You can select items manually for batch editing using the checkboxes on the left, or select all of the items on the page, or use the dropdown to edit all items that are currently in the subset. 
 
+Editors, Supervisors, and Global Admins can batch-edit and batch-delete all items in the installation. Users that have Author-level permissions can batch-edit or batch-delete their own items, but not items of others. In this case, selecting all of the items on the page, or selecting all items, will only include items they own. Users at the Reviewer level cannot batch-delete all resources, but can batch-delete selected resources.
+
 ![A red arrow points to the dropdown for batch editing and deleting options](contentfiles/items_batch.png)
 
 Batch actions are as follows:  

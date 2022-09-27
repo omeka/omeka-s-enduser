@@ -165,6 +165,8 @@ To cancel out of editing, click the "Cancel" button in the upper right corner, b
 
 From the browse page of item sets (`admin/item-set`) you can batch edit item sets, using the dropdown menu on the upper left, near the pagination options. You can select item sets manually for batch editing using the checkboxes on the left, or select all of the item sets on the page, or use the dropdown to edit all item sets that are currently in the subset. 
 
+Editors, Supervisors, and Global Admins can batch-edit and batch-delete all item sets in the installation. Users that have Author-level permissions can batch-edit or batch-delete their own item sets, but not item sets of others. In this case, selecting all of the item sets on the page, or selecting all item sets, will only include item sets they own. Users at the Reviewer level cannot batch-delete all resources, but can batch-delete selected resources.
+
 ![A red arrow points to the dropdown for batch editing and deleting options](contentfiles/itemsets_batch.png)
 
 Batch actions are as follows:  
