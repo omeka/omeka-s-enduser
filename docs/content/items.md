@@ -169,7 +169,9 @@ Using the buttons on the **Add New Media** menu on the right side of the screen,
 - **Upload**: select a file to upload from your computer.
 - **URL**: import media via a URI.
 - **HTML**: add html content as a media resource for your item.
-- **IIIF**: Add an IIIF image via URL.
+- **IIIF image**: Add an [IIIF image](https://iiif.io/api/image/3.0/){target=_blank} via URL.
+- **IIIF presentation**: Add an [IIIF presentation](https://iiif.io/api/presentation/3.0/){target=_blank} via URL.
+
 - **oEmbed**: insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7){target=_blank} - use the URL in your browser’s location bar.
 - **YouTube**: add a link to embed a YouTube video. Use the URL from your browser’s location bar (with `/watch/` in it) rather than the `youtu.be` link.
 
