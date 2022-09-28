@@ -1,12 +1,12 @@
 # Set up Scripto
 
-The Scripto module for Omeka S allows you to create projects which allow members of the public to transcribe, translate, or describe media attached to items in your Omeka S installation. 
+The [Scripto module](https://omeka.org/s/modules/Scripto/){target=_blank} allows you to create projects that allow members of the public to transcribe, translate, or describe media attached to items in your Omeka S installation. 
 
 The items and media are organized into an item set and then synced with a project in Scripto. Content made within Scripto can be periodically imported into Omeka S as item and media metadata.
 
-All content creation (transcription, translation, or description) takes place on the [public face](../../modules/scripto/scriptoPublicView/) of your Scripto [project](../../modules/scripto/scriptoproject/)
+All content creation (transcription, translation, or description) takes place on the [public face](scriptoPublicView/) of your Scripto [project](scriptoproject/).
 
-## Concepts and Terminology
+## Concepts and terminology
 
 A Scripto **Project** allows you to organize the materials you want to work with, and set how you intend to work with them. A project can either transcribe, translate, or describe; it cannot do more than one. 
 
@@ -16,10 +16,10 @@ An **Item** in Scripto corresponds to an item in Omeka S. When browsing projects
 
 The **Media** associated with an item are the level at which community members transcribe, translate, or describe. Every piece of media is associated with an item. Media can also be called: entry, folio, image, page, segment, section, or sheet. 
 
-## Installation and Configuration
+## Installation and configuration
 To install Scripto, you must:
 
-- be running Omeka S v2.0.0 or higher;
+- be running Omeka S v2.0.0 or higher
 - have a [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) installation running on the same server as the Omeka S installation. Minimum MediaWiki version is 1.30.0.
 
 Create the MediaWiki installation on your server using [their instructions](https://www.mediawiki.org/wiki/Manual:FAQ#Installation_and_configuration). Install the Scripto module using the [documentation for installing modules](../../modules/#installing-modules). 
@@ -36,7 +36,7 @@ Enter the url for your [MediaWiki API endpoint](https://www.mediawiki.org/wiki/A
 Once Scripto is installed and active, it will add the Scripto [Vocabulary](../../content/vocabularies/) to your Omeka S installation. This vocabulary contains the following properties:
 
 - Content: A plain text representation of the content of a resource.
-- Transcription: A transcription of a resource
+- Transcription: A transcription of a resource.
 - Translation: A translation of a resource.
 
 Do not edit this vocabulary.
@@ -46,7 +46,7 @@ The Scripto module uses [item sets](../../content/item-sets) to manage the conte
 
 Each Scripto project needs its own item set with which it can sync. Create the item set using items from your Omeka S installation which you want to be included in the project. You can add items to this item set later if you need to. 
 
-## Scripto Admin Dashboard
+## Scripto admin dashboard
 The Scripto tab which appears under the Modules section of the left-hand navigation on the Omeka S installation admin side takes you to the Scripto Dashboard. 
 
 From the dashboard, you can log in to Scripto using the bar across the top:
@@ -57,8 +57,8 @@ Once you are logged in, the dashboard will include:
 
 - A bar across the top with your username and links to the dashboard, your contributions, your watchlist, and a button to Log Out of Scripto.
 - A view of all the [Projects](../../modules/scripto/scriptoproject/) you own.
-- A view of all the [Projects](../../modules/scripto/scriptoproject/) you review
-- A view of your recent Contributions
+- A view of all the [Projects](../../modules/scripto/scriptoproject/) you review.
+- A view of your recent Contributions.
 - A view of your watchlist.
 
 ![Scripto dashboard with three projects, two of which the user reviews, and a series of recent contributions.](../../modules/modulesfiles/scripto_dash.png)
@@ -75,7 +75,7 @@ In order to change the status of transcriptions and sync projects to and from Om
 You may find it easiest to have administrators of Scripto projects use the same or similar user names on both installations, in order to keep track of who is doing what. 
 
 ### Browse users
-From the "actions" dropdown in the upper right corner of the Scripto Dashboard, you can select "Browse users"
+From the "actions" dropdown in the upper right corner of the Scripto Dashboard, you can select "Browse users".
 
 This will take you to a user browse page showing all of the Scripto users on this installation (from MediaWiki). 
 
@@ -95,15 +95,15 @@ Clicking on a user's name will take you to a page with a summary of their contri
 
 For each user, there will be a table with a row for every edit they have made to a piece of media. The columns are:
 
-- Revision, with a timestamp which links to that revision;
-- Media #, with a link to the media;
-- Type;
-- Item, which links to the item *in Scripto*;
-- Project with which the item is associated;
-- Size of the edit;
+- Revision, with a timestamp which links to that revision
+- Media #, with a link to the media
+- Type
+- Item, which links to the item in Scripto
+- Project with which the item is associated
+- Size of the edit
 - Comment, if any. 
 
-## Public and Admin views
+## Public and admin views
 To toggle between the public and admin views of a project, delete the `/admin` from the url of any Scripto site, or add it in directly after the name of your Omeka S installation. 
 
 The admin side is `youromekaurl.net/admin/scripto` and the public side is `youromekaurl.net/scripto`.
