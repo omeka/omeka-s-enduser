@@ -93,67 +93,86 @@ This tab allows a user or global admin to set the following:
 - **Locale**: select from a dropdown of available languages. This will change the language of the installation's admin & public interfaces for that user. (This depends on [how many interface strings have been translated](../translateOmekaS.md). Untranslated strings default to English.)
 - **Default resource template**: select from existing templates to have a template auto-load whenever the user creates a new item.
 - **Default sites for items**: select from available sites to automatically attach new items to the sites when created by the user. Setting this will not give the user a site-specific role.
+- **Admin browse columns**: see below.
 
 ![User settings for Omeka Dev with default options selected](../admin/adminfiles/users_settings.png)
 
 #### Admin browse columns
-Users can decide which columns of information form their resource browse views within the administrative interface. The view have the following default columns
+Users can decide which columns of information form their resource browse views within the administrative interface. This can be useful, for example, if a user is auditing & improving a particular field for a large number of items, or comparing information between two or more fields.
 
-- Item browse columns
-  - Resource class
-  - Owner (User)
-  - Created (Date)
-- Item set browse columns
-  - Resource class
-  - Owner
-  - Created
-- Media browse columns
-  - Resource class
-  - Owner
-  - Created
-- Site browse columns
-  - URL slug
-  - Owner
-  - Created
+Columns can be added, deleted, and reordered. To add a column, select it from the available dropdown menu, then press the plus sign button (+) to the right of the dropdown. 
 
-Columns can be added, deleted and reordered. To add a column select it from the available dropdown menu. Columns may be reordered by dragging and dropping, and they may be deleted by clicking the delete icon.
+Most metadata fields can be added by selecting "Value" from the dropdown, and then choosing the precise vocabulary property from the drawer that opens on the right. You can have any number of Value columns. 
+
+Columns may be reordered by dragging and dropping, and they may be deleted by clicking the delete button (trashcan icon). 
+
+The views have the following default columns:
+
+- [Item](../content/items.md) browsing columns:
+	- Title (unchangeable)
+	- Resource class
+	- Owner
+	- Created (item creation date).
+- [Item set](../content/item-sets.md) browsing columns:
+	- Title (unchangeable)
+	- Resource class
+	- Owner
+	- Created (item creation date).
+- [Media](../content/media.md) browsing columns:
+	- Title (unchangeable)
+	- Resource class
+	- Owner
+	- Created (item creation date).
+- [Site](../sites/index.md) browsing columns:
+	- Title (unchangeable)
+	- URL slug
+	- Owner
+	- Created (item creation date).
 
 ![Admin browse column interface in the main interface area with the Add a column dropdown menu for the Item browse column open](../admin/adminfiles/users_settings_browsecolumns.png)
 
-Additional available browse columns include:
+Available browse columns include:
 
-- Item browse columns
-  - ID
-  - Is public
-  - Modified
-  - Resource template
-  - Value
-- Item set browse columns
-  - ID
-  - Is open
-  - Is public
-  - Modified
-  - Resource template
-  - Value
-- Media browse columns
-  - ID
-  - Is public
-  - Media type
-  - Modified
-  - Resource template
-  - Size
-  - Value
-- Site browse columns
-  - Is public
-  - Modified
-  - Theme
+- Item browse columns:
+	- ID
+	- Is public
+	- Modified (item last-modified date)
+	- Resource template
+	- Value.
+- Item set browse columns:
+	- ID
+	- Is open
+	- Is public
+	- Modified (item last-modified date)
+	- Resource template
+	- Value.
+- Media browse columns:
+	- ID
+	- Is public
+	- Media type
+	- Modified (item last-modified date)
+	- Resource template
+	- Size
+	- Value.
+- Site browse columns:
+	- Is public
+	- Modified (item last-modified date)
+	- Theme.
 
-Each column maybe edited by clicking the pencil icon, which will reviewl the right sidebar. There, users may add a Header for the column. The Default input allows a user to decide what information prints in a column cell if there is no data available. When editing the Value column option, users will be able to a property to make visible, and to set the maximum number of values for that property that will be visible in the column.
+Each column is edited by clicking the pencil icon, which will expand a drawer to the right. There, users may fill in the "Header" text field to override the default heading for the column (for example, "Identifier" in place of "ID"). 
+
+The "Default" text field allows a user to decide what information displays in a column cell if there is no data available. Usually these cells are empty, but you could use this to display, for example, "[null]" instead, if you were looking for cells that contain only spaces or other invisible characters. 
+
+When editing the "Value" column option, users will select a property to add as a column (required), and can also set the maximum number of values for that property to display in the column (optional). 
+
+You must click "Set column" before saving the page to ensure your edits are not lost.
 
 ![Right sidebar image with the edit interface for the Values column showing a form to define the Header, the default output, the property selection, and the maximum number of values](../admin/adminfiles/users_settings_edit_browsecolumn.png)
 
 #### Admin browse defaults
-In addition to setting the columns that will be visible in the resource browse interfaces in the admin, a user can set the default sort column and action for each browse. Using may select a column to sort by and choose between an ascending or descending sort order.
+In addition to setting the columns that will be visible in the resource browsing interfaces, a user can set the default sorting column for each browse. Users may select a column to sort the results by, and choose between an ascending or descending sort order.
+
+You will need to save your browsing column changes first, then return to this page to select a default column for sorting from the current choices.
 
 ### Password
 On this tab, create a new password. It must be entered twice, in both the New Password and Confirm New Password fields, to save properly.

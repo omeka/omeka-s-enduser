@@ -187,3 +187,5 @@ Clicking the advanced search link loads a new page with three options for search
 Searches by value and class allow a visitor to search by more than one input; they can use the "Add new" buttons to search with more than one search term. These search terms build - searching for two classes will return all item sets which have either class. 
 
 Site visitors can remove value and item set searches using the red trash can icon to the right of those search options.
+
+You can modify these default sorting orders for the public pages of sites in [Site settings](sites/site_settings.md#settings), and for the administrative pages on a user-by-user basis in [User settings](admin/users.md#admin-browse-defaults).
