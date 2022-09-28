@@ -2,7 +2,11 @@
 
 The Theme section of the Site menu allows you to select the theme for your site, and to set theme-specific settings. 
 
+<<<<<<< Updated upstream
 ## Install a theme
+=======
+## Installing a theme
+>>>>>>> Stashed changes
 In order to appear on the **Themes** page for sites, themes must be manually added to the `/themes` folder of the installation, using an FTP program or an SSH connection.
 
 To add a theme to the site using FTP:
@@ -14,9 +18,24 @@ To add a theme to the site using FTP:
 
 You can also use git to clone a theme directly from the git repository. Do this only if you are comfortable with git.
 
-## Select a theme
+To **uninstall a theme**, simply delete the folder from the `/themes` directory in your Omeka S installation. All settings on that theme, from all sites, are saved elsewhere and will not be deleted. This means you can reinstall the theme again at a later date and recover your settings.
 
-When you navigate to the Theme screen, the currently active theme will appear on the top of the page. If you did not select a theme when adding the site, this will be the Default theme. 
+To **update a theme**:
+
+1. Download the new version of the theme you would like to update.
+1. Open your FTP client and log on to the server that houses the Omeka S install.
+Navigate to the `/themes` folder.
+1. Move the old copy of the theme to your computer.
+1. Upload the zipped folder for the latest version of the theme to the `/themes` folder.
+1. In your FTP client, unzip the new version theme.
+1. On the Omeka S installation dashboard, go to a Site, then to the Themes page, and verify that you are seeing the new version of the theme.
+1. Check to be sure your settings have been preserved and there are no errors. After this, you can safely delete the old theme folder that you saved to your computer.
+
+## Selecting a theme
+
+Currently installed themes will be available for selection in the process of [adding a new site](../sites/index.md). Click to the "Theme" tab before saving to select one, then save your site. If you do not select a theme, your new site will use the Default theme.
+
+When you navigate to the Theme screen of a site, the currently active theme will appear on the top of the page.
 
 A large image of the active theme appears on the left, with the theme title, version, creator, and a button to "Edit theme settings" on the right.
 

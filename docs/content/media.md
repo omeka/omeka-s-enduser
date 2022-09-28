@@ -36,9 +36,9 @@ Clicking on the title of any media will take you to its metadata page. This page
 
 ## Add media
 
-Media can only be added via an [item](../content/items.md). Options for adding media to your items include uploading a file, or directly attaching content with a URL, oEmbed, YouTube URL, IIIF URL, or by writing HTML using the HTML editor.
+Media can only be added via an [item](../content/items.md). Options for adding media to your items include uploading a file, or directly attaching content with a URL, [oEmbed](https://oembed.com/){target=_blank}, YouTube URL, [IIIF URL](https://iiif.io/guides/using_iiif_resources/){target=_blank}, or by writing HTML using the HTML editor.
 
-At the media adding stage, the only metadata that can be entered is a Title. If you wish to further describe each file, you can edit it after it has been uploaded. 
+At the media adding stage, the only metadata that can be entered is a Title. If you wish to further describe each file, you can edit it after it has been uploaded.
 
 ### Media thumbnails
 
