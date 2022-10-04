@@ -4,7 +4,7 @@ User accounts in an Omeka S installation allow your staff and audience to do thi
 
 User roles set at the installation level are separate from [site-specific user roles](../sites/site_users.md). A user must be created for the installation and then given site roles. This allows you to give minimal site-wide permissions to someone who will be drafting and publishing a virtual exhibit on your installation.
 
-Administrators manage and create users from the Users section of the main administrative dashboard (head and shoulders icon). The Users section displays the user’s email followed by full name in parentheses, as well as their role and the date the account was created.
+Administrators manage and create users from the Users section of the main administrative dashboard (with the head and shoulders icon). The Users section displays the user’s email followed by full name in parentheses, as well as their role and the date the account was created.
 
 There are six user roles in Omeka S:
 
@@ -41,7 +41,7 @@ Only Supervisors and Global Administrators can create, edit, and delete users. E
 
 To create a new user, select the "Add new user" button in the upper right hand corner of the Users section in the administrative dashboard.
 
-![Add new user form with fields as described](../admin/adminfiles/users_addnew.png)
+![Add new user form with fields as described](adminfiles/users_addnew.png)
 
 On the Add User page, enter the following:
 
@@ -68,7 +68,7 @@ The user is then sent a notification email to set up their account & password. T
 ## Manage users
 To manage an existing user, go to the Users section.
 
-![Manage users view, top row is the Omeka Devs account. The drawer showing the number of items and item sets created by the Omeka Devs user is opened.](../admin/adminfiles/users_table.png)
+![Manage users view, top row is the Omeka Devs account. The drawer showing the number of items and item sets created by the Omeka Devs user is opened.](adminfiles/users_table.png)
 
 To view the name, email, and role of a user, click on the username.
 
@@ -85,7 +85,7 @@ The Edit User page has four tabs: **User information**, **User settings**, **Pas
 ### User information
 On this tab, you can edit the display **Name** and **Email** for the user, select or change the user **Role** and click the checkbox to confirm that the user **Is active** (or uncheck the checkbox to render the user inactive). A user who is made inactive will be immediately logged out.
 
-![User information tab for the Omeka Devs user with completed fields for email, display name, role, and an active checkbox for Is Active](../admin/adminfiles/users_info.png)
+![User information tab for the Omeka Devs user with completed fields for email, display name, role, and an active checkbox for Is Active](adminfiles/users_info.png)
 
 ### User settings
 This tab allows a user or global admin to set the following:
@@ -95,7 +95,7 @@ This tab allows a user or global admin to set the following:
 - **Default sites for items**: select from available sites to automatically attach new items to the sites when created by the user. Setting this will not give the user a site-specific role.
 - **Admin browse columns**: see below.
 
-![User settings for Omeka Dev with default options selected](../admin/adminfiles/users_settings.png)
+![User settings with default options selected](adminfiles/users_settings.png)
 
 #### Admin browse columns
 Users can decide which columns of information form their resource browse views within the administrative interface. This can be useful, for example, if a user is auditing & improving a particular field for a large number of items, or comparing information between two or more fields.
@@ -129,7 +129,7 @@ The views have the following default columns:
 	- Owner
 	- Created (item creation date).
 
-![Admin browse column interface in the main interface area with the Add a column dropdown menu for the Item browse column open](../admin/adminfiles/users_settings_browsecolumns.png)
+![Admin browse column interface in the main interface area with the Add a column dropdown menu for the Item browse column open](adminfiles/users_settings_browsecolumns.png)
 
 Available browse columns include:
 
@@ -138,14 +138,14 @@ Available browse columns include:
 	- Is public
 	- Modified (item last-modified date)
 	- Resource template
-	- Value.
+	- Value(s).
 - Item set browse columns:
 	- ID
 	- Is open
 	- Is public
 	- Modified (item last-modified date)
 	- Resource template
-	- Value.
+	- Value(s).
 - Media browse columns:
 	- ID
 	- Is public
@@ -153,11 +153,15 @@ Available browse columns include:
 	- Modified (item last-modified date)
 	- Resource template
 	- Size
-	- Value.
+	- Value(s).
 - Site browse columns:
 	- Is public
 	- Modified (item last-modified date)
 	- Theme.
+
+When your column selections are saved, the user will be able to see the custom browsing views when they go to Items, Media, Item sets, or Sites:
+
+![The Items page in the admin side, with the custom columns displayed as per the settings in the image above.](adminfiles/users_settings_browsecolumns-result.png)
 
 Each column is edited by clicking the pencil icon, which will expand a drawer to the right. There, users may fill in the "Header" text field to override the default heading for the column (for example, "Identifier" in place of "ID"). 
 
@@ -167,7 +171,7 @@ When editing the "Value" column option, users will select a property to add as a
 
 You must click "Set column" before saving the page to ensure your edits are not lost.
 
-![Right sidebar image with the edit interface for the Values column showing a form to define the Header, the default output, the property selection, and the maximum number of values](../admin/adminfiles/users_settings_edit_browsecolumn.png)
+![Right sidebar image with the edit interface for the Values column showing a form to define the Header, the default output, the property selection, and the maximum number of values](adminfiles/users_settings_edit_browsecolumn.png)
 
 #### Admin browse defaults
 In addition to setting the columns that will be visible in the resource browsing interfaces, a user can set the default sorting column for each browse. Users may select a column to sort the results by, and choose between an ascending or descending sort order.
@@ -177,7 +181,7 @@ You will need to save your browsing column changes first, then return to this pa
 ### Password
 On this tab, create a new password. It must be entered twice, in both the New Password and Confirm New Password fields, to save properly.
 
-![Empty password reset fields for the user outreach](../admin/adminfiles/users_password.png)
+![Empty password reset fields for the user outreach](adminfiles/users_password.png)
 
 To see the password requirements, click the arrow next to the New Password field. This will display a list of [requirements](../../configuration) if any have been configured.
 
@@ -194,7 +198,7 @@ You can edit multiple users at one time by using the checkboxes to the left of e
 
 Click the checkboxes to select the users you want to edit.
 
-![A close up of the users table showing only the checkboxes and email column, with three users' emails. Two of the user's boxes are checked, and the third is unchecked.](../admin/adminfiles/users_batch1.png)
+![A close up of the users table showing only the checkboxes and email column, with three users' emails. Two of the user's boxes are checked, and the third is unchecked.](adminfiles/users_batch1.png)
 
 Then, using the dropdown just above the table, select from the following options:
 
@@ -205,7 +209,7 @@ Then, using the dropdown just above the table, select from the following options
 
 To edit only the users whose checkboxes you have ticked, choose "Edit selected" from the dropdown and then click "Go". You will be directed to the Batch Edit Users page.
 
-![Batch edit users page](../admin/adminfiles/users_batch2.png)
+![Batch edit users page](adminfiles/users_batch2.png)
 
 On the right hand side of the page are the emails for the users you are editing and to whom any changes you make will be applied.
 
@@ -224,7 +228,7 @@ If you choose "Edit all" rather than "Edit selected" you can apply changes to al
 ## Delete a user
 On the User page of the administrative dashboard, click the trash can icon in the user’s row, to the left of their role information, to delete the user. Confirm the deletion in the dialog box which will appear on the right of the screen.
 
-![Delete confirmation for user Megan2, giving the number of items and item sets that user has created - in this case, zero for both.](../admin/adminfiles/users_delete.png)
+![Delete confirmation for user Megan2, giving the number of items and item sets that user has created - in this case, zero for both.](adminfiles/users_delete.png)
 
 ### Batch delete users
 To delete a number of users at once, click the checkboxes next to their names on the Users table (see Batch edit users, above).
@@ -237,7 +241,7 @@ This will open a drawer on the right side of the screen with a message telling y
 
 To permanently delete these users, click the red "Confirm Delete" button. To cancel, click the "X" in the upper right corner of the drawer.
 
-![Confirm delete message for 5 users](../admin/adminfiles/users_batchdel2.png)
+![Confirm delete message for 5 users](adminfiles/users_batchdel2.png)
 
 The "Delete all" action in the dropdown will delete all users excluding yourself. This action *cannot be undone* and should be used with extreme caution.
 
@@ -294,5 +298,3 @@ The following is a detailed breakdown of permissions for each user role:
 - Can see other users of the installation and their email addresses.
 
 A user at any role can be added to a site at any level (Viewer, Creator, Manager). This will determine whether, say, a Researcher-level user added to a site as Manager can see all the other users added to that site.
-
-<!--- note that a couple of modules display themselves to users who don't have permission. two so far: Item Sets Tree displays its Item Sets Tree page (under Modules at the bottom) to anyone, which is probably fine since it's just a display and not an editing page. Researcher and Reviewer can see the "Import" button for resource templates, but it creates an error page (import works for authors). --->
