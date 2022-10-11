@@ -45,22 +45,27 @@ Remember that these roles are separate from the [user roles assigned at a site-s
 | | Edit | All | All | All | All | Their own | No |
 | | Delete | All | All | All | Their own | Their own | No |
 | Vocabularies | Import | Yes | No | No | No | No | No |
-|  | Edit | Yes | No | No | No | No | No |
-|  | Delete | Yes | No | No | No | No | No |
+|  | Edit/Delete | Yes | No | No | No | No | No |
 | Resource templates | Add | Yes | Yes | Yes | No | Yes | No |
-| | Edit  | Yes | Yes | Yes | No | Their own | No |
-| | Delete | Yes | Yes | Yes | No | Their own | No |
+| | Edit/Delete  | All | All | All | No | Their own | No |
 | Private objects | View | Yes | Yes | Yes | Yes | No | No |
 | Users | Add | Yes | Yes | No | No | No | No |
-|  | Edit | Yes | Yes | Themself | Themself | Themself | Themself |
+|  | Edit | All | All | Themself | Themself | Themself | Themself |
 |  | Delete | Yes | Yes | No | No | No | No |
-| Modules | Install | Yes | No | No | No | No | No |
-|  | Configure | Yes | No | No | No | No | No |
+| Modules | Install/Configure | Yes | No | No | No | No | No |
 |  | Use | Yes | Yes | No | No | No | No |
 | Jobs | View | Yes | Yes | No | No | No | No |
 | Settings | View/Change | Yes | No | No | No | No | No |
-| Assets | View/Change |  |
-| Site users | Modify | All | All |
+| Assets | View | Yes | Yes | Yes | Yes | Yes | Yes | 
+| | Edit | All | All | All | All | Their own | No |
+| | Delete | All | All | All | Their own | Their own | No |
+| Sites¹ | Create | Yes | Yes | Yes | No | No | No |
+| | Edit/Delete | All | All | Their own | | | |
+| Site user roles | Modify | All | All | Their own | | | |
+
+1. In many cases, a Global Admin, Supervisor, or Editor would create sites and then assign managers and creators from among the users (for example, a class assignment, or a series of virtual exhibits by staff members). Site ownership cannot be re-assigned to other users, and a site owner can always edit sites they own, no matter their site-specific user role, or whether their installation-wide role is changed.
+
+
 
 
 
