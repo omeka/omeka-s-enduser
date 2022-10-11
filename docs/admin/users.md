@@ -50,6 +50,8 @@ On the Add User page, enter the following:
 - A **Role** from the dropdown menu (see above for user role privileges)
 - Check the **Is active** box to confirm that the user is active. A user who is inactive cannot log in.
 
+You also have the options to customize a number of other settings; [see below for more details on user settings](#user-settings).
+
 The user is then sent a notification email to set up their account & password. The email will appear to come from what is set as the Administrator email in the [General settings of the installation](settings.md#general). Each email will expire 14 days after being sent. If the email expires, an administrator can manually set up a user's temporary password and email them.
 
 > *Greetings!*
@@ -92,8 +94,9 @@ This tab allows a user or global admin to set the following:
 
 - **Locale**: select from a dropdown of available languages. This will change the language of the installation's admin & public interfaces for that user. (This depends on [how many interface strings have been translated](../translateOmekaS.md). Untranslated strings default to English.)
 - **Default resource template**: select from existing templates to have a template auto-load whenever the user creates a new item.
-- **Default sites for items**: select from available sites to automatically attach new items to the sites when created by the user. Setting this will not give the user a site-specific role.
-- **Admin browse columns**: see below.
+- **Default item sets for items**: select from available item sets to automatically attach new items to the set(s) when created by the user.
+- **Default sites for items**: select from available sites to automatically attach new items to the site(s) when created by the user. Setting this will not give the user a site-specific role.
+- **Admin browse columns**: set custom views for administrative dashboards for this user. See below for more details.
 
 ![User settings with default options selected](adminfiles/users_settings.png)
 
