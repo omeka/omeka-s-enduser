@@ -42,6 +42,7 @@ The advanced search loads on a new page, and has the following options:
 - **Search by media presence**: select whether the results have media or do not have media.
 - **Search by owner**: select a user from a dropdown of users in the installation.
 - **Search by visibility**: select whether the results are public or private items.
+- **Search by ID**: enter a specific item identifier value, or a list of identifiers separated by commas (for example, "1, 5, 9, 12, 43, 44, 45"). Only works for exact matches, not with wildcards or ranges.
 
 You can also select how to order your search results.
 
@@ -78,6 +79,7 @@ The advanced search loads on a new page, and has the following options:
 - **Search by MIME type**: you can specify the media type for the search. For example, to find all tiff images, you would enter `image/tiff`.
 - **Search by owner**: select a user from a dropdown of users in the installation.
 - **Search by visibility**: select whether the results are public or private media.
+- **Search by ID**: enter a specific media identifier value, or a list of identifiers separated by commas (for example, "1, 5, 9, 12, 43, 44, 45"). Only works for exact matches, not with wildcards or ranges.
 
 You can also select how to order your search results.
 
@@ -116,6 +118,7 @@ The advanced search loads on a new page, and has the following options:
 - **Search by template**: select a resource template from the dropdown. Templates are arranged by owner, then alphabetically.
 - **Search by owner**: select a user from a dropdown of users in the installation.
 - **Search by visibility**: select whether the results are public or private item sets.
+- **Search by ID**: enter a specific item set identifier value, or a list of identifiers separated by commas (for example, "1, 2, 5, 9"). Only works for exact matches, not with wildcards or ranges.
 
 You can also select how to order your search results.
 
@@ -126,7 +129,8 @@ Searches by value, class, and template allow you to search by more than one inpu
 You can reset your search terms at any time by using the "Reset" button on the upper right next to the "Search" button.
 
 ## Public views
-The exact appearance of the search interface will vary based on the [theme](sites/site_theme.md) selected. However, the way search works should be consistent regardless of theme. All of the screenshots in this section are from a site using the the Default theme. 
+
+The exact appearance of the search interface will vary based on the [theme](sites/site_theme.md) selected. The way search works is consistent regardless of theme. 
 
 ### Basic search
 There is a search bar near the menu for each site. In the default theme, it is located just beneath the main menu, as shown in the image below.
@@ -160,15 +164,17 @@ Clicking this loads a new page with four options for search:
 	- Finally, there is a text field for you to enter the value you want the property to have.
 	- To find a resource ID, go to the resource and look at the URL in your browser's address bar. The numbers at the end of the URL are the resource ID. 
 - **Search by class**: select one or more classes by which to search from the dropdown menu. 
+- **Search by item set**: select one or more item sets from the dropdown menu. The results will display the items inside one or more of the sets you chose. 
 - **Search by media presence**: select whether the results have media or do not have media.
+- **Search by ID**: enter one or more item identifier values. Users can supply a list of identifiers separated by commas (for example, "1, 5, 9, 12, 43, 44, 45"). Only works for exact matches, not with wildcards or ranges. 
 
-You can also select how to order your search results.
+Users can also select how to order their search results.
 
 ![Advanced item search fields as described](files/search_publicitems2.png)
 
 Searches by value, class, and item set allow a visitor to search by more than one input; they can use the "Add new" buttons (plus sign) to search with more than one search term. These search terms build - searching for two item sets will return all items in either item set, rather than only those items which are in both. 
 
-Site visitors can remove value and item set searches using the red trash can icon to the right of those search options.
+Site visitors can remove value, class, and item set searches using the red trash can icon to the right of those search options.
 
 ### Advanced item set search
 Site visitors can access an advanced item set search from the Browse Items Sets page, if you have that page accessible. There is a link for Advanced search near the top of the Item Sets page. 
@@ -193,11 +199,12 @@ Clicking the advanced search link loads a new page with three options for search
 	- Finally, there is a text field for you to enter the value you want the property to have.
 	- To find a resource ID, go to the resource and look at the URL in your browser's address bar. The numbers at the end of the URL are the resource ID. 
 - **Search by class**: select one or more classes by which to search from the dropdown menu. 
+- **Search by ID**: enter a specific item set identifier value, or a list of identifiers separated by commas (for example, "1, 2, 5, 9"). Only works for exact matches, not with wildcards or ranges.
 
-You can also select how to order your search results.
+Users can also select how to order their search results.
 
 ![Item set advanced search options as described](files/search_publicitemsets2.png)
 
 Searches by value and class allow a visitor to search by more than one input; they can use the "Add new" buttons (plus sign) to search with more than one search term. These search terms build - searching for two classes will return all item sets which have either class. 
 
-Site visitors can remove value and item set searches using the red trash can icon to the right of those search options.
+Site visitors can remove value and class searches using the red trash can icon to the right of those search options.
