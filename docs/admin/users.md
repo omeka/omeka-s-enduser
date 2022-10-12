@@ -63,11 +63,7 @@ Remember that these roles are separate from the [user roles assigned at a site-s
 | | Edit/Delete | All | All | Their own | | | |
 | Site user roles | Modify | All | All | Their own | | | |
 
-1. In many cases, a Global Admin, Supervisor, or Editor would create sites and then assign managers and creators from among the users (for example, a class assignment, or a series of virtual exhibits by staff members). Site ownership cannot be re-assigned to other users, and a site owner can always edit sites they own, no matter their site-specific user role, or whether their installation-wide role is changed.
-
-
-
-
+1. Often, a Global Admin, Supervisor, or Editor would create sites and then assign managers and creators from among the users (for example, a class assignment, or a series of virtual exhibits by staff members). Site ownership cannot be re-assigned to other users, and a site owner always has manager-level access to sites they own, even if their installation-wide role is changed.
 
 ## Create a user
 
