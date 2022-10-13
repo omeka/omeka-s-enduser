@@ -60,10 +60,10 @@ In the image below, the first property (Title) is public as indicated by the ope
 
 ![As described](contentfiles/item_propviz.png)
  
-### Text
+#### Text
 Text fields are entered with text. The keyboard at the top of the field input indicates text. You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
 
-### Omeka Resource
+#### Omeka Resource
 These fields create an internal link between the resource you are creating and the resource which fills that field. You have the option to use either another item or an item set. Once you select an item or item set, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of items or item sets.
 
 When creating an item set, you have the option to use either another item or an item set. 
@@ -95,7 +95,7 @@ URI fields link to an external website or online resource.
 
 You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc.), or search in the **Filter properties** bar above the list of properties and vocabularies.
 
-#### Value annotation
+### Value annotation
 When you input a value for a property associated for a resource, you are making a statement about that resource. If you choose, Omeka allows you to make statements about that statement. We call this value annotation. The advantage of value annotation is that you can choose to make ambiguous facts more concrete by annotating things like:
 
 - Provenance: Where is this fact from?
@@ -137,7 +137,7 @@ The drawer offers two options: upload a file using your browser, or select from 
 
 To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click select and either choose or upload a new thumbnail asset.
 
-### Access Settings
+### Access settings
 Item sets have two settings which control their access. They can be **public** or **not public** and they can be **open** or **closed**.
 
 Use the **make public/private** button (eye icon) to make the item set visible to the public or only to all users of the Omeka S installation (not public). 

@@ -2,7 +2,7 @@
 
 Items are the building blocks of the Omeka system. 
 
-Items don't have to represent physical objects (photographs, maps, books), nor do they have to have attached media (a scan of a photo, or multiple page images, or a PDF). An item can be used as a node - a way to represent a person, place, or thing. You can use items and their classes to create separate types of nodes that serve the purposes of your sites. 
+Items don't have to represent physical objects (photographs, maps, books), nor do they have to have [attached media](media.md) (a scan of a photo, or multiple page images, or a PDF). An item can be used as a node - a way to represent a person, place, or thing. You can use items and their classes to create separate types of nodes that serve the purposes of your sites. 
 
 Items can be linked to other items, or contained within item sets, to represent complex relationships. For example, an item used as a location can be linked to items representing events that happened at that location, and the event items can be linked to people items who were at that event, who themselves are linked to textual items that they created, or photographic items that they appear in. All of these items can be grouped in overlapping item sets that represent jurisdictions that contain locations, events, and people during a particular duration of time. Or you can use item sets to represent people, that contain their created works as items, and link those people item sets to events and photographs.
 
@@ -156,7 +156,18 @@ URI fields link to an external website or online resource.
 
 You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc.), or search in the **filter properties** bar above the list of properties and vocabularies.
 
-#### Value annotation
+#### Language 
+You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written.
+
+![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
+
+#### Value order
+
+If you have multiple values for a property, you can reorder them by dragging and dropping. Click on the bar on the left of the value to grab that value, and drag it into the order that you want it. 
+
+![Close up of the Subject property with two values. A red circle shows the location of the grab bar for the value.](contentfiles/item_valuereorder.png)
+
+### Value annotation
 
 When you input a value for a property associated for a resource, you are making a statement about that resource. If you choose, Omeka allows you to make statements about that statement. We call this value annotation. The advantage of value annotation is that you can choose to make ambiguous facts more concrete by annotating things like:
 
@@ -172,33 +183,25 @@ To create an annotation, click on the ellipsis on the right side of the value in
 
 ![a detail of the property with the annotation bubble highlighted](contentfiles/annotation_add.png)
 
-The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property DCterms:Contributor might be annotated with the property Schema:jobTitle. 
+The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property `dcterms:Contributor` might be annotated with more detail about the nature of the contribution. Or you may wish to simply include a note using the `dcterms:Description` field.
 
-Then select a date type for the annotation: Text, URI, or an Omeka S Resource. Installed modules may make additional data types available. Click the Add Annotation button. 
+Select a data type for the annotation: a text field, a URI, or resource in your Omeka S installation. Modules may make additional data types available. Click the "Add annotation" button and a new field will appear below. Input your annotation. You can do this multiple times for the chosen value if desired. Then click "Set annotations" to finalize the process. 
 
-Input the annotation, and click Set Annotations to finalize the process. 
+![A picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
 
-![a picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
+[Each site has a setting](../sites/site_settings.md#show) to indicate whether or not value annotations are visible to the public. 
 
-Sites include a setting to indicate whether or not value annotations are visible to the public. 
+You can set controlled vocabularies for annotations using the [Custom Vocab module](../modules/customvocab.md). In this case, you do not need to apply a custom vocabulary to a property using a resource template; you can select any installed vocabulary from the value-type dropdown in the drawer. This will load your vocabulary's choices into a dropdown of terms.
 
-#### Language 
-You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written.
-
-![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
-
-#### Value order
-
-If you have multiple values for a property, you can reorder them by dragging and dropping. Click on the bar on the left of the value to grab that value, and drag it into the order that you want it. 
-
-![Close up of the Subject property with two values. A red circle shows the location of the grab bar for the value.](contentfiles/item_valuereorder.png)
+![A screenshot of an item entry with an annotation on DC:Contributor, loading a custom vocabulary named "Contributor Annotation Type", and the terms displayed including "Editor," "Translator," "Publishing Organization," and more.](contentfiles/annotation_customvocab.png) 
 
 ### Media
 
-Use the **Media** tab to add images, video, or other files.
-Using the buttons on the **Add New Media** menu on the right side of the screen, select a media type (Upload, URL, oEmbed, YouTube, or HTML)
+Use the **Media** tab to add [images, video, or other files](media.md).
 
-![“Add new media” drawer showing the options](contentfiles/items_mediaadd2.png)
+Using the buttons on the **Add New Media** menu on the right side of the screen, select a media type (Upload, URL, oEmbed, YouTube, or HTML).
+
+!["Add new media" drawer showing the options](contentfiles/items_mediaadd2.png)
 
 - **Upload**: select a file to upload from your computer.
 - **URL**: import media via a URI.
