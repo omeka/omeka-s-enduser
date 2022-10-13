@@ -96,20 +96,20 @@ The Values tab is where you enter metadata, such as title, description, etc.
 
 You can select a resource template from the drop-down menu. Resource templates are defined by the supervisors and editors.
 
-- If using a resource template, the class should automatically load.
+- If using a resource template, the item class should automatically load.
 - If not using a resource template, you may select a class from the dropdown menu (these are populated from the [Vocabularies](vocabularies.md) in your installation).
 
-Add information to the properties that load. If you do not select a resource template or class, the Dublin Core properties Title and Description will load automatically.
-
-You may add text, a resource from the installation, or an external link in each field.  
+Add information to the properties that load. If you do not select a resource template or class, the Dublin Core properties Title and Description will load automatically.  
 
 Whether or not you use a resource template, you can add more properties to the item using the drawer on the right side of the screen. You can simply open one of the vocabularies (Dublin Core, Bibliographic Ontology, etc.) and click on the property you want to add, or you can use the "Filter properties" box to search for a specific property (this is helpful when you have multiple large vocabularies). 
 
 ![Close up of the right hand drawer with the text "date" entered into the filter properties box and a series of properties containing the word "date" loaded from Dublin Core and Bibliographic Ontology](contentfiles/items_filterprop.png)
 
-Clicking on the property label in the drawer will automatically add it to the Item. If you add a property by accident, leave it blank and it will be removed from the item when you save changes. 
+Clicking on the property label in the drawer will automatically add it to the item. If you add a property by accident, leave it blank and it will be removed from the item when you save your changes. 
 
-You can set individual properties as **private or public** using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Supervisors, and Editors will be able to see properties even when set to private. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
+You may add text, a resource from the installation, or an external link in each field.
+
+You can set individual properties as **private or public** using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Supervisors, and Editors. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
 
 In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
 
@@ -120,7 +120,7 @@ If you have multiple values for a property, you can **reorder** them by dragging
 ![Close up of the Subject property with two values. A red circle shows the location of the grab bar for the value.](contentfiles/item_valuereorder.png)
 
 #### Text
-Text fields allow for unformatted text entry.
+Text fields allow for unformatted text entry. No markup is allowed in these fields (e.g. Markdown, HTML).
 
 ![image of text input field with keyboard icon indicating text input, the globe icon for setting language, and a trashcan delete icon](contentfiles/items_textedit.png)
 
@@ -141,8 +141,6 @@ Once you select an item or item set, detailed information will load, and you mus
 
 If you are using an Item resource for the property, you will have additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search".
 
-![Select Item drawer top options, with a red arrow around a gray triangle button to the right of the phrase "Filter search"](contentfiles/items_filtersearch.png)
-
 This will open a menu below the button with the following options to filter the items in the drawer:
 
 - Filter by class: A dropdown where you can select any class provided by the vocabularies on the installation.
@@ -159,9 +157,9 @@ Item resources also have an option for "Quick add". When this switch is flipped,
 
 URI fields link to an external website or online resource. Every URI value has the link itself, and an optional textual Label to replace the URI with something human-readable. For example, you may wish to enter in a Creator as a URI to a controlled vocabulary of artists or authors, and then include the creator's name in plain text as the Label. Omeka will not automatically pull information from the URI.
 
-### Value annotation
+#### Value annotation
 
-When you input a value for a property associated for a resource, you are making a statement about that resource. If you choose, Omeka allows you to make statements about that statement. We call this value annotation. The advantage of value annotation is that you can choose to make ambiguous facts more concrete by annotating things like:
+When you input a value for a property associated with a resource, you are making a statement about that resource. If you choose, Omeka allows you to make statements about that statement. We call this value annotation. The advantage of value annotation is that you can choose to make ambiguous facts more concrete by annotating things like:
 
 - Provenance: Where is this fact from?
 - Time: When did this fact occur?
@@ -171,7 +169,7 @@ When you input a value for a property associated for a resource, you are making 
 
 In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification){target=_blank}. Each value can have any number of annotations.
 
-To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (a dialogue bubble). 
+To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (the speech bubble). 
 
 ![A detail of a value with the annotation bubble highlighted](contentfiles/annotation_add.png)
 
@@ -200,13 +198,11 @@ Using the buttons on the **Add New Media** menu on the right side of the screen,
 - **HTML**: add html content as a media resource for your item.
 - **IIIF**: Add a IIIF image via URL.
 - **oEmbed**: insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7){target=_blank} - use the URL in your browser’s location bar.
-- **YouTube**: add a link to embed a YouTube video. Use the URL from your browser’s location bar (with `/watch/` in it) rather than the `youtu.be` link.
+- **YouTube**: add a link to embed a YouTube video. Use the URL from your browser’s location bar (with `/watch/` in it) rather than a `youtu.be` link.
 
 You can edit media later by going by editing an item, navigating to the **Media** tab, and clicking the edit button (pencil) for a media when editing the item. 
 
 You can delete any media instance from the item's edit page using the delete button (trashcan) on the upper right corner of the media block.
-
-![Image shows a close up of a media item being removed - it is red and has an undo curling arrow at the right end of the block](contentfiles/item_mediablockdelete.JPG)
 
 If you have more than one media instance for an item, you can reorder them by dragging and drop each media instance block, using the icon of three lines in the upper left corner of the block as the anchor when dragging.
 
@@ -221,7 +217,7 @@ You can also filter item sets using the text entry bar above the list of users.
 
 To remove a connection between an item and item set, click the delete (trash can) button to the right of the item set title.
 
-![item set tab with no item sets assigned](contentfiles/items_itemset.JPG)
+![item set tab with 1 item set assigned](contentfiles/items_itemset.png)
 
 ### Sites
 Select sites to which to add your items. 
@@ -269,7 +265,7 @@ Note that if an item is private, all the media attached is private, but an item 
 ## Edit an item
 Once you have created an item, you can edit it at any time, either by clicking the edit icon (pencil button) or clicking on the item's title and then clicking the "Edit" button in the upper right-hand corner of the screen.
 
-To cancel out of editing, click the "Cancel" button in the upper right corner, between the "Delete" and "Save" buttons. 
+To cancel out of editing, click the "Cancel" button at the top right of the screen. 
 
 Editing options are the same as when creating a new item, with the addition of the ability to add any media which has been saved to an item as a property:
 
@@ -283,6 +279,14 @@ To use a media resource for a property, select the media option for the element 
 ![Focus on the editing portion of a window for the item "Sense and Sensibility", with the elements Title and Description visible. On the right side of the window, a vertical rectangle (the drawer) is open on the right displaying five media which are attached to the item, including video, images, and text. This image contains steps 1 and 2.](contentfiles/items_mediaresource1.png)
 
 ![The same window as before, but now the drawer on the right displays a thumbnail of the media "Sense and Sensibility DVD Trailer" with a dark gray button labeled "select resource" at the bottom of the drawer area. This image contains step 3](contentfiles/items_mediaresource2.png)
+
+### Delete an item
+
+To delete an item, you can:
+
+- Click the trash can icon in the Items browse page. This will open a right-hand drawer to confirm the deletion.
+- Click the title of the item in the table on the Items browse page, then click the "Delete" button at the top right of the screen.
+- Use the batch-deletion methods described below to delete many items at once.
 
 ## Batch editing 
 

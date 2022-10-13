@@ -2,6 +2,8 @@
 
 Item sets are aggregations of items, similar to collections in Omeka Classic. In Omeka S, items may belong to any number of sets, and an item set can have any number of items.
 
+## The Item Sets tab
+
 Item sets are managed via the **Item Sets** tab (the icon of three stacked boxes) located in the left navigation of the admin dashboard. 
 
 ![Browse item sets view with four item sets.](contentfiles/itemsets_browse.png)
@@ -9,14 +11,14 @@ Item sets are managed via the **Item Sets** tab (the icon of three stacked boxes
 After clicking on the tab, a table appears listing all item sets with: 
 
 - the **Title**
-- icons to **edit** (pencil), **delete** (trash can), or **details** (ellipsis)
+- icons to **edit** (pencil), **delete** (trash can), or see **details** (ellipsis)
 - the item set’s **Class**
 - the **Owner** of the set
 - the date the set was **Created**.
 
-In the top right corner of the Item Sets screen is the button to **Add new item set**. 
+In the top right corner of the Item Sets screen is the button to "Add new item set". 
 
-Options for navigating and creating items sit in the header of the table of items. 
+Options for navigating your item sets sit in the header of the table: 
 
 - On the left side are controls for the pages of items sets, with forward and back arrows, and a field to go a specific page of item sets. 
 - In the center is the button for **Advanced search**. 
@@ -24,7 +26,7 @@ Options for navigating and creating items sit in the header of the table of item
 
 ## View item sets
 
-To quickly see information about an item set, click on the **Details** button (the ellipsis icon) for the item set on the item sets browse page. This will open a column on the right hand side of the page with the item set’s title, visibility, and number of items.
+To quickly see information about an item set, click on the **Details** button (the ellipsis icon) for the item set on the item sets browse page. This will open a column on the right hand side of the page with the item set's title, visibility, and number of items.
 
 ![Drawer view of an item, with description and title](contentfiles/itemsets_drawer.png)
 
@@ -32,12 +34,9 @@ To view all the information for an item set, click on its name. On the item sets
 
 ![Reading view of a single item set](contentfiles/itemsets_view.png)
 
-The item set’s **metadata** is entered by users. 
+Linked resources are items which have used the item set to populate specific metadata properties. When viewing linked resources, the table includes the predicate (property or description) and the object (linked item resource). Note that incoming resources (those used as properties for the item set being viewed) will *not* display here, as they already display in the item set's metadata.
 
-**Linked resources** are items which have used the item set to populate specific metadata properties. When viewing linked resources, the table includes the predicate (property or description) and the object (linked item resource). Note that incoming resources (those used as properties for the item set being viewed) will *not* display here, as they already display in the item set's metadata.
-
-To view the items in a set, either click on the number of items in the set on the item set browse page, or click the "View items" button in the upper right corner of the individual item set page.
-
+To view the items in an item set, either click on the number of items in the set on the item set browse page, or click the "View items" button in the upper right corner of the individual item set page.
 
 ## Add an item set
 
@@ -59,11 +58,14 @@ You can set individual property values as Private or Publicly visible using the 
 In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
 
 ![As described](contentfiles/item_propviz.png)
-
-You can also set a language for any value entered, by clicking on the globe icon within the entry field. Click on the globe to activate a text field, then enter the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written. 
  
 #### Text
-Text fields are entered with text. The keyboard at the top of the field input indicates text. You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
+
+Text fields allow for unformatted text entry. No markup is allowed in these fields (e.g. bold, italic, Markdown, HTML).
+
+You can indicate the language for the content of an input using the globe symbol above the input. Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
+
+![The description field with two entries, one in English and one in French, with the two-letter language codes and textual entries in each.](contentfiles/item_lang.png)
 
 #### Omeka Resource
 These fields create an internal link between the resource you are creating and the resource which fills that field. You have the option to use either another item or an item set. Once you select an item or item set, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of items or item sets.
@@ -84,21 +86,19 @@ This will open a menu below the button with the following options to filter the 
 
 - Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation;
 - Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set
-- Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the url of it's edit page; if you are editing the item and the url is `admin/item/11547/edit` then the item's ID is 11547.
+- Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the URL of its edit page; if you are editing the item and the URL is `admin/item/11547/edit` then the item's ID is 11547.
 
 ![options as above described](contentfiles/item_addresItem.png)
 
 Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. Creator, or Has Part). 
 
-![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](contentfiles/items_quickadd.png)
+![A red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](contentfiles/items_quickadd.png)
 
 #### URI
-URI fields link to an external website or online resource.
-
-You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc.), or search in the **Filter properties** bar above the list of properties and vocabularies.
+URI fields link to an external website or online resource. Every URI value has the link itself, and an optional textual Label to replace the URI with something human-readable. For example, you may wish to enter in a Creator as a URI to a controlled vocabulary of artists or authors, and then include the creator's name in plain text as the Label. Omeka will not automatically pull information from the URI.
 
 ### Value annotation
-When you input a value for a property associated for a resource, you are making a statement about that resource. If you choose, Omeka allows you to make statements about that statement. We call this value annotation. The advantage of value annotation is that you can choose to make ambiguous facts more concrete by annotating things like:
+When you input a value for a property associated with a resource, you are making a statement about that resource. If you choose, Omeka allows you to make statements about that statement. We call this value annotation. The advantage of value annotation is that you can choose to make ambiguous facts more concrete by annotating things like:
 
 - Provenance: Where is this fact from?
 - Time: When did this fact occur?
@@ -108,19 +108,21 @@ When you input a value for a property associated for a resource, you are making 
 
 In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification){target=_blank}. Each value can have any number of annotations.
 
-To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (a dialogue bubble). 
+To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (the speech bubble). 
 
 ![a detail of the property with the annotation bubble highlighted](contentfiles/annotation_add.png)
 
-The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property `dcterms:contributor` might be annotated with the property `schema:jobTitle`. 
+The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property `dcterms:Contributor` might be annotated with more detail about the nature of the contribution. Or you may wish to simply include a note using the `dcterms:Description` field.
 
-Then select a date type for the annotation: Text, URI, or an Omeka S Resource. Installed modules may make additional data types available. Click the "Add Annotation" button. 
+Select a data type for the annotation: a text field, a URI, or resource in your Omeka S installation. Modules may make additional data types available. Click the "Add annotation" button and a new field will appear below. Input your annotation. You can do this multiple times for the chosen value if desired. Then click "Set annotations" to finalize the process. 
 
-Input the annotation, and click "Set Annotations" to finalize the process. 
+![A picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
 
-![a picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
+[Each site has a setting](../sites/site_settings.md#show) to indicate whether or not value annotations are visible to the public. This will include value annotations on items and media.
 
-Sites include a setting to indicate whether or not value annotations are visible to the public.
+You can set controlled vocabularies for annotations using the [Custom Vocab module](../modules/customvocab.md). In this case, you do not need to apply a custom vocabulary to a property using a resource template; you can select any installed vocabulary from the value-type dropdown in the drawer. This will load your vocabulary's choices into a dropdown of terms.
+
+![A screenshot of an item entry with an annotation on DC:Contributor, loading a custom vocabulary named "Contributor Annotation Type", and the terms displayed including "Editor," "Translator," "Publishing Organization," and more.](contentfiles/annotation_customvocab.png)
 
 ### Advanced
 By default, Omeka S will use the media from the first item added to an item set to generate a thumbnail for the set. If you want to use a non-media image for the thumbnail for an item set you can set it here.
@@ -137,14 +139,14 @@ The drawer offers two options: upload a file using your browser, or select from 
 
 ![Add item set open to Thumbnail tab, where an asset which is an image of a quill pen on a scrolled piece of paper is in the main work area. Below it are buttons for Select and Clear](contentfiles/itemset_thumb3.png)
 
-To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click select and either choose or upload a new thumbnail asset.
+To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click "Select" and either choose or upload a new thumbnail asset.
 
 ### Access settings
 Item sets have two settings which control their access. They can be **public** or **not public** and they can be **open** or **closed**.
 
 Use the **make public/private** button (eye icon) to make the item set visible to the public or only to all users of the Omeka S installation (not public). 
 
-**Open** sets can be edited and added to by any user on the install.
+**Open** sets can be edited and added to by any user on the installation.
 
 **Closed** sets are available and editable only by its creator, site admins, and global admins.
 
@@ -161,9 +163,7 @@ Options for editing an item set are the same as for creating an item set.
 
 To cancel out of editing, click the "Cancel" button in the upper right corner, between the "Delete" and "Save" buttons. 
 
-![Detail view of the top row if information and buttons on an item edit view. A red arrow points to the Cancel button, on the far right](contentfiles/itemset_cancel.png)
-
-## Delete an item set
+### Delete an item set
 
 You can delete individual item sets, or batch-delete multiple item sets, as described below.  
 
