@@ -43,22 +43,24 @@ To view the items in a set, either click on the number of items in the set on th
 
 To add a new item set, click the Item Sets tab from the left navigation of the dashboard. Click the "Add new item set" button on the right hand side of the screen.
 
-Item sets may use the same resource templates available for items to provide pre-selected fields. Each set should contain at least one descriptive value, such as Dublin Core Description. 
+By default, a new item set will load with the properties `dcterms:title` and `dcterms:description`. You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc.), or search in the **Filter properties** bar above the list of properties and vocabularies.
 
-You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the **Filter properties** bar above the list of properties and vocabularies.
+Item sets may use the same resource templates available for items to provide pre-selected fields. Common fields for item sets include a short textual description using `dcterms:Description`. This text (only the first entry, if there are multiple description entries) will display on the "Browse item sets" page by default (found at `youromekaurl/site-slug/item-set`). All metadata fields will display when a user views the item set on the public side (found at `youromekaurl/site-slug/item-set/1`, where "1" is the ID of the item set).
 
-### Values tab
+You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc.), or search in the **Filter properties** bar above the list of properties and vocabularies.
+
+### Values
 You may add text, a resource from the installation, or an external link in each field.  
 
 ![Add item set, no properties selected](contentfiles/itemsets_add.png)
 
-By default, a new Item Set will load with the properties `dcterms:title` and `dcterms:description`. You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc.), or search in the **Filter properties** bar above the list of properties and vocabularies.
-
-You can set individual properties as Private or Publicly visible using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Site Admins, and Editors will be able to see properties even when set to private. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
+You can set individual property values as Private or Publicly visible using the eye icon for each value. Note that properties set to private are still visible to Global Admins, Site Admins, and Editors. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
 
 In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
 
 ![As described](contentfiles/item_propviz.png)
+
+You can also set a language for any value entered, by clicking on the globe icon within the entry field. Click on the globe to activate a text field, then enter the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written. 
  
 #### Text
 Text fields are entered with text. The keyboard at the top of the field input indicates text. You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
@@ -120,7 +122,7 @@ Input the annotation, and click "Set Annotations" to finalize the process.
 
 Sites include a setting to indicate whether or not value annotations are visible to the public.
 
-### Advanced tab
+### Advanced
 By default, Omeka S will use the media from the first item added to an item set to generate a thumbnail for the set. If you want to use a non-media image for the thumbnail for an item set you can set it here.
 
 ![Thumbnail tab with no asset selected. The tab displays a message about thumbnail creation and a button to "select" an asset](contentfiles/itemset_thumb1.png)
@@ -161,6 +163,22 @@ To cancel out of editing, click the "Cancel" button in the upper right corner, b
 
 ![Detail view of the top row if information and buttons on an item edit view. A red arrow points to the Cancel button, on the far right](contentfiles/itemset_cancel.png)
 
+## Delete an item set
+
+You can delete individual item sets, or batch-delete multiple item sets, as described below.  
+
+Deleting item sets does not delete any items associated with the item set. 
+
+From the Item Set browse view, you can delete an item set by clicking the trash can icon in the row for the item set you want to delete. This will open a drawer on the right with a message at the top asking you to confirm that you want to delete the item set, with the metadata for the item set below the confirm delete button. Click "Confirm delete" to delete the item set, or close the drawer to cancel.
+
+![Browse item sets view with two item sets and a red arrow pointing to the trash can icon](contentfiles/itemsets_browseDel.png)
+
+![Drawer with a confirmation message to delete the an item set, including the Confirm delete button and the item set's basic descriptive metadata - title, description, and number of items in the set. ](contentfiles/itemsets_browseDel2.png)
+
+From the edit page for an Item Set, click the "Delete" button in the upper right-hand corner. This will open a drawer on the right side asking you to confirm that you want to delete the item set. Click "Confirm delete" to delete the item set, or close the drawer to cancel.
+
+![Close up of the warning drawer, with text stating "Are you sure you would like to delete this item set" and below it a red button with white text stating "Confirm delete".](contentfiles/itemset-delete2.png)
+
 ## Batch editing
 
 From the browse page of item sets (admin/item-set) you can batch edit item sets, using the dropdown menu on the upper right near the "Add new item set" button. You can select multiple item sets using the checkboxes on the left of each set's row.
@@ -199,18 +217,3 @@ Selecting any of these will add a block to the form where you can select a prope
 For the **delete actions**, a drawer will open on the right side of the screen telling you the number of item sets which will be deleted. Nothing will be deleted unless you click the red "Confirm Delete" button. This action cannot be undone. To opt out of deleting the item sets, click the "X" in the upper right corner of the deletion drawer. To confirm delete, check the "Are you sure" checkbox (for "Delete all" but not "Delete selected") and then click "Confirm Delete". Note that deleting the item set will not delete the items associated with that set.
 
 ![Close up of the warning, with the text describing the number of items to be deleted in red.](contentfiles/itemsets_bulkdelete.png)
-
-## Delete item set
-In addition to the batch delete function described above, you can also delete individual item sets. 
-
-Note that deleting item sets does not delete any items associated with the item set. 
-
-From the Item Set browse view, you can delete an item set by clicking the trash can icon in the row for the item set you want to delete. This will open a drawer on the right with a message at the top asking you to confirm that you want to delete the item set, with the metadata for the item set below the confirm delete button. Click "Confirm delete" to delete the item set, or close the drawer to cancel.
-
-![Browse item sets view with two item sets and a red arrow pointing to the trash can icon](contentfiles/itemsets_browseDel.png)
-
-![Drawer with a confirmation message to delete the an item set, including the Confirm delete button and the item set's basic descriptive metadata - title, description, and number of items in the set. ](contentfiles/itemsets_browseDel2.png)
-
-From the edit page for an Item Set, click the "Delete" button in the upper right-hand corner. This will open a drawer on the right side asking you to confirm that you want to delete the item set. Click "Confirm delete" to delete the item set, or close the drawer to cancel.
-
-![Close up of the warning drawer, with text stating "Are you sure you would like to delete this item set" and below it a red button with white text stating "Confirm delete".](contentfiles/itemset-delete2.png)

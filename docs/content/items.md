@@ -89,6 +89,7 @@ To add a new item, begin by selecting the the "Add new item" button.
 Before creating items, supervisors may want to create [Resource Templates](resource-template.md), which will load specific fields for various item types.
 
 ### Values
+
 The Values tab is where you enter metadata, such as title, description, etc.
 
 ![Basic view of add items page, with no content entered](contentfiles/items_add.png)
@@ -102,24 +103,28 @@ Add information to the properties that load. If you do not select a resource tem
 
 You may add text, a resource from the installation, or an external link in each field.  
 
-Whether or not you use a resource template, you can add more properties to the item using the drawer on the right side of the screen. You can simply click open one of the vocabularies and click on the property you want to add, or you can use the “Filter properties” box to search for a specific property (this is helpful when you have multiple large vocabularies). 
+Whether or not you use a resource template, you can add more properties to the item using the drawer on the right side of the screen. You can simply open one of the vocabularies (Dublin Core, Bibliographic Ontology, etc.) and click on the property you want to add, or you can use the "Filter properties" box to search for a specific property (this is helpful when you have multiple large vocabularies). 
 
 ![Close up of the right hand drawer with the text "date" entered into the filter properties box and a series of properties containing the word "date" loaded from Dublin Core and Bibliographic Ontology](contentfiles/items_filterprop.png)
 
 Clicking on the property label in the drawer will automatically add it to the Item. If you add a property by accident, leave it blank and it will be removed from the item when you save changes. 
 
-You can set individual properties as Private or Publicly visible using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Supervisors, and Editors will be able to see properties even when set to private. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
+You can set individual properties as **private or public** using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Supervisors, and Editors will be able to see properties even when set to private. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
 
 In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
 
 ![As described](contentfiles/item_propviz.png)
+
+If you have multiple values for a property, you can **reorder** them by dragging and dropping. Click on the bar on the left of the value to grab that value, and drag it into the order that you want it. 
+
+![Close up of the Subject property with two values. A red circle shows the location of the grab bar for the value.](contentfiles/item_valuereorder.png)
 
 #### Text
 Text fields allow for unformatted text entry.
 
 ![image of text input field with keyboard icon indicating text input, the globe icon for setting language, and a trashcan delete icon](contentfiles/items_textedit.png)
 
-You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} code for the language in which the text is written.
+You can indicate the language for the content of a text input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} code for the language in which the text is written.
 
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
 
@@ -152,20 +157,7 @@ Item resources also have an option for "Quick add". When this switch is flipped,
 
 #### URI
 
-URI fields link to an external website or online resource.
-
-You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc.), or search in the **filter properties** bar above the list of properties and vocabularies.
-
-#### Language 
-You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written.
-
-![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
-
-#### Value order
-
-If you have multiple values for a property, you can reorder them by dragging and dropping. Click on the bar on the left of the value to grab that value, and drag it into the order that you want it. 
-
-![Close up of the Subject property with two values. A red circle shows the location of the grab bar for the value.](contentfiles/item_valuereorder.png)
+URI fields link to an external website or online resource. Every URI value has the link itself, and an optional textual Label to replace the URI with something human-readable. For example, you may wish to enter in a Creator as a URI to a controlled vocabulary of artists or authors, and then include the creator's name in plain text as the Label. Omeka will not automatically pull information from the URI.
 
 ### Value annotation
 
@@ -181,7 +173,7 @@ In the world of linked data, this process is know as [reification](https://www.w
 
 To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (a dialogue bubble). 
 
-![a detail of the property with the annotation bubble highlighted](contentfiles/annotation_add.png)
+![A detail of a value with the annotation bubble highlighted](contentfiles/annotation_add.png)
 
 The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property `dcterms:Contributor` might be annotated with more detail about the nature of the contribution. Or you may wish to simply include a note using the `dcterms:Description` field.
 
@@ -189,7 +181,7 @@ Select a data type for the annotation: a text field, a URI, or resource in your 
 
 ![A picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
 
-[Each site has a setting](../sites/site_settings.md#show) to indicate whether or not value annotations are visible to the public. 
+[Each site has a setting](../sites/site_settings.md#show) to indicate whether or not value annotations are visible to the public. This will include value annotations on item sets and media.
 
 You can set controlled vocabularies for annotations using the [Custom Vocab module](../modules/customvocab.md). In this case, you do not need to apply a custom vocabulary to a property using a resource template; you can select any installed vocabulary from the value-type dropdown in the drawer. This will load your vocabulary's choices into a dropdown of terms.
 
@@ -199,14 +191,14 @@ You can set controlled vocabularies for annotations using the [Custom Vocab modu
 
 Use the **Media** tab to add [images, video, or other files](media.md).
 
-Using the buttons on the **Add New Media** menu on the right side of the screen, select a media type (Upload, URL, oEmbed, YouTube, or HTML).
+Using the buttons on the **Add New Media** menu on the right side of the screen, select a media type (Upload, URL, oEmbed, IIIF, YouTube, or HTML).
 
 !["Add new media" drawer showing the options](contentfiles/items_mediaadd2.png)
 
 - **Upload**: select a file to upload from your computer.
 - **URL**: import media via a URI.
 - **HTML**: add html content as a media resource for your item.
-- **IIIF**: Add an IIIF image via URL.
+- **IIIF**: Add a IIIF image via URL.
 - **oEmbed**: insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7){target=_blank} - use the URL in your browser’s location bar.
 - **YouTube**: add a link to embed a YouTube video. Use the URL from your browser’s location bar (with `/watch/` in it) rather than the `youtu.be` link.
 
@@ -279,8 +271,6 @@ Once you have created an item, you can edit it at any time, either by clicking t
 
 To cancel out of editing, click the "Cancel" button in the upper right corner, between the "Delete" and "Save" buttons. 
 
-![Detail view of the top row if information and buttons on an item edit view. A red arrow points to the "Cancel" button, on the far right](contentfiles/items_cancel.JPG)
-
 Editing options are the same as when creating a new item, with the addition of the ability to add any media which has been saved to an item as a property:
 
 ### Media as property 
@@ -294,10 +284,9 @@ To use a media resource for a property, select the media option for the element 
 
 ![The same window as before, but now the drawer on the right displays a thumbnail of the media "Sense and Sensibility DVD Trailer" with a dark gray button labeled "select resource" at the bottom of the drawer area. This image contains step 3](contentfiles/items_mediaresource2.png)
 
-
 ## Batch editing 
 
-From the browse page of items (admin/item) you can batch edit items, using the dropdown menu on the left near the pagination buttons. You can select multiple items using the checkboxes on the left of each item's row.
+From the browse page of items (`admin/item`) you can batch edit items, using the dropdown menu on the left near the pagination buttons. You can select multiple items using the checkboxes on the left of each item's row.
 
 ![A red arrow points to the dropdown for batch editing and deleting options](contentfiles/items_batch.png)
 

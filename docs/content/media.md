@@ -61,6 +61,24 @@ Editing media is very similar to editing [items](../../content/items) or [item s
 
 ![Edit media page, with no properties loaded](../content/contentfiles/media_edit.png)
 
+You can add properties by selecting from the list on the right side of the screen. You can either browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc.), or search in the **Filter properties** bar above the list of properties and vocabularies.
+
+Automatically generated metadata, such as source, visibility, and part of item, cannot be edited. 
+
+Use the **make public/private** button (eye icon) to set whether the media is visible to the public or only to users of the Omeka S install. 
+
+Media is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png){style="display:inline;"}
+
+Media is private: ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png){style="display:inline;"}
+
+Note that if an item is private, all the media attached is private, but an item that is public can have attached media which are set to be either public or private.
+
+You can set individual properties as visible using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Site Admins, and Editors will be able to see properties even when set to private. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
+
+In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
+
+![Individual properties have a red eye icon to the right to allow you to toggle visibility - a red arrow points to the icon](contentfiles/item_propviz.png)
+
 ### Values
 
 If desired, you can select a resource template from the drop-down menu. Resource templates are defined by site administrators and editors.
@@ -108,7 +126,7 @@ Item resources also have an option for "Quick add". When this switch is flipped,
 
 You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the **Filter properties** bar above the list of properties and vocabularies.
 
-**Value annotation**
+#### Value annotation
 
 When you input a value for a property associated for a resource, you are making a statement about that resource. If you choose, Omeka allows you to make statements about that statement. We call this value annotation. The advantage of value annotation is that you can choose to make ambiguous facts more concrete by annotating things like:
 
@@ -134,27 +152,11 @@ Input the annotation, and click "Set Annotations" to finalize the process.
 
 Sites include a setting to indicate whether or not value annotations are visible to the public. 
 
-**Language**: You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
+#### Language
+
+You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
 
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
-
-You can add properties by selecting from the list on the right side of the screen. You can either browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the **Filter properties** bar above the list of properties and vocabularies.
-
-Automatically generated metadata, such as source, visibility, and part of item, cannot be edited. 
-
-Use the **make public/private** button (eye icon) to set whether the media is visible to the public or only to users of the Omeka S install. 
-
-Media is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png){style="display:inline;"}
-
-Media is private: ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png){style="display:inline;"}
-
-Note that if an item is private, all the media attached is private, but an item that is public can have attached media which are set to be either public or private.
-
-You can set individual properties as visible using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Site Admins, and Editors will be able to see properties even when set to private. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
-
-In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
-
-![Individual properties have a red eye icon to the right to allow you to toggle visibility - a red arrow points to the icon](contentfiles/item_propviz.png)
 
 ### Advanced
 
