@@ -3,7 +3,7 @@ title: Data Cleaning
 ---
 # Data Cleaning
 
-The [Data Cleaning module](https://omeka.org/s/modules/DataCleaning){target=_blank} is for low-level auditing and cleaning of resource metadata. It is designed to prepare resource metadata for use in visualizations.
+The [Data Cleaning module](https://omeka.org/s/modules/DataCleaning) is for low-level auditing and cleaning of resource metadata. It is designed to prepare resource metadata for use in visualizations.
 
 Changes made by Data Cleaning cannot be easily undone, and can be destructive. Due to the powerful nature of the module, it can only be used by Global Administrators. 
 

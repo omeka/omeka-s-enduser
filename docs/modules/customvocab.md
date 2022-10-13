@@ -1,6 +1,6 @@
 # Custom Vocab
 
-The [Custom Vocab module](https://omeka.org/s/modules/CustomVocab){target=_blank} allows you to create a controlled vocabulary and add it to a specific property in a resource template. When using that template for an item, the property will load with a dropdown limited to the options of the controlled vocabulary, rather than a text entry box.
+The [Custom Vocab module](https://omeka.org/s/modules/CustomVocab) allows you to create a controlled vocabulary and add it to a specific property in a resource template. When using that template for an item, the property will load with a dropdown limited to the options of the controlled vocabulary, rather than a text entry box.
 
 For example, you may want to create an institution-specific list of locations that correspond to different collections on your campus, or a controlled list of people or places related to your holdings. This can help reduce typos and name variations, and can allow you to offer [metadata browsing](../modules/metadatabrowse.md) for more fields.
 
@@ -17,7 +17,7 @@ The Add Custom Vocab page has four fields: Label, Language, Vocab Type, and Term
 ![Add Custom Vocab with data entered in the label and terms fields](../modules/modulesfiles/customVocab-add-URI.png)
 
 - **Label**: A name for the vocabulary, which you will use to find it when adding to a resource template.
-- **Language** (optional): The language of the vocab, using the [ISO 639-1 language code](http://www.iso.org/iso/language_codes){target=_blank}.
+- **Language** (optional): The language of the vocab, using the [ISO 639-1 language code](http://www.iso.org/iso/language_codes).
 
 You can set the controlled vocabulary terms to a list of entered terms, to a list of existing items, or to a list of external URIs with or without labels:
 

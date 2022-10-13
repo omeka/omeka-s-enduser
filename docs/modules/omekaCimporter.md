@@ -1,6 +1,6 @@
 # Omeka Classic Importer
 
-The [Omeka Classic Importer module](https://omeka.org/s/modules/Omeka2Importer){target=_blank} (a.k.a. the Omeka 2 Importer) enables you to import items and collections from an Omeka Classic 2.x site into an Omeka S installation. The source site needs to be Classic version 2 or greater in order to offer an API endpoint for this module to use. 
+The [Omeka Classic Importer module](https://omeka.org/s/modules/Omeka2Importer) (a.k.a. the Omeka 2 Importer) enables you to import items and collections from an Omeka Classic 2.x site into an Omeka S installation. The source site needs to be Classic version 2 or greater in order to offer an API endpoint for this module to use. 
 
 Once installed, the Omeka 2 Importer module should appear toward the bottom of the left navigation menu on the main admin dashboard. When selected, there are sub-menu items for **Import** and **Past Imports**. 
 

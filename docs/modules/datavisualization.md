@@ -3,7 +3,7 @@ title: Data Visualization
 ---
 # Data Visualization
 
-The [Data Visualization module](https://omeka.org/s/modules/Datavis){target=_blank} allows site administrators are able to generate datasets and render diagrams that reflect their data. Once installed and activated on the Modules section of the admin dashboard, Data Visualization is managed on a site-by-site basis. You can add your data diagrams to site pages using page blocks.
+The [Data Visualization module](https://omeka.org/s/modules/Datavis) allows site administrators are able to generate datasets and render diagrams that reflect their data. Once installed and activated on the Modules section of the admin dashboard, Data Visualization is managed on a site-by-site basis. You can add your data diagrams to site pages using page blocks.
 
 ## Data visualizations by site
 If the Data Visualization module is active, a section for Data Visualization will appear in the menu for individual sites. Clicking this link will take you to a list of all visualizations created for the site. 

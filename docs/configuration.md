@@ -2,7 +2,7 @@
 
 The following are commonly requested options which can be configured in the file `local.config.php`, located in the `/config` directory. 
 
-For a full list of available configuration keys, please see the [developer documentation page on configuration settings](https://omeka.org/s/docs/developer/configuration/){target=_blank}. 
+For a full list of available configuration keys, please see the [developer documentation page on configuration settings](https://omeka.org/s/docs/developer/configuration/). 
 
 ## Password settings
 You can change the requirements for user passwords. The options include minimum length, number of upper and lowercase letters, and setting allowed symbols.
@@ -57,9 +57,9 @@ The default thumbnailer is `Omeka\File\Thumbnailer\ImageMagick`. Also available 
 
 You can also set the thumbnailer to `Omeka\File\Thumbnailer\NoThumbnail`, which will prevent your Omeka S installation from generating thumbnails. 
 
-[GD](https://secure.php.net/manual/en/intro.image.php){target=_blank} is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). 
+[GD](https://secure.php.net/manual/en/intro.image.php) is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). 
 
-[Imagick and ImageMagick](https://www.imagemagick.org){target=_blank} are the same library and can create thumbnails for more than 200 formats. Imagick is integrated into PHP and ImageMagick is the command-line version. 
+[Imagick and ImageMagick](https://www.imagemagick.org) are the same library and can create thumbnails for more than 200 formats. Imagick is integrated into PHP and ImageMagick is the command-line version. 
 
 ImageMagick may require you to manually set a path in `imagemagick_dir`, whereas Imagick and GD do not require paths.
 
@@ -104,7 +104,7 @@ If you have downloaded the file in order to edit it, be sure to upload the chang
 
 The `mail` key can be used to configure how Omeka S sends emails. Omeka sends emails to users upon registration and when they reset their passwords; modules can add other email functions, such as [confirming submissions](modules/collecting.md). 
 
-The default is to use [sendmail](https://en.wikipedia.org/wiki/Sendmail){target=_blank}, where the server is responsible for having mail delivery configured and set up. Sendmail generally requires no configuration on the Omeka S side. Another option for some servers is to configure a direct SMTP connection for sending mail. 
+The default is to use [sendmail](https://en.wikipedia.org/wiki/Sendmail), where the server is responsible for having mail delivery configured and set up. Sendmail generally requires no configuration on the Omeka S side. Another option for some servers is to configure a direct SMTP connection for sending mail. 
 
 An example configuration, to be added at the end of `local.config.php`, will look something like this:
 
@@ -128,4 +128,4 @@ An example configuration, to be added at the end of `local.config.php`, will loo
     ],
 ```
 
-See the [laminas-mail documentation](https://docs.laminas.dev/laminas-mail/transport/smtp-options/){target=_blank} for clarification.
+See the [laminas-mail documentation](https://docs.laminas.dev/laminas-mail/transport/smtp-options/) for clarification.

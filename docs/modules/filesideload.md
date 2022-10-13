@@ -1,6 +1,6 @@
 # File Sideload
 
-The [File Sideload module](https://omeka.org/s/modules/FileSideload){target=_blank} adds the ability to add media files that are already stored on the server where your Omeka S installation lives.
+The [File Sideload module](https://omeka.org/s/modules/FileSideload) adds the ability to add media files that are already stored on the server where your Omeka S installation lives.
 
 File Sideload is compatible with [CSV Import](../modules/csvimport.md). When installed, your CSV Import options will include the ability to add media via Sideload.
 

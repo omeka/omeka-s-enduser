@@ -1,0 +1,5 @@
+sphinx==3.5.4
+sphinx-intl==2.0.1
+sphinx_rtd_theme==0.5.2
+myst-parser==0.15.1
+docutils<0.17

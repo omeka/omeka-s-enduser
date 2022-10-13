@@ -1,14 +1,14 @@
 # CSS Editor
 
-The [CSS Editor module](https://omeka.org/s/modules/CSSEditor){target=_blank} allows you to write CSS from the Omeka S admin interface.
+The [CSS Editor module](https://omeka.org/s/modules/CSSEditor) allows you to write CSS from the Omeka S admin interface.
 
-Once activated on the [modules](https://omeka.org/s/docs/user-manual/modules/){target=_blank} section of the admin dashboard, CSS Editor is used on a site-by-site basis.
+Once activated on the [modules](https://omeka.org/s/docs/user-manual/modules/) section of the admin dashboard, CSS Editor is used on a site-by-site basis.
 
 If you are new to working with CSS, we recommend the following free resources for getting started:
 
-* [Mozilla's "Learn CSS"](https://developer.mozilla.org/en-US/docs/Web/CSS){target=_blank}
-* [Codecademy's "Learn CSS" course](https://www.codecademy.com/learn/learn-css){target=_blank}
-* [Marksheet's "CSS Basics"](https://marksheet.io/css-basics.html){target=_blank}
+* [Mozilla's "Learn CSS"](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Codecademy's "Learn CSS" course](https://www.codecademy.com/learn/learn-css)
+* [Marksheet's "CSS Basics"](https://marksheet.io/css-basics.html)
 
 The easiest way to learn Omeka S page components for the sake of CSS editing is to use your browser's Inspect tool when looking at your chosen theme.
 
@@ -34,7 +34,7 @@ To remove external stylesheets, either clear the text inputs, or click on the tr
 
 ## Tutorial: Using a Google webfont
 
-You can make your Omeka S site more distinct by using a custom font. [Google provides a free library of webfonts](https://fonts.google.com/){target=_blank}, and this tutorial will demonstrate how to apply a webfont to an Omeka S site using the "Default" theme through the CSS Editor interface.
+You can make your Omeka S site more distinct by using a custom font. [Google provides a free library of webfonts](https://fonts.google.com/), and this tutorial will demonstrate how to apply a webfont to an Omeka S site using the "Default" theme through the CSS Editor interface.
 
 For reference, the "Default" theme begins looking like this, using the "Open Sans" font.
 
@@ -42,7 +42,7 @@ For reference, the "Default" theme begins looking like this, using the "Open San
 
 This tutorial will override "Open Sans" with the "Lato" font family.
 
-1. Navigate to [Google Fonts](https://fonts.google.com/){target=_blank}. Find the "Lato" font family and click on the orange "+" button to select it.
+1. Navigate to [Google Fonts](https://fonts.google.com/). Find the "Lato" font family and click on the orange "+" button to select it.
   ![Google Fonts main page with "Lato" font family highlighted](modulesfiles/csseditor_tutorial1.jpg)<br>
 2. A bar labeled "1 Family Selected" will appear in the lower right corner. Click on this bar.
   ![Cropped view of Google Fonts page with selected font family bar highlighted](modulesfiles/csseditor_tutorial2.jpg)<br>

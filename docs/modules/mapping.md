@@ -1,6 +1,6 @@
 # Mapping 
 
-The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows you to geolocate Omeka S items. Maps can also include timelines that allow you to scroll through items on a map in chronological order.
+The [Mapping module](https://omeka.org/s/modules/Mapping) allows you to geolocate Omeka S items. Maps can also include timelines that allow you to scroll through items on a map in chronological order.
 
 ![Map with timeline](../modules/modulesfiles/mapping-timelinePublic1.png)
 
@@ -125,7 +125,7 @@ Within the preview map, there are five buttons:
 
 ### WMS overlays
 
- Add, edit, and delete [Web Map Service (WMS)](https://mapserver.org/ogc/wms_server.html){target=_blank} overlays.
+ Add, edit, and delete [Web Map Service (WMS)](https://mapserver.org/ogc/wms_server.html) overlays.
 
  * **Label**: Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays.
  * **Base URL**: Add a URL to the WMS map.

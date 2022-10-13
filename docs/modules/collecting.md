@@ -1,6 +1,6 @@
 # Collecting
 
-The [Collecting module](https://omeka.org/s/modules/Collecting/){target=_blank} allows you to gather public contributions through your sites. Users can upload files or submit textual entries along with some identifying metadata, which your site administrators can then moderate and approve for inclusion.
+The [Collecting module](https://omeka.org/s/modules/Collecting/) allows you to gather public contributions through your sites. Users can upload files or submit textual entries along with some identifying metadata, which your site administrators can then moderate and approve for inclusion.
 
 Once activated on the [modules](index.md) tab of the admin dashboard, Collecting is configured on a site-by-site basis. It adds a section to your Site Settings page, and adds a link under each Site for Collecting forms. Forms are added to site pages by way of [page blocks](../sites/site_pages.md#page-blocks).
 

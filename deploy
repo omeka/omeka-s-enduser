@@ -1,2 +1,2 @@
-mkdocs build
-rsync -rv --delete site/ /websites/omekaorg/www/s/docs/user-manual
+make clean html
+rsync -rv --delete _build/html /websites/omekaorg/www/s/docs/user-manual

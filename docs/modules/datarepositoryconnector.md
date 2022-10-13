@@ -1,6 +1,6 @@
 # Data Repository Connector
 
-The [Data Repository Connector module](../modules/datarepositoryconnector.md){target=_blank} allows users to import records and/or data files from several different data repository platforms: Dataverse, Zenodo, and CKAN.
+The [Data Repository Connector module](../modules/datarepositoryconnector.md) allows users to import records and/or data files from several different data repository platforms: Dataverse, Zenodo, and CKAN.
 
 To install Data Repository Connector, follow the instructions for [Installing Modules](../modules/index.md#installing-modules) on the Modules documentation.
 

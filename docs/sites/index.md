@@ -29,7 +29,7 @@ The "New site" page has two tabs: **Info** and **Theme**.
 
 * Give your site a **title** (required).
 * Create a **slug** for the site’s url. The url will be `youromekainstall.org/s/slug`. This is optional - if you leave this field blank, Omeka S will create a slug based on the site title.
-* Create a **summary** for your site: a brief description of what it is about.  The summary text will appear on your installation's landing page and on the [list of sites](../sites/site_pages#list-of-sites) page block.
+* Create a **summary** for your site: a brief description of what it is about.  The summary text will appear on your installation's landing page and on the [list of sites](site_pages.md#list-of-sites) page block.
 * Upload a **thumbnail** for your site, which will replace the summary text on the landing page or in the list of sites block.
 
 ![Admin tab for a new site with nothing entered](../sites/sitesfiles/sitesadd_admin.png)

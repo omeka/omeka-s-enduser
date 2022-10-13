@@ -12,13 +12,13 @@ On the right side above the table are two drop-down menus which let you sort res
 
 You can use the icons in each template’s row to: **edit** (pencil), **delete** (trash can), or **view details** (ellipsis). If you click on the number of items listed for a template, it will take you to a list of all those items. 
 
-[This screencast](https://vimeo.com/290924872){target=_blank} gives an overview of creating and applying resource templates:
+[This screencast](https://vimeo.com/290924872) gives an overview of creating and applying resource templates:
 
 <div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/290924872?h=c6359076cd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <p><a href="https://vimeo.com/290924872">Omeka S Resource Templates</a> from <a href="https://vimeo.com/omeka">Omeka</a> on <a href="https://vimeo.com">Vimeo</a>.</p> 
 
 ## Base Resource
-All Omeka S installations include a "Base Resource" template which maps to the metadata fields required by the [Digital Public Library of America (DPLA)](https://dp.la/){target=_blank}. It will display in the table of resource templates as "Base Resource" with no owner. 
+All Omeka S installations include a "Base Resource" template which maps to the metadata fields required by the [Digital Public Library of America (DPLA)](https://dp.la/). It will display in the table of resource templates as "Base Resource" with no owner. 
 
 ![Base resource template displayed in the table of templates](contentfiles/templates_base1.png)
 

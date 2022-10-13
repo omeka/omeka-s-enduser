@@ -1,6 +1,6 @@
 # Extract Text
 
-The [Extract Text module](https://omeka.org/s/modules/ExtractText){target=_blank} will extract text from files to make them searchable and machine readable. The extracted text will be added to a property called "extracted text" in a vocabulary unique to that module.
+The [Extract Text module](https://omeka.org/s/modules/ExtractText) will extract text from files to make them searchable and machine readable. The extracted text will be added to a property called "extracted text" in a vocabulary unique to that module.
 
 When enabled, Extract Text adds a new metadata field, with a textual data type, at the item level and at the media level, with the name "extracted text" and the slug `extracttext:extracted_text`. It is set to public by default on item view pages.
 

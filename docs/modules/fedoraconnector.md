@@ -1,6 +1,6 @@
 # Fedora Connector
 
-The [Fedora Connector module](https://omeka.org/s/modules/FedoraConnector){target=_blank} allows you to connect an Omeka S instance to a [Fedora](https://duraspace.org/fedora/){target=_blank} 4 repository in order to import items from containers in that repository. In addition to importing information, the Omeka S item will include a link back to the original item.
+The [Fedora Connector module](https://omeka.org/s/modules/FedoraConnector) allows you to connect an Omeka S instance to a [Fedora](https://duraspace.org/fedora/) 4 repository in order to import items from containers in that repository. In addition to importing information, the Omeka S item will include a link back to the original item.
 
 Note that Fedora Connector only works with version 4 of Fedora.
 
@@ -11,7 +11,7 @@ There are two options for configuring Fedora Connector, both of which enable the
 
 The first checkbox offers the option to import the Fedora Vocabulary into your Omeka S install’s Vocabularies. The second checkbox offers the option to import the Linked Data Platform Vocabulary into your Omeka S install’s Vocabularies. If you do so, data in these vocabularies will also be imported into Omeka S.
 
-You can check these boxes when you first install Fedora Connector, or at a later point via the "Configure" button in the [Modules](../modules/index.md#managing-modules) list.
+You can check these boxes when you first install Fedora Connector, or at a later point via the "Configure" button in the [Modules](index) list.
 
 ## Import data
 To use Fedora Connector, navigate to the section labelled "Fedora Connector" under Modules in the left-hand navigation of the admin dashboard. This will automatically take you to the Import page.

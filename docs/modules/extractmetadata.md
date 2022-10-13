@@ -1,6 +1,6 @@
 # Extract Metadata
 
-The [Extract Metadata module](https://omeka.org/s/modules/ExtractMetadata){target=_blank} allows site administrators to extract embedded metadata from media files. 
+The [Extract Metadata module](https://omeka.org/s/modules/ExtractMetadata) allows site administrators to extract embedded metadata from media files. 
 
 The module adds a new "Extract metadata" tab to each media page, which will allow you to manually extract any embedded metadata found on the file. It also adds an "Extract metadata" field to the batch-editing page. When enabled, it automatically works on newly uploaded files. 
 
@@ -15,7 +15,7 @@ When configuring the module, you can:
 - Configure the metadata crosswalk for the JSON Pointer mapper (if enabled). If you decide to use the JSON pointer mapper, you will need to define the metadata crosswalk. 
     1. Click the "Add map +" button.
     1. Select the Resource, Extractor, and Property from dropdown menus.
-    1. Provide a Pointer formatted using a JSON pointer as defined by the [IETF standard](https://datatracker.ietf.org/doc/html/rfc6901){target=_blank}.
+    1. Provide a Pointer formatted using a JSON pointer as defined by the [IETF standard](https://datatracker.ietf.org/doc/html/rfc6901).
     1. If you would like to replace the metadata values through this pointer, make sure to select the checkbox to the right of these fields.
 
 When you are finished configuring the module, click the "Submit" button in the upper right corner of the screen.
@@ -60,19 +60,19 @@ Extractors extract metadata from files. Note that extractors must be enabled on 
 
 ### ExifTool
 
-Used to extract many types of metadata from many types of files. Requires the [ExifTool](https://exiftool.org/){target=_blank} command-line application.
+Used to extract many types of metadata from many types of files. Requires the [ExifTool](https://exiftool.org/) command-line application.
 
 ### Exif
 
-Used to extract EXIF metadata that is commonly found in JPEG and TIFF files. Requires PHP's [exif](https://www.php.net/manual/en/book.exif.php){target=_blank} extension.
+Used to extract EXIF metadata that is commonly found in JPEG and TIFF files. Requires PHP's [exif](https://www.php.net/manual/en/book.exif.php) extension.
 
 ### getID3
 
-Used to extract many types of metadata from many types of files. Uses the [getID3](https://github.com/JamesHeinrich/getID3){target=_blank} PHP library, which comes with this module.
+Used to extract many types of metadata from many types of files. Uses the [getID3](https://github.com/JamesHeinrich/getID3) PHP library, which comes with this module.
  
 ### Tika
 
-Used to extract many types of metadata from many types of files. Requires the [Apache Tika](https://tika.apache.org/){target=_blank} content analysis toolkit. Java must be installed and the path to the `tika-app-*.jar` file must be configured in `config/module.config.php` under `[extract_metadata_extractor_config][tika][jar_path]`.
+Used to extract many types of metadata from many types of files. Requires the [Apache Tika](https://tika.apache.org/) content analysis toolkit. Java must be installed and the path to the `tika-app-*.jar` file must be configured in `config/module.config.php` under `[extract_metadata_extractor_config][tika][jar_path]`.
 
 ## Mappers
 
@@ -82,7 +82,7 @@ Mappers map extracted metadata to resource values. Note that a mapper must be en
 
 ### JSON pointer
 
-You can map extracted metadata to media metadata properties using [JSON pointers](https://datatracker.ietf.org/doc/html/rfc6901){target=_blank}. You must define your own metadata crosswalk in the module configuration page under the "JSON Pointer crosswalk" tab.
+You can map extracted metadata to media metadata properties using [JSON pointers](https://datatracker.ietf.org/doc/html/rfc6901). You must define your own metadata crosswalk in the module configuration page under the "JSON Pointer crosswalk" tab.
 
 You may wish to extract metadata from a few files first and see what information can be pointed to, then test some options on where best to map them.
 

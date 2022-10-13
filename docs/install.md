@@ -4,12 +4,12 @@
 In order to install Omeka S, you will need a server running the following:
 
 - Linux
-- Apache (with [AllowOverride](https://httpd.apache.org/docs/2.4/mod/core.html#allowoverride){target=_blank} set to "All" and [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html){target=_blank} enabled)
+- Apache (with [AllowOverride](https://httpd.apache.org/docs/2.4/mod/core.html#allowoverride) set to "All" and [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html) enabled)
 - MySQL, minimum version 5.6.4 (or MariaDB, minimum version 10.0.5)
-- PHP, minumum version 7.2, with [PDO](http://php.net/manual/en/intro.pdo.php){target=_blank}, [pdo_mysql](http://php.net/manual/en/ref.pdo-mysql.php){target=_blank}, and [xml](http://php.net/manual/en/intro.xml.php){target=_blank} extensions installed
+- PHP, minumum version 7.2, with [PDO](http://php.net/manual/en/intro.pdo.php), [pdo_mysql](http://php.net/manual/en/ref.pdo-mysql.php), and [xml](http://php.net/manual/en/intro.xml.php) extensions installed
 - Optional, to create thumbnails: ImageMagick version 6.7.5 or greater, the PHP `imagick` extension, or the PHP `gd` extension.
 
-[GD](https://secure.php.net/manual/en/intro.image.php){target=_blank} is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). [Imagick and ImageMagick](https://www.imagemagick.org){target=_blank} are the same library and can create thumbnails for more than 200 formats. For more information, see the [Configuration page](configuration.md#thumbnails).
+[GD](https://secure.php.net/manual/en/intro.image.php) is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). [Imagick and ImageMagick](https://www.imagemagick.org) are the same library and can create thumbnails for more than 200 formats. For more information, see the [Configuration page](configuration.md#thumbnails).
 
 ## Installation methods
 
@@ -18,7 +18,7 @@ In order to install Omeka S, you will need a server running the following:
 !!! note
 	Before you install Omeka S, you need to create a MySQL database and user. Omeka S must have a dedicated database; you cannot use a prefix for a database used by another system or Omeka S or Classic installation. For more information on creating a database and user, please see your hosting's support documentation or talk to your system administrator.
 
-1. [Download the latest release from the release page](https://omeka.org/s/download/){target=_blank}.
+1. [Download the latest release from the release page](https://omeka.org/s/download/).
 1. Extract this downloaded zip file to your computer.
 1. Inside the directory, open the `config/database.ini` file and add your MySQL username, password, database name, and host name. The user and database must be created before this step.
 1. Upload this entire directory to your server, into the folder of your choice. For example, if your server is `https://yourwebsite.org/`, you may wish to install Omeka S into a folder located at `https://yourwebsite.org/myomekas/`. Make sure it has your updated `database.ini` file (do not upload the original zip file you downloaded).
@@ -27,21 +27,21 @@ In order to install Omeka S, you will need a server running the following:
 
 ### Installing from GitHub
 
-Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md){target=_blank} of the Omeka S GitHub repository.
+Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md) of the Omeka S GitHub repository.
 
 Then, in your web browser, navigate to the admin page for your Omeka S installation (`https://yourwebsite.org/myomekas/admin`), where you can complete the installation.
 
 ### One-click installation
 
-Hosting companies that use [Softaculous](https://softaculous.com/){target=_blank} should offer a one-click install of [Omeka Classic](https://www.softaculous.com/softaculous/apps/educational/Omeka){target=_blank} and [Omeka S](https://www.softaculous.com/softaculous/apps/others/Omeka_S){target=_blank}. The one-click installation process through Softaculous may allow you to create a database and user at the same time, and will edit the `config/database.ini` file for you.
+Hosting companies that use [Softaculous](https://softaculous.com/) should offer a one-click install of [Omeka Classic](https://www.softaculous.com/softaculous/apps/educational/Omeka) and [Omeka S](https://www.softaculous.com/softaculous/apps/others/Omeka_S). The one-click installation process through Softaculous may allow you to create a database and user at the same time, and will edit the `config/database.ini` file for you.
 
 Suggestions from our users include:
 
--   [Reclaim Hosting](https://reclaimhosting.com/){target=_blank} - offers [simple Omeka S installations](https://support.reclaimhosting.com/hc/en-us/sections/204007617-Omeka){target=_blank} with some steps (including [manually setting the PHP path](#test-and-set-the-php-path)), and support for other open-source software platforms
--   [Dotblock](http://www.dotblock.com){target=_blank} - uses Softaculous
--   [HostGator](http://hostgator.com){target=_blank} - uses Softaculous
--   [TMD Hosting](https://www.tmdhosting.com){target=_blank} - uses Softaculous
--   [Webuzo](http://webuzo.com){target=_blank} - uses Softaculous.
+-   [Reclaim Hosting](https://reclaimhosting.com/) - offers [simple Omeka S installations](https://support.reclaimhosting.com/hc/en-us/sections/204007617-Omeka) with some steps (including [manually setting the PHP path](#test-and-set-the-php-path)), and support for other open-source software platforms
+-   [Dotblock](http://www.dotblock.com) - uses Softaculous
+-   [HostGator](http://hostgator.com) - uses Softaculous
+-   [TMD Hosting](https://www.tmdhosting.com) - uses Softaculous
+-   [Webuzo](http://webuzo.com) - uses Softaculous.
 
 ## Initial setup
 
@@ -75,7 +75,7 @@ Omeka S uses background jobs for some long-running tasks that operate on many it
 
 Omeka S by default will try to automatically detect the path to the PHP CLI on the server, but for some servers this detection doesn't work, or there are multiple different `php` commands to choose from. 
 
-If you are [using Reclaim Hosting](#one-click-installation), you will have to manually set the PHP path when you install. See [their instructions here](https://support.reclaimhosting.com/hc/en-us/articles/1500005620481#omeka-s){target=_blank}.
+If you are [using Reclaim Hosting](#one-click-installation), you will have to manually set the PHP path when you install. See [their instructions here](https://support.reclaimhosting.com/hc/en-us/articles/1500005620481#omeka-s).
 
 If you begin to see errors once you start working with Omeka, particularly errors with something like "PHP-CLI error: invalid PHP path", you will need to manually set the PHP path. See [Configuration Options](configuration.md) to learn about modifying thumbnail generation, setting the PHP path manually, and more. 
 
@@ -97,10 +97,10 @@ If you begin to see errors once you start working with Omeka, particularly error
 
 ### Updating from GitHub
 
-Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md){target=_blank} of the Omeka S GitHub repository.
+Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md) of the Omeka S GitHub repository.
 
 ## Install on Windows or Mac OS (development only)
-Omeka S does not support proprietary or closed-source operating systems. However, for **basic development purposes** or for quick training, Omeka can run with [WAMP](http://www.wampserver.com){target=_blank}, [MAMP](https://www.mamp.info){target=_blank}, or similar tools.
+Omeka S does not support proprietary or closed-source operating systems. However, for **basic development purposes** or for quick training, Omeka can run with [WAMP](http://www.wampserver.com), [MAMP](https://www.mamp.info), or similar tools.
 
 Follow the standard installation instructions. You will need to make the following [configuration](configuration.md) changes to the file `config/local.config.php` to work.
 

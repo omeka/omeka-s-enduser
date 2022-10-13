@@ -1,6 +1,6 @@
 # Modules Management
 
-Modules extend the functionality of your Omeka S installation and sites. A list of modules available for download is on the [Modules Directory](https://omeka.org/s/modules/){target=_blank}. Instructions are available on each module's documentation page.
+Modules extend the functionality of your Omeka S installation and sites. A list of modules available for download is on the [Modules Directory](https://omeka.org/s/modules/). Instructions are available on each module's documentation page.
 
 !!! Note
     Not every module will work with every version of Omeka, especially newer modules on old installations. Older versions of modules may be available on their Github pages. Use the Modules Directory to find the "Github" link on the right side of the screen for each plugin, then look on the right hand side of the Github page for the "Releases" section.
@@ -28,7 +28,7 @@ When a module has a new release, it will display on the browse page with a messa
 ## Adding modules to Omeka S
 In order to appear in the **Modules** section of the admin dashboard for your Omeka S installation, module files must be manually added to the `/modules` folder of the installation, using an FTP program or SSH connection.
 
-Modules registered with Omeka are available on the [Modules](https://omeka.org/s/modules/){target=_blank} directory of the Omeka S site. Other modules may be made available by their authors in other locations.
+Modules registered with Omeka are available on the [Modules](https://omeka.org/s/modules/) directory of the Omeka S site. Other modules may be made available by their authors in other locations.
 
 To add a module to the site using FTP:
 
@@ -40,7 +40,7 @@ To add a module to the site using FTP:
 !!! note
 	The folder that appears in the `/modules` folder should show the name of the module, without any version numbers. If you are having issues installing a module, check that you have unzipped the module correctly, without creating extra folder levels.
 
-Please note that if you are downloading the folder for a module from GitHub rather than the [Module Directory](https://omeka.org/s/modules/){target=_blank}, you need to be sure to download the [latest release](https://help.github.com/en/articles/linking-to-releases){target=_blank} rather than the version in active development. If you are unsure how to do this, please consult the [GitHub help files](https://help.github.com/en){target=_blank}.
+Please note that if you are downloading the folder for a module from GitHub rather than the [Module Directory](https://omeka.org/s/modules/), you need to be sure to download the [latest release](https://help.github.com/en/articles/linking-to-releases) rather than the version in active development. If you are unsure how to do this, please consult the [GitHub help files](https://help.github.com/en).
 
 You can also use SSH to clone a module directly from that module's git repository. Do this only if you are comfortable with git, GitHub, and working with SSH.
 
@@ -91,4 +91,4 @@ To update a module using FTP:
 
 If you are concerned about problems with the update, be sure to keep the older version of the module on your local machine in case you have to switch them back. Follow the same update steps with the earlier version of the module.
 
-If you run into problems while updating, turn on [error logging](../errorLogging) and post on the [Omeka Forum](https://forum.omeka.org/c/omeka-s/modules){target=_blank}.
+If you run into problems while updating, turn on [error logging](../errorLogging) and post on the [Omeka Forum](https://forum.omeka.org/c/omeka-s/modules).

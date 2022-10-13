@@ -1,6 +1,6 @@
 # Numeric Data Types
 
-The [Numeric Data Type module](https://omeka.org/s/modules/NumericDataTypes){target=_blank} allows you to set certain properties as numeric data, using resource templates. You can designate properties as either date and time (ISO) or integers.
+The [Numeric Data Type module](https://omeka.org/s/modules/NumericDataTypes) allows you to set certain properties as numeric data, using resource templates. You can designate properties as either date and time (ISO) or integers.
 
 ## Create numeric properties
 To implement the module, you will need to create or edit a [resource template](../content/resource-template.md) to set specific properties as having numeric data types. 
@@ -73,7 +73,7 @@ Clicking on this dropdown will reveal multiple options, including all of the pro
 ![The contents of the dropdown, with the normal options in addition to eight properties using numeric data types.](../modules/modulesfiles/ndt-browsesort2.png)
 
 ## Bulk edit numeric data
-The module adds an additional option to the [item batch edit](../../content/items/#batch-editing): Convert to Numeric.
+The module adds an additional option to the [item batch edit](../content/items.md#batch-editing): Convert to Numeric.
 
 The Convert to Numeric option lets you convert an existing text input property to a numeric data type. It will not work on properties where the data is currently an Omeka resource or a URI. 
 

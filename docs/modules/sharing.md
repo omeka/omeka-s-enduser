@@ -1,6 +1,6 @@
 # Sharing
 
-The [Sharing module](https://omeka.org/s/modules/Sharing){target=_blank} allows you to add buttons to site pages which visitors can use to share and embed content from your site on social media or via email.
+The [Sharing module](https://omeka.org/s/modules/Sharing) allows you to add buttons to site pages which visitors can use to share and embed content from your site on social media or via email.
 
 Currently, Sharing supports the following options:
 

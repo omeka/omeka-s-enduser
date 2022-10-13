@@ -1,6 +1,6 @@
 # DSpace Connector
 
-The [DSpace Connector module](https://omeka.org/s/modules/DspaceConnector){target=_blank} allows you to connect an Omeka S instance to a [DSpace repository](https://duraspace.org/dspace/){target=_blank} to import items from that repository. In addition to importing information, the Omeka S item will include a link back to the original item.
+The [DSpace Connector module](https://omeka.org/s/modules/DspaceConnector) allows you to connect an Omeka S instance to a [DSpace repository](https://duraspace.org/dspace/) to import items from that repository. In addition to importing information, the Omeka S item will include a link back to the original item.
 
 Note that DSpace Connector only works with DSpace versions 5.6 and higher. This connector relies on the DSpace API and its site-by-site configuration.
 
@@ -42,7 +42,7 @@ To import the entire repository, click "Import entire repository" at the top of 
 
 * On the initial "Import Settings" menu, set **Limit** to a smaller number, such as 50 or 25.
 * Run the import at night and/or whenever there may be less traffic on the DSpace server.
-* Consider temporarily inserting [a `sleep()` function](https://www.w3schools.com/php/func_misc_sleep.asp){target=_blank} between the import of each record in `Import.php` to slow the process down slightly (not recommended for production).
+* Consider temporarily inserting [a `sleep()` function](https://www.w3schools.com/php/func_misc_sleep.asp) between the import of each record in `Import.php` to slow the process down slightly (not recommended for production).
 
 You can track the status of imports by navigating to the DSpace Connector "Past Imports" tab, or on the [Jobs](../admin/jobs.md) page of the admin dashboard.
 

@@ -1,6 +1,6 @@
 # Zotero Import
 
-The [Zotero Import module](https://omeka.org/s/modules/ZoteroImport){target=_blank} allows you to connect an Omeka S instance to a Zotero library and import items from that library.
+The [Zotero Import module](https://omeka.org/s/modules/ZoteroImport) allows you to connect an Omeka S instance to a Zotero library and import items from that library.
 
 ## Prepare your Zotero Library
 In order to import from a Zotero library, you must have API access to the library. To use Zotero Import, you will need the ID for the group or user:

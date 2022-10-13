@@ -1,6 +1,6 @@
 # Faceted Browse
 
-The [Faceted Browse module](https://omeka.org/s/modules/FacetedBrowse){target=_blank} lets you create "browse resource" pages with facets - filter and sort functions - that site visitors can use.
+The [Faceted Browse module](https://omeka.org/s/modules/FacetedBrowse) lets you create "browse resource" pages with facets - filter and sort functions - that site visitors can use.
 
 With this module, site managers are able to configure faceted browse pages and add them to their sites. End users are then able to browse through categories of resources and use the facets to narrow the results in a logical and intuitive manner. This functionality is similar to the filtering options on many websites and should be easy for users to manage as long as you have clear language.
 

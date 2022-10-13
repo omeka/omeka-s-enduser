@@ -1,6 +1,6 @@
 # CSV Import
 
-The [CSV Import module](https://omeka.org/s/modules/CSVImport){target=_blank} allows you to import items, item sets, media, and users into your Omeka S install from a CSV (comma-separated values), TSV (tab-separated values), or ODF (open document format) file. This module is only available to [Global Administrator and Supervisor users](../admin/users.md).
+The [CSV Import module](https://omeka.org/s/modules/CSVImport) allows you to import items, item sets, media, and users into your Omeka S install from a CSV (comma-separated values), TSV (tab-separated values), or ODF (open document format) file. This module is only available to [Global Administrator and Supervisor users](../admin/users.md).
 
 <!--- too much repetition in this page. need a "common settings" section first, then just the resource-type-specific comments in sections after that. --->
 
@@ -136,7 +136,7 @@ Column options are in addition to mappings. If you add options without also mapp
 This will open a drawer on the right side of the browser window with the following options:
 
 - **Use multivalve separator**: Check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
-- **Language**: Set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written. This will override what you have entered in basic settings.
+- **Language**: Set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings.
 - **Data type**: A dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URI reference. You can set the label for a URI by including the desired text after a space, for example: `http://example.com Label Text Goes Here`.
@@ -170,7 +170,7 @@ These settings apply to the entire CSV you are importing. Note that some of thes
 - **Sites**: Add the imported items to the specified site or sites. Global and user-specific default sites will be preselected here.
 - **Multivalue separator**: Enter the multivalue separator character here, if you have used one.
       - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon. This is where you can specify multiple creators, multiple subjects, or other common uses.
-- **Language**: Set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank}.
+- **Language**: Set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag).
 
 !!! note
 	If you are uploading different formats of data (for example, some text-based creator names and some URI-based creator links) into the same field (`dcterms:creator`, in this case), use two columns (named something helpful like "dcterms:creator-text" and "dcterms:creator-uri"), and upon import, map those two columns to different data types. Use the wrench icon to open up column mappings and select the correct data type for each column.
@@ -262,7 +262,7 @@ Column options are in addition to mappings. If you add options without also mapp
 This will open a drawer on the right side of the browser window with the following options:
 
 - **Use multivalve separator**: Check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
-- **Language**: Set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written. This will override what you have entered in basic settings.
+- **Language**: Set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings.
 - **Data type**: A dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
@@ -293,7 +293,7 @@ These settings apply to the entire CSV which you are importing. Note that some o
 - **Open/closed to additions**: Set whether users other than the owner (and site & global admins) will be able to add or edit the item sets.
 - **Multivalue separator**: Enter the multivalue separator character here, if you have used one.
       - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon.
-- **Language**: Set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank}.
+- **Language**: Set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag).
 
 ### Item Set import advanced settings
 
@@ -401,7 +401,7 @@ Column options are in addition to mappings. If you add options without also mapp
 This will open a drawer on the right side of the browser window with the following options:
 
 - **Use multivalve separator**: Check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
-- **Language**: Set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written. This will override what you have entered in basic settings.
+- **Language**: Set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings.
 - **Data type**: A dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`.
@@ -431,7 +431,7 @@ These settings apply to the entire CSV which you are importing. Note that some o
 - **Visibility**: Set the visibility of the imported media as public or private.
 - **Multivalue separator**: Enter the multivalue separator character here, if you have used one.
       - The columns of data in your CSV should be separated by commas; however, within those columns you can add a special character to create multiple inputs, for example a semicolon.
-- **Language**: Set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank}.
+- **Language**: Set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag).
 
 ### Media import advanced settings
 There are two options on this tab which are only for advanced use.
@@ -542,7 +542,7 @@ Column options are in addition to mappings. If you add options without also mapp
 This will open a drawer on the right side of the browser window with the following options:
 
 - **Use multivalue separator**: Check this box to use the multivalue separator for data in this column. You set the multivalue separator character in the initial import page, but you can change it in the Basic Settings tab.
-- **Language**: Set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written. This will override what you have entered in basic settings.
+- **Language**: Set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language in which the text is written. This will override what you have entered in basic settings.
 - **Data type**: A dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example: `http://example.com This Is The Label`.
@@ -575,7 +575,7 @@ These settings apply to the entire CSV you are importing. Note that some of thes
 - **Sites for items**: Select one or more of your existing sites to add new items as resources.
 - **Multivalue separator**: Enter the multivalue separator character here, if you have used one.
       - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon.
-- **Language**: Set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank}.
+- **Language**: Set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag).
 
 ### Mixed resources import advanced settings
 There are two options on this tab which are only for advanced use.
@@ -689,7 +689,7 @@ The following are known errors that can occur during an import:
 Some other modules add functionality to the CSV import process. If you have these modules installed and active, you will have access to the following options when using CSV Import.
 
 ### Mapping
-If you have [Mapping](../mapping/) (minimum version 1.1.0) installed and active, you will have two additional options in the "Map to Omeka S data" tab when importing Items. Note that these options do not appear for any other import type, including Mixed Resources.
+If you have [Mapping](mapping) (minimum version 1.1.0) installed and active, you will have two additional options in the "Map to Omeka S data" tab when importing Items. Note that these options do not appear for any other import type, including Mixed Resources.
 
 ![Add mapping drawer with additional options for "Resource location" and "default map view"](../modules/modulesfiles/csvimport_mapping1.png)
 
@@ -708,7 +708,7 @@ If you have [Mapping](../mapping/) (minimum version 1.1.0) installed and active,
 - **Default zoom** must be a number between 1 (most zoomed out) and 18 (most zoomed in).
 
 ### File Sideload
-If you have [File Sideload](../filesideload) (minimum version 1.2.0) installed and active, you can use it as a source for media when running a CSV import.
+If you have [File Sideload](filesideload) (minimum version 1.2.0) installed and active, you can use it as a source for media when running a CSV import.
 
 Everything on the **Map to Omeka S data** tab will be the same. When you add a mapping and choose the "Media source" option, you will see that there is now an option for "Sideload".
 
@@ -717,7 +717,7 @@ Everything on the **Map to Omeka S data** tab will be the same. When you add a m
 For the data in this column, you need to include the full file name, including extension. So, for example, if you want to import a JPG file named "Jekyll_and_Hyde_Title", then the data in the media column of the CSV you are importing should be `Jekyll_and_Hyde_Title.jpg`.
 
 ### Numeric Data Types
-If you have [Numeric Data Types](../numericdatatypes) installed and active, it will add the option to set a column data type as numeric data.
+If you have [Numeric Data Types](numericdatatypes) installed and active, it will add the option to set a column data type as numeric data.
 
 Options are:
 
@@ -730,30 +730,30 @@ Options are:
 
 When importing data as numeric, it must be formatted precisely. Always check to be sure your data has imported correctly into the format of your choice; CSV Import will leave values empty if the formatting isn't recognized. 
 
-Use the following formats for importing [dates](https://en.wikipedia.org/wiki/ISO_8601#Dates){target=_blank}, including dashes between values:
+Use the following formats for importing [dates](https://en.wikipedia.org/wiki/ISO_8601#Dates), including dashes between values:
 
 - `2022`
 - `2022-08` (year and month, no date)
 - `2022-08-18`.
 
-Use the following formats to add [times](https://en.wikipedia.org/wiki/ISO_8601#Times){target=_blank} to your date values:
+Use the following formats to add [times](https://en.wikipedia.org/wiki/ISO_8601#Times) to your date values:
 
-- `2022-08-18T17:26:49+00:00` ([time offset from UTC](https://en.wikipedia.org/wiki/ISO_8601#Time_offsets_from_UTC){target=_blank})
-- `2022-08-18T17:26:49Z` ([coordinated universal time](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_(UTC)){target=_blank}). 
+- `2022-08-18T17:26:49+00:00` ([time offset from UTC](https://en.wikipedia.org/wiki/ISO_8601#Time_offsets_from_UTC))
+- `2022-08-18T17:26:49Z` ([coordinated universal time](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_(UTC))). 
 
 You cannot omit the year while providing a month and/or day. You cannot supply ordinal dates (as in, `2000-175` for the 175th day of the year 2000). 
 
-Use the following formats for importing [intervals](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals){target=_blank} either as start and end points, or with one time point and a duration:
+Use the following formats for importing [intervals](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals) either as start and end points, or with one time point and a duration:
 
 - `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (Start and end)
 - `2007-03-01T13:00:00Z/P1Y2M10DT2H30M` (Start time/date and duration)
 - `P1Y2M10DT2H30M/2008-05-11T15:30:00Z` (Duration and end time/date).
 
-Use the following formats for importing [durations](https://en.wikipedia.org/wiki/ISO_8601#Durations){target=_blank}, expressed as number of years, number of months, number of days, etc.:
+Use the following formats for importing [durations](https://en.wikipedia.org/wiki/ISO_8601#Durations), expressed as number of years, number of months, number of days, etc.:
 
 - `P23DT23H` (23 days & 23 hours)
 - `P3Y6M4DT12H30M5S` (3 years, 6 months, 4 days, 12 hours, 30 minutes, & 5 seconds).
 
 
 ### Custom Vocab
-If you have [Custom Vocab](../customvocab) installed and active, it will add your custom vocabularies as data types in Omeka. You can select these data types during your CSV Import. 
+If you have [Custom Vocab](customvocab) installed and active, it will add your custom vocabularies as data types in Omeka. You can select these data types during your CSV Import. 
