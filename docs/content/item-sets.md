@@ -80,8 +80,6 @@ Once you select an item or item set, detailed information will load, and you mus
 
 If you are using an Item resource for the property, you will have additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search".
 
-![Select Item drawer top options, with a red arrow around a gray triangle button to the right of the phrase "Filter search"](contentfiles/items_filtersearch.png)
-
 This will open a menu below the button with the following options to filter the items in the drawer:
 
 - Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation;

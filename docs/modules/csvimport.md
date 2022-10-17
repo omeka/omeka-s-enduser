@@ -2,21 +2,22 @@
 
 The [CSV Import module](https://omeka.org/s/modules/CSVImport){target=_blank} allows you to import items, item sets, media, and users into your Omeka S install from a CSV (comma-separated values), TSV (tab-separated values), or ODF (open document format) file. This module is only available to [Global Administrator and Supervisor users](../admin/users.md).
 
-<!--- too much repetition in this page. need a "common settings" section first, then just the resource-type-specific comments in sections after that. --->
-
 ## Preparing your CSV file
 
-Most spreadsheet editors (including Microsoft Excel, Google Sheets, and Apple Numbers) can export to CSV format. CSV files for import **must be encoded in UTF-8**, so when exporting or saving a new document, be sure to check that the encoding is UTF-8.
+Most spreadsheet editors (including Microsoft Excel, Google Sheets, and Apple Numbers) can export to CSV format. 
+
+!!! note
+	CSV files for import **must be encoded in UTF-8**, so when exporting or saving a new document, be sure to check that the encoding is UTF-8.
 
 Most import options rely on you only importing one type of data: a list of items, a list of item sets, a list of media, etc. There is the option for a [Mixed resource import](#mixed-resource-import), requiring one column that identifies the type of each row.
 
-If the spreadsheet is already created, take a moment to think about which columns you want to match to which vocabulary properties. Your CSV file **must have a header row** in order for the module to process it correctly, so you may need to add a row at the top with column names.
+If the spreadsheet is already created, take a moment to think about which columns you want to match to which [vocabulary properties](../content/vocabularies.md). Your CSV file **must have a header row** in order for the module to process it correctly, so you may need to add a row at the top with column names.
 
 If you have multiple inputs for a single property, you can separate them with a secondary **multivalue separator**. For example, a work with multiple authors (E.B. White and William Strunk Jr.) with the column for Creator containing "E.B. White;William Strunk Jr" has a semicolon (;) as the multivalue separator. When imported into Omeka S, each of these would appear as a separate entry in the property (Creator: "E.B. White" and Creator: "William Strunk Jr."). Note that the import will be the same whether you leave a space after your separator (as in "E.B. White; William Strunk Jr") or not.
 
 ### Column names
 
-The module will automatically map columns by the names provided in the header row, if they conform to the property terms of your installation's [vocabularies](../content/vocabularies.md). For example, a CSV file with a column header "dcterms:title" would automap to the Dublin Core Title property when the CSV is loaded for mapping.
+You can manually map each column to its corresponding property, and will manually map columns such as the file URL for upload, or the item ID for appending metadata to existing items. The module will automatically map columns by the names provided in the header row, if they conform to the property terms of your installation's [vocabularies](../content/vocabularies.md) in the format `prefix:property`. For example, a CSV file with a column header "dcterms:title" would automap to the Dublin Core Title property when the CSV is loaded for mapping. You can modify these automapped columns before import.
 
 To find the terms you should use for your column headers, go to the Vocabularies tab from the admin dashboard. Click on the number of properties for the vocabulary you want to use (Dublin Core in the image below).
 
@@ -35,8 +36,6 @@ If you have plans to batch-import metadata or properties that come with a module
 ## Initial import settings
 
 Start an import by clicking on the CSV Import tab on the left-hand navigation. This will open the initial "Import Settings" page.
-
-![A red arrow points to CSV Import in the navigation](../modules/modulesfiles/csvimport_nav.png)
 
 - For the Spreadsheet option, use the "Choose File" button to select the file from your computer.
 - From the **CSV column delimiter** dropdown, choose from the following options (this should match the formatting of your file) that separates different values in a row:
@@ -334,7 +333,7 @@ Once you have completed mappings, column options, and any settings, click the Im
 ## Import media
 To import media, select "media" under the "Import type" on the first page.
 
-In order to import media, you must have a column in the CSV which will map to item data. Media cannot exist unless associated with an item. Note that if you are running an advanced job, such as an update or replace, then you do not have to have a column with associated item data.
+In order to import media, you must have a column in the CSV which will map to item data. Media cannot exist unless associated with an item by an ID. Note that if you are running an advanced job, such as an update or replace, then you do not have to have a column with associated item data.
 
 When you click next, the page will load with the following tabs:
 
@@ -435,8 +434,6 @@ These settings apply to the entire CSV which you are importing. Note that some o
 
 ### Media import advanced settings
 There are two options on this tab which are only for advanced use.
-
-![Advanced settings page showing only the Action dropdown and the field for number of rows to process.](../modules/modulesfiles/csvimport_mediaAdv.png)
 
 The Action setting allows you to change the action of process from a straight import to one of the following options:
 
@@ -646,7 +643,7 @@ Role values to use in this import are as follows:
 Once you have completed the mappings, click the "Import" button.
 
 !!! note
-	Users will not be notified via email when an account is created for them using CSV Import. Normally, when you create an account manually, the email address is sent a notification including a link to set their password. Currently, CSV Import does not send those emails and so users cannot set their own passwords. Site administrators must set passwords and then share them manually once users are created via CSV Import.
+	Users will **not** be notified via email when an account is created for them using CSV Import. Normally, when you create an account manually, the email address is sent a notification including a link to set their password. Currently, CSV Import does not send those emails and so users cannot set their own passwords. Site administrators must set passwords and then share them manually once users are created via CSV Import.
 
 ## Manage past imports
 
