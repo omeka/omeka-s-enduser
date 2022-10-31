@@ -40,13 +40,25 @@ The blue squares indicate where to click to open the full item view.
 
 When you view an individual item , there are tabs for the item’s **Metadata** and its **Linked Resources**. The right side of the page displays the item’s media, any **item sets** to which it belongs, its creation date, owner, and visibility. 
 
-An item’s **linked resources** (shown below) are resources, which are linked to this item through properties. Note that this section only shows resources which have been linked *to* this item (which have it for a property); resources which are linked *from* this item will display in the property which they fill.
+### Linked resources
+
+An item’s **linked resources** are other Omeka resources (items, item sets, or media) that are linked to this item through properties. Note that this section only shows resources which have been linked *to* this item (which have it for a property); resources which are linked *from* this item will display in the property which they fill.
 
 Linked items are grouped by the property for which they use the current item. In the example below, the item William Shakespeare is used for the properties "Creator", "References", and "list of authors" for the linked resources. 
 
 You can filter linked resources to only display those referencing a specific property using the dropdown "Filter by property". It will only display properties actively in use.
 
 ![Item linked resources view for William Shakespeare, with six plays using Shakespeare as Creator, the item Folger Shakespeare Library listed as 'references' Shakespeare, and the Globe Theatre using Shakespeare for 'list of authors'. Each property cluster is in a separate rectangle, headed by the property being referenced.](contentfiles/items_linked.png) 
+
+When an item is viewed on the public site, all linked resources are displayed in a series of tables based on the metadata property in use. An item without any linked resources will not display these tables; items displaying on sites that are set to exclude resources that are not included in the site will also not display these entries. 
+
+![An item display in the Default theme showing a number of Omeka items that link to the item, as "Publications"](contentfiles/items_linkedresources1.png)
+
+![The same item showing a number of Omeka resources as "Contributors"](contentfiles/items_linkedresources2.png)
+
+The display of Linked resources on resource pages can be configured on each site. Click on "Theme" and then click the button that reads "[Configure resource pages](../sites/site_theme.md#configure-resource-pages)", then decide if and where to display the "Linked resources" tables for each resource. 
+
+You can also control whether resources that are linked will display those links even when the resources in question are not added to the given site. Under [Site settings, in the "Show" section](../sites/site_settings.md#show), you will find a checkbox for "Exclude resources not in site." 
 
 ## Add an item
 
@@ -90,7 +102,7 @@ You can indicate the language for the content of an input using the globe symbol
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
 
 #### Omeka resource
-Omeka resource fields create an internal link between the resource you are creating and the resource which fills that field. 
+Choosing an Omeka resource as a metadata value creates an [internal link between the resource you are creating and the resource that fills that field](#linked-resources). 
 
 When creating an item, you have the option to use either another item or an item set. 
 
