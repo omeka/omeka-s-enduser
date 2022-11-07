@@ -52,7 +52,7 @@ You can filter linked resources to only display those referencing a specific pro
 
 When an item is viewed on the public site, all linked resources are displayed in a series of tables based on the metadata property in use. An item without any linked resources will not display these tables; items displaying on sites that are set to exclude [resources that are not included in the site](../sites/site_settings.md#show) will also not display these entries. 
 
-If an item has a linked media, that media will not display in the item's "Linked resources" table. Conversely, media pages do not display linked resource tables at all.
+Note that media pages do not display linked resource tables, whether items link to them or not.
 
 ![An item display in the Default theme showing a number of Omeka items that link to the item, as "Publications"](contentfiles/items_linkedresources1.png)
 
@@ -106,9 +106,9 @@ You can indicate the language for the content of an input using the globe symbol
 #### Omeka resource
 Choosing an Omeka resource as a metadata value creates an [internal link between the resource you are creating and the resource that fills that field](#linked-resources). 
 
-When creating an item, you have the option to use either another item or an item set. If the item has media attached, you can also choose from within that media - not any other media in the installation. 
+When creating an item, you have the option to use either another item or an item set. If the item has media attached, you can also choose from within that media - not other media in the installation. 
 
-Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific item. 
+Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific resource. 
 
 Once you select a resource, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of resources.
 

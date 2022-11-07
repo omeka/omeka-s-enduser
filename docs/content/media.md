@@ -86,17 +86,13 @@ You can indicate the language for the content of an input using the globe symbol
 
 #### Omeka resource
 
-**Omeka resource** fields create an internal link between the resource you are creating and the resource that fills that field. 
+These fields create an internal link between the resource you are creating and the resource that fills that field. 
 
-You have the option to use either an item or an item set. Once you select an item or item set, detailed information will load, and you must click "Select resource" to finish linking the two resources. You can also click the "X" button in the upper right-hand corner to go back to the list of items or item sets.
+You have the option to use either an item or an item set. 
 
-![Select Item menu with list of items to link in edit media view](contentfiles/media_addresource.png)
+Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific item or item set.
 
-When linking a piece of media, there will be different behaviors than with linked resources for [items](items.md#linked-resources) and [item sets](item-sets.md#linked-resources):
-
-- If you are linking an item to a piece of media, you will only have the option of media associated with that item.
-- If you are linking a media's metadata property to another resource, you can choose any item or item set in the installation. However, the media will not show on that resource's table of linked resources. 
-- Media cannot link to other media associated with the same item, only items or item sets.
+Once you select an item or item set, detailed information will load, and you must click "Select resource" to finish linking the two resources. You can also click the "X" button in the upper right-hand corner to go back to the list of items or item sets.
 
 If you are using an item resource for the property, you will have additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search".
 
@@ -104,8 +100,8 @@ If you are using an item resource for the property, you will have additional opt
 
 This will open a menu below the button with the following options to filter the items in the drawer:
 
-- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation;
-- Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set
+- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation.
+- Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set.
 - Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the url of it's edit page; if you are editing the item and the url is `admin/item/11547/edit` then the item's ID is 11547.
 
 ![options as above described](contentfiles/item_addresItem.png)
@@ -114,7 +110,7 @@ Item resources also have an option for "Quick add". When this switch is flipped,
 
 ![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](contentfiles/items_quickadd.png)
 
-If an item has a linked media, that media will not display in the item's "Linked resources" table. Conversely, media pages do not display linked resource tables at all.
+Media public and admin pages do not display linked resource tables.
 
 #### URI
 

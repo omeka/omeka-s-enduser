@@ -54,7 +54,7 @@ You can also control whether resources that are linked will display those links 
 
 ## Add an item set
 
-To add a new item set, click the Item Sets tab from the left navigation of the dashboard. Click the "Add new item set" button on the right hand side of the screen.
+To add a new item set, click the Item sets tab from the left navigation of the dashboard. Click the "Add new item set" button on the right hand side of the screen.
 
 Item sets may use the same resource templates available for items to provide pre-selected fields. Each set should contain at least one descriptive value, such as Dublin Core Description. 
 
@@ -77,11 +77,12 @@ In the image below, the first property (Title) is public as indicated by the ope
 Text fields are entered with text. The keyboard at the top of the field input indicates text. You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
 
 ### Omeka resource
-These fields create an internal link between the resource you are creating and the resource which fills that field. You have the option to use either another item or an item set. Once you select an item or item set, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of items or item sets.
 
-When creating an item set, you have the option to use either another item or an item set. 
+These fields create an internal link between the resource you are creating and the resource that fills that field. 
 
-Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific item or item set. 
+You have the option to use either another item or an item set. 
+
+Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific item or item set.
 
 Once you select an item or item set, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of items or item sets.
 
@@ -93,8 +94,8 @@ If you are using an Item resource for the property, you will have additional opt
 
 This will open a menu below the button with the following options to filter the items in the drawer:
 
-- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation;
-- Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set
+- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation.
+- Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set.
 - Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the url of it's edit page; if you are editing the item and the url is `admin/item/11547/edit` then the item's ID is 11547.
 
 ![options as above described](contentfiles/item_addresItem.png)
