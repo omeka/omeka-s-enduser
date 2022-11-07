@@ -44,11 +44,11 @@ You can filter linked resources to only display those referencing a specific pro
 
 ![An item set showing the Linked resources tab, where two items are using the item set as a value for the property "Format".](contentfiles/itemsets_linked.png)
 
-When an item set is viewed on the public site, all linked resources are displayed in a series of tables based on the metadata property in use. An item set without any linked resources will not display these tables; item sets displaying on sites that are set to exclude resources that are not included in the site will also not display these entries. 
+When an item set is viewed on the public site, all linked resources are displayed in a series of tables based on the metadata property in use. Resources are sorted by resource type (item, item set, or media) and only one type is displayed at a time. An item set without any linked resources will not display these tables; item sets displaying on sites that are set to exclude resources that are not included in the site will also not display these entries. 
 
 ![An item set display in the Default theme showing a number of Omeka items that link to the item set, as "Format"](contentfiles/itemsets_linked2.png)
 
-The display of Linked resources on resource pages can be configured on each site. Click on "Theme" and then click the button that reads "[Configure resource pages](../sites/site_theme.md#configure-resource-pages)", then decide if and where to display the "Linked resources" tables for each resource. 
+The display of linked resources on resource pages can be configured on each site. Click on "Theme" and then click the button that reads "[Configure resource pages](../sites/site_theme.md#configure-resource-pages)", then decide if and where to display the "Linked resources" tables for each resource. 
 
 You can also control whether resources that are linked will display those links even when the resources in question are not added to the given site. Under [Site settings, in the "Show" section](../sites/site_settings.md#show), you will find a checkbox for "Exclude resources not in site." 
 

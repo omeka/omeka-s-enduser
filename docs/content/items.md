@@ -50,7 +50,7 @@ You can filter linked resources to only display those referencing a specific pro
 
 ![Item linked resources view for William Shakespeare, with six plays using Shakespeare as Creator, the item Folger Shakespeare Library listed as 'references' Shakespeare, and the Globe Theatre using Shakespeare for 'list of authors'. Each property cluster is in a separate rectangle, headed by the property being referenced.](contentfiles/items_linked.png) 
 
-When an item is viewed on the public site, all linked resources are displayed in a series of tables based on the metadata property in use. An item without any linked resources will not display these tables; items displaying on sites that are set to exclude [resources that are not included in the site](../sites/site_settings.md#show) will also not display these entries. 
+When an item is viewed on the public site, linked resources are displayed in a series of tables based on the metadata property in use. Resources are sorted by resource type (item, item set, or media) and only one type is displayed at a time. An item without any linked resources will not display these tables; items displaying on sites that are set to exclude [resources that are not included in the site](../sites/site_settings.md#show) will also not display these entries. 
 
 Note that media pages do not display linked resource tables, whether items link to them or not.
 
