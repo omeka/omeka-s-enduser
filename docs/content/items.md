@@ -42,7 +42,7 @@ When you view an individual item , there are tabs for the item’s **Metadata** 
 
 ### Linked resources
 
-An item’s **linked resources** are other Omeka resources (items, item sets, or media) that are linked to this item through their properties. Note that this section only shows resources that have been linked *to* this item (which have it for a property); resources that are linked *from* this item will display in the property they fill.
+An item’s **linked resources** are other Omeka resources (items, item sets, or media) that are [linked to this item through their properties](#omeka-resource). Note that this section only shows resources that have been linked *to* this item (which have it for a property); resources that are linked *from* this item will display in the property they fill.
 
 Linked resources are grouped by the property for which they use the current item. In the example below, the current item "William Shakespeare" is used for the properties "Creator", "References", and "list of authors" for the linked resources. 
 
@@ -50,7 +50,9 @@ You can filter linked resources to only display those referencing a specific pro
 
 ![Item linked resources view for William Shakespeare, with six plays using Shakespeare as Creator, the item Folger Shakespeare Library listed as 'references' Shakespeare, and the Globe Theatre using Shakespeare for 'list of authors'. Each property cluster is in a separate rectangle, headed by the property being referenced.](contentfiles/items_linked.png) 
 
-When an item is viewed on the public site, all linked resources are displayed in a series of tables based on the metadata property in use. An item without any linked resources will not display these tables; items displaying on sites that are set to exclude resources that are not included in the site will also not display these entries. 
+When an item is viewed on the public site, all linked resources are displayed in a series of tables based on the metadata property in use. An item without any linked resources will not display these tables; items displaying on sites that are set to exclude [resources that are not included in the site](../sites/site_settings.md#show) will also not display these entries. 
+
+If an item has a linked media, that media will not display in the item's "Linked resources" table. Conversely, media pages do not display linked resource tables at all.
 
 ![An item display in the Default theme showing a number of Omeka items that link to the item, as "Publications"](contentfiles/items_linkedresources1.png)
 
@@ -58,7 +60,7 @@ When an item is viewed on the public site, all linked resources are displayed in
 
 The display of Linked resources on resource pages can be configured on each site. Click on "Theme" and then click the button that reads "[Configure resource pages](../sites/site_theme.md#configure-resource-pages)", then decide if and where to display the "Linked resources" tables for each resource. 
 
-You can also control whether resources that are linked will display those links even when the resources in question are not added to the given site. Under [Site settings, in the "Show" section](../sites/site_settings.md#show), you will find a checkbox for "Exclude resources not in site." 
+You can also control whether resources that are linked will display those links even when the [resources in question are not included in the given site](../sites/site_resources.md). Under [Site settings, in the "Show" section](../sites/site_settings.md#show), you will find a checkbox for "Exclude resources not in site." 
 
 ## Add an item
 
@@ -104,11 +106,11 @@ You can indicate the language for the content of an input using the globe symbol
 #### Omeka resource
 Choosing an Omeka resource as a metadata value creates an [internal link between the resource you are creating and the resource that fills that field](#linked-resources). 
 
-When creating an item, you have the option to use either another item or an item set. 
+When creating an item, you have the option to use either another item or an item set. If the item has media attached, you can also choose from within that media - not any other media in the installation. 
 
 Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific item. 
 
-Once you select an item or item set, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of items or item sets.
+Once you select a resource, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of resources.
 
 ![Select Item menu with list of items to link in edit item view](contentfiles/items_addresource.png)
 

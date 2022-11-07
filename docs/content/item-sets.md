@@ -36,7 +36,7 @@ To view the items in an item set, either click on the number of items in the set
 
 ### Linked resources
 
-An item set's **linked resources** are other Omeka resources (items, item sets, or media) that are linked to this item set through their properties. Note that this section only shows resources that have been linked *to* this item set (which have it for a property); resources that are linked *from* this item will display in the property they fill.
+An item set's **linked resources** are other Omeka resources (items, item sets, or media) that are [linked to this item set through their properties](#omeka-resource). Note that this section only shows resources that have been linked *to* this item set (which have it for a property); resources that are linked *from* this item will display in the property they fill.
 
 Linked resources are grouped by the property for which they use the current item. In the example below, the current item set "Newspapers" is used for the property "Format" for the linked resources. 
 
