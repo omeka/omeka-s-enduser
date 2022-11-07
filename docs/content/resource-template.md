@@ -17,6 +17,17 @@ You can use the icons in each template’s row to: **edit** (pencil), **delete**
 <div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/290924872?h=c6359076cd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <p><a href="https://vimeo.com/290924872">Omeka S Resource Templates</a> from <a href="https://vimeo.com/omeka">Omeka</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
+## Resource template permissions
+
+When a user creates a resource template, they become the "owner" of that template. Most user levels have the ability to create templates, and can always delete their own templates. Only higher levels can delete templates that others own. 
+
+| Category | Permission | Global Admin | Supervisor | Editor | Reviewer | Author | Researcher |
+|-----|-----|---|---|---|---|---|---|
+| Resource templates | Add | Yes | Yes | Yes | No | Yes | No |
+| | Edit/Delete  | All | All | All | No | Their own | No |
+
+Note that when you change a user's role, for example from an Author to a Researcher, they will still own the templates they created when they had permission to do so. Deleting a user orphans their templates - they will appear as having "[no owner]", and cannot be re-assigned to another user.
+
 ## View resource templates
 Clicking on the title of a resource template takes you to a table view of all the properties and property options for that template.
 

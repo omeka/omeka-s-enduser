@@ -8,6 +8,22 @@ To view the media associated with an item, click on the media’s name in the ri
 
 To view all media in the installation, navigate to the **Items** section first. The **Media** subsection will appear below Items in the left-hand navigation.
 
+## Media permissions
+
+When a user attaches a media to an item, they become the "owner" of that media. Most user levels have the ability to create media, and can always delete their own media. Only higher levels can delete media that others own. 
+
+| Category | Permission | Global Admin | Supervisor | Editor | Reviewer | Author | Researcher |
+|-----|-----|---|---|---|---|---|---|
+| Items & media | Add | Yes | Yes | Yes | Yes | Yes | No |
+| | Edit | All | All | All | All | Their own | No |
+| | Delete | All | All | All | Their own | Their own | No |
+| Value annotations | Add/Edit | Yes | Yes | Yes | Yes | Yes | No |
+| Private objects | View | Yes | Yes | Yes | Yes | No | No |
+
+Media ownership is not automatically the same as the attached item's ownership. A media's owner can be changed by a Global Admin or Supervisor on the media's Advanced tab.
+
+Note that when you change a user's role, for example from an Author to a Researcher, they will still own the media they created when they had permission to do so. Deleting a user orphans their media - they will appear as having no owner.
+
 ## View media
 To browse media, first click on Items in the left-hand navigation. In that sidebar, an option for Media will appear under the Item button (you may have to click on the triangle to expand the menu below Items).
 

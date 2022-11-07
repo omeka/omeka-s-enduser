@@ -178,8 +178,8 @@ The following is a detailed breakdown of permissions for each user role:
 | Item sets | Add | Yes | Yes | Yes | Yes | Yes | No |
 | | Edit | All | All | All | All | Their own | No |
 | | Delete | All | All | All | Their own | Their own | No |
-| Vocabularies | Import | Yes | No | No | No | No | No |
-|  | Edit/Delete | Yes | No | No | No | No | No |
+| Vocabularies | Import | Yes | Yes | No | No | No | No |
+|  | Edit/Delete | Yes | Their own | No | No | No | No |
 | Resource templates | Add | Yes | Yes | Yes | No | Yes | No |
 | | Edit/Delete  | All | All | All | No | Their own | No |
 | Private objects | View | Yes | Yes | Yes | Yes | No | No |
@@ -197,7 +197,7 @@ The following is a detailed breakdown of permissions for each user role:
 | | Edit/Delete | All | All | Their own | | | |
 | Site user roles | Modify | All | All | Their own | | | |
 
-1. Often, a Global Admin, Supervisor, or Editor will create sites and then assign managers and creators from among the users (for example, a class assignment, or virtual exhibits by staff members). Site ownership cannot be re-assigned to other users, and a site owner always has manager-level access to sites they own, even if their installation-wide role is changed.
+1. Often, a Global Admin, Supervisor, or Editor will create sites and then assign managers and creators from among the users (for example, a class assignment, or virtual exhibits by staff members). Site ownership cannot be re-assigned to other users, and a site owner always has manager-level access to sites they own, even if their installation-wide role is changed. Refer to the [site users page](../sites/site_users.md) for more information.
 
 **Global Admin**
 
@@ -246,4 +246,4 @@ The following is a detailed breakdown of permissions for each user role:
 - No access to modules.
 - Can see other users of the installation and their email addresses.
 
-Remember that a user at any role can be [added to a site at any level (Viewer, Creator, Manager)](../sites/site_users.md). This will determine whether, say, a Researcher-level user added to a site as Manager can see all the other users added to that site.
+Remember that a user at any role can be [added to a site at any level (Viewer, Creator, Manager)](../sites/site_users.md). This will determine whether, say, a Researcher-level user added to a site as Manager can see private information about that site.

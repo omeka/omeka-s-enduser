@@ -2,6 +2,22 @@
 
 Item sets are aggregations of items, similar to collections in Omeka Classic. In Omeka S, items may belong to any number of sets, and an item set can have any number of items.
 
+Item Set permissions
+
+When a user creates an item set, they become the "owner" of that item set. Most user levels have the ability to create item sets, and can always delete their own item sets. Only higher levels can delete item sets that others own. 
+
+Users can add items to item sets that are open to additions, and the item sets that they own (regardless of their open or closed status). Global Admins and Supervisors can add any items to any item set.
+
+| Category | Permission | Global Admin | Supervisor | Editor | Reviewer | Author | Researcher |
+|-----|-----|---|---|---|---|---|---|
+| Item sets | Add | Yes | Yes | Yes | Yes | Yes | No |
+| | Edit | All | All | All | All | Their own | No |
+| | Delete | All | All | All | Their own | Their own | No |
+| Value annotations | Add/Edit | Yes | Yes | Yes | Yes | Yes | No |
+| Private objects | View | Yes | Yes | Yes | Yes | No | No |
+
+Note that when you change a user's role, for example from an Author to a Researcher, they will still own the item sets they created when they had permission to do so. Item sets are not transferred. Deleting a user orphans their item sets - they will appear as having no owner. Only Global Admins can re-assign ownership of item sets.
+
 ## The Item Sets tab
 
 Item sets are managed via the **Item Sets** tab (the icon of three stacked boxes) located in the left navigation of the admin dashboard. 

@@ -18,7 +18,7 @@ When a user creates an item, they become the "owner" of that item. Most user lev
 | | Edit | All | All | All | All | Their own | No |
 | | Delete | All | All | All | Their own | Their own | No |
 | Value annotations | Add/Edit | Yes | Yes | Yes | Yes | Yes | No |
-| Private objects | View | Yes | Yes | Yes | Yes | Their own | No |
+| Private objects | View | Yes | Yes | Yes | Yes | No | No |
 
 Note that when you change a user's role, for example from an Author to a Researcher, they will still own the items they created when they had permission to do so. Items are not transferred. Deleting a user orphans their items - they will appear as having no owner. You cannot currently search and batch-edit items without an owner, so the best practice is to re-assign these items before deleting the user account.
 
