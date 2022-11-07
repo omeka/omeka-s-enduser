@@ -72,7 +72,7 @@ For a more detailed look at an individual item, click on its title in the items 
 
 The blue squares indicate where to click to open the full item view.
 
-When you view an individual item , there are tabs for the item’s **Metadata** and its **Linked Resources**. The right side of the page displays the item’s media, any **item sets** to which it belongs, its creation date, owner, and visibility. 
+When you view an individual item, there are tabs for the item’s **Metadata** and its **Linked Resources**. The right side of the page displays the item’s media, any **item sets** to which it belongs, its creation date, owner, and visibility. 
 
 An item’s **linked resources** (shown below) are resources, which are linked to this item through properties. Note that this section only shows resources which have been linked *to* this item (which have it for a property); resources which are linked *from* this item will display in the property which they fill.
 
