@@ -108,7 +108,7 @@ Depending on the [site theme](../sites/site_theme.md), you may want to make this
 
 **Show value annotations**: When this box is checked, Value Annotations will be visible on the public views for resources (items, item sets, media).
 
-**Exclude resources not in site**: When this box is checked, the site will not display [linked Omeka resources](../content/items.md#linked-resources) that are not added as resources to the site. 
+**Exclude resources not in site**: When this box is checked, the site will not display [linked Omeka resources](../content/items.md#linked-resources) that are not [added as resources to the site](site_resources.md). 
 
 ### Search 
 
