@@ -13,7 +13,7 @@ Each item appears as a row, with columns for:
 - the **Title**
 - icons to **edit** (pencil), **delete** (trash can), or **details** (ellipsis)
 - the **Class**
-- the item’s **Owner**
+- the item's **Owner**
 - the date the item was **Created**. 
 
 In the top right corner of the Items screen is the "Add new item" button. 
@@ -42,9 +42,9 @@ When you view an individual item , there are tabs for the item’s **Metadata** 
 
 ### Linked resources
 
-An item’s **linked resources** are other Omeka resources (items, item sets, or media) that are linked to this item through properties. Note that this section only shows resources which have been linked *to* this item (which have it for a property); resources which are linked *from* this item will display in the property which they fill.
+An item’s **linked resources** are other Omeka resources (items, item sets, or media) that are linked to this item through their properties. Note that this section only shows resources that have been linked *to* this item (which have it for a property); resources that are linked *from* this item will display in the property they fill.
 
-Linked items are grouped by the property for which they use the current item. In the example below, the item William Shakespeare is used for the properties "Creator", "References", and "list of authors" for the linked resources. 
+Linked resources are grouped by the property for which they use the current item. In the example below, the current item "William Shakespeare" is used for the properties "Creator", "References", and "list of authors" for the linked resources. 
 
 You can filter linked resources to only display those referencing a specific property using the dropdown "Filter by property". It will only display properties actively in use.
 

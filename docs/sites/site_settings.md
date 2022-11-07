@@ -102,11 +102,13 @@ Depending on the [site theme](../sites/site_theme.md), you may want to make this
 
 ### Show 
 
-**Attached Pages**: When this box is checked, site pages to which an item is attached will display on the public view of that item.
+![Show settings](../sites/sitesfiles/sites_settingShow.png)
 
-![Show setting checked](../sites/sitesfiles/sites_settingShow.png)
+**Show attached pages**: When this box is checked, site pages to which an item is attached will display on the public view of that item.
 
-**Value Annotation**: When this box is checked, Value Annotations will be visible on the public views for resources (items, item sets, media).
+**Show value annotations**: When this box is checked, Value Annotations will be visible on the public views for resources (items, item sets, media).
+
+**Exclude resources not in site**: When this box is checked, the site will not display [linked Omeka resources](../content/items.md#linked-resources) that are not added as resources to the site. 
 
 ### Search 
 
