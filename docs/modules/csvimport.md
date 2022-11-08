@@ -17,7 +17,7 @@ If you have multiple inputs for a single property, you can separate them with a 
 
 ### Column names
 
-You can manually map each column to its corresponding property, and will manually map columns such as the file URL for upload, or the item ID for appending metadata to existing items. The module will automatically map columns by the names provided in the header row, if they conform to the property terms of your installation's [vocabularies](../content/vocabularies.md) in the format `prefix:property`. For example, a CSV file with a column header "dcterms:title" would automap to the Dublin Core Title property when the CSV is loaded for mapping. You can modify these automapped columns before import.
+You can manually map each column to its corresponding property, and you are required to manually map non-metadata columns, such as the file URL for upload. The module will automatically map metadata columns by the names provided in the header row, if they conform to the property terms of your installation's [vocabularies](../content/vocabularies.md) in the format `prefix:property`. For example, a CSV file with a column header "dcterms:title" would automap to the Dublin Core Title property when the CSV is loaded for mapping. You can modify these automapped columns before import.
 
 To find the terms you should use for your column headers, go to the Vocabularies tab from the admin dashboard. Click on the number of properties for the vocabulary you want to use (Dublin Core in the image below).
 
