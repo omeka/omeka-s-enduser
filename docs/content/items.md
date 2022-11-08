@@ -28,7 +28,7 @@ All items in an Omeka S installation are available for addition to all sites, bu
 
 Each site can be set to have all new items automatically added to it. 
 
-Each user can have one or more sites to always add new items to by default. If a user has a site set as their "Default sites for items", they must also be added to the site as a Creator or Manager in order for that setting to work. 
+Each user can have [one or more sites to always add new items to by default](../admin/users.md#user-settings). If a user has a site set as their "Default sites for items", they must also be added to the site as a Creator or Manager in order for that setting to work. 
 
 | Category | Permission | Site Manager | Site Creator | Site Viewer | Global Admin | Supervisor |
 |-----|-----|---|---|---|---|---|
@@ -189,7 +189,7 @@ You can set controlled vocabularies for annotations using the [Custom Vocab modu
 
 Use the **Media** tab to add [images, video, or other files](media.md).
 
-Using the buttons on the **Add New Media** menu on the right side of the screen, select a media type (Upload, URL, oEmbed, IIIF, YouTube, or HTML).
+Using the buttons on the **Add New Media** menu on the right side of the screen, select a media type (Upload, URL, oEmbed, IIIF, YouTube, or HTML). Modules, such as [File Sideload](../modules/filesideload.md), can add more ways to gather media into Omeka. Other modules can import materials from other platforms directly into Omeka as items with attached media, such as the [Zotero import](../modules/zoteroimport.md) module.
 
 !["Add new media" drawer showing the options](contentfiles/items_mediaadd2.png)
 
