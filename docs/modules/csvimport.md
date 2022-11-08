@@ -333,15 +333,15 @@ Once you have completed mappings, column options, and any settings, click the Im
 ## Import media
 To import media, select "media" under the "Import type" on the first page.
 
-In order to import media, you must have a column in the CSV which will map to item data. Media cannot exist unless associated with an item by an ID. Note that if you are running an advanced job, such as an update or replace, then you do not have to have a column with associated item data.
+In order to import media, you must have a column in the CSV which will map to item data. Media cannot exist unless associated with an item by its unique identifier (Omeka item ID, title, etc.). Note that if you are running an advanced job, such as an update or replace, then you do not have to have a column with associated item data, only a way to match the rows to media that already exist.
 
-When you click next, the page will load with the following tabs:
+When you click "Next", the page will load with the following tabs:
 
 ### Map to Omeka S data
 This tab displays a table with the columns from your spreadsheet as rows. Each row displays:
 
-- a Checkbox
-- Column header from the spreadsheet
+- A checkbox
+- A column header from the spreadsheet
 - A plus symbol button for adding or modifying a mapping
 - A wrench symbol button for spreadsheet column options
 - A trash can to delete mappings
