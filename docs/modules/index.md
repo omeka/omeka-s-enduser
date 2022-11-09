@@ -11,6 +11,11 @@ To manage the modules installed on your Omeka S site, click on the **Modules** s
 
 Note that only [Global Administrators](../admin/users.md) can install and manage modules; Supervisors can browse installed modules but not modify them. Other users do not have access to this tab.
 
+| Category | Permission | Global Admin | Supervisor | Editor | Reviewer | Author | Researcher |
+|-----|-----|---|---|---|---|---|---|
+| Modules | Install/Configure | Yes | No | No | No | No | No |
+|  | Use | Yes | Yes | No | No | No | No |
+
 Any modules that have been uploaded into the `/modules` folder of the installation should appear in the list of modules. Each module displays the name of the module with the version number, creator, and a summary of its function.
 
 Multiple buttons can appear to the right of a module’s label. Each button has both an icon and a label describing its action:

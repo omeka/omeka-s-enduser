@@ -9,10 +9,10 @@ The Site Admin page has two tabs: Info and Settings.
 ## Info 
 The site info settings for an Omeka S site are where you can change the basic info for the site - the same information you entered when you created the site. You can change the:
 
-* **Title**: a text field. 
-* **Slug**: the URL for your site.
-* **Summary**: the brief description of what it is about which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites). 
-* **Thumbnail** - an image for your site which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
+* **Title**: a text field, with a maximum of 190 characters. 
+* **Slug**: the URL for your site, which will be generated automatically from the title if you leave this blank.
+* **Summary**: a brief description of what your site is about, which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites). 
+* **Thumbnail** - a small image for your site, which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
 
 ![Site info for the site “Jane Austen” with buttons across the top to Delete and Save the site](../sites/sitesfiles/sites_siteinfo.png)
 
@@ -38,7 +38,7 @@ To implement any changes you make, click "Save" at the top right of the browser 
 
 ![general settings, all at default](../sites/sitesfiles/sites_settingsgen.png)
 
-**Auto-assign new items**: a checkbox which sets whether new items are automatically added to the site. If checked, every new item will be added to the site, regardless of the item's owner. Note that item owners may unassign their items from the site at any time, in the item's edit pages.
+**Auto-assign new items**: a checkbox which sets whether new items are automatically added to this site. If checked, every new item will be added to the site, regardless of the item's owner. Note that item owners may unassign their items from the site at any time, in the item's edit pages.
 
 **Attachment link type**: sets the target of links from attachments you add to [site page blocks](../sites/site_pages.md#page-blocks) (for example, in an [item showcase](../sites/site_pages.md#item-showcase)). It offers a dropdown with the following options:
 
@@ -103,8 +103,6 @@ Depending on the [site theme](../sites/site_theme.md), you may want to make this
 ### Show 
 
 **Attached Pages**: When this box is checked, site pages to which an item is attached will display on the public view of that item.
-
-![Show setting checked](../sites/sitesfiles/sites_settingShow.png)
 
 **Value Annotation**: When this box is checked, Value Annotations will be visible on the public views for resources (items, item sets, media).
 
