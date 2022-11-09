@@ -8,6 +8,22 @@ To view the media associated with an item, click on the media’s name in the ri
 
 To view all media in the installation, navigate to the **Items** section first. The **Media** subsection will appear below Items in the left-hand navigation.
 
+## Media permissions
+
+When a user attaches a media to an item, they become the "owner" of that media. Most user levels have the ability to create media, and can always delete their own media. Only higher levels can delete media that others own. 
+
+| Category | Permission | Global Admin | Supervisor | Editor | Reviewer | Author | Researcher |
+|-----|-----|---|---|---|---|---|---|
+| Items & media | Add | Yes | Yes | Yes | Yes | Yes | No |
+| | Edit | All | All | All | All | Their own | No |
+| | Delete | All | All | All | Their own | Their own | No |
+| Value annotations | Add/Edit | Yes | Yes | Yes | Yes | Yes | No |
+| Private objects | View | Yes | Yes | Yes | Yes | No | No |
+
+Media ownership is not automatically the same as the attached item's ownership. A media's owner can be changed by a Global Admin or Supervisor on the media's Advanced tab.
+
+Note that when you change a user's role, for example from an Author to a Researcher, they will still own the media they created when they had permission to do so. Deleting a user orphans their media - they will appear as having no owner.
+
 ## View media
 To browse media, first click on Items in the left-hand navigation. In that sidebar, an option for Media will appear under the Item button (you may have to click on the triangle to expand the menu below Items).
 
@@ -36,15 +52,15 @@ Clicking on the title of any media will take you to its metadata page. This page
 
 ## Add media
 
-Media can only be added via an [item](../content/items.md). Options for adding media to your items include uploading a file, or directly attaching content with a URL, oEmbed, YouTube URL, IIIF URL, or by writing HTML using the HTML editor.
+Media can only be added via an [item](../content/items.md). Options for adding media to your items include uploading a file, or directly attaching content with a URL, [oEmbed](https://oembed.com/){target=_blank}, YouTube URL, [IIIF URL](https://iiif.io/guides/using_iiif_resources/){target=_blank}, or by writing HTML using the HTML editor.
 
-At the media adding stage, the only metadata that can be entered is a Title. If you wish to further describe each file, you can edit it after it has been uploaded. 
+At the media adding stage, the only metadata that can be entered is a Title. If you wish to further describe each file, you can edit it after it has been uploaded.
 
 ### Media thumbnails
 
 Thumbnails are automatically created for many file types. Thumbnail creation relies on the ability of your [chosen thumbnail utility](../configuration.md#thumbnails) (the default being ImageMagick) and which file types it can process. Look up the utility you are using (such as ImageMagick, Imagick, or GD) to find out which file types it supports.
 
-If you wish your item to have a generic thumbnail (such as an icon of a book, or a musical note for an audio file), you can upload those default images as assets, then attach them manually to files using the [Advanced tab in the Item editing screen](../content/items.md#advanced).
+If you wish your item to have a generic thumbnail (such as an icon of a book, or a musical note for an audio file), you can upload those default images as [assets](../admin/assets.md), then attach them manually to files using the [Advanced tab in the Item editing screen](../content/items.md#advanced).
 
 ### File size limitations
 
@@ -53,44 +69,60 @@ Omeka S imposes no file size limitations. Your server, however, may have restric
 ## Edit media
 To edit existing media, you can:
 
-- Go to the Browse page and click the pencil/edit icon for the media's row
-- Go to the Media browse page, click on the title to view the media's metadata and then click the "Edit media" button in the upper right hand corner
-- Click on the media's name in the right-hand sidebar of an item's page to go to the media's metadata, and then click on "Edit media" from there.
+- Go to the Media browse page and click the pencil/edit icon for the media's row
+- Go to the Media browse page, click on the title to view the media's metadata, then click the "Edit media" button in the upper right hand corner
+- Click on the media's name in the right-hand sidebar of an item's page to go to the media's metadata, then click on "Edit media" from there.
+
+Automatically generated metadata, such as source, date created, and part of item, cannot be edited. 
 
 Editing media is very similar to editing [items](../../content/items) or [item sets](../../content/item-sets).
 
 ![Edit media page, with no properties loaded](../content/contentfiles/media_edit.png)
 
+Use the **make public/private** button (eye icon) to set whether the media is visible to the public or only to users of the Omeka S install. 
+
+Media is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png){style="display:inline;"}
+
+Media is private: ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png){style="display:inline;"}
+
+Note that if an item is private, all the media attached is private, but an item that is public can have attached media which are set to be either public or private.
+
 ### Values
 
 If desired, you can select a resource template from the drop-down menu. Resource templates are defined by site administrators and editors.
 
-- If using a resource template, the class should automatically load.
+- If using a resource template, the media class should automatically load.
 - If not using a resource template, you may select a class from the dropdown menu (these are populated from the [Vocabularies](vocabularies.md) in your installation).
 
-Add information to the properties which load. If you do not select a resource template or class, the Dublin Core properties Title and Description will load automatically.
+Add information to the properties that load. If you do not select a resource template or class, no other fields will load automatically.
+
+Whether or not you use a resource template, you can add more properties to the item using the drawer on the right side of the screen. You can simply open one of the vocabularies (Dublin Core, Bibliographic Ontology, etc.) and click on the property you want to add, or you can use the "Filter properties" box to search for a specific property (this is helpful when you have multiple large vocabularies). 
+
+Clicking on the property label in the drawer will automatically add it to the item. If you add a property by accident, leave it blank and it will be removed from the item when you save your changes. 
 
 You may add text, a resource from the installation, or an external link in each field.  
 
-Note that if you add the property `dcterms:title`, its contents will replace the autogenerated title of the media. This is useful if dealing with url or media uploads with auto-generated names.  
+Note that if you add the property `dcterms:title`, its contents will replace the autogenerated title of the media. This is useful if dealing with URL or media uploads with auto-generated names.  
 
-**Text** fields allow for unformatted text entry.
+You can set individual properties as **private or public** using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Site Admins, and Editors. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
 
-![image of text input field with keyboard icon indicating text input, the globe icon for setting language, and a trashcan delete icon](contentfiles/items_textedit.png)
+In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
+
+![Individual properties have a red eye icon to the right to allow you to toggle visibility - a red arrow points to the icon](contentfiles/item_propviz.png)
+
+#### Text
+Text fields allow for unformatted text entry.
 
 You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe icon to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
 
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
 
-**Omeka Resource** fields create an internal link between the resource you are creating and the resource that fills that field. 
+#### Omeka resource
+Omeka resource fields create an internal link between the resource you are creating and the resource that fills that field. 
 
 You have the option to use either an item, another media, or an item set. Once you select an item or item set, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of items or item sets.
 
-![Select Item menu with list of items to link in edit media view](contentfiles/media_addresource.png)
-
 If you are using an Item resource for the property, you will have additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search".
-
-![Select Item drawer top options, with a red arrow around a gray triangle button to the right of the phrase "Filter search"](contentfiles/items_filtersearch.png)
 
 This will open a menu below the button with the following options to filter the items in the drawer:
 
@@ -100,15 +132,15 @@ This will open a menu below the button with the following options to filter the 
 
 ![options as above described](contentfiles/item_addresItem.png)
 
-Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (ex, Creator, Has Part). 
+Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. Creator, Has Part). 
 
 ![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](contentfiles/items_quickadd.png)
-     
-**URI** fields link to an external website or online resource.
 
-You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the **Filter properties** bar above the list of properties and vocabularies.
+#### URI
 
-**Value annotation**
+URI fields link to an external website or online resource. Every URI value has the link itself, and an optional textual Label to replace the URI with something human-readable. For example, you may wish to enter in a Creator as a URI to a controlled vocabulary of artists or authors, and then include the creator's name in plain text as the Label. Omeka will not automatically pull information from the URI.
+
+#### Value annotation
 
 When you input a value for a property associated for a resource, you are making a statement about that resource. If you choose, Omeka allows you to make statements about that statement. We call this value annotation. The advantage of value annotation is that you can choose to make ambiguous facts more concrete by annotating things like:
 
@@ -120,41 +152,19 @@ When you input a value for a property associated for a resource, you are making 
 
 In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification){target=_blank}. Each value can have any number of annotations.
 
-To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (a dialogue bubble). 
+To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (the speech bubble). 
 
-![a detail of the property with the annotation bubble highlighted](contentfiles/annotation_add.png)
+![A detail of a value with the annotation bubble highlighted](contentfiles/annotation_add.png)
 
-The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property DCterms:Contributor might be annotated with the property Schema:jobTitle. 
+The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property `dcterms:Contributor` might be annotated with more detail about the nature of the contribution. Or you may wish to simply include a note using the `dcterms:Description` field.
 
-Then select a date type for the annotation: Text, URI, or and Omeka S Resource. Installed modules may make additional data types available. Click the "Add Annotation" button. 
+Select a data type for the annotation: a text field, a URI, or resource in your Omeka S installation. Modules may make additional data types available. Click the "Add annotation" button and a new field will appear below. Input your annotation. You can do this multiple times for the chosen value if desired. Then click "Set annotations" to finalize the process. 
 
-Input the annotation, and click "Set Annotations" to finalize the process. 
+![A picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
 
-![a picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
+[Each site has a setting](../sites/site_settings.md#show) to indicate whether or not value annotations are visible to the public. This will include value annotations on items and item sets.
 
-Sites include a setting to indicate whether or not value annotations are visible to the public. 
-
-**Language**: You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
-
-![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
-
-You can add properties by selecting from the list on the right side of the screen. You can either browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc), or search in the **Filter properties** bar above the list of properties and vocabularies.
-
-Automatically generated metadata, such as source, visibility, and part of item, cannot be edited. 
-
-Use the **make public/private** button (eye icon) to set whether the media is visible to the public or only to users of the Omeka S install. 
-
-Media is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png){style="display:inline;"}
-
-Media is private: ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png){style="display:inline;"}
-
-Note that if an item is private, all the media attached is private, but an item that is public can have attached media which are set to be either public or private.
-
-You can set individual properties as visible using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Site Admins, and Editors will be able to see properties even when set to private. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
-
-In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
-
-![Individual properties have a red eye icon to the right to allow you to toggle visibility - a red arrow points to the icon](contentfiles/item_propviz.png)
+You can set controlled vocabularies for annotations using the [Custom Vocab module](../modules/customvocab.md). In this case, you do not need to apply a custom vocabulary to a property using a resource template; you can select any installed vocabulary from the value-type dropdown in the drawer. This will load your vocabulary's choices into a dropdown of terms.
 
 ### Advanced
 

@@ -133,10 +133,6 @@ Media Type:
 
 **HTML**: Insert a block of HTML text into the form, for additional guidance, information, etc. The "Prompt Text" field for this prompt has WYSIWG formatting options.
 
-You can rearrange the order of prompts by dragging and dropping them using the three-line icon on the far left of the Type label.
-
-![Prompts with a red arrow pointing to the icon for dragging and dropping](modulesfiles/collecting_dragthis.png)
-
 ## Manage forms
 
 Once you have at least one Collecting form, they will appear on the Collecting Forms page. Click the edit button (pencil) to edit the form. Click on the form label to see more information about the form and view collected items.

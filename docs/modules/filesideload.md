@@ -2,7 +2,7 @@
 
 The [File Sideload module](https://omeka.org/s/modules/FileSideload){target=_blank} adds the ability to add media files that are already stored on the server where your Omeka S installation lives.
 
-File Sideload is compatible with [CSV Import](../modules/csvimport.md). When installed, your CSV Import options will include the ability to add media via Sideload.
+File Sideload is compatible with [CSV Import](../modules/csvimport.md). When installed, your CSV Import options will include the ability to add media via filenames in your Sideload directory. Be sure to disable file deletion in the File Sideload module when using it with CSV Import.
 
 ## Create a directory
 
@@ -34,7 +34,7 @@ If you are using an FTP application, copy out the remote site path in the locati
 
 **Delete sideloaded file?**
 
-- If checked, any file added to an item as media will be deleted from the sideload directory, as the file is now saved as media in the Omeka S installation.
+- If checked, any file added to an item as media will be deleted from the Sideload directory, as the file is now saved as media in the Omeka S installation.
 - If unchecked, the files will remain in the directory, and will be available to be added as media to any item, until you manually remove them.
 
 
@@ -42,7 +42,7 @@ Add a sideload file to an item
 ------------------------------
 With File Sideload installed and configured, and files in the directory, you can now use the module to add media to items.
 
-When editing an item, go to the Media tab. The Add New Media sidebar now includes a button for Sideload (at the very bottom).
+When editing an item, go to the Media tab. The Add New Media sidebar now includes a button for Sideload (below the core options).
 
 ![A red arrow points to the add sideload media button](../modules/modulesfiles/filesideload_browse.png)
 
@@ -55,4 +55,6 @@ Clicking on the button adds a Sideload media block. There are two fields:
 
 ## CSV Import integration
 
-With CSV Import, you can add media to items via File Sideload. Provide a column with full file names, not URLs, pointing to the files in your sideload directory. Add the mapping to Media source > Sideload.
+With CSV Import, you can add media to items via File Sideload. Provide a column with the filenames, not full URLs, pointing to the files in your Sideload directory. Add the mapping to Media source > Sideload.
+
+When using CSV Import with your Sideload directory, we recommend you un-check the file deletion setting in the File Sideload module configuration. CSV Import may delete files from your Sideload directory even if an import job has failed or stalled. You should always manually check the results of CSV Import before deleting the files it has imported. 
