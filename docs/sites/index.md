@@ -39,17 +39,16 @@ Select from the installed themes. Each theme appears as a tile with a screenshot
 
 ![Theme tab with default theme selected](../sites/sitesfiles/sitesadd_theme.png)
 
-### Publication settings
+### Publication
 In the upper right corner of the screen, next to the "Add" button, you can set the visibility of your site by clicking on the eye icon to make the site public or private.
 
 Site is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png){style="display:inline;"}
 
 Site is private: ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png){style="display:inline;"}
 
-You will probably want to leave the site Private until you have finished configuring it and added some content.
+Sites are created as public by default. You will probably want to make the site private until you have finished configuring it and added some content.
 
-### Add site
-When you are ready, click the "Add" button in the upper right corner. Once the page is created, you will be redirected to the site's Info tab. 
+When you are ready, click the "Add" button in the upper right corner. You cannot save a draft site, but you can make the site private while you finish working on it. Once the site is created, you will be redirected to the site's Info tab. 
 
 If you decide you do not want to create this site, click the "Cancel" button in the upper right next to the "Add" button.
 
@@ -58,16 +57,16 @@ To manage a site, navigate to the **Sites** screen from the admin dashboard. Cli
 
 This will take you to the site's Info tab, and open the context menu for that site in the left-hand navigation. 
 
-The context menu for every site has the site title at the top, with an icon of a computer (the site icon) to the right. To the left of the site title is a view button (box with escaping arrow). Clicking the view button will open the public side of the site in a new window.
+The context menu for every site has the site title at the top, with an icon of a computer (the site icon) to the left. To the right of the site title is a view button (box with escaping arrow). Clicking the view button will open the public side of the site in a new tab or window.
 
 ![Context menu for the site "Mysteries", with two modules installed](../sites/sitesfiles/sites_menu.png)
 
 Site admin left hand navigation options are: 
 
-- [Site admin](../sites/site_settings.md),
-- [Pages](../sites/site_pages.md), 
-- [Navigation](../sites/site_navigation.md), 
-- [Resources](../sites/site_resources.md),
-- [User permissions](../sites/site_users.md),
-- [Theme](../sites/site_theme.md), and
+- [Site admin](../sites/site_settings.md)
+- [Pages](../sites/site_pages.md)
+- [Navigation](../sites/site_navigation.md) 
+- [Resources](../sites/site_resources.md)
+- [User permissions](../sites/site_users.md)
+- [Theme](../sites/site_theme.md)
 - Settings added by modules, if installed.

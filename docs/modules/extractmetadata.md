@@ -76,7 +76,7 @@ Used to extract many types of metadata from many types of files. Requires the [A
 
 ## Mappers
 
-Mappers map extracted metadata to resource values. Note that a mapper must be enabled on the module configuration page. This module comes with one mapper, but more can be added depending on your needs.
+Mappers map extracted metadata to resource values. Note that a mapper must be enabled on the module configuration page. This module comes with one mapper. Best practice for using this module with other mappers would be to fork the module code; see [our developer documentation for more details](https://omeka.org/s/docs/developer/modules/){target=_blank}.
 
 <!--- how? with modules? --->
 

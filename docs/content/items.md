@@ -1,10 +1,44 @@
 # Items
 
-Items are the building blocks of the Omeka system. 
+Items are the building blocks of the Omeka system.
 
-In Omeka S, items can be made available to you from the system administrator, and you may add items to your own site.
+Items don't have to represent physical objects (photographs, maps, books), nor do they have to have [attached media](media.md) (a scan of a photo, or multiple page images, or a PDF). An item can be used as a node - a way to represent a person, place, or thing. You can use items and their classes to create separate types of nodes that serve the purposes of your sites.
 
-Items are listed in the **Items** tab (the box icon) in the left-hand navigation of the administrative dashboard. 
+Items can be linked to other items, or contained within item sets, to represent complex relationships. For example, an item used as a location can be linked to items representing events that happened at that location, and the event items can be linked to people items who were at that event, who themselves are linked to textual items that they created, or photographic items that they appear in. All of these items can be grouped in overlapping item sets that represent jurisdictions that contain locations, events, and people during a particular duration of time. Or you can use item sets to represent people, that contain their created works as items, and link those people item sets to events and photographs.
+
+Many of these classes, and many resource templates to help you describe these types of items, already exist in a basic Omeka S installation, but you can modify them and add more as needed.
+
+## Item permissions
+
+When a user creates an item, they become the "owner" of that item. Most user levels have the ability to create items, and can always delete their own items. Only higher levels can delete items that others own.
+
+| Category | Permission | Global Admin | Supervisor | Editor | Reviewer | Author | Researcher |
+|-----|-----|---|---|---|---|---|---|
+| Items & media | Add | Yes | Yes | Yes | Yes | Yes | No |
+| | Edit | All | All | All | All | Their own | No |
+| | Delete | All | All | All | Their own | Their own | No |
+| Value annotations | Add/Edit | Yes | Yes | Yes | Yes | Yes | No |
+| Private objects | View | Yes | Yes | Yes | Yes | No | No |
+
+Note that when you change a user's role, for example from an Author to a Researcher, they will still own the items they created when they had permission to do so. Items are not transferred. Deleting a user orphans their items - they will appear as having no owner. You cannot currently search and batch-edit items without an owner, so the best practice is to re-assign these items before deleting the user account.
+
+### Site permissions for items
+
+All items in an Omeka S installation are available for addition to all sites, but must be added to a site either manually or through user-specific or site-specific settings.
+
+Each site can be set to have all new items automatically added to it.
+
+Each user can have [one or more sites to always add new items to by default](../admin/users.md#user-settings). If a user has a site set as their "Default sites for items", they must also be added to the site as a Creator or Manager in order for that setting to work.
+
+| Category | Permission | Site Manager | Site Creator | Site Viewer | Global Admin | Supervisor |
+|-----|-----|---|---|---|---|---|
+| Items | Add to site | Yes | Yes (by default), manually no | No | Yes | Yes |
+| | Remove from site | Yes | No | No | Yes | Yes |
+
+
+## The Items tab
+
+Items are listed in the **Items** tab (with the box icon) in the left-hand navigation of the administrative dashboard.
 
 ![Basic view of admin items page, showing a handful of item resources](contentfiles/items_browse.png)
 
@@ -14,90 +48,95 @@ Each item appears as a row, with columns for:
 - icons to **edit** (pencil), **delete** (trash can), or **details** (ellipsis)
 - the **Class**
 - the item’s **Owner**
-- the date the item was **Created**. 
+- the date the item was **Created**.
 
-In the top right corner of the Items screen is the "Add new item" button. 
+In the top right corner of the Items screen is the "Add new item" button.
 
-Options for navigating and creating items sit in the header of the table of items. 
+Options for navigating and creating items sit in the header of the table of items.
 
-- On the left side are controls for the pages of items, with forward and back arrows, and an editable box for the current page number — enter a valid page number and hit Enter to go to that page. 
+- On the left side are controls for the pages of items, with forward and back arrows, and an editable box for the current page number — enter a valid page number and hit Enter to go to that page.
 
-- In the center is a link for [Advanced Search](../search.md#item-advanced-search). 
+- In the center is a link for [Advanced Search](../search.md#item-advanced-search).
 
 - On the right are options for sorting the table of items, with two dropdown menus. By default, items in the table are sorted by most recently-added items at the top (Created & Descending). The first lets you select between **Title**, **Identifier**, **Class**, **Owner**, and **(Date) Created**; the second allows you to sort by ascending (A-Z or earliest to latest) or descending (Z-A or latest to earliest). To apply, click the "Sort" button.
 
-Between these and the table, on the left, is a dropdown for batch actions, including edit selected, edit all, delete selected, and delete all. 
+Between these and the table, on the left, is a dropdown for batch actions, including edit selected, edit all, delete selected, and delete all.
 
 ## View items
 
-To quickly view the basic information about an item, click the **Details** (ellipsis) button in the row for the item, located next to the edit and delete buttons. This will open a drawer to the right of the list which displays the item’s title,  description, visibility, any sites it is used in, and its associated media..
+To quickly view the basic information about an item, click the **Details** (ellipsis) button in the row for the item, located next to the edit and delete buttons. This will open a drawer to the right of the list which displays the item’s title, description, visibility, any sites it is used in, and its associated media.
 
 For a more detailed look at an individual item, click on its title in the items browse table or when viewing its details.
- 
-![Item browse view with details open for "Behold, Here's Poison". Links to item view page squared in blue](contentfiles/items_detailview.png) 
+
+![Item browse view with details open for "Behold, Here's Poison". Links to item view page squared in blue](contentfiles/items_detailview.png)
 
 The blue squares indicate where to click to open the full item view.
 
-When you view an individual item , there are tabs for the item’s **Metadata** and its **Linked Resources**. The right side of the page displays the item’s media, any **item sets** to which it belongs, its creation date, owner, and visibility. 
+When you view an individual item, there are tabs for the item’s **Metadata** and its **Linked Resources**. The right side of the page displays the item’s media, any **item sets** to which it belongs, its creation date, owner, and visibility.
 
 An item’s **linked resources** (shown below) are resources, which are linked to this item through properties. Note that this section only shows resources which have been linked *to* this item (which have it for a property); resources which are linked *from* this item will display in the property which they fill.
 
-Linked items are grouped by the property for which they use the current item. In the example below, the item William Shakespeare is used for the properties "Creator", "References", and "list of authors" for the linked resources. 
+Linked items are grouped by the property for which they use the current item. In the example below, the item William Shakespeare is used for the properties "Creator", "References", and "list of authors" for the linked resources.
 
 You can filter linked resources to only display those referencing a specific property using the dropdown "Filter by property". It will only display properties actively in use.
 
-![Item linked resources view for William Shakespeare, with six plays using Shakespeare as Creator, the item Folger Shakespeare Library listed as 'references' Shakespeare, and the Globe Theatre using Shakespeare for 'list of authors'. Each property cluster is in a separate rectangle, headed by the property being referenced.](contentfiles/items_linked.png) 
+![Item linked resources view for William Shakespeare, with six plays using Shakespeare as Creator, the item Folger Shakespeare Library listed as 'references' Shakespeare, and the Globe Theatre using Shakespeare for 'list of authors'. Each property cluster is in a separate rectangle, headed by the property being referenced.](contentfiles/items_linked.png)
 
 ## Add an item
 
-To add a new item, begin by selecting the the "Add new item" button. 
+To add a new item, begin by selecting the the "Add new item" button.
 
 Before creating items, supervisors may want to create [Resource Templates](resource-template.md), which will load specific fields for various item types.
 
 ### Values
+
 The Values tab is where you enter metadata, such as title, description, etc.
 
 ![Basic view of add items page, with no content entered](contentfiles/items_add.png)
 
 You can select a resource template from the drop-down menu. Resource templates are defined by the supervisors and editors.
 
-- If using a resource template, the class should automatically load.
+- If using a resource template, the item class should automatically load.
 - If not using a resource template, you may select a class from the dropdown menu (these are populated from the [Vocabularies](vocabularies.md) in your installation).
 
-Add information to the properties that load. If you do not select a resource template or class, the Dublin Core properties Title and Description will load automatically.
+Add information to the properties that load. If you do not select a resource template or class, the Dublin Core properties Title and Description will load automatically.  
 
-You may add text, a resource from the installation, or an external link in each field.  
-
-Whether or not you use a resource template, you can add more properties to the item using the drawer on the right side of the screen. You can simply click open one of the vocabularies and click on the property you want to add, or you can use the “Filter properties” box to search for a specific property (this is helpful when you have multiple large vocabularies). 
+Whether or not you use a resource template, you can add more properties to the item using the drawer on the right side of the screen. You can simply open one of the vocabularies (Dublin Core, Bibliographic Ontology, etc.) and click on the property you want to add, or you can use the "Filter properties" box to search for a specific property (this is helpful when you have multiple large vocabularies).
 
 ![Close up of the right hand drawer with the text "date" entered into the filter properties box and a series of properties containing the word "date" loaded from Dublin Core and Bibliographic Ontology](contentfiles/items_filterprop.png)
 
-Clicking on the property label in the drawer will automatically add it to the Item. If you add a property by accident, leave it blank and it will be removed from the item when you save changes. 
+Clicking on the property label in the drawer will automatically add it to the item. If you add a property by accident, leave it blank and it will be removed from the item when you save your changes.
 
-You can set individual properties as Private or Publicly visible using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Supervisors, and Editors will be able to see properties even when set to private. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
+You may add text, a resource from the installation, or an external link in each field.
 
-In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
+You can set individual properties as **private or public** using the eye icon for each property. Note that properties set to private are still visible to Global Admins, Supervisors, and Editors. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
+
+In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private.
 
 ![As described](contentfiles/item_propviz.png)
 
+If you have multiple values for a property, you can **reorder** them by dragging and dropping. Click on the bar on the left of the value to grab that value, and drag it into the order that you want it.
+
+![Close up of the Subject property with two values. A red circle shows the location of the grab bar for the value.](contentfiles/item_valuereorder.png)
+
 #### Text
-Text fields allow for unformatted text entry.
+Text fields allow for unformatted text entry. No markup is allowed in these fields (e.g. Markdown, HTML).
 
 ![image of text input field with keyboard icon indicating text input, the globe icon for setting language, and a trashcan delete icon](contentfiles/items_textedit.png)
 
-You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} code for the language in which the text is written.
+You can indicate the language for the content of a text input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} code for the language in which the text is written.
 
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
 
 #### Omeka resource
 
-Omeka resource fields create an internal link between the resource you are creating and the resource that fills that field. 
+Omeka resource fields create an internal link between the resource you are creating and the resource that fills that field.
 
 This can be useful, for example, if you are using items as nodes to represent people, places, institutions, or events. One person item can be the Creator of many textual items, and themself be linked to an institution, which is the Publisher of those items. Or you can use item sets to represent these entities: an item set of items published by an institution, and another overlapping item set of items created by a person.
 
 When creating an item, you have the option to use either another item or an item set as a linked resource in a property value. After you have finished creating an item and have added media to that item, you can also use those media files as linked resources in the same way.
 
-Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search and filter functions to narrow down the list or quickly find a specific item. 
+Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search and filter functions to narrow down the list or quickly find a specific item.
 
 Once you select an item or item set, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of items or item sets.
 
@@ -113,11 +152,11 @@ This will open a menu with the following options to filter the items in the draw
 - Filter by item set: A dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set.
 - Filter by item ID: A text field where you can input the ID of the item you want to use. You can find an item's ID in the URL of its edit page; if you are editing the item and the URL is `admin/item/11547/edit` then the item's ID is 11547. An item ID will also appear in the right-hand drawer on its view page. You cannot enter a range or search by a partial number or a wild card - only an exact ID.
 
-Once you enter something into a filter, you need to click on the magnifying glass icon in the search bar to apply your filters. 
+Once you enter something into a filter, you need to click on the magnifying glass icon in the search bar to apply your filters.
 
 ![options as above described](contentfiles/item_addresItem.png)
 
-Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as properties. Note that you can only edit one property at a time, so all of the items will populate the same property (e.g. Creator). 
+Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as properties. Note that you can only edit one property at a time, so all of the items will populate the same property (e.g. Creator).
 
 ![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](contentfiles/items_quickadd.png)
 
@@ -126,19 +165,17 @@ If you are using an **Item set** resource for the property, you will have two op
 - Filter by class: A dropdown where you can select any class provided by the vocabularies on the installation.
 - Filter by item set ID: A text field where you can input the ID of the item set you want to use. You can find an item set's ID in the URL of its edit page; if you are editing the item and the URL is `admin/item-set/15/edit` then the item set's ID is 15. An item set ID will also appear in the right-hand drawer on its view page. You cannot enter a range or search by a partial number or a wild card - only an exact ID.
 
-Once you enter something into a filter, you need to click on the magnifying glass icon in the search bar to apply your filters. 
+Once you enter something into a filter, you need to click on the magnifying glass icon in the search bar to apply your filters.
 
-Item set resources also have an option for "Quick add". When this switch is flipped, all of the item sets in the drawer have a checkbox. You can use these checkboxes to add multiple item sets as properties. Note that you can only edit one property at a time, so all of the item sets will populate the same property (e.g. Creator). 
+Item set resources also have an option for "Quick add". When this switch is flipped, all of the item sets in the drawer have a checkbox. You can use these checkboxes to add multiple item sets as properties. Note that you can only edit one property at a time, so all of the item sets will populate the same property (e.g. Creator).
 
 #### URI
 
-URI fields link to an external website or online resource.
-
-You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc.), or search in the **filter properties** bar above the list of properties and vocabularies.
+URI fields link to an external website or online resource. Every URI value has the link itself, and an optional textual Label to replace the URI with something human-readable. For example, you may wish to enter in a Creator as a URI to a controlled vocabulary of artists or authors, and then include the creator's name in plain text as the Label. Omeka will not automatically pull information from the URI.
 
 #### Value annotation
 
-When you input a value for a property associated for a resource, you are making a statement about that resource. If you choose, Omeka allows you to make statements about that statement. We call this value annotation. The advantage of value annotation is that you can choose to make ambiguous facts more concrete by annotating things like:
+When you input a value for a property associated with a resource, you are making a statement about that resource. If you choose, Omeka allows you to make statements about that statement. We call this value annotation. The advantage of value annotation is that you can choose to make ambiguous facts more concrete by annotating things like:
 
 - Provenance: Where is this fact from?
 - Time: When did this fact occur?
@@ -148,79 +185,69 @@ When you input a value for a property associated for a resource, you are making 
 
 In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification){target=_blank}. Each value can have any number of annotations.
 
-To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (a dialogue bubble). 
+To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (the speech bubble).
 
-![a detail of the property with the annotation bubble highlighted](contentfiles/annotation_add.png)
+![A detail of a value with the annotation bubble highlighted](contentfiles/annotation_add.png)
 
-The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property DCterms:Contributor might be annotated with the property Schema:jobTitle. 
+The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property `dcterms:Contributor` might be annotated with more detail about the nature of the contribution. Or you may wish to simply include a note using the `dcterms:Description` field.
 
-Then select a date type for the annotation: Text, URI, or an Omeka S Resource. Installed modules may make additional data types available. Click the Add Annotation button. 
+Select a data type for the annotation: a text field, a URI, or resource in your Omeka S installation. Modules may make additional data types available. Click the "Add annotation" button and a new field will appear below. Input your annotation. You can do this multiple times for the chosen value if desired. Then click "Set annotations" to finalize the process.
 
-Input the annotation, and click Set Annotations to finalize the process. 
+![A picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
 
-![a picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
+[Each site has a setting](../sites/site_settings.md#show) to indicate whether or not value annotations are visible to the public. This will include value annotations on item sets and media.
 
-Sites include a setting to indicate whether or not value annotations are visible to the public. 
+You can set controlled vocabularies for annotations using the [Custom Vocab module](../modules/customvocab.md). In this case, you do not need to apply a custom vocabulary to a property using a resource template; you can select any installed vocabulary from the value-type dropdown in the drawer. This will load your vocabulary's choices into a dropdown of terms.
 
-#### Language 
-You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written.
-
-![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
-
-#### Value order
-
-If you have multiple values for a property, you can reorder them by dragging and dropping. Click on the bar on the left of the value to grab that value, and drag it into the order that you want it. 
-
-![Close up of the Subject property with two values. A red circle shows the location of the grab bar for the value.](contentfiles/item_valuereorder.png)
+![A screenshot of an item entry with an annotation on DC:Contributor, loading a custom vocabulary named "Contributor Annotation Type", and the terms displayed including "Editor," "Translator," "Publishing Organization," and more.](contentfiles/annotation_customvocab.png)
 
 ### Media
 
-Use the **Media** tab to add images, video, or other files.
-Using the buttons on the **Add New Media** menu on the right side of the screen, select a media type (Upload, URL, oEmbed, YouTube, or HTML)
+Use the **Media** tab to add [images, video, or other files](media.md).
 
-![“Add new media” drawer showing the options](contentfiles/items_mediaadd2.png)
+Using the buttons on the **Add New Media** menu on the right side of the screen, select a media type (Upload, URL, oEmbed, IIIF, YouTube, or HTML). Modules, such as [File Sideload](../modules/filesideload.md), can add more ways to gather media into Omeka. Other modules can import materials from other platforms directly into Omeka as items with attached media, such as the [Zotero import](../modules/zoteroimport.md) module.
+
+!["Add new media" drawer showing the options](contentfiles/items_mediaadd2.png)
 
 - **Upload**: select a file to upload from your computer.
 - **URL**: import media via a URI.
 - **HTML**: add html content as a media resource for your item.
-- **IIIF**: Add an IIIF image via URL.
+- **IIIF**: Add a IIIF image via URL.
 - **oEmbed**: insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7){target=_blank} - use the URL in your browser’s location bar.
-- **YouTube**: add a link to embed a YouTube video. Use the URL from your browser’s location bar (with `/watch/` in it) rather than the `youtu.be` link.
+- **YouTube**: add a link to embed a YouTube video. Use the URL from your browser’s location bar (with `/watch/` in it) rather than a `youtu.be` link.
 
-You can edit media later by going by editing an item, navigating to the **Media** tab, and clicking the edit button (pencil) for a media when editing the item. 
+You can edit media later by going by editing an item, navigating to the **Media** tab, and clicking the edit button (pencil) for a media when editing the item.
 
 You can delete any media instance from the item's edit page using the delete button (trashcan) on the upper right corner of the media block.
 
-![Image shows a close up of a media item being removed - it is red and has an undo curling arrow at the right end of the block](contentfiles/item_mediablockdelete.JPG)
-
 If you have more than one media instance for an item, you can reorder them by dragging and drop each media instance block, using the icon of three lines in the upper left corner of the block as the anchor when dragging.
 
-Omeka S uses the topmost media for an item to create thumbnail images for that item on browse and show pages. 
+Omeka S uses the topmost media for an item to create thumbnail images for that item on browse and show pages.
 
 ### Item sets
 You can only add items to existing item sets.
 
-From the right-hand menu, click on the owner of an item set, then click the name of the item set to add the item to that set. 
+From the right-hand menu, click on the owner of an item set, then click the name of the item set to add the item to that set.
 
 You can also filter item sets using the text entry bar above the list of users.
 
 To remove a connection between an item and item set, click the delete (trash can) button to the right of the item set title.
 
-![item set tab with no item sets assigned](contentfiles/items_itemset.JPG)
+![item set tab with 1 item set assigned](contentfiles/items_itemset.png)
 
 ### Sites
-Select sites to which to add your items. 
+Select sites to which to add your items.
 
 ![item 'sites' tab with the item added to two sites. Each site is in its own row, with a delete icon on the far right of the row](contentfiles/items_addItemSite.png)
 
-To add an item to a site, select a site from the menu in the right-hand drawer. You can filter sites by searching in the field at the top of the drawer. 
+To add an item to a site, select a site from the menu in the right-hand drawer. You can filter sites by searching in the field at the top of the drawer.
 
 If there are sites which have "auto-assign new items" turned on in their settings, you can use this tab to remove this item from those sites. Click the trash can icon on the right side of the site's row to remove it.
 
 ### Advanced
-The advanced tab has two options. One lets you set a custom thumbnail for the item. The other allows you to change which user has ownership of the item. 
+The advanced tab has two options. One lets you set a custom thumbnail for the item. The other allows you to change which user has ownership of the item.
 
-**Thumbnail** 
+**Thumbnail**
 
 By default, Omeka S will use the topmost media to generate a thumbnail for the item. If you want to use a non-media image for the thumbnail for an item you can set it here.
 
@@ -228,22 +255,22 @@ By default, Omeka S will use the topmost media to generate a thumbnail for the i
 
 When you use an asset thumbnail instead of uploading media, the asset thumbnail does not display on the item's public show page. This makes such thumbnails useful for items which have no media but which would benefit from a thumbnail for the browse view, or for items whose media does not render an elegant thumbnail, such as audio or video files.
 
-The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../../sites/site_theme/#settings-options). 
+The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../../sites/site_theme/#settings-options).
 
-To assign an asset as a thumbnail, click on the Select button in the main work area of the tab. This will open a drawer on the right side. 
+To assign an asset as a thumbnail, click on the Select button in the main work area of the tab. This will open a drawer on the right side.
 
 ![Select drawer with upload option and two assets, both of which are images.](contentfiles/item_thumbdrawer.png)
 
-The drawer offers two options: upload a file using your browser, or select from existing assets. To select an existing asset, simply click on it and it will automatically be assigned to the item. 
+The drawer offers two options: upload a file using your browser, or select from existing assets. To select an existing asset, simply click on it and it will automatically be assigned to the item.
 
 To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click "Select" and either choose or upload a new thumbnail asset.
 
 **Owner**
 
-The ownership of an item is usually assigned to the user account which creates the item. You can use this dropdown to reassign ownership. The dropdown will load the user names (not email addresses) of users in the installation. Select a new user and save changes.  
+The ownership of an item is usually assigned to the user account that creates the item. You can use this dropdown to reassign ownership. The dropdown will load the user names (not email addresses) of users in the installation. Select a new user and save your changes.
 
 ### Visibility
-Use the **make public/private** button (eye icon) to set whether the item is visible to the public or only to users of the Omeka S system. 
+Use the **make public/private** button (eye icon) to set whether the item is visible to the public or only to users of the Omeka S system.
 
 Item is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png){style="display:inline;"}
 
@@ -254,14 +281,12 @@ Note that if an item is private, all the media attached is private, but an item 
 ## Edit an item
 Once you have created an item, you can edit it at any time, either by clicking the edit icon (pencil button) or clicking on the item's title and then clicking the "Edit" button in the upper right-hand corner of the screen.
 
-To cancel out of editing, click the "Cancel" button in the upper right corner, between the "Delete" and "Save" buttons. 
-
-![Detail view of the top row if information and buttons on an item edit view. A red arrow points to the "Cancel" button, on the far right](contentfiles/items_cancel.JPG)
+To cancel out of editing, click the "Cancel" button at the top right of the screen.
 
 Editing options are the same as when creating a new item, with the addition of the ability to add any media which has been saved to an item as a property:
 
-### Media as property 
-Once you have created an item and added media to it, you will also have the option to use media **attached to that item** for a property. 
+### Media as property
+Once you have created an item and added media to it, you will also have the option to use media **attached to that item** for a property.
 
 ![A blue outline of a rectangle highlights resource options for Items, Item sets, and Media to be used as the input for the element "Description"](contentfiles/items_addmediaresource.png)
 
@@ -271,10 +296,17 @@ To use a media resource for a property, select the media option for the element 
 
 ![The same window as before, but now the drawer on the right displays a thumbnail of the media "Sense and Sensibility DVD Trailer" with a dark gray button labeled "select resource" at the bottom of the drawer area. This image contains step 3](contentfiles/items_mediaresource2.png)
 
+### Delete an item
 
-## Batch actions
+To delete an item, you can:
 
-From the browse page of items (admin/item) you can batch edit items, using the dropdown menu on the left near the pagination buttons. You can select multiple items using the checkboxes on the left of each item's row.
+- Click the trash can icon in the Items browse page. This will open a right-hand drawer to confirm the deletion.
+- Click the title of the item in the table on the Items browse page, then click the "Delete" button at the top right of the screen.
+- Use the batch-deletion methods described below to delete many items at once.
+
+## Batch editing
+
+From the browse page of items (`admin/item`) you can batch edit items, using the dropdown menu on the left near the pagination buttons. You can select multiple items using the checkboxes on the left of each item's row.
 
 ![A red arrow points to the dropdown for batch editing and deleting options](contentfiles/items_batch.png)
 
