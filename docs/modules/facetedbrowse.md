@@ -173,7 +173,7 @@ In the public view, the faceting will be controlled through a dropdown menu.
 
 If you do not set any columns, the items on the page will initially just display in the default format for your site (grid or list). Once filtered, items will display in a table. The display of the browse list of results defaults to include the title and description for the resource, just as is the case with other browse lists.
 
-You can configure the information displayed about the results by adding columns of metadata to the display for your faceted browse.
+You can configure the information displayed about the results by adding columns of metadata to the display for your faceted browse. On the public view of a facted browse, users can sort by a column by selecting it from a dropdown menu. This column can then be sorted in ascending or descending order. If you would like to prevent users from sorting by a certain column, you can check the "Exclude sort by" checkbox when configuring that column to exclude it from the dropdown menu.
 
 Select a type of column to add from the dropdown menu: Title (link to resource); Value; Resource class; Resource template; Item set; ID.
 
