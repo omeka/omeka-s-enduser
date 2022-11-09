@@ -1,12 +1,12 @@
 # Searching
 
-There are search functions on both the administrative and public sides of Omeka S installs and sites.
+There are search functions on both the administrative and public sides of Omeka S installations and sites.
 
 ## Administrative interface
 
 ### Basic search
 
-There is a search field near the top of the left-hand menu, just underneath the user information. This search field works as a keyword search across all the properties for a resource.
+There is a search field near the top of the left-hand menu, just underneath the user information. This search field works as a keyword search across all the properties of the resources.
 
 ![Search option in blue sidebar.](files/search1.png)
 
@@ -116,7 +116,7 @@ Searches by value, class, and template allow you to search by more than one inpu
 You can reset your search terms at any time by using the "Reset" button on the upper right next to the "Search" button.
 
 ## Public views
-The exact appearance of the search interface will vary based on the [theme](sites/site_theme.md) selected. However, the way search works should be consistent regardless of theme. All of the screenshots in this section are from a site using the the Default theme. 
+The exact appearance of the search interface will vary based on the [theme](sites/site_theme.md) selected. However, the way search works should be consistent regardless of theme. All of the screenshots in this section are from a site using the Default theme. 
 
 ### Basic search
 There is a search bar near the menu for each site. In the default theme, it is located just beneath the main menu, as shown in the image below.
@@ -187,3 +187,14 @@ Clicking the advanced search link loads a new page with three options for search
 Searches by value and class allow a visitor to search by more than one input; they can use the "Add new" buttons to search with more than one search term. These search terms build - searching for two classes will return all item sets which have either class. 
 
 Site visitors can remove value and item set searches using the red trash can icon to the right of those search options.
+
+## Sorting
+
+All of the public and administrative browsing views and all search results can be ordered in a number of ways. To the top right of every browse or result table is two dropdowns and a "Sort" button. One allows you to select a field, and the other determines the order in which to sort them.
+
+The default way most resources are ordered is by the date the resource was created (Created), in reverse chronological order (Descending). This is true of items, media, item sets. Sites, vocabularies, and resource templates are default ordered by Title or Label Ascending. Users are default ordered by Email Ascending. 
+
+Ascending means A-Z alphabetically for text fields, earliest to latest for date-formatted fields such as Created (meaning the internal item creation date and time) and Modified (the date and time the item was last modified), and smallest to greatest for numbers such as Identifiers. Note that some fields (such as Dublin Core's Date) may be text-formatted to include information such as "circa" and will sort alphabetically rather than as numbers (such as "1800-01-01") or dates. You may be using modules such as [Numeric Data Types](modules/numericdatatypes.md) that can modify these settings.
+
+In both ascending and descending orders, empty fields will come at the end.
+

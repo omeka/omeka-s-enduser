@@ -20,6 +20,17 @@ This [screencast](https://vimeo.com/449764902){target=_blank} walks through mana
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/449764902?h=4c03af586c" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <p><a href="https://vimeo.com/449764902">Omeka S Vocabularies</a> from <a href="https://vimeo.com/omeka">Omeka</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
+## Vocabularies permissions
+
+Vocabularies are only modifiable by Global Admins and Supervisors. Pre-loaded vocabularies can be edited or deleted, except DC and DC Type, which cannot be edited or deleted.
+
+| Category | Permission | Global Admin | Supervisor | Editor | Reviewer | Author | Researcher |
+|-----|-----|---|---|---|---|---|---|
+| Vocabularies | Import | Yes | Yes | No | No | No | No |
+|  | Edit/Delete | Yes | Their own | No | No | No | No |
+
+If you change a user level, for example from Supervisor to Editor, they will lose the ability to edit the vocabularies they have imported, but the vocabulary will not be modified.
+
 ## View vocabularies
 The main view of the **Vocabularies** tab in the Admin Dashboard displays the existing vocabularies for the Omeka S installation. 
 
