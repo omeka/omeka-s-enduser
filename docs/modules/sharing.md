@@ -13,8 +13,6 @@ Currently, Sharing supports the following options:
 
 Once Sharing has been installed and activated for an Omeka S install, it is available for all sites on the install. 
 
-![Sharing module installed and activated in the general settings module page](../modules/modulesfiles/sharing1.png)
-
 ## Configuration
 
 ![Left hand navigation options for sites: settings is at the bottom](../modules/modulesfiles/sharing2.png)
