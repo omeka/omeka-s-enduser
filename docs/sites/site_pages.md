@@ -11,7 +11,7 @@ When you create a new site, Omeka S automatically adds a page titled "Welcome" w
 ## Adding pages
 From the page for the site, click the Pages link. Then click the "Add new page" button on the upper left side of the window.
 
-![A red arrow points to a grey button labeled "add new page"](../sites/sitesfiles/sitepg_addnew.png)  
+![At the top of the screen is a grey button labeled "Add new page"](../sites/sitesfiles/sitepg_addnew.png)  
 
 To add a page you must enter a **Title**. You can also enter a **URL Slug**. Both of these can be edited later.
 
