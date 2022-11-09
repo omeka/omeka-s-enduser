@@ -10,10 +10,10 @@ There are six user roles in Omeka S:
 
 - **Global Administrator**: full installation privileges.
 - **Supervisor**: robust site and content privileges.
-- **Editor** (Content Expert): full privileges for content creation and deletion.
-- **Reviewer**: robust content privileges, but limited access to deletion.
-- **Author**: Create, edit, and delete own content.
-- **Researcher**: Search and read privileges only.
+- **Editor** (Content Expert): full privileges for content creation.
+- **Reviewer**: robust content privileges but can only delete own content.
+- **Author**: create own content.
+- **Researcher**: search and read privileges only.
 
 Behind the scenes, role values use the following slugs:
 
