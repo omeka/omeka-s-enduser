@@ -79,6 +79,10 @@ If you are [using Reclaim Hosting](#one-click-installation), you will have to ma
 
 If you begin to see errors once you start working with Omeka, particularly errors with something like "PHP-CLI error: invalid PHP path", you will need to manually set the PHP path. See [Configuration Options](configuration.md) to learn about modifying thumbnail generation, setting the PHP path manually, and more. 
 
+### Starting to work with your installation
+
+Once you have correctly configured all of the technical components of your Omeka S installation, you will want to begin by: adding other users; creating resource templates, vocabularies, and item sets; creating one or more sites; then adding items, and assigning those resources to your sites. Continue on with the user manual to learn more about these parts of Omeka S.
+
 !!! note
 	If you have an existing Omeka Classic or S installation, you may wish to look at modules such as the [Omeka Classic Importer](modules/omekaCimporter.md), the [Omeka S Item Importer](modules/ositemimporter.md), or the [CSV Import module](modules/csvimport.md), which can help you copy other types of data.
 

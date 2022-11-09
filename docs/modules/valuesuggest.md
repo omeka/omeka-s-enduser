@@ -4,7 +4,7 @@ The [Value Suggest module](https://omeka.org/s/modules/ValueSuggest){target=_bla
 
 This functionality helps those building an Omeka site encourage consistent metadata input and data compatibility with other databases of records. Note that Value Suggest offers, but cannot require, that users select values from the autosuggest feature. Users will always have the option of creating their own value instead.
 
-## Create a resource template
+## Add suggestions to a resource template
 
 Value Suggest vocabularies are applied through resource templates. For additional information on resource templates, see the [resource template documentation](../content/resource-template.md).
 
