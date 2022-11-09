@@ -126,9 +126,9 @@ If you are using an Item resource for the property, you will have additional opt
 
 This will open a menu below the button with the following options to filter the items in the drawer:
 
-- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation;
+- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation
 - Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set
-- Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the url of it's edit page; if you are editing the item and the url is `admin/item/11547/edit` then the item's ID is 11547.
+- Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the URL of its edit page; if you are editing the item and the URL is `admin/item/11547/edit` then the item's ID is 11547.
 
 ![options as above described](contentfiles/item_addresItem.png)
 
