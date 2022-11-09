@@ -2,9 +2,9 @@
 
 User accounts in an Omeka S installation allow your staff and audience to do things like add items, [make and moderate submissions](../modules/collecting.md), upload media, create virtual exhibits, and edit metadata.
 
-User roles set at the installation level are separate from [site-specific user roles](../sites/site_users.md). A user must be created for the installation and then given site roles. This allows you to give minimal site-wide permissions to someone who will be drafting and publishing a virtual exhibit on your installation.
+User roles set at the installation level are separate from [site-specific user roles](../sites/site_users.md). A user must be created for the installation and then given site roles. This allows you to give minimal installation-wide permissions to someone who will be drafting and publishing a virtual exhibit as one single site.
 
-Administrators manage and create users from the Users section of the main administrative dashboard (head and shoulders icon). The Users section displays the user’s email followed by full name in parentheses, as well as their role and the date the account was created.
+Administrators manage and create users from the Users section of the main administrative dashboard (with the head and shoulders icon). The Users section displays the user’s email followed by full name in parentheses, as well as their role and the date the account was created.
 
 There are six user roles in Omeka S:
 
@@ -12,8 +12,8 @@ There are six user roles in Omeka S:
 - **Supervisor**: robust site and content privileges.
 - **Editor** (Content Expert): full privileges for content creation.
 - **Reviewer**: robust content privileges but can only delete own content.
-- **Author**: Create own content.
-- **Researcher**: Search and read privileges only.
+- **Author**: create own content.
+- **Researcher**: search and read privileges only.
 
 Behind the scenes, role values use the following slugs:
 
@@ -24,8 +24,6 @@ Behind the scenes, role values use the following slugs:
 - `author`
 - `researcher`.
 
-These roles are separate from the [user roles assigned at a site-specific level](../sites/site_users.md), which allow registered users of the installation to have site access to build exhibit pages.
-
 One example of how you may wish to manage the users of your site:
 
 - A **Global Admin** user who installs, manages, and upgrades the modules and themes, and controls fundamental installation settings and server utilities.
@@ -34,6 +32,8 @@ One example of how you may wish to manage the users of your site:
 - **Reviewer** staff members who are responsible for manually adding digitized or collected items and describing them according to institutional guidelines, and editing the additions of others.
 - **Authors** who can add and edit their own items, and who are also given site-specific permissions to create exhibits and publish their research using items in the collection.
 - **Researchers** who can be given site-specific permissions, but cannot add items.
+
+Remember that these roles are separate from the [user roles assigned at a site-specific level](../sites/site_users.md), which allow registered users of the installation to have site access to build exhibit pages.
 
 ## Create a user
 
@@ -106,19 +106,24 @@ To see the password requirements, click the arrow next to the New Password field
 ### API keys
 Use this tab to generate an API key for the user. To generate one, you must provide a label for the key - this could be a date or the purpose of the key. Save the page to generate the key.
 
-To remove existing API keys, check the "Delete?" box on the row for that key and click Save.
+To remove existing API keys, check the "Delete?" box on the row for that key and click "Save".
 
 ![API tab for user Omeka Devs with one generated but hidden API key, and below it the ability to create a new key](adminfiles/users_apikey.png)
 
-## Batch edit users
+### Delete user
+On the User page of the administrative dashboard, click the trash can icon in the user’s row, to the left of their role information, to delete the user. Confirm the deletion in the dialog box which will appear on the right of the screen.
 
-You can edit multiple users at one time by using the checkboxes to the left of each user's email in the User table.
+![Delete confirmation for user Megan2, giving the number of items and item sets that user has created - in this case, zero for both.](adminfiles/users_delete.png)
 
-Click the checkboxes to select the users you want to edit.
+## Batch editing
 
-![A close up of the users table showing only the checkboxes and email column, with three users' emails. Two of the user's boxes are checked, and the third is unchecked.](adminfiles/users_batch1.png)
+Supervisors and Global Administrators can edit multiple users at one time. Use the batch-actions dropdown to edit all or delete all, or use the checkboxes to the left of each user's email in the User table to select individuals to batch-edit or batch-delete. 
 
-Then, using the dropdown just above the table, select from the following options:
+You can also select all using the box at the top of the table.
+
+![A screenshot of the users table showing only the checkboxes and email column, with three users' emails. Two of the user's boxes are checked, and the third is unchecked.](adminfiles/users_batch1.png)
+
+The dropdown just above the table offers the following options:
 
 - Edit selected (users)
 - Edit all (users)
@@ -139,34 +144,60 @@ On this page you can:
 - Add to [site permissions](../sites/site_users.md): select from a dropdown menu of the sites on the Omeka S install, or use the option "all sites" to add the selected users to all sites.
 - Add to [site permission](../sites/site_users.md) as: a dropdown with options for viewer, manager, or creator - select which role the users will have on the sites to which you have added them.
 
-Once you are done, click save changes.
+Once you are done, save your changes.
 
 If you choose "Edit all" rather than "Edit selected" you can apply changes to all users - excluding yourself - on the Omeka S installation. Use this feature carefully!
 
-## Delete a user
-On the User page of the administrative dashboard, click the trash can icon in the user’s row, to the left of their role information, to delete the user. Confirm the deletion in the dialog box which will appear on the right of the screen.
+### Batch deleting users
+To delete a number of users at once, click the checkboxes next to their names on the Users table.
 
-![Delete confirmation for user Megan2, giving the number of items and item sets that user has created - in this case, zero for both.](adminfiles/users_delete.png)
-
-### Batch delete users
-To delete a number of users at once, click the checkboxes next to their names on the Users table (see Batch edit users, above).
-
-From the dropdown menu just above the email column, select "Delete selected" and click Go.
+From the dropdown menu just above the email column, select "Delete selected" and click "Go".
 
 ![A red arrow points to the dropdown where "Delete selected" is displayed](adminfiles/users_batchdel1.png)
 
-This will open a drawer on the right side of the screen with a message telling you the number of users you are about to delete. This action *cannot be undone*.
+This will open a drawer on the right side of the screen with a message telling you the number of users you are about to delete. This action **cannot be undone**.
 
 To permanently delete these users, click the red "Confirm Delete" button. To cancel, click the "X" in the upper right corner of the drawer.
 
 ![Confirm delete message for 5 users](adminfiles/users_batchdel2.png)
 
-The "Delete all" action in the dropdown will delete all users excluding yourself. This action *cannot be undone* and should be used with extreme caution.
+The "Delete all" action in the dropdown will delete all users excluding yourself. This action **cannot be undone** and should be used with extreme caution.
 
 To permanently delete all users, you must check the "Are you sure" box before clicking the "Confirm Delete" button. To cancel, click the "X" in the upper right corner of the drawer. 
 
 ## Roles and permissions
+
 The following is a detailed breakdown of permissions for each user role:
+
+| Category | Permission | Global Admin | Supervisor | Editor | Reviewer | Author | Researcher |
+|-----|-----|---|---|---|---|---|---|
+| Items & media | Add | Yes | Yes | Yes | Yes | Yes | No |
+| | Edit | All | All | All | All | Their own | No |
+| | Delete | All | All | All | Their own | Their own | No |
+| Value annotations | Add/Edit | Yes | Yes | Yes | Yes | Yes | No |
+| Item sets | Add | Yes | Yes | Yes | Yes | Yes | No |
+| | Edit | All | All | All | All | Their own | No |
+| | Delete | All | All | All | Their own | Their own | No |
+| Vocabularies | Import | Yes | Yes | No | No | No | No |
+|  | Edit/Delete | Yes | Their own | No | No | No | No |
+| Resource templates | Add | Yes | Yes | Yes | No | Yes | No |
+| | Edit/Delete  | All | All | All | No | Their own | No |
+| Private objects | View | Yes | Yes | Yes | Yes | No | No |
+| Users | Add | Yes | Yes | No | No | No | No |
+|  | Edit | All | All | Themself | Themself | Themself | Themself |
+|  | Delete | Yes | Yes | No | No | No | No |
+| Modules | Install/Configure | Yes | No | No | No | No | No |
+|  | Use | Yes | Yes | No | No | No | No |
+| Jobs | View | Yes | Yes | No | No | No | No |
+| Settings | View/Change | Yes | No | No | No | No | No |
+| Assets | View | Yes | Yes | Yes | Yes | Yes | Yes | 
+| | Edit | All | All | All | All | Their own | No |
+| | Delete | All | All | All | Their own | Their own | No |
+| Sites¹ | Create | Yes | Yes | Yes | No | No | No |
+| | Edit/Delete | All | All | Their own | | | |
+| Site user roles | Modify | All | All | Their own | | | |
+
+1. Often, a Global Admin, Supervisor, or Editor will create sites and then assign managers and creators from among the users (for example, a class assignment, or virtual exhibits by staff members). Site ownership cannot be re-assigned to other users, and a site owner always has manager-level access to sites they own, even if their installation-wide role is changed. Refer to the [site users page](../sites/site_users.md) for more information.
 
 **Global Admin**
 
@@ -193,7 +224,7 @@ The following is a detailed breakdown of permissions for each user role:
 
 **Reviewer**
 
-- Can search, view, create, and edit all items, item sets, and media. Can only delete those items, item sets, and media they have created.
+- Can search, view, create, and edit all items, item sets, and media. Can only delete those items, item sets, and media they own.
 - No access to sites unless they have been added as a site-specific user.
 - View-only privileges for vocabularies and resource templates. Can see all logs.
 - No access to modules.
@@ -201,7 +232,7 @@ The following is a detailed breakdown of permissions for each user role:
 
 **Author**
 
-- Can search, view, and create items, item sets, resource templates, and media. Can only edit or delete content the user has created.
+- Can search, view, and create items, item sets, resource templates, and media. Can only edit or delete content they own.
 - Cannot see objects marked private, unless the object is a site that they have site-specific permissions for.
 - No access to sites unless they have been added as a site-specific user.
 - Search and view privileges for vocabularies and sites. Cannot see other users' logs.
@@ -215,6 +246,4 @@ The following is a detailed breakdown of permissions for each user role:
 - No access to modules.
 - Can see other users of the installation and their email addresses.
 
-A user at any role can be added to a site at any level (Viewer, Creator, Manager). This will determine whether, say, a Researcher-level user added to a site as Manager can see all the other users added to that site.
-
-<!--- note that a couple of modules display themselves to users who don't have permission. two so far: Item Sets Tree displays its Item Sets Tree page (under Modules at the bottom) to anyone, which is probably fine since it's just a display and not an editing page. Researcher and Reviewer can see the "Import" button for resource templates, but it creates an error page (import works for authors). --->
+Remember that a user at any role can be [added to a site at any level (Viewer, Creator, Manager)](../sites/site_users.md). This will determine whether, say, a Researcher-level user added to a site as Manager can see private information about that site.
