@@ -53,6 +53,8 @@ When you are adding a label, you can also add an image to display on the marker 
 
 ![Marker selected with Image added. The media is also visible in the sidebar, along with an option for "no image"](../modules/modulesfiles/Mapping-addImage.png)
 
+Mapping also integrates with the [Collecting](../modules/collecting.md), permitting users to add location information to their items as well.
+
 ### Editing markers
 To edit the label or image, simply click on the marker. This will open the options for the label and image, as seen above.
 
