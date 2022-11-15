@@ -4,7 +4,7 @@ The [Collecting module](https://omeka.org/s/modules/Collecting/){target=_blank} 
 
 Once activated on the [modules](index.md) tab of the admin dashboard, Collecting is configured on a site-by-site basis. It adds a section to your Site Settings page, and adds a link under each Site for Collecting forms. Forms are added to site pages by way of [page blocks](../sites/site_pages.md#page-blocks).
 
-Collecting integrates with the [Custom Vocab](../modules/customvocab.md), the [Mapping](../modules/mapping.md), and [Numeric Data Types](../modules/numericdatatypes.md) modules.
+Collecting integrates with the [Custom Vocab](../modules/customvocab.md), [Mapping](../modules/mapping.md), and [Numeric Data Types](../modules/numericdatatypes.md) modules.
 
 ## Site settings
 
