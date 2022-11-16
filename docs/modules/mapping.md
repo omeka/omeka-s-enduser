@@ -6,6 +6,10 @@ The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows 
 
 The Mapping module has no global configuration settings. It adds a new "Mapping" tab to each item edit screen, and also adds page blocks to [Site Pages](../sites/site_pages.md) that can be used to display maps for browsing.
 
+Mapping can work with the [Collecting](../modules/collecting.md#prompts) module, by allowing users filling out the contribution form to provide geolocation data for their submissions. Users click directly on a map to place a marker, and can optionally provide a text label for the marker. See the Collecting module page for more information.
+
+Mapping can work with the [CSV Import](../modules/csvimport.md) module, providing extra fields for adding geolocation data to items upon import. See the [CSV Import integration section below](#csv-import-integration) for more information.
+
 ## Item mapping
 
 To add a map to a new or existing item, click to edit the item. Navigate to the "Mapping" tab to add location data to the item. Selecting the tab will open the map interface.
@@ -53,8 +57,6 @@ When you are adding a label, you can also add an image to display on the marker 
 
 ![Marker selected with Image added. The media is also visible in the sidebar, along with an option for "no image"](../modules/modulesfiles/Mapping-addImage.png)
 
-Mapping also integrates with the [Collecting](../modules/collecting.md), permitting users to add location information to their items as well.
-
 ### Editing markers
 To edit the label or image, simply click on the marker. This will open the options for the label and image, as seen above.
 
@@ -86,7 +88,7 @@ If the two modules are enabled, your CSV Import process will have two new dropdo
 
 The "Resource location" dropdown menu includes three options for pinning the item geographically (latitude, longitude, and latitude/longitude). You can import multiple values for these fields.
 
-The "Default map view" dropdown menu allows you to set a centerpoint and zoom level for the map that displays for that item. Without a map centerpoint, the map will center on the item's pin.
+The "Default map view" dropdown menu allows you to set four corner coordinates for the map that displays for that item. Without a map view, the map will center on the item's pin at a high-level zoom.
 
 You cannot set marker labels or marker images in CSV Import.
 
