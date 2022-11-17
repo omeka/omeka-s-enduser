@@ -4,19 +4,13 @@ The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows 
 
 ![Map with timeline](../modules/modulesfiles/mapping-timelinePublic1.png)
 
-The Mapping module has no global configuration settings. It adds a new "Mapping" tab to each item edit screen, and also adds page blocks to [Site Pages](../sites/site_pages.md) that can be used to display maps for browsing.
+The Mapping module has no global configuration settings. It adds several new metadata fields to each item, and a new "Mapping" tab to each item edit screen. It also adds page blocks to [Site Pages](../sites/site_pages.md) that can display maps and timelines for browsing.
 
 Mapping can work with the [Collecting](../modules/collecting.md#prompts) module, by allowing users filling out the contribution form to provide geolocation data for their submissions. Users click directly on a map to place a marker, and can optionally provide a text label for the marker. See the Collecting module page for more information.
 
 Mapping can work with the [CSV Import](../modules/csvimport.md) module, providing extra fields for adding geolocation data to items upon import. See the [CSV Import integration section below](#csv-import-integration) for more information.
 
-## Item mapping
-
-To add a map to a new or existing item, click to edit the item. Navigate to the "Mapping" tab to add location data to the item. Selecting the tab will open the map interface.
-
-![Screenshot of the Add/Edit Item Page with Mapping tab selected. Large World Map with white buttons described below](../modules/modulesfiles/Mapping_Item_Add.png)
-
-### Manipulating the map
+## Manipulating the map
 Small white buttons on the left side of the map control and modify the appearance of the map. Hover over the buttons with the mouse to view tool-tips.
 
 ![Screenshot of the buttons on the map described below](../modules/modulesfiles/Mapping_JustButtons.png)
@@ -33,8 +27,11 @@ Small white buttons on the left side of the map control and modify the appearanc
 
 In addition to these options, you can also navigate the map using your mouse or trackpad by scrolling to zoom and clicking and dragging to pan.
 
-### Adding locations to an item
-In order to add a location to an item, edit the item and go to the "Mapping" tab.
+## Item mapping
+
+The item view screen will not show a "Mapping" tab unless there is geolocation metadata, but one will appear when editing. To add a map to a new or existing item, click to edit the item. Navigate to the "Mapping" tab to add location data to the item. Selecting the tab will open the map interface. 
+
+![Screenshot of the Add/Edit Item Page with Mapping tab selected. Large World Map with white buttons described below](../modules/modulesfiles/Mapping_Item_Add.png)
 
 To find the point where you want to locate the marker, you can do one of the following:
 
@@ -45,7 +42,7 @@ To find the point where you want to locate the marker, you can do one of the fol
 
 ![Mapping tab with a search for "Roosevelt Island" in the search view. Below the search field are a number of suggested locations.](../modules/modulesfiles/Mapping_itemSearch.png)
 
-Click on the **Draw a Marker** tool in the right hand toolbar. Your cursor will become a marker which can move around the map. To set the point, click on the map.
+Click on the **Draw a Marker** tool in the left hand toolbar. Your cursor will become a marker which can move around the map. To set the point, click on the map.
 
 ![Mapping tab with an active marker being drawn. The marker has a tooltip saying "click map to place marker"](../modules/modulesfiles/Mapping-drawMarker.png)
 
@@ -58,17 +55,17 @@ When you are adding a label, you can also add an image to display on the marker 
 ![Marker selected with Image added. The media is also visible in the sidebar, along with an option for "no image"](../modules/modulesfiles/Mapping-addImage.png)
 
 ### Editing markers
-To edit the label or image, simply click on the marker. This will open the options for the label and image, as seen above.
+To edit the label or image, click on the marker. This will open the options for the label and image, as seen above.
 
-To **move a marker** you have added, use the "Move marker" button on the left hand toolbar (small white square with black box and pencil icon). Any marker on the map will become highlighted in a red, dotted-line outline. Click and drag the marker you want to move.
+To **move a marker** you have added, use the "Move markers" button on the left hand toolbar (small white square with black box and pencil icon). Any marker on the map will become highlighted in a red, dotted-line outline. Click and drag the marker you want to move.
 
-To apply your changes, click the "Save" option which opens from the "Move marker" button. To cancel the changes, click "Cancel". If you do not click save, the marker will not be moved.
+To apply your changes, click the "Save" option which opens from the "Move markers" button. To cancel the changes, click "Cancel". If you do not save, the marker will not be moved.
 
 ![Marker being moved](../modules/modulesfiles/Mapping-moveMarker.png)
 
-To **delete a marker**, first click the "Delete a marker" in the left hand toolbar (trash can icon). Click on the marker you want to delete; this will remove the marker from the map. In order to make the deletion permanent, you must click Save in the menu which opens from the "Delete a marker" button.
+To **delete a marker**, first click the "Delete markers" button in the left hand toolbar (trash can icon). Click on the marker you want to delete; this will remove the marker from the map. In order to make the deletion permanent, you must click "Save" in the menu which opens from the "Delete markers" button.
 
-Note that you can use the "clear all" button in the menu which opens form the "delete a marker" button to clear all markers on the map.
+Note that you can use the "Clear all" button in the menu which opens form the "Delete markers" button to clear all markers on the map.
 
 ![Marker being deleted.](../modules/modulesfiles/Mapping-deleteMarker.png)
 
@@ -82,17 +79,21 @@ You can also set the map's default display zoom level and center, independently 
 
 ## CSV Import integration
 
-Mapping is compatible with [CSV Import](../modules/csvimport.md) when importing items (not mixed resources).
+Mapping is compatible with [CSV Import](../modules/csvimport.md) when importing items (not when importing mixed resources).
 
-If the two modules are enabled, your CSV Import process will have two new dropdown menus in the "Add mapping" sidebar when you are connecting a spreadsheet column to a property.
+If the two modules are enabled, your CSV Import process will have a new "Mapping" dropdown menu in the "Add mapping" sidebar when you are connecting a spreadsheet column to a property.
 
-The "Resource location" dropdown menu includes three options for pinning the item geographically (latitude, longitude, and latitude/longitude). You can import multiple values for these fields.
+The "Mapping" dropdown menu includes three options for pinning the item geographically (latitude, longitude, and latitude/longitude). You can import multiple values for these fields; each will create a marker for the given item. Make sure your latitude/longitude data are separated with a slash (`/`) character.
 
-The "Default map view" dropdown menu allows you to set four corner coordinates for the map that displays for that item. Without a map view, the map will center on the item's pin at a high-level zoom.
+The "Default Bounds (sw_lng,sw_lat,ne_lng,ne_lat)" option allows you to set four corner coordinates for the map that displays for that item, in the format `sw_lng,sw_lat,ne_lng,ne_lat` (bottom left longitude, bottom left latitude, top right longitude, top right latitude). Map widths and heights display dynamically depending on the page and the browser window, so your four coordinates will be centered within the map and excess space will display either vertically or horizontally as applicable. Be careful to provide longitudes first and latitudes second in your bounds values.
+
+For example, to pin an item near Madrid and set the map bounds around the country of Spain, you could provide two values: a marker latitude and longitude of "40.79864618/-3.645817429" and default bounds of "4.25300,43.95470,-12.12392,36.45605". 
+
+Note that the default bounds will override the location markers. For example, if you set bounds around Spain, but your item's marker is pinned to Antarctica, the map will display Spain and users will have to search for the marker manually.
 
 You cannot set marker labels or marker images in CSV Import.
 
-You cannot [batch-edit](../content/items.md#batch-actions) mapping values after items are in your system, only edit them manually one item at a time. So, CSV Import can help you do things such as set a consistent map zoom level on each item, by supplying a spreadsheet with every item and the same zoom level number in each row.
+You cannot [batch-edit](../content/items.md#batch-actions) mapping values after items are in your system, only edit them manually one item at a time, or batch-revise mapping data using CSV Import.
 
 ## Adding map blocks to a site
 
@@ -196,15 +197,16 @@ Paste the query string into the Query field in the Map by query block. Note that
 ![A map by query block open to the Query section. There is a query pasted into the field.](../modules/modulesfiles/mapping-blockQuery.png)
 
 ## Public view
-A map block will display on a public page at full page width. If you have settings in the [default view](#default-view) of the block, these should be applied. Otherwise the block will zoom so that all of the items are visible.
 
-Viewers can zoom either using the scroll function of their computer or the Zoom in/out buttons on the left side of the map.
+A map block will display on a public page or item page at the full page width. If you have settings in the [default view](#default-view) of the map block, or have set [default map bounds for the item](#setting-the-map-display), these should be applied. Otherwise the map will zoom so that all of the items are visible.
+
+Viewers can zoom either using the scroll function of their computer or the zoom in/out buttons on the left side of the map.
 
 ![Map block with three individual markers and two green cluster circles of two markers. The map shows a portion of southern England.](../modules/modulesfiles/mapping-public.png)
 
-Each item will display as a marker on the map. Markers which are close together will display as a cluster circle, with a number indicating how many items share that location. As you zoom in, these clusters may break open.
+Each item will display as a marker on the map. Markers which are close together will display as a cluster circle, with a number indicating how many items share that location. As you zoom in, these clusters will break open.
 
-Clicking on a marker will open a label for that marker. If you have not added a label or image for the marker, it will simply say "view item." If you have added a label, it will show the label, as well as representative media and a link to the media if the marker has one.
+Clicking on a marker will open a label for that marker. If you have not added a label or image for the marker, it will simply say "Item: [Title]." If you have added a label, it will show the label, as well as representative media and a link to the media if the marker has one.
 
 Item mapping marker with label only:
 ![](../modules/modulesfiles/mapping-publicLabel.png)
