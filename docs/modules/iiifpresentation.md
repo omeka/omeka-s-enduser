@@ -1,8 +1,8 @@
 # IIIF Presentation
 
-The [IIIF Presentation module](https://omeka.org/s/modules/IIIFPresentation/){target=_blank} allows users to offer [IIIF Presentation API endpoints & viewers](https://iiif.io/api/presentation/3.0/){target=_blank} for their Omeka S items and item sets. These API endpoints are automatically available for all items and item sets when the module is installed and active. 
+The [IIIF Presentation module](https://omeka.org/s/modules/IIIFPresentation/){target=_blank} allows installations to offer [IIIF Presentation API endpoints & viewers](https://iiif.io/api/presentation/3.0/){target=_blank} for their Omeka S items and item sets. These API endpoints are automatically available for all items and item sets when the module is installed and active. 
 
-Omeka S offers the [Mirador IIIF viewer](https://projectmirador.org/){target=_blank} in its core code, which is what allows Omeka to [input and display IIIF media](../content/media.md#add-media) from around the web. This can be useful for institutions that offer their digital collections elsewhere but wish to use those materials in Omeka virtual exhibits, or for educators who wish to use publicly-shared materials for teaching. 
+Omeka S offers the [Mirador IIIF viewer](https://projectmirador.org/){target=_blank} in its core code, which is what allows Omeka to [input and display IIIF media](../content/media.md#add-media) from around the web. This can be useful for institutions that host their digital collections elsewhere but wish to use those materials in Omeka virtual exhibits, or for educators who wish to use publicly-shared materials for teaching. 
 
 This module adds the ability to send an Omeka S installation's items or item sets to other IIIF viewers for display, and to load IIIF viewers on the installation for previewing and configuration. This can be used by others who wish to display your Omeka resources on their own sites. 
 
@@ -13,13 +13,13 @@ A IIIF viewer can be set to display any item, a set of multiple items, any item 
 After installation, manifest and viewer URLs are created using your base Omeka S installation URL, not for any particular site on the installation. So, users can find the IIIF viewer URL for each item at 
 
 `
-https://example.com/omeka-s/iiif-presentation/3/item/1234/
+https://example.com/omeka-s/iiif-presentation/3/item/123/
 `
 
 and the manifest URL at 
 
 `
-https://example.com/omeka-s/iiif-presentation/3/item/1234/manifest
+https://example.com/omeka-s/iiif-presentation/3/item/123/manifest
 `
 
 where 
@@ -27,25 +27,42 @@ where
 - `https://example.com/omeka-s/` is your base installation URL (do not include the URL to any particular site, or the `/s/` that comes before a site)
 - `iiif-presentation/3/` indicates that you are offering the version 3.0 type of an IIIF manifest
 - `item` indicates that the object is an Omeka S item
-- `1234` is the particular item ID.
-
-You can test that the module is working correctly by going directly to a viewer or manifest URL in your browser. For the viewer, you should see your item's media load in the viewer with metadata in the sidebar. For the latter, you should see a page of JSON loading where "Manifest" appears early on as the type. You can also use validator tools such as [https://presentation-validator.iiif.io/](https://presentation-validator.iiif.io/){target=_blank}.
+- `123` is the particular item ID.
 
 Similarly, each item set URL is
 
 `
-https://example.com/omeka-s/iiif-presentation/3/item-set/123
+https://example.com/omeka-s/iiif-presentation/3/item-set/45
 `
 
-where `123` is the item set ID.
+where `45` is the item set ID.
 
 You can serve more than one item ID, or more than one item set ID, by including the values separated by commas in the same place, for example:
 
 `
-https://example.com/omeka-s/iiif-presentation/3/item/5,6,7,8
+https://example.com/omeka-s/iiif-presentation/3/item/6,7,8,9
 `
 
 The values can be in any order, and will appear in the viewer in the given order.
+
+
+You can test that the module is working correctly by going directly to a viewer or manifest URL in your browser. 
+
+For the viewer, you should see your item's media load in the viewer with metadata in the sidebar. The URL will be redirected to something in the form of 
+
+`
+https://example.com/omeka-s/iiif-viewer?url=https://example.com/omeka-s/iiif-presentation/3/item/1082/manifest
+`
+
+![A view of a IIIF Mirador viewer showing a book with multiple pages.](modulesfiles/iiifpresentation_viewer.png)
+
+For the manifest, you should see a page of JSON loading where "Manifest" appears early on as the type. 
+
+![A view of a IIIF manifest JSON output.](modulesfiles/iiifpresentation_json.png)
+
+You can also use validator tools such as [https://presentation-validator.iiif.io/](https://presentation-validator.iiif.io/){target=_blank}.
+
+## Endpoints
 
 ### IIIF Presentation v3
 
