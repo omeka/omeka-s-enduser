@@ -1,26 +1,24 @@
 # Numeric Data Types
 
-This module allows you to set certain properties as numeric data, using resource templates. You can designate properties as either date and time (ISO) or integers.
-
-To install Numeric Data Types, follow the instructions for [Installing Modules](../modules/index.md#installing-modules) on the Modules documentation.
+The [Numeric Data Type module](https://omeka.org/s/modules/NumericDataTypes){target=_blank} allows you to set certain properties as numeric data, using resource templates. You can designate properties as either date and time (ISO) or integers.
 
 ## Create numeric properties
 To implement the module, you will need to create or edit a [resource template](../content/resource-template.md) to set specific properties as having numeric data types. 
 
 When creating or editing a resource template, find the property you want to set as numeric in the right hand sidebar. Click on the property to add it to the template.
 
-Once the property has been added to the template, click the pencil/edit icon to edit the property. In the right hand drawer which opens, look for the dropdown "Data type" under the heading "Other options".
+Once the property has been added to the template, click the pencil icon to edit the property. In the right hand drawer which opens, look for the dropdown "Data type" under the heading "Other options".
 
 ![Close up of the Other Options section, showing a dropdown for data type. A red arrow points to the header for the Numeric data types](../modules/modulesfiles/ndt-selectdata.png)
 
 In the dropdown, select from the following options under the heading for "Numeric":
 
-- Timestamp, which can be as broad as year or as defined as the date and time;
+- Timestamp, which can be as broad as a year or as defined as the date and time;
 - Integer, a whole number;
 - Duration, for how long something lasted, with options for years down to seconds;
 - Interval, a date-based range with start and end dates in each instance of the property.
 
-Be sure to click "set changes" at the bottom of the drawer to save this setting.
+Be sure to click "Set changes" at the bottom of the drawer to save this setting.
 
 When you save changes to your resource template, the numeric type you chose should show up in the column "Data type" for the template.
 
@@ -32,13 +30,13 @@ Note: these fields will display only the numeric data entered. If you want to in
 When you add or edit an item using the template you created above, the properties you set as numeric will appear as follows:
 
 ### Timestamp data
-A Timestamp property automatically loads with fields for Year, Month, and Day. Note that the Month input is a dropdown where you select from the months' names. 
+A Timestamp property automatically loads with fields for Year, Month, and Day. The Month input is a dropdown where you select from the months' names. 
 
 If you enter a day without a month, the day information will not be saved. 
 
 ![Empty timestamp fields, for property Date](../modules/modulesfiles/ndt-timestamp1.png)
 
-Clicking on the "time" button to the right of the day input field will load additional dropdown fields for Hour, Minute, and Second. Note that there is no AM/PM option so you will want to use twenty-four hour time entries (14 for 2pm, etc)
+Clicking on the "time" button to the right of the day input field will load additional dropdown fields for Hour, Minute, and Second. Note that there is no AM/PM option; use twenty-four hour time entries (14 for 2pm, etc.).
 
 ![Empty timestamp fields, for property Date, with a row of time entry options below the date entry options](../modules/modulesfiles/ndt-timestamp2.png)
 
@@ -49,66 +47,53 @@ An integer property has a narrow input which, once you have data in it, will dis
 
 ![Field for property Spatial Coverage with the number 1 in the integer entry field, and up or down toggle button on the right side of the field](../modules/modulesfiles/ndt-integer.png)
 
-Your entry must be whole number; decimal points are not supported and will be rounded up to the nearest number. 
+Your entry must be a whole number; decimal points are not supported and will be rounded up to the nearest number. 
 
 ### Duration data
-A Duration property has a series of fields in which to enter the duration of the resource. There are fields for:
-
-- Years
-- Months
-- Days
-- Hours
-- Minutes
-- Seconds
-By default, only the first three of these fields display. Clicking on the "time" button to the right of the day input field will load the fields for Hour, Minute, and Second. Note that there is no AM/PM option so you will want to use twenty-four hour time entries (14 for 2pm, etc)
+A Duration property has a series of fields in which to enter the duration of the resource. There are fields for Years, Months, and Days. Clicking on the "time" button to the right of the day input field will load additional dropdown fields for Hours, Minutes, and Seconds. Note that there is no AM/PM option; use twenty-four hour time entries (14 for 2pm, etc.).
 
 ![A property labelled duration, using the vocabulary dcterms "extent". There fields described are in a stack, with year on top.](../modules/modulesfiles/ndt-duration.png)
 
-You do not need to enter every field. For example, you can enter a duration of 1 year and 5 days, leaving the month field blank.
+You do not need to have input in every field. For example, you can enter a duration of 1 year and 5 days, leaving the month field blank.
 
 ### Interval data
-Interval data allows you to enter the beginning and end dates for a resource. There are two sets of timestamp fields, one for the start date and one for the end. 
+Interval data allows you to enter the beginning and end dates and times for a resource. There are two sets of timestamp fields, one for the start date and one for the end. 
 
 ![Interval property with no times entered](../modules/modulesfiles/ndt-interval.png)
 
 ## Sort
-Once you have active resource templates using numeric data types, you can use these to sort on the Item, Media, and Item Set browse views. 
+Once you have active resource templates using numeric data types, they will appear as sortable options on the Item, Media, and Item Set browse views. 
 
-Click the first dropdown on the upper right above the table of resources, which defaults to "Created"
+Click the first dropdown on the top right corner of the table of resources, which defaults to "Created".
 
 ![A closeup of the options above the resource table, with a red arrow points to the "created" dropdown option"](../modules/modulesfiles/ndt-browsesort1.png)
 
-Clicking on this dropdown will reveal multiple options, including all of the properties using numeric data types. These options display as the property with the data type in parentheses, for example "Date (numeric:timestamp)" 
+Clicking on this dropdown will reveal multiple options, including all of the properties using numeric data types. These options display as the property with the data type in parentheses, for example "Date (numeric:timestamp)". 
 
 ![The contents of the dropdown, with the normal options in addition to eight properties using numeric data types.](../modules/modulesfiles/ndt-browsesort2.png)
 
-
 ## Bulk edit numeric data
-The module adds an additional option to the [item batch edit](../../content/items/#batch-editing): convert to numeric.
+The module adds an additional option to the [item batch edit](../../content/items/#batch-editing): Convert to Numeric.
 
-![Batch edit items form with a red rectangle outline surrounding the convert to numeric option](../modules/modulesfiles/ndt-batchoption
-
-The convert to numeric option lets you convert an existing text input property to a numeric data type. It will not work on properties where the data is currently an Omeka resource or a URI. 
+The Convert to Numeric option lets you convert an existing text input property to a numeric data type. It will not work on properties where the data is currently an Omeka resource or a URI. 
 
 In the first field, select a property from the dropdown. You can type to search through the properties. Note that this dropdown loads the property names from the vocabulary and will not have the additional labels from your resource template, so be sure you know which vocabulary term you are looking for.
 
 In the second field, select from the following options:
 
-- convert to timestamp
-- convert to interval
-- convert to duration
-- convert to integer
+- Convert to timestamp
+- Convert to interval
+- Convert to duration
+- Convert to integer.
 
 ## Search numeric data
 When the module is active, it adds additional search options to the Advanced Search for items. 
 
 ![Numeric data type search options, no data entered](../modules/modulesfiles/ndt-search.png)
 
-For each search option, you must select a specific property from the dropdown; if you are using Duration in two resource templates, one for film (ex `time:hasDuration`) and one for events (ex, `dcterms:extent`), you would need to select the correct property from the resource template which you want to search. The dropdown will display the original property labels (`Extent` or `hasDuration` in the examples above). If you hover over the properties in the dropdown, it will show you the resource templates which are using that property and to which the search will apply.
-
+For each search option, you must select a specific property from the dropdown. For example, if you are using Duration in two resource templates, one for film (`time:hasDuration`) and one for events (`dcterms:extent`), you would need to select the correct property from the resource template you want to search. The dropdown will display the original property labels (`Extent` or `hasDuration` in the examples above). If you hover over the properties in the dropdown, it will show you the resource templates that are using that property and to which the search will apply.
 
 ![Close up of the "Date comes before" search, displaying the hovertext for the Date property](../modules/modulesfiles/ndt-searchhelper.png)
-
 
 **Timestamp** data has two search options, one for "Date comes before" and "Date comes after". Select the property for timestamp from the dropdown - only properties which are being used for timestamp will appear in the dropdown. 
 
@@ -118,6 +103,6 @@ For each search option, you must select a specific property from the dropdown; i
 
 **Integer** data is searchable with "Value is less than" and "Value is greater than." As with the timestamp data, only properties which have numeric data will load in the dropdown. 
 
-## Integration with Other Modules
+## Integration with other modules
 
-Numeric Data Types functions with [Collecting](../modules/collecting/), [CSVImport](../modules/csvimport/), [Faceted Browse](../modules/facetedbrowse/), and [Mapping](../modules/mapping/).
+Numeric Data Types functions with [Collecting](../modules/collecting.md), [CSV Import](../modules/csvimport.md), [Faceted Browse](../modules/facetedbrowse.md), and [Mapping](../modules/mapping.md).
