@@ -1,12 +1,16 @@
 # IIIF Presentation
 
-The [IIIF Presentation module](https://omeka.org/s/modules/IIIFPresentation/){target=_blank} allows users to offer [IIIF Presentation API endpoints & viewers](https://iiif.io/api/presentation/3.0/){target=_blank} for their Omeka S items and item sets. These API endpoints are automatically created for all items and item sets when the module is installed and active. 
+The [IIIF Presentation module](https://omeka.org/s/modules/IIIFPresentation/){target=_blank} allows users to offer [IIIF Presentation API endpoints & viewers](https://iiif.io/api/presentation/3.0/){target=_blank} for their Omeka S items and item sets. These API endpoints are automatically available for all items and item sets when the module is installed and active. 
 
-Omeka S offers the [Mirador IIIF viewer](https://projectmirador.org/){target=_blank} in its core code. This module adds the ability to send an installation's items or item sets to that viewer for display. A IIIF viewer can be set to view any item, a set of multiple items, any item set, or a set of multiple item sets, simply by creating the desired URL. The module has no settings or added admin interface options. 
+Omeka S offers the [Mirador IIIF viewer](https://projectmirador.org/){target=_blank} in its core code, which is what allows Omeka to [input and display IIIF media](../content/media.md#add-media) from around the web. This can be useful for institutions that offer their digital collections elsewhere but wish to use those materials in Omeka virtual exhibits, or for educators who wish to use publicly-shared materials for teaching. 
+
+This module adds the ability to send an Omeka S installation's items or item sets to other IIIF viewers for display, and to load IIIF viewers on the installation for previewing and configuration. This can be used by others who wish to display your Omeka resources on their own sites. 
+
+A IIIF viewer can be set to display any item, a set of multiple items, any item set, or a set of multiple item sets, simply by creating the desired URL. The module has no settings or added admin interface options. 
 
 ## Using the module
 
-After installation, manifest and viewer URLs are created using your base Omeka S installation URL, not for any particular site on the installation. So, you can find the IIIF viewer URL for each item at 
+After installation, manifest and viewer URLs are created using your base Omeka S installation URL, not for any particular site on the installation. So, users can find the IIIF viewer URL for each item at 
 
 `
 https://example.com/omeka-s/iiif-presentation/3/item/1234/
@@ -22,9 +26,10 @@ where
 
 - `https://example.com/omeka-s/` is your base installation URL (do not include the URL to any particular site, or the `/s/` that comes before a site)
 - `iiif-presentation/3/` indicates that you are offering the version 3.0 type of an IIIF manifest
-- `item/1234/manifest` is the particular item ID.
+- `item` indicates that the object is an Omeka S item
+- `1234` is the particular item ID.
 
-You can test that the module is working correctly by going directly to a viewer or manifest URL in your browser. For the viewer, you should see your item's media load in the viewer and metadata in the sidebar. For the latter, you should see a page of JSON loading where "Manifest" appears early on as the type. You can also use validator tools such as [https://presentation-validator.iiif.io/](https://presentation-validator.iiif.io/){target=_blank}.
+You can test that the module is working correctly by going directly to a viewer or manifest URL in your browser. For the viewer, you should see your item's media load in the viewer with metadata in the sidebar. For the latter, you should see a page of JSON loading where "Manifest" appears early on as the type. You can also use validator tools such as [https://presentation-validator.iiif.io/](https://presentation-validator.iiif.io/){target=_blank}.
 
 Similarly, each item set URL is
 
@@ -104,32 +109,6 @@ These endpoints are available for version 2 of the IIIF Presentation API.
 
 This module triggers these events during the composition of certain IIIF Presentation resources (manifest, canvas, collection, etc.). Use the event's `getTarget()` method to get the current controller.
 
-### IIIF Presentation v2
-
-These events are available for version 2 of the IIIF Presentation API.
-
-- `iiif_presentation.2.media.canvas`
-    Triggered after composing a media canvas array. To modify the canvas, handlers may modify the `canvas` parameter and set it back to the event.
-    - `canvas`: The canvas array
-    - `canvas_type`: The canvas type service object
-    - `media_id`: The media ID
-- `iiif_presentation.2.item.manifest`
-    Triggered after composing an item manifest array. To modify the manifest, handlers may modify the `manifest` parameter and set it back to the event.
-    - `manifest`: The manifest array
-    - `item_id`: The item ID
-- `iiif_presentation.2.item.collection`
-    Triggered after composing an item collection array. To modify the collection, handlers may modify the `collection` parameter and set it back to the event.
-    - `collection`: The collection array
-    - `item_ids`: The item IDs in the collection
-- `iiif_presentation.2.item_set.collection`
-    Triggered after composing an item set collection array. To modify the collection, handlers may modify the `collection` parameter and set it back to the event.
-    - `collection`: The collection array
-    - `item_set_id`: The item set ID
-- `iiif_presentation.2.item_set.collections`
-    Triggered after composing an item set collections array. To modify the collection, handlers may modify the `collection` parameter and set it back to the event.
-    - `collection`: The collection array
-    - `item_set_ids`: The item set IDs in the collection
-
 ### IIIF Presentation v3
 
 These events are available for version 3 of the IIIF Presentation API.
@@ -152,6 +131,32 @@ These events are available for version 3 of the IIIF Presentation API.
     - `collection`: The collection array
     - `item_set_id`: The item set ID
 - `iiif_presentation.3.item_set.collections`
+    Triggered after composing an item set collections array. To modify the collection, handlers may modify the `collection` parameter and set it back to the event.
+    - `collection`: The collection array
+    - `item_set_ids`: The item set IDs in the collection.
+
+### IIIF Presentation v2
+
+These events are available for version 2 of the IIIF Presentation API.
+
+- `iiif_presentation.2.media.canvas`
+    Triggered after composing a media canvas array. To modify the canvas, handlers may modify the `canvas` parameter and set it back to the event.
+    - `canvas`: The canvas array
+    - `canvas_type`: The canvas type service object
+    - `media_id`: The media ID
+- `iiif_presentation.2.item.manifest`
+    Triggered after composing an item manifest array. To modify the manifest, handlers may modify the `manifest` parameter and set it back to the event.
+    - `manifest`: The manifest array
+    - `item_id`: The item ID
+- `iiif_presentation.2.item.collection`
+    Triggered after composing an item collection array. To modify the collection, handlers may modify the `collection` parameter and set it back to the event.
+    - `collection`: The collection array
+    - `item_ids`: The item IDs in the collection
+- `iiif_presentation.2.item_set.collection`
+    Triggered after composing an item set collection array. To modify the collection, handlers may modify the `collection` parameter and set it back to the event.
+    - `collection`: The collection array
+    - `item_set_id`: The item set ID
+- `iiif_presentation.2.item_set.collections`
     Triggered after composing an item set collections array. To modify the collection, handlers may modify the `collection` parameter and set it back to the event.
     - `collection`: The collection array
     - `item_set_ids`: The item set IDs in the collection.
