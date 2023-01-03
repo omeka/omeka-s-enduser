@@ -56,10 +56,10 @@ Start an import by clicking on the CSV Import tab on the left-hand navigation. T
 	- Item Sets
 	- Items
 	- Media (must relate to already existing Items)
-	- Mixed resources (spreadsheet can inlcude Item Sets, Items, and Media)
+	- Mixed resources (spreadsheet can include Item Sets, Items, and Media)
 	- Users.
 
-- Check the box to **Automap with simple labels**. This will automap not only specially formatted column headings but also column headings which match existing vocabulary property labels.
+- Check the box to **Automap with simple labels**. This will automap not only specially formatted column headings but also column headings that match existing vocabulary property labels.
 
 - **Comments** will appear on the "Past Imports" page; you may find this useful to make a note about what is being imported and any settings you have chosen on this page.
 
