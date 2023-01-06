@@ -174,9 +174,11 @@ Users can also select how to order their search results.
 
 Searches by value, class, and item set allow a visitor to search by more than one input; they can use the "Add new" buttons (plus sign) to search with more than one search term. These search terms build - searching for two item sets will return all items in either item set, rather than only those items which are in both.
 
+
 Site visitors can remove value, class, and item set searches using the red trash can icon to the right of those search options.
 
 ### Advanced item set search
+
 Site visitors can access an advanced item set search from the Browse Items Sets page, if you have that page accessible. There is a link for Advanced search near the top of the Item Sets page.
 
 ![Item sets page for the Jane Austen site. A blue arrow points to the advanced search link](files/search_publicitemsets1.png)
@@ -208,6 +210,8 @@ Users can also select how to order their search results.
 Searches by value and class allow a visitor to search by more than one input; they can use the "Add new" buttons (plus sign) to search with more than one search term. These search terms build - searching for two classes will return all item sets which have either class, rather than only item sets that have both classes. 
 
 Site visitors can remove value and item set searches using the red trash can icon to the right of those search options.
+
+You can modify these default sorting orders for the public pages of sites in [Site settings](sites/site_settings.md#settings), and for the administrative pages on a user-by-user basis in [User settings](admin/users.md#admin-browse-defaults).
 
 ## Sorting
 

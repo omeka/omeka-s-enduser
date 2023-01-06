@@ -29,8 +29,21 @@ Site is public: ![make public button showing an eye icon](../content/contentfile
 
 Site is private: ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png){style="display:inline;"}
 
+The Site Admin page has two tabs: Info and Settings.
+
+## Info
+The site info settings for an Omeka S site are where you can change the basic info for the site - the same information you entered when you created the site. You can change the:
+
+* **Title**: a text field.
+* **Slug**: the URL for your site.
+* **Summary**: the brief description of what it is about which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
+* **Thumbnail** - an image for your site which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
+
+![Info screen for an Omeka S site with a thumbnail and a summary.](../sites/sitesfiles/sites_siteinfo.png)
+
 ## Settings
-The Settings page is divided into three sections: **General**, **Browse**, and **Search**.
+
+The Settings page is divided into the following sections: **General**, **Language**, **Browse**, **Show**, and **Search**.
 
 To implement any changes you make, click "Save" at the top right of the browser window when you are done. To leave without saving changes, click "Cancel".
 
@@ -95,10 +108,11 @@ Depending on the [site theme](../sites/site_theme.md), you may want to make this
 
 **Browse heading property** sets which property to use as the heading for each resource on a browse page. By default, this is Dublin Core: Title. The dropdown allows you to select from all available vocabularies, and includes a search bar to quickly find the desired property.
 
-![The browse heading property option is open. The current selection, Dublin Core: Title, is at the top. Immediately below it is a search bar, indicated by a magnifying glass symbol. Below that are some properties from the the friend of a friend vocabulary.](../sites/sitesfiles/sites_setbrowseprop.png)
-
+![The browse heading property option is open. The current selection, Dublin Core: Title, is at the top. Immediately below it is a search bar, indicated by a magnifying glass symbol. Below that are some other Dublin Core properties.](../sites/sitesfiles/sites_setbrowseprop.png)
 
 **Browse body property** sets which property to use as the body text for each resource on a browse page. By default, this is Dublin Core: Description. The dropdown allows you to select from all available vocabularies, and includes a search bar to quickly find the desired property.
+
+**Item browse defaults** allow you to customize the default browsing and search results displays of your site. By default, items are ordered by "Created" "Descending," meaning most recently added items are at the top of browses and searches. Note that users can always change these sorting methods on the public pages. Here you can set an alternative default, such as alphabetically by Title, or alphabetically by Resource Class.
 
 ### Show
 
@@ -120,6 +134,8 @@ Depending on the [site theme](../sites/site_theme.md), you may want to make this
 - All sites: return results for all sites on the installation.
 
 **Search resources** is a series of checkboxes which let you select which types of resources are searched from the main search field on the site. Select from: site pages, items, and item sets. You can select all if you want.
+
+**Advanced search vocabulary members** allows you to limit the search options for properties and classes. You can select to only provide the properties and classes used in this site, or used across this Omeka installation, rather than all properties and classes supplied by all vocabularies currently installed on the platform.
 
 **Templates** allows you to limit the properties for advanced item or item set search to only properties included in a template or templates. When this field is empty, the "Search by Value" on the advanced search will display all properties from all vocabularies in the Omeka S installation. Applying a template not only limits the options in the dropdown, it also includes your alternate labels for properties:
 
