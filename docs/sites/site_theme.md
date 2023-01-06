@@ -2,7 +2,7 @@
 
 The Theme section of each Site menu allows you to select the theme for your site, and to set theme-specific settings. Each site on your Omeka S installation can have a separate theme and numerous customizations. A fresh Omeka S install comes with one theme, called Default.
 
-## Install a theme
+## Installing themes
 
 In order to appear on the **Themes** page for sites, themes must be manually added to the `/themes` folder of the installation, using an FTP program or an SSH connection.
 
@@ -33,7 +33,7 @@ Navigate to the `/themes` folder.
 1. On the Omeka S installation dashboard, go to a Site, then to the Themes page, and verify that you are seeing the new version of the theme.
 1. Check to be sure your settings have been preserved and there are no errors. After this, you can safely delete the old theme folder that you saved to your computer.
 
-## Select a theme
+## Selecting a theme
 
 Currently installed themes will be available for selection in the process of [adding a new site](../sites/index.md). Click to the "Theme" tab before saving to select one, then save your site. If you do not select a theme, your new site will use the Default theme.
 

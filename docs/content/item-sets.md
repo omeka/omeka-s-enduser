@@ -56,7 +56,7 @@ To view the items in an item set, either click on the number of items in the set
 
 ## Add an item set
 
-To add a new item set, click the Item Sets tab from the left navigation of the dashboard. Click the "Add new item set" button on the right hand side of the screen.
+To add a new item set, click the **Item Sets** tab from the left-hand navigation of the dashboard. Click the "Add new item set" button on the right hand side of the screen.
 
 By default, a new item set will load with the properties `dcterms:title` and `dcterms:description`. You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc.), or search in the **Filter properties** bar above the list of properties and vocabularies.
 
@@ -193,9 +193,11 @@ From the edit page for an Item Set, click the "Delete" button in the upper right
 
 ![Close up of the warning drawer, with text stating "Are you sure you would like to delete this item set" and below it a red button with white text stating "Confirm delete".](contentfiles/itemset-delete2.png)
 
-## Batch editing
+## Batch actions
 
-From the browse page of item sets (admin/item-set) you can batch edit item sets, using the dropdown menu on the upper right near the "Add new item set" button. You can select multiple item sets using the checkboxes on the left of each set's row.
+From the browse page of item sets (`admin/item-set`) you can batch edit item sets, using the dropdown menu on the upper left, near the pagination options. You can select item sets manually for batch editing using the checkboxes on the left, or select all of the item sets on the page, or use the dropdown to edit all item sets that are currently in the subset. 
+
+Editors, Supervisors, and Global Admins can batch-edit and batch-delete all item sets in the installation. Users that have Author-level permissions can batch-edit or batch-delete their own item sets, but not item sets of others. In this case, selecting all of the item sets on the page, or selecting all item sets, will only include item sets they own. Users at the Reviewer level cannot batch-delete all resources, but can batch-delete selected resources.
 
 ![A red arrow points to the dropdown for batch editing and deleting options](contentfiles/itemsets_batch.png)
 
@@ -206,27 +208,40 @@ Batch actions are as follows:
 - Delete selected: delete only the item sets that are selected on the page
 - Delete all: delete all the item sets returned by a search (default is all item sets).
 
-Choose one of these options and then click "Go".
+The number of results per page is set in the [installation's global settings](../admin/settings.md#general).
 
-**Batch editing** item sets takes you to a new page. The item sets being edited will display on the right side in a drawer, while the batch edit form gives you the following options:  
+You can first use the "🔍 Advanced search" link to narrow down the item sets to a subset for editing. For example, you can use [Advanced search](../search.md#item-advanced-search) to limit to item sets that are owned by a specific user. 
 
-- set visibility: a dropdown, select from public or not public.
-- set openness: a dropdown, select from open or not open.
-- set template: a dropdown, select from the installation's resource templates.
-- set class: a dropdown, select from classes of the installed vocabularies.
-- clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected item sets. Clear additional properties using the "Clear another property" button.
+If you perform a search, you will once again see the browse page, with your selected parameters appearing at the top of the screen. From this browse screen you can select item sets manually for batch editing using the checkboxes on the left, or select all of the item sets on the page, or use the dropdown to edit all item sets that are currently in the subset. 
 
-![Batch edit items form, with options as described above. Everything is grayscale](contentfiles/itemsets_batchedit.png)
+If you complete a batch action from the next screen, you will return back to this same item set subset. 
+
+### Batch editing
+
+**Batch editing** item sets takes you to a new page. The item sets being edited will display on the right side in a drawer. Be sure to confirm the number of item sets being edited looks correct.
+
+The batch edit form gives you the following options:  
+
+- Set visibility: a radio button. Select from public or not public to make the item set visible or not visible to logged-out users.
+- Set openness: a radio button. Select from open or not open. Open sets can be edited and added to by any user on the install; closed sets are available and editable only by its creator, site admins, and global admins.
+- Set template: a dropdown. Select from the installation's resource templates. You can remove templates from the selected item sets with the "[Unset template]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- Set class: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected item sets with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- Clear property values: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected item sets. You can remove multiple property values at once: click in the text field again to see the remaining options. 
+- Set value visibility: a dropdown and text field, with radio buttons. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire item set (for example, you may wish to hide the "Creator" value on some public item sets). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
+
+![Batch edit items form, with options as described above.](contentfiles/itemsets_batchedit.png)
 
 In addition, you can use the bottoms at the bottom of the batch edit form to add properties to every item set:
 
-- add text value
-- add resource value
-- add URI value  
+- Add text value
+- Add resource value
+- Add URI value.  
 
 Selecting any of these will add a block to the form where you can select a property from the installed vocabularies and enter the value for that property.
 
 ![Image depicts only the Add text value block of the batch edit form, with a dropdown labeled "select property" above an empty text field](contentfiles/itemsets_property.png)
+
+### Batch deleting
 
 For the **delete actions**, a drawer will open on the right side of the screen telling you the number of item sets which will be deleted. Nothing will be deleted unless you click the red "Confirm Delete" button. This action cannot be undone. To opt out of deleting the item sets, click the "X" in the upper right corner of the deletion drawer. To confirm delete, check the "Are you sure" checkbox (for "Delete all" but not "Delete selected") and then click "Confirm Delete". Note that deleting the item set will not delete the items associated with that set.
 
