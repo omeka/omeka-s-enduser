@@ -134,13 +134,13 @@ If you are using an Item resource for the property, you will have additional opt
 
 This will open a menu below the button with the following options to filter the items in the drawer:
 
-- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation;
-- Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set
-- Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the url of it's edit page; if you are editing the item and the url is `admin/item/11547/edit` then the item's ID is 11547.
+- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation.
+- Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set.
+- Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the url of its edit page; if you are editing the item and the URL is `admin/item/11547/edit` then the item's ID is 11547.
 
 ![options as above described](contentfiles/item_addresItem.png)
 
-Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. Creator, Has Part).
+Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. "Creator", "Has Part").
 
 ![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](contentfiles/items_quickadd.png)
 
@@ -176,7 +176,7 @@ You can set controlled vocabularies for annotations using the [Custom Vocab modu
 
 ### Advanced
 
-**Thumbnail**
+#### Thumbnail
 
 Not all media generate elegant thumbnails, for example PDF or text file documents, or some video files. You can use this option to set a representative thumbnail for the media which will be used on browse pages but not on the page for the item or its media.
 
@@ -192,41 +192,57 @@ The drawer offers two options: upload a file using your browser, or select from 
 
 To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click select and either choose or upload a new thumbnail asset.
 
-**Owner**
+#### Owner
 
 You can assign an owner for the media by selecting from the dropdown menu.
 
-**Alt Text**
+#### Alt text
 
 You can provide alternate text for all media by typing descriptive text into the input area.
 
 ![Edit media open to Advanced tab, showing the Alt Text input box](contentfiles/media_alttext.png)
 
-## Batch editing
+#### Language
 
-From the media browse page, you can batch edit media, using the dropdown menu on left just above the table of media. You can select multiple items using the checkboxes on the left of each item's row.
+You can indicate the language of a media file by entering the two-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} language code into this field. This field does not accept multiple values.
+
+## Batch actions
+From the media browse page (`admin/media`), you can batch edit media, using the dropdown menu on the left near the pagination buttons. You can select media manually for batch editing using the checkboxes on the left, or select all of the media on the page, or use the dropdown to edit all media that are currently in the subset.
+
+Editors, Supervisors, and Global Admins can batch-edit and batch-delete all media in the installation. Users that have Author-level permissions can batch-edit or batch-delete their own media, but not media of others. In this case, selecting all of the media on the page, or selecting all media, will only include media they own. Users at the Reviewer level cannot batch-delete all resources, but can batch-delete selected resources.
 
 ![A red arrow points to the dropdown for batch editing and deleting options](contentfiles/media_batch1.png)
 
 Batch actions are as follows:  
 
-- Edit selected: edit only the items that are selected on the page
-- Edit all: edit all the items returned by a search (default is all items)
-- Delete selected: delete only the items that are selected on the page
-- Delete all: delete all the items returned by a search (default is all items).
+- Edit selected: edit only the media that are selected on the page
+- Edit all: edit all the media returned by a search (default is all media)
+- Delete selected: delete only the media that are selected on the page
+- Delete all: delete all the media returned by a search (default is all media).
 
-Choose one of these options and then click "Go".
+The number of results per page is set in the [installation's global settings](../admin/settings.md#general).
 
-**Batch editing** media takes you to a new page. The media being edited will display on the right side in a drawer, while the batch edit form gives you the following options:  
+You can first use the "🔍 Advanced search" link to narrow down the media to a subset for editing. For example, you can use [Advanced search](../search.md#media-advanced-search) to limit to media of a specific MIME type, or media owned by a specific user.
 
-- Set visibility: radio buttons, select from Public, Not public, or No change.
-- Set template: a dropdown, select from the installation's resource templates.
-- Set class: a dropdown, select from classes of the installed vocabularies.
-- Clear language: a checkbox.
-- Set language: a text entry box.
-- Clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected items. Clear additional properties using the "Clear another property" button.
+If you perform a search, you will once again see the browse page, with your selected parameters appearing at the top of the screen. From this browse screen you can select media manually for batch editing using the checkboxes on the left, or select all of the media on the page, or use the dropdown to edit all media that are currently in the subset.
 
-![Batch edit medias form, with options as described above. Everything is grayscale](contentfiles/media_batchedit.png)
+If you complete a batch action from the next screen, you will return back to this same media subset.
+
+### Batch editing
+
+Batch editing media takes you to a new page. The media being edited will display on the right side in a drawer. Be sure to confirm the number of media being edited looks correct.
+
+The batch edit form gives you the following options:  
+
+- Set visibility: a radio button. Select from public or not public to make the file visible or not visible to logged-out users.
+- Set template: a dropdown. Select from the installation's resource templates. You can remove templates from the selected items with the "[Unset template]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- Set class: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected files with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- Clear language: a checkbox to remove existing language settings.
+- Set language: a text field. Enter in a two-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} language code. You can only indicate one language here.
+- Clear property values: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected media. You can remove multiple property values at once: click in the text field again to see the remaining options.
+- Set value visibility: a dropdown and text field, with radio buttons. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire media (for example, you may wish to hide the "Creator" value on some public media). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
+
+![Batch edit media form, with options as described above.](contentfiles/media_batchedit.png)
 
 In addition, you can use the bottoms at the bottom of the batch edit form to add properties to every media:
 
@@ -236,9 +252,11 @@ In addition, you can use the bottoms at the bottom of the batch edit form to add
 
 Selecting any of these will add a block to the form where you can select a property from the installed vocabularies and enter the value for that property.
 
-For the **delete actions**, a drawer will open on the right side of the screen telling you the number of media which will be deleted. Nothing will be deleted unless you click the red "Confirm Delete" button. This action cannot be undone. To opt out of deleting the media, click the "X" in the upper right corner of the deletion drawer. To confirm delete, check the "Are you sure" checkbox and then click "Confirm Delete".
+### Batch deleting
 
-![Close up of the warning that 2 medias will be deleted.](contentfiles/media_batchdelwarn.png)
+For the **delete actions**, a drawer will open on the right side of the screen telling you the number of media which will be deleted. Nothing will be deleted unless you click the red "Confirm Delete" button. This action cannot be undone. To opt out of deleting the media, click the "X" in the upper right corner of the deletion drawer. To confirm a "delete all" action, check the "Are you sure" checkbox and then click "Confirm Delete".
+
+![Close up of the warning that all media will be deleted.](contentfiles/media_batchdelwarn.png)
 
 ## Media file types
 

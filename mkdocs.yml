@@ -55,6 +55,7 @@ nav:
         - modules/facetedbrowse.md
         - modules/fedoraconnector.md
         - modules/filesideload.md
+        - modules/inverseproperties.md
         - modules/itemcarouselblock.md
         - modules/mapping.md
         - modules/metadatabrowse.md
