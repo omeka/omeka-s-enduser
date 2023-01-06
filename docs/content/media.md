@@ -148,9 +148,10 @@ You can indicate the language for the content of an input using the globe symbol
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
 
 #### Omeka resource
+
 Omeka resource fields create an internal link between the resource you are creating and the resource that fills that field.
 
-You have the option to use either an item, another media, or an item set. Once you select an item or item set, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of items or item sets.
+You have the option to use either an item or an item set. Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific item or item set.
 
 If you are using an Item resource for the property, you will have additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search".
 
@@ -165,6 +166,8 @@ This will open a menu below the button with the following options to filter the 
 Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. "Creator", "Has Part").
 
 ![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](contentfiles/items_quickadd.png)
+
+Media public and admin pages do not display linked resource tables.
 
 #### URI
 

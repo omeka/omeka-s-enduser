@@ -4,7 +4,7 @@ Item sets are aggregations of items, similar to collections in Omeka Classic. In
 
 Item Set permissions
 
-When a user creates an item set, they become the "owner" of that item set. Most user levels have the ability to create item sets, and can always delete their own item sets. Only higher levels can delete item sets that others own. 
+When a user creates an item set, they become the "owner" of that item set. Most user levels have the ability to create item sets, and can always delete their own item sets. Only higher levels can delete item sets that others own.
 
 Users can add items to item sets that are open to additions, and the item sets that they own (regardless of their open or closed status). Global Admins and Supervisors can add any items to any item set.
 
@@ -20,39 +20,55 @@ Note that when you change a user's role, for example from an Author to a Researc
 
 ## The Item Sets tab
 
-Item sets are managed via the **Item Sets** tab (the icon of three stacked boxes) located in the left navigation of the admin dashboard. 
+Item sets are managed via the **Item Sets** tab (the icon of three stacked boxes) located in the left navigation of the admin dashboard.
 
-![Browse item sets view with four item sets.](contentfiles/itemsets_browse.png)
+![Browse item sets view with three item sets.](contentfiles/itemsets_browse.png)
 
-After clicking on the tab, a table appears listing all item sets with: 
+After clicking on the tab, a table appears listing all item sets with:
 
 - the **Title**
-- icons to **edit** (pencil), **delete** (trash can), or see **details** (ellipsis)
-- the item set’s **Class**
+- icons to **edit** (pencil), **delete** (trash can), or **details** (ellipsis)
+- the item set's **Class**
 - the **Owner** of the set
 - the date the set was **Created**.
 
-In the top right corner of the Item Sets screen is the button to "Add new item set". 
+In the top right corner of the Item Sets screen is the "Add new item set" button.
 
-Options for navigating your item sets sit in the header of the table: 
+Options for navigating and creating item sets sit in the header of the table of items.
 
-- On the left side are controls for the pages of items sets, with forward and back arrows, and a field to go a specific page of item sets. 
-- In the center is the button for **Advanced search**. 
-- On the right are options to re-order the table by **title**, **class**, **owner**, or **date created** in either **ascending** or **descending** order. 
+- On the left side are controls for the pages of item sets, with forward and back arrows, and a field to go a specific page of item sets.
+- In the center is the button for **Advanced search**.
+- On the right are options to re-order the table by **title**, **class**, **owner**, or **date created** in either **ascending** or **descending** order.
 
 ## View item sets
 
-To quickly see information about an item set, click on the **Details** button (the ellipsis icon) for the item set on the item sets browse page. This will open a column on the right hand side of the page with the item set's title, visibility, and number of items.
+To quickly see information about an item set, click on the "Details" button (the ellipsis icon) for the item set on the item sets browse page. This will open a column on the right hand side of the page with the item set’s title, visibility, and number of items.
 
-![Drawer view of an item, with description and title](contentfiles/itemsets_drawer.png)
+![Drawer view of an item set, with description and title](contentfiles/itemsets_drawer.png)
 
-To view all the information for an item set, click on its name. On the item sets view page, there are tabs to see an item set’s **Metadata** and **Linked Resources**. On the right side of the item set’s view page is information about the date created, owner, and visibility. For item sets, visibility includes both whether the set is private or public and whether other users can add items to the set. 
+To view all the information for an item set, click on its name. On the item sets view page, there are tabs to see an item set’s **Metadata** and **Linked Resources**. On the right side of the item set’s view page is information about the date created, owner, and visibility. For item sets, visibility includes both whether the set is private or public and whether other users can add items to the set.
 
 ![Reading view of a single item set](contentfiles/itemsets_view.png)
 
-Linked resources are items which have used the item set to populate specific metadata properties. When viewing linked resources, the table includes the predicate (property or description) and the object (linked item resource). Note that incoming resources (those used as properties for the item set being viewed) will *not* display here, as they already display in the item set's metadata.
-
 To view the items in an item set, either click on the number of items in the set on the item set browse page, or click the "View items" button in the upper right corner of the individual item set page.
+
+### Linked resources
+
+An item set's **linked resources** are other Omeka resources (items, item sets, or media) that are [linked to this item set through their properties](#omeka-resource). Note that this section only shows resources that have been linked *to* this item set (which have it for a property); resources that are linked *from* this item will display in the property they fill.
+
+Linked resources are grouped by the property for which they use the current item. In the example below, the current item set "Newspapers" is used for the property "Format" for the linked resources.
+
+You can filter linked resources to only display those referencing a specific property using the dropdown "Filter by property". It will only display properties actively in use.
+
+![An item set showing the Linked resources tab, where two items are using the item set as a value for the property "Format".](contentfiles/itemsets_linked.png)
+
+When an item set is viewed on the public site, all linked resources are displayed in a series of tables based on the metadata property in use. Resources are sorted by resource type (item, item set, or media) and only one type is displayed at a time. An item set without any linked resources will not display these tables; item sets displaying on sites that are set to exclude resources that are not included in the site will also not display these entries.
+
+![An item set display in the Default theme showing a number of Omeka items that link to the item set, as "Format"](contentfiles/itemsets_linked2.png)
+
+The display of linked resources on resource pages can be configured on each site. Click on "Theme" and then click the button that reads "[Configure resource pages](../sites/site_theme.md#configure-resource-pages)", then decide if and where to display the "Linked resources" tables for each resource.
+
+You can also control whether resources that are linked will display those links even when the resources in question are not added to the given site. Under [Site settings, in the "Show" section](../sites/site_settings.md#show), you will find a checkbox for "Exclude resources not in site."
 
 ## Add an item set
 
@@ -71,10 +87,10 @@ You may add text, a resource from the installation, or an external link in each 
 
 You can set individual property values as Private or Publicly visible using the eye icon for each value. Note that properties set to private are still visible to Global Admins, Site Admins, and Editors. Authors will be able to see all properties on items they own, but will not see private properties created by other users.
 
-In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private. 
+In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private.
 
 ![As described](contentfiles/item_propviz.png)
- 
+
 #### Text
 
 Text fields allow for unformatted text entry. No markup is allowed in these fields (e.g. bold, italic, Markdown, HTML).
@@ -83,12 +99,13 @@ You can indicate the language for the content of an input using the globe symbol
 
 ![The description field with two entries, one in English and one in French, with the two-letter language codes and textual entries in each.](contentfiles/item_lang.png)
 
-#### Omeka Resource
-These fields create an internal link between the resource you are creating and the resource which fills that field. You have the option to use either another item or an item set. Once you select an item or item set, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of items or item sets.
+#### Omeka resource
 
-When creating an item set, you have the option to use either another item or an item set. 
+These fields create an internal link between the resource you are creating and the resource that fills that field.
 
-Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific item or item set. 
+You have the option to use either another item or an item set.
+
+Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific item or item set.
 
 Once you select an item or item set, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of items or item sets.
 
@@ -98,13 +115,13 @@ If you are using an Item resource for the property, you will have additional opt
 
 This will open a menu below the button with the following options to filter the items in the drawer:
 
-- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation;
+- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation
 - Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set
 - Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the URL of its edit page; if you are editing the item and the URL is `admin/item/11547/edit` then the item's ID is 11547.
 
 ![options as above described](contentfiles/item_addresItem.png)
 
-Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. Creator, or Has Part). 
+Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. Creator, or Has Part).
 
 ![A red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](contentfiles/items_quickadd.png)
 
@@ -122,13 +139,13 @@ When you input a value for a property associated with a resource, you are making
 
 In the world of linked data, this process is know as [reification](https://www.w3.org/wiki/RdfReification){target=_blank}. Each value can have any number of annotations.
 
-To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (the speech bubble). 
+To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (the speech bubble).
 
 ![a detail of the property with the annotation bubble highlighted](contentfiles/annotation_add.png)
 
 The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property `dcterms:Contributor` might be annotated with more detail about the nature of the contribution. Or you may wish to simply include a note using the `dcterms:Description` field.
 
-Select a data type for the annotation: a text field, a URI, or resource in your Omeka S installation. Modules may make additional data types available. Click the "Add annotation" button and a new field will appear below. Input your annotation. You can do this multiple times for the chosen value if desired. Then click "Set annotations" to finalize the process. 
+Select a data type for the annotation: a text field, a URI, or resource in your Omeka S installation. Modules may make additional data types available. Click the "Add annotation" button and a new field will appear below. Input your annotation. You can do this multiple times for the chosen value if desired. Then click "Set annotations" to finalize the process.
 
 ![A picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
 
@@ -143,13 +160,13 @@ By default, Omeka S will use the media from the first item added to an item set 
 
 ![Thumbnail tab with no asset selected. The tab displays a message about thumbnail creation and a button to "select" an asset](contentfiles/itemset_thumb1.png)
 
-The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../../sites/site_theme/#settings-options). 
+The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../../sites/site_theme/#settings-options).
 
-To assign an asset as a thumbnail, click on the "Select" button in the main work area of the tab. This will open a drawer on the right side. 
+To assign an asset as a thumbnail, click on the "Select" button in the main work area of the tab. This will open a drawer on the right side.
 
 ![Select drawer with upload option and two assets, both of which are images.](contentfiles/itemset_thumb2.png)
 
-The drawer offers two options: upload a file using your browser, or select from existing assets. To select an existing asset, simply click on it and it will automatically be assigned to the item set. 
+The drawer offers two options: upload a file using your browser, or select from existing assets. To select an existing asset, simply click on it and it will automatically be assigned to the item set.
 
 ![Add item set open to Thumbnail tab, where an asset which is an image of a quill pen on a scrolled piece of paper is in the main work area. Below it are buttons for Select and Clear](contentfiles/itemset_thumb3.png)
 
@@ -158,7 +175,7 @@ To remove an asset which you have assigned as a thumbnail, click the "Clear" but
 ### Access settings
 Item sets have two settings which control their access. They can be **public** or **not public** and they can be **open** or **closed**.
 
-Use the **make public/private** button (eye icon) to make the item set visible to the public or only to all users of the Omeka S installation (not public). 
+Use the **make public/private** button (eye icon) to make the item set visible to the public or only to all users of the Omeka S installation (not public).
 
 **Open** sets can be edited and added to by any user on the installation.
 
@@ -173,15 +190,15 @@ Note that the public/private and open/closed settings operate independently - yo
 ## Edit an item set
 Once you have created an item set, you can edit it at any time, either by clicking the edit icon (pencil button) or clicking on the item set's title and then clicking the "Edit" button in the upper right-hand corner of the screen.
 
-Options for editing an item set are the same as for creating an item set. 
+Options for editing an item set are the same as for creating an item set.
 
-To cancel out of editing, click the "Cancel" button in the upper right corner, between the "Delete" and "Save" buttons. 
+To cancel out of editing, click the "Cancel" button in the upper right corner, between the "Delete" and "Save" buttons.
 
 ### Delete an item set
 
 You can delete individual item sets, or batch-delete multiple item sets, as described below.  
 
-Deleting item sets does not delete any items associated with the item set. 
+Deleting item sets does not delete any items associated with the item set.
 
 From the Item Set browse view, you can delete an item set by clicking the trash can icon in the row for the item set you want to delete. This will open a drawer on the right with a message at the top asking you to confirm that you want to delete the item set, with the metadata for the item set below the confirm delete button. Click "Confirm delete" to delete the item set, or close the drawer to cancel.
 
