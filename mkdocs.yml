@@ -56,6 +56,7 @@ nav:
         - modules/fedoraconnector.md
         - modules/filesideload.md
         - modules/iiifpresentation.md
+        - modules/inverseproperties.md
         - modules/itemcarouselblock.md
         - modules/mapping.md
         - modules/metadatabrowse.md
@@ -72,6 +73,7 @@ nav:
             - modules/scripto/troubleshootingScripto.md
         - modules/sharing.md
         - modules/valuesuggest.md
+        - modules/zoterocitation.md
         - modules/zoteroimport.md
     - Miscellaneous:
         - errorLogging.md
