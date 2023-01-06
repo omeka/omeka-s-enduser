@@ -2,7 +2,7 @@ site_name: Omeka S User Manual
 theme:
     name: 'readthedocs'
     custom_dir: 'omeka/'
-    include_homepage_in_sidebar: false
+    include_homepage_in_sidebar: true
 site_url: 'https://omeka.org/s/'
 repo_url: 'http://github.com/omeka/omeka-s-enduser'
 extra_css:
@@ -55,6 +55,8 @@ nav:
         - modules/facetedbrowse.md
         - modules/fedoraconnector.md
         - modules/filesideload.md
+        - modules/iiifpresentation.md
+        - modules/inverseproperties.md
         - modules/itemcarouselblock.md
         - modules/mapping.md
         - modules/metadatabrowse.md
@@ -71,6 +73,7 @@ nav:
             - modules/scripto/troubleshootingScripto.md
         - modules/sharing.md
         - modules/valuesuggest.md
+        - modules/zoterocitation.md
         - modules/zoteroimport.md
     - Miscellaneous:
         - errorLogging.md
