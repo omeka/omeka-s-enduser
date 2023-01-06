@@ -47,8 +47,8 @@ Each item appears as a row, with columns for:
 - the **Title**
 - icons to **edit** (pencil), **delete** (trash can), or **details** (ellipsis)
 - the **Class**
-- the item’s **Owner**
-- the date the item was **Created**.
+- the item's **Owner**
+- the date the item was **Created**. 
 
 In the top right corner of the Items screen is the "Add new item" button.
 
@@ -74,13 +74,27 @@ The blue squares indicate where to click to open the full item view.
 
 When you view an individual item, there are tabs for the item’s **Metadata** and its **Linked Resources**. The right side of the page displays the item’s media, any **item sets** to which it belongs, its creation date, owner, and visibility.
 
-An item’s **linked resources** (shown below) are resources, which are linked to this item through properties. Note that this section only shows resources which have been linked *to* this item (which have it for a property); resources which are linked *from* this item will display in the property which they fill.
+### Linked resources
 
-Linked items are grouped by the property for which they use the current item. In the example below, the item William Shakespeare is used for the properties "Creator", "References", and "list of authors" for the linked resources.
+An item’s **linked resources** are other Omeka resources (items, item sets, or media) that are [linked to this item through their properties](#omeka-resource). Note that this section only shows resources that have been linked *to* this item (which have it for a property); resources that are linked *from* this item will display in the property they fill.
+
+Linked resources are grouped by the property for which they use the current item. In the example below, the current item "William Shakespeare" is used for the properties "Creator", "References", and "list of authors" for the linked resources. 
 
 You can filter linked resources to only display those referencing a specific property using the dropdown "Filter by property". It will only display properties actively in use.
 
 ![Item linked resources view for William Shakespeare, with six plays using Shakespeare as Creator, the item Folger Shakespeare Library listed as 'references' Shakespeare, and the Globe Theatre using Shakespeare for 'list of authors'. Each property cluster is in a separate rectangle, headed by the property being referenced.](contentfiles/items_linked.png)
+
+When an item is viewed on the public site, linked resources are displayed in a series of tables based on the metadata property in use. Resources are sorted by resource type (item, item set, or media) and only one type is displayed at a time. An item without any linked resources will not display these tables; items displaying on sites that are set to exclude [resources that are not included in the site](../sites/site_settings.md#show) will also not display these entries. 
+
+Note that media pages do not display linked resource tables, whether items link to them or not.
+
+![An item display in the Default theme showing a number of Omeka items that link to the item, as "Publications"](contentfiles/items_linkedresources1.png)
+
+![The same item showing a number of Omeka resources as "Contributors"](contentfiles/items_linkedresources2.png)
+
+The display of Linked resources on resource pages can be configured on each site. Click on "Theme" and then click the button that reads "[Configure resource pages](../sites/site_theme.md#configure-resource-pages)", then decide if and where to display the "Linked resources" tables for each resource. 
+
+You can also control whether resources that are linked will display those links even when the [resources in question are not included in the given site](../sites/site_resources.md). Under [Site settings, in the "Show" section](../sites/site_settings.md#show), you will find a checkbox for "Exclude resources not in site." 
 
 ## Add an item
 
@@ -129,29 +143,43 @@ You can indicate the language for the content of a text input using the globe sy
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
 
 #### Omeka resource
-Omeka resource fields create an internal link between the resource you are creating and the resource which fills that field.
 
-When creating an item, you have the option to use either another item or an item set.
+Choosing an Omeka resource as a metadata value creates an [internal link between the resource you are creating and the resource that fills that field](#linked-resources). 
 
-Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific item.
+When creating an item, you have the option to use either another item or an item set. If the item has media attached, you can also choose from within that media - not other media in the installation. 
 
-Once you select an item or item set, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of items or item sets.
+Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific resource. 
+
+Once you select a resource, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of resources.
 
 ![Select Item menu with list of items to link in edit item view](contentfiles/items_addresource.png)
 
-If you are using an Item resource for the property, you will have additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search".
+If you are using an **Item** resource for the property, you will have three additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search".
 
-This will open a menu below the button with the following options to filter the items in the drawer:
+![Select Item drawer top options, with a red arrow around a gray triangle button to the right of the phrase "Filter search"](contentfiles/items_filtersearch.png)
+
+This will open a menu with the following options to filter the items in the drawer:
 
 - Filter by class: A dropdown where you can select any class provided by the vocabularies on the installation.
 - Filter by item set: A dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set.
-- Filter by item ID: A search field where you can input the ID of the item you want to use. You can find an item's ID in the URL of its edit page; if you are editing the item and the URL is `admin/item/11547/edit` then the item's ID is 11547. An item ID will also appear in the right-hand drawer on its view page.
+- Filter by item ID: A text field where you can input the ID of the item you want to use. You can find an item's ID in the URL of its edit page; if you are editing the item and the URL is `admin/item/11547/edit` then the item's ID is 11547. An item ID will also appear in the right-hand drawer on its view page. You cannot enter a range or search by a partial number or a wild card - only an exact ID.
+
+Once you enter something into a filter, you need to click on the magnifying glass icon in the search bar to apply your filters.
 
 ![options as above described](contentfiles/item_addresItem.png)
 
-Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. Creator, Has Part).
+Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. "Creator", "Has Part").
 
 ![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](contentfiles/items_quickadd.png)
+
+If you are using an **Item set** resource for the property, you will have two options for finding the item set you want in the drawer:
+
+- Filter by class: A dropdown where you can select any class provided by the vocabularies on the installation.
+- Filter by item set ID: A text field where you can input the ID of the item set you want to use. You can find an item set's ID in the URL of its edit page; if you are editing the item and the URL is `admin/item-set/15/edit` then the item set's ID is 15. An item set ID will also appear in the right-hand drawer on its view page. You cannot enter a range or search by a partial number or a wild card - only an exact ID.
+
+Once you enter something into a filter, you need to click on the magnifying glass icon in the search bar to apply your filters.
+
+Item set resources also have an option for "Quick add". When this switch is flipped, all of the item sets in the drawer have a checkbox. You can use these checkboxes to add multiple item sets as properties. Note that you can only edit one property at a time, so all of the item sets will populate the same property (e.g. "Creator", "Has Part").
 
 #### URI
 
@@ -202,7 +230,9 @@ Using the buttons on the **Add New Media** menu on the right side of the screen,
 - **Upload**: select a file to upload from your computer.
 - **URL**: import media via a URI.
 - **HTML**: add html content as a media resource for your item.
-- **IIIF**: Add a IIIF image via URL.
+- **IIIF image**: Add an [IIIF image](https://iiif.io/api/image/3.0/){target=_blank} via URL.
+- **IIIF presentation**: Add an [IIIF presentation](https://iiif.io/api/presentation/3.0/){target=_blank} via URL.
+
 - **oEmbed**: insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7){target=_blank} - use the URL in your browser’s location bar.
 - **YouTube**: add a link to embed a YouTube video. Use the URL from your browser’s location bar (with `/watch/` in it) rather than a `youtu.be` link.
 
@@ -237,7 +267,7 @@ If there are sites which have "auto-assign new items" turned on in their setting
 ### Advanced
 The advanced tab has two options. One lets you set a custom thumbnail for the item. The other allows you to change which user has ownership of the item.
 
-**Thumbnail**
+#### Thumbnail
 
 By default, Omeka S will use the topmost media to generate a thumbnail for the item. If you want to use a non-media image for the thumbnail for an item you can set it here.
 
@@ -255,7 +285,7 @@ The drawer offers two options: upload a file using your browser, or select from 
 
 To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click "Select" and either choose or upload a new thumbnail asset.
 
-**Owner**
+#### Owner
 
 The ownership of an item is usually assigned to the user account that creates the item. You can use this dropdown to reassign ownership. The dropdown will load the user names (not email addresses) of users in the installation. Select a new user and save your changes.
 
@@ -300,6 +330,8 @@ From the browse page of items (`admin/item`) you can batch edit items, using the
 
 ![A red arrow points to the dropdown for batch editing and deleting options](contentfiles/items_batch.png)
 
+Editors, Supervisors, and Global Admins can batch-edit and batch-delete all items in the installation. Users that have Author-level permissions can batch-edit or batch-delete their own items, but not items of others. In this case, selecting all of the items on the page, or selecting all items, will only include items they own. Users at the Reviewer level cannot batch-delete all resources, but can batch-delete selected resources.
+
 Batch actions are as follows:  
 
 - Edit selected: edit only the items that are selected on the page
@@ -307,21 +339,31 @@ Batch actions are as follows:
 - Delete selected: delete only the items that are selected on the page
 - Delete all: delete all the items returned by a search (default is all items).
 
-Choose one of these options and then click "Go".
+The number of results per page is set in the [installation's global settings](../admin/settings.md#general).
+
+You can first use the "🔍 Advanced search" link to narrow down the items to a subset for editing. For example, you can use [Advanced search](../search.md#item-advanced-search) to limit to items that are not in any item sets, or items that are owned by a specific user. In the image below, the search is set to capture any item without a "Date created" value.
+
+![The Advanced search screen for Items, with one field filled out.](contentfiles/items_advSearch.png)
+
+If you perform a search, or end up on the Items browse page from an Item set or other filter, you will once again see the browse page, with your selected parameters appearing at the top of the screen. From this browse screen you can select items manually for batch editing using the checkboxes on the left, or select all of the items on the page, or use the dropdown to edit all items that are currently in the subset.
+
+If you complete a batch action from the next screen, you will return back to this same item subset.
 
 ### Batch editing
 
-**Batch editing** items takes you to a new page. The items being edited will display on the right side in a drawer, while the batch edit form gives you the following options:  
+**Batch editing** items takes you to a new page. The items being edited will display on the right side in a drawer. Be sure to confirm the number of items being edited looks correct.
 
-- Set visibility: a dropdown, select from public or not public.
-- Set template: a dropdown, select from the installation's resource templates.
-- Set class: a dropdown, select from classes of the installed vocabularies.
-- Add to item set: a dropdown, select from item sets on the installation. Add to an additional item set click in the input box again to see the remaining options.
-- Remove from item set: a dropdown, select from item sets on the installation. Remove from an additional item set click in the input box again to see the remaining options.
-- Add to sites: a dropdown, select from sites on the installation. Add to an additional site click in the input box again to see the remaining options.
-- Remove from sites: a dropdown, select from sites on the installation. Remove from an additional site click in the input box again to see the remaining options.
-- Clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected items. Clear additional properties using the "Clear another property" button.
-- Set value visibility: set the visibility of a specific property to either public or not public. Unlike the radio buttons at the top of the form, this will only affect a single property instead of the entire item. Select a property from the text field (type to begin searching), and the choose either the *public* or *not public* radio button for this option.
+The batch edit form gives you the following options:  
+
+- Set visibility: a radio button. Select from public or not public to make the item visible or not visible to logged-out users.
+- Set template: a dropdown. Select from the installation's resource templates. You can remove templates from the selected items with the "[Unset template]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- Set class: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected items with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- Add to item set: a dropdown and text field. Select from item sets on the installation, organized by owner, or type to search. You can add the selected items to multiple item sets: click in the text field again to see the remaining options.
+- Remove from item set: a dropdown and text field. Select from item sets on the installation, organized by owner, or type to search. You can remove the selected items from multiple item sets: click in the text field again to see the remaining options.
+- Add to sites: a dropdown and text field. Select from sites on the installation, or type to search. You can add the selected items to multiple sites: click in the text field again to see the remaining options.
+- Remove from sites: a dropdown and text field. Select from sites on the installation, or type to search. You can remove the selected items from multiple sites: click in the text field again to see the remaining options.
+- Clear property values: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected items. You can remove multiple property values at once: click in the text field again to see the remaining options.
+- Set value visibility: a dropdown and text field, with radio buttons. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire item (for example, you may wish to hide the "Creator" value on some public items). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
 
 ![Batch edit items form, with options as described above. Everything is grayscale](contentfiles/items_batchedit.png)
 

@@ -1,17 +1,17 @@
 # Site Admin
 
-The Site Admin page allows you to manage the main settings for the site on which you are working. Changes will only be applied to this site and will not change other sites' settings. 
+The Site Admin page allows you to manage the main settings for the site on which you are working. Changes will only be applied to this site and will not change other sites' settings.
 
-In the left-hand navigation, once you have select a site from the Sites page, it is the first link under the site title, represented with a gear icon. 
+In the left-hand navigation, once you have select a site from the Sites page, it is the first link under the site title, represented with a gear icon.
 
 The Site Admin page has two tabs: Info and Settings.
 
-## Info 
+## Info
 The site info settings for an Omeka S site are where you can change the basic info for the site - the same information you entered when you created the site. You can change the:
 
-* **Title**: a text field, with a maximum of 190 characters. 
+* **Title**: a text field, with a maximum of 190 characters.
 * **Slug**: the URL for your site, which will be generated automatically from the title if you leave this blank.
-* **Summary**: a brief description of what your site is about, which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites). 
+* **Summary**: a brief description of what your site is about, which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
 * **Thumbnail** - a small image for your site, which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
 
 ![Site info for the site “Jane Austen” with buttons across the top to Delete and Save the site](../sites/sitesfiles/sites_siteinfo.png)
@@ -23,14 +23,14 @@ In the upper right hand corner of the window on this tab, you can use buttons to
 - Cancel making changes
 - Save your changes.
 
-The **make public/private** button (eye icon) is used to both indicate and set whether the site is visible to the public or only to users of this Omeka S installation. 
+The **make public/private** button (eye icon) is used to both indicate and set whether the site is visible to the public or only to users of this Omeka S installation.
 
 Site is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png){style="display:inline;"}
 
 Site is private: ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png){style="display:inline;"}
 
 ## Settings
-The Settings page is divided into three sections: **General**, **Browse**, and **Search**. 
+The Settings page is divided into three sections: **General**, **Browse**, and **Search**.
 
 To implement any changes you make, click "Save" at the top right of the browser window when you are done. To leave without saving changes, click "Cancel".
 
@@ -44,20 +44,20 @@ To implement any changes you make, click "Save" at the top right of the browser 
 
 - Item page: clicking on the attachment takes users to the item page associated with the attached media.
 - Media page: clicking on the attachment takes users to the media page.
-- Direct link to file: clicking on the attachment takes user to the file alone. 
+- Direct link to file: clicking on the attachment takes user to the file alone.
 
 **Embed media on item pages**: when checked, any linked media (such as videos) will be embedded on the item pages. When unchecked, site visitors will click through to view playable media.
 
 **Show page pagination**: when checked, "Previous" and "Next" links will display at the bottom of every page in the site, proceeding through your navigation. If unchecked, these links will not display.
 
-**Show user bar on public views**: sets whether there is a bar across the top of public site pages which allow users to access the admin side of the site. 
+**Show user bar on public views**: sets whether there is a bar across the top of public site pages which allow users to access the admin side of the site.
 
 When users are logged in, the user bar has the following options:
 
 - Installation Title: takes you back to the installation admin.
 - Site Title: takes you back to the landing page for managing the site (site/show).
 - Resource view: depending on what you are viewing, this is a link to the admin side management for [Pages](../sites/site_pages.md), [Items](../content/items.md), or [Item Sets](../content/item-sets.md).
-- Edit link for that page, item set, or item. 
+- Edit link for that page, item set, or item.
 - User's display name: takes you to your user page.
 - Logout: logs out current user.
 
@@ -70,7 +70,7 @@ When users are not logged, the user bar only displays a login option.
 The options for this setting are:
 
 - Never
-- When identified (when logged in) 
+- When identified (when logged in)
 - Always.
 
 **Disable JSON-LD embed**: Check this box to disable JSON-LD embedding on resource browse and show pages.
@@ -100,27 +100,31 @@ Depending on the [site theme](../sites/site_theme.md), you may want to make this
 
 **Browse body property** sets which property to use as the body text for each resource on a browse page. By default, this is Dublin Core: Description. The dropdown allows you to select from all available vocabularies, and includes a search bar to quickly find the desired property.
 
-### Show 
+### Show
 
-**Attached Pages**: When this box is checked, site pages to which an item is attached will display on the public view of that item.
+![Show settings](../sites/sitesfiles/sites_settingShow.png)
 
-**Value Annotation**: When this box is checked, Value Annotations will be visible on the public views for resources (items, item sets, media).
+**Show attached pages**: When this box is checked, site pages to which an item is attached will display on the public view of that item.
 
-### Search 
+**Show value annotations**: When this box is checked, Value Annotations will be visible on the public views for resources (items, item sets, media).
+
+**Exclude resources not in site**: When this box is checked, the site will not display [linked Omeka resources](../content/items.md#linked-resources) that are not [added as resources to the site](site_resources.md).
+
+### Search
 
 ![search settings, all empty](../sites/sitesfiles/sites_settingssearch.png)
 
-**Search type** is a dropdown which allows you to set from which site(s) the search bar generates results: 
+**Search type** is a dropdown which allows you to set from which site(s) the search bar generates results:
 
 - This site: only return results from this site.
-- All sites: return results for all sites on the installation. 
+- All sites: return results for all sites on the installation.
 
 **Search resources** is a series of checkboxes which let you select which types of resources are searched from the main search field on the site. Select from: site pages, items, and item sets. You can select all if you want.
 
-**Templates** allows you to limit the properties for advanced item or item set search to only properties included in a template or templates. When this field is empty, the "Search by Value" on the advanced search will display all properties from all vocabularies in the Omeka S installation. Applying a template not only limits the options in the dropdown, it also includes your alternate labels for properties: 
+**Templates** allows you to limit the properties for advanced item or item set search to only properties included in a template or templates. When this field is empty, the "Search by Value" on the advanced search will display all properties from all vocabularies in the Omeka S installation. Applying a template not only limits the options in the dropdown, it also includes your alternate labels for properties:
 
 ![Detail view of a dropdown menu for the option 'Search by value". Values loaded include Creator:Author, Date: Date of Publication, and Description.](../sites/sitesfiles/sites_settingtemp.png)
 
 Click in the field to add a template; you can add more than one template by clicking in the field again.
 
-**Restrict to templates** will restrict search results to only those items which are using the selected templates. 
+**Restrict to templates** will restrict search results to only those items which are using the selected templates.
