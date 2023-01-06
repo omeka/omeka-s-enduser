@@ -138,7 +138,7 @@ Text fields allow for unformatted text entry. No markup is allowed in these fiel
 
 ![image of text input field with keyboard icon indicating text input, the globe icon for setting language, and a trashcan delete icon](contentfiles/items_textedit.png)
 
-You can indicate the language for the content of a text input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} code for the language in which the text is written.
+You can indicate the language for the content of a text input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF two-letter Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} code for the language in which the text is written.
 
 ![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
 
@@ -183,7 +183,13 @@ Item set resources also have an option for "Quick add". When this switch is flip
 
 #### URI
 
-URI fields link to an external website or online resource. Every URI value has the link itself, and an optional textual Label to replace the URI with something human-readable. For example, you may wish to enter in a Creator as a URI to a controlled vocabulary of artists or authors, and then include the creator's name in plain text as the Label. Omeka will not automatically pull information from the URI.
+URI fields link to an external website or online resource. You can use this to indicate an authority file from elsewhere on the web, or even indicate resources in other Omeka platforms.
+
+You can optionally provide a label that will obfuscate the URI, which is required. You can also enter in a [IETF two-letter Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} to identify the language of whatever the URI points to.
+
+![Adding a URI as a property value to an item, and adding a value annotation to that property.](contentfiles/items_addURI.png)
+
+You may add other fields by selecting a property from the list on the right. Browse fields by vocabulary (Dublin Core, Bibliographic Ontology, etc.), or search in the **filter properties** bar above the list of properties and vocabularies.
 
 #### Value annotation
 
