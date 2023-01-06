@@ -184,7 +184,7 @@ Clicking the advanced search link loads a new page with three options for search
 
 ![Item set advanced search options as described](files/search_publicitemsets2.png)
 
-Searches by value and class allow a visitor to search by more than one input; they can use the "Add new" buttons to search with more than one search term. These search terms build - searching for two classes will return all item sets which have either class. 
+Searches by value and class allow a visitor to search by more than one input; they can use the "Add new" buttons to search with more than one search term. These search terms build - searching for two classes will return all item sets that have either class, rather than only item sets that have both classes. 
 
 Site visitors can remove value and item set searches using the red trash can icon to the right of those search options.
 
@@ -192,9 +192,8 @@ Site visitors can remove value and item set searches using the red trash can ico
 
 All of the public and administrative browsing views and all search results can be ordered in a number of ways. To the top right of every browse or result table is two dropdowns and a "Sort" button. One allows you to select a field, and the other determines the order in which to sort them.
 
-The default way most resources are ordered is by the date the resource was created (Created), in reverse chronological order (Descending). This is true of items, media, item sets. Sites, vocabularies, and resource templates are default ordered by Title or Label Ascending. Users are default ordered by Email Ascending. 
+The default way most resources are ordered is by the date the resource was created (Created), in reverse chronological order (Descending). This is true of items, media, and item sets. Sites, vocabularies, and resource templates are default ordered by Title or Label Ascending. Users are default ordered by Email Ascending. 
 
-Ascending means A-Z alphabetically for text fields, earliest to latest for date-formatted fields such as Created (meaning the internal item creation date and time) and Modified (the date and time the item was last modified), and smallest to greatest for numbers such as Identifiers. Note that some fields (such as Dublin Core's Date) may be text-formatted to include information such as "circa" and will sort alphabetically rather than as numbers (such as "1800-01-01") or dates. You may be using modules such as [Numeric Data Types](modules/numericdatatypes.md) that can modify these settings.
+Ascending means A-Z alphabetically for text fields, earliest to latest for date-formatted fields such as Created (meaning the internal item creation date and time) and Modified (the date and time the item was last modified), and smallest to greatest for numbers such as Identifiers. Note that some fields (such as Dublin Core Date) may be text-formatted to include information such as "circa" and will sort alphabetically rather than as numbers (such as "1800-01-01") or dates. You may be using modules such as [Numeric Data Types](modules/numericdatatypes.md) that can modify these settings.
 
 In both ascending and descending orders, empty fields will come at the end.
-
