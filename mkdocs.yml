@@ -72,6 +72,7 @@ nav:
             - modules/scripto/troubleshootingScripto.md
         - modules/sharing.md
         - modules/valuesuggest.md
+        - modules/zoterocitation.md
         - modules/zoteroimport.md
     - Miscellaneous:
         - errorLogging.md
