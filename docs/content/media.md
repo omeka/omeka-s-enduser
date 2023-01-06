@@ -2,11 +2,11 @@
 
 Omeka S accepts most files and file types, and can be customized to accept or reject file types of your choice. You may wish to format your multimedia files according to what can best be embedded and streamed in modern browsers; see the [Media file types section at the end of this page](#media-file-types). If you are having difficulty or are seeing file-validation errors, you can adjust the accepted file types and extensions in the [Allowed media and files options of the Security Settings](../admin/settings.md#security).
 
-Media are only created by adding them to an item; media cannot exist independently. If you wish to upload files unattached to items, see the [Assets page](../admin/assets.md).
+Media are only created by adding them to an item; media cannot exist independently. If you wish to upload files unattached to items, such as logos and banners, see the [Assets page](../admin/assets.md).
 
 To view the media associated with an item, click on the media’s name in the right-hand sidebar on the item view page.
 
-To view all media in the installation, navigate to the **Items** section first. The **Media** subsection will appear below Items in the left-hand navigation.
+To view all media in the installation, navigate to the **Items** section first. Then click on the **Media** subsection that appears below Items in the left-hand navigation.
 
 ## Media permissions
 
@@ -50,11 +50,38 @@ Clicking on the title of any media will take you to its metadata page. This page
 
 ![Media view page for a mediawiki file. The image is of a grup of people in late 19th century clothing, from left to right a a women standing and facing a standing man holding a small child while reaching out to the woman, with another man standing and smiling behind the man with the child. On the right hand side of the image is the database information for the media](../content/contentfiles/media_view.png)
 
-## Add media
+## Add media to an item
 
-Media can only be added via an [item](../content/items.md). Options for adding media to your items include uploading a file, or directly attaching content with a URL, [oEmbed](https://oembed.com/){target=_blank}, YouTube URL, [IIIF URL](https://iiif.io/guides/using_iiif_resources/){target=_blank}, or by writing HTML using the HTML editor.
+Media can only be added via an [item](../content/items.md). Options for adding media to your items include uploading a file, or directly attaching content with a URL, [oEmbed](https://oembed.com/){target=_blank}, YouTube URL, an [IIIF image](https://iiif.io/api/image/3.0/){target=_blank} by URL, an [IIIF presentation](https://iiif.io/api/presentation/3.0/){target=_blank} by URL, or by writing HTML using the HTML editor.
 
-At the media adding stage, the only metadata that can be entered is a Title. If you wish to further describe each file, you can edit it after it has been uploaded.
+An IIIF image URL example:
+
+`https://media.nga.gov/iiif/public/objects/1/0/6/3/8/2/106382-primary-0-nativeres.ptif/info.json`
+
+An IIIF presentation URL example:
+
+`https://media.nga.gov/public/manifests/nga_highlights.json`
+
+At the media adding stage, the only metadata that can be entered is a Title. If you wish to further describe each file, you can edit it after it has been uploaded. If you do not supply a title, the original filename will appear as the media title. Note that the media's actual filename will have changed when uploaded into Omeka S; this filename retained as the title is just for your reference, and can be changed at any time.
+
+You can upload multiple files at once, or by adding more files each time you save. They will appear in the order they were uploaded.
+
+You can drag and drop media into the order of your choice, while adding or after they have been added. On the item edit screen, click the "Media" tab and use the horizontal bars at the left of each file to move files up and down in the list.
+
+### Primary media
+
+You can select one file to be the **primary media** of the item. To do so, go to the item edit screen, select the "Media" tab, and use the radio button that appears to the right of each file title to select one file.
+
+![An item being edited, on the Media tab, with multiple files showing. The first file, a PDF, is shown as being the current primary media.](../content/contentfiles/media_primary.png)
+
+This will cause your chosen primary media to:
+
+- become the item thumbnail (if a thumbnail has not been manually selected on the Advanced tab), and
+- appear as the main media in slideshows, showcases, and other page blocks where the item has been added.
+
+It will not change the order of the files when displayed on admin or public pages. For example, selecting the last file as the primary media will not influence the order of files in the gallery viewer on the item's public page.
+
+By default, the first media uploaded (at the top of the list) is the primary media. If your chosen primary media is deleted, the item will default back to the file at the top of the list as the primary media.
 
 ### Media thumbnails
 
@@ -62,11 +89,14 @@ Thumbnails are automatically created for many file types. Thumbnail creation rel
 
 If you wish your item to have a generic thumbnail (such as an icon of a book, or a musical note for an audio file), you can upload those default images as [assets](../admin/assets.md), then attach them manually to files using the [Advanced tab in the Item editing screen](../content/items.md#advanced).
 
+Thumbnails selected through the Advanced tab of an item edit screen (from an installation's Assets collection) will override any other thumbnails that have been generated for the item from its media.
+
 ### File size limitations
 
 Omeka S imposes no file size limitations. Your server, however, may have restrictions on file upload sizes or speeds that may be causing problems. These limitations vary from server to server and we cannot change this for you. If you have a problem uploading media, please first check with your hosting service or your local server administrator.
 
-## Edit media
+## Edit media metadata
+
 To edit existing media, you can:
 
 - Go to the Media browse page and click the pencil/edit icon for the media's row
@@ -127,13 +157,13 @@ If you are using an Item resource for the property, you will have additional opt
 
 This will open a menu below the button with the following options to filter the items in the drawer:
 
-- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation
-- Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set
-- Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the URL of its edit page; if you are editing the item and the URL is `admin/item/11547/edit` then the item's ID is 11547.
+- Filter by class: a dropdown where you can select any class provided by the vocabularies on the installation.
+- Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set.
+- Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the url of its edit page; if you are editing the item and the URL is `admin/item/11547/edit` then the item's ID is 11547.
 
 ![options as above described](contentfiles/item_addresItem.png)
 
-Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. Creator, Has Part).
+Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. "Creator", "Has Part").
 
 ![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](contentfiles/items_quickadd.png)
 
@@ -171,7 +201,7 @@ You can set controlled vocabularies for annotations using the [Custom Vocab modu
 
 ### Advanced
 
-**Thumbnail**
+#### Thumbnail
 
 Not all media generate elegant thumbnails, for example PDF or text file documents, or some video files. You can use this option to set a representative thumbnail for the media which will be used on browse pages but not on the page for the item or its media.
 
@@ -187,41 +217,57 @@ The drawer offers two options: upload a file using your browser, or select from 
 
 To remove an asset which you have assigned as a thumbnail, click the "Clear" button below the image of the asset. To replace it, click select and either choose or upload a new thumbnail asset.
 
-**Owner**
+#### Owner
 
 You can assign an owner for the media by selecting from the dropdown menu.
 
-**Alt Text**
+#### Alt text
 
 You can provide alternate text for all media by typing descriptive text into the input area.
 
 ![Edit media open to Advanced tab, showing the Alt Text input box](contentfiles/media_alttext.png)
 
-## Batch editing
+#### Language
 
-From the media browse page, you can batch edit media, using the dropdown menu on left just above the table of media. You can select multiple items using the checkboxes on the left of each item's row.
+You can indicate the language of a media file by entering the two-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} language code into this field. This field does not accept multiple values.
+
+## Batch actions
+From the media browse page (`admin/media`), you can batch edit media, using the dropdown menu on the left near the pagination buttons. You can select media manually for batch editing using the checkboxes on the left, or select all of the media on the page, or use the dropdown to edit all media that are currently in the subset.
+
+Editors, Supervisors, and Global Admins can batch-edit and batch-delete all media in the installation. Users that have Author-level permissions can batch-edit or batch-delete their own media, but not media of others. In this case, selecting all of the media on the page, or selecting all media, will only include media they own. Users at the Reviewer level cannot batch-delete all resources, but can batch-delete selected resources.
 
 ![A red arrow points to the dropdown for batch editing and deleting options](contentfiles/media_batch1.png)
 
 Batch actions are as follows:  
 
-- Edit selected: edit only the items that are selected on the page
-- Edit all: edit all the items returned by a search (default is all items)
-- Delete selected: delete only the items that are selected on the page
-- Delete all: delete all the items returned by a search (default is all items).
+- Edit selected: edit only the media that are selected on the page
+- Edit all: edit all the media returned by a search (default is all media)
+- Delete selected: delete only the media that are selected on the page
+- Delete all: delete all the media returned by a search (default is all media).
 
-Choose one of these options and then click "Go".
+The number of results per page is set in the [installation's global settings](../admin/settings.md#general).
 
-**Batch editing** media takes you to a new page. The media being edited will display on the right side in a drawer, while the batch edit form gives you the following options:  
+You can first use the "🔍 Advanced search" link to narrow down the media to a subset for editing. For example, you can use [Advanced search](../search.md#media-advanced-search) to limit to media of a specific MIME type, or media owned by a specific user.
 
-- Set visibility: radio buttons, select from Public, Not public, or No change.
-- Set template: a dropdown, select from the installation's resource templates.
-- Set class: a dropdown, select from classes of the installed vocabularies.
-- Clear language: a checkbox.
-- Set language: a text entry box.
-- Clear property values: a dropdown menu with all the properties in all vocabularies, selecting from this will remove any values in that property in the affected items. Clear additional properties using the "Clear another property" button.
+If you perform a search, you will once again see the browse page, with your selected parameters appearing at the top of the screen. From this browse screen you can select media manually for batch editing using the checkboxes on the left, or select all of the media on the page, or use the dropdown to edit all media that are currently in the subset.
 
-![Batch edit medias form, with options as described above. Everything is grayscale](contentfiles/media_batchedit.png)
+If you complete a batch action from the next screen, you will return back to this same media subset.
+
+### Batch editing
+
+Batch editing media takes you to a new page. The media being edited will display on the right side in a drawer. Be sure to confirm the number of media being edited looks correct.
+
+The batch edit form gives you the following options:  
+
+- Set visibility: a radio button. Select from public or not public to make the file visible or not visible to logged-out users.
+- Set template: a dropdown. Select from the installation's resource templates. You can remove templates from the selected items with the "[Unset template]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- Set class: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected files with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- Clear language: a checkbox to remove existing language settings.
+- Set language: a text field. Enter in a two-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} language code. You can only indicate one language here.
+- Clear property values: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected media. You can remove multiple property values at once: click in the text field again to see the remaining options.
+- Set value visibility: a dropdown and text field, with radio buttons. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire media (for example, you may wish to hide the "Creator" value on some public media). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
+
+![Batch edit media form, with options as described above.](contentfiles/media_batchedit.png)
 
 In addition, you can use the bottoms at the bottom of the batch edit form to add properties to every media:
 
@@ -231,9 +277,11 @@ In addition, you can use the bottoms at the bottom of the batch edit form to add
 
 Selecting any of these will add a block to the form where you can select a property from the installed vocabularies and enter the value for that property.
 
-For the **delete actions**, a drawer will open on the right side of the screen telling you the number of media which will be deleted. Nothing will be deleted unless you click the red "Confirm Delete" button. This action cannot be undone. To opt out of deleting the media, click the "X" in the upper right corner of the deletion drawer. To confirm delete, check the "Are you sure" checkbox and then click "Confirm Delete".
+### Batch deleting
 
-![Close up of the warning that 2 medias will be deleted.](contentfiles/media_batchdelwarn.png)
+For the **delete actions**, a drawer will open on the right side of the screen telling you the number of media which will be deleted. Nothing will be deleted unless you click the red "Confirm Delete" button. This action cannot be undone. To opt out of deleting the media, click the "X" in the upper right corner of the deletion drawer. To confirm a "delete all" action, check the "Are you sure" checkbox and then click "Confirm Delete".
+
+![Close up of the warning that all media will be deleted.](contentfiles/media_batchdelwarn.png)
 
 ## Media file types
 

@@ -20,7 +20,7 @@ Clicking on the site title will take you to a summary page for the site which di
 
 ![show page for the site "What Does This Look Like" indicating that the theme is default and the slug is public views.](../sites/sitesfiles/sites_quickshow.png)
 
-## Adding a site
+## Adding sites
 To create a site, click the "Add new site" button in the upper right-hand corner of the site browse page.
 
 The "New site" page has two tabs: **Info** and **Theme**.
@@ -35,7 +35,7 @@ The "New site" page has two tabs: **Info** and **Theme**.
 ![Admin tab for a new site with nothing entered](../sites/sitesfiles/sitesadd_admin.png)
 
 ### Theme tab
-Select from the installed themes. Each theme appears as a tile with a screenshot of the theme, the theme name, and a link to its creator. When a theme is selected, it will highlight in gray and a checkbox will appear in the bottom right corner of the tile.
+Select from the [installed themes](site_theme.md). Each theme appears as a tile with a screenshot of the theme, the theme name, and a link to its creator. When a theme is selected, it will highlight in gray and a checkbox will appear in the bottom right corner of the tile.
 
 ![Theme tab with default theme selected](../sites/sitesfiles/sitesadd_theme.png)
 
@@ -52,7 +52,7 @@ When you are ready, click the "Add" button in the upper right corner. You cannot
 
 If you decide you do not want to create this site, click the "Cancel" button in the upper right next to the "Add" button.
 
-## Manage a site
+## Managing sites
 To manage a site, navigate to the **Sites** screen from the admin dashboard. Click either on the site’s title or the edit button (pencil icon) in the list of sites. 
 
 This will take you to the site's Info tab, and open the context menu for that site in the left-hand navigation. 
