@@ -37,7 +37,7 @@ The advanced search loads on a new page, and has the following options:
 	- Finally, there is a text field for you to enter the value you want the property to have. To find a resource ID, go to the resource and look at the URL in your browser's address bar. The numbers at the end of the URL are the resource ID. 
 - **Search by class**: select a class by which to search from the dropdown menu.
 - **Search by template**: select a resource template from the dropdown. Templates are arranged by owner, then alphabetically. 
-- **Search by item set**: select from a dropdown of item sets.
+- **Search by item set**: Select whether the intended results are included in or excluded from the given item set. Pick an item set from the dropdown, or type to search. You can add multiple parameters; these will narrow the search (i.e., return all items that are not in set X AND also not in set Y; all items that are in set X AND also in set Y; all items that are in set X AND also not in set Y).
 - **Search by site**: select a site from a dropdown of sites in the installation. Note that you can only search for items from one site at a time.
 - **Search by owner**: select a user from a dropdown of users in the installation.
 
@@ -73,7 +73,7 @@ The advanced search loads on a new page, and has the following options:
 	- You can remove value searches using the red trash can icon to the right of the value settings.
 - **Search by Class**: select a class by which to search from the dropdown menu.
 - **Search by template**: select a resource template from the dropdown. Templates are arranged by owner, then alphabetically.
-- **Search by MIME type**: you can specify the media type for the search. For example, to find all tiff images, you would enter `image/tiff`. 
+- **Search by MIME type**: you can specify the [media type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types){target=_blank} for the search in the format `type/subtype`. For example, enter `image/tiff`, `text/csv`, `video/mp4`, or `audio/wav`. 
 
 ![Advanced media search options form, with fields as described above.](files/search_mediaadvance2.png)
 
