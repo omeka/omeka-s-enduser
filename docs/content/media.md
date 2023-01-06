@@ -52,7 +52,15 @@ Clicking on the title of any media will take you to its metadata page. This page
 
 ## Add media
 
-Media can only be added via an [item](../content/items.md). Options for adding media to your items include uploading a file, or directly attaching content with a URL, [oEmbed](https://oembed.com/){target=_blank}, YouTube URL, [IIIF URL](https://iiif.io/guides/using_iiif_resources/){target=_blank}, or by writing HTML using the HTML editor.
+Media can only be added via an [item](../content/items.md). Options for adding media to your items include uploading a file, or directly attaching content with a URL, [oEmbed](https://oembed.com/){target=_blank}, YouTube URL, an [IIIF image](https://iiif.io/api/image/3.0/){target=_blank} by URL, an [IIIF presentation](https://iiif.io/api/presentation/3.0/){target=_blank} by URL, or by writing HTML using the HTML editor.
+
+An IIIF image URL example:
+
+`https://media.nga.gov/iiif/public/objects/1/0/6/3/8/2/106382-primary-0-nativeres.ptif/info.json`
+
+An IIIF presentation URL example:
+
+`https://media.nga.gov/public/manifests/nga_highlights.json`
 
 At the media adding stage, the only metadata that can be entered is a Title. If you wish to further describe each file, you can edit it after it has been uploaded.
 
