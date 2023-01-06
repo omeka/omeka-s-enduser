@@ -2,11 +2,11 @@
 
 Omeka S accepts most files and file types, and can be customized to accept or reject file types of your choice. You may wish to format your multimedia files according to what can best be embedded and streamed in modern browsers; see the [Media file types section at the end of this page](#media-file-types). If you are having difficulty or are seeing file-validation errors, you can adjust the accepted file types and extensions in the [Allowed media and files options of the Security Settings](../admin/settings.md#security).
 
-Media are only created by adding them to an item; media cannot exist independently. If you wish to upload files unattached to items, see the [Assets page](../admin/assets.md).
+Media are only created by adding them to an item; media cannot exist independently. If you wish to upload files unattached to items, such as logos and banners, see the [Assets page](../admin/assets.md).
 
 To view the media associated with an item, click on the media’s name in the right-hand sidebar on the item view page.
 
-To view all media in the installation, navigate to the **Items** section first. The **Media** subsection will appear below Items in the left-hand navigation.
+To view all media in the installation, navigate to the **Items** section first. Then click on the **Media** subsection that appears below Items in the left-hand navigation.
 
 ## Media permissions
 
@@ -50,7 +50,7 @@ Clicking on the title of any media will take you to its metadata page. This page
 
 ![Media view page for a mediawiki file. The image is of a grup of people in late 19th century clothing, from left to right a a women standing and facing a standing man holding a small child while reaching out to the woman, with another man standing and smiling behind the man with the child. On the right hand side of the image is the database information for the media](../content/contentfiles/media_view.png)
 
-## Add media
+## Add media to an item
 
 Media can only be added via an [item](../content/items.md). Options for adding media to your items include uploading a file, or directly attaching content with a URL, [oEmbed](https://oembed.com/){target=_blank}, YouTube URL, an [IIIF image](https://iiif.io/api/image/3.0/){target=_blank} by URL, an [IIIF presentation](https://iiif.io/api/presentation/3.0/){target=_blank} by URL, or by writing HTML using the HTML editor.
 
@@ -62,7 +62,26 @@ An IIIF presentation URL example:
 
 `https://media.nga.gov/public/manifests/nga_highlights.json`
 
-At the media adding stage, the only metadata that can be entered is a Title. If you wish to further describe each file, you can edit it after it has been uploaded.
+At the media adding stage, the only metadata that can be entered is a Title. If you wish to further describe each file, you can edit it after it has been uploaded. If you do not supply a title, the original filename will appear as the media title. Note that the media's actual filename will have changed when uploaded into Omeka S; this filename retained as the title is just for your reference, and can be changed at any time.
+
+You can upload multiple files at once, or by adding more files each time you save. They will appear in the order they were uploaded.
+
+You can drag and drop media into the order of your choice, while adding or after they have been added. On the item edit screen, click the "Media" tab and use the horizontal bars at the left of each file to move files up and down in the list.
+
+### Primary media
+
+You can select one file to be the **primary media** of the item. To do so, go to the item edit screen, select the "Media" tab, and use the radio button that appears to the right of each file title to select one file.
+
+![An item being edited, on the Media tab, with multiple files showing. The first file, a PDF, is shown as being the current primary media.](../content/contentfiles/media_primary.png)
+
+This will cause your chosen primary media to:
+
+- become the item thumbnail (if a thumbnail has not been manually selected on the Advanced tab), and
+- appear as the main media in slideshows, showcases, and other page blocks where the item has been added.
+
+It will not change the order of the files when displayed on admin or public pages. For example, selecting the last file as the primary media will not influence the order of files in the gallery viewer on the item's public page.
+
+By default, the first media uploaded (at the top of the list) is the primary media. If your chosen primary media is deleted, the item will default back to the file at the top of the list as the primary media.
 
 ### Media thumbnails
 
@@ -70,11 +89,14 @@ Thumbnails are automatically created for many file types. Thumbnail creation rel
 
 If you wish your item to have a generic thumbnail (such as an icon of a book, or a musical note for an audio file), you can upload those default images as [assets](../admin/assets.md), then attach them manually to files using the [Advanced tab in the Item editing screen](../content/items.md#advanced).
 
+Thumbnails selected through the Advanced tab of an item edit screen (from an installation's Assets collection) will override any other thumbnails that have been generated for the item from its media.
+
 ### File size limitations
 
 Omeka S imposes no file size limitations. Your server, however, may have restrictions on file upload sizes or speeds that may be causing problems. These limitations vary from server to server and we cannot change this for you. If you have a problem uploading media, please first check with your hosting service or your local server administrator.
 
-## Edit media
+## Edit media metadata
+
 To edit existing media, you can:
 
 - Go to the Media browse page and click the pencil/edit icon for the media's row
