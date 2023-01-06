@@ -24,7 +24,6 @@ The **Manage Resources** box displays the following resources with their total c
 
 The **Manage Sites** box lists the [Sites](sites/index.md) on the install. Clicking on the site name will take you to the public view of the site; clicking the edit (pencil) button will take you to the Edit Site Info page for that site. 
 
-
 ## Left-hand navigation
 
 The following content appears on the left side of the admin dashboard and on all administrative pages. 
@@ -41,7 +40,7 @@ Advanced search options (the ellipsis) allow you to refine the search by Resourc
 
 ![Advanced search options](files/search.png)
 
-The left hand navigation of the dashboard is divided into sections related to function and user access:
+The left-hand navigation of the dashboard is divided into sections related to function and user access:
 
 - [Sites](sites/index.md): lists and provides access to all of the sites on the OmekaS install. (Computer icon)
 - Resources: content creation and metadata management.
@@ -61,6 +60,14 @@ Note that users with more limited permissions will see only some of these naviga
 
 ## System Information
 
-In the bottom right corner is a short display of the current version of Omeka S. Click the link labelled "System Information" to see a full page with details.
+In the bottom right corner is the current version of Omeka S, along with some helpful links. Click the link labelled "System Information" to see a full page with details.
 
 ![Example system information page](files/systeminfo.png)
+
+On this page you can verify the versions of dependencies that Omeka is using, such as PHP, ImageMagick, and MySQL. If a particular module requires your server to supply something like a PHP utility, you can look for it here. You can also look here to verify whether your Omeka installation recognizes a module you have tried to install.
+
+You may be asked to supply the information on this page when asking for technical support on the [Forums](https://forum.omeka.org/){target=_blank} or when posting an issue on GitHub. 
+
+Clicking the two buttons near the bottom of the page can help you verify that PHP and ImageMagick are working properly for your site. Do this right after installation to ensure you don't run into problems later on, such as when batch-importing items or running other PHP-dependent jobs.
+
+![Example results from the PHP CLI version button and the ImageMagick version button](files/systeminfo_buttons.png)
