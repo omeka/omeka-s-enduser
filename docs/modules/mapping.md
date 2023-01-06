@@ -4,11 +4,11 @@ The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows 
 
 ![Map with timeline](../modules/modulesfiles/mapping-timelinePublic1.png)
 
-The Mapping module has no global configuration settings. It adds several new metadata fields to each item, and a new "Mapping" tab to each item edit screen. It also adds page blocks to [Site Pages](../sites/site_pages.md) that can display maps and timelines for browsing.
+The Mapping module has no global configuration settings. It adds several new metadata fields to each item, and a new "Mapping" tab to each item edit screen. It adds several optional location-based search fields to the advanced search pages on the admin and public interfaces, controlled on a site-by-site basis by [Site Settings](../sites/site_settings.md#settings). It also adds page blocks to [Site Pages](../sites/site_pages.md) that can display maps and timelines for browsing.
 
 Mapping can work with the [Collecting](../modules/collecting.md#prompts) module, by allowing users filling out the contribution form to provide geolocation data for their submissions. Users click directly on a map to place a marker, and can optionally provide a text label for the marker. See the Collecting module page for more information.
 
-Mapping can work with the [CSV Import](../modules/csvimport.md) module, providing extra fields for adding geolocation data to items upon import. See the [CSV Import integration section below](#csv-import-integration) for more information.
+Mapping can work with the [CSV Import](../modules/csvimport.md) module, allowing geolocation data to be added in bulk. See the [CSV Import integration section below](#csv-import-integration) for more information.
 
 ## Manipulating the map
 Small white buttons on the left side of the map control and modify the appearance of the map. Hover over the buttons with the mouse to view tool-tips.
@@ -29,7 +29,9 @@ In addition to these options, you can also navigate the map using your mouse or 
 
 ## Item mapping
 
-The item view screen will not show a "Mapping" tab unless there is geolocation metadata, but one will appear when editing. To add a map to a new or existing item, click to edit the item. Navigate to the "Mapping" tab to add location data to the item. Selecting the tab will open the map interface. 
+The Mapping module adds metadata fields to each item: a latitude and longitude pair that creates markers on maps (an item can have more than one marker), as well as default display settings for the item's individual map - a centerpoint for the map, and minimum corner coordinates that ensure the map contains at least those top, bottom, left, and right spots. These can be set manually using the item's "Mapping" tab, or can be bulk-added to many items using CSV Import.
+
+The item view screen will not show a "Mapping" tab unless there is geolocation metadata, but one will appear when editing the item. To add a map to a new or existing item, click to edit the item. Navigate to the "Mapping" tab to add location data to the item. Selecting the tab will open the map interface. 
 
 ![Screenshot of the Add/Edit Item Page with Mapping tab selected. Large World Map with white buttons described below](../modules/modulesfiles/Mapping_Item_Add.png)
 
@@ -98,6 +100,14 @@ Note that the default bounds will override the location markers. For example, if
 You cannot set marker labels or marker images in CSV Import.
 
 You cannot [batch-edit](../content/items.md#batch-actions) mapping values after items are in your system, only edit them manually one item at a time, or batch-revise mapping data using CSV Import.
+
+## Searching for map data
+
+Items with information filled out in their mapping metadata fields (i.e. with markers on the map) can be searched with fields that the Mapping module adds to the advanced search fields in the admin and public views. These two fields are optional (turned off by default) on [individual sites](../sites/site_settings.md#settings). 
+
+"Add geographic location to advanced search" will add three fields that allow users to search by location: they must provide an address, as well as a distance (in numbers) and select a unit (kilometres or miles). 
+
+"Search by map marker presence" provides users with the values of "Has map markers" or "Has no map markers".
 
 ## Adding map blocks to a site
 
@@ -208,7 +218,7 @@ Viewers can zoom either using the scroll function of their computer or the zoom 
 
 ![Map block with three individual markers and two green cluster circles of two markers. The map shows a portion of southern England.](../modules/modulesfiles/mapping-public.png)
 
-Each item will display as a marker on the map. Markers which are close together will display as a cluster circle, with a number indicating how many items share that location. As you zoom in, these clusters will break open.
+Each item will display as one or more markers on the map. Markers which are close together will display as a cluster circle, with a number indicating how many items share that location. As you zoom in, these clusters will break open.
 
 Clicking on a marker will open a label for that marker. If you have not added a label or image for the marker, it will simply say "Item: [Title]." If you have added a label, it will show the label, as well as representative media and a link to the media if the marker has one.
 
@@ -232,7 +242,7 @@ In the timeline half of the display, information appears on the top and the time
 
 When mousing over the timeline, the cursor changes to a four-directional arrow. Viewers can hold and drag left and right to scroll through the timeline. They can also navigate between items using the semi-opaque right and left arrows on the information area of the display.
 
-Clicking on a maker will display that item's date or interval, title, description, and attached image. The information area has a scroll bar for longer material. The title acts as a link to the item's show page.
+Clicking on a marker will display that item's date or interval, title, description, and attached image. The information area has a scroll bar for longer material. The title acts as a link to the item's show page.
 
 ![Map block with timeline, displaying the interval item "Steventon Rectory, 1775-1801". The information area includes the beginning of a long paragraph describing the item. The marker for the rectory in the timeline runs off the right side of the timeline, which displays 1760-1800.](../modules/modulesfiles/mapping-timelinePublic2.png)
 

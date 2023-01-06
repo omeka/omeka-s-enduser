@@ -45,6 +45,8 @@ The advanced search loads on a new page, and has the following options:
 
 Searches by value, class, template, and item set allow you to search by more than one input - use the large red plus-sign icons to search with more than one value or item set. These search terms build - searching for two item sets will return all items in either item set, rather than only those items which are in both. 
 
+Other search fields may be introduced with modules that add new metadata fields to your items.
+
 You can remove value and item set searches using the red trash can icon to the right of those search options.
 
 You can reset your search terms at any time by using the "Reset" button on the upper right next to the "Search" button.
@@ -113,6 +115,8 @@ The advanced search loads on a new page, and has the following options:
 
 Searches by value, class, and template allow you to search by more than one input - use the large red plus-sign icons to search with more than one value or item set. These search terms build - searching for two templates will return all media using either template. 
 
+Other search fields may be introduced with modules that add new metadata fields to your item sets.
+
 You can reset your search terms at any time by using the "Reset" button on the upper right next to the "Search" button.
 
 ## Public views
@@ -129,6 +133,8 @@ This search bar works as a full-text search for the whole site. It will search a
 
 ### Advanced item search
 Site visitors can access an advanced item search from the Browse Items page, if you have that page accessible. There is a link for Advanced search between the pagination and the sort options at the top of the item browse table.
+
+You can control advanced search settings on a site-by-site basis, from the [Site Settings tab](sites/site_settings.md#search). This will include advanced search fields introduced by modules.
 
 ![The Items page of the Jane Austen site, with a blue arrow pointing to the link for Advanced search](files/search_publicitems1.png)
 

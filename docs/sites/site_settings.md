@@ -30,7 +30,7 @@ Site is public: ![make public button showing an eye icon](../content/contentfile
 Site is private: ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png){style="display:inline;"}
 
 ## Settings
-The Settings page is divided into three sections: **General**, **Browse**, and **Search**. 
+The Settings page is divided into multiple sections; more sections may be added by modules, such as [Collecting](../modules/collecting.md), [Mapping](../modules/mapping.md), and [Sharing](../modules/sharing.md). 
 
 To implement any changes you make, click "Save" at the top right of the browser window when you are done. To leave without saving changes, click "Cancel".
 
@@ -83,7 +83,7 @@ The options for this setting are:
 
 **Show language labels for values** is a checkbox to control the visibility of the language label for each value on show pages.
 
-### Browse settings
+### Browse
 
 ![browse settings, all empty](../sites/sitesfiles/sites_settingsbrowse.png)
 
@@ -96,7 +96,6 @@ Depending on the [site theme](../sites/site_theme.md), you may want to make this
 **Browse heading property** sets which property to use as the heading for each resource on a browse page. By default, this is Dublin Core: Title. The dropdown allows you to select from all available vocabularies, and includes a search bar to quickly find the desired property.
 
 ![The browse heading property option is open. The current selection, Dublin Core: Title, is at the top. Immediately below it is a search bar, indicated by a magnifying glass symbol. Below that are some properties from the the friend of a friend vocabulary.](../sites/sitesfiles/sites_setbrowseprop.png)
-
 
 **Browse body property** sets which property to use as the body text for each resource on a browse page. By default, this is Dublin Core: Description. The dropdown allows you to select from all available vocabularies, and includes a search bar to quickly find the desired property.
 
