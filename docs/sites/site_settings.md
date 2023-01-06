@@ -4,7 +4,19 @@ The Site Admin page allows you to manage the main settings for the site on which
 
 In the left-hand navigation, once you have select a site from the Sites page, it is the first link under the site title, represented with a gear icon.
 
-In the upper right hand corner in this section, you can use buttons to:
+The Site Admin page has two tabs: Info and Settings.
+
+## Info
+The site info settings for an Omeka S site are where you can change the basic info for the site - the same information you entered when you created the site. You can change the:
+
+* **Title**: a text field, with a maximum of 190 characters.
+* **Slug**: the URL for your site, which will be generated automatically from the title if you leave this blank.
+* **Summary**: a brief description of what your site is about, which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
+* **Thumbnail** - a small image for your site, which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
+
+![Site info for the site “Jane Austen” with buttons across the top to Delete and Save the site](../sites/sitesfiles/sites_siteinfo.png)
+
+In the upper right hand corner of the window on this tab, you can use buttons to:
 
 - Set your site as public or private using the eye icon
 - Delete the site
@@ -30,6 +42,7 @@ The site info settings for an Omeka S site are where you can change the basic in
 ![Info screen for an Omeka S site with a thumbnail and a summary.](../sites/sitesfiles/sites_siteinfo.png)
 
 ## Settings
+
 The Settings page is divided into the following sections: **General**, **Language**, **Browse**, **Show**, and **Search**.
 
 To implement any changes you make, click "Save" at the top right of the browser window when you are done. To leave without saving changes, click "Cancel".
@@ -103,9 +116,13 @@ Depending on the [site theme](../sites/site_theme.md), you may want to make this
 
 ### Show
 
-**Attached Pages**: When this box is checked, site pages to which an item is attached will display on the public view of that item.
+![Show settings](../sites/sitesfiles/sites_settingShow.png)
 
-**Value Annotation**: When this box is checked, Value Annotations will be visible on the public views for resources (items, item sets, media).
+**Show attached pages**: When this box is checked, site pages to which an item is attached will display on the public view of that item.
+
+**Show value annotations**: When this box is checked, Value Annotations will be visible on the public views for resources (items, item sets, media).
+
+**Exclude resources not in site**: When this box is checked, the site will not display [linked Omeka resources](../content/items.md#linked-resources) that are not [added as resources to the site](site_resources.md).
 
 ### Search
 

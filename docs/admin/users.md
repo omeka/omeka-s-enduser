@@ -37,7 +37,7 @@ Remember that these roles are separate from the [user roles assigned at a site-s
 
 ## Create a user
 
-Only Supervisors and Global Administrators can create, edit, and delete users. Editors, Reviewers, Authors, and Researchers can edit their own user information but cannot change the information of other users.
+Only Supervisors and Global Administrators can create, edit, and delete users.
 
 To create a new user, select the "Add new user" button in the upper right hand corner of the Users section in the administrative dashboard.
 
@@ -68,11 +68,12 @@ The user is then sent a notification email to set up their account & password. T
 	If you are having problems sending emails from your Omeka S installation, check with your hosting provider. Some hosting setups may require that the domain name for the administrator email matches the domain name of the installation (if your domain is `yourinstall.org`, the administrator email must be `user@yourinstall.org`). Omeka S relies on the server’s underlying `sendmail` utility for sending email; see the [Mail section on the Configuration page](../configuration.md#mail) for more information.
 
 ## Manage users
+
 To manage an existing user, go to the Users section.
 
-![Manage users view, top row is the Omeka Devs account. The drawer showing the number of items and item sets created by the Omeka Devs user is opened.](adminfiles/users_table.png)
+All users can edit their own information using this screen, and can see other users of the installation (and their email addresses). Only Supervisors and Global Admin can edit other users.
 
-To view the name, email, and role of a user, click on the username.
+![Manage users view, top row is the Omeka Devs account. The drawer showing the number of items and item sets created by the Omeka Devs user is opened.](adminfiles/users_table.png)
 
 To see the items and item sets owned by a user, click the ellipsis located between the delete (trash can) button and the user role label. This will open a drawer on the right side of the screen with this information; you can click on the number of items or item sets to browse the items or item sets created by that user.
 
@@ -219,7 +220,7 @@ To edit only the users whose checkboxes you have ticked, choose "Edit selected" 
 
 ![Batch edit users page](adminfiles/users_batch2.png)
 
-On the right hand side of the page are the emails for the users you are editing and to whom any changes you make will be applied.
+On the right side of the page are the emails for the users you are editing and to whom any changes you make will be applied.
 
 On this page you can:
 
@@ -294,7 +295,7 @@ The following is a detailed breakdown of permissions for each user role:
 
 - Full privileges (create, edit, delete) of item, item sets, media, resource templates.
 - Full power over all sites, including adding users, changing navigation and themes, using site-specific module utilities, and editing resources.
-- Can create users at lower levels (editor, researcher, author, or reviewer). Cannot create other Supervisors or Global Admins.
+- Create, edit, and delete users at lower levels; cannot create other Supervisors or Global Admins.
 - Use active modules that appear under the Modules sidebar category (such as CSV Import).
 - View-only privileges for modules in the Admin > Modules tab.
 - View-only privileges for vocabularies.

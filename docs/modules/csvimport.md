@@ -56,10 +56,10 @@ Start an import by clicking on the CSV Import tab on the left-hand navigation. T
 	- Item Sets
 	- Items
 	- Media (must relate to already existing Items)
-	- Mixed resources (spreadsheet can inlcude Item Sets, Items, and Media)
+	- Mixed resources (spreadsheet can include Item Sets, Items, and Media)
 	- Users.
 
-- Check the box to **Automap with simple labels**. This will automap not only specially formatted column headings but also column headings which match existing vocabulary property labels.
+- Check the box to **Automap with simple labels**. This will automap not only specially formatted column headings but also column headings that match existing vocabulary property labels.
 
 - **Comments** will appear on the "Past Imports" page; you may find this useful to make a note about what is being imported and any settings you have chosen on this page.
 
@@ -184,8 +184,8 @@ The "Action" setting allows you to change the action of process from a straight 
 
 - **Create a new resource**: Default option. Each row in the CSV will become a new resource.
 - **Append data to the resource**: Add new data to the resource, based on an identifier for an existing resource. (Cannot be undone.)
-- **Revise data of the resource**: Replace existing data in the resource with data from the CSV, except if empty. (Cannot be undone.)
-- **Update data of the resource**: Replace existing data in the resource with data from the CSV, even when the cell is empty. (Cannot be undone.)
+- **Revise data of the resource**: Replace existing data of the resource with data from the CSV, except if the corresponding cell in the CSV is empty. (Cannot be undone.)
+- **Update data of the resource**: Replace existing data of the resource with data from the CSV, even when the corresponding cell in the CSV is empty. (Cannot be undone.)
 - **Replace all data of the resource**: Remove all properties of the resource, and fill with new information from the sheet. (Cannot be undone.)
 - **Delete the resource**: Delete all matching resources. (Cannot be undone.)
 
@@ -199,6 +199,8 @@ If you select one of these options from the dropdown, three additional settings 
 	- Create a new resource.
 
 In addition to the above, the Advanced Settings tab has an option to set the number of rows to process by batch. By default this is set to 20. However, if you are running into errors with an import you may want to set it to 5 or even 1 in order to troubleshoot and determine the source of the error.
+
+Note that Appending data will allow you to supply multiple rows with the same identifier; each row's values will be appended alongside the ones before. Revising, Updating, and Replacing data will erase data that was changed in earlier rows of your CSV if later rows use the same identifier. If you wish to supply multiple values (e.g. two Description values) for your resources, you must put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column. 
 
 ### Complete import
 Once you have completed mappings, column options, and any settings, click the "Import" button in the upper right corner of the browser window. This should start the import and redirect you to the "Past Imports" tab. You should see a confirmation message saying "Importing in Job ID [number]".
