@@ -89,7 +89,7 @@ You can set individual property values as Private or Publicly visible using the 
 
 In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private.
 
-![As described](contentfiles/item_propviz.png)
+![As described](contentfiles/items_propviz.png)
 
 #### Text
 
@@ -97,7 +97,7 @@ Text fields allow for unformatted text entry. No markup is allowed in these fiel
 
 You can indicate the language for the content of an input using the globe symbol above the input. Click on the globe to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
 
-![The description field with two entries, one in English and one in French, with the two-letter language codes and textual entries in each.](contentfiles/item_lang.png)
+![The description field with two entries, one in English and one in French, with the two-letter language codes and textual entries in each.](contentfiles/items_lang.png)
 
 #### Omeka resource
 
@@ -119,7 +119,7 @@ This will open a menu below the button with the following options to filter the 
 - Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set
 - Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the URL of its edit page; if you are editing the item and the URL is `admin/item/11547/edit` then the item's ID is 11547.
 
-![options as above described](contentfiles/item_addresItem.png)
+![options as above described](contentfiles/items_addresItem.png)
 
 Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. Creator, or Has Part).
 

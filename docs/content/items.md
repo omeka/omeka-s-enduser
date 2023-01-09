@@ -88,9 +88,9 @@ When an item is viewed on the public site, linked resources are displayed in a s
 
 Note that media pages do not display linked resource tables, whether items link to them or not.
 
-![An item display in the Default theme showing a number of Omeka items that link to the item, as "Publications"](contentfiles/items_linkedresources1.png)
+The following item has a number of Omeka resources included in its "Contributors" property, showing as part of its metadata. It also has those same items linking back to it, showing in the linked resources table.
 
-![The same item showing a number of Omeka resources as "Contributors"](contentfiles/items_linkedresources2.png)
+![An item display in the Default theme showing a number of Omeka resources as "Contributors", and a number of Omeka items that link to the item as "Publications"](contentfiles/items_linkedresources.png)
 
 The display of Linked resources on resource pages can be configured on each site. Click on "Theme" and then click the button that reads "[Configure resource pages](../sites/site_theme.md#configure-resource-pages)", then decide if and where to display the "Linked resources" tables for each resource. 
 
@@ -127,11 +127,11 @@ You can set individual properties as **private or public** using the eye icon fo
 
 In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private.
 
-![As described](contentfiles/item_propviz.png)
+![As described](contentfiles/items_propviz.png)
 
 If you have multiple values for a property, you can **reorder** them by dragging and dropping. Click on the bar on the left of the value to grab that value, and drag it into the order that you want it.
 
-![Close up of the Subject property with two values. A red circle shows the location of the grab bar for the value.](contentfiles/item_valuereorder.png)
+![Close up of the Subject property with two values. A red circle shows the location of the grab bar for the value.](contentfiles/items_valuereorder.png)
 
 #### Text
 Text fields allow for unformatted text entry. No markup is allowed in these fields (e.g. Markdown, HTML).
@@ -140,7 +140,7 @@ Text fields allow for unformatted text entry. No markup is allowed in these fiel
 
 You can indicate the language for the content of a text input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF two-letter Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} code for the language in which the text is written.
 
-![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
+![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/items_lang.png)
 
 #### Omeka resource
 
@@ -154,11 +154,7 @@ Once you select a resource, detailed information will load, and you must click "
 
 ![Select Item menu with list of items to link in edit item view](contentfiles/items_addresource.png)
 
-If you are using an **Item** resource for the property, you will have three additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search".
-
-![Select Item drawer top options, with a red arrow around a gray triangle button to the right of the phrase "Filter search"](contentfiles/items_filtersearch.png)
-
-This will open a menu with the following options to filter the items in the drawer:
+If you are using an **Item** resource for the property, you will have three additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search". This will open a menu with the following options to filter the items in the drawer:
 
 - Filter by class: A dropdown where you can select any class provided by the vocabularies on the installation.
 - Filter by item set: A dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set.
@@ -166,7 +162,7 @@ This will open a menu with the following options to filter the items in the draw
 
 Once you enter something into a filter, you need to click on the magnifying glass icon in the search bar to apply your filters.
 
-![options as above described](contentfiles/item_addresItem.png)
+![options as above described](contentfiles/items_addresItem.png)
 
 Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. "Creator", "Has Part").
 
@@ -225,14 +221,13 @@ Use the **Media** tab to add [images, video, or other files](media.md).
 
 Using the buttons on the **Add New Media** menu on the right side of the screen, select a media type (Upload, URL, oEmbed, IIIF, YouTube, or HTML). Modules, such as [File Sideload](../modules/filesideload.md), can add more ways to gather media into Omeka. Other modules can import materials from other platforms directly into Omeka as items with attached media, such as the [Zotero import](../modules/zoteroimport.md) module.
 
-!["Add new media" drawer showing the options](contentfiles/items_mediaadd2.png)
+!["Add new media" drawer showing the options](contentfiles/items_mediaadd.png)
 
 - **Upload**: select a file to upload from your computer.
 - **URL**: import media via a URI.
 - **HTML**: add html content as a media resource for your item.
 - **IIIF image**: Add an [IIIF image](https://iiif.io/api/image/3.0/){target=_blank} via URL.
 - **IIIF presentation**: Add an [IIIF presentation](https://iiif.io/api/presentation/3.0/){target=_blank} via URL.
-
 - **oEmbed**: insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7){target=_blank} - use the URL in your browser’s location bar.
 - **YouTube**: add a link to embed a YouTube video. Use the URL from your browser’s location bar (with `/watch/` in it) rather than a `youtu.be` link.
 
@@ -271,7 +266,7 @@ The advanced tab has two options. One lets you set a custom thumbnail for the it
 
 By default, Omeka S will use the topmost media to generate a thumbnail for the item. If you want to use a non-media image for the thumbnail for an item you can set it here.
 
-![Advanced tab with no asset selected. The tab displays a message about thumbnail creation and a button to "select" an asset](contentfiles/item_advtab.png)
+![Advanced tab with no asset selected. The tab displays a message about thumbnail creation and a button to "select" an asset](contentfiles/items_advtab.png)
 
 When you use an asset thumbnail instead of uploading media, the asset thumbnail does not display on the item's public show page. This makes such thumbnails useful for items which have no media but which would benefit from a thumbnail for the browse view, or for items whose media does not render an elegant thumbnail, such as audio or video files.
 
@@ -279,7 +274,7 @@ The assets you select from and upload as thumbnails in this tab are the same as 
 
 To assign an asset as a thumbnail, click on the Select button in the main work area of the tab. This will open a drawer on the right side.
 
-![Select drawer with upload option and two assets, both of which are images.](contentfiles/item_thumbdrawer.png)
+![Select drawer with upload option and two assets, both of which are images.](contentfiles/items_thumbdrawer.png)
 
 The drawer offers two options: upload a file using your browser, or select from existing assets. To select an existing asset, simply click on it and it will automatically be assigned to the item.
 
@@ -303,7 +298,7 @@ Once you have created an item, you can edit it at any time, either by clicking t
 
 To cancel out of editing, click the "Cancel" button at the top right of the screen.
 
-Editing options are the same as when creating a new item, with the addition of the ability to add any media which has been saved to an item as a property:
+Editing options are the same as when creating a new item, with the addition of the ability to add any media which has been saved to an item as a property.
 
 ### Media as property
 Once you have created an item and added media to it, you will also have the option to use media **attached to that item** for a property.

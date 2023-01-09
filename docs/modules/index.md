@@ -5,7 +5,7 @@ Modules extend the functionality of your Omeka S installation and sites. A list 
 !!! Note
     Not every module will work with every version of Omeka, especially newer modules on old installations. Older versions of modules may be available on their Github pages. Use the Modules Directory to find the "Github" link on the right side of the screen for each plugin, then look on the right hand side of the Github page for the "Releases" section.
 
-![Screen capture of admin dashboard showing Modules tab active.](modulesfiles/modulesbrowse.png)
+![Screen capture of admin dashboard showing Modules tab active.](modulesfiles/modules_browse.png)
 
 To manage the modules installed on your Omeka S site, click on the **Modules** section in the left-hand navigation of your [admin dashboard](../admin-dashboard.md).
 
@@ -24,11 +24,9 @@ Multiple buttons can appear to the right of a module’s label. Each button has 
 - **Activate/Deactivate** (sliding switch): when a module is active, the slider area background is transparent and the switch is to the left. When inactive, the background of the slider area background is opaque and the switch is to the right.
 - **Install/Uninstall** (arrow and rectangle): use this button to install or uninstall a module. When the button is green and the arrow points down, you can install the module. When the button is red and the arrow points up, you can uninstall the module.
 
-![Icons described above, from right to left: configure, activate and deactivate, install and uninstall](modulesfiles/moduleButtons.png)
-
 When a module has a new release, it will display on the browse page with a message in green stating "A new version of this module is available. Get the new version." There will be a link to the download page for the module. [Follow the steps below to update a module](#updating-a-module). These warnings only show up on installed and activated modules. You can [toggle these notifications on the settings page](../admin/settings.md#general).
 
-![A list of modules in different states. One is uninstalled, one is installed but not active, two are active but only one is showing a Configure button. The last module on the list has a "new version" banner in green.](modulesfiles/moduleUpdatemsg.png)
+![A list of modules in different states. One is uninstalled, one is installed but not active, two are active but only one is showing a Configure button. The last module on the list has a "new version" banner in green.](modulesfiles/modules_updatemsg.png)
 
 ## Adding modules to Omeka S
 In order to appear in the **Modules** section of the admin dashboard for your Omeka S installation, module files must be manually added to the `/modules` folder of the installation, using an FTP program or SSH connection.
@@ -54,13 +52,13 @@ To install a module, navigate to the Modules tab on the left-hand navigation of 
 
 Find the module in the table and click the "Install" button. The module is now installed and will automatically be activated. For modules with configuration options, you will be taken to the configuration page for that module. For modules without configuration options, the Modules page will simply reload, with a success message at the top.
 
-![Success message with green highlight reading "The module was successfully installed"](modulesfiles/mods_insuccess.png)
+![Success message with green highlight reading "The module was successfully installed"](modulesfiles/modules_insuccess.png)
 
 ### Activating a module
 
 If you have a module which is installed but inactive, click the "Activate" button to use the module. You should see a success message once the page reloads. The "Activate" button will now read "Deactivate".
 
-![Success message with green highlight reading "The module was successfully activated"](modulesfiles/mods_acsuccess.png)
+![Success message with green highlight reading "The module was successfully activated"](modulesfiles/modules_acsuccess.png)
 
 ## Configuring a module
 Some, but not all, modules include the option to configure settings for that module. If an active module displays the "Configure" button with a wrench icon, you should click through to understand the configuration settings for that module.
@@ -77,7 +75,7 @@ Removing a module is essentially installing in reverse:
 1. Uninstall the module by clicking the "Uninstall" button.
 1. A drawer will open on the right side of the window asking you to confirm that you want to uninstall the module. Click "Confirm uninstall" to continue.
 
-![Uninstall module dialogue with the message "Are you sure you would like to uninstall this module?"](modulesfiles/mods_confirmuninstall.png)
+![Uninstall module dialogue with the message "Are you sure you would like to uninstall this module?"](modulesfiles/modules_confirmuninstall.png)
 
 The uninstalled module will continue to appear on your Modules page (with the option to install it) unless the folder for the module is removed from the `/modules` folder on the Omeka S installation, which can be done via FTP or SSH.
 

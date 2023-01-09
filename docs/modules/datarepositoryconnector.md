@@ -51,7 +51,7 @@ If you select CKAN, you should see a screen with the following options:
 After you have hit "Submit", you can track the status of the import by navigating to the Data Repository Connector > Past Imports tab or the Jobs tab of the left-hand navigation on the admin dashboard.
 
 !!! note
-	Are your jobs starting and not completing? You might need to set the path for PHP so that your system can perform the background process to make the items.
+	Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration.md#php-path) so that your system can perform the background process to make the items.
 
 ## Review imports
 

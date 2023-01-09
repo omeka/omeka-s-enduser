@@ -100,7 +100,7 @@ Items with the original Classic item type will be imported with the new S resour
 When you have finished customizing the mapping, click the "Import" button in the upper right corner of the window.
 
 !!! note
-	Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration.md) so that your system can perform the background process to make the items.
+	Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration.md#php-path) so that your system can perform the background process to make the items.
 
 
 
