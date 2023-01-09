@@ -61,7 +61,7 @@ If you select CKAN, you should see a screen with the following options:
 After you have hit "Submit", you will be taken to the Past Imports page, where your most recent import job will appear in a green bar at the top of the page. You can track the status of the import by reloading the Past Imports page, or by clicking to the Jobs page found in the Admin section of the left-hand navigation.
 
 !!! note
-	Are your jobs starting and not completing? You might need to [set the path for PHP](../admin-dashboard/#system-information.md) so that your system can perform the background process to make the items.
+	Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration.md#php-path) so that your system can perform the background process to make the items.
 
 ## Review imports
 

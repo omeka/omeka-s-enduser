@@ -77,7 +77,11 @@ Omeka S by default will try to automatically detect the path to the PHP CLI on t
 
 If you are [using Reclaim Hosting](#one-click-installation), you will have to manually set the PHP path when you install. See [their instructions here](https://support.reclaimhosting.com/hc/en-us/articles/1500005620481#omeka-s){target=_blank}.
 
-If you begin to see errors once you start working with Omeka, particularly errors with something like "PHP-CLI error: invalid PHP path", you will need to manually set the PHP path. See [Configuration Options](configuration.md) to learn about modifying thumbnail generation, setting the PHP path manually, and more. 
+Use the [System Information page](admin-dashboard.md#system-information) to verify that you installation has identified the correct PHP path. If there is an error when you click the button, that can indicate whether you need to set the configuration manually. 
+
+![The System Information buttons to retrieve the PHP path and the ImageMagick version.](../files/systeminfo_buttons.png)
+
+See [Configuration Options](configuration.md) to learn about modifying thumbnail generation, setting the PHP path manually, and more. 
 
 ### Starting to work with your installation
 

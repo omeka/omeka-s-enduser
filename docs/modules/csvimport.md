@@ -2,7 +2,11 @@
 
 The [CSV Import module](https://omeka.org/s/modules/CSVImport){target=_blank} allows you to import items, item sets, media, and users into your Omeka S install from a CSV (comma-separated values), TSV (tab-separated values), or ODF (open document format) file. This module is only available to [Global Administrator and Supervisor users](../admin/users.md).
 
-## Preparing your CSV file
+## Check PHP
+
+CSV Import relies on PHP to run its jobs. You must have [PHP configured correctly](../configuration.md#php-path) in order to use this module. Start with the [System Information page](../admin-dashboard.md#system-information) and verify that your Omeka install is working with PHP.
+
+## Prepare your CSV file
 
 Most spreadsheet editors (including Microsoft Excel, Google Sheets, and Apple Numbers) can export to CSV format. 
 
@@ -21,11 +25,11 @@ You can manually map each column to its corresponding property, and you are requ
 
 To find the terms you should use for your column headers, go to the Vocabularies tab from the admin dashboard. Click on the number of properties for the vocabulary you want to use (Dublin Core in the image below).
 
-![Red arrow points to the properties link for Dublin Core](../modules/modulesfiles/csv_automap1.png)
+![Red arrow points to the properties link for Dublin Core](../modules/modulesfiles/csvimport_automap1.png)
 
 In the table of vocabulary properties, there is a column for **Term**. Use the Term as the column heading for the property you want to automap in CSV Import. For example, "dcterms:abstract" would automap to the Dublin Core property "Abstract" and "foaf:firstName" would automap to the Friend of a Friend property "firstName".
 
-![arrow points to the Term column for Dublin Core properties.](../modules/modulesfiles/csv_automap2.png)
+![arrow points to the Term column for Dublin Core properties.](../modules/modulesfiles/csvimport_automap2.png)
 
 There is a setting in the inital import settings to automap with simple labels - this will work with columns whose names match a vocabulary label, for example "title" or "abstract", without supplying the term. Note that this option defaults to Dublin Core (`dcterms:title` and `dcterms:abstract`) before proceeding through other installed vocabularies.
 
@@ -56,10 +60,10 @@ Start an import by clicking on the CSV Import tab on the left-hand navigation. T
 	- Item Sets
 	- Items
 	- Media (must relate to already existing Items)
-	- Mixed resources (spreadsheet can inlcude Item Sets, Items, and Media)
+	- Mixed resources (spreadsheet can include Item Sets, Items, and Media)
 	- Users.
 
-- Check the box to **Automap with simple labels**. This will automap not only specially formatted column headings but also column headings which match existing vocabulary property labels.
+- Check the box to **Automap with simple labels**. This will automap not only specially formatted column headings but also column headings that match existing vocabulary property labels.
 
 - **Comments** will appear on the "Past Imports" page; you may find this useful to make a note about what is being imported and any settings you have chosen on this page.
 
@@ -725,7 +729,7 @@ Options are:
 - Duration (ISO 8601)
 - Integer.
 
-![Column options drawer with the data type dropdown open, showing options for numeric data types as well as the standard options](../modules/modulesfiles/csvimport-numericdata.png)
+![Column options drawer with the data type dropdown open, showing options for numeric data types as well as the standard options](../modules/modulesfiles/csvimport_numericdata.png)
 
 When importing data as numeric, it must be formatted precisely. Always check to be sure your data has imported correctly into the format of your choice; CSV Import will leave values empty if the formatting isn't recognized. 
 
