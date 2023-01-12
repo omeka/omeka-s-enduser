@@ -44,7 +44,7 @@ Under `types`, set the maximum pixel dimensions for derivative images for media 
 
 Use the [System Information page](admin-dashboard.md#system-information) to verify your installation's ImageMagick version. If there is an error when you click the button, that can indicate whether you need to set the configuration manually.
 
-![The System Information buttons to retrieve the PHP path and the ImageMagick version.](../files/systeminfo_buttons.png)
+![The System Information buttons to retrieve the PHP path and the ImageMagick version.](files/systeminfo_buttons.png)
 
 The thumbnailer to use is set under the `service_manager` key, by setting the
 alias for `Omeka\File\Thumbnailer`:
@@ -86,7 +86,7 @@ Omeka S by default will try to automatically detect the path to the PHP CLI on t
 
 Use the [System Information page](admin-dashboard.md#system-information) to verify that you installation has identified the correct PHP path. If there is an error when you click the button, that can indicate whether you need to set the configuration manually.
 
-![The System Information buttons to retrieve the PHP path and the ImageMagick version.](../files/systeminfo_buttons.png)
+![The System Information buttons to retrieve the PHP path and the ImageMagick version.](files/systeminfo_buttons.png)
 
 If you begin to see errors once you start working with Omeka, reading something like "PHP-CLI error: invalid PHP path", or have [jobs](admin/jobs.md) that start but do not finish, you will need to manually set the PHP path.
 
