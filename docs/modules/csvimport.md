@@ -1,27 +1,27 @@
 # CSV Import
 
-The [CSV Import module](https://omeka.org/s/modules/CSVImport){target=_blank} allows you to import items, item sets, media, and users into your Omeka S install from a CSV (comma-separated values), TSV (tab-separated values), or ODF (open document format) file. This module is only available to [Global Administrator and Supervisor users](../admin/users.md).
+The [CSV Import module](https://omeka.org/s/modules/CSVImport){target=_blank} allows you to import items, item sets, media, and users into your Omeka S install from a CSV (comma-separated values), TSV (tab-separated values), or ODS (OpenDocument Spreadsheet) file. This module is only available to [Global Administrator and Supervisor users](../admin/users.md).
+
+CSV Import requires your Omeka S installation to [have PHP working in order to run background import jobs](..install.md#test-and-set-the-php-path). Before using CSV Import, you should confirm that PHP is being recognized from the [System Information page](../admin-dashboard.md#system-information). 
 
 ## Preparing your CSV file
 
-Most spreadsheet editors (including Microsoft Excel, Google Sheets, and Apple Numbers) can export to CSV format. 
+Most spreadsheet editors (including Microsoft Excel, Google Sheets, and Apple Numbers) can export to CSV, TSV, or ODS format. 
 
 !!! note
 	CSV files for import **must be encoded in UTF-8**, so when exporting or saving a new document, be sure to check that the encoding is UTF-8.
 
-Most import options rely on you only importing one type of data: a list of items, a list of item sets, a list of media, etc. There is the option for a [Mixed resource import](#mixed-resource-import), requiring one column that identifies the type of each row.
+Most CSV Import options rely on you only importing one type of data: a list of items, a list of item sets, a list of media, etc. There is the option for a [mixed-resource import](#mixed-resource-import), requiring one column that identifies the type of each row.
 
-If the spreadsheet is already created, take a moment to think about which columns you want to match to which [vocabulary properties](../content/vocabularies.md). Your CSV file **must have a header row** in order for the module to process it correctly, so you may need to add a row at the top with column names.
+If the spreadsheet is already created, consider which columns you want to match to which [vocabulary properties](../content/vocabularies.md). Your CSV file **must have a header row** in order for the module to process it correctly, so you may need to add a row at the top with column names.
 
-If you have multiple inputs for a single property, you can separate them with a secondary **multivalue separator**. For example, a work with multiple authors (E.B. White and William Strunk Jr.) with the column for Creator containing "E.B. White;William Strunk Jr" has a semicolon (;) as the multivalue separator. When imported into Omeka S, each of these would appear as a separate entry in the property (Creator: "E.B. White" and Creator: "William Strunk Jr."). Note that the import will be the same whether you leave a space after your separator (as in "E.B. White; William Strunk Jr") or not.
+If you have multiple inputs for a single property, you can separate them with a secondary **multivalue separator**. For example, a work with multiple authors (E.B. White and William Strunk Jr.) with the column for Creator containing "E.B. White;William Strunk Jr" has a semicolon (;) as the multivalue separator. When imported into Omeka S, each of these would appear as a separate entry in the property (Creator: "E.B. White" and Creator: "William Strunk Jr."). Note that the import will be the same whether you leave a space after your separator (as in "E.B. White; William Strunk Jr") or not. 
 
 ### Column names
 
 You can manually map each column to its corresponding property, and you are required to manually map non-metadata columns, such as the file URL for upload. The module will automatically map metadata columns by the names provided in the header row, if they conform to the property terms of your installation's [vocabularies](../content/vocabularies.md) in the format `prefix:property`. For example, a CSV file with a column header "dcterms:title" would automap to the Dublin Core Title property when the CSV is loaded for mapping. You can modify these automapped columns before import.
 
-To find the terms you should use for your column headers, go to the Vocabularies tab from the admin dashboard. Click on the number of properties for the vocabulary you want to use (Dublin Core in the image below).
-
-![Red arrow points to the properties link for Dublin Core](../modules/modulesfiles/csv_automap1.png)
+To find the terms you should use for your column headers, go to the Vocabularies tab from the admin dashboard. Click on the number of properties for the vocabulary you want to use (for example, Dublin Core in the image below).
 
 In the table of vocabulary properties, there is a column for **Term**. Use the Term as the column heading for the property you want to automap in CSV Import. For example, "dcterms:abstract" would automap to the Dublin Core property "Abstract" and "foaf:firstName" would automap to the Friend of a Friend property "firstName".
 
@@ -35,10 +35,10 @@ If you have plans to batch-import metadata or properties that come with a module
 
 ## Initial import settings
 
-Start an import by clicking on the CSV Import tab on the left-hand navigation. This will open the initial "Import Settings" page.
+Start an import by clicking on the CSV Import tab on the left-hand navigation. This will open the initial "Import Settings" page. For most spreadsheets directly exported from a software program into the correct format, these settings can be left on their defaults.
 
-- For the Spreadsheet option, use the "Choose File" button to select the file from your computer.
-- From the **CSV column delimiter** dropdown, choose from the following options (this should match the formatting of your file) that separates different values in a row:
+- Use the "Choose File" button to select a spreadsheet from your computer.
+- From the **CSV column delimiter** dropdown, choose from the following options (this should match the formatting of your file) the character that separates different values in a row:
 	- comma (default)
 	- semi-colon
 	- colon
@@ -50,18 +50,18 @@ Start an import by clicking on the CSV Import tab on the left-hand navigation. T
 - From the **CSV column enclosure** dropdown, choose the option that encloses long text in your file, if applicable:
 	- double quote (default)
 	- quote
-	- hash (#).
+	- hash (`#`).
 
 - From the **Import type** dropdown, select what you are importing:
-	- Item Sets
 	- Items
-	- Media (must relate to already existing Items)
-	- Mixed resources (spreadsheet can include Item Sets, Items, and Media)
+	- Item sets
+	- Media (a column matching Media to already existing Items is required)
+	- Mixed resources (spreadsheet can include Item sets, Items, and Media; a column identifying the type of each row is required)
 	- Users.
 
-- Check the box to **Automap with simple labels**. This will automap not only specially formatted column headings but also column headings that match existing vocabulary property labels.
+- Check the box to **Automap with simple labels**. This will automatically map both specially formatted column headings (in `prefix:property`) and any column headings that match existing vocabulary property labels (`property`).
 
-- **Comments** will appear on the "Past Imports" page; you may find this useful to make a note about what is being imported and any settings you have chosen on this page.
+- **Comments** will appear on the "Past Imports" page; you may find this useful to make a note about what is being imported and any settings you have chosen on this page, for example if you are working in batches or may wish to undo an import later.
 
 ![Import settings as described, no entries](../modules/modulesfiles/csvimport_settings.png)
 
@@ -70,7 +70,7 @@ Click the "Next" button to continue with the import process.
 ## Import items
 To import items, select "Items" under the "Import type" on the first page.
 
-When you click next, the page will load with the following tabs:
+When you click "Next", the page will load with the following tabs:
 
 ### Map to Omeka S data
 This tab displays a table with the columns from your spreadsheet as rows. Each row displays:
@@ -79,24 +79,23 @@ This tab displays a table with the columns from your spreadsheet as rows. Each r
 - The column header from the spreadsheet
 - A plus symbol button for adding or modifying a mapping
 - A wrench symbol button for spreadsheet column options
-- A trash can to delete mappings
-- A column to show options selected.
+- A column displaying properties mapped, either automatically or manually
+- A trash can to delete existing mappings
+- A column to show the particular options selected (such as whether to look for multivalue separators, or visibility for that column).
 
-![Mappings for a spreadsheet with ten columns. Some of the columns, such as those named Description and Title have automatically been mapped to Dublin Core properties.](../modules/modulesfiles/csvimport_itemsMap1.png)
+![Mappings for a spreadsheet with ten columns. Some of the columns, such as those named Description and Title, have automatically been mapped to Dublin Core properties.](../modules/modulesfiles/csvimport_itemsMap1.png)
 
 #### Mapping options
 
-To map a column header to a vocabulary property, click on the plus symbol button to the left of the column header. This will open a drawer on the right-hand side of the screen.
-
-![A red arrow points to the plus sign button to the left of the word "title"](../modules/modulesfiles/csvimport_itemsMapButton.png)
+To map a column header to a vocabulary property, click on the plus symbol button. This will open a drawer on the right-hand side of the screen.
 
 The drawer has multiple options for mapping:
 
-**Properties** select a property to map the column data to, from any of the installed vocabularies. Use the Filter field to search the available properties for a specific property.
+**Properties** allows you to select a property to map the column data to, from any of the installed vocabularies. Use the "Filter" field to search for a specific property.
 
-![Properties option open showing all of the installed vocabularies for the Omeka S installation: Dublin Core, Bibliographic Ontology, Friend of a Friend, Scripto and OWL-Time Ontology.](../modules/modulesfiles/csvimport_itemsMapProp.png)
+![Properties option open, showing all of the installed vocabularies for the Omeka S installation: Dublin Core, Bibliographic Ontology, Friend of a Friend, Scripto and OWL-Time Ontology.](../modules/modulesfiles/csvimport_itemsMapProp.png)
 
-**Item-specific data** has a dropdown to set Item Set by selected property. If you have a column with data for an Item Set to which you want to add the item, you can set how it maps using this dropdown. You can either use the Item Set's internal ID, or any one of its properties (title, description).
+**Item-specific data** has a dropdown to set Item set by selected property. If you have a column identifying an Item set to which you want to add each item (rather than putting all of the imported items into the same Item sets on the "Basic Settings" tab), you can set how it maps using this dropdown. You can either use the Item set's internal ID, or any one of its properties (such as title).
 
 ![dropdown as described](../modules/modulesfiles/csvimport_itemsMapISD.png)
 
@@ -109,15 +108,16 @@ The drawer has multiple options for mapping:
 
 ![Dropdown as described](../modules/modulesfiles/csvimport_itemsMapgeneric.png)
 
-**Media source** If the column in your spreadsheet is a media source, select which kind from the dropdown:
+**Media source** allows you to import [media](../content/media.md#add-media-to-an-item) along with your items, by selecting the sourcing method from the dropdown:
 
 - HTML
-- IIIF Image (link)
+- IIIF image (link)
+- IIIF presentation (link)
 - oEmbed (link)
 - URL
 - YouTube (link).
 
-![Dropdown as described](../modules/modulesfiles/csvimport_itemsMapMedia.png)
+Other options may appear here based on your active modules, such as File Sideload. 
 
 Be sure to click the "Apply Changes" at the bottom of the drawer or nothing you set here will be kept.
 
