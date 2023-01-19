@@ -2,7 +2,7 @@
 
 The [CSV Import module](https://omeka.org/s/modules/CSVImport){target=_blank} allows you to import items, item sets, media, and users into your Omeka S install from a CSV (comma-separated values), TSV (tab-separated values), or ODS (OpenDocument Spreadsheet) file. This module is only available to [Global Administrator and Supervisor users](../admin/users.md).
 
-CSV Import requires your Omeka S installation to [have PHP working in order to run background import jobs](..install.md#test-and-set-the-php-path). Before using CSV Import, you should confirm that PHP is being recognized from the [System Information page](../admin-dashboard.md#system-information). 
+CSV Import requires your Omeka S installation to [have PHP working in order to run background import jobs](../install.md#test-and-set-the-php-path). Before using CSV Import, you should confirm that PHP is being recognized from the [System Information page](../admin-dashboard.md#system-information). 
 
 ## Preparing your CSV file
 
@@ -671,11 +671,11 @@ The following are known errors that can occur during an import:
 Some other modules add functionality to the CSV import process. If you have these modules installed and active, you will have access to the following options when using CSV Import.
 
 ### Mapping
-If you have [Mapping](../mapping.md#csv-import-integration) (minimum version 1.1.0) installed and active, you will have two additional options in the "Map to Omeka S data" tab when importing Items. Note that these options do not appear for any other import type, including Mixed Resources.
+If you have [Mapping](mapping.md#csv-import-integration) (minimum version 1.1.0) installed and active, you will have two additional options in the "Map to Omeka S data" tab when importing Items. Note that these options do not appear for any other import type, including Mixed Resources.
 
 ![Add mapping drawer with additional options for latitude, longitude, and the boundaries of the map](../modules/modulesfiles/csvimport_mapping1.png)
 
-For more information, see the [section on the Mapping page](../mapping.md#csv-import-integration).
+For more information, see the [section on the Mapping page](mapping.md#csv-import-integration).
 
 ### File Sideload
 If you have [File Sideload](../filesideload) (minimum version 1.2.0) installed and active, you can use it as a source for media when running a CSV import.
