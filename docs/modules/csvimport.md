@@ -671,7 +671,7 @@ The following are known errors that can occur during an import:
 Some other modules add functionality to the CSV import process. If you have these modules installed and active, you will have access to the following options when using CSV Import.
 
 ### Mapping
-If you have [Mapping](mapping.md#csv-import-integration) (minimum version 1.1.0) installed and active, you will have two additional options in the "Map to Omeka S data" tab when importing Items. Note that these options do not appear for any other import type, including Mixed Resources.
+If you have [Mapping](mapping.md#csv-import-integration) (minimum version 1.1.0) installed and active, you will have additional options in the right-hand drawer when importing Items. Note that these options do not appear for any other import type, including Mixed Resources.
 
 ![Add mapping drawer with additional options for latitude, longitude, and the boundaries of the map](../modules/modulesfiles/csvimport_mapping1.png)
 
