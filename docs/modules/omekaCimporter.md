@@ -2,7 +2,7 @@
 
 The [Omeka Classic Importer module](https://omeka.org/s/modules/Omeka2Importer){target=_blank} (a.k.a. the Omeka 2 Importer) enables you to import items and collections from an Omeka Classic 2.x site into an Omeka S installation. The source site needs to be Classic version 2 or greater in order to offer an API endpoint for this module to use. 
 
-Once installed, the Omeka 2 Importer module should appear toward the bottom of the left navigation menu on the main admin dashboard. When selected, there are sub-menu items for **Import** and **Past Imports**. 
+Once installed, the Omeka Classic Importer module should appear toward the bottom of the left navigation menu on the main admin dashboard. When selected, there are sub-menu items for **Import** and **Past Imports**. 
 
 ![Omeka Classic Importer menu options Import and Past Imports](../modules/modulesfiles/o2i_menu.png)
 
@@ -11,7 +11,7 @@ This module only imports items and their metadata (including tags), attached fil
 If plugins/modules are installed on both the source site and the target site, Omeka Classic Importer can import module-specific metadata. For example, geolocation data facilitated by the Mapping module in S and the Geolocation plugin in Classic will automatically be imported. PDF Text elements can be imported and mapped to Extract Text fields. The data may not automap properly, so be sure to check the mappings manually.
 
 !!! note
-	Because resource properties in Omeka S do not have HTML formatting, any HTML in your Omeka Classic item properties (links, text formatting, etc.) will be stripped during the import process.
+	Because resource properties in Omeka S do not have HTML formatting, any HTML in your Omeka Classic item properties (links, text formatting, etc.) will be stripped during the import process. You can instead preserve any element as a piece of media, with "HTML" as its media type.
 
 ## Import
 
@@ -53,7 +53,7 @@ The Import module will automatically map many properties, but you should review 
 
 To clear the default mapping, click the "Clear Defaults" button. 
 
-The columns of the table are **Omeka 2 element**, **Mapped properties**, and a checkbox option to **Import as HTML media**. 
+The columns of the table are **Omeka 2 element**, **Mapped properties**, and a checkbox option to **Preserve HTML as media**. Any field that has HTML you would like to maintain in your Omeka S installation, such as line breaks and text styling in the description field, can be imported as an HTML file attached to the item. The field will be imported in plain-text to the metadata and with its formatting as a media.
 
 ![Map Omeka properties](../modules/modulesfiles/o2i_mapprop.png)
 
@@ -65,7 +65,7 @@ To map:
 1. In the right-hand drawer, either click through or search for the S property to which you want to map your Classic element. 
 1. Click on the property in the drawer to map it. 
 
-![Mapping the element Date of Birth to the FOAF property “birthday”, showing the mapped relationship.](../modules/modulesfiles/o2i_mapping.png)
+![Mapping the element Date of Birth to the FOAF property "birthday", showing the mapped relationship.](../modules/modulesfiles/o2i_mapping.png)
 
 To remove a mapping, click the trash can icon in the element/property row.
 
@@ -101,8 +101,6 @@ When you have finished customizing the mapping, click the "Import" button in the
 
 !!! note
 	Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration.md#php-path) so that your system can perform the background process to make the items.
-
-
 
 ## Past imports
 
