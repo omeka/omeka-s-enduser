@@ -42,6 +42,10 @@ Under `types`, set the maximum pixel dimensions for derivative images for media 
 
 `thumbnailer_options` is an array of options passed to the specific thumbnailer in use. For example, the `imagemagick_dir` thumbnail option sets the path to the folder where ImageMagick's `convert` command can be found on the server. This can be useful if Omeka S can't auto-detect the correct path for ImageMagick.
 
+Use the [System Information page](admin-dashboard.md#system-information) to verify your installation's ImageMagick version. If there is an error when you click the button, that can indicate whether you need to set the configuration manually.
+
+![The System Information buttons to retrieve the PHP path and the ImageMagick version.](files/systeminfo_buttons.png)
+
 The thumbnailer to use is set under the `service_manager` key, by setting the
 alias for `Omeka\File\Thumbnailer`:
 
@@ -63,7 +67,7 @@ You can also set the thumbnailer to `Omeka\File\Thumbnailer\NoThumbnail`, which 
 
 ImageMagick may require you to manually set a path in `imagemagick_dir`, whereas Imagick and GD do not require paths.
 
-You can use the ["System information" link](admin-dashboard.md#system-information) at the very bottom of the admin interface to double-check whether GD and Imagick are enabled as PHP extensions on your server.
+You can use the ["System information" page](admin-dashboard.md#system-information) at the very bottom of the administrative interface to double-check whether GD and Imagick are enabled as PHP extensions on your server.
 
 !!! note
 	Some servers will not allow applications to run command-line programs via PHP. You may see an error message such as 
@@ -78,7 +82,13 @@ You can use the ["System information" link](admin-dashboard.md#system-informatio
 
 Omeka S uses background jobs for some long-running tasks that operate on many items or just otherwise might take a long time. Omeka S uses the PHP CLI (command-line interface) to run these jobs, the `php` command. An invalid PHP path can cause a number of problems for your Omeka installation. 
 
+Omeka 4.0 and later requires PHP version 7.4 and later.
+
 Omeka S by default will try to automatically detect the path to the PHP CLI on the server, but for some servers this detection doesn't work, or there are multiple different `php` commands to choose from. 
+
+Use the [System Information page](admin-dashboard.md#system-information) to verify that you installation has identified the correct PHP path. If there is an error when you click the button, that can indicate whether you need to set the configuration manually.
+
+![The System Information buttons to retrieve the PHP path and the ImageMagick version.](files/systeminfo_buttons.png)
 
 If you begin to see errors once you start working with Omeka, reading something like "PHP-CLI error: invalid PHP path", or have [jobs](admin/jobs.md) that start but do not finish, you will need to manually set the PHP path.
 

@@ -41,9 +41,7 @@ The page will load on the Past Imports subsection with a message "Importing from
 
 Managing past imports
 ---------------------------------
-To view and manage past imports, click on the Zotero Import section in the left-hand navigation, and then click on the "Past Imports" subsection.
-
-![red arrow points to past imports section](modulesfiles/zoteroimport_pasttab.png)
+To view and manage past imports, click on the Zotero Import section in the left-hand navigation, and then click on the "Past Imports" subsection that appears when the menu expands.
 
 The Past Imports page shows a table of previous imports, whether successful, failed on error, or undone. The table has the following columns:
 
