@@ -1,8 +1,8 @@
 # Data Repository Connector
 
-The [Data Repository Connector module](../modules/datarepositoryconnector.md){target=_blank} allows users to import records and/or data files from several different data repository platforms: Dataverse, Zenodo, Invenio, and CKAN. Once imported, these items can be updated at any time by re-running the original import from the Past Imports page.
+The [Data Repository Connector module](https://omeka.org/s/modules/DataRepositoryConnector/){target=_blank} allows users to import records and/or data files from several different data repository platforms: Dataverse, Zenodo, Invenio, and CKAN. Once imported, these items can be updated at any time by re-running the original import from the Past Imports page.
 
-The Data Repository Connector adds an entry in the left-hand Modules menu. When you click on the name of the module or the plus-sign icon to the left, the menu will expand to dislplay links for the four import options. The module opens the Past Imports page by default.
+The Data Repository Connector adds an entry in the left-hand Modules menu. When you click on the name of the module or the plus-sign icon to the left, the menu will expand to display links for the four import options. The module opens the Past Imports page by default.
 
 ![Navigation menu showing Data Repository Connector options](../modules/modulesfiles/datarepoconnect_tabs.png)
 
