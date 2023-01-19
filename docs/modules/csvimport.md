@@ -4,7 +4,7 @@ The [CSV Import module](https://omeka.org/s/modules/CSVImport){target=_blank} al
 
 CSV Import requires your Omeka S installation to [have PHP working in order to run background import jobs](../install.md#test-and-set-the-php-path). Before using CSV Import, you should confirm that PHP is being recognized from the [System Information page](../admin-dashboard.md#system-information). 
 
-## Preparing your CSV file
+## Prepare your CSV file
 
 Most spreadsheet editors (including Microsoft Excel, Google Sheets, and Apple Numbers) can export to CSV, TSV, or ODS format. 
 
@@ -25,7 +25,7 @@ To find the terms you should use for your column headers, go to the Vocabularies
 
 In the table of vocabulary properties, there is a column for **Term**. Use the Term as the column heading for the property you want to automap in CSV Import. For example, "dcterms:abstract" would automap to the Dublin Core property "Abstract" and "foaf:firstName" would automap to the Friend of a Friend property "firstName".
 
-![arrow points to the Term column for Dublin Core properties.](../modules/modulesfiles/csv_automap2.png)
+![arrow points to the Term column for Dublin Core properties.](../modules/modulesfiles/csvimport_automap2.png)
 
 There is a setting in the inital import settings to automap with simple labels - this will work with columns whose names match a vocabulary label, for example "title" or "abstract", without supplying the term. Note that this option defaults to Dublin Core (`dcterms:title` and `dcterms:abstract`) before proceeding through other installed vocabularies.
 
@@ -696,7 +696,7 @@ Options are:
 - Duration (ISO 8601)
 - Integer.
 
-![Column options drawer with the data type dropdown open, showing options for numeric data types as well as the standard options](../modules/modulesfiles/csvimport-numericdata.png)
+![Column options drawer with the data type dropdown open, showing options for numeric data types as well as the standard options](../modules/modulesfiles/csvimport_numericdata.png)
 
 When importing data as numeric, it must be formatted precisely. Always check to be sure your data has imported correctly into the format of your choice; CSV Import will leave values empty if the formatting isn't recognized. 
 

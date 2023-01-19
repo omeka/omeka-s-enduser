@@ -1,8 +1,17 @@
 # DSpace Connector
 
-The [DSpace Connector module](https://omeka.org/s/modules/DspaceConnector){target=_blank} allows you to connect an Omeka S instance to a [DSpace repository](https://duraspace.org/dspace/){target=_blank} to import items from that repository. In addition to importing information, the Omeka S item will include a link back to the original item.
+The [DSpace Connector module](https://omeka.org/s/modules/DspaceConnector){target=_blank} allows you to connect an Omeka S instance to a [DSpace repository](https://duraspace.org/dspace/){target=_blank} to import items from that repository. In addition to importing information, the Omeka S item will include a link back to the original item. This allows you to [refresh the information from the source when desired](#update-imported-resources).
 
-Note that DSpace Connector only works with DSpace versions 5.6 and higher. This connector relies on the DSpace API and its site-by-site configuration.
+Note that DSpace Connector only works with DSpace versions 5.6 and higher, including DSpace 7.x. This connector relies on the DSpace API and its site-by-site configuration.
+
+## Check the API
+
+You may wish to first test that your intended DSpace instance is publicly accessible. To do so, use your browser and test the API endpoint:
+
+- Take the DSpace repository URL and add `/rest/collections` (for versions older than 7.0) 
+- Take the DSpace repository URL and add `/server/api/core/collections/` (for 7.x and newer versions).
+
+If you receive an error when loading the page in your browser, the API is not available for import.
 
 ## Import data
 
@@ -15,6 +24,8 @@ On the first form, enter the following information:
 * **DSpace site URL** for the repository - the entire URL, including the `http://`
 * **Endpoint** for the API (by default this is "rest" but may be changed in the DSpace instance)
 * **Limit** or maximum number of results to retrieve at once.
+
+DSpace versions lower than 7 will likely use "rest" as their endpoint. DSpace versions 7 and above will likely use "server/api" as their endpoint. You will have to enter this manually.
 
 Click the "Get collections and communities" button. If the information above has been correctly entered, you will proceed to the DSpace Connector Import Options page. This has "Basic import settings" and "Collections" tabs.
 
@@ -38,7 +49,9 @@ To import a single collection, click the "Import" button to the left of its name
 
 To import the entire repository, click "Import entire repository" at the top of the form.
 
-**NOTE:** Importing an entire DSpace repository with a large number of items (more than 5,000) is likely to flood the DSpace hosting server with requests until failure. Consider importing collection by collection. If you still wish to import an entire large repository at once, the following might help:
+!!! note
+
+Importing an entire DSpace repository with a large number of items (more than 5,000) is likely to flood the DSpace hosting server with requests until failure. Consider importing collection by collection. If you still wish to import an entire large repository at once, the following might help:
 
 * On the initial "Import Settings" menu, set **Limit** to a smaller number, such as 50 or 25.
 * Run the import at night and/or whenever there may be less traffic on the DSpace server.
@@ -47,13 +60,13 @@ To import the entire repository, click "Import entire repository" at the top of 
 You can track the status of imports by navigating to the DSpace Connector "Past Imports" tab, or on the [Jobs](../admin/jobs.md) page of the admin dashboard.
 
 !!! note
-	Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration.md) so that your system can perform the background process to make the items.
+	Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration.md#php-path) so that your system can perform the background process to make the items.
 
 ## Review imports
 
 The "Past DSpace Imports" page displays a table of past DSpace imports, with a checkbox option to **Undo**, the **Job ID** for the import, the repository’s **Dspace Collection Link** (not showing the full URL), any **Comments** made during import, the number of **Items** imported, the **Date** of the import, the import **Status**, and the **Owner**, or user who initiated the import.
 
-![Table of past imports showing two completed imports from Oct 14, 2015, each adding 1 item, with different collections being imported](../modules/modulesfiles/mods_dspacepast.png)
+![Table of past imports showing two completed imports from Oct 14, 2015, each adding 1 item, with different collections being imported](../modules/modulesfiles/dspace_past.png)
 
 ## Update imported resources
 

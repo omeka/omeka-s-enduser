@@ -75,7 +75,7 @@ If you select "Dataset," a new browser tab will open that displays your dataset 
 
 If you select "Diagram," a new browser tab will open to a new public page on your site, containing your diagram. This page will continue to be publicly available on your site as long as the visualization exists, but you don't need to link to it from anywhere. You can insert your visualizations as page blocks instead (see below).
 
-![An example pie chart from the "Count of items with classes" option.](modulesfiles/dataViz_piechart.png)
+![An example pie chart from the "Count of items with classes" option.](modulesfiles/dataviz_piechart.png)
 
 If the text is cramped in the axes of your graph, go back and adjust the margins.
 

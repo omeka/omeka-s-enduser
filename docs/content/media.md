@@ -138,14 +138,14 @@ You can set individual properties as **private or public** using the eye icon fo
 
 In the image below, the first property (Title) is public as indicated by the open eye icon. The second property (Description) is private as indicated by the slashed-through eye icon. Clicking or hitting enter on the eye icon toggles between public and private.
 
-![Individual properties have a red eye icon to the right to allow you to toggle visibility - a red arrow points to the icon](contentfiles/item_propviz.png)
+![Individual properties have a red eye icon to the right to allow you to toggle visibility - a red arrow points to the icon](contentfiles/items_propviz.png)
 
 #### Text
 Text fields allow for unformatted text entry.
 
 You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe icon to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
 
-![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/item_lang.png)
+![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/items_lang.png)
 
 #### Omeka resource
 
@@ -161,7 +161,7 @@ This will open a menu below the button with the following options to filter the 
 - Filter by item set: a dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set.
 - Filter by item ID: a search field where you can input the ID of the item you want to use. You can find an item's ID in the url of its edit page; if you are editing the item and the URL is `admin/item/11547/edit` then the item's ID is 11547.
 
-![options as above described](contentfiles/item_addresItem.png)
+![options as above described](contentfiles/items_addresItem.png)
 
 Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. "Creator", "Has Part").
 

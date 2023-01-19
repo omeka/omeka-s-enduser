@@ -58,11 +58,11 @@ If you have installed modules, they may appear in the admin section of the left 
 
 Note that users with more limited permissions will see only some of these navigation options.
 
-## System Information
+## System information
 
-In the bottom right corner is the current version of Omeka S, along with some helpful links. Click the link labelled "System Information" to see a full page with details.
+In the bottom right corner of every page on the admin side is the current version of Omeka S, along with some helpful links. Click the link labelled "System information" to see a full page with details about your installation.
 
-![Example system information page](files/systeminfo.png)
+![Example System information page](files/systeminfo.png)
 
 On this page you can verify the versions of dependencies that Omeka is using, such as PHP, ImageMagick, and MySQL. If a particular module requires your server to supply something like a PHP utility, you can look for it here. You can also look here to verify whether your Omeka installation recognizes a module you have tried to install.
 
