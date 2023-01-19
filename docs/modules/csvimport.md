@@ -59,7 +59,7 @@ Start an import by clicking on the CSV Import tab on the left-hand navigation. T
 	- Mixed resources (spreadsheet can include Item sets, Items, and Media; a column identifying the type of each row is required)
 	- Users.
 
-- Check the box to **Automap with simple labels**. This will automatically map both specially formatted column headings (in `prefix:property`) and any column headings that match existing vocabulary property labels (`property`).
+- Check the box to **Automap with simple labels**. CSV Import will automatically map specially formatted column headings (in `prefix:property`); if you check this box, it will also automatically map any column headings that match existing vocabulary property labels (such as "Title"). 
 
 - **Comments** will appear on the "Past Imports" page; you may find this useful to make a note about what is being imported and any settings you have chosen on this page, for example if you are working in batches or may wish to undo an import later.
 
@@ -189,7 +189,7 @@ The "Action" setting allows you to change the action of process from a straight 
 
 If you select one of these options from the dropdown, three additional settings will appear on the tab. These settings help the process determine which resources to take action on.
 
-- **Resource identifier column**: Select from a dropdown of the columns in your CSV. This is the data from your spreadsheet that identifies existing items in your Omeka S installation. Choose a unique identifier (for example, you might use the "Title" column from your CSV).
+- **Resource identifier column**: Select from a dropdown of the columns in your CSV. This is the data from your spreadsheet that identifies existing items in your Omeka S installation. Choose a unique identifier (for example, you might use the "Title" column from your CSV).  This column does not need to be mapped in the other tab.
 - **Resource identifier property**: Select from a dropdown of all properties in your Omeka S installation. This should be the equivalent property in your Omeka S install to the column you selected above (for example, `dcterms:title`). This will only work with exact matches. If you have more than one resource with matching data, it will only take action on the oldest resource.
 - **Action on unidentified resources**: This option determines what to do when no matching resource exists in the Omeka S installation, when your selected action applies to an existing resource ("Append", "Revise", "Update", or "Replace"). This option is not used when the main action is "Create" or "Delete". Your options are:
 	- Skip the row and ignore its contents
@@ -309,7 +309,7 @@ If you select one of these options from the dropdown, three additional settings 
 
 ![Advanced options tab with options as described below](../modules/modulesfiles/csvimport_itemSetAdvAct.png)
 
-- **Resource identifier column**: Select from a dropdown of the columns in your CSV. This is the data from your spreadsheet which maps to existing data in your Omeka S installation.
+- **Resource identifier column**: Select from a dropdown of the columns in your CSV. This is the data from your spreadsheet which maps to existing data in your Omeka S installation. This column does not need to be mapped in the other tab.
 - **Resource identifier property**: Select from a dropdown of all properties in your Omeka S installation. This should be the property in which you already have data, that you used to create the column data above.
 	- Example: if the data in the Resource identifier column is "Title" with the first row of data having a title "A Study in Scarlet," and you set Resource identifier property to "Dublin Core: Title," then the actions will operate on a resource already in your Omeka S installation whose dc:title property is "A Study in Scarlet".
 	- This will only work with exact matches.
@@ -435,7 +435,7 @@ If you select one of these options from the dropdown, three additional settings 
 
 ![Options described below](../modules/modulesfiles/csvimport_mediaAdvAct.png)
 
-- **Resource identifier column**: Select from a dropdown of the columns in your CSV. This is the data from your spreadsheet which maps to existing data in your Omeka S installation.
+- **Resource identifier column**: Select from a dropdown of the columns in your CSV. This is the data from your spreadsheet which maps to existing data in your Omeka S installation. This column does not need to be mapped in the other tab.
 - **Resource identifier property**: Select from a dropdown of all properties in your Omeka S installation. This should be the property in which you already have data, that you used to create the column data above.
 	- Example: if the data in the Resource identifier column is "Title" with the first row of data having a title "A Study in Scarlet," and you set Resource identifier property to "Dublin Core: Title," then the actions will operate on a resource already in your Omeka S installation whose `dc:title` property is "A Study in Scarlet".
 	- This will only work with exact matches.
