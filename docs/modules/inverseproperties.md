@@ -1,6 +1,6 @@
 # Inverse Properties
 
-The [Inverse Properties module](https://omeka.org/s/modules/InverseProperties/0{target=_blank} allows administrators to define inverse properties between resources (items, item sets, and media) so that property values can be concretely linked in both directions. 
+The [Inverse Properties module](https://omeka.org/s/modules/InverseProperties/){target=_blank} allows administrators to define inverse properties between resources (items, item sets, and media) so that property values can be concretely linked in both directions. 
 
 To install Inverse Properties, follow the instructions for [Installing Modules](https://omeka.org/s/docs/user-manual/modules/#installing-modules) on the Modules documentation.
 
