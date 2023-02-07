@@ -6,7 +6,10 @@ File Sideload is compatible with [CSV Import](../modules/csvimport.md). When ins
 
 ## Create a directory
 
-Create a directory (folder) on your server. It can be within the File Sideload module directory or on the same level as the Omeka S installation.
+Create a directory (folder) on your server. It can be within the File Sideload module directory or on the same level as the Omeka S installation. 
+
+!!! note
+  If you place your sideload directory inside your Omeka installation, be careful not to delete or move it when updating the installation or modules. If you place your directory inside the File Sideload module folder (`youromekainstall/modules/FileSideload/yourdirectory`) be sure not to disturb it when updating the module.
 
 Upload files into this directory. All files or directories must be in this directory to be accessible.
 
