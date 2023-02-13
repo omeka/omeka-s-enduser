@@ -48,7 +48,7 @@ Add a sideload file to an item
 ------------------------------
 With File Sideload installed and configured, and files in the directory, you can now use the module to add media to items.
 
-When editing an item, go to the Media tab. The Add New Media sidebar now includes two buttons for Sideload (below the core options).
+When editing an item, go to the Media tab. The "Add media" sidebar now includes two buttons for Sideload (below the core options).
 
 ![An item's media tab in the editing mode is shown. Two entries in the sidebar from Sideload have already been added to the main field.](../modules/modulesfiles/filesideload_browse.png)
 
@@ -62,12 +62,12 @@ Clicking on either of the buttons adds a Sideload media block. Adding a single f
 Adding media by directory creates three fields:
 
 - **Title**: Give the media file a new title (optional). This title will apply to all added media identically.
-- **Directory**: select a folder from this dropdown menu. The menu will load the folder names as they appear in the directory. 
-- **Ingest directory recursively**: a checkbox that allows you to upload media from the sideload folder you chose and any folders inside that folder. 
+- **Directory**: Select a folder from this dropdown menu. The menu will load the folder names as they appear in the directory. 
+- **Ingest directory recursively**: Checking this box will include both all media from the sideload folder you chose and all media from all folders inside that folder. 
 
 ![Sideload media options with the dropdown open, displaying file names](../modules/modulesfiles/filesideload_directory_addfile.png)
 
-Remember that File Sideload has a module-wide setting to delete files when ingested through this process. When you are sure your settings are correct, save the changes to the item. You should see the file or files added as media in the media tab.
+Remember that File Sideload has a module-wide setting to delete files when ingested through this process. When you are sure your settings are correct, save the changes to the item. You should see the file or files added as media in the media section of the sidebar.
 
 ## CSV Import integration
 
