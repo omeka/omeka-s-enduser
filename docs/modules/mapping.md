@@ -4,7 +4,7 @@ The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows 
 
 ![Map with timeline](../modules/modulesfiles/mapping-timelinePublic1.png)
 
-The Mapping module has no global configuration settings. It adds several new metadata fields to each item, and a new "Mapping" tab to each item edit screen. It adds several optional location-based search fields to the advanced search pages on the admin and public interfaces, controlled on a site-by-site basis by [Site Settings](../sites/site_settings.md#settings). It also adds page blocks to [Site Pages](../sites/site_pages.md) that can display maps and timelines for browsing.
+The Mapping module has no global configuration settings. It adds several new metadata fields to each item, and a new "Mapping" tab to each item edit screen. It adds several optional location-based search fields to the advanced search pages on the admin and public interfaces, controlled on a site-by-site basis by [Site Settings](../sites/site_settings.md#settings). It also adds page blocks to [Site Pages](../sites/site_pages.md) that can display maps and timelines for browsing, and a "Map Browse" page, found in the [Site Navigation settings](../sites/site_navigation.md).
 
 Mapping can work with the [Collecting](../modules/collecting.md#prompts) module, by allowing users filling out the contribution form to provide geolocation data for their submissions. Users click directly on a map to place a marker, and can optionally provide a text label for the marker. See the Collecting module page for more information.
 
@@ -25,7 +25,7 @@ Small white buttons on the left side of the map control and modify the appearanc
 * **Go to current default view**: The small black square with a black box around a dot. This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
 * **Clear the default center and zoom level**: The small white square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
 
-In addition to these options, you can also navigate the map using your mouse or trackpad by scrolling to zoom and clicking and dragging to pan.
+In addition to these options, you can also navigate the map using your mouse or trackpad by scrolling to zoom and clicking and dragging to pan. Scrolling using your mouse wheel is a setting that can be turned on or off in map page blocks.
 
 ## Item mapping
 
@@ -111,9 +111,11 @@ Items with information filled out in their mapping metadata fields (i.e. with ma
 
 "Search by map marker presence" provides users with the values of "Has map markers" or "Has no map markers".
 
-## Adding map blocks to a site
+## Adding maps to a site
 
-Mapping creates two page blocks you can add to your pages: "Map by attachments", where you manually add resources to the map block; and "Map by query", which allows you to use a search string to add resources to the map block.
+Mapping creates a "Map Browse" page that can be added to each site in its navigation settings. This map has minimal customization options and will show every item in the site that has one or more geolocations, as well as some advanced search fields (including search by address with radius). You can change the page label and the basemap for this page. 
+
+Mapping creates two page blocks you can add to your site pages: "Map by attachments", where you manually add resources to the map block; and "Map by query", which allows you to use a search string to add resources to the map block.
 
 To add a map to a new or existing page, click to edit the page. On the right, under "Add new block", click either the "Map by attachments" or "Map by query" option (1). Selecting one will open the map block to the page (2). The blocks include customizable features for the map in collapsable panes. Click the triangle to expand or collapse these fields (3).
 
@@ -131,6 +133,8 @@ This section lets you set the appearance and zoom level of the map. There are th
 **Minimum zoom level**: set the minimum zoom for the map. Fully zoomed out is 0.
 
 **Maximum zoom level**: set the maximum possible zoom level. The highest is 19. Some basemaps do not function at higher levels; you will want to check to be sure you set your maximum at a level where you basemap is visible.
+
+**Scroll wheel zoom**: set whether users can zoom with their mouse wheel when hovering over the map, either automatically upon page load or after clicking inside the map. You can disable mouse-wheel scrolling entirely.
 
 Between the fields and the preview map is a message which tells you the current zoom level, as you zoom using the plus and minus buttons on the preview map or the scroll on your comptuer. Use this to help you determine where you want to set your minimum and maximum zoom levels.
 
