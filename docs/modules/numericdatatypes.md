@@ -1,19 +1,19 @@
 # Numeric Data Types
 
-The [Numeric Data Type module](https://omeka.org/s/modules/NumericDataTypes){target=_blank} allows you to set certain properties as numeric data, using resource templates. You can designate properties as either date and time (ISO) or integers.
+The [Numeric Data Type module](https://omeka.org/s/modules/NumericDataTypes){target=_blank} allows you to set certain properties as numeric data, using resource templates. You can designate properties as either dates and times or integers.
 
 ## Create numeric properties
 To implement the module, you will need to create or edit a [resource template](../content/resource-template.md) to set specific properties as having numeric data types. 
 
-When creating or editing a resource template, find the property you want to set as numeric in the right hand sidebar. Click on the property to add it to the template.
+When creating or editing a resource template, find the property you want to set as numeric in the right hand sidebar. Click on the property to add it to the template if needed.
 
-Once the property has been added to the template, click the pencil icon to edit the property. In the right hand drawer which opens, look for the dropdown "Data type" under the heading "Other options".
+Once the property is included in the template, click the pencil icon to edit the property. In the right hand drawer that opens, look for the dropdown "Data type" under the heading "Other options".
 
-![Close up of the Other Options section, showing a dropdown for data type. A red arrow points to the header for the Numeric data types](../modules/modulesfiles/ndt-selectdata.png)
+![Closeup of the Other Options section, showing a dropdown for data type. A red arrow points to the header for the Numeric data types](../modules/modulesfiles/ndt-selectdata.png)
 
-In the dropdown, select from the following options under the heading for "Numeric":
+In the dropdown, select from the following options under the "Numeric" heading:
 
-- Timestamp, which can be as broad as a year or as defined as the date and time;
+- Timestamp, which can be as broad as a year or formatted as a date and time;
 - Integer, a whole number;
 - Duration, for how long something lasted, with options for years down to seconds;
 - Interval, a date-based range with start and end dates in each instance of the property.
@@ -24,7 +24,8 @@ When you save changes to your resource template, the numeric type you chose shou
 
 ![Newly created resource template with a green-highlighted update success message. There are four properties - Title, Description, Date, and Spatial Coverage. In the column for Data Type, Date has Timestamp type and Spatial Coverage has Integer.](../modules/modulesfiles/ndt-review.png)
 
-Note: these fields will display only the numeric data entered. If you want to indicate what the integers represent, edit the property's label to include the scale you are using, for example creating an alternate label for "Spatial Coverage" which reads "Height (cm)".
+!!! note
+	These fields will display only the numeric data entered. If you want to indicate what the integers represent, edit the property's label to include the scale you are using, for example creating an alternate label for "Spatial Coverage" which reads "Height (cm)".
 
 ## Add numeric data
 When you add or edit an item using the template you created above, the properties you set as numeric will appear as follows:
@@ -73,7 +74,7 @@ Clicking on this dropdown will reveal multiple options, including all of the pro
 ![The contents of the dropdown, with the normal options in addition to eight properties using numeric data types.](../modules/modulesfiles/ndt-browsesort2.png)
 
 ## Bulk edit numeric data
-The module adds an additional option to the [item batch edit](../../content/items/#batch-editing): Convert to Numeric.
+The module adds an additional option to the [item batch edit](../../content/items/#batch-editing): "Convert to numeric".
 
 The Convert to Numeric option lets you convert an existing text input property to a numeric data type. It will not work on properties where the data is currently an Omeka resource or a URI. 
 
@@ -85,6 +86,34 @@ In the second field, select from the following options:
 - Convert to interval
 - Convert to duration
 - Convert to integer.
+
+![The batch editing options for Convert to numeric.](modulesfiles/ndt-batchedit.png)
+
+When textual data is converted to numeric data, the module will identify either integers or [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601){target=_blank}-formatted dates and times. It will not recognize and reformat dates in, for example, `MM/DD/YYYY` formatting. You would need to manually edit or bulk-import the correct formats using [CSV Import](../modules/csvimport.md).
+
+Use the following formats for [dates](https://en.wikipedia.org/wiki/ISO_8601#Dates){target=_blank}, including dashes between values:
+
+- `2022`
+- `2022-08` (year and month, no date)
+- `2022-08-18`.
+
+Use the following formats to add [times](https://en.wikipedia.org/wiki/ISO_8601#Times){target=_blank} to your date values:
+
+- `2022-08-18T17:26:49+00:00` ([time offset from UTC](https://en.wikipedia.org/wiki/ISO_8601#Time_offsets_from_UTC){target=_blank})
+- `2022-08-18T17:26:49Z` ([coordinated universal time](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_(UTC)){target=_blank}). 
+
+You cannot omit the year while providing a month and/or day. You cannot supply ordinal dates (as in, `2000-175` for the 175th day of the year 2000). 
+
+Use the following formats for [intervals](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals){target=_blank} either as start and end points, or with one time point and a duration:
+
+- `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (Start and end)
+- `2007-03-01T13:00:00Z/P1Y2M10DT2H30M` (Start time/date and duration)
+- `P1Y2M10DT2H30M/2008-05-11T15:30:00Z` (Duration and end time/date).
+
+Use the following formats for [durations](https://en.wikipedia.org/wiki/ISO_8601#Durations){target=_blank}, expressed as number of years, number of months, number of days, etc.:
+
+- `P23DT23H` (23 days & 23 hours)
+- `P3Y6M4DT12H30M5S` (3 years, 6 months, 4 days, 12 hours, 30 minutes, & 5 seconds).
 
 ## Search numeric data
 When the module is active, it adds additional search options to the Advanced Search for items. 
