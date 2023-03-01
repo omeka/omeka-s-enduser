@@ -149,19 +149,15 @@ Within the preview map, there are five buttons:
  Add, edit, and delete [Web Map Service (WMS)](https://mapserver.org/ogc/wms_server.html){target=_blank} overlays.
 
  * **Label**: Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays.
- * **Base URL**: Add a URL to the WMS map.
- * **Layers**: Any layers you wish to use, separated by commas.
- * **Styles**: Any styles you wish to use, separated by commas.
+ * **Base URL**: Add a URL to the WMS map. 
+ * **Layers**: Any layers you wish to use, separated by commas. This is a string or strings provided by the WMS host.
+ * **Styles**: Any styles you wish to use, separated by commas. This is a string or strings provided by the WMS host.
 
- Click Add Overlay to create the overlay. Click _Clear Inputs_ to clear each of the fields. Multiple overlays can be added.
+ Click "Add Overlay" to create the overlay. Click "Clear Inputs" to clear each of the fields. Multiple overlays can be added.
 
-![Map page block with only the WMS Overlays section open. All of the mentioned fields are empty](../modules/modulesfiles/Mapping_Page_Overlays.png)
+![Map page block with only the WMS Overlays section open. Two overlays already exist, one selected to display as default. The form is being filled with the details for a third overlay.](../modules/modulesfiles/Mapping_Page_Overlays.png)
 
-  Once you have added an overlay, it will appear above the fields for adding overlays.
-
-  Choose a default overlay by checking the box next to it. Edit an overlay by clicking on on the red pencil edit button, or click the red trashcan icon to delete the overlay.
-
-
+Once you have added an overlay, it will appear above the fields for adding overlays. If you would like one or more of the overlays to display automatically when the page loads, check the box next to it. Edit an overlay by clicking on on the red pencil edit button, or click the red trashcan icon to delete the overlay.
 
 ### Timeline
 Timeline adds a timeline display to the left of the map view. Note that this feature requires the [Numeric Data Types](../modules/numericdatatypes.md) module and at least one item that has a property with a Timestamp or Interval value (applied via the [resource template](../content/resource-template.md)).
