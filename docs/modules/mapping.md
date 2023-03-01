@@ -155,13 +155,13 @@ Within the preview map, there are five buttons:
 
  Click Add Overlay to create the overlay. Click _Clear Inputs_ to clear each of the fields. Multiple overlays can be added.
 
- ![Map page block with only the WMS Overlays section open. All of the mentioned fields are empty](../modules/modulesfiles/Mapping_Page_Overlays.png)
+![Map page block with only the WMS Overlays section open. All of the mentioned fields are empty](../modules/modulesfiles/Mapping_Page_Overlays.png)
 
   Once you have added an overlay, it will appear above the fields for adding overlays.
 
   Choose a default overlay by checking the box next to it. Edit an overlay by clicking on on the red pencil edit button, or click the red trashcan icon to delete the overlay.
 
-  ![Screenshot of the WMS Overlays with empty fields and the US and Territories overlay above the fields. A blue arrow points to the overlay](../modules/modulesfiles/Mapping_Page_Overlays2.png)
+
 
 ### Timeline
 Timeline adds a timeline display to the left of the map view. Note that this feature requires the [Numeric Data Types](../modules/numericdatatypes.md) module and at least one item that has a property with a Timestamp or Interval value (applied via the [resource template](../content/resource-template.md)).
