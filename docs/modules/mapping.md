@@ -157,7 +157,7 @@ Within the preview map, there are five buttons:
  * **Layers**: Any layers you wish to use, separated by commas.
  * **Styles**: Any styles you wish to use, separated by commas.
 
- Click Add Overlay to create the overlay. Click _Clear Inputs_ to clear each of the fields. Multiple overlays can be added.
+ Click "Add Overlay" to create the overlay. Click "Clear Inputs" to clear each of the fields. Multiple overlays can be added.
 
  ![Map page block with only the WMS Overlays section open. All of the mentioned fields are empty](../modules/modulesfiles/Mapping_Page_Overlays.png)
 
