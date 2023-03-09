@@ -10,7 +10,7 @@ This module looks up URIs on the page and provides users a snapshot of linked da
 
 ![URI entries on the Item edit page.](modulesfiles/uri-entry.png)
 
-These toggle buttons will load with the class `uri-dereferencer-toggle` and can be styled using the [CSS Editor module](../csseditor.md) or with externally-hosted stylesheets. When expanded, the external metadata will load inside a `div` with the class `uri-dereferencer-markup` and from there into a `dl` description list. Properties will appear as `dt` and values as `dd`. 
+These toggle buttons will load with the class `uri-dereferencer-toggle` and can be styled using the [CSS Editor module](../modules/csseditor.md) or with externally-hosted stylesheets. When expanded, the external metadata will load inside a `div` with the class `uri-dereferencer-markup` and from there into a `dl` description list. Properties will appear as `dt` and values as `dd`. 
 
 ![The same URI entries displayed on the Item view page, expanded to show the information from one of the URIs.](modulesfiles/uri-expanded.png)
 
