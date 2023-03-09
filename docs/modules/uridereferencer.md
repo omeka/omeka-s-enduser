@@ -2,7 +2,7 @@
 
 The [URI Dereferencer module](https://omeka.org/s/modules/UriDereferencer/){target=_blank} allows pages to dynamically display data from the source of many URIs on Omeka item, media, and item set pages. 
 
-This module has no configuration settings and adds no functions to the administrative dashboard. It appears on the front-end, on recognizable URIs from built-in [linked data services](#linked-data-services), on resource views where a URI has been input as a metadata value.
+This module has no configuration settings and adds no functions to the administrative dashboard. It appears on the front-end, on recognizable URIs from built-in [linked data services](#linked-data-services), on any resource view where a URI has been input as a metadata value.
 
 ![Two URIs in the Creator field with [+] toggle links beside them.](modulesfiles/uri-display.png)
 
@@ -10,13 +10,13 @@ This module looks up URIs on the page and provides users a snapshot of linked da
 
 ![URI entries on the Item edit page.](modulesfiles/uri-entry.png)
 
-These toggle buttons will load with the class `uri-dereferencer-toggle` and can be styled using the [CSS Editor module](../csseditor.md) or with externally-hosted stylesheets. When expanded, the pulled metadata will load inside a `div` with the class `uri-dereferencer-markup` and from there into a `dl` description list. Properties will appear as `dt` and values as `dd`. 
+These toggle buttons will load with the class `uri-dereferencer-toggle` and can be styled using the [CSS Editor module](../csseditor.md) or with externally-hosted stylesheets. When expanded, the external metadata will load inside a `div` with the class `uri-dereferencer-markup` and from there into a `dl` description list. Properties will appear as `dt` and values as `dd`. 
 
-![The same URI entries displayed on the Item view page, expanded to show the information from the URIs.](modulesfiles/uri-expanded.png)
-
-If you have custom data type values and wish them to be dereferenceable, you must add the class `uri-value-link` to the anchor tag containing the URI.
+![The same URI entries displayed on the Item view page, expanded to show the information from one of the URIs.](modulesfiles/uri-expanded.png)
 
 The number of dereferenced metadata values, and which ones, are determined by the service and its own data type, and cannot be set in Omeka. You should test the services and data types before deciding if you wish to use these URIs and allow users to see the dereferenced metadata. This module does not allow you to include or exclude specific properties from being dereferenced.
+
+If you have [custom data type values](../modules/customvocab.md) and wish them to be dereferenceable, you must add the class `uri-value-link` to the anchor tag containing the URI.
 
 ## Linked data services
 
