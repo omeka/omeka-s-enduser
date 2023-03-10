@@ -64,6 +64,7 @@ This module includes the following vocabularies:
 - Homosaurus
 - IdRef
 - Library of Congress Linked Data Service
+- NDE Termennetwerk: Dutch Digital Heritage Network of Terms
 - Nuovo Soggettario
 - OCLC Metadata Services
 - PACTOLS of Frantiq
@@ -74,6 +75,9 @@ This module includes the following vocabularies:
 - UNESCO
 - Les vocabulaires du Ministère de la Culture.
 
+!!! note
+	Some vocabularies appear in multiple languages in the list below: for example, Homosaurus (in English) is listed separately from the Dutch translation of Homosaurus found in the NDE list. Search the list and refer to the services to see which languages they support. We have indicated languages here for services that serve primarily one (non-English) language.
+
 ### [Dublin Core (DCMI Metadata Terms)](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/){target=_blank}
 
 - Classes
@@ -81,13 +85,14 @@ This module includes the following vocabularies:
 - Terms
 - Types.
 
-### [Gemeinsame Normdatei (GND)](http://lobid.org/gnd){target=_blank}
+### [Gemeinsame Normdatei (GND)](http://lobid.org/gnd){target=_blank} (`de`)
 
-- The GND contains standardized entries for persons, corporations, congresses, geographical areas, key words and work titles.
+- The GND contains standardized entries for persons, corporations, congresses, geographical areas, keywords and work titles.
 
 ### [GeoNames](http://www.geonames.org/){target=_blank}
 
-- The GeoNames geographical database.
+- The GeoNames geographical database
+- GeoNames features.
 
 ### [The Getty Vocabularies](http://vocab.getty.edu/){target=_blank}
 
@@ -99,7 +104,7 @@ This module includes the following vocabularies:
 
 - Homosaurus.org linked data vocabulary.
 
-### [IdRef](https://www.idref.fr/){target=_blank}
+### [IdRef](https://www.idref.fr/){target=_blank} (`fr`)
 
 - The French national database of identifiers for research (all repositories)
 - Person names
@@ -137,7 +142,38 @@ This module includes the following vocabularies:
 - MARC Languages
 - MARC Relators.
 
-### [Nuovo Soggettario](https://thes.bncf.firenze.sbn.it/){target=_blank}
+### [Dutch Digital Heritage Network of Terms: NDE Termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/){target=_blank} (`nl`)
+
+- Art & Architecture Thesaurus - materialen
+- Art & Architecture Thesaurus - processen en technieken
+- Art & Architecture Thesaurus - stijlen en periodes
+- Archeologisch Basisregister
+- Adamlink: straten in Amsterdam
+- Brinkman trefwoordenthesaurus
+- Cultuurhistorische Thesaurus
+- Cultuurhistorische Thesaurus - Materialen
+- Cultuurhistorische Thesaurus - Stijlen en periodes
+- EuroVoc - thesaurus van de Europese Unie
+- GeoNames: geografische namen in Nederland, België en Duitsland
+- GTAA: genres
+- GTAA: onderwerpen
+- Homosaurus
+- Iconclass
+- Indisch Erfgoed Thesaurus
+- Muziek: genres en stijlen
+- Muziek: personen en groepen
+- Muziekschatten: onderwerpen
+- Nederlandse Thesaurus van Auteursnamen
+- RKDartists
+- STCN: drukkers
+- Thesaurus Nationaal Museum van Wereldculturen
+- Thesaurus Tweede Wereldoorlog Nederland
+- Wikidata: alle entiteiten
+- Wikidata: personen
+- Wikidata: plaatsen in Nederland en België
+- Wikidata: straten in Nederland.
+
+### [Nuovo Soggettario](https://thes.bncf.firenze.sbn.it/){target=_blank} (`it`)
 
 - Agenti: Organismi
 - Agenti: Organizzazioni
@@ -155,11 +191,11 @@ This module includes the following vocabularies:
 
 ### [OCLC Metadata Services](https://www.oclc.org/en/services/a-z.html/:F2664:/){target=_blank}
 
-- Faceted Application of Subject Terminologies (FAST)
-- The Virtual International Authority File (VIAF).
+- The Virtual International Authority File (VIAF)
+- Faceted Application of Subject Terminologies (FAST).
 
-### [PACTOLS of Frantiq](https://pactols.frantiq.fr/){target=_blank}
-
+### [PACTOLS of Frantiq](https://pactols.frantiq.fr/){target=_blank} (`fr`)
+ 
 - The entire PACTOLS thesaurus
 - The subject group only.
 
@@ -236,7 +272,7 @@ This module includes the following vocabularies:
 
 - Standardized rights statements for cultural heritage institutions that can be used to communicate the copyright and re-use status of digital objects to the public.
 
-### [Tesauros del patrimonio cultural de España](http://tesauros.mecd.es/tesauros){target=_blank}
+### [Tesauros del patrimonio cultural de España](http://tesauros.mecd.es/tesauros){target=_blank} (`es`)
 
 - Diccionario de Bienes Culturales
 - Diccionario de Materias
@@ -248,13 +284,13 @@ This module includes the following vocabularies:
 - Diccionario de Numismática
 - Diccionario de Mobiliario.
 
-### [UNESCO](http://skos.um.es/){target=_blank}
+### [UNESCO](http://skos.um.es/){target=_blank} (`es`)
 
 - Tesauro
 - Nomenclatura de Ciencia y Tecnología
 - Biblioteca Digital Floridablanca.
 
-### [Les vocabulaires du Ministère de la Culture](http://data.culture.fr/thesaurus/){target=_blank}
+### [Les vocabulaires du Ministère de la Culture](http://data.culture.fr/thesaurus/){target=_blank} (`fr`)
 
 - Catégories techniques et domaines - Inventaire/MH
 - Domaines archivistiques pour l'indexation des circulaires
