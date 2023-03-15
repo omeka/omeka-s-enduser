@@ -1,19 +1,25 @@
 # Value Suggest
 
-The [Value Suggest module](https://omeka.org/s/modules/ValueSuggest){target=_blank} adds an auto-complete feature to specific properties in a resource template, and draws on controlled vocabularies (see the end of this page for a complete list) to help users fill them out. Value Suggest appears when a user is editing the metadata of a resource (an item, a piece of media, or an item set) that uses the enabled resource template.
+The [Value Suggest module](https://omeka.org/s/modules/ValueSuggest){target=_blank} adds an auto-complete feature to specific properties in a resource template, and draws on controlled vocabularies (see the end of this page for a complete list) to help users fill them out. 
 
-This functionality helps those building an Omeka site encourage consistent metadata input and data compatibility with other databases of records. Note that Value Suggest offers, but cannot require, that users select values from the autosuggest feature. Users will always have the option of creating their own value instead.
+Value Suggest appears when a user is editing the metadata of a resource (an item, a piece of media, or an item set) that uses the enabled resource template. It functions as a [data type](../content/resource-template.md#data-types), but works like a modification to a text field: a user can start typing and select a suggestion from the dropdown, or ignore the dropdown and enter in a textual entry manually.
+
+This module also allows any field to be set to [suggest values already stored in that property across the entire Omeka installation](#internal-suggestions). These suggested values can be narrowed by only the same property on resources with the same class, or only the same property on resources using the same resource template, to limit the number of suggestions and make them more relevant. 
+
+This functionality helps those building an Omeka site encourage consistent metadata input and data compatibility with other databases of records. Note that Value Suggest offers, but cannot require, that users select values from the autosuggest feature. Users will always have the option of creating their own text value instead.
+
+Value Suggest data types can be included in combination with other data types such as URIs in order to encourage interoperable metadata practices to outside databases such as Wikidata.
 
 ## Add suggestions to a resource template
 
 Value Suggest vocabularies are applied through resource templates. For additional information on resource templates, see the [resource template documentation](../content/resource-template.md).
 
 1. From the Resources templates page in the admin dashboard, either add a new [template](../content/resource-template.md) or edit an existing one.
-2. Add the property to which you want to apply the Value Suggest. 
-3. Once the property is added to the template, click the pencil/edit icon for that property.
-4. At the bottom of the drawer which opens on the right, open the "Data type" dropdown. Below the standard options, you will see the Value Suggest options. Select the vocabulary you want to use from the dropdown. Note that you can add alternate labels and comments for the property in this drawer.
-6. Click the "Set changes" button at the bottom of the drawer to assign the values to the property. 
-7. Save changes to the resource template. 
+1. Add the property to which you want to apply the Value Suggest. 
+1. Once the property is added to the template, click the pencil/edit icon for that property.
+1. At the bottom of the drawer which opens on the right, open the "Data type" dropdown. Below the standard options, you will see the Value Suggest options. Select the vocabulary you want to use from the dropdown. Note that you can add alternate labels and comments for the property in this drawer.
+1. Click the "Set changes" button at the bottom of the drawer to assign the values to the property. 
+1. Save changes to the resource template. 
 
 ![Editing the property subject, and the dropdown is open to show the Value Suggest vocabularies from the Library of Congress](../modules/modulesfiles/ValSug-ResTemplate1.png)
 
@@ -23,7 +29,7 @@ When you click the title of a resource template to see its details, the Value Su
 
 ## Adding Value Suggest to resources
 
-When a Value Suggest resource template is used in an item, media, or item set, the designated properties will auto-suggest values from the vocabulary specified in the template. 
+When a Value Suggest resource template is used for an item, media, or item set, the designated properties will auto-suggest values from the vocabulary specified in the template. 
 
 Users must start typing in the open text box of that specific property to prompt the auto-suggest feature. There may be a slight delay, but a drop-down menu will appear with choices drawn directly from the authority or vocabulary list you have associated with that property.
 
@@ -37,6 +43,16 @@ After selecting a value, a box containing a URL should appear under the value. T
 
 ![Item property Work Type with "Fashion Illustrations (layout features)" selected. Below, in red is a hyperlink to Getty Collections, with a small red "X".](../modules/modulesfiles/ValSug-ItemProperty3.png)
 
+## Internal suggestions
+
+This module offers the ability to suggest values currently stored in your Omeka installation:
+
+- Omeka: Property (values of the same property, for example `dcterms:creator`)
+- Omeka: Property / Resource template (values of the same property that are being used by items that share the same resource template, for example "Base resource")
+- Omeka: Property / Resource class (values of the same property that are being used by items that share the same class, for example `dctype:StillImage`).
+
+![A screenshot of the Publisher field being used to suggest several options from other items that start with "Glasg".](modulesfiles/ValSug-OmekaProperty.png)
+
 ## Available vocabularies
 
 This module includes the following vocabularies:
@@ -48,6 +64,7 @@ This module includes the following vocabularies:
 - Homosaurus
 - IdRef
 - Library of Congress Linked Data Service
+- NDE Termennetwerk: Dutch Digital Heritage Network of Terms
 - Nuovo Soggettario
 - OCLC Metadata Services
 - PACTOLS of Frantiq
@@ -58,6 +75,9 @@ This module includes the following vocabularies:
 - UNESCO
 - Les vocabulaires du Ministère de la Culture.
 
+!!! note
+	Some vocabularies appear in multiple languages in the list below: for example, Homosaurus (in English) is listed separately from the Dutch translation of Homosaurus found in the NDE list. Search the list and refer to the services to see which languages they support. We have indicated languages here for services that serve primarily one (non-English) language.
+
 ### [Dublin Core (DCMI Metadata Terms)](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/){target=_blank}
 
 - Classes
@@ -65,13 +85,14 @@ This module includes the following vocabularies:
 - Terms
 - Types.
 
-### [Gemeinsame Normdatei (GND)](http://lobid.org/gnd){target=_blank}
+### [Gemeinsame Normdatei (GND)](http://lobid.org/gnd){target=_blank} (`de`)
 
-- The GND contains standardized entries for persons, corporations, congresses, geographical areas, key words and work titles.
+- The GND contains standardized entries for persons, corporations, congresses, geographical areas, keywords and work titles.
 
 ### [GeoNames](http://www.geonames.org/){target=_blank}
 
-- The GeoNames geographical database.
+- The GeoNames geographical database
+- GeoNames features.
 
 ### [The Getty Vocabularies](http://vocab.getty.edu/){target=_blank}
 
@@ -83,11 +104,11 @@ This module includes the following vocabularies:
 
 - Homosaurus.org linked data vocabulary.
 
-### [IdRef](https://www.idref.fr/){target=_blank}
+### [IdRef](https://www.idref.fr/){target=_blank} (`fr`)
 
 - The French national database of identifiers for research (all repositories)
 - Person names
-- Corporations
+- Collectivities (Corporations)
 - Conferences
 - Subject headings (all)
 - Subject headings [RAMEAU](https://rameau.bnf.fr){target=_blank} (Répertoire d’autorité-matière encyclopédique et alphabétique unifié, or Unified encyclopaedic and alphabetical list of subject authorities)
@@ -95,33 +116,64 @@ This module includes the following vocabularies:
 - Geographic names
 - Family names
 - Titles
-- Author-Titles
+- Authors-Titles
 - Trademarks
 - PPN (unique identifier used for any item in all the database)
 - Libraries (RCR: Répertoire des centres de ressources).
 
 ### [Library of Congress Linked Data Service](http://id.loc.gov/){target=_blank}
 
-- AFS Ethnographic Thesaurus
 - All
-- Children's Subject Heading
+- Subject Headings
+- Name Authority File (LCNAF)
 - Classification
-- Cultural Heritage Organizations
+- Children's Subject Headings
+- Genre/Form Terms (LCGFT)
+- Medium of Performance Thesaurus for Music
 - Demographic Group Terms
-- Genre/Form Terms
+- Thesaurus for Graphic Materials
+- AFS Ethnographic Thesaurus
+- Cultural Heritage Organizations
 - ISO639-1 Languages
 - ISO639-2 Languages
 - ISO639-5 Languages
 - MARC Countries
 - MARC Geographic Areas
 - MARC Languages
-- MARC Relators
-- Medium of Performance Thesaurus for Music
-- Name Authority File
-- Subject Headings
-- Thesaurus for Graphic Materials.
+- MARC Relators.
 
-### [Nuovo Soggettario](https://thes.bncf.firenze.sbn.it/){target=_blank}
+### [Dutch Digital Heritage Network of Terms: NDE Termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/){target=_blank} (`nl`)
+
+- Art & Architecture Thesaurus - materialen
+- Art & Architecture Thesaurus - processen en technieken
+- Art & Architecture Thesaurus - stijlen en periodes
+- Archeologisch Basisregister
+- Adamlink: straten in Amsterdam
+- Brinkman trefwoordenthesaurus
+- Cultuurhistorische Thesaurus
+- Cultuurhistorische Thesaurus - Materialen
+- Cultuurhistorische Thesaurus - Stijlen en periodes
+- EuroVoc - thesaurus van de Europese Unie
+- GeoNames: geografische namen in Nederland, België en Duitsland
+- GTAA: genres
+- GTAA: onderwerpen
+- Homosaurus
+- Iconclass
+- Indisch Erfgoed Thesaurus
+- Muziek: genres en stijlen
+- Muziek: personen en groepen
+- Muziekschatten: onderwerpen
+- Nederlandse Thesaurus van Auteursnamen
+- RKDartists
+- STCN: drukkers
+- Thesaurus Nationaal Museum van Wereldculturen
+- Thesaurus Tweede Wereldoorlog Nederland
+- Wikidata: alle entiteiten
+- Wikidata: personen
+- Wikidata: plaatsen in Nederland en België
+- Wikidata: straten in Nederland.
+
+### [Nuovo Soggettario](https://thes.bncf.firenze.sbn.it/){target=_blank} (`it`)
 
 - Agenti: Organismi
 - Agenti: Organizzazioni
@@ -139,11 +191,11 @@ This module includes the following vocabularies:
 
 ### [OCLC Metadata Services](https://www.oclc.org/en/services/a-z.html/:F2664:/){target=_blank}
 
-- Faceted Application of Subject Terminologies (FAST)
-- The Virtual International Authority File (VIAF).
+- The Virtual International Authority File (VIAF)
+- Faceted Application of Subject Terminologies (FAST).
 
-### [PACTOLS of Frantiq](https://pactols.frantiq.fr/){target=_blank}
-
+### [PACTOLS of Frantiq](https://pactols.frantiq.fr/){target=_blank} (`fr`)
+ 
 - The entire PACTOLS thesaurus
 - The subject group only.
 
@@ -218,9 +270,9 @@ This module includes the following vocabularies:
 
 ### [RightsStatements.org](https://rightsstatements.org/){target=_blank}
 
-- Provides a set of standardized rights statements for cultural heritage institutions that can be used to communicate the copyright and re-use status of digital objects to the public.
+- Standardized rights statements for cultural heritage institutions that can be used to communicate the copyright and re-use status of digital objects to the public.
 
-### [Tesauros del patrimonio cultural de España](http://tesauros.mecd.es/tesauros){target=_blank}
+### [Tesauros del patrimonio cultural de España](http://tesauros.mecd.es/tesauros){target=_blank} (`es`)
 
 - Diccionario de Bienes Culturales
 - Diccionario de Materias
@@ -232,13 +284,13 @@ This module includes the following vocabularies:
 - Diccionario de Numismática
 - Diccionario de Mobiliario.
 
-### [UNESCO](http://skos.um.es/){target=_blank}
+### [UNESCO](http://skos.um.es/){target=_blank} (`es`)
 
 - Tesauro
 - Nomenclatura de Ciencia y Tecnología
 - Biblioteca Digital Floridablanca.
 
-### [Les vocabulaires du Ministère de la Culture](http://data.culture.fr/thesaurus/){target=_blank}
+### [Les vocabulaires du Ministère de la Culture](http://data.culture.fr/thesaurus/){target=_blank} (`fr`)
 
 - Catégories techniques et domaines - Inventaire/MH
 - Domaines archivistiques pour l'indexation des circulaires
