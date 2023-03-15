@@ -74,6 +74,7 @@ nav:
         - modules/sharing.md
         - modules/uridereferencer.md
         - modules/valuesuggest.md
+        - modules/viewprivateresources.md
         - modules/zoterocitation.md
         - modules/zoteroimport.md
     - Miscellaneous:
