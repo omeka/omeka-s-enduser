@@ -84,7 +84,9 @@ You can filter linked resources to only display those referencing a specific pro
 
 ![Item linked resources view for William Shakespeare, with six plays using Shakespeare as Creator, the item Folger Shakespeare Library listed as 'references' Shakespeare, and the Globe Theatre using Shakespeare for 'list of authors'. Each property cluster is in a separate rectangle, headed by the property being referenced.](contentfiles/items_linked.png)
 
-When an item is viewed on the public site, linked resources are displayed in a series of tables based on the metadata property in use. Resources are sorted by resource type (item, item set, or media) and only one type is displayed at a time. An item without any linked resources will not display these tables; items displaying on sites that are set to exclude [resources that are not included in the site](../sites/site_settings.md#show) will also not display these entries. 
+When a resource is viewed on a public site, linked resources are displayed in a series of tables based on the metadata property in use. Resources are sorted by resource type (item, item set, or media) and only one type is displayed at a time. A resource without any linked resources will not display these tables. The tables can be included, excluded, or rearranged using [site theme settings, under "Configure resource pages"](../sites/site_theme.md#configure-resource-pages).
+
+A resource with links to other resources that are not included in the given public site will display those non-included resources anyways. Those linked resources will appear to be part of the site (that is, you can click on them to see item and item set pages). [This setting can be turned off for each site](../sites/site_settings.md#show). When non-site resources are excluded, the item's metadata values and the linked resource tables will not display excluded Omeka resources.
 
 Note that media pages do not display linked resource tables, whether items link to them or not.
 
