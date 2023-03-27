@@ -31,8 +31,8 @@ Ensure that the correct boxes are checked for your site. You can uncheck all of 
 
 The module will send Open Graph meta tags regardless of your site settings. This may include: 
 
-- `og:description`, reflecting the `dcterms:description` content of any resource if applicable, or the [field used for the resource title](../content/resource-template.md#other-options)
-- `og:title`, reflecting `dcterms:title` or the field used for the resource description
+- `og:description`, reflecting the `dcterms:description` content of any resource if applicable, or the [field used for the resource description](../content/resource-template.md#other-options)
+- `og:title`, reflecting `dcterms:title` or the field used for the resource title
 - `og:image`, either the primary media or the default thumbnail based on the media type
 - `og:type`, always `content="website"` at this time
 - `og:url`, the current page's URL.
