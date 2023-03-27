@@ -1,6 +1,6 @@
 # Sharing
 
-The [Sharing module](https://omeka.org/s/modules/Sharing){target=_blank} allows you to add buttons to site pages which visitors can use to share and embed content from your site on social media or via email.
+The [Sharing module](https://omeka.org/s/modules/Sharing){target=_blank} allows you to add buttons to site pages which visitors can use to share and embed content from your site on social media or via email. Sharing also includes [Open Graph meta elements](https://ogp.me/){target=_blank} in the `<head>` of each item page on your site, so that items will display when shared on social media. 
 
 Currently, Sharing supports the following options:
 
@@ -11,7 +11,7 @@ Currently, Sharing supports the following options:
 - Email
 - Embed codes.
 
-Once Sharing has been installed and activated for an Omeka S install, it is available for all sites on the install. 
+Once Sharing has been installed and activated for an Omeka S install, it is available for all sites on the installation.
 
 ## Configuration
 
@@ -26,6 +26,18 @@ Sharing settings are configured on a site-by-site basis. Go to a site and click 
 ![Checkboxes for the sharing options listed above, in two rows](../modules/modulesfiles/sharing_options.png)
 
 Ensure that the correct boxes are checked for your site. You can uncheck all of the boxes to turn off sharing for your site. Be sure to save your changes. 
+
+### Open Graph
+
+The module will send Open Graph meta tags regardless of your site settings. This may include: 
+
+- `og:description`, reflecting the `dcterms:description` content of any resource if applicable, or the [field used for the resource title](../content/resource-template.md#other-options)
+- `og:title`, reflecting `dcterms:title` or the field used for the resource description
+- `og:image`, either the primary media or the default thumbnail based on the media type
+- `og:type`, always `content="website"` at this time
+- `og:url`, the current page's URL.
+
+These fields are not sent on item set or media pages. Multimedia (audio and video) will not be sent, only a thumbnail image. 
 
 ## Public side
 
