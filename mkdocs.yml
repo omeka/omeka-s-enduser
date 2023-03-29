@@ -65,6 +65,7 @@ nav:
         - modules/ositemimporter.md
         - modules/persistentidentifiers.md
         - modules/redactvalues.md
+        - modules/resourcemeta.md
         - Scripto:
             - modules/scripto/index.md
             - modules/scripto/scriptoproject.md
