@@ -10,7 +10,7 @@ To minimize data loss, the local installation must be prepared carefully to acce
 - [Install and configure modules](../modules/index.md) that control the data types used as values in the remote installation's items, such as: 
      - [Custom Vocab](../modules/customvocab.md): In addition to installing this module, the administrator will have to create custom vocab value lists that match those used in the remote installation.
      - [Numeric Data Types](../modules/numericdatatypes.md)
-     - [Value Suggest](../modules/valuesuggest.md)
+     - [Value Suggest](../modules/valuesuggest/index.md)
 - [Import any Resource Templates](../content/resource-template.md#import-a-resource-template) used by the remote installation.
 
 Once all of that infrastructure is in place, the local installation is ready to begin importing items.

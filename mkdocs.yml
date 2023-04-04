@@ -74,7 +74,9 @@ nav:
             - modules/scripto/troubleshootingScripto.md
         - modules/sharing.md
         - modules/uridereferencer.md
-        - modules/valuesuggest.md
+        - Value Suggest:
+            - modules/valuesuggest/index.md
+            - modules/valuesuggest/ndetermennetwerk.md
         - modules/viewprivateresources.md
         - modules/zoterocitation.md
         - modules/zoteroimport.md
