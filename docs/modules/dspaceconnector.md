@@ -72,7 +72,7 @@ The "Past DSpace Imports" page displays a table of past DSpace imports, with a c
 
 ## Update imported resources
 
-To  update resources created using the DSpace Connector, simply check "Re-run" the click "Submit" on the "Past DSpace Imports" page. The resources will be updated, not re-imported. This allows you to use the Connector to sync data between DSpace and Omeka S installations.
+To  update resources created using the DSpace Connector, simply check "Re-run" then click "Submit" on the "Past DSpace Imports" page. The resources will be updated, not re-imported. This allows you to use the Connector to sync data between DSpace and Omeka S installations.
 
 ## Undo an import
 
