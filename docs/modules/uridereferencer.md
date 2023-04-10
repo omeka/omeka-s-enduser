@@ -16,6 +16,14 @@ These toggle buttons will load with the class `uri-dereferencer-toggle` and can 
 
 The number of dereferenced metadata values, and which ones, are determined by the service and its own data type, and cannot be set in Omeka. You should test the services and data types before deciding if you wish to use these URIs and allow users to see the dereferenced metadata. This module does not allow you to include or exclude specific properties from being dereferenced.
 
+If the service provides information in multiple languages, you can specify which language's fields should be displayed by providing a two-letter language tag in the language field (the globe icon) when editing the property value. 
+
+![URI entries on the Item edit page, with language codes specified.](modulesfiles/uri-language-item-editing.png)
+
+When the item is accessed on a public page, the URIs can be expanded to display information in the specified language. If the desired language is not available, URIs will fall back to English. Check with the specific service to see which languages are offered.
+
+![The same URI entries displayed on the Item view page, expanded to show the information from multiple languages.](modulesfiles/uri-language-item-view.png)
+
 If you have [custom data type values](../modules/customvocab.md) and wish them to be dereferenceable, you must add the class `uri-value-link` to the anchor tag containing the URI.
 
 ## Linked data services
