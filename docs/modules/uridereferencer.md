@@ -20,7 +20,7 @@ If the service provides information in multiple languages, you can specify which
 
 ![URI entries on the Item edit page, with language codes specified.](modulesfiles/uri-language-item-editing.png)
 
-When the item is accessed on a public page, the URIs can be expanded to display information in the specified language. If the desired language is not available, URIs will fall back to English. Check with the specific service to see which languages are offered.
+When the item is accessed on a public page, the URIs can be expanded to display information in the specified language. If the desired language is not available, URIs will fall back to English. Check with the specific service to see which languages are offered. Currently there are only four services that offer translations: [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page){target=_blank}, [DBpedia](https://wiki.dbpedia.org/){target=_blank}, [RDA Value Vocabularies](http://www.rdaregistry.info/termList/){target=_blank}, and [Getty Vocabularies](https://www.getty.edu/research/tools/vocabularies/){target=_blank} (excluding ULAN).
 
 ![The same URI entries displayed on the Item view page, expanded to show the information from multiple languages.](modulesfiles/uri-language-item-view.png)
 
