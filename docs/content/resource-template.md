@@ -106,7 +106,7 @@ Every field in every resource template offers all three of these data types by d
 - Resource: users of the template can select from existing items, media, or item sets in the installation, or select any resource.
 - Additional options may be added by modules: 
 	- [Numeric Data Types](../modules/numericdatatypes.md) can restrict values to one of four numeric data types, providing a structured data entry. 
-	- [Custom Vocab](../modules/customvocab.md) and [Value Suggest](../modules/valuesuggest/index.md) modify the textual entry field to provide suggested values from controlled vocabularies, but the user can ignore these suggestions and enter in any text. 
+	- [Custom Vocab](../modules/customvocab.md) and [Value Suggest](../modules/valuesuggest.md) modify the textual entry field to provide suggested values from controlled vocabularies, but the user can ignore these suggestions and enter in any text. 
 
 ![An item editing page, showing a dcterms:date property restricting the input to Timestamp and Interval data types.](contentfiles/templates_datatype-date.png)
 
@@ -144,7 +144,7 @@ Exporting a resource template will download it to your computer's default downlo
 ### Import a resource template
 
 !!! note
-	If you want to import a resource template that uses a [Custom Vocab](../modules/customvocab.md), you will need to manually reproduce the Custom Vocab on the second Omeka S installation *before* importing the resource template. You should also install and enable [Value Suggest](../modules/valuesuggest/index.md) before importing a template that uses it for data types.
+	If you want to import a resource template that uses a [Custom Vocab](../modules/customvocab.md), you will need to manually reproduce the Custom Vocab on the second Omeka S installation *before* importing the resource template. You should also install and enable [Value Suggest](../modules/valuesuggest.md) before importing a template that uses it for data types.
 
 To import a resource template (a JSON file exported from a different S installation) into your Omeka S installation:  
 
@@ -157,6 +157,6 @@ To import a resource template (a JSON file exported from a different S installat
 	- This will open your browser's file selection window. Choose the JSON file for the resource template you want to import.
 - Click the "Review import" button.
 	- On the Review page, you will be able to check that properties and property options are correct.
-	- Imported templates which used [Value Suggest](../modules/valuesuggest/index.md) or [Custom Vocab](../modules/customvocab.md) will indicate in the Data type column what the original source was, and a dropdown to allow you to select a new Data type. If you do not have the necessary modules, the dropdown will only show the default options.
+	- Imported templates which used [Value Suggest](../modules/valuesuggest.md) or [Custom Vocab](../modules/customvocab.md) will indicate in the Data type column what the original source was, and a dropdown to allow you to select a new Data type. If you do not have the necessary modules, the dropdown will only show the default options.
 
 ![On the review imported template page, all the elements for the reviewed import are highlighted green.](contentfiles/templates_import2.png)

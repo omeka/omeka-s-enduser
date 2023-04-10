@@ -9,7 +9,7 @@ For example, you can find ontologies for describing [audio signals](https://lov.
 The most-used [Linked Open Vocabulary](https://lov.linkeddata.es/dataset/lov/about){target=_blank} is Dublin Core Terms (`dcterms:`). 
 
 !!! note
-	Vocabularies in Omeka S are not the same thing as controlled vocabularies or authority files, which consist of terms and concepts, rather than Classes and Properties. In Omeka S, controlled vocabularies can be managed using the [Value Suggest](../modules/valuesuggest/index.md) and [Custom Vocab](../modules/customvocab.md) modules.  
+	Vocabularies in Omeka S are not the same thing as controlled vocabularies or authority files, which consist of terms and concepts, rather than Classes and Properties. In Omeka S, controlled vocabularies can be managed using the [Value Suggest](../modules/valuesuggest.md) and [Custom Vocab](../modules/customvocab.md) modules.  
 
 Global Administrators can manage their installation’s vocabularies from the **Vocabularies** tab on the left hand navigation of the Admin Dashboard. Supervisors can add, edit, and delete their own vocabularies. 
 
