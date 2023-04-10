@@ -60,6 +60,7 @@ nav:
         - modules/itemcarouselblock.md
         - modules/mapping.md
         - modules/metadatabrowse.md
+        - modules/ndetermennetwerk.md
         - modules/numericdatatypes.md
         - modules/omekaCimporter.md
         - modules/ositemimporter.md
