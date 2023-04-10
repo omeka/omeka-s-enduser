@@ -35,6 +35,12 @@ When the data is complete, press "Submit". You can track the status of the impor
 !!! note
 	Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration.md#php-path) so that your system can perform the background process to make the items.
 
+## Review imports
+
+The "Past Fedora Imports" page displays a table of past Fedora imports, with a checkbox option to **Undo**, a checkbox option to **Re-run**, the **Container** of the import (ID with hyperlink to the container), any **Comments** made during import, the number of **Items** imported with a link to the advanced search results, the **Date** of the import, the import **Status**, and the **Owner**, or user who initiated the import.
+
+![Table of past imports showing one completed import, one import that resulted in an error, and one undone import](../modules/modulesfiles/fedora_past.png)
+
 ## Undo an import
 To undo a completed import and remove all associated items, go to the Fedora Connector section under Modules, then click on the Past Imports page.
 
