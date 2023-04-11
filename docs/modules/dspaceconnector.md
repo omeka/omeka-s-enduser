@@ -17,13 +17,14 @@ If you receive an error when loading the page in your browser, the API is not av
 
 Navigate to the section labelled "DSpace Connector" under Modules.
 
-![Screenshot of the field options for DSpace Connector with collections loaded from a university library](../modules/modulesfiles/dspace_import.png)
+![Screenshot of the field options for DSpace Connector](../modules/modulesfiles/dspace_import.png)
 
 On the first form, enter the following information:
 
 * **DSpace site URL** for the repository - the entire URL, including the `http://`
 * **Endpoint** for the API (by default this is "rest" but may be changed in the DSpace instance)
 * **Limit** or maximum number of results to retrieve at once.
+* **Test Import** ONLY if you want to import the # of results indicated in Limit field above from chosen collection on next screen. Useful for testing and fine-tuning.
 
 DSpace versions lower than 7 will likely use "rest" as their endpoint. DSpace versions 7 and above will likely use "server/api" as their endpoint. You will have to enter this manually.
 
@@ -54,6 +55,7 @@ To import the entire repository, click "Import entire repository" at the top of 
 Importing an entire DSpace repository with a large number of items (more than 5,000) is likely to flood the DSpace hosting server with requests until failure. Consider importing collection by collection. If you still wish to import an entire large repository at once, the following might help:
 
 * On the initial "Import Settings" menu, set **Limit** to a smaller number, such as 50 or 25.
+* Test your import by checking the **Test Import** box on the initial "Import Settings" menu.
 * Run the import at night and/or whenever there may be less traffic on the DSpace server.
 * Consider temporarily inserting [a `sleep()` function](https://www.w3schools.com/php/func_misc_sleep.asp){target=_blank} between the import of each record in `Import.php` to slow the process down slightly (not recommended for production).
 
@@ -64,13 +66,13 @@ You can track the status of imports by navigating to the DSpace Connector "Past 
 
 ## Review imports
 
-The "Past DSpace Imports" page displays a table of past DSpace imports, with a checkbox option to **Undo**, the **Job ID** for the import, the repository’s **Dspace Collection Link** (not showing the full URL), any **Comments** made during import, the number of **Items** imported, the **Date** of the import, the import **Status**, and the **Owner**, or user who initiated the import.
+The "Past DSpace Imports" page displays a table of past DSpace imports, with a checkbox option to **Undo**, a checkbox option to **Re-run**, the **Job ID** for the import, the repository’s **Dspace Collection Link** (displayed as collection name if found), any **Comments** made during import, the number of **Items** imported with a link to the advanced search results, the **Date** of the import, the import **Status**, and the **Owner**, or user who initiated the import.
 
-![Table of past imports showing two completed imports from Oct 14, 2015, each adding 1 item, with different collections being imported](../modules/modulesfiles/dspace_past.png)
+![Table of past imports showing two completed imports and one import resulting in an error with different collections being imported](../modules/modulesfiles/dspace_past.png)
 
 ## Update imported resources
 
-To manually update resources created using the DSpace Connector, simply re-run an import from the same source. The resources will be updated, not re-imported. This allows you to use the Connector to sync data between DSpace and Omeka S installations.
+To  update resources created using the DSpace Connector, simply check "Re-run" then click "Submit" on the "Past DSpace Imports" page. The resources will be updated, not re-imported. This allows you to use the Connector to sync data between DSpace and Omeka S installations.
 
 ## Undo an import
 
