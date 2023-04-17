@@ -25,11 +25,20 @@ You can set the controlled vocabulary terms to a list of entered terms, to a lis
 - **Items**: a drop-down of Item Sets in your Omeka S installation. Choosing one of these will create a custom vocab populated by items from that item set. When used, the property is populated as an Omeka Resource, not text.
 - **URIs**: a list of URIs with or without labels, one URI per line. To include a label, add a space and the label after the URI (for example, "https://youromekainstall.org/item/1119 Canada"). When used, the property will populate as a link to the external resource.
 
+!!! note
+	Note that manually entered terms or URIs do not need to be unique when entered; the module will only retain unique entries when saved. If you are entering identical URIs with different labels, only the final entry will be retained and earlier labels will be ignored.
+
 Hit "Submit" to save changes.
 
 ## Manage custom vocabs
 
-Once you have created at least one vocabulary, the Custom Vocab module tab will display a table of your existing vocabularies. The table displays the **Label**, the buttons for edit, delete, and display information, and the **Owner** or creator of the vocabulary.
+Once you have created at least one vocabulary, the Custom Vocab module tab will display a table of your existing vocabularies. The table displays the Label, the buttons for edit, delete, and display information (ellipsis), and the Owner or creator of the vocabulary. 
+
+You also have the options to export your vocaularies, or to update an existing vocabulary using a file. Note that Items-type vocabularies cannot be exported or imported, as these vocabularies work as Omeka resources and could not replicated on another site.
+
+Clicking the ellipsis will show you the language of a vocabulary as well as a full listing of its terms. 
+
+There is also a button to "Import" a vocabulary using a file, in the top right. Note that Importing will add a new listing to the table. If you are attmepting to update an existing vocabulary in your installation, do not use the "Import" button. Update the vocabulary from its entry in the table.
 
 ![Custom Vocab tab with two existing vocabularies](../modules/modulesfiles/customVocab_manage.png)
 
