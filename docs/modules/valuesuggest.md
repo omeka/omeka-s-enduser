@@ -64,19 +64,23 @@ This module includes the following vocabularies:
 - Homosaurus
 - IdRef
 - Library of Congress Linked Data Service
-- NDE Termennetwerk: Dutch Digital Heritage Network of Terms
+- Nomenclature
 - Nuovo Soggettario
 - OCLC Metadata Services
+- ORCID
 - PACTOLS of Frantiq
 - PeriodO
 - RDA Value Vocabularies
 - RightsStatements.org
 - Tesauros del patrimonio cultural de España
 - UNESCO
-- Les vocabulaires du Ministère de la Culture.
+- Les vocabulaires du Ministère de la Culture
+- Thesaurus de la Universitat de Barcelona (THUB).
+
+Note that the [NDE Termennetwerk vocabularies are now available as a separate module](ndetermennetwerk.md). That modules requires Value Suggest to be installed and active.
 
 !!! note
-	Some vocabularies appear in multiple languages in the list below: for example, Homosaurus (in English) is listed separately from the Dutch translation of Homosaurus found in the NDE list. Search the list and refer to the services to see which languages they support. We have indicated languages here for services that serve primarily one (non-English) language.
+	Some vocabularies appear in multiple languages in the list below: for example, Homosaurus (in English) is listed separately from the Dutch translation of Homosaurus found in the [NDE Termennetwerk module](ndetermennetwerk.md). Search the list and refer to the services to see which languages they support. We have indicated languages here for services that serve primarily one (non-English) language.
 
 ### [Dublin Core (DCMI Metadata Terms)](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/){target=_blank}
 
@@ -94,11 +98,13 @@ This module includes the following vocabularies:
 - The GeoNames geographical database
 - GeoNames features.
 
-### [The Getty Vocabularies](http://vocab.getty.edu/){target=_blank}
+### [The Getty Vocabularies](https://www.getty.edu/research/tools/vocabularies/index.html){target=_blank}
 
 - The Art & Architecture Thesaurus (AAT)
 - The Getty Thesaurus of Geographic Names (TGN)
-- The Union List of Artist Names (ULAN).
+- The Union List of Artist Names (ULAN)
+- Cultural Objects Name Authority (CONA)
+- Getty Iconography Authority (IA).
 
 ### [Homosaurus](http://homosaurus.org/){target=_blank}
 
@@ -140,38 +146,22 @@ This module includes the following vocabularies:
 - MARC Countries
 - MARC Geographic Areas
 - MARC Languages
-- MARC Relators.
+- MARC Relators
+- LC Rare Materials Cataloging.
 
-### [Dutch Digital Heritage Network of Terms: NDE Termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/){target=_blank} (`nl`)
+### Nomenclature for Museum Cataloging](https://page.nomenclature.info/apropos-about.app?lang=en){target=_blank}
 
-- Art & Architecture Thesaurus - materialen
-- Art & Architecture Thesaurus - processen en technieken
-- Art & Architecture Thesaurus - stijlen en periodes
-- Archeologisch Basisregister
-- Adamlink: straten in Amsterdam
-- Brinkman trefwoordenthesaurus
-- Cultuurhistorische Thesaurus
-- Cultuurhistorische Thesaurus - Materialen
-- Cultuurhistorische Thesaurus - Stijlen en periodes
-- EuroVoc - thesaurus van de Europese Unie
-- GeoNames: geografische namen in Nederland, België en Duitsland
-- GTAA: genres
-- GTAA: onderwerpen
-- Homosaurus
-- Iconclass
-- Indisch Erfgoed Thesaurus
-- Muziek: genres en stijlen
-- Muziek: personen en groepen
-- Muziekschatten: onderwerpen
-- Nederlandse Thesaurus van Auteursnamen
-- RKDartists
-- STCN: drukkers
-- Thesaurus Nationaal Museum van Wereldculturen
-- Thesaurus Tweede Wereldoorlog Nederland
-- Wikidata: alle entiteiten
-- Wikidata: personen
-- Wikidata: plaatsen in Nederland en België
-- Wikidata: straten in Nederland.
+- All
+- Category 01: Built Environment Objects
+- Category 02: Furnishings
+- Category 03: Personal Objects
+- Category 04: Tools & Equipment for Materials
+- Category 05: Tools & Equipment for Science & Technology
+- Category 06: Tools & Equipment for Communication
+- Category 07: Distribution & Transportation Objects
+- Category 08: Communication Objects
+- Category 09: Recreational Objects
+- Category 10: Unclassifiable Objects.
 
 ### [Nuovo Soggettario](https://thes.bncf.firenze.sbn.it/){target=_blank} (`it`)
 
@@ -193,6 +183,10 @@ This module includes the following vocabularies:
 
 - The Virtual International Authority File (VIAF)
 - Faceted Application of Subject Terminologies (FAST).
+
+### [ORCID (Open Researcher and Contributor ID)](https://info.orcid.org/){target=_blank}
+
+- ORCID. Search by name or by entering in an ORCID number and selecting the name from the dropdown.
 
 ### [PACTOLS of Frantiq](https://pactols.frantiq.fr/){target=_blank} (`fr`)
  
@@ -331,3 +325,7 @@ This module includes the following vocabularies:
 - Vocabulaire des altérations
 - Vocabulaire des domaines d'action ou objets des entités productrices d'archives
 - Vocabulaire pour les techniques photographiques.
+
+### [Thesaurus de la Universitat de Barcelona (THUB)](https://vocabularis.crai.ub.edu/ca/thub){target=_blank} (`es`)
+ 
+- Thesaurus de la Universitat de Barcelona (THUB).
