@@ -77,10 +77,10 @@ This module includes the following vocabularies:
 - Les vocabulaires du Ministère de la Culture
 - Thesaurus de la Universitat de Barcelona (THUB).
 
-Note that the [NDE Termennetwerk vocabularies are now available as a separate module](ndetermennetwerk.md). That modules requires ValueSuggest to be installed and active.
+Note that the [NDE Termennetwerk vocabularies are now available as a separate module](ndetermennetwerk.md). That modules requires Value Suggest to be installed and active.
 
 !!! note
-	Some vocabularies appear in multiple languages in the list below: for example, Homosaurus (in English) is listed separately from the Dutch translation of Homosaurus found in the NDE module. Search the list and refer to the services to see which languages they support. We have indicated languages here for services that serve primarily one (non-English) language.
+	Some vocabularies appear in multiple languages in the list below: for example, Homosaurus (in English) is listed separately from the Dutch translation of Homosaurus found in the [NDE Termennetwerk module](ndetermennetwerk.md). Search the list and refer to the services to see which languages they support. We have indicated languages here for services that serve primarily one (non-English) language.
 
 ### [Dublin Core (DCMI Metadata Terms)](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/){target=_blank}
 
