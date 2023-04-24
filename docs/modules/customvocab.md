@@ -10,7 +10,7 @@ Custom Vocab is available to users who are at the [Editor role and above](../adm
 
 Once you have installed and activated the module, go to the Custom Vocab section in the left-hand navigation, under Modules.
 
-Click the "Add a New Vocab" button in the upper right-hand corner of the window.
+Click the "Add new vocab" button in the upper right-hand corner of the window.
 
 The Add Custom Vocab page has four fields: Label, Language, Vocab Type, and Terms/Items/URI input.
 
@@ -32,15 +32,15 @@ Hit "Submit" to save changes.
 
 ## Manage custom vocabs
 
-Once you have created at least one vocabulary, the Custom Vocab module tab will display a table of your existing vocabularies. The table displays the Label, the buttons for edit, delete, and display information (ellipsis), and the Owner or creator of the vocabulary. 
+Once you have created at least one vocabulary, the Custom Vocab tab will display a table of your existing vocabularies. The table displays the Label, the buttons for edit, delete, and display information (ellipsis), and the Owner or creator of the vocabulary. 
 
-You also have the options to export your vocaularies, or to update an existing vocabulary using a file. Note that Items-type vocabularies cannot be exported or imported, as these vocabularies work as Omeka resources and could not replicated on another site.
-
-Clicking the ellipsis will show you the language of a vocabulary as well as a full listing of its terms. 
-
-There is also a button to "Import" a vocabulary using a file, in the top right. Note that Importing will add a new listing to the table. If you are attmepting to update an existing vocabulary in your installation, do not use the "Import" button. Update the vocabulary from its entry in the table.
+There is also a button to "Import" a vocabulary using a file, in the top right. Note that importing will add a new listing to the table. If you are attmepting to update an existing vocabulary in your installation, do not use the "Import from file" button. Update the vocabulary from its entry in the table.
 
 ![Custom Vocab tab with two existing vocabularies](../modules/modulesfiles/customVocab_manage.png)
+
+Clicking the ellipsis will show you the language of a vocabulary as well as a full listing of its terms. There are two buttons that allow you to "Export" a vocabulary, which can then be shared with other Omeka installations, or to "Update" the existing vocabulary from a file. Note that Items-type vocabularies cannot be exported or imported, as these vocabularies work as Omeka resources and could not replicated on another site.
+
+![Custom Vocab tab with two existing vocabularies](../modules/modulesfiles/customVocab_updateExport.png)
 
 When editing a custom vocabulary, you can change the label, language, or terms.
 
