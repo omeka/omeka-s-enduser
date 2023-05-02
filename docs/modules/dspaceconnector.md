@@ -51,8 +51,7 @@ To import a single collection, click the "Import" button to the left of its name
 To import the entire repository, click "Import entire repository" at the top of the form.
 
 !!! note
-
-Importing an entire DSpace repository with a large number of items (more than 5,000) is likely to flood the DSpace hosting server with requests until failure. Consider importing collection by collection. If you still wish to import an entire large repository at once, the following might help:
+	Importing an entire DSpace repository with a large number of items (more than 5,000) is likely to flood the DSpace hosting server with requests until failure. Consider importing collection by collection. If you still wish to import an entire large repository at once, the following might help:
 
 * On the initial "Import Settings" menu, set **Limit** to a smaller number, such as 50 or 25.
 * Test your import by checking the **Test Import** box on the initial "Import Settings" menu.
