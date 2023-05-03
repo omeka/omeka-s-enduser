@@ -69,6 +69,8 @@ The "Past DSpace Imports" page displays a table of past DSpace imports, with a c
 
 ![Table of past imports showing two completed imports and one import resulting in an error with different collections being imported](../modules/modulesfiles/dspace_past.png)
 
+DSpace items will import with any metadata fields recognized at the source (such as `dc.title` or `dc.description.abstract`), and will use `bibo:uri` to load the URI as given at the source item as `dc.identifier.uri`. This will be a clickable link that displays on public item pages and allows users to see the item's source at its home DSpace repository. If the fields have one or more language tags, fields imported into Omeka will also use that language tag.
+
 ## Update imported resources
 
 To  update resources created using the DSpace Connector, simply check "Re-run" then click "Submit" on the "Past DSpace Imports" page. The resources will be updated, not re-imported. This allows you to use the Connector to sync data between DSpace and Omeka S installations.
