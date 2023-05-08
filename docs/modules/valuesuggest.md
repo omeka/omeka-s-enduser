@@ -31,7 +31,7 @@ When you click the title of a resource template to see its details, the Value Su
 
 When a Value Suggest resource template is used for an item, media, or item set, the designated properties will auto-suggest values from the vocabulary specified in the template. 
 
-Users must start typing in the open text box of that specific property to prompt the auto-suggest feature. There may be a slight delay, but a drop-down menu will appear with choices drawn directly from the authority or vocabulary list you have associated with that property.
+Users must start typing in the open text box of that specific property to prompt the auto-suggest feature. There may be a slight delay, but a drop-down menu will appear with choices drawn directly from the authority or vocabulary list you have associated with that property. In some cases, your text will search behind-the-scenes values: for example, ROR will display organization names with matching acronyms; ORCID will display researcher names that match an ORCID ID you have entered. 
 
 ![Item property Subject with "fashion" typed in the field. A dropdown menu auto-suggests terms, including "fashion design," which is selected.](../modules/modulesfiles/ValSug-ItemProperty1.png)
 
@@ -67,11 +67,12 @@ This module includes the following vocabularies:
 - Nomenclature
 - Nuovo Soggettario
 - OCLC Metadata Services
-- ORCID
+- ORCID (Open Researcher and Contributor ID)
 - PACTOLS of Frantiq
 - PeriodO
 - RDA Value Vocabularies
 - RightsStatements.org
+- Research Organization Registry (ROR)
 - Tesauros del patrimonio cultural de España
 - UNESCO
 - Les vocabulaires du Ministère de la Culture
@@ -265,6 +266,10 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 ### [RightsStatements.org](https://rightsstatements.org/){target=_blank}
 
 - Standardized rights statements for cultural heritage institutions that can be used to communicate the copyright and re-use status of digital objects to the public.
+
+### [Research Organization Registry (ROR)](https://ror.org/){target=_blank}
+
+- The Research Organization Registry (ROR) is a global, community-led registry of open persistent identifiers for research organizations.
 
 ### [Tesauros del patrimonio cultural de España](http://tesauros.mecd.es/tesauros){target=_blank} (`es`)
 
