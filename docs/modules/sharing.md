@@ -9,8 +9,7 @@ Currently, Sharing supports the following options:
 - Tumblr
 - Pinterest
 - Email
-- oEmbed codes
-- Open Graph embed codes.
+- Embed codes.
 
 Once Sharing has been installed and activated for an Omeka S install, it is available for all sites on the installation.
 
