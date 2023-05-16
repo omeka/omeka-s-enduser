@@ -159,7 +159,7 @@ These settings apply to the entire CSV you are importing. Note that some of thes
 
 ![options as described below](../modules/modulesfiles/csvimport_itemsbasic.png)
 
-- **Resource template**: Select a resource template from the drop-down menu to apply to the imported items. You can use the search field at the top of the dropdown to narrow results or find a particular template.
+- **Resource template**: Select a [resource template](../content/resource-template.md) from the drop-down menu to apply to the imported items. You can use the search field at the top of the dropdown to narrow results or find a particular template. Note that resource templates may have required fields, and items will not import without all the required fields of the selected template. For example, if your spreadsheet has entries without a `dcterms:title` value, and the resource template requires titles, those rows will not import and errors will appear in the log.
 - **Class**: Select a class from the drop-down menu to apply to the imported items. You can use the search field at the top of the dropdown to narrow results or find a particular class.
 - **Owner**: Set the owner for the Items by selecting a user from the drop-down menu. You can use the search field at the top of the dropdown to narrow results or find a particular user.
 - **Visibility**: Set the visibility of the imported items as public  or private.
