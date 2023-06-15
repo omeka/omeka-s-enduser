@@ -88,7 +88,7 @@ If the two modules are enabled, your CSV Import process will have a new "Mapping
 The "Mapping" dropdown menu includes three options for pinning the item geographically ("Latitude", "Longitude", and "Latitude/Longitude"). Make sure your "Latitude/Longitude values" are separated with a slash (`/`) character. 
 
 !!! note 
-	The latitude and longitude fields cannot take multiple values, that is, you cannot bulk-import two or more markers for each item using these fields. You also cannot import multiple latitudes and longitudes using the "Append" method in CSV Import to import multiple rows of data onto the same item. You can add multiple values using the "Latitude/Longitude" field. This will take input in the form of `lat/long;lat/long` where the semi-colon is the multivalue separator indicated in the CSV Import settings. 
+	The latitude and longitude fields cannot take multiple values, that is, you cannot bulk-import two or more markers for each item using these fields. You also cannot import multiple latitudes and longitudes using the "Append" method in CSV Import to import multiple rows of data onto the same item. You can add multiple values using the "Latitude/Longitude" field. This will take input in the form of `lat/long;lat/long`, where the semi-colon is the multivalue separator indicated in the CSV Import settings.
 
 The "Default Bounds (sw_lng,sw_lat,ne_lng,ne_lat)" option allows you to set four corner coordinates for the map that displays for that item, in the format `sw_lng,sw_lat,ne_lng,ne_lat` (bottom left longitude, bottom left latitude, top right longitude, top right latitude). Map widths and heights display dynamically depending on the page and the browser window, so your four coordinates will be centered within the map and excess space will display either vertically or horizontally as applicable. **Be careful to provide longitudes first and latitudes second in your bounds values.**
 
@@ -111,19 +111,29 @@ Items with information filled out in their mapping metadata fields (i.e. with ma
 
 "Search by map marker presence" provides users with the values of "Has map markers" or "Has no map markers".
 
+![The two Mapping settings added to each site settings page.](modulesfiles/Mapping_siteSettings.png)
+
 ## Adding maps to a site
 
-Mapping creates a "Map Browse" page that can be added to each site in its navigation settings. This map has minimal customization options and will show every item in the site that has one or more geolocations, as well as some advanced search fields (including search by address with radius). You can change the page label and the basemap for this page. 
+### Map Browse page
+
+![The Map Browse page on the Thanks Roy theme, with a watercolour basemap selected.](modulesfiles/Mapping_mapBrowsePage.png)
+
+Mapping creates a "Map Browse" page that can be added to each site in its navigation settings. This map has minimal customization options and will show every item in the site that has one or more geolocations, as well as some advanced search fields (including search by address with radius). These fields are not affected by [site settings](#searching-for-map-data). The title of the page will be "Map".
+
+Go to a Site, then go to Navigation. You will see under "Add a custom link" the option to add a "Map Browse." When this is added to your navigation, you will be able to change the label that appears in the navigation (default is "Map Browse"), and the basemap, by clicking on the pencil icon to edit the Map Browse page settings. Note that changing the basemap will change the URL that is added to the navigation - for example, `yoursite/map-browse?mapping_basemap_provider=Stamen.Watercolor`. 
+
+### Mapping page blocks
 
 Mapping creates two page blocks you can add to your site pages: "Map by attachments", where you manually add resources to the map block; and "Map by query", which allows you to use a search string to add resources to the map block.
 
-To add a map to a new or existing page, click to edit the page. On the right, under "Add new block", click either the "Map by attachments" or "Map by query" option (1). Selecting one will open the map block to the page (2). The blocks include customizable features for the map in collapsable panes. Click the triangle to expand or collapse these fields (3).
+To add a map to a npage, click to edit the page. On the right, under "Add new block", click either the "Map by attachments" or "Map by query" option (1). Selecting one will open the map block to the page (2). The blocks include customizable features for the map in collapsable panes. Click the triangle to expand or collapse these fields (3).
 
 ![Screenshot of the Page with Map Block selected. Block includes menu options Default View, WMS Overlays and attachments.](../modules/modulesfiles/Mapping_Page_MapBlock1.png)
 
-The "Map by attachments" and "Map by query" blocks have largely the same settings, with the exception of the final option.
+The "Map by attachments" and "Map by query" blocks have largely the same settings, with the exception of the methods for adding items to the map.
 
-### Default view
+#### Default view
 This section lets you set the appearance and zoom level of the map. There are three fields and a preview map. Within the preview map are buttons which you can use to set the default zoom and location of the map. If you do not set a default zoom or location, the map will adjust to display all resources.
 
 ![Map by attachments block open to Default Settings. There is no information in any field, and the preview map is zoomed in to level 2](../modules/modulesfiles/mappingBlockDefaultView1.png)
@@ -148,7 +158,7 @@ Within the preview map, there are five buttons:
 
 ![closeup of the mapping buttons with labels added](../modules/modulesfiles/mappingBlockDefMapButtons.png)
 
-### WMS overlays
+#### WMS overlays
 
  Add, edit, and delete [Web Map Service (WMS)](https://mapserver.org/ogc/wms_server.html){target=_blank} overlays.
 
@@ -163,7 +173,7 @@ Within the preview map, there are five buttons:
 
 Once you have added an overlay, it will appear above the fields for adding overlays. If you would like one or more of the overlays to display automatically when the page loads, check the box next to it. Edit an overlay by clicking on on the red pencil edit button, or click the red trashcan icon to delete the overlay.
 
-### Timeline
+#### Timeline
 Timeline adds a timeline display to the left of the map view. Note that this feature requires the [Numeric Data Types](../modules/numericdatatypes.md) module and at least one item that has a property with a Timestamp or Interval value (applied via the [resource template](../content/resource-template.md)).
 
 - **Title headline**: displays on the first slide of the timeline (see ["Timeline public view"](#timeline-public-view) below). You can use this to name the timeline.
@@ -188,7 +198,7 @@ To remove the timeline from a map block, click the "X" on the far right of the P
 
 To see how the various settings of the timeline block appear on the public side, please see the [Timeline Public View](#timeline-public-view) section below.
 
-### Attachments (Map by attachments block)
+#### Attachments (Map by attachments block)
 
 Markers are added to the map using Items.
 
@@ -203,7 +213,7 @@ To add multiple items at once, click the "Quick add" slider just above the list 
 
 ![Drawer with bulk add option activated](../modules/modulesfiles/Mapping-bulkAttachments.png)
 
-### Query (Map by query block)
+#### Query (Map by query block)
 In order to use this block, you will need to run a query, or search, in your items. From the search results page, copy everything in your browser's address bar starting with the question mark all the way to the end of the search url (to the right).
 
 ![The address bar and very top of a search results page.](../sites/sitesfiles/sitespg_bpquery.png)
@@ -212,7 +222,7 @@ Paste the query string into the Query field in the Map by query block. Note that
 
 ![A map by query block open to the Query section. There is a query pasted into the field.](../modules/modulesfiles/mapping-blockQuery.png)
 
-## Public view
+### Public view
 
 A map block will display on a public page or item page at the full page width. If you have settings in the [default view](#default-view) of the map block, or have set [default map bounds for the item](#setting-the-map-display), these should be applied. Otherwise the map will zoom so that all of the items are visible.
 
@@ -233,7 +243,7 @@ Item mapping marker with label and image:
 Item mapping marker with no label or image:
 ![](../modules/modulesfiles/mapping-publicNoLabel.png)
 
-### Timeline public view
+#### Timeline public view
 On the public side, the timeline will display to the left of the map, or above the map on mobile views. Each item appears on both the map and the timeline.
 
 On a map block with timeline, the block initially loads with the map either at default view or zoomed to display all markers. The timeline will display the title headline and text, as seen below:
