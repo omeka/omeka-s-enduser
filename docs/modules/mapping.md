@@ -29,9 +29,9 @@ In addition to these options, you can also navigate the map using your mouse or 
 
 ## Item mapping
 
-The Mapping module adds metadata fields to each item: a latitude and longitude pair that creates markers on maps (an item can have more than one marker), as well as default display settings for the item's individual map - a centerpoint for the map, and minimum corner coordinates that ensure the map contains at least those top, bottom, left, and right spots. These can be set manually using the item's "Mapping" tab, or can be bulk-added to many items using CSV Import.
+The Mapping module adds metadata fields to each item: a latitude and longitude pair that creates markers on maps (an item can have more than one marker), as well as default display settings for the item's individual map - minimum corner coordinates that ensure the map contains at least those top, bottom, left, and right spots. These can be set manually using the item's "Mapping" tab, or can be bulk-added to many items using CSV Import.
 
-The item view screen will not show a "Mapping" tab unless there is geolocation metadata, but one will appear when editing the item. To add a map to a new or existing item, click to edit the item. Navigate to the "Mapping" tab to add location data to the item. Selecting the tab will open the map interface. 
+The item view screen will not show a "Mapping" tab unless there is geolocation metadata, but one will appear when editing the item. To add a map to an item, click to edit the item. Navigate to the "Mapping" tab to add location data to the item. Selecting the tab will open the map interface. 
 
 ![Screenshot of the Add/Edit Item Page with Mapping tab selected. Large World Map with white buttons described below](../modules/modulesfiles/Mapping_Item_Add.png)
 
@@ -50,7 +50,7 @@ Click on the **Draw a Marker** tool in the left hand toolbar. Your cursor will b
 
 You can now click on the marker to add a label which will display on [public map views](#public-view) of the item. Be aware that this will display in a large font.
 
-![Close up of map with a marker selected. There is a field to enter the maker label.](../modules/modulesfiles/Mapping-addLabel.png)
+![Closeup of map with a marker selected. There is a field to enter the maker label.](../modules/modulesfiles/Mapping-addLabel.png)
 
 When you are adding a label, you can also add an image to display on the marker when clicked in the [public view](#public-view). You can only select from images which have already been [attached to the item as media](../content/items.md#media). To remove the image, select "No Image" from the sidebar.
 
