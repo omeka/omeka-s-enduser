@@ -95,7 +95,7 @@ The public fields are optional (turned off by default) on [individual sites](../
 
 ### Batch-edit map data
 
-Users can select multiple items and perform batch editing to create map markers. The options are:
+Users can select multiple items and perform batch editing to create and edit map markers. The options are:
 
 - **Delete markers**: You can batch-remove all existing markers from multiple items. 
 - **Copy coordinates to markers**: This involves taking latitude and longitude data from an existing metadata value on each item or from their associated media. This will append new markers, not overwrite any existing markers. If there are multiple values in the chosen proprerty, this will batch-copy them all as multiple markers. You can specify:
