@@ -78,11 +78,11 @@ The options for this setting are:
 
 ### Language
 
-**Locale** is dropdown menu to select the language code for this site. By default this will be set to the same as the global locale setting for the entire Omeka S installation. To change, select a language from the dropdown menu.
+**Locale** is a dropdown menu to select the language code for this site. By default this will be set to the same as the global locale setting for the entire Omeka S installation. To change this, select a language from the dropdown menu.
 
-**Filter values based on the site locale** is a checkbox to restrict visible values to those that match the site language setting and those that do not have a locale ID.
+**Filter values based on the site locale** is a checkbox to restrict visible values to those that match the site language setting and those that do not have a locale ID. When this is checked, your resources will only show properties and values where the values have the same language setting, or no language. This allows you to, for example, have an English site and French site that each only show the respective English or French values assigned to the same items. 
 
-**Show language labels for values** is a checkbox to control the visibility of the language label for each value on show pages.
+**Show language labels for values** is a checkbox to control the visibility of the language label for each value on the resources' public pages.
 
 ### Browse
 
