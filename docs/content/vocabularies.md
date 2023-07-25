@@ -70,7 +70,6 @@ This section deals with the file for the vocabulary.
 	- Autodetect
 	- JSON-LD (.jsonld)
 	- N-Triples (.nt)
-	- Notation3 (.n3)
 	- RDF/XML (.rdf)
 	- Turtle (.ttl).
 
