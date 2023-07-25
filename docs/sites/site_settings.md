@@ -14,7 +14,7 @@ The site info settings for an Omeka S site are where you can change the basic in
 * **Summary**: a brief description of what your site is about, which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
 * **Thumbnail** - a small image for your site, which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
 
-![Site info for the site “Jane Austen” with buttons across the top to Delete and Save the site](../sites/sitesfiles/sites_siteinfo.png)
+![Info screen for an Omeka S site with a thumbnail and a summary.](../sites/sitesfiles/sites_siteinfo.png)
 
 In the upper right hand corner of the window on this tab, you can use buttons to:
 
@@ -28,18 +28,6 @@ The **make public/private** button (eye icon) is used to both indicate and set w
 Site is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png){style="display:inline;"}
 
 Site is private: ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png){style="display:inline;"}
-
-The Site Admin page has two tabs: Info and Settings.
-
-## Info
-The site info settings for an Omeka S site are where you can change the basic info for the site - the same information you entered when you created the site. You can change the:
-
-* **Title**: a text field.
-* **Slug**: the URL for your site.
-* **Summary**: the brief description of what it is about which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
-* **Thumbnail** - an image for your site which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
-
-![Info screen for an Omeka S site with a thumbnail and a summary.](../sites/sitesfiles/sites_siteinfo.png)
 
 ## Settings
 
