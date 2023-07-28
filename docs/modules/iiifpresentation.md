@@ -1,6 +1,6 @@
 # IIIF Presentation
 
-The [IIIF Presentation module](https://omeka.org/s/modules/IIIFPresentation/){target=_blank} allows installations to offer [IIIF Presentation API endpoints & viewers](https://iiif.io/api/presentation/3.0/){target=_blank} for their Omeka S items and item sets. These API endpoints are automatically available for all items and item sets when the module is installed and active. 
+The [IIIF Presentation module](https://omeka.org/s/modules/IiifPresentation/){target=_blank} allows installations to offer [IIIF Presentation API endpoints & viewers](https://iiif.io/api/presentation/3.0/){target=_blank} for their Omeka S items and item sets. These API endpoints are automatically available for all items and item sets when the module is installed and active. 
 
 Omeka S offers the [Mirador IIIF viewer](https://projectmirador.org/){target=_blank} in its core code, which is what allows Omeka to [input and display IIIF media](../content/media.md#add-media) from around the web. This can be useful for institutions that host their digital collections elsewhere but wish to use those materials in Omeka virtual exhibits, or for educators who wish to use publicly-shared materials for teaching. 
 
