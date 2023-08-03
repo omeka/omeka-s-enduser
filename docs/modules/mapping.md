@@ -109,7 +109,7 @@ If you copy coordinates from an attached media, you can also check a box to assi
 	- Copying labels from an existing metadata value (either from the item, the primary media, or the media already assigned to the marker)
 	- Removing labels (the first entry in the dropdown).
 
-Note that marker labels have a limit of 255 characters. You will encounter errors if you copy label text from a field containing values longer than 255 characters.
+Note that marker labels have a limit of 255 characters. You will see your labels truncated if you copy label text from a field containing values longer than 255 characters.
 
 If the chosen field in this batch operation does not contain valid entries, the item(s) will be skipped and you will not see an error message. [Batch-editing operations](../content/items.md#batch-editing) do not appear in the Jobs log unless they are "Edit all," so if you have done a selected-items batch-edit you may not be able to trace which items were modified.
 
