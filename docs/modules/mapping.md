@@ -95,10 +95,10 @@ The public fields are optional (turned off by default) on [individual sites](../
 
 ### Batch-edit map data
 
-Users can select multiple items and perform batch editing to create and edit map markers. The options are:
+Users can select multiple items and perform [batch editing](../content/items.md#batch-editing) to create and edit map markers. The options are:
 
 - **Delete markers**: You can batch-remove all existing markers from multiple items. 
-- **Copy coordinates to markers**: This involves taking latitude and longitude data from an existing metadata value on each item or from their associated media. This will append new markers, not overwrite any existing markers. If there are multiple values in the chosen proprerty, this will batch-copy them all as multiple markers. You can specify:
+- **Copy coordinates to markers**: This involves taking latitude and longitude data from an existing metadata value on each item or from their associated media. This will append new markers, not overwrite any existing markers. If there are multiple values on an item in the chosen proprerty, this will batch-copy them all as multiple markers. You can specify:
 	- Which fields contain each or both values
 	- How they are separated (the operation will ignore spaces)
 	- Whether the longitude or latitude comes first in the pair. 
@@ -108,6 +108,10 @@ If you copy coordinates from an attached media, you can also check a box to assi
 	- Using items' primary media as images
 	- Copying labels from an existing metadata value (either from the item, the primary media, or the media already assigned to the marker)
 	- Removing labels (the first entry in the dropdown).
+
+Note that marker labels have a limit of 255 characters. You will encounter errors if you copy label text from a field containing values longer than 255 characters.
+
+If the chosen field in this batch operation does not contain valid entries, the item(s) will be skipped and you will not see an error message. [Batch-editing operations](../content/items.md#batch-editing) do not appear in the Jobs log unless they are "Edit all," so if you have done a selected-items batch-edit you may not be able to trace which items were modified.
 
 ![The map-specific batch-editing field, filled out to copy "Latitude/Longitude" values from dcterms:coverage of each item.](modulesfiles/Mapping_batchEdit.png)
 
