@@ -560,9 +560,6 @@ These settings apply to the entire CSV you are importing. Note that some of thes
 - **Language**: Set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank}.
 
 ### Mixed resources import advanced settings
-There are two options on this tab which are only for advanced use.
-
-![Advanced settings page showing only the Action dropdown and the field for number of rows to process. ](../modules/modulesfiles/csvimport_mixedRAdv.png)
 
 The Action setting allows you to change the action of process from a straight import to one of the following options:
 
@@ -571,7 +568,7 @@ The Action setting allows you to change the action of process from a straight im
 - **Revise data of the resource**: Replace existing data in the resource with data from the CSV, except if empty.
 - **Update data of the resource**: Replace existing data in the resource with data from the CSV, even when the cell is empty.
 - **Replace all data of the resource**: Remove all properties of the resource, and fill with new information from the sheet.
-- **Delete the resource**: Delete all matching resources
+- **Delete the resource**: Delete all matching resources.
 
 If you select one of these options from the dropdown, three additional settings will appear on the tab. These settings help the process determine which resources to take action on.
 

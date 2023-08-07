@@ -4,13 +4,14 @@ The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows 
 
 ![Map with timeline](../modules/modulesfiles/mapping-timelinePublic1.png)
 
-The Mapping module has no global configuration settings. It adds several new metadata fields to each item, and a new "Mapping" tab to each item edit screen. It adds several optional location-based search fields to the advanced search pages on the admin and public interfaces, controlled on a site-by-site basis by [Site Settings](../sites/site_settings.md#settings). It also adds page blocks to [Site Pages](../sites/site_pages.md) that can display maps and timelines for browsing, and a "Map Browse" page, found in the [Site Navigation settings](../sites/site_navigation.md).
+The Mapping module has no global configuration settings. It adds several new metadata fields to each item, and a new "Mapping" tab to each item edit screen, as well as several batch-editing options for items. It adds optional location-based search fields to the advanced search pages on the admin and public interfaces, controlled on a site-by-site basis by [Site Settings](../sites/site_settings.md#settings). It also adds page blocks to [Site Pages](../sites/site_pages.md) that can display maps and timelines for browsing, and a "Map Browse" page, found in the [Site Navigation settings](../sites/site_navigation.md).
 
 Mapping can work with the [Collecting](../modules/collecting.md#prompts) module, by allowing users filling out the contribution form to provide geolocation data for their submissions. Users click directly on a map to place a marker, and can optionally provide a text label for the marker. See the Collecting module page for more information.
 
 Mapping can work with the [CSV Import](../modules/csvimport.md) module, allowing geolocation data to be added in bulk. See the [CSV Import integration section below](#csv-import-integration) for more information.
 
-## Manipulating the map
+## Using maps
+
 Small white buttons on the left side of the map control and modify the appearance of the map. Hover over the buttons with the mouse to view tool-tips.
 
 ![Screenshot of the buttons on the map described below](../modules/modulesfiles/Mapping_JustButtons.png)
@@ -29,9 +30,11 @@ In addition to these options, you can also navigate the map using your mouse or 
 
 ## Item mapping
 
-The Mapping module adds metadata fields to each item: a latitude and longitude pair that creates markers on maps (an item can have more than one marker), as well as default display settings for the item's individual map - a centerpoint for the map, and minimum corner coordinates that ensure the map contains at least those top, bottom, left, and right spots. These can be set manually using the item's "Mapping" tab, or can be bulk-added to many items using CSV Import.
+The Mapping module adds metadata fields to each item: a latitude and longitude pair that creates markers on maps (an item can have more than one marker), as well as default display settings for the item's individual map - minimum corner coordinates that ensure the map contains at least those top, bottom, left, and right spots. These can be set manually using the item's "Mapping" tab, or can be bulk-added to many items using CSV Import.
 
-The item view screen will not show a "Mapping" tab unless there is geolocation metadata, but one will appear when editing the item. To add a map to a new or existing item, click to edit the item. Navigate to the "Mapping" tab to add location data to the item. Selecting the tab will open the map interface. 
+### Add markers
+
+The item view screen will not show a "Mapping" tab unless there is geolocation metadata, but one will appear when editing the item. To add a map to an item, click to edit the item. Navigate to the "Mapping" tab to add location data to the item. Selecting the tab will open the map interface. 
 
 ![Screenshot of the Add/Edit Item Page with Mapping tab selected. Large World Map with white buttons described below](../modules/modulesfiles/Mapping_Item_Add.png)
 
@@ -48,20 +51,21 @@ Click on the **Draw a Marker** tool in the left hand toolbar. Your cursor will b
 
 ![Mapping tab with an active marker being drawn. The marker has a tooltip saying "click map to place marker"](../modules/modulesfiles/Mapping-drawMarker.png)
 
+#### Edit markers
+
 You can now click on the marker to add a label which will display on [public map views](#public-view) of the item. Be aware that this will display in a large font.
 
-![Close up of map with a marker selected. There is a field to enter the maker label.](../modules/modulesfiles/Mapping-addLabel.png)
+![Closeup of map with a marker selected. There is a field to enter the maker label.](../modules/modulesfiles/Mapping-addLabel.png)
 
 When you are adding a label, you can also add an image to display on the marker when clicked in the [public view](#public-view). You can only select from images which have already been [attached to the item as media](../content/items.md#media). To remove the image, select "No Image" from the sidebar.
 
 ![Marker selected with Image added. The media is also visible in the sidebar, along with an option for "no image"](../modules/modulesfiles/Mapping-addImage.png)
 
-### Editing markers
-To edit the label or image, click on the marker. This will open the options for the label and image, as seen above.
+To edit the label or image again, click on the marker. This will open the options for the label and image, as seen above.
 
 To **move a marker** you have added, use the "Move markers" button on the left hand toolbar (small white square with black box and pencil icon). Any marker on the map will become highlighted in a red, dotted-line outline. Click and drag the marker you want to move.
 
-To apply your changes, click the "Save" option which opens from the "Move markers" button. To cancel the changes, click "Cancel". If you do not save, the marker will not be moved.
+To apply your changes, click the "Save" option which opens from the "Move markers" button. If you do not save, the marker will not be moved.
 
 ![Marker being moved](../modules/modulesfiles/Mapping-moveMarker.png)
 
@@ -71,7 +75,7 @@ Note that you can use the "Clear all" button in the menu which opens form the "D
 
 ![Marker being deleted.](../modules/modulesfiles/Mapping-deleteMarker.png)
 
-### Setting the map display
+#### Map display
 
 You can also set the map's default display zoom level and center, independently of the marker(s) you place. The default is to center on one marker and zoom fully in, or to zoom out far enough to contain all markers in the map view.
 
@@ -79,16 +83,52 @@ You can also set the map's default display zoom level and center, independently 
 * **Go to current default view**: The small black square with a black box around a dot. This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
 * **Clear the default center and zoom level**: The small white square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
 
+### Search for map data
+
+Items with information filled out in their mapping metadata fields (i.e. with markers on the map) can be searched with fields that the Mapping module adds to the advanced search fields in the admin and public views.
+
+![Map-based searching in the admin side.](modulesfiles/Mapping_advSearch.png)
+
+The public fields are optional (turned off by default) on [individual sites](../sites/site_settings.md#settings). "Add geographic location to advanced search" will add three fields that allow users to search by location: they must provide an address, as well as a distance (in numbers) and select a unit (kilometres or miles). "Search by map marker presence" provides users with the values of "Has map markers" or "Has no map markers".
+
+![The two Mapping settings added to each site settings page.](modulesfiles/Mapping_siteSettings.png)
+
+### Batch-edit map data
+
+Users can select multiple items and perform [batch editing](../content/items.md#batch-editing) to create and edit map markers. The options are:
+
+- **Delete markers**: You can batch-remove all existing markers from multiple items. 
+- **Copy coordinates to markers**: This involves taking latitude and longitude data from an existing metadata value on each item or from their associated media. This will append new markers, not overwrite any existing markers. If there are multiple values on an item in the chosen proprerty, this will batch-copy them all as multiple markers. You can specify:
+	- Which fields contain each or both values
+	- How they are separated (the operation will ignore spaces)
+	- Whether the longitude or latitude comes first in the pair. 
+If you copy coordinates from an attached media, you can also check a box to assign the media as a marker image. 
+- **Update markers**: Markers can have [customized thumbnails and labels](#editing-markers) rather than displaying just the item title as a link. You can batch-edit marker customization by:
+	- Removing images
+	- Using items' primary media as images
+	- Copying labels from an existing metadata value (either from the item, the primary media, or the media already assigned to the marker)
+	- Removing labels (the first entry in the dropdown).
+
+Note that marker labels have a limit of 255 characters. You will see your labels truncated if you copy label text from a field containing values longer than 255 characters.
+
+If the chosen field in this batch operation does not contain valid entries, the item(s) will be skipped and you will not see an error message. [Batch-editing operations](../content/items.md#batch-editing) do not appear in the Jobs log unless they are "Edit all," so if you have done a selected-items batch-edit you may not be able to trace which items were modified.
+
+![The map-specific batch-editing field, filled out to copy "Latitude/Longitude" values from dcterms:coverage of each item.](modulesfiles/Mapping_batchEdit.png)
+
+You may wish to copy your coordinates in one batch operation, then update those markers with labels and images in a second batch operation. Note that if an item has multiple markers, all markers will get a marker update of identical images and labels. 
+
 ## CSV Import integration
 
 Mapping is compatible with [CSV Import](../modules/csvimport.md) when importing items (but not when importing mixed resources).
 
 If the two modules are enabled, your CSV Import process will have a new "Mapping" dropdown menu in the "Add mapping" sidebar when you are connecting a spreadsheet column to a property.
 
-The "Mapping" dropdown menu includes three options for pinning the item geographically ("Latitude", "Longitude", and "Latitude/Longitude"). Make sure your "Latitude/Longitude values" are separated with a slash (`/`) character. 
+The "Mapping" dropdown menu includes three options for pinning the item geographically: "Latitude", "Longitude", and "Latitude/Longitude". Make sure your "Latitude/Longitude" values are separated with a slash (`/`) character. 
+
+These must all be supplied as numerical values, not degree: write northern latitudes as positive numbers and southern latitudes as negative numbers ("-90" to "90"), eastern longitudes as positive numbers and western longitudes as negative numbers ("-180" to "180").
 
 !!! note 
-	The latitude and longitude fields cannot take multiple values, that is, you cannot bulk-import two or more markers for each item using these fields. You also cannot import multiple latitudes and longitudes using the "Append" method in CSV Import to import multiple rows of data onto the same item. You can add multiple values using the "Latitude/Longitude" field. This will take input in the form of `lat/long;lat/long` where the semi-colon is the multivalue separator indicated in the CSV Import settings. 
+	The latitude and longitude fields cannot take multiple values, that is, you cannot bulk-import two or more markers for each item using these fields. You also cannot import multiple latitudes and longitudes using the "Append" method in CSV Import to import multiple rows of data onto the same item. You can add multiple values using the "Latitude/Longitude" field. This will take input in the form of `lat/long;lat/long`, where the semi-colon is the multivalue separator you indicate in the CSV Import settings.
 
 The "Default Bounds (sw_lng,sw_lat,ne_lng,ne_lat)" option allows you to set four corner coordinates for the map that displays for that item, in the format `sw_lng,sw_lat,ne_lng,ne_lat` (bottom left longitude, bottom left latitude, top right longitude, top right latitude). Map widths and heights display dynamically depending on the page and the browser window, so your four coordinates will be centered within the map and excess space will display either vertically or horizontally as applicable. **Be careful to provide longitudes first and latitudes second in your bounds values.**
 
@@ -97,33 +137,42 @@ The "Default Bounds (sw_lng,sw_lat,ne_lng,ne_lat)" option allows you to set four
 
 For example, to pin an item near Madrid and set the map bounds around the country of Spain, you could provide two values: a marker latitude and longitude of "40.79864618/-3.645817429" and default bounds of "4.25300,43.95470,-12.12392,36.45605". 
 
-Note that the default bounds will override the location markers. For example, if you set bounds around Spain, but your item's marker is pinned to Antarctica, the map will display Spain and users will have to search for the marker manually.
+Note that the default bounds will ignore any location markers. For example, if you set bounds around Spain, but your item's marker is pinned to Antarctica, the map will display Spain and users will have to search for the marker manually.
 
 You cannot set marker labels or marker images in CSV Import.
 
 You cannot [batch-edit](../content/items.md#batch-actions) mapping values after items are in your system, only edit them manually one item at a time, or batch-revise mapping data using CSV Import.
 
-## Searching for map data
+## Add maps to a site
 
-Items with information filled out in their mapping metadata fields (i.e. with markers on the map) can be searched with fields that the Mapping module adds to the advanced search fields in the admin and public views. These two fields are optional (turned off by default) on [individual sites](../sites/site_settings.md#settings). 
+### Map Browse page
 
-"Add geographic location to advanced search" will add three fields that allow users to search by location: they must provide an address, as well as a distance (in numbers) and select a unit (kilometres or miles). 
+![The Map Browse page on the Thanks Roy theme, with a watercolour basemap selected.](modulesfiles/Mapping_mapBrowsePage.png)
 
-"Search by map marker presence" provides users with the values of "Has map markers" or "Has no map markers".
+Mapping creates a "Map Browse" page that can be added to each site in its navigation settings. This map has minimal customization options and will show every item in the site that has one or more geolocations, as well as some advanced search fields (including search by address with radius). These fields are not affected by [site settings](#searching-for-map-data). The title of the page will be "Map".
 
-## Adding maps to a site
+Go to a Site, then go to Navigation. You will see under "Add a custom link" the option to add a "Map Browse." When this is added to your navigation, you will be able to change the label that appears in the navigation (default is "Map Browse"), and the basemap, by clicking on the pencil icon to edit the Map Browse page settings. Note that changing the basemap will change the URL that is added to the navigation - for example, `yoursite/map-browse?mapping_basemap_provider=Stamen.Watercolor`. 
 
-Mapping creates a "Map Browse" page that can be added to each site in its navigation settings. This map has minimal customization options and will show every item in the site that has one or more geolocations, as well as some advanced search fields (including search by address with radius). You can change the page label and the basemap for this page. 
+The Map Browse page will [show slightly different markers than other maps](#public-view). Rather than display the item title, it will link with "View item". If media has been used to add an image, it will also display "View media" as a link.
+
+![Item mapping marker with label and image](../modules/modulesfiles/mapping-publicLabelImg2.png)
+
+If markers have not been customized, the viewer will simply see "View item".
+
+![Item mapping marker with no label or image](../modules/modulesfiles/mapping-publicNoLabel.png)
+
+
+### Page blocks
 
 Mapping creates two page blocks you can add to your site pages: "Map by attachments", where you manually add resources to the map block; and "Map by query", which allows you to use a search string to add resources to the map block.
 
-To add a map to a new or existing page, click to edit the page. On the right, under "Add new block", click either the "Map by attachments" or "Map by query" option (1). Selecting one will open the map block to the page (2). The blocks include customizable features for the map in collapsable panes. Click the triangle to expand or collapse these fields (3).
+To add a map to a page, click to edit the page. On the right, under "Add new block", click either the "Map by attachments" or "Map by query" option (1). Selecting one will open the map block to the page (2). The blocks include customizable features for the map in collapsable panes. Click the triangle to expand or collapse these fields (3).
 
 ![Screenshot of the Page with Map Block selected. Block includes menu options Default View, WMS Overlays and attachments.](../modules/modulesfiles/Mapping_Page_MapBlock1.png)
 
-The "Map by attachments" and "Map by query" blocks have largely the same settings, with the exception of the final option.
+The "Map by attachments" and "Map by query" blocks have largely the same settings, with the exception of the methods for adding items to the map.
 
-### Default view
+#### Default view
 This section lets you set the appearance and zoom level of the map. There are three fields and a preview map. Within the preview map are buttons which you can use to set the default zoom and location of the map. If you do not set a default zoom or location, the map will adjust to display all resources.
 
 ![Map by attachments block open to Default Settings. There is no information in any field, and the preview map is zoomed in to level 2](../modules/modulesfiles/mappingBlockDefaultView1.png)
@@ -148,7 +197,7 @@ Within the preview map, there are five buttons:
 
 ![closeup of the mapping buttons with labels added](../modules/modulesfiles/mappingBlockDefMapButtons.png)
 
-### WMS overlays
+#### WMS overlays
 
  Add, edit, and delete [Web Map Service (WMS)](https://mapserver.org/ogc/wms_server.html){target=_blank} overlays.
 
@@ -163,7 +212,8 @@ Within the preview map, there are five buttons:
 
 Once you have added an overlay, it will appear above the fields for adding overlays. If you would like one or more of the overlays to display automatically when the page loads, check the box next to it. Edit an overlay by clicking on on the red pencil edit button, or click the red trashcan icon to delete the overlay.
 
-### Timeline
+#### Timeline
+
 Timeline adds a timeline display to the left of the map view. Note that this feature requires the [Numeric Data Types](../modules/numericdatatypes.md) module and at least one item that has a property with a Timestamp or Interval value (applied via the [resource template](../content/resource-template.md)).
 
 - **Title headline**: displays on the first slide of the timeline (see ["Timeline public view"](#timeline-public-view) below). You can use this to name the timeline.
@@ -188,7 +238,7 @@ To remove the timeline from a map block, click the "X" on the far right of the P
 
 To see how the various settings of the timeline block appear on the public side, please see the [Timeline Public View](#timeline-public-view) section below.
 
-### Attachments (Map by attachments block)
+#### Attachments (Map by attachments block)
 
 Markers are added to the map using Items.
 
@@ -203,7 +253,7 @@ To add multiple items at once, click the "Quick add" slider just above the list 
 
 ![Drawer with bulk add option activated](../modules/modulesfiles/Mapping-bulkAttachments.png)
 
-### Query (Map by query block)
+#### Query (Map by query block)
 In order to use this block, you will need to run a query, or search, in your items. From the search results page, copy everything in your browser's address bar starting with the question mark all the way to the end of the search url (to the right).
 
 ![The address bar and very top of a search results page.](../sites/sitesfiles/sitespg_bpquery.png)
@@ -212,7 +262,7 @@ Paste the query string into the Query field in the Map by query block. Note that
 
 ![A map by query block open to the Query section. There is a query pasted into the field.](../modules/modulesfiles/mapping-blockQuery.png)
 
-## Public view
+### Public view
 
 A map block will display on a public page or item page at the full page width. If you have settings in the [default view](#default-view) of the map block, or have set [default map bounds for the item](#setting-the-map-display), these should be applied. Otherwise the map will zoom so that all of the items are visible.
 
@@ -220,9 +270,11 @@ Viewers can zoom either using the scroll function of their computer or the zoom 
 
 ![Map block with three individual markers and two green cluster circles of two markers. The map shows a portion of southern England.](../modules/modulesfiles/mapping-public.png)
 
-Each item will display as one or more markers on the map. Markers which are close together will display as a cluster circle, with a number indicating how many items share that location. As you zoom in, these clusters will break open.
+Each item will display as one or more markers on the map. Markers which are close together will display as a cluster circle, with a number indicating how many items share that location. As you zoom in, these clusters will break open. Clicking on a marker will open a label for that marker. 
 
-Clicking on a marker will open a label for that marker. If you have not added a label or image for the marker, it will simply say "Item: [Title]." If you have added a label, it will show the label, as well as representative media and a link to the media if the marker has one.
+Note that the following displays are slightly different in the [Map Browse page](#map-browse-page).
+
+If you have not added a label or image for the marker, it will simply say "Item: [Title]." If you have added a label, it will show the label, as well as representative media and a link to the media if the marker has one.
 
 Item mapping marker with label only:
 ![](../modules/modulesfiles/mapping-publicLabel.png)
@@ -231,12 +283,13 @@ Item mapping marker with label and image:
 ![](../modules/modulesfiles/mapping-publicLabelImg.png)
 
 Item mapping marker with no label or image:
-![](../modules/modulesfiles/mapping-publicNoLabel.png)
+![](../modules/modulesfiles/mapping-publicNoLabel2.png)
 
-### Timeline public view
-On the public side, the timeline will display to the left of the map, or above the map on mobile views. Each item appears on both the map and the timeline.
+#### Timeline public view
 
-On a map block with timeline, the block initially loads with the map either at default view or zoomed to display all markers. The timeline will display the title headline and text, as seen below:
+Timelines only appear in page blocks. The timeline will display to the left of the map, or above the map on mobile views. Each item appears on both the map and the timeline (meaning it will only display items that have both numeric dates and map markers).
+
+On a map block with a timeline, the block initially loads with the map either at default view or zoomed to display all markers. The timeline will display the title headline and text, as seen below:
 
 ![Map block with timeline, displaying the first slide of the timeline. There are two lines of text, a larger font reading "Title Headline" and below it smaller font reading "title text".](../modules/modulesfiles/mapping-timelinePublic1.png)
 
@@ -251,16 +304,19 @@ Clicking on a marker will display that item's date or interval, title, descripti
 Whenever an item is selected, its marker in the timeline will show up with a highlight to indicate that it is active.
 
 **Numeric:Interval appearance**
+
 Interval properties display as a long bar running horizontally across the timeline, with bars reaching down to the timeline at the start and end dates of the interval. Overlapping intervals will stack.
 
 ![Interval timeline with both Steventon Rectory and Reading Abbey Girls' School. The latter is open and highlighted in the timeline display; it is shorter than and nested under the timeline display for the Rectory.](../modules/modulesfiles/mapping-timelinePublic3.png)
 
 **Numeric:Timestamp appearance**
+
 Timestamp properties display as a flag on the timeline, with one bar anchoring them to the timeline. Items which overlap either due to date or long text will stack.
 
 ![Timestamp timeline showing markers for the births of Cassandra and Jane Austen in the 1770s](../modules/modulesfiles/mapping-timelinePublic4.png)
 
 **Timeline navigation position**
+
 If you select "full width, below story slider and map" in the "Timeline navigation position" dropdown, the timeline and map will display as follows:
 
 ![Timeline start page slide, with the timeline displaying full width below the map and story slider](../modules/modulesfiles/mapping-timelinePublicBelow.png)
@@ -268,6 +324,7 @@ If you select "full width, below story slider and map" in the "Timeline navigati
 If you select "full width, above story slider and map", the display will be similar but with the timeline above.
 
 **Show contemporaneous events**
+
 When "show contemporaneous events" is checked, the map zooms to display all events which take place on the same day.
 
 In the image below, the timeline is using interval data. The event "Reading Abbey Girls' School" (March 1785 - December 1786) takes place within the same period as "Steventon Rectory" (1775-1801), so the map is zoomed out to display the location markers for both events.

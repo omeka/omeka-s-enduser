@@ -336,7 +336,10 @@ Batch actions are as follows:
 - Delete selected: delete only the items that are selected on the page
 - Delete all: delete all the items returned by a search (default is all items).
 
-The number of results per page is set in the [installation's global settings](../admin/settings.md#general).
+You can easily select all items on the page using the checkbox at the top of the Items table. The number of results per page is set in the [installation's global settings](../admin/settings.md#general).
+
+!!! note
+	Batch-editing activities are sometimes shown in the [Jobs log](../admin/jobs.md), found in the left-hand bar under the "Admin" heading. Only "Edit all" or "Delete all" operations appear here. Batch-editing only selected items, even a full page of items, will not appear here.
 
 You can first use the "🔍 Advanced search" link to narrow down the items to a subset for editing. For example, you can use [Advanced search](../search.md#item-advanced-search) to limit to items that are not in any item sets, or items that are owned by a specific user. In the image below, the search is set to capture any item without a "Date created" value.
 
