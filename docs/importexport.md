@@ -16,21 +16,27 @@ You cannot currently export from an Omeka S site to a Classic site.
 
 You can use the [Omeka S Item Importer module](../modules/ositemimporter.md) to import items from one Omeka S installation to another. You cannot import sites and their pages. 
 
-
 ## Importing or exporting resource templates 
 
+https://omeka.org/s/docs/user-manual/content/resource-template/#share-resource-templates
 
 ## Importing or exporting custom vocabularies
 
+https://omeka.org/s/docs/user-manual/modules/customvocab/#manage-custom-vocabs
 
+## Importing from non-Omeka platforms
 
-## Exporting to a spreadsheet
-
-https://github.com/omeka/omeka-s-csv.py
-
+Omeka S has modules for Zotero, Zenodo, Fedora, DSpace, CKAN, Dataverse, and Invenio. 
 
 ## Importing from a spreadsheet
 
 Omeka S can take data in any spreadsheet (tabular) form, whether a CSV, an Excel file, or an ODS. Use the CSV Import module to add items, item sets, media, and users to your Omeka S site from a spreadsheet. This includes data exported from many different databases and platforms. 
 
 First, look to see if there a connector or importer module for the platform you are looking to export from. Omeka S has modules for Zotero, Zenodo, Fedora, DSpace, CKAN, Dataverse, and Invenio. 
+
+
+
+
+## Exporting to a spreadsheet
+
+https://github.com/omeka/omeka-s-csv.py
