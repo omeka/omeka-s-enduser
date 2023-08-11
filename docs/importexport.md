@@ -1,20 +1,20 @@
 # Importing and Exporting
 
-There are numerous methods for importing to, or exporting from, an Omeka S site. 
+There are numerous methods for importing to, or exporting from, an Omeka S site. Third-party modules may add more functionality; we are only documenting Omeka-team-supported methods here. 
 
 ## Importing from another Omeka site
 
 ### Importing from Omeka Classic to Omeka S
 
-You can use the Omeka Classic Importer module to import items & collections from a Classic site. This module only imports items and their metadata (including tags), attached files, and collections (as item sets). It will not import Simple Page content or Exhibit Builder content.
+You can use the [Omeka Classic Importer module](../modules/omekaCimporter.md) to import items & collections from a Classic site. This module only imports items and their metadata (including tags), attached files, and collections (as item sets). It will not import Simple Page content or Exhibit Builder content.
 
-If plugins/modules are installed on both the source site and the target site, Omeka Classic Importer can import module-specific metadata. For example, geolocation data facilitated by the Mapping module in S and the Geolocation plugin in Classic will automatically be imported. PDF Text elements can be imported and mapped to Extract Text fields.
+If equivalent plugins/modules are installed on both the source site and the target site, Omeka Classic Importer can import module-specific metadata. For example, geolocation data facilitated by the Mapping module in S and the Geolocation plugin in Classic will automatically be imported. PDF Text elements can be imported and mapped to Extract Text fields.
 
 You cannot currently export from an Omeka S site to a Classic site. 
 
 ### Importing from S to S
 
-You can use the Omeka S Item Importer module to import items from one Omeka S installation to another. You cannot import sites and their pages. 
+You can use the [Omeka S Item Importer module](../modules/ositemimporter.md) to import items from one Omeka S installation to another. You cannot import sites and their pages. 
 
 
 ## Importing or exporting resource templates 
@@ -25,6 +25,8 @@ You can use the Omeka S Item Importer module to import items from one Omeka S in
 
 
 ## Exporting to a spreadsheet
+
+https://github.com/omeka/omeka-s-csv.py
 
 
 ## Importing from a spreadsheet
