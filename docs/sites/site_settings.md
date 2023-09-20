@@ -14,7 +14,7 @@ The site info settings for an Omeka S site are where you can change the basic in
 * **Summary**: a brief description of what your site is about, which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
 * **Thumbnail** - a small image for your site, which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
 
-![Site info for the site “Jane Austen” with buttons across the top to Delete and Save the site](../sites/sitesfiles/sites_siteinfo.png)
+![Info screen for an Omeka S site with a thumbnail and a summary.](../sites/sitesfiles/sites_siteinfo.png)
 
 In the upper right hand corner of the window on this tab, you can use buttons to:
 
@@ -28,18 +28,6 @@ The **make public/private** button (eye icon) is used to both indicate and set w
 Site is public: ![make public button showing an eye icon](../content/contentfiles/item_public.png){style="display:inline;"}
 
 Site is private: ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png){style="display:inline;"}
-
-The Site Admin page has two tabs: Info and Settings.
-
-## Info
-The site info settings for an Omeka S site are where you can change the basic info for the site - the same information you entered when you created the site. You can change the:
-
-* **Title**: a text field.
-* **Slug**: the URL for your site.
-* **Summary**: the brief description of what it is about which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
-* **Thumbnail** - an image for your site which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
-
-![Info screen for an Omeka S site with a thumbnail and a summary.](../sites/sitesfiles/sites_siteinfo.png)
 
 ## Settings
 
@@ -90,11 +78,11 @@ The options for this setting are:
 
 ### Language
 
-**Locale** is dropdown menu to select the language code for this site. By default this will be set to the same as the global locale setting for the entire Omeka S installation. To change, select a language from the dropdown menu.
+**Locale** is a dropdown menu to select the language code for this site. By default this will be set to the same as the global locale setting for the entire Omeka S installation. To change this, select a language from the dropdown menu.
 
-**Filter values based on the site locale** is a checkbox to restrict visible values to those that match the site language setting and those that do not have a locale ID.
+**Filter values based on the site locale** is a checkbox to restrict visible values to those that match the site language setting and those that do not have a locale ID. When this is checked, your resources will only show properties and values where the values have the same language setting, or no language. This allows you to, for example, have an English site and French site that each only show the respective English or French values assigned to the same items. 
 
-**Show language labels for values** is a checkbox to control the visibility of the language label for each value on show pages.
+**Show language labels for values** is a checkbox to control the visibility of the language label for each value on the resources' public pages.
 
 ### Browse
 
