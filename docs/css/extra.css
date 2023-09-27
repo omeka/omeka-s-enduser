@@ -103,3 +103,11 @@ footer {
 .rst-content .note.admonition a {
 	color:#C3392C;
 }
+
+.wy-nav-top {
+background:#404E61;
+}
+
+.wy-nav-top a, .wy-nav-top a:visited {
+color:#fff;
+}
