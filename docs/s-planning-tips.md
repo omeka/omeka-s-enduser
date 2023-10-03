@@ -76,7 +76,7 @@ In addition to these basic groups of modules, you may be interest in the followi
 
 ### Community Sourcing
 - Public Contributions
-    - [Collecting](https://omeka.org/s/modules/Collecting/): Add collecting forms to your sites. Functions with Mapping, Numerica Data Types, Custom Vocab, Value Suggest
+    - [Collecting](https://omeka.org/s/modules/Collecting/): Add collecting forms to your sites. Functions with Mapping, Numerica Data Types, Custom Vocab, Value Suggest.
 - Transcription
     - [Scripto](https://omeka.org/s/modules/Scripto/): Transcribe and translate items.
     - [DataScribe](https://omeka.org/s/modules/Datascribe/): Allows community visitors to transcribe structured data.
@@ -84,7 +84,7 @@ In addition to these basic groups of modules, you may be interest in the followi
 ### Geospatial and Temporal Focus
 - Describing Resources
     - [Mapping](https://omeka.org/s/modules/Mapping/): Add location info to your items and sites.
-    - [Numeric Data Types](https://omeka.org/s/modules/NumericDataTypes/): Add data types for numbers and dates. Allows for the creation of timelines in conjunction with Mapping
+    - [Numeric Data Types](https://omeka.org/s/modules/NumericDataTypes/): Add data types for numbers and dates. Allows for the creation of timelines in conjunction with Mapping.
    
 ### Working with other Digital Systems
 - Institutional Repositories
@@ -94,6 +94,6 @@ In addition to these basic groups of modules, you may be interest in the followi
 - Other Omeka Installations
     - [Omeka Classic Importer](https://omeka.org/s/modules/Omeka2Importer/):
     - [Omeka S Item Importer](https://omeka.org/s/modules/Osii/)
-- Zotero Importer
+- Zotero
     - [Zotero Citation](https://omeka.org/s/modules/ZoteroCitations/): Use Zotero in rich-text editors to generate citations and bibliographies.
     - [Zotero Importer](https://omeka.org/s/modules/ZoteroImport): Import items and files from Zotero user and group libraries.
