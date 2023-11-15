@@ -6,13 +6,13 @@ With this module, site managers are able to configure faceted browse pages and a
 
 The [public view](#public-views) section below shows how these facets display for single and multi-category pages.
 
-Faceted browse pages exist as separate [pages](../sites/site_pages.md), which can be added to the [navigation](../sites/site_navigation.md) in a similar fashion to default browse pages. You *cannot* add faceted browsing to a page as a block, or as part of an existing browse page.
+Faceted browse pages exist as separate [pages](../sites/site_pages.md), which can be added to the [navigation](../sites/site_navigation.md) in a similar fashion to default browse pages. You **cannot** add faceted browsing to a page as a block, or as part of an existing browse page.
 
 Once activated, Faceted Browse is configured on a site-by-site basis.
 
 ## Terminology
 
-A quick guide to the terms used to describe the aspects of a faceted browse page.
+A quick guide to the terms used to describe the aspects of a faceted browse page:
 
 - Category: a group of resources (items, item sets, or media) to which facets are applied on a specific page.
 - Column: information to display for each resource in the category. Once you have at least one column, the items will display in a table form (not a grid).
@@ -20,7 +20,7 @@ A quick guide to the terms used to describe the aspects of a faceted browse page
 
 ## Creating and managing Faceted Browse pages
 
-Once the Facet Browse module is active, a tab for Faceted Browse will appear in the context menu for every site. Clicking on this tab will take you to a list of all of your Faceted Browse pages for that site.
+Once the Faceted Browse module is active, a tab for Faceted Browse will appear in the context menu for every site. Clicking on this tab will take you to a list of all of your Faceted Browse pages for that site.
 
 Site managers must create Faceted Browse pages before they can be added to the site's navigation.
 
@@ -32,21 +32,23 @@ Create a new page by clicking the "Add a page" button. This takes you to a new p
 
 The **title** functions the same as the title of a regular page: it will show up in navigation and display when the page is active.
 
-Use the **resource type** dropdown to select the resource type that you would like to let users browse on this page: Items, Item Sets, or Media.
+Use the **resource type** dropdown to select the resource type that you would like to let users browse on this page: Items, Item Sets, or Media. This cannot be edited after page creation.
 
-Save the page and select "Stay on this page" to continue creating the faceted browse.
+Select "Save and... Stay on this page" to continue creating the faceted browse.
 
-If you are returning to edit existing pages, you can also save your edits and return to the list of pages by selecting "Save and Return to page".
+You can also save your edits and leave without working on categories and facets by selecting "Save and... Return to pages".
 
 ### Categories
 
-Once the page has been created, the user can create a Category, which is a group of resources which you want users to be able to browse with facets.
+Once the page has been created, the user must create a Category, which can narrow down the resources to browse with facets. 
 
 Click the "Add" button and give your category a name.
 
 Use the search query interface to set the pool of resources that users will browse. The "Edit" button opens a drawer on the right hand side of the browser window which works exactly like [advanced search forms](../search.md#item-advanced-search) for items, media, and item sets. The "Advanced edit" button allows you to input a query string.
 
 ![Add category form with name filled in and search query Edit buttons interface](../modules/modulesfiles/FacetedBrowse-SearchQuery.png)
+
+You can leave the query blank to include all of the selected resource in the site. 
 
 After setting the pool of resources, you can create facets and add columns to your browse display. Once you are done creating your facets and setting your display columns, save your category.
 
@@ -56,7 +58,7 @@ You can have more than one category per page. See [Multiple categories on one pa
 
 Facets work within the categories you have created. You can have one or more facets for each category. These are the selections that site visitors will use to narrow down the list of items.
 
-You can create facets from the following options: Value; Resource class; Resource Template; Item Set; Full text.
+You can create facets from the following options: Value; Resource class; Resource template; Item set; Full-text.
 
 ![Facet Type dropdown menu showing options](../modules/modulesfiles/FacetedBrowse-SelectFacetType.png)
 
@@ -72,12 +74,12 @@ Give the facet a name (required). This will display on the public view, so make 
 
 Use the dropdown to select which property to use for the facet.
 
-Set the Select type for the browse faceting. This sets how site visitors interact with the options in the Values field:
+Set the Select type for the browse faceting. This sets how site visitors interact with the options in the field:
 
-- Single (list). Visitors can select only one, all options are displayed in a list.
-- Multiple (list). Visitors can select multiple, all options are displayed in a list.
-- Single (dropdown menu). Visitors can select only one, all options are given in a dropdown menu.
- - Text Input. Visitors can type in text to search items that have property values corresponding to that text input.
+- Single (list). Visitors can select only one; all options are displayed in a list of radio buttons.
+- Multiple (list). Visitors can select multiple; all options are displayed in a list of checkboxes.
+- Single (dropdown menu). Visitors can select only one; all options are given in a dropdown menu.
+ - Text input. Visitors can type in text to search items that have property values corresponding to that text input.
 
  For the Select types that include a list or a dropdown menu you will need to set a Query type. If the query type is
 
@@ -90,7 +92,7 @@ Set the Select type for the browse faceting. This sets how site visitors interac
 -  "Has any value": Visitors will enter the property label.
 -  "Has no values": Visitors will enter the property label.
 
-For the Single (list) and Multiple (list) Select types, Page creators can choose to truncate the values available on this list that is visible to the site visitor by setting a number in the "Truncate values" option. Leaving the input blank will list all values.
+For the Single (list) and Multiple (list) Select types, Page creators can choose to truncate the values available on this list that is visible to the site visitor by setting a number in the "Truncate values" option. Leaving the input blank will display all values. Entering in a number will display only that number of facets, in order, with a "See more (X)" link displaying the number of further facets.  
 
 Next, enter the Values that will make up the facets. Each value should be on a separate line.
    -  Check the "Show all available values" box to get a sense of the data that is available for input. This will return existing values in the property you selected above. You may click the "Add all" button to populate the list of values.
@@ -103,15 +105,15 @@ Next, enter the Values that will make up the facets. Each value should be on a s
 
 When you are satisfied with your settings, click the "Set facet" button.
 
+For example, you may wish to load all the "Subject" property's values and allow people to browse items using the subject headings currently in use. If you select "Show all available values" you will see a list of subjects currently in use, from most frequent to least. Note that you may wish to clean up your data and consolidate similar values, or fix typos and variations, to make faceted browsing more useful. You can use the [Value Suggest module](../modules/valuesuggest.md) in tandem with Faceted Browse to view and clean messy data.
+
+Note that these facets do not dynamically update when new items' values are added to the corpus, or when values are manually edited. You must reload the options using "Show all available values" and "Add all" in the facet to update the browsing list's content and order.
+
 **Resource class** allow visitors to narrow items by their resource class.
 
 Give the facet a name (required).
 
-Set the Select type for the browse faceting:
-
-- Single (list). Visitors can select only one, all options are displayed in a list.
-- Multiple (list). Visitors can select multiple, all options are displayed in a list.
-- Single (dropdown menu). Visitors can select only one, all options are given in a dropdown menu.
+Set the Select type for the browse faceting.
 
 Select the Classes that will make up the facets from the dropdown menu.
 
@@ -123,11 +125,7 @@ When you are satisfied with your settings, click the "Set facet" button.
 
 Give the facet a name (required).
 
-Set the Select type for the browse faceting:
-
-- Single (list). Visitors can select only one, all options are displayed in a list.
-- Multiple (list). Visitors can select multiple, all options are displayed in a list.
-- Single (dropdown menu). Visitors can select only one, all options are given in a dropdown menu.
+Set the Select type for the browse faceting.
 
 Select the Resource templates that will make up the facets.
 
@@ -139,11 +137,7 @@ When you are satisfied with your settings, click the "Set facet" button.
 
 Give the facet a name (required).
 
-Set the Select type for the browse faceting:
-
-- Single (list). Visitors can select only one, all options are displayed in a list.
-- Multiple (list). Visitors can select multiple, all options are displayed in a list.
-- Single (dropdown menu). Visitors can select only one, all options are given in a dropdown menu.
+Set the Select type for the browse faceting.
 
 Select the item sets that will make up the facets.
 
@@ -151,7 +145,7 @@ Check the "Show all available item sets" box to get a sense of the data that is 
 
 When you are satisfied with your settings, click the "Set facet" button.
 
-**Full-text** adds a text search bar which will narrow down the displayed items based on what the visitor inputs.
+**Full-text** adds a text search bar that will narrow down the results based on what the visitor inputs. This will include all values, including title, description, class, and any extracted text. 
 
 Give the facet a name (required).
 
@@ -159,11 +153,11 @@ When you are satisfied with your settings, click the "Set facet" button.
 
 #### Numeric Data Types
 
-If you are using the Numeric Data Types module, you will have additional facet types to work with, including Date after, Date before, Value greater than, Value less than, Duration greater than, Duration less than, Date in interval.
+If you are using the [Numeric Data Types module](../modules/numericdatatypes.md), you will have additional facet types to work with, including Date after, Date before, Value greater than, Value less than, Duration greater than, Duration less than, Date in interval.
 
 ![Facet Type dropdown menu showing options including Numeric Date Types](../modules/modulesfiles/FacetedBrowse-NumericDataTypesSelect.png)
 
-Once you have selected a facet type, you will be able to configure the facet to operate with the properties that use a numeric data type.
+Once you have selected a facet type, you will be able to configure the facet to operate with the properties that use a numeric data type. Only properties with the exact data type set (Integer, Date, Duration, or Interval) will display in the dropdown.
 
 In the public view, the faceting will be controlled through a dropdown menu.
 
@@ -171,7 +165,9 @@ In the public view, the faceting will be controlled through a dropdown menu.
 
 ### Columns
 
-If you do not set any columns, the items on the page will initially just display in the default format for your site (grid or list). Once filtered, items will display in a table. The display of the browse list of results defaults to include the title and description for the resource, just as is the case with other browse lists.
+The items on the page will initially display in the default format for your site (grid or list). Items will display in a table. This list of results displays the title, description, and thumbnail for each resource, just as is the case with other browse lists. 
+
+Depending on whether your page has one category or multiple categories, the display of the initial page may change.
 
 You can configure the information displayed about the results by adding columns of metadata to the display for your faceted browse. On the public view of a facted browse, users can sort by a column by selecting it from a dropdown menu. This column can then be sorted in ascending or descending order. If you would like to prevent users from sorting by a certain column, you can check the "Exclude sort by" checkbox when configuring that column to exclude it from the dropdown menu.
 
@@ -231,6 +227,6 @@ When there are multiple categories on a page, it will load with all of the resou
 
 ![Faceted browse page with two categories. The categories are highlighted in a red annotation box labelled "Categories"](../modules/modulesfiles/FacetedBrowse-multiCatView1.png)
 
-Once a user clicks on a category, the resource list will change to display only that category, and the facets will replace the categories in the submenu. Users can use a "back" button on the page to return to the full list of categories.
+Once a user clicks on a category, the resource list will change to display only that category (and the column display you have set for that category), and the facets will replace the categories in the submenu. Users can use a "back" button on the page to return to the full list of categories and clear their filters.
 
 ![A faceted browse page with facets visible. The category heading shows up above the facets. Over that is a button labelled "back." Annotations indicate the button, category, and facet headings.](../modules/modulesfiles/FacetedBrowse-multiCatView2.png)
