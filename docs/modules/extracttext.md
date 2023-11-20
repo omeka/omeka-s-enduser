@@ -55,7 +55,9 @@ The following image files are supported by Tesseract if compiled with the requir
 - TIFF (image/tiff)
 - WEBP (image/webp).
 
-Note that some file extensions or media types may be disallowed in your global settings.
+Note that some file extensions or media types may be disallowed in your [global settings](../admin/settings.md#security).
+
+If you do not have one or more desired extractor tools installed on your server, check with your hosting service or your local server administrator.
 
 ## Extracting text from media
 
