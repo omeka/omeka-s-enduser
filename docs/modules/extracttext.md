@@ -109,18 +109,18 @@ The following extractors have configuration options:
 
 **filegetcontents**:
 
-    offset: The offset where the reading starts (default 0)
-    maxlen: Maximum length of data read (default null).
+- offset: The offset where the reading starts (default 0)
+- maxlen: Maximum length of data read (default null).
 
 **pdftotext**:
 
-    f: First page to convert (default null)
-    l: Last page to convert (default null).
+- f: First page to convert (default null)
+- l: Last page to convert (default null).
 
 **tesseract**:
 
-    l: Language/script (default 'eng')
-    psm: Page segmentation mode (default 3)
-    oem: OCR Engine mode (default 3). 
+- l: Language/script (default 'eng')
+- psm: Page segmentation mode (default 3)
+- oem: OCR Engine mode (default 3). 
 
 [See the Readme](https://github.com/omeka-s-modules/ExtractText){target=_blank}.
