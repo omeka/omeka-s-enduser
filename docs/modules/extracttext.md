@@ -101,7 +101,7 @@ You can clear or refresh text from more than one item at a time (or more than on
 
 ## Languages
 
-Extract Texts extractors, particularly Tesseract and optical character recognition, are configured to recognize English text by default. To set other languages for recognition, [see the Readme](https://github.com/omeka-s-modules/ExtractText){target=_blank}. 
+Extract Text's extractors, particularly Tesseract's optical character recognition, are configured to recognize English text by default. To set other languages for recognition, [see the Readme](https://github.com/omeka-s-modules/ExtractText){target=_blank}.
 
 ## Other configuration options
 
