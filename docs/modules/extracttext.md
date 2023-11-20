@@ -65,11 +65,11 @@ To extract text from media, you can choose several actions:
 - Batch-extract text from all media associated with several items, from the batch-editing page
 - Batch-extract text from a CSV Import containing media uploads.
 
-Extract Text is configured to run automatically when a new piece of media is uploaded anywhere, whether via a CSV Import or by uploading one or more pieces of media to an item. You can manually erase or re-run extracted text by editing the item or media. 
+Extract Text is configured to run automatically when a new piece of media is uploaded anywhere, whether via a CSV Import or by uploading one or more pieces of media to an item. 
 
-![An item in editing mode, showing the extracttext:extracted_text field with contents.](../modules/modulesfiles/extracttext_item_view.png)
+![An item in editing mode, showing the extracttext:extracted_text field with contents.](../modules/modulesfiles/extracttext_item_field.png)
 
-To change the automatic output, navigate to the "Extract Text" tab on an item or on a specific piece of media.
+You can manually erase or re-run extracted text by editing the item or media. To change the automatic output, navigate to the "Extract Text" tab on an item or on a specific piece of media.
 
 ![An item in editing mode, on the Extract Text tab, showing the options to clear or refresh text.](../modules/modulesfiles/extracttext_item_edit.png)
 
