@@ -1,8 +1,8 @@
 # Extract Text
 
-The [Extract Text module](https://omeka.org/s/modules/ExtractText){target=_blank} will extract text from files to make them searchable and machine readable. The extracted text will be added to a property called "extracted text" in a vocabulary unique to that module.
+The [Extract Text module](https://omeka.org/s/modules/ExtractText){target=_blank} will extract text from files to make them searchable and machine readable.
 
-When enabled, Extract Text adds a new metadata field, with a textual data type, at both the item level and at the media level, with the name "extracted text" and the slug `extracttext:extracted_text`. It is set to public by default on item view pages.
+When enabled, Extract Text adds a new metadata vocabulary with one field, with a textual data type, at both the item level and at the media level, with the name "extracted text" and the slug `extracttext:extracted_text`. It is set to public by default on item view pages.
 
 It adds an "Extract text" tab to each item editing page, where you can refresh or remove extracted text. It also adds a batch-editing option to extract or clear text from existing files in your database. When active, it will automatically extract text from files uploaded in [CSV Import](../modules/csvimport.md).
 
@@ -20,7 +20,8 @@ Potential supported file formats for this module are:
 - odt
 - pdf
 - rtf
-- txt.
+- txt
+- bmp, gif, jp2, jpg, png, tiff, and webp (with Tesseract).
 
 You must have the necessary extractors available on your server for the module to run for these filetypes. To see which filetypes will run on your installation, go to the "Extract Text" entry under Modules, and click the "Configure" button. This will load a table showing you which extractors are available on your server.
 
@@ -30,20 +31,19 @@ You must have the necessary extractors available on your server for the module t
 
 On this page you can view which extractors are installed, active, and running in the background. You can enable or disable specific extractors, and configure them to run as background jobs only, which can be more efficient on your server. 
 
-Tesseract runs in the background only as it can be very processing-heavy. Depending on the size of your other files, such as PDFs, you may wish to set other extractors to run in the background only. Background-only extractors will not run when new media are uploaded, but they will run with CSV Import jobs.
+Tesseract runs in the background only as it can be very processing-heavy. Depending on the size of your other files, such as PDFs, you may also wish to set other extractors to run in the background only. Background-only extractors will not run when new media are uploaded, but they will run with CSV Import jobs and when using batch-editing tools.
 
 When "Background only" is not checked, the extractor will run on file upload, on "Refresh text", and on "Refresh text (background)".
 
-
 The extractors required are:
 
-- catdoc, used to extract text from DOC and RTF files.
-- docx2txt, used to extract text from DOCX files.
-- lynx, used to extract text from HTML files.
-- odt2txt, used to extract text from ODT files.
-- pdftotext, used to extract text from PDF files.
-- filegetcontents, used to extract text from TXT files.
-- tesseract, used to recognize text characters from image files. 
+- **catdoc**, used to extract text from DOC and RTF files.
+- **docx2txt**, used to extract text from DOCX files.
+- **lynx**, used to extract text from HTML files.
+- **odt2txt**, used to extract text from ODT files.
+- **pdftotext**, used to extract text from PDF files.
+- **filegetcontents**, used to extract text from TXT files.
+- **tesseract**, used to recognize text characters from image files. 
 
 The following image files are supported by Tesseract if compiled with the required libraries:
 
@@ -60,8 +60,9 @@ Note that some file extensions or media types may be disallowed in your global s
 ## Extracting text from media
 
 To extract text from media, you can choose several actions:
-- Manually extract text from one media, when the media is uploaded, or later on its media editing tab
-- Manually extract text from all media associated with one item, on its item editing tab
+
+- Manually extract text from one media, when the media is uploaded, or later from its media editing screen
+- Manually extract text from all media associated with one item, from its item editing screen
 - Batch-extract text from all media associated with several items, from the batch-editing page
 - Batch-extract text from a CSV Import containing media uploads.
 
@@ -96,7 +97,6 @@ You can clear or refresh text from more than one item at a time (or more than on
 !!! note
 	If you wish not to run specific text extraction along with an import, you must disable the extractors in the Extract Text configuration before starting a CSV Import. We recommend you do this when uploading images that do not contain text such as photographs, as Tesseract will take a long time attempting to recognize text inside images.
 
-
 ## Languages
 
 Extract Texts extractors, particularly Tesseract and optical character recognition, are configured to recognize English text by default. To set other languages for recognition, [see the Readme](https://github.com/omeka-s-modules/ExtractText){target=_blank}. 
@@ -105,17 +105,17 @@ Extract Texts extractors, particularly Tesseract and optical character recogniti
 
 The following extractors have configuration options:
 
-filegetcontents:
+**filegetcontents**:
 
     offset: The offset where the reading starts (default 0)
-    maxlen: Maximum length of data read (default null)
+    maxlen: Maximum length of data read (default null).
 
-pdftotext:
+**pdftotext**:
 
     f: First page to convert (default null)
-    l: Last page to convert (default null)
+    l: Last page to convert (default null).
 
-tesseract:
+**tesseract**:
 
     l: Language/script (default 'eng')
     psm: Page segmentation mode (default 3)
