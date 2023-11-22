@@ -667,12 +667,15 @@ The following are known errors that can occur during an import:
 ## Integration with other modules
 Some other modules add functionality to the CSV import process. If you have these modules installed and active, you will have access to the following options when using CSV Import.
 
-### Mapping
-If you have [Mapping](mapping.md#csv-import-integration) (minimum version 1.1.0) installed and active, you will have additional options in the right-hand drawer when importing Items. Note that these options do not appear for any other import type, including Mixed Resources.
+### Custom Vocab
+If you have [Custom Vocab](../customvocab) installed and active, it will add your custom vocabularies as data types in Omeka. You can select these data types during your CSV Import. 
 
-![Add mapping drawer with additional options for latitude, longitude, and the boundaries of the map](../modules/modulesfiles/csvimport_mapping1.png)
+### Extract Text
 
-For more information, see the [section on the Mapping page](mapping.md#csv-import-integration).
+When the [Extract Text module](../extracttext) is enabled, text extraction will be attempted on any files ingested through a CSV Import process. If available, this will include Tesseract, an image processor that employs optical character recognition (OCR). You can disable individual extractors in the Configuration menu of Extract Text so that they do not run during your import. 
+
+!!! note
+	We recommend you disable Tesseract, or the entire Extract Text module, when performing an import including images such as photographs or drawings. OCR running on images without text in them will be very processor-heavy and may cause problems with your import. 
 
 ### File Sideload
 If you have [File Sideload](../filesideload) (minimum version 1.2.0) installed and active, you can use it as a source for media when running a CSV import.
@@ -682,6 +685,13 @@ Everything on the **Map to Omeka S data** tab will be the same. When you add a m
 ![Dropdown menu for media source, with Sideload highlighted in blue](../modules/modulesfiles/csvimport_sideload.png)
 
 For the data in this column, you need to include the full file name, including extension. So, for example, if you want to import a JPG file named "Jekyll_and_Hyde_Title", then the data in the media column of the CSV you are importing should be `Jekyll_and_Hyde_Title.jpg`.
+
+### Mapping
+If you have [Mapping](mapping.md#csv-import-integration) (minimum version 1.1.0) installed and active, you will have additional options in the right-hand drawer when importing Items. Note that these options do not appear for any other import type, including Mixed Resources.
+
+![Add mapping drawer with additional options for latitude, longitude, and the boundaries of the map](../modules/modulesfiles/csvimport_mapping1.png)
+
+For more information, see the [section on the Mapping page](mapping.md#csv-import-integration).
 
 ### Numeric Data Types
 If you have [Numeric Data Types](../numericdatatypes) installed and active, it will add the option to set a column data type as numeric data.
@@ -720,6 +730,3 @@ Use the following ISO 8601 formats for importing [durations](https://en.wikipedi
 
 - `P23DT23H` (23 days & 23 hours)
 - `P3Y6M4DT12H30M5S` (3 years, 6 months, 4 days, 12 hours, 30 minutes, & 5 seconds).
-
-### Custom Vocab
-If you have [Custom Vocab](../customvocab) installed and active, it will add your custom vocabularies as data types in Omeka. You can select these data types during your CSV Import. 
