@@ -1,12 +1,12 @@
 # Faceted Browse
 
-The [Faceted Browse module](https://omeka.org/s/modules/FacetedBrowse){target=_blank} lets you create "browse resource" pages with facets - filter and sort functions - that site visitors can use.
+The [Faceted Browse module](https://omeka.org/s/modules/FacetedBrowse){target=_blank} lets you create "browse resource" pages with facets - filter and sort functions - that site visitors can use to explore your collections. Faceted Browse pages can be made for items, items sets, or media. 
 
-With this module, site managers are able to configure faceted browse pages and add them to their sites. End users are then able to browse through categories of resources and use the facets to narrow the results in a logical and intuitive manner. This functionality is similar to the filtering options on many websites and should be easy for users to manage as long as you have clear language.
+With this module, site managers are able to configure faceted browse pages and add them to their site's [navigation](../sites/site_navigation.md). End users are then able to browse through resources and use the facets to narrow the results in a logical and intuitive manner. This functionality is similar to the filtering options on many websites and should be easy for users to manage as long as you have clear language.
 
 The [public view](#public-views) section below shows how these facets display for single and multi-category pages.
 
-Faceted browse pages exist as separate [pages](../sites/site_pages.md), which can be added to the [navigation](../sites/site_navigation.md) in a similar fashion to default browse pages. You **cannot** add faceted browsing to a page as a block, or as part of an existing browse page.
+Faceted browse pages exist as separate [pages](../sites/site_pages.md). You **cannot** add faceted browsing to a page as a block, or as part of an existing browse page.
 
 Once activated, Faceted Browse is configured on a site-by-site basis.
 
@@ -14,11 +14,13 @@ Once activated, Faceted Browse is configured on a site-by-site basis.
 
 A quick guide to the terms used to describe the aspects of a faceted browse page:
 
-- Category: a group of resources (items, item sets, or media) to which facets are applied on a specific page.
-- Column: information to display for each resource in the category. Once you have at least one column, the items will display in a table form (not a grid).
-- Facet: an aspect of a resource - usually part of the metadata - which becomes a way to filter the resources in the category.
+- Category: a group of resources (items, item sets, or media) to which facets are applied on a specific page. You can use a query to narrow the resources, or leave it blank to show all of that resource type. 
+- Facet: an aspect of a resource - usually part of the metadata - which becomes a way to filter the resources in the category. Faceted browsing works best when you have some controlled vocabularies in your metadata values, or when unique values can be sorted into buckets (such as dates browsed by century). 
+- Column: information to display for each resource in the results. Columns are optional. Once you have set at least one column, the items will display in a table form (not a grid). When no columns are set, your browsing default will display (e.g. title, thumbnail, and description for each resource).
 
 ## Creating and managing Faceted Browse pages
+
+![Site admin showing Faceted Browse startup page.](modulesfiles/facetedBrowse.png)
 
 Once the Faceted Browse module is active, a tab for Faceted Browse will appear in the context menu for every site. Clicking on this tab will take you to a list of all of your Faceted Browse pages for that site.
 
@@ -95,13 +97,15 @@ Set the Select type for the browse faceting. This sets how site visitors interac
 For the Single (list) and Multiple (list) Select types, Page creators can choose to truncate the values available on this list that is visible to the site visitor by setting a number in the "Truncate values" option. Leaving the input blank will display all values. Entering in a number will display only that number of facets, in order, with a "See more (X)" link displaying the number of further facets.  
 
 Next, enter the Values that will make up the facets. Each value should be on a separate line.
-   -  Check the "Show all available values" box to get a sense of the data that is available for input. This will return existing values in the property you selected above. You may click the "Add all" button to populate the list of values.
-   -  The formatting of the value input will depend up on the query type selected above. If the query type is
 
-      -  "Is exactly": enter a value that is an exact match to the property value.
-      -  "Contains": enter a value that matches any part of the property value.
-      -  "Is resource with ID": enter the resource ID followed by any value (usually the resource title), separated by a single space.
-      -  "Has any value": enter the property ID followed by any value (usually the property label), separated by a single space.
+Check the "Show all available values" box to get a sense of the data that is available for input. This will return existing values in the property you selected above. You may click the "Add all" button to populate the list of values.
+
+The formatting of the value input will depend up on the query type selected above. If the query type is
+
+-  "Is exactly": enter a value that is an exact match to the property value.
+-  "Contains": enter a value that matches any part of the property value.
+-  "Is resource with ID": enter the resource ID followed by any value (usually the resource title), separated by a single space.
+-  "Has any value": enter the property ID followed by any value (usually the property label), separated by a single space.
 
 When you are satisfied with your settings, click the "Set facet" button.
 
