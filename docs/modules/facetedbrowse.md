@@ -6,7 +6,7 @@ With this module, site managers are able to configure faceted browse pages and a
 
 The [public view](#public-views) section below shows how these facets display for single and multi-category pages.
 
-Faceted browse pages exist as separate [pages](../sites/site_pages.md). You **cannot** add faceted browsing to a page as a block, or as part of an existing browse page.
+Faceted browse pages exist as separate [pages](../sites/site_pages.md). You cannot add faceted browsing to a page as a block, or as part of an existing browse page.
 
 Once activated, Faceted Browse is configured on a site-by-site basis.
 
@@ -16,7 +16,7 @@ A quick guide to the terms used to describe the aspects of a faceted browse page
 
 - Category: a group of resources (items, item sets, or media) to which facets are applied on a specific page. You can use a query to narrow the resources, or leave it blank to show all of that resource type. 
 - Facet: an aspect of a resource - usually part of the metadata - which becomes a way to filter the resources in the category. Faceted browsing works best when you have some controlled vocabularies in your metadata values, or when unique values can be sorted into buckets (such as dates browsed by century). 
-- Column: information to display for each resource in the results. Columns are optional. Once you have set at least one column, the items will display in a table form (not a grid). When no columns are set, your browsing default will display (e.g. title, thumbnail, and description for each resource).
+- Column: information to display for each resource in the results. Columns are optional. Once you have set at least one column, the items will display in a table form (not a grid). When no columns are set, your site's browsing default will display (e.g. title, thumbnail, and description for each resource).
 
 ## Creating and managing Faceted Browse pages
 
@@ -32,7 +32,7 @@ Create a new page by clicking the "Add a page" button. This takes you to a new p
 
 ![Create page interface showing save page dropdown](../modules/modulesfiles/FacetedBrowse-AddPage.png)
 
-The **title** functions the same as the title of a regular page: it will show up in navigation and display when the page is active.
+The **page title** is required and will display on browser tabs and be sent in the page metadata. You can set a separate label in the site navigation, and most themes will not display this title visibly on the page. When one category is in use, its title will show on the page; when two or more categories are set, the word "Browse" will appear above the category links in the sidebar. 
 
 Use the **resource type** dropdown to select the resource type that you would like to let users browse on this page: Items, Item Sets, or Media. This cannot be edited after page creation.
 
@@ -46,13 +46,11 @@ Once the page has been created, the user must create a Category, which can narro
 
 Click the "Add" button and give your category a name.
 
-Use the search query interface to set the pool of resources that users will browse. The "Edit" button opens a drawer on the right hand side of the browser window which works exactly like [advanced search forms](../search.md#item-advanced-search) for items, media, and item sets. The "Advanced edit" button allows you to input a query string.
+Use the search query interface to set the pool of resources that users will browse. The "Edit" button opens a drawer on the right hand side of the browser window which works exactly like [advanced search forms](../search.md#item-advanced-search) for items, media, and item sets. The "Advanced edit" button allows you to input a query string. You can leave the query blank to include all of the page's selected resource (that have been added to the site). 
 
 ![Add category form with name filled in and search query Edit buttons interface](../modules/modulesfiles/FacetedBrowse-SearchQuery.png)
 
-You can leave the query blank to include all of the selected resource in the site. 
-
-After setting the pool of resources, you can create facets and add columns to your browse display. Once you are done creating your facets and setting your display columns, save your category.
+After setting the pool of resources, you can create facets and set columns for your browse display. Once you are done creating your facets and setting your display columns, save your category.
 
 You can have more than one category per page. See [Multiple categories on one page](#multiple-categories-on-one-page) for how this functions on the public view.
 
@@ -60,7 +58,13 @@ You can have more than one category per page. See [Multiple categories on one pa
 
 Facets work within the categories you have created. You can have one or more facets for each category. These are the selections that site visitors will use to narrow down the list of items.
 
-You can create facets from the following options: Value; Resource class; Resource template; Item set; Full-text.
+You can create facets from the following options: 
+
+- Value
+- Resource class
+- Resource template
+- Item set (for items only)
+- Full-text.
 
 ![Facet Type dropdown menu showing options](../modules/modulesfiles/FacetedBrowse-SelectFacetType.png)
 
@@ -88,7 +92,7 @@ Set the Select type for the browse faceting. This sets how site visitors interac
 - "Is exactly": Visitors will have to enter a value that is an exact match to the property value.
 - "Is not exactly": Visitors can enter an exact value to be excluded from the the property values.
 - "Contains": Visitors can enter a value that matches any part of the property value.
-- "Does not contain": Visitors can enter a value to be exluded from any part of the property value.
+- "Does not contain": Visitors can enter a value to be excluded from any part of the property value.
 -  "Is resource with ID": Visitors will enter the resource ID.
 -  "Is not resource with ID": Visitors will enter a resource ID to be excluded.
 -  "Has any value": Visitors will enter the property label.
@@ -113,31 +117,37 @@ For example, you may wish to load all the "Subject" property's values and allow 
 
 Note that these facets do not dynamically update when new items' values are added to the corpus, or when values are manually edited. You must reload the options using "Show all available values" and "Add all" in the facet to update the browsing list's content and order.
 
-**Resource class** allow visitors to narrow items by their resource class.
+##### **Resource class** 
+
+Allows visitors to narrow items by their resource class.
 
 Give the facet a name (required).
 
 Set the Select type for the browse faceting.
 
-Select the Classes that will make up the facets from the dropdown menu.
+Select the classes that will make up the facets from the dropdown menu.
 
 Check the "Show all available classes" box to get a sense of the data that is available for input.
 
 When you are satisfied with your settings, click the "Set facet" button.
 
-**Resource template** allow visitors to narrow items by their [resource template](../content/resource-template.md).
+##### **Resource template** 
+
+Allows visitors to narrow items by their [resource template](../content/resource-template.md).
 
 Give the facet a name (required).
 
 Set the Select type for the browse faceting.
 
-Select the Resource templates that will make up the facets.
+Select the resource templates that will make up the facets.
 
 Check the "Show all available templates" box to get a sense of the data that is available for input.
 
 When you are satisfied with your settings, click the "Set facet" button.
 
-**Item set** allows visitors to narrow items by [item set](../content/item-sets.md).
+##### **Item set** 
+
+Allows visitors to narrow items by [item set](../content/item-sets.md).
 
 Give the facet a name (required).
 
@@ -149,13 +159,15 @@ Check the "Show all available item sets" box to get a sense of the data that is 
 
 When you are satisfied with your settings, click the "Set facet" button.
 
-**Full-text** adds a text search bar that will narrow down the results based on what the visitor inputs. This will include all values, including title, description, class, and any extracted text. 
+##### **Full-text** 
+
+Adds a text search bar that will narrow down the results based on what the visitor inputs. This will include all values, including title, description, class, and any extracted text. 
 
 Give the facet a name (required).
 
 When you are satisfied with your settings, click the "Set facet" button.
 
-#### Numeric Data Types
+#### Numeric Data Types integration
 
 If you are using the [Numeric Data Types module](../modules/numericdatatypes.md), you will have additional facet types to work with, including Date after, Date before, Value greater than, Value less than, Duration greater than, Duration less than, Date in interval.
 
@@ -175,35 +187,44 @@ Depending on whether your page has one category or multiple categories, the disp
 
 You can configure the information displayed about the results by adding columns of metadata to the display for your faceted browse. On the public view of a facted browse, users can sort by a column by selecting it from a dropdown menu. This column can then be sorted in ascending or descending order. If you would like to prevent users from sorting by a certain column, you can check the "Exclude sort by" checkbox when configuring that column to exclude it from the dropdown menu.
 
-Select a type of column to add from the dropdown menu: Title (link to resource); Value; Resource class; Resource template; Item set; ID.
+Select a type of column to add from the dropdown menu: 
 
-Once the type is selected, click the "Add" button. A drawer will open with options to configure the column.
+- Title (link to resource) 
+- Value
+- Resource class
+- Resource template 
+- Item set 
+- ID.
 
-**Title (link to resource)**
+Once the type is selected, click the "Add" button. A drawer will open with options to configure the column. When you are satisfied with configuring the column, remember to click the "Set column" button or your work will not be saved.
 
-Give the column a name (required). When you are satisfied with configuring the column, click the "Set column" button.
+![Public Faceted Browse page with columns displaying: ](../modules/modulesfiles/FacetedBrowse_columns.png)
 
-**Value**
+#### **Title (link to resource)**
 
-Give the column a name (required). Select a Property to be displayed (required). Then, set the maximum number of values for that property. To display all values, set the input to blank.
+Give the column a name (required). 
 
-When you are satisfied with configuring the column, click the "Set column" button.
+#### **Value**
 
-**Resource class**
+Give the column a name (required). Select a Property to be displayed (required). 
+
+Then, set the maximum number of values for that property. To display all values, set the input to blank. This may cause very tall rows in your table, if items have multiple values for the selected property. 
+
+If a value is very long, such as your description field, you may also end up with very tall table rows, with the largest field occupying the widest column and other columns narrowed down to compensate. 
+
+#### **Resource class**
 
 Give the column a name (required).
 
-When you are satisfied with configuring the column, click the "Set column" button.
+#### **Item set**
 
-**Item set**
+Give the column a name (required). 
 
-Give the column a name. (Required) Set the maximum number of item sets to be displayed. To display all values, set the input to blank.
+Set the maximum number of item sets to be displayed. To display all values, set the input to blank. This may cause very tall rows in your table, if items are in a number of item sets. 
 
-When you are satisfied with configuring the column, click the "Set column" button.
+#### **ID**
 
-**ID**
-
-Give the column a name (required). When you are satisfied with configuring the column, click the "Set column" button.
+Give the column a name (required). 
 
 ## Add a Faceted Browse page to the site navigation
 
@@ -211,9 +232,9 @@ Click on the [Navigation tab](../sites/site_navigation.md) for your site. From t
 
 ![Custom links in the right drawer to add elements to the navigation](../modules/modulesfiles/FacetedBrowse-AddPageNav.png)
 
-Give your custom link a label (required), and select from your dropdown list of faceted browse pages (required).
+Give your custom link a label (required), and select from your dropdown list of faceted browse pages (required). 
 
-You may add as many Faceted browse custom links as you desire.
+You may add as many Faceted Browse custom links as you desire.
 
 Drag and drop your pages into the desired place in your site navigation, and then save your work.
 
