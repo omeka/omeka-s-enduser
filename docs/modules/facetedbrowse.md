@@ -69,7 +69,9 @@ You can create facets from the following options:
 
 ![Facet Type dropdown menu showing options](../modules/modulesfiles/FacetedBrowse-SelectFacetType.png)
 
-Once the type is selected, click the "Add" button. A drawer will open on the right side of the browser window with options to configure the facet. Facet names are always required and will display in the public interface. Other facet options are described below.
+Once the type is selected, click the "Add" button. A drawer will open on the right side of the browser window with options to configure the facet. Facet names are always required and will display in the public interface. We recommend you try to describe what the visitor will be doing in this area - "Title contains", or "Description excludes"
+
+Other facet options are described below.
 
 The image below shows the drawer options for the Value facet:
 
@@ -90,31 +92,31 @@ Set the Select type for the browse faceting. This sets how site visitors interac
 - Single (list). Visitors can select only one; all options are displayed in a list of radio buttons.
 - Multiple (list). Visitors can select multiple; all options are displayed in a list of checkboxes. Multiple selections by site visitors will narrow (Option 1 AND Option 2) the search results. 
 - Single (dropdown menu). Visitors can select only one; all options are displayed in a dropdown menu.
-- Text input. Visitors can type in text to search items that have property values corresponding to that text input.
+- Text input. Visitors can type in text to include or exclude resources that include that text in their values.
 
-For Select types that include a list or a dropdown menu you can set a Query type (queries are available for value facets only; not for classes, templates, item sets, etc.). The options are:
+For Select types that include a list or a dropdown menu, you can set a Query type (queries are available for value facets only; not for classes, templates, item sets, etc.). The options are:
 
 - "Is exactly": Visitors pick a value that is an exact match to the property value. 
 	- For example, visitors can check a box next to an available subject value and see all items with that exact value in their subject property. Exact text is not case-sensitive.
 - "Is not exactly": Visitors pick a value that exactly matches items to be excluded from the results. 
 	- For example, visitors can check a box next to an available subject value and see all items that do not have that exact value in their subject property.
 - "Contains": Visitors can pick a value that appears in any part of the property value.
-- "Does not contain": Visitors can enter a string to be excluded from any part of the property value.
--  "Is resource with ID": Visitors will enter the resource ID. 
-	- If you then "Add all available values", visitors will see a list of resource titles that are [used as values on other items (that is, linked resources)](../content/items.md#linked-resources). You can employ this option without selecting a single property; then all linked resource values will be included. Note that IDs will not show on the public interface, although they are displayed in the administrative side.
--  "Is not resource with ID": Visitors will enter a resource ID to be excluded. 
-	- If you then "Add all available values", visitors will see a list of IDs. You can employ this option without selecting a single property; then all linked resource values will be included. Note that IDs will not show on the public interface, although they are displayed in the administrative side.
--  "Has any value": Visitors will enter the property label. 
+- "Does not contain": Visitors can pick a value to be excluded from any part of the property value.
+-  "Is resource with ID": Visitors will select a resource to be included. 
+	- If you then "Add all available values", visitors will see a list of resources that are [used as values on other items (that is, linked resources)](../content/items.md#linked-resources). You can employ this option without selecting a single property; then all linked resource values will be included. Note that IDs will not show on the public interface, although they are displayed in the administrative side.
+-  "Is not resource with ID": Visitors will select a resource to be excluded. 
+	- If you then "Add all available values", visitors will see a list of resources that are used as values on other items. You can employ this option without selecting a single property; then all linked resource values will be included. Note that IDs will not show on the public interface, although they are displayed in the administrative side.
+-  "Has any value": Visitors will select the property. 
 	- This will erase the property you chose in the steps above. If you then "Add all available values", visitors will see a list of properties that have values in them (in the format "Dublin Core: Language"). 
--  "Has no values": Visitors will enter the property label. 
+-  "Has no values": Visitors will select the property. 
 	- This will erase the property you chose in the steps above. If you then "Add all available values", visitors will see a list of properties that have empty values (in the format "Dublin Core: Language"). 
 
-For the text input Select type, the options are:
+For the text input Select type, you can set a specific property to search, or leave it blank to search all properties. Exact text is not case-sensitive. The options are:
 
-- "Is exactly": Visitors will have to enter a value that is an exact match to the property value. 
-- "Is not exactly": Visitors can enter an exact value to be excluded from the the property values.
-- "Contains": Visitors can enter a value that matches any part of the property value. For example, they can search within item descriptions for a family name or a place.
-- "Does not contain": Visitors can enter a value to be excluded from any part of the property value. For example, they can exclude all items that mention a specific first name or place.
+- "Is exactly": Visitors enter a value that is an exact match to the full property value. 
+- "Is not exactly": Visitors enter an exact value to be excluded from the the property values.
+- "Contains": Visitors enter a value that matches any part of the property value. For example, they can search within item descriptions for a family name or a place.
+- "Does not contain": Visitors enter a value to be excluded from any part of the property value. For example, they can exclude all items that mention a specific first name or place.
 
 You cannot leave the query blank. You may wish to provide multiple types of Select queries for the same field, in order to offer more granularity to site visitors.
 
@@ -122,7 +124,9 @@ For the Single (list) and Multiple (list) Select types, Page creators can choose
 
 Next, enter the values that will make up the facets. Each value should be on a separate line.
 
-Check the "Show all available values" box to get a sense of the data that is available for input. This will return existing values in the property you selected above. You may click the "Add all" button to populate the list of values.
+Check the "Show all available values" box to get a sense of the data that is available for input. This will return existing values in the property you selected above, or from all properties. You may click the "Add all" button to populate the list of values. 
+
+The order of your available values (from most to least frequent) will not persist when you use the "Add all" button. Properties will rearrange themselves according to an internal order, as will resource templates, classes, and resources by ID. 
 
 The formatting of the value input will depend up on the query type selected above. If the query type is
 
@@ -132,6 +136,7 @@ The formatting of the value input will depend up on the query type selected abov
 -  "Has any value": enter the property ID followed by any value (usually the property label), separated by a single space.
 
 When you are satisfied with your settings, click the "Set facet" button.
+
 
 For example, you may wish to load all the "Subject" property's values and allow people to browse items using the subject headings currently in use. If you select "Show all available values" you will see a list of subjects currently in use, from most frequent to least. Note that you may wish to clean up your data and consolidate similar values, or fix typos and variations, to make faceted browsing more useful. You can use the [Value Suggest module](../modules/valuesuggest.md) in tandem with Faceted Browse to view and clean messy data.
 
