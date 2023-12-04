@@ -17,7 +17,11 @@ A quick guide to the terms used to describe the aspects of a faceted browse page
 - Category: a group of resources (items, item sets, or media) to which facets are applied on a specific page. You can use a query to narrow the resources, or leave it blank to show all of that resource type. 
 - Facet: an aspect of a resource - usually part of the metadata - which becomes a way to filter the resources in the category. Faceted browsing works best when you have some controlled vocabularies in your metadata values, or when unique values can be sorted into buckets (such as dates browsed by century). 
 - Column: information to display for each resource in the results. Columns are optional. Once you have set at least one column, the items will display in a table form (not a grid). When no columns are set, your site's browsing default will display (e.g. title, thumbnail, and description for each resource).
-- Select: When a facet is browseable, you should allow your visitors the most appropriate means of sorting or searching those facets. You can allow them to exclude or include strings in the results, match full values exactly, or, with numerical data types, bucket the values into groupings that you set. 
+- Select: When a facet is browseable, you should allow your visitors the most appropriate means of sorting or searching those facets. You can allow them to, for example, exclude or include strings in the results, match full values exactly, or, with numerical data types, bucket the values into groupings that you set. 
+
+![Faceted browse page with a list of events that happened on the National Mall. On the left side of the image is a list of eras with radio buttons.](../modules/modulesfiles/FacetedBrowse_publicView-basic.png)
+
+In the example public view above, the title "Browse items" is used for the page's appearance in the navigation; "Filter by type" is the category name in the left-hand sidebar of the page. Facets in the category include "Class", "Template used", and "Collection". In these examples the Select used is "Multiple (list)", which results in checkboxes for each option, and the visible options are truncated at 4.
 
 ## Create Faceted Browse pages
 
@@ -26,6 +30,7 @@ A quick guide to the terms used to describe the aspects of a faceted browse page
 Once the Faceted Browse module is active, a tab for Faceted Browse will appear in the context menu for every site. Clicking on this tab will take you to a list of all of your Faceted Browse pages for that site.
 
 Site managers must create Faceted Browse pages before they can be added to the site's navigation.
+
 
 ### Add a Faceted Browse page
 
@@ -69,7 +74,7 @@ You can create facets from the following options:
 
 ![Facet Type dropdown menu showing options](../modules/modulesfiles/FacetedBrowse-SelectFacetType.png)
 
-Once the type is selected, click the "Add" button. A drawer will open on the right side of the browser window with options to configure the facet. Facet names are always required and will display in the public interface. We recommend you try to describe what the visitor will be doing in this area - "Title contains", or "Description excludes"
+Once the type is selected, click the "Add" button. A drawer will open on the right side of the browser window with options to configure the facet. Facet names are always required and will display in the public interface. 
 
 Other facet options are described below.
 
@@ -249,12 +254,16 @@ The public view of a faceted browse should look familiar to many viewers:
 
 In this image, the facet is Era, displayed as a single-choice list. The items for this page are displayed in columns with the title and era for each item.
 
+Depending on your columns settings on each category, you may have more columns than the user's browser window can accommodate. If so, they will see only the number of columns that can fit their contents on the page without overflow, and see left and right arrows above the top-right corner of the table to scroll the hidden columns into view. Note that text in columns that are not showing on the page will not come up if the user text-searches the page.
+
+![Faceted Browse page with the results table displaying left and right arrows to view columns that are not visible at the current page width.](../modules/modulesfiles/FacetedBrowse_publicView2.png)
+
 ### Multiple categories on one page
 
-When there are multiple categories on a page, it will load with all of the resources from all categories displayed and the categories available in a submenu.
+When there are multiple categories on a page, it will load with all of the resources from all categories displayed and will show links to the categories available in a submenu.
 
 ![Faceted browse page with two categories. The categories are highlighted in a red annotation box labelled "Categories"](../modules/modulesfiles/FacetedBrowse-multiCatView1.png)
 
-Once a user clicks on a category, the resource list will change to display only that category (and the column display you have set for that category), and the facets will replace the categories in the submenu. Users can use a "back" button on the page to return to the full list of categories and clear their filters.
+Once a user clicks on a category, the resource list will change to display only that category's resources, the column display you have set, and its facets in the submenu. Users can use a "Back" button on the page to return to the full list of categories and clear their filters.
 
-![A faceted browse page with facets visible. The category heading shows up above the facets. Over that is a button labelled "back." Annotations indicate the button, category, and facet headings.](../modules/modulesfiles/FacetedBrowse-multiCatView2.png)
+![A faceted browse page with facets visible. The category heading shows up above the facets. Over that is a button labelled "Back". Annotations indicate the button, category, and facet headings.](../modules/modulesfiles/FacetedBrowse-multiCatView2.png)
