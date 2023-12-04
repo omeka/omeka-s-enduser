@@ -68,6 +68,7 @@ This module includes the following vocabularies:
 - Nuovo Soggettario
 - OCLC Metadata Services
 - ORCID (Open Researcher and Contributor ID)
+- PBCore Controlled Vocabularies
 - PACTOLS of Frantiq
 - PeriodO
 - RDA Value Vocabularies
@@ -188,6 +189,22 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 ### [ORCID (Open Researcher and Contributor ID)](https://info.orcid.org/){target=_blank}
 
 - ORCID. Search by name or by entering in an ORCID number and selecting the name from the dropdown.
+
+### [PBCore Controlled Vocabularies](https://pbcore.org/pbcore-controlled-vocabularies)
+
+- pbcoreAssetType
+- @dateType
+- @titleType
+- @descriptionType
+- pbcoreRelationType
+- instantiationRelationType
+- creatorRole and contributorRole
+- publisherRole
+- instantiationPhysical: Audio
+- instantiationPhysical: Film
+- instantiationPhysical: Video
+- instantiationMediaType
+- instantiationGenerations.
 
 ### [PACTOLS of Frantiq](https://pactols.frantiq.fr/){target=_blank} (`fr`)
  
