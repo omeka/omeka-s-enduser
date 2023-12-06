@@ -52,9 +52,11 @@ Once the page has been created, the user must create a Category, which can narro
 
 Click the "Add" button and give your category a name.
 
-Use the search query interface to set the pool of resources that users will browse. The "Edit" button opens a drawer on the right hand side of the browser window which works exactly like [advanced search forms](../search.md#item-advanced-search) for items, media, and item sets. The "Advanced edit" button allows you to input a query string. You can leave the query blank to include all of the page's selected resource (that have been added to the site). 
+Use the search query interface to set the pool of resources that users will browse. The "Edit" button opens a drawer on the right hand side of the browser window which works exactly like [advanced search forms](../search.md#item-advanced-search) for items, media, and item sets. The "Advanced edit" button allows you to input a query string. You can leave the query blank to include all of the site's resources of that type. 
 
-![Add category form with name filled in and search query Edit buttons interface](../modules/modulesfiles/FacetedBrowse_SearchQuery.png)
+You can also set a default sorting method to use when a site visitor starts to browse using this category. The dropdown menu will show "Created" and "Title" at first, but will update to reflect the columns you customize for your browsing table below. You will need to save your columns settings to see this menu updated. Note that you cannot set a default sort by an Item Set column. 
+
+![Add category form showing Name, query, Default sort, Facets, and Columns options](../modules/modulesfiles/FacetedBrowse_SearchQuery.png)
 
 After setting the pool of resources, you can create facets and set columns for your browse display. Once you are done creating your facets and setting your display columns, save your category.
 
@@ -72,7 +74,7 @@ You can create facets from the following options:
 - Item set (for items only)
 - Full-text.
 
-![Facet Type dropdown menu showing options](../modules/modulesfiles/FacetedBrowse-SelectFacetType.png)
+![Facet Type dropdown menu showing options](../modules/modulesfiles/FacetedBrowse_SelectFacetType.png)
 
 Once the type is selected, click the "Add" button. A drawer will open on the right side of the browser window with options to configure the facet. Facet names are always required and will display in the public interface. 
 
@@ -80,7 +82,7 @@ Other facet options are described below.
 
 The image below shows the drawer options for the Value facet:
 
-![Configure Facet draw for the Values facet type](../modules/modulesfiles/FacetedBrowse-ConfigureFacetV.png) 
+![Configure Facet draw for the Values facet type](../modules/modulesfiles/FacetedBrowse_ConfigureFacetV.png) 
 
 For the Single (list) and Multiple (list) Select types, page creators can choose to truncate the values on the list that is visible to the site visitor, by setting a number in the "Truncate values" option. Leaving the input blank will display all values. Entering in a number will display only that number of facets, in order, with a "See more (X)" link displaying the number of further facets. 
 
@@ -186,13 +188,13 @@ Adds a text search bar that will narrow down the results based on what the visit
 
 If you are using the [Numeric Data Types module](../modules/numericdatatypes.md), you will have additional facet types to work with, including Date after, Date before, Value greater than, Value less than, Duration greater than, Duration less than, Date in interval.
 
-![Facet Type dropdown menu showing options including Numeric Date Types](../modules/modulesfiles/FacetedBrowse-NumericDataTypesSelect.png)
+![Facet Type dropdown menu showing options including Numeric Date Types](../modules/modulesfiles/FacetedBrowse_NumericDataTypesSelect.png)
 
 Once you have selected a facet type, you will be able to configure the facet to operate with the properties that use a numeric data type. Only properties with the exact data type set (Integer, Date, Duration, or Interval) will display in the dropdown.
 
 In the public view, the faceting will be controlled through a dropdown menu.
 
-![Public Faceted Browse page with radio button selects for a list of Status values and a "Birth Date Before" dropdown menu in the left column. In the right column is a table of items with information for Title, Location, and Spouse](../modules/modulesfiles/FacetedBrowse-DatesPublic.png)
+![Public Faceted Browse page with radio button selects for a list of Status values and a "Birth Date Before" dropdown menu in the left column. In the right column is a table of items with information for Title, Location, and Spouse](../modules/modulesfiles/FacetedBrowse_DatesPublic.png)
 
 ### Columns
 
