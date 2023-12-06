@@ -25,7 +25,7 @@ In the example public view above, the title "Browse items" is used for the page'
 
 ## Create Faceted Browse pages
 
-![Site admin showing Faceted Browse startup page.](modulesfiles/facetedBrowse.png)
+![Site admin showing Faceted Browse startup page.](modulesfiles/FacetedBrowse.png)
 
 Once the Faceted Browse module is active, a tab for Faceted Browse will appear in the context menu for every site. Clicking on this tab will take you to a list of all of your Faceted Browse pages for that site.
 
@@ -36,7 +36,7 @@ Site managers must create Faceted Browse pages before they can be added to the s
 
 Create a new page by clicking the "Add a page" button. This takes you to a new page where you can add basic information for the page and start adding categories. 
 
-![Create page interface showing save page dropdown](../modules/modulesfiles/FacetedBrowse-AddPage.png)
+![Create page interface showing save page dropdown](../modules/modulesfiles/FacetedBrowse_AddPage.png)
 
 The **page title** is required and will display on browser tabs and be sent in the page metadata. You can set a separate label in the site navigation. Most themes will not display this title visibly on the page. When one category is in use, its title will show on the page; when two or more categories are set, the word "Browse" will appear above the category links in the sidebar. 
 
@@ -54,7 +54,7 @@ Click the "Add" button and give your category a name.
 
 Use the search query interface to set the pool of resources that users will browse. The "Edit" button opens a drawer on the right hand side of the browser window which works exactly like [advanced search forms](../search.md#item-advanced-search) for items, media, and item sets. The "Advanced edit" button allows you to input a query string. You can leave the query blank to include all of the page's selected resource (that have been added to the site). 
 
-![Add category form with name filled in and search query Edit buttons interface](../modules/modulesfiles/FacetedBrowse-SearchQuery.png)
+![Add category form with name filled in and search query Edit buttons interface](../modules/modulesfiles/FacetedBrowse_SearchQuery.png)
 
 After setting the pool of resources, you can create facets and set columns for your browse display. Once you are done creating your facets and setting your display columns, save your category.
 
@@ -238,7 +238,7 @@ Item sets will display with small thumbnails and links to the item sets.
 
 Click on the [Navigation tab](../sites/site_navigation.md) for your site. From the "Add a custom link" list in the page sidebar, select the "Faceted browse" option.
 
-![The navigation screen showing the Faceted Browse page addition dropdown open to see available pages](../modules/modulesfiles/FacetedBrowse-AddPageNav.png)
+![The navigation screen showing the Faceted Browse page addition dropdown open to see available pages](../modules/modulesfiles/FacetedBrowse_AddPageNav.png)
 
 Give your custom link a label (optional), and select from your dropdown list of faceted browse pages (required). If the label is blank, the page title will be used.
 
@@ -262,8 +262,8 @@ Depending on your columns settings on each category, you may have more columns t
 
 When there are multiple categories on a page, it will load with all of the resources from all categories displayed and will show links to the categories available in a submenu.
 
-![Faceted browse page with two categories. The categories are highlighted in a red annotation box labelled "Categories"](../modules/modulesfiles/FacetedBrowse-multiCatView1.png)
+![Faceted browse page with two categories. The categories are highlighted in a red annotation box labelled "Categories"](../modules/modulesfiles/FacetedBrowse_multiCatView1.png)
 
 Once a user clicks on a category, the resource list will change to display only that category's resources, the column display you have set, and its facets in the submenu. Users can use a "Back" button on the page to return to the full list of categories and clear their filters.
 
-![A faceted browse page with facets visible. The category heading shows up above the facets. Over that is a button labelled "Back". Annotations indicate the button, category, and facet headings.](../modules/modulesfiles/FacetedBrowse-multiCatView2.png)
+![A faceted browse page with facets visible. The category heading shows up above the facets. Over that is a button labelled "Back". Annotations indicate the button, category, and facet headings.](../modules/modulesfiles/FacetedBrowse_multiCatView2.png)
