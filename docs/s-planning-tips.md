@@ -61,8 +61,8 @@ The Omeka Team and the community of open source developers have created hundreds
     - [IIIF Presentation](https://omeka.org/s/modules/IiifPresentation/): Offer your resources using the IIIF Presentation API.
 - Displaying resources
     - [Faceted Browse](https://omeka.org/s/modules/FacetedBrowse/): Add more fine-grained browsing tools to your collections.
-    - [Metadata Browse](https://omeka.org/s/modules/MetadataBrowse/): Link from metadata values to find other resources that share the same value.
-    - [URI Dereferencer](https://omeka.org/s/modules/UriDereferencer/): Dereferences URIs when viewing items, media, and item sets. 
+    - [Metadata Browse](https://omeka.org/s/modules/MetadataBrowse/): Link from metadata values to other resources that share the same metadata.
+    - [URI Dereferencer](https://omeka.org/s/modules/UriDereferencer/): Grabs and displays authority control metadata from URIs. 
 
 In addition to these basic groups of modules, you may be interest in the following specific types of functionality.
 
