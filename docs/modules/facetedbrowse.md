@@ -25,7 +25,7 @@ In the example public view above, the title "Browse items" is used for the page'
 
 ## Create Faceted Browse pages
 
-![Site admin showing Faceted Browse startup page.](modulesfiles/facetedBrowse.png)
+![Site admin showing Faceted Browse startup page.](modulesfiles/FacetedBrowse.png)
 
 Once the Faceted Browse module is active, a tab for Faceted Browse will appear in the context menu for every site. Clicking on this tab will take you to a list of all of your Faceted Browse pages for that site.
 
@@ -36,7 +36,7 @@ Site managers must create Faceted Browse pages before they can be added to the s
 
 Create a new page by clicking the "Add a page" button. This takes you to a new page where you can add basic information for the page and start adding categories. 
 
-![Create page interface showing save page dropdown](../modules/modulesfiles/FacetedBrowse-AddPage.png)
+![Create page interface showing save page dropdown](../modules/modulesfiles/FacetedBrowse_AddPage.png)
 
 The **page title** is required and will display on browser tabs and be sent in the page metadata. You can set a separate label in the site navigation. Most themes will not display this title visibly on the page. When one category is in use, its title will show on the page; when two or more categories are set, the word "Browse" will appear above the category links in the sidebar. 
 
@@ -52,9 +52,11 @@ Once the page has been created, the user must create a Category, which can narro
 
 Click the "Add" button and give your category a name.
 
-Use the search query interface to set the pool of resources that users will browse. The "Edit" button opens a drawer on the right hand side of the browser window which works exactly like [advanced search forms](../search.md#item-advanced-search) for items, media, and item sets. The "Advanced edit" button allows you to input a query string. You can leave the query blank to include all of the page's selected resource (that have been added to the site). 
+Use the search query interface to set the pool of resources that users will browse. The "Edit" button opens a drawer on the right hand side of the browser window which works exactly like [advanced search forms](../search.md#item-advanced-search) for items, media, and item sets. The "Advanced edit" button allows you to input a query string. You can leave the query blank to include all of the site's resources of that type. 
 
-![Add category form with name filled in and search query Edit buttons interface](../modules/modulesfiles/FacetedBrowse-SearchQuery.png)
+You can also set a default sorting method to use when a site visitor starts to browse using this category. The dropdown menu will show "Created" and "Title" at first, but will update to reflect the columns you customize for your browsing table below. You will need to save your columns settings to see this menu updated. Note that you cannot set a default sort by an Item Set column. 
+
+![Add category form showing Name, query, Default sort, Facets, and Columns options](../modules/modulesfiles/FacetedBrowse_SearchQuery.png)
 
 After setting the pool of resources, you can create facets and set columns for your browse display. Once you are done creating your facets and setting your display columns, save your category.
 
@@ -72,7 +74,7 @@ You can create facets from the following options:
 - Item set (for items only)
 - Full-text.
 
-![Facet Type dropdown menu showing options](../modules/modulesfiles/FacetedBrowse-SelectFacetType.png)
+![Facet Type dropdown menu showing options](../modules/modulesfiles/FacetedBrowse_SelectFacetType.png)
 
 Once the type is selected, click the "Add" button. A drawer will open on the right side of the browser window with options to configure the facet. Facet names are always required and will display in the public interface. 
 
@@ -80,7 +82,7 @@ Other facet options are described below.
 
 The image below shows the drawer options for the Value facet:
 
-![Configure Facet draw for the Values facet type](../modules/modulesfiles/FacetedBrowse-ConfigureFacetV.png) 
+![Configure Facet draw for the Values facet type](../modules/modulesfiles/FacetedBrowse_ConfigureFacetV.png) 
 
 For the Single (list) and Multiple (list) Select types, page creators can choose to truncate the values on the list that is visible to the site visitor, by setting a number in the "Truncate values" option. Leaving the input blank will display all values. Entering in a number will display only that number of facets, in order, with a "See more (X)" link displaying the number of further facets. 
 
@@ -186,13 +188,13 @@ Adds a text search bar that will narrow down the results based on what the visit
 
 If you are using the [Numeric Data Types module](../modules/numericdatatypes.md), you will have additional facet types to work with, including Date after, Date before, Value greater than, Value less than, Duration greater than, Duration less than, Date in interval.
 
-![Facet Type dropdown menu showing options including Numeric Date Types](../modules/modulesfiles/FacetedBrowse-NumericDataTypesSelect.png)
+![Facet Type dropdown menu showing options including Numeric Date Types](../modules/modulesfiles/FacetedBrowse_NumericDataTypesSelect.png)
 
 Once you have selected a facet type, you will be able to configure the facet to operate with the properties that use a numeric data type. Only properties with the exact data type set (Integer, Date, Duration, or Interval) will display in the dropdown.
 
 In the public view, the faceting will be controlled through a dropdown menu.
 
-![Public Faceted Browse page with radio button selects for a list of Status values and a "Birth Date Before" dropdown menu in the left column. In the right column is a table of items with information for Title, Location, and Spouse](../modules/modulesfiles/FacetedBrowse-DatesPublic.png)
+![Public Faceted Browse page with radio button selects for a list of Status values and a "Birth Date Before" dropdown menu in the left column. In the right column is a table of items with information for Title, Location, and Spouse](../modules/modulesfiles/FacetedBrowse_DatesPublic.png)
 
 ### Columns
 
@@ -238,7 +240,7 @@ Item sets will display with small thumbnails and links to the item sets.
 
 Click on the [Navigation tab](../sites/site_navigation.md) for your site. From the "Add a custom link" list in the page sidebar, select the "Faceted browse" option.
 
-![The navigation screen showing the Faceted Browse page addition dropdown open to see available pages](../modules/modulesfiles/FacetedBrowse-AddPageNav.png)
+![The navigation screen showing the Faceted Browse page addition dropdown open to see available pages](../modules/modulesfiles/FacetedBrowse_AddPageNav.png)
 
 Give your custom link a label (optional), and select from your dropdown list of faceted browse pages (required). If the label is blank, the page title will be used.
 
@@ -262,8 +264,8 @@ Depending on your columns settings on each category, you may have more columns t
 
 When there are multiple categories on a page, it will load with all of the resources from all categories displayed and will show links to the categories available in a submenu.
 
-![Faceted browse page with two categories. The categories are highlighted in a red annotation box labelled "Categories"](../modules/modulesfiles/FacetedBrowse-multiCatView1.png)
+![Faceted browse page with two categories. The categories are highlighted in a red annotation box labelled "Categories"](../modules/modulesfiles/FacetedBrowse_multiCatView1.png)
 
 Once a user clicks on a category, the resource list will change to display only that category's resources, the column display you have set, and its facets in the submenu. Users can use a "Back" button on the page to return to the full list of categories and clear their filters.
 
-![A faceted browse page with facets visible. The category heading shows up above the facets. Over that is a button labelled "Back". Annotations indicate the button, category, and facet headings.](../modules/modulesfiles/FacetedBrowse-multiCatView2.png)
+![A faceted browse page with facets visible. The category heading shows up above the facets. Over that is a button labelled "Back". Annotations indicate the button, category, and facet headings.](../modules/modulesfiles/FacetedBrowse_multiCatView2.png)
