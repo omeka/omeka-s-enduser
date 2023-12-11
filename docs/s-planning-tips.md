@@ -1,6 +1,20 @@
 # Planning Tips
 
-In Omeka S, you build your [sites](../sites) page by page, using already existing resources on your installation. While it is best to have some resources before you start building out the pages, you can begin planning your site before you create the first item or item set.
+## The basics
+
+A brand-new Omeka S installation comes with several pre-designed page types ready to share:
+
+- When you add a new site, you can choose an installed theme right away, or allow it to use the "Default" theme. 
+- The navigation of your first S site will come loaded with a "Browse" page for exploring items. You can quickly add the pre-installed "Welcome" page, which showcases some text formatting styles. 
+- Once you add your first item, you will be able to view the "item view page". Customize this from the "Configure resource pages" button on the "Theme" tab. There is a separate page layout for viewing media attached to items.
+- When you begin sorting items into item sets, you can add a similar "Browse item sets" page to your navigation, and customize a similar "item set view" page. 
+- Depending on the theme you choose, these resource pages may have their own pre-configured blocks. Most themes will by default display: 
+	- for items: a full-size embedding of the media, the item's metadata sorted by schema, a list of item sets and site pages where the item appears, or a list of all the item's attached media with small thumbnails;
+	- for media: a full-size rendering of the media, the media's metadata; 
+	- for item sets: the item set's metadata, then a browsing grid or list of the set's contents.
+- The pages for browsing items and items sets each link to an Advanced Search form.
+
+In Omeka S, you build your [sites](../sites) page by page, using resources you've added to your installation. You should begin planning your site before you start adding resources at scale, but we suggest experimenting with a few sample items and item sets to get a feel for the way Omeka handles them.
 
 What follows are some questions and ideas to help guide you as you plan your sites in Omeka S.
 
