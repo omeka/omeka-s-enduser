@@ -35,6 +35,17 @@ Each user can have [one or more sites to always add new items to by default](../
 | Items | Add to site | Yes | Yes (by default), manually no | No | Yes | Yes |
 | | Remove from site | Yes | No | No | Yes | Yes |
 
+### Public views for items
+
+Items in an Omeka site can be browsed from a "Browse items" page that is automatically added to every site's navigation upon creation. Individual items, once added to the resource pool for a site, will bring up an individual item view page. The layout of this page is configured under the "Theme" tab, by using the "Configure resource pages" button. 
+
+By default, the item view page shows the item's title at the top, then a rendering of any media attached to the item, then the property values as the text.
+
+![An item resource page configuration page of a newly-created site, with the default options enabled.](contentfiles/items_configurePage.png)
+
+Any page blocks added to one of the regions available in the theme will only display on an individual item view page if it has content; otherwise, it will be hidden.
+
+![An item view page showing the default configuration with a title, one piece of media, and some metadata.](contentfiles/items_publicPage.png)
 
 ## The Items tab
 
