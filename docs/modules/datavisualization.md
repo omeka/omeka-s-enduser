@@ -32,14 +32,14 @@ Once you select what you would like to visualize, click the "Next" button. You w
 
 - Each visualization requires a Title.
 - You may add a prose Description of the visualization. This will appear under the title on the visualization's page and in the page block. 
-- Use the Search Query interface to set the pool of resources to be visualized. The "Edit" button will allow you to select parameters from dropdowns and build a search graphically. The "Advanced edit" button will allow you to edit or paste in a search string from a URL (which you can create by searching your resources on the site's front-end). If you choose to leave this blank, the visualization will incorporate all resources assigned to that site.
-    - If you select "Edit", a sidebar will open allowing you to search full-text, search by value, search by class, search by template, search by item set, or search by owner. You can either "Preview", "Reset", or "Apply" your search by selecting the corresponding button at the bottom of the search sidebar.
-    - If you select "Advanced edit", you will only need to fill in the provided textbook. To save your search query click "Apply", or you can "Cancel" your search.
+- Use the Search Query interface to set the pool of resources to be visualized. If you choose to leave this blank, the visualization will incorporate all resources assigned to that site.
+    - If you select "Edit", a sidebar will open allowing you to search full-text, by value, by class, by template, by item set, and/or by owner. You can combine multiple parameters with "AND" or "OR". You can either "Preview", "Reset", or "Apply" your search by selecting the corresponding button at the bottom of the search sidebar.
+    - If you select "Advanced edit", you can edit or paste in a search string from a URL (which you can create by searching your resources on the site's front-end).
 
 ![Add Data Visualization form including Title, Description, Search Queary and Data configuration options for a Count of Items with Property Values visualization](../modules/modulesfiles/dataviz_editVisualization.png)
 
 #### Data configuration
-The options for data configuration will reflect the "Dataset type" you selected initially:
+The options for configuring this dataset will reflect the "Dataset type" you selected initially, and may need to be modified depending on the diagram you wish to display:
 
 ##### Count of items with classes
 If you are creating a count of items with classes, you will be able to select the classes by clicking inside the classes box and selecting from the dropdown menu. If you do not complete this step, you will receive an error when attempting to generate your data set.
@@ -58,9 +58,9 @@ When configuring your data set for counting property values, you must select a v
 
 ##### Count of items with property values in a time series
 
-This option visualizes the count of items that have selected values of a selected property over a selected period of time. You will have the ability to enter in desired values in a list. (You may find it useful to copy values for this list from the Faceted Browse module, when it loads available values of a given faceted property.)
+This option visualizes the count of items that have selected values of one selected property within a specified range of time. Enter in desired values in a list. (You may find it useful to copy values for this list from the Faceted Browse module, as it can load all available values of a given faceted property.)
 
-Each entry in the list of values will have a separate colour. The graph will display instances of each value in each date bucket (e.g. each year, or each ten-year span).
+Each entry in the list of values will have a separate colour. The graph will display instances of each value in each date bucket (e.g. each year, or each ten-year span). 
 
 Line (no points), Points (no line), Line and points.
 
@@ -164,7 +164,7 @@ You can save your work and select "Return to Visualizations," which will bring y
 
 Data visualizations are primarily published by adding them to site pages as page blocks. 
 
-To a new or existing page, add a "Data visualization" block. In the new block, use the dropdown menu to select the visualization you would like to add to the page. Then save the page edits. Remember to add the page to your site navigation, if new.
+While editing a new or existing page, add a "Data visualization" block. In the new block, use the dropdown menu to select the visualization you would like to add to the page. Then save the page edits. Remember to add the page to your site navigation, if new.
 
 ![Data visualization block in a page](../modules/modulesfiles/dataviz_block.png)
 
