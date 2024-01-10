@@ -25,7 +25,7 @@ In the example public view above, the title "Browse items" is used for the page'
 
 ## Create Faceted Browse pages
 
-![Site admin showing Faceted Browse startup page.](modulesfiles/FacetedBrowse.png)
+![Site admin showing Faceted Browse startup page.](../modules/modulesfiles/FacetedBrowse.png)
 
 Once the Faceted Browse module is active, a tab for Faceted Browse will appear in the context menu for every site. Clicking on this tab will take you to a list of all of your Faceted Browse pages for that site.
 
