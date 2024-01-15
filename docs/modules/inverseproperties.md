@@ -2,11 +2,39 @@
 
 The [Inverse Properties module](https://omeka.org/s/modules/InverseProperties/){target=_blank} allows administrators to define inverse properties between resources (items, item sets, and media) so that property values can be concretely linked in both directions. 
 
-To install Inverse Properties, follow the instructions for [Installing Modules](https://omeka.org/s/docs/user-manual/modules/#installing-modules) on the Modules documentation.
+In Omeka S, resources in an installation can be linked to others - [items](../content/items.md#linked-resources) to other items, media, and item sets; media to other media; [item sets](/content/item-sets.md#linked-resources) to other item sets and to items. These links are added through metadata values - for example, using a "William Shakespeare" item as the value for "Creator" on a "Much Ado About Nothing" item. 
 
-## Assigning Inverse Properties in Resource Templates
+These links appear as one way by default - you edit the play item, but the person item is not affected. The Inverse Properties module makes a one-way link into a two-way link - adding a reciprocal metadata value to the person item to represent that person's relationship to the play item. (For example, the Friend of a Friend property "Publications".)
 
-To use Inverse Properties, you must already have at least one resource template that has properties using the default or resource data types. Once the module is installed, it should appear in the left-hand navigation. When you select Inverse Properties, you will be taken to a table of available resource templates. In addition to label and owner, there is a column indicating each template's inverse property count. To add inverse properties to a resource template, click edit (pencil icon).
+Some inverse properties are obvious (Dublin Core's "Has Part" is the intended inverse of "Is Part Of", for example) but others are flexible to the type of item you are creating and will need to be custom-specified by you.
+
+Inverse links created in this way can save time on data entry and be useful in [data visualizations](datavisualization.md), searching and faceted browsing (for example, by adding many people who lived in a specific location, and then browsing using that location), and . 
+
+### Suggested inverse properties
+
+- Dublin Core (`dcterms:`):
+	- Replaces & Is Replaced By (`dcterms:replaces`; `dcterms:isreplacedby`)
+	- Requires & Is Required By
+	- References & Is Referenced By
+	- Format & Is Format Of (or Has Format)
+	- Has Part & Is Part Of
+	- Has Version & Is Version Of
+	- Contributor (or Publisher) & Source (or Provenance)
+- Bibliographic Ontology (`bibo:`):
+	- 
+- Friend of a Friend (`foaf:`):
+	- depicts & depiction
+	- 
+- [Relationship](http://purl.org/vocab/relationship) (`relationship:`)
+	- Child of & Parent
+	- Spouse Of 
+
+
+## Assigning inverse properties in resource templates
+
+To use Inverse Properties, you must have at least one resource template that has properties using the default or resource data types. You might have a "Person" template that includes things like "Spouse", "Child", "Parent" as properties that have some intended utility as reciprocal relationships. 
+
+Once the module is installed, it should appear in the left-hand navigation. When you select Inverse Properties, you will be taken to a table of available resource templates. In addition to label and owner, there is a column indicating each template's inverse property count. To add inverse properties to a resource template, click edit (the pencil icon).
 
 ![Edit existing resource template to add inverse properties.](modulesfiles/inverseProperties_edit.png)
 
@@ -16,7 +44,7 @@ To assign an inverse property, select an inverse for that property from the drop
 
 Once you have selected all the inverse properties for that resource template, click "Submit" in the upper right corner to save your changes.
 
-## Inverse Properties In Action
+## Inverse Properties in action
 
 When adding or editing an item, select a resource template that has inverse properties. Then, in a property that has an inverse property,  click "Omeka resource". Then, click "Item" and select the item you wish to add from the drawer. After selecting the item, be sure to click "Select resource" at the bottom of the drawer to add the item to the metadata field.
 
