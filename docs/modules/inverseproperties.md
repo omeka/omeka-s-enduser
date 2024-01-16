@@ -2,7 +2,7 @@
 
 The [Inverse Properties module](https://omeka.org/s/modules/InverseProperties/){target=_blank} allows administrators to define inverse properties between resources (items, item sets, and media) so that property values can be concretely linked in both directions. 
 
-In Omeka S, resources in an installation can be linked to others - [items](../content/items.md#linked-resources) to other items, media, and item sets; media to other media; [item sets](/content/item-sets.md#linked-resources) to other item sets and to items. These links are added through metadata values - for example, using a "William Shakespeare" person item as the value for "Creator" on a "Much Ado About Nothing" play item. 
+In Omeka S, resources in an installation can be linked to others - [items](../content/items.md#linked-resources) to other items, media, and item sets; media to other media; [item sets](/content/item-sets.md#linked-resources) to other item sets and to items. These links are added through metadata values - for example, using a "William Shakespeare" person item as the value for "Creator" on a "Much Ado About Nothing" play item. When you view the person item, you will see inbound links in the Linked Resources table. 
 
 These links appear as one way by default - you edit the play item, but the person item is not affected. The Inverse Properties module makes a one-way link into a two-way link - adding a reciprocal metadata value to the person item to represent that person's relationship to the play item. (For example, the Friend of a Friend property "Publications" could be used to fill out multiple publications authored by the person.)
 
@@ -19,6 +19,7 @@ Inverse links created in this way can save time on data entry and be useful in [
 	- Has Format & Is Format Of
 	- Has Part & Is Part Of
 	- Has Version & Is Version Of
+	- Relation (can be its own inverse property).
 - Bibliographic Ontology (`bibo:`):
 	- citedBy and cites
 	- presents and presentedAt
@@ -68,4 +69,4 @@ If you delete a value after setting it or having it automatically created using 
 
 There is no way to batch-update the items on your installation that already have property values, to create the inverse property values.
 
-Inverse Properties works with CSV Import: when doing a batch-import of resources that provide linked resources as property values, the inverse properties will be created as long as the resources are set to use the resource template where the inverse property is set.
+Inverse Properties works with [CSV Import](CSVImport.md): when doing a batch-import of resources that provide linked resources as property values, the inverse properties will be created as long as the resources are set to use the resource template where the inverse property is set.
