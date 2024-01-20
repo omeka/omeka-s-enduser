@@ -102,7 +102,7 @@ The drawer has multiple options for mapping:
 **Generic data** also has a dropdown where you can set one of four options:
 
 - **Resource template (by label)**: Set the template for an item by name. The name of the template as entered in the spreadsheet and the name of the template in Omeka S must match exactly.
-- **Resource class (by term)**: Set the resource class for an item. The term for the class in the spreadsheet and in the Omeka S installation must match exactly.
+- **Resource class (by term)**: Set the resource class for an item. The term for the class in the spreadsheet and in the Omeka S installation must match exactly; reference the Vocabularies tab of your installation. For example, enter "dctype:Dataset", "dcterms:Location", "bibo:Interview", or "foaf:Person" with a colon separating the vocabulary prefix and the term, without spaces.
 - **Owner (by email address)**: Set an item's owner by email address. This must be the email address associated with the user's account in the Omeka S installation.
 - **Visibility public/private**: Set the visibility of the item. Use "private" or "public" in the spreadsheet.
 
@@ -181,7 +181,7 @@ There are two options on the "Advanced Settings" tab.
 The "Action" setting allows you to change the action of process from a straight import to one of the following options:
 
 - **Create a new resource**: Default option. Each row in the CSV will become a new resource.
-- **Append data to the resource**: Add new data to the resource, based on an identifier for an existing resource. (Cannot be undone.) This option allows you to supply multiple values for the same item; each row will be appended (that is, you can append one title to an item in one row, and append another title to the same item in another row).
+- **Append data to the resource**: Add new data to the resource, based on an identifier for an existing resource. (Cannot be undone.) This option allows you to supply multiple values for the same item; each row will be appended (that is, you can append one title to an item in one row, and append another title to the same item in another row). Note that you cannot supply resource template or class assignations in the rows of your CSV with an Append process; you will get an error. 
 - **Revise data of the resource**: Replace existing data of the resource with data from the CSV, *except if* the corresponding cell in the CSV is empty. (Cannot be undone.)
 - **Update data of the resource**: Replace existing data of the resource with data from the CSV, *even when* the corresponding cell in the CSV is empty. (Cannot be undone.)
 - **Replace all data of the resource**: Remove all properties of the resource, and fill with new information from the sheet. (Cannot be undone.)
@@ -197,7 +197,8 @@ If you select one of these options from the dropdown, three additional settings 
 
 In addition to the above, the Advanced Settings tab has an option to set the number of rows to process by batch. By default this is set to 20. However, if you are running into errors with an import you may want to set it to 5 or even 1 in order to troubleshoot and determine the source of the error.
 
-Note that Appending data will allow you to supply multiple rows with the same identifier; each row's values will be appended alongside the ones before. Revising, Updating, and Replacing data will erase data that was supplied in earlier rows of your CSV if later rows use the same identifier. If you wish to import multiple values (e.g. two Description values) for your resources, you must put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
+!!! note
+	Note that Appending data will allow you to supply multiple rows with the same identifier; each row's values will be appended alongside the ones before. Appending, therefore, will not work with input that does not allow multiple values - that is, setting a resource template or a class. You will get an error if your import attempts to assign these values through an Append process. Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (e.g. two Description values) in these processes, you must put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
 
 ### Complete import
 Once you have completed mappings, column options, and settings, click the "Import" button in the upper right corner of the browser window. This should start the import and redirect you to the "Past Imports" tab. You should see a confirmation message in green at the top of the screen saying "Importing in Job ID [number]".
@@ -237,7 +238,7 @@ The drawer has multiple options for mapping:
 **Generic data** also has a dropdown where you can set one of four options:
 
 - **Resource template (by label)**: Set the template for an item  set by name. The name of the template as entered in the spreadsheet and the name of the template in Omeka S must match exactly.
-- **Resource class (by term)**: Set the resource class for an item set. The term for the class in the spreadsheet and in the Omeka S installation must match exactly.
+- **Resource class (by term)**: Set the resource class for an item set. The term for the class in the spreadsheet and in the Omeka S installation must match exactly; reference the Vocabularies tab of your installation. For example, enter "dctype:Dataset", "dcterms:Location", "bibo:Interview", or "foaf:Person" with a colon separating the vocabulary prefix and the term, without spaces.
 - **Owner (by email address)**: Set an item set's owner by email address. This must be the email address associated with the user's account in the Omeka S installation.
 - **Visibility public/private**: Set the visibility of the item set. Use "private" or "public" in the spreadsheet.
 
@@ -358,7 +359,7 @@ The drawer has multiple options for mapping:
 **Generic data** also has a dropdown where you can set one of four options:
 
 - **Resource template (by label)**: Set the template for the media by name. The name of the template as entered in the spreadsheet and the name of the template in Omeka S must match exactly.
-- **Resource class (by term)**: Set the resource class for the media. The term for the class in the spreadsheet and in the Omeka S installation must match exactly.
+- **Resource class (by term)**: Set the resource class for the media. The term for the class in the spreadsheet and in the Omeka S installation must match exactly; reference the Vocabularies tab of your installation. For example, enter "dctype:Dataset", "dcterms:Location", "bibo:Interview", or "foaf:Person" with a colon separating the vocabulary prefix and the term, without spaces.
 - **Owner (by email address)**: Set the media's owner by email address. This must be the email address associated with the user's account in the Omeka S installation.
 - **Visibility public/private**: Set the visibility of the media. Use "private" or "public" in the spreadsheet.
 
