@@ -12,7 +12,7 @@ A section for Data Visualization will appear in the menu for individual sites. C
 
 You can sort the visualizations by either date or title in ascending or descending order. You cannot batch-edit visualizations, including deletion, nor can you duplicate existing visualizations, or copy them to other sites.
 
-### Adding a data visualization
+### Add a data visualization
 
 After clicking the Data Visualization link under a site, click the "Add new visualization" button.
 
@@ -73,7 +73,6 @@ Line options are:
 - StepAfter
 - StepBefore.
 
-
 For a simpler version of this option, choose "Count of items in a time series" below.
 
 ##### Count of items in a time series
@@ -88,8 +87,6 @@ visualizes the count of values of a selected property.
 
 ##### Item relationships
 visualizes the relationships between items via their resource values.
-
-
 
 !!! note
 	If you make changes to any of the settings above this line, you will need to re-generate your dataset in order to see the results in your diagram. Changes made below this point in the configuration page do not require refreshing the dataset. 
@@ -123,10 +120,14 @@ Date: Line chart (time series) or Histogram (time series)
 
 ###### Arc diagrams
 
+Arc diagrams display items in a column on the left-hand side of the diagram, with relationships between those items represented as large arcing semi-circles connecting two items. One item may have many arcs. Items are colored based on the group assigned in your settings (either the item's class or template, or a property value you selected), and the arcs are the color of the item with the outbound linked resource provided in a property value. For example, if you were showing the relationship between creators and their creations, using the resource templates (e.g. People and Books) as your groups, you would have people coloured in orange and books coloured in blue, with blue arcs connecting the books to the people provided in their "Creator" fields. If items have reciprocal (inverse) relationships with each other, you may see what looks like one arc that is the combined color of the two arcs. 
+
 ###### Network relationship diagrams
 
+Network relationship diagrams display items with links to one another in a tree visualization. 
 
-#### Finalizing your visualization
+
+#### Finalize your visualization
 
 If you edit your visualization to change the Diagram Configuration after your initial visualization is produced, you will lose your current diagram configuration.
 
@@ -134,7 +135,7 @@ You can only generate one diagram per dataset; if you wish to present multiple d
 
 ![Diagram configuration form for a Column chart](../modules/modulesfiles/dataviz_diagramConfig.png)
 
-## Generating your visualization
+## Generate your visualization
 Once you have configured your visualization, click the "Save and..." button, select the box to "Generate dataset" and click "Stay on this visualization."
 
 ![Save menu with Generate dataset checked](../modules/modulesfiles/dataviz_saveGenerate.png)
@@ -147,20 +148,20 @@ If you select "Diagram," a new browser tab will open to a new public page on you
 
 ![An example pie chart from the "Count of items with classes" option.](modulesfiles/dataviz_piechart.png)
 
-### Troubleshooting your diagram
-
-You may find that your diagram width and height does not display the results appropriately. Diagrams are generated via SVG, which means some things (such as the vertical lines in the histogram) are being drawn at narrower than 1 pixel relative to the sizes and parameters provided. You can fix this by widening the diagram, narrowing the parameters on either axis (such as the date range), or broadening the buckets. 
-
-!!! note
-	Your diagram should be drawn at the width and height desired in the context of the page you eventually plan to display it in. You may wish to create a draft version of the page and refresh it alongside your changes to the diagram's settings. Some diagrams may be unsuitable depending on your page layout, such as a tall and narrow diagram floating on the right side of the page. Not all diagram choices have settings that make flexible display possible.
-
-If the text is cramped in the axes of your graph, go back and adjust the margins. Text labels do not have overflow or line-wrapping options, so some long item titles may be cut off. You can adjust the font size on some diagrams. 
-
 You can save your work and select "Return to Visualizations," which will bring you to a browse list of all of your visualizations, where you can view the diagram or dataset, or edit the visualization.
 
 ![View menu with Dataset and Diagram](../modules/modulesfiles/dataviz_viewMenu.png)
 
-## Publishing your visualization
+### Troubleshooting your diagram
+
+You may find that your diagram width and height does not display the results appropriately. Diagrams are generated via SVG, which means some things (such as the vertical lines in the histogram) are being drawn at narrower than 1 pixel relative to the sizes and parameters provided. You can fix this by widening the diagram, narrowing the parameters on either axis (such as the date range), or broadening the buckets.
+
+!!! note
+	Your diagram should be drawn at the width and height desired in the context of the page you eventually plan to display it in. You may wish to create a draft version of the page and refresh it whenever you make changes to the diagram's settings. Some diagrams may be unsuitable depending on your page layout, such as a tall and narrow diagram floating on the right side of the page. Not all diagram choices have settings that make flexible display possible.
+
+If the text is cramped in the axes of your graph, go back and adjust the margins. Text labels do not have overflow or line-wrapping options, so some long item titles may be cut off. You can adjust the font size on some diagrams (from extra-extra-small to extra-extra-extra-large), but it may be constrained by the ultimate width of the diagram, which itself will be dependent on the layout of the page and your Omeka site's theme. 
+
+## Publish your visualization
 
 Data visualizations are primarily published by adding them to site pages as page blocks. 
 
