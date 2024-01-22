@@ -33,7 +33,7 @@ You can form inverse pairings with properties from two different vocabularies (f
 
 You can also define an inverse pairing between different resource types: for example, between an item set and an item, or between an item and a media. These mixed-resource pairings do not need to use the same resource template. For example, a "person" item may have a "community" item set as the value in the "Is Part Of" property. With the inverse property set up in a "person" resource template, the related item set will be given the "Has Part" inverse property regardless of its own resource template or existing metadata. 
 
-## Assigning inverse properties in resource templates
+## Assign inverse properties in resource templates
 
 Once the module is installed, it should appear in the left-hand navigation. When you select Inverse Properties, you will be taken to a table of available resource templates. In addition to label and owner, there is a column indicating each template's inverse property count. To use Inverse Properties, start by editing a resource template with the pencil icon. 
 
@@ -67,5 +67,13 @@ If you click on the resource you just linked, you should see that the inverse pr
 
 If you delete a value, its inverse will not automatically delete. You must delete each value manually from its own resource.
 
+### Batch-update Inverse Properties
+
+If you have linked resources already set up and then activate Inverse Properties and assign pairings in resource templates, you can batch-create your reciprocal values using the batch-edit function. Go to Items, Media, or Item Sets in the left-hand navigation, then select a number of resources (use the Advanced Search to find all resources using the template). Then use the "Batch actions" dropdown to edit the selected resources, or all resources in the search results. 
+
+![The batch-editing form showing an entry for Inverse properties, with a checkbox to generate the IR pairings.](modulesfiles/inverseProperties_batchedit.png)
+
+On the batch-edit form you will see an entry for "Inverse properties". Use the checkbox to indicate that all inverse properties set for all the resources you've selected should generate their pairings. Then "Submit" the form. 
+
 !!! note
-	Inverse Properties will **not** work with [CSV Import](CSVImport.md).
+	Inverse Properties will **not** work with [CSV Import](CSVImport.md). Import linked resources as usual, then use the batch-editing form to update the inverse pairings.
