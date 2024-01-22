@@ -95,7 +95,7 @@ The drawer has multiple options for mapping:
 
 ![Properties option open, showing all of the installed vocabularies for the Omeka S installation: Dublin Core, Bibliographic Ontology, Friend of a Friend, Scripto and OWL-Time Ontology.](../modules/modulesfiles/csvimport_itemsMapProp.png)
 
-**Item-specific data** has a dropdown to set Item set by selected property. If you have a column identifying an Item set to which you want to add each item (rather than putting all of the imported items into the same Item sets on the "Basic Settings" tab), you can set how it maps using this dropdown. You can either use the Item set's internal ID, or any one of its properties (such as title).
+**Item-specific data** has a dropdown to set an Item set by selected property. If you have a column identifying an Item set to which you want to add each item (rather than putting all of the imported items into the same Item sets on the "Basic Settings" tab), you can set how it maps using this dropdown. You can either use the Item set's internal ID, or any one of its properties (such as title).
 
 ![dropdown as described](../modules/modulesfiles/csvimport_itemsMapISD.png)
 
@@ -137,7 +137,9 @@ This will open a drawer on the right side of the browser window with the followi
 - **Data type**: A dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URI reference. You can set the label for a URI by including the desired text after a space, for example: `http://example.com Label Text Goes Here`.
-	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resource's ID is the number sequence at the end of the URL when on the view or edit page, so for `/admin/item/11576` the ID is 11576. You can also see the resource's ID in the right-hand drawer on the resource's view page. Items, item sets, and media all have IDs.
+	- Import as Omeka S resource. This will create [linked resources](../content/items.md#linked-resources). If you select this option, you must choose which property values to match to find the intended Omeka resource in your installation. This must be a unique property, so "Title" may not be a good choice. 
+		- You can use the internal Omeka ID. A resource's ID is the number sequence at the end of the URL when on the view or edit page, so for `/admin/item/11576` the ID is 11576. You can also see the resource's ID in the right-hand drawer on the resource's view page. Items, item sets, and media all have IDs.
+		- You can include resources that are being made in the same CSV, as long as the resources being linked to have already been created in earlier rows and can be found with the unique property value indicated here. If you wish to do this, we recommend setting the batch number low (even to 1) on the Advanced Settings tab, to ensure resources are being fully created before another new resource tries to link to them. 
 	- If you have certain modules installed, such as [Numeric Data Types](../modules/numericdatatypes.md), there may be additional data type options supplied by those modules.
 - **Import values as private**: Check this box to set all property values *in this column* private.
 
@@ -198,10 +200,13 @@ If you select one of these options from the dropdown, three additional settings 
 In addition to the above, the Advanced Settings tab has an option to set the number of rows to process by batch. By default this is set to 20. However, if you are running into errors with an import you may want to set it to 5 or even 1 in order to troubleshoot and determine the source of the error.
 
 !!! note
-	Note that Appending data will allow you to supply multiple rows with the same identifier; each row's values will be appended alongside the ones before. Appending, therefore, will not work with input that does not allow multiple values - that is, setting a resource template or a class. You will get an error if your import attempts to assign these values through an Append process. Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (e.g. two Description values) in these processes, you must put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
+	Note that Appending data will allow you to supply multiple rows with the same identifier; each row's values will be appended alongside the ones before. Appending, therefore, will not work with input that does not allow multiple values - that is, setting a resource template or a class. You will get an error if your import attempts to assign these values through an Append process. 
+
+	Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (e.g. two Description values) in these processes, you must put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
 
 ### Complete import
 Once you have completed mappings, column options, and settings, click the "Import" button in the upper right corner of the browser window. This should start the import and redirect you to the "Past Imports" tab. You should see a confirmation message in green at the top of the screen saying "Importing in Job ID [number]".
+
 
 ## Import item sets
 To import item sets, select "Item Set" under the "Import type" on the first page.
@@ -262,7 +267,9 @@ This will open a drawer on the right side of the browser window with the followi
 - **Data type**: A dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
-	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resource's ID is the number sequence at the end of the URL when on the view or edit page, so for `/admin/item/11576` the ID is 11576. You can also see the resource's ID in the right-hand drawer on the resource's view page. Items, item sets, and media all have IDs.
+	- Import as Omeka S resource. This will create [linked resources](../content/item-sets.md#linked-resources). If you select this option, you must choose which property values to match to find the intended Omeka resource in your installation. This must be a unique property, so "Title" may not be a good choice. 
+		- You can use the internal Omeka ID. A resource's ID is the number sequence at the end of the URL when on the view or edit page, so for `/admin/item/11576` the ID is 11576. You can also see the resource's ID in the right-hand drawer on the resource's view page. Items, item sets, and media all have IDs.
+		- You can include resources that are being made in the same CSV, as long as the resources being linked to have already been created in earlier rows and can be found with the unique property value indicated here. If you wish to do this, we recommend setting the batch number low (even to 1) on the Advanced Settings tab, to ensure resources are being fully created before another new resource tries to link to them. 
 	- If you have certain modules installed, such as Numeric Data Types, there may be additional data type options supplied by those modules.
 - **Import values as private**: Check this box to set all property values *in this column* private.
 
@@ -317,7 +324,12 @@ If you select one of these options from the dropdown, three additional settings 
 	- If you have more than one resource with matching data, it will only take action on the oldest resource.
 - **Action on unidentified resources**: This option determines what to do when no matching resource exists in the Omeka S installation, but the selected action only applies to an existing resource ("Append", "Revise", "Update", or "Replace"). This option is not used when the main action is "Create" or "Delete" Your options are two radio buttons:
 	- Skip the row
-	- Create a new resource
+	- Create a new resource.
+
+!!! note
+	Note that Appending data will allow you to supply multiple rows with the same identifier; each row's values will be appended alongside the ones before. Appending, therefore, will not work with input that does not allow multiple values - that is, setting a resource template or a class. You will get an error if your import attempts to assign these values through an Append process. 
+
+	Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (e.g. two Description values) in these processes, you must put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
 
 ### Complete import
 Once you have completed mappings, column options, and any settings, click the "Import" button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]".
@@ -394,7 +406,9 @@ This will open a drawer on the right side of the browser window with the followi
 - **Data type**: A dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`.
-	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resource's ID is the number sequence at the end of the URL when on the view or edit page, so for `/admin/item/11576` the ID is 11576. You can also see the resource's ID in the right-hand drawer on the resource's view page. Items, item sets, and media all have IDs.
+	- Import as Omeka S resource. This will create [linked resources](../content/media.md#omeka-resource). If you select this option, you must choose which property values to match to find the intended Omeka resource in your installation. This must be a unique property, so "Title" may not be a good choice. 
+		- You can use the internal Omeka ID. A resource's ID is the number sequence at the end of the URL when on the view or edit page, so for `/admin/item/11576` the ID is 11576. You can also see the resource's ID in the right-hand drawer on the resource's view page. Items, item sets, and media all have IDs.
+		- You can include resources (items or item sets) that are being made in the same CSV, as long as the resources being linked to have already been created in earlier rows and can be found with the unique property value indicated here. If you wish to do this, we recommend setting the batch number low (even to 1) on the Advanced Settings tab, to ensure resources are being fully created before another new resource tries to link to them. 
 	- If you have certain modules installed, such as Numeric Data Types, there may be additional data type options supplied by those modules.
 - **Import values as private**: Check this box to set all property values *in this column* private.
 
@@ -446,6 +460,11 @@ If you select one of these options from the dropdown, three additional settings 
 	- Create a new resource.
 
 In addition to the above, the Advanced Settings tab has an option to set the number of rows to process by batch. By default, this is set to 20. However, if you are running into errors with an import you may want to set it to 5 or even 1 in order to troubleshoot and determine the source of the error.
+
+!!! note
+	Note that Appending data will allow you to supply multiple rows with the same identifier; each row's values will be appended alongside the ones before. Appending, therefore, will not work with input that does not allow multiple values - that is, setting a resource template or a class. You will get an error if your import attempts to assign these values through an Append process. 
+
+	Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (e.g. two Description values) in these processes, you must put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
 
 ### Complete import
 Once you have completed mappings, column options, and any settings, click the Import button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]".
@@ -529,11 +548,11 @@ This will open a drawer on the right side of the browser window with the followi
 - **Data type**: A dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example: `http://example.com This Is The Label`.
-	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resource's ID is the number sequence at the end of the URL when on the view or edit page, so for `/admin/item/11576` the ID is 11576. You can also see the resource's ID in the right-hand drawer on the resource's view page. Items, item sets, and media all have IDs.
+	- Import as Omeka S resource. This will create [linked resources](../content/items.md#linked-resources). If you select this option, you must choose which property values to match to find the intended Omeka resource in your installation. This must be a unique property, so "Title" may not be a good choice. 
+		- You can use the internal Omeka ID. A resource's ID is the number sequence at the end of the URL when on the view or edit page, so for `/admin/item/11576` the ID is 11576. You can also see the resource's ID in the right-hand drawer on the resource's view page. Items, item sets, and media all have IDs.
+		- You can include resources that are being made in the same CSV, as long as the resources being linked to have already been created in earlier rows and can be found with the unique property value indicated here. If you wish to do this, we recommend setting the batch number low (even to 1) on the Advanced Settings tab, to ensure resources are being fully created before another new resource tries to link to them. 
 	- If you have certain modules installed, such as Numeric Data Types, there may be additional data type options supplied by those modules.
 - **Import values as private**: Check this box to set all property values *in this column* private.
-
-![drawer with options as described above](../modules/modulesfiles/csvimport_mixedR2.png)
 
 To remove a column option setting, click the wrench icon again and undo your changes manually.
 
@@ -585,6 +604,11 @@ If you select one of these options from the dropdown, three additional settings 
 	- Create a new resource.
 
 In addition to the above, the Advanced Settings tab has an option to set the number of rows to process by batch. By default this is set to 20. However, if you are running into errors with an import you may want to set it to 5 or even 1 in order to troubleshoot and determine the source of the error.
+
+!!! note
+	Note that Appending data will allow you to supply multiple rows with the same identifier; each row's values will be appended alongside the ones before. Appending, therefore, will not work with input that does not allow multiple values - that is, setting a resource template or a class. You will get an error if your import attempts to assign these values through an Append process. 
+
+	Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (e.g. two Description values) in these processes, you must put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
 
 ### Complete import
 Once you have completed mappings, column options, and any settings, click the Import button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]".
