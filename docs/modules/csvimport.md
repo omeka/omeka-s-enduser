@@ -203,7 +203,7 @@ In addition to the above, the Advanced Settings tab has an option to set the num
 !!! note
 	Note that Appending data will allow you to supply multiple rows with the same identifier; each row's values will be appended alongside the ones before.
 
-	Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (for example, two Creator values) in these processes, you must put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
+	Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (for example, two Creator values) in these processes, you can either: put them in two columns in the same row, mapped to the same property; or, put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
 
 ### Complete import
 Once you have completed mappings, column options, and settings, click the "Import" button in the upper right corner of the browser window. This should start the import and redirect you to the "Past Imports" tab. You should see a confirmation message in green at the top of the screen saying "Importing in Job ID [number]".
@@ -331,7 +331,7 @@ If you select one of these options from the dropdown, three additional settings 
 !!! note
 	Note that Appending data will allow you to supply multiple rows with the same identifier; each row's values will be appended alongside the ones before.
 
-	Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (for example, two Creator values) in these processes, you must put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
+	Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (for example, two Creator values) in these processes, you can either: put them in two columns in the same row, mapped to the same property; or, put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
 
 ### Complete import
 Once you have completed mappings, column options, and any settings, click the "Import" button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]".
@@ -466,7 +466,7 @@ In addition to the above, the Advanced Settings tab has an option to set the num
 !!! note
 	Note that Appending data will allow you to supply multiple rows with the same identifier; each row's values will be appended alongside the ones before.
 
-	Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (for example, two Creator values) in these processes, you must put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
+	Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (for example, two Creator values) in these processes, you can either: put them in two columns in the same row, mapped to the same property; or, put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
 
 ### Complete import
 Once you have completed mappings, column options, and any settings, click the Import button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]".
@@ -611,7 +611,7 @@ In addition to the above, the Advanced Settings tab has an option to set the num
 !!! note
 	Note that Appending data will allow you to supply multiple rows with the same identifier; each row's values will be appended alongside the ones before.
 
-	Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (for example, two Creator values) in these processes, you must put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
+	Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (for example, two Creator values) in these processes, you can either: put them in two columns in the same row, mapped to the same property; or, put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
 
 ### Complete import
 Once you have completed mappings, column options, and any settings, click the Import button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]".
