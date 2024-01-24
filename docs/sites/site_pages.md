@@ -49,6 +49,20 @@ The edit view for a page will display the page's title across the top. In the up
 
 At the top of the work area are fields for the page title and URL slug. You can edit these at any time, but remember that the slug must be unique within the site (you cannot have two pages with the slug "welcome" on the same site).
 
+There are two options for laying out the blocks that include a page's content: Normal Flow and Grid. 
+
+- Normal flow provides a view where the blocks stack one upon the next to build the page. 
+- Grid introduces a user defined column system that allows the user to finely tune the placement and width of the blocks in a page. With this choice you can then define the number of columns you want to work with in your page, from 1 to 12.
+
+Next you will have the option to apply some configuration settings to the entire page. Clicking on the gear icon will open the Page layout configuration menu. 
+
+- For Normal flow, you will be able to select a template for the page if your site theme provides one.
+- For Grid, you will also be able to select a template for the page, but you can also define the gaps between the columns and rows of blocks by adjusting the numeric settings.
+
+If you make a mistake in your page layout settings, you can reset the page to the most recently saved version by clicking the "Restore" button.
+
+Once you have made your layout choices, you are ready to add blocks to the page.
+
 ![A page in edit view, with one media block added](../sites/sitesfiles/sitepg_edit.png)
 
 On the right hand side you can choose to add a new block by selecting one of the following page elements:
@@ -71,6 +85,42 @@ If you have the relevant modules installed, you may also have:
 - Item Carousel
 - Map by attachment
 - Map by query.
+
+Using the Normal flow layout you will have the option with each block to make a number of standard configuration choices by clicking on the gear icon. This will deploy the Block layou configuration menu in the righthand drawer, which contains the following options.:
+
+- If your theme provides one, you can select a template to apply to the block from the dropdown menu
+- The Class input box allows you to type in a specific class to apply styles to the block
+- The Alignment menu allows you to choose Default, Float Left, Float Right or Center alignment for the block
+- Background allows you to select from the assets available in the installation to serve as a background image for the block
+- Vertical anchor position allows you to select Default, Top, Center, or Bottom positioning for the content within the block
+- Horizontal anchor position allows you to select Default, Left, Center or Right positioning for the content within the block
+- Size allows you to you select Default, Cover, or Contain
+- Minimum height allows you to indicated the height of the block
+
+Once you have configured the block, click "Apply changes" to fix your selections.
+
+Using the Grid layou you will have the ability to select the placement and width of each block based on the number of columns you have set for the page. 
+
+- Each block has a placement option that includes Auto placement, and range from Position 1 to the highest position number allowed by your number of columns. The selection determines where in the array of columns from left to right the page will place the block.
+	
+- Each block also has a Span setting that includes choices from Span 1 to the highest number of columns in the page. The select determines the width of the block across the array of columns from left to right in the page once the block is placed.
+
+Using these two settings the blocks in your page will tile together based on your selections. To start a new row of blocks, select a position number that is less than the total span width for the blocks in the existing row.
+
+To see a schema of the way that your blocks are positioned on the page, click on the magnifying glass icon, which will reveal the Grid layout preview in the righthand drawer.
+
+Just as with the Normal flow layout, blocks in the Grid layout have a standard set of configuration options that are accessible by clicking the gear icon. This will deploy the Block layou configuration menu in the righthand drawer, which contains the following options.:
+
+- If your theme provides one, you can select a template to apply to the block from the dropdown menu
+- The Class input box allows you to type in a specific class to apply styles to the block
+- The Alignment menu allows you to choose Default, Float Left, Float Right or Center alignment for the block
+- Background allows you to select from the assets available in the installation to serve as a background image for the block
+- Vertical anchor position allows you to select Default, Top, Center, or Bottom positioning for the content within the block
+- Horizontal anchor position allows you to select Default, Left, Center or Right positioning for the content within the block
+- Size allows you to you select Default, Cover, or Contain
+- Minimum height allows you to indicated the height of the block
+
+Click "Apply changes" to fix your selections.
 
 Once you have added blocks to your page, click the "Save" button in the right hand corner.  To leave without saving changes, click "Cancel".
 
