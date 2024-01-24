@@ -97,9 +97,9 @@ Using the Normal flow layout you will have the option with each block to make a 
 - The Class input box allows you to type in a specific class to apply styles to the block
 - The Alignment menu allows you to choose Default, Float Left, Float Right or Center alignment for the block
 - Background allows you to select from the assets available in the installation to serve as a background image for the block
-- Vertical anchor position allows you to select Default, Top, Center, or Bottom positioning for the content within the block
-- Horizontal anchor position allows you to select Default, Left, Center or Right positioning for the content within the block
-- Size allows you to you select Default, Cover, or Contain
+- Vertical anchor position allows you to select Default, Top, Center, or Bottom positioning for the background asset
+- Horizontal anchor position allows you to select Default, Left, Center or Right positioning for the background asset
+- Size allows you to you select Default, Cover, or Contain for the background asset
 - Minimum height allows you to indicated the height of the block
 
 Once you have configured the block, click "Apply changes" to fix your selections.
@@ -121,9 +121,9 @@ Just as with the Normal flow layout, blocks in the Grid layout have a standard s
 - The Class input box allows you to type in a specific class to apply styles to the block
 - The Alignment menu allows you to choose Default, Float Left, Float Right or Center alignment for the block
 - Background allows you to select from the assets available in the installation to serve as a background image for the block
-- Vertical anchor position allows you to select Default, Top, Center, or Bottom positioning for the content within the block
-- Horizontal anchor position allows you to select Default, Left, Center or Right positioning for the content within the block
-- Size allows you to you select Default, Cover, or Contain
+- Vertical anchor position allows you to select Default, Top, Center, or Bottom positioning for the background asset
+- Horizontal anchor position allows you to select Default, Left, Center or Right positioning for the background asset
+- Size allows you to you select Default, Cover, or Contain for the background asset
 - Minimum height allows you to indicated the height of the block
 
 Click "Apply changes" to fix your selections.
