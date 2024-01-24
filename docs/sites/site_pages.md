@@ -49,6 +49,7 @@ The edit view for a page will display the page's title across the top. In the up
 
 At the top of the work area are fields for the page title and URL slug. You can edit these at any time, but remember that the slug must be unique within the site (you cannot have two pages with the slug "welcome" on the same site).
 
+### Selecting layout mode
 There are two options for laying out the blocks that include a page's content: Normal Flow and Grid. 
 
 - Normal flow provides a view where the blocks stack one upon the next to build the page. 
@@ -63,6 +64,7 @@ If you make a mistake in your page layout settings, you can reset the page to th
 
 Once you have made your layout choices, you are ready to add blocks to the page.
 
+### Adding blocks
 ![A page in edit view, with one media block added](../sites/sitesfiles/sitepg_edit.png)
 
 On the right hand side you can choose to add a new block by selecting one of the following page elements:
@@ -86,6 +88,9 @@ If you have the relevant modules installed, you may also have:
 - Map by attachment
 - Map by query.
 
+### Positioning and configuring blocks
+#### Normal flow
+
 Using the Normal flow layout you will have the option with each block to make a number of standard configuration choices by clicking on the gear icon. This will deploy the Block layou configuration menu in the righthand drawer, which contains the following options.:
 
 - If your theme provides one, you can select a template to apply to the block from the dropdown menu
@@ -99,7 +104,8 @@ Using the Normal flow layout you will have the option with each block to make a 
 
 Once you have configured the block, click "Apply changes" to fix your selections.
 
-Using the Grid layou you will have the ability to select the placement and width of each block based on the number of columns you have set for the page. 
+#### Grid
+Using the Grid layout you will have the ability to select the placement and width of each block based on the number of columns you have set for the page. 
 
 - Each block has a placement option that includes Auto placement, and range from Position 1 to the highest position number allowed by your number of columns. The selection determines where in the array of columns from left to right the page will place the block.
 	
@@ -124,6 +130,7 @@ Click "Apply changes" to fix your selections.
 
 Once you have added blocks to your page, click the "Save" button in the right hand corner.  To leave without saving changes, click "Cancel".
 
+### Deleting and reording blocks
 You can delete any of the blocks by clicking on the trash can icon located in the upper right corner of the block. 
 
 ![The “media” block is marked for deletion and thus highlighted in red.](../sites/sitesfiles/sitepg_delblock.png)
