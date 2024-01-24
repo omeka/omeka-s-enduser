@@ -152,7 +152,7 @@ To remove a column option setting, click the wrench icon again and undo your cha
 #### Batch edit
 When you select one or more rows in the table (columns from your CSV file), you can use the "Batch edit options" button to apply the column options described above — multivalue separator, language, data type, and property privacy — to multiple CSV columns at once.
 
-![a screenshot of the Mapping tab, with the boxes for Columns Title and Creator checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditItems.png)
+![a screenshot of the Mapping tab, with two column boxes checked. On the right side of the screen, a drawer offers options for changing the settings.](modulesfiles/csvimport_batchOptions.png)
 
 Be sure to click the "Apply Changes" button at the bottom of the drawer in order to save your changes.
 
@@ -279,7 +279,7 @@ To remove a column option setting, click the wrench icon again and undo your cha
 #### Batch edit
 When you select one or more rows in the table (columns from your CSV file), you can use the "Batch edit options" button to apply the column options described above to multiple CSV columns at once.
 
-![a screenshot of the Mapping tab, with the boxes for Columns Title and Creator checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditItemSet.png)
+![A drawer offers options for batch-changing the settings.](../modules/modulesfiles/csvimport_batchOptions2.png)
 
 Be sure to click the "Apply Changes" button at the bottom of the drawer in order to save your changes.
 
@@ -421,7 +421,7 @@ To remove a column option setting, click the wrench icon again and undo your cha
 #### Batch edit
 When you select one or more rows in the table (columns from your CSV file), you can use the "Batch edit options" button to apply the column options described above to multiple CSV columns at once.
 
-![a screenshot of the Mapping tab, with the boxes for Columns Title and Creator checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditMedia.png)
+![A drawer offers options for batch-changing the settings.](../modules/modulesfiles/csvimport_batchOptions2.png)
 
 Be sure to click the "Apply Changes" button at the bottom of the drawer in order to save your changes.
 
@@ -561,7 +561,7 @@ To remove a column option setting, click the wrench icon again and undo your cha
 #### Batch edit
 When you select one or more rows in the table (columns from your CSV file), you can use the "Batch edit options" button to apply the column options described above to multiple CSV columns at once.
 
-![a screenshot of the Mapping tab, with the boxes for Columns Title and Creator checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditMixed.png)
+![A drawer offers options for batch-changing the settings.](../modules/modulesfiles/csvimport_batchOptions2.png)
 
 Be sure to click the "Apply Changes" button at the bottom of the drawer in order to save your changes.
 
