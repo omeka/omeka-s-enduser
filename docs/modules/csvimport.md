@@ -95,14 +95,14 @@ The drawer has multiple options for mapping:
 
 ![Properties option open, showing all of the installed vocabularies for the Omeka S installation: Dublin Core, Bibliographic Ontology, Friend of a Friend, Scripto and OWL-Time Ontology.](../modules/modulesfiles/csvimport_itemsMapProp.png)
 
-**Item-specific data** has a dropdown to set Item set by selected property. If you have a column identifying an Item set to which you want to add each item (rather than putting all of the imported items into the same Item sets on the "Basic Settings" tab), you can set how it maps using this dropdown. You can either use the Item set's internal ID, or any one of its properties (such as title).
+**Item-specific data** has a dropdown to set an Item set by selected property. If you have a column identifying an Item set to which you want to add each item (rather than putting all of the imported items into the same Item sets on the "Basic Settings" tab), you can set how it maps using this dropdown. You can either use the Item set's internal ID, or any one of its properties (such as title).
 
 ![dropdown as described](../modules/modulesfiles/csvimport_itemsMapISD.png)
 
 **Generic data** also has a dropdown where you can set one of four options:
 
 - **Resource template (by label)**: Set the template for an item by name. The name of the template as entered in the spreadsheet and the name of the template in Omeka S must match exactly.
-- **Resource class (by term)**: Set the resource class for an item. The term for the class in the spreadsheet and in the Omeka S installation must match exactly.
+- **Resource class (by term)**: Set the resource class for an item. The term for the class in the spreadsheet and in the Omeka S installation must match exactly; reference the Vocabularies tab of your installation. For example, enter "dctype:Dataset", "dcterms:Location", "bibo:Interview", or "foaf:Person" with a colon separating the vocabulary prefix and the term, without spaces.
 - **Owner (by email address)**: Set an item's owner by email address. This must be the email address associated with the user's account in the Omeka S installation.
 - **Visibility public/private**: Set the visibility of the item. Use "private" or "public" in the spreadsheet.
 
@@ -126,36 +126,38 @@ To remove a mapping, click the trash can icon in the row for that data mapping. 
 If you have data in a column in your CSV that you do not want to bring in to your Omeka S installation, simply do not map that column to a property or data type.
 
 #### Column options
-To access options for a column of your CSV (represented by a row in the import table), click the wrench icon for that column heading.
 
 Column options are in addition to mappings. If you add options without also mapping column data to resource, media, or other data, nothing will be imported. If you have multiple mappings set up on a single column in your data, these options will apply to all of them.
+
+To access options for a column of your CSV (represented by a row in the import table), click the wrench icon for that column heading.
+
+![drawer with options as described above](../modules/modulesfiles/csvimport_ItemColOpt.png)
 
 This will open a drawer on the right side of the browser window with the following options:
 
 - **Use multivalve separator**: Check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
 - **Language**: Set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written. This will override what you have entered in basic settings.
+- **Import values as private**: Check this box to set all property values *in this column* private.
 - **Data type**: A dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URI reference. You can set the label for a URI by including the desired text after a space, for example: `http://example.com Label Text Goes Here`.
-	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resource's ID is the number sequence at the end of the URL when on the view or edit page, so for `/admin/item/11576` the ID is 11576. You can also see the resource's ID in the right-hand drawer on the resource's view page. Items, item sets, and media all have IDs.
+	- Import as Omeka S resource. This will create [linked resources](../content/items.md#linked-resources). If you select this option, you must choose which property values to match to find the intended Omeka resource in your installation, in the next **Resource identifier property** dropdown. This must be a unique property, so "Title" may not be a good choice. 
+		- You can use the internal Omeka ID. A resource's ID is the number sequence at the end of the URL when on the view or edit page, so for `/admin/item/11576` the ID is 11576. You can also see the resource's ID in the right-hand drawer on the resource's view page. Items, item sets, and media all have IDs.
+		- You can include resources that are being made in the same CSV, as long as the resources being linked to have already been created in earlier rows and can be found with the unique property value indicated here. If you wish to do this, we recommend setting the batch number low (even to 1) on the Advanced Settings tab, to ensure resources are being fully created before another new resource tries to link to them. 
 	- If you have certain modules installed, such as [Numeric Data Types](../modules/numericdatatypes.md), there may be additional data type options supplied by those modules.
-- **Import values as private**: Check this box to set all property values *in this column* private.
 
-![drawer with options as described above](../modules/modulesfiles/csvimport_ItemColOpt.png)
-
-Be sure to click the "Apply Changes" button at the bottom of the drawer in order to save your changes.
-
-To remove a column option setting, click the wrench icon again and undo your changes manually.
+Be sure to click the "Apply changes" button at the bottom of the drawer in order to save your changes. To remove a column option setting, click the wrench icon again and undo your changes manually.
 
 #### Batch edit
 When you select one or more rows in the table (columns from your CSV file), you can use the "Batch edit options" button to apply the column options described above — multivalue separator, language, data type, and property privacy — to multiple CSV columns at once.
 
-![a screenshot of the Mapping tab, with the boxes for Columns Title and Creator checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditItems.png)
+![a screenshot of the Mapping tab, with two column boxes checked. On the right side of the screen, a drawer offers options for changing the settings.](modulesfiles/csvimport_batchOptions.png)
 
 Be sure to click the "Apply Changes" button at the bottom of the drawer in order to save your changes.
 
 ### Item import basic settings
-These settings apply to the entire CSV you are importing. Note that some of these settings can be overwritten by column options in the Map to Omeka S data tab.
+
+These settings apply to the entire CSV you are importing. Note these settings can be overwritten by column options in the Map to Omeka S data tab. If a column is mapped for template, class, or owner, those values will override these settings; so will column settings for language and privacy.
 
 ![options as described below](../modules/modulesfiles/csvimport_itemsbasic.png)
 
@@ -181,7 +183,7 @@ There are two options on the "Advanced Settings" tab.
 The "Action" setting allows you to change the action of process from a straight import to one of the following options:
 
 - **Create a new resource**: Default option. Each row in the CSV will become a new resource.
-- **Append data to the resource**: Add new data to the resource, based on an identifier for an existing resource. (Cannot be undone.) This option allows you to supply multiple values for the same item; each row will be appended (that is, you can append one title to an item in one row, and append another title to the same item in another row).
+- **Append data to the resource**: Add new data to the resource, based on an identifier for an existing resource. (Cannot be undone.) This option allows you to supply multiple values for the same item; each row will be appended (that is, you can append one title to an item in one row, and append another title to the same item in another row). Note that you cannot supply resource template or class assignations in the rows of your CSV with an Append process; you will get an error. 
 - **Revise data of the resource**: Replace existing data of the resource with data from the CSV, *except if* the corresponding cell in the CSV is empty. (Cannot be undone.)
 - **Update data of the resource**: Replace existing data of the resource with data from the CSV, *even when* the corresponding cell in the CSV is empty. (Cannot be undone.)
 - **Replace all data of the resource**: Remove all properties of the resource, and fill with new information from the sheet. (Cannot be undone.)
@@ -197,10 +199,14 @@ If you select one of these options from the dropdown, three additional settings 
 
 In addition to the above, the Advanced Settings tab has an option to set the number of rows to process by batch. By default this is set to 20. However, if you are running into errors with an import you may want to set it to 5 or even 1 in order to troubleshoot and determine the source of the error.
 
-Note that Appending data will allow you to supply multiple rows with the same identifier; each row's values will be appended alongside the ones before. Revising, Updating, and Replacing data will erase data that was supplied in earlier rows of your CSV if later rows use the same identifier. If you wish to import multiple values (e.g. two Description values) for your resources, you must put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
+!!! note
+	Note that Appending data will allow you to supply multiple rows with the same identifier; each row's values will be appended alongside the ones before.
+
+	Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (for example, two Creator values) in these processes, you can either: put them in two columns in the same row, mapped to the same property; or, put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
 
 ### Complete import
 Once you have completed mappings, column options, and settings, click the "Import" button in the upper right corner of the browser window. This should start the import and redirect you to the "Past Imports" tab. You should see a confirmation message in green at the top of the screen saying "Importing in Job ID [number]".
+
 
 ## Import item sets
 To import item sets, select "Item Set" under the "Import type" on the first page.
@@ -237,7 +243,7 @@ The drawer has multiple options for mapping:
 **Generic data** also has a dropdown where you can set one of four options:
 
 - **Resource template (by label)**: Set the template for an item  set by name. The name of the template as entered in the spreadsheet and the name of the template in Omeka S must match exactly.
-- **Resource class (by term)**: Set the resource class for an item set. The term for the class in the spreadsheet and in the Omeka S installation must match exactly.
+- **Resource class (by term)**: Set the resource class for an item set. The term for the class in the spreadsheet and in the Omeka S installation must match exactly; reference the Vocabularies tab of your installation. For example, enter "dctype:Dataset", "dcterms:Location", "bibo:Interview", or "foaf:Person" with a colon separating the vocabulary prefix and the term, without spaces.
 - **Owner (by email address)**: Set an item set's owner by email address. This must be the email address associated with the user's account in the Omeka S installation.
 - **Visibility public/private**: Set the visibility of the item set. Use "private" or "public" in the spreadsheet.
 
@@ -250,32 +256,36 @@ To remove a mapping, click the trash can icon in the row for that data mapping. 
 If you have data in a column in your CSV which you do not want to bring in to your Omeka S installation, simply do not map that column to a property or data type.
 
 #### Column options
-To access options for data in a column of your CSV (represented by a row in the import table), click the wrench icon for that column heading.
 
 Column options are in addition to mappings. If you add options without also mapping column data to resource, media, or other data, nothing will be imported.
+
+To access options for data in a column of your CSV (represented by a row in the import table), click the wrench icon for that column heading.
 
 This will open a drawer on the right side of the browser window with the following options:
 
 - **Use multivalve separator**: Check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
 - **Language**: Set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written. This will override what you have entered in basic settings.
+- **Import values as private**: Check this box to set all property values *in this column* private.
 - **Data type**: A dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`
-	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resource's ID is the number sequence at the end of the URL when on the view or edit page, so for `/admin/item/11576` the ID is 11576. You can also see the resource's ID in the right-hand drawer on the resource's view page. Items, item sets, and media all have IDs.
+	- Import as Omeka S resource. This will create [linked resources](../content/item-sets.md#linked-resources). If you select this option, you must choose which property values to match to find the intended Omeka resource in your installation, in the next **Resource identifier property** dropdown. This must be a unique property, so "Title" may not be a good choice. 
+		- You can use the internal Omeka ID. A resource's ID is the number sequence at the end of the URL when on the view or edit page, so for `/admin/item/11576` the ID is 11576. You can also see the resource's ID in the right-hand drawer on the resource's view page. Items, item sets, and media all have IDs.
+		- You can include resources that are being made in the same CSV, as long as the resources being linked to have already been created in earlier rows and can be found with the unique property value indicated here. If you wish to do this, we recommend setting the batch number low (even to 1) on the Advanced Settings tab, to ensure resources are being fully created before another new resource tries to link to them. 
 	- If you have certain modules installed, such as Numeric Data Types, there may be additional data type options supplied by those modules.
-- **Import values as private**: Check this box to set all property values *in this column* private.
 
-To remove a column option setting, click the wrench icon again and undo your changes manually.
+Be sure to click the "Apply changes" button at the bottom of the drawer in order to save your changes. To remove a column option setting, click the wrench icon again and undo your changes manually.
 
 #### Batch edit
 When you select one or more rows in the table (columns from your CSV file), you can use the "Batch edit options" button to apply the column options described above to multiple CSV columns at once.
 
-![a screenshot of the Mapping tab, with the boxes for Columns Title and Creator checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditItemSet.png)
+![A drawer offers options for batch-changing the settings.](../modules/modulesfiles/csvimport_batchOptions2.png)
 
-Be sure to click the "Apply Changes" button at the bottom of the drawer in order to save your changes.
+Be sure to click the "Apply changes" button at the bottom of the drawer in order to save your changes.
 
 ### Item Set import basic settings
-These settings apply to the entire CSV which you are importing. Note that some of these settings can be overwritten by column options in the Map to Omeka S data tab.
+
+These settings apply to the entire CSV you are importing. Note these settings can be overwritten by column options in the Map to Omeka S data tab. If a column is mapped for template, class, or owner, those values will override these settings; so will column settings for language and privacy.
 
 ![options as described below](../modules/modulesfiles/csvimport_ItemSetBasic.png)
 
@@ -316,7 +326,12 @@ If you select one of these options from the dropdown, three additional settings 
 	- If you have more than one resource with matching data, it will only take action on the oldest resource.
 - **Action on unidentified resources**: This option determines what to do when no matching resource exists in the Omeka S installation, but the selected action only applies to an existing resource ("Append", "Revise", "Update", or "Replace"). This option is not used when the main action is "Create" or "Delete" Your options are two radio buttons:
 	- Skip the row
-	- Create a new resource
+	- Create a new resource.
+
+!!! note
+	Note that Appending data will allow you to supply multiple rows with the same identifier; each row's values will be appended alongside the ones before.
+
+	Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (for example, two Creator values) in these processes, you can either: put them in two columns in the same row, mapped to the same property; or, put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
 
 ### Complete import
 Once you have completed mappings, column options, and any settings, click the "Import" button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]".
@@ -358,7 +373,7 @@ The drawer has multiple options for mapping:
 **Generic data** also has a dropdown where you can set one of four options:
 
 - **Resource template (by label)**: Set the template for the media by name. The name of the template as entered in the spreadsheet and the name of the template in Omeka S must match exactly.
-- **Resource class (by term)**: Set the resource class for the media. The term for the class in the spreadsheet and in the Omeka S installation must match exactly.
+- **Resource class (by term)**: Set the resource class for the media. The term for the class in the spreadsheet and in the Omeka S installation must match exactly; reference the Vocabularies tab of your installation. For example, enter "dctype:Dataset", "dcterms:Location", "bibo:Interview", or "foaf:Person" with a colon separating the vocabulary prefix and the term, without spaces.
 - **Owner (by email address)**: Set the media's owner by email address. This must be the email address associated with the user's account in the Omeka S installation.
 - **Visibility public/private**: Set the visibility of the media. Use "private" or "public" in the spreadsheet.
 
@@ -382,38 +397,41 @@ To remove a mapping, click the trash can icon in the row for that data mapping. 
 If you have data in a column in your CSV which you do not want to bring in to your Omeka S installation, simply do not map that column to a property or data type.
 
 #### Column options
-To access options for data in a column of your CSV (represented by a row in the import table), click the wrench icon for that column heading.
 
 Column options are in addition to mappings. If you add options without also mapping column data to resource, media, or other data, nothing will be imported.
+
+To access options for data in a column of your CSV (represented by a row in the import table), click the wrench icon for that column heading.
+
+![drawer with options as described above](../modules/modulesfiles/csvimport_mediaColOpt.png)
 
 This will open a drawer on the right side of the browser window with the following options:
 
 - **Use multivalve separator**: Check this box to use the multivalue separator for data in this column. You set the multivalue separator in the initial import page, but you can change it in the Basic Settings tab.  
 - **Language**: Set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written. This will override what you have entered in basic settings.
+- **Import values as private**: Check this box to set all property values *in this column* private.
 - **Data type**: A dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example:  `http://example.com This Is The Label`.
-	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resource's ID is the number sequence at the end of the URL when on the view or edit page, so for `/admin/item/11576` the ID is 11576. You can also see the resource's ID in the right-hand drawer on the resource's view page. Items, item sets, and media all have IDs.
+	- Import as Omeka S resource. This will create [linked resources](../content/media.md#omeka-resource). If you select this option, you must choose which property values to match to find the intended Omeka resource in your installation, in the next **Resource identifier property** dropdown. This must be a unique property, so "Title" may not be a good choice. 
+		- You can use the internal Omeka ID. A resource's ID is the number sequence at the end of the URL when on the view or edit page, so for `/admin/item/11576` the ID is 11576. You can also see the resource's ID in the right-hand drawer on the resource's view page. Items, item sets, and media all have IDs.
+		- You can include resources (items or item sets) that are being made in the same CSV, as long as the resources being linked to have already been created in earlier rows and can be found with the unique property value indicated here. If you wish to do this, we recommend setting the batch number low (even to 1) on the Advanced Settings tab, to ensure resources are being fully created before another new resource tries to link to them. 
 	- If you have certain modules installed, such as Numeric Data Types, there may be additional data type options supplied by those modules.
-- **Import values as private**: Check this box to set all property values *in this column* private.
 
-![drawer with options as described above](../modules/modulesfiles/csvimport_mediaColOpt.png)
-
-To remove a column option setting, click the wrench icon again and undo your changes manually.
+Remember to click the "Apply changes" button. To remove a column option setting, click the wrench icon again and undo your changes manually.
 
 #### Batch edit
 When you select one or more rows in the table (columns from your CSV file), you can use the "Batch edit options" button to apply the column options described above to multiple CSV columns at once.
 
-![a screenshot of the Mapping tab, with the boxes for Columns Title and Creator checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditMedia.png)
+![A drawer offers options for batch-changing the settings.](../modules/modulesfiles/csvimport_batchOptions2.png)
 
-Be sure to click the "Apply Changes" button at the bottom of the drawer in order to save your changes.
+Be sure to click the "Apply changes" button at the bottom of the drawer in order to save your changes.
 
 ### Media import basic settings
-These settings apply to the entire CSV which you are importing. Note that some of these settings can be overwritten by column options in the Map to Omeka S data tab.
+These settings apply to the entire CSV you are importing. Note these settings can be overwritten by column options in the Map to Omeka S data tab. If a column is mapped for template, class, or owner, those values will override these settings; so will column settings for language and privacy.
 
-- **Resource template**: Select a resource template from the drop-down menu to apply to the imported media. You can use the search field at the top of the dropdown to narrow results or find a particular template.
-- **Class**: Select a class from the drop-down menu to apply to the imported media. You can use the search field at the top of the dropdown to narrow results or find a particular class.
-- **Owner**: Set the owner for the media by selecting a user from the drop-down menu. You can use the search field at the top of the dropdown to narrow results or find a particular user.
+- **Resource template**: Select a resource template from the drop-down menu to apply to the imported media. You can use the search field at the top of the dropdown to narrow results or find a particular template. 
+- **Class**: Select a class from the drop-down menu to apply to the imported media. You can use the search field at the top of the dropdown to narrow results or find a particular class. 
+- **Owner**: Set the owner for the media by selecting a user from the drop-down menu. You can use the search field at the top of the dropdown to narrow results or find a particular user. 
 - **Visibility**: Set the visibility of the imported media as public or private.
 - **Multivalue separator**: Enter the multivalue separator character here, if you have used one.
       - The columns of data in your CSV should be separated by commas; however, within those columns you can add a special character to create multiple inputs, for example a semicolon.
@@ -425,7 +443,7 @@ There are two options on this tab which are only for advanced use.
 The Action setting allows you to change the action of process from a straight import to one of the following options:
 
 - **Create a new resource**: Default option. Each row in the CSV will become a new resource.
-- **Append data to the resource**: Add new data to the resource.
+- **Append data to the resource**: Add new data to the resource. 
 - **Revise data of the resource**: Replace existing data in the resource with data from the CSV, except if empty.
 - **Update data of the resource**: Replace existing data in the resource with data from the CSV, even when the cell is empty.
 - **Replace all data of the resource**: Remove all properties of the resource, and fill with new information from the sheet.
@@ -437,7 +455,7 @@ If you select one of these options from the dropdown, three additional settings 
 
 - **Resource identifier column**: Select from a dropdown of the columns in your CSV. This is the data from your spreadsheet which maps to existing data in your Omeka S installation. This column does not need to be mapped in the other tab.
 - **Resource identifier property**: Select from a dropdown of all properties in your Omeka S installation. This should be the property in which you already have data, that you used to create the column data above.
-	- Example: if the data in the Resource identifier column is "Title" with the first row of data having a title "A Study in Scarlet," and you set Resource identifier property to "Dublin Core: Title," then the actions will operate on a resource already in your Omeka S installation whose `dc:title` property is "A Study in Scarlet".
+	- Example: if the data in the Resource identifier column is "Title" with the first row of data having a title "A Study in Scarlet," and you set Resource identifier property to "Dublin Core: Title," then the actions will operate on a resource already in your Omeka S installation whose `dcterms:title` property is "A Study in Scarlet".
 	- This will only work with exact matches.
 	- If you have more than one resource with matching data, it will only take action on the oldest resource.
 - **Action on unidentified resources**: This option determines what to do when no matching resource exists in the Omeka S installation, but the selected action only applies to an existing resource ("Append", "Revise", "Update", or "Replace"). This option is not used when the main action is "Create" or "Delete" Your options are two radio buttons:
@@ -445,6 +463,11 @@ If you select one of these options from the dropdown, three additional settings 
 	- Create a new resource.
 
 In addition to the above, the Advanced Settings tab has an option to set the number of rows to process by batch. By default, this is set to 20. However, if you are running into errors with an import you may want to set it to 5 or even 1 in order to troubleshoot and determine the source of the error.
+
+!!! note
+	Note that Appending data will allow you to supply multiple rows with the same identifier; each row's values will be appended alongside the ones before.
+
+	Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (for example, two Creator values) in these processes, you can either: put them in two columns in the same row, mapped to the same property; or, put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
 
 ### Complete import
 Once you have completed mappings, column options, and any settings, click the Import button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]".
@@ -510,41 +533,43 @@ The drawer has multiple options for mapping:
 
 Other options may appear here based on your active modules, such as File Sideload. 
 
-Be sure to click the "Apply Changes" at the bottom of the drawer or nothing you set here will be kept.
+Be sure to click the "Apply changes" at the bottom of the drawer or nothing you set here will be kept.
 
 To remove a mapping, click the trash can icon in the row for that data mapping. It will remove *only* the mapping, not the column data.
 
 If you have data in a column in your CSV that you do not want to bring in to your Omeka S installation, simply do not map that column to a property or data type.
 
 #### Column options
-To access options for data in a column of your CSV (represented by a row in the import table), click the wrench icon for that column heading.
 
 Column options are in addition to mappings. If you add options without also mapping column data to resource, media, or other data, nothing will be imported.
+
+To access options for data in a column of your CSV (represented by a row in the import table), click the wrench icon for that column heading.
 
 This will open a drawer on the right side of the browser window with the following options:
 
 - **Use multivalue separator**: Check this box to use the multivalue separator for data in this column. You set the multivalue separator character in the initial import page, but you can change it in the Basic Settings tab.
 - **Language**: Set the language for this column using the [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} for the language in which the text is written. This will override what you have entered in basic settings.
+- **Import values as private**: Check this box to set all property values *in this column* private.
 - **Data type**: A dropdown with at least three options, which correspond to the [values](../content/items.md#values) one can use when adding properties to an item:
 	- Import as text (default).
 	- Import as URL reference. You can set the label for the URI by including the desired text after a space, for example: `http://example.com This Is The Label`.
-	- Import as Omeka S resource ID. Note that you must have the correct ID for the resource. A resource's ID is the number sequence at the end of the URL when on the view or edit page, so for `/admin/item/11576` the ID is 11576. You can also see the resource's ID in the right-hand drawer on the resource's view page. Items, item sets, and media all have IDs.
+	- Import as Omeka S resource. This will create [linked resources](../content/items.md#linked-resources). If you select this option, you must choose which property values to match to find the intended Omeka resource in your installation, in the next **Resource identifier property** dropdown. This must be a unique property, so "Title" may not be a good choice. 
+		- You can use the internal Omeka ID. A resource's ID is the number sequence at the end of the URL when on the view or edit page, so for `/admin/item/11576` the ID is 11576. You can also see the resource's ID in the right-hand drawer on the resource's view page. Items, item sets, and media all have IDs.
+		- You can include resources that are being made in the same CSV, as long as the resources being linked to have already been created in earlier rows and can be found with the unique property value indicated here. If you wish to do this, we recommend setting the batch number low (even to 1) on the Advanced Settings tab, to ensure resources are being fully created before another new resource tries to link to them. 
 	- If you have certain modules installed, such as Numeric Data Types, there may be additional data type options supplied by those modules.
-- **Import values as private**: Check this box to set all property values *in this column* private.
 
-![drawer with options as described above](../modules/modulesfiles/csvimport_mixedR2.png)
-
-To remove a column option setting, click the wrench icon again and undo your changes manually.
+Be sure to click the "Apply changes" button at the bottom of the drawer. To remove a column option setting, click the wrench icon again and undo your changes manually.
 
 #### Batch edit
 When you select one or more rows in the table (columns from your CSV file), you can use the "Batch edit options" button to apply the column options described above to multiple CSV columns at once.
 
-![a screenshot of the Mapping tab, with the boxes for Columns Title and Creator checked. A red arrow points to the Batch edit options button. On the right side of the screen, a drawer offers options for changing the settings as described](../modules/modulesfiles/csvimport_batchEditMixed.png)
+![A drawer offers options for batch-changing the settings.](../modules/modulesfiles/csvimport_batchOptions2.png)
 
-Be sure to click the "Apply Changes" button at the bottom of the drawer in order to save your changes.
+Be sure to click the "Apply changes" button at the bottom of the drawer in order to save your changes.
 
 ### Mixed resources import basic settings
-These settings apply to the entire CSV you are importing. Note that some of these settings can be overwritten by column options in the Map to Omeka S data tab.
+
+These settings apply to the entire CSV you are importing. Note these settings can be overwritten by column options in the Map to Omeka S data tab. If a column is mapped for template, class, or owner, those values will override these settings; so will column settings for language and privacy.
 
 ![options as described below](../modules/modulesfiles/csvimport_mixedRBasic.png)
 
@@ -584,6 +609,11 @@ If you select one of these options from the dropdown, three additional settings 
 	- Create a new resource.
 
 In addition to the above, the Advanced Settings tab has an option to set the number of rows to process by batch. By default this is set to 20. However, if you are running into errors with an import you may want to set it to 5 or even 1 in order to troubleshoot and determine the source of the error.
+
+!!! note
+	Note that Appending data will allow you to supply multiple rows with the same identifier; each row's values will be appended alongside the ones before.
+
+	Revising, Updating, and Replacing data will **erase** data that was supplied in earlier rows of your CSV, if later rows use the same identifier. If you wish to import multiple values (for example, two Creator values) in these processes, you can either: put them in two columns in the same row, mapped to the same property; or, put them in a single cell and use multivalue separators. Do not forget to specify your multivalue separator in the "Basic Settings" tab and check the "Use multivalue separator" box in the options (wrench icon) for each column.
 
 ### Complete import
 Once you have completed mappings, column options, and any settings, click the Import button in the upper right corner of the browser window. This should start the import and redirect you to the Past Imports tab. You should see a confirmation message saying "Importing in Job ID [number]".
