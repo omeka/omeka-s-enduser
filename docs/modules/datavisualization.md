@@ -13,13 +13,13 @@ All of the time- and date-based visualizations require [Numeric Data Types](nume
 
 ## Data visualizations by site
 
-Data visualizations are generated based on the resources added to a given site. You cannot visualize information about all the resources in an installation, only what is available on one site. 
+Data visualizations are generated based on the items added to a given site. You cannot visualize information about all the resources in an installation. 
 
 A section for Data Visualization will appear in the sidebar menu for individual sites. Clicking this link will take you to a list of all visualizations created for the site. 
 
 ![The admin screen showing Data Visualization in the sidebar and three datasets created for a site.](../modules/modulesfiles/dataviz_browse.png)
 
-You can sort the visualizations by either date or title in ascending or descending order. You cannot batch-edit visualizations, including deletion, nor can you duplicate existing visualizations, or copy them to other sites.
+You can sort the visualizations by either date or title in ascending or descending order. You cannot batch-edit visualizations, including batch deletion, nor can you duplicate existing visualizations, or copy them to other sites.
 
 ### Add a data visualization
 
@@ -34,18 +34,18 @@ You will then have the option select what you would like to visualize. The optio
 1. **County of property values**, which visualizes the count of values of a selected property.
 1. **Count of items with property values in a time series**, which visualizes the count of items that have selected values of a selected property over a selected period of time.
 1. **Count of items in a time series**, which visualizes the count of items over a selected period of time.
-1. **Count of property values**, which visualizes the count of values of a selected property.
+1. **Count of property values**, which visualizes the count of values of a selected property of items.
 1. **Item relationships**, which visualizes the relationships between items via their resource values.
 
-This selection will be represented by the "Dataset type" column in the table. 
+This selection will be represented by the "Dataset type" column in the table on the module's homepage. 
 
 Once you select what you would like to visualize, click the "Next" button. You will then be able to describe and configure this visualization.
 
 - Each visualization requires a Title.
 - You may add a prose Description of the visualization. This will appear under the title on the visualization's page and in the page block. 
-- Use the Search Query interface to set the pool of resources to be visualized. If you choose to leave this blank, the visualization will incorporate all resources assigned to that site.
+- Use the Search Query interface to set the pool of resources to be visualized. If you choose to leave this blank, the visualization will incorporate all items assigned to that site.
     - If you select "Edit", a sidebar will open allowing you to search full-text, by value, by class, by template, by item set, and/or by owner. You can combine multiple parameters with "AND" or "OR". You can either "Preview", "Reset", or "Apply" your search by selecting the corresponding button at the bottom of the search sidebar.
-    - If you select "Advanced edit", you can edit or paste in a search string from a URL (which you can create by searching your resources on the site's front-end).
+    - If you select "Advanced edit", you can edit or paste in a search string from a URL (which you can create by searching your items on the site's front-end).
 
 ![Add Data Visualization form including Title, Description, Search Query and Data configuration options for a Count of Items with Property Values visualization](../modules/modulesfiles/dataviz_editVisualization.png)
 
@@ -57,27 +57,37 @@ The options for configuring your dataset will reflect the type you selected init
 
 This selection gives you the option of a bar chart, column chart, or pie chart (see [Diagram configuration](#diagram-configuration) below).
 
-If you are creating a count of items with classes, you will be able to select the classes by clicking inside the "Classes" dropdown menu and selecting avialable classes (see your [Vocabularies tab](../content/vocabularies.md) for installed vocabularies). If you do not complete this step, you will receive an error when attempting to generate your data set - you must select all classes if you wish to display them all. 
+Select the classes by clicking inside the "Classes" dropdown menu and adding available classes (see your [Vocabularies tab](../content/vocabularies.md) for installed vocabularies) one at a time. If you do not complete this step, you will receive an error when attempting to generate your data set - you must select all classes if you wish to display them all. 
+
+![Visualization of item classes, organized alphabetically, in a bar chart.](../modules/modulesfiles/dataviz_classes.png)
 
 ##### Count of items in item sets
 
 This selection gives you the option of a bar chart, column chart, or pie chart.
 
-If you are creating a count of items in a item set, you will be able to select the item sets by clicking inside the item sets box and selecting from the dropdown menu. If you do not complete this step, you will receive an error when attempting to generate your data set.
+Select one or more item sets by clicking inside the item sets box and selecting from the dropdown menu. You may add more than one item set. If you do not complete this step, you will receive an error when attempting to generate your data set - you must select all item sets if you wish to display them all.
+
+![Visualization of item set counts, organized by smallest to greatest, in a column chart.](../modules/modulesfiles/dataviz_itemsets.png)
 
 ##### Count of items with properties
 
 This selection gives you the option of a bar chart, column chart, or pie chart.
 
-If you are creating a count of items with properties, you will be able to select the property by clicking inside the "Property" box and selecting from the dropdown menu. You may add more than one property. If you do not complete this step, you will receive an error when attempting to generate your data set.
+Select one or more properties by clicking inside the "Property" box and selecting from the dropdown menu. You may add more than one property. If you do not complete this step, you will receive an error when attempting to generate your data set.
+
+![Visualization of items with the four selected properties, in a pie chart. The mouse is hovered over one slice, showing the count for that slice.](../modules/modulesfiles/dataviz_properties.png)
 
 ##### Count of items with property values
 
 This selection gives you the option of a bar chart, column chart, or pie chart.
 
-There are two fields you need to complete under "Dataset configuration" when creating a count of items with properties: "Value property" and "Values". First, you must use the drop down menu to select the value property from the dropdown menu. Then, you can enter the specific values, separated by new lines, into the textbox. If you fail to fill out either of these fields you will receive an error when attempting to generate your data set.
+There are two fields you need to complete under "Dataset configuration" when creating a count of items with properties: "Value property" and "Values". First, you must use the dropdown menu to select one property from the dropdown menu. Then, you can enter the specific values, separated by new lines, into the textbox.
+
+You may find it useful to copy values for this list from the [Faceted Browse module](facetedbrowse.md), as it can load all available values of a given faceted property.
 
 ##### Count of items with property values in a time series
+
+This selection will result in a line chart. 
 
 ![Public view of the diagram generated by the following settings, using the MonotoneX line display option.](../modules/modulesfiles/dataviz_countPropertyValuesTime-display.png)
 
@@ -85,13 +95,13 @@ This option visualizes the count of items that have selected values of one selec
 
 Enter in desired values in a list. You may find it useful to copy values for this list from the [Faceted Browse module](facetedbrowse.md), as it can load all available values of a given faceted property.
 
-Each entry in the list of values will have a separate colour. The graph will display instances of each value in each date bucket (e.g. each year, or each ten-year span). When a date bucket is hovered over with the mouse, a box will pop up showing precise counts of each value, in the order provided in the settings. This visualization does not provide links to items or search results. 
+Each entry in the list of values will have a separate color. The graph will display instances of each value in each date bucket (e.g. each year, or each ten-year span). When a date bucket is hovered over with the mouse, a box will pop up showing precise counts of each value, in the order provided in the settings. This visualization does not provide links to items or search results. 
 
 ![Admin-side settings of the above diagram.](../modules/modulesfiles/dataviz_countPropertyValuesTime.png)
 
-For a simpler version of this option, choose "Count of items in a time series" below.
-
 ##### Count of items in a time series
+
+This selection gives you the option of a histogram or a line chart. 
 
 ![Site with a time-series data visualization in the navigation, showing a histogram with items from 1700 to 2024.](../modules/modulesfiles/dataviz_timeSeries.png)
 
@@ -101,9 +111,11 @@ This visualization does not provide links to items included in the visualization
 
 ##### Count of property values
 
+This selection gives you the option of a bar chart, column chart, or pie chart.
+
 ![Admin screen showing the settings for a "count of property values" pie chart. Search query is "Type has any value" and Value property is "Dublin Core: Type". Minimum is set to 10; maximum is not set.](../modules/modulesfiles/dataviz_countPropertyValues.png)
 
-When configuring your dataset for counting property values, you must select a value property from the dropdown menu. If you do not complete this step, you will receive an error when attempting to generate your dataset. There are two other optional configuration fields: Minimum count and Maximum count. You can set these values by typing or by increasing or decreasing with the arrows.
+When configuring your dataset for counting property values, you must select a property from the dropdown menu. If you do not complete this step, you will receive an error when attempting to generate your dataset. There are two other optional configuration fields: Minimum count and Maximum count. You can set these values by typing or by increasing or decreasing with the arrows.
 
 ![Public view of the diagram generated by the previous settings.](../modules/modulesfiles/dataviz_countPropertyValues-display.png)
 
@@ -114,27 +126,23 @@ This option visualizes the relationships between items via their resource values
 This visualization will not display links between item and item sets, or links with media. 
 
 !!! note
-	If you make changes to any of the settings above this line, you will need to re-generate your dataset in order to see the results in your diagram. Changes made below this point in the configuration page do not require refreshing the dataset. 
+	If you make changes to any of the settings above this line, you will need to re-generate your dataset in order to see the results in your diagram. Changes made below this point in the configuration page do not require refreshing the dataset. However, when viewing the resulting diagram, you may wish to hard-refresh the public page to ensure changes are being loaded correctly.
 
 #### Diagram configuration
-Under Diagram Configuration, you will be able to select the kind of diagram you would like to produce for your visualization. 
+
+Under Diagram Configuration, you will be able to select the kind of diagram you would like to produce for your visualization, then specify dimensions and other visual settings. 
 
 ##### "Count of" diagrams
-Options include bar chart, column chart, and pie chart.
+
+For "Count of" diagrams, the options are bar chart, column chart, and pie chart.
+
+There are no links in these diagrams that would allow users to browse the collection. 
 
 If you select **bar chart** or **column chart**, you will be asked to input the width and height of your visualization as well as the top, right, bottom, and left margins. Additionally, you will be able to use a dropdown menu to order your data by value (ascending), by value (descending), by label (ascending), or by label (descending).
 
-If you select **pie chart**, you will only be asked to input the width, height, and margins. 
-
-Be sure to refresh the public page containing your visualization to see any changes. Some themes may constrain your diagrams to a certain width, or otherwise modify your intended display, which will require you to make changes to the settings to contain the diagram and its labels. 
+If you select **pie chart**, you will only be asked to input the width, height, and margins. Pie charts are always circles; slices are always arranged by largest to smallest, clockwise. Slice colors are predetermined and cannot be customized.
 
 ##### Date-based diagrams
-
-Date - Property value: "Grouped line chart (time series)"
-
-Date: Line chart (time series) or Histogram (time series)
-
-
 
 ###### Histograms
 
@@ -142,13 +150,15 @@ Histograms are available for the "Count of items in a time series" datasets.
 
 Histograms are similar to column charts, with the horizontal axis representing a time range and the vertical axis representing the count in your dataset. 
 
+There are no links in this diagram that would allow users to browse the collection. 
+
 ![Site with a time-series data visualization in the navigation, showing a histogram with items from 1700 to 2024.](../modules/modulesfiles/dataviz_timeSeries.png)
 
 ###### Grouped line charts (time series)
 
 Line charts are available for "Count of property values in a time series" and "Count of items in a time series" datasets.
 
-Line charts are similar to column charts and histograms, with a more complex display to represent changes over time. 
+Line charts are similar to column charts and histograms, with a more complex display to represent changes over time. For "Count of items in a time series," the line chart will display only one color (blue). For "Count of property values in a time series," the line chart will display a different color for each property value included. Colors are predetermined and cannot be customized.
 
 You can choose to display, for each value with a count: a line (with no points in each date bucket), points in each date bucket (with no connecting line), or both the line and its points.
 
@@ -161,30 +171,39 @@ Line options are:
 - StepAfter
 - StepBefore.
 
-You can see the MonotoneX option in the image above. The four options below are Linear, Natural (top two), Step, and StepAfter (bottom two).
+You can see the MonotoneX option in the image above, in the [Count of items with property values over time](#count-of-items-with-property-values-in-a-time-series) section. The four options below are Linear, Natural (top two), Step, and StepAfter (bottom two).
 
 ![Four of the above line options displayed on a public page: Linear, Natural, Step, and StepAfter.](../modules/modulesfiles/dataviz_countPropertyValuesTime-lines.png)
 
-
-
-
-
-
-
+There are no links in these diagrams that would allow users to browse the collection. 
 
 ##### Relationship diagrams
 
-
 ###### Arc diagrams
 
-Arc diagrams display items in a column on the left-hand side of the diagram, with relationships between those items represented as large arcing semi-circles connecting two items. One item may have many arcs. Items are colored based on the group assigned in your settings (either the item's class or template, or a property value you selected), and the arcs are the color of the item with the outbound linked resource provided in a property value. For example, if you were showing the relationship between creators and their creations, using the resource templates (e.g. People and Books) as your groups, you would have people coloured in orange and books coloured in blue, with blue arcs connecting the books to the people provided in their "Creator" fields. If items have reciprocal (inverse) relationships with each other, you may see what looks like one arc that is the combined color of the two arcs. 
+Arc diagrams display items in a column on the left-hand side of the diagram, with relationships between those items represented as large arcing semi-circles connecting two items. One item may have many arcs. 
+
+Items are colored based on the "Group" assigned in your settings (either the item's class or template, or a property value you selected), and the arcs are the color of the item with the outbound linked resource provided in a property value. Colors are predetermined and cannot be customized.
+
+For example, if you were showing the relationship between creators and their creations, using resource templates (e.g. "People" and "Books") as your groups, you would have people colored in orange and books colored in blue, with blue arcs connecting the books to the people provided in their "Creator" fields. If items have reciprocal (inverse) relationships with each other, you may see what looks like one arc that is the combined color of the two arcs. 
+
+If items do not have your chosen group (e.g. if you are grouping by class and some items have no class), they will go into a "null" group. Null groups will always be displayed first.
+
+This diagram provides links that allow users to browse the included items. 
 
 ###### Network relationship diagrams
 
 Network relationship diagrams display items with links to one another in a tree visualization. 
 
+Items are shown as small circles, and colored based on the "Group" assigned in your settings (either the item's class or template, or a property value you selected). Links between items are gray. Colors are predetermined and cannot be customized.
 
-#### Finalize your visualization
+If items do not have your chosen group (e.g. if you are grouping by class and some items have no class), they will go into a "null" group. 
+
+When an item is clicked, its circle will become highlighted with a black border, and its links will become black. A pop-up box will show the name of the item at the top, its group name underneath, and the linked resources that are included in the diagram. Users can drag nodes around on the screen in order to view their relationships. 
+
+This diagram provides links that allow users to browse the included items. 
+
+### Finalize your visualization
 
 If you edit your visualization to change the Diagram Configuration after your initial visualization is produced, you will lose your current diagram configuration.
 
@@ -202,8 +221,6 @@ Once your visualization is complete, you can click the "View..." button and sele
 If you select "Dataset," a new browser tab will open that displays your dataset in JSON. You may find it useful to "Expand all" at the top of the page to quickly scan the loaded values.
 
 If you select "Diagram," a new browser tab will open to a new public page on your site, containing your diagram. This page will continue to be publicly available on your site as long as the visualization exists, but you don't need to link to it from anywhere. You can insert your visualizations as page blocks instead (see below).
-
-![An example pie chart from the "Count of items with classes" option.](modulesfiles/dataviz_piechart.png)
 
 You can save your work and select "Return to Visualizations," which will bring you to a browse list of all of your visualizations, where you can view the diagram or dataset, or edit the visualization.
 
