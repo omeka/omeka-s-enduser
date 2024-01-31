@@ -37,8 +37,6 @@ You will then have the option select what you would like to visualize. The optio
 1. **Count of property values**, which visualizes the count of values of a selected property of items.
 1. **Item relationships**, which visualizes the relationships between items via their resource values.
 
-This selection will be represented by the "Dataset type" column in the table on the module's homepage. 
-
 Once you select what you would like to visualize, click the "Next" button. You will then be able to describe and configure this visualization.
 
 - Each visualization requires a Title.
