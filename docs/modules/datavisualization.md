@@ -40,7 +40,7 @@ You will then have the option select what you would like to visualize. The optio
 Once you select what you would like to visualize, click the "Next" button. You will then be able to describe and configure this visualization.
 
 - Each visualization requires a Title.
-- You may add a prose Description of the visualization. This will appear under the title on the visualization's page and in the page block. 
+- You may add a prose Description of the visualization. This will appear under the title on the visualization's page and in the page block. You can include HTML in this field, including links. 
 - Use the Search Query interface to set the pool of resources to be visualized. If you choose to leave this blank, the visualization will incorporate all items assigned to that site.
     - If you select "Edit", a sidebar will open allowing you to search full-text, by value, by class, by template, by item set, and/or by owner. You can combine multiple parameters with "AND" or "OR". You can either "Preview", "Reset", or "Apply" your search by selecting the corresponding button at the bottom of the search sidebar.
     - If you select "Advanced edit", you can edit or paste in a search string from a URL (which you can create by searching your items on the site's front-end).
@@ -121,12 +121,20 @@ When configuring your dataset for counting property values, you must select a pr
 
 This option visualizes the relationships between items via their resource values. It relies on the [linked resources](../content/items.md#linked-resources) you have set between items using their metadata fields (e.g., setting the item "William Shakespeare" as the "Creator" value on the "Much Ado About Nothing" item). 
 
-This visualization will not display links between item and item sets, or links with media. 
+These visualizations will not display links between item and item sets, or links with media. 
 
-!!! note
-	If you make changes to any of the settings above this line, you will need to re-generate your dataset in order to see the results in your diagram. Changes made below this point in the configuration page do not require refreshing the dataset. However, when viewing the resulting diagram, you may wish to hard-refresh the public page to ensure changes are being loaded correctly.
+Like other diagrams, you first choose a subset of items in the site using a search query. Then you specify which linked properties you wish to display. If you choose a certain subset of item to display (such as items with the "Person" class), the diagram will display those items' outbound links to other items in the same subset. 
+
+You can use the properties selector to specify which links (such as "Spouse Of") to display. If you leave the properties selector blank, the diagram will display all links between the included items. 
+
+Item relationships can be viewed in one of two diagrams: the network relationship diagram, a "tree" display with movable nodes, or the arc diagram, with every item in one vertical list and arcs drawn between items with links. Both diagrams include pop-up boxes with more information about each item, as well as clickable links to browse those items.
+
+![The arc diagram showing item relationships.](../modules/modulesfiles/dataviz_arc.png)
 
 ### Diagram configuration
+
+!!! note
+	If you make changes to any of the settings above this section, you will need to re-generate your dataset in order to see the results in your diagram. Changes made below this point in the configuration page do not require refreshing the dataset. However, when viewing the resulting diagram, we recommend you hard-refresh the public page to ensure changes are being loaded correctly.
 
 Under Diagram Configuration, you will be able to select the kind of diagram you would like to produce for your visualization, then specify dimensions and other visual settings. 
 
@@ -182,6 +190,8 @@ There are no links in these diagrams that would allow users to browse the collec
 #### Relationship diagrams
 
 ##### Arc diagrams
+
+![An arc diagram, as above, with an item highlighted showing its pop-up box.](modulesfiles/dataviz_arc-highlight.png)
 
 Arc diagrams display items in a column on the left-hand side of the diagram, with relationships between those items represented as large arcing semi-circles connecting two items. One item may have many arcs. 
 
