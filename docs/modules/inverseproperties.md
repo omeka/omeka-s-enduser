@@ -51,7 +51,7 @@ The exception to this would be setting a self-pairing, such as "Spouse of" or "R
 
 Once you have selected all the inverse properties for that resource template, click "Submit" in the upper right corner to save your changes.
 
-## Inverse Properties in action
+## Inverse properties in action
 
 When adding or editing an item, select a resource template that has inverse properties. Then, in a property that has an inverse, click "Omeka resource". Then, click the resource type (such as "Item") and select the resource you wish to add from the drawer. After clicking on the resource's title, be sure to click the "Select resource" button at the bottom of the drawer to add the item to the metadata field. You can add multiple resources at once with the "Quick add" switch. 
 
@@ -67,7 +67,7 @@ If you click on the resource you just linked, you should see that the inverse pr
 
 If you delete a value, its inverse will not automatically delete. You must delete each value manually from its own resource.
 
-### Batch-update Inverse Properties
+### Batch-update inverse properties
 
 If you have linked resources already set up and then activate Inverse Properties and assign pairings in resource templates, you can batch-create your reciprocal values using the batch-edit function. Go to Items, Media, or Item Sets in the left-hand navigation, then select a number of resources (use the Advanced Search to find all resources using the template). Then use the "Batch actions" dropdown to edit the selected resources, or all resources in the search results. 
 
