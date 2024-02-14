@@ -11,7 +11,7 @@ Some visualizations allow users to interact and navigate through to items or set
 
 All of the time- and date-based visualizations require [Numeric Data Types](numericdatatypes.md) to be installed and active on your installation, and your date values to be formatted correctly. You may also find [Data Cleaning](datacleaning.md) and [Faceted Browse](facetedbrowse.md) to be useful modules for seeing and fixing inconsistencies in your data, to make for better visualizations.
 
-Data visualizations can be created and modified by [Global Administrators and Supervisors](../admin/users.md).  
+Data visualizations can be created and modified by [Global Administrators and Supervisors](../admin/users.md), and by users set to [Manager on individual sites](../sites/site_users.md). Site Creators can view visualization diagrams and datasets but not create or modify visualizations.
 
 ## Data visualizations by site
 
