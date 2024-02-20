@@ -68,8 +68,8 @@ The Omeka Team and the community of open source developers have created hundreds
     - [File Sideload](https://omeka.org/s/modules/FileSideload/): Add files that are already on your server to items. 
     - Other importers include from DSpace, Fedora, Dataverse, Invenio, Zenodo, Zotero, or from existing Omeka Classic or S collections.
 - Increasing discoverability
-    - [Mapping](): Geolocate your items to one or more mapped locations.
-    - [Sharing](): Offer OpenGraph metadata, so your Omeka S links display beautifully on social media.
+    - [Mapping](https://omeka.org/s/modules/Mapping/): Geolocate your items to one or more mapped locations.
+    - [Sharing](https://omeka.org/s/modules/Sharing/): Offer OpenGraph metadata, so your Omeka S links display beautifully on social media.
     - [Resource Meta](https://omeka.org/s/modules/ResourceMeta/): Make your resources' metadata machine-readable.
     - [Persistent Identifiers](https://omeka.org/s/modules/PersistentIdentifiers/): Create/import/assign DOIs or ARKs to items.
     - [IIIF Presentation](https://omeka.org/s/modules/IiifPresentation/): Offer your resources using the IIIF Presentation API.
@@ -91,7 +91,7 @@ In addition to these basic groups of modules, you may be interest in the followi
     - [View Private Resources](https://omeka.org/s/modules/ViewPrivateResources/): Allow researcher and author roles to view private resources.
 - Displaying data
     - [Data Visualization](https://omeka.org/s/modules/Datavis/): Visualize your data.
-    - [Mapping](): Geolocate your items to one or more mapped locations; includes a timeline for displaying items chronologically.
+    - [Mapping](https://omeka.org/s/modules/Mapping/): Geolocate your items to one or more mapped locations; includes a timeline for displaying items chronologically.
 
 ### Community sourcing
 
