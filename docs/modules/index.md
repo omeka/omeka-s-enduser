@@ -82,14 +82,13 @@ The uninstalled module will continue to appear on your Modules page (with the op
 ## Updating a module
 To update a module using FTP:
 
-1. From the Modules tab on your Omeka S installation, deactivate the module you're going to update.
 1. Download the latest release of the module to your computer.
 1. Open your FTP client and log on to the server that houses the Omeka S install.
 1. Navigate to the `/modules` folder (this should be located in the main folder of the install).
 1. Move the old copy of the module to your computer.
 1. Upload the zipped folder for the latest version of the module to the `/modules` folder.
 1. In your FTP client, unzip the new version module.
-1. On the Omeka S installation dashboard, go to the Modules tab and activate the new version of the module.
+1. On the Omeka S installation dashboard, go to the Modules tab and click the Upgrade button for the module.
 1. Check to be sure your settings have been preserved and there are no errors. After this, you can safely delete the old module folder that you saved to your computer.
 
 If you are concerned about problems with the update, be sure to keep the older version of the module on your local machine in case you have to switch them back. Follow the same update steps with the earlier version of the module.
