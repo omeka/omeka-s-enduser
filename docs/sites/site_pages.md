@@ -8,20 +8,25 @@ Once you are editing the site, click the Pages link in the left-hand navigation.
 
 When you create a new site, Omeka S automatically adds a page titled "Welcome" with a single HTML block (see below). You can edit this page or delete it.
 
-## Adding pages
-From the page for the site, click the Pages link. Then click the "Add new page" button on the upper left side of the window.
+## Browse pages
+The Pages page will display all of your pages in their navigation order. Child pages will display below the parent page with one or more `-` (dash) characters before the page title.
 
-![At the top of the screen is a grey button labeled "Add new page"](../sites/sitesfiles/sitepg_addnew.png)  
+Every page is listed with its Title, buttons to view (box with an arrow coming out), edit (pencil), or delete (trash can) the page, the page's slug, and its last-modified date. 
 
-To add a page you must enter a **Title**. You can also enter a **URL Slug**. Both of these can be edited later.
+![A sites page browse view, with pages listed, some of which are child pages of the others.](../sites/sitesfiles/sitepg_browse.png)
 
-A title is required to create the page. If you do not enter a slug, Omeka S will create one from the page title. A slug is the page’s portion of the URL and can only contain letters, numbers, and hyphens; no other characters are allowed.
+Use the [Navigation](site_navigation.md) screen of the site to set the order of pages, including setting child and parent pages.
 
-In addition, there is a checkbox for "Add to navigation". If checked, the page will automatically be added to the end of the main [navigation](../sites/site_navigation.md) level for the site. If you do not check this box, you can manually add the page to the site navigation and arrange it from the Navigation page. 
+## Add pages
+From the site you are working on, click the Pages link in the left-hand sidebar. Then click the "Add new page" button on the upper right corner of the window.
+
+To add a page you must enter a **Title**. You can also enter a **URL slug**. Both of these can be edited later. A title is required to create the page. If you do not enter a slug, Omeka S will create one from the page title. A slug is the page’s portion of the URL and can only contain letters, numbers, and hyphens; no other characters are allowed.
+
+In addition, there is a checkbox for "Add to navigation". If checked, the page will automatically be added to the end of the main [navigation](../sites/site_navigation.md) for the site, at the top level. If you do not check this box, you can manually add the page to the site navigation and arrange it from the Navigation page.
 
 ![Page view showing the fields for Add Page](../sites/sitesfiles/sitepg_add.png)
 
-The eye icon, to the left of the "Cancel" and "Add" buttons, is a toggle to set the visibility of your page. If the toggle is set to public (no line), then anyone can see the page. If the toggle is set to private (line through the eye icon), the page will only be visible to logged-in users of the Omeka S installation who have site permissions (Supervisors and Global Admins will always be able to see private pages). 
+The eye icon, to the left of the "Cancel" and "Add" buttons, is a toggle to set the visibility of your page. If the toggle is set to public (no line), then anyone can see the page. If the toggle is set to private (line through the eye icon), the page will only be visible to logged-in users of the Omeka S installation who have site permissions (Supervisors and Global Admins will always be able to see private pages). This will include its appearance in the navigation. Pages are visible by default. 
 
 Clicking or hitting enter on the eye icon toggles between public and private. 
 
@@ -29,43 +34,36 @@ Page is public: ![make public button showing an eye icon](../content/contentfile
 
 Page is private: ![make private button showing an eye icon with a diagonal slash through it](../content/contentfiles/item_private.png){style="display:inline;"}
 
-Once you have entered this information and set visibility, click the "Add" button in the upper right hand corner of the browser window. You will be automatically taken to that page's edit view (see below). 
+Once you have entered this information, click the "Add" button in the upper right hand corner of the browser window. You will be automatically taken to that page's edit view (see below). 
 
 If you decide you do not want to create the page, click the "Cancel" button.
 
-## Browse pages
-The Pages page (once you have at least one page) will display all of your pages in their navigation order. Child pages will display below the parent page with a `-` before the page title.
-
-Every page is listed with its Title, buttons to view (box with an arrow coming out), edit (pencil), or delete (trash can) the page, and the page's slug. 
-
-![A sites page browse view, with 12 pages listed, some of which are child pages of the others.](../sites/sitesfiles/sitepg_browse.png)
-
-Use the [Navigation](../sites/site_navigation.md) screen of the site to set the order of pages, including setting child and parent pages.
-
-## Editing pages  
+## Edit a page  
 After clicking the Pages link, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page title will take you to the public view of that page. 
 
 The edit view for a page will display the page's title across the top. In the upper left is the public/private toggle (the eye icon), and buttons to view the public version (opens in a new tab), delete the page, cancel changes, or save changes. Note that changes will not display on the public view until after they have been saved.
 
-At the top of the work area are fields for the page title and URL slug. You can edit these at any time, but remember that the slug must be unique within the site (you cannot have two pages with the slug "welcome" on the same site).
+At the top of the work area are fields for the page title and URL slug. You can edit these at any time, but remember that the slug must be unique within the site (e.g. you cannot have two pages with the slug "welcome" on the same site).
 
-### Selecting layout mode
-There are two options for laying out the blocks that include a page's content: Normal Flow and Grid. 
+![A page in edit view, with one media block added](../sites/sitesfiles/sitepg_edit.png)
 
-- Normal flow provides a view where the blocks stack one upon the next to build the page. 
-- Grid introduces a user defined column system that allows the user to finely tune the placement and width of the blocks in a page. With this choice you can then define the number of columns you want to work with in your page, from 1 to 12.
+### Select the layout mode
+There are two options for laying out the blocks that include a page's content: **Normal flow** and **Grid**. 
 
-Next you will have the option to apply some configuration settings to the entire page. Clicking on the gear icon will open the Page layout configuration menu. 
+**Normal flow** provides a view where the blocks stack one upon the next to build the page. With this layout, you can set blocks to float right and left, take up the full width, or center the content in the full width. When blocks (such as media) are floated alongside an HTML block, the text will flow and wrap around the floated block.
+
+**Grid** is a user-defined column system, based on [the CSS Grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout){target=_blank}, that allows the user to finely-tune the placement and width of the blocks in a page. With this choice you can define the number of columns you want to work with in your page, from 1 to 12; blocks can be set to occupy one or more of the columns. 
+
+Next you will have the option to apply configuration settings to the entire page. Clicking on the gear icon will open the Page layout configuration menu. 
 
 - For Normal flow, you will be able to select a template for the page if your site theme provides one.
-- For Grid, you will also be able to select a template for the page, but you can also define the gaps between the columns and rows of blocks by adjusting the numeric settings.
+- For Grid, you will be able to select a template for the page, but you can also define the gaps (in pixels) between the columns and rows of blocks.
 
 If you make a mistake in your page layout settings, you can reset the page to the most recently saved version by clicking the "Restore" button.
 
 Once you have made your layout choices, you are ready to add blocks to the page.
 
-### Adding blocks
-![A page in edit view, with one media block added](../sites/sitesfiles/sitepg_edit.png)
+### Add blocks
 
 On the right hand side you can choose to add a new block by selecting one of the following page elements:
 
@@ -88,14 +86,14 @@ If you have the relevant modules installed, you may also have:
 - Map by attachment
 - Map by query.
 
-### Positioning and configuring blocks
+### Position and configure blocks
 #### Normal flow
 
-Using the Normal flow layout you will have the option with each block to make a number of standard configuration choices by clicking on the gear icon. This will deploy the Block layou configuration menu in the righthand drawer, which contains the following options.:
+Using the Normal flow layout you will have the option with each block to make a number of standard configuration choices by clicking on the gear icon. This will deploy the Block layout configuration menu in the righthand drawer, which contains the following options:
 
 - If your theme provides one, you can select a template to apply to the block from the dropdown menu
 - The Class input box allows you to type in a specific class to apply styles to the block
-- The Alignment menu allows you to choose Default, Float Left, Float Right or Center alignment for the block
+- The Alignment menu allows you to choose Default, Float Left, Float Right or Center alignment for the block. Floating blocks left or right will cause them to occupy a maximum of one-third of the page, and may be smaller, depending on the block's contents. For example, a Media embed block with a 200-pixel thumbnail and a short title or caption will only occupy 200 pixels plus padding. An HTML block positioned beside the Media embed block will occupy the rest of the width of the page. 
 - Background allows you to select from the assets available in the installation to serve as a background image for the block
 - Vertical anchor position allows you to select Default, Top, Center, or Bottom positioning for the background asset
 - Horizontal anchor position allows you to select Default, Left, Center or Right positioning for the background asset
@@ -120,7 +118,7 @@ Just as with the Normal flow layout, blocks in the Grid layout have a standard s
 - If your theme provides one, you can select a template to apply to the block from the dropdown menu
 - The Class input box allows you to type in a specific class to apply styles to the block
 - The Alignment menu allows you to choose Default, Float Left, Float Right or Center alignment for the block
-- Background allows you to select from the assets available in the installation to serve as a background image for the block
+- Background allows you to select from the asset files available in the installation to serve as a background image for the block.
 - Vertical anchor position allows you to select Default, Top, Center, or Bottom positioning for the background asset
 - Horizontal anchor position allows you to select Default, Left, Center or Right positioning for the background asset
 - Size allows you to you select Default, Cover, or Contain for the background asset
