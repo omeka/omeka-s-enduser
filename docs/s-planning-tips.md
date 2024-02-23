@@ -42,80 +42,80 @@ In Omeka S, items and item sets can use other resources - items, item sets, and 
 Do you want to use a set of terms (controlled vocabulary) for certain items? You might want to use [Custom Vocab](../modules/customvocab/). Or do you want to use a terms list created by the Library of Congress or the Getty? Then you might use [Value Suggest](../modules/valuesuggest/).
 
 ## Building a site
-With Omeka S you will build your site from the ground up, which means you need to give some thought to how you want to organize your site. 
+With Omeka S, you can built your sites from scratch or quickly set up our in-built pages. It's also easy to use multiple sites to accomplish your goals. 
 
-**What pages do you want to include?** What kind of content do you want on these pages? How do you want to arrange them? Try sketching out a sample menu or wireframes for the site. Use that as a guide as you build your pages.
+**What pages do you want to include?** What kind of content do you want on these pages? How do you want to arrange them? Try sketching out a sample menu or wireframes for the site. Look at example sites by other organizations or people. Use those as guides as you build your pages.
 
-Pages are made up of [blocks](../sites/site_pages/#page-blocks), which can include text, images, and much more. What kind of content do you want on the pages you build? Bear in mind that you can rearrange page blocks as you build, so you can play around with the order of the content on your pages if you need to.
+Pages are made up of rearrangable [blocks](../sites/site_pages/#page-blocks), which can include text, images, and much more. What kind of content do you want on the pages you build? How do you want people to access and interpret your collections?
 
 **How do you want to interact with your visitors on your site?** Do you want to [collect](../modules/collecting/) resources from your visitors? Allow them to [share](../modules/sharing/) your content on social media? 
 
-Will you require users to create accounts on your site? Familiarize yourself with [user roles and permissions](admin/users.md).
+Will you allow [users to create accounts](admin/users.md) on your site, and let them add their own items, metadata, or exhibits?
 
 ## Suggested modules
-The Omeka Team and the community of open source developers have created hundreds of modules to extend the Omeka S core functionality. To assist administrators in installing and configuring Omeka S so that it is geared toward particular types of work, below are some suggested collections of modules by type of work:
+The Omeka Team and our community of open-source developers have created hundreds of modules to extend the Omeka S core functionality. To assist administrators in installing and configuring Omeka S so that it is geared toward particular types of work, below are some suggested collections of modules:
 
 ### Publishing digital collections
 
 - Describing resources 
-    - [Extract Metadata](https://omeka.org/s/modules/ExtractMetadata/): Extract embedded metadata from files, such as EXIF data from photographs.
-    - [Extract Text](https://omeka.org/s/modules/ExtractText/): Extract text from files (PDFs, word documents, images) to make them searchable.   
-    - [Custom Vocab](https://omeka.org/s/modules/CustomVocab/): Describe your resources using vocabularies you create.
-    - [Value Suggest](https://omeka.org/s/modules/ValueSuggest/): Describe your resources using auto-suggested values from controlled vocabulary services. 
-    - [Numeric Data Types](https://omeka.org/s/modules/NumericDataTypes/): Add data types for numbers and dates. 
+    - [Extract Metadata](https://omeka.org/s/modules/ExtractMetadata/){target=_blank}: Extract embedded metadata from files, such as EXIF data from photographs.
+    - [Extract Text](https://omeka.org/s/modules/ExtractText/){target=_blank}: Extract text from files (PDFs, word documents, images) to make them searchable.   
+    - [Custom Vocab](https://omeka.org/s/modules/CustomVocab/){target=_blank}: Describe your resources using vocabularies you create.
+    - [Value Suggest](https://omeka.org/s/modules/ValueSuggest/){target=_blank}: Describe your resources using auto-suggested values from controlled vocabulary services. 
+    - [Numeric Data Types](https://omeka.org/s/modules/NumericDataTypes/){target=_blank}: Add data types for numbers and dates. 
 - Importing resources
-    - [CSV Import](https://omeka.org/s/modules/CSVImport/): Import and update content (items, item sets, media, users) from a CSV, a TSV, or an ODS file. 
-    - [File Sideload](https://omeka.org/s/modules/FileSideload/): Add files that are already on your server to items. 
+    - [CSV Import](https://omeka.org/s/modules/CSVImport/){target=_blank}: Import and update content (items, item sets, media, users) from a CSV, a TSV, or an ODS file. 
+    - [File Sideload](https://omeka.org/s/modules/FileSideload/){target=_blank}: Add files that are already on your server to items. 
     - Other importers include from DSpace, Fedora, Dataverse, Invenio, Zenodo, Zotero, or from existing Omeka Classic or S collections.
 - Increasing discoverability
-    - [Mapping](https://omeka.org/s/modules/Mapping/): Geolocate your items to one or more mapped locations.
-    - [Sharing](https://omeka.org/s/modules/Sharing/): Offer OpenGraph metadata, so your Omeka S links display beautifully on social media.
-    - [Resource Meta](https://omeka.org/s/modules/ResourceMeta/): Make your resources' metadata machine-readable.
-    - [Persistent Identifiers](https://omeka.org/s/modules/PersistentIdentifiers/): Create/import/assign DOIs or ARKs to items.
-    - [IIIF Presentation](https://omeka.org/s/modules/IiifPresentation/): Offer your resources using the IIIF Presentation API.
+    - [Mapping](https://omeka.org/s/modules/Mapping/){target=_blank}: Geolocate your items to one or more mapped locations.
+    - [Sharing](https://omeka.org/s/modules/Sharing/){target=_blank}: Offer OpenGraph metadata, so your Omeka S links display beautifully on social media.
+    - [Resource Meta](https://omeka.org/s/modules/ResourceMeta/){target=_blank}: Make your resources' metadata machine-readable.
+    - [Persistent Identifiers](https://omeka.org/s/modules/PersistentIdentifiers/){target=_blank}: Create/import/assign DOIs or ARKs to items.
+    - [IIIF Presentation](https://omeka.org/s/modules/IiifPresentation/){target=_blank}: Offer your resources using the IIIF Presentation API.
 - Displaying resources
-    - [Faceted Browse](https://omeka.org/s/modules/FacetedBrowse/): Add more fine-grained browsing tools to your collections.
-    - [Metadata Browse](https://omeka.org/s/modules/MetadataBrowse/): Link from metadata values to other resources that share the same metadata.
-    - [URI Dereferencer](https://omeka.org/s/modules/UriDereferencer/): Grabs and displays authority control metadata from URIs. 
+    - [Faceted Browse](https://omeka.org/s/modules/FacetedBrowse/){target=_blank}: Add more fine-grained browsing tools to your collections.
+    - [Metadata Browse](https://omeka.org/s/modules/MetadataBrowse/){target=_blank}: Browse resources that share the same metadata.
+    - [URI Dereferencer](https://omeka.org/s/modules/UriDereferencer/){target=_blank}: Display authority control metadata from external URIs. 
 
 In addition to these basic groups of modules, you may be interest in the following specific types of functionality.
 
 ### Modeling complex data
 
 - Describing resources
-    - [Data Cleaning](https://omeka.org/s/modules/DataCleaning/): Low-level auditing and cleaning of resource metadata.
-    - [Inverse Properties](https://omeka.org/s/modules/InverseProperties/): Define inverse relations between properties.
+    - [Data Cleaning](https://omeka.org/s/modules/DataCleaning/){target=_blank}: Low-level auditing and cleaning of resource metadata.
+    - [Inverse Properties](https://omeka.org/s/modules/InverseProperties/){target=_blank}: Define reciprocal relations between properties.
 - Private data
-    - [Hide Properties](https://omeka.org/s/modules/HideProperties/): : Hide properties on either the administrative or public side.  
-    - [Redact Values](https://omeka.org/s/modules/RedactValues/): Redact values so that they are not visible to the public.
-    - [View Private Resources](https://omeka.org/s/modules/ViewPrivateResources/): Allow researcher and author roles to view private resources.
+    - [Hide Properties](https://omeka.org/s/modules/HideProperties/){target=_blank}: Hide properties on the administrative or public side.
+    - [Redact Values](https://omeka.org/s/modules/RedactValues/){target=_blank}: Redact values so that they are not visible to the public.
+    - [View Private Resources](https://omeka.org/s/modules/ViewPrivateResources/){target=_blank}: Allow lower user roles to view private resources.
 - Displaying data
-    - [Data Visualization](https://omeka.org/s/modules/Datavis/): Visualize your data.
-    - [Mapping](https://omeka.org/s/modules/Mapping/): Geolocate your items to one or more mapped locations; includes a timeline for displaying items chronologically.
+    - [Data Visualization](https://omeka.org/s/modules/Datavis/){target=_blank}: Visualize information about your collections and items.
+    - [Mapping](https://omeka.org/s/modules/Mapping/){target=_blank}: Geolocate your items to one or more mapped locations; includes a timeline for displaying items chronologically.
 
 ### Community sourcing
 
 - Public contributions
-    - [Collecting](https://omeka.org/s/modules/Collecting/): Add collecting forms to your sites. Integrates with Mapping, Numerica Data Types, Custom Vocab, Value Suggest.
+    - [Collecting](https://omeka.org/s/modules/Collecting/){target=_blank}: Add collecting forms to your sites. Integrates with Mapping, Numerica Data Types, Custom Vocab, Value Suggest.
 - Transcription
-    - [Scripto](https://omeka.org/s/modules/Scripto/): Transcribe and translate items.
-    - [DataScribe](https://omeka.org/s/modules/Datascribe/): Allows community visitors to transcribe structured data.
+    - [Scripto](https://omeka.org/s/modules/Scripto/){target=_blank}: Transcribe and translate items.
+    - [DataScribe](https://omeka.org/s/modules/Datascribe/){target=_blank}: Allows community visitors to transcribe structured data.
 
 ### Geospatial and Temporal
 
 - Describing Resources
-    - [Mapping](https://omeka.org/s/modules/Mapping/): Add location info to your items and sites.
-    - [Numeric Data Types](https://omeka.org/s/modules/NumericDataTypes/): Add data types for numbers and dates. Allows for the creation of timelines in conjunction with Mapping.
+    - [Mapping](https://omeka.org/s/modules/Mapping/){target=_blank}: Add location info to your items and sites.
+    - [Numeric Data Types](https://omeka.org/s/modules/NumericDataTypes/){target=_blank}: Add data types for numbers and dates. Allows for the creation of timelines in conjunction with Mapping.
    
 ### Working with other digital systems
 
 - Institutional Repositories
-    - [Data Repository Connector](https://omeka.org/s/modules/DataRepositoryConnector/) includes Zenodo, Dataverse, Invenio, and CKAN
-    - [DSpace Connector](https://omeka.org/s/modules/DspaceConnector/)
-    - [Fedora Connector](https://omeka.org/s/modules/FedoraConnector/)
+    - [Data Repository Connector](https://omeka.org/s/modules/DataRepositoryConnector/){target=_blank} includes Zenodo, Dataverse, Invenio, and CKAN
+    - [DSpace Connector](https://omeka.org/s/modules/DspaceConnector/){target=_blank}
+    - [Fedora Connector](https://omeka.org/s/modules/FedoraConnector/){target=_blank}
 - Other Omeka installations
-    - [Omeka Classic Importer](https://omeka.org/s/modules/Omeka2Importer/)
-    - [Omeka S Item Importer](https://omeka.org/s/modules/Osii/)
+    - [Omeka Classic Importer](https://omeka.org/s/modules/Omeka2Importer/){target=_blank}
+    - [Omeka S Item Importer](https://omeka.org/s/modules/Osii/){target=_blank}
 - Zotero
-    - [Zotero Citation](https://omeka.org/s/modules/ZoteroCitations/): Use Zotero in rich-text editors to generate citations and bibliographies.
-    - [Zotero Importer](https://omeka.org/s/modules/ZoteroImport): Import items and files from Zotero user and group libraries.
+    - [Zotero Citation](https://omeka.org/s/modules/ZoteroCitations/){target=_blank}: Use Zotero to generate citations and bibliographies.
+    - [Zotero Importer](https://omeka.org/s/modules/ZoteroImport){target=_blank}: Import items and files from Zotero user and group libraries.
