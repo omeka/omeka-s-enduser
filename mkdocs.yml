@@ -35,7 +35,6 @@ nav:
         - content/media.md
         - content/vocabularies.md
         - content/resource-template.md
-        - content/export.md
     - Admin:
         - admin/users.md
         - admin/jobs.md
