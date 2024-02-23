@@ -34,4 +34,4 @@ to
 
 `'log' => true,`
 
-Errors will be logged to the file `log/application.log`. Make sure this file is writable by your web server. You can then view or download that file at any time to understand errors as they are captured.
+Errors will be logged to the file `logs/application.log`. Make sure this file is writable by your web server. You can then view or download that file at any time to understand errors as they are captured.
