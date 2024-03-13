@@ -94,9 +94,9 @@ On this tab, you can edit the display **Name** and **Email** for the user, selec
 This tab allows a user or global admin to set the following:
 
 - **Locale**: select from a dropdown of available languages. This will change the language of the installation's admin & public interfaces for that user. (This depends on [how many interface strings have been translated](../translateOmekaS.md). Untranslated strings default to English.)
-- **Default resource template**: select from existing templates to have a template auto-load whenever the user creates a new item.
-- **Default item sets for items**: select from available item sets to automatically attach new items to the set(s) when created by the user.
-- **Default sites for items**: select from available sites to automatically attach new items to the site(s) when created by the user. Setting this will not give the user a site-specific role.
+- **Default resource template**: select from existing templates to have a template auto-load whenever the user creates a new item. The item will have the class associated with the chosen template.
+- **Default item sets for items**: select from available item sets to automatically attach new items to the set(s) when created by the user. The [item set must be open to new items](../content/item-sets.md#access-settings) in order for this setting to apply.
+- **Default sites for items**: select from available sites to automatically attach new items to the site(s) when created by the user. Setting this will not give the user a site-specific role. 
 - **Admin browse columns**: set custom views for administrative dashboards for this user. See below for more details.
 
 ![User settings with default options selected](adminfiles/users_settings.png)
