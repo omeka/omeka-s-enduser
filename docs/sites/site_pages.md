@@ -17,7 +17,7 @@ Every page is listed with its Title, buttons to view (box with an arrow coming o
 
 Use the [Navigation](site_navigation.md) screen of the site to set the order of pages, including setting child and parent pages.
 
-## Add pages
+## Add a page
 From the site you are working on, click the Pages link in the left-hand sidebar. Then click the "Add new page" button on the upper right corner of the window.
 
 To add a page you must enter a **Title**. You can also enter a **URL slug**. Both of these can be edited later. A title is required to create the page. If you do not enter a slug, Omeka S will create one from the page title. A slug is the page’s portion of the URL and can only contain letters, numbers, and hyphens; no other characters are allowed.
@@ -41,11 +41,22 @@ If you decide you do not want to create the page, click the "Cancel" button.
 ## Edit a page  
 After clicking the Pages link, select the page you wish to edit by clicking the name of the page or the edit button (pencil).
 
+![A page in edit view, with a page title, a media block, and an HTML block.](../sites/sitesfiles/sitepg_edit.png)
+
 The edit view for a page will display the page's title across the top. In the upper right is the public/private toggle (the eye icon), and buttons to view the public version (in a new tab), delete the page, cancel changes, or save changes. Changes will not display on the public side of your site until after they have been saved.
 
 At the top of the work area are fields for the page title and URL slug. You can edit these at any time, but remember that the slug must be unique within the site (e.g. you cannot have two pages with the slug "welcome" on the same site).
 
-![A page in edit view, with a page title, a media block, and an HTML block.](../sites/sitesfiles/sitepg_edit.png)
+### From the public side
+If you are on the admin side and click "View" in the upper right-hand corner of a page, it will take you to the public view for that page. 
+
+As you are browsing the public side of your site, you can edit the page you are viewing if you are currently logged in and the [user bar option is turned on in Site Settings](../sites/site_settings.md#general-settings). 
+
+The user bar, which appears across the top of the page, includes a link to edit the current page - circled in red in the below image. 
+
+![User bar for a page from the site Jane Austen, with "Edit page" circled in red](../sites/sitesfiles/sitepg_edit_public.png)
+
+We recommend keeping a tab open to the public page and refreshing it to check the results of your changes. Remember to look at your page at different browser heights and widths to ensure objects flow and wrap as intended. You may also wish to check the display of your page on a mobile device. 
 
 ### Layout mode
 There are two options for laying out the blocks that include a page's content: **Normal flow** and **Grid**. 
@@ -57,12 +68,13 @@ There are two options for laying out the blocks that include a page's content: *
 #### Configuration
 Next you will have the option to apply configuration settings to the entire page. Clicking on the gear icon will open the Page layout configuration menu. 
 
-- For Normal flow, you will be able to select a template for the page if your site theme provides one.
-- For Grid, you will see two buttons:
-	- The Preview Layout button will preview the layout in the right-hand drawer. This will show you all the blocks currently on the page and their width in terms of the columns on the page. It will also show block groups with an extra outline around the group's contents. 
-	- The Configure Layout button (gear icon) will allow you to select a template for the page, and define the gaps (in pixels) between the columns and rows of blocks.
+In **Normal flow**, you will be able to select a template for the page if the site theme provides one.
 
-If you make a mistake in your page layout settings, you can reset the page to the most recently saved version by clicking the "Restore" button.
+In **Grid**, you will see two buttons:
+
+- The Preview Layout button will preview the layout in the right-hand drawer. This will show you all the blocks currently on the page and their width in terms of the columns on the page. It will also show block groups with an extra outline around the group's contents. 
+- The Configure Layout button (gear icon) will allow you to select a template for the page, and define the gaps (in pixels) between the columns and rows of blocks.
+- If you make a mistake in your grid page layout settings, you can reset the page to the most recently saved version by clicking the "Restore" button that appears to the right of these buttons.
 
 Once you have made your layout choices, you are ready to add blocks to the page.
 
@@ -95,32 +107,34 @@ Some blocks come with default configurations to make setup and previewing easy. 
 
 Other blocks require manual settings immediately when adding them to the page. For example, you cannot add an oEmbed block without entering a URL immediately; you cannot save the page with this field blank. 
 
-### Position blocks
-#### Normal flow
+See a detailed explanation of each block in the [Page blocks](#page-blocks) section.
 
-![A normal-flow page being edited.](sitesfiles/sitepg_normalflow.png)
+#### Block groups
 
-In the Normal flow layout, you can configure each block with the gear icon that shows in its title bar. This will deploy the Block layout configuration menu in the right-hand drawer, which contains the following options:
+New in Omeka S 4.1, you can now group page blocks together. This allows you to assign layout settings to the group, which will behave like a normal block in the layout of the page. Block groups can be styled like blocks, below, with a background color or image that spans around all of its contents, and with classes, internal padding, and alignments. 
 
-**Template**: If your theme provides one, you can select a template to apply to the block from the dropdown menu. For example, the Foundation theme allows you to set the Browse preview block to its own list or grid display, ignoring the settings of the site itself. 
+At the top of the right-hand drawer, next to the "Add new block" title, you will see a white button that says "Add block group". 
+
+When a group is added to a page, you can drag and drop blocks inside it. You can then drag the block group around like any other block. To remove a block from a group, you can simply drag it out, or delete it. Deleting a block group will delete all of its contents. 
+
+### Block settings
+
+In the Normal flow or Grid layout, you can configure each block with the gear icon that shows in its title bar. This will deploy the Block layout configuration menu in the right-hand drawer, which contains the following options:
+
+**Template**: If your theme provides one, you can select a template to apply to the block from the dropdown menu. For example, the Foundation theme allows you to set the Browse preview block to its own list or grid display, ignoring the settings of the site itself. Not every page block will have available templates. 
 
 **Class** allows you to type in a specific class to apply styles to the block. 
 
-**Alignment** allows you to choose one of the four normal-flow block positions: 
+**Alignment** includes two settings: Block alignment and Text alignment. 
 
-- Default
-- Float Left
-- Float Right
-- Center. 
+Block alignment has different options whether you are using [Grid](#grid) or [Normal flow](#normal-flow) layout. See the sections below for more details. 
 
-Floating blocks left or right will cause them to occupy a maximum of one-third of the page, and may be smaller, depending on the block's contents. For example, a Media embed block with a 200-pixel thumbnail and a short title or caption will only occupy 200 pixels plus padding. An HTML block positioned just underneath the Media embed block (i.e. the next object on the page) will occupy the rest of the width of the page, and will wrap around the Media block if applicable.
-
-Alignment also allows you to set the text alignment:
+The text alignment can be:
 
 - Default
 - Left
-- Right 
 - Center
+- Right 
 - Justified (full).
 
 Text alignment will affect the contents of the block, including images, text, and links. For example, you can have a block floated to the left of the page, with all of its text and images text-aligned right.
@@ -139,6 +153,31 @@ If you choose an image, the three dropdown menus below will be useful:
 
 Once you have configured the block, click "Apply changes". You must save the block settings and then save the page settings in order to see your changes on the public side. 
 
+#### Normal flow
+
+![A normal-flow page being edited.](sitesfiles/sitepg_normalflow.png)
+
+**Block alignment**, in **normal flow**, allows you to choose one of the four block positions: 
+
+- Default
+- Float Left
+- Float Right
+- Center. 
+
+Floating blocks left or right will cause them to occupy a maximum of one-third of the page, and may be smaller, depending on the block's contents. For example, a Media embed block with a 200-pixel thumbnail and a short title or caption will only occupy 200 pixels plus padding. 
+
+An HTML block positioned just underneath a floated block (i.e. the next object on the page) will occupy the rest of the width of the page, and will wrap around the floated block if applicable. This is true whether the floated block is floated left or right. 
+
+A center-aligned block in normal flow will not allow floats on either side - it will take up the full width of the page. Only a default-aligned block will wrap around another block. 
+
+![A normal-flow page on the public side, with two floated blocks and one HTML block.](sitesfiles/sitepg_normalPublicFloats.png)
+
+The image above shows, in order: 
+
+- A media embed block floated left, with default-aligned text,
+- A media embed block floated right, with right-aligned text,
+- An HTML block set to default alignment, wrapping around the media blocks, with justified text.
+
 #### Grid
 
 ![A grid page being edited.](sitesfiles/sitepg_grid.png)
@@ -151,99 +190,92 @@ In Grid layout you can select the placement and width of each block based on the
 
 Using these two settings, the blocks in your page will organize themselves into rows based on your selections. To fit two items in a row, set each to span a number that will add up to the number of columns on the page or less.
 
-To see a schema of the way that your blocks are positioned on the page, click on the magnifying glass icon, which will reveal the Grid layout preview in the righthand drawer.
+To see a schema of how your blocks are positioned on the page, click on the Layout preview button (an icon of blocks in a grid), which will reveal a mockup in the righthand drawer.
 
 Note that each page block will have a width calculated as follows:
 - First find the total width of the browser window alloted to page content - minus any sidebars, and with maximum widths determined by your theme. 
 - Then divide that by the number of columns. For example, a 1200-pixel-width container divided by 4 columns will give 300 pixels each.
 - Then account for the width of column gaps from the page settings (default is 10 pixels), and the number of gaps between blocks. For example, a 2-column block next to another 2-column block in a 4-column grid will be: 1200 pixels, minus 30 for all 3 of the column gaps, divided by 4 columns, times 2 for a 2-column block, plus 10 pixels to span across one of the gaps, for a final width of 595 pixels each.
 - A block will calculate its width based on its own span setting, and take into account all potential column gaps, whether there is other content in the row or not. This keeps the grid layout neat on the front-end regardless of each row's contents.
+- Keep in mind that the total available space will depend on the device used, and the size of the browser window. Omeka themes have fallbacks for narrow mobile widths, which may result in your page blocks displaying at one per row. 
 
-Just as with the Normal flow layout, blocks in the Grid layout have a standard set of configuration options that are accessible by clicking the gear icon. This will deploy the Block layou configuration menu in the righthand drawer, which contains the following options.:
+You can also set the positioning of content within each block with the **Block alignment** dropdown, found under **Alignment**. 
 
-- If your theme provides one, you can select a template to apply to the block from the dropdown menu
-- The Class input box allows you to type in a specific class to apply styles to the block
-- The Alignment menu allows you to choose Default, Float Left, Float Right or Center alignment for the block
-- Background allows you to select from the asset files available in the installation to serve as a background image for the block.
-- Vertical anchor position allows you to select Default, Top, Center, or Bottom positioning for the background asset
-- Horizontal anchor position allows you to select Default, Left, Center or Right positioning for the background asset
-- Size allows you to you select Default, Cover, or Contain for the background asset
-- Minimum height allows you to indicated the height of the block
+In the **Grid** page layout, Block alignment offers you:
 
-Click "Apply changes" to fix your selections.
+- Default
+- Left
+- Right
+- Center.
 
-Once you have added blocks to your page, click the "Save" button in the right hand corner.  To leave without saving changes, click "Cancel".
+This will determine the position of the block's contents inside its spans. A page title, for example, is set to span the full width of the page by default, but choosing left, right, or center alignment will move the content to the designated spot, constraining the container tightly around the content and leaving whitespace in the rest of the span. This is most visible when using a background color or image on blocks. 
+
+![A grid page on the public side, with 4 page title blocks.](sitesfiles/sitepg_gridPublic.png)
+
+The image above shows, in order:
+
+- A page title block set to default alignment, span 4 (of 4 columns), position auto;
+- A page title block set to center alignment, span 4, position auto;
+- A page title block set to default alignment with centered text, span 4, position auto;
+- A page title block set to default alignment, span 2, position 2. 
+
+Note that the second page title is still spanning all 4 columns on the page and nothing can be positioned to either side of it. 
 
 ### Delete and reorder blocks
 You can delete any of the blocks by clicking on the trash can icon located in the upper right corner of the block. 
 
-![The “media” block is marked for deletion and thus highlighted in red.](../sites/sitesfiles/sitepg_delblock.png)
+![The "page title" block is marked for deletion and thus highlighted in red.](../sites/sitesfiles/sitepg_delblock.png)
 
-Change the order of blocks by clicking on the three horizontal lines on the upper left corner of the block and then dragging and dropping it to the desired location.
-
-Some modules may create additional blocks for your site pages. For information on working with these blocks, please see the documentation for that [module](../modules/index.md).
-
-### From the public side
-If you are on the admin side and click "View" in the upper right-hand corner of a page, it will take you to the public view for that page. 
-
-As you are browsing the public side of your site, you can edit the page you are viewing if you are currently logged in and the [user bar option is turned on in Site Settings](../sites/site_settings.md#general-settings). 
-
-The user bar, which appears across the top of the page, includes a link to edit the current page - circled in red in the below image. 
-
-![User bar for a page from the site Jane Austen, with "Edit page" circled in red](../sites/sitesfiles/sitepg_edit_public.png)
-
-We recommend keeping a tab open to the public page and refreshing it to check the results of your changes. Remember to look at your page at different browser heights and widths to ensure objects flow and wrap as intended. You may also wish to check the display of your page on a mobile device. 
+Change the order of blocks by clicking on the three horizontal lines on the upper left corner of any block and then dragging and dropping it to the desired location.
 
 ## Page blocks
 
-Page blocks are designed to offer an array of authoring tools for whatever kind fo page you may be writing. Third-party and user-submitted modules may add other page blocks to these ones built and maintained by the Omeka team. 
+Page blocks are designed to offer an array of authoring tools for whatever kind of page you may be writing. Third-party and user-submitted modules may add other page blocks to the ones built and maintained by the Omeka team. 
 
 ### Asset
-Include files on a page that are not media attached to items (i.e. logos or other illustrative materials). Users may upload new assets or select from existing assets.
+Include files that are not media attached to items (such as a logo or banner). Users may upload new assets or select from existing assets.
 
-![Asset block with asset selection sidebar open which includes an asset upload option and an asset selection option](sitesfiles/sitepg_asset_selection.png)
+![Asset block with asset selection sidebar open, including an asset upload option and an asset selection option](sitesfiles/sitepg_asset_selection.png)
 
 Once an asset is selected, the user has the option to include additional asset information:
 
-- Page link: Select a page from within the site, so that the asset becomes a link on the public page. The selected page's title will also appear as a text link above or beside the asset.
+- Page link: Select a page from within the site, so that the asset becomes a link to it. The selected page's title will also appear as a text link above or beside the asset.
 - Alternative link title: If a page link is set above, you can control the text display here. If nothing is entered, the link will default to the page's title.
-- Caption: Text that will be displayed below or near the asset.
-
-Display of these elements will depend on the theme and any [template settings](#position-blocks) that are applicable. 
-
-Click "Apply changes" to set the asset information. Should a user wish to revisit that material, they should click the wrench icon to open the edit sidebar.
+- Caption: Text that will be displayed below or near the asset, not linked.
 
 ![Asset options sidebar with inputs for page link, alternative link title, and caption](sitesfiles/sitepg_asset_sidebar.png)
 
-Additionally, the Asset block includes a set of options for controlling the display of the file on the page:
+Display of these elements will depend on the theme and any [template settings](#block-settings) that are applicable. 
 
-- Class: allows the user to indicate a style class to control the display of the file.
-- Alignment: allows the user to select the positioning of the file on the page. Options are default, float left, float right, and center.
+Click "Apply changes" to set the asset information.
 
 ### Browse preview
-Allows you to add a block of items on a site page.
 
-![Browse Preview block with the query element](../sites/sitesfiles/sitepg_browsepreview_query.png)
+Allows you to add a block of resources on a page, identically to the "Items" and other browse page included with your Omeka site.
+
+![Browse Preview block with the query element](sitesfiles/sitepg_browsepreview_query.png)
 
 From the **Resource type** dropdown, choose the kind of resource you want to display in the block: Items, Item Sets, or Media. 
 
-Using the **Search query** element interface, select your universe of items.
+Using the **Search query** element interface, select your subset of resources, or leave it blank.
 
-Click the "Edit" button to reveal the advanced search interface in the drawer. Once you are satisfied with the universe of items in your search, clicking the "Apply" button will set the universe of items for the Browse block.
+Click the "Edit" button to reveal the advanced search interface in the drawer. Once you are satisfied with the subset of resources in your search, clicking the "Apply" button will set the subset of resources for the Browse block.
 
 ![Advanced search query drawer](../sites/sitesfiles/sitepg_query_search.png)
 
-Once a query has been set, you can click "Edit" to update the universe of items. You can click "Advanced Edit" to directly edit the query string. Finally, you can "Clear" a query to start over. If you have cleared a search in error, you can "Restore" it.
+Once a query has been set, you can click "Edit" to update the universe of resources. You can click "Advanced Edit" to directly edit the query string. Finally, you can "Clear" a query to start over. If you have cleared a search in error, you can "Restore" it.
 
-![Browse block with the edit query element](../sites/sitesfiles/sitepg_query_update.png)
+![Browse block with the edit query element](sitesfiles/sitepg_query_update.png)
 
-The **Limit** field lets you set the number of resources to display in the block; any additional results from your query can be accessed on a search page linked from the bottom of the block (you set the text of the link in the **Link text** field below).
+The **Limit** field lets you set the number of resources to display in the block; any additional results from your query can be accessed on a search page linked from the block (you set the text of the link in the **Link text** field below).
 
-The **Components** field lets you decide what to display in your browse for each resource: the Heading, the Body, and or the Thumbnail. If not set in Site Settings, Heading defaults to resource Title and Body to resource Description.
+The **Components** field lets you decide what to display in your browse for each resource: the Heading, the Body, and/or the Thumbnail. If not set in your [site settings](site_settings.md#browse), Heading defaults to resource title and Body to resource description.
 
 The **Preview Title** field sets the heading above the browse section on the page.
 
 The **Link text** field sets the link text at the bottom of the block - the block will only display as many results as you set in the **Limit** field above.
+
+The Browse preview block has a template option in some themes. For example, the Foundation theme allows you to override the site settings for browsing with the options of displaying resources in a list or grid in this block. 
 
 ### HTML
 
@@ -251,21 +283,21 @@ Creates an HTML box in which you can add formatted text and links. When you clic
 
 Basic block: 
 
-![Page block for HTML content](../sites/sitesfiles/sitepg_html.png)
+![Page block for HTML content](sitesfiles/sitepg_html.png)
 
 With formatting menu open:
 
-![Page block for HTML content with active field, showing formatting menu](../sites/sitesfiles/sitepg_html2.png)
+![Page block for HTML content with active field, showing formatting menu](sitesfiles/sitepg_html2.png)
 
 You can embed content from elsewhere on the internet using iFrames or other embed codes in the HTML block. 
 
-1. Click into the HTML block content area to show the formatting menu and then click on the button labeled "Source". ![HTML block with formatting menu open. A red arrow points to the Source button](../sites/sitesfiles/sitepg_htmlSource1.png)
+1. Click into the HTML block content area to show the formatting menu and then click on the button labeled "Source". ![HTML block with formatting menu open. A red arrow points to the Source button](sitesfiles/sitepg_htmlSource1.png)
 2. This will open a dialog box where you can write HTML content.
 3. Copy and paste the embed code into the source code editor. 
-![Source box open with a short paragraph of text and an iframe from Vimeo](../sites/sitesfiles/sitepg_htmlSource2.png)
+![Source box open with a short paragraph of text and an iframe from Vimeo](sitesfiles/sitepg_htmlSource2.png)
 4. Click the green "OK" button at the bottom of the editor.
 5. Your embed should show up in the HTML block either as a gray rectangle or as the embedded content. 
-![HTML block showing the text and an embedded video](../sites/sitesfiles/sitepg_htmlSource3.png)
+![HTML block showing the text and an embedded video](sitesfiles/sitepg_htmlSource3.png)
 
 Finally, you can assign a **Class** to the HTML block for styling by your theme. If you do not assign a class, your HTML contents will show up without a wrapping `div` or other container. If you do assign a class, your HTML entry will appear inside a `<div class="[your class here]">` container. 
 
@@ -444,7 +476,7 @@ Add and arrange pages using the [Site Navigation](../sites/site_navigation.md) s
 ### Other blocks
 For module-specific blocks, such as [Collecting](../modules/collecting.md) or [Mapping](../modules/mapping.md), see the documentation for that module.
 
-## Deleting pages
+## Delete a page
 To delete a page, go to the Pages section of the relevant site. Click the delete (trash can) button at the right end of the row for that page. 
 
 A drawer will open on the right side of the page asking you to confirm that you wish to delete the page, with the name of the page displayed under the confirmation button. To proceed, click the "Confirm delete" button. Otherwise, click the "X" in the upper right corner of the drawer to cancel.
