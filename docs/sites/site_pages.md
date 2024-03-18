@@ -289,17 +289,16 @@ With formatting menu open:
 
 ![Page block for HTML content with active field, showing formatting menu](sitesfiles/sitepg_html2.png)
 
-You can embed content from elsewhere on the internet using iFrames or other embed codes in the HTML block. 
+You can embed content from elsewhere on the internet using iFrames or other embed codes in the HTML block:
 
-1. Click into the HTML block content area to show the formatting menu and then click on the button labeled "Source". ![HTML block with formatting menu open. A red arrow points to the Source button](sitesfiles/sitepg_htmlSource1.png)
-2. This will open a dialog box where you can write HTML content.
-3. Copy and paste the embed code into the source code editor. 
+1. Click into the HTML block content area to show the formatting menu and then click on the button labeled "Source".  This will open a dialog box where you can write HTML content.
+1. Copy and paste the embed code into the source code editor. For example, here is the embed code from an Omeka screencast hosted on Vimeo. 
 ![Source box open with a short paragraph of text and an iframe from Vimeo](sitesfiles/sitepg_htmlSource2.png)
-4. Click the green "OK" button at the bottom of the editor.
-5. Your embed should show up in the HTML block either as a gray rectangle or as the embedded content. 
+1. Click the green "OK" button at the bottom of the editor. 
+1. Your embedded material should show up in the HTML block either as a gray rectangle or as the embedded content. 
 ![HTML block showing the text and an embedded video](sitesfiles/sitepg_htmlSource3.png)
 
-Finally, you can assign a **Class** to the HTML block for styling by your theme. If you do not assign a class, your HTML contents will show up without a wrapping `div` or other container. If you do assign a class, your HTML entry will appear inside a `<div class="[your class here]">` container. 
+If you have the [Zotero Citations module](../modules/zoterocitation.md) installed, you can insert a Zotero bibliography into this field. Look for the Zotero button in the formatting menu (a big red Z). 
 
 ### Item showcase
 
@@ -346,29 +345,38 @@ Once you’ve added an item, it will appear in the Item List block. You can edit
 You can add multiple items to the list.
 
 ### Item with metadata
-This block displays an item along with all associated metadata (entered when creating or editing the [item](../content/items.md)).
+This block displays an item along with all associated metadata (entered when creating or editing the [item](../content/items.md)), identically to the item-view page in your theme. 
 
-Add attachments in the same manner as the [media embed](../sites/site_pages.md#media-embed) page block.
+Add attachments in the same manner as the [media embed](site_pages.md#media-embed) page block.
 
-![Item with metadata block with nothing attached](../sites/sitesfiles/sitepg_iwm.png)
+![Item with metadata block with one item attached](sitesfiles/sitepg_iwm.png)
+
+Many themes will not show the primary media in this display, although some do. Here is the page block in the Center Row theme:
+
+![Item with metadata block with one item attached](sitesfiles/sitepg_iwm2.png)
 
 ### Line break
-Line break creates a transparent or opaque line break on the page, clearing all blocks. Select whether the line is transparent or opaque from the dropdown.
 
-![line break table, dropdown selected to transparent](../sites/sitesfiles/sitepg_line.png)
+Line break creates a transparent or opaque line break on the page. Select whether the line is transparent or opaque from the dropdown.
 
-HTML blocks wrap around Media blocks and at times you may want to clear the page. You might also want to create a visual break on the page. 
+![The line break block, dropdown selected to opaque, plus its layout preview.](sitesfiles/sitepg_line.png)
+
+In Normal flow layout, the line break block will clear all blocks and floats. 
+In Grid layout, you can set the length of the line using the Span setting:
+
+![The line break on a public page.](sitesfiles/sitepg_line2.png)
 
 ### List of pages
-This block displays a linked list of pages. You may select from pages that are within the site but custom links such as Custom URL, Browse, and Browse Item Set are not available.
 
-Clicking the "Add pages" button in the block, which will reveal a draw that contains all of the pages in the site. Click on the individual page to add it to the list.
+This block displays a linked list of pages. You may select from pages that are within the site. Other navigation links, such as Custom URLs and Browse pages, are not available.
 
-![Page edit interface with List of pages block activated to open page select drawer](../sites/sitesfiles/sitespg_listPagesAdd.png)
+Click the "Add pages" button in the block to reveal a drawer that contains all of the pages in the site. Click on the individual page to add it to the list.
+
+![Page edit interface with List of pages block activated to open page select drawer](sitesfiles/sitespg_listPagesAdd.png)
 
 You may drag and nest pages into any order.
 
-![List of pages block with three pages showing nesting](../sites/sitesfiles/sitespg_listPagesOrder.png)
+![List of pages block with pages showing nesting](sitesfiles/sitespg_listPagesOrder.png)
 
 ### List of sites
 This block displays a list of all of the sites on your Omeka S install. This block has the following options:
