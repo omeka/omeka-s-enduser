@@ -156,8 +156,8 @@ To see a schema of the way that your blocks are positioned on the page, click on
 Note that each page block will have a width calculated as follows:
 - First find the total width of the browser window alloted to page content - minus any sidebars, and with maximum widths determined by your theme. 
 - Then divide that by the number of columns. For example, a 1200-pixel-width container divided by 4 columns will give 300 pixels each.
-- Then account for the width of column gaps from the page settings (default is 10 pixels), and the number of gaps between blocks. For example, a 2-column block next to another 2-column block will be 1200 minus 10 pixels for the gap, divided by 2 blocks, so 595 pixels each. 
-- A row on your page with lots of blocks will consequently have lots of gaps - 4 blocks of 1 column each in this example will be 1200 pixels minus 30, divded by 4, or 292.5 pixels each in width. 
+- Then account for the width of column gaps from the page settings (default is 10 pixels), and the number of gaps between blocks. For example, a 2-column block next to another 2-column block in a 4-column grid will be: 1200 pixels, minus 30 for all 3 of the column gaps, divided by 4 columns, times 2 for a 2-column block, plus 10 pixels to span across one of the gaps, for a final width of 595 pixels each.
+- A block will calculate its width based on its own span setting, and take into account all potential column gaps, whether there is other content in the row or not. This keeps the grid layout neat on the front-end regardless of each row's contents.
 
 Just as with the Normal flow layout, blocks in the Grid layout have a standard set of configuration options that are accessible by clicking the gear icon. This will deploy the Block layou configuration menu in the righthand drawer, which contains the following options.:
 
