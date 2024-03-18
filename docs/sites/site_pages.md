@@ -1,6 +1,6 @@
 # Site Pages
 
-Pages form the content of your [sites](../sites/index.md). A site can have one or many pages.
+Pages form the content of your [sites](../sites/index.md). A site can have one or many pages, and these pages can be [organized, using Navigation](site_navigation.md), into a linear storyline (such as for virtual exhibits) or in a more hierarchical way (such as into chapters). 
 
 Manage the pages for a site by navigating to the Sites section on the left-hand navigation of the admin dashboard. Select the site for which you want to manage the pages and click either the title or the edit (pencil) button to edit that site. 
 
@@ -9,7 +9,7 @@ Once you are editing the site, click the Pages link in the left-hand navigation.
 When you create a new site, Omeka S automatically adds a page titled "Welcome" with a single HTML block (see below). You can edit this page or delete it.
 
 ## Browse pages
-The Pages page will display all of your pages in their navigation order. Child pages will display below the parent page with one or more `-` (dash) characters before the page title.
+The Pages tab will display all of your pages in their navigation order. Child pages will display below the parent page with one or more `-` (dash) characters before the page title.
 
 Every page is listed with its Title, buttons to view (box with an arrow coming out), edit (pencil), or delete (trash can) the page, the page's slug, and its last-modified date. 
 
@@ -39,25 +39,26 @@ Once you have entered this information, click the "Add" button in the upper righ
 If you decide you do not want to create the page, click the "Cancel" button.
 
 ## Edit a page  
-After clicking the Pages link, select the page you wish to edit by clicking the name of the page or the edit button (pencil). Note: clicking on the Page title will take you to the public view of that page. 
+After clicking the Pages link, select the page you wish to edit by clicking the name of the page or the edit button (pencil).
 
-The edit view for a page will display the page's title across the top. In the upper left is the public/private toggle (the eye icon), and buttons to view the public version (opens in a new tab), delete the page, cancel changes, or save changes. Note that changes will not display on the public view until after they have been saved.
+The edit view for a page will display the page's title across the top. In the upper right is the public/private toggle (the eye icon), and buttons to view the public version (in a new tab), delete the page, cancel changes, or save changes. Changes will not display on the public side of your site until after they have been saved.
 
 At the top of the work area are fields for the page title and URL slug. You can edit these at any time, but remember that the slug must be unique within the site (e.g. you cannot have two pages with the slug "welcome" on the same site).
 
-![A page in edit view, with one media block added](../sites/sitesfiles/sitepg_edit.png)
+![A page in edit view, with a page title, a media block, and an HTML block.](../sites/sitesfiles/sitepg_edit.png)
 
-### Select the layout mode
+### Layout mode
 There are two options for laying out the blocks that include a page's content: **Normal flow** and **Grid**. 
 
-**Normal flow** provides a view where the blocks stack one upon the next to build the page. With this layout, you can set blocks to float right and left, take up the full width, or center the content in the full width. When blocks (such as media) are floated alongside an HTML block, the text will flow and wrap around the floated block.
+**Normal flow** provides a view where the blocks stack one upon the next to build the page. With this layout, you can set blocks to float right and left, take up the full width, or center the content in the full width. When blocks (such as media) are floated alongside an HTML block, the text will flow and wrap around the floated block. Floated blocks take up a maximum of one-third of the page's total width. 
 
-**Grid** is a user-defined column system, based on [the CSS Grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout){target=_blank}, that allows the user to finely-tune the placement and width of the blocks in a page. With this choice you can define the number of columns you want to work with in your page, from 1 to 12; blocks can be set to occupy one or more of the columns. 
+**Grid** is a user-defined column system, based on [the CSS Grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout){target=_blank}, that allows the user to finely-tune the placement and width of the blocks in a page. With this choice you can define the number of columns you want to work with in your page, from 1 to 12; blocks can be set to occupy one or more of the columns, next to each other in rows. 
 
+#### Configuration
 Next you will have the option to apply configuration settings to the entire page. Clicking on the gear icon will open the Page layout configuration menu. 
 
 - For Normal flow, you will be able to select a template for the page if your site theme provides one.
-- For Grid, you will be able to select a template for the page, but you can also define the gaps (in pixels) between the columns and rows of blocks.
+- For Grid, you will be able to select a template for the page, and define the gaps (in pixels) between the columns and rows of blocks.
 
 If you make a mistake in your page layout settings, you can reset the page to the most recently saved version by clicking the "Restore" button.
 
@@ -65,40 +66,70 @@ Once you have made your layout choices, you are ready to add blocks to the page.
 
 ### Add blocks
 
-On the right hand side you can choose to add a new block by selecting one of the following page elements:
+On the right-hand side you can choose to add a new block to your page by selecting one of the following elements:
 
 - Asset
 - Browse preview
 - HTML
-- Item showcase
 - Item with metadata
 - Line break
 - List of pages
 - List of sites
-- Media Embed
+- Media embed
+- oEmbed
+- Page date/time
 - Page title
 - Table of contents.
 
 If you have the relevant modules installed, you may also have:
 
-- Collecting
-- Item Carousel
-- Map by attachment
-- Map by query.
+- [Collecting](../modules/collecting.md)
+- [Data visualization](../modules/datavisualization.md)
+- [Item Carousel](../modules/itemcarouselblock.md)
+- [Map by attachments](../modules/mapping.md)
+- [Map by query](../modules/mapping.md).
 
-### Position and configure blocks
+Some blocks come with default configurations to make setup and previewing easy. For example, the page date/time block automatically is set to show the medium-detail version of both created and modified dates. 
+
+Other blocks require manual settings immediately when adding them to the page. For example, you cannot add an oEmbed block without entering a URL immediately; you cannot save the page with this field blank. 
+
+### Position blocks
 #### Normal flow
 
-Using the Normal flow layout you will have the option with each block to make a number of standard configuration choices by clicking on the gear icon. This will deploy the Block layout configuration menu in the righthand drawer, which contains the following options:
+In the Normal flow layout, you can configure each block with the gear icon that shows in its title bar. This will deploy the Block layout configuration menu in the right-hand drawer, which contains the following options:
 
-- If your theme provides one, you can select a template to apply to the block from the dropdown menu
-- The Class input box allows you to type in a specific class to apply styles to the block
-- The Alignment menu allows you to choose Default, Float Left, Float Right or Center alignment for the block. Floating blocks left or right will cause them to occupy a maximum of one-third of the page, and may be smaller, depending on the block's contents. For example, a Media embed block with a 200-pixel thumbnail and a short title or caption will only occupy 200 pixels plus padding. An HTML block positioned beside the Media embed block will occupy the rest of the width of the page. 
-- Background allows you to select from the assets available in the installation to serve as a background image for the block
-- Vertical anchor position allows you to select Default, Top, Center, or Bottom positioning for the background asset
-- Horizontal anchor position allows you to select Default, Left, Center or Right positioning for the background asset
-- Size allows you to you select Default, Cover, or Contain for the background asset
-- Minimum height allows you to indicated the height of the block
+**Template**: If your theme provides one, you can select a template to apply to the block from the dropdown menu. For example, the Foundation theme allows you to set the Browse preview block to its own list or grid display, ignoring the settings of the site itself. 
+
+**Class** allows you to type in a specific class to apply styles to the block. 
+
+**Alignment** allows you to choose one of the four normal-flow block positions: 
+	- Default
+	- Float Left
+	- Float Right
+	- Center. 
+
+Floating blocks left or right will cause them to occupy a maximum of one-third of the page, and may be smaller, depending on the block's contents. For example, a Media embed block with a 200-pixel thumbnail and a short title or caption will only occupy 200 pixels plus padding. An HTML block positioned just underneath the Media embed block (i.e. the next object on the page) will occupy the rest of the width of the page, and will wrap around the Media block if applicable.
+
+Alignment also allows you to set the text alignment:
+	- Default
+	- Left
+	- Right 
+	- Center
+	- Justified (full).
+
+Text alignment will affect the contents of the block, including images, text, and links. For example, you can have a block floated to the left of the page, with all of its text and images text-aligned right.
+
+**Constraints** allows you to set a maximum width and/or a minimum height for the block. 
+
+**Padding** allows you to enter numbers (in pixels) for the top, left, right, and bottom padding inside the block. You may wish to utilize this when setting a background image or color on an HTML block filled with text; the background will extend to the full width of the block, while padding can be used to keep text from touching the edges. 
+
+**Background** allows you to select a background for the block: either a color ([using a hexadecimal or word value](https://www.w3schools.com/html/html_colors.asp){target=_blank}) or an image, from the assets available in the installation. 
+
+If you choose an image, the three dropdown menus below will be useful: 
+
+- The **Vertical** anchor position allows you to select [Default, Top, Center, or Bottom positioning for the background asset](https://www.w3schools.com/cssref/pr_background-position.php){target=_blank}.
+The **Horizontal** anchor position allows you to select Default, Left, Center or Right positioning for the background asset.
+- **Size** allows you to you select [Default, Cover, or Contain for the background asset](https://www.w3schools.com/cssref/css3_pr_background-size.php){target=_blank}.
 
 Once you have configured the block, click "Apply changes" to fix your selections.
 
@@ -128,7 +159,7 @@ Click "Apply changes" to fix your selections.
 
 Once you have added blocks to your page, click the "Save" button in the right hand corner.  To leave without saving changes, click "Cancel".
 
-### Deleting and reording blocks
+### Delete and reorder blocks
 You can delete any of the blocks by clicking on the trash can icon located in the upper right corner of the block. 
 
 ![The “media” block is marked for deletion and thus highlighted in red.](../sites/sitesfiles/sitepg_delblock.png)
@@ -146,19 +177,24 @@ The user bar, which appears across the top of the page, includes a link to edit 
 
 ![User bar for a page from the site Jane Austen, with "Edit page" circled in red](../sites/sitesfiles/sitepg_edit_public.png)
 
+We recommend keeping a tab open to the public page and refreshing it to check the results of your changes. Remember to look at your page at different browser heights and widths to ensure objects flow and wrap as intended. You may also wish to check the display of your page on a mobile device. 
+
 ## Page blocks
-Pages are made up of blocks, each of which has a different form of content.
+
+Page blocks are designed to offer an array of authoring tools for whatever kind fo page you may be writing. Third-party and user-submitted modules may add other page blocks to these ones built and maintained by the Omeka team. 
 
 ### Asset
-Allows a user to include files on a page that are not media attached to items (i.e. logos or other illustrative materials). Users may upload new assets or select from existing assets.
+Include files on a page that are not media attached to items (i.e. logos or other illustrative materials). Users may upload new assets or select from existing assets.
 
 ![Asset block with asset selection sidebar open which includes an asset upload option and an asset selection option](sitesfiles/sitepg_asset_selection.png)
 
 Once an asset is selected, the user has the option to include additional asset information:
 
-- Page link: allows the user to set a link so that when the asset is clicked by an end-user they are directed to that page.
-- Alternative link title: allows the user to set a link title. If the link title is unset, the system will default to the file name.
-- Caption: allows the user to set a caption to print to the page with the asset.
+- Page link: Select a page from within the site, so that the asset becomes a link on the public page. The selected page's title will also appear as a text link above or beside the asset.
+- Alternative link title: If a page link is set above, you can control the text display here. If nothing is entered, the link will default to the page's title.
+- Caption: Text that will be displayed below or near the asset.
+
+Display of these elements will depend on the theme and any [template settings](#position-blocks) that are applicable. 
 
 Click "Apply changes" to set the asset information. Should a user wish to revisit that material, they should click the wrench icon to open the edit sidebar.
 
