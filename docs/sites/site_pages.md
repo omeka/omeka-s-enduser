@@ -58,7 +58,9 @@ There are two options for laying out the blocks that include a page's content: *
 Next you will have the option to apply configuration settings to the entire page. Clicking on the gear icon will open the Page layout configuration menu. 
 
 - For Normal flow, you will be able to select a template for the page if your site theme provides one.
-- For Grid, you will be able to select a template for the page, and define the gaps (in pixels) between the columns and rows of blocks.
+- For Grid, you will see two buttons:
+	- The Preview Layout button will preview the layout in the right-hand drawer. This will show you all the blocks currently on the page and their width in terms of the columns on the page. It will also show block groups with an extra outline around the group's contents. 
+	- The Configure Layout button (gear icon) will allow you to select a template for the page, and define the gaps (in pixels) between the columns and rows of blocks.
 
 If you make a mistake in your page layout settings, you can reset the page to the most recently saved version by clicking the "Restore" button.
 
@@ -81,7 +83,7 @@ On the right-hand side you can choose to add a new block to your page by selecti
 - Page title
 - Table of contents.
 
-If you have the relevant modules installed, you may also have:
+If you have the relevant modules installed, you may also have the following page blocks:
 
 - [Collecting](../modules/collecting.md)
 - [Data visualization](../modules/datavisualization.md)
@@ -96,6 +98,8 @@ Other blocks require manual settings immediately when adding them to the page. F
 ### Position blocks
 #### Normal flow
 
+![A normal-flow page being edited.](sitesfiles/sitepg_normalflow.png)
+
 In the Normal flow layout, you can configure each block with the gear icon that shows in its title bar. This will deploy the Block layout configuration menu in the right-hand drawer, which contains the following options:
 
 **Template**: If your theme provides one, you can select a template to apply to the block from the dropdown menu. For example, the Foundation theme allows you to set the Browse preview block to its own list or grid display, ignoring the settings of the site itself. 
@@ -103,19 +107,21 @@ In the Normal flow layout, you can configure each block with the gear icon that 
 **Class** allows you to type in a specific class to apply styles to the block. 
 
 **Alignment** allows you to choose one of the four normal-flow block positions: 
-	- Default
-	- Float Left
-	- Float Right
-	- Center. 
+
+- Default
+- Float Left
+- Float Right
+- Center. 
 
 Floating blocks left or right will cause them to occupy a maximum of one-third of the page, and may be smaller, depending on the block's contents. For example, a Media embed block with a 200-pixel thumbnail and a short title or caption will only occupy 200 pixels plus padding. An HTML block positioned just underneath the Media embed block (i.e. the next object on the page) will occupy the rest of the width of the page, and will wrap around the Media block if applicable.
 
 Alignment also allows you to set the text alignment:
-	- Default
-	- Left
-	- Right 
-	- Center
-	- Justified (full).
+
+- Default
+- Left
+- Right 
+- Center
+- Justified (full).
 
 Text alignment will affect the contents of the block, including images, text, and links. For example, you can have a block floated to the left of the page, with all of its text and images text-aligned right.
 
@@ -128,21 +134,30 @@ Text alignment will affect the contents of the block, including images, text, an
 If you choose an image, the three dropdown menus below will be useful: 
 
 - The **Vertical** anchor position allows you to select [Default, Top, Center, or Bottom positioning for the background asset](https://www.w3schools.com/cssref/pr_background-position.php){target=_blank}.
-The **Horizontal** anchor position allows you to select Default, Left, Center or Right positioning for the background asset.
+- The **Horizontal** anchor position allows you to select Default, Left, Center or Right positioning for the background asset.
 - **Size** allows you to you select [Default, Cover, or Contain for the background asset](https://www.w3schools.com/cssref/css3_pr_background-size.php){target=_blank}.
 
-Once you have configured the block, click "Apply changes" to fix your selections.
+Once you have configured the block, click "Apply changes". You must save the block settings and then save the page settings in order to see your changes on the public side. 
 
 #### Grid
-Using the Grid layout you will have the ability to select the placement and width of each block based on the number of columns you have set for the page. 
 
-- Each block has a placement option that includes Auto placement, and range from Position 1 to the highest position number allowed by your number of columns. The selection determines where in the array of columns from left to right the page will place the block.
+![A grid page being edited.](sitesfiles/sitepg_grid.png)
+
+In Grid layout you can select the placement and width of each block based on the [number of columns you have set for the page](#configuration). 
+
+- For each block, you can declare its starting "Position," meaning the column number where the block will begin. You can also set the position to "Auto", meaning it will start wherever there is space for it to fit. You will see the "Position" dropdown reflect the number of columns of your page, minus the "Span" of the block (its width). For example, a 6-column page with a block set to span 3 columns will be allowed to start in columns 1, 2, 3, or 4. 
 	
-- Each block also has a Span setting that includes choices from Span 1 to the highest number of columns in the page. The select determines the width of the block across the array of columns from left to right in the page once the block is placed.
+- Each block has a "Span" setting that determines the width of the block. The dropdown will offer choices from "1" to the number of columns set for the page. If you select the maximum number of columns, this block will span the full width of the page; anything less will leave whitespace or allow space for another block to occupy the same row. 
 
-Using these two settings the blocks in your page will tile together based on your selections. To start a new row of blocks, select a position number that is less than the total span width for the blocks in the existing row.
+Using these two settings, the blocks in your page will organize themselves into rows based on your selections. To fit two items in a row, set each to span a number that will add up to the number of columns on the page or less.
 
 To see a schema of the way that your blocks are positioned on the page, click on the magnifying glass icon, which will reveal the Grid layout preview in the righthand drawer.
+
+Note that each page block will have a width calculated as follows:
+- First find the total width of the browser window alloted to page content - minus any sidebars, and with maximum widths determined by your theme. 
+- Then divide that by the number of columns. For example, a 1200-pixel-width container divided by 4 columns will give 300 pixels each.
+- Then account for the width of column gaps from the page settings (default is 10 pixels), and the number of gaps between blocks. For example, a 2-column block next to another 2-column block will be 1200 minus 10 pixels for the gap, divided by 2 blocks, so 595 pixels each. 
+- A row on your page with lots of blocks will consequently have lots of gaps - 4 blocks of 1 column each in this example will be 1200 pixels minus 30, divded by 4, or 292.5 pixels each in width. 
 
 Just as with the Normal flow layout, blocks in the Grid layout have a standard set of configuration options that are accessible by clicking the gear icon. This will deploy the Block layou configuration menu in the righthand drawer, which contains the following options.:
 
