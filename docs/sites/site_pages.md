@@ -1,6 +1,6 @@
 # Site Pages
 
-Pages form the content of your [sites](../sites/index.md). A site can have one or many pages, and these pages can be [organized, using Navigation](site_navigation.md), into a linear storyline (such as for virtual exhibits) or in a more hierarchical way (such as into chapters). 
+Pages form the content of your [sites](../sites/index.md). A site can have one or many pages, and these pages can be [organized, using Navigation](site_navigation.md), into a linear storyline (such as for virtual exhibits) or in a more hierarchical tree. 
 
 Manage the pages for a site by navigating to the Sites section on the left-hand navigation of the admin dashboard. Select the site for which you want to manage the pages and click either the title or the edit (pencil) button to edit that site. 
 
@@ -36,8 +36,6 @@ Page is private: ![make private button showing an eye icon with a diagonal slash
 
 Once you have entered this information, click the "Add" button in the upper right hand corner of the browser window. You will be automatically taken to that page's edit view (see below). 
 
-If you decide you do not want to create the page, click the "Cancel" button.
-
 ## Edit a page  
 After clicking the Pages link, select the page you wish to edit by clicking the name of the page or the edit button (pencil).
 
@@ -59,7 +57,7 @@ The user bar, which appears across the top of the page, includes a link to edit 
 We recommend keeping a tab open to the public page and refreshing it to check the results of your changes. Remember to look at your page at different browser heights and widths to ensure objects flow and wrap as intended. You may also wish to check the display of your page on a mobile device. 
 
 ### Layout mode
-There are two options for laying out the blocks that include a page's content: **Normal flow** and **Grid**. 
+There are two options for laying out the blocks on your page: **Normal flow** and **Grid**. 
 
 **Normal flow** provides a view where the blocks stack one upon the next to build the page. With this layout, you can set blocks to float right and left, take up the full width, or center the content in the full width. When blocks (such as media) are floated alongside an HTML block, the text will flow and wrap around the floated block. Floated blocks take up a maximum of one-third of the page's total width. 
 
@@ -164,7 +162,7 @@ Once you have configured the block, click "Apply changes". You must save the blo
 - Float Right
 - Center. 
 
-Floating blocks left or right will cause them to occupy a maximum of one-third of the page, and may be smaller, depending on the block's contents. For example, a Media embed block with a 200-pixel thumbnail and a short title or caption will only occupy 200 pixels plus padding. 
+Floating blocks left or right will cause them to occupy a maximum of one-third of the page, and may be smaller, depending on the block's contents. For example, a Media embed block with a 200-pixel thumbnail and a short title or caption will only occupy 200 pixels plus padding. If the text in the block is longer, the block will take up its full allowable width before wrapping the text. 
 
 An HTML block positioned just underneath a floated block (i.e. the next object on the page) will occupy the rest of the width of the page, and will wrap around the floated block if applicable. This is true whether the floated block is floated left or right. 
 
@@ -184,13 +182,15 @@ The image above shows, in order:
 
 In Grid layout you can select the placement and width of each block based on the [number of columns you have set for the page](#configuration). 
 
-- For each block, you can declare its starting "Position," meaning the column number where the block will begin. You can also set the position to "Auto", meaning it will start wherever there is space for it to fit. You will see the "Position" dropdown reflect the number of columns of your page, minus the "Span" of the block (its width). For example, a 6-column page with a block set to span 3 columns will be allowed to start in columns 1, 2, 3, or 4. 
+- For each block, you can declare its starting "Position," meaning the column number where the block will begin. You can also set the position to "Auto", meaning it will start wherever there is space for it to fit. You will see the "Position" dropdown reflect the number of columns of your page, minus the "Span" of the block (its width). For example, a 6-column page with a block set to span 3 columns will be allowed to start in column 1, 2, 3, or 4. 
 	
 - Each block has a "Span" setting that determines the width of the block. The dropdown will offer choices from "1" to the number of columns set for the page. If you select the maximum number of columns, this block will span the full width of the page; anything less will leave whitespace or allow space for another block to occupy the same row. 
 
-Using these two settings, the blocks in your page will organize themselves into rows based on your selections. To fit two items in a row, set each to span a number that will add up to the number of columns on the page or less.
+Using these two settings, the blocks in your page will organize themselves into rows based on your selections. To fit two items in a row, set each to span a number that will add up to the number of columns on the page or less. All the blocks in a row will have the same height; there is no text wrapping in the Grid layout. 
 
-To see a schema of how your blocks are positioned on the page, click on the Layout preview button (an icon of blocks in a grid), which will reveal a mockup in the righthand drawer.
+You may wish to employ one or more empty columns in every row as a design element, for intentional whitespace. Combine this with the column gap and row gap settings to achieve your desired aesthetic. 
+
+To see a schema of how your blocks are positioned on the page, click on the Layout preview button (an icon of blocks in a grid), which will reveal a mockup in the right-hand drawer.
 
 Note that each page block will have a width calculated as follows:
 - First find the total width of the browser window alloted to page content - minus any sidebars, and with maximum widths determined by your theme. 
@@ -368,7 +368,7 @@ In Grid layout, you can set the length of the line using the Span setting:
 
 ### List of pages
 
-This block displays a linked list of pages. You may select from pages that are within the site. Other navigation links, such as Custom URLs and Browse pages, are not available.
+This block displays a linked list of pages. You may select from pages that are within the site. Other navigation items, such as Custom URLs and Browse pages, are not available.
 
 Click the "Add pages" button in the block to reveal a drawer that contains all of the pages in the site. Click on the individual page to add it to the list.
 
@@ -379,16 +379,24 @@ You may drag and nest pages into any order.
 ![List of pages block with pages showing nesting](sitesfiles/sitespg_listPagesOrder.png)
 
 ### List of sites
-This block displays a list of all of the sites on your Omeka S install. This block has the following options:
+
+This block displays a list of all of the sites on your Omeka S installation, similarly to the "Index of sites" page that can be shown at the root of your installation. This block has the following options:
 
 - Sort sites by: Alphabetical order (A-Z); Oldest first; Newest first. By default this is set to alphabetical. 
-- Max number of sites allows you to limit the number of sites which display at once. If left blank, all sites will display.
-- A checkbox to turn on pagination; applied only if you set a display limit.
+- Maximum number of sites allows you to limit the number of sites that display in the block. If left blank, all sites will display.
+- A checkbox to allow viewers to page through the full list of sites, if a display limit is set.
 - A checkbox to show site summaries.  
 - A checkbox to show site thumbnails.
 - A checkbox to exclude the current site from the list. 
 
 ![List of sites block](../sites/sitesfiles/sitepg_slist1.png)
+
+This block can be useful if you designate one site as the "home" site for your installation, which has general information about the institution or your collection, and then use this to link visitors to a collection of digital exhibits or essays that build off your collection. 
+
+Here is the List of Sites block as displayed in the Papers theme, with pagination, summaries, and thumbnails:
+
+![List of sites block on the public side.](sitesfiles/sitepg_slistPublic.png)
+
 
 ### Media embed
 Creates a block with one or more pieces of media associated with items in the item pool. In media blocks, multiple attachments stack vertically.
@@ -439,9 +447,9 @@ To add multiple items at once, click the "quick add" slider just above the list 
 
 ### Page date and time
 
-Displays the first-created date and/or time, and/or last-modified date and/or time, for a given page. 
+Displays the page's first-created date, and/or last-modified date, with or without a precise timestamp.
 
-![Page date and time settings box with radio buttons.](../sites/sitesfiles/sitepg_pageDateTime.png)
+![Page date and time settings box with radio buttons.](sitesfiles/sitepg_pageDateTime.png)
 
 You have the option of displaying the created, modified, or both dates, as well as formatting for dates and times. If you choose to display both date and time, it will appear with "at" between the two values:
 
@@ -468,18 +476,19 @@ Time format options:
 - Full (`7:17:35 PM GMT`).
 
 ### Page title
-Displays the title of the current page.
 
-![Page block display site's title](../sites/sitesfiles/sitepg_title.png)
+Displays the title of the page. This block is added by default to every new page, but can be deleted or rearranged. The page's title displays inside an `<h2>` tag. 
 
 ### Table of contents
-If the current page has child pages, you can add a table of content block for those pages.
+If the page has child pages, you can add a table of content block for those pages.
 
-The Depth option allows you to set how many levels of child pages you want to display. If left blank, it will display all possible levels. Please enter a whole number.  
+If the Omeka theme already displays a table of contents by default, inserting this block into your page will replace that display. For example, the Papers theme will show all the child pages of your chosen page just under the breadcrumb; if the TOC page block is added to the page, that will disappear. 
 
-![Table of content block with no depth option set](../sites/sitesfiles/sitepg_toc.png)
+The Depth option allows you to set how many levels of child pages you want to display. The default is 1. Please enter a whole number. You cannot leave this blank.
 
-Add and arrange pages using the [Site Navigation](../sites/site_navigation.md) settings. 
+![Table of content block with the depth option set to 1.](sitesfiles/sitepg_toc.png)
+
+Add and arrange pages using the [Site Navigation](site_navigation.md) settings. If you wish to display pages in another order, use the [List of pages block](#list-of-pages). 
 
 ### Other blocks
 For module-specific blocks, such as [Collecting](../modules/collecting.md) or [Mapping](../modules/mapping.md), see the documentation for that module.
@@ -489,5 +498,5 @@ To delete a page, go to the Pages section of the relevant site. Click the delete
 
 A drawer will open on the right side of the page asking you to confirm that you wish to delete the page, with the name of the page displayed under the confirmation button. To proceed, click the "Confirm delete" button. Otherwise, click the "X" in the upper right corner of the drawer to cancel.
 
-![Delete drawer for the Novels page](../sites/sitesfiles/sitepg_delete.png)
+![Delete drawer for the Novels page](sitesfiles/sitepg_delete.png)
 
