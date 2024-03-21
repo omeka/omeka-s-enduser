@@ -37,7 +37,7 @@ To implement any changes you make, click "Save" at the top right of the browser 
 
 ### General settings
 
-![general settings, all at default](../sites/sitesfiles/sites_settingsgen.png)
+![General site settings, with the default options when making a new site.](../sites/sitesfiles/sites_settingsgen.png)
 
 **Auto-assign new items**: a checkbox which sets whether new items are automatically added to this site. If checked, every new item will be added to the site, regardless of the item's owner. Note that item owners may unassign their items from the site at any time, in the item's edit pages.
 
@@ -46,8 +46,6 @@ To implement any changes you make, click "Save" at the top right of the browser 
 - Item page: clicking on the attachment takes users to the item page associated with the attached media.
 - Media page: clicking on the attachment takes users to the media page.
 - Direct link to file: clicking on the attachment takes user to the file alone.
-
-**Embed media on item pages**: when checked, any linked media (such as videos) will be embedded on the item pages. When unchecked, site visitors will click through to view playable media.
 
 **Show page pagination**: when checked, "Previous" and "Next" links will display at the bottom of every page in the site, proceeding through your navigation. If unchecked, these links will not display.
 
@@ -64,7 +62,7 @@ When users are logged in, the user bar has the following options:
 
 ![a blue bar across the top of the image displays the following words in light blue text, indicating a link: Stackable Sandbox, Jane Austen, Pages, Edit Page, Signed in as Megan, and a button to Logout.](../sites/sitesfiles/sites_userbarin.png)
 
-When users are not logged, the user bar only displays a login option.
+If you opt to always show the user bar, when any site visitor navigates to your site who is not logged in, the user bar appears and displays a login option.
 
 ![A blue bar across the top of the image only has a small button reading "Log In". Below this, the site's title "A Tin Box" is displayed in black text on a white background.](../sites/sitesfiles/sites_userbarout.png)
 
@@ -75,6 +73,16 @@ The options for this setting are:
 - Always.
 
 **Disable JSON-LD embed**: Check this box to disable JSON-LD embedding on resource browse and show pages.
+
+**Favicon**: Choose from your assets, or upload a file, to appear in the small browser window/tab icon space. A [favicon](https://www.w3schools.com/html/html_favicon.asp){target=_blank} should be a small image around 32x32 pixels in size uploaded specifically for this purpose. 
+
+**Page subnavigation display**: Pages can be navigated from top to bottom according to the order used on the [navigation](site_navigation.md) tab, using the "Previous" and "Next" buttons that appear at the bottom of each page. Some themes may also show a breadcrumb at the top of each page. Where pages are arranged in a hierarchy in the navigation, a subnavigation is also displayed to help visitor move from parent to child pages. You can opt to:
+
+- Show the subnavigation on all pages
+- Hide it on child pages ("leaf", as in the leaves of the tree) (the default setting)
+- Hide the subnavigation wherever it may appear. 
+
+You may wish to use the [Table of contents page block](site_pages.md#table-of-contents) or the [List of pages page block](site_pages.md#list-of-pages) to help users navigate your site.  
 
 ### Language
 

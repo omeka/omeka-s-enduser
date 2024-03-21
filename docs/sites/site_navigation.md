@@ -34,7 +34,7 @@ To add a link you can use the **Add a custom link** options on the right hand dr
 
 You can add one of your [pages](../sites/site_pages.md), which will be listed in the right-hand drawer, under "Add a link to a site page". If you would like to search for a specific page, begin typing the page title in the search box with the helper text "Filter pages".
 
-The **Custom URL** link option, when added to your navigation, have three fields: the link **type** (showing as "Custom URL"), the **label** (the text that will appear in the site navigation menu), and the **URL**. 
+The **Custom URL** link option, when added to your navigation, have three fields: the link **type** (showing as "Custom URL"), the **label** (the text that will appear in the site navigation menu), and the **URL**. You can also select whether the link will open a new browser window or tab when clicked.
 
 ![URL link option with the label "RRCHNM" and URL chnm.gmu.edu](../sites/sitesfiles/sitenav_url.png)
 

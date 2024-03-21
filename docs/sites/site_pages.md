@@ -480,9 +480,9 @@ Time format options:
 Displays the title of the page. This block is added by default to every new page, but can be deleted or rearranged. The page's title displays inside an `<h2>` tag. 
 
 ### Table of contents
-If the page has child pages, you can add a table of content block for those pages.
+If the page has child pages, you can add a TOC block for those pages.
 
-If the Omeka theme already displays a table of contents by default, inserting this block into your page will replace that display. For example, the Papers theme will show all the child pages of your chosen page just under the breadcrumb; if the TOC page block is added to the page, that will disappear. 
+If the Omeka theme already displays a table of contents by default, inserting this block into your page will replace that display. For example, the Papers theme will show all the child pages of your chosen page just under the breadcrumb; if the TOC page block is added to the page, that will disappear. In Thanks Roy, the TOC subnavigation appears in a column to the left of the page content; if the TOC page block is added to the page, that column will disappear and the page contents will take up more screen width. 
 
 The Depth option allows you to set how many levels of child pages you want to display. The default is 1. Please enter a whole number. You cannot leave this blank.
 
