@@ -72,9 +72,9 @@ The options for this setting are:
 - When identified (when logged in)
 - Always.
 
-**Disable JSON-LD embed**: Check this box to disable JSON-LD embedding on resource browse and show pages.
+**Disable JSON-LD embed**: Check this box to disable JSON-LD embedding on resource browse and show pages for this site. This is also available as a [global setting at the installation level](../admin/settings.md).
 
-**Favicon**: Choose from your assets, or upload a file, to appear in the small browser window/tab icon space. A [favicon](https://www.w3schools.com/html/html_favicon.asp){target=_blank} should be a small image around 32x32 pixels in size uploaded specifically for this purpose. 
+**Favicon**: Choose from your assets, or upload a file, to appear in the small browser window/tab icon space. A [favicon](https://www.w3schools.com/html/html_favicon.asp){target=_blank} should be a small image around 32x32 pixels in size uploaded specifically for this purpose. Favicons can be [set at an installation level](../admin/settings.md#general) as well as on each individual site.
 
 **Page subnavigation display**: Pages can be navigated from top to bottom according to the order used on the [navigation](site_navigation.md) tab, using the "Previous" and "Next" buttons that appear at the bottom of each page. Some themes may also show a breadcrumb at the top of each page. Where pages are arranged in a hierarchy in the navigation, a subnavigation is also displayed to help visitor move from parent to child pages. You can opt to:
 

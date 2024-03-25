@@ -318,6 +318,12 @@ Ogg Vorbis audio (.ogg, .oga) is a compressed format like MP3 and AAC, but it ha
 
 Opus (.opus) is one of the newer available audio formats. For the time being, it has a similar problem as Vorbis: a lack of support among browsers, but there are signs that Opus could gain more support in the future.
 
+### Images
+
+Omeka S accepts most image file types, including JPEG, PING, TIFF, and WEBP. Keep in mind that most browsers do not natively display TIFF files; Omeka creates derivative images for TIFFs in JPEG format that are displayed as thumbnails and on item/media view pages. Users can download TIFFs where the original file is offered. 
+
+WEBP support is new in Omeka S 4.1. Existing installations that have been upgraded to 4.1 may need to update the list of allowed file types and extensions on the [Settings](../admin/settings.md) tab by pressing the "Restore" buttons ("Restore default media types" and "Restore default extensions").  
+
 ### Legacy formats
 There are a lot of media files out there that aren’t in any of the formats listed here. With certain add-ons or on certain platforms (like Safari on the Mac in many cases), it can be possible to embed some of those files with HTML 5, but expect many or most users to be unable to play them. Browser plugins can also play many file types, but browsers are steadily reducing and removing their support for these kinds of plugins.
 
