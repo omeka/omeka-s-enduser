@@ -18,11 +18,9 @@ When a user logs in, the first page they see is the Admin Dashboard.
 
 In addition to the left-hand navigation present on all pages (see below), the admin dashboard presents users with two boxes: **Manage Resources** and **Manage Sites**.
 
-The **Manage Resources** box displays the following resources with their total count: [Items](content/items.md), [Item Sets](content/item-sets.md), [Vocabularies](content/vocabularies.md), and [Resource Templates](content/resource-template.md). Clicking on the label of the Resource will take you to the browse page; clicking the plus-symbol button to the right of the label will take you to the add page for that resource type. 
+The **Manage Resources** box displays the following resources with their total count: [Items](content/items.md), [Item sets](content/item-sets.md), [Vocabularies](content/vocabularies.md), and [Resource templates](content/resource-template.md). Clicking on the label of the Resource will take you to the browse page; clicking the plus-symbol button to the right of the label will take you to the add page for that resource type. 
 
-![Close up of manage resources and manage sites boxes](files/admindashmanage.png)
-
-The **Manage Sites** box lists the [Sites](sites/index.md) on the install. Clicking on the site name will take you to the public view of the site; clicking the edit (pencil) button will take you to the Edit Site Info page for that site. 
+The **Manage Sites** box lists the [Sites](sites/index.md) on the install. Clicking on the site name will take you to the administrative tab for the site; clicking on the small arrow icon to the right will take you to the public view of the site (in a new window or tab). 
 
 ## Left-hand navigation
 
@@ -32,7 +30,9 @@ The following content appears on the left side of the admin dashboard and on all
 
 In the upper left corner of the screen is a link displaying the title of the installation which will always take you back to the admin dashboard. 
 
-Directly below the installation title is the message “Signed in as [User]” where [User] is the display name of the person logged in. Near the username (below or to the right, depending on window width) is the button to **Logout**. 
+Directly below the installation title is the message “Signed in as [User]” where [User] is the display name of the person logged in. Next to the username is a gear icon that will [take you to your user settings page](admin/users.md#user-settings). 
+
+Near the username (below or to the right, depending on window width) is the button to **Logout**. 
 
 Underneath the user information is a search field which has an option for advanced search (ellipsis) in addition to the button to search (magnifying glass). Use this to search all items in the installation. 
 
@@ -64,7 +64,9 @@ In the bottom right corner of every page on the admin side is the current versio
 
 ![Example System information page](files/systeminfo.png)
 
-On this page you can verify the versions of dependencies that Omeka is using, such as PHP, ImageMagick, and MySQL. If a particular module requires your server to supply something like a PHP utility, you can look for it here. You can also look here to verify whether your Omeka installation recognizes a module you have tried to install.
+On this page you can verify the versions of dependencies that Omeka is using, such as PHP, ImageMagick, and MySQL. If a particular module requires your server to supply something such as a PHP utility, you can look for it here. You can also look here to verify whether your Omeka installation recognizes a module you have tried to install.
+
+Note that your PHP section will tell you the "File Upload Limit", which is the number reflected in the media upload interface and the asset upload interface. Note also that Omeka S will tell you how much free server space it has access to. 
 
 You may be asked to supply the information on this page when asking for technical support on the [Forums](https://forum.omeka.org/){target=_blank} or when posting an issue on GitHub. 
 

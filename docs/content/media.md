@@ -64,7 +64,7 @@ An IIIF presentation URL example:
 
 At the media adding stage, the only metadata that can be entered is a Title. If you wish to further describe each file, you can edit it after it has been uploaded. If you do not supply a title, the original filename will appear as the media title. Note that the media's actual filename will have changed when uploaded into Omeka S; this filename retained as the title is just for your reference, and can be changed at any time.
 
-You can upload multiple files at once, or by adding more files each time you save. They will appear in the order they were uploaded.
+You can upload multiple files at once, add multiple types of media at once, or add more media each time you save. They will appear in the order they were uploaded.
 
 You can drag and drop media into the order of your choice, while adding or after they have been added. On the item edit screen, click the "Media" tab and use the horizontal bars at the left of each file to move files up and down in the list.
 
@@ -262,6 +262,7 @@ The batch edit form gives you the following options:
 - Set visibility: a radio button. Select from public or not public to make the file visible or not visible to logged-out users.
 - Set template: a dropdown. Select from the installation's resource templates. You can remove templates from the selected items with the "[Unset template]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
 - Set class: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected files with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- Set owner: a dropdown. Select from users of the installation to choose who should be set as the owner of the selected media. Changing media ownership will not change the associated items' ownership. Ownership determines [who can edit and delete those media](#media-permissions), outside the higher [user permission levels](../admin/users.md#roles-and-permissions).
 - Clear language: a checkbox to remove existing language settings.
 - Set language: a text field. Enter in a two-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} language code. You can only indicate one language here.
 - Clear property values: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected media. You can remove multiple property values at once: click in the text field again to see the remaining options.
@@ -317,6 +318,12 @@ WAV or WAVE (.wav) audio is supported by most browsers (with the notable excepti
 Ogg Vorbis audio (.ogg, .oga) is a compressed format like MP3 and AAC, but it has much less widespread support. Expect Vorbis audio to only work on Firefox, Chrome, and Android.
 
 Opus (.opus) is one of the newer available audio formats. For the time being, it has a similar problem as Vorbis: a lack of support among browsers, but there are signs that Opus could gain more support in the future.
+
+### Images
+
+Omeka S accepts most image file types, including JPEG, PING, TIFF, and WEBP. Keep in mind that most browsers do not natively display TIFF files; Omeka creates derivative images for TIFFs in JPEG format that are displayed as thumbnails and on item/media view pages. Users can download TIFFs where the original file is offered. 
+
+WEBP support is new in Omeka S 4.1. Existing installations that have been upgraded to 4.1 may need to update the list of allowed file types and extensions on the [Settings](../admin/settings.md) tab by pressing the "Restore" buttons ("Restore default media types" and "Restore default extensions").  
 
 ### Legacy formats
 There are a lot of media files out there that aren’t in any of the formats listed here. With certain add-ons or on certain platforms (like Safari on the Mac in many cases), it can be possible to embed some of those files with HTML 5, but expect many or most users to be unable to play them. Browser plugins can also play many file types, but browsers are steadily reducing and removing their support for these kinds of plugins.

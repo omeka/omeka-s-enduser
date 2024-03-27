@@ -18,7 +18,7 @@ By default, this search operates on items in your installation. However, you can
 
 Advanced search for items only is available on the [Items](content/items.md) page, from the "Advanced Search" link above the table of items.
 
-![Advanced search button indicated with a red arrow.](files/advancedsearch2.png)
+![Advanced search button indicated with a red arrow.](files/search_advanced.png)
 
 The advanced search loads on a new page, and has the following options:
 
@@ -46,7 +46,7 @@ The advanced search loads on a new page, and has the following options:
 
 You can also select how to order your search results.
 
-![Advanced item search options page.](files/advancedsearch3.png)
+![Advanced item search options page.](files/search_advanced2.png)
 
 Other search fields may be introduced with modules that add new metadata fields to your items.
 
@@ -57,7 +57,7 @@ You can reset your search terms at any time by using the "Reset" button on the u
 ### Media advanced search
 Advanced search for media is accessed from the [Media](content/media.md) browse page, from the **Advanced Search** link above the table of item sets.
 
-![Advanced search button indicated with a red arrow.](files/search_mediaadvance1.png)
+![Advanced search button indicated with a red arrow.](files/search_mediaadvanced1.png)
 
 The advanced search loads on a new page, and has the following options:
 
@@ -85,7 +85,7 @@ The advanced search loads on a new page, and has the following options:
 
 You can also select how to order your search results.
 
-![Advanced media search options form, with fields as described above.](files/search_mediaadvance2.png)
+![Advanced media search options form, with fields as described above.](files/search_mediaadvanced2.png)
 
 Searches by value, class, and template allow you to search by more than one input - use the large red plus-sign icons to search with more than one value or item set. These search terms build - searching for two templates will return all media using either template.
 
@@ -97,7 +97,7 @@ You can reset your search terms at any time by using the "Reset" button on the u
 
 Advanced search for item sets only is accessed on the [Item Sets](content/item-sets.md) page, from the "Advanced Search" link above the table of item sets.
 
-![Advanced search button indicated with a red arrow.](files/advancedsearchis1.png)
+![Advanced search button indicated with a red arrow.](files/search_advancedis1.png)
 
 The advanced search loads on a new page, and has the following options:
 
@@ -124,7 +124,7 @@ The advanced search loads on a new page, and has the following options:
 
 You can also select how to order your search results.
 
-![Advanced item set search options form, with fields as described above.](files/advancedsearchis2.png)
+![Advanced item set search options form, with fields as described above.](files/search_advancedis2.png)
 
 Searches by value, class, and template allow you to search by more than one input - use the large red plus-sign icons to search with more than one value or item set. These search terms build - searching for two templates will return all media using either template.
 
@@ -176,7 +176,12 @@ Clicking this loads a new page with four options for search:
 
 Users can also select how to order their search results.
 
+Here is the default advanced search form in two themes - Thanks, Roy, and The Daily:
+
 ![Advanced item search fields as described](files/search_publicitems2.png)
+
+
+![Advanced item search fields as described](files/search_publicitems3.png)
 
 Searches by value, class, and item set allow a visitor to search by more than one input; they can use the "Add new" buttons (plus sign) to search with more than one search term. These search terms build - searching for two item sets will return all items in either item set, rather than only those items which are in both.
 

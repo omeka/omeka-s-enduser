@@ -4,7 +4,7 @@ Admin users may change the settings for the admin dashboard and general settings
 
 Global settings are only available to Global Administrator users.
 
-Settings are divided into two sections: **General** and **Security** settings.
+Settings are divided into five sections: **General**, **Display**, **Editing**, **Search**, and **Security** settings.
 
 ## General
 
@@ -19,6 +19,18 @@ Settings are divided into two sections: **General** and **Security** settings.
 
 **Time zone**: Sets the default time zone for the install, which will be used for error logging messages and to determine creation dates for items, item sets, and other materials on the install. This is a dropdown menu. 
 
+**Locale**: A dropdown that lets you select from a dropdown of [available languages](https://www.transifex.com/omeka/omeka-s/){target=_blank} for the Omeka S core to change the language in which your installation's admin side displays.
+
+**Enable version notifications**: Check this box to enable warning banners for new versions of Omeka S, themes, and modules. If it is unchecked, no user (at any role) will see update warnings, not even the Global Administrator. If it is checked, every applicable user can see them (i.e. Supervisor users who can see the Modules page, Site Managers who can see the Themes pages, and every user on the `/admin` homepage).
+
+**Disable JSON-LD @reverse**: Disable [JSON-LD reverse properties](https://www.w3.org/TR/json-ld11/#reverse-properties){target=_blank} in the API output for resources. 
+
+**Favicon**: Choose from your assets, or upload a file, to appear in the small browser window/tab icon space. A [favicon](https://www.w3schools.com/html/html_favicon.asp){target=_blank} should be a small image around 32x32 pixels in size uploaded specifically for this purpose. Favicons can be [set at an installation level](../sites/site_settings.md#general-settings) as well as on each individual site.
+
+## Display
+
+![Display, Editing, and Search settings with fields as described below](adminfiles/settings_display.png)
+
 **Results per page**: Changes the number of results (items, item sets, media) displayed per page when browsing in either public or admin sides of the installation.
 
 **Property label information**: Determines what is displayed next to each property when users are editing items and item sets. 
@@ -29,11 +41,9 @@ Settings are divided into two sections: **General** and **Security** settings.
 
 **Default site**: This dropdown gives you control over where people land when they navigate to the base url of your install. You can either display a list of all sites in the install (default) or select a specific site from the dropdown, to which people will be redirected.
 
-**Locale**: A dropdown that lets you select from a dropdown of [available languages](https://www.transifex.com/omeka/omeka-s/){target=_blank} for the Omeka S core to change the language in which your installation's admin side displays.
-
-**Enable version notifications**: Check this box to enable warning banners for new versions of Omeka S, themes, and modules. If it is unchecked, no user (at any role) will see update warnings, not even the Global Administrator. If it is checked, every applicable user can see them (i.e. Supervisor users who can see the Modules page, Site Managers who can see the Themes pages, and every user on the `/admin` homepage).
-
 **Disable JSON-LD embed**: By default, Omeka embeds JSON-LD in resource browse and show pages for the purpose of machine-readable metadata discovery. Check this to disable embedding.
+
+## Editing
 
 **Default content visibility to Private**: When this box is checked, all new items, item sets, and sites will have their visibility set to private. If this box is not checked, the default is public. 
 
@@ -41,7 +51,9 @@ Settings are divided into two sections: **General** and **Security** settings.
 
 **Media alt text property**: Select a field (for example, `dc:title` or `dc:description`) from the media description to use as alternative text if no alt text is explicitly set. [Alt text](https://webaim.org/techniques/alttext/){target=_blank} is used in lieu of images (including thumbnails on browsing and search results pages) when a user is employing a screen reader and is an important part of meeting accessibility expectations.
 
-**Index full-text search**: Check this box to run an index of your installation's resources and sites as soon as you click "Save". You should only need to run this process if you are having issues with searching.
+## Search
+
+**Index full-text search**: Check this box and "Save" the page to run an index of your installation's resources and sites. You should only need to run this process if you are having issues with searching.
 
 ## Security
 

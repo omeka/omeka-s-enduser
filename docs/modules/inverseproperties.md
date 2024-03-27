@@ -8,7 +8,7 @@ These metadata links appear as one way by default - you edit the play item, but 
 
 Some inverse properties are obvious (Dublin Core's "Has Part" is the intended inverse of "Is Part Of", for example) but others are flexible to the type of items in the installation. Thus, your installation's inverse property relationships need to be specified manually.
 
-Inverse links created in this way can save time on data entry and be useful in [data visualizations](datavisualization.md), advanced or faceted browsing, and [batch-importing](CSVImport.md) resource relationships.
+Inverse links created in this way can save time on data entry and be useful in [data visualizations](datavisualization.md), advanced or faceted browsing, and [batch-importing](csvimport.md) resource relationships.
 
 ### Suggested inverse properties
 
@@ -76,4 +76,4 @@ If you have linked resources already set up and then activate Inverse Properties
 On the batch-edit form you will see an entry for "Inverse properties". Use the checkbox to indicate that all inverse properties set for all the resources you've selected should generate their pairings. Then "Submit" the form. 
 
 !!! note
-	Inverse Properties will **not** work with [CSV Import](CSVImport.md). Import linked resources as usual, then use the batch-editing form to update the inverse pairings.
+	Inverse Properties will **not** work with [CSV Import](csvimport.md). Import linked resources as usual, then use the batch-editing form to update the inverse pairings.
