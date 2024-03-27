@@ -31,8 +31,8 @@ nav:
         - sites/site_theme.md
     - Resources:
         - content/items.md
-        - content/item-sets.md
         - content/media.md
+        - content/item-sets.md
         - content/vocabularies.md
         - content/resource-template.md
         - content/export.md

@@ -64,7 +64,7 @@ An IIIF presentation URL example:
 
 At the media adding stage, the only metadata that can be entered is a Title. If you wish to further describe each file, you can edit it after it has been uploaded. If you do not supply a title, the original filename will appear as the media title. Note that the media's actual filename will have changed when uploaded into Omeka S; this filename retained as the title is just for your reference, and can be changed at any time.
 
-You can upload multiple files at once, or by adding more files each time you save. They will appear in the order they were uploaded.
+You can upload multiple files at once, add multiple types of media at once, or add more media each time you save. They will appear in the order they were uploaded.
 
 You can drag and drop media into the order of your choice, while adding or after they have been added. On the item edit screen, click the "Media" tab and use the horizontal bars at the left of each file to move files up and down in the list.
 
