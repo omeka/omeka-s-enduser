@@ -410,6 +410,11 @@ Allows you to embed media from third-party websites such as Flickr, Vimeo, YouTu
 ![Input field for URL for oEmbed]
 (../sites/sitesfiles/sitepg_oEmbed.png)
 
+After saving the URL you can view the Advanced settings, which include the uneditable information for the formatting of the oEmbed and a checkbox to refresh the oEmbed.
+
+![oEmbed advanced settings include the formatting information and refresh]
+(../sites/sitesfiles/sitepg_oEmbedadvanced.png)
+
 The website that is the source of the media will send a hardcoded size that you can't modify unless you place the oEmbed in a smaller container. In the Normal layout, the oEmbed placement will be determined by the float. In Grid layout, it will span the number of columns that you choose.
 
 Depending on which site the embed is from, there will be different features available. Some examples include:
@@ -417,6 +422,8 @@ Depending on which site the embed is from, there will be different features avai
 - Flickr: includes buttons to share on Facebook, Tumblr, X, and Pinterest or to take you to the media on Flickr. The caption, creator, and attribution are also featured.
 - Vimeo: includes buttons to like, add to watch later, and share. In addition to the play and volume controls, there options to enable closed captions, view a transcript, view settings, make the video full screen, or view the video on Vimeo.
 - Youtube: includes buttons to make the video full screen and watch the video on YouTube.
+
+You can view a full list of sites that make list via [oEmbed's provider list](https://oembed.com/providers.json).
 
 ### Page date and time
 
