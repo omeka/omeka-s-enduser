@@ -300,50 +300,6 @@ You can embed content from elsewhere on the internet using iFrames or other embe
 
 If you have the [Zotero Citations module](../modules/zoterocitation.md) installed, you can insert a Zotero bibliography into this field. Look for the Zotero button in the formatting menu (a big red Z). 
 
-### Item showcase
-
-A list of items. 
-
-In item showcase blocks, multiple attachments build horizontally, creating rows across the page.
-
-![Block for item showcase with one item added](../sites/sitesfiles/sitepg_showcase.png)
-
-Using the drop-down menu in the block, you can:
-
-- Set the thumbnail size for these items as large (default), medium, or square. 
-- Set the attachment title as:
-	- item title (title of the attached item);
-	- media title (title of the specific piece of media you select associated with the item); or
-	- no title.
-
-Click the "Add Attachment" button to add an item to the block. This will open a drawer on the right side of the page to browse and select items.
-
-If you have a large number of items to navigate, or multiple items with the same title, you can use the "Filter search" options by clicking the triangle button to the right of its label. 
- 
-These options are:
-
-- Filter by class: opens a dropdown to select from all of the classes for the vocabularies in the Omeka S installation.
-- Filter by item set: opens a dropdown to select from all item sets in the installation, not just those associated with the site on which you are working.
-- Filter by item id: you can put in the specific item id for an item (the number which appears in the url when you are looking at the item on the admin). 
-
-Once you have applied your changes to the filter, you must click the search button (magnifying glass) to apply the filters or run the search.
-
-![Select item drawer with filter options displayed](../sites/sitesfiles/sitepg_selectitemFilter.png)
-
-Once you’ve selected an item, the drawer will shift to that item’s information. You can add a caption and select which media (if more than one) you want to use. To return to the list of items, click the "Select item" button at the top of the drawer. To use the item displayed and apply the caption, etc, click the "Apply changes" button at the bottom of the drawer.
-
-![Item view with apply changes option](../sites/sitesfiles/sitepg_applyitem.png)
-
-To add multiple items at once, click the "Quick add" slider just above the list of items in the right hand drawer. This will add a checkbox to the left of each item. Check the boxes of those items you want to add to the block, then click the "Add selected" button at the bottom of the drawer.
-
-![Select item drawer with quick add activated - every item in the view now has a checkbox.](../sites/sitesfiles/sitepg_selectitemQuick.png)
-
-To cancel the item selection, click the X in the upper right corner of the drawer at any time.
-
-Once you’ve added an item, it will appear in the Item List block. You can edit the caption or media options by clicking the edit (wrench) button for that row, and you can delete the item using the delete (trash can) icon.
-
-You can add multiple items to the list.
-
 ### Item with metadata
 This block displays an item along with all associated metadata (entered when creating or editing the [item](../content/items.md)), identically to the item-view page in your theme. 
 
@@ -399,25 +355,27 @@ Here is the List of Sites block as displayed in the Papers theme, with paginatio
 
 
 ### Media embed
-Creates a block with one or more pieces of media associated with items in the item pool. In media blocks, multiple attachments stack vertically.
+
+Creates a block with one or more pieces of media associated with items in the item pool. 
 
 ![media block with no media attached](../sites/sitesfiles/sitepg_media.png)
 
 The Media block has options for the display of the media: 
 
-- Thumbnail type: choose from large, medium, and square.
-- Thumbnail alignment: float left, float right, and center.
+- Layout: choose from vertical or horizontal.
+- Media display: choose from embed media or thumbnail only.
+- Image type: choose from large, medium, and square.
 - Set the attachment title as:
 	- item title (title of the attached item);
 	- media title (title of the specific piece of media you select associated with the item); or
 	- no title.
 
 !!! note
-	If you want media to appear beside a block of text, place a media block *above* an HTML block, select a smaller thumbnail size, and choose either float left or right for alignment. In the example below, the media has a thumbnail type of "medium", alignment "float right," and attachment title of the "item title": 
+	If you want media to appear beside a block of text in the Normal flow layout, place a media block *above* an HTML block, select a smaller thumbnail size, and choose either float left or right for alignment. In the example below, the media has a thumbnail type of "medium", alignment "float right," and attachment title of the "item title": 
 
 	![A block of lorem ipsum text with a right-aligned small image embedded at the top of the paragraph](../sites/sitesfiles/sitepg_mediaalign.png)
 
-	Placing a media block *after* an HTML block will cause the media to appear below the end of the HTML block contents. 
+	Placing a media block *after* an HTML block in the Normal flow layout will cause the media to appear below the end of the HTML block contents. 
 
 To **add media to the block**, click the "Add attachment" button. 
 
@@ -444,6 +402,13 @@ Once you’ve selected an item, the drawer will shift to that item’s informati
 To add multiple items at once, click the "quick add" slider just above the list of items in the right hand drawer. This will add a checkbox to the left of each item. Check the boxes of those items you want to add to the block, then click the "Add selected" button at the bottom of the drawer.
 
 ![Select item drawer with quick add activated - every item in the view now has a checkbox.](../sites/sitesfiles/sitepg_selectitemQuick.png)
+
+### oEmbed
+
+Allows you to embed media from third-party websites such as Flickr, Vimeo, YouTube and more using the provided oEmbed link.
+
+![Input field for URL for oEmbed]
+(../sites/sitesfiles/sitepg_oEmbed.png)
 
 ### Page date and time
 
