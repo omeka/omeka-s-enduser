@@ -75,15 +75,13 @@ Between these and the table, on the left, is a dropdown for batch actions, inclu
 
 ## View items
 
-To quickly view the basic information about an item, click the **Details** (ellipsis) button in the row for the item, located next to the edit and delete buttons. This will open a drawer to the right of the list which displays the item’s title, description, visibility, any sites it is used in, and its associated media.
+To quickly view the basic information about an item, click the **Details** (ellipsis) button in the row for the item, located next to the edit and delete buttons. This will open a drawer to the right of the list which displays the item’s title, description, Omeka identification number, visibility, item sets, any sites it is used in, and its attached media. Links to item sets and sites will take you to the corresponding administrative page; the arrow icon to the right of each site link will take you to the public view of that item in that site. 
 
 For a more detailed look at an individual item, click on its title in the items browse table or when viewing its details.
 
 ![Item browse view with details open for "Behold, Here's Poison". Links to item view page squared in blue](contentfiles/items_detailview.png)
 
-The blue squares indicate where to click to open the full item view.
-
-When you view an individual item, there are tabs for the item’s **Metadata** and its **Linked Resources**. The right side of the page displays the item’s media, any **item sets** to which it belongs, its creation date, owner, and visibility.
+When you view an individual item, there are tabs for the item’s **Metadata** and its **Linked Resources**. The right side of the page displays the item’s media, any **sites** and **item sets** to which it belongs, its creation date, owner, and visibility.
 
 ### Linked resources
 
@@ -230,27 +228,27 @@ You can set controlled vocabularies for annotations using the [Custom Vocab modu
 
 ### Media
 
-Use the **Media** tab to add [images, video, or other files](media.md).
+Use the **Media** tab to add images, video, or other files to an item. See the [Media page of this manual](media.md) for more detailed information.
 
-Using the buttons on the **Add New Media** menu on the right side of the screen, select a media type (Upload, URL, oEmbed, IIIF, YouTube, or HTML). Modules, such as [File Sideload](../modules/filesideload.md), can add more ways to gather media into Omeka. Other modules can import materials from other platforms directly into Omeka as items with attached media, such as the [Zotero import](../modules/zoteroimport.md) module.
+Using the buttons on the **Add New Media** menu on the right side of the screen, select a media type (Upload, URL, HTML, oEmbed, IIIF, or YouTube). Modules, such as [File Sideload](../modules/filesideload.md), can add more ways to gather media into Omeka. Alternatively, other modules can import materials from other platforms directly into Omeka as items with attached media, such as the [Zotero import](../modules/zoteroimport.md) module.
 
 !["Add new media" drawer showing the options](contentfiles/items_mediaadd.png)
 
-- **Upload**: select a file to upload from your computer.
-- **URL**: import media via a URI.
-- **HTML**: add html content as a media resource for your item.
+- **Upload**: Select one or more files to upload from your computer.
+- **URL**: Import media via a URI.
+- **HTML**: Add HTML content as a media resource for your item.
 - **IIIF image**: Add an [IIIF image](https://iiif.io/api/image/3.0/){target=_blank} via URL.
 - **IIIF presentation**: Add an [IIIF presentation](https://iiif.io/api/presentation/3.0/){target=_blank} via URL.
-- **oEmbed**: insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7){target=_blank} - use the URL in your browser’s location bar.
-- **YouTube**: add a link to embed a YouTube video. Use the URL from your browser’s location bar (with `/watch/` in it) rather than a `youtu.be` link.
+- **oEmbed**: Insert an embedded representation of an external URL. Note that this will only work with content from [existing oEmbed implementations](http://oembed.com/#section7){target=_blank} - use the URL in your browser’s location bar.
+- **YouTube**: Add a link to embed a YouTube video. Use the URL from your browser’s location bar (with `/watch/` in it) rather than a `youtu.be` link.
 
-You can edit media later by going by editing an item, navigating to the **Media** tab, and clicking the edit button (pencil) for a media when editing the item.
+You can edit media later by going by editing an item, navigating to the **Media** tab, and clicking the edit button (pencil icon) for a media when editing the item.
 
-You can delete any media instance from the item's edit page using the delete button (trashcan) on the upper right corner of the media block.
+You can delete any media instance from the item's edit page using the delete button (trashcan icon) on the upper right corner of the media block.
 
-If you have more than one media instance for an item, you can reorder them by dragging and drop each media instance block, using the icon of three lines in the upper left corner of the block as the anchor when dragging.
+If you have more than one media attached to an item, you can reorder them by dragging and drop each media instance block, using the icon of three lines in the upper left corner of the block as the anchor when dragging.
 
-Omeka S uses the topmost media for an item to create thumbnail images for that item on browse and show pages.
+Omeka S uses the topmost media as the "primary media" for an item, to create thumbnail images for that item on browse and show pages. If you use something like an audio file as the primary media, Omeka will not generate a thumbnail, and will show a default thumbnail based on the file type. 
 
 ### Item sets
 You can only add items to existing item sets.
