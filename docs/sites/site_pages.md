@@ -52,7 +52,7 @@ As you are browsing the public side of your site, you can edit the page you are 
 
 The user bar, which appears across the top of the page, includes a link to edit the current page - circled in red in the below image. 
 
-![User bar for a page from the site Jane Austen, with "Edit page" circled in red](../sites/sitesfiles/sitepg_edit_public.png)
+![User bar for a page from the site Jane Austen, with "Edit page" circled in red](sitesfiles/sitepg_edit_public.png)
 
 We recommend keeping a tab open to the public page and refreshing it to check the results of your changes. Remember to look at your page at different browser heights and widths to ensure objects flow and wrap as intended. You may also wish to check the display of your page on a mobile device. 
 
@@ -66,17 +66,25 @@ There are two options for laying out the blocks on your page: **Normal flow** an
 #### Configuration
 Next you will have the option to apply configuration settings to the entire page. Clicking on the gear icon will open the Page layout configuration menu. 
 
-In **Normal flow**, you will be able to select a template for the page if the site theme provides one.
+In **Normal flow**, you will be able to select a [template for the page](#page-templates) if the site theme provides one.
 
 In **Grid**, you will see two buttons:
 
 - The Preview Layout button will preview the layout in the right-hand drawer. This will show you all the blocks currently on the page and their width in terms of the columns on the page. It will also show block groups with an extra outline around the group's contents. 
-- The Configure Layout button (gear icon) will allow you to select a template for the page, and define the gaps (in pixels) between the columns and rows of blocks.
+- The Configure Layout button (gear icon) will allow you to select a [template for the page](#page-templates), and define the gaps (in pixels) between the columns and rows of blocks.
 - If you make a mistake in your grid page layout settings, you can reset the page to the most recently saved version by clicking the "Restore" button that appears to the right of these buttons.
 
-Once you have made your layout choices, you are ready to add blocks to the page.
+##### Page templates
+
+Themes offer the ability to provide shortcuts on page development. By selecting a page template from the dropdown in the configuration menu, you can apply different design variations as provided by theme developers. Read the [developer documentation](https://github.com/omeka/omeka-s/wiki/4.1-RC){target=_blank} for more information on how to offer page templates. 
+
+Once you have selected a site theme with page templates included, such as [Foundation](site_themes.md#foundation-theme-settings), you can select a page to edit and use the configuration menu to view available templates. Foundation currently offers a fixed-width (default) or full-width template option (visible where the navigation menu is set as a horizontal dropdown rather than a column). 
+
+![The right-hand drawer open to show the Normal flow configuration menu, with the Template dropdown open to display the two Foundation theme options - Default and Full width.](sitesfiles/sitepg_template.png)
 
 ### Add blocks
+
+Once you have made your layout choices, you are ready to add blocks to the page.
 
 On the right-hand side you can choose to add a new block to your page by selecting one of the following elements:
 
@@ -119,7 +127,7 @@ When a group is added to a page, you can drag and drop blocks inside it. You can
 
 In the Normal flow or Grid layout, you can configure each block with the gear icon that shows in its title bar. This will deploy the Block layout configuration menu in the right-hand drawer, which contains the following options:
 
-**Template**: If your theme provides one, you can select a template to apply to the block from the dropdown menu. For example, the Foundation theme allows you to set the Browse preview block to its own list or grid display, ignoring the settings of the site itself. Not every page block will have available templates. 
+**Template**: If your theme provides one, you can select a template to apply to the block from the dropdown menu. For example, [the Foundation theme](site_theme.md#foundation-theme-settings) allows you to set the Browse preview block to its own list or grid display, ignoring the settings of the site itself. Not every page block will have available templates. 
 
 **Class** allows you to type in a specific class to apply styles to the block. 
 
@@ -246,9 +254,15 @@ Once an asset is selected, the user has the option to include additional asset i
 
 ![Asset options sidebar with inputs for page link, alternative link title, and caption](sitesfiles/sitepg_asset_sidebar.png)
 
-Display of these elements will depend on the theme and any [template settings](#block-settings) that are applicable. 
+Display of these elements will depend on the theme and any [templates](#block-settings) that are available. 
 
-Click "Apply changes" to set the asset information.
+![The Asset page block's Layout configuration sidebar with Foundation's templates showing - Default, Card, and Media Object](sitesfiles/sitepg_assetTemplate.png)
+
+Below is the Asset page block with the same asset chosen and the same link set, with each of the three in the Foundation template settings - Default, Card, and Media Object:
+
+![The three template options on a public page.](sitesfiles/sitepg_assetTemplatePublic.png)
+
+Click "Apply changes" to save your settings, then save the page.
 
 ### Browse preview
 

@@ -167,6 +167,31 @@ Settings not described above:
 * **Show Top Navigation Child Pages:** Toggle display of child pages within the main navigation. If unchecked, only the top-level navigation will display.
 * **Metadata Layout for Show Pages:** Resource metadata can show display as **stacked** with properties as headings above their values, or **inline** with properties as headings inline with their values.
 
+Foundation also models significant theme customization tools for developers, including the most development on page and block templates. Foundation includes the following block templates:
+
+* Asset
+	* Card: Uses [Foundation Framework's card container](https://get.foundation/sites/docs/card.html){target=_blank} styles.
+	* Media object: Uses [Foundation Framework's media object container](https://get.foundation/sites/docs/media-object.html){target=_blank} styles.
+* Browse preview
+	* List: Ignores theme setting for browse view layouts and displays all resources as a single column list.
+	* Grid: Ignores theme setting for browse view layouts and displays all resources in a grid that maxes out at 4 columns.
+	* Toggle (default: list): Ignores theme setting for browse view layouts and lets the user choose their browse style, defaulting to a single column list of resources.
+	* Toggle (default: grid): Ignores theme setting for browse view layouts and lets the user choose their browse style, defaulting to a grid of resources maxing out at 4 columns.
+* Item with metadata
+	* Large media left: A 2-column layout with the item media rendered to the left of the metadata.
+	* Large media right: A 2-column layout with the item media rendered to the right of the metadata.
+* List of pages
+	* With container: Provides a gray box container.
+* List of sites
+	* Card: Uses [Foundation Framework's card container](https://get.foundation/sites/docs/card.html){target=_blank} styles for each site.
+* Page title
+	* Accent: Renders the page title with the theme's primary color as a background color.
+
+And the following page templates:
+
+* Default: Constrain the page content to a width of 1200 pixels, if the navigation is set to "horizontal dropdown" rather than "full height column". This will include page subnavigation inside the 1200 pixels if it is displayed.
+* Full-width: Occupy all available width in the browser window, minus the navigation column. Page subnavigation will appear above page content rather than beside it.
+
 ## Configure resource pages
 
 Within a site it is possible to configure the blocks of content that appear on the resource pages: the item page, the media page, and the item set page.
