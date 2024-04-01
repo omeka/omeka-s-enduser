@@ -78,7 +78,7 @@ In **Grid**, you will see two buttons:
 
 Themes offer the ability to provide shortcuts on page development. By selecting a page template from the dropdown in the configuration menu, you can apply different design variations as provided by theme developers. Read the [developer documentation](https://github.com/omeka/omeka-s/wiki/4.1-RC){target=_blank} for more information on how to offer page templates. 
 
-Once you have selected a site theme with page templates included, such as [Foundation](site_themes.md#foundation-theme-settings), you can select a page to edit and use the configuration menu to view available templates. Foundation currently offers a fixed-width (default) or full-width template option (visible where the navigation menu is set as a horizontal dropdown rather than a column). 
+Once you have selected a site theme with page templates included, such as [Foundation](site_theme.md#foundation-theme-settings), you can select a page to edit and use the configuration menu to view available templates. Foundation currently offers a fixed-width (default) or full-width template option (visible where the navigation menu is set as a horizontal dropdown rather than a column). 
 
 ![The right-hand drawer open to show the Normal flow configuration menu, with the Template dropdown open to display the two Foundation theme options - Default and Full width.](sitesfiles/sitepg_template.png)
 
