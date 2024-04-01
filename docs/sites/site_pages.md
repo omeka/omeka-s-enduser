@@ -370,13 +370,6 @@ The Media block has options for the display of the media:
 	- media title (title of the specific piece of media you select associated with the item); or
 	- no title.
 
-!!! note
-	If you want media to appear beside a block of text in the Normal flow layout, place a media block *above* an HTML block, select a smaller thumbnail size, and choose either float left or right for alignment. In the example below, the media has a thumbnail type of "medium", alignment "float right," and attachment title of the "item title": 
-
-	![A block of lorem ipsum text with a right-aligned small image embedded at the top of the paragraph](../sites/sitesfiles/sitepg_mediaalign.png)
-
-	Placing a media block *after* an HTML block in the Normal flow layout will cause the media to appear below the end of the HTML block contents. 
-
 To **add media to the block**, click the "Add attachment" button. 
 
 On loading, the drawer will show a list of your items, most recent first. You can select from the first page, page through using the forward and back arrows, or search using the search bar. You can select from the first page, page through using the forward and back arrows, or search using the search bar. 
