@@ -233,7 +233,8 @@ Change the order of blocks by clicking on the three horizontal lines on the uppe
 Page blocks are designed to offer an array of authoring tools for whatever kind of page you may be writing. Third-party and user-submitted modules may add other page blocks to the ones built and maintained by the Omeka team. 
 
 ### Asset
-Include files that are not media attached to items (such as a logo or banner). Users may upload new assets or select from existing assets.
+
+Displays files that are not media attached to items (such as a logo or banner). Users may upload new assets or select from existing assets.
 
 ![Asset block with asset selection sidebar open, including an asset upload option and an asset selection option](sitesfiles/sitepg_asset_selection.png)
 
@@ -251,7 +252,7 @@ Click "Apply changes" to set the asset information.
 
 ### Browse preview
 
-Allows you to add a block of resources on a page, identically to the "Items" and other browse page included with your Omeka site.
+Adds a block of resources on a page, identically to the "Items" and other browse page included with your Omeka site.
 
 ![Browse Preview block with the query element](sitesfiles/sitepg_browsepreview_query.png)
 
@@ -301,7 +302,8 @@ You can embed content from elsewhere on the internet using iFrames or other embe
 If you have the [Zotero Citations module](../modules/zoterocitation.md) installed, you can insert a Zotero bibliography into this field. Look for the Zotero button in the formatting menu (a big red Z). 
 
 ### Item with metadata
-This block displays an item along with all associated metadata (entered when creating or editing the [item](../content/items.md)), identically to the item-view page in your theme. 
+
+Displays an item along with all associated metadata (entered when creating or editing the [item](../content/items.md)), identically to the item-view page in your theme. 
 
 Add attachments in the same manner as the [media embed](site_pages.md#media-embed) page block.
 
@@ -313,7 +315,7 @@ Many themes will not show the primary media in this display, although some do. H
 
 ### Line break
 
-Line break creates a transparent or opaque line break on the page. Select whether the line is transparent or opaque from the dropdown.
+Adds a transparent or opaque line break to the page. Select whether the line is transparent or opaque from the dropdown.
 
 ![The line break block, dropdown selected to opaque, plus its layout preview.](sitesfiles/sitepg_line.png)
 
@@ -324,7 +326,7 @@ In Grid layout, you can set the length of the line using the Span setting:
 
 ### List of pages
 
-This block displays a linked list of pages. You may select from pages that are within the site. Other navigation items, such as Custom URLs and Browse pages, are not available.
+Displays a bullet list of linked pages. You may select from pages that are within the site. Other navigation items, such as Custom URLs and Browse pages, are not available.
 
 Click the "Add pages" button in the block to reveal a drawer that contains all of the pages in the site. Click on the individual page to add it to the list.
 
@@ -336,7 +338,7 @@ You may drag and nest pages into any order.
 
 ### List of sites
 
-This block displays a list of all of the sites on your Omeka S installation, similarly to the "Index of sites" page that can be shown at the root of your installation. This block has the following options:
+Displays a list of all of the sites on your Omeka S installation, similarly to the "Index of sites" page that can be shown at the root of your installation. This block has the following options:
 
 - Sort sites by: Alphabetical order (A-Z); Oldest first; Newest first. By default this is set to alphabetical. 
 - Maximum number of sites allows you to limit the number of sites that display in the block. If left blank, all sites will display.
@@ -353,31 +355,23 @@ Here is the List of Sites block as displayed in the Papers theme, with paginatio
 
 ![List of sites block on the public side.](sitesfiles/sitepg_slistPublic.png)
 
-
 ### Media embed
 
-Creates a block with one or more pieces of media associated with items in the item pool. 
+Displays one or more pieces of media associated with items in the site's item pool. 
 
 ![media block with no media attached](../sites/sitesfiles/sitepg_media.png)
 
-The Media block has options for the display of the media: 
+The Media block has the following options: 
 
-- Layout: choose from vertical or horizontal.
-- Media display: choose from embed media or thumbnail only.
-- Image type: choose from large, medium, and square.
+- Layout: choose from vertical or horizontal layout. A horizontal row of items will contain a maximum of 4 before wrapping to a new row, depending on the width of the page block.
+- Media display: choose to display the original uploaded media, or the Omeka-generated thumbnails only. If you embed media, videos, IIIF manifests, and other rich files will display at their original size, as well as audio players, depending on the width of the page block. If you choose thumbnails only, you will see derivative video thumbnails, and fallback images for media such as audio. Images will always show a derivative, the size chosen from one of the thumbnail sizes in the next dropdown. Note that you can only embed a PDF viewer using this block if the [PDF Embed module is installed and active](https://omeka.org/s/modules/PdfEmbed/){target=_blank}; otherwise a derivative image will display. 
+- Image type: choose from large, medium, and square thumbnail sizes for any images you have added to the set. These sizes are set [at an installation level](../configuration.md#thumbnails), but may appear smaller depending on the width of the page block.
 - Set the attachment title as:
 	- item title (title of the attached item);
-	- media title (title of the specific piece of media you select associated with the item); or
+	- media title (title of the specific piece of media you selected from the item); or
 	- no title.
 
-!!! note
-	If you want media to appear beside a block of text in the Normal flow layout, place a media block *above* an HTML block, and choose either left or right for block alignment. In the example below, the media has a thumbnail type of "medium", alignment "float right," and attachment title of the "item title": 
-
-	![A block of lorem ipsum text with a right-aligned small image embedded at the top of the paragraph](../sites/sitesfiles/sitepg_mediaalign.png)
-
-	Placing a media block *after* an HTML block in the Normal flow layout will cause the media to appear below the end of the HTML block contents.
-
-	In  Grid layout, you can place a media block before or after an HTML block and determine the placement based on the span you assign it.
+Each item added to the Media embed block can also have a rich-text caption that displays under the title. 
 
 To **add media to the block**, click the "Add attachment" button. 
 
@@ -389,15 +383,17 @@ If you have a large number of items to navigate, or multiple items with the same
  
 These options are:
 
-- Filter by class: opens a dropdown to select from all of the classes for the vocabularies in the Omeka S installation.
-- Filter by item set: opens a dropdown to select from all item sets in the installation, not just those associated with the site on which you are working.
-- Filter by item id: you can put in the specific item id for an item (the number which appears in the url when you are looking at the item on the admin). 
+- Filter by class: opens a dropdown to select from all of the classes for the vocabularies in the Omeka installation.
+- Filter by item set: opens a dropdown to select from all item sets in the installation (not just those added to the site on which you are working).
+- Filter by item ID: you can put in the specific Omeka ID for an item. 
 
-Once you have applied your changes to the filter, you must click the search button (magnifying glass) to apply the filters or run the search.  
+Once you have applied your changes to the filter, you must click the search button (magnifying glass icon) to apply the filters and run the search.  
 
 ![Select item drawer with filter options displayed](../sites/sitesfiles/sitepg_selectitemFilter.png)
 
-Once you’ve selected an item, the drawer will shift to that item’s information. You can add a caption and select which media (if more than one) you want to use. To return to the list of items, click the "Select item" button at the top of the drawer. To use the item displayed and apply the caption, etc, click the "Apply changes" button at the bottom of the drawer.
+Once you’ve selected an item, the drawer will shift to that item’s information. You can add a caption and select which media (if more than one) you want to use. To return to the list of items, click the "Select item" button at the top of the drawer. Be sure to click the "Apply changes" button at the bottom of the drawer. 
+
+If you wish to display multiple media from the same item, add the same item to the media embed block multiple times and manually choose the media for each entry. 
 
 ![Item view with apply changes option](../sites/sitesfiles/sitepg_applyitem.png)
 
@@ -405,27 +401,45 @@ To add multiple items at once, click the "quick add" slider just above the list 
 
 ![Select item drawer with quick add activated - every item in the view now has a checkbox.](../sites/sitesfiles/sitepg_selectitemQuick.png)
 
+!!! note
+	In the Normal Flow layout (not in Grid), if you want media to appear beside a block of text, place a media block *above* an HTML block and choose either left or right for alignment. In the example below, the media has a thumbnail type of "medium", alignment "right," and attachment title of the "item title": 
+
+	![A block of lorem ipsum text with a right-aligned item embedded at the top of the paragraph](../sites/sitesfiles/sitepg_mediaalign.png)
+
+	Placing a media block *after* an HTML block in the Normal flow layout will cause the media to appear below the end of the HTML block contents.
+
+	In  Grid layout, you can place a media block before or after an HTML block and determine the placement based on the span and position you assign it.
+
 ### oEmbed
 
-Allows you to embed media from third-party websites such as Flickr, Vimeo, YouTube and more. Input the link provided by the share feature in the site from which you are using media. You can't save the page without any URL in the oEmbed block, and you can't rewrite the URL after it has been saved.
+Allows you to embed media from third-party websites such as Flickr, Vimeo, YouTube, SoundCloud, and more. You can usually input the URL directly from your browser, or the link provided by the sharing feature from your chosen site. 
 
-![Input field for URL for oEmbed]
-(../sites/sitesfiles/sitepg_oEmbed.png)
+For example, links in these formats should all work: 
 
-After saving the URL you can view the Advanced settings, which include the uneditable information for the formatting of the oEmbed and a checkbox to refresh the oEmbed.
+- https://vimeo.com/381092531
+- https://www.youtube.com/watch?v=W8r-tXRLazs
+- https://youtu.be/W8r-tXRLazs?feature=shared
 
-![oEmbed advanced settings include the formatting information and refresh]
-(../sites/sitesfiles/sitepg_oEmbedadvanced.png)
+You cannot save the page without any URL in the oEmbed block, and you can't rewrite the URL after the page has been saved.
 
-The website that is the source of the media will send a hardcoded size that you can't modify unless you place the oEmbed in a smaller container. In the Normal layout, the oEmbed placement will be determined by the float. In Grid layout, it will span the number of columns that you choose.
+![Input field for URL for oEmbed](sitesfiles/sitepg_oEmbed.png)
 
-Depending on which site the embed is from, there will be different features available. Some examples include:
+After saving the URL you can view the Advanced settings, which includes information for the formatting of the oEmbed (uneditable), and a checkbox to refresh the oEmbed.
 
-- Flickr: includes buttons to share on Facebook, Tumblr, X, and Pinterest or to take you to the media on Flickr. The caption, creator, and attribution are also featured.
-- Vimeo: includes buttons to like, add to watch later, and share. In addition to the play and volume controls, there options to enable closed captions, view a transcript, view settings, make the video full screen, or view the video on Vimeo.
+![oEmbed advanced settings include the formatting information and refresh](sitesfiles/sitepg_oEmbedadvanced.png)
+
+The source of the media will send a hard-coded size that you cannot modify, except to place the oEmbed in a smaller container. In the Normal layout, the oEmbed placement will be determined by the float. In Grid layout, it will span the number of columns that you choose.
+
+Depending on which site the embed is from, there will be different features available inside the media display. Some examples include:
+
+- Flickr: includes buttons to share on Facebook, Tumblr, X, and Pinterest, or to take you to the media on Flickr. The caption, creator, and attribution are also featured.
+- Vimeo: includes buttons to like, add to watch later, and share. In addition to the play and volume controls, there are options to enable closed captions, view a transcript, view settings, make the video full screen, or view the video on Vimeo.
 - Youtube: includes buttons to make the video full screen and watch the video on YouTube.
 
-You can view a full list of sites that make list via [oEmbed's provider list](https://oembed.com/providers.json).
+You may find [oEmbed's provider list](https://oembed.com/providers.json){target=_blank} helpful.
+
+!!! note
+	Note that you can embed media from many of the oEmbed-enabled sites in other ways, which may allow you more styling and customization control. For example, you can add a Youtube video to an item and then display it with the Media embed block, or paste the embed code offered on Vimeo or Flickr into an HTML page block.
 
 ### Page date and time
 
@@ -462,15 +476,17 @@ Time format options:
 Displays the title of the page. This block is added by default to every new page, but can be deleted or rearranged. The page's title displays inside an `<h2>` tag. 
 
 ### Table of contents
-If the page has child pages, you can add a TOC block for those pages.
+If the page has child pages, you can add a TOC block for those pages. This is not a table-of-contents for the whole site, only for things that sit underneath the current page. 
 
-If the Omeka theme already displays a table of contents by default, inserting this block into your page will replace that display. For example, the Papers theme will show all the child pages of your chosen page just under the breadcrumb; if the TOC page block is added to the page, that will disappear. In Thanks Roy, the TOC subnavigation appears in a column to the left of the page content; if the TOC page block is added to the page, that column will disappear and the page contents will take up more screen width. 
+If the Omeka theme already displays a table of contents by default, inserting this block into your page will replace that display. For example, the Papers theme will show all the child pages of the current page just under the breadcrumb; if the TOC page block is added to the page, that will disappear. In Thanks Roy, the TOC subnavigation appears in a column to the left of the page content; if the TOC page block is added to the page, that column will disappear and the page contents will take up more screen width. 
 
-The Depth option allows you to set how many levels of child pages you want to display. The default is 1. Please enter a whole number. You cannot leave this blank.
+The Depth option allows you to set how many levels of child pages you want to display. The default is 1. Please enter a whole number. You cannot leave this blank. 
 
 ![Table of content block with the depth option set to 1.](sitesfiles/sitepg_toc.png)
 
-Add and arrange pages using the [Site Navigation](site_navigation.md) settings. If you wish to display pages in another order, use the [List of pages block](#list-of-pages). 
+Add and arrange pages using the [Site Navigation](site_navigation.md) settings. If you wish to display pages from across the site, or in a custom order, use the [List of pages block](#list-of-pages). 
+
+Note that you can turn on or off the page subnavigation in the [site settings](site_settings.md#general-settings). 
 
 ### Other blocks
 For module-specific blocks, such as [Collecting](../modules/collecting.md) or [Mapping](../modules/mapping.md), see the documentation for that module.
