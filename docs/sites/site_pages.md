@@ -166,8 +166,8 @@ Once you have configured the block, click "Apply changes". You must save the blo
 **Block alignment**, in **normal flow**, allows you to choose one of the four block positions: 
 
 - Default
-- Float Left
-- Float Right
+- Left
+- Right
 - Center. 
 
 Floating blocks left or right will cause them to occupy a maximum of one-third of the page, and may be smaller, depending on the block's contents. For example, a Media embed block with a 200-pixel thumbnail and a short title or caption will only occupy 200 pixels plus padding. If the text in the block is longer, the block will take up its full allowable width before wrapping the text. 
