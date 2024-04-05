@@ -190,7 +190,7 @@ Foundation also models significant theme customization tools for developers, inc
 And the following page templates:
 
 * Default: Constrain the page content to a width of 1200 pixels, if the navigation is set to "horizontal dropdown" rather than "full height column". This will include page subnavigation inside the 1200 pixels if it is displayed.
-* Full-width: Occupy all available width in the browser window, minus the navigation column. Page subnavigation will appear above page content rather than beside it.
+* Full-width: Occupy all available width in the browser window, minus the vertical navigation column if applicable. Page subnavigation will appear above page content rather than beside it.
 
 ## Configure resource pages
 
