@@ -70,7 +70,7 @@ In **Normal flow**, you will be able to select a [template for the page](#page-t
 
 In **Grid**, you will see two buttons:
 
-- The Preview Layout button will preview the layout in the right-hand drawer. This will show you all the blocks currently on the page and their width in terms of the columns on the page. It will also show block groups with an extra outline around the group's contents. 
+- The Preview Layout button (a small icon of a 2x3 grid of blocks) will preview the layout in the right-hand drawer. This will show you all the blocks currently on the page and their width in terms of the columns on the page. It will also show block groups with an extra outline around the group's contents. 
 - The Configure Layout button (gear icon) will allow you to select a [template for the page](#page-templates), and define the gaps (in pixels) between the columns and rows of blocks.
 - If you make a mistake in your grid page layout settings, you can reset the page to the most recently saved version by clicking the "Restore" button that appears to the right of these buttons.
 
@@ -147,9 +147,9 @@ Text alignment will affect the contents of the block, including images, text, an
 
 **Constraints** allows you to set a maximum width and/or a minimum height for the block. 
 
-**Padding** allows you to enter numbers (in pixels) for the top, left, right, and bottom padding inside the block. You may wish to utilize this when setting a background image or color on an HTML block filled with text; the background will extend to the full width of the block, while padding can be used to keep text from touching the edges. 
+**Padding** allows you to enter numbers for the top, left, right, and bottom padding inside the block. The default (a number without any units) is in pixels; you can also enter `em`, `rem`, `cm`, `ct`, `%` values, etc. You may wish to utilize this when setting a background image or color on a block filled with text; the background will extend to the full width of the block, while padding can be used to keep text from touching the edges.
 
-**Background** allows you to select a background for the block: either a color ([using a hexadecimal or word value](https://www.w3schools.com/html/html_colors.asp){target=_blank}) or an image, from the assets available in the installation. 
+**Background** allows you to select a background for the block: either a color ([using a hexadecimal, with a hashtag character (`#`), or word value](https://www.w3schools.com/html/html_colors.asp){target=_blank}) or an image, from the assets available in the installation. 
 
 If you choose an image, the three dropdown menus below will be useful: 
 
