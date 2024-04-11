@@ -12,7 +12,7 @@ The site info settings for an Omeka S site are where you can change the basic in
 * **Title**: a text field, with a maximum of 190 characters.
 * **Slug**: the URL for your site, which will be generated automatically from the title if you leave this blank.
 * **Summary**: a brief description of what your site is about, which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
-* **Thumbnail** - a small image for your site, which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
+* **Thumbnail** - a small image for your site, which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites). This will be uploaded to and selected from your installation's assets. We recommend using a small image, no more than 240 pixels wide (the largest it will display, on the landing page). You can also [set a favicon for your site](#general-settings) on the settings tab.
 
 ![Info screen for an Omeka S site with a thumbnail and a summary.](../sites/sitesfiles/sites_siteinfo.png)
 

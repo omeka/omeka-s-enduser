@@ -28,9 +28,9 @@ The "New site" page has two tabs: **Info** and **Theme**.
 ### Info tab
 
 * Give your site a **title** (required).
-* Create a **slug** for the site’s url. The url will be `youromekainstall.org/s/slug`. This is optional - if you leave this field blank, Omeka S will create a slug based on the site title.
-* Create a **summary** for your site: a brief description of what it is about.  The summary text will appear on your installation's landing page and on the [list of sites](../sites/site_pages#list-of-sites) page block.
-* Upload a **thumbnail** for your site, or select one from your installation's assets, which will appear alongside the summary text on the landing page and in the [list of sites page block](site_pages.md#list-of-sites). We recommend using a small square image, no more than 240 by 240 pixels (the largest it will display, on the landing page). You can also [set a favicon for your site later](site_settings.md#general-settings).
+* Create a **slug** for the site’s URL (optional). The URL for this site will be `youromekainstall.org/s/slug`. If you leave this field blank, Omeka S will create a slug based on the site title.
+* Create a **summary** for your site: a brief description of what it is about (optional). The summary text will appear on your installation's landing page and on the [list of sites](../sites/site_pages#list-of-sites) page block.
+* Upload a **thumbnail** for your site, or select one from your installation's assets (optional). This will appear alongside the summary text on the landing page and in the [list of sites page block](site_pages.md#list-of-sites). We recommend using a small image, no more than 240 pixels wide (the largest it will display, on the landing page). You can also [set a favicon for your site later](site_settings.md#general-settings).
 
 ![Admin tab for a new site with nothing entered](../sites/sitesfiles/sitesadd_admin.png)
 
