@@ -32,12 +32,12 @@ The "New site" page has two tabs: **Info** and **Theme**.
 * Create a **summary** for your site: a brief description of what it is about (optional). The summary text will appear on your installation's landing page and on the [list of sites](../sites/site_pages#list-of-sites) page block.
 * Upload a **thumbnail** for your site, or select one from your installation's assets (optional). This will appear alongside the summary text on the landing page and in the [list of sites page block](site_pages.md#list-of-sites). We recommend using a small image, no more than 240 pixels wide (the largest it will display, on the landing page). You can also [set a favicon for your site later](site_settings.md#general-settings).
 
-![Admin tab for a new site with nothing entered](../sites/sitesfiles/sitesadd_admin.png)
+![Admin tab for a new site with nothing entered](../sites/sitesfiles/siteadd_admin.png)
 
 ### Theme tab
 Select from the [installed themes](site_theme.md). Each theme appears as a tile with a screenshot of the theme, the theme name, and a link to its creator. When a theme is selected, it will highlight in gray and a checkbox will appear in the bottom right corner of the tile.
 
-![Theme tab with default theme selected](../sites/sitesfiles/sitesadd_theme.png)
+![Theme tab with default theme selected](../sites/sitesfiles/siteadd_theme.png)
 
 ### Publication
 In the upper right corner of the screen, next to the "Add" button, you can set the visibility of your site by clicking on the eye icon to make the site public or private.

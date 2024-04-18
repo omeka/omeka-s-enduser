@@ -344,11 +344,11 @@ Displays a bullet list of linked pages. You may select from pages that are withi
 
 Click the "Add pages" button in the block to reveal a drawer that contains all of the pages in the site. Click on the individual page to add it to the list.
 
-![Page edit interface with List of pages block activated to open page select drawer](sitesfiles/sitespg_listPagesAdd.png)
+![Page edit interface with List of pages block activated to open page select drawer](sitesfiles/sitepg_listPagesAdd.png)
 
 You may drag and nest pages into any order.
 
-![List of pages block with pages showing nesting](sitesfiles/sitespg_listPagesOrder.png)
+![List of pages block with pages showing nesting](sitesfiles/sitepg_listPagesOrder.png)
 
 ### List of sites
 

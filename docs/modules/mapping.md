@@ -256,7 +256,7 @@ To add multiple items at once, click the "Quick add" slider just above the list 
 #### Query (Map by query block)
 In order to use this block, you will need to run a query, or search, in your items. From the search results page, copy everything in your browser's address bar starting with the question mark all the way to the end of the search url (to the right).
 
-![The address bar and very top of a search results page.](../sites/sitesfiles/sitespg_bpquery.png)
+![The address bar and very top of a search results page.](../sites/sitesfiles/sitepg_bpquery.png)
 
 Paste the query string into the Query field in the Map by query block. Note that at no point will items display on the admin side. You will need to go to the public view to see the items which result from your query.
 
