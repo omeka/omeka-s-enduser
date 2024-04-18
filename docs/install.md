@@ -5,7 +5,7 @@ In order to install Omeka S, you will need a server running the following:
 
 - Linux
 - Apache (with [AllowOverride](https://httpd.apache.org/docs/2.4/mod/core.html#allowoverride){target=_blank} set to "All" and [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html){target=_blank} enabled)
-- MySQL, minimum version 5.6.4 (or MariaDB, minimum version 10.0.5)
+- MySQL, minimum version 5.7.9 (or MariaDB, minimum version 10.2.6)
 - PHP, minimum version 7.4, with [PDO](http://php.net/manual/en/intro.pdo.php){target=_blank}, [pdo_mysql](http://php.net/manual/en/ref.pdo-mysql.php){target=_blank}, and [xml](http://php.net/manual/en/intro.xml.php){target=_blank} extensions installed
 - Optional, to create thumbnails: ImageMagick version 6.7.5 or greater, the PHP `imagick` extension, or the PHP `gd` extension.
 
@@ -13,7 +13,7 @@ In order to install Omeka S, you will need a server running the following:
 
 ## Installation methods
 
-### Installing from download
+### Install from download
 
 !!! note
 	Before you install Omeka S, you need to create a MySQL database and user. Omeka S must have a dedicated database; you cannot use a prefix for a database used by another system or Omeka S or Classic installation. For more information on creating a database and user, please see your hosting's support documentation or talk to your system administrator.
@@ -25,7 +25,7 @@ In order to install Omeka S, you will need a server running the following:
 1. Make sure the `files/` directory on the server is writable by Apache.
 1. In your web browser, navigate to the `admin` page for your Omeka S installation, where you can complete the installation. For example, if you uploaded the directory contents to `https://yourwebsite.org/myomekas/`, then navigate to `https://yourwebsite.org/myomekas/admin`.
 
-### Installing from GitHub
+### Install from GitHub
 
 Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md){target=_blank} of the Omeka S GitHub repository.
 
@@ -83,7 +83,7 @@ Use the [System Information page](admin-dashboard.md#system-information) to veri
 
 See [Configuration Options](configuration.md) to learn about modifying thumbnail generation, setting the PHP path manually, and more. 
 
-### Starting to work with your installation
+### Work with your installation
 
 Once you have correctly configured all of the technical components of your Omeka S installation, you will want to begin by: adding other users; creating resource templates, vocabularies, and item sets; creating one or more sites; then adding items, and assigning those resources to your sites. Continue on with the user manual to learn more about these parts of Omeka S.
 
@@ -92,7 +92,7 @@ Once you have correctly configured all of the technical components of your Omeka
 
 ## Updating
 
-### Updating manually
+### Update manually
 
 1. Download the latest release from the release page.
 1. Make a copy of your `/config` directory. You will need to restore your `local.config.php` and `database.ini` files from that copy.
@@ -103,7 +103,7 @@ Once you have correctly configured all of the technical components of your Omeka
     - For significant version updates, you may also have to install an updated version of your modules and themes. The release notes for the version will indicate whether or not those updates will be likely. Additionally, once you complete your migrations using your browser, the modules and themes that require new versions will be clearly marked on their respective pages.
 1. In your web browser, go to your site's admin page (`/myomekas/admin`) and run any migrations that are needed.
 
-### Updating from GitHub
+### Update from GitHub
 
 Basic instructions for installing and updating from GitHub can be found in the [ReadMe](https://github.com/omeka/omeka-s/blob/develop/README.md){target=_blank} of the Omeka S GitHub repository.
 

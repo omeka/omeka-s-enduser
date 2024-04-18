@@ -12,7 +12,7 @@ The site info settings for an Omeka S site are where you can change the basic in
 * **Title**: a text field, with a maximum of 190 characters.
 * **Slug**: the URL for your site, which will be generated automatically from the title if you leave this blank.
 * **Summary**: a brief description of what your site is about, which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
-* **Thumbnail** - a small image for your site, which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites).
+* **Thumbnail** - a small image for your site, which will appear on your installation's landing page and on the [list of sites](../sites/site_pages.md#list-of-sites). This will be uploaded to and selected from your installation's assets. We recommend using a small image, no more than 240 pixels wide (the largest it will display, on the landing page). You can also [set a favicon for your site](#general-settings) on the settings tab.
 
 ![Info screen for an Omeka S site with a thumbnail and a summary.](../sites/sitesfiles/sites_siteinfo.png)
 
@@ -37,7 +37,7 @@ To implement any changes you make, click "Save" at the top right of the browser 
 
 ### General settings
 
-![general settings, all at default](../sites/sitesfiles/sites_settingsgen.png)
+![General site settings, with the default options when making a new site.](../sites/sitesfiles/sites_settingsgen.png)
 
 **Auto-assign new items**: a checkbox which sets whether new items are automatically added to this site. If checked, every new item will be added to the site, regardless of the item's owner. Note that item owners may unassign their items from the site at any time, in the item's edit pages.
 
@@ -46,8 +46,6 @@ To implement any changes you make, click "Save" at the top right of the browser 
 - Item page: clicking on the attachment takes users to the item page associated with the attached media.
 - Media page: clicking on the attachment takes users to the media page.
 - Direct link to file: clicking on the attachment takes user to the file alone.
-
-**Embed media on item pages**: when checked, any linked media (such as videos) will be embedded on the item pages. When unchecked, site visitors will click through to view playable media.
 
 **Show page pagination**: when checked, "Previous" and "Next" links will display at the bottom of every page in the site, proceeding through your navigation. If unchecked, these links will not display.
 
@@ -64,7 +62,7 @@ When users are logged in, the user bar has the following options:
 
 ![a blue bar across the top of the image displays the following words in light blue text, indicating a link: Stackable Sandbox, Jane Austen, Pages, Edit Page, Signed in as Megan, and a button to Logout.](../sites/sitesfiles/sites_userbarin.png)
 
-When users are not logged, the user bar only displays a login option.
+If you opt to always show the user bar, when any site visitor navigates to your site who is not logged in, the user bar appears and displays a login option.
 
 ![A blue bar across the top of the image only has a small button reading "Log In". Below this, the site's title "A Tin Box" is displayed in black text on a white background.](../sites/sitesfiles/sites_userbarout.png)
 
@@ -74,7 +72,21 @@ The options for this setting are:
 - When identified (when logged in)
 - Always.
 
-**Disable JSON-LD embed**: Check this box to disable JSON-LD embedding on resource browse and show pages.
+**Disable JSON-LD embed**: Check this box to disable JSON-LD embedding on resource browse and show pages for this site. This is also available as a [global setting at the installation level](../admin/settings.md).
+
+**Favicon**: Choose from your assets, or upload a file, to appear in the small browser window/tab icon space. A [favicon](https://www.w3schools.com/html/html_favicon.asp){target=_blank} should be a small image around 32x32 pixels in size uploaded specifically for this purpose. Favicons can be [set at an installation level](../admin/settings.md#general) as well as on each individual site.
+
+**Page subnavigation display**: Pages can be navigated from top to bottom according to the order used on the [navigation](site_navigation.md) tab, using the "Previous" and "Next" buttons that appear at the bottom of each page. Some themes may also show a breadcrumb at the top of each page. 
+
+Where pages are arranged in a hierarchy in the navigation, a subnavigation is also displayed to help visitors move from parent to child pages, and between sibling pages. When shown, the subnavigation will display the current page's children if it has any. When a child page (or a "leaf page", as in leaves of a tree) shows subnavigation, it will display itself in context with its siblings. 
+
+You can opt to:
+
+- Show the subnavigation on all pages
+- Hide it on leaf pages (the default setting)
+- Hide the subnavigation wherever it may appear.
+
+You may wish to use the [Table of contents page block](site_pages.md#table-of-contents) or the [List of pages page block](site_pages.md#list-of-pages) to help users navigate your site.  
 
 ### Language
 
@@ -108,9 +120,13 @@ Depending on the [site theme](../sites/site_theme.md), you may want to make this
 
 **Show attached pages**: When this box is checked, site pages to which an item is attached will display on the public view of that item.
 
-**Show value annotations**: When this box is checked, Value Annotations will be visible on the public views for resources (items, item sets, media).
+**Property label information**: Where metadata are displayed, site visitors see a human-readable label for the vocabulary term used (such as "Title" for `dcterms:title`). You can choose to also include the full term, or the vocabulary's name, in brackets after each label - for example, to display "Description (dcterms:description)" or ""Description (Dublin Core)" instead of just "Description". 
+
+**Value annotations**: Where [annotations](../content/items.md#value-annotation) are used, you can choose to always hide them on this site, to show an icon which will expand when clicked on, or to show them expanded by default with an icon available to collapse them. Remember that value annotations are applied at the resource level and are therefore available installation-wide, not on a site-by-site basis.
 
 **Exclude resources not in site**: When this box is checked, the site will not display [linked Omeka resources](../content/items.md#linked-resources) that are not [added as resources to the site](site_resources.md).
+
+**Embed media on item pages (legacy)**: Check this where themes do not show an item's media on the item-view page by default. 
 
 ### Search
 
@@ -132,3 +148,7 @@ Depending on the [site theme](../sites/site_theme.md), you may want to make this
 Click in the field to add a template; you can add more than one template by clicking in the field again.
 
 **Restrict to templates** will restrict search results to only those items which are using the selected templates.
+
+### Sections added by modules
+
+If you see extra sections on this page added by modules, go to the specific module's page in this user manual for more information on configuration. 

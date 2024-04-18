@@ -2,7 +2,7 @@
 
 The Theme section of each Site menu allows you to select the theme for your site, and to set theme-specific settings. Each site on your Omeka S installation can have a separate theme and numerous customizations. A fresh Omeka S install comes with one theme, called Default.
 
-## Installing themes
+## Install themes
 
 In order to appear on the **Themes** page for sites, themes must be manually added to the `/themes` folder of the installation, using an FTP program or an SSH connection.
 
@@ -33,7 +33,7 @@ Navigate to the `/themes` folder.
 1. On the Omeka S installation dashboard, go to a Site, then to the Themes page, and verify that you are seeing the new version of the theme.
 1. Check to be sure your settings have been preserved and there are no errors. After this, you can safely delete the old theme folder that you saved to your computer.
 
-## Selecting a theme
+## Select a theme
 
 Currently installed themes will be available for selection in the process of [adding a new site](../sites/index.md). Click to the "Theme" tab before saving to select one, then save your site. If you do not select a theme, your new site will use the Default theme.
 
@@ -61,27 +61,35 @@ To edit the settings of your selected theme, click on the button labeled "Edit t
 
 ![Theme settings button](../sites/sitesfiles/sitetheme_settings.png)
 
-Note that your settings for a specific theme on a site will be saved when you change themes. For example, if you customized the footer for the default theme, then switched to using The Daily for a while, then switched back to the default theme, your custom footer will still be there.
+Note that your settings for a specific theme on a site will be saved when you change themes. For example, if you customized the footer for the Default theme, then switched to using The Daily for a while, then switched back to the Default theme, your custom footer will still be there.
 
-### Settings options
+### Settings
 
 ![Logo option](../sites/sitesfiles/sitetheme_configure.png)
 
-Depending on which theme you have selected, you may see any of the following setting options:
+Depending on which theme you have selected, you may see the following options:
 
 #### Logo
 
 (All themes)
 
-Upload a asset (file) to function as a logo in the header of your site. Allowed file types are: jpg, gif, png, svg, and svgz.
+Upload an asset to function as a logo in the header of your site. Allowed file types are: jpg, gif, png, svg, and svgz.
 
 This asset is not associated with any of the items, and will be stored separately; once uploaded to a site you will be able to select it again without re-uploading even if you change themes for a while. Any asset uploaded to one site will be available for all sites on the installation.
 
 To upload a logo, click the "Select" button. This will open a sidebar where you can either upload a new file from your computer or choose from assets already uploaded to the installation.
 
-Note that the logo completely replaces the header, including the site title, for the site, so you may want to consider an image with text if it is important to you that users see the site title.
+Note that the logo may completely replace the header, including the site title, for the site, so you may want to consider an image with text if it is important to you that users see the site title.
 
 To remove a logo, click the "Clear" button in that block (only visible when a logo is active) and save your changes.
+
+#### Banner
+
+(All themes)
+
+Upload an asset to display across the top of each page of your site. This may be a logo, or a visual accent. In some themes this image sits behind text. This is sometimes called "header" rather than a "banner".
+
+Most themes also allow you to configure the position of the banner, or its height. 
 
 #### Footer content
 
@@ -101,9 +109,9 @@ Top Navigation Depth allows you the limit the depth of the top navigation menu o
 
 #### Color selection
 
-(Default, Cozy, The Daily)
+(Default, Cozy, The Daily, Thanks Roy, Freedom)
 
-The themes Default, Cozy, and The Daily include an option to enter values for the *main accent color*; Cozy also has an option for the *navigation background color*.
+The themes Default, Cozy, and The Daily include an option to enter values for the **main accent color**; Cozy also has an option for the **navigation background color**. Thanks Roy has eight separate color choices. 
 
 ![Color option fields](../sites/sitesfiles/sitetheme_color.png)
 
@@ -121,7 +129,7 @@ The default values are stored in the prompt text for the field. For the Cozy the
 
 #### Layout for browse pages
 
-(Center Row, Foundation)
+(Center Row, Foundation, Freedom)
 
 Select how to display items within their browse views.
 
@@ -129,6 +137,20 @@ Select how to display items within their browse views.
 * **List**: Items are stacked into a single column.
 * **Toggle** (default grid): Site visitors can choose to display the browse views as grids or lists, with grids as the default.
 * **Toggle** (default list): Site visitors can choose to display the browse views as grids or lists, with lists as the default.
+
+#### Truncate Body Property 
+
+Set how much of the browse body property displays on the browse page, and in the browse preview page block. You can:
+	* **Show full value** which displays all of the property text.
+	* **Show 4 lines and fade out** which displays 4 lines of text with a fade at the end of the text block.
+	* **Show 4 lines and ellipsis** which displays 4 lines of text concluding with an ellipsis (...).
+
+Note that fading out to white may not display well if your browse preview page block has a background color or image. 
+
+#### Media Caption in Viewer
+
+Allows you to select which metadata field (from Dublin Core Title or Dublin Core Description) appears with the content in the Lightbox gallery viewer where it appears (e.g. item view pages). 
+
 
 ### Foundation theme settings
 
@@ -144,10 +166,31 @@ Settings not described above:
 * **Navigation layout:** Global navigation can display as a **horizontal top bar with optional dropdown menus** or a **left vertical column**.
 * **Show Top Navigation Child Pages:** Toggle display of child pages within the main navigation. If unchecked, only the top-level navigation will display.
 * **Metadata Layout for Show Pages:** Resource metadata can show display as **stacked** with properties as headings above their values, or **inline** with properties as headings inline with their values.
-* **Truncate Body Property:** Set how much of the browse body property displays on the browse page. You can:
-	* **Show full value** which displays all of the property text.
-	* **Show 4 lines and fade out** which displays 4 lines of text with a fade at the end of the text block.
-	* **Show 4 lines and ellipsis** which displays 4 lines of text concluding with an ellipsis (...).
+
+Foundation also models significant theme customization tools for developers, including the most development on page and block templates. Foundation includes the following block templates:
+
+* Asset
+	* Card: Uses [Foundation Framework's card container](https://get.foundation/sites/docs/card.html){target=_blank} styles.
+	* Media object: Uses [Foundation Framework's media object container](https://get.foundation/sites/docs/media-object.html){target=_blank} styles.
+* Browse preview
+	* List: Ignores theme setting for browse view layouts and displays all resources as a single column list.
+	* Grid: Ignores theme setting for browse view layouts and displays all resources in a grid that maxes out at 4 columns.
+	* Toggle (default: list): Ignores theme setting for browse view layouts and lets the user choose their browse style, defaulting to a single column list of resources.
+	* Toggle (default: grid): Ignores theme setting for browse view layouts and lets the user choose their browse style, defaulting to a grid of resources maxing out at 4 columns.
+* Item with metadata
+	* Large media left: A 2-column layout with the item media rendered to the left of the metadata.
+	* Large media right: A 2-column layout with the item media rendered to the right of the metadata.
+* List of pages
+	* With container: Provides a gray box container.
+* List of sites
+	* Card: Uses [Foundation Framework's card container](https://get.foundation/sites/docs/card.html){target=_blank} styles for each site.
+* Page title
+	* Accent: Renders the page title with the theme's primary color as a background color.
+
+And the following page templates:
+
+* Default: Constrain the page content to a width of 1200 pixels, if the navigation is set to "horizontal dropdown" rather than "full height column". This will include page subnavigation inside the 1200 pixels if it is displayed.
+* Full-width: Occupy all available width in the browser window, minus the vertical navigation column if applicable. Page subnavigation will appear above page content rather than beside it.
 
 ## Configure resource pages
 
@@ -161,7 +204,7 @@ When on the Theme page of a Site, your current theme will appear at the top, wit
 
 Note that your settings for a specific theme on a site will be saved if you change themes. For example, if you customized the item page for the Default theme, then switched to using Foundation for a while, then switched back to the Default theme, your item page settings would be retained.
 
-### Selecting regions and blocks
+### Select regions and blocks
 In the right sidebar, select a region from the dropdown menu, and then add a block to it from the list of available blocks by clicking on the block name. Blocks may be reordered or moved to other regions by dragging and dropping.
 
 To remove a block, click the delete icon and then save the page. It will once again appear in the right sidebar.

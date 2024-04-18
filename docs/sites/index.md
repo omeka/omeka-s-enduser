@@ -20,7 +20,7 @@ Clicking on the site title will take you to a summary page for the site which di
 
 ![show page for the site "What Does This Look Like" indicating that the theme is default and the slug is public views.](../sites/sitesfiles/sites_quickshow.png)
 
-## Adding sites
+## Add a site
 To create a site, click the "Add new site" button in the upper right-hand corner of the site browse page.
 
 The "New site" page has two tabs: **Info** and **Theme**.
@@ -28,16 +28,16 @@ The "New site" page has two tabs: **Info** and **Theme**.
 ### Info tab
 
 * Give your site a **title** (required).
-* Create a **slug** for the site’s url. The url will be `youromekainstall.org/s/slug`. This is optional - if you leave this field blank, Omeka S will create a slug based on the site title.
-* Create a **summary** for your site: a brief description of what it is about.  The summary text will appear on your installation's landing page and on the [list of sites](../sites/site_pages#list-of-sites) page block.
-* Upload a **thumbnail** for your site, which will replace the summary text on the landing page or in the list of sites block.
+* Create a **slug** for the site’s URL (optional). The URL for this site will be `youromekainstall.org/s/slug`. If you leave this field blank, Omeka S will create a slug based on the site title.
+* Create a **summary** for your site: a brief description of what it is about (optional). The summary text will appear on your installation's landing page and on the [list of sites](../sites/site_pages#list-of-sites) page block.
+* Upload a **thumbnail** for your site, or select one from your installation's assets (optional). This will appear alongside the summary text on the landing page and in the [list of sites page block](site_pages.md#list-of-sites). We recommend using a small image, no more than 240 pixels wide (the largest it will display, on the landing page). You can also [set a favicon for your site later](site_settings.md#general-settings).
 
-![Admin tab for a new site with nothing entered](../sites/sitesfiles/sitesadd_admin.png)
+![Admin tab for a new site with nothing entered](../sites/sitesfiles/siteadd_admin.png)
 
 ### Theme tab
 Select from the [installed themes](site_theme.md). Each theme appears as a tile with a screenshot of the theme, the theme name, and a link to its creator. When a theme is selected, it will highlight in gray and a checkbox will appear in the bottom right corner of the tile.
 
-![Theme tab with default theme selected](../sites/sitesfiles/sitesadd_theme.png)
+![Theme tab with default theme selected](../sites/sitesfiles/siteadd_theme.png)
 
 ### Publication
 In the upper right corner of the screen, next to the "Add" button, you can set the visibility of your site by clicking on the eye icon to make the site public or private.
@@ -52,7 +52,7 @@ When you are ready, click the "Add" button in the upper right corner. You cannot
 
 If you decide you do not want to create this site, click the "Cancel" button in the upper right next to the "Add" button.
 
-## Managing sites
+## Manage sites
 To manage a site, navigate to the **Sites** screen from the admin dashboard. Click either on the site’s title or the edit button (pencil icon) in the list of sites. 
 
 This will take you to the site's Info tab, and open the context menu for that site in the left-hand navigation. 
