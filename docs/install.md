@@ -42,6 +42,7 @@ Suggestions from our users include:
 -   [HostGator](http://hostgator.com){target=_blank} - uses Softaculous
 -   [TMD Hosting](https://www.tmdhosting.com){target=_blank} - uses Softaculous
 -   [Webuzo](http://webuzo.com){target=_blank} - uses Softaculous.
+-   [RefBytes](https://manage.refbytes.com){target=_blank} - Offers simple Omeka and Omeka S installation and management [Learn More](https://manage.refbytes.com/documentation/introduction){target=_blank}
 
 ## Initial setup
 
