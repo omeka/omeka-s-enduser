@@ -18,11 +18,15 @@ Small white buttons on the left side of the map control and modify the appearanc
 
 * **Zoom in**: The small white square with a black plus sign. Each click zooms in one step (between 0 and 19).
 * **Zoom out**: The small white square with black minus sign. Each click zooms out one step (between 0 and 19).
-* **Draw a Marker**: The small white square with black bubble marker. When you click the button your pointer becomes a blue marker. Click again on the map to place the marker.
-* **Move Marker**: The small white square with black box and pencil icon. This option is only available after a marker has been added. Click the button and a pink box appears around each marker. Click a marker to move it. Click again to place. Use the grey buttons to "Save" or "Cancel".
-* **Delete Marker**: The small white button with a trashcan icon. This option is only available after a marker has been added. Click the icon to select a marker. Click the marker to be removed and it will disappear. Use the grey buttons to "Save" or "Cancel" these changes.
-* **Search Address**: The small white square with a black magnifying glass icon. Click to enter an address in the search bar.
-* **Set the current view as default view**: The small white square with a target or crosshair symbol. The map will default to a zoomed out (global) view. Click to set the current view as the default view for this item.
+* **Full Screen**: View this map expanded to fit the screen of your device.
+* **Draw a polyline**: View this map expanded to fit the screen of your device.
+* **Draw a polygon**: View this map expanded to fit the screen of your device.
+* **Draw a rectangle**: View this map expanded to fit the screen of your device.
+* **Draw a marker**: The small white square with black bubble marker. When you click the button your pointer becomes a blue marker. Click again on the map to place the marker.
+* **Edit layers**: The small white square with black box and pencil icon. This option is only available after a marker has been added. Click the button and a pink box appears around each marker. Click a marker to move it. Click again to place. Use the grey buttons to "Save" or "Cancel".
+* **Delete layers**: The small white button with a trashcan icon. This option is only available after a marker has been added. Click the icon to select a marker. Click the marker to be removed and it will disappear. Use the grey buttons to "Save" or "Cancel" these changes, or to "Clear all" markers currently on the map.
+* **Enter address**: The small white square with a black magnifying glass icon. Click to enter an address in the search bar.
+* **Set the current view as default view**: The small white square with a target or crosshair symbol. The map may have a default zoom level based on the site settings, or a zoom level containing all existing markers if applicable. Click to set the current view as the default view for this item.
 * **Go to current default view**: The small black square with a black box around a dot. This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
 * **Clear the default center and zoom level**: The small white square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
 
@@ -41,51 +45,57 @@ The item view screen will not show a "Mapping" tab unless there is geolocation m
 To find the point where you want to locate the marker, you can do one of the following:
 
 * Zoom and drag to find the location.
-* Type the place name into the Search Address field (see Figure 4 below).
+* Type the place name into the Search Address field (see the image below).
 	* Note that this will populate as you type, and will not search locations which do not match the formatting of the search function.
 * Enter latitude and longitude coordinates into the search box. These should be formatted as decimals, for example `38.897222, -77.064167`, not `38° 53′ 50″ N, 77° 3′ 51″ W`.
 
 ![Mapping tab with a search for "Roosevelt Island" in the search view. Below the search field are a number of suggested locations.](../modules/modulesfiles/Mapping_itemSearch.png)
 
-Click on the **Draw a Marker** tool in the left hand toolbar. Your cursor will become a marker which can move around the map. To set the point, click on the map.
+When you are centered on your intended location, you can then:
+
+* Use the line tool to define a line across the map. This can be used to, for example, position an item along a border or a street. A line has a start and end and cannot be connected to make a shape. 
+* Use the polygon or rectangle tool to define a shape across the map. This can be used to, for example, enclose a rough area of relevance (such as a city or country) or indicate a potential range of locations (for example, where the precise location of a photo is not known). 
+* Click on the marker tool; your cursor will become a marker. To set the point, click on the map.
 
 ![Mapping tab with an active marker being drawn. The marker has a tooltip saying "click map to place marker"](../modules/modulesfiles/Mapping-drawMarker.png)
 
 #### Edit markers
 
-You can now click on the marker to add a label which will display on [public map views](#public-view) of the item. Be aware that this will display in a large font.
+You can now click on the marker or shape to add a label that will display on [public map views](#public-view) of the item. Be aware that this will display in a large font.
 
 ![Closeup of map with a marker selected. There is a field to enter the maker label.](../modules/modulesfiles/Mapping-addLabel.png)
 
-When you are adding a label, you can also add an image to display on the marker when clicked in the [public view](#public-view). You can only select from images which have already been [attached to the item as media](../content/items.md#media). To remove the image, select "No Image" from the sidebar.
+You can also add an image to display on the feature when clicked in the [public view](#public-view). You can only select from images which have already been [attached to the item as media](../content/items.md#media). To remove the image, select "No Image" from the sidebar.
 
 ![Marker selected with Image added. The media is also visible in the sidebar, along with an option for "no image"](../modules/modulesfiles/Mapping-addImage.png)
 
-To edit the label or image again, click on the marker. This will open the options for the label and image, as seen above.
+Neither field is required, but if you choose an image without entering a label, the media title will appear in the label field. This can be removed. 
 
-To **move a marker** you have added, use the "Move markers" button on the left hand toolbar (small white square with black box and pencil icon). Any marker on the map will become highlighted in a red, dotted-line outline. Click and drag the marker you want to move.
+To edit the label or image again, click on the feature. This will open the options for the label and image, as seen above.
 
-To apply your changes, click the "Save" option which opens from the "Move markers" button. If you do not save, the marker will not be moved.
+To **move a marker or shape**, use the "Edit layers" button on the left hand toolbar (small white square with black box and pencil icon). Any feature on the map will become highlighted in a red, dotted-line outline. Click and drag the feature you want to move. Rectangles can be turned into polygons using this tool, and individual points in lines and polgyons can be removed by clicking on them without dragging (a polygon requires a minimum of three points). 
+
+To apply your changes, click the "Save" option that opens from the "Edit layers" button. If you do not save, the marker will not be moved.
 
 ![Marker being moved](../modules/modulesfiles/Mapping-moveMarker.png)
 
-To **delete a marker**, first click the "Delete markers" button in the left hand toolbar (trash can icon). Click on the marker you want to delete; this will remove the marker from the map. In order to make the deletion permanent, you must click "Save" in the menu which opens from the "Delete markers" button.
+To **delete a marker**, first click the "Delete layers" button in the left hand toolbar (trash can icon). Click on the marker or shape you want to delete; this will remove the feature from the map. In order to make the deletion permanent, you must click "Save" in the menu which opens from the "Delete layers" button.
 
-Note that you can use the "Clear all" button in the menu which opens form the "Delete markers" button to clear all markers on the map.
+Note that you can use the "Clear all" button in the menu which opens form the "Delete layers" button to clear all features on the map.
 
 ![Marker being deleted.](../modules/modulesfiles/Mapping-deleteMarker.png)
 
 #### Map display
 
-You can also set the map's default display zoom level and center, independently of the marker(s) you place. The default is to center on one marker and zoom fully in, or to zoom out far enough to contain all markers in the map view.
+You can also set the map's default display zoom level and center, independently of the features you place. The default is to center on one feature and zoom fully in, or to zoom out far enough to contain all features in the map view.
 
-* **Set the current view as default view**: The small white square with a target or crosshair symbol. The map will default to a zoomed out (global) view. Click to set the current view as the default view for this item.
-* **Go to current default view**: The small black square with a black box around a dot. This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
-* **Clear the default center and zoom level**: The small white square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
+* **Set the current view as the default view**: The small white square with a target or crosshair symbol. The map will default to a zoomed out (global) view. Click to set the current view as the default view for this item.
+* **Go to the current default view**: The small black square with a black box around a dot. This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
+* **Clear the default view**: The small white square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
 
 ### Search for map data
 
-Items with information filled out in their mapping metadata fields (i.e. with markers on the map) can be searched with fields that the Mapping module adds to the advanced search fields in the admin and public views.
+Items with information filled out in their mapping metadata fields (i.e. with markers or shapes on the map) can be searched with fields that the Mapping module adds to the advanced search fields in the admin side of the installation, and the public search pages of each site.
 
 ![Map-based searching in the admin side.](modulesfiles/Mapping_advSearch.png)
 
