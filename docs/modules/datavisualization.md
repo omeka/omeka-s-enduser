@@ -174,7 +174,7 @@ There are no links in this diagram that would allow users to browse the collecti
 
 Line charts are available for "Count of property values in a time series" and "Count of items in a time series" datasets. [See the screenshots above for the dataset options and diagram settings](#count-of-items-with-property-values-in-a-time-series).
 
-Line charts are similar to column charts and histograms, with a more complex display to represent changes over time. For "Count of items in a time series," the line chart will display only one color (blue). For "Count of property values in a time series," the line chart will display a different color for each property value included. Colors are predetermined and cannot be customized.
+Line charts are similar to column charts and histograms, with a more complex display to represent changes over time. For "Count of items in a time series," the line chart will display only one color. For "Count of property values in a time series," the line chart will display a different color for each property value included. Colors are predetermined with their display options and cannot be customized.
 
 You can choose to display, for each value with a count: a line (with no points in each date bucket), points in each date bucket (with no connecting line), or both the line and its points.
 
@@ -201,7 +201,7 @@ There are no links in these diagrams that would allow users to browse the collec
 
 Arc diagrams display items in a column on the left-hand side of the diagram, with relationships between those items represented as large arcing semi-circles connecting two items. One item may have many arcs. 
 
-Items are colored based on the "Group" assigned in your settings (either the item's class or template, or a property value you selected), and the arcs are the color of the item with the outbound linked resource provided in a property value. Colors are predetermined and cannot be customized.
+Items are colored based on the "Group" assigned in your settings (either the item's class or template, or a property value you selected), and the arcs are the color of the item with the outbound linked resource provided in a property value.
 
 For example, if you were showing the relationship between creators and their creations, using resource templates (e.g. "People" and "Books") as your groups, you would have people colored in orange and books colored in blue, with blue arcs connecting the books to the people provided in their "Creator" fields. If items have reciprocal (inverse) relationships with each other, you may see what looks like one arc that is the combined color of the two arcs. 
 
@@ -209,7 +209,7 @@ If items do not have your chosen group (e.g. if you are grouping by class and so
 
 This diagram provides links that allow users to browse the included items. 
 
-An arc diagram allows you to set the width of the diagram; the height is set automatically by the number of items in the diagram, and the size of the text and spacing. Arcs are drawn automatically and can overflow the diagram width if you have a lot of items (and if the arc is being drawn between an item near the beginning and an item near the end of the list). 
+You can set the width of the diagram; the height is set automatically by the number of items in the diagram, and the size of the text and spacing. Arcs are drawn automatically and can overflow the diagram width if you have a lot of items (and if the arc is being drawn between an item near the beginning and an item near the end of the list). 
 
 You can also set the top and bottom margins, which is the space left above the center of the first item, and below the center of the last item. If you set these numbers to "0" you will see text cut off at the top and bottom of the diagram.
 
@@ -227,7 +227,7 @@ You can choose a color scheme that supplies a number of complementary colors fro
 
 Network graph diagrams display items with links to one another in a tree visualization. 
 
-Items are shown as small circles, and colored based on the "Group" assigned in your settings (either the item's class or template, or a property value you selected). Links between items are gray. Colors are predetermined and cannot be customized.
+Items are shown as small circles, and colored based on the "Group" assigned in your settings (either the item's class or template, or a property value you selected). Links between items are gray.
 
 If items do not have your chosen group (e.g. if you are grouping by class and some items have no class), they will go into a "null" group. 
 
@@ -235,7 +235,7 @@ When an item is clicked, its circle will become highlighted with a black border,
 
 This diagram provides links that allow users to browse the included items. 
 
-When you select a network graph diagram, you will only have the options of setting a width and height for your diagram. Items will automatically cluster in a circle around the central point of your diagram, within the diameter specified by your smallest dimension, so we recommend keeping your dimensions square. 
+When you select a network graph diagram, you will have the options of setting a width and height for your diagram. Items will automatically cluster in a circle around the central point of your diagram, within the diameter specified by your smallest dimension, so we recommend keeping your dimensions square. 
 
 You can choose a color scheme that supplies a number of complementary colors from the dropdown. Use [the link in the help text (expanded by clicking on the arrow next to "Color scheme") to see the options](https://d3js.org/d3-scale-chromatic/categorical){target=_blank}. 
 
