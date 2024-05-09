@@ -12,23 +12,23 @@ Mapping can work with the [CSV Import](../modules/csvimport.md) module, allowing
 
 ## Using maps
 
-Small white buttons on the left side of the map control and modify the appearance of the map. Hover over the buttons with the mouse to view tool-tips.
+Small white square buttons on the left side of the map allow you to modify its settings. Hover over the buttons with the mouse to view tool-tips.
 
 ![Screenshot of the buttons on the map described below](../modules/modulesfiles/Mapping_JustButtons.png)
 
 * **Zoom in**: The small white square with a black plus sign. Each click zooms in one step (between 0 and 19).
-* **Zoom out**: The small white square with black minus sign. Each click zooms out one step (between 0 and 19).
-* **Full Screen**: View this map expanded to fit the screen of your device.
-* **Draw a polyline**: View this map expanded to fit the screen of your device.
-* **Draw a polygon**: View this map expanded to fit the screen of your device.
-* **Draw a rectangle**: View this map expanded to fit the screen of your device.
-* **Draw a marker**: The small white square with black bubble marker. When you click the button your pointer becomes a blue marker. Click again on the map to place the marker.
-* **Edit layers**: The small white square with black box and pencil icon. This option is only available after a marker has been added. Click the button and a pink box appears around each marker. Click a marker to move it. Click again to place. Use the grey buttons to "Save" or "Cancel".
-* **Delete layers**: The small white button with a trashcan icon. This option is only available after a marker has been added. Click the icon to select a marker. Click the marker to be removed and it will disappear. Use the grey buttons to "Save" or "Cancel" these changes, or to "Clear all" markers currently on the map.
-* **Enter address**: The small white square with a black magnifying glass icon. Click to enter an address in the search bar.
-* **Set the current view as default view**: The small white square with a target or crosshair symbol. The map may have a default zoom level based on the site settings, or a zoom level containing all existing markers if applicable. Click to set the current view as the default view for this item.
-* **Go to current default view**: The small black square with a black box around a dot. This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
-* **Clear the default center and zoom level**: The small white square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
+* **Zoom out**: The square with black minus sign. Each click zooms out one step (between 0 and 19).
+* **Full Screen**: The square with four corners. View this map expanded to fit the screen of your device.
+* **Draw a polyline**: The square with a diagonal line. Create a line with two or more points to indicate a relevant area on the map, such as a street.
+* **Draw a polygon**: The square with a five-sided shape. Create a shape with three or more sides to indicate a relevant area on the map, such as a state or province. 
+* **Draw a rectangle**: The square with a black square. Create a shape with four sides to indicate a relevant area on the map. 
+* **Draw a marker**: The square with black bubble marker. When you click the button your pointer becomes a blue marker. Click again on the map to place the marker.
+* **Edit feature**: The ssquare with black box and pencil icon. This option is only available after a marker or shape has been added. Click the button and a pink box appears around each marker. Click a marker to move it. Click again to place. Use the grey buttons to "Save" or "Cancel".
+* **Delete feature**: The square with a trashcan icon. This option is only available after a marker or shape has been added. Click the icon to select a marker. Click the marker to be removed and it will disappear. Use the grey buttons to "Save" or "Cancel" these changes, or to "Clear all" markers currently on the map.
+* **Enter address**: The square with a black magnifying glass icon. Click to enter an address in the search bar.
+* **Set the current view as the default view**: The small white square with a target or crosshair symbol. The map may have a default zoom level based on the site settings, or a zoom level containing all existing markers if applicable. Click to set the current view as the default view for this item.
+* **Go to the current default view**: The small black square with a black box around a dot. This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
+* **Clear the default view**: The small white square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
 
 In addition to these options, you can also navigate the map using your mouse or trackpad by scrolling to zoom and clicking and dragging to pan. Scrolling using your mouse wheel is a setting that can be turned on or off in map page blocks.
 
