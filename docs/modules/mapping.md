@@ -12,6 +12,8 @@ Mapping can work with the [CSV Import](../modules/csvimport.md) module, allowing
 
 ## Using maps
 
+You can navigate the map using your mouse or trackpad by scrolling to zoom and clicking and dragging to pan. Scrolling using your mouse wheel is a setting that can be turned on or off in map page blocks.
+
 Small white square buttons on the left side of the map allow you to modify its settings. Hover over the buttons with the mouse to view tool-tips.
 
 ![Screenshot of the buttons on the map described below](../modules/modulesfiles/Mapping_JustButtons.png)
@@ -30,30 +32,28 @@ Small white square buttons on the left side of the map allow you to modify its s
 * **Go to the current default view**: The small black square with a black box around a dot. This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
 * **Clear the default view**: The small white square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
 
-In addition to these options, you can also navigate the map using your mouse or trackpad by scrolling to zoom and clicking and dragging to pan. Scrolling using your mouse wheel is a setting that can be turned on or off in map page blocks.
-
 ## Item mapping
 
-The Mapping module adds metadata fields to each item: a latitude and longitude pair that creates markers on maps (an item can have more than one marker), as well as default display settings for the item's individual map - minimum corner coordinates that ensure the map contains at least those top, bottom, left, and right spots. These can be set manually using the item's "Mapping" tab, or can be bulk-added to many items using CSV Import.
+The Mapping module adds metadata fields to each item: a latitude and longitude pair that creates markers on maps (an item can have more than one marker), as well as default display settings for the item's individual map - minimum corner coordinates that ensure the map contains at least those top, bottom, left, and right spots. These can be set manually using the item's "Mapping" tab, or can be bulk-added to many items using [CSV Import](#csv-import-integration).
 
 ### Add markers
 
-The item view screen will not show a "Mapping" tab unless there is geolocation metadata, but one will appear when editing the item. To add a map to an item, click to edit the item. Navigate to the "Mapping" tab to add location data to the item. Selecting the tab will open the map interface. 
+The item view screen will not show a "Mapping" tab unless there is geolocation metadata, but one will appear when editing the item. To add a map to an item, enter editing mode on an item. Navigate to the "Mapping" tab to add location data to the item. Selecting the tab will open the map interface. 
 
-![Screenshot of the Add/Edit Item Page with Mapping tab selected. Large World Map with white buttons described below](../modules/modulesfiles/Mapping_Item_Add.png)
+![Screenshot of the Add/Edit Item Page with Mapping tab selected.](../modules/modulesfiles/Mapping_Item_Add.png)
 
 To find the point where you want to locate the marker, you can do one of the following:
 
 * Zoom and drag to find the location.
-* Type the place name into the Search Address field (see the image below).
-	* Note that this will populate as you type, and will not search locations which do not match the formatting of the search function.
 * Enter latitude and longitude coordinates into the search box. These should be formatted as decimals, for example `38.897222, -77.064167`, not `38° 53′ 50″ N, 77° 3′ 51″ W`.
+* Type the place name into the search box (see the image below).
+	* Options will populate as you type, and will not search locations which do not match the formatting of the search function.
 
 ![Mapping tab with a search for "Roosevelt Island" in the search view. Below the search field are a number of suggested locations.](../modules/modulesfiles/Mapping_itemSearch.png)
 
 When you are centered on your intended location, you can then:
 
-* Use the line tool to define a line across the map. This can be used to, for example, position an item along a border or a street. A line has a start and end and cannot be connected to make a shape. 
+* Use the line tool to define a line across the map. This can be used to, for example, position an item along a border or a street. A line has a start and end, and as many points or angles as desired, but cannot be connected to make a shape. 
 * Use the polygon or rectangle tool to define a shape across the map. This can be used to, for example, enclose a rough area of relevance (such as a city or country) or indicate a potential range of locations (for example, where the precise location of a photo is not known). 
 * Click on the marker tool; your cursor will become a marker. To set the point, click on the map.
 
@@ -73,15 +73,15 @@ Neither field is required, but if you choose an image without entering a label, 
 
 To edit the label or image again, click on the feature. This will open the options for the label and image, as seen above.
 
-To **move a marker or shape**, use the "Edit layers" button on the left hand toolbar (small white square with black box and pencil icon). Any feature on the map will become highlighted in a red, dotted-line outline. Click and drag the feature you want to move. Rectangles can be turned into polygons using this tool, and individual points in lines and polgyons can be removed by clicking on them without dragging (a polygon requires a minimum of three points). 
+To **move a marker or shape**, use the "Edit feature" button on the left hand toolbar (small white square with black box and pencil icon). Any feature on the map will become highlighted in a red, dotted-line outline. Click and drag the feature you want to move. Rectangles can be turned into polygons using this tool, and individual points in lines and polgyons can be removed by clicking on them without dragging (a polygon requires a minimum of three points). 
 
-To apply your changes, click the "Save" option that opens from the "Edit layers" button. If you do not save, the marker will not be moved.
+To apply your changes, click the "Save" option that opens from the "Edit feature" button. If you do not save, the marker will not be moved.
 
 ![Marker being moved](../modules/modulesfiles/Mapping-moveMarker.png)
 
-To **delete a marker**, first click the "Delete layers" button in the left hand toolbar (trash can icon). Click on the marker or shape you want to delete; this will remove the feature from the map. In order to make the deletion permanent, you must click "Save" in the menu which opens from the "Delete layers" button.
+To **delete a marker**, first click the "Delete feature" button in the left hand toolbar (trash can icon). Click on the marker or shape you want to delete; this will remove the feature from the map. In order to make the deletion permanent, you must click "Save" in the menu which opens from the "Delete feature" button.
 
-Note that you can use the "Clear all" button in the menu which opens form the "Delete layers" button to clear all features on the map.
+Note that you can use the "Clear all" button in the menu which opens form the "Delete feature" button to clear all markers and shapes on the map.
 
 ![Marker being deleted.](../modules/modulesfiles/Mapping-deleteMarker.png)
 
@@ -89,9 +89,9 @@ Note that you can use the "Clear all" button in the menu which opens form the "D
 
 You can also set the map's default display zoom level and center, independently of the features you place. The default is to center on one feature and zoom fully in, or to zoom out far enough to contain all features in the map view.
 
-* **Set the current view as the default view**: The small white square with a target or crosshair symbol. The map will default to a zoomed out (global) view. Click to set the current view as the default view for this item.
-* **Go to the current default view**: The small black square with a black box around a dot. This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
-* **Clear the default view**: The small white square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
+* **Set the current view as the default view**: The square with a target or crosshair symbol. The map will default to a zoomed out (global) view. Click to set the current view as the default view for this item.
+* **Go to the current default view**: The square with a black box around a dot. This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
+* **Clear the default view**: The square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
 
 ### Search for map data
 
@@ -99,9 +99,11 @@ Items with information filled out in their mapping metadata fields (i.e. with ma
 
 ![Map-based searching in the admin side.](modulesfiles/Mapping_advSearch.png)
 
-The public fields are optional (turned off by default) on [individual sites](../sites/site_settings.md#settings). "Add geographic location to advanced search" will add three fields that allow users to search by location: they must provide an address, as well as a distance (in numbers) and select a unit (kilometres or miles). "Search by map marker presence" provides users with the values of "Has map markers" or "Has no map markers".
+The public fields are optional (turned off by default) on [individual sites](../sites/site_settings.md#settings). 
 
-![The two Mapping settings added to each site settings page.](modulesfiles/Mapping_siteSettings.png)
+"Add geographic location to advanced search" will add three fields that allow users to search by location: they must provide an address, as well as a distance (in numbers) and select a unit (kilometres or miles). "Search by map marker presence" provides users with the values of "Has map markers" or "Has no map markers".
+
+![The Mapping settings added to each site settings page.](modulesfiles/Mapping_siteSettings.png)
 
 ### Batch-edit map data
 
