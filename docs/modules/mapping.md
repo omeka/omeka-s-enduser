@@ -36,7 +36,7 @@ Small white square buttons on the left side of the map allow you to modify its s
 
 The Mapping module adds metadata fields to each item: a latitude and longitude pair that creates markers on maps (an item can have more than one marker), as well as default display settings for the item's individual map - minimum corner coordinates that ensure the map contains at least those top, bottom, left, and right spots. These can be set manually using the item's "Mapping" tab, or can be bulk-added to many items using [CSV Import](#csv-import-integration).
 
-### Add markers
+### Add features
 
 The item view screen will not show a "Mapping" tab unless there is geolocation metadata, but one will appear when editing the item. To add a map to an item, enter editing mode on an item. Navigate to the "Mapping" tab to add location data to the item. Selecting the tab will open the map interface. 
 
@@ -59,7 +59,7 @@ When you are centered on your intended location, you can then:
 
 ![Mapping tab with an active marker being drawn. The marker has a tooltip saying "click map to place marker"](../modules/modulesfiles/Mapping-drawMarker.png)
 
-#### Edit markers
+#### Edit features
 
 You can now click on the marker or shape to add a label that will display on [public map views](#public-view) of the item. Be aware that this will display in a large font.
 
@@ -87,7 +87,7 @@ Note that you can use the "Clear all" button in the menu which opens form the "D
 
 #### Map display
 
-You can also set the map's default display zoom level and center, independently of the features you place. The default is to center on one feature and zoom fully in, or to zoom out far enough to contain all features in the map view.
+You can set any map's zoom level and center. The default is to center on one feature and zoom fully in, or to zoom out far enough to contain all features in the map view.
 
 * **Set the current view as the default view**: The square with a target or crosshair symbol. The map will default to a zoomed out (global) view. Click to set the current view as the default view for this item.
 * **Go to the current default view**: The square with a black box around a dot. This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
@@ -99,23 +99,25 @@ Items with information filled out in their mapping metadata fields (i.e. with ma
 
 ![Map-based searching in the admin side.](modulesfiles/Mapping_advSearch.png)
 
-The public fields are optional (turned off by default) on [individual sites](../sites/site_settings.md#settings). 
+The public fields are optional (turned off by default) on [individual sites](../sites/site_settings.md#settings) in their site settings. The "Add geographic location to advanced search" option will add the three fields seen above, allowing users to search by location: they must provide an address, as well as a distance (in numbers) and select a unit (kilometres or miles). 
 
-"Add geographic location to advanced search" will add three fields that allow users to search by location: they must provide an address, as well as a distance (in numbers) and select a unit (kilometres or miles). "Search by map marker presence" provides users with the values of "Has map markers" or "Has no map markers".
+The "Search by map marker presence" option provides users with a dropdown with the options of "Has map markers" or "Has no map markers", as seen above.
 
 ![The Mapping settings added to each site settings page.](modulesfiles/Mapping_siteSettings.png)
 
 ### Batch-edit map data
 
-Users can select multiple items and perform [batch editing](../content/items.md#batch-editing) to create and edit map markers. The options are:
+Users can select multiple items and perform [batch editing](../content/items.md#batch-editing) to create and edit map markers. You cannot batch-add shapes at this time, nor can you batch-edit map display settings, but you can batch-add markers from latitude and longitude values, and you can batch-edit labels and images for all features. 
 
-- **Delete markers**: You can batch-remove all existing markers from multiple items. 
+The options are:
+
+- **Delete features**: You can batch-remove all existing markers and shapes from multiple items. 
 - **Copy coordinates to markers**: This involves taking latitude and longitude data from an existing metadata value on each item or from their associated media. This will append new markers, not overwrite any existing markers. If there are multiple values on an item in the chosen proprerty, this will batch-copy them all as multiple markers. You can specify:
-	- Which fields contain each or both values
+	- Which fields contain each or both values (for example, if you previously put this information into a text field such as `dcterms:spatial`)
 	- How they are separated (the operation will ignore spaces)
 	- Whether the longitude or latitude comes first in the pair. 
 If you copy coordinates from an attached media, you can also check a box to assign the media as a marker image. 
-- **Update markers**: Markers can have [customized thumbnails and labels](#editing-markers) rather than displaying just the item title as a link. You can batch-edit marker customization by:
+- **Update features**: Markers and shapes can have [customized thumbnails and labels](#edit-features) rather than displaying just the item title as a link. You can batch-edit marker customization by:
 	- Removing images
 	- Using items' primary media as images
 	- Copying labels from an existing metadata value (either from the item, the primary media, or the media already assigned to the marker)
@@ -151,7 +153,7 @@ For example, to pin an item near Madrid and set the map bounds around the countr
 
 Note that the default bounds will ignore any location markers. For example, if you set bounds around Spain, but your item's marker is pinned to Antarctica, the map will display Spain and users will have to search for the marker manually.
 
-You cannot set marker labels or marker images in CSV Import.
+You cannot set marker labels or marker images in CSV Import. You cannot import the coordinates for map shapes in CSV Import. 
 
 You cannot [batch-edit](../content/items.md#batch-actions) mapping values after items are in your system, only edit them manually one item at a time, or batch-revise mapping data using CSV Import.
 
@@ -173,7 +175,6 @@ If markers have not been customized, the viewer will simply see "View item".
 
 ![Item mapping marker with no label or image](../modules/modulesfiles/mapping-publicNoLabel.png)
 
-
 ### Page blocks
 
 Mapping creates two page blocks you can add to your site pages: "Map by attachments", where you manually add resources to the map block; and "Map by query", which allows you to use a search string to add resources to the map block.
@@ -189,32 +190,36 @@ This section lets you set the appearance and zoom level of the map. There are th
 
 ![Map by attachments block open to Default Settings. There is no information in any field, and the preview map is zoomed in to level 2](../modules/modulesfiles/mappingBlockDefaultView1.png)
 
-**Basemap provider**: select from a dropdown of basemaps. Once selected, the preview map will update to show you the appearance of that map. The default is "OpenStreetMap.Mapnik".
+**Basemap provider**: select from a dropdown of basemaps. Once selected, the preview map will update to show you the appearance of that map. The default is "OpenStreetMap.Mapnik". These providers are offered as-is; there is no guarantee of service or speed.
 
-**Minimum zoom level**: set the minimum zoom for the map. Fully zoomed out is 0.
+**Minimum zoom level**: set the minimum zoom for the map. Fully zoomed out is 0. See the preview map below to visualize each level of zoom and test your settings and basemap.
 
-**Maximum zoom level**: set the maximum possible zoom level. The highest is 19. Some basemaps do not function at higher levels; you will want to check to be sure you set your maximum at a level where you basemap is visible.
+**Maximum zoom level**: set the maximum possible zoom level. The highest is 19. Some basemaps do not function at higher levels; be sure to set your maximum at a level where your basemap is visible. See the preview map below to visualize each level of zoom and test your settings and basemap.
 
 **Scroll wheel zoom**: set whether users can zoom with their mouse wheel when hovering over the map, either automatically upon page load or after clicking inside the map. You can disable mouse-wheel scrolling entirely.
 
-Between the fields and the preview map is a message which tells you the current zoom level, as you zoom using the plus and minus buttons on the preview map or the scroll on your comptuer. Use this to help you determine where you want to set your minimum and maximum zoom levels.
+The preview map allows you to visually set a default view for this map. The map dimensions on the public page may not match the dimensions shown in this preview, but saving a default view here will guarantee that the four corner points seen here will be displayed on the public page, with excess added to the outer edges if applicable. 
+
+Note that the line above the preview map tells you the current zoom level. 
 
 Within the preview map, there are five buttons:
 
- * Zoom in: The small white square with a black plus sign. Each click zooms in one step (between 0 and 19).
- * Zoom out: The small white square with black minus sign. Each click zooms out one step (between 0 and 19).
- * Set the current view as default view: The small white square with a target or crosshair symbol. The map will default to a global view. Click to set the current view as the default view.
- * Go to current default view: The small black square with a black box around a dot. This option is only available after a default view has been set. Click to pan and zoom map to the selected view.
- * Clear the default center and zoom level: The small white square with a black "X". Click to clear pan and zoom preferences and return to the initial global view.
+ * **Zoom in**: The square with a black plus sign. Each click zooms in one step (between 0 and 19).
+ * **Zoom out**: The square with black minus sign. Each click zooms out one step (between 0 and 19).
+ * **Set the current view as default view**: The square with a target or crosshair symbol. The map will default to a global view, or a view containing all map features from all items. Click to set the current view as the default view. 
+ * **Go to current default view**: The square with a black box around a dot. This option is only available after a default view has been set. Click to visualize the current setting.
+ * **Clear the default center and zoom level**: The square with a black "X". Click to return to the initial default view.
+
+You must save your default view using the in-map buttons, then save the page. 
 
 ![closeup of the mapping buttons with labels added](../modules/modulesfiles/mappingBlockDefMapButtons.png)
 
 #### WMS overlays
 
- Add, edit, and delete [Web Map Service (WMS)](https://mapserver.org/ogc/wms_server.html){target=_blank} overlays.
+You can add, edit, and delete custom-chosen [Web Map Service (WMS)](https://mapserver.org/ogc/wms_server.html){target=_blank} overlays to your maps using these tools.
 
  * **Label**: Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays.
- * **Base URL**: Add a URL to the WMS map. 
+ * **Base URL**: Add a map overlay to the WMS map by URL. 
  * **Layers**: Any layers you wish to use, separated by commas. This is a string or strings provided by the WMS host.
  * **Styles**: Any styles you wish to use, separated by commas. This is a string or strings provided by the WMS host.
 
@@ -226,7 +231,7 @@ Once you have added an overlay, it will appear above the fields for adding overl
 
 #### Timeline
 
-Timeline adds a timeline display to the left of the map view. Note that this feature requires the [Numeric Data Types](../modules/numericdatatypes.md) module and at least one item that has a property with a Timestamp or Interval value (applied via the [resource template](../content/resource-template.md)).
+The Timeline options allow you to add a timeline display to the left of the map view. Note that this feature requires the [Numeric Data Types](../modules/numericdatatypes.md) module and at least one item that has a property with a Timestamp or Interval value (applied via the [resource template](../content/resource-template.md)).
 
 - **Title headline**: displays on the first slide of the timeline (see ["Timeline public view"](#timeline-public-view) below). You can use this to name the timeline.
 - **Title text**: appears below the title headline on the first slide of the timeline (see ["Timeline public view"](#timeline-public-view) below). You can use this to provide context or narrative introduction for the timeline.
@@ -252,7 +257,7 @@ To see how the various settings of the timeline block appear on the public side,
 
 #### Attachments (Map by attachments block)
 
-Markers are added to the map using Items.
+Markers are added to the map by adding items.
 
 * Click "Add Attachment" (1) to select them from a list on the right (2). Note: This list will only be populated by items that have at least one location added to them (when editing the item).
 * Clicking an item adds it to a list in the Attachments pane (3).
