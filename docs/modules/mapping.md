@@ -271,11 +271,18 @@ To add multiple items at once, click the "Quick add" slider just above the list 
 ![Drawer with bulk add option activated](../modules/modulesfiles/Mapping-bulkAttachments.png)
 
 #### Query (Map by query block)
-In order to use this block, you will need to run a query, or search, in your items. From the search results page, copy everything in your browser's address bar starting with the question mark all the way to the end of the search url (to the right).
+
+This block allows you to choose a subset of the resources added to your site with a search query, rather than by manually adding individual items. 
+
+The query can be left blank; in this case, the map will show all items added to the site that have qualifying mapping data.
+
+More complicated queries can be set: specific item sets, classes, templates, items from a date range, or items with a specific linked resource (such as a particular Person item in the "Creator" field), for example. 
+
+![The map by query block showing a query for "Has map features", with the sidebar open to the searh query edit interface.](modulesfiles/mapping-blockquerysidebar.png)
+
+You can also run a search on your public site, and from the search results page, copy everything in your browser's address bar starting with the question mark all the way to the end of the search URL (to the right). Click the "Advanced edit" button and paste the URL string into the field that appears. Note that at no point will items display on the admin side. You will need to go to the public view of the page to see the items that result from your query.
 
 ![The address bar and very top of a search results page.](../sites/sitesfiles/sitepg_bpquery.png)
-
-Paste the query string into the Query field in the Map by query block. Note that at no point will items display on the admin side. You will need to go to the public view to see the items which result from your query.
 
 ![A map by query block open to the Query section. There is a query pasted into the field.](../modules/modulesfiles/mapping-blockQuery.png)
 
