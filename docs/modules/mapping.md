@@ -137,7 +137,7 @@ If the chosen field in this batch operation does not contain valid entries, the 
 
 You may wish to copy your coordinates in one batch operation, then update those markers with labels and images in a second batch operation. Note that if an item has multiple markers, all markers will get a marker update of identical images and labels. 
 
-## CSV Import integration
+### CSV Import integration
 
 Mapping is compatible with [CSV Import](../modules/csvimport.md) when importing items (but not when importing mixed resources).
 
@@ -189,6 +189,20 @@ If markers have not been customized, the viewer will simply see "View item".
 
 ![Item mapping marker with no label or image](../modules/modulesfiles/Mapping-publicNoLabel.png)
 
+### Resource page blocks
+
+#### Items
+
+[Resource page blocks can be configured on each site](../sites/site_theme.md#select-regions-and-blocks) based on the theme your site is using. Some sites offer multiple regions where blocks can be placed. Maps are not automatically added to item pages when the module is active; you must manually move the Mapping block into your desired location. 
+
+#### Item sets
+
+Item sets cannot themselves be geolocated (pinned to a map), but they will display maps of all their items' geolocation data. This appears in the admin side as a "Mapping" tab on the item set, identically to items. This tab is for informational purposes only, cannot be edited, and will disappear when you go to editing mode. 
+
+On the public side, item sets will not display a map automatically - you must [manually add the "Mapping" resource page block to a region](../sites/site_theme.md#select-regions-and-blocks) offered by your site theme, for each site you have. 
+
+Item set pages, if you add the Mapping resource block to a region, will display a map with all the features for all the items in that set. This map resource block has no settings but can be modified with the [site-wide settings](#site-wide-settings).
+
 ### Page blocks
 
 Mapping creates two page blocks you can add to your site pages: "Map by attachments", where you manually add resources to the map block; and "Map by query", which allows you to use a search string to add resources to the map block.
@@ -204,7 +218,10 @@ This section lets you set the appearance and zoom level of the map. There are th
 
 ![Map by attachments block open to Default Settings. There is no information in any field, and the preview map is zoomed in to level 2](../modules/modulesfiles/Mapping_BlockDefaultView1.png)
 
-**Basemap provider**: select from a dropdown of basemaps. Once selected, the preview map will update to show you the appearance of that map. The default is "OpenStreetMap.Mapnik". These providers are offered as-is; there is no guarantee of service or speed.
+**Basemap provider**: select from a dropdown of basemaps. Once selected, the preview map will update to show you the appearance of that map. The default is "OpenStreetMap.Mapnik". These providers are offered as-is; there is no guarantee of service or speed. 
+
+!!! note
+	Some maps do not have tiles at a high degree of zoom; be sure to test your chosen basemap on item pages, item set pages, the Map Browse page, and page blocks to be certain it will work for your needs. 
 
 **Minimum zoom level**: set the minimum zoom for the map. Fully zoomed out is 0. See the preview map below to visualize each level of zoom and test your settings and basemap.
 
@@ -318,7 +335,7 @@ Note that the following displays are slightly different in the [Map Browse page]
 
 If you have not added a label or image for the marker, it will simply say "Item: [Title]." 
 
-!!!
+!!! note
 	Note that map features should display the appropriate language metadata based on the site's locale setting: for example, if a site is set to "French" in the locale, and the item has a French-tagged title (`fr`), that title should display rather than a title with another language tag or no tag at all. If you are experiencing problems loading the right language in multilingual projects, check your site settings and the language tags on the items' metadata fields. 
 
 If you have added a label, it will show the label, as well as representative media and a link to the media if the marker has one.
@@ -384,4 +401,7 @@ In the image below, the timeline is using interval data. The event "Reading Abbe
 ## Troubleshooting
 
 - Trouble deleting: If you would like to remove the mapping location from an item, you must delete all the map modifications. First, delete each marker (click the "Delete feature" button, select the markers, click to save). Then clear the map view settings (click the "Clear the default center and zoom level" button). The map will return to a global view. Save the item and confirm that the map no longer appears.
-- Trouble with timelines: Ensure you have the Numeric Data Types module installed and active, and that your selected date metadata field is formatted correctly as a Numeric Data Type using resource templates. Items with mapping data but without date data will not show, nor will items with data data but without mapping data, as maps with timelines require both.
+- Trouble with map tiles: Ensure you have chosen a basemap from our provider list that offers tiles at a high degree of zoom. If not, choose another basemap or go back to the default provider.
+- Trouble with timelines: Ensure you have the Numeric Data Types module installed and active, and that your selected date metadata field is formatted correctly as a Numeric Data Type using resource templates. Items with mapping data but without date data will not show, nor will items with date data but without mapping data, as maps with timelines require both.
+- Trouble with items appearing on your maps: Ensure all items are added to your site under the Resources tab. Ensure the items have valid mapping data in their individual Mapping tabs. Test the Map Browse page, found at `yoursite/map-browse`. Test a simple Map by Attachments page block with a few items you know are geolocated correctly.
+- Trouble with maps appearing on item pages or item set pages: Add the Mapping resource page block to a region provided by your theme, by going to [Site > Theme > Configure resource pages](../sites/site_theme.md#configure-resource-pages).
