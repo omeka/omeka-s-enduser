@@ -4,7 +4,11 @@ The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows 
 
 ![Map with timeline](../modules/modulesfiles/Mapping-timelinePublic1.png)
 
-The Mapping module has no global configuration settings. It adds several new metadata fields to each item, and a new "Mapping" tab to each item edit screen, as well as several batch-editing options for items. It adds optional location-based search fields to the advanced search pages on the admin and public interfaces, controlled on a site-by-site basis by [Site Settings](../sites/site_settings.md#settings). It also adds page blocks to [Site Pages](../sites/site_pages.md) that can display maps and timelines for browsing, and a "Map Browse" page, found in the [Site Navigation settings](../sites/site_navigation.md).
+The Mapping module has no global configuration settings. It adds several new metadata fields to each item, and a new "Mapping" tab to each item edit screen, as well as several batch-editing options for items. It adds optional location-based search fields to the advanced search pages on the admin and public interfaces, controlled on a site-by-site basis by [Site Settings](../sites/site_settings.md#settings). It also adds: 
+
+- page blocks to [Site Pages](../sites/site_pages.md) that can display maps and timelines for browsing
+- a "Map Browse" page, found in the [Site Navigation settings](../sites/site_navigation.md)
+- [resource blocks to items and item sets](../sites/site_theme.md#select-regions-and-blocks) (not media), which can be repositioned within the regions offered by a given site's theme. 
 
 Mapping can work with the [Collecting](../modules/collecting.md#prompts) module, by allowing users filling out the contribution form to provide geolocation data for their submissions. Users click directly on a map to place a marker, and can optionally provide a text label for the marker. See the Collecting module page for more information.
 
@@ -300,13 +304,15 @@ Note that the administrative interface will not preview the map with your select
 
 ### Public view
 
-A map block will display on a public page or item page at the full page width. If you have settings in the [default view](#default-view) of the map block, or have set [default map bounds for the item](#setting-the-map-display), these should be applied. Otherwise the map will zoom so that all of the items are visible.
+A map block will display on a public page, item page, or item set page at the full page width. If you have settings in the [default view](#default-view) of the map block, or have set [default map bounds for the item](#setting-the-map-display), these should be applied. Otherwise the map will zoom so that all of the items are visible.
 
 Viewers can zoom either using the scroll function of their computer or the zoom in/out buttons on the left side of the map. You can set whether viewers can use their mouse wheels to scroll inside the map page blocks (not item maps or the Map Browse page). 
 
 ![Map block with three individual markers and two green cluster circles of two markers. The map shows a portion of southern England.](../modules/modulesfiles/Mapping-public.png)
 
 Each item will display as one or more markers or shapes on the map. Features that are close together may display as a cluster circle, with a number indicating how many items share that location. As you zoom in, these clusters will break open. Depending on the size of a shape, shapes may not cluster except at very low zoom levels, or at all. Clicking on a marker will display the label for that marker. 
+
+Item set pages, if you [add the Mapping resource block to a region](../sites/site_theme.md#select-regions-and-blocks), will display a map with all the features for all the items in that set. Item sets themselves cannot be geolocated. This map resource block has no settings but can be modified with the [site-wide settings](#site-wide-settings).
 
 Note that the following displays are slightly different in the [Map Browse page](#map-browse-page).
 
