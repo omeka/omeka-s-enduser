@@ -6,7 +6,7 @@ With this module, site managers are able to configure faceted browse pages and a
 
 The [public view](#public-views) section below shows how these facets display for single and multi-category pages.
 
-Faceted browse pages exist as separate [pages](../sites/site_pages.md). You cannot add faceted browsing to a page as a block, or as part of an existing browse page.
+Faceted browse pages exist as separate [pages](../sites/site_pages.md). You can [add faceted browsing to a page as a block](#faceted-browse-page-block) that will preview the FB page, but not have its full functionality. 
 
 Once activated, Faceted Browse is configured on a site-by-site basis.
 
@@ -57,6 +57,8 @@ Use the search query interface to set the pool of resources that users will brow
 You can also set a default sorting method to use when a site visitor starts to browse using this category. The dropdown menu will show "Created" and "Title" at first, but will update to reflect the columns you customize for your browsing table below. You will need to save your columns settings to see this menu updated. Note that you cannot set a default sort by an Item Set column. 
 
 ![Add category form showing Name, query, Default sort, Facets, and Columns options](../modules/modulesfiles/FacetedBrowse_SearchQuery.png)
+
+You can also include some text to guide your users on how to navigate the Faceted Browse page. This text will appear in the left-hand sidebar along with your facets in this category. There will be a button to contract the text (which is expanded by default); the button says "Instructions" by default, but you can change this label. If you add no helper text, this button and text area will not appear. 
 
 After setting the pool of resources, you can create facets and set columns for your browse display. Once you are done creating your facets and setting your display columns, save your category.
 
@@ -269,3 +271,20 @@ When there are multiple categories on a page, it will load with all of the resou
 Once a user clicks on a category, the resource list will change to display only that category's resources, the column display you have set, and its facets in the submenu. Users can use a "Back" button on the page to return to the full list of categories and clear their filters.
 
 ![A faceted browse page with facets visible. The category heading shows up above the facets. Over that is a button labelled "Back". Annotations indicate the button, category, and facet headings.](../modules/modulesfiles/FacetedBrowse_multiCatView2.png)
+
+### Faceted Browse page block
+
+You can add a "Faceted browse preview" page block to pages in Omeka sites. This page block will show the first few items that appear on the full FB page, without any of the sidebar facets or navigation tools available on the page. 
+
+![Faceted browse preview page block in the admin settings](modulesfiles/FacetedBrowse_previewpageblock.png)
+
+The page block comes with the following settings:
+
+* Page category: Select from the dropdown showing each FB page and all of its categories. You can only choose one category to display per page block, but you can have multiple page blocks. 
+* Limit: Choose the maximum number of items to show from the FB category's default results. Check the FB page itself to see which items will be shown based on its current settings. 
+* Preview title: Enter in a title to display at the top of the page block. 
+* Link text: Enter in text to display on a button at the bottom of the page block. This will link the users to the full FB page. 
+
+![The FB preview page block as it appears in the The Daily theme.](FacetedBrowse_previewpageblock2.png)
+
+
