@@ -307,7 +307,7 @@ The query can be left blank; in this case, the map will show all items added to 
 
 More complicated queries can be set: specific item sets, classes, templates, items from a date range, or items with a specific linked resource (such as a particular Person item in the "Creator" field), for example. 
 
-![The map by query block showing a query for "Has map features", with the sidebar open to the searh query edit interface.](modulesfiles/Mapping-blockquerysidebar.png)
+![The map by query block showing a query for "Has map features", with the sidebar open to the searh query edit interface.](modulesfiles/Mapping_blockquerysidebar.png)
 
 You can also run a search on your public site, and from the search results page, copy everything in your browser's address bar starting with the question mark all the way to the end of the search URL (to the right). Click the "Advanced edit" button and paste the URL string into the field that appears. 
 
