@@ -171,23 +171,21 @@ The Mapping module adds a section to each site's "Settings" tab found under "Sit
 
 ![Mapping section of Settings tab.](modulesfiles/Mapping_siteSettings.png)
 
-You can choose to add or remove mapping-specific search fields from this site's advanced search forms, enable or disable feature clustering on this site's maps, and choose a basemap for every map on the site. This can be overriden by specific maps' settings. 
+You can choose to add or remove mapping-specific search fields from this site's advanced search forms, and enable or disable feature clustering on this site's maps.
+
+You can also choose to display the same basemap for every map on the site. This can be overriden by specific maps' settings. 
+
+The site settings now include an option, for the Map Browse page only, to set a limit on how many map features can be seen at once. You can set the number of map features per page here. This will only affect the Map Browse page, not other multi-pin maps such as the ones displayed on an item set view page. 
 
 ### Map Browse page
 
-![The Map Browse page on the Thanks Roy theme, with a watercolour basemap selected.](modulesfiles/Mapping_mapBrowsePage.png)
+![The Map Browse page.](modulesfiles/Mapping_mapBrowsePage.png)
 
-Mapping creates a "Map Browse" page that can be added to each site in its navigation settings. This map has minimal customization options and will show every item in the site that has one or more geolocations, as well as some advanced search fields (including search by address with radius). These fields are not affected by [site settings](#searching-for-map-data). The title of the page will be "Map".
+Mapping creates a "Map Browse" page that can be added to each site in its navigation settings. This map has minimal customization options and will show every item in the site that has one or more geolocations, as well as some advanced search fields (including search by address with radius). These search fields are not affected by the site settings. The title of the page will be "Map".
 
-Go to a Site, then go to Navigation. You will see under "Add a custom link" the option to add a "Map Browse." When this is added to your navigation, you will be able to change the label that appears in the navigation (default is "Map Browse"), and the basemap, by clicking on the pencil icon to edit the Map Browse page settings. Note that changing the basemap will change the URL that is added to the navigation - for example, `yoursite/map-browse?mapping_basemap_provider=OpenTopoMap`. 
+Go to a Site, then go to Navigation. You will see under "Add a custom link" the option to add "Map Browse." When this is added to your navigation, you will be able to change the label that appears in the navigation (default is "Map Browse"), and the basemap, by clicking on the pencil icon to edit the Map Browse page settings. Note that changing the basemap will change the URL that is added to the navigation - for example, `yoursite/map-browse?mapping_basemap_provider=OpenTopoMap`. 
 
-The Map Browse page will [show slightly different markers than other maps](#public-view). Rather than display the item title, it will link with "View item". If media has been used to add an image, it will also display "View media" as a link.
-
-![Item mapping marker with label and image](../modules/modulesfiles/Mapping-publicLabelImg2.png)
-
-If markers have not been customized, the viewer will simply see "View item".
-
-![Item mapping marker with no label or image](../modules/modulesfiles/Mapping-publicNoLabel.png)
+You can turn on pagination for this map to limit the heavy processing involved with displaying a large number of map features. This site setting cannot be left blank; the default is 5000 items (not 5000 features - remember that items can have many map coordinates). 
 
 ### Resource page blocks
 
@@ -330,8 +328,6 @@ Viewers can zoom either using the scroll function of their computer or the zoom 
 Each item will display as one or more markers or shapes on the map. Features that are close together may display as a cluster circle, with a number indicating how many items share that location. As you zoom in, these clusters will break open. Depending on the size of a shape, shapes may not cluster except at very low zoom levels, or at all. Clicking on a marker will display the label for that marker. 
 
 Item set pages, if you [add the Mapping resource block to a region](../sites/site_theme.md#select-regions-and-blocks), will display a map with all the features for all the items in that set. Item sets themselves cannot be geolocated. This map resource block has no settings but can be modified with the [site-wide settings](#site-wide-settings).
-
-Note that the following displays are slightly different in the [Map Browse page](#map-browse-page).
 
 If you have not added a label or image for the marker, it will simply say "Item: [Title]." 
 
