@@ -10,10 +10,15 @@ Items and item sets will get a new unique identifier, but have all their metadat
 
 ### Permissions
 
-Global Administrators 
+Global Administrators and Supervisors can use this module to copy sites, site pages, items, and item sets.
 
+Users at the Author level and above (Author, Reviewer, Editor) can copy items and item sets. 
 
-Any resource that is copied will maintain the same owner as the original. 
+Users with site-specific permissions of Creator and Manager can copy pages. 
+
+Site-specific permissions do not affect a user's ability to copy sites. Site copying is reserved for Global Administrators and Supervisors. 
+
+When a resource is copied, its owner will change to the user who made the duplicate; it will not retain the owner of the original. 
 
 ### Requirements
 
@@ -26,17 +31,6 @@ Copy Resources depends on versions of those modules that have been updated since
 - Item Carousel Block (when the page block is used in sites' pages) version 1.3
 - Faceted Browse version 1.5.
 
-
-## Jim's text
-
-Clicking on the icon and button opens up a sidebar where the user confirms the copy. Once the module copies the resource, it automatically navigates to the new resource's page, where the user can make adjustments as needed.
-
-To test this module, copy several items, item sets, sites, and site pages. Check that data does indeed duplicate as expected. Users should be able copy resources that they have permission to create. Copied resources should be owned by the user who copied the resource, not the original owner.
-
-Note that copying an item will not copy its media. If a user must copy an item's media, they can use the Omeka S Item Importer module, which already has the ability to copy items along with their media.
-
-
-
 ## Copying resources
 
 ![The items view page in the admin side, showing "copy" buttons next to each item set in the table.](modulesfiles/copyResources_items.png)
@@ -47,7 +41,8 @@ When the "copy" button is clicked, a confirmation will appear in the right-hand 
 
 ![The items view page, with the drawer open to a confirmation message.](modulesfiles/copyResources_itemsConfirm.png)
 
-Items will be copied without their media, in order to limit server processing and space use. 
+!!! note
+	Items will be copied without their media, in order to limit server processing and space use. If you need to copy an item's media, use the [Omeka S Item Importer](osii.md) module, which has the ability to copy items along with their media. Enter in your own site's API to access existing items. Recall that media only exist through association with a single item; you cannot "add" existing media to a second item.
 
 When the resource has been successfully copied, you will be taken to the new resource's view page. 
 
