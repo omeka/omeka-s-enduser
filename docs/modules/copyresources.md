@@ -71,6 +71,16 @@ Where other modules introduce site-specific data (such as Metadata Browse, Shari
 
 Be sure to check over a duplicated site thoroughly to ensure everything has copied correctly. Some pages, page blocks, or module data may not have copied as intended, and may need manual re-setting, such as items chosen in the media embed page block, or pages set in the navigation. 
 
+#### After you duplicate a site
+
+Copying an entire site is a complicated process; sites contain large varieties of data, including from modules and themes. Copying a site may result in errors that need to be fixed before the site can be made public, and some data may need to be manually recreated from the original site before you can have a perfect copy. 
+
+Some potential issues you may run into:
+
+- A site whose navigation has missing page entries may cause errors until the missing pages are cleared or fixed. This may include problems changing the site theme, name, or slug. If you see the errors "Invalid navigation: page link missing page ID" or "Invalid navigation: invalid link data", check your Navigation for entires displaying "[Missing page]".
+- Data visualizations may be copied over as drafts, not as published diagrams and generated datasets. That is, all the settings will persist, but you will need to generate a duplicate dataset in order for the data visualizations to appear on the public side. You may notice that on the original site, the data visualizations are appearing with "View dataset" and "View diagram" icons in the table, whereas on the duplicate site they are only appearing with "Edit" (pencil) icons in the table. 
+- Some sites with the Faceted Browse module in use may show errors if the user duplicating the site does not have permissions to use Faceted Browse. 
+
 ### Pages
 
 When copying pages within a single site, the duplicated page will have the original slug with "-1" appended to the end. You may then rename and re-slug the page. 
@@ -78,4 +88,3 @@ When copying pages within a single site, the duplicated page will have the origi
 All page blocks should copy over, including page blocks introduced by modules, [as long as the corresponding module is updated where applicable (see the Requirements section above)](#requirements).
 
 Duplicated pages will need to be manually added to the site navigation in order to display publically; this module does not add newly copied pages to the site navigation.
-
