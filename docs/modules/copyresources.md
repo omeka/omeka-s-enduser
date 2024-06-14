@@ -37,13 +37,11 @@ Copy Resources depends on versions of those modules that have been updated since
 
 ## Copying resources
 
-![The items view page in the admin side, showing "copy" buttons next to each item set in the table.](modulesfiles/copyResources_items.png)
+![The items table in the admin side, showing "copy" buttons next to each item in the table, and a confirmation in the right-hand drawer.](modulesfiles/copyResources_itemsConfirm.png)
 
 When copying an item or item set, the "copy" button appears to the left of the "edit" button (pencil icon) in each row in the resource table. Items and item sets can be copied manually, one at a time (not in bulk). 
 
 When the "copy" button is clicked, a confirmation will appear in the right-hand drawer. 
-
-![The items view page, with the drawer open to a confirmation message.](modulesfiles/copyResources_itemsConfirm.png)
 
 !!! note
 	Items will be copied without their media, in order to limit server processing and space use. If you need to copy an item's media, use the [Omeka S Item Importer](osii.md) module, which has the ability to copy items along with their media. Enter in your own site's API to access existing items. Recall that media only exist through association with a single item; you cannot "add" existing media to a second item.
@@ -62,8 +60,6 @@ You can also copy resources when viewing them individually - a "Copy" button wil
 ### Sites
 
 When copying a site, you can find the "copy" button in the table of sites, or on an individual site's view page.
-
-![The site view page, with a "Copy" button in the top right corner, next to the "Edit" button.](modulesfiles/copyResources_siteCopy.png)
 
 The module will duplicate every page, every navigation entry, every site and theme setting, and every user permission. All resources added to the original site will be carried over to the duplicate site. 
 
