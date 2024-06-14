@@ -2,23 +2,27 @@
 
 The [Copy Resources module](https://omeka.org/s/modules/CopyResources){target=_blank} allows you to duplicate Omeka S sites, site pages, items, and item sets.
 
-Once activated on the [modules](https://omeka.org/s/docs/user-manual/modules/){target=_blank} section of the admin dashboard, Copy Resources inserts a "copy" button into the interface of several pages in the admin side, including the table of sites, each site's table of pages, and the items and item sets tables. 
+Once activated on the [modules](https://omeka.org/s/docs/user-manual/modules/){target=_blank} section of the admin dashboard, Copy Resources inserts a "copy" button into the interface of several pages in the admin side, including when viewing the resource, and on the table of sites, each site's table of pages, and the items and item sets tables. 
 
-![The item sets view page in the admin side, showing "copy" buttons next to each item set in the table.](modulesfiles/copyResources_itemsets.png)
+![The pages table in the admin side, showing "copy" buttons next to each page in the table.](modulesfiles/copyResources_pages.png)
 
-Items and item sets will get a new unique identifier, but have all their metadata fields duplicated, including data captured by modules, such as geolocation data in Mapping. Pages (and therefore their sites) will have all their page blocks duplicated, including page blocks added by modules. 
+Items and item sets will get a new unique identifier, but have all their metadata fields duplicated, including data captured by modules, such as geolocation data in Mapping. Duplicate items will be added to the same item sets as the originals; duplicated resources will be added to the same sites as the originals. However, duplicated items will have no media copied with them.
+
+Sites and site pages will have the same name, but their URL slugs will be unique. Pages will have all their page blocks duplicated, including blocks added by modules, and those blocks' settings.
+
+Some content will not copy exactly - be sure you review duplicated resources thoroughly and look for anything missing before making the new resource public. 
 
 ### Permissions
 
-Global Administrators and Supervisors can use this module to copy sites, site pages, items, and item sets.
+Global Administrators, Supervisors, and Editors can use this module to copy items, item sets, sites, and site pages.
 
-Users at the Author level and above (Author, Reviewer, Editor) can copy items and item sets. 
+Users at the Author level and above (Author and Reviewer) can copy items and item sets. 
+
+Site-specific permissions do not affect a user's ability to copy sites. Site copying is reserved for Global Administrators, Supervisors, and Editors. 
 
 Users with site-specific permissions of Creator and Manager can copy pages. 
 
-Site-specific permissions do not affect a user's ability to copy sites. Site copying is reserved for Global Administrators and Supervisors. 
-
-When a resource is copied, its owner will change to the user who made the duplicate; it will not retain the owner of the original. 
+Users can copy resources that they do not own. When a resource is copied, the user who made the duplicate will become its owner; the resource will not retain the owner of the original. 
 
 ### Requirements
 
@@ -48,9 +52,7 @@ When the resource has been successfully copied, you will be taken to the new res
 
 ![The item view page, with a confirmation message that the item was successfully copied.](modulesfiles/copyResources_itemsCopied.png)
 
-You can also copy resources when viewing them individually - a "Copy" button will appear in the top right corner of the screen:
-
-![The item view page, with a "Copy" button in the top right corner, next to the "Edit item" button.](modulesfiles/copyResources_itemsView.png)
+You can also copy resources when viewing them individually - a "Copy" button will appear in the top right corner of the screen.
 
 !!! note
 	Note that duplicated resources will have the same [links to other Omeka S resources](../content/items.md#linked-resources), but anything that links to the original resource will not automatically link to its duplicate. You will have to manually establish these links if desired, or use modules such as [Inverse Properties](inverseproperties.md). 
@@ -65,26 +67,36 @@ When copying a site, you can find the "copy" button in the table of sites, or on
 
 The module will duplicate every page, every navigation entry, every site and theme setting, and every user permission. All resources added to the original site will be carried over to the duplicate site. 
 
+![The sites table, with a "Copy" button in each row, and the Confirmation window open in the right-hand drawer.](modulesfiles/copyResources_sites.png)
+
 When copying a site, pages will maintain their unique slugs; the site itself will have the original site's slug with "-1" appended to the end. You may then rename and re-slug the site in its settings. 
+
+![The sites table, after a site has been successfully copied.](modulesfiles/copyResources_sitesDone.png)
 
 Where other modules introduce site-specific data (such as Metadata Browse, Sharing, Data Visualization, Collecting, Faceted Browse, Item Carousel Block, etc.) this information will be copied, [as long as the corresponding module is updated where applicable (see the Requirements section above)](#requirements). 
 
-Be sure to check over a duplicated site thoroughly to ensure everything has copied correctly. Some pages, page blocks, or module data may not have copied as intended, and may need manual re-setting, such as items chosen in the media embed page block, or pages set in the navigation. 
-
 #### After you duplicate a site
+
+Be sure to check over a duplicated site thoroughly to ensure everything has copied correctly. Some pages, page blocks, or module data may not have copied as intended, and may need manual re-setting, such as items chosen in the media embed page block, or pages set in the navigation. 
 
 Copying an entire site is a complicated process; sites contain large varieties of data, including from modules and themes. Copying a site may result in errors that need to be fixed before the site can be made public, and some data may need to be manually recreated from the original site before you can have a perfect copy. 
 
-Some potential issues you may run into:
+Some issues you may run into:
 
 - A site whose navigation has missing page entries may cause errors until the missing pages are cleared or fixed. This may include problems changing the site theme, name, or slug. If you see the errors "Invalid navigation: page link missing page ID" or "Invalid navigation: invalid link data", check your Navigation for entires displaying "[Missing page]".
-- Data visualizations may be copied over as drafts, not as published diagrams and generated datasets. That is, all the settings will persist, but you will need to generate a duplicate dataset in order for the data visualizations to appear on the public side. You may notice that on the original site, the data visualizations are appearing with "View dataset" and "View diagram" icons in the table, whereas on the duplicate site they are only appearing with "Edit" (pencil) icons in the table. 
-- Some sites with the Faceted Browse module in use may show errors if the user duplicating the site does not have permissions to use Faceted Browse. 
+- [Data visualizations](datavisualization.md) may be copied over as drafts, not as published diagrams and generated datasets. That is, all the settings will persist, but you will need to generate a duplicate dataset in order for the data visualizations to appear on the public side. You may notice that on the original site, the data visualizations are appearing with "View dataset" and "View diagram" icons in the table, whereas on the duplicate site they are only appearing with "Edit" (pencil) icons in the table.  
+- Some sites with the [Faceted Browse](facetedbrowse.md) module in use may show errors if the user duplicating the site does not have permissions to use Faceted Browse. 
 
 ### Pages
 
-When copying pages within a single site, the duplicated page will have the original slug with "-1" appended to the end. You may then rename and re-slug the page. 
+![The pages table, with a "Copy" button in each row, and the Confirmation window open in the right-hand drawer.](modulesfiles/copyResources_pages.png)
+
+When copying pages, the duplicated page will have the original slug with "-1" appended to the end. You may then rename and re-slug the page. 
+
+![The pages table, after a page has been successfully copied.](modulesfiles/copyResources_pagesDone.png)
 
 All page blocks should copy over, including page blocks introduced by modules, [as long as the corresponding module is updated where applicable (see the Requirements section above)](#requirements).
 
-Duplicated pages will need to be manually added to the site navigation in order to display publically; this module does not add newly copied pages to the site navigation.
+This module does not add newly copied pages to the site navigation; duplicated pages will need to be manually added. 
+
+You cannot use this module to copy a page from one site to another.
