@@ -37,7 +37,7 @@ Copy Resources depends on versions of those modules that have been updated since
 
 ## Copying resources
 
-![The items table in the admin side, showing "copy" buttons next to each item in the table, and a confirmation in the right-hand drawer.](modulesfiles/copyResources_itemsConfirm.png)
+![The items table in the admin side, showing "copy" buttons next to each item in the table, and a confirmation in the right-hand drawer.](modulesfiles/copyResources_items.png)
 
 When copying an item or item set, the "copy" button appears to the left of the "edit" button (pencil icon) in each row in the resource table. Items and item sets can be copied manually, one at a time (not in bulk). 
 
@@ -67,7 +67,7 @@ The module will duplicate every page, every navigation entry, every site and the
 
 When copying a site, pages will maintain their unique slugs; the site itself will have the original site's slug with "-1" appended to the end. You may then rename and re-slug the site in its settings. 
 
-![The sites table, after a site has been successfully copied.](modulesfiles/copyResources_sitesDone.png)
+![The sites table, after a site has been successfully copied.](modulesfiles/copyResources_sitesCopied.png)
 
 Where other modules introduce site-specific data (such as Metadata Browse, Sharing, Data Visualization, Collecting, Faceted Browse, Item Carousel Block, etc.) this information will be copied, [as long as the corresponding module is updated where applicable (see the Requirements section above)](#requirements). 
 
@@ -89,7 +89,7 @@ Some issues you may run into:
 
 When copying pages, the duplicated page will have the original slug with "-1" appended to the end. You may then rename and re-slug the page. 
 
-![The pages table, after a page has been successfully copied.](modulesfiles/copyResources_pagesDone.png)
+![The pages table, after a page has been successfully copied.](modulesfiles/copyResources_pagesCopied.png)
 
 All page blocks should copy over, including page blocks introduced by modules, [as long as the corresponding module is updated where applicable (see the Requirements section above)](#requirements).
 
