@@ -41,10 +41,10 @@ Copy Resources depends on versions of those modules that have been updated since
 
 When copying an item or item set, the "copy" button appears to the left of the "edit" button (pencil icon) in each row in the resource table. Items and item sets can be copied manually, one at a time (not in bulk). 
 
-When the "copy" button is clicked, a confirmation will appear in the right-hand drawer. 
+When the "copy" button is clicked, a confirmation will appear in the right-hand drawer. This confirmation window will allow you to set the visibility of the duplicate resource - the options are "Same as original", "Private", or "Public". 
 
 !!! note
-	Items will be copied without their media, in order to limit server processing and space use. If you need to copy an item's media, use the [Omeka S Item Importer](osii.md) module, which has the ability to copy items along with their media. Enter in your own site's API to access existing items. Recall that media only exist through association with a single item; you cannot "add" existing media to a second item.
+	Items will be copied without their media, in order to limit server processing and space use. If you need to copy an item's media, use the [Omeka S Item Importer](ositemimporter.md) module, which has the ability to copy items along with their media. Enter in your own site's API to access existing items. Recall that media only exist through association with a single item; you cannot "add" existing media to a second item.
 
 When the resource has been successfully copied, you will be taken to the new resource's view page. 
 
@@ -61,7 +61,9 @@ You can also copy resources when viewing them individually - a "Copy" button wil
 
 When copying a site, you can find the "copy" button in the table of sites, or on an individual site's view page.
 
-The module will duplicate every page, every navigation entry, every site and theme setting, and every user permission. All resources added to the original site will be carried over to the duplicate site. 
+When the "copy" button is clicked, a confirmation will appear in the right-hand drawer. This confirmation window will allow you to set the visibility of the duplicate site - the options are "Same as original", "Private", or "Public". 
+
+The module will duplicate every page, every navigation entry, every site and theme setting, and every user permission. All resources added to the original site will be carried over to the duplicate site. The new site will point to the same assets (logo, banner, etc.) that the original site did.
 
 ![The sites table, with a "Copy" button in each row, and the Confirmation window open in the right-hand drawer.](modulesfiles/copyResources_sites.png)
 
@@ -85,7 +87,11 @@ Some issues you may run into:
 
 ### Pages
 
+Pages can be copied from the table of pages in each site, or from the individual page editing interface. 
+
 ![The pages table, with a "Copy" button in each row, and the Confirmation window open in the right-hand drawer.](modulesfiles/copyResources_pages.png)
+
+When the "copy" button is clicked, a confirmation will appear in the right-hand drawer. This confirmation window will allow you to set the visibility of the duplicate resource - the options are "Same as original", "Private", or "Public". 
 
 When copying pages, the duplicated page will have the original slug with "-1" appended to the end. You may then rename and re-slug the page. 
 
