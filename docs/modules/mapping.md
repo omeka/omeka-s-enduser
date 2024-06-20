@@ -2,7 +2,7 @@
 
 The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows you to geolocate Omeka S items. Maps can also include timelines that allow you to scroll through items on a map in chronological order.
 
-![Map with timeline](../modules/modulesfiles/Mapping-timelinePublic1.png)
+![Map with timeline](../modules/modulesfiles/Mapping_timelinePublic1.png)
 
 The Mapping module has no global configuration settings. It adds several new metadata fields to each item, and a new "Mapping" tab to each item edit screen, as well as several batch-editing options for items. It adds optional location-based search fields to the advanced search pages on the admin and public interfaces, controlled on a site-by-site basis by [Site Settings](../sites/site_settings.md#settings). It also adds: 
 
@@ -65,17 +65,17 @@ When you are centered on your intended location, you can then:
 
 We refer to these various markers and shapes as "features" throughout the rest of this documentation.
 
-![Mapping tab with an active marker being drawn. The marker has a tooltip saying "click map to place marker"](../modules/modulesfiles/Mapping-drawMarker.png)
+![Mapping tab with an active marker being drawn. The marker has a tooltip saying "click map to place marker"](../modules/modulesfiles/Mapping_drawMarker.png)
 
 #### Edit features
 
 You can now click on the marker or shape to add a label that will display on [public map views](#public-view) of the item. Be aware that this will display in a large font.
 
-![Closeup of map with a marker selected. There is a field to enter the maker label.](../modules/modulesfiles/Mapping-addLabel.png)
+![Closeup of map with a marker selected. There is a field to enter the maker label.](../modules/modulesfiles/Mapping_addLabel.png)
 
 You can also add an image to display on the feature when clicked in the [public view](#public-view). You can only select from images which have already been [attached to the item as media](../content/items.md#media). To remove the image, select "No Image" from the sidebar.
 
-![Marker selected with Image added. The media is also visible in the sidebar, along with an option for "no image"](../modules/modulesfiles/Mapping-addImage.png)
+![Marker selected with Image added. The media is also visible in the sidebar, along with an option for "no image"](../modules/modulesfiles/Mapping_addImage.png)
 
 Neither field is required, but if you choose an image without entering a label, the media title will appear in the label field. This can be removed. 
 
@@ -85,13 +85,13 @@ To **move a marker or shape**, use the "Edit feature" button on the left hand to
 
 To apply your changes, click the "Save" option that opens from the "Edit feature" button. If you do not save, the marker will not be moved.
 
-![Marker being moved](../modules/modulesfiles/Mapping-moveMarker.png)
+![Marker being moved](../modules/modulesfiles/Mapping_moveMarker.png)
 
 To **delete a marker**, first click the "Delete feature" button in the left hand toolbar (trash can icon). Click on the marker or shape you want to delete; this will remove the feature from the map. In order to make the deletion permanent, you must click "Save" in the small menu that opens from the "Delete feature" button.
 
 Note that you can use the "Clear all" button in the menu which opens form the "Delete feature" button to clear all markers and shapes on the map.
 
-![Marker being deleted.](../modules/modulesfiles/Mapping-deleteMarker.png)
+![Marker being deleted.](../modules/modulesfiles/Mapping_deleteMarker.png)
 
 #### Map display
 
@@ -278,7 +278,7 @@ The Timeline options allow you to add a timeline display to the left of the map 
 	- You may want to make a note of which property and numeric data type you are using before creating the map block. The dropdown only displays the term and data type but not which template it is associated with, for example `Date Created (numeric:timestamp)`.
 	- Noted that you can only select *one* property per timeline. You cannot mix timestamp and interval data.
 
-![Mapping block with all options collapsed except Timeline, which shows options as described, all empty](../modules/modulesfiles/Mapping-timelineBlock.png)
+![Mapping block with all options collapsed except Timeline, which shows options as described, all empty](../modules/modulesfiles/Mapping_timelineBlock.png)
 
 To remove the timeline from a map block, click the "X" on the far right of the Property dropdown.
 
@@ -297,7 +297,7 @@ Markers are added to the map by adding items.
 
 To add multiple items at once, click the "Quick add" slider just above the list of items in the right hand drawer. This will add a checkbox to the left of each item. Check the boxes of those items you want to add to the map, then click the "Add selected" button at the bottom of the drawer.
 
-![Drawer with bulk add option activated](../modules/modulesfiles/Mapping-bulkAttachments.png)
+![Drawer with bulk add option activated](../modules/modulesfiles/Mapping_bulkAttachments.png)
 
 #### Query (Map by query block)
 
@@ -313,7 +313,7 @@ You can also run a search on your public site, and from the search results page,
 
 ![The address bar and very top of a search results page.](../sites/sitesfiles/sitepg_bpquery.png)
 
-![A map by query block open to the Query section. There is a query pasted into the field.](../modules/modulesfiles/Mapping-blockQuery.png)
+![A map by query block open to the Query section. There is a query pasted into the field.](../modules/modulesfiles/Mapping_blockQuery.png)
 
 Note that the administrative interface will not preview the map with your selected items. You will need to go to the public view of the page to see the items that result from your query.
 
@@ -323,7 +323,7 @@ A map block will display on a public page, item page, or item set page at the fu
 
 Viewers can zoom either using the scroll function of their computer or the zoom in/out buttons on the left side of the map. You can set whether viewers can use their mouse wheels to scroll inside the map page blocks (not item maps or the Map Browse page). 
 
-![Map block with three individual markers and two green cluster circles of two markers. The map shows a portion of southern England.](../modules/modulesfiles/Mapping-public.png)
+![Map block with three individual markers and two green cluster circles of two markers. The map shows a portion of southern England.](../modules/modulesfiles/Mapping_public.png)
 
 Each item will display as one or more markers or shapes on the map. Features that are close together may display as a cluster circle, with a number indicating how many items share that location. As you zoom in, these clusters will break open. Depending on the size of a shape, shapes may not cluster except at very low zoom levels, or at all. Clicking on a marker will display the label for that marker. 
 
@@ -338,15 +338,15 @@ If you have added a label, it will show the label, as well as representative med
 
 Item mapping marker with label only:
 
-![](../modules/modulesfiles/Mapping-publicLabel.png)
+![](../modules/modulesfiles/Mapping_publicLabel.png)
 
 Item mapping marker with label and image:
 
-![](../modules/modulesfiles/Mapping-publicLabelImg.png)
+![](../modules/modulesfiles/Mapping_publicLabelImg.png)
 
 Item mapping marker with no label or image:
 
-![](../modules/modulesfiles/Mapping-publicNoLabel2.png)
+![](../modules/modulesfiles/Mapping_publicNoLabel2.png)
 
 #### Timeline public view
 
@@ -354,7 +354,7 @@ Timelines only appear in page blocks. The timeline will display to the left of t
 
 On a map block with a timeline, the block initially loads with the map either at default view or zoomed to display all markers. The timeline will display the title headline and text, as seen below:
 
-![Map block with timeline, displaying the first slide of the timeline. There are two lines of text, a larger font reading "Title Headline" and below it smaller font reading "title text".](../modules/modulesfiles/Mapping-timelinePublic1.png)
+![Map block with timeline, displaying the first slide of the timeline. There are two lines of text, a larger font reading "Title Headline" and below it smaller font reading "title text".](../modules/modulesfiles/Mapping_timelinePublic1.png)
 
 In the timeline half of the display, information appears on the top and the timeline on the bottom. The timeline viewer has zoom buttons which increase or decrease the horizontal display of time (zoom in for year by year, zoom out to see decades at once). The arrow below them returns the viewer to the title slide.
 
@@ -362,7 +362,7 @@ When mousing over the timeline, the cursor changes to a four-directional arrow. 
 
 Clicking on a marker will display that item's date or interval, title, description, and attached image. The information area has a scroll bar for longer material. The title acts as a link to the item's show page.
 
-![Map block with timeline, displaying the interval item "Steventon Rectory, 1775-1801". The information area includes the beginning of a long paragraph describing the item. The marker for the rectory in the timeline runs off the right side of the timeline, which displays 1760-1800.](../modules/modulesfiles/Mapping-timelinePublic2.png)
+![Map block with timeline, displaying the interval item "Steventon Rectory, 1775-1801". The information area includes the beginning of a long paragraph describing the item. The marker for the rectory in the timeline runs off the right side of the timeline, which displays 1760-1800.](../modules/modulesfiles/Mapping_timelinePublic2.png)
 
 Whenever an item is selected, its marker in the timeline will show up with a highlight to indicate that it is active.
 
@@ -370,19 +370,19 @@ Whenever an item is selected, its marker in the timeline will show up with a hig
 
 Interval properties display as a long bar running horizontally across the timeline, with bars reaching down to the timeline at the start and end dates of the interval. Overlapping intervals will stack.
 
-![Interval timeline with both Steventon Rectory and Reading Abbey Girls' School. The latter is open and highlighted in the timeline display; it is shorter than and nested under the timeline display for the Rectory.](../modules/modulesfiles/Mapping-timelinePublic3.png)
+![Interval timeline with both Steventon Rectory and Reading Abbey Girls' School. The latter is open and highlighted in the timeline display; it is shorter than and nested under the timeline display for the Rectory.](../modules/modulesfiles/Mapping_timelinePublic3.png)
 
 **Numeric:Timestamp appearance**
 
 Timestamp properties display as a flag on the timeline, with one bar anchoring them to the timeline. Items which overlap either due to date or long text will stack.
 
-![Timestamp timeline showing markers for the births of Cassandra and Jane Austen in the 1770s](../modules/modulesfiles/Mapping-timelinePublic4.png)
+![Timestamp timeline showing markers for the births of Cassandra and Jane Austen in the 1770s](../modules/modulesfiles/Mapping_timelinePublic4.png)
 
 **Timeline navigation position**
 
 If you select "full width, below story slider and map" in the "Timeline navigation position" dropdown, the timeline and map will display as follows:
 
-![Timeline start page slide, with the timeline displaying full width below the map and story slider](../modules/modulesfiles/Mapping-timelinePublicBelow.png)
+![Timeline start page slide, with the timeline displaying full width below the map and story slider](../modules/modulesfiles/Mapping_timelinePublicBelow.png)
 
 If you select "full width, above story slider and map", the display will be similar but with the timeline above.
 
@@ -392,7 +392,7 @@ When "Show contemporaneous events" is checked, the map zooms to display all even
 
 In the image below, the timeline is using interval data. The event "Reading Abbey Girls' School" (March 1785 - December 1786) takes place within the same period as "Steventon Rectory" (1775-1801), so the map is zoomed out to display the location markers for both events.
 
-![image as described](../modules/modulesfiles/Mapping-timelinePublicSCE.png)
+![image as described](../modules/modulesfiles/Mapping_timelinePublicSCE.png)
 
 ## Troubleshooting
 
