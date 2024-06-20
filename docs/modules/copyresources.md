@@ -26,14 +26,19 @@ Users can copy resources that they do not own. When a resource is copied, the us
 
 ### Requirements
 
-Copy Resources requires Omeka S 4.1.1. In order to work with the following modules, Copy Resoures depends on versions of those modules that have been updated since Copy Resources' release, specifically:
+Copy Resources requires Omeka S 4.1.0 or later. 
 
-- Mapping version 2.0 and above
-- Scripto version 1.5
-- Collecting version 1.2
-- Data Visualization version 1.3
-- Item Carousel Block version 1.3
-- Faceted Browse version 1.5.
+If you are using the following modules, we recommend you upgrade to versions that have been updated since Copy Resources' release, specifically:
+
+- [Mapping](mapping.md) version 2.0 and above
+- [Scripto](scripto/index.md) version 1.5
+- [Sharing](sharing.md) version 1.5.0
+- [Collecting](collecting.md) version 1.12.0
+- [Data Visualization](datavisualization.md) version 1.3
+- [Item Carousel Block](itemcarouselblock.md) version 1.3
+- [Faceted Browse](facetedbrowse.md) version 1.5.
+
+Other modules with data potentially copyable by Copy Resources, such as Metadata Browse, do not have dependencies. 
 
 ## Copying resources
 
@@ -100,6 +105,5 @@ Copying an entire site is a complicated process; sites contain large varieties o
 Some issues you may run into:
 
 - A site whose navigation has missing page entries may cause errors until the missing pages are cleared or fixed. This may include problems changing the site theme, name, or slug. If you see the errors "Invalid navigation: page link missing page ID" or "Invalid navigation: invalid link data", check your Navigation for entires displaying "[Missing page]".
-- [Data visualizations](datavisualization.md) may be copied over as drafts, not as published diagrams and generated datasets. That is, all the settings will persist, but you will need to generate the datasets for the new site in order for the data visualizations to appear on the public side. You may notice that on the original site, the data visualizations are appearing with "View dataset" and "View diagram" icons in the table, whereas on the duplicate site they are only appearing with "Edit" (pencil) icons in the table.  
 - Some sites with the [Faceted Browse](facetedbrowse.md) module in use may show errors if the user duplicating the site does not have permissions to use Faceted Browse (Global Administrators and Supervisors can, but Editors cannot). 
 - The ["List of pages" page block](../sites/site_pages.md#list-of-pages) can sometimes be copied before all of the site's pages are duplicated, which means the pages listed in the block may be broken. Remove all entries and replace them in any pages using this block. 
