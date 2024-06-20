@@ -205,7 +205,7 @@ When on the Theme page of a Site, your current theme will appear at the top, wit
 Note that your settings for a specific theme on a site will be saved if you change themes. For example, if you customized the item page for the Default theme, then switched to using Foundation for a while, then switched back to the Default theme, your item page settings would be retained.
 
 ### Select regions and blocks
-In the right sidebar, select a region from the dropdown menu, and then add a block to it from the list of available blocks by clicking on the block name. Blocks may be reordered or moved to other regions by dragging and dropping.
+In the right-hand drawer, select a region from the dropdown menu, and then add a block to it from the list of available blocks by clicking on the block name. Blocks may be reordered or moved to other regions by dragging and dropping.
 
 To remove a block, click the delete icon and then save the page. It will once again appear in the right sidebar.
 
@@ -221,7 +221,7 @@ Keep in mind that other theme settings and site settings may also combine with h
 
 ### Available blocks
 
-A basic Omeka S installation will create the following configurable blocks, but modules may also add their own blocks. For example, the [Mapping module](../modules/mapping.md) will allow you to reposition the map on the resource pages.
+A basic Omeka S installation will create the following configurable blocks, but modules may also add their own blocks. For example, the [Mapping module](../modules/mapping.md) will allow you to reposition the map on item and item set pages (not media).
 
 If a block would be empty of content (for example, if there are no linked resources, no media, nothing set as a resource class, or no site pages), it will not display on that particular item.
 
@@ -258,3 +258,4 @@ Available blocks:
 
 - Values: display all media property values.
 - Resource class: show the resource class of the item set.
+- Linked resources: display a filterable table of resources that are linked to the item set.
