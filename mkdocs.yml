@@ -44,6 +44,7 @@ nav:
     - Modules:
         - modules/index.md
         - modules/collecting.md
+        - modules/copyresources.md
         - modules/csseditor.md
         - modules/csvimport.md
         - modules/customvocab.md
