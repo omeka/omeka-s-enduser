@@ -285,6 +285,6 @@ The page block comes with the following settings:
 * Preview title: Enter in a title to display at the top of the page block. 
 * Link text: Enter in text to display on a button at the bottom of the page block. This will link the users to the full FB page. 
 
-![The FB preview page block as it appears in the The Daily theme.](FacetedBrowse_previewpageblock2.png)
+![The FB preview page block as it appears in the The Daily theme.](modulesfiles/FacetedBrowse_previewpageblock2.png)
 
 
