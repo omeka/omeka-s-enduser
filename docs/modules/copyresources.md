@@ -30,13 +30,13 @@ Copy Resources requires Omeka S 4.1.0 or later.
 
 If you are using the following modules, we recommend you upgrade to versions that have been updated since Copy Resources' release, specifically:
 
-- [Mapping](mapping.md) version 2.0 and above
-- [Scripto](scripto/index.md) version 1.5
-- [Sharing](sharing.md) version 1.5.0
-- [Collecting](collecting.md) version 1.12.0
+- [Collecting](collecting.md) version 1.12 or later
 - [Data Visualization](datavisualization.md) version 1.3
 - [Item Carousel Block](itemcarouselblock.md) version 1.3
-- [Faceted Browse](facetedbrowse.md) version 1.5.
+- [Faceted Browse](facetedbrowse.md) version 1.5.1
+- [Mapping](mapping.md) version 2.0
+- [Scripto](scripto/index.md) version 1.5
+- [Sharing](sharing.md) version 1.5.
 
 Other modules with data potentially copyable by Copy Resources, such as Metadata Browse, do not have dependencies. 
 
