@@ -106,4 +106,3 @@ Some issues you may run into:
 
 - A site whose navigation has missing page entries may cause errors until the missing pages are cleared or fixed. This may include problems changing the site theme, name, or slug. If you see the errors "Invalid navigation: page link missing page ID" or "Invalid navigation: invalid link data", check your Navigation for entires displaying "[Missing page]".
 - Some sites with the [Faceted Browse](facetedbrowse.md) module in use may show errors if the user duplicating the site does not have permissions to use Faceted Browse (Global Administrators and Supervisors can, but Editors cannot). 
-- The ["List of pages" page block](../sites/site_pages.md#list-of-pages) can sometimes be copied before all of the site's pages are duplicated, which means the pages listed in the block may be broken. Remove all entries and replace them in any pages using this block. 
