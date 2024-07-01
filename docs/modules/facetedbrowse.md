@@ -146,7 +146,6 @@ The formatting of the value input will depend up on the query type selected abov
 
 When you are satisfied with your settings, click the "Set facet" button.
 
-
 For example, you may wish to load all the "Subject" property's values and allow people to browse items using the subject headings currently in use. If you select "Show all available values" you will see a list of subjects currently in use, from most frequent to least. Note that you may wish to clean up your data and consolidate similar values, or fix typos and variations, to make faceted browsing more useful. You can use the [Value Suggest module](../modules/valuesuggest.md) in tandem with Faceted Browse to view and clean messy data.
 
 !!! note
@@ -200,11 +199,11 @@ In the public view, the faceting will be controlled through a dropdown menu.
 
 ### Columns
 
-The items on the page will initially display in the [default format for your site (grid or list)](../sites/site_theme.md#layout-for-browse-pages). This list of results displays the title, description, and thumbnail for each resource, just as is the case with other browse lists. These rows may be truncated (overly long text will be hidden). 
+The items on the public page will initially display in a list, including the title, description, and thumbnail for each resource. These rows may be truncated (overly long text will be hidden).
 
 You can configure the information displayed about the results by adding columns of metadata to the display for your faceted browse. This will convert the display into a table with a row for each resource in the results. Columns are set on a category-by-category basis. Depending on whether your page has one category or multiple categories, the display of the initial page may change.
 
-On the public view of a facted browse, users can sort by a column by selecting it from the dropdown menu. Each column can be sorted in ascending or descending order. If you would like to prevent users from sorting by a certain column, you can check the "Exclude sort by" checkbox when configuring that column to exclude it from the dropdown menu.
+On the public view of a faceted browse, users can sort by a column by selecting it from the dropdown menu. Each column can be sorted in ascending or descending order. If you would like to prevent users from sorting by a certain column, you can check the "Exclude sort by" checkbox when configuring that column to exclude it from the dropdown menu.
 
 !!! note
 	If a value is very long, such as the resource title or description, you may end up with very tall table rows, with the largest field occupying the widest column and other columns narrowed down to compensate. You can use the [CSS Editor module](csseditor.md) to implement a truncation where overflowing text is hidden.
@@ -252,7 +251,7 @@ Drag and drop your pages into the desired place in your site navigation, and the
 
 ## Public views
 
-The public view of a faceted browse should look familiar to many viewers:
+The public views of Faceted Browse pages include the base page, where there may be one or more categories to click on, and then category-specific pages, featuring the columns chosen for that view. Browse facets will show in a list if no columns are selected for display  - no column headings will be included, but the items on the page can be sorted as usual.
 
 ![Faceted browse page with a list of events that happened on the National Mall. On the left side of the image is a list of eras with radio buttons.](modulesfiles/FacetedBrowse_publicView.png)
 
@@ -272,7 +271,7 @@ Once a user clicks on a category, the resource list will change to display only 
 
 ![A faceted browse page with facets visible. The category heading shows up above the facets. Over that is a button labelled "Back". Annotations indicate the button, category, and facet headings.](modulesfiles/FacetedBrowse_multiCatView2.png)
 
-### Faceted Browse page block
+### Faceted Browse preview page block
 
 You can add a "Faceted browse preview" page block to pages in Omeka sites. This page block will show the first few items that appear on the full FB page, without any of the sidebar facets or navigation tools available on the page. 
 
