@@ -58,6 +58,7 @@ nav:
         - modules/fedoraconnector.md
         - modules/filesideload.md
         - modules/iiifpresentation.md
+        - modules/imageannotate.md
         - modules/inverseproperties.md
         - modules/itemcarouselblock.md
         - modules/mapping.md
