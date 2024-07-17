@@ -25,3 +25,7 @@ The administrative dashboard of Omeka S has the following features for accessibi
 
 -   ARIA landmarks for screen readers on the Admin Dashboard, designating the header, navigation, main content, and footers.
 -   Semantic HTML5 markup.
+
+## Accessibility Issues
+
+If you encounter an issue with accessiblity with the Omeka S core software or Omeka Team developed addons, please report your findings either via a [Forum post](https://forum.omeka.org/c/omeka-s/accessibility/36) or by making an issue in the appropriate Github repository.
