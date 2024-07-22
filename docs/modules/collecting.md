@@ -29,6 +29,10 @@ Clicking on the phrase "Terms of Service" will open a new window so that people 
 !!! note
 	If you are having problems sending emails from your Omeka S installation, check with your hosting provider. Some hosting setups may require that the domain name for the administrator email matches the domain name of the installation (if your domain is `yourinstall.org`, the administrator email must be `user@yourinstall.org`). Omeka S relies on the server’s underlying `sendmail` utility for sending email.
 
+## Global settings
+
+Collecting will require users to complete a reCaptcha form in order to submit if you have added a reCaptcha key in the [Global Settings](../admin/settings.md). This can be an important step to complete to prevent spam.
+
 ## Add a form
 
 If Collecting is active, then a tab for Collecting will appear in the context menu for every site.
