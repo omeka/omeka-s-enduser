@@ -57,6 +57,7 @@ nav:
         - modules/facetedbrowse.md
         - modules/fedoraconnector.md
         - modules/filesideload.md
+        - modules/hierarchy.md
         - modules/iiifpresentation.md
         - modules/imageannotate.md
         - modules/inverseproperties.md

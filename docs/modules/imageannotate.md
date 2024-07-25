@@ -60,7 +60,7 @@ Where image annotations are available, a button will appear on the public item a
 
 Note that if you usually use the Lightbox gallery to display your media on item and media view pages, this cannot be modified to include image annotations. If you wish to show annotations, you must use the Media embed or Media render formats. 
 
-For videos and PDFs, the "View annotations" button will appear alongside the usual multimedia render, and when clicked, the multimedia will be replaced with its annotated thumbnail. Modules such as [PDF Embed](pdfembed.md) may determine whether a media frame or its thumbnail displays in places such as the item or media view page. 
+For videos and PDFs, the "View annotations" button will appear alongside the usual multimedia render, and when clicked, the multimedia will be replaced with its annotated thumbnail. Modules such as PDF Embed may determine whether a media frame or its thumbnail displays in places such as the item or media view page. 
 
 ### Page blocks
 
