@@ -203,9 +203,9 @@ Item set pages, if you add the Mapping resource block to a region, will display 
 
 ### Page blocks
 
-Mapping creates two page blocks you can add to your site pages: "Map by attachments", where you manually add resources to the map block; and "Map by query", which allows you to use a search string to add resources to the map block.
+Mapping creates three page blocks you can add to your site pages: "Map by attachments", where you manually add resources to the map block; "Map by query", which allows you to use a search string to add resources to the map block; and "Map by GeoJSON", where you can input GeoJSON-formatted code to display map points that are not related to your Omeka items.
 
-To add a map to a page, click to edit the page. On the right, under "Add new block", click either the "Map by attachments" or "Map by query" option (1). Selecting one will open the map block to the page (2). The blocks include customizable features for the map in collapsable panes. Click the triangle to expand or collapse these fields (3).
+To add a map to a page, click to edit the page. On the right, under "Add new block", click either the "Map by attachments" or "Map by query" option (1), or the "Map by GeoJSON" option (see below). Selecting one will open the map block to the page (2). The blocks include customizable features for the map in collapsable panes. Click the triangle to expand or collapse these fields (3).
 
 ![Screenshot of the Page with Map Block selected. Block includes menu options Default View, WMS Overlays and attachments.](../modules/modulesfiles/Mapping_Page_MapBlock1.png)
 
@@ -317,13 +317,51 @@ You can also run a search on your public site, and from the search results page,
 
 Note that the administrative interface will not preview the map with your selected items. You will need to go to the public view of the page to see the items that result from your query.
 
+#### GeoJSON (Map by GeoJSON block)
+
+This block (new to Mapping version 2.1) allows you to, rather than display items from your Omeka collection, display useful information on a map using markers and shapes generated from [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON){target=_blank}-formatted data. You can create this code yourself, or copy it from existing sources. 
+
+GeoJSON provides map points, line, and polygons as well as metadata information about each feature. You can use this to illustrate areas, such as historical boundaries of a municipality, or add coordinates related to the topic of your Omeka site or page. You can display any number of map features, of all types (point, line, and polygon), on one map. You can also have one set of metadata that refers to multiple discrete areas of the map - such as showing the continental United States, Alaska, and Hawaii as one single datapoint with three separate polygonal features.
+
+![The admin side of a page being edited, showing the "Map by geoJSON" block filled out with information.](modulesfiles/Mapping_geojsonAdmin.png)
+
+This block has four fields:
+
+    - **Label property key**: If you wish to feature one value as each map feature's pop-up title, enter the property name here. Look below in the code your have pasted into the **GeoJSON** field to get this information.
+    - **Comment property key**: If you wish to feature one value as each map feature's pop-up text, enter the property name here. Look below in the code your have pasted into the **GeoJSON** field to get this information.
+    - **Show GeoJSON property list?**: Check this if you wish map pop-ups to show all available information about each point. Note that this will replicate any information you have entered into the above fields; if you check this, you may wish to leave those fields blank.
+    - **GeoJSON**: Enter the GeoJSON data in full. This should look like [the example data below](https://geojson.org/){target=_blank}:
+
+```
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [125.6, 10.1]
+  },
+  "properties": {
+    "name": "Dinagat Islands"
+  }
+}
+```
+
+By looking within this data to find the available properties, you can fill the "label" and "comment" fields if so desired. 
+
+This is a map pin with the label and comment selected:
+![The public map with settings as in the above screenshot.](modulesfiles/Mapping_geojsonPublic1.png)
+
+And this is a map pin with all available properties showing, without a label or comment selected:
+![The public map with settings as in the above screenshot.](modulesfiles/Mapping_geojsonPublic2.png)
+
+Note that the administrative interface will not preview the map with your geoJSON data. You will need to go to the public view of the page to see the features that result from your data.
+
 ### Public view
 
 A map block will display on a public page, item page, or item set page at the full page width. If you have settings in the [default view](#default-view) of the map block, or have set [default map bounds for the item](#setting-the-map-display), these should be applied. Otherwise the map will zoom so that all of the items are visible.
 
 Viewers can zoom either using the scroll function of their computer or the zoom in/out buttons on the left side of the map. You can set whether viewers can use their mouse wheels to scroll inside the map page blocks (not item maps or the Map Browse page). 
 
-![Map block with three individual markers and two green cluster circles of two markers. The map shows a portion of southern England.](../modules/modulesfiles/Mapping_public.png)
+![Map block with three individual markers and two green cluster circles of two markers. The map shows a portion of southern England.](modulesfiles/Mapping_public.png)
 
 Each item will display as one or more markers or shapes on the map. Features that are close together may display as a cluster circle, with a number indicating how many items share that location. As you zoom in, these clusters will break open. Depending on the size of a shape, shapes may not cluster except at very low zoom levels, or at all. Clicking on a marker will display the label for that marker. 
 
