@@ -75,6 +75,8 @@ Or, you may wish to reflect a physical organizational system of artifacts:
 
 Every entry in the lists above is a grouping with a label but no item set, except for the bottom-most level, which is set to the item set containing the relevant items in Omeka. 
 
+![An example Hierarchy screen is filled out](modulesfiles/hierarchy_admin.png)
+
 You can create as many hierarchies as you wish, with as many levels as needed, and reuse your item sets wherever you wish. In this way you can create multiple points of access to your collections, according to different topics or browse methods. 
 
 If you delete a grouping (the trash can icon to the right), its children will not be deleted with it. Instead, they will be promoted up to the level of the deleted grouping. Remember to save your changes before navigating away from the module page. 
@@ -88,14 +90,13 @@ From the Modules page of the left-hand navigation, scroll to "Hierarchy" in the 
 The Hierarchy module has three configuration options:
 
 - **Show hierarchy label**: If checked, the hierarchy's assigned label will display as the hierarchy header on public pages. If unchecked, nothing will display. You can also leave individual hierarchy labels blank. 
-- **Combine hierarchy resources**: If checked, groupings will display resources of all child groupings in resource counts and on hierarchy grouping browse pages.
 - **Show hierarchy resource counts**: If checked, hierarchy groupings will show the number of resources within currently assigned item set.
+- **Combine hierarchy resources**: If checked, groupings will display resources of all child groupings in resource counts and on hierarchy grouping browse pages.
 
 These settings are installation-wide and will apply to any site where hierarchies show. 
 
 !!! note
 	If you show resource counts for each level of your hierarchy, and if you also combine those counts, note that some items may be counted multiple times if those items are in more than one item set. For example, if you had 20 items in a "Public domain" item set, and 15 of those same items were also in the "Photographs" item set, and you put both of those item sets below one grouping, you might see "35" where you might only expect 20. Consider your organizational system thoroughly when using this feature.   
-
 
 ## Add hierarchies to a site
 
@@ -112,18 +113,17 @@ Select a site, then select the "Theme" tab in the left sidebar. Click the "Confi
 
 On the Items view page, you can add the "Hierarchy" resource block to any region given by your theme. This will display all the hierarchies that apply to the item. If an item is in more than one item set, all of the item sets' hierarchies will be displayed. 
 
-This display will depend on whether the applicable item sets are added to the site as a resource. 
+![The item set view page settings in the admin side, with the Hierarchy block included.](modulesfiles/hierarchy_resource2.png)
+
+On the Item set view page, you can add the "Hierarchy" resource block to any region given by your theme. This will display all the hierarchies that apply to the item set. 
+
+!!! note
+	Public display will depend on whether the applicable item sets are added to the site as a resource. Note that item sets with visibility set to "private" will not be available to logged-out users; their place in hierarchies will not be linked and their items will not be included in counts. 
 
 ### Page blocks
 
 ![The Hierarchy page block on the admin side.](modulesfiles/hierarchy_pageBlock.png)
 
-When adding the Hierarchy page block to a page, 
+When adding the Hierarchy page block to a page, you can select one hierarchy at a time to display. You can add multiple page blocks. 
 
 ![An example configuration screen is filled out](modulesfiles/hierarchy_public2.png)
-
-## CSV Import integration
-
-With CSV Import, you can add media to items via File Sideload. Provide a column with the filenames, not full URLs, pointing to the files in your Sideload directory. Add the mapping to Media source > Sideload.
-
-When using CSV Import with your Sideload directory, we recommend you un-check the file deletion setting in the File Sideload module configuration. CSV Import may delete files from your Sideload directory even if an import job has failed or stalled. You should always manually check the results of CSV Import before deleting the files it has imported. 
