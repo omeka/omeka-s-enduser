@@ -31,8 +31,8 @@ nav:
         - sites/site_theme.md
     - Resources:
         - content/items.md
-        - content/item-sets.md
         - content/media.md
+        - content/item-sets.md
         - content/vocabularies.md
         - content/resource-template.md
     - Admin:
@@ -43,6 +43,7 @@ nav:
     - Modules:
         - modules/index.md
         - modules/collecting.md
+        - modules/copyresources.md
         - modules/csseditor.md
         - modules/csvimport.md
         - modules/customvocab.md
@@ -56,6 +57,7 @@ nav:
         - modules/fedoraconnector.md
         - modules/filesideload.md
         - modules/iiifpresentation.md
+        - modules/imageannotate.md
         - modules/inverseproperties.md
         - modules/itemcarouselblock.md
         - modules/mapping.md

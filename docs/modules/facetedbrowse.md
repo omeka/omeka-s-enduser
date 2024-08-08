@@ -6,7 +6,7 @@ With this module, site managers are able to configure faceted browse pages and a
 
 The [public view](#public-views) section below shows how these facets display for single and multi-category pages.
 
-Faceted browse pages exist as separate [pages](../sites/site_pages.md). You cannot add faceted browsing to a page as a block, or as part of an existing browse page.
+Faceted browse pages exist as separate [pages](../sites/site_pages.md). You can [add faceted browsing to a page as a block](#faceted-browse-page-block) that will preview the FB page, but not have its full functionality. 
 
 Once activated, Faceted Browse is configured on a site-by-site basis.
 
@@ -19,13 +19,13 @@ A quick guide to the terms used to describe the aspects of a faceted browse page
 - Column: information to display for each resource in the results. Columns are optional. Once you have set at least one column, the items will display in a table form (not a grid). When no columns are set, your site's browsing default will display (e.g. title, thumbnail, and description for each resource).
 - Select: When a facet is browseable, you should allow your visitors the most appropriate means of sorting or searching those facets. You can allow them to, for example, exclude or include strings in the results, match full values exactly, or, with numerical data types, bucket the values into groupings that you set. 
 
-![Faceted browse page with a list of events that happened on the National Mall. On the left side of the image is a list of eras with radio buttons.](../modules/modulesfiles/FacetedBrowse_publicView-basic.png)
+![Faceted browse page with a list of events that happened on the National Mall. On the left side of the image is a list of eras with radio buttons.](modulesfiles/FacetedBrowse_publicView-basic.png)
 
 In the example public view above, the title "Browse items" is used for the page's appearance in the navigation; "Filter by type" is the category name in the left-hand sidebar of the page. Facets in the category include "Class", "Template used", and "Collection". In these examples the Select used is "Multiple (list)", which results in checkboxes for each option, and the visible options are truncated at 4.
 
 ## Create Faceted Browse pages
 
-![Site admin showing Faceted Browse startup page.](../modules/modulesfiles/FacetedBrowse.png)
+![Site admin showing Faceted Browse startup page.](modulesfiles/FacetedBrowse_1.png)
 
 Once the Faceted Browse module is active, a tab for Faceted Browse will appear in the context menu for every site. Clicking on this tab will take you to a list of all of your Faceted Browse pages for that site.
 
@@ -36,7 +36,7 @@ Site managers must create Faceted Browse pages before they can be added to the s
 
 Create a new page by clicking the "Add a page" button. This takes you to a new page where you can add basic information for the page and start adding categories. 
 
-![Create page interface showing save page dropdown](../modules/modulesfiles/FacetedBrowse_AddPage.png)
+![Create page interface showing save page dropdown](modulesfiles/FacetedBrowse_AddPage.png)
 
 The **page title** is required and will display on browser tabs and be sent in the page metadata. You can set a separate label in the site navigation. Most themes will not display this title visibly on the page. When one category is in use, its title will show on the page; when two or more categories are set, the word "Browse" will appear above the category links in the sidebar. 
 
@@ -56,7 +56,9 @@ Use the search query interface to set the pool of resources that users will brow
 
 You can also set a default sorting method to use when a site visitor starts to browse using this category. The dropdown menu will show "Created" and "Title" at first, but will update to reflect the columns you customize for your browsing table below. You will need to save your columns settings to see this menu updated. Note that you cannot set a default sort by an Item Set column. 
 
-![Add category form showing Name, query, Default sort, Facets, and Columns options](../modules/modulesfiles/FacetedBrowse_SearchQuery.png)
+![Add category form showing Name, query, Default sort, Facets, and Columns options](modulesfiles/FacetedBrowse_SearchQuery.png)
+
+You can also include some text to guide your users on how to navigate the Faceted Browse page. This text will appear in the left-hand sidebar along with your facets in this category. There will be a button to contract the text (which is expanded by default); the button says "Instructions" by default, but you can change this label. If you add no helper text, this button and text area will not appear. 
 
 After setting the pool of resources, you can create facets and set columns for your browse display. Once you are done creating your facets and setting your display columns, save your category.
 
@@ -74,7 +76,7 @@ You can create facets from the following options:
 - Item set (for items only)
 - Full-text.
 
-![Facet Type dropdown menu showing options](../modules/modulesfiles/FacetedBrowse_SelectFacetType.png)
+![Facet Type dropdown menu showing options](modulesfiles/FacetedBrowse_SelectFacetType.png)
 
 Once the type is selected, click the "Add" button. A drawer will open on the right side of the browser window with options to configure the facet. Facet names are always required and will display in the public interface. 
 
@@ -82,7 +84,7 @@ Other facet options are described below.
 
 The image below shows the drawer options for the Value facet:
 
-![Configure Facet draw for the Values facet type](../modules/modulesfiles/FacetedBrowse_ConfigureFacetV.png) 
+![Configure Facet draw for the Values facet type](modulesfiles/FacetedBrowse_ConfigureFacetV.png) 
 
 For the Single (list) and Multiple (list) Select types, page creators can choose to truncate the values on the list that is visible to the site visitor, by setting a number in the "Truncate values" option. Leaving the input blank will display all values. Entering in a number will display only that number of facets, in order, with a "See more (X)" link displaying the number of further facets. 
 
@@ -144,7 +146,6 @@ The formatting of the value input will depend up on the query type selected abov
 
 When you are satisfied with your settings, click the "Set facet" button.
 
-
 For example, you may wish to load all the "Subject" property's values and allow people to browse items using the subject headings currently in use. If you select "Show all available values" you will see a list of subjects currently in use, from most frequent to least. Note that you may wish to clean up your data and consolidate similar values, or fix typos and variations, to make faceted browsing more useful. You can use the [Value Suggest module](../modules/valuesuggest.md) in tandem with Faceted Browse to view and clean messy data.
 
 !!! note
@@ -194,18 +195,18 @@ Once you have selected a facet type, you will be able to configure the facet to 
 
 In the public view, the faceting will be controlled through a dropdown menu.
 
-![Public Faceted Browse page with radio button selects for a list of Status values and a "Birth Date Before" dropdown menu in the left column. In the right column is a table of items with information for Title, Location, and Spouse](../modules/modulesfiles/FacetedBrowse_DatesPublic.png)
+![Public Faceted Browse page with radio button selects for a list of Status values and a "Birth Date Before" dropdown menu in the left column. In the right column is a table of items with information for Title, Location, and Spouse](modulesfiles/FacetedBrowse_DatesPublic.png)
 
 ### Columns
 
-The items on the page will initially display in the [default format for your site (grid or list)](../sites/site_theme.md#layout-for-browse-pages). This list of results displays the title, description, and thumbnail for each resource, just as is the case with other browse lists. These rows may be truncated (overly long text will be hidden). 
+The items on the public page will initially display in a list, including the title, description, and thumbnail for each resource. These rows may be truncated (overly long text will be hidden).
 
 You can configure the information displayed about the results by adding columns of metadata to the display for your faceted browse. This will convert the display into a table with a row for each resource in the results. Columns are set on a category-by-category basis. Depending on whether your page has one category or multiple categories, the display of the initial page may change.
 
-On the public view of a facted browse, users can sort by a column by selecting it from the dropdown menu. Each column can be sorted in ascending or descending order. If you would like to prevent users from sorting by a certain column, you can check the "Exclude sort by" checkbox when configuring that column to exclude it from the dropdown menu.
+On the public view of a faceted browse, users can sort by a column by selecting it from the dropdown menu. Each column can be sorted in ascending or descending order. If you would like to prevent users from sorting by a certain column, you can check the "Exclude sort by" checkbox when configuring that column to exclude it from the dropdown menu.
 
 !!! note
-	If a value is very long, such as the resource title or description, you may end up with very tall table rows, with the largest field occupying the widest column and other columns narrowed down to compensate. You can use the [CSS Editor module](../modules/csseditor.md) to implement a truncation where overflowing text is hidden.
+	If a value is very long, such as the resource title or description, you may end up with very tall table rows, with the largest field occupying the widest column and other columns narrowed down to compensate. You can use the [CSS Editor module](csseditor.md) to implement a truncation where overflowing text is hidden.
 
 Select a type of column to add from the dropdown menu: 
 
@@ -222,7 +223,7 @@ For each column, a title is required, to be displayed in the header of the table
 
 Remember to click the "Set column" button or your work will not be saved.
 
-![Public Faceted Browse page with columns displaying](../modules/modulesfiles/FacetedBrowse_columns.png)
+![Public Faceted Browse page with columns displaying](modulesfiles/FacetedBrowse_columns.png)
 
 #### **Value**
 
@@ -240,7 +241,7 @@ Item sets will display with small thumbnails and links to the item sets.
 
 Click on the [Navigation tab](../sites/site_navigation.md) for your site. From the "Add a custom link" list in the page sidebar, select the "Faceted browse" option.
 
-![The navigation screen showing the Faceted Browse page addition dropdown open to see available pages](../modules/modulesfiles/FacetedBrowse_AddPageNav.png)
+![The navigation screen showing the Faceted Browse page addition dropdown open to see available pages](modulesfiles/FacetedBrowse_AddPageNav.png)
 
 Give your custom link a label (optional), and select from your dropdown list of faceted browse pages (required). If the label is blank, the page title will be used.
 
@@ -250,22 +251,39 @@ Drag and drop your pages into the desired place in your site navigation, and the
 
 ## Public views
 
-The public view of a faceted browse should look familiar to many viewers:
+The public views of Faceted Browse pages include the base page, where there may be one or more categories to click on, and then category-specific pages, featuring the columns chosen for that view. Browse facets will show in a list if no columns are selected for display  - no column headings will be included, but the items on the page can be sorted as usual.
 
-![Faceted browse page with a list of events that happened on the National Mall. On the left side of the image is a list of eras with radio buttons.](../modules/modulesfiles/FacetedBrowse_publicView.png)
+![Faceted browse page with a list of events that happened on the National Mall. On the left side of the image is a list of eras with radio buttons.](modulesfiles/FacetedBrowse_publicView.png)
 
 In this image, the facet is Era, displayed as a single-choice list. The items for this page are displayed in columns with the title and era for each item.
 
 Depending on your columns settings on each category, you may have more columns than the user's browser window can accommodate. If so, they will see only the number of columns that can fit their contents on the page without overflow, and see left and right arrows above the top-right corner of the table to scroll the hidden columns into view. Note that text in columns that are not showing on the page will not come up if the user text-searches the page.
 
-![Faceted Browse page with the results table displaying left and right arrows to view columns that are not visible at the current page width.](../modules/modulesfiles/FacetedBrowse_publicView2.png)
+![Faceted Browse page with the results table displaying left and right arrows to view columns that are not visible at the current page width.](modulesfiles/FacetedBrowse_publicView2.png)
 
 ### Multiple categories on one page
 
 When there are multiple categories on a page, it will load with all of the resources from all categories displayed and will show links to the categories available in a submenu.
 
-![Faceted browse page with two categories. The categories are highlighted in a red annotation box labelled "Categories"](../modules/modulesfiles/FacetedBrowse_multiCatView1.png)
+![Faceted browse page with two categories. The categories are highlighted in a red annotation box labelled "Categories"](modulesfiles/FacetedBrowse_multiCatView1.png)
 
 Once a user clicks on a category, the resource list will change to display only that category's resources, the column display you have set, and its facets in the submenu. Users can use a "Back" button on the page to return to the full list of categories and clear their filters.
 
-![A faceted browse page with facets visible. The category heading shows up above the facets. Over that is a button labelled "Back". Annotations indicate the button, category, and facet headings.](../modules/modulesfiles/FacetedBrowse_multiCatView2.png)
+![A faceted browse page with facets visible. The category heading shows up above the facets. Over that is a button labelled "Back". Annotations indicate the button, category, and facet headings.](modulesfiles/FacetedBrowse_multiCatView2.png)
+
+### Faceted Browse preview page block
+
+You can add a "Faceted browse preview" page block to pages in Omeka sites. This page block will show the first few items that appear on the full FB page, without any of the sidebar facets or navigation tools available on the page. 
+
+![Faceted browse preview page block in the admin settings](modulesfiles/FacetedBrowse_previewpageblock.png)
+
+The page block comes with the following settings:
+
+* Page category: Select from the dropdown showing each FB page and all of its categories. You can only choose one category to display per page block, but you can have multiple page blocks. 
+* Limit: Choose the maximum number of items to show from the FB category's default results. Check the FB page itself to see which items will be shown based on its current settings. 
+* Preview title: Enter in a title to display at the top of the page block. 
+* Link text: Enter in text to display on a button at the bottom of the page block. This will link the users to the full FB page. 
+
+![The FB preview page block as it appears in the The Daily theme.](modulesfiles/FacetedBrowse_previewpageblock2.png)
+
+

@@ -4,15 +4,6 @@ The [DSpace Connector module](https://omeka.org/s/modules/DspaceConnector){targe
 
 Note that DSpace Connector only works with DSpace versions 5.6 and higher, including DSpace 7.x. This connector relies on the DSpace API and its site-by-site configuration.
 
-## Check the API
-
-You may wish to first test that your intended DSpace instance is publicly accessible. To do so, use your browser and test the API endpoint:
-
-- Take the DSpace repository URL and add `/rest/collections` (for versions older than 7.0) 
-- Take the DSpace repository URL and add `/server/api/core/collections/` (for 7.x and newer versions).
-
-If you receive an error when loading the page in your browser, the API is not available for import.
-
 ## Import data
 
 Navigate to the section labelled "DSpace Connector" under Modules.
@@ -21,14 +12,14 @@ Navigate to the section labelled "DSpace Connector" under Modules.
 
 On the first form, enter the following information:
 
-* **DSpace site URL** for the repository - the entire URL, including the `http://`
-* **Endpoint** for the API (by default this is "rest" but may be changed in the DSpace instance)
+* **DSpace site URL** for the repository - the entire URL, including the `http://`. This should be the base DSpace repository URL with no `/rest/` or `/server/` information added to the end.
+* **Endpoint** for the API (DSpace versions lower than 7 will likely use `rest` as their endpoint--this is the default. DSpace versions 7 and above will likely use `server/api` as their endpoint--you will have to change this manually.)
 * **Limit** or maximum number of results to retrieve at once.
 * **Test Import** ONLY if you want to import the # of results indicated in Limit field above from chosen collection on next screen. Useful for testing and fine-tuning.
 
-DSpace versions lower than 7 will likely use "rest" as their endpoint. DSpace versions 7 and above will likely use "server/api" as their endpoint. You will have to enter this manually.
-
 Click the "Get collections and communities" button. If the information above has been correctly entered, you will proceed to the DSpace Connector Import Options page. This has "Basic import settings" and "Collections" tabs.
+
+If no collections appear, or the connector stalls, [check that your API is publicly accessible](#check-the-api).
 
 ### Basic import settings
 This tab has five options:
@@ -78,3 +69,12 @@ To  update resources created using the DSpace Connector, simply check "Re-run" t
 ## Undo an import
 
 You can view past imports from the "Past DSpace Imports" page. To undo a completed import and remove all associated items, check the box for each import you wish to undo and click the "Submit" button.
+
+## Check the API
+
+You may wish to first test that your intended DSpace instance is publicly accessible. To do so, use your browser and test the API endpoint:
+
+- Take the DSpace repository URL and add `/rest/collections` (for versions older than 7.0) 
+- Take the DSpace repository URL and add `/server/api/core/collections/` (for 7.x and newer versions).
+
+If you receive an error when loading the page in your browser, the DSpace API is not available for import -- check your DSpace instance's REST API configuration.

@@ -21,6 +21,7 @@ Potential supported file formats for this module are:
 - pdf
 - rtf
 - txt
+- xml
 - bmp, gif, jp2, jpg, png, tiff, and webp (with Tesseract).
 
 You must have the necessary extractors available on your server for the module to run for these filetypes. To see which filetypes will run on your installation, go to the "Extract Text" entry under Modules, and click the "Configure" button. This will load a table showing you which extractors are available on your server.
@@ -43,6 +44,7 @@ The extractors required are:
 - **odt2txt**, used to extract text from ODT files.
 - **pdftotext**, used to extract text from PDF files.
 - **filegetcontents**, used to extract text from TXT files.
+- **domdocument**, used to extract text from XML files.
 - **tesseract**, used to recognize text characters from image files. 
 
 The following image files are supported by Tesseract if compiled with the required libraries:
@@ -55,7 +57,11 @@ The following image files are supported by Tesseract if compiled with the requir
 - TIFF (image/tiff)
 - WEBP (image/webp).
 
-Note that some file extensions or media types may be disallowed in your [global settings](../admin/settings.md#security).
+
+!!! note
+	Note that some file extensions or media types may be disallowed in your installation's [global settings](../admin/settings.md#security). The module does not automatically add or remove any files based on activation or your configuration settings. 
+
+	You may need to manually add new file extensions and media types with an administrator account if you are upgrading the module to add new extractor functionality, such as XML. For example, add "text/xml" to the media types box and add "xml" to the file extensions box. 
 
 If you do not have one or more desired extractor tools installed on your server, check with your hosting service or your local server administrator.
 
@@ -66,9 +72,9 @@ To extract text from media, you can choose several actions:
 - Manually extract text from one media, when the media is uploaded, or later from its media editing screen
 - Manually extract text from all media associated with one item, from its item editing screen
 - Batch-extract text from all media associated with several items, from the batch-editing page
-- Batch-extract text from a CSV Import containing media uploads.
+- Batch-extract text from a [CSV Import](../modules/csvimport.md) containing media uploads.
 
-Extract Text is configured to run automatically when a new piece of media is uploaded anywhere, whether via a CSV Import or by uploading one or more pieces of media to an item. 
+Extract Text is configured to run automatically when a new piece of media is uploaded anywhere, whether via a CSV Import or by uploading one or more pieces of media to an item. The text extraction may not run with other types of imports or connectors added by modules. 
 
 ![An item in editing mode, showing the extracttext:extracted_text field with contents.](../modules/modulesfiles/extracttext_item_field.png)
 
