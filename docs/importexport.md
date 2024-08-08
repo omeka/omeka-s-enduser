@@ -2,46 +2,51 @@
 
 There are numerous methods for importing to, or exporting from, an Omeka S site. Third-party modules may add more functionality; we are only documenting Omeka-team-supported methods here. 
 
-## Importing from another Omeka site
+## Connect to another Omeka site
 
-### Importing from Omeka Classic to Omeka S
+### Import from Classic to S
 
-You can use the [Omeka Classic Importer module](../modules/omekaCimporter.md) to import items & collections from a Classic site. This module only imports items and their metadata (including tags), attached files, and collections (as item sets). It will not import Simple Page content or Exhibit Builder content.
+You can use the [Omeka Classic Importer module](modules/omekaCimporter.md) to import items & collections from a Classic site. This module only imports items and their metadata (including tags), attached files, and collections (as item sets). It will not import Simple Page content or Exhibit Builder content.
 
-If equivalent plugins/modules are installed on both the source site and the target site, Omeka Classic Importer can import module-specific metadata. For example, geolocation data facilitated by the Mapping module in S and the Geolocation plugin in Classic will automatically be imported. PDF Text elements can be imported and mapped to Extract Text fields.
+If equivalent plugins/modules are installed on both the source site and the target site, Omeka Classic Importer can import module-specific metadata. For example, geolocation data facilitated by the Mapping module in S and the Geolocation plugin in Classic will automatically be imported; [PDF Text](https://omeka.org/classic/plugins/PdfText/){target=_blank} elements can be imported and mapped to [Extract Text](https://omeka.org/s/modules/ExtractText/){target=_blank} fields.
 
 You cannot currently export from an Omeka S site to a Classic site. 
 
-### Importing from S to S
+### Import from S to S
 
-You can use the [Omeka S Item Importer module](../modules/ositemimporter.md) to import items from one Omeka S installation to another. You cannot import sites and their pages. 
+You can use the [Omeka S Item Importer module](modules/ositemimporter.md) to import items and item sets from one Omeka S installation to another. You cannot import sites and their pages. We suggest setting up the target site as closely as possible to the source site, including installing and activating all the same modules, and installing any vocabularies used, before performing an import.
 
-## Importing or exporting resource templates 
+### Import or export resource templates 
 
-https://omeka.org/s/docs/user-manual/content/resource-template/#share-resource-templates
+[You can share a resource template between Omeka S installations by exporting and importing them.](https://omeka.org/s/docs/user-manual/content/resource-template/#share-resource-templates)
 
-## Importing or exporting custom vocabularies
+### Import or export custom vocabularies
 
-https://omeka.org/s/docs/user-manual/modules/customvocab/#manage-custom-vocabs
+[You can share custom vocabularies between Omeka S installations by exporting and importing them.](https://omeka.org/s/docs/user-manual/modules/customvocab/#manage-custom-vocabs)
 
-## Importing from non-Omeka platforms
+## Connect to non-Omeka platforms
 
-Omeka S has modules for Zotero, Zenodo, Fedora, DSpace, CKAN, Dataverse, and Invenio. 
+Omeka S has modules for importing resources from: 
 
-## Importing from a spreadsheet
+- [Zotero](modules/zoteroimport.md)
+- [Zenodo](modules/datarepositoryconnector.md)
+- [Fedora](modules/fedoraconnector.md)
+- [DSpace](modules/dspaceconnecter.md)
+- [CKAN](modules/datarepositoryconnector.md)
+- [Dataverse](modules/datarepositoryconnector.md)
+- [Invenio](modules/datarepositoryconnector.md). 
 
-Omeka S can take data in any spreadsheet (tabular) form, whether a CSV, an Excel file, or an ODS. Use the CSV Import module to add items, item sets, media, and users to your Omeka S site from a spreadsheet. This includes data exported from many different databases and platforms. 
+### Import from a spreadsheet
 
-First, look to see if there a connector or importer module for the platform you are looking to export from. Omeka S has modules for Zotero, Zenodo, Fedora, DSpace, CKAN, Dataverse, and Invenio. 
+Omeka S can take data in any spreadsheet (tabular) form, whether a CSV, an Excel file, or an ODS. Use the [CSV Import module](modules/csvimport.md) to add items, item sets, media, and users to your Omeka S site from a spreadsheet. This includes data exported from many different databases and platforms. 
 
+First, look to see if there a connector or importer module for the platform you are looking to export from. Omeka S has modules for Zotero, Zenodo, Fedora, DSpace, CKAN, Dataverse, and Invenio. If there is no specific module, export the data from your source platform into a spreadsheet. This may require some modification or cleanup of the data before importing into Omeka S. 
 
+### Export to a spreadsheet
 
+Exporting resources from Omeka S is possible by using a Python script to query the installation's API. You can use this to copy your Omeka S materials to another platform, or as a backup of your work.
 
-## Exporting to a spreadsheet
-
-Exporting resources from Omeka S is possible by using a python script to query the installation's API. 
-
-[omeka-s-csv.py](https://github.com/omeka/omeka-s-csv.py){target=_blank} is a Python script that exports data from Omeka S installations in CSV format.
+[Omeka-s-csv.py](https://github.com/omeka/omeka-s-csv.py){target=_blank} is a Python script that exports data from Omeka S installations in CSV format.
 
 Outputted spreadsheets will have column headings for metadata terms in alphabetical order: `dcterms:description`, `dcterms:title`, etc. 
 
@@ -49,13 +54,13 @@ There will also be a section of `o:` columns, including the internal Omeka S ID 
 
 This script cannot export site or page information, nor will it export resource templates, vocabularies, or other data stored in modules (such as Inverse Properties settings on resource templates). 
 
-### Requirements
+#### Requirements
 
 omeka-s-csv.py works with either Python 2 or 3, and requires no additional or external dependencies.
 
 Linux users will likely have Python already installed, and packages should be available from your distribution. There are several options for installing Python on Windows and Mac, including downloading an installer [from Python's website](https://www.python.org/downloads/).
 
-### Exporting
+#### Export
 
 In a terminal in the folder where `omeka-s-csv.py` is located on your system, run the script:
 
@@ -72,3 +77,7 @@ Next, you will be prompted for an API key. Keys are required to export non-publi
 Finally, a prompt will ask you to enter a "separator," a character that will be used to separate multiple pieces of data in a single CSV cell. It's important that the chosen separator is a character that doesn't appear in the actual data. The default choice is the "pipe" character (`|`), which is usually a safe option. To use that default choice, press "Enter"; otherwise, type the separator character you want to use instead.
 
 The script will then run, and show output indicating its progress. The exported results will be placed in files in the same folder as the `omeka-s-csv.py` file: `items.csv`, `item_sets.csv`, and `media.csv`.
+
+### Access data using the API
+
+You can use your own S site's API to crawl data as required, rather than exporting a spreadsheet for a one-time use. [For more information on the API, see the developer documentation section.](https://omeka.org/s/docs/developer/api/){target=_blank}
