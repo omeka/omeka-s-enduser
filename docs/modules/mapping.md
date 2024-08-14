@@ -327,8 +327,8 @@ GeoJSON provides map points, line, and polygons as well as metadata information 
 
 This block has four fields:
 
-- **Label property key**: If you wish to feature one value as each map feature's pop-up title, enter the property name here. Look below in the code your have pasted into the **GeoJSON** field to get this information.
-- **Comment property key**: If you wish to feature one value as each map feature's pop-up text, enter the property name here. Look below in the code your have pasted into the **GeoJSON** field to get this information.
+- **Label property key**: If you wish to feature one value as each map feature's pop-up title, enter the property name here. Look below in the code your have pasted into the "GeoJSON" field to get this information.
+- **Comment property key**: If you wish to feature one value as each map feature's pop-up text, enter the property name here. Look below in the code your have pasted into the "GeoJSON" field to get this information.
 - **Show GeoJSON property list?**: Check this if you wish map pop-ups to show all available information about each point. Note that this will replicate any information you have entered into the above fields; if you check this, you may wish to leave those fields blank.
 - **GeoJSON**: Enter the GeoJSON data in full. This should look like [the example data below](https://geojson.org/){target=_blank}:
 
