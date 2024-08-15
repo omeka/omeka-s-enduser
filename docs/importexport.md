@@ -80,4 +80,4 @@ The script will then run, and show output indicating its progress. The exported 
 
 ### Access data using the API
 
-You can use your own S site's API to crawl data as required, rather than exporting a spreadsheet for a one-time use. [For more information on the API, see the developer documentation section.](https://omeka.org/s/docs/developer/api/){target=_blank}
+You can use your own S site's API to crawl data as required, rather than exporting a spreadsheet for a one-time use. Note that you can [request different formats through the API](https://omeka.org/s/docs/developer/api/rest_api/#responses){target=_blank}, including `jsonld` and `rdfxml`. [For more information on the API, see the developer documentation section.](https://omeka.org/s/docs/developer/api/){target=_blank}
