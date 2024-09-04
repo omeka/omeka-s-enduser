@@ -34,7 +34,7 @@ Hit "Submit" to save changes.
 
 Once you have created at least one vocabulary, the Custom Vocab tab will display a table of your existing vocabularies. The table displays the Label, the buttons for edit, delete, and display information (ellipsis), and the Owner or creator of the vocabulary. 
 
-There is also a button to "Import" a vocabulary using a file, in the top right. Note that importing will add a new listing to the table. If you are attmepting to update an existing vocabulary in your installation, do not use the "Import from file" button. Update the vocabulary from its entry in the table.
+There is also a button to "Import" a vocabulary using a file, in the top right. Note that importing will add a new listing to the table. If you are attempting to update an existing vocabulary in your installation, do not use the "Import from file" button. Update the vocabulary from its entry in the table.
 
 ![Custom Vocab tab with two existing vocabularies](../modules/modulesfiles/customVocab_manage.png)
 
