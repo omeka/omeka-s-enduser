@@ -6,33 +6,6 @@ Once activated on the [modules](index.md) tab of the admin dashboard, Collecting
 
 Collecting integrates with the [Custom Vocab](../modules/customvocab.md), [Mapping](../modules/mapping.md), and [Numeric Data Types](../modules/numericdatatypes.md) modules.
 
-## Site settings
-
-Collecting adds a section to your [site settings](../sites/site_settings.md) where you can manage terms of service and emails for the collecting forms for this site.
-
-![The Collecting section in site settings with two fields as described below.](modulesfiles/collecting_settingsSite.png)
-
-In this section are two fields:
-
-**Terms of service** is a multi-line field where you can enter terms of services for material collected through this site. This text is linked from the form just above the submit button:
-
-![from the collecting form, the words "I accept the Terms of Service" over a button that says submit. The phrase Terms of Service are a link.](modulesfiles/collecting-ToSlink.png)
-
-Clicking on the phrase "Terms of Service" will open a new window so that people filling out the form do not lose the information they have entered.
-
-**Terms of service URL** is an input for a link to an existing external terms of service page.
-
-**Submission email address** allows you to set a custom address from which submission emails will be sent. If left blank, these emails will be sent from the administrator email address in the [Global Settings](../admin/settings.md) for the Omeka S installation.
-
-**Notification email address** allows you to set an email address of a staff member to which notifications of new submissions will be sent. If left blank, no notification email will be sent.
-
-!!! note
-	If you are having problems sending emails from your Omeka S installation, check with your hosting provider. Some hosting setups may require that the domain name for the administrator email matches the domain name of the installation (if your domain is `yourinstall.org`, the administrator email must be `user@yourinstall.org`). Omeka S relies on the server’s underlying `sendmail` utility for sending email.
-
-## Global settings
-
-Collecting will require users to complete a reCaptcha form in order to submit if you have added a reCaptcha key in the [Global Settings](../admin/settings.md). This can be an important step to complete to prevent spam.
-
 ## Add a form
 
 If Collecting is active, then a tab for Collecting will appear in the context menu for every site.
@@ -156,6 +129,33 @@ To edit the form, click the "Edit form" button in the upper right hand corner. T
 You can rearrange the order of prompts by dragging and dropping them using the three-line icon on the far left of the Prompt Type label.
 
 ![Prompts with a red arrow pointing to the icon for dragging and dropping](modulesfiles/collecting_dragthis.png)
+
+## Site settings
+
+Collecting adds a section to your [site settings](../sites/site_settings.md) where you can manage terms of service and emails for the collecting forms for this site.
+
+![The Collecting section in site settings with two fields as described below.](modulesfiles/collecting_settingsSite.png)
+
+In this section are two fields:
+
+**Terms of service** is a multi-line field where you can enter terms of services for material collected through this site. This text is linked from the form just above the submit button:
+
+![from the collecting form, the words "I accept the Terms of Service" over a button that says submit. The phrase Terms of Service are a link.](modulesfiles/collecting-ToSlink.png)
+
+Clicking on the phrase "Terms of Service" will open a new window so that people filling out the form do not lose the information they have entered.
+
+**Terms of service URL** is an input for a link to an existing external terms of service page.
+
+**Submission email address** allows you to set a custom address from which submission emails will be sent. If left blank, these emails will be sent from the administrator email address in the [Global Settings](../admin/settings.md) for the Omeka S installation.
+
+**Notification email address** allows you to set an email address of a staff member to which notifications of new submissions will be sent. If left blank, no notification email will be sent.
+
+!!! note
+	If you are having problems sending emails from your Omeka S installation, check with your hosting provider. Some hosting setups may require that the domain name for the administrator email matches the domain name of the installation (if your domain is `yourinstall.org`, the administrator email must be `user@yourinstall.org`). Omeka S relies on the server’s underlying `sendmail` utility for sending email.
+
+## Global settings
+
+Collecting will require users to complete a reCaptcha form in order to submit, if you have added a reCaptcha key in the [Global Settings](../admin/settings.md). This can be a useful way to prevent spam.
 
 ## Add to site pages
 
