@@ -27,7 +27,7 @@ You can sort the visualizations by either date or title in ascending or descendi
 
 After clicking the Data Visualization link under a site, click the "Add new visualization" button.
 
-You will then have the option select what you would like to visualize. The options include:
+You will then select what you would like to visualize. The options include:
 
 1. **Count of items with classes**, which visualizes the count of items that are instances of selected resource classes.
 1. **Count of items in item sets**, which visualizes the count of items that are assigned to selected item sets.
