@@ -31,7 +31,7 @@ Omeka S has modules for importing resources from:
 - [Zotero](modules/zoteroimport.md)
 - [Zenodo](modules/datarepositoryconnector.md)
 - [Fedora](modules/fedoraconnector.md)
-- [DSpace](modules/dspaceconnecter.md)
+- [DSpace](modules/dspaceconnector.md)
 - [CKAN](modules/datarepositoryconnector.md)
 - [Dataverse](modules/datarepositoryconnector.md)
 - [Invenio](modules/datarepositoryconnector.md). 
