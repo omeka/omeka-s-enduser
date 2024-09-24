@@ -96,3 +96,7 @@ Set up the mapper as follows:
 ![Extract Metadata module configuration view with JSON Pointer crosswalk and submit button indicated by a teal arrow](../modules/modulesfiles/extractmetadata_config.png)
 
 Once you've saved this map, perform the "Map metadata" action on one file or in a batch, and, if your JPEG file includes `DateTimeOriginal`, the media should now have a "Date Created" value.
+
+## Integration with IIIF Presentation
+
+This module can automatically provide accurate width, height, and duration metadata for IIIF content resources published by the [IIIF Presentation module](iiifpresentation.md). This is useful for IIIF viewers that require strict validation against the IIIF specification. Note that this is only available if the metadata has already been extracted by the ExifTool extractor.
