@@ -6,7 +6,7 @@ The [Hierarchy module](https://omeka.org/s/modules/Hierarchy){target=_blank} add
 
 Any number of groupings can be created in the module; a parent can have any number of children. You can choose to have higher-level groupings reflect the total number of items in all the item sets included at lower levels. 
 
-Hierarchies are displayed on each site with resource page blocks for items and item sets, and with a "Hierarchy" page block.  
+Hierarchies are displayed on each site with resource page blocks for items and item sets, and with a "Hierarchy" page block. Hierarchies can be added to individual sites for display, and configured on a site-by-site basis.  
 
 Hierarchies can be created by users at the Supervisor and Global Administrator levels. Hierarchies are displayed [on individual sites by users with permission](../sites/site_users.md) to modify the resource page blocks, and the permission to edit pages. 
 
@@ -45,8 +45,10 @@ Hierarchies are made by creating and rearranging groupings into trees. Click the
 
 If you leave the grouping label blank, the item set's name will be displayed. If you fill in the label, that will be displayed instead, wherever the hierarchy appears. 
 
+Them, drag and drop your groupings into your desired order or tree structure. Groupings can be dragged to become children of other groupings, or ordered to be siblings of each other.
+
 !!! note
-	If you fill in neither label nor item set, the grouping will appear in the bullet list as a blank. Therefore, we recommend you employ at least one of the two options. 
+	If you neither fill in the label nor choose an item set, the grouping will appear in the tree as a blank. We recommend you employ at least one of the two options. 
 
 Add as many groupings as you need, filling out labels and selecting item sets where necessary. Combine this with creating new item sets and adding items to them as needed. 
 
@@ -60,45 +62,40 @@ For example, you may wish to create a five-level archival organizational system 
 			-  Folder 3.1.1 [set to an item set]
 				- [Items]
 
-Or, you may wish to reflect a physical organizational system of artifacts:
-
-- Room 1 [the hierarchy]
-	- Shelf 1
-		- Top Shelf
-			- Box 1
-			- Box 2
-			- Box 3
-				- Folder 1 [set to an item set]
-					- [Items]
-				- Folder 2 [set to an item set]
-					- [Items]
-
-Every entry in the lists above is a grouping with a label but no item set, except for the bottom-most level, which is set to the item set containing the relevant items in Omeka. 
+Every entry in the list above is a grouping with a label but no item set, except for the bottom-most level, which is set to the item set containing the relevant items in Omeka. 
 
 ![An example Hierarchy screen is filled out](modulesfiles/hierarchy_admin.png)
 
 You can create as many hierarchies as you wish, with as many levels as needed, and reuse your item sets wherever you wish. In this way you can create multiple points of access to your collections, according to different topics or browse methods. 
 
-If you delete a grouping (the trash can icon to the right), its children will not be deleted with it. Instead, they will be promoted up to the level of the deleted grouping. Remember to save your changes before navigating away from the module page. 
+If you delete a grouping (the trash can icon to the right), its children will not be deleted with it. Instead, they will be promoted up to the level of the deleted grouping. 
 
-## Configuration
+Remember to save your changes before navigating away from the module page. 
 
-From the Modules page of the left-hand navigation, scroll to "Hierarchy" in the list and click the "Configure" button.
+## Add a hierarchy to a site
+
+From the Sites tab of the left-hand navigation, pick a site and then choose "Hierarchy" in the list.
+
+![Adding hierarchies by name to one site.](modulesfiles/hierarchy_site.png)
+
+All of your hierarchies are listed on the right. Add them to each site as desired, then save the page. 
+
+### Configuration
+
+From the Site Admin page, select the "Settings" tab, and scroll down to the "Hierarchy" section. 
 
 ![An example configuration screen is filled out](modulesfiles/hierarchy_config.png)
 
-The Hierarchy module has three configuration options:
+The Hierarchy module has three configuration options for each site:
 
-- **Show hierarchy label**: If checked, the hierarchy's assigned label will display as the hierarchy header on public pages. If unchecked, nothing will display. You can also leave individual hierarchy labels blank. 
+- **Show hierarchy label**: If checked, the hierarchy's assigned label will display as the hierarchy header on public pages. If unchecked, the hierarchy will display without a label. You can also leave individual hierarchy labels blank. 
 - **Show hierarchy resource counts**: If checked, hierarchy groupings will show the number of resources within currently assigned item set.
 - **Combine hierarchy resources**: If checked, groupings will display resources of all child groupings in resource counts and on hierarchy grouping browse pages.
 
-These settings are installation-wide and will apply to any site where hierarchies show. 
-
 !!! note
-	If you show resource counts for each level of your hierarchy, and if you also combine those counts, note that some items may be counted multiple times if those items are in more than one item set. For example, if you had 20 items in a "Public domain" item set, and 15 of those same items were also in the "Photographs" item set, and you put both of those item sets below one grouping, you might see "35" where you might only expect 20. Consider your organizational system thoroughly when using this feature.   
+	If you show resource counts for each level of your hierarchy, and if you also combine those counts, note that some items may be counted multiple times if those items are in more than one item set. For example, if you had 20 items in a "Public domain" item set, and 15 of those same items were also in the "Photographs" item set, and you put both of those item sets below one grouping, you might see "35" where you might only expect 20. Consider your organizational system thoroughly when using this feature.
 
-## Add hierarchies to a site
+### Display hierarchies on a site
 
 You can display hierarchies in two ways on your sites: 
 
@@ -111,11 +108,11 @@ Select a site, then select the "Theme" tab in the left sidebar. Click the "Confi
 
 ![The items view page settings in the admin side, with the Hierarchy block included.](modulesfiles/hierarchy_resource.png)
 
-On the Items view page, you can add the "Hierarchy" resource block to any region given by your theme. This will display all the hierarchies that apply to the item. If an item is in more than one item set, all of the item sets' hierarchies will be displayed. 
+On the Items view page, you can add the "Hierarchy" resource block to any region offered by your theme. This will display all the hierarchies that apply to the item. If an item is in more than one item set, all of the item sets' hierarchies will be displayed (according to which hierarchies and which item sets are added to the given site as resources). 
 
 ![The item set view page settings in the admin side, with the Hierarchy block included.](modulesfiles/hierarchy_resource2.png)
 
-On the Item set view page, you can add the "Hierarchy" resource block to any region given by your theme. This will display all the hierarchies that apply to the item set. 
+On the Item set view page, you can add the "Hierarchy" resource block to any region offered by your theme. This will display all the hierarchies that apply to the item set. 
 
 !!! note
 	Public display will depend on whether the applicable item sets are added to the site as a resource. Note that item sets with visibility set to "private" will not be available to logged-out users; their place in hierarchies will not be linked and their items will not be included in counts. 
@@ -127,3 +124,5 @@ On the Item set view page, you can add the "Hierarchy" resource block to any reg
 When adding the Hierarchy page block to a page, you can select one hierarchy at a time to display. You can add multiple page blocks. 
 
 ![An example configuration screen is filled out](modulesfiles/hierarchy_public2.png)
+
+Where hierarchies are visible, the links in the hierarchy will point to a custom public page, in the form "yourinstallation.org/s/your-omeka-s-site/hierarchy/01". This will display the chosen hierarchy at left, and all the items contained in the given grouping at right (either all the items in the attached item set, or including all the children items as per your site settings). 
