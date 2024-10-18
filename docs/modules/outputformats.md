@@ -1,6 +1,6 @@
 # Output Formats 
 
-The [Output Formats module](https://omeka.org/s/modules/PersistentIdentifiers/){target=_blank} allows site administrators and/or site visitors to export datasets from the collections. Outputs are added to administrative interfaces for items, media, and item sets, and can be added to public site pages for items and item sets. 
+The [Output Formats module](https://omeka.org/s/modules/OutputFormats/){target=_blank} allows site administrators and/or site visitors to export datasets from the collections. Outputs are added to administrative interfaces for items, media, and item sets, and can be added to public site pages for items and item sets. 
 
 ![Public view of the module buttons at the bottom of an item browse page](modulesfiles/outputFormats_public.png)
 
