@@ -6,11 +6,11 @@ The [Output Formats module](https://omeka.org/s/modules/OutputFormats/){target=_
 
 The output formats available for this module are:
 
-- JSON-LD
-- Notation3
-- N-Triples
-- RDF/XML
-- Turtle.
+- [JSON-LD](https://json-ld.org/){target=_blank}
+- [Notation3](https://www.w3.org/wiki/NotationThree){target=_blank}
+- [N-Triples](https://dbpedia.org/page/N-Triples){target=_blank}
+- [RDF/XML](https://www.w3schools.com/XML/xml_rdf.asp){target=_blank}
+- [Turtle](https://www.w3.org/TR/rdf12-turtle/){target=_blank}.
 
 ## Settings
 
@@ -50,3 +50,5 @@ We advise administrators to test each output thoroughly and look for errors befo
 - Line-break and other non-visible characters that cause issues with the selected formats.
 
 You may also see "Maximum execution time exceeded" as an error on some formats. In this case, your server is incompatible with generating the amount of information in the given dataset. This may be fixed by lowering the number of resources showing in a page, in the site pagination settings. In some cases this issue may be unavoidable. 
+
+It may help to review the information available for the tool we use, [EasyRDF](https://github.com/sweetrdf/easyrdf){target=_blank}.
