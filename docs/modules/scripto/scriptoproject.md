@@ -81,7 +81,7 @@ If you select Media, the content created in Scripto will appear in the media met
 - Translation
 
 ### Reviewers
-Add [Omeka S users](../../../admin/users/) to your Scripto project as reviewers, who can can access private projects, and mark media as approved and unapproved. You can manage users after adding a project (see below).
+Add [Omeka S users](../../admin/users.md) to your Scripto project as reviewers, who can can access private projects, and mark media as approved and unapproved. You can manage users after adding a project (see below).
 
 Only Omeka users with **site administrator** and g**lobal administrator** roles can sync and import projects, due to the destructive potential of those actions. 
 

@@ -41,7 +41,7 @@ To implement any changes you make, click "Save" at the top right of the browser 
 
 **Auto-assign new items**: a checkbox which sets whether new items are automatically added to this site. If checked, every new item will be added to the site, regardless of the item's owner. Note that item owners may unassign their items from the site at any time, in the item's edit pages.
 
-**Attachment link type**: sets the target of links from attachments you add to [site page blocks](../sites/site_pages.md#page-blocks) (for example, in an [item showcase](../sites/site_pages.md#item-showcase)). It offers a dropdown with the following options:
+**Attachment link type**: sets the target of links from attachments you add to [site page blocks](../sites/site_pages.md#page-blocks) (for example, in the [media embed block](../sites/site_pages.md#media-embed)). It offers a dropdown with the following options:
 
 - Item page: clicking on the attachment takes users to the item page associated with the attached media.
 - Media page: clicking on the attachment takes users to the media page.

@@ -161,7 +161,7 @@ Note that the default bounds will ignore any location markers. For example, if y
 
 You cannot set marker labels or marker images in CSV Import. You cannot import the coordinates for map shapes in CSV Import. 
 
-You cannot [batch-edit](../content/items.md#batch-actions) mapping values after items are in your system, only edit them manually one item at a time, or batch-revise mapping data using CSV Import.
+You cannot [batch-edit](../content/items.md#batch-editing) mapping values after items are in your system, only edit them manually one item at a time, or batch-revise mapping data using CSV Import.
 
 ## Add maps to a site
 
@@ -319,7 +319,7 @@ Note that the administrative interface will not preview the map with your select
 
 ### Public view
 
-A map block will display on a public page, item page, or item set page at the full page width. If you have settings in the [default view](#default-view) of the map block, or have set [default map bounds for the item](#setting-the-map-display), these should be applied. Otherwise the map will zoom so that all of the items are visible.
+A map block will display on a public page, item page, or item set page at the full page width. If you have settings in the [default view](#default-view) of the map block, or have set [default map bounds for the item](#map-display), these should be applied. Otherwise the map will zoom so that all of the items are visible.
 
 Viewers can zoom either using the scroll function of their computer or the zoom in/out buttons on the left side of the map. You can set whether viewers can use their mouse wheels to scroll inside the map page blocks (not item maps or the Map Browse page). 
 

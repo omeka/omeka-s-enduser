@@ -698,17 +698,17 @@ The following are known errors that can occur during an import:
 Some other modules add functionality to the CSV import process. If you have these modules installed and active, you will have access to the following options when using CSV Import.
 
 ### Custom Vocab
-If you have [Custom Vocab](../customvocab) installed and active, it will add your custom vocabularies as data types in Omeka. You can select these data types during your CSV Import. 
+If you have [Custom Vocab](customvocab.md) installed and active, it will add your custom vocabularies as data types in Omeka. You can select these data types during your CSV Import. 
 
 ### Extract Text
 
-When the [Extract Text module](../extracttext) is enabled, text extraction will be attempted on any files ingested through a CSV Import process. If available, this will include Tesseract, an image processor that employs optical character recognition (OCR). You can disable individual extractors in the Configuration menu of Extract Text so that they do not run during your import. 
+When the [Extract Text module](extracttext.md) is enabled, text extraction will be attempted on any files ingested through a CSV Import process. If available, this will include Tesseract, an image processor that employs optical character recognition (OCR). You can disable individual extractors in the Configuration menu of Extract Text so that they do not run during your import. 
 
 !!! note
 	We recommend you disable Tesseract, or the entire Extract Text module, when performing an import including images such as photographs or drawings. OCR running on images without text in them will be very processor-heavy and may cause problems with your import. 
 
 ### File Sideload
-If you have [File Sideload](../filesideload) (minimum version 1.2.0) installed and active, you can use it as a source for media when running a CSV import.
+If you have [File Sideload](filesideload.md) (minimum version 1.2.0) installed and active, you can use it as a source for media when running a CSV import.
 
 Everything on the **Map to Omeka S data** tab will be the same. When you add a mapping and choose the "Media source" option, you will see that there is now an option for "Sideload".
 
@@ -724,7 +724,7 @@ If you have [Mapping](mapping.md#csv-import-integration) (minimum version 1.1.0)
 For more information, see the [section on the Mapping page](mapping.md#csv-import-integration).
 
 ### Numeric Data Types
-If you have [Numeric Data Types](../numericdatatypes) installed and active, it will add the option to set a column data type as numeric data.
+If you have [Numeric Data Types](numericdatatypes.md) installed and active, it will add the option to set a column data type as numeric data.
 
 Options are:
 

@@ -93,4 +93,4 @@ To update a module using FTP:
 
 If you are concerned about problems with the update, be sure to keep the older version of the module on your local machine in case you have to switch them back. Follow the same update steps with the earlier version of the module.
 
-If you run into problems while updating, turn on [error logging](../errorLogging) and post on the [Omeka Forum](https://forum.omeka.org/c/omeka-s/modules){target=_blank}.
+If you run into problems while updating, turn on [error logging](../errorLogging.md) and post on the [Omeka Forum](https://forum.omeka.org/c/omeka-s/modules){target=_blank}.

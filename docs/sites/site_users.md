@@ -22,4 +22,4 @@ You can add or revoke privileges for users by going back to the User permissions
 
 Once you've added one or more users, click the "Save" button located in the upper right hand corner. To cancel your changes, click the "Cancel" button in the upper right hand corner. 
 
-You can also use the "Admin > Users" interface to [batch-edit user options](../admin/users.md#batch-edit-users), which includes adding/removing one or more users to a site, and changing the site-specific role.
+You can also use the "Admin > Users" interface to [batch-edit user options](../admin/users.md#batch-editing), which includes adding/removing one or more users to a site, and changing the site-specific role.

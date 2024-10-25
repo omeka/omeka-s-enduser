@@ -160,7 +160,7 @@ By default, Omeka S will use the media from the first item added to an item set 
 
 ![Thumbnail tab with no asset selected. The tab displays a message about thumbnail creation and a button to "select" an asset](contentfiles/itemset_thumb1.png)
 
-The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../../sites/site_theme/#settings-options).
+The assets you select from and upload as thumbnails in this tab are the same as those created for [site logos](../sites/site_theme.md#logo).
 
 To assign an asset as a thumbnail, click on the "Select" button in the main work area of the tab. This will open a drawer on the right side.
 

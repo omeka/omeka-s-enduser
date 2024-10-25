@@ -4,7 +4,7 @@ The [Scripto module](https://omeka.org/s/modules/Scripto/){target=_blank} allows
 
 The items and media are organized into an item set and then synced with a project in Scripto. Content made within Scripto can be periodically imported into Omeka S as item and media metadata.
 
-All content creation (transcription, translation, or description) takes place on the [public face](scriptoPublicView/) of your Scripto [project](scriptoproject/).
+All content creation (transcription, translation, or description) takes place on the [public face](scriptoPublicView.md) of your Scripto [project](scriptoproject.md).
 
 ## Concepts and terminology
 
@@ -22,7 +22,7 @@ To install Scripto, you must:
 - be running Omeka S v2.0.0 or higher
 - have a [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) installation running on the same server as the Omeka S installation. Minimum MediaWiki version is 1.30.0.
 
-Create the MediaWiki installation on your server using [their instructions](https://www.mediawiki.org/wiki/Manual:FAQ#Installation_and_configuration). Install the Scripto module using the [documentation for installing modules](../../modules/#installing-modules). 
+Create the MediaWiki installation on your server using [their instructions](https://www.mediawiki.org/wiki/Manual:FAQ#Installation_and_configuration). Install the Scripto module using the [documentation for installing modules](../index.md#installing-modules). 
 
 Once you have installed the module and created your MediaWiki installation, go to the Modules tab of your Omeka S installation and activate the Scripto module.
 
@@ -33,7 +33,7 @@ Staying on the Modules tab, click the Configure button for the Scripto module. T
 Enter the url for your [MediaWiki API endpoint](https://www.mediawiki.org/wiki/API:Main_page#Endpoint) in the field; this should be along the lines of `<your mediawiki url>/api.php`. Be sure to click "Submit" to save your changes.  
 
 ### Scripto Vocabulary
-Once Scripto is installed and active, it will add the Scripto [Vocabulary](../../content/vocabularies/) to your Omeka S installation. This vocabulary contains the following properties:
+Once Scripto is installed and active, it will add the Scripto [Vocabulary](../../content/vocabularies.md) to your Omeka S installation. This vocabulary contains the following properties:
 
 - Content: A plain text representation of the content of a resource.
 - Transcription: A transcription of a resource.
@@ -42,7 +42,7 @@ Once Scripto is installed and active, it will add the Scripto [Vocabulary](../..
 Do not edit this vocabulary.
 
 ## Create an item set
-The Scripto module uses [item sets](../../content/item-sets) to manage the content coming to and from your Omeka installation. 
+The Scripto module uses [item sets](../../content/item-sets.md) to manage the content coming to and from your Omeka installation. 
 
 Each Scripto project needs its own item set with which it can sync. Create the item set using items from your Omeka S installation which you want to be included in the project. You can add items to this item set later if you need to. 
 
@@ -56,14 +56,14 @@ From the dashboard, you can log in to Scripto using the bar across the top:
 Once you are logged in, the dashboard will include:
 
 - A bar across the top with your username and links to the dashboard, your contributions, your watchlist, and a button to Log Out of Scripto.
-- A view of all the [Projects](../../modules/scripto/scriptoproject/) you own.
-- A view of all the [Projects](../../modules/scripto/scriptoproject/) you review.
+- A view of all the [Projects](scriptoproject.md) you own.
+- A view of all the [Projects](scriptoproject.md) you review.
 - A view of your recent Contributions.
 - A view of your watchlist.
 
 ![Scripto dashboard with three projects, two of which the user reviews, and a series of recent contributions.](../../modules/modulesfiles/scripto_dash.png)
 
-From the dropdown in the upper right, Omeka S global and site admins can: browse all [Projects](../../modules/scripto/scriptoproject/); add a new [Project](../../modules/scripto/scriptoproject/), and browse all Scripto users. 
+From the dropdown in the upper right, Omeka S global and site admins can: browse all [Projects](scriptoproject.md); add a new Project, and browse all Scripto users. 
 
 ![Dropdown showing the options to browse projects, add a project, or browse users](../../modules/modulesfiles/scripto-dash-actions.png)
 
