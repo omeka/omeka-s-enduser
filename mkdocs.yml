@@ -67,6 +67,7 @@ nav:
         - modules/ohmsembed.md
         - modules/omekaCimporter.md
         - modules/ositemimporter.md
+        - modules/outputformats.md
         - modules/persistentidentifiers.md
         - modules/redactvalues.md
         - modules/resourcemeta.md
