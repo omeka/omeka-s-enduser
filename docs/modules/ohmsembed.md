@@ -1,6 +1,6 @@
 # OHMS Embed
 
-The [OHMS Embed module](https://omeka.org/s/modules/ohmsEmbed){target=_blank} allows site administrators to add [Oral History Metadata Synchonizer](https://www.oralhistoryonline.org/){target=_blank} objects as media to Omeka S items. 
+The [OHMS Embed module](https://omeka.org/s/modules/OhmsEmbed/){target=_blank} allows site administrators to add [Oral History Metadata Synchonizer](https://www.oralhistoryonline.org/){target=_blank} objects as media to Omeka S items.
 
 This module will add an OHMS viewer to places where media can be embedded, allowing users to view indexes, transcripts, and/or translations of videos and audio as they are played. 
 
