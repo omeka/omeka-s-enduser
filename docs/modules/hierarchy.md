@@ -6,7 +6,7 @@ The [Hierarchy module](https://omeka.org/s/modules/Hierarchy){target=_blank} add
 
 Any number of groupings can be created in the module; a parent can have any number of children. You can choose to have higher-level groupings reflect the total number of items in all the item sets included at lower levels. 
 
-Hierarchies are displayed on each site with resource page blocks for items and item sets, and with a "Hierarchy" page block. Hierarchies can be added to individual sites for display, and configured on a site-by-site basis.  
+Hierarchies are displayed on each site with [resource page blocks](../sites/site_theme.md#configure-resource-pages) for items and item sets, and with a ["Hierarchy" page block](../sites/site_pages.md#page-blocks). Hierarchies can be added to individual sites for display, and can be configured on a site-by-site basis.
 
 Hierarchies can be created by users at the Supervisor and Global Administrator levels. Hierarchies are displayed [on individual sites by users with permission](../sites/site_users.md) to modify the resource page blocks, and the permission to edit pages. 
 
@@ -31,7 +31,7 @@ Another example might be organizing items by artifact type: paintings, sculpture
 	- Documents
 	- Photographs.
 
-Remember that item sets, resource classes, and templates can help you provide multiple points of organization and context for your items. 
+Remember that item sets, resource classes, and templates can also help you provide multiple points of organization and context for your items. 
 
 ## Create a hierarchy
 
