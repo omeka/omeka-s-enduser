@@ -203,9 +203,9 @@ Item set pages, if you add the Mapping resource block to a region, will display 
 
 ### Page blocks
 
-Mapping creates three page blocks you can add to your site pages: "Map by attachments", where you manually add resources to the map block; "Map by query", which allows you to use a search string to add resources to the map block; and "Map by GeoJSON", where you can input GeoJSON-formatted code to display map points that are not related to your Omeka items.
+Mapping creates three page blocks you can add to your site pages: "Map by attachments", where you manually add resources to the map block; "Map by query", which allows you to use a search string to add resources to the map block; and "Map by groups", where you can display a single map feature (a center-point or a shape) to represent groups of items, such as those in your item sets or by item classes.
 
-To add a map to a page, click to edit the page. On the right, under "Add new block", click either the "Map by attachments" or "Map by query" option (1), or the "Map by GeoJSON" option (see below). Selecting one will open the map block to the page (2). The blocks include customizable features for the map in collapsable panes. Click the triangle to expand or collapse these fields (3).
+To add a map to a page, click to edit the page. On the right, under "Add new block", click either the "Map by attachments" or "Map by query" option (1), or the "Map by groups" option (see below). Selecting one will open the map block to the page (2). The blocks include customizable features for the map in collapsable panes. Click the triangle to expand or collapse these fields (3).
 
 ![Screenshot of the Page with Map Block selected. Block includes menu options Default View, WMS Overlays and attachments.](../modules/modulesfiles/Mapping_Page_MapBlock1.png)
 
@@ -257,6 +257,44 @@ You can add, edit, and delete custom-chosen [Web Map Service (WMS)](https://maps
 ![Map page block with only the WMS Overlays section open. Two overlays already exist, one selected to display as default. The form is being filled with the details for a third overlay.](../modules/modulesfiles/Mapping_pageOverlays.png)
 
 Once you have added an overlay, it will appear above the fields for adding overlays. If you would like one or more of the overlays to display automatically when the page loads, check the box next to it. Edit an overlay by clicking on on the red pencil edit button, or click the red trashcan icon to delete the overlay.
+
+#### GeoJSON
+
+This section (new to Mapping version 2.1) allows you to, rather than display items from your Omeka collection, display information on a map using markers and shapes generated from [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON){target=_blank}-formatted data. You can create this code yourself, or copy it from existing sources. 
+
+GeoJSON provides map points, line, and polygons as well as metadata information about each feature. You can use this to illustrate areas, such as historical boundaries of a municipality, or add coordinates related to the topic of your Omeka site or page. You can display any number of map features, of all types (point, line, and polygon), on one map. You can also have one set of metadata that refers to multiple discrete areas of the map - such as showing the continental United States, Alaska, and Hawaii as one single datapoint with three separate polygonal features.
+
+![The admin side of a page being edited, showing the "Map by geoJSON" section filled out with information.](modulesfiles/Mapping_geojsonAdmin.png)
+
+This section has four fields:
+
+- **Label property key**: If you wish to feature one value as each map feature's pop-up title, enter the property name here. Look below in the code your have pasted into the "GeoJSON" field to get this information.
+- **Comment property key**: If you wish to feature one value as each map feature's pop-up text, enter the property name here. Look below in the code your have pasted into the "GeoJSON" field to get this information.
+- **Show GeoJSON property list?**: Check this if you wish map pop-ups to show all available information about each point. Note that this will replicate any information you have entered into the above fields; if you check this, you may wish to leave those fields blank.
+- **GeoJSON**: Enter the GeoJSON data in full. This should look like [the example data below](https://geojson.org/){target=_blank}:
+
+```
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [125.6, 10.1]
+  },
+  "properties": {
+    "name": "Dinagat Islands"
+  }
+}
+```
+
+By looking within this data to find the available properties, you can fill the "label" and "comment" fields if so desired. 
+
+This is a map pin with the label and comment selected:
+![The public map with settings as in the above screenshot.](modulesfiles/Mapping_geojsonPublic1.png)
+
+And this is a map pin with all available properties showing, without a label or comment selected:
+![The public map with settings as in the above screenshot.](modulesfiles/Mapping_geojsonPublic2.png)
+
+Note that the administrative interface will not preview the map with your geoJSON data. You will need to go to the public view of the page to see the features that result from your data.
 
 #### Timeline
 
@@ -317,43 +355,58 @@ You can also run a search on your public site, and from the search results page,
 
 Note that the administrative interface will not preview the map with your selected items. You will need to go to the public view of the page to see the items that result from your query.
 
-#### GeoJSON (Map by GeoJSON block)
+#### Groups (Map by groups block)
 
-This block (new to Mapping version 2.1) allows you to, rather than display items from your Omeka collection, display useful information on a map using markers and shapes generated from [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON){target=_blank}-formatted data. You can create this code yourself, or copy it from existing sources. 
+    Group by: Select the type of group. These match common ways that users want to group their items.
+        Item sets
+        Resource classes
+        Property values (is exactly)
+        Property values (contains)
+        Property values (is item with ID)
+        Properties (has any value)
+    Feature type: Select the type of feature to represent each group.
+        Polygon: A bounding volume around the outermost features.
+        Point: The central point of the bounding volume.
 
-GeoJSON provides map points, line, and polygons as well as metadata information about each feature. You can use this to illustrate areas, such as historical boundaries of a municipality, or add coordinates related to the topic of your Omeka site or page. You can display any number of map features, of all types (point, line, and polygon), on one map. You can also have one set of metadata that refers to multiple discrete areas of the map - such as showing the continental United States, Alaska, and Hawaii as one single datapoint with three separate polygonal features.
 
-![The admin side of a page being edited, showing the "Map by geoJSON" block filled out with information.](modulesfiles/Mapping_geojsonAdmin.png)
+Once a user selects a "Group by" the form should expand with fields. The fields that appear depend on what the user selects.
+Item sets
 
-This block has four fields:
+    Filter by resource class: Filter the items by the selected resource class (i.e. only include items assigned to the selected resource class).
+    Item sets: Select the item sets to render as groups on the map.
 
-- **Label property key**: If you wish to feature one value as each map feature's pop-up title, enter the property name here. Look below in the code your have pasted into the "GeoJSON" field to get this information.
-- **Comment property key**: If you wish to feature one value as each map feature's pop-up text, enter the property name here. Look below in the code your have pasted into the "GeoJSON" field to get this information.
-- **Show GeoJSON property list?**: Check this if you wish map pop-ups to show all available information about each point. Note that this will replicate any information you have entered into the above fields; if you check this, you may wish to leave those fields blank.
-- **GeoJSON**: Enter the GeoJSON data in full. This should look like [the example data below](https://geojson.org/){target=_blank}:
+Resource classes
 
-```
-{
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [125.6, 10.1]
-  },
-  "properties": {
-    "name": "Dinagat Islands"
-  }
-}
-```
+    Filter by item set: Filter the items by the selected item set (i.e. only include items assigned to the selected item set).
+    Resource classes: Select the resource classes to render as groups on the map.
 
-By looking within this data to find the available properties, you can fill the "label" and "comment" fields if so desired. 
+Property values (is exactly)
 
-This is a map pin with the label and comment selected:
-![The public map with settings as in the above screenshot.](modulesfiles/Mapping_geojsonPublic1.png)
+    Filter by item set: (see above)
+    Filter by resource class: (see above)
+    Property: Select the property of the values to group.
+    Values: Enter the (exact match) values to render as groups on the map, separated by new lines.
 
-And this is a map pin with all available properties showing, without a label or comment selected:
-![The public map with settings as in the above screenshot.](modulesfiles/Mapping_geojsonPublic2.png)
+Property values (contains)
 
-Note that the administrative interface will not preview the map with your geoJSON data. You will need to go to the public view of the page to see the features that result from your data.
+    Filter by item set: (see above)
+    Filter by resource class: (see above)
+    Property: (see above)
+    Values: Enter the (matches any part) values to render as groups on the map, separated by new lines.
+
+Property values (is item with ID)
+
+    Filter by item set: (see above)
+    Filter by resource class: (see above)
+    Property: (see above)
+    Values: Enter the (resource ID) values to render as groups on the map, separated by new lines.
+
+Properties (has any value)
+
+    Filter by item set: (see above)
+    Filter by resource class: (see above)
+    Properties: Select the properties (that have values) to render as groups on the map.
+
 
 ### Public view
 
