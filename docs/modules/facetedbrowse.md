@@ -6,7 +6,7 @@ With this module, site managers are able to configure faceted browse pages and a
 
 The [public view](#public-views) section below shows how these facets display for single and multi-category pages.
 
-Faceted browse pages exist as separate [pages](../sites/site_pages.md). You can [add faceted browsing to a page as a block](#faceted-browse-page-block) that will preview the FB page, but not have its full functionality. 
+Faceted browse pages exist as separate [pages](../sites/site_pages.md). You can [add faceted browsing to a page as a block](#faceted-browse-preview-page-block) that will preview the FB page, but not have its full functionality. 
 
 Once activated, Faceted Browse is configured on a site-by-site basis.
 

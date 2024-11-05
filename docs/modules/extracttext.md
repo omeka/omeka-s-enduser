@@ -65,7 +65,7 @@ The following image files are supported by Tesseract if compiled with the requir
 
 If you do not have one or more desired extractor tools installed on your server, check with your hosting service or your local server administrator.
 
-## Extracting text from media
+## Extract text from media
 
 To extract text from media, you can choose several actions:
 
@@ -105,11 +105,32 @@ You can clear or refresh text from more than one item at a time (or more than on
 !!! note
 	If you wish not to run specific text extraction along with an import, you must disable the extractors in the Extract Text configuration before starting a CSV Import. We recommend you do this when uploading images that do not contain text such as photographs, as Tesseract will take a long time attempting to recognize text inside images.
 
-## Languages
+## More configuration options
 
-Extract Text's extractors, particularly Tesseract's optical character recognition, are configured to recognize English text by default. To set other languages for recognition, [see the Readme](https://github.com/omeka-s-modules/ExtractText){target=_blank}.
+You can modify the way this module works by editing values in the `config/local.config.php` file of your installation. Use the "`extract_text`/`options`" setting. For example, if you want to always skip the first page of PDFs, add the following:
 
-## Other configuration options
+```
+php
+'extract_text' => [
+    'options' => [
+        'pdftotext' => [
+            'f' => 2,
+        ],
+    ],
+],
+```
+
+Another example: if you want to use English and German languages together when running Tesseract as OCR on images, add the following:
+
+```php
+'extract_text' => [
+    'options' => [
+        'tesseract' => [
+            'l' => 'eng+deu',
+        ],
+    ],
+],
+```
 
 The following extractors have configuration options:
 
@@ -129,4 +150,38 @@ The following extractors have configuration options:
 - psm: Page segmentation mode (default 3)
 - oem: OCR Engine mode (default 3). 
 
-[See the Readme](https://github.com/omeka-s-modules/ExtractText){target=_blank}.
+You can also refer to the [Tesseract manual](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc){target=_blank} for more information.
+
+### Extract in the background
+
+You can set an extractor to never run in the foreground using the "`extract_text`/`background_only`" setting in your local configuration file (`config/local.config.php`). 
+
+For example, if you want to set the pdftotext extractor as background only, add the following:
+
+```php
+  'extract_text' => [
+      'background_only' => [
+          'pdftotext',
+      ],
+  ],
+```
+
+Note that extractors set as background only will not automatically extract text when adding a media. You will need to extract text using the two options above.
+
+### Languages
+
+Extract Text's extractors, particularly Tesseract's optical character recognition, are configured to recognize English text by default. To set other languages for recognition, refer to the [Tesseract manual](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc){target=_blank} for the language codes needed.
+
+### Disable by media type
+
+You can disable text extraction for a specific media type by setting the media type alias to `null` in the "`extract_text_extractors`" service config in your local configuration file (`config/local.config.php`). 
+
+For example, if you want to disable extraction for TXT (text/plain) files, add the following:
+
+```php
+'extract_text_extractors' => [
+    'aliases' => [
+        'text/plain' => null,
+    ],
+],
+```

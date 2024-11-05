@@ -2,7 +2,7 @@
 
 Once you click [Sites](index.md) and select a site to work on, you can use the Navigation link the left sidebar to manage the navigation, or menu, of your site. You can add or delete links, browse pages, and your [pages](site_pages.md) to the navigation, as well as arrange and nest them. 
 
-Themes present your navigation links in different ways. You can also modify navigation settings under [Theme settings](site_theme.md#theme-settings), such as the depth of nested links to display. Be sure to refresh and check your public pages to ensure the navigation is working correctly after you make changes.
+Themes present your navigation links in different ways. You can also modify navigation settings under [Theme settings](site_theme.md#edit-theme-settings), such as the depth of nested links to display. Be sure to refresh and check your public pages to ensure the navigation is working correctly after you make changes.
 
 ![Editing navigation with a drawer on the right side of the screen for adding links](sitesfiles/sitenav_main.png)
 

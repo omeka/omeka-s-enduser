@@ -27,13 +27,13 @@ You can sort the visualizations by either date or title in ascending or descendi
 
 After clicking the Data Visualization link under a site, click the "Add new visualization" button.
 
-You will then have the option select what you would like to visualize. The options include:
+You will then select what you would like to visualize. The options include:
 
 1. **Count of items with classes**, which visualizes the count of items that are instances of selected resource classes.
 1. **Count of items in item sets**, which visualizes the count of items that are assigned to selected item sets.
 1. **Count of items with properties**, which visualizes the count of items that have selected properties.
 1. **Count of items with property values**, which visualizes the count of items that have selected values of a selected property.
-1. **County of property values**, which visualizes the count of values of a selected property.
+1. **Count of property values**, which visualizes the count of values of a selected property.
 1. **Count of items with property values in a time series**, which visualizes the count of items that have selected values of a selected property over a selected period of time.
 1. **Count of items in a time series**, which visualizes the count of items over a selected period of time.
 1. **Count of property values**, which visualizes the count of values of a selected property of items.
