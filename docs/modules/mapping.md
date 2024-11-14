@@ -36,6 +36,16 @@ Small white square buttons on the left side of the map allow you to modify its s
 * **Go to the current default view**: The square with a black box around a dot. This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
 * **Clear the default view**: The square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
 
+### Search for map data
+
+Items with information filled out in their mapping metadata fields (i.e. with markers or shapes on the map) can be searched with fields that the Mapping module adds to the advanced search fields in the admin side of the installation, and the public search pages of each site. The public fields are optional (turned off by default) on [individual sites](../sites/site_settings.md#settings) in their [site settings](#site-wide-settings). 
+
+![Map-based searching in the admin side.](modulesfiles/Mapping_advSearch.png)
+
+The "Add geographic location to advanced search" option will add the three fields seen above, allowing users to search by location: they must provide an address, as well as a distance (in numbers) and select a unit (kilometres or miles). 
+
+The "Search by map marker presence" option provides users with a dropdown with the options of "Has map markers" or "Has no map markers", as seen above.
+
 ## Geolocate items
 
 The Mapping module adds metadata fields to each item, most of which cannot be accessed directly like a text field can. This includes a latitude and longitude pair that creates markers on maps (an item can have more than one marker), or a series of coordinates that define shapes on the map (lines, polygons, and rectangles). There are also default display settings for each item's map - minimum corner coordinates that ensure the map contains at least those top, bottom, left, and right spots. 
@@ -101,17 +111,7 @@ You can set any map's zoom level and center. The default is to center on one fea
 * **Go to the current default view**: The square with a black box around a dot. This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
 * **Clear the default view**: The square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
 
-### Search for map data
-
-Items with information filled out in their mapping metadata fields (i.e. with markers or shapes on the map) can be searched with fields that the Mapping module adds to the advanced search fields in the admin side of the installation, and the public search pages of each site. The public fields are optional (turned off by default) on [individual sites](../sites/site_settings.md#settings) in their [site settings](#site-wide-settings). 
-
-![Map-based searching in the admin side.](modulesfiles/Mapping_advSearch.png)
-
-The "Add geographic location to advanced search" option will add the three fields seen above, allowing users to search by location: they must provide an address, as well as a distance (in numbers) and select a unit (kilometres or miles). 
-
-The "Search by map marker presence" option provides users with a dropdown with the options of "Has map markers" or "Has no map markers", as seen above.
-
-### Batch-edit map data
+#### Batch-edit map data
 
 Users can select multiple items and perform [batch editing](../content/items.md#batch-editing) to create and edit map markers. You cannot batch-add shapes at this time, nor can you batch-edit map display settings, but you can batch-add markers from latitude and longitude values, and you can batch-edit labels and images for all features. 
 
@@ -294,7 +294,9 @@ This is a map pin with the label and comment selected:
 And this is a map pin with all available properties showing, without a label or comment selected:
 ![The public map with settings as in the above screenshot.](modulesfiles/Mapping_geojsonPublic2.png)
 
-Note that the administrative interface will not preview the map with your geoJSON data. You will need to go to the public view of the page to see the features that result from your data.
+The administrative interface will not preview the map with your GeoJSON data. You will need to go to the public view of the page to see the features that result from your data.
+
+Note that GeoJSON data used to load map features will not be available to the Timeline as dates; if your map includes a timeline, the GeoJSON-added features cannot be displayed when the timeline is used for navigation.
 
 #### Timeline
 
@@ -406,7 +408,6 @@ Properties (has any value)
     Filter by item set: (see above)
     Filter by resource class: (see above)
     Properties: Select the properties (that have values) to render as groups on the map.
-
 
 ### Public view
 
