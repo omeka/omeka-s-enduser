@@ -139,3 +139,13 @@ An example configuration, to be added at the end of `local.config.php`, will loo
 ```
 
 See the [laminas-mail documentation](https://docs.laminas.dev/laminas-mail/transport/smtp-options/){target=_blank} for clarification.
+
+Some mail setups only allow sending mail with a From header that uses a specific, authorized address. To ensure all outgoing mail uses a specific From address, you can use `default_message_options`:
+
+```
+    'mail' => [
+       'default_message_options' => [
+           'from' => 'email@example.com',
+        ],
+    ],
+```
