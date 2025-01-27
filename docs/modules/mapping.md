@@ -1,15 +1,17 @@
 # Mapping 
 
-The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows you to geolocate Omeka S items. Maps can also include timelines that allow you to scroll through items on a map in chronological order.
+The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows you to geolocate Omeka S items and display interactive maps throughout your public sites. Maps can also include timelines that allow you to scroll through items on a map in chronological order.
 
 ![Map with timeline](../modules/modulesfiles/Mapping_timelinePublic1.png)
 
-The Mapping module has no global configuration settings. It adds several new metadata fields to each item, and a new "Mapping" tab to each item edit screen, as well as several batch-editing options for items. It also adds:
+The Mapping module adds several new metadata fields to each item, a new "Mapping" tab to item editing, and several batch-editing options for items. It also adds:
 
 - optional location-based search fields to the advanced search pages on the admin and public interfaces, controlled on a site-by-site basis by [Site Settings](../sites/site_settings.md#settings)
 - three page blocks to [Site Pages](../sites/site_pages.md) that can display maps and timelines for browsing: "Map by query", "Map by attachments", and "Map by groups"
 - a "Map Browse" page for each site, found in the [Site Navigation settings](../sites/site_navigation.md)
 - [resource blocks to items and item sets](../sites/site_theme.md#select-regions-and-blocks) (not media), which can be repositioned within the regions offered by a given site's theme. 
+
+Mapping has no global configuration settings. Item sets cannot be geolocated, but can display mapping information based on items assigned to them.
 
 Mapping can work with the [Collecting](../modules/collecting.md#prompts) module, by allowing users filling out the contribution form to provide geolocation data for their submissions. Users click directly on a map to place a marker, and can optionally provide a text label for the marker. See the Collecting module page for more information.
 
@@ -39,11 +41,11 @@ When editing a map in the administrative interface, small white square buttons o
 
 ### How to search for mapping data
 
-Items with information filled out in their Mapping metadata fields (i.e. with markers or shapes on the map) can be searched with fields that the Mapping module adds to the advanced search fields. The public fields are optional (turned off by default) on [individual sites](../sites/site_settings.md#settings) in their [site settings](#site-wide-settings). 
+Items with Mapping metadata (i.e. with markers or shapes on the map) can be searched with fields that the Mapping module adds to the advanced search fields. The public fields are optional (turned off by default) on [individual sites](../sites/site_settings.md#settings) in their [site settings](#site-wide-settings). 
 
 ![Map-based searching in the admin side.](modulesfiles/Mapping_advSearch.png)
 
-The "Add geographic location to advanced search" option will add the three fields seen above, allowing users to search by location: they must provide an address, as well as a distance (in numbers) and select a unit (kilometres or miles).
+The "Add geographic location to advanced search" option will add the three fields seen above, allowing users to search by location: they must provide an address, as well as a distance (in numbers) and select a unit (kilometres or miles) to search within.
 
 The "Search by map marker presence" option provides users with a dropdown with the options of "Has map markers" or "Has no map markers", as seen above.
 
@@ -51,11 +53,11 @@ The "Search by map marker presence" option provides users with a dropdown with t
 
 The Mapping module adds metadata fields to each item, most of which cannot be accessed directly the way a text field can. This includes a latitude and longitude pair that creates markers on maps (an item can have more than one marker), or a series of coordinates that define shapes on the map (lines, polygons, and rectangles). There are also default display settings for each item's map - minimum corner coordinates that ensure the map contains at least those top, bottom, left, and right spots. 
 
-This information can be set manually using the item's "Mapping" tab, via a visual map interface, or in some cases can be bulk-added to items using [CSV Import](#csv-import-integration).
+This information can be set manually using the item's "Mapping" tab via a visual map interface, or can be textually bulk-added to items using [CSV Import](#csv-import-integration).
 
 ### Add locations
 
-The item view screen will not show a "Mapping" tab unless there is already geolocation metadata, but one will appear when editing the item. To add a map to an item, enter editing mode on an item. Navigate to the "Mapping" tab to open the map interface.
+The item view screen will not show a "Mapping" tab unless there is already geolocation metadata, but one will appear when editing the item. To add a map to an item, enter editing mode and navigate to the "Mapping" tab.
 
 ![Screenshot of the Add/Edit Item Page with Mapping tab selected.](../modules/modulesfiles/Mapping_Item_Add.png)
 
@@ -84,9 +86,9 @@ You can now click on the marker or shape to add a label that will display on [pu
 
 ![Closeup of map with a marker selected. There is a field to enter the maker label.](../modules/modulesfiles/Mapping_addLabel.png)
 
-You can also add an image to display on the feature when clicked in the [public view](#public-view). You can only select from images which have already been [attached to the item as media](../content/items.md#media). To remove the image, select "No Image" from the sidebar.
+You can also add an image to display on the feature when clicked in the [public view](#public-view). You can only select from images that have already been [attached to the item as media](../content/items.md#media). To remove the image, select "No Image" from the sidebar.
 
-![Marker selected with Image added. The media is also visible in the sidebar, along with an option for "no image"](../modules/modulesfiles/Mapping_addImage.png)
+![Marker selected with Image added. The media is also visible in the sidebar, along with an option for "No Image"](../modules/modulesfiles/Mapping_addImage.png)
 
 Neither field is required, but if you choose an image without entering a label, the media title will appear in the label field. This can be removed. 
 
@@ -136,7 +138,7 @@ If the chosen field in this batch operation does not contain valid entries, the 
 
 ![The map-specific batch-editing field, filled out to copy "Latitude/Longitude" values from dcterms:coverage of each item.](modulesfiles/Mapping_batchEdit.png)
 
-You may wish to copy your coordinates in one batch operation, then update those markers with labels and images in a second batch operation. Note that if an item has multiple markers, all markers will get a marker update of identical images and labels. 
+You may wish to copy your coordinates in one batch operation, then update those markers with labels and images in a second batch operation. Note that if an item has multiple markers, all markers will get updated with identical images and labels. 
 
 ### CSV Import integration
 
