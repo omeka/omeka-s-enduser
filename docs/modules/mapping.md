@@ -202,13 +202,13 @@ Item set pages, if you add the Mapping resource block to a region, will display 
 
 ### Page blocks
 
-Mapping creates three page blocks you can add to your site pages: "Map by attachments", where you manually add resources to the map block; "Map by query", which allows you to use a search string to add resources to the map block; and "Map by groups", where you can display a single map feature (a center-point pin or a containing shape) to represent sets of items, such as items grouped by their classes.
+Mapping creates three page blocks you can add to your site pages: "Map by attachments", where you manually add resources to the map block; "Map by query", which allows you to use search parameters to add resources to the map block; and "Map by groups", where you can display a single map feature (a center-point pin or a containing shape) to represent categories of items, such as items grouped by their classes.
 
-To add a map to a page, click to edit the page. On the right, under "Add new block", click either the "Map by attachments," the "Map by query", or the "Map by groups" block. Selecting one will add the map block to the page. The blocks include customizable features for the map in collapsable panes. Click the triangles to expand or collapse these fields.
+To add a map to a page, go into page editing mode. On the right, under "Add new block", click either the "Map by attachments," "Map by query", or "Map by groups" block. Selecting one will add the map block to the bottom of the page. The blocks include customizable features for the map in collapsable panes. Click the triangles to expand or collapse these fields.
 
 ![Screenshot of the Page with Map Block selected. Block includes menu options Default View, Overlays and attachments.](../modules/modulesfiles/Mapping_Page_MapBlock1.png)
 
-The "Map by attachments" and "Map by query" blocks have largely the same settings, with the exception of the methods for adding items to the map.
+The "Map by attachments" and "Map by query" blocks have largely the same settings besides the method for adding items to the map. The "Map by groups" block does not have timeline or overlay options.
 
 #### Default view
 
@@ -216,7 +216,7 @@ This section lets you set the appearance and zoom level of the map. There are th
 
 ![Map by attachments block open to Default Settings. There is no information in any field, and the preview map is zoomed in to level 2](modulesfiles/Mapping_BlockDefaultView1.png)
 
-**Basemap provider**: Select from a dropdown of basemaps. Once selected, the preview map will show you the appearance of that map. The default is "OpenStreetMap.Mapnik". These providers are offered as-is; there is no guarantee of service or speed. 
+**Basemap provider**: Select from a dropdown of basemaps. Once selected, the preview map will show you the appearance of that map. The default is "OpenStreetMap.Mapnik". These external providers are offered as-is; there is no guarantee of service or speed. 
 
 !!! note
 	Some maps do not have tiles at a high degree of zoom; be sure to test your chosen basemap on item pages, item set pages, the Map Browse page, and page blocks to be certain it will work for your needs. 
@@ -227,7 +227,7 @@ This section lets you set the appearance and zoom level of the map. There are th
 
 **Scroll wheel zoom**: Set whether users can zoom with their mouse wheel when hovering over the map, either automatically upon page load or after clicking inside the map. You can disable mouse-wheel scrolling entirely.
 
-The preview map allows you to visually set a default view for this map. The map dimensions on the public page may not match the dimensions shown in this preview, but saving a default view here will guarantee that the four corner points seen here will be displayed on the public page, with excess added to the outer edges if applicable. 
+The preview map allows you to visually set a default view for this map. The map dimensions on the public page may not match the dimensions shown in this preview, but saving a default view here will guarantee that the four corner points will be displayed on the public page, with excess added to the outer edges if applicable. 
 
 Note that the text above the preview map tells you the current zoom level. 
 
@@ -258,11 +258,11 @@ Omeka provides three formats for adding custom overlays or non-Omeka data:
 - [International Image Interoperability Framework (IIIF) Georeference Annotation](https://iiif.io/api/extension/georef/){target=_blank}
 - [GeoJSON](https://geojson.org/){target=_blank}.
 
-WMS and IIIF overlays appear as optional visual layers that site visitors can display or hide. Overlays frequently only cover one part of the world map - for example, a historical map of northern Africa that has been digitized and mapped precisely with the correct coordinates. You can have multiple layers all set to visible by default, whether they overlap each other or not. 
+WMS and IIIF overlays appear as optional visual layers that site visitors can display or hide. Overlays frequently only cover one part of the world map - for example, a historical map of northern Africa that has been digitized and mapped precisely with coordinates. You can have multiple layers all set to be visible by default, whether they overlap each other or not. 
 
 GeoJSON overlays are datasets for adding map features. Rather than display items from your Omeka collection, this option can display information on a map using markers and shapes generated from [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON){target=_blank}-formatted data. You can provide supplemental clickable pins to your site maps using this tool; pins are not tied to Omeka items, but can be used to add context, such as important buildings. You can manually create GeoJSON for your own use, or copy GeoJSON from other sources. See below for more information about GeoJSON.
 
-First, you can set whether you wish the overlays to display exclusively or inclusively (multiple at the same time). Then choose one of the three formats to begin entering information.
+First, you can set whether you wish the overlays to display exclusively (one at a time) or inclusively (multiple at the same time). Then choose one of the three formats to begin entering information.
 
 ##### WMS and IIIF
 
@@ -282,11 +282,13 @@ Click "Save overlay" to create the overlay. Click "Cancel" to clear each of the 
 
 ![A "Map by query" page block with the Overlays section open. Four overlays already exist, and one - a WMS overlay - is open for editing.](modulesfiles/Mapping_pageOverlays.png)
 
-Once you have added an overlay, it will appear above the fields for adding overlays. If you would like one or more of the overlays to display automatically when the page loads, check the box next to it. Edit an overlay by clicking on on the red pencil edit button, or click the red trashcan icon to delete the overlay.
+Once you have added an overlay, it will appear above the fields for adding more overlays. If you would like one or more of the overlays to display automatically when the page loads, check the box next to it. Note that some overlays can be large and take time to load on a public page. 
+
+Edit an overlay by clicking on on the red pencil edit button, or click the red trashcan icon to delete the overlay.
 
 ##### GeoJSON overlays
 
-GeoJSON provides map features as well as metadata information about each feature. You can use this to illustrate areas, such as historical boundaries of a municipality, or add coordinates related to the topic of your Omeka site or page. You can display any number of map features, of all types (point, line, and polygon). You can also have one set of metadata that refers to multiple discrete areas of the map - such as showing the continental United States, Alaska, and Hawaii as one single datapoint with three separate polygonal features. GeoJSON features look just like Omeka item map features. 
+GeoJSON provides map features as well as metadata information about each feature. You can use this to illustrate areas, such as historical boundaries of a municipality, or add coordinates related to the topic of your Omeka site or page. You can display any number of map features, of all types (point, line, and polygon). You can also have one set of metadata that refers to multiple discrete areas of the map - such as showing the continental United States, Alaska, and Hawaii as one single datapoint with three separate polygonal features. GeoJSON features look just like Omeka item features. 
 
 ![The admin side of a page being edited, showing the "GeoJSON" section filled out with information.](modulesfiles/Mapping_geojsonAdmin.png)
 
@@ -319,7 +321,7 @@ This is a geoJSON map pop-up with the label and comment selected:
 And this is a geoJSON map pop-up with all available properties showing, without a label or comment selected:
 ![The public map with settings as in the above screenshot.](modulesfiles/Mapping_geojsonPublic2.png)
 
-The administrative interface will not preview the map with your GeoJSON data. You will need to go to the public view of the page to see the features that result from your input.
+The administrative interface will not preview the map with your GeoJSON data before or after you save the overlay. You will need to go to the public view of the page to see the features that result from your input.
 
 Note that GeoJSON data will not be available to the Timeline as dates; if your map includes a timeline, the GeoJSON-added features will appear on the default map but cannot be displayed when the timeline is used for navigation.
 
@@ -394,9 +396,9 @@ Note that the administrative interface will not preview the map with your select
 
 #### Groups (Map by groups block)
 
-The "Map by groups" page block allows you to sort your items into according to various criteria. A group will display as either a single map pin (in the center of all the locations of all its items), or as a polygon (containing all the locations of all its items).
+The "Map by groups" page block allows you to sort your items according to various criteria. A group will display as either a single map pin (in the center of all the locations of all its items), or as a polygon (containing all the locations of all its items). Users can click on the groups to see only that group's items. 
 
-This page block offers common ways that users want to group their items: by classes, by item sets, or by common values in a given field, such as linked resources used in the Creator field. 
+This page block offers common ways that users want to group their items: by classes, by item sets, or by common values in a given field, such as linked resources used in the same field. 
 
 This block does not have timeline or overlay settings - only the Default View section, as above, and a Groups section. 
 
@@ -404,20 +406,20 @@ This block does not have timeline or overlay settings - only the Default View se
 
 The Groups section has two fields to start:
 
-- **Group by**: Select the type of group. 
+- **Group by**: Select the type of group: 
 	- Item sets
 	- Resource classes
 	- Property values (is exactly)
 	- Property values (contains)
 	- Property values (is item with ID)
 	- Properties (has any value).
-- **Feature type**: Select the type of feature to represent each group.
+- **Feature type**: Select the type of feature to represent each group:
 	- Polygon: A shape with boundaries around the outermost features.
 	- Point: The central point of all the group's items' locations.
 
 Once a user selects a "Group by" choice, the form should expand with more fields, based on the selection. 
 
-A common field is filtering: when one grouping choice is made (such as group items by their class), you can then choose to filter items based on the other selections (such as only including items from a particular item set). These filters allow only one selection. 
+Filtering options are also offered: when one grouping choice is made (such as group items by their class), you can then choose to filter items based on the other selections (such as only including items from a particular item set). These filters allow only one selection. 
 
 ##### Group by Item sets
 
@@ -435,7 +437,7 @@ This option can be useful if you use controlled vocabularies, for example for su
 
 - Filter by item set.
 - Filter by resource class.
-- Property: Select the property of the values to group. You can leave this blank to create groups from finding the text values in all properties. 
+- Property: Select the property of the values to group. You can leave this blank to create groups from finding the supplied text values in all properties. 
 - Values: Enter the (exact match) text values to render as groups on the map, separated by new lines. With this option, an item can potentially be in more than one group.
 
 ##### Group by Property values (contains)
@@ -444,27 +446,27 @@ This option allows you more flexibility than the "is exactly" option. This can b
 
 - Filter by item set.
 - Filter by resource class.
-- Property: Select the property of the values to group.
+- Property: Select the property of the values to group. You can leave this blank to create groups from finding the supplied text values in all properties.
 - Values: Enter the (matches any part) text values to render as groups on the map, separated by new lines. 
 
 ![A map by group block on the admin side, with "Group by property values (contains)" selected.](modulesfiles/Mapping_groupBlock.png)
 
 ##### Group by Property values (is item with ID)
 
-This option allows you to show items in a group that have a common linked resource. Enter the ID of the resource used as a metadata value in several items' descriptions. You can choose a specific property, or choose to group all items that reference the same resource in any property, by leaving that field blank.  
+This option allows you to group items that have a common linked resource. Enter the ID of the resource used as a metadata value in several items' descriptions. You can choose a specific property, or choose to group all items that reference the same resource in any property. This feature will require complex linked data in your collection. 
 
 - Filter by item set.
 - Filter by resource class.
-- Property: Select the property of the values to group.
-- Values: Enter the resource IDs to render as groups on the map, one per line. That is, enter the linked resource used as a value in other items' metadata, such as an item set used by multiple items' Creator field. Using this feature will require complex linked data in your collection. 
+- Property: Select the property of the values to group. You can leave this blank.
+- Values: Enter the resource IDs to render as groups on the map, one per line. That is, enter the linked resource used as a value in other items' metadata, such as an item set used by multiple items' Creator field.
 
 ##### Group by Properties (has any value)
 
 - Filter by item set.
 - Filter by resource class.
-- Properties: Select the properties (that have values) to render as groups on the map. Each property selected will become a group. 
+- Properties: Select the properties (that have any values) to render as groups on the map. Each property selected will become a group. 
 
-This is the public map on first viewing, with polygons set to display for each group. This is the same map as the image at the beginning of this section, with polygons instead of single pins:
+This is the public map on first viewing, with polygons set to display for each group. This is the same map as the image at the beginning of this section, set to display polygons instead of single pins:
 
 ![A map by group block with four polygons showing.](modulesfiles/Mapping_groupPublic1.png)
 
@@ -474,7 +476,7 @@ And this is the map after a group is selected. Note the "Return to groups" butto
 
 ### Public view
 
-A map block will display on a public page, item page, or item set page at the full page width. If you have settings in the [default view](#default-view) of the map block, or have set [default map bounds for the item](#map-display), these should be applied. Otherwise the map will zoom so that all of the items are visible.
+A map block will display on a public page, item view, or item set view at the full page or block width, subject to your page design settings. If you have settings in the [default view](#default-view) of the map block, or have set [default map bounds for the item](#map-display), these should be applied. Otherwise the map will zoom so that all of the items are visible.
 
 Viewers can zoom either using the scroll function of their computer or the zoom in/out buttons on the left side of the map. You can set whether viewers can use their mouse wheels to scroll inside the map page blocks (not item maps or the Map Browse page). 
 
@@ -482,9 +484,9 @@ Viewers can zoom either using the scroll function of their computer or the zoom 
 
 Each item will display as one or more markers or shapes on the map. Features that are close together may display as a cluster circle, with a number indicating how many items share that location. As you zoom in, these clusters will break open. Depending on the size of a shape, shapes may not cluster except at very low zoom levels, or at all. Clicking on a marker will display the label for that marker. 
 
-Item set pages, if you [add the Mapping resource block to a region](../sites/site_theme.md#select-regions-and-blocks), will display a map with all the features for all the items in that set. Item sets themselves cannot be geolocated. This map resource block has no settings but can be modified with the [site-wide settings](#site-wide-settings).
+Item set pages, if you [add the Mapping resource block to a region](../sites/site_theme.md#select-regions-and-blocks), will display a map with all the features for all the items in that set. This resource block has no settings but can be modified with the [site-wide settings](#site-wide-settings).
 
-If you have not added a label or image for the marker, it will simply say "Item: [Title]." 
+If you have not added a label or image for the markers, they will simply say "Item: [Title]." 
 
 !!! note
 	Note that map features should display the appropriate language metadata based on the site's locale setting: for example, if a site is set to "French" in the locale, and the item has a French-tagged title (`fr`), that title should display rather than a title with another language tag or no tag at all. If you are experiencing problems loading the right language in multilingual projects, check your site settings and the language tags on the items' metadata fields. 
@@ -556,3 +558,4 @@ In the image below, the timeline is using interval data. The event "Reading Abbe
 - Trouble with timelines: Ensure you have the Numeric Data Types module installed and active, and that your selected date metadata field is formatted correctly as a Numeric Data Type using resource templates. Items with mapping data but without date data will not show, nor will items with date data but without mapping data, as maps with timelines require both.
 - Trouble with items appearing on your maps: Ensure all items are added to your site under the Resources tab. Ensure the items have valid mapping data in their individual Mapping tabs. Test the Map Browse page, found at `yoursite/mapping/index/browse`. Test a simple Map by Attachments page block with a few items you know are geolocated correctly.
 - Trouble with maps appearing on item pages or item set pages: Add the Mapping resource page block to a region provided by your theme, by going to [Site > Theme > Configure resource pages](../sites/site_theme.md#configure-resource-pages).
+- Trouble saving overlays: There is a "Save overlay" button that must be clicked when an overlay is being entered or edited. Be sure to save each edit and then save the page. 
