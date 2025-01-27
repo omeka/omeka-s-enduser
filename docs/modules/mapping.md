@@ -4,7 +4,7 @@ The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows 
 
 ![Map with timeline](../modules/modulesfiles/Mapping_timelinePublic1.png)
 
-The Mapping module adds several new metadata fields to each item, a new "Mapping" tab to item editing, and several batch-editing options for items. It also adds:
+The Mapping module adds several metadata fields to each item, a "Mapping" tab to item editing, and several batch-editing options for items. It also adds:
 
 - optional location-based search fields to the advanced search pages on the admin and public interfaces, controlled on a site-by-site basis by [Site Settings](../sites/site_settings.md#settings)
 - three page blocks to [Site Pages](../sites/site_pages.md) that can display maps and timelines for browsing: "Map by query", "Map by attachments", and "Map by groups"
