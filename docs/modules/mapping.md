@@ -466,13 +466,18 @@ This option allows you to group items that have a common linked resource. Enter 
 - Filter by resource class.
 - Properties: Select the properties (that have any values) to render as groups on the map. Each property selected will become a group. 
 
-This is the public map on first viewing, with polygons set to display for each group. This is the same map as the image at the beginning of this section, set to display polygons instead of single pins:
+The public map on first viewing shows a feature for each group. In the image below polygons are set to display for each group. This is the same map as the image at the beginning of this section, set to display polygons instead of single pins:
 
-![A map by group block with four polygons showing.](modulesfiles/Mapping_groupPublic1.png)
+![A map by group block with polygons showing.](modulesfiles/Mapping_groupPublic1.png)
 
-And this is the map after a group is selected. Note the "Return to groups" button that appears under the map, alongside the current browsing parameters:
+In the image above, one polygon has been selected and its pop-up is showing, reading "Subject contains politics & protest, in item set National Mall Items" with "View all results (58 total)" on a clickable button. 
+
+After a group is selected, the map will update to display features for each item in the group. There may be clusters, pins, and shapes. Underneath the map there will appear a "Return to groups" button, alongside the current browsing parameters (including the group and any filters applied):
 
 ![A map by group block with the group's contents showing.](modulesfiles/Mapping_groupPublic2.png)
+
+In the image above, the browsing parameters read "Subject contains: politics & protest | In item set: National Mall items". 
+
 
 ### Public view
 
