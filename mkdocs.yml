@@ -80,6 +80,16 @@ nav:
         - modules/viewprivateresources.md
         - modules/zoterocitation.md
         - modules/zoteroimport.md
+    - Themes:
+        - themes/default.md
+        - themes/centerrow.md
+        - themes/cozy.md
+        - themes/foundation.md
+        - themes/freedom.md
+        - themes/lively.md
+        - themes/papers.md
+        - themes/thanksroy.md
+        - themes/thedaily.md
     - Miscellaneous:
         - errorLogging.md
         - translateOmekaS.md

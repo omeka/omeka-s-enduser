@@ -82,6 +82,16 @@ Change the order of blocks by clicking on the three horizontal lines on the uppe
 
 Some modules may create additional blocks for your site pages. For information on working with these blocks, please see the documentation for that [module](../modules/index.md).
 
+### Layout styles
+
+Omeka S offers two approaches to laying out the content of your page: normal flow and grid. Normal flow is a single column layout that allows block content to be placed left, right, or center within that column. Grid supports layouts with up to 12 columns and much more granular control over block placement among the designated number of columns.
+
+![Select dropdown for "layout" with "normal" and "grid" as options.](../sites/sitesfiles/sitepg_layout.png)
+
+#### Normal flow
+
+#### Grid
+
 ### From the public side
 If you are on the admin side and click "View" in the upper right-hand corner of a page, it will take you to the public view for that page. 
 
