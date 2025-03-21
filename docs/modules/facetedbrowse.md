@@ -37,7 +37,7 @@ Create a new page by clicking the "Add a page" button. This takes you to a new p
 
 ![Create page interface showing save page dropdown](modulesfiles/FacetedBrowse_AddPage.png)
 
-The **page title** is required and will display on browser tabs and be sent in the page metadata. You can set a separate label in the site navigation. Most themes will not display this title visibly on the page. When one category is in use, its title will show on the page; when two or more categories are set, the word "Browse" will appear above the category links in the sidebar. 
+The **page title** is required and will display on browser tabs and be sent in the page metadata. You can set a separate label in the site navigation. Most themes will not display this title visibly on the page. When one category is in use, its title will show on the page; when two or more categories are set, the word "Browse" will display above the category links in the sidebar (see [the screenshot below](#multiple-categories-on-one-page) for how this will appear). 
 
 Use the **resource type** dropdown to select the resource type that you would like to let users browse on this page: Items, Item Sets, or Media. This cannot be edited after page creation.
 
