@@ -37,7 +37,7 @@ Create a new page by clicking the "Add a page" button. This takes you to a new p
 
 ![Create page interface showing save page dropdown](modulesfiles/FacetedBrowse_AddPage.png)
 
-The **page title** is required and will display on browser tabs and be sent in the page metadata. You can set a separate label in the site navigation. Most themes will not display this title visibly on the page. When one category is in use, its title will show on the page; when two or more categories are set, the word "Browse" will display above the category links in the sidebar (see [the screenshot below](#multiple-categories-on-one-page) for how this will appear). 
+The **page title** is required and will display on browser tabs and be sent in the page metadata. You can set a separate label in the site navigation. Most themes will not display this title visibly on the page. When one category is in use, its title will show on the page; when two or more categories are set, the heading "Browse" will display above the category links in the sidebar (see [the screenshot below](#multiple-categories-on-one-page) for how this will appear). 
 
 Use the **resource type** dropdown to select the resource type that you would like to let users browse on this page: Items, Item Sets, or Media. This cannot be edited after page creation.
 
@@ -47,7 +47,9 @@ You can also save your edits and leave without working on categories and facets 
 
 ### Categories
 
-Once the page has been created, you must create a Category. This is where facets are created, and can also narrow down the pool of resources to browse with those facets. You can use multiple categories to provide different resource subsets for users to start their browsing.
+Once the page has been created, you must create a Category. This is where facets are created, and can also use filters to narrow down the pool of resources to browse with those facets. You can use multiple categories to provide different resource subsets for users to start their browsing.
+
+For example, you may want to add a general "Browse items" page to your navigation, and provide within it a category for navigating only images, another category for navigating only events, and a final category that allows users to browse all items in the site, including images and events. Or you could create separate Faceted Browse pages to add to your navigation - one for each item class - and within each page provide categories to restrict the resources further by another value. 
 
 Click the "Add category" button to be taken to a new interface. 
 
@@ -55,7 +57,7 @@ Give your category a **name** to be displayed to the public. This will appear at
 
 Use the **search query** interface to set the pool of resources that users will browse. The "Edit" button opens a drawer on the right hand side of the browser window which works exactly like [advanced search forms](../search.md#item-advanced-search) for items, media, and item sets. The "Advanced edit" button allows you to input a query string. You can leave the query blank to include all of the site's resources of that type. 
 
-You can set a **default sorting** method to use when a site visitor starts to browse using this category. The dropdown menu will show "Created" and "Title" at first, but will update to reflect the columns you customize for your browsing table below. You will need to save your columns settings below to see this menu updated. Note that you cannot set a default sort by an Item Set column. 
+You can set a **default sorting** method to use when a site visitor starts to browse using this category. This will apply to the default list of resources, or to the [FB table you have customized with columns](#columns). The dropdown menu will show "Created" and "Title" at first, but will update to reflect the columns you customize further down on the page. You will need to save your columns settings and return to this page to see this menu updated. Note that you cannot set a default sort by an Item Set column. 
 
 ![Add category form showing the options](modulesfiles/FacetedBrowse_SearchQuery.png)
 
