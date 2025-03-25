@@ -112,7 +112,10 @@ Depending on the [site theme](../sites/site_theme.md), you may want to make this
 
 **Browse body property** sets which property to use as the body text for each resource on a browse page. By default, this is Dublin Core: Description. The dropdown allows you to select from all available vocabularies, and includes a search bar to quickly find the desired property.
 
-**Item browse defaults** allow you to customize the default browsing and search results displays of your site. By default, items are ordered by "Created" "Descending," meaning most recently added items are at the top of browses and searches. Note that users can always change these sorting methods on the public pages. Here you can set an alternative default, such as alphabetically by Title, or alphabetically by Resource Class.
+**Item browse defaults** allow you to customize the default browsing and search results sorting of your site. By default, items are ordered by "Created" "Descending," meaning most recently added items are at the top of browses and searches. Note that users can always change these sorting methods on the public pages. Here you can set an alternative default, such as alphabetically by Title, or alphabetically by Resource Class. 
+You can also choose a property in your installation to use as a custom default sorting method, although this property will not display in each item's entry in browses and search results. Select "[Custom sort by]" and enter the property in the text field, in the format `vocabulary:property` - for example, `dcterms:format`. You can also use `id` and `modified`. 
+This custom entry will be the active sort method on all item tables in your site. Note that this will appear as "Custom (dcterms:format)" in your public dropdowns. 
+See the ["Sorting" section of the Searching page](../search.md#sorting) for more information on sorting behaviors. 
 
 ### Show
 
