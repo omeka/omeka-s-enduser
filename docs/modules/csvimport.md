@@ -750,11 +750,9 @@ Use the following ISO 8601 formats to add [times](https://en.wikipedia.org/wiki/
 
 You cannot omit the year while providing a month and/or day. You cannot supply ordinal dates (as in, `2000-175` for the 175th day of the year 2000). 
 
-Use the following ISO 8601 formats for importing [intervals](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals){target=_blank} either as start and end points, or with one time point and a duration:
+UUse the following format for importing [intervals](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals){target=_blank} with start and end points:
 
-- `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (Start and end)
-- `2007-03-01T13:00:00Z/P1Y2M10DT2H30M` (Start time/date and duration)
-- `P1Y2M10DT2H30M/2008-05-11T15:30:00Z` (Duration and end time/date).
+- `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (Start and end).
 
 Use the following ISO 8601 formats for importing [durations](https://en.wikipedia.org/wiki/ISO_8601#Durations){target=_blank}, expressed as number of years, number of months, number of days, etc.:
 
