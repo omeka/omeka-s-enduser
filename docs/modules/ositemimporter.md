@@ -6,7 +6,7 @@ Transferring data from one installation to another creates a situation where the
 
 ## Prepare for import
 
-To minimize data loss, the local installation must be prepared carefully to accept the data from the providing installation. As much as possible the administrator of the recieiving installation should work to recreate the remote installation's data model. To do so, the administrator should:
+To minimize data loss, the local installation must be prepared carefully to accept the data from the providing installation. As much as possible the administrator of the receiving installation should work to recreate the remote installation's data model. To do so, the administrator should:
 
 - Import any linked data [vocabularies](../content/vocabularies.md) that are used by the remote installation's items.
 - [Install and configure modules](../modules/index.md) that control the data types used as values in the remote installation's items, such as: 
