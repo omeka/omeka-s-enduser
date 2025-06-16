@@ -153,7 +153,7 @@ Select multiple items on the Items browse page in the admin interface, choose "E
 
 ## Embed the OHMS viewer
 
-Having added your OHMS XML files to you Omeka S items, you are ready to display them on your sites. 
+Having added your OHMS XML files to your Omeka S items, you are ready to display them on your sites. 
 
 ### OHMS viewer on item and media pages
 
