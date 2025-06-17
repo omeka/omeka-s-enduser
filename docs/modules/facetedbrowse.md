@@ -296,3 +296,17 @@ The page block comes with the following settings:
 * Link text: Enter in text to display on a button at the bottom of the page block. This will link the users to the full FB page. 
 
 ![The FB preview page block as it appears in the The Daily theme.](modulesfiles/FacetedBrowse_previewpageblock2.png)
+
+## Default searching with Faceted Browse
+
+You can channel your users to a Faceted Browse page directly from the search bar that appears in your site's header or menu. 
+
+Go to your site's Settings page, and look for the "Faceted Browse" section. You will see a dropdown menu that allows you to select one of your categories to display when a text search is performed in the site-wide search bar. 
+
+![Faceted Browse section in the site settings](modulesfiles/FacetedBrowse_sitewideSetting.png)
+
+Note that only categories with a text search facet will appear. 
+
+When a user searches your site by text, they will be taken to the Faceted Browse category and see their text search filled out in the full-text facet in the sidebar. They will be able to further narrow or broaden their searches from there. 
+
+![A text search for "william" has loaded the Faceted Browse page with "william" also appearing in the full-text facet in the sidebar.](modulesfiles/FacetedBrowse_sitewide.png)
