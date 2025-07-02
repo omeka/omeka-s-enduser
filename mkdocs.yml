@@ -42,6 +42,7 @@ nav:
         - admin/assets.md
     - Modules:
         - modules/index.md
+        - modules/activitylog.md
         - modules/collecting.md
         - modules/copyresources.md
         - modules/csseditor.md
