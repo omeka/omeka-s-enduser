@@ -71,14 +71,14 @@ Users with permission to view the Activity Log can filter events. Click the "Vie
 
 ![The table of events in the Activity Log module, with the right-hand drawer showing the Filtering options for the table.](modulesfiles/activityLog_filterDate.png)
 
-Users may filter the events using the multiple available filters:
+Users may filter the events using the multiple available filters (you will see the count of each entry in parentheses):
 
 - **ID**: Filter events by event ID
-- **User**: Filter events by user name (count in parenthesis)
-- **User role**: Filter events by user role (count in parenthesis)
+- **User**: Filter events by user
+- **User role**: Filter events by user role 
 - **IP**: Filter events by IP address
-- **Event**: Filter events by event name (count in parenthesis)
-- **Resource**: Filter events by resource name (count in parenthesis)
+- **Event**: Filter events by event name
+- **Resource**: Filter events by resource name
 - **Resource ID**: Filter events by resource ID
 - **From**: Filter events by date from (on and after)
 - **Before**: Filter events by date before.
@@ -125,7 +125,9 @@ By default, the module will record the following events. Modules may add more ev
 Administrators can export the data using the REST API:
 
 ```
+
 /api-local/activity_log_event
+
 ```
 
 ## Delete events
