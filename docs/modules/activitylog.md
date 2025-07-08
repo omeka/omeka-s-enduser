@@ -10,15 +10,15 @@ Activity Log is only accessible to users at the Global Admin and Supervisor leve
 
 ## View events
 
-Activity Log will record events when it is active. The table will reflect all changes made in the installation, by all users. The table is displayed in reverse-chronological order (newest events at the top), and cannot be sorted any other way. It only lists events that modify (create, update, and delete). It does not include read-only events (such as searching). 
+Activity Log will record events when it is active. The table will reflect all changes made in the installation, by all users. The table is displayed in reverse-chronological order (newest events at the top). It only lists events that modify (create, update, and delete). It does not include read-only events (such as searching). 
 
 The table includes the following columns:
 
-- **ID**: The identifier of the event
+- **ID**: The internal identifier of the event
 - **Date**: The date/time of the event, using the installation's time zone
 - **User**: The user who triggered the event, and the user's role. Where no user is logged in (such as contributions made using the [Collecting](collecting.md) module's public forms) this space will be blank. 
 - **IP**: The IP address of the user, at the time of the event
-- **Event**: The type of event that was triggered by the user
+- **Event name**: The type of event that was triggered by the user
 - **Resource**: The ID of the resource that was modified by the user. If multiple resources, as in a bulk action, the IDs of all affected resources will be listed in the data. 
 - **Messages**: Any messages that describe the event, in list form.
 
@@ -26,7 +26,7 @@ An event can be seen in more detail by clicking the "View event data" link in ea
 
 ![The table of events in the Activity Log module, with event data shown in the right-hand drawer.](modulesfiles/activityLog_eventData.png)
 
-For example, an event where multiple items (IDs 123, 124, and 125) are removed from a site (ID 01) will say:
+For example, an event in which multiple items (IDs 123, 124, and 125) are removed from a site (ID 01) will say:
 
 
 ```
@@ -55,21 +55,21 @@ Users with permission to view the Activity Log can filter events. Click the "Vie
 
 ![The table of events in the Activity Log module, with the right-hand drawer showing the Filtering options for the table.](modulesfiles/activityLog_filter.png)
 
-- Filtering by event will allow you to narrow down by the types of changes made: creation, deletion, updating, batch-updating, setting changes, etc.
+- Filtering by event name will allow you to narrow down by the types of changes made: creation, deletion, updating, batch-updating, setting changes, etc.
 
-![The table of events in the Activity Log module, with the right-hand drawer showing the Filtering options for the table.](modulesfiles/activityLog_filterName.png)
+![The table of events in the Activity Log module, with the right-hand drawer showing the event filtering options for the table.](modulesfiles/activityLog_filterName.png)
 
 - Filtering by resource will allow you to select from the resources inside the installation: item, media, item set, site, page, etc.
 
-![The table of events in the Activity Log module, with the right-hand drawer showing the Filtering options for the table.](modulesfiles/activityLog_filterResource.png)
+![The table of events in the Activity Log module, with the right-hand drawer showing the resource filtering options for the table.](modulesfiles/activityLog_filterResource.png)
 
 - Filtering by user will allow you to choose from the list of users who have made changes to the installation within Activity Log's collection range.
 
-![The table of events in the Activity Log module, with the right-hand drawer showing the Filtering options for the table.](modulesfiles/activityLog_filterUser.png)
+![The table of events in the Activity Log module, with the right-hand drawer showing the user filtering options for the table.](modulesfiles/activityLog_filterUser.png)
 
 - Filtering by date will allow you to select one or two dates by calendar - a start date for events (on and after) and an end date.
 
-![The table of events in the Activity Log module, with the right-hand drawer showing the Filtering options for the table.](modulesfiles/activityLog_filterDate.png)
+![The table of events in the Activity Log module, with the right-hand drawer showing the date filtering options for the table.](modulesfiles/activityLog_filterDate.png)
 
 Users may filter the events using the multiple available filters (you will see the count of each entry in parentheses):
 
@@ -77,7 +77,7 @@ Users may filter the events using the multiple available filters (you will see t
 - **User**: Filter events by user
 - **User role**: Filter events by user role 
 - **IP**: Filter events by IP address
-- **Event**: Filter events by event name
+- **Event name**: Filter events by event name
 - **Resource**: Filter events by resource name
 - **Resource ID**: Filter events by resource ID
 - **From**: Filter events by date from (on and after)
@@ -87,7 +87,7 @@ Set the filters and click "Apply filters". The resulting page will show the filt
 
 #### Events captured
 
-By default, the module will record the following events. Modules may add more events, but they are not listed here.
+By default, the module will record the following event types. Modules may add more events, but they are not listed here.
 
 - `user.login`
 - `user.logout`
@@ -132,7 +132,7 @@ Administrators can export the data using the REST API:
 
 ## Delete events
 
-From the Modules page, a global admin user can select "Configure" in the Activity Log entry. This offers the ability to delete all Activity Log entries before a given date. 
+From the Modules page, a Global Admin user can select "Configure" in the Activity Log entry. This offers the ability to delete all Activity Log entries before a given date. 
 
 ![The configuration page for Activity Log, with the option to delete events occurring before an entered date.](modulesfiles/activityLog_config.png)
 
