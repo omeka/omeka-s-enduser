@@ -8,7 +8,7 @@ We need the community's help translating English text in Omeka S into new langua
 Omeka S uses [Transifex.com](https://www.transifex.com){target=_blank} to manage translations. To start helping to translate Omeka into other languages, you will first need to [sign up for an account](https://www.transifex.com/signup/){target=_blank}. Transifex.net offers several plans, but since Omeka is an open-source project, you can use the Free plan.
 
 ### Join or start a language team
-Once you have registered for an account, visit the [Omeka S project page](https://www.transifex.com/omeka/omeka-s/){target=_blank} and click on the "Help Translate Omeka S" or "Join Team" button.
+Once you have registered for an account, visit the [Omeka S project page](https://app.transifex.com/omeka/){target=_blank} and click on the "Help Translate Omeka S" or "Join Team" button.
 
 Here, you can choose among all the languages that are already being worked on. If you want to start work on a translation into a new language which isn't listed, you need to request that language first. Click "cancel" and scroll down to the bottom of the page and click the "request language" link, and select the language that you want to work on.
 
