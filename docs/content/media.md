@@ -91,9 +91,14 @@ If you wish your item to have a generic thumbnail (such as an icon of a book, or
 
 Thumbnails selected through the Advanced tab of an item edit screen (from an installation's Assets collection) will override any other thumbnails that have been generated for the item from its media.
 
-### File size limitations
+### File sizes
 
 Omeka S imposes no file size limitations. Your server, however, may have restrictions on file upload sizes or speeds that may be causing problems. These limitations vary from server to server and we cannot change this for you. If you have a problem uploading media, please first check with your hosting service or your local server administrator.
+
+To manage your Omeka S installation's media based on size, you can view the Media tab and sort your files by "Size" and "Descending". This will put largest files at the top of the table; file sizes are given in bytes. This can help you identify resources for external hosting or derivative reformatting, depending on your storage needs. 
+
+![The Media tab, with largest files at the top of the table.](contentfiles/media_sizes.png)
+
 
 ## Edit media metadata
 
