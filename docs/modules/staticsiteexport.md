@@ -1,8 +1,8 @@
 # Static Site Export
 
-The [Static Site Export module](https://omeka.org/s/modules/Sharing){target=_blank} allows you to export a flattened copy of a site on your Omeka S installation. Using Hugo, you can rebuild a simplified version of your site that will maintain most of your page elements and all of your resources.  
+The [Static Site Export module](https://omeka.org/s/modules/StaticSiteExport){target=_blank} allows you to export a flattened copy of a site on your Omeka S installation. Using Hugo, you can rebuild a simplified version of your site that will maintain most of your page elements and all of your resources.  
 
-Static sites do not contain the usual dynamic website elements such as searching or building pages and page blocks from search queries. Some page blocks will not render at all, and some will render without their original settings. Currently the SSE module only supports content from Mapping and not other modules. Static sites will be produced with a version of the "default" theme for S.
+Static sites do not contain the usual dynamic website elements, such as searching, or pages and page blocks that use search queries. Some page blocks will not render at all, and some will render without their original settings. Currently the SSE module only supports content from [Mapping](mapping.md) and not other modules. Static sites will be produced with a version of the "default" theme for S.
 
 ![The module page found under each site, where exports are created and managed.](modulesfiles/sse_siteTable.png)
 
