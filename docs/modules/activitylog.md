@@ -1,6 +1,6 @@
 # Activity Log
 
-The [Activity Log module](https://omeka.org/s/modules/activitylog/){target=_blank} allows you to gather information about changes made in the Omeka interface into one table. The module will show all changes made to resources, sites, installation settings, users, and module-added data points. 
+The [Activity Log module](https://omeka.org/s/modules/ActivityLog/){target=_blank} allows you to gather information about changes made in the Omeka interface into one table. The module will show all changes made to resources, sites, installation settings, users, and module-added data points. 
 
 ![The table of events in the Activity Log module.](modulesfiles/activityLog.png)
 
