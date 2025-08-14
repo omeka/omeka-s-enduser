@@ -80,6 +80,7 @@ nav:
             - modules/scripto/scriptoPublicView.md
             - modules/scripto/troubleshootingScripto.md
         - modules/sharing.md
+        - modules/staticsiteexport.md
         - modules/uridereferencer.md
         - modules/valuesuggest.md
         - modules/viewprivateresources.md
