@@ -57,6 +57,7 @@ This module offers the ability to suggest values currently stored in your Omeka 
 
 This module includes the following vocabularies:
 
+- Creative Commons
 - Dublin Core
 - Gemeinsame Normdatie (GND)
 - GeoNames
@@ -83,6 +84,10 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 
 !!! note
 	Some vocabularies appear in multiple languages in the list below: for example, Homosaurus (in English) is listed separately from the Dutch translation of Homosaurus found in the [NDE Termennetwerk module](ndetermennetwerk.md). Search the list and refer to the services to see which languages they support. We have indicated languages here for services that serve primarily one (non-English) language.
+
+### [Creative Commons (CC)](https://creativecommons.org/share-your-work/cclicenses/)
+
+- Provides a standardized way to grant the public permission to use their creative work under copyright law.
 
 ### [Dublin Core (DCMI Metadata Terms)](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/){target=_blank}
 
