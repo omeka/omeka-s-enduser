@@ -32,7 +32,7 @@ This text is from the [Local Contexts website](https://localcontexts.org/labels/
 
 ### Projects
 
-This text is from [The Local Contexts website](https://localcontexts.org/support/getting-started-on-the-hub/){target=_blank}:
+This text is from the [Local Contexts website](https://localcontexts.org/support/getting-started-on-the-hub/){target=_blank}:
 
 > *What is a Local Contexts Project?*
 
