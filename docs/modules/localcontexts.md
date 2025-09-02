@@ -112,6 +112,8 @@ The metadata values are entered as JSON:
 
 ![Image](modulesfiles/localcontexts_itemAdmin2.png)
 
+Note that the [Metadata Browse module](metadatabrowse.md) may conflict with Local Contexts in metadata entries - adding links to the text of the notices and labels. You can continue to use Metadata Browse to allow users to browse all items with the same projects, but we recommend unchecking the "Direct links" box in the module configuration. 
+
 ### Apply projects to site pages
 
 Local Contexts can also be displayed in a site page through the use of a dedicated page block. Edit a page, then select the "Local Contexts" block in the right-hand drawer. Within the page block, choose a project from the dropdown and one language if desired. 
