@@ -72,7 +72,7 @@ With the module installed and active on your Omeka site, go to the "Local Contex
 
 You can optionally select only a few of your Projects for import, by entering in their IDs. If you leave the "Projects" field blank, Omeka will load all the projects associated with your Local Contexts API key. 
 
-When you save the page, the projects will load on an "Assign" tab. You will see each project name and all of its associated notices and labels. On this screen you can check the box of each project you wish to make available from the API key you just input. If you do not check any of these projects before saving the page, they will not persist in the Omeka site. Assigning the projects at this stage will not make them appear on your site - you will still need to apply them manually to items and exhibits, and place them into the site footer. 
+When you save the page, the projects will load on an "Assign" tab. You will see each project name and all of its associated notices and labels. On this screen you can check the box of each project you wish to make available from the API key you just input. If you do not check any of these projects before saving the page, they will not persist in the Omeka site. Assigning the projects at this stage will not make them appear on your site - you will still need to apply them manually to items and site pages, and place them into the site footer. 
 
 ![Image](modulesfiles/localcontexts_assign.png)
 
@@ -86,7 +86,7 @@ This table will allow you to remove projects from your site. If you wish to add 
 
 ### Apply projects to sites
 
-You can choose one or more Local Contexts projects to appear in the footer of each site on your Omeka S installation. Go to the Sites tab in the sidebar, select a site, and go to "Site admin". In the "Settings" tab of the site admin page, look for the Local Contexts section. From here you can choose one or more of the projects that have been assigned to the installation after inputting an API key. 
+Site Managers or Global Administrators can choose one or more Local Contexts projects to appear in the footer of each site on your Omeka S installation. Go to the Sites tab in the sidebar, select a site, and go to "Site admin". In the "Settings" tab of the site admin page, look for the Local Contexts section. From here you can choose one or more of the projects that have been assigned to the installation after inputting an API key. 
 
 ![Image](modulesfiles/localcontexts_site.png)
 
