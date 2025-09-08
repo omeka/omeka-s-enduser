@@ -76,9 +76,9 @@ When you save the page, the projects will load on an "Assign" tab. You will see 
 
 ![Image](modulesfiles/localcontexts_assign.png)
 
-Omeka S will not save the API key, and does not create a persistent connection. If you update content on the LC Hubs website, you will need to re-enter the API key to update Omeka's information from the source. Then you will need to re-apply the modified projects to your footer, items, and exhibits where applicable. 
+Omeka S will not save the API key, and does not create a persistent connection. If you update content on the LC Hubs website, you will need to re-enter the API key to update Omeka's information from the source. Then you will need to re-apply the modified projects to your footer, items, and site pages where applicable. 
 
-Other users on the Omeka site can add more projects by entering in another LC API key (or by entering the same key and specifying other projects by ID). Projects from all sources will be listed together in the Items and Exhibits and can be accessed by any user. 
+Other users on the Omeka installation can add more projects by entering in another LC API key (or by entering the same key and specifying other projects by ID). Projects from all sources will be listed together in the interface and can be accessed by any user. 
 
 If you return to this page after initially inputting an API key, you will see the same form to enter in a new API key. You can ignore this and save the page if you wish to see the list of projects already imported to your site. This will appear on a "Remove" tab. 
 
