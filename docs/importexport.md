@@ -10,7 +10,7 @@ You can use the [Omeka Classic Importer module](modules/omekaCimporter.md) to im
 
 If equivalent plugins/modules are installed on both the source site and the target site, Omeka Classic Importer can import module-specific metadata. For example, geolocation data facilitated by the Mapping module in S and the Geolocation plugin in Classic will automatically be imported; [PDF Text](https://omeka.org/classic/plugins/PdfText/){target=_blank} elements can be imported and mapped to [Extract Text](https://omeka.org/s/modules/ExtractText/){target=_blank} fields.
 
-You cannot currently export from an Omeka S site to a Classic site. 
+You cannot currently export directly from an Omeka S site to a Classic site. See the options to export and import via spreadsheet, below. 
 
 ### Import from S to S
 
@@ -18,11 +18,11 @@ You can use the [Omeka S Item Importer module](modules/ositemimporter.md) to imp
 
 ### Import or export resource templates 
 
-[You can share a resource template between Omeka S installations by exporting and importing them.](https://omeka.org/s/docs/user-manual/content/resource-template/#share-resource-templates)
+[You can share a resource template between Omeka S installations by exporting and importing it.](https://omeka.org/s/docs/user-manual/content/resource-template/#share-resource-templates)
 
 ### Import or export custom vocabularies
 
-[You can share custom vocabularies between Omeka S installations by exporting and importing them.](https://omeka.org/s/docs/user-manual/modules/customvocab/#manage-custom-vocabs)
+[You can share a custom vocabulary between Omeka S installations by exporting and importing it.](https://omeka.org/s/docs/user-manual/modules/customvocab/#manage-custom-vocabs)
 
 ## Connect to non-Omeka platforms
 
@@ -80,4 +80,18 @@ The script will then run, and show output indicating its progress. The exported 
 
 ### Access data using the API
 
-You can use your own S site's API to crawl data as required, rather than exporting a spreadsheet for a one-time use. Note that you can [request different formats through the API](https://omeka.org/s/docs/developer/api/rest_api/#responses){target=_blank}, including `jsonld` and `rdfxml`. [For more information on the API, see the developer documentation section.](https://omeka.org/s/docs/developer/api/){target=_blank}
+You can use your own S site's API to crawl data as required, rather than exporting a spreadsheet for one-time use. Note that you can [request different formats through the API](https://omeka.org/s/docs/developer/api/rest_api/#responses){target=_blank}, including `jsonld` and `rdfxml`. [For more information on the API, see the developer documentation section.](https://omeka.org/s/docs/developer/api/){target=_blank}
+
+### Access data using the Output Formats module
+
+A user-friendly version of the same data available from the API can be accessed by installing the [Output Formats module](modules/outputformats.md). This will add an output dropdown automatically to all administrative interface pages with browse and search results as well as individual resource views. The module can also be enabled for public pages, allowing anyone to export a dataset from a browse or search subset. 
+
+The output formats available for this module are:
+
+- [JSON-LD](https://json-ld.org/){target=_blank}
+- [Notation3](https://www.w3.org/wiki/NotationThree){target=_blank}
+- [N-Triples](https://dbpedia.org/page/N-Triples){target=_blank}
+- [RDF/XML](https://www.w3schools.com/XML/xml_rdf.asp){target=_blank}
+- [Turtle](https://www.w3.org/TR/rdf12-turtle/){target=_blank}.
+
+See the Output Formats module documentation for more details. 
