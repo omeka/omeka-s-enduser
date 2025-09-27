@@ -1,6 +1,6 @@
 # Fedora Connector
 
-The [Fedora Connector module](https://omeka.org/s/modules/FedoraConnector){target=_blank} allows you to connect an Omeka S instance to a [Fedora](https://duraspace.org/fedora/){target=_blank} 4 repository in order to import items from containers in that repository. In addition to importing information, the Omeka S item will include a link back to the original item.
+The [Fedora Connector module](https://omeka.org/s/modules/FedoraConnector) allows you to connect an Omeka S instance to a [Fedora](https://duraspace.org/fedora/) 4 repository in order to import items from containers in that repository. In addition to importing information, the Omeka S item will include a link back to the original item.
 
 Note that Fedora Connector only works with version 4 of Fedora.
 

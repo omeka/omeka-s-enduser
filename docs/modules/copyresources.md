@@ -1,8 +1,8 @@
 # Copy Resources
 
-The [Copy Resources module](https://omeka.org/s/modules/CopyResources){target=_blank} allows you to duplicate Omeka S sites, site pages, items, and item sets.
+The [Copy Resources module](https://omeka.org/s/modules/CopyResources) allows you to duplicate Omeka S sites, site pages, items, and item sets.
 
-Once activated on the [modules](https://omeka.org/s/docs/user-manual/modules/){target=_blank} section of the admin dashboard, Copy Resources inserts a "copy" button into the interface of several pages in the admin side, including when viewing the resource, and on the table of sites, each site's table of pages, and the items and item sets tables. 
+Once activated on the [modules](https://omeka.org/s/docs/user-manual/modules/) section of the admin dashboard, Copy Resources inserts a "copy" button into the interface of several pages in the admin side, including when viewing the resource, and on the table of sites, each site's table of pages, and the items and item sets tables. 
 
 ![The pages table in the admin side, showing "copy" buttons next to each page in the table.](modulesfiles/copyResources_pages.png)
 
@@ -12,7 +12,7 @@ Sites and site pages will have the same name, but their URL slugs will be unique
 
 Some content will not copy exactly - be sure you review duplicated resources thoroughly and look for anything missing before making the new resource public. 
 
-### Permissions
+## Permissions
 
 Global Administrators, Supervisors, and Editors can use this module to copy items, item sets, sites, and site pages.
 
@@ -24,7 +24,7 @@ Users with site-specific permissions of Creator and Manager can copy pages.
 
 Users can copy resources that they do not own. When a resource is copied, the user who made the duplicate will become its owner; the resource will not retain the owner of the original. 
 
-### Requirements
+## Requirements
 
 Copy Resources requires Omeka S 4.1.0 or later. 
 

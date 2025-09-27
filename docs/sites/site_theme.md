@@ -18,7 +18,7 @@ To add a theme to the site using FTP:
 !!! note
 	The folder that appears in the `/themes` folder should show the name of the theme, without any version numbers. If you are having issues installing a theme, check that you have unzipped the theme correctly, without creating extra folder levels.
 
-You can also use SSH to clone a theme directly from that theme's git repository. Do this only if you are comfortable with git, GitHub, and working with SSH. You can find links to each theme's GitHub repository on [our website's Themes directory](https://omeka.org/s/themes/){target=_blank} - click on a theme and look above the version history table.
+You can also use SSH to clone a theme directly from that theme's git repository. Do this only if you are comfortable with git, GitHub, and working with SSH. You can find links to each theme's GitHub repository on [our website's Themes directory](https://omeka.org/s/themes/) - click on a theme and look above the version history table.
 
 To **uninstall a theme**, simply delete the folder from the `/themes` directory in your Omeka S installation. All settings on that theme, from all sites, are saved elsewhere and will not be deleted. This means you can reinstall the theme again at a later date and recover your settings.
 
@@ -154,12 +154,12 @@ Allows you to select which metadata field (from Dublin Core Title or Dublin Core
 
 ### Foundation theme settings
 
-Foundation is a theme that comes with a few default stylesheets for fast prototyping or getting started with modifying themes. As a result, it has some unique settings. For more information on using Foundation, including working with Sass, see the [theme ReadMe file](https://github.com/omeka-s-themes/foundation-s/blob/master/README.md){target=_blank}.
+Foundation is a theme that comes with a few default stylesheets for fast prototyping or getting started with modifying themes. As a result, it has some unique settings. For more information on using Foundation, including working with Sass, see the [theme ReadMe file](https://github.com/omeka-s-themes/foundation-s/blob/master/README.md).
 
 Settings not described above:
 
 * **Stylesheet:** The theme provides 4 style options.
-	  * **Default** uses ZURB Foundation's default styles for prototyping, which are all viewable in their documentation under the [Kitchen Sink](https://get.foundation/sites/docs/kitchen-sink.html){target=_blank}.
+	  * **Default** uses ZURB Foundation's default styles for prototyping, which are all viewable in their documentation under the [Kitchen Sink](https://get.foundation/sites/docs/kitchen-sink.html).
 	  * **Revolution** aims to capture the feel of old documents and juxtaposes it with a bright red accent. It includes a textured paper background image.
 	  * **Sea Foam** offers a clean, friendly look with a teal palette.
 	  * **Inkwell** features a high contrast serif family for its typography, as well as sunny yellow accents.
@@ -170,8 +170,8 @@ Settings not described above:
 Foundation also models significant theme customization tools for developers, including the most development on page and block templates. Foundation includes the following block templates:
 
 * Asset
-	* Card: Uses [Foundation Framework's card container](https://get.foundation/sites/docs/card.html){target=_blank} styles.
-	* Media object: Uses [Foundation Framework's media object container](https://get.foundation/sites/docs/media-object.html){target=_blank} styles.
+	* Card: Uses [Foundation Framework's card container](https://get.foundation/sites/docs/card.html) styles.
+	* Media object: Uses [Foundation Framework's media object container](https://get.foundation/sites/docs/media-object.html) styles.
 * Browse preview
 	* List: Ignores theme setting for browse view layouts and displays all resources as a single column list.
 	* Grid: Ignores theme setting for browse view layouts and displays all resources in a grid that maxes out at 4 columns.
@@ -183,7 +183,7 @@ Foundation also models significant theme customization tools for developers, inc
 * List of pages
 	* With container: Provides a gray box container.
 * List of sites
-	* Card: Uses [Foundation Framework's card container](https://get.foundation/sites/docs/card.html){target=_blank} styles for each site.
+	* Card: Uses [Foundation Framework's card container](https://get.foundation/sites/docs/card.html) styles for each site.
 * Page title
 	* Accent: Renders the page title with the theme's primary color as a background color.
 

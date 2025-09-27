@@ -1,6 +1,6 @@
 # URI Dereferencer
 
-The [URI Dereferencer module](https://omeka.org/s/modules/UriDereferencer/){target=_blank} allows pages to dynamically display data from the source of many URIs on Omeka item, media, and item set pages. 
+The [URI Dereferencer module](https://omeka.org/s/modules/UriDereferencer/) allows pages to dynamically display data from the source of many URIs on Omeka item, media, and item set pages. 
 
 This module has no configuration settings and adds no functions to the administrative dashboard. It appears on the front-end, on recognizable URIs from built-in [linked data services](#linked-data-services), on any resource view where a URI has been input as a metadata value.
 
@@ -20,7 +20,7 @@ If the service provides information in multiple languages, you can specify which
 
 ![URI entries on the Item edit page, with language codes specified.](modulesfiles/uri-language-item-editing.png)
 
-When the item is accessed on a public page, the URIs can be expanded to display information in the specified language. If the desired language is not available, URIs will fall back to English. Check with the specific service to see which languages are offered. Currently there are only four services that offer translations: [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page){target=_blank}, [DBpedia](https://wiki.dbpedia.org/){target=_blank}, [RDA Value Vocabularies](http://www.rdaregistry.info/termList/){target=_blank}, and [Getty Vocabularies](https://www.getty.edu/research/tools/vocabularies/){target=_blank} (excluding ULAN).
+When the item is accessed on a public page, the URIs can be expanded to display information in the specified language. If the desired language is not available, URIs will fall back to English. Check with the specific service to see which languages are offered. Currently there are only four services that offer translations: [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page), [DBpedia](https://wiki.dbpedia.org/), [RDA Value Vocabularies](http://www.rdaregistry.info/termList/), and [Getty Vocabularies](https://www.getty.edu/research/tools/vocabularies/) (excluding ULAN).
 
 ![The same URI entries displayed on the Item view page, expanded to show the information from multiple languages.](modulesfiles/uri-language-item-view.png)
 
@@ -30,14 +30,14 @@ If you have [custom data type values](../modules/customvocab.md) and wish them t
 
 Linked data services are JavaScript objects that are responsible for dereferencing URIs and returning information about the resource. This module comes with a handful of services built in:
 
-- [DBpedia](https://wiki.dbpedia.org/){target=_blank}
-- [Geonames](https://www.geonames.org/){target=_blank}
-- [Getty Vocabularies](https://www.getty.edu/research/tools/vocabularies/){target=_blank}
-- [LC Linked Data Service](http://id.loc.gov/){target=_blank}
-- [OCLC VIAF](https://www.oclc.org/en/viaf.html){target=_blank}
-- [OCLC FAST](http://fast.oclc.org/){target=_blank}
-- [RDA Value Vocabularies](http://www.rdaregistry.info/termList/){target=_blank}
-- [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page){target=_blank}
-- [Gemeentegeschiedenis](https://www.gemeentegeschiedenis.nl/){target=_blank}.
+- [DBpedia](https://wiki.dbpedia.org/)
+- [Geonames](https://www.geonames.org/)
+- [Getty Vocabularies](https://www.getty.edu/research/tools/vocabularies/)
+- [LC Linked Data Service](http://id.loc.gov/)
+- [OCLC VIAF](https://www.oclc.org/en/viaf.html)
+- [OCLC FAST](http://fast.oclc.org/)
+- [RDA Value Vocabularies](http://www.rdaregistry.info/termList/)
+- [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page)
+- [Gemeentegeschiedenis](https://www.gemeentegeschiedenis.nl/).
 
-To learn about adding other services, view the [Readme](https://omeka.org/s/modules/UriDereferencer/){target=_blank}.
+To learn about adding other services, view the [Readme](https://omeka.org/s/modules/UriDereferencer/).

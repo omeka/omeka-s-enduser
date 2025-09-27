@@ -1,6 +1,6 @@
 # Numeric Data Types
 
-The [Numeric Data Type module](https://omeka.org/s/modules/NumericDataTypes){target=_blank} allows you to set certain properties as numeric data, using resource templates. You can designate properties as either dates and times or integers.
+The [Numeric Data Type module](https://omeka.org/s/modules/NumericDataTypes) allows you to set certain properties as numeric data, using resource templates. You can designate properties as either dates and times or integers.
 
 ## Create numeric properties
 To implement the module, you will need to create or edit a [resource template](../content/resource-template.md) to set specific properties as having numeric data types. 
@@ -89,26 +89,26 @@ In the second field, select from the following options:
 
 ![The batch editing options for Convert to numeric.](modulesfiles/ndt-batchedit.png)
 
-When textual data is converted to numeric data, the module will identify either integers or [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601){target=_blank}-formatted dates and times. It will not recognize and reformat dates in, for example, `MM/DD/YYYY` formatting. You would need to manually edit or bulk-import the correct formats using [CSV Import](../modules/csvimport.md).
+When textual data is converted to numeric data, the module will identify either integers or [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)-formatted dates and times. It will not recognize and reformat dates in, for example, `MM/DD/YYYY` formatting. You would need to manually edit or bulk-import the correct formats using [CSV Import](../modules/csvimport.md).
 
-Use the following formats for [dates](https://en.wikipedia.org/wiki/ISO_8601#Dates){target=_blank}, including dashes between values:
+Use the following formats for [dates](https://en.wikipedia.org/wiki/ISO_8601#Dates), including dashes between values:
 
 - `2022`
 - `2022-08` (year and month, no date)
 - `2022-08-18`.
 
-Use the following formats to add [times](https://en.wikipedia.org/wiki/ISO_8601#Times){target=_blank} to your date values:
+Use the following formats to add [times](https://en.wikipedia.org/wiki/ISO_8601#Times) to your date values:
 
-- `2022-08-18T17:26:49+00:00` ([time offset from UTC](https://en.wikipedia.org/wiki/ISO_8601#Time_offsets_from_UTC){target=_blank})
-- `2022-08-18T17:26:49Z` ([coordinated universal time](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_(UTC)){target=_blank}). 
+- `2022-08-18T17:26:49+00:00` ([time offset from UTC](https://en.wikipedia.org/wiki/ISO_8601#Time_offsets_from_UTC))
+- `2022-08-18T17:26:49Z` ([coordinated universal time](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_(UTC))). 
 
 You cannot omit the year while providing a month and/or day. You cannot supply ordinal dates (as in, `2000-175` for the 175th day of the year 2000). 
 
-Use the following format for [intervals](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals){target=_blank} with start and end points:
+Use the following format for [intervals](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals) with start and end points:
 
 - `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (Start and end).
 
-Use the following formats for [durations](https://en.wikipedia.org/wiki/ISO_8601#Durations){target=_blank}, expressed as number of years, number of months, number of days, etc.:
+Use the following formats for [durations](https://en.wikipedia.org/wiki/ISO_8601#Durations), expressed as number of years, number of months, number of days, etc.:
 
 - `P23DT23H` (23 days & 23 hours)
 - `P3Y6M4DT12H30M5S` (3 years, 6 months, 4 days, 12 hours, 30 minutes, & 5 seconds).

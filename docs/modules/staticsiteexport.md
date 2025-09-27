@@ -1,6 +1,6 @@
 # Static Site Export
 
-The [Static Site Export module](https://omeka.org/s/modules/StaticSiteExport){target=_blank} allows you to export a flattened copy of a site on your Omeka S installation. Using Hugo, you can rebuild a simplified version of your site that will maintain most of your page elements and all of your resources.  
+The [Static Site Export module](https://omeka.org/s/modules/StaticSiteExport) allows you to export a flattened copy of a site on your Omeka S installation. Using Hugo, you can rebuild a simplified version of your site that will maintain most of your page elements and all of your resources.  
 
 Static sites do not contain the usual dynamic website elements, such as searching, or pages and page blocks that use search queries. Some page blocks will not render at all, and some will render without their original settings. Currently the SSE module only supports content from [Mapping](mapping.md) and not other modules. Static sites will be produced with a version of the "default" theme for S.
 
@@ -10,7 +10,7 @@ Once an export has been produced, you can edit its CSS or other code to customiz
 
 Static sites can be useful as a backup and record of your site's content, and for reducing server load for legacy web projects. 
 
-### Requirements and permissions
+## Requirements and permissions
 
 Exports can be created and managed by any user with site-specific permissions. 
 
@@ -57,7 +57,7 @@ An export will be a ZIP file that appears in the folder you set in the module co
 
 You can extract the export and build your site using Hugo either locally or online. 
 
-After exporting a static site, you can unzip the resulting ZIP file and immediately use [Hugo](https://gohugo.io/){target=_blank} to build the site, run a local testing server, and view the site:
+After exporting a static site, you can unzip the resulting ZIP file and immediately use [Hugo](https://gohugo.io/) to build the site, run a local testing server, and view the site:
 
 ```
 cd /path/to/static-sites/
@@ -68,4 +68,4 @@ hugo server
 
 After the build is complete, follow the instructions in your terminal and go to the specified web server in your browser. If your site is very large, you may need to disable the default "watch for changes and recreate" behavior by running `hugo server --watch=false`.
 
-When you are ready to deploy your site, run `hugo` in your project directory. See Hugo's documentation to learn more about how to use the  [command line interface (CLI)](https://gohugo.io/commands/){target=_blank} to manage your site, and how to [host and deploy](https://gohugo.io/host-and-deploy/){target=_blank} your site.
+When you are ready to deploy your site, run `hugo` in your project directory. See Hugo's documentation to learn more about how to use the  [command line interface (CLI)](https://gohugo.io/commands/) to manage your site, and how to [host and deploy](https://gohugo.io/host-and-deploy/) your site.

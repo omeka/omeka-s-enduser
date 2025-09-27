@@ -1,6 +1,6 @@
 # Redact Values
 
-The [Redact Values module](https://omeka.org/s/modules/RedactValues/){target=_blank} allows administrators to hide certain pieces of metadata. Logged-out users will always be unable to see the values that are hidden; logged-in users at editor, supervisor, or global admin levels will always be able to see what has been redacted. The module allows admin to set viewability for users at the author or researcher level.
+The [Redact Values module](https://omeka.org/s/modules/RedactValues/) allows administrators to hide certain pieces of metadata. Logged-out users will always be unable to see the values that are hidden; logged-in users at editor, supervisor, or global admin levels will always be able to see what has been redacted. The module allows admin to set viewability for users at the author or researcher level.
 
 Administrators will be able to choose a resource type, build a query to filter the resources, select the property from which to redact text, select the pattern to use for redaction, and enter the replacement text.
 
@@ -53,7 +53,7 @@ You can customize the patterns available for redactions by selecting "Patterns" 
 
 ![Add Pattern form for Redact Values module including Label and Pattern fields.](../modules/modulesfiles/redactValues_add-pattern.png)
 
-For the pattern, you must enter the regular expression pattern that identifies the sequence of characters that will be redacted. You must enclose the pattern with [delimiters](https://www.php.net/manual/en/regexp.reference.delimiters.php){target=_blank}. You may use [modifiers](https://www.php.net/manual/en/reference.pcre.pattern.modifiers.php){target=_blank}. For more information on regular expressions, see [Regular-Expressions.info](https://www.regular-expressions.info/){target=_blank} and [PCRE Patterns](https://www.php.net/manual/en/pcre.pattern.php). To validate your pattern, try [RegExr](https://regexr.com/){target=_blank}.
+For the pattern, you must enter the regular expression pattern that identifies the sequence of characters that will be redacted. You must enclose the pattern with [delimiters](https://www.php.net/manual/en/regexp.reference.delimiters.php). You may use [modifiers](https://www.php.net/manual/en/reference.pcre.pattern.modifiers.php). For more information on regular expressions, see [Regular-Expressions.info](https://www.regular-expressions.info/) and [PCRE Patterns](https://www.php.net/manual/en/pcre.pattern.php). To validate your pattern, try [RegExr](https://regexr.com/).
 
 Once you have added this information, click "Submit" in the upper right corner. Your added pattern should now appear in the Pattern dropdown menu when adding a redaction.
 

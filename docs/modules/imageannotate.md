@@ -1,6 +1,6 @@
 # Image Annotate
 
-The [Image Annotate module](https://omeka.org/s/modules/ImageAnnotate/){target=_blank} allows site users to attach information to coordinates in image files, including [installation assets](../admin/assets.md) and [media attached to items](../content/media.md). 
+The [Image Annotate module](https://omeka.org/s/modules/ImageAnnotate/) allows site users to attach information to coordinates in image files, including [installation assets](../admin/assets.md) and [media attached to items](../content/media.md). 
 
 This module adds a new "Annotate image" tab to the media editing interface on the admin side, where the selected image can be drawn upon. Users can draw rectangles and add area-specific text captions. It also adds new [resource blocks](../sites/site_theme.md#configure-resource-pages) so that annotations can be seen on item and media view pages, and new [page blocks](../sites/site_pages.md#page-blocks) so that annotations can be added and displayed in site pages. 
 
@@ -12,7 +12,7 @@ Depending on your purpose, you can annotate the media files themselves as attach
 
 If you only wish to annotate images in the course of building exhibits, you can skip to the [section on page blocks](#page-blocks). 
 
-### Permissions
+## Permissions
 
 Users at the Author level and above can annotate images. Authors can only annotate media that they own; users at Reviewer or higher can annotate any media in the installation. 
 

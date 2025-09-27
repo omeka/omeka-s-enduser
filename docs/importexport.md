@@ -8,7 +8,7 @@ There are numerous methods for importing to, or exporting from, an Omeka S site.
 
 You can use the [Omeka Classic Importer module](modules/omekaCimporter.md) to import items & collections from a Classic site. This module only imports items and their metadata (including tags), attached files, and collections (as item sets). It will not import Simple Page content or Exhibit Builder content.
 
-If equivalent plugins/modules are installed on both the source site and the target site, Omeka Classic Importer can import module-specific metadata. For example, geolocation data facilitated by the Mapping module in S and the Geolocation plugin in Classic will automatically be imported; [PDF Text](https://omeka.org/classic/plugins/PdfText/){target=_blank} elements can be imported and mapped to [Extract Text](https://omeka.org/s/modules/ExtractText/){target=_blank} fields.
+If equivalent plugins/modules are installed on both the source site and the target site, Omeka Classic Importer can import module-specific metadata. For example, geolocation data facilitated by the Mapping module in S and the Geolocation plugin in Classic will automatically be imported; [PDF Text](https://omeka.org/classic/plugins/PdfText/) elements can be imported and mapped to [Extract Text](https://omeka.org/s/modules/ExtractText/) fields.
 
 You cannot currently export directly from an Omeka S site to a Classic site. See the options to export and import via spreadsheet, below. 
 
@@ -46,7 +46,7 @@ First, look to see if there a connector or importer module for the platform you 
 
 Exporting resources from Omeka S is possible by using a Python script to query the installation's API. You can use this to copy your Omeka S materials to another platform, or as a backup of your work.
 
-[Omeka-s-csv.py](https://github.com/omeka/omeka-s-csv.py){target=_blank} is a Python script that exports data from Omeka S installations in CSV format.
+[Omeka-s-csv.py](https://github.com/omeka/omeka-s-csv.py) is a Python script that exports data from Omeka S installations in CSV format.
 
 Outputted spreadsheets will have column headings for metadata terms in alphabetical order: `dcterms:description`, `dcterms:title`, etc. 
 
@@ -80,7 +80,7 @@ The script will then run, and show output indicating its progress. The exported 
 
 ### Access data using the API
 
-You can use your own S site's API to crawl data as required, rather than exporting a spreadsheet for one-time use. Note that you can [request different formats through the API](https://omeka.org/s/docs/developer/api/rest_api/#responses){target=_blank}, including `jsonld` and `rdfxml`. [For more information on the API, see the developer documentation section.](https://omeka.org/s/docs/developer/api/){target=_blank}
+You can use your own S site's API to crawl data as required, rather than exporting a spreadsheet for one-time use. Note that you can [request different formats through the API](https://omeka.org/s/docs/developer/api/rest_api/#responses), including `jsonld` and `rdfxml`. [For more information on the API, see the developer documentation section.](https://omeka.org/s/docs/developer/api/)
 
 ### Access data using the Output Formats module
 
@@ -88,10 +88,10 @@ A user-friendly version of the same data available from the API can be accessed 
 
 The output formats available for this module are:
 
-- [JSON-LD](https://json-ld.org/){target=_blank}
-- [Notation3](https://www.w3.org/wiki/NotationThree){target=_blank}
-- [N-Triples](https://dbpedia.org/page/N-Triples){target=_blank}
-- [RDF/XML](https://www.w3schools.com/XML/xml_rdf.asp){target=_blank}
-- [Turtle](https://www.w3.org/TR/rdf12-turtle/){target=_blank}.
+- [JSON-LD](https://json-ld.org/)
+- [Notation3](https://www.w3.org/wiki/NotationThree)
+- [N-Triples](https://dbpedia.org/page/N-Triples)
+- [RDF/XML](https://www.w3schools.com/XML/xml_rdf.asp)
+- [Turtle](https://www.w3.org/TR/rdf12-turtle/).
 
 See the Output Formats module documentation for more details. 

@@ -1,6 +1,6 @@
 # Omeka S Item Importer
 
-The [Omeka S Item Importer module](https://omeka.org/s/modules/Osii){target=_blank} makes it possible to import items from one Omeka S installation into another Omeka S installation. This importer can duplicate items, their media, and their item sets - but it cannot duplicate site or page information. 
+The [Omeka S Item Importer module](https://omeka.org/s/modules/Osii) makes it possible to import items from one Omeka S installation into another Omeka S installation. This importer can duplicate items, their media, and their item sets - but it cannot duplicate site or page information. 
 
 Transferring data from one installation to another creates a situation where there is significant potential for data loss, but careful planning and preparation by the user of the receiving installation can prevent that from happening.
 

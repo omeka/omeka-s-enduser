@@ -2,7 +2,7 @@
 
 The administrative dashboard manages the content shared by all Omeka S sites and the core functionalities of the Omeka S installation. 
 
-This [screencast](https://vimeo.com/455708039){target=_blank} walks you through the main features of the dashboard and navigating your Omeka S installation:
+This [screencast](https://vimeo.com/455708039) walks you through the main features of the dashboard and navigating your Omeka S installation:
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/455708039?h=438143f0d3" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <p><a href="https://vimeo.com/455708039">Navigating Omeka S</a> from <a href="https://vimeo.com/omeka">Omeka</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
@@ -68,7 +68,7 @@ On this page you can verify the versions of dependencies that Omeka is using, su
 
 Note that your PHP section will tell you the "File Upload Limit", which is the number reflected in the media upload interface and the asset upload interface. Note also that Omeka S will tell you how much free server space it has access to. 
 
-You may be asked to supply the information on this page when asking for technical support on the [Forums](https://forum.omeka.org/){target=_blank} or when posting an issue on GitHub. 
+You may be asked to supply the information on this page when asking for technical support on the [Forums](https://forum.omeka.org/) or when posting an issue on GitHub. 
 
 Clicking the two buttons near the bottom of the page can help you verify that PHP and ImageMagick are working properly for your site. Do this right after installation to ensure you don't run into problems later on, such as when batch-importing items or running other PHP-dependent jobs.
 

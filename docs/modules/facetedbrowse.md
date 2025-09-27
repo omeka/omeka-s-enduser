@@ -1,6 +1,6 @@
 # Faceted Browse
 
-The [Faceted Browse module](https://omeka.org/s/modules/FacetedBrowse){target=_blank} lets you create "browse resource" pages with facets - filter and sort functions - that site visitors can use to explore your collections. Faceted Browse pages can be made for items, items sets, or media. 
+The [Faceted Browse module](https://omeka.org/s/modules/FacetedBrowse) lets you create "browse resource" pages with facets - filter and sort functions - that site visitors can use to explore your collections. Faceted Browse pages can be made for items, items sets, or media. 
 
 With this module, site managers are able to configure faceted browse pages and add them to their site's [navigation](../sites/site_navigation.md). End users are then able to browse through resources and use the facets to narrow the results in a logical and intuitive manner. This functionality is similar to the filtering options on many websites and should be easy for users to manage as long as you have clear language.
 
@@ -98,7 +98,7 @@ For the Single (list) and Multiple (list) Select types, page creators can choose
 
 Do not forget to click the "Set facet" button to save your work, and then save the category.
 
-##### **Value** 
+#### **Value** 
 
 Value facets correspond to the [values](../content/items.md#values) within a specific property for each item.
 
@@ -162,7 +162,7 @@ For example, you may wish to load all the "Subject" property's values and allow 
 !!! note
 	Note that "All available values" facets do not dynamically update when new values are added to the corpus, or when values are edited. You must reload the options using "Show all available values" and "Add all" in the facet to update the browsing list's content. We recommend doing this regularly when new items are being added.
 
-##### **Resource class** 
+#### **Resource class** 
 
 Allows visitors to narrow items by their resource class.
 
@@ -172,7 +172,7 @@ Select the classes that will make up the facets from the dropdown menu.
 
 Check the "Show all available classes" box to get a sense of the data that is available for input.
 
-##### **Resource template** 
+#### **Resource template** 
 
 Allows visitors to narrow items by their [resource template](../content/resource-template.md).
 
@@ -182,7 +182,7 @@ Select the resource templates that will make up the facets.
 
 Check the "Show all available templates" box to get a sense of the data that is available for input.
 
-##### **Item set** 
+#### **Item set** 
 
 Allows visitors to narrow items by [item sets](../content/item-sets.md).
 
@@ -192,7 +192,7 @@ Select the item sets that will make up the facets.
 
 Check the "Show all available item sets" box to get a sense of the data that is available for input.
 
-##### **Full-text** 
+#### **Full-text** 
 
 Adds a text search bar that will narrow down the results based on what the visitor inputs. This will include all values, including title, description, class, and any extracted text. 
 

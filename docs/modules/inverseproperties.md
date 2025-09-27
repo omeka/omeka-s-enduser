@@ -1,6 +1,6 @@
 # Inverse Properties
 
-The [Inverse Properties module](https://omeka.org/s/modules/InverseProperties/){target=_blank} allows administrators to define inverse properties between resources (items, item sets, and media) so that property values can be concretely linked in both directions. 
+The [Inverse Properties module](https://omeka.org/s/modules/InverseProperties/) allows administrators to define inverse properties between resources (items, item sets, and media) so that property values can be concretely linked in both directions. 
 
 In Omeka S, resources in an installation can be linked to others - [items](../content/items.md#linked-resources) to other items, item sets, or its own media; [media](../content/media.md#omeka-resource) to items or item sets; [item sets](../content/item-sets.md#linked-resources) to other item sets or to items. These links are added through metadata values - for example, using a "William Shakespeare" person item as the value for "Creator" on a "Much Ado About Nothing" play item. When you view the person item, you will see inbound links in the Linked Resources table. 
 
@@ -10,7 +10,7 @@ Some inverse properties are obvious (Dublin Core's "Has Part" is the intended in
 
 Inverse links created in this way can save time on data entry and be useful in [data visualizations](datavisualization.md), advanced or faceted browsing, and [batch-importing](csvimport.md) resource relationships.
 
-### Suggested inverse properties
+## Suggested inverse properties
 
 - Dublin Core (`dcterms:`):
 	- Replaces & Is Replaced By (`dcterms:replaces`; `dcterms:isreplacedby`)
