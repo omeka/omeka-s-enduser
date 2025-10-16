@@ -35,6 +35,8 @@ Remember that item sets, resource classes, and templates can also help you provi
 
 Hierarchies can be set up in different ways depending on the site settings you plan to use for them - whether you wish to create only one grouping per item set, linking directly to the item set pages, or whether groupings will be used to show a combination of all their children groupings' items. We recommend looking at the site settings section, below, while planning your collections. 
 
+A hierarchy in Omeka S does not add metadata relationships to item sets (e.g., `relation` or `hasPart` values). The information created in a hierarchy is stored only in the module data, and does not modify the item sets themselves.
+
 ## Create a hierarchy
 
 In the "Modules" section of the sidebar, find the "Hierarchy" page. Click the "Add Hierarchy" button to start your first hierarchy.
@@ -91,15 +93,15 @@ From the Site Admin page, select the "Settings" tab, and scroll down to the "Hie
 The Hierarchy module has six configuration options for each site:
 
 - **Link directly to item set**: If checked, the hierarchy will not link groupings to their own custom public pages; the hierarchy's link structure will send users directly to item set pages.
-    - Note that this will disable the "Combine hierarchy resources" setting below. 
-    - Note also that, if you choose to link directly to item sets in the hierarchy, there will be no public links available to the groupings pages, although those pages will still exist on the site. Site visitors can access the grouping pages created by this module if you supply those links to them in some other way (such as in your navigation). So, the "Show item set metadata" setting may become redundant as it only affects grouping pages. Note also that the "Show item sets beneath hierarchy" will likely become redundant for you, although that option is still available.
-- **Show hierarchy label**: If checked, the hierarchy's assigned label will display as the hierarchy header on public pages. If unchecked, the hierarchy will display without a label. You can also leave individual hierarchy labels blank. 
-    - Note that this only applies to the hierarchy headers; individual groupings' labels are unaffected by this setting. 
+    - This will disable the "Combine hierarchy resources" setting below. 
+    - If you choose to link directly to item sets in the hierarchy, there will be no public links available to the groupings pages, although those pages will still exist on the site. Site visitors can access the grouping pages created by this module if you supply those links to them in some other way (such as in your navigation). So, the "Show item set metadata" setting may become redundant as it only affects grouping pages. You may also wish to turn off the "Show item sets beneath hierarchy" setting.
+- **Show hierarchy label**: If checked, the hierarchy's assigned label will display as the hierarchy header on public pages. If unchecked, the hierarchy will display without a label. You can also leave individual hierarchy labels blank. This only applies to the hierarchy headers; individual groupings' labels are unaffected by this setting. 
 - **Show hierarchy resource counts**: If checked, hierarchy grouping labels will be followed by the number of resources within the currently assigned item set, in parentheses.
-- **Combine hierarchy resources**: If checked, groupings will display the resources of all child groupings in resource counts and on grouping browse pages. If you show resource counts for each level of your hierarchy, and if you also combine those counts, you will see the total number of items, regardless of whether those items are in more than one included item set (that is, items will not be counted twice). 
+- **Combine hierarchy resources**: If checked, groupings will display the resources of all child groupings in resource counts and on grouping browse pages. If you show resource counts for each level of your hierarchy, and if you also combine those counts, you will see the total number of items of each grouping and its children. If those items are in more than one included item set, they will not be counted twice. 
 - **Show item sets beneath hierarchy**: If checked, a paragraph will display below the hierarchy with a list of all item sets that have been added to the groupings in the hierarchy. This is a way to provide direct links to item sets' view pages independently of the hierarchy's own link structure. 
-    - Note that if your groupings are linking directly to attached item sets, in the setting above, this may become redundant. 
 - **Show item set metadata on grouping pages**: If checked, the assigned item set's title, description, and image will display on each grouping's browse page. This will not show children groupings' item set information, only the one item set linked to the given grouping.
+
+Note that in the following image, the grouping label is shown in the hierarchy on the left, while the full item set title is shown in the area on the right, alongside the item set description and thumbnail. 
 
 ![A grouping page showing information about the attached item set.](modulesfiles/hierarchy_groupingPage.png)
 
@@ -112,7 +114,7 @@ Depending on your site settings, each link in the hierarchy will point to a publ
 Depending on your site settings, underneath the hierarchy on these pages will be a list of all the item sets that are included in the full hierarchy, so that users can navigate to those if needed. (See the image at the top of this page for an example.) On site page blocks and on resources (items and item sets), this section will not display. 
 
 !!! note
-	Public display will depend on whether the applicable item sets are added to the site as a resource. Note that item sets with visibility set to "private" will not be available to logged-out users; their place in hierarchies will not be linked and their items will not be included in counts.
+	Public display will depend on whether the included item sets are added to the site as resources. If an item set is included in a hierarchy but not added to the site, the text "(Private)" will appear after the label, and it will be unlinked with no resource count. In the image above, "Folder 2" is a public item set that is not included in the site. Item sets with visibility set to "private" will not be available to logged-out users; they will also display as unlinked and with "(Private)" after the label. They will appear as normal to logged-in users, and in hierarchies in the administrative interface. 
 
 You can display hierarchies in two ways on your sites: 
 
@@ -127,7 +129,7 @@ Remember that all of the hierarchies displayed on a given site will be formatted
 
 Select a site, then select the "Theme" tab in the left sidebar. Click the "Configure resource pages" button next to "Edit theme settings". 
 
-On the items view page, you can add the "Hierarchy" resource block to any region offered by your theme. This will display all the hierarchies that apply to the item, limited to the hierarchies added to the site. If an item is in more than one item set, all of the item sets' hierarchies will be displayed (according to which hierarchies and which item sets are added to the site as resources) in the order specified in the site-specific configuration. 
+On item pages, you can add the "Hierarchy" resource block to any region offered by your theme. This will display all the hierarchies that apply to the item, limited to the hierarchies added to the site. If an item is in more than one item set, all of the item sets' hierarchies will be displayed (according to which hierarchies and which item sets are added to the site as resources) in the order specified in the site-specific configuration. 
 
 ![A public item view page with the Hierarchy showing multiple groupings highlighted in bold.](modulesfiles/hierarchy_publicItem2.png)
 
@@ -135,7 +137,7 @@ Note that the item may be in more than one item set, and any of those item sets 
 
 ![The item set view page settings in the admin side, with the Hierarchy block included.](modulesfiles/hierarchy_resource2.png)
 
-On the Item set view page, you can add the "Hierarchy" resource block to any region offered by your theme. This will display all the hierarchies that apply to the item set (if the hierarchies are added to the site). 
+On item set pages, you can add the "Hierarchy" resource block to any region offered by your theme. This will display all the hierarchies that apply to the item set (if the hierarchies are added to the site).
 
 ![An item view page with the hierarchy at top.](modulesfiles/hierarchy_publicItemSet.png)
 
