@@ -52,6 +52,7 @@ nav:
         - modules/datavisualization.md
         - modules/datarepositoryconnector.md
         - modules/dspaceconnector.md
+        - modules/exports.md
         - modules/extractmetadata.md
         - modules/extracttext.md
         - modules/facetedbrowse.md
