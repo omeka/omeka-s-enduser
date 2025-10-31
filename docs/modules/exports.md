@@ -6,7 +6,9 @@ The [Exports module](https://omeka.org/s/modules/ExtractText){target=_blank} wil
 
 ## System requirements
 
-The module requires two folders inside your installation to be writeable. One is a temporary folder where the export files are assembled, and is set in your configuration. The other is the permanent place where the export output will be stored and made available for you to download. This folder will be inside the `/files` folder of your installation, called "exports". The module will not create `/files/exports` upon installation, but when you start your first export. 
+The module requires two folders inside your installation to be writeable. One is a temporary folder where the export files are assembled, and is set in your configuration. The other is the permanent place where the export output will be stored and made available for you to download. This folder will be inside the `/files` folder of your installation, called "exports". 
+
+The module will not create `/files/exports` upon installation, but when you start your first export. If you encounter errors, you may need to either change permissions on your `/files` directory to allow this creation, or manually create the `/files/exports` directory and set its permissions. 
 
 ### User permissions
 
