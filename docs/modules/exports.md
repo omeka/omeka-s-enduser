@@ -1,8 +1,8 @@
 # Exports
 
-![.](modulesfiles/exports_sidebar.png)
-
 The [Exports module](https://omeka.org/s/modules/ExtractText){target=_blank} will create an export of information about your Omeka S installation's resources, assets, and more. The module can generate CSV or JSON-LD files with both metadata and internal information about your items, item sets, or media, as well as resource templates, vocabularies, assets, jobs, sites and site pages, users, and information added by modules. 
+
+![The Exports table, showing information about past exports.](modulesfiles/exports_sidebar.png)
 
 ## System requirements
 
@@ -17,7 +17,7 @@ Users can export information about private resources (sites, pages, items, item 
 
 ## Configuration
 
-![.](modulesfiles/exports_config.png)
+![The module configuration screen, with one field displayed.](modulesfiles/exports_config.png)
 
 On this page you must set a folder on your server, inside your Omeka S installation directory, for the temporary export files to be created. Enter in the path relative to your installation's location. 
 
@@ -25,15 +25,15 @@ You must create the directory first on your server, and set its permissions to w
 
 ## Export resources
 
-![.](modulesfiles/exports_emptyTable.png)
+![The homepage of the module, freshly installed, showing no exports performed yet.](modulesfiles/exports_emptyTable.png)
 
 Find the "Exports" entry in the "Modules" section of the sidebar, and then click "Create an export" in the top right corner to set up your export. 
 
-![.](modulesfiles/exports_select.png)
+![The first page of an exporting process asks you to select "resources" as the type of export.](modulesfiles/exports_select.png)
 
 At this time the screen only offers one option. Future or third-party versions of this module may add more exporting options. 
 
-![.](modulesfiles/exports_create.png)
+![The second page of the module allows you to configure the export to choose a particular type of information.](modulesfiles/exports_create.png)
 
 On the next page you will set up your export to pull information from your chosen entries in the installation database. 
 
@@ -43,7 +43,7 @@ On the next page you will set up your export to pull information from your chose
 
 You can also choose other information in the databse of your installation, including data stored by modules. This can include information about past imports from CSV Import or Omeka S Item Importer, hierarchies from Hierarchy, vocabularies, resource templates, and more. 
 
-![.](modulesfiles/exports_resourceTypes.png)
+![The list of information available for export.](modulesfiles/exports_resourceTypes.png)
 
 The options, excluding additional options added by modules, include:
 
@@ -79,13 +79,13 @@ owner_id=2
 
 **Multivalue separator**: This field is an option for CSV exports. The default character is a vertical pipe (|) character. You can change this if desired. Other common separators include commas and semi-colons; we recommend choosing a character that does not appear in the dataset. 
 
-![.](modulesfiles/exports_inprogress.png)
+![The exports table with a green bar at the top showing that an export is in progress.](modulesfiles/exports_inprogress.png)
 
 Once you start the export, you will be returned to the table of past exports. You will see a green bar at the top of the screen indicating that the job has begun, with a link to watch the job's status. If you refresh this page, you will see the table with the export status indicated. You can also find this information on the Jobs page accessible in the sidebar. 
 
 ## The Exports table
 
-![.](modulesfiles/exports_sidebar.png)
+![The exports table, with the sidebar open showing more information about one of the past exports.](modulesfiles/exports_sidebar.png)
 
 When an export is complete, you will see a download icon in the table row that, on click, will download a ZIP file containing the export you specified (a CSV or JSON file). 
 
