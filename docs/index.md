@@ -14,7 +14,7 @@ Creating, editing, and managing the content of an installation: items, item sets
 Access to functionality in the administrative interface varies by user role, but can include: users, jobs, assets, and settings.
 
 **Modules**  
-This section opens with basic information on managing the modules that extend the functionality of your Omeka S installation and sites. It then offers specific documentaiton for Omeka S modules created by the Omeka Team, listed in alphabetial order.
+This section opens with basic information on managing the modules that extend the functionality of your Omeka S installation and sites. It then offers specific documentation for Omeka S modules created by the Omeka Team, listed in alphabetical order.
 
 This manual also includes a [glossary](glossary.md), instructions on conducting [searches](search.md), and how to turn on [error logging](errorLogging.md).
 
