@@ -29,8 +29,6 @@ Settings are divided into five sections: **General**, **Display**, **Editing**, 
 
 ## Display
 
-![Display, Editing, and Search settings with fields as described below](adminfiles/settings_display.png)
-
 **Results per page**: Changes the number of results (items, item sets, media) displayed per page when browsing in either public or admin sides of the installation.
 
 **Property label information**: Determines what is displayed next to each property when users are editing items and item sets. 
@@ -43,13 +41,25 @@ Settings are divided into five sections: **General**, **Display**, **Editing**, 
 
 **Disable JSON-LD embed**: By default, Omeka embeds JSON-LD in resource browse and show pages for the purpose of machine-readable metadata discovery. Check this to disable embedding.
 
+![Display settings with fields as described](adminfiles/settings_display.png)
+
 ## Editing
 
-**Default content visibility to Private**: When this box is checked, all new items, item sets, and sites will have their visibility set to private. If this box is not checked, the default is public. 
+**Set default item visibility to private**: When this box is checked, all new items made by all users will have their visibility set to private. If this box is not checked, all new items are public by default, unless set otherwise at the point of creation.
 
-**Suggested languages for values**: List of languages to facilitate filling of the values in the resource form.
+**Set default item visibility to private**: When this box is checked, all new item sets made by all users will have their visibility set to private.
+
+**Set default item visibility to private**: When this box is checked, all new sites made by all users will have their visibility set to private.
+
+**Set default item visibility to private**: When this box is checked, all new site pages made by all users will have their visibility set to private.
+
+**Suggested languages for values**: You can list languages here to provide a convenient dropdown selection for languages when filling out descriptive metadata for resources installation-wide. Provide two- or four-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target+_blank} language tags for maximum compatibility. Users can still type their own values when editing resources. 
 
 **Media alt text property**: Select a field (for example, `dc:title` or `dc:description`) from the media description to use as alternative text if no alt text is explicitly set. [Alt text](https://webaim.org/techniques/alttext/){target=_blank} is used in lieu of images (including thumbnails on browsing and search results pages) when a user is employing a screen reader and is an important part of meeting accessibility expectations.
+
+**Batch chunk size**: When batch-editing or processing changes, Omeka will process one "chunk" of the total resources at a time. You may wish to set this higher or lower depending on the capacity of your server. 
+
+![Editing and Search settings with fields as described](adminfiles/settings_editing.png)
 
 ## Search
 
@@ -59,16 +69,20 @@ Settings are divided into five sections: **General**, **Display**, **Editing**, 
 
 ![Security settings with fields as described below](adminfiles/settings_security.png)
 
-- **Use HTMLPurifier** checkbox. If checked, the service [HTMLPurifier](http://htmlpurifier.org/){target=_blank} will clean up any user-entered HTML. 
-- **Disable file validation**: a checkbox, unchecked by default. When unchecked, file uploads are limited by the following two fields. When this box is checked, any type of media or MIME type can be uploaded.
-- **Allowed media types**: The default list contains the most common media types. Only files with media types included in this list may be uploaded to the installation.
+**Use HTMLPurifier**: a checkbox. If checked, the service [HTMLPurifier](http://htmlpurifier.org/){target=_blank} will clean up any user-entered HTML. 
+
+**Disable file validation**: a checkbox, unchecked by default. When unchecked, file uploads are limited by the following two fields. When this box is checked, any type of media or MIME type can be uploaded.
+
+**Allowed media types**: The default list contains the most common media types. Only files with media types included in this list may be uploaded to the installation.
 	- Separate additions to the list with a comma.
 	- To return to defaults, click the "Restore default media types" button.
-- **Allowed file extensions**: The default list contains common file extensions. Only files with extensions included in this list may be uploaded to the installation.
+
+**Allowed file extensions**: The default list contains common file extensions. Only files with extensions included in this list may be uploaded to the installation.
 	- Separate additions to the list with a comma.
 	- To return to defaults, click the "Restore default extensions" button.
 
 The final two fields relate to setting up [Google reCAPTCHA](https://www.google.com/recaptcha/intro/index.html){target=_blank} for your site. You will need both a site key and a secret key. Enter them in the corresponding fields after signing up with reCAPTCHA:
 
-- **reCAPTCHA site key** enables display of the widget on your install's sites.
-- **reCAPTCHA secret key** allows communication between your install and reCAPTCHA's server. 
+**reCAPTCHA site key** enables display of the widget on your install's sites.
+
+**reCAPTCHA secret key** allows communication between your install and reCAPTCHA's server. 

@@ -364,20 +364,22 @@ If you complete a batch action from the next screen, you will return back to thi
 
 The batch edit form gives you the following options:  
 
-- Set visibility: a radio button. Select from public or not public to make the item visible or not visible to logged-out users.
-- Set template: a dropdown. Select from the installation's resource templates. You can remove templates from the selected items with the "[Unset template]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
-- Set class: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected items with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
-- Set owner: a dropdown. Select from users of the installation to choose who should be set as the owner of the selected items. Ownership determines who can edit and delete those items, outside the higher [user permission levels](../admin/users.md#roles-and-permissions).
-- Add to item set: a dropdown and text field. Select from item sets on the installation, organized by owner, or type to search. You can add the selected items to multiple item sets: click in the text field again to see the remaining options.
-- Remove from item set: a dropdown and text field. Select from item sets on the installation, organized by owner, or type to search. You can remove the selected items from multiple item sets: click in the text field again to see the remaining options.
-- Add to sites: a dropdown and text field. Select from sites on the installation, or type to search. You can add the selected items to multiple sites: click in the text field again to see the remaining options.
-- Remove from sites: a dropdown and text field. Select from sites on the installation, or type to search. You can remove the selected items from multiple sites: click in the text field again to see the remaining options.
-- Clear property values: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected items. You can remove multiple property values at once: click in the text field again to see the remaining options.
-- Set value visibility: a dropdown and text field, with radio buttons. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire item (for example, you may wish to hide the "Creator" value on some public items). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
+- **Set visibility**: a radio button. Select from public or not public to make the item visible or not visible to logged-out users.
+- **Set template**: a dropdown. Select from the installation's resource templates. You can remove templates from the selected items with the "[Unset template]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- **Set class**: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected items with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- **Set owner**: a dropdown. Select from users of the installation to choose who should be set as the owner of the selected items. Ownership determines who can edit and delete those items, outside the higher [user permission levels](../admin/users.md#roles-and-permissions).
+- **Add to item set**: a dropdown and text field. Select from item sets on the installation, organized by owner, or type to search. You can add the selected items to multiple item sets: click in the text field again to see the remaining options.
+- **Remove from item set**: a dropdown and text field. Select from item sets on the installation, organized by owner, or type to search. You can remove the selected items from multiple item sets: click in the text field again to see the remaining options.
+- **Add to sites**: a dropdown and text field. Select from sites on the installation, or type to search. You can add the selected items to multiple sites: click in the text field again to see the remaining options.
+- **Remove from sites**: a dropdown and text field. Select from sites on the installation, or type to search. You can remove the selected items from multiple sites: click in the text field again to see the remaining options.
+- **Clear property values**: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected items. You can remove multiple property values at once: click in the text field again to see the remaining options.
+- **Set value visibility**: a dropdown and text field, with radio buttons. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire item (for example, you may wish to hide the "Creator" value on some public items). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
 
 ![Batch edit items form, with options as described above. Everything is grayscale](contentfiles/items_batchedit.png)
 
-In addition,  you can use the buttons at the bottom of the batch edit form to add properties to every item:
+In addition, you can use the buttons at the bottom of the batch edit form to **convert existing values in any property from one data type to another**, such as a text value of "1900-01-01" into a date. 
+
+You can also **add properties** to every item:
 
 - Add text value
 - Add resource value

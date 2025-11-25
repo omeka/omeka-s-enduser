@@ -239,17 +239,19 @@ If you complete a batch action from the next screen, you will return back to thi
 
 The batch edit form gives you the following options:  
 
-- Set visibility: a radio button. Select from public or not public to make the item set visible or not visible to logged-out users.
-- Set openness: a radio button. Select from open or not open. Open sets can be edited and added to by any user on the install; closed sets are available and editable only by its creator, site admins, and global admins.
-- Set template: a dropdown. Select from the installation's resource templates. You can remove templates from the selected item sets with the "[Unset template]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
-- Set class: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected item sets with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
-- Set owner: a dropdown. Select from users of the installation to choose who should be set as the owner of the selected item sets. Ownership determines [who can edit and delete those item sets](#item-set-permissions), outside the higher [user permission levels](../admin/users.md#roles-and-permissions).
-- Clear property values: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected item sets. You can remove multiple property values at once: click in the text field again to see the remaining options. 
-- Set value visibility: a dropdown and text field, with radio buttons. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire item set (for example, you may wish to hide the "Creator" value on some public item sets). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
+- **Set visibility**: a radio button. Select from public or not public to make the item set visible or not visible to logged-out users.
+- **Set openness**: a radio button. Select from open or not open. Open sets can be edited and added to by any user on the install; closed sets are available and editable only by its creator, site admins, and global admins.
+- **Set template**: a dropdown. Select from the installation's resource templates. You can remove templates from the selected item sets with the "[Unset template]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- **Set class**: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected item sets with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- **Set owner**: a dropdown. Select from users of the installation to choose who should be set as the owner of the selected item sets. Ownership determines [who can edit and delete those item sets](#item-set-permissions), outside the higher [user permission levels](../admin/users.md#roles-and-permissions).
+- **Clear property values**: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected item sets. You can remove multiple property values at once: click in the text field again to see the remaining options. 
+- **Set value visibility**: a dropdown and text field, with radio buttons. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire item set (for example, you may wish to hide the "Creator" value on some public item sets). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
 
 ![Batch edit items form, with options as described above.](contentfiles/itemsets_batchedit.png)
 
-In addition, you can use the bottoms at the bottom of the batch edit form to add properties to every item set:
+In addition, you can use the buttons at the bottom of the batch edit form to **convert existing values in any property from one data type to another**, such as a text value of "1900-01-01" into a date. 
+
+You can also **add properties** to every item set:
 
 - Add text value
 - Add resource value

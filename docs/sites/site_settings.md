@@ -152,6 +152,22 @@ Click in the field to add a template; you can add more than one template by clic
 
 **Restrict to templates** will restrict search results to only those items which are using the selected templates.
 
+### IIIF Viewer
+
+Omeka S comes packaged with the [Mirador viewer](https://projectmirador.org/){target=_blank} for displaying IIIF images and presentations. The following settings only affect the presentation viewer (for multiple images). 
+
+**Show sidebar**: When checked, any Mirador viewer on the site will display the information sidebar by default. It can be hidden or shown by users at any time. 
+
+**Theme**: Depending on your site design, you may wish to use Mirador's light or dark theme for the IIIF viewer. 
+
+The viewer in the dark theme, with the sidebar visible:
+
+![The IIIF viewer in the dark theme with the sidebar visible, showing a Van Gogh self-portrait and information from the National Gallery of Art about its IIIF presentation, called "Collection Highlights".](../sites/sitesfiles/sites_iiifdark.png)
+
+The viewer in the light theme, with the sidebar not visible:
+
+![The same collection of images with the same title, but with no sidebar information and in the light theme.](../sites/sitesfiles/sites_iiiflight.png)
+
 ### Sections added by modules
 
 If you see extra sections on this page added by modules, go to the specific module's page in this user manual for more information on configuration. 
