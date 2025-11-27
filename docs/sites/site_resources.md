@@ -13,7 +13,6 @@ The **Item Sets** tab is where you select the sets which will show up on the Bro
 
 You also have the ability to display or hide [linked resources](../content/items.md#linked-resources) that are not in the given site. Go to the site settings page and [in the "Show" section you will find a checkbox](site_settings.md#show) for excluding resources that have not been added to the site. Note that if you continue to display external linked resources, users can click on the external resource link as it displays in metadata and view the resource as though it belonged to the site. Those external resources will not appear in browses or searches.
 
-
 ## Items
 
 The Items tab determines what automatically appears in the resource selection options on the [pages](../sites/site_pages.md) of your Omeka S [site](../sites/index.md). It also limits the resources which appear on a browse page on your site.

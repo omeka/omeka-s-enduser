@@ -156,6 +156,8 @@ You can modify these default sorting orders for the public pages of sites in [Si
 
 The default way most resources are ordered is by the interal Omeka identifier (ID), in reverse chronological order (Descending). This is true of items, media, and item sets. Sites, vocabularies, and resource templates are default ordered by Title or Label Ascending. Users are default ordered by Email Ascending. 
 
+When a full-text search is performed, the results will be displayed by relevance, descending (most relevant results first). 
+
 Ascending means A-Z alphabetically for text fields, earliest to latest for date-formatted fields such as Created (meaning the internal item creation date and time) and Modified (the date and time the item was last modified), and smallest to greatest for numbers such as Identifiers. Note that some fields (such as Dublin Core Date) may be text-formatted to include information such as "circa" and will sort alphabetically rather than as numbers (such as "1800-01-01") or dates. You may be using modules such as [Numeric Data Types](modules/numericdatatypes.md) that can modify these settings.
 
 In both ascending and descending orders, empty fields will come at the end.

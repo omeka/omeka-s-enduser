@@ -333,7 +333,11 @@ Opus (.opus) is one of the newer available audio formats. For the time being, it
 
 ### Images
 
-Omeka S accepts most image file types, including JPEG, PING, TIFF, and WEBP. Keep in mind that most browsers do not natively display TIFF files; Omeka creates derivative images for TIFFs in JPEG format that are displayed as thumbnails and on item/media view pages. Users can download TIFFs where the original file is offered. 
+Omeka S accepts most image file types, including JPEG, PING, TIFF, and WEBP. 
+
+Keep in mind that most browsers do not natively display TIFF or JPEG2000 files; Omeka creates derivative images for TIFFs and JPEG2000s (`.jp2`), in JPEG format, that are displayed as thumbnails and on item/media view pages. Users can download these file types where the original file is offered. 
+
+As of Omeka S version 4.1, the Lightbox gallery viewer, used to display original-format media in a zoomable interface, may pull the "large"-size derivative rather than the original TIFF or JPEG2000, limiting the zoom granularity. 
 
 WEBP support is new in Omeka S 4.1. Existing installations that have been upgraded to 4.1 may need to update the list of allowed file types and extensions on the [Settings](../admin/settings.md) tab by pressing the "Restore" buttons ("Restore default media types" and "Restore default extensions").  
 

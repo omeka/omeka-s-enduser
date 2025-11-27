@@ -215,9 +215,11 @@ The image below shows the "Configure resource pages" screen with the "Item page"
 
 If you put no content in a specific region, such as a sidebar, it will not appear, and the other regions will expand to occupy the space.
 
-You can use the [CSS Editor module](../modules/csseditor.md) to modify the relative widths or other display properties of regions you choose to use, such as setting different background colors, adding borders, or configuring separate text styles. Use your browser inspection tool to identify regions to call: for example, in the Foundation theme, the regions are `.full-width-main`, `.left-sidebar`, `.main-with-sidebar`, and `.right-sidebar`.
+You can use the [CSS Editor module](../modules/csseditor.md) to modify the relative widths or other display properties of regions you choose to use, such as setting different background colors, adding borders, or configuring separate text styles. Use your browser inspection tool to identify regions to call: for example, in the Foundation theme, the regions are identified with classes `.full-width-main`, `.left-sidebar`, `.main-with-sidebar`, and `.right-sidebar`. 
 
-Keep in mind that other theme settings and site settings may also combine with how these pages display information. For example, the Foundation theme includes a setting on whether to stack a property and its value (e.g. displaying "Description" on one line and the description content on the next line, or the two on the same line) that may influence your decision of where to place the Values block in the page regions.
+Keep in mind that other theme settings and site settings may also combine with how these pages display information. For example, the Foundation theme includes a setting on whether to stack a property and its value (e.g. displaying "Description" on one line and the description content on the next line, or the two on the same line) that may influence your decision of where to place the "Values" block in the page regions.
+
+You can also use the CSS Editor to style specific blocks within those regions (such as the `.resource-class` block), and the metadata properties (`.property`) within the "Values" block. Values (`.value`) are displayed with a CSS class indicating their data type (such as `.literal`), and you can also style `.language` indicators, the `.has-annotation` icon, etc. 
 
 ### Available blocks
 
@@ -259,3 +261,5 @@ Available blocks:
 - Values: display all media property values.
 - Resource class: show the resource class of the item set.
 - Linked resources: display a filterable table of resources that are linked to the item set.
+
+The item set view page will always contain a list of items contained in the item set, which can be found with the CSS class `item-set-items` in some themes. This area does not appear as a configurable block in the administrative side, and must be located by looking at the public site. In most themes it appears below the configured regions, but in some it will appear in a column alongside the regions. 
