@@ -19,8 +19,6 @@ You can change the requirements for user passwords. The options include minimum 
 ```
 Requirements will [display on the user creation and edit pages](admin/users.md#password).
 
-
-
 ## Thumbnails
 
 The `thumbnails` configuration key holds most thumbnail settings:
@@ -149,3 +147,37 @@ Some mail setups only allow sending mail with a From header that uses a specific
         ],
     ],
 ```
+
+## Logging errors
+
+As of Omeka 4.2, you can now set the log path to streams or files that don't yet exist.
+
+So, where the local.config.php file already reads
+
+```
+return [
+    'logger' => [
+        'log' => false,
+        'priority' => \Laminas\Log\Logger::NOTICE,
+    ],
+```
+
+Add a third line alongside 'log' and 'priority':
+```
+'path' => '/a/local/path', 
+
+```
+
+Ensure that the path you set here has permissions that make it writeable by your server. 
+
+## Garbage collection
+
+As of Omeka 4.2, garbage collection of sessions is now turned on by default even for servers that otherwise disable it.
+
+If you wish to manually turn this off, you can set 
+
+```
+	'session' => [
+		'allow_no_gc' => true,
+	],
+``` 
