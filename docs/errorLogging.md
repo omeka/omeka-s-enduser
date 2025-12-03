@@ -34,4 +34,12 @@ to
 
 `'log' => true,`
 
-Errors will be logged to the file `logs/application.log`. Make sure this file is writable by your web server. You can then view or download that file at any time to understand errors as they are captured.
+Errors will be logged to the file `logs/application.log`. If you wish to change this to another path, add a line below `'log' => true,` in the format
+
+```
+'path' => '/a/local/path',
+```
+
+Make sure this file (or location, if the file does not yet exist) is writable by your web server. 
+
+You can then view or download that file at any time to understand errors as they are captured. 
