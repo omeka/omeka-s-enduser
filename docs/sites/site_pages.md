@@ -87,7 +87,7 @@ Once you have selected a site theme with page templates included, such as [Found
 
 Once you have made your layout choices, you are ready to add blocks to the page.
 
-On the right-hand side you can choose to add a new block to your page by selecting one of the following elements:
+On the right-hand side you can choose to add a new block to your page by selecting one of the following elements that come with every Omeka S installation:
 
 - Asset
 - Browse preview
@@ -102,7 +102,7 @@ On the right-hand side you can choose to add a new block to your page by selecti
 - Page title
 - Table of contents.
 
-If you have the relevant modules installed, you may also have the following page blocks:
+Modules can add more blocks to these options. For example, based on your installed and active modules, you may also have some of the following page blocks:
 
 - [Collecting](../modules/collecting.md)
 - [Data visualization](../modules/datavisualization.md)
@@ -130,7 +130,7 @@ In the Normal flow or Grid layout, you can configure each block with the gear ic
 
 **Template**: If your theme provides one, you can select a template to apply to the block from the dropdown menu. For example, [the Foundation theme](site_theme.md#foundation-theme-settings) allows you to set the Browse preview block to its own list or grid display, ignoring the settings of the site itself. Not every page block will have available templates. 
 
-**Class** allows you to type in a specific class to apply styles to the block. 
+**Class** allows you to type in a specific CSS class to apply styles to the block. Use this in conjunction with your own stylesheets or with the CSS Editor module. 
 
 **Alignment** includes two settings: Block alignment and Text alignment. 
 
@@ -202,6 +202,7 @@ You may wish to employ one or more empty columns in every row as a design elemen
 To see a schema of how your blocks are positioned on the page, click on the Layout preview button (an icon of blocks in a grid), which will reveal a mockup in the right-hand drawer.
 
 Note that each page block will have a width calculated as follows:
+
 - First find the total width of the browser window alloted to page content - minus any sidebars, and with maximum widths determined by your theme. 
 - Then divide that by the number of columns. For example, a 1200-pixel-width container divided by 4 columns will give 300 pixels each.
 - Then account for the width of column gaps from the page settings (default is 10 pixels), and the number of gaps between blocks. For example, a 2-column block next to another 2-column block in a 4-column grid will be: 1200 pixels, minus 30 for all 3 of the column gaps, divided by 4 columns, times 2 for a 2-column block, plus 10 pixels to span across one of the gaps, for a final width of 595 pixels each.

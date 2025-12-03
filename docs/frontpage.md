@@ -6,7 +6,7 @@ The page displays all sites that a user has permission to see, along with the si
 
 ![Installation front page for the "Stackable Sandbox" showing seven sites, three of which have summaries.](files/frontpage-basic.png)
 
-If you want this index page to be hidden from site visitors, a Global Administrator can select one public site on your installation to which visitors will be redirected when they navigate to your base URL (`yourdomain.net/omekas/`). To do so:
+If you want this index page to be hidden from site visitors, a Global Administrator can select one public site on your installation to which visitors will be redirected when they navigate to your base URL (from `yourdomain.org/omekas/` to `yourdomain.org/omekas/s/yourmainsite/`). To do so:
 
 - Go to Settings (the gear icon), then the General tab.
 - Under the "Default site" option, use the dropdown menu to select one of your current sites. 

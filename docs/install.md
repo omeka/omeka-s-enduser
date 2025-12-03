@@ -34,11 +34,16 @@ Then, in your web browser, navigate to the admin page for your Omeka S installat
 
 ### One-click installation
 
-Hosting companies that use [Softaculous](https://softaculous.com/){target=_blank} should offer a one-click install of [Omeka Classic](https://www.softaculous.com/softaculous/apps/educational/Omeka){target=_blank} and [Omeka S](https://www.softaculous.com/softaculous/apps/others/Omeka_S){target=_blank}. The one-click installation process through Softaculous may allow you to create a database and user at the same time, and will edit the `config/database.ini` file for you.
+Hosting companies that use [Softaculous](https://softaculous.com/){target=_blank} and [Installatron](https://installatron.com/){target=_blank} should offer a one-click install of Omeka Classic and Omeka S. Check their application databases:
 
-Suggestions from our users include:
+- [Omeka Classic](https://www.softaculous.com/softaculous/apps/educational/Omeka){target=_blank} and [Omeka S](https://www.softaculous.com/softaculous/apps/others/Omeka_S){target=_blank} on Softaculous
+- [Omeka Classic](https://installatron.com/omeka?locale=en){target=_blank} and [Omeka S](https://installatron.com/omekas?locale=en){target=_blank} on Installatron.
 
--   [Reclaim Hosting](https://reclaimhosting.com/){target=_blank} - offers [simple Omeka S installations](https://support.reclaimhosting.com/hc/en-us/sections/204007617-Omeka){target=_blank} with some steps (including [manually setting the PHP path](#test-and-set-the-php-path)), and support for other open-source software platforms
+The one-click installation process through Softaculous may allow you to create a database and user at the same time, and will edit the `config/database.ini` file for you.
+
+Hosting suggestions from our users include:
+
+-   [Reclaim Hosting](https://reclaimhosting.com/){target=_blank} - offers [Omeka S installations](https://support.reclaimhosting.com/hc/en-us/sections/204007617-Omeka){target=_blank} using Installatron, with some steps (including [manually setting the PHP path](#test-and-set-the-php-path))
 -   [Dotblock](http://www.dotblock.com){target=_blank} - uses Softaculous
 -   [HostGator](http://hostgator.com){target=_blank} - uses Softaculous
 -   [TMD Hosting](https://www.tmdhosting.com){target=_blank} - uses Softaculous
