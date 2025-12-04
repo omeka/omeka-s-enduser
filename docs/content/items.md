@@ -165,7 +165,9 @@ Once you select a resource, detailed information will load, and you must click "
 
 ![Select Item menu with list of items to link in edit item view](contentfiles/items_addresource.png)
 
-If you are using an **Item** resource for the property, you will have three additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search". This will open a menu with the following options to filter the items in the drawer:
+If you are using an **Item** resource for the property, you will be able to select an existing item or to create a stub of a new item. 
+
+If you wish to use an existing item as your value, you will have three options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search". This will open a menu with the following options to filter the items in the drawer:
 
 - Filter by class: A dropdown where you can select any class provided by the vocabularies on the installation.
 - Filter by item set: A dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set.
@@ -178,6 +180,20 @@ Once you enter something into a filter, you need to click on the magnifying glas
 Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. "Creator", "Has Part").
 
 ![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](contentfiles/items_quickadd.png)
+
+If you wish to create a new item, you can create a stub for that item directly in the drawer by selecting the Create an Item option. You will then be presented with truncated item creation form where you can select a
+
+- Resource Template
+- Class
+- Visibility for new item
+
+You can also input values for two basic values:
+- Title
+- Description
+
+Once you have completed the form, you can add the item stub and simultaneously select the item stub as the input for the property. You can return to the placeholder item to complete its description at a later time.
+
+![The item stub creation form is open in the drawer showing the dropdown selection for Resource Template, Class, and Visibility options, and the inputs for Title and Description](contentfiles/items_createItemStub.png)
 
 If you are using an **Item set** resource for the property, you will have two options for finding the item set you want in the drawer:
 
