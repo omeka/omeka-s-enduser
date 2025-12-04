@@ -22,6 +22,7 @@ Advanced search for items only is available on the [Items](content/items.md) pag
 
 The advanced search loads on a new page, and has the following options:
 
+- **Sort**: You can set how to display your results, based on the resource-specific columns you have set up in your user account. You can order each selection by ascending or descending.
 - **Search full-text**: runs a full-text search on all of the text for every item in the installation.
 - **Search by value**: search for a term or phrase which you enter.
 	- The first selector allows you to specify a property to search.
@@ -32,10 +33,12 @@ The advanced search loads on a new page, and has the following options:
 		- does not contain,
 		- is resource with ID,
 		- is not resource with ID,
-		- has any value (there is something in the property), and
-		- has no values.
-	- Finally, there is a text field for you to enter the value you want the property to have. To find a resource ID, go to the resource and look at the URL in your browser's address bar. The numbers at the end of the URL are the resource ID.
-- **Search by class**: select a class by which to search from the dropdown menu.
+		- has any value (there is something in the property),
+		- has no values,
+		- has data type, or
+		- does not have data type.
+	- Enter the value you want the property to have. To find a resource ID, go to the resource and look at the URL in your browser's address bar. The numbers at the end of the URL are the resource ID.
+- **Search by class**: select a class from the dropdown menu.
 - **Search by template**: select a resource template from the dropdown. Templates are arranged by owner, then alphabetically. 
 - **Search by item set**: Select whether the intended results are included in or excluded from the given item set. Pick an item set from the dropdown, or type to search. You can add multiple parameters; these will narrow the search (i.e., return all items that are not in set X AND also not in set Y; all items that are in set X AND also in set Y; all items that are in set X AND also not in set Y).
 - **Search by site**: select a site from a dropdown of sites in the installation. Note that you can only search for items from one site at a time.
@@ -43,8 +46,6 @@ The advanced search loads on a new page, and has the following options:
 - **Search by owner**: select a user from a dropdown of users in the installation.
 - **Search by visibility**: select whether the results are public or private items.
 - **Search by ID**: enter a specific item identifier value, or a list of identifiers separated by commas (for example, "1, 5, 9, 12, 43, 44, 45"). Only works for exact matches, not with wildcards or ranges.
-
-You can also select how to order your search results.
 
 ![Advanced item search options page.](files/search_advanced2.png)
 
@@ -61,37 +62,15 @@ Advanced search for media is accessed from the [Media](content/media.md) browse 
 
 The advanced search loads on a new page, and has the following options:
 
-- **Search full-text**: runs a full-text search on all of the text for every media resource in the installation.
-- **Search by value**: search for a term or phrase which you enter
-	- The first selector allows you to specify a property to search.
-	- The second selector allows you to set the relationship the property has with the value. The options are:
-		- is exactly,
-		- is not exactly,
-		- contains,
-		- does not contain,
-		- is resource with ID,
-		- is not resource with ID,
-		- has any value (there is something in the property), and
-		- has no values.
-	- Finally, there is a text field for you to enter the value you want the property to have.
-	- To find a resource ID, go to the resource and look at the URL in your browser's address bar. The numbers at the end of the URL are the resource ID.
-	- You can remove value searches using the red trash can icon to the right of the value settings.
-- **Search by class**: select a class by which to search from the dropdown menu.
-- **Search by template**: select a resource template from the dropdown. Templates are arranged by owner, then alphabetically.
-- **Search by MIME type**: you can specify the media type for the search. For example, to find all tiff images, you would enter `image/tiff`.
-- **Search by owner**: select a user from a dropdown of users in the installation.
-- **Search by visibility**: select whether the results are public or private media.
+- **Sort**
+- **Search full-text**
+- **Search by value**
+- **Search by class**
+- **Search by template**
+- **Search by MIME type**: you can specify the media type for the search. For example, to find all TIFF images, you would enter `image/tiff`.
+- **Search by owner**
+- **Search by visibility**
 - **Search by ID**: enter a specific media identifier value, or a list of identifiers separated by commas (for example, "1, 5, 9, 12, 43, 44, 45"). Only works for exact matches, not with wildcards or ranges.
-
-You can also select how to order your search results.
-
-![Advanced media search options form, with fields as described above.](files/search_mediaadvanced2.png)
-
-Searches by value, class, and template allow you to search by more than one input - use the large red plus-sign icons to search with more than one value or item set. These search terms build - searching for two templates will return all media using either template.
-
-You can remove value and item set searches using the red trash can icon to the right of those search options.
-
-You can reset your search terms at any time by using the "Reset" button on the upper right next to the "Search" button.
 
 ### Item Set advanced search
 
@@ -101,36 +80,15 @@ Advanced search for item sets only is accessed on the [Item Sets](content/item-s
 
 The advanced search loads on a new page, and has the following options:
 
-- **Search full-text**: runs a full-text search on all of the text for every item set in the installation.
-- **Search by value**: search for a term or phrase which you enter
-	- The first selector allows you to specify a property to search.
-	- The second selector allows you to set the relationship the property has with the value. The options are:
-		- is exactly,
-		- is not exactly,
-		- contains,
-		- does not contain,
-		- is resource with ID,
-		- is not resource with ID,
-		- has any value (there is something in the property), and
-		- has no values.
-	- Finally, there is a text field for you to enter the value you want the property to have.
-	- To find a resource ID, go to the resource and look at the URL in your browser's address bar. The numbers at the end of the URL are the resource ID.
-	- You can remove value searches using the red trash can icon to the right of the value settings.
-- **Search by class**: select a class by which to search from the dropdown menu
-- **Search by template**: select a resource template from the dropdown. Templates are arranged by owner, then alphabetically.
-- **Search by owner**: select a user from a dropdown of users in the installation.
-- **Search by visibility**: select whether the results are public or private item sets.
+- **Sort**
+- **Search full-text**
+- **Search by value**
+- **Search by class**
+- **Search by template**
+- **Search by owner**
+- **Search by visibility**
 - **Search by ID**: enter a specific item set identifier value, or a list of identifiers separated by commas (for example, "1, 2, 5, 9"). Only works for exact matches, not with wildcards or ranges.
 
-You can also select how to order your search results.
-
-![Advanced item set search options form, with fields as described above.](files/search_advancedis2.png)
-
-Searches by value, class, and template allow you to search by more than one input - use the large red plus-sign icons to search with more than one value or item set. These search terms build - searching for two templates will return all media using either template.
-
-Other search fields may be introduced with modules that add new metadata fields to your item sets.
-
-You can reset your search terms at any time by using the "Reset" button on the upper right next to the "Search" button.
 
 ## Public views
 
@@ -146,7 +104,7 @@ This search bar works as a full-text search for the whole site. It will search a
 ![Search results for "Cassandra" showing one page and three items](files/search_public2.png)
 
 ### Advanced item search
-Site visitors can access an advanced item search from the Browse Items page, if you have that page accessible. There is a link for Advanced search between the pagination and the sort options at the top of the item browse table.
+Site visitors can access an advanced item search from the Browse Items page, if you have that page accessible. There is a link for "Advanced search" between the pagination and the sort options at the top of the item browse table.
 
 You can control advanced search settings on a site-by-site basis, from the [Site Settings tab](sites/site_settings.md#search). This will include advanced search fields introduced by modules.
 
@@ -154,39 +112,20 @@ You can control advanced search settings on a site-by-site basis, from the [Site
 
 Clicking this loads a new page with four options for search:
 
+- **Sort**
 - **Search full-text**: runs a full-text search on all of the text for every item in the site.
-- **Search by value**: search for a term or phrase using multiple options.
-	- The first selector allows you to specify a property to search.
-		- Note that if you have have the [site set](sites/site_settings.md#search) to restrict search to templates, this will only display the properties used by those templates.
-	- The second selector allows you to set the relationship the property has with the value. The options are:
-		- is exactly,
-		- is not exactly,
-		- contains,
-		- does not contain,
-		- is resource with ID,
-		- is not resource with ID,
-		- has any value (there is something in the property), and
-		- has no values.
-	- Finally, there is a text field for you to enter the value you want the property to have.
-	- To find a resource ID, go to the resource and look at the URL in your browser's address bar. The numbers at the end of the URL are the resource ID.
-- **Search by class**: select one or more classes by which to search from the dropdown menu.
-- **Search by item set**: select one or more item sets from the dropdown menu. The results will display the items inside one or more of the sets you chose.
-- **Search by media presence**: select whether the results have media or do not have media.
-- **Search by ID**: enter one or more item identifier values. Users can supply a list of identifiers separated by commas (for example, "1, 5, 9, 12, 43, 44, 45"). Only works for exact matches, not with wildcards or ranges.
-
-Users can also select how to order their search results.
+- **Search by value**
+	- Note that if you have have the [site set](sites/site_settings.md#search) to restrict search to templates, this will only display the properties used by those templates.
+- **Search by class**
+- **Search by item set**: The results will display the items inside one or more of the sets you chose.
+- **Search by media presence**
+- **Search by ID**.
 
 Here is the default advanced search form in two themes - Thanks, Roy, and The Daily:
 
 ![Advanced item search fields as described](files/search_publicitems2.png)
 
-
 ![Advanced item search fields as described](files/search_publicitems3.png)
-
-Searches by value, class, and item set allow a visitor to search by more than one input; they can use the "Add new" buttons (plus sign) to search with more than one search term. These search terms build - searching for two item sets will return all items in either item set, rather than only those items which are in both.
-
-
-Site visitors can remove value, class, and item set searches using the red trash can icon to the right of those search options.
 
 ### Advanced item set search
 
@@ -196,39 +135,28 @@ Site visitors can access an advanced item set search from the Browse Items Sets 
 
 Clicking the advanced search link loads a new page with three options for search:
 
-- **Search full-text**: runs a full-text search on all of the text for every item set in the site.
-- **Search by value**: search for a term or phrase using multiple options.
-	- The first selector allows you to specify a property to search.
-		- Note that if you have have the [site set](sites/site_settings.md#search) to restrict search to templates, this will only display the properties used by those templates.
-	- The second selector allows you to set the relationship the property has with the value. The options are:
-		- is exactly,
-		- is not exactly,
-		- contains,
-		- does not contain,
-		- is resource with ID,
-		- is not resource with ID,
-		- has any value (there is something in the property), and
-		- has no values.
-	- Finally, there is a text field for you to enter the value you want the property to have.
-	- To find a resource ID, go to the resource and look at the URL in your browser's address bar. The numbers at the end of the URL are the resource ID.
-- **Search by class**: select one or more classes by which to search from the dropdown menu.
-- **Search by ID**: enter a specific item set identifier value, or a list of identifiers separated by commas (for example, "1, 2, 5, 9"). Only works for exact matches, not with wildcards or ranges.
-
-Users can also select how to order their search results.
+- **Sort**
+- **Search full-text**
+- **Search by value**
+	- Note that if you have have the [site set](sites/site_settings.md#search) to restrict search to templates, this will only display the properties used by those templates.
+- **Search by class**
+- **Search by ID**.
 
 ![Item set advanced search options as described](files/search_publicitemsets2.png)
 
-Searches by value and class allow a visitor to search by more than one input; they can use the "Add new" buttons (plus sign) to search with more than one search term. These search terms build - searching for two classes will return all item sets which have either class, rather than only item sets that have both classes. 
+### Style the public views
 
-Site visitors can remove value and item set searches using the red trash can icon to the right of those search options.
-
-You can modify these default sorting orders for the public pages of sites in [Site settings](sites/site_settings.md#settings), and for the administrative pages on a user-by-user basis in [User settings](admin/users.md#admin-browse-defaults).
+You can style, hide, and emphasize search fields by using CSS. Each entry has a custom identifier, such as the `div` with "has_media_field", within the "advanced-search-content" class `div`. You can style these options using the [CSS Editor module](../modules/csseditor) or by modifying the code of your installation.  
 
 ## Sorting
 
 All of the public and administrative browsing views and all search results can be ordered in a number of ways. To the top right of every browse or result table is two dropdowns and a "Sort" button. One allows you to select a field, and the other determines the order in which to sort them.
 
-The default way most resources are ordered is by the date the resource was created (Created), in reverse chronological order (Descending). This is true of items, media, and item sets. Sites, vocabularies, and resource templates are default ordered by Title or Label Ascending. Users are default ordered by Email Ascending. 
+You can modify these default sorting orders for the public pages of sites in [Site settings](sites/site_settings.md#settings), and for the administrative pages on a user-by-user basis in [User settings](admin/users.md#admin-browse-defaults).
+
+The default way most resources are ordered is by the interal Omeka identifier (ID), in reverse chronological order (Descending). This is true of items, media, and item sets. Sites, vocabularies, and resource templates are default ordered by Title or Label Ascending. Users are default ordered by Email Ascending. 
+
+When a full-text search is performed, the results will be displayed by relevance, descending (most relevant results first). 
 
 Ascending means A-Z alphabetically for text fields, earliest to latest for date-formatted fields such as Created (meaning the internal item creation date and time) and Modified (the date and time the item was last modified), and smallest to greatest for numbers such as Identifiers. Note that some fields (such as Dublin Core Date) may be text-formatted to include information such as "circa" and will sort alphabetically rather than as numbers (such as "1800-01-01") or dates. You may be using modules such as [Numeric Data Types](modules/numericdatatypes.md) that can modify these settings.
 

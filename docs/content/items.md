@@ -165,7 +165,9 @@ Once you select a resource, detailed information will load, and you must click "
 
 ![Select Item menu with list of items to link in edit item view](contentfiles/items_addresource.png)
 
-If you are using an **Item** resource for the property, you will have three additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search". This will open a menu with the following options to filter the items in the drawer:
+If you are using an **Item** resource for the property, you will be able to select an existing item or to create a stub of a new item. 
+
+If you wish to use an existing item as your value, you will have three options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search". This will open a menu with the following options to filter the items in the drawer:
 
 - Filter by class: A dropdown where you can select any class provided by the vocabularies on the installation.
 - Filter by item set: A dropdown where you can limit the items displayed in the drawer to only those associated with a particular item set.
@@ -178,6 +180,20 @@ Once you enter something into a filter, you need to click on the magnifying glas
 Item resources also have an option for "Quick add". When this switch is flipped, all of the items in the drawer have a checkbox. You can use these checkboxes to add multiple items as a property at once. Note that you can only edit one property at a time, so all of the items must populate the same property (e.g. "Creator", "Has Part").
 
 ![a red arrow points to the slider button for "Quick add". The two items visible have an empty checkbox to the left of their representative thumbnail](contentfiles/items_quickadd.png)
+
+If you wish to create a new item, you can create a stub for that item directly in the drawer by selecting the Create an Item option. You will then be presented with truncated item creation form where you can select a
+
+- Resource Template
+- Class
+- Visibility for new item
+
+You can also input values for two basic values:
+- Title
+- Description
+
+Once you have completed the form, you can add the item stub and simultaneously select the item stub as the input for the property. You can return to the placeholder item to complete its description at a later time.
+
+![The item stub creation form is open in the drawer showing the dropdown selection for Resource Template, Class, and Visibility options, and the inputs for Title and Description](contentfiles/items_createItemStub.png)
 
 If you are using an **Item set** resource for the property, you will have two options for finding the item set you want in the drawer:
 
@@ -364,20 +380,22 @@ If you complete a batch action from the next screen, you will return back to thi
 
 The batch edit form gives you the following options:  
 
-- Set visibility: a radio button. Select from public or not public to make the item visible or not visible to logged-out users.
-- Set template: a dropdown. Select from the installation's resource templates. You can remove templates from the selected items with the "[Unset template]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
-- Set class: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected items with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
-- Set owner: a dropdown. Select from users of the installation to choose who should be set as the owner of the selected items. Ownership determines who can edit and delete those items, outside the higher [user permission levels](../admin/users.md#roles-and-permissions).
-- Add to item set: a dropdown and text field. Select from item sets on the installation, organized by owner, or type to search. You can add the selected items to multiple item sets: click in the text field again to see the remaining options.
-- Remove from item set: a dropdown and text field. Select from item sets on the installation, organized by owner, or type to search. You can remove the selected items from multiple item sets: click in the text field again to see the remaining options.
-- Add to sites: a dropdown and text field. Select from sites on the installation, or type to search. You can add the selected items to multiple sites: click in the text field again to see the remaining options.
-- Remove from sites: a dropdown and text field. Select from sites on the installation, or type to search. You can remove the selected items from multiple sites: click in the text field again to see the remaining options.
-- Clear property values: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected items. You can remove multiple property values at once: click in the text field again to see the remaining options.
-- Set value visibility: a dropdown and text field, with radio buttons. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire item (for example, you may wish to hide the "Creator" value on some public items). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
+- **Set visibility**: a radio button. Select from public or not public to make the item visible or not visible to logged-out users.
+- **Set template**: a dropdown. Select from the installation's resource templates. You can remove templates from the selected items with the "[Unset template]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- **Set class**: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected items with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- **Set owner**: a dropdown. Select from users of the installation to choose who should be set as the owner of the selected items. Ownership determines who can edit and delete those items, outside the higher [user permission levels](../admin/users.md#roles-and-permissions).
+- **Add to item set**: a dropdown and text field. Select from item sets on the installation, organized by owner, or type to search. You can add the selected items to multiple item sets: click in the text field again to see the remaining options.
+- **Remove from item set**: a dropdown and text field. Select from item sets on the installation, organized by owner, or type to search. You can remove the selected items from multiple item sets: click in the text field again to see the remaining options.
+- **Add to sites**: a dropdown and text field. Select from sites on the installation, or type to search. You can add the selected items to multiple sites: click in the text field again to see the remaining options.
+- **Remove from sites**: a dropdown and text field. Select from sites on the installation, or type to search. You can remove the selected items from multiple sites: click in the text field again to see the remaining options.
+- **Clear property values**: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected items. You can remove multiple property values at once: click in the text field again to see the remaining options.
+- **Set value visibility**: a dropdown and text field, with radio buttons. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire item (for example, you may wish to hide the "Creator" value on some public items). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
 
 ![Batch edit items form, with options as described above. Everything is grayscale](contentfiles/items_batchedit.png)
 
-In addition,  you can use the buttons at the bottom of the batch edit form to add properties to every item:
+In addition, you can use the buttons at the bottom of the batch edit form to **convert existing values in any property from one data type to another**, such as a text value of "1900-01-01" into a date. 
+
+You can also **add properties** to every item:
 
 - Add text value
 - Add resource value

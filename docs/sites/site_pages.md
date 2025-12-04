@@ -66,13 +66,14 @@ There are two options for laying out the blocks on your page: **Normal flow** an
 #### Configuration
 Next you will have the option to apply configuration settings to the entire page. Clicking on the gear icon will open the Page layout configuration menu. 
 
-In **Normal flow**, you will be able to select a [template for the page](#page-templates) if the site theme provides one.
+In **Normal flow**, you will be able to: 
 
-In **Grid**, you will see two buttons:
+- select a [template for the page](#page-templates) if the site theme provides one. 
+- add in a value to use as the HTML `class` on the `<body>` property of the page. You can add multiple values separated by spaces. 
 
-- The Preview Layout button (a small icon of a 2x3 grid of blocks) will preview the layout in the right-hand drawer. This will show you all the blocks currently on the page and their width in terms of the columns on the page. It will also show block groups with an extra outline around the group's contents. 
-- The Configure Layout button (gear icon) will allow you to select a [template for the page](#page-templates), and define the gaps (in pixels) between the columns and rows of blocks.
-- If you make a mistake in your grid page layout settings, you can reset the page to the most recently saved version by clicking the "Restore" button that appears to the right of these buttons.
+In **Grid**, you will see an additional button. The Preview Layout button (a small icon of a 2x3 grid of blocks) will appear next to the gear icon. This will preview the layout in the right-hand drawer, showing you all the blocks currently on the page and their width in terms of the columns you have set. It will also show block groups with an extra outline around the group's contents. 
+
+The Configure Layout button (gear icon) will additionally allow you to define the gaps (in pixels) between the columns and rows of blocks. Once you have made a change to the grid layout, you can reset the page to the most recently saved version by clicking the "Restore" button that appears to the right of the gear icon and preview icon.
 
 ##### Page templates
 
@@ -86,7 +87,7 @@ Once you have selected a site theme with page templates included, such as [Found
 
 Once you have made your layout choices, you are ready to add blocks to the page.
 
-On the right-hand side you can choose to add a new block to your page by selecting one of the following elements:
+On the right-hand side you can choose to add a new block to your page by selecting one of the following elements that come with every Omeka S installation:
 
 - Asset
 - Browse preview
@@ -101,7 +102,7 @@ On the right-hand side you can choose to add a new block to your page by selecti
 - Page title
 - Table of contents.
 
-If you have the relevant modules installed, you may also have the following page blocks:
+Modules can add more blocks to these options. For example, based on your installed and active modules, you may also have some of the following page blocks:
 
 - [Collecting](../modules/collecting.md)
 - [Data visualization](../modules/datavisualization.md)
@@ -129,7 +130,7 @@ In the Normal flow or Grid layout, you can configure each block with the gear ic
 
 **Template**: If your theme provides one, you can select a template to apply to the block from the dropdown menu. For example, [the Foundation theme](site_theme.md#foundation-theme-settings) allows you to set the Browse preview block to its own list or grid display, ignoring the settings of the site itself. Not every page block will have available templates. 
 
-**Class** allows you to type in a specific class to apply styles to the block. 
+**Class** allows you to type in a specific CSS class to apply styles to the block. Use this in conjunction with your own stylesheets or with the CSS Editor module. 
 
 **Alignment** includes two settings: Block alignment and Text alignment. 
 
@@ -201,6 +202,7 @@ You may wish to employ one or more empty columns in every row as a design elemen
 To see a schema of how your blocks are positioned on the page, click on the Layout preview button (an icon of blocks in a grid), which will reveal a mockup in the right-hand drawer.
 
 Note that each page block will have a width calculated as follows:
+
 - First find the total width of the browser window alloted to page content - minus any sidebars, and with maximum widths determined by your theme. 
 - Then divide that by the number of columns. For example, a 1200-pixel-width container divided by 4 columns will give 300 pixels each.
 - Then account for the width of column gaps from the page settings (default is 10 pixels), and the number of gaps between blocks. For example, a 2-column block next to another 2-column block in a 4-column grid will be: 1200 pixels, minus 30 for all 3 of the column gaps, divided by 4 columns, times 2 for a 2-column block, plus 10 pixels to span across one of the gaps, for a final width of 595 pixels each.
@@ -314,6 +316,20 @@ You can embed content from elsewhere on the internet using iFrames or other embe
 ![HTML block showing the text and an embedded video](sitesfiles/sitepg_htmlSource3.png)
 
 If you have the [Zotero Citations module](../modules/zoterocitation.md) installed, you can insert a Zotero bibliography into this field. Look for the Zotero button in the formatting menu (a big red Z). 
+
+### IIIF image
+
+An IIIF image URL example:
+
+`https://media.nga.gov/iiif/public/objects/1/0/6/3/8/2/106382-primary-0-nativeres.ptif/info.json`
+
+
+### IIIF presentation
+
+An IIIF presentation URL example:
+
+`https://media.nga.gov/public/manifests/nga_highlights.json`
+
 
 ### Item with metadata
 
@@ -434,11 +450,11 @@ For example, links in these formats should all work:
 - https://www.youtube.com/watch?v=W8r-tXRLazs
 - https://youtu.be/W8r-tXRLazs?feature=shared
 
-You cannot save the page without any URL in the oEmbed block, and you can't rewrite the URL after the page has been saved.
+You cannot save the page without any URL in the oEmbed block, once you add the block to the page.
 
 ![Input field for URL for oEmbed](sitesfiles/sitepg_oEmbed.png)
 
-After saving the URL you can view the Advanced settings, which includes information for the formatting of the oEmbed (uneditable), and a checkbox to refresh the oEmbed.
+After saving the URL you can view the Advanced settings, which includes information for the formatting of the oEmbed (uneditable), and a checkbox to refresh the oEmbed. You can also replace the existing entry with a new URL. 
 
 ![oEmbed advanced settings include the formatting information and refresh](sitesfiles/sitepg_oEmbedadvanced.png)
 
@@ -450,10 +466,10 @@ Depending on which site the embed is from, there will be different features avai
 - Vimeo: includes buttons to like, add to watch later, and share. In addition to the play and volume controls, there are options to enable closed captions, view a transcript, view settings, make the video full screen, or view the video on Vimeo.
 - Youtube: includes buttons to make the video full screen and watch the video on YouTube.
 
-You may find [oEmbed's provider list](https://oembed.com/providers.json){target=_blank} helpful.
+You may find [oEmbed's provider list](https://oembed.com/providers.json){target=_blank} helpful. Omeka is specifically designed to more easily recognize oEmbed-enabled URLs from a number of sources - you can see [this list in the codebase](https://github.com/omeka/omeka-s/blob/develop/application/config/module.config.php#L893){target=_blank}. 
 
 !!! note
-	Note that you can embed media from many of the oEmbed-enabled sites in other ways, which may allow you more styling and customization control. For example, you can add a Youtube video to an item and then display it with the Media embed block, or paste the embed code offered on Vimeo or Flickr into an HTML page block.
+	You can embed media from many of the oEmbed-enabled sites in other ways, which may allow you more styling and customization control. For example, you can add a Youtube video to an item and then display it with the Media embed block, or paste the embed code offered on Vimeo or Flickr into an HTML page block.
 
 ### Page date and time
 

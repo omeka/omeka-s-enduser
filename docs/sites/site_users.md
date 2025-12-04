@@ -23,3 +23,11 @@ You can add or revoke privileges for users by going back to the User permissions
 Once you've added one or more users, click the "Save" button located in the upper right hand corner. To cancel your changes, click the "Cancel" button in the upper right hand corner. 
 
 You can also use the "Admin > Users" interface to [batch-edit user options](../admin/users.md#batch-editing), which includes adding/removing one or more users to a site, and changing the site-specific role.
+
+## User views
+
+Lower-level users will, at first, only see sites for which they have some kind of permission set. They can choose to view all the sites on the Omeka S installation by clicking the "View all sites" link in the grey bar. Note that in the example image below, the user has editing permissions for one site (indicated by the pencil icon) and only viewing privileges for the other (no pencil icon). 
+
+![A user named "Author" - with an installation-wide role of Author - can see only two sites. There is a link for them to see all the sites on the installation.](../sites/sitesfiles/sites_userView.png)
+
+They can choose to view all the sites on the Omeka S installation by clicking the "View all sites" link in the grey bar. Note that they will not see sites with visibility set to private, if they do not have access already. 

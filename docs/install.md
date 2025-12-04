@@ -1,12 +1,13 @@
 # Installing
 
 ## System requirements
-In order to install Omeka S, you will need a server running the following:
+In order to install Omeka S (latest version 4.2), you will need a server running the following:
 
 - Linux
 - Apache (with [AllowOverride](https://httpd.apache.org/docs/2.4/mod/core.html#allowoverride){target=_blank} set to "All" and [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html){target=_blank} enabled)
 - MySQL, minimum version 5.7.9 (or MariaDB, minimum version 10.2.6)
-- PHP, minimum version 7.4, with [PDO](http://php.net/manual/en/intro.pdo.php){target=_blank}, [pdo_mysql](http://php.net/manual/en/ref.pdo-mysql.php){target=_blank}, and [xml](http://php.net/manual/en/intro.xml.php){target=_blank} extensions installed. PHP 8.4 is not currently supported.
+- PHP, minimum version 8.1, with [PDO](http://php.net/manual/en/intro.pdo.php){target=_blank}, [pdo_mysql](http://php.net/manual/en/ref.pdo-mysql.php){target=_blank}, and [xml](http://php.net/manual/en/intro.xml.php){target=_blank} extensions installed. 
+	- PHP 8.4 is not supported in Omeka S 4.1 or earlier, but is supported as of Omeka S 4.2 and later. 
 - Optional, to create thumbnails: ImageMagick version 6.7.5 or greater, the PHP `imagick` extension, or the PHP `gd` extension.
 
 [GD](https://secure.php.net/manual/en/intro.image.php){target=_blank} is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). [Imagick and ImageMagick](https://www.imagemagick.org){target=_blank} are the same library and can create thumbnails for more than 200 formats. For more information, see the [Configuration page](configuration.md#thumbnails).
@@ -33,11 +34,16 @@ Then, in your web browser, navigate to the admin page for your Omeka S installat
 
 ### One-click installation
 
-Hosting companies that use [Softaculous](https://softaculous.com/){target=_blank} should offer a one-click install of [Omeka Classic](https://www.softaculous.com/softaculous/apps/educational/Omeka){target=_blank} and [Omeka S](https://www.softaculous.com/softaculous/apps/others/Omeka_S){target=_blank}. The one-click installation process through Softaculous may allow you to create a database and user at the same time, and will edit the `config/database.ini` file for you.
+Hosting companies that use [Softaculous](https://softaculous.com/){target=_blank} and [Installatron](https://installatron.com/){target=_blank} should offer a one-click install of Omeka Classic and Omeka S. Check their application databases:
 
-Suggestions from our users include:
+- [Omeka Classic](https://www.softaculous.com/softaculous/apps/educational/Omeka){target=_blank} and [Omeka S](https://www.softaculous.com/softaculous/apps/others/Omeka_S){target=_blank} on Softaculous
+- [Omeka Classic](https://installatron.com/omeka?locale=en){target=_blank} and [Omeka S](https://installatron.com/omekas?locale=en){target=_blank} on Installatron.
 
--   [Reclaim Hosting](https://reclaimhosting.com/){target=_blank} - offers [simple Omeka S installations](https://support.reclaimhosting.com/hc/en-us/sections/204007617-Omeka){target=_blank} with some steps (including [manually setting the PHP path](#test-and-set-the-php-path)), and support for other open-source software platforms
+The one-click installation process through Softaculous may allow you to create a database and user at the same time, and will edit the `config/database.ini` file for you.
+
+Hosting suggestions from our users include:
+
+-   [Reclaim Hosting](https://reclaimhosting.com/){target=_blank} - offers [Omeka S installations](https://support.reclaimhosting.com/hc/en-us/sections/204007617-Omeka){target=_blank} using Installatron, with some steps (including [manually setting the PHP path](#test-and-set-the-php-path))
 -   [Dotblock](http://www.dotblock.com){target=_blank} - uses Softaculous
 -   [HostGator](http://hostgator.com){target=_blank} - uses Softaculous
 -   [TMD Hosting](https://www.tmdhosting.com){target=_blank} - uses Softaculous

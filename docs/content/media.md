@@ -52,15 +52,20 @@ Clicking on the title of any media will take you to its metadata page. This page
 
 ## Add media to an item
 
-Media can only be added via an [item](../content/items.md). Options for adding media to your items include uploading a file, or directly attaching content with a URL, [oEmbed](https://oembed.com/){target=_blank}, YouTube URL, an [IIIF image](https://iiif.io/api/image/3.0/){target=_blank} by URL, an [IIIF presentation](https://iiif.io/api/presentation/3.0/){target=_blank} by URL, or by writing HTML using the HTML editor.
+Media can only be added via an [item](../content/items.md). Options for adding media to your items include uploading a file, or directly attaching content by:
 
-An IIIF image URL example:
+- URL, 
+- [oEmbed](https://oembed.com/){target=_blank},
+- YouTube URL,
+- an [IIIF image](https://iiif.io/api/image/3.0/){target=_blank} by URL,
+- an [IIIF presentation](https://iiif.io/api/presentation/3.0/){target=_blank} by URL,
+- or by writing HTML using the HTML editor.
 
-`https://media.nga.gov/iiif/public/objects/1/0/6/3/8/2/106382-primary-0-nativeres.ptif/info.json`
+To learn more about oEmbed, [see the information about using the oEmbed page block in your site pages](../sites/site_pages.md#oembed). 
 
-An IIIF presentation URL example:
+To learn more about IIIF, [see the information about using the IIIF page blocks in your site pages](../sites/site_pages.md#iiif-image).
 
-`https://media.nga.gov/public/manifests/nga_highlights.json`
+### Describe your media 
 
 At the media adding stage, the only metadata that can be entered is a Title. If you wish to further describe each file, you can edit it after it has been uploaded. If you do not supply a title, the original filename will appear as the media title. Note that the media's actual filename will have changed when uploaded into Omeka S; this filename retained as the title is just for your reference, and can be changed at any time.
 
@@ -264,22 +269,24 @@ Batch editing media takes you to a new page. The media being edited will display
 
 The batch edit form gives you the following options:  
 
-- Set visibility: a radio button. Select from public or not public to make the file visible or not visible to logged-out users.
-- Set template: a dropdown. Select from the installation's resource templates. You can remove templates from the selected items with the "[Unset template]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
-- Set class: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected files with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
-- Set owner: a dropdown. Select from users of the installation to choose who should be set as the owner of the selected media. Changing media ownership will not change the associated items' ownership. Ownership determines [who can edit and delete those media](#media-permissions), outside the higher [user permission levels](../admin/users.md#roles-and-permissions).
-- Clear language: a checkbox to remove existing language settings.
-- Set language: a text field. Enter in a two-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} language code. You can only indicate one language here.
-- Clear property values: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected media. You can remove multiple property values at once: click in the text field again to see the remaining options.
-- Set value visibility: a dropdown and text field, with radio buttons. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire media (for example, you may wish to hide the "Creator" value on some public media). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
+- **Set visibility**: a radio button. Select from public or not public to make the file visible or not visible to logged-out users.
+- **Set template**: a dropdown. Select from the installation's resource templates. You can remove templates from the selected items with the "[Unset template]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- **Set class**: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected files with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- **Set owner**: a dropdown. Select from users of the installation to choose who should be set as the owner of the selected media. Changing media ownership will not change the associated items' ownership. Ownership determines [who can edit and delete those media](#media-permissions), outside the higher [user permission levels](../admin/users.md#roles-and-permissions).
+- **Clear language**: a checkbox to remove existing language settings.
+- **Set language**: a text field. Enter in a two-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} language code. You can only indicate one language here.
+- **Clear property values**: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected media. You can remove multiple property values at once: click in the text field again to see the remaining options.
+- **Set value visibility**: a dropdown and text field, with radio buttons. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire media (for example, you may wish to hide the "Creator" value on some public media). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
 
 ![Batch edit media form, with options as described above.](contentfiles/media_batchedit.png)
 
-In addition, you can use the bottoms at the bottom of the batch edit form to add properties to every media:
+In addition, you can use the buttons at the bottom of the batch edit form to **convert existing values in any property from one data type to another**, such as a text value of "1900-01-01" into a date. 
 
-- add text value
-- add resource value
-- add URI value.  
+You can also **add properties** to every media:
+
+- Add text value
+- Add resource value
+- Add URI value.  
 
 Selecting any of these will add a block to the form where you can select a property from the installed vocabularies and enter the value for that property.
 
@@ -326,7 +333,11 @@ Opus (.opus) is one of the newer available audio formats. For the time being, it
 
 ### Images
 
-Omeka S accepts most image file types, including JPEG, PING, TIFF, and WEBP. Keep in mind that most browsers do not natively display TIFF files; Omeka creates derivative images for TIFFs in JPEG format that are displayed as thumbnails and on item/media view pages. Users can download TIFFs where the original file is offered. 
+Omeka S accepts most image file types, including JPEG, PING, TIFF, and WEBP. 
+
+Keep in mind that most browsers do not natively display TIFF or JPEG2000 files; Omeka creates derivative images for TIFFs and JPEG2000s (`.jp2`), in JPEG format, that are displayed as thumbnails and on item/media view pages. Users can download these file types where the original file is offered. 
+
+As of Omeka S version 4.1, the Lightbox gallery viewer, used to display original-format media in a zoomable interface, may pull the "large"-size derivative rather than the original TIFF or JPEG2000, limiting the zoom granularity. 
 
 WEBP support is new in Omeka S 4.1. Existing installations that have been upgraded to 4.1 may need to update the list of allowed file types and extensions on the [Settings](../admin/settings.md) tab by pressing the "Restore" buttons ("Restore default media types" and "Restore default extensions").  
 
