@@ -1,6 +1,6 @@
 # Zotero Citations
 
-The [Zotero Citation module](https://omeka.org/s/modules/ZoteroCitation/){target=_blank} allows users to access Zotero libraries to add citations using the built-in rich-text editor.
+The [Zotero Citation module](https://omeka.org/s/modules/ZoteroCitations/){target=_blank} allows users to access Zotero libraries to add citations using the built-in rich-text editor.
 
 Once activated, users set up their Zotero access from their user settings. Their Zotero libraries will be accessible via HTML and other blocks on [site pages](../sites/site_pages.md). 
 
