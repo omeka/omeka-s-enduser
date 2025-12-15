@@ -47,11 +47,11 @@ Settings are divided into five sections: **General**, **Display**, **Editing**, 
 
 **Set default item visibility to private**: When this box is checked, all new items made by all users will have their visibility set to private. If this box is not checked, all new items are public by default, unless set otherwise at the point of creation.
 
-**Set default item visibility to private**: When this box is checked, all new item sets made by all users will have their visibility set to private.
+**Set default item set visibility to private**: When this box is checked, all new item sets made by all users will have their visibility set to private.
 
-**Set default item visibility to private**: When this box is checked, all new sites made by all users will have their visibility set to private.
+**Set default site visibility to private**: When this box is checked, all new sites made by all users will have their visibility set to private.
 
-**Set default item visibility to private**: When this box is checked, all new site pages made by all users will have their visibility set to private.
+**Set default site page visibility to private**: When this box is checked, all new site pages made by all users will have their visibility set to private.
 
 **Suggested languages for values**: You can list languages here to provide a convenient dropdown selection for languages when filling out descriptive metadata for resources installation-wide. Provide two- or four-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target+_blank} language tags for maximum compatibility. Users can still type their own values when editing resources. 
 
