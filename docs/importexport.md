@@ -26,9 +26,13 @@ You can use the [Omeka S Item Importer module](modules/ositemimporter.md) to imp
 
 ## Connect to non-Omeka platforms
 
-Omeka S has modules for importing resources from: 
+Omeka connects easily to other platforms built by the [Corporation for Digital Scholarship](https://digitalscholar.org/){target=_blank}. 
 
-- [Zotero](modules/zoteroimport.md)
+- Omeka S has a module for importing items from [Zotero](https://zotero.org){target=_blank}. Zotero is a research management tool you can use to organize journal articles and reading materials. You can organize items there and then export them as Omeka S items using the [Zotero Import module](modules/zoteroimport.md), or insert a bibliography or individual citations into an Omeka S site page using the [Zotero Citations module](modules/zoterocitation.md). 
+- [Tropy](https://tropy.org){target=_blank} has a plugin to export items to Omeka S. Tropy can be used to manage, edit, and describe digital images of archival and heritage materials, and is particularly useful for combining multiple images of a single item (e.g. books, letters with many pages, photo albums, etc.). Tropy can also add annotations to images and text, and help you order items or files (e.g. to preserve original order in archival materials). Install Tropy and [add the "Export to Omeka S" plugin there](https://docs.tropy.org/other-features/omeka){target=_blank}. 
+
+Omeka S also has modules for importing resources from: 
+
 - [Zenodo](modules/datarepositoryconnector.md)
 - [Fedora](modules/fedoraconnector.md)
 - [DSpace](modules/dspaceconnector.md)
