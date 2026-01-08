@@ -62,21 +62,13 @@ An Interval property allows you to enter the beginning and end dates and times f
 
 ![Interval property with no times entered](../modules/modulesfiles/ndt-interval.png)
 
-## Sort
-Once you have active resource templates using numeric data types, they will appear as sortable options on the Item, Media, and Item Set browse views. 
+## Bulk-edit numeric data
 
-Click the first dropdown on the top right corner of the table of resources, which defaults to "Created".
+The module adds additional options to the dropdown menu of the ["Convert data type" option on batch-editing pages](../content/items.md#batch-editing) for resources (items, media, and item sets).
 
-Clicking on this dropdown will reveal multiple options, including all of the properties using numeric data types. These options display as the property with the data type in parentheses, for example "Date (numeric:timestamp)". 
+The "Convert data type" option lets you convert an existing text property to other data types, including numeric. It will not work on properties where the data is currently an Omeka resource or a URI. 
 
-![The contents of the dropdown, with the normal options in addition to eight properties using numeric data types.](../modules/modulesfiles/ndt-browsesort.png)
-
-Note that occasionally in the interface, including here, you may see "integer" displaying when referring to "number". This will still be numbers that can include decimal places. 
-
-## Bulk edit numeric data
-The module adds additional options to the dropdown menu of the ["Convert data type" option on batch-editing pages](../content/items.md#batch-editing).
-
-The "Convert data type" option lets you convert an existing text input property to other data types, including numeric. It will not work on properties where the data is currently an Omeka resource or a URI. 
+This method allows you to add numeric data types to resources without employing resource templates to do so. 
 
 In the first field, select a property from the dropdown. You can type to search through the properties. Note that this dropdown loads the property names from the vocabulary and will not have the additional labels from your resource template, so be sure you know which vocabulary term you are looking for.
 
@@ -112,6 +104,18 @@ Use the following formats for [durations](https://en.wikipedia.org/wiki/ISO_8601
 
 - `P23DT23H` (23 days & 23 hours)
 - `P3Y6M4DT12H30M5S` (3 years, 6 months, 4 days, 12 hours, 30 minutes, & 5 seconds).
+
+## Sort by numeric data
+
+Once you have resources using numeric data types, they will appear as sortable options on the respective resources' browse views. For example, if at least one item has a "Timestamp" value in a field, you can sort your item browse table by that field. 
+
+Click the first dropdown on the top right corner of the table of resources, which defaults to "Created".
+
+Clicking on this dropdown will reveal multiple options, including all of the properties using numeric data types. These options display as the property with the data type in parentheses, for example "Date (numeric:timestamp)". 
+
+![The contents of the dropdown, with the normal options in addition to eight properties using numeric data types.](../modules/modulesfiles/ndt-browsesort.png)
+
+Note that occasionally in the interface, including here, you may see "integer" displaying when referring to "number". This will still be numbers that can include decimal places. 
 
 ## Search numeric data
 
