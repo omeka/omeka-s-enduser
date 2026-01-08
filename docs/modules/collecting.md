@@ -55,7 +55,7 @@ The Collecting module has Prompt Types with options as follows:
 		 - Numeric timestamp
 		 - Numeric interval
 		 - Numeric duration
-		 - Numeric integer.
+		 - Number (integer or decimal).
  - Check the "Required?" box if the prompt is required.
 
 **Item Media** allows visitors to add media to their submission.

@@ -202,7 +202,7 @@ If you are using the [Numeric Data Types module](../modules/numericdatatypes.md)
 
 ![Facet Type dropdown menu showing options including Numeric Date Types](../modules/modulesfiles/FacetedBrowse_NumericDataTypesSelect.png)
 
-Once you have selected a facet type, you will be able to configure the facet to operate with the properties that use a numeric data type. Only properties with the exact data type set (Integer, Date, Duration, or Interval) will display in the dropdown.
+Once you have selected a facet type, you will be able to configure the facet to operate with the properties that use a numeric data type. Only properties with the exact data type set (Number, Date, Duration, or Interval) will display in the dropdown.
 
 In the public view, the faceting will be controlled through a dropdown menu.
 
