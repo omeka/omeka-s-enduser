@@ -731,7 +731,7 @@ Options are:
 - Date/Time (ISO 8601)
 - Interval (ISO 8601)
 - Duration (ISO 8601)
-- Integer.
+- Number (integer or decimal).
 
 ![Column options drawer with the data type dropdown open, showing options for numeric data types as well as the standard options](../modules/modulesfiles/csvimport_numericdata.png)
 
