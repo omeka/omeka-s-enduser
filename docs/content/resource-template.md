@@ -106,7 +106,8 @@ Every field in every resource template offers all three of these data types by d
 - Resource: users of the template can select from existing items, media, or item sets in the installation, or select any resource.
 - Additional options may be added by modules: 
 	- [Numeric Data Types](../modules/numericdatatypes.md) can restrict values to one of four numeric data types, providing a structured data entry. 
-	- [Custom Vocab](../modules/customvocab.md) and [Value Suggest](../modules/valuesuggest.md) modify the textual entry field to provide suggested values from controlled vocabularies, but the user can ignore these suggestions and enter in any text. 
+	- [Value Suggest](../modules/valuesuggest.md) will modify the textual entry field to provide suggested values from controlled vocabularies, but the user can ignore these suggestions and enter in any text. 
+	- [Custom Vocab](../modules/customvocab.md) will **require** users to choose from one of the provided vocabulary entries as a property value. You can assign further data types (such as Text) as an alternative to the custom vocabulary if desired. 
 
 ![An item editing page, showing a dcterms:date property restricting the input to Timestamp and Interval data types.](contentfiles/templates_datatype-date.png)
 

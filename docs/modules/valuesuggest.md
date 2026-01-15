@@ -4,13 +4,15 @@ The [Value Suggest module](https://omeka.org/s/modules/ValueSuggest){target=_bla
 
 Value Suggest appears when a user is editing the metadata of a resource (an item, a piece of media, or an item set) that uses the enabled resource template. It functions as a [data type](../content/resource-template.md#data-types), but works like a modification to a text field: a user can start typing and select a suggestion from the dropdown, or ignore the dropdown and enter in a textual entry manually.
 
-This module also allows any field to be set to [suggest values already stored in that property across the entire Omeka installation](#internal-suggestions). These suggested values can be narrowed by only the same property on resources with the same class, or only the same property on resources using the same resource template, to limit the number of suggestions and make them more relevant. 
+Value Suggest comes packaged with a number of popular vocabularies - see the list below. Examples include Library of Congress Subject Headings, VIAF, PBCore for publishing information, RDA for multimedia, RightsStatements, and Creative Commons. The module also supplies a number of languages. 
 
-This functionality helps those building an Omeka site encourage consistent metadata input and data compatibility with other databases of records. Note that Value Suggest offers, but cannot require, that users select values from the autosuggest feature. Users will always have the option of creating their own text value instead.
+This module also allows any field to be set to [suggest values already stored in that property across the entire Omeka installation](#internal-suggestions). These suggested values can be narrowed to only the same property on resources with the same class, or only the same property on resources using the same resource template, to limit the number of suggestions and make them more relevant. 
 
-Value Suggest data types can be included in combination with other data types such as URIs in order to encourage interoperable metadata practices to outside databases such as Wikidata.
+This functionality helps those building an Omeka site to encourage consistent metadata input and data compatibility with other databases. Note that Value Suggest offers, but cannot require, that users select values from the autosuggest feature. Users will always have the option of creating their own text value instead.
 
-## Add suggestions to a resource template
+Value Suggest data types can be included in combination with other data types, such as URIs, in order to encourage interoperable metadata practices to outside databases such as Wikidata.
+
+## Suggest values via resource templates
 
 Value Suggest vocabularies are applied through resource templates. For additional information on resource templates, see the [resource template documentation](../content/resource-template.md).
 
@@ -27,7 +29,7 @@ When you click the title of a resource template to see its details, the Value Su
 
 ![A red rectangle highlights the fact that the data type for Subject is "LC: Subject Headings"](../modules/modulesfiles/ValSug-ResTemplate2.png)
 
-## Adding Value Suggest to resources
+## Suggest values for resources
 
 When a Value Suggest resource template is used for an item, media, or item set, the designated properties will auto-suggest values from the vocabulary specified in the template. 
 
@@ -43,9 +45,22 @@ After selecting a value, a box containing a URL should appear under the value. T
 
 ![Item property Work Type with "Fashion Illustrations (layout features)" selected. Below, in red is a hyperlink to Getty Collections, with a small red "X".](../modules/modulesfiles/ValSug-ItemProperty3.png)
 
+### Batch-apply vocabularies
+
+When batch-editing resources, you can apply a Value Suggest vocabulary as a data type to a property. This will mean that when those existing resources are edited in the future, the Value Suggest vocabulary will appear as an option for that field. This is helpful if you wish to employ Value Suggest without using resource templates. 
+
+You can also **convert** an existing URI value into a recognized Value Suggest value from one of its vocabularies. For example, you may have manually entered in Rights Statements URIs and labels into the copyright field of many items, and now wish to convert those values into one of the structured entries from Value Suggest's Rights Statements "data type". 
+
+To do so, select the desired items and batch-edit them. Look for the "Convert data type" button near the bottom of the form, in the "Values" section. Select the property (for example, "Rights" under Dublin Core) and then choose the Value Suggest vocabulary from the "Data type" dropdown (for example, Creative Commons or RightsStatements). 
+
+![The batch-editing screen showing the "Convert data type" option expanded with the "Rights" property in the first selection and "Creative Commons" in the second selection.](../modules/modulesfiles/ValSug-BatchConvert.png)
+
+!!! note
+	To successfully convert manual entries to a Value Suggest data type, the values must already be in the URI format. Value Suggest looks for the URI value to match the structured online vocabulary URIs (for example, "https://creativecommons.org/licenses/by/4.0/"). Text-only entries (for example, "CC BY 4.0 - Attribution 4.0 International") will not be converted. 
+
 ## Internal suggestions
 
-This module offers the ability to suggest values currently stored in your Omeka installation:
+This module offers the ability to suggest values currently stored in your Omeka installation, that is, where a resource already has the value in a property:
 
 - Omeka: Property (values of the same property, for example `dcterms:creator`)
 - Omeka: Property / Resource template (values of the same property that are being used by items that share the same resource template, for example "Base resource")
@@ -356,3 +371,9 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 ### [Thesaurus de la Universitat de Barcelona (THUB)](https://vocabularis.crai.ub.edu/ca/thub){target=_blank} (`es`)
  
 - Thesaurus de la Universitat de Barcelona (THUB).
+
+## Request more vocabularies
+
+You can request that new vocabularies be added to this module. Get in touch with the Omeka team on [the module's dedicated GitHub repository](https://github.com/omeka-s-modules/ValueSuggest){target=_blank}, by creating an issue and sharing the vocabularies you would like to see added. 
+
+You may be interested in using [the NDE Termennetwerk module](github.com/omeka-s-modules/NdeTermennetwerk/){target=_blank}, which is a fork of this module specifically for supplying [Dutch Digital Heritage Network terms](https://termennetwerk.netwerkdigitaalerfgoed.nl/en){target=_blank}. 
