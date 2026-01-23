@@ -1,16 +1,14 @@
 # Value Suggest
 
-The [Value Suggest module](https://omeka.org/s/modules/ValueSuggest){target=_blank} adds an auto-complete feature to specific properties in a resource template, and draws on controlled vocabularies (see the end of this page for a complete list) to help users fill them out. 
+The [Value Suggest module](https://omeka.org/s/modules/ValueSuggest){target=_blank} adds an auto-complete feature to properties in resource templates, and draws on published controlled vocabularies (see the end of this page for a complete list) to help users fill them out. Users can, for example, fill out the "Subject" field in Dublin Core with terms from the Library of Congress Subject Headings. 
 
-When a user is editing the metadata of a resource (an item, a piece of media, or an item set) that uses the enabled resource template, they can choose from Value Suggest's options. It functions as a [data type](../content/resource-template.md#data-types), but works like a modification to a text field: a user can start typing and select a suggestion from the dropdown, or ignore the dropdown and type in a textual entry.
+When a user is editing the metadata of a resource (an item, a piece of media, or an item set) that uses the Value-Suggest-enabled resource template, they can choose from a vocabulary's options. It functions as a [data type](../content/resource-template.md#data-types), but works like a modification to a text field: a user can start typing and select a suggestion from the dropdown, or ignore the dropdown and type in a textual entry.
 
-Value Suggest comes packaged with a number of popular vocabularies - see the list below. Examples include Library of Congress Subject Headings, VIAF, PBCore for publishing information, RDA for multimedia, RightsStatements, and Creative Commons. The module also supplies a number of languages. 
+Value Suggest comes packaged with many popular vocabularies - see the list below. Some examples: VIAF, PBCore for publishing information, RDA for multimedia, RightsStatements, and Creative Commons licenses. The module supplies terms in a number of languages. 
 
-This module also allows any field to be set to [suggest values already stored in that property across the entire Omeka installation](#internal-suggestions). You can choose to narrow the suggested values to ones from resources with the same class, or ones from resources using the same resource template, to limit the number of suggestions and make them more relevant. 
+This module also allows any field to [suggest values already stored in that property across the entire Omeka installation](#internal-suggestions). You can choose to narrow the suggested values to ones from resources with the same class, or ones from resources using the same resource template, to limit the number of suggestions and make them more relevant. 
 
-This functionality helps those building an Omeka site to encourage consistent metadata input and data compatibility with other databases. Note that Value Suggest offers, but cannot require, that users select values from the autosuggest feature. Users will always have the option of creating their own text value instead.
-
-Value Suggest data types can be included in combination with other data types, such as URIs, in order to encourage interoperable metadata practices to outside databases such as Wikidata.
+This feature helps encourage consistent metadata input and data compatibility with other databases. Note that Value Suggest offers, but cannot require, terms from the autosuggest feature. Users will always have the option of creating their own text value instead.
 
 ## Suggest values via resource templates
 
