@@ -45,17 +45,17 @@ After selecting a value, a box containing a URL should appear under the value. T
 
 ### Batch-apply vocabularies
 
-You can also apply Value Suggest vocabularies as data types to existing items' **existing property values**, whether or not they are using any resource template. 
+You can also apply Value Suggest vocabularies as data types to existing items' **existing property values**, whether or not they are using any resource template. This will not set a Value Suggest data type onto the item's property for future use, the way a resource template does. 
 
-This can **convert** an existing text or URI value into a recognized Value Suggest value from one of its vocabularies. For example, you may have manually entered in RightsStatements URIs and labels into the copyright field of many items, and now wish to convert those values into one of the structured entries from Value Suggest's RightsStatements "data type". 
+This can **convert** an existing text or URI value into a recognized Value Suggest value from one of its vocabularies. For example, you may have manually entered in RightsStatements URIs into the copyright field of many items, and now wish to convert those values into one of the structured entries from Value Suggest's RightsStatements "data type" to match future entries. 
 
-This conversion may also work with text values. Value Suggest looks for the URI value to match the structured online vocabulary URIs (for example, "https://creativecommons.org/licenses/by/4.0/"). 
+This conversion may work with text values. Value Suggest looks for the text string to match the structured online vocabulary URIs (for example, "https://creativecommons.org/licenses/by/4.0/"). If your values are in URI form, Value Suggest will look to match either the URI value or the label text string.
 
 To do so, select the desired items and batch-edit them. Look for the "Convert data type" button near the bottom of the form, in the "Values" section. Select the property (for example, "Rights" under Dublin Core) and then choose the Value Suggest vocabulary from the "Data type" dropdown (for example, Creative Commons or RightsStatements). 
 
 ![The batch-editing screen showing the "Convert data type" option expanded with the "Rights" property in the first selection and "Creative Commons" in the second selection.](../modules/modulesfiles/ValSug-BatchConvert.png)
 
-Note that this will not set a Value Suggest data type onto the item's property for future use, the way a resource template does. 
+When converting an existing value into a Value Suggest data type, **the structured label will not be imported** from the source vocabulary into your metadata fields. If using URIs, your existing labels will be preserved, or if the label fields are empty, that will persist. If using text values, the URI will be preserved and converted into a URI, but the label field will be empty.
 
 ## Internal suggestions
 
