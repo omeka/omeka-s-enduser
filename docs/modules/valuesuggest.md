@@ -1,21 +1,21 @@
 # Value Suggest
 
-The [Value Suggest module](https://omeka.org/s/modules/ValueSuggest){target=_blank} adds an auto-complete feature to specific properties in a resource template, and draws on controlled vocabularies (see the end of this page for a complete list) to help users fill them out. 
+The [Value Suggest module](https://omeka.org/s/modules/ValueSuggest){target=_blank} adds an auto-complete feature to properties in resource templates, and draws on published controlled vocabularies (see the end of this page for a complete list) to help users fill them out. Users can, for example, fill out the "Subject" field in Dublin Core with terms from the Library of Congress Subject Headings. 
 
-Value Suggest appears when a user is editing the metadata of a resource (an item, a piece of media, or an item set) that uses the enabled resource template. It functions as a [data type](../content/resource-template.md#data-types), but works like a modification to a text field: a user can start typing and select a suggestion from the dropdown, or ignore the dropdown and enter in a textual entry manually.
+When a user is editing the metadata of a resource (an item, a piece of media, or an item set) that uses the Value-Suggest-enabled resource template, they can choose from a vocabulary's options. It functions as a [data type](../content/resource-template.md#data-types), but works like a modification to a text field: a user can start typing and select a suggestion from the dropdown, or ignore the dropdown and type in a textual entry.
 
-This module also allows any field to be set to [suggest values already stored in that property across the entire Omeka installation](#internal-suggestions). These suggested values can be narrowed by only the same property on resources with the same class, or only the same property on resources using the same resource template, to limit the number of suggestions and make them more relevant. 
+Value Suggest comes packaged with many popular vocabularies - see the list below. Some examples: VIAF, PBCore for publishing information, RDA for multimedia, RightsStatements, and Creative Commons licenses. The module supplies terms in a number of languages. 
 
-This functionality helps those building an Omeka site encourage consistent metadata input and data compatibility with other databases of records. Note that Value Suggest offers, but cannot require, that users select values from the autosuggest feature. Users will always have the option of creating their own text value instead.
+This module also allows any field to [suggest values already stored in that property across the entire Omeka installation](#internal-suggestions). You can choose to narrow the suggested values to ones from resources with the same class, or ones from resources using the same resource template, to limit the number of suggestions and make them more relevant. 
 
-Value Suggest data types can be included in combination with other data types such as URIs in order to encourage interoperable metadata practices to outside databases such as Wikidata.
+This feature helps encourage consistent metadata input and data compatibility with other databases. Note that Value Suggest offers, but cannot require, terms from the autosuggest feature. Users will always have the option of creating their own text value instead.
 
-## Add suggestions to a resource template
+## Suggest values via resource templates
 
 Value Suggest vocabularies are applied through resource templates. For additional information on resource templates, see the [resource template documentation](../content/resource-template.md).
 
-1. From the Resources templates page in the admin dashboard, either add a new [template](../content/resource-template.md) or edit an existing one.
-1. Add the property to which you want to apply the Value Suggest. 
+1. From the Resource Templates page in the admin dashboard, either add a new [template](../content/resource-template.md) or edit an existing one.
+1. Add the property to which you want to offer a Value Suggest vocabulary. 
 1. Once the property is added to the template, click the pencil/edit icon for that property.
 1. At the bottom of the drawer which opens on the right, open the "Data type" dropdown. Below the standard options, you will see the Value Suggest options. Select the vocabulary you want to use from the dropdown. Note that you can add alternate labels and comments for the property in this drawer.
 1. Click the "Set changes" button at the bottom of the drawer to assign the values to the property. 
@@ -27,7 +27,7 @@ When you click the title of a resource template to see its details, the Value Su
 
 ![A red rectangle highlights the fact that the data type for Subject is "LC: Subject Headings"](../modules/modulesfiles/ValSug-ResTemplate2.png)
 
-## Adding Value Suggest to resources
+## Suggest values for resources
 
 When a Value Suggest resource template is used for an item, media, or item set, the designated properties will auto-suggest values from the vocabulary specified in the template. 
 
@@ -43,9 +43,27 @@ After selecting a value, a box containing a URL should appear under the value. T
 
 ![Item property Work Type with "Fashion Illustrations (layout features)" selected. Below, in red is a hyperlink to Getty Collections, with a small red "X".](../modules/modulesfiles/ValSug-ItemProperty3.png)
 
+### Batch-apply vocabularies
+
+You can also apply Value Suggest vocabularies as data types to existing resources' **existing property values**, whether or not they are using any resource template. This will **not** set a Value Suggest data type onto the resources' property for future use, the way a resource template does. 
+
+This can convert an existing text or URI value into a recognized Value Suggest value from one of its vocabularies. For example, you may have manually entered in RightsStatements URIs into the copyright field of many items, and now wish to convert those values into one of the structured entries from Value Suggest's RightsStatements "data type" to match future entries. 
+
+This conversion may work with text values. Value Suggest looks for the text string to match a URL format (for example, "https://creativecommons.org/licenses/by/4.0/"). If your values are in URI form, Value Suggest will look to match either the URI value or the label text string.
+
+To do so, select the desired resources and batch-edit them. Look for the "Convert data type" button near the bottom of the form, in the "Values" section. Select the property (for example, "Rights" under Dublin Core) and then choose the Value Suggest vocabulary from the "Data type" dropdown (for example, Creative Commons or RightsStatements). 
+
+![The batch-editing screen showing the "Convert data type" option expanded with the "Rights" property in the first selection and "Creative Commons" in the second selection.](../modules/modulesfiles/ValSug-BatchConvert.png)
+
+When converting an existing value into a Value Suggest data type, **the structured label will not be imported** from the source vocabulary into your metadata fields. If using URIs, your existing labels will be preserved, or if the label fields are empty, that will persist. If using text values, the URI will be preserved and converted into a URI, but the label field will be empty.
+
+You can see whether the data-type conversion has succeeded when looking at the item in the admin interface. The original value, whether text (no link) or URI (link with an external-website icon to the right), should now appear as a link with no icon. 
+
+We recommend checking the conversion success by going into editing mode on the resources after the process has completed, and checking that the value is now showing the correct Value Suggest dropdown when clicked on. You can select the appropriate vocabulary-provided label at this time. 
+
 ## Internal suggestions
 
-This module offers the ability to suggest values currently stored in your Omeka installation:
+This module offers the ability to suggest values currently stored in your Omeka installation, that is, where a resource already has the value in a property:
 
 - Omeka: Property (values of the same property, for example `dcterms:creator`)
 - Omeka: Property / Resource template (values of the same property that are being used by items that share the same resource template, for example "Base resource")
@@ -356,3 +374,9 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 ### [Thesaurus de la Universitat de Barcelona (THUB)](https://vocabularis.crai.ub.edu/ca/thub){target=_blank} (`es`)
  
 - Thesaurus de la Universitat de Barcelona (THUB).
+
+## Request more vocabularies
+
+You can request that new vocabularies be added to this module. Get in touch with the Omeka team on [the module's dedicated GitHub repository](https://github.com/omeka-s-modules/ValueSuggest){target=_blank}, by creating an issue and sharing the vocabularies you would like to see added. 
+
+You may be interested in using [the NDE Termennetwerk module](github.com/omeka-s-modules/NdeTermennetwerk/){target=_blank}, which is a fork of this module specifically for supplying [Dutch Digital Heritage Network terms](https://termennetwerk.netwerkdigitaalerfgoed.nl/en){target=_blank}. 
