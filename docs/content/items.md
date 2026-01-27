@@ -79,7 +79,7 @@ To quickly view the basic information about an item, click the **Details** (elli
 
 For a more detailed look at an individual item, click on its title in the items browse table or when viewing its details.
 
-![Item browse view with details open for "Behold, Here's Poison". Links to item view page squared in blue](contentfiles/items_detailview.png)
+![Item browse view, with details open for the item "Annual Report 2012-2013" in the right-hand drawer.](contentfiles/items_detailview.png)
 
 When you view an individual item, there are tabs for the item’s **Metadata** and its **Linked Resources**. The right side of the page displays the item’s media, any **sites** and **item sets** to which it belongs, its creation date, owner, and visibility.
 
@@ -149,9 +149,9 @@ Text fields allow for unformatted text entry. No markup is allowed in these fiel
 
 ![image of text input field with keyboard icon indicating text input, the globe icon for setting language, and a trashcan delete icon](contentfiles/items_textedit.png)
 
-You can indicate the language for the content of a text input using the globe symbol above the input (see the red arrow in the image below). Click on the globe to activate a text field, then enter the [IETF two-letter Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} code for the language in which the text is written.
+You can indicate the language for the content of a text input using the globe symbol above the input (see the image below). Click on the globe to activate a text field, then enter the [IETF two-letter Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} code for the language in which the text is written.
 
-![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/items_lang.png)
+![A text entry field, with a globe icon to the left, is highlighted in blue with the cursor active in the field. It shows a two-letter language tag that is being applied to the content of the text field below.](contentfiles/items_lang.png)
 
 #### Omeka resource
 
@@ -163,7 +163,7 @@ Choosing a resource type will open a side drawer where you can browse all of tho
 
 Once you select a resource, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of resources.
 
-![Select Item menu with list of items to link in edit item view](contentfiles/items_addresource.png)
+![Item editing interface, with "Omeka resource" property value added to the Description property. The buttons "Items" and "Item sets" are highlighted inside a red square. The right-hand drawer is open to the "Select Item" menu, with a list of items to choose from.](contentfiles/items_addresource.png)
 
 If you are using an **Item** resource for the property, you will be able to select an existing item or to create a stub of a new item. 
 
@@ -185,11 +185,11 @@ If you wish to create a new item, you can create a stub for that item directly i
 
 - Resource Template
 - Class
-- Visibility for new item
+- Visibility for new item.
 
 You can also input values for two basic values:
 - Title
-- Description
+- Description.
 
 Once you have completed the form, you can add the item stub and simultaneously select the item stub as the input for the property. You can return to the placeholder item to complete its description at a later time.
 
@@ -234,13 +234,13 @@ The annotation sidebar will open to the right. Select any property that is avail
 
 Select a data type for the annotation: a text field, a URI, or resource in your Omeka S installation. Modules may make additional data types available. Click the "Add annotation" button and a new field will appear below. Input your annotation. You can do this multiple times for the chosen value if desired. Then click "Set annotations" to finalize the process.
 
-![A picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
+![The value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
 
 [Each site has a setting](../sites/site_settings.md#show) to indicate whether or not value annotations are visible to the public. This will include value annotations on item sets and media.
 
 You can set controlled vocabularies for annotations using the [Custom Vocab module](../modules/customvocab.md). In this case, you do not need to apply a custom vocabulary to a property using a resource template; you can select any installed vocabulary from the value-type dropdown in the drawer. This will load your vocabulary's choices into a dropdown of terms.
 
-![A screenshot of an item entry with an annotation on DC:Contributor, loading a custom vocabulary named "Contributor Annotation Type", and the terms displayed including "Editor," "Translator," "Publishing Organization," and more.](contentfiles/annotation_customvocab.png)
+![An item entry with an annotation on DC:Contributor, loading a custom vocabulary named "Contributor Annotation Type", and the terms displayed including "Editor," "Translator," "Publishing Organization," and more.](contentfiles/annotation_customvocab.png)
 
 ### Media
 
@@ -346,7 +346,7 @@ To delete an item, you can:
 - Click the title of the item in the table on the Items browse page, then click the "Delete" button at the top right of the screen.
 - Use the batch-deletion methods described below to delete many items at once.
 
-## Batch editing
+## Batch actions
 
 From the browse page of items (`admin/item`) you can batch edit items, using the dropdown menu on the left near the pagination buttons. You can select multiple items using the checkboxes on the left of each item's row.
 
@@ -391,7 +391,7 @@ The batch edit form gives you the following options:
 - **Clear property values**: a dropdown and text field, with all the properties in all vocabularies. Selecting from this will remove any values in that property in the affected items. You can remove multiple property values at once: click in the text field again to see the remaining options.
 - **Set value visibility**: a dropdown and text field, with radio buttons. Set the visibility of a specific property or properties to either public or not public. Unlike the radio buttons at the top of the form, this will only affect one or more metadata fields, instead of the entire item (for example, you may wish to hide the "Creator" value on some public items). Select a property from the text field (type to begin searching), and the choose either the "Public" or "Not public" radio button for this option. You can add multiple properties by clicking again within the text field, but they will all become either "Public" or "Not public".
 
-![Batch edit items form, with options as described above. Everything is grayscale](contentfiles/items_batchedit.png)
+![Batch edit items form, with options as described above.](contentfiles/items_batchedit.png)
 
 In addition, you can use the buttons at the bottom of the batch edit form to **convert existing values in any property from one data type to another**, such as a text value of "1900-01-01" into a date. 
 
