@@ -41,7 +41,7 @@ Only Supervisors and Global Administrators can create, edit, and delete users.
 
 To create a new user, select the "Add new user" button in the upper right hand corner of the Users section in the administrative dashboard.
 
-![Add new user form with fields as described](adminfiles/users_addnew.png)
+![The "Add new user" form with fields as described below.](adminfiles/users_addnew.png)
 
 On the Add User page, enter the following:
 
@@ -73,7 +73,7 @@ To manage an existing user, go to the Users section.
 
 All users can edit their own information using this screen, and can see other users of the installation (and their email addresses). Only Supervisors and Global Admin can edit other users.
 
-![Manage users view, top row is the Omeka Devs account. The drawer showing the number of items and item sets created by the Omeka Devs user is opened.](adminfiles/users_table.png)
+![The "Users" table. Five users are listed, with the email addresses blacked out. There are two Global Administrators, one Supervisor, one Author, and one Researcher. The drawer is open to show one user's item and item set counts.](adminfiles/users_table.png)
 
 To see the items and item sets owned by a user, click the ellipsis located between the delete (trash can) button and the user role label. This will open a drawer on the right side of the screen with this information; you can click on the number of items or item sets to browse the items or item sets created by that user.
 
@@ -175,7 +175,7 @@ When editing the "Value" column option, users will select a property to add as a
 
 You must click "Set column" before saving the page to ensure your edits are not lost.
 
-![Right sidebar image with the edit interface for the Values column showing a form to define the Header, the default output, the property selection, and the maximum number of values](adminfiles/users_settings_edit_browsecolumn.png)
+![Right sidebar with the edit interface for the Values column showing a form to define the Header, the default output, the property selection, and the maximum number of values.](adminfiles/users_settings_edit_browsecolumn.png)
 
 #### Admin browse defaults
 In addition to setting the columns that will be visible in the resource browsing interfaces, a user can set the default sorting column for each browse. Users may select a column to sort the results by, and choose between an ascending or descending sort order.
@@ -185,7 +185,7 @@ You will need to save your browsing column changes first, then return to this pa
 ### Password
 On this tab, create a new password. It must be entered twice, in both the New Password and Confirm New Password fields, to save properly.
 
-![Empty password reset fields for the user outreach](adminfiles/users_password.png)
+![A user is being edited on the Password tab, where the "New password" and "Confirm new password" textx fields are empty.](adminfiles/users_password.png)
 
 To see the password requirements, click the arrow next to the New Password field. This will display a list of [requirements](../configuration.md) if any have been configured.
 
@@ -207,7 +207,7 @@ Supervisors and Global Administrators can edit multiple users at one time. Use t
 
 You can also select all using the box at the top of the table.
 
-![A screenshot of the users table showing only the checkboxes and email column, with three users' emails. Two of the user's boxes are checked, and the third is unchecked.](adminfiles/users_batch1.png)
+![The users table showing only the checkboxes and email column, with three users' emails. Two of the user's boxes are checked, and the third is unchecked.](adminfiles/users_batch1.png)
 
 The dropdown just above the table offers the following options:
 
