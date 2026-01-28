@@ -8,8 +8,8 @@ For more information, please review the following reports:
 	- [Accessibility Conformance Report, using VPAT 2.5 Revised International Standards (PDF)](files/OmekaS4x_ACR.pdf){target=_blank}
 	- [Accessibility Conformance Report, using VPAT 2.5 Revised International Standards (DOCX)](files/OmekaS4x_ACR.docx){target=_blank} 
 - Omeka S version 3.x [Accessibility Conformance Report, using VPAT 2.4 Revised International Standards (PDF)](files/OmekaS3x_ACR.pdf){target=_blank}, October 2020.
-- Omeka S version 2.x [Accessibility Conformance Report using VPAT version 2.0 (PDF)](files/VPAT_OmekaS2-0-1.pdf){target=_blank}, August 2019.
-- Omeka S version 1.x [Accessibility Conformance Report using VPAT version 1.1 (PDF)](files/VPAT2.0-OmekaS1-1.pdf){target=_blank}, April 2018.
+- Omeka S version 2.x [Accessibility Conformance Report using VPAT 2.0 (PDF)](files/VPAT_OmekaS2-0-1.pdf){target=_blank}, August 2019.
+- Omeka S version 1.x [Accessibility Conformance Report using VPAT 2.0 (PDF)](files/VPAT2.0-OmekaS1-1.pdf){target=_blank}, April 2018.
 
 The following statements apply to Omeka S version 1.0.1 and higher:
 
