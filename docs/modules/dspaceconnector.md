@@ -8,7 +8,7 @@ Note that DSpace Connector only works with DSpace versions 5.6 and higher, inclu
 
 Navigate to the section labelled "DSpace Connector" under Modules.
 
-![Screenshot of the field options for DSpace Connector](../modules/modulesfiles/dspace_import.png)
+![Screenshot of the import options for DSpace Connector. Fields are listed in the text below.](../modules/modulesfiles/dspace_import.png)
 
 On the first form, enter the following information:
 
@@ -30,14 +30,14 @@ This tab has five options:
 * **Ignored Fields**: DSpace metadata fields to ignore on import, separated by commas.
 * **Comment**: comments to attach to the import batch, which will appear on the "Past DSpace Imports" page.
 
-![basic import settings, nothing entered and no boxes checked.](../modules/modulesfiles/dspace_importset.png)
+![The Basic import settings screen with the fields listed above, with nothing entered and no boxes checked.](../modules/modulesfiles/dspace_importset.png)
 
 ### Collections
 This tab will display the list of collections for the DSpace repository, organized by the containing community. You can import either one collection at a time or the entire DSpace repository.
 
 To import a single collection, click the "Import" button to the left of its name. This will automatically begin the import.
 
-![First few collections from mars.gmu.edu's DSpace repository](../modules/modulesfiles/dspace_coll.png)
+![The Collections tab showing some example collections imported from mars.gmu.edu's DSpace repository, including a grouping called "Administrative Collections" with collections "GMU Dark Archive", "Preservation Materials", and "Visual Arts". There is a button at the top of the screen to "Import entire repository" and a button on each collection showing "Import collection". There are buttons to "Expand all" and "Collapse all" of the groupings.](../modules/modulesfiles/dspace_coll.png)
 
 To import the entire repository, click "Import entire repository" at the top of the form.
 

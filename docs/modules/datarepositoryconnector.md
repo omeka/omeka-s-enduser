@@ -42,7 +42,7 @@ If you select Zenodo, you will see a screen with the following options:
 
 ### Invenio
 
-![The Invenio import screen](../modules/modulesfiles/datarepoconnect_invenio.png)
+![The Invenio import screen, showing the options listed below.](../modules/modulesfiles/datarepoconnect_invenio.png)
 
 If you select Invenio, you will see a screen with the following options:
 

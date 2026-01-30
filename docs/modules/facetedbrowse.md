@@ -12,7 +12,7 @@ Once activated, Faceted Browse is configured on a site-by-site basis.
 
 ## Terminology
 
-A quick guide to the terms used to describe the aspects of a faceted browse page:
+A guide to the terms used to describe the aspects of a Faceted Browse page:
 
 - Category: a group of resources (items, item sets, or media) to which facets are applied on a specific page. You can use a query to narrow the resources, or leave it blank to show all of that resource type. 
 - Facet: an aspect of a resource - usually part of the metadata - which becomes a way to filter the resources in the category. Faceted browsing works best when you have some controlled vocabularies in your metadata values, or when unique values can be sorted into buckets (such as dates browsed by century). 
@@ -92,7 +92,7 @@ Other facet options are described below.
 
 The image below shows the drawer options for the Value facet:
 
-![Configure Facet draw for the Values facet type](modulesfiles/FacetedBrowse_ConfigureFacetV.png) 
+![Configure Facet draw for the Values facet type, as listed in the section below.](modulesfiles/FacetedBrowse_ConfigureFacetV.png) 
 
 For the Single (list) and Multiple (list) Select types, page creators can choose to truncate the values on the list that is visible to the site visitor, by setting a number in the "Truncate values" option. Leaving the input blank will display all values. Entering in a number will display only that number of facets, in order, with a "See more (X)" link displaying the number of further facets. 
 
@@ -286,7 +286,7 @@ Once a user clicks on a category, the resource list will change to display only 
 
 You can add a "Faceted browse preview" page block to pages in Omeka sites. This page block will show the first few items that appear on the full FB page, without any of the sidebar facets or navigation tools available on the page. 
 
-![Faceted browse preview page block in the admin settings](modulesfiles/FacetedBrowse_previewpageblock.png)
+![Faceted browse preview page block in the admin settings, with settings as listed below. A page category is selected, Limit is set to 6, Preview title is set to "Browse by type", and Link text is set to "Browse all".](modulesfiles/FacetedBrowse_previewpageblock.png)
 
 The page block comes with the following settings:
 

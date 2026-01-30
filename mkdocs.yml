@@ -49,8 +49,8 @@ nav:
         - modules/csvimport.md
         - modules/customvocab.md
         - modules/datacleaning.md
-        - modules/datavisualization.md
         - modules/datarepositoryconnector.md
+        - modules/datavisualization.md
         - modules/dspaceconnector.md
         - modules/exports.md
         - modules/extractmetadata.md
