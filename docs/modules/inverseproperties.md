@@ -55,15 +55,15 @@ Once you have selected all the inverse properties for that resource template, cl
 
 When adding or editing an item, select a resource template that has inverse properties. Then, in a property that has an inverse, click "Omeka resource". Then, click the resource type (such as "Item") and select the resource you wish to add from the drawer. After clicking on the resource's title, be sure to click the "Select resource" button at the bottom of the drawer to add the item to the metadata field. You can add multiple resources at once with the "Quick add" switch. 
 
-![Add inverse property to item.](modulesfiles/inverseProperties_add.png)
+![An item editing screen focused on the "Relation" property. A blue arrow points to the "Omeka resource" button inside the property box. The right-hand drawer is open to a list of items.](modulesfiles/inverseProperties_add.png)
 
 Once you have finished editing the item, click "Save". The item you added as a linked resource should now appear on the item's show page.
 
-![Saved inverse property.](modulesfiles/inverseProperties_itemShow.png)
+![The saved item view page, showing a linked item in the "Relation" property. There is a blue arrow pointing to it. The item thumbnail is displaying to the left of the item title, with a cube icon to the right indicating that it is a linked resource data type.](modulesfiles/inverseProperties_itemShow.png)
 
 If you click on the resource you just linked, you should see that the inverse property value was created automatically.
 
-![Inverse property on linked property item show page.](modulesfiles/inverseProperties_linkedProperty.png)
+![The item show page for the resource that has been linked. You can see that its "Relation" property has also been filled out, with a link back to the first item. Its thumbnail and title is showing, also with a cube icon.](modulesfiles/inverseProperties_linkedProperty.png)
 
 If you delete a value, its inverse will not automatically delete. You must delete each value manually from its own resource.
 
