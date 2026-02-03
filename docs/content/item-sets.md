@@ -103,13 +103,13 @@ You can indicate the language for the content of an input using the globe symbol
 
 These fields create an internal link between the resource you are creating and the resource that fills that field.
 
-You have the option to use either another item or an item set.
+You have the option to use either an item or another item set.
 
 Choosing a resource type will open a side drawer where you can browse all of those resources in the installation. You can use the search function at the top of the drawer to narrow down the list or to quickly find a specific item or item set.
 
 Once you select an item or item set, detailed information will load, and you must click "Select resource" to finish linking the resources. You can also click the "X" button in the upper right-hand corner to go back to the list of items or item sets.
 
-![Select Item menu with list of items to link in edit item view](contentfiles/items_addresource.png)
+![Item set editing interface, with "Omeka resource" property value added to the Description property. The buttons "Items" and "Item sets" are highlighted inside a red square. The right-hand drawer is open to the "Select Item" menu, with a list of items to choose from.](contentfiles/items_addresource.png)
 
 If you are using an Item resource for the property, you will have additional options for finding the item you want in the drawer. Open these options by clicking the triangle button next to the phrase "Filter search".
 
@@ -141,19 +141,19 @@ In the world of linked data, this process is know as [reification](https://www.w
 
 To create an annotation, click on the ellipsis on the right side of the value input interface, and then click on the annotation icon (the speech bubble).
 
-![a detail of the property with the annotation bubble highlighted](contentfiles/annotation_add.png)
+![A property with the annotation bubble highlighted](contentfiles/annotation_add.png)
 
 The annotation sidebar will open to the right. Select any property that is available within the Omeka S installation to describe the relationship between the annotation and the value it describes. For instance, the value for associated with the property `dcterms:Contributor` might be annotated with more detail about the nature of the contribution. Or you may wish to simply include a note using the `dcterms:Description` field.
 
 Select a data type for the annotation: a text field, a URI, or resource in your Omeka S installation. Modules may make additional data types available. Click the "Add annotation" button and a new field will appear below. Input your annotation. You can do this multiple times for the chosen value if desired. Then click "Set annotations" to finalize the process.
 
-![A picture of the value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
+![The value annotation sidebar with a property selected and an annotation included](contentfiles/annotation_sidebar.png)
 
 [Each site has a setting](../sites/site_settings.md#show) to indicate whether or not value annotations are visible to the public. This will include value annotations on items and media.
 
 You can set controlled vocabularies for annotations using the [Custom Vocab module](../modules/customvocab.md). In this case, you do not need to apply a custom vocabulary to a property using a resource template; you can select any installed vocabulary from the value-type dropdown in the drawer. This will load your vocabulary's choices into a dropdown of terms.
 
-![A screenshot of an item entry with an annotation on DC:Contributor, loading a custom vocabulary named "Contributor Annotation Type", and the terms displayed including "Editor," "Translator," "Publishing Organization," and more.](contentfiles/annotation_customvocab.png)
+![An item entry with an annotation on DC:Contributor, loading a custom vocabulary named "Contributor Annotation Type", and the terms displayed including "Editor," "Translator," "Publishing Organization," and more.](contentfiles/annotation_customvocab.png)
 
 ### Advanced
 By default, Omeka S will use the media from the first item added to an item set to generate a thumbnail for the set. If you want to use a non-media image for the thumbnail for an item set you can set it here.
@@ -208,7 +208,7 @@ From the Item Set browse view, you can delete an item set by clicking the trash 
 
 From the edit page for an Item Set, click the "Delete" button in the upper right-hand corner. This will open a drawer on the right side asking you to confirm that you want to delete the item set. Click "Confirm delete" to delete the item set, or close the drawer to cancel.
 
-![Close up of the warning drawer, with text stating "Are you sure you would like to delete this item set" and below it a red button with white text stating "Confirm delete".](contentfiles/itemset-delete2.png)
+![The warning drawer, with text stating "Are you sure you would like to delete this item set" and below it a red button with white text stating "Confirm delete".](contentfiles/itemset-delete2.png)
 
 ## Batch actions
 
@@ -265,4 +265,4 @@ Selecting any of these will add a block to the form where you can select a prope
 
 For the **delete actions**, a drawer will open on the right side of the screen telling you the number of item sets which will be deleted. Nothing will be deleted unless you click the red "Confirm Delete" button. This action cannot be undone. To opt out of deleting the item sets, click the "X" in the upper right corner of the deletion drawer. To confirm delete, check the "Are you sure" checkbox (for "Delete all" but not "Delete selected") and then click "Confirm Delete". Note that deleting the item set will not delete the items associated with that set.
 
-![Close up of the warning, with the text describing the number of items to be deleted in red.](contentfiles/itemsets_bulkdelete.png)
+![The warning users will see when a number of item sets are about to be deleted. There is a checkbox the user must check in order to make the button below it active.](contentfiles/itemsets_bulkdelete.png)

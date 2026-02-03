@@ -48,7 +48,7 @@ Options for navigating and creating items display above the table of items:
 
 Clicking on the title of any media will take you to its metadata page. This page displays any metadata in the main work area, with a sidebar on the right listing the visibility, associated item (an active link), date created, MIME type, Size, Ingester, Source, and links to the file derivatives.
 
-![Media view page for a mediawiki file. The image is of a grup of people in late 19th century clothing, from left to right a a women standing and facing a standing man holding a small child while reaching out to the woman, with another man standing and smiling behind the man with the child. On the right hand side of the image is the database information for the media](../content/contentfiles/media_view.png)
+![Media view page for an image file. On the right-hand side of the image is the database information for the media, including links to various derivatives, the item it's part of, the file type and size.](../content/contentfiles/media_view.png)
 
 ## Add media to an item
 
@@ -155,7 +155,7 @@ Text fields allow for unformatted text entry.
 
 You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe icon to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
 
-![Red arrow points to the globe icon and a text entry field highlighted in blue](contentfiles/items_lang.png)
+![A text entry field, with a globe icon to the left, is highlighted in blue with the cursor active in the field. It shows a two-letter language tag that is being applied to the content of the text field below.](contentfiles/items_lang.png)
 
 #### Omeka resource
 
@@ -242,6 +242,7 @@ You can provide alternate text for all media by typing descriptive text into the
 You can indicate the language of a media file by entering the two-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} language code into this field. This field does not accept multiple values.
 
 ## Batch actions
+
 From the media browse page (`admin/media`), you can batch edit media, using the dropdown menu on the left near the pagination buttons. You can select media manually for batch editing using the checkboxes on the left, or select all of the media on the page, or use the dropdown to edit all media that are currently in the subset.
 
 Editors, Supervisors, and Global Admins can batch-edit and batch-delete all media in the installation. Users that have Author-level permissions can batch-edit or batch-delete their own media, but not media of others. In this case, selecting all of the media on the page, or selecting all media, will only include media they own. Users at the Reviewer level cannot batch-delete all resources, but can batch-delete selected resources.
@@ -292,9 +293,11 @@ Selecting any of these will add a block to the form where you can select a prope
 
 ### Batch deleting
 
-For the **delete actions**, a drawer will open on the right side of the screen telling you the number of media which will be deleted. Nothing will be deleted unless you click the red "Confirm Delete" button. This action cannot be undone. To opt out of deleting the media, click the "X" in the upper right corner of the deletion drawer. To confirm a "delete all" action, check the "Are you sure" checkbox and then click "Confirm Delete".
+For the **delete actions**, a drawer will open on the right side of the screen telling you the number of media which will be deleted. Nothing will be deleted until you click the red "Confirm Delete" button. This action cannot be undone. 
 
-![Close up of the warning that all media will be deleted.](contentfiles/media_batchdelwarn.png)
+To opt out of deleting the media, click the "X" in the upper right corner of the deletion drawer. To confirm a "delete all" action, check the "Are you sure" checkbox and then click "Confirm Delete".
+
+![The warning users will see when all media are about to be deleted. There is a checkbox the user must check in order to make the button below it active.](contentfiles/media_batchdelwarn.png)
 
 ## Media file types
 

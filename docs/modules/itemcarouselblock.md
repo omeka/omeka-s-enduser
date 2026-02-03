@@ -24,7 +24,7 @@ Add a title for the carousel, and select the number of items that appear on the 
 ## Advanced options
 Using the drop-down menu within the block, you can access a number of advanced options to further configure the appearance of the block.
 
-![An item carousel block detail image focused on the advanced options settings.](modulesfiles/itemcarouselblock-advanced.png)
+![An item carousel page block with the advanced options expanded, as listed below.](modulesfiles/itemcarouselblock-advanced.png)
 
 You can use those settings to:
 
@@ -43,10 +43,8 @@ You can use those settings to:
 
 On your public page, the carousel will automatically be as tall as your tallest item, including title and caption text, depending on the advanced settings above. It will be as wide as the page block allows according to your [page design and settings](../sites/site_pages.md).
 
-
 !!! note
 	Your carousel may look and behave differently on mobile and smaller devices than on a computer screen. Be sure to view your public page in different configurations to ensure items are accessible by site visitors. 
-
 
 A carousel viewed on a laptop browser:
 

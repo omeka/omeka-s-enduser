@@ -169,7 +169,9 @@ To add a collecting form to a page:
 
 On the public page, your form block will appear as a `<form>` element with an ID of `collecting_form_X`, where X is the ID of the form. Questions appear in `<div class="field">` elements; required questions will also have the class "required". Inside each question is a `<div class="field-meta">` for the text of the question, and a `<div class="inputs">` for the response field. You can use the [CSS Editor module](../modules/csseditor.md) to control how these elements are displayed.
 
-![An example of a Collecting form, from the covid-19archive.org website.](modulesfiles/collecting_publicformexample.png)
+The following is a screenshot of the [covid19-archive.org collection form](https://covid-19archive.org/s/archive/page/Share){target=_blank}: 
+
+![An example Collecting form titled "Share Your Story". They link to another form in Spanish, and one for audio or video collecting. Fields are title (required), file upload, and a text entry that asks "What sort of object is this?" (required).](modulesfiles/collecting_publicformexample.png)
 
 
 ## Managing collected items

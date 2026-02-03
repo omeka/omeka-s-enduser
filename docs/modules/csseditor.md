@@ -12,11 +12,11 @@ If you are new to working with CSS, we recommend the following free resources fo
 
 The easiest way to learn Omeka S page components for the sake of CSS editing is to use your browser's Inspect tool when looking at your chosen theme.
 
-## Using the CSS Editor interface
+## Apply site-specific CSS
 
 If CSS Editor is active, then a link for CSS Editor will appear in the context menu for every site.
 
-![Screenshot of Omeka S site context menu witth CSS Editor navigation item highlighted.](modulesfiles/csseditor_contextmenu.jpg)
+![Omeka S site context menu with the CSS Editor entry showing as the active page.](modulesfiles/csseditor_contextmenu.jpg)
 
 The first large text area is where you write your individual styles. Use that text area as you would a stylesheet file. This will load a line in every public page of your chosen Omeka S site, in the head, that looks like this:
 
@@ -38,7 +38,7 @@ You can make your Omeka S site more distinct by using a custom font. [Google pro
 
 For reference, the "Default" theme begins looking like this, using the "Open Sans" font.
 
-![Screenshot of Omeka S site with "Default" theme. All the text us using "Open Sans".](modulesfiles/csseditor_before.jpg)
+![Screenshot of Omeka S site with "Default" theme. All the text is using "Open Sans".](modulesfiles/csseditor_before.jpg)
 
 This tutorial will override "Open Sans" with the "Lato" font family.
 

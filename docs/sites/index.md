@@ -18,7 +18,7 @@ Sites that are not public will have the **private** icon (an eye with a slash th
 
 Clicking on the site title will take you to a summary page for the site which displays the site’s **URL slug**, **title**, **theme**, and the **thumbnail image** associated with the site. You can return to the site list, or "Edit" or "View" the site using buttons in the upper right. You will also see the left-hand menu expand to display the management options for the site.
 
-![show page for the site "What Does This Look Like" indicating that the theme is default and the slug is public views.](../sites/sitesfiles/sites_quickshow.png)
+![show page for the site "Importer Testing" indicating that the theme is default and the slug is "importer-testing".](../sites/sitesfiles/sites_quickshow.png)
 
 ## Add a site
 To create a site, click the "Add new site" button in the upper right-hand corner of the site browse page.

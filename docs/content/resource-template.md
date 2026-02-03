@@ -31,7 +31,7 @@ Note that when you change a user's role, for example from an Author to a Researc
 ## View resource templates
 Clicking on the title of a resource template takes you to a table view of all the properties and property options for that template.
 
-![Template view for the "Postcard" template with properties for title, description, creator, transcript of, and recipient](contentfiles/templates_view.png)
+![Template view for the "Text" template, with properties in a table, including data type and alternate label settings.](contentfiles/templates_view.png)
 
 Each property displays as a row in the table, with columns for:
 

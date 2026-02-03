@@ -22,7 +22,7 @@ To see the details of a job, click on its ID number. On a job’s details page, 
 - **Args**
 - **Log** - click on **view log** to see any error or other messages. 
 
-![The Logs heading with "view logs" below in orange, indicating it is a link](adminfiles/jobs_viewlog.png)
+![The Log "Args" field with content, and with a red "view log" link below, with a blue arrow pointing to it.](adminfiles/jobs_viewlog.png)
 
 !!! note
 	Are your jobs starting and not completing? You might need to [set the path for PHP](../configuration.md#php-path) so that your system can perform the background process.

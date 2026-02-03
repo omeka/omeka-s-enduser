@@ -298,38 +298,41 @@ The Browse preview block has a template option in some themes. For example, the 
 
 Creates an HTML box in which you can add formatted text and links. When you click in the box, a formatting menu will display above the text field. 
 
-Basic block: 
+This is the basic HTML block as it appears when first added to your page: 
 
 ![Page block for HTML content](sitesfiles/sitepg_html.png)
 
-With formatting menu open:
+And the page block with the formatting menu open:
 
-![Page block for HTML content with active field, showing formatting menu](sitesfiles/sitepg_html2.png)
+![Page block for HTML content with active field, showing formatting menu including buttons for paragraph styles, bold and italic text, etc.](sitesfiles/sitepg_html2.png)
 
-You can embed content from elsewhere on the internet using iFrames or other embed codes in the HTML block:
+You can embed content from elsewhere on the internet using iFrames or other embed codes in the HTML block.
 
 1. Click into the HTML block content area to show the formatting menu and then click on the button labeled "Source".  This will open a dialog box where you can write HTML content.
 1. Copy and paste the embed code into the source code editor. For example, here is the embed code from an Omeka screencast hosted on Vimeo. 
-![Source box open with a short paragraph of text and an iframe from Vimeo](sitesfiles/sitepg_htmlSource2.png)
+![Source box open with a short paragraph of HTML-formatted text, and an iFrame from Vimeo](sitesfiles/sitepg_htmlSource2.png)
 1. Click the green "OK" button at the bottom of the editor. 
 1. Your embedded material should show up in the HTML block either as a gray rectangle or as the embedded content. 
-![HTML block showing the text and an embedded video](sitesfiles/sitepg_htmlSource3.png)
+![HTML block showing an embedded video](sitesfiles/sitepg_htmlSource3.png)
+1. Remember to save the page with your changes.
 
 If you have the [Zotero Citations module](../modules/zoterocitation.md) installed, you can insert a Zotero bibliography into this field. Look for the Zotero button in the formatting menu (a big red Z). 
 
 ### IIIF image
 
+Allows you to insert a URL to a IIIF image and have it display on your page.
+
 An IIIF image URL example:
 
 `https://media.nga.gov/iiif/public/objects/1/0/6/3/8/2/106382-primary-0-nativeres.ptif/info.json`
 
-
 ### IIIF presentation
+
+Allows you to insert a URL to a IIIF presentation and have it display on your page.
 
 An IIIF presentation URL example:
 
 `https://media.nga.gov/public/manifests/nga_highlights.json`
-
 
 ### Item with metadata
 
@@ -337,11 +340,11 @@ Displays an item along with all associated metadata (entered when creating or ed
 
 Add attachments in the same manner as the [media embed](site_pages.md#media-embed) page block.
 
-![Item with metadata block with one item attached](sitesfiles/sitepg_iwm.png)
+![Item with metadata block on the page-editing screen, with one item attached](sitesfiles/sitepg_iwm.png)
 
 Many themes will not show the primary media in this display, although some do. Here is the page block in the Center Row theme:
 
-![Item with metadata block with one item attached](sitesfiles/sitepg_iwm2.png)
+![The same Item with metadata block on the public page, displaying information from the attached item](sitesfiles/sitepg_iwm2.png)
 
 ### Line break
 
@@ -512,7 +515,7 @@ If the Omeka theme already displays a table of contents by default, inserting th
 
 The Depth option allows you to set how many levels of child pages you want to display. The default is 1. Please enter a whole number. You cannot leave this blank. 
 
-![Table of content block with the depth option set to 1.](sitesfiles/sitepg_toc.png)
+![Table of content block with the depth option set to 3.](sitesfiles/sitepg_toc.png)
 
 Add and arrange pages using the [Site Navigation](site_navigation.md) settings. If you wish to display pages from across the site, or in a custom order, use the [List of pages block](#list-of-pages). 
 

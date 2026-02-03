@@ -72,7 +72,8 @@ To import items, select "Items" under the "Import type" on the first page.
 
 When you click "Next", the page will load with the following tabs:
 
-### Map to Omeka S data
+### Map to Omeka S data 
+
 This tab displays a table with the columns from your spreadsheet as rows. Each row displays:
 
 - A checkbox
@@ -131,7 +132,7 @@ Column options are in addition to mappings. If you add options without also mapp
 
 To access options for a column of your CSV (represented by a row in the import table), click the wrench icon for that column heading.
 
-![drawer with options as described above](../modules/modulesfiles/csvimport_ItemColOpt.png)
+![drawer with options as described below](../modules/modulesfiles/csvimport_ItemColOpt.png)
 
 This will open a drawer on the right side of the browser window with the following options:
 
@@ -155,11 +156,11 @@ When you select one or more rows in the table (columns from your CSV file), you 
 
 Be sure to click the "Apply Changes" button at the bottom of the drawer in order to save your changes.
 
-### Item import basic settings
+### Basic Settings tab
 
 These settings apply to the entire CSV you are importing. Note these settings can be overwritten by column options in the Map to Omeka S data tab. If a column is mapped for template, class, or owner, those values will override these settings; so will column settings for language and privacy.
 
-![options as described below](../modules/modulesfiles/csvimport_itemsbasic.png)
+![The "Import settings for items" page, showing the Basic Settings tab, with the options listed below. Visibility is set to Public, and the Multivalue separator is ";"; the other options are empty.](../modules/modulesfiles/csvimport_itemsbasic.png)
 
 - **Resource template**: Select a [resource template](../content/resource-template.md) from the drop-down menu to apply to the imported items. You can use the search field at the top of the dropdown to narrow results or find a particular template. Note that resource templates may have required fields, and items will not import without all the required fields of the selected template. For example, if your spreadsheet has entries without a `dcterms:title` value, and the resource template requires titles, those rows will not import and errors will appear in the log.
 - **Class**: Select a class from the drop-down menu to apply to the imported items. You can use the search field at the top of the dropdown to narrow results or find a particular class.
@@ -174,7 +175,7 @@ These settings apply to the entire CSV you are importing. Note these settings ca
 !!! note
 	If you are uploading different formats of data (for example, some text-based creator names and some URI-based creator links) into the same field (`dcterms:creator`, in this case), use two columns (named something helpful like "dcterms:creator-text" and "dcterms:creator-uri") and, upon import, map those two columns to different data types. Use the wrench icon to open up column mappings and select the correct data type for each column.
 
-### Item import advanced settings
+### Advanced Settings tab
 
 There are two options on the "Advanced Settings" tab.
 
@@ -283,11 +284,11 @@ When you select one or more rows in the table (columns from your CSV file), you 
 
 Be sure to click the "Apply changes" button at the bottom of the drawer in order to save your changes.
 
-### Item Set import basic settings
+### Item set import Basic Settings tab
 
 These settings apply to the entire CSV you are importing. Note these settings can be overwritten by column options in the Map to Omeka S data tab. If a column is mapped for template, class, or owner, those values will override these settings; so will column settings for language and privacy.
 
-![options as described below](../modules/modulesfiles/csvimport_ItemSetBasic.png)
+![The "Import settings for item sets" page, showing the Basic Settings tab, with the options listed below. Visibility is set to Public, and the Multivalue separator is ";"; the other options are empty.](../modules/modulesfiles/csvimport_ItemSetBasic.png)
 
 - **Resource template**: Select a resource template from the drop-down menu to apply to the imported item sets. You can use the search field at the top of the dropdown to narrow results or find a particular template.
 - **Class**: Select a class from the drop-down menu to apply to the imported item sets. You can use the search field at the top of the dropdown to narrow results or find a particular class.
@@ -298,7 +299,7 @@ These settings apply to the entire CSV you are importing. Note these settings ca
       - The columns of data in your CSV should be separated by commas, however within those columns you can add a special character to create multiple inputs, for example a semicolon.
 - **Language**: Set the language of the values in the spreadsheet using the appropriate [IETF Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank}.
 
-### Item Set import advanced settings
+### Item set import Advanced Settings tab
 
 The Advanced Settings tab has an option to set the number of rows to process by batch. By default this is set to 20. However, if you are running into errors with an import you may want to set it to 5 or even 1 in order to troubleshoot and determine the source of the error.
 
@@ -402,7 +403,7 @@ Column options are in addition to mappings. If you add options without also mapp
 
 To access options for data in a column of your CSV (represented by a row in the import table), click the wrench icon for that column heading.
 
-![drawer with options as described above](../modules/modulesfiles/csvimport_mediaColOpt.png)
+![drawer with options as described below](../modules/modulesfiles/csvimport_mediaColOpt.png)
 
 This will open a drawer on the right side of the browser window with the following options:
 
@@ -629,11 +630,11 @@ This tab displays an initial dropdown above a table with the columns from your s
 - A trash can to delete mappings
 - A column to show options selected.
 
-![Table as described above, with rows for User, email, and role.](../modules/modulesfiles/csvimport_users.png)
+![Table as described above, with rows for the CSV's columns titled "email", "display name", and "role".](../modules/modulesfiles/csvimport_users.png)
 
 To map a column header to user information, click on the plus symbol button to the left of the column header. This will open a drawer on the right-hand side of the screen.
 
-![A red arrow points to the plus sign button to the left of the word "title"](../modules/modulesfiles/csvimport_usersMapButton.png)
+![A red arrow points to the plus sign button to the right of the "email" column header.](../modules/modulesfiles/csvimport_usersMapButton.png)
 
 The drawer has a dropdown for Users info, with three options:
 
@@ -650,7 +651,7 @@ Role values to use in this import are as follows:
 - `author`
 - `researcher`.
 
-![The same table as above, now with the mapping drawer open and the dropdown activated to show the three options.](../modules/modulesfiles/csvimport_usersMap.png)
+![The same table as above, now with the mapping drawer open and the dropdown activated to show the three options "Email", "Display name", and "Role".](../modules/modulesfiles/csvimport_usersMap.png)
 
 Once you have completed the mappings, click the "Import" button.
 
@@ -684,7 +685,7 @@ To undo an import, click on the CSV Import module and select the "Past Imports" 
 
 Check the "Undo" box in the row of the import which you want to undo, and click "Submit".
 
-![a red arrow points to a checked Undo box on the Past Imports page](../modules/modulesfiles/csvimport_undo.png)
+![a red arrow points to an unchecked "Undo" box on the "Past Imports" page.](../modules/modulesfiles/csvimport_undo.png)
 
 Depending on the size of the import, it may take some time to undo. On complete, the status of the import on the "Past Imports" table will say "Undone" followed by the date the import was reversed.
 

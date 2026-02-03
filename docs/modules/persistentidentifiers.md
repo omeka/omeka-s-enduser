@@ -4,8 +4,8 @@ The [Persistent Identifiers module](https://omeka.org/s/modules/PersistentIdenti
 
 The current PID services available for this module are:
 
-+ EZID (used to mint and manage Archival Resource Keys [ARKs])
-+ DataCite (used to mint and manage Digital Object Identifiers [DOIs]).
++ EZID, used to mint and manage [Archival Resource Keys (ARKs)](https://arks.org/){target=_blank}
++ DataCite, used to mint and manage [Digital Object Identifiers (DOIs)](https://datacite.org/create-dois/){target=_blank}.
 
 ## General settings
 
@@ -15,7 +15,7 @@ After installation, Persistent Identifiers should appear in the left-hand naviga
 + **Assign PID to New Items**: Check this box to automatically newly mint or extract an existing PID and assign to every new item in Omeka S, whether it is created in Omeka S or imported.
 + **Fields with Existing PIDs**: A list of metadata fields separated by commas that may contain PID values within a newly created or imported item. If found, the existing PID will be assigned to the item instead of a new PID.
 
-![Configuration options for general settings](../modules/modulesfiles/PID_settings.png)
+![Configuration options for general settings as listed above.](../modules/modulesfiles/PID_settings.png)
 
 ## EZID configuration
 
@@ -25,7 +25,7 @@ When completing the configuration process for EZID, you will need to provide the
 + **EZID Username**: The EZID user who has permission to create and update identifiers for the above namespace. 
 + **EZID Password**: The password for the above EZID user. Note that for security reasons this password doesn't persist in the form, so if changes are made to the **NAAN & Shoulder Namespace** or **EZID Username** you must also re-enter the password before pressing "submit".
 
-![EZID specific configuration options](../modules/modulesfiles/PID_EZIDconfig.png)
+![EZID specific configuration options as listed above.](../modules/modulesfiles/PID_EZIDconfig.png)
 
 ## DataCite configuration
 
@@ -35,7 +35,7 @@ When completing the configuration process for DataCite, you will need to provide
 + **DataCite Repository ID**: The unique identifier assigned to an institution's DOI repository. 
 + **DataCite Password**: The password associated with the above **DataCite Repository ID**. Note that for security reasons this password doesn't persist in the form, so if changes are made to any field on the DataCite Configuration screen, you must also re-enter the password before pressing "submit".
 
-![DataCite specific configuration options](../modules/modulesfiles/PID_DataCiteconfig.png)
+![DataCite specific configuration options as listed above.](../modules/modulesfiles/PID_DataCiteconfig.png)
 
 ### DataCite required metadata
 
@@ -43,11 +43,13 @@ DataCite requires five descriptive metadata values in order to generate a DOI: T
 
 ## Minting and removing PIDs
 
-To mint a PID from the item edit page, click on an item and select "Edit Item." Navigate to the Advanced tab, and click "Mint PID." 
+To mint a PID from the item editing page, navigate to the Advanced tab and click "Mint PID." 
 
 ![Minting PIDs via Edit Item Advanced tab](../modules/modulesfiles/PID_mint.png)
 
-After a few moments, the ARK or DOI should appear. The "Mint PID" button should now be a "Remove PID" button. Click here to remove the PID.
+After a few moments, the ARK or DOI should appear. 
+
+The "Mint PID" button should now be a "Remove PID" button. Click there to remove the PID if desired.
 
 ![Removing PIDs via Edit Item Advanced tab](../modules/modulesfiles/PID_remove.png)
 
@@ -61,10 +63,8 @@ Click "Save" before navigating away from the page when both minting and removing
 
 You can batch edit PIDs from the Items page. Select the items with PIDs you wish to edit via the checkboxes, then choose "Edit Selected" before pressing "Go."
 
-![Accessing batch edit from Items page](../modules/modulesfiles/PID_batcheditgo.png)
-
 Near the bottom of the Batch Edit Items screen, you should see a Persistent Identifiers row. Here, you can mint or remove PIDs for all selected items. If you are batch editing other fields and would like PIDs to remain unaffected, you can select "[no action]".
 
-![Batch edit items options](../modules/modulesfiles/PID_batchoptions.png)
+![Batch edit items screen, with fields from a number of modules. Near the bottom is a "Persistent Identifiers" entry with three radio button options - "Mint PIDs", "Remove PIDs", and "[No action]". A blue arrow points to this entry.](../modules/modulesfiles/PID_batchoptions.png)
 
 When you have made all desired edits, click "Save" in the upper right corner.

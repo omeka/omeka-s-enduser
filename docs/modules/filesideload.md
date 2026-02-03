@@ -23,7 +23,7 @@ From the Modules page of the left-hand navigation, scroll to File Sideload in th
 
 The File Sideload module has two configuration options.
 
-![An example configuration screen is filled out](../modules/modulesfiles/filesideload_config2.png)
+![An example configuration screen, with fields as listed below, is shown filled out. The Sideload directory is filled out with a relative path concluding in the folder "/sideloadFiles". The Delete sideloaded file? checkbox is checked.](../modules/modulesfiles/filesideload_config2.png)
 
 **Sideload Directory**: the path, **relative to the server root**, of the directory in which the files are stored. This should look something like:
 
@@ -54,7 +54,7 @@ Clicking on either of the buttons adds a Sideload media block. Adding a single f
 - **Title**: Give the media file a new title (optional).
 - **File**: Select a file from this dropdown menu. The menu will load the file names as they appear in the directory. Select one from the dropdown and save your changes.
 
-![Sideload media options with the dropdown open, displaying file names](../modules/modulesfiles/filesideload_addfile.png)
+![Sideload media options as listed above, with the dropdown open, displaying file names. Some options are shown as being in a subfolder, in the form "item123/24750.jpg".](../modules/modulesfiles/filesideload_addfile.png)
 
 Adding media by directory creates three fields:
 
@@ -62,7 +62,7 @@ Adding media by directory creates three fields:
 - **Directory**: Select a folder from this dropdown menu. The menu will load the folder names as they appear in the directory. 
 - **Ingest directory recursively**: Checking this box will include both all media from the sideload folder you chose and all media from all folders inside that folder. 
 
-![Sideload media options with the dropdown open, displaying file names](../modules/modulesfiles/filesideload_directory_addfile.png)
+![Sideload directory media options as listed above, with the dropdown open, displaying directory names. One directory is shown as "item234/item234b", indicating a folder within a folder.](../modules/modulesfiles/filesideload_directory_addfile.png)
 
 Remember that File Sideload has a module-wide setting to delete files when ingested through this process. When you are sure your settings are correct, save the changes to the item. You should see the file or files added as media in the media section of the sidebar.
 

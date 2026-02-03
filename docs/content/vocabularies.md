@@ -1,12 +1,14 @@
 # Vocabularies
 
-Vocabularies are a collection of published RDF metadata Classes and Properties for describing a Resource of a particular type. Linked open vocabularies are created externally to Omeka, and, because they are openly available, can be imported (with some limitations) into Omeka S for use throughout the installation. If you have special and uncommon item types or classes, you may wish to find and import a linked open vocabulary to standardize the description of those particular items. These vocabularies are sometimes referred to as ontologies. 
+Vocabularies are a collection of published RDF metadata Classes and Properties for describing your resources. Linked open vocabularies are created externally to Omeka, and, because they are openly available, can be imported (with some limitations) into Omeka S for use throughout the installation. If you have special and uncommon item types or classes, you may wish to find and import a linked open vocabulary to standardize the description of those particular items. These vocabularies are sometimes referred to as ontologies. 
 
 For example, you can find ontologies for describing [audio signals](https://lov.linkeddata.es/dataset/lov/vocabs/af), [air traffic data](https://lov.linkeddata.es/dataset/lov/vocabs/atd), and [algorithms](https://lov.linkeddata.es/dataset/lov/vocabs/algo), by providing metadata fields particular to those object types. 
 
 > *"A vocabulary in LOV gathers definitions of a set of classes and properties (together simply called terms of the vocabulary), useful to describe specific types of things, or things in a given domain or industry, or things at large but for a specific usage." (Source: <https://lov.linkeddata.es/dataset/lov/about>)*
 
-The most-used [Linked Open Vocabulary](https://lov.linkeddata.es/dataset/lov/about){target=_blank} is Dublin Core Terms (`dcterms:`). 
+The most-used [Linked Open Vocabulary](https://lov.linkeddata.es/dataset/lov/about){target=_blank} for **properties** is Dublin Core Terms (`dcterms:`). This supplies 55 properties (terms) to Omeka S such as "Creator" and "Title", which you can fill out with values. It also supplies 22 classes, which you can use to categorize your resources. 
+
+The most-used vocabulary for **classes** may be Dublin Core Types (`dctype:`), which we build into every installation of Omeka Classic and S. These 12 classes include Image, Moving Image, Sound, Text, Physical Object, etc.
 
 !!! note
 	Vocabularies in Omeka S are not the same thing as controlled vocabularies or authority files, which consist of terms and concepts, rather than Classes and Properties. In Omeka S, controlled vocabularies can be managed using the [Value Suggest](../modules/valuesuggest.md) and [Custom Vocab](../modules/customvocab.md) modules.  
@@ -22,7 +24,7 @@ This [screencast](https://vimeo.com/449764902){target=_blank} walks through mana
 
 ## Vocabularies permissions
 
-Vocabularies are only modifiable by Global Admins and Supervisors. Pre-loaded vocabularies can be edited or deleted, except DC and DC Type, which cannot be edited or deleted.
+Vocabularies are only modifiable by Global Admins and Supervisors. Pre-loaded vocabularies can be edited or deleted, except DC Terms and DC Type, which cannot be edited or deleted.
 
 | Category | Permission | Global Admin | Supervisor | Editor | Reviewer | Author | Researcher |
 |-----|-----|---|---|---|---|---|---|

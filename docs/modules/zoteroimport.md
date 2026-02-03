@@ -17,7 +17,7 @@ You may also want to have the ID for a specific collection and an API key to imp
 
 To import, go to the Zotero Import section on the left-hand navigation of the admin dashboard of your Omeka S install. This will automatically take you to the Import subsection, also in the left-hand navigation.
 
-![Zotero Import options](modulesfiles/zoteroimport_new.png)
+![Zotero Import options as listed below.](modulesfiles/zoteroimport_new.png)
 
 To import from a Zotero library:
 

@@ -95,7 +95,7 @@ Remove an item set by clicking the red delete button (trash can icon). It will s
 
 You can change the order of the item sets by dragging and dropping using the three-bar icon on the left end of the row.
 
-The following image shows a browse item sets public view using the default theme: 
+The following image shows a browse item sets public view using the "Default" theme: 
 
-![browse item sets](../sites/sitesfiles/siteres_ispublic.png)
+![A site's public page showing the item sets available for browsing.](../sites/sitesfiles/siteres_ispublic.png)
 

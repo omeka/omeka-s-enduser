@@ -17,11 +17,11 @@ Once the module is activated, it will show up in the context menu for [each of t
 
 On the page that displays, the main section displays all currently enabled properties. Select properties, by clicking on them in the sidebar, to enable metadata browsing.
 
-![Metadata Browse site options](../modules/modulesfiles/mdbr_sites2.png)
+![Metadata Browse site settings page. The sidebar shows potential properties and the main region shows properties that have already been set: Creator, Date, Publisher, Is Version Of, and Title.](../modules/modulesfiles/mdbr_sites2.png)
 
 Delete any selected properties by clicking the trash can icon. If you accidentally click the delete button, simply click the undo button that replaces it to keep that property.
 
-![A property set to be deleted, showing the undo button](../modules/modulesfiles/mdbr_sites3.png)
+![A property set to be deleted, highlighted in red, showing the undo button.](../modules/modulesfiles/mdbr_sites3.png)
 
 Remember to click the "Save" button to save changes.
 
@@ -43,7 +43,7 @@ Global site settings and admin-side settings can be changed from the module's co
 
 The module has two checkbox configuration options: Global Configuration and Direct Links.
 
-![Metadata Browse configuration settings](../modules/modulesfiles/mdbr_config2.png)
+![Metadata Browse configuration settings, with the two settings as described below. "Use global configuration on admin side" is checked; "Direct Links" is unchecked. A few properties are added to the area below: Date, Rights, Rights Holder.](../modules/modulesfiles/mdbr_config2.png)
 
 ### Global configuration
 The "Use global configuration on admin side" checkbox determines how the properties available for **administrative side** metadata browsing (on items and item sets views) are determined: by aggregating the properties selected on all of the sites in the installation (unchecked), or by limiting to only the properties chosen on this page (checked).

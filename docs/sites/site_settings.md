@@ -98,7 +98,7 @@ You may wish to use the [Table of contents page block](site_pages.md#table-of-co
 
 ### Browse
 
-![browse settings, all empty](../sites/sitesfiles/sites_settingsbrowse.png)
+![Browse settings, all empty or on their default.](../sites/sitesfiles/sites_settingsbrowse.png)
 
 **Restrict browse to attached items** is a checkbox. If checked, the Browse functions of your site will only show items which have been added to a page block. If unchecked, browse pages and blocks on your site will include all items in the Item Pool.
 
@@ -119,7 +119,7 @@ See the ["Sorting" section of the Searching page](../search.md#sorting) for more
 
 ### Show
 
-![Show settings](../sites/sitesfiles/sites_settingShow.png)
+![Show settings, with some customization: "Show attached pages" is checked, while "Value annotations" is set to "Show value annotations (expanded)" and "Exclude resources not in site" is checked.](../sites/sitesfiles/sites_settingShow.png)
 
 **Show attached pages**: When this box is checked, site pages to which an item is attached will display on the public view of that item.
 
@@ -133,7 +133,7 @@ See the ["Sorting" section of the Searching page](../search.md#sorting) for more
 
 ### Search
 
-![search settings, all empty](../sites/sitesfiles/sites_settingssearch.png)
+![The Search settings section, all set to their defaults except under "Search resources" the "item sets" option is also checked - the default is only to have "Site pages" and "items" checked.](../sites/sitesfiles/sites_settingssearch.png)
 
 **Search type** is a dropdown which allows you to set from which site(s) the search bar generates results:
 

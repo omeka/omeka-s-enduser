@@ -34,7 +34,7 @@ To add a link you can use the **Add a custom link** options on the right-hand dr
 
 The **Custom URL** link option, when added to your navigation, have three fields: the link **type** (showing as "Custom URL"), the **label** (the text that will appear in the site navigation menu), and the **URL**. You can also select whether the link will open a new browser window or tab when clicked.
 
-![URL link option with the label "RRCHNM" and URL chnm.gmu.edu](../sites/sitesfiles/sitenav_url.png)
+![URL link option with the label "Back to our website" and URL "ourorganizationhomepage.org"](../sites/sitesfiles/sitenav_url.png)
 
 **Browse** links create a browse page for [resources](../sites/site_resources.md) already associated with your site. There are options to create a browse items page and a browse item sets page.  
 

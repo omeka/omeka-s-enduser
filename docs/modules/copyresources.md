@@ -4,7 +4,7 @@ The [Copy Resources module](https://omeka.org/s/modules/CopyResources){target=_b
 
 Once activated on the [modules](https://omeka.org/s/docs/user-manual/modules/){target=_blank} section of the admin dashboard, Copy Resources inserts a "copy" button into the interface of several pages in the admin side, including when viewing the resource, and on the table of sites, each site's table of pages, and the items and item sets tables. 
 
-![The pages table in the admin side, showing "copy" buttons next to each page in the table.](modulesfiles/copyResources_pages.png)
+![The pages table in the admin side, showing "copy" buttons next to each page in the table. The right-hand drawer is open for the "Welcome" page, showing a "Visibility" dropdown option above the "Confirm copy" button.](modulesfiles/copyResources_pages.png)
 
 Items and item sets will get a new unique identifier, but have all their metadata fields duplicated, including data captured by modules, such as geolocation data in Mapping. Duplicate items will be added to the same item sets as the originals; duplicated resources will be added to the same sites as the originals. However, duplicated items will have no media copied with them.
 
