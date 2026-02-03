@@ -4,8 +4,8 @@ The [Persistent Identifiers module](https://omeka.org/s/modules/PersistentIdenti
 
 The current PID services available for this module are:
 
-+ EZID (used to mint and manage Archival Resource Keys [ARKs])
-+ DataCite (used to mint and manage Digital Object Identifiers [DOIs]).
++ EZID, used to mint and manage [Archival Resource Keys (ARKs)](https://arks.org/){target=_blank}
++ DataCite, used to mint and manage [Digital Object Identifiers (DOIs)](https://datacite.org/create-dois/){target=_blank}.
 
 ## General settings
 
