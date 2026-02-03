@@ -23,7 +23,7 @@ On public pages, site visitors use their mouse or trackpad to navigate within a 
 
 When editing a map in the administrative interface, small white square buttons on the left side of the map allow you to navigate and to edit the map's features. Hover over the buttons with the mouse to view tool-tips.
 
-![Screenshot of the buttons on the map described below](../modules/modulesfiles/Mapping_JustButtons.png)
+![Map navigation buttons as described below](../modules/modulesfiles/Mapping_JustButtons.png)
 
 * **Zoom in**: The small white square with a black plus sign. Each click zooms in one step (between 0 and 19).
 * **Zoom out**: The square with black minus sign. Each click zooms out one step (between 0 and 19).
@@ -39,7 +39,7 @@ When editing a map in the administrative interface, small white square buttons o
 * **Go to the current default view**: The square with a black box around a dot. This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
 * **Clear the default view**: The square with a black "X". This option is only available after you have set a default view. Click to clear pan and zoom preferences and return to the initial global view.
 
-### How to search for mapping data
+### Search for mapping data
 
 Items with Mapping metadata (i.e. with markers or shapes on the map) can be searched with fields that the Mapping module adds to the advanced search fields. The public fields are optional (turned off by default) on [individual sites](../sites/site_settings.md#settings) in their [site settings](#site-wide-settings). 
 
@@ -59,7 +59,7 @@ This information can be set manually using the item's "Mapping" tab via a visual
 
 The item view screen will not show a "Mapping" tab unless there is already geolocation metadata, but one will appear when editing the item. To add a map to an item, enter editing mode and navigate to the "Mapping" tab.
 
-![Screenshot of the Add/Edit Item Page with Mapping tab selected.](../modules/modulesfiles/Mapping_Item_Add.png)
+![The item-editing page with the Mapping tab selected.](../modules/modulesfiles/Mapping_Item_Add.png)
 
 To move the map to where you want to add a location, you can do one of the following:
 
@@ -136,7 +136,7 @@ Note that marker labels have a limit of 255 characters. You will see your labels
 
 If the chosen field in this batch operation does not contain valid entries, the item(s) will be skipped and you will not see an error message. [Batch-editing operations](../content/items.md#batch-editing) do not appear in the Jobs log unless they are "Edit all," so if you have done a selected-items batch-edit you may not be able to trace which items were modified.
 
-![The map-specific batch-editing field, filled out to copy "Latitude/Longitude" values from dcterms:coverage of each item.](modulesfiles/Mapping_batchEdit.png)
+![The map-specific batch-editing field, with nothing filled out.](modulesfiles/Mapping_batchEdit.png)
 
 You may wish to copy your coordinates in one batch operation, then update those markers with labels and images in a second batch operation. Note that if an item has multiple markers, all markers will get updated with identical images and labels. 
 
@@ -172,15 +172,16 @@ You cannot [batch-edit](../content/items.md#batch-editing) mapping values after 
 
 The Mapping module adds a section to each site's "Settings" tab found under "Site admin." 
 
-![Mapping section of Settings tab.](modulesfiles/Mapping_siteSettings.png)
+![The Mapping section of Settings tab, as described below.](modulesfiles/Mapping_siteSettings.png)
 
-You can choose to add or remove mapping-specific search fields from this site's advanced search forms, and enable or disable feature clustering on this site's maps.
-
-You can also choose to display the same basemap for every map on the site. This can be overriden by specific maps' settings. 
+- **Add feature presence to advanced search**: Allow site visitors to search by whether or not an item has location data. 
+- **Add geographic location to advanced search**: Allow site visitors to search with a specific coordinate and a radius to include nearby items. 
+- **Disable clustering of map features**: Enable or disable feature clustering on this site's maps with a checkbox.
+- **Basemap provider**: Display the same basemap for every map on the site. This can be overriden by specific maps' settings. 
 
 ### Map Browse page
 
-![The Map Browse page.](modulesfiles/Mapping_mapBrowsePage.png)
+![The Map Browse page in the The Daily theme. A map showing with one cluster and 5 more individual pins, with search fields showing below: "Search by geographic location" is a category, with "Address", "Radius", and "Unit" fields.](modulesfiles/Mapping_mapBrowsePage.png)
 
 Mapping creates a "Map Browse" page that can be added to each site in its navigation settings. This map has minimal customization options and will show every item in the site that has one or more geolocations, as well as some advanced search fields (including searching by an address with a radius). These search fields are not affected by the site settings. The title of the page will be "Map".
 
@@ -206,15 +207,17 @@ Mapping creates three page blocks you can add to your site pages: "Map by attach
 
 To add a map to a page, go into page editing mode. On the right, under "Add new block", click either the "Map by attachments," "Map by query", or "Map by groups" block. Selecting one will add the map block to the bottom of the page. The blocks include customizable features for the map in collapsable panes. Click the triangles to expand or collapse these fields.
 
-![Screenshot of the Page with Map Block selected. Block includes menu options Default View, Overlays and attachments.](../modules/modulesfiles/Mapping_Page_MapBlock1.png)
+![Page editing screen with the three Map blocks added: "Map by query", "Map by attachments", and "Map by groups". Block includes menu options Default View, Overlays and attachments.](../modules/modulesfiles/Mapping_Page_MapBlock1.png)
 
-The "Map by attachments" and "Map by query" blocks have largely the same settings besides the method for adding items to the map. The "Map by groups" block does not have timeline or overlay options.
+The "Map by attachments" and "Map by query" blocks have largely the same settings besides the method for adding items to the map. 
+
+The "Map by groups" block does not have timeline or overlay options.
 
 #### Default view
 
 This section lets you set the appearance and zoom level of the map. There are three fields and a preview map. Within the preview map are buttons for setting the default zoom and location of the map. If you do not set a default zoom or location, the map will contain all resources when first loaded on the public page.
 
-![Map by attachments block open to Default Settings. There is no information in any field, and the preview map is zoomed in to level 2](modulesfiles/Mapping_BlockDefaultView1.png)
+![Map by attachments block open to the Default View section. The basemap is "Esri.WorldTopoMap", and the zoom levels are at 3 and 17 respectively. The scroll-wheel zoom is set to "Disabled until map click".](modulesfiles/Mapping_BlockDefaultView1.png)
 
 **Basemap provider**: Select from a dropdown of basemaps. Once selected, the preview map will show you the appearance of that map. The default is "OpenStreetMap.Mapnik". These external providers are offered as-is; there is no guarantee of service or speed. 
 
@@ -243,8 +246,6 @@ Within the preview map, there are six buttons:
 The last two options are only available after a default view has been set. 
 
 You must save your default view using the in-map buttons, then save the page. 
-
-![closeup of the mapping buttons with labels added](modulesfiles/Mapping_BlockDefMapButtons.png)
 
 #### Overlays
 
@@ -316,10 +317,10 @@ By looking within this data to find the available properties (such as "name" in 
 * **Show GeoJSON property list?**: Check this box if you wish the pop-ups to display all of the available metadata you have pasted into the field above. If unchecked, the pop-ups will only show the label or comment fields you have chosen; depending on how much information you have included, the pop-ups may become quite long and need to scroll. Note that this will replicate any information you have entered into the label and comment fields; if you check this, you may wish to leave those fields blank.
 
 This is a geoJSON map pop-up with the label and comment selected:
-![The public map with settings as in the above screenshot.](modulesfiles/Mapping_geojsonPublic1.png)
+![The public map with settings as in the above screenshot. A map pin pop-up is showing a title, "Rishworth Sports Club", and text "Squash".](modulesfiles/Mapping_geojsonPublic1.png)
 
 And this is a geoJSON map pop-up with all available properties showing, without a label or comment selected:
-![The public map with settings as in the above screenshot.](modulesfiles/Mapping_geojsonPublic2.png)
+![The public map with settings as in the above screenshot, except with the "Show geoJSON property list?" checkbox checked. The map pin pop-up does not show a title, and shows a location, a sport activity, a latitude and longitude. The text reads "Club Activity Provider: Cragg Vale Tennis Club", etc.](modulesfiles/Mapping_geojsonPublic2.png)
 
 The administrative interface will not preview the map with your GeoJSON data before or after you save the overlay. You will need to go to the public view of the page to see the features that result from your input.
 
@@ -362,7 +363,7 @@ With this block, markers are added to the map by selecting items manually.
 * Drag and drop items in this list to reorder them.
 * Remove items from the list by clicking the red trashcan.
 
-![Screenshot of the map with Add Attachment selected. On the right is a list of items.](../modules/modulesfiles/Mapping_pageAttachments.png)
+![A map with Add Attachment selected. On the right is a list of items.](../modules/modulesfiles/Mapping_pageAttachments.png)
 
 To add multiple items at once, click the "Quick add" slider just above the list of items in the right-hand drawer. This will add a checkbox to the left of each item. Check the boxes of those items you want to add to the map, then click the "Add selected" button at the bottom of the drawer.
 
@@ -376,11 +377,13 @@ The query can be left blank; in this case, the map will show all items added to 
 
 More complicated queries can be set: specific item sets, classes, templates, items from a date range, or items with a specific linked resource (such as a particular Person item in the "Creator" field), for example. 
 
-![The map by query block showing a query for "Has map features", with the sidebar open to the searh query edit interface.](modulesfiles/Mapping_blockquerysidebar.png)
+![The map by query block showing a query for classes Still Image and Image, with the sidebar open to the searh query edit interface.](modulesfiles/Mapping_blockquerysidebar.png)
 
 You can also run a search on your public site, and from the search results page, copy everything in your browser's address bar, starting with the question mark all the way to the end of the search URL (to the right) - for example:
 
-`?fulltext_search=london&resource_class_id[]=33&has_media=1&has_features=1`
+```
+?fulltext_search=london&resource_class_id[]=33&has_media=1&has_features=1
+```
 
 ![The address bar and very top of a search results page.](modulesfiles/sitepg_bpquery.png)
 
@@ -402,7 +405,7 @@ This page block offers common ways that users want to group their items: by clas
 
 This block does not have timeline or overlay settings - only the Default View section, as above, and a Groups section. 
 
-![A map by group block with four pins showing.](modulesfiles/Mapping_groupPublicPin1.png)
+![A map by group block on a public page, with the title "Browse by subject", with four pins showing. One pin pop-up is showing "Subject contains 'design & monuments' In item set 'National Mall Items'" with a button leading to "View all results (139 total)".](modulesfiles/Mapping_groupPublicPin1.png)
 
 The Groups section has two fields to start:
 
@@ -478,7 +481,6 @@ After a group is selected, the map will update to display features for each item
 
 In the image above, the browsing parameters read "Subject contains: politics & protest | In item set: National Mall items". 
 
-
 ### Public view
 
 A map block will display on a public page, item view, or item set view at the full page or block width, subject to your page design settings. If you have settings in the [default view](#default-view) of the map block, or have set [default map bounds for the item](#map-display), these should be applied. Otherwise the map will zoom so that all of the items are visible.
@@ -500,15 +502,15 @@ If you have added a label, it will show the label, as well as representative med
 
 Item mapping marker with label only:
 
-![](../modules/modulesfiles/Mapping_publicLabel.png)
+![Item pin pop-up showing "Black hole of Calcutta" text, with a line below showing "Item: History of Paul Jones, The Pirate." as a link to the item.](../modules/modulesfiles/Mapping_publicLabel.png)
 
 Item mapping marker with label and image:
 
-![](../modules/modulesfiles/Mapping_publicLabelImg.png)
+![Item pin pop-up showing the same information as above, with a thumbnail image, and with another line below "Item:" reading "Media: Illustration on title page of a tall ship at sea", as a link to the media.](../modules/modulesfiles/Mapping_publicLabelImg.png)
 
 Item mapping marker with no label or image:
 
-![](../modules/modulesfiles/Mapping_publicNoLabel2.png)
+![Item pin pop-up showing only "Item: History of Paul Jones, The Pirate".](../modules/modulesfiles/Mapping_publicNoLabel2.png)
 
 #### Timeline public view
 

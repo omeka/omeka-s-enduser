@@ -2,10 +2,6 @@
 
 The [Omeka Classic Importer module](https://omeka.org/s/modules/Omeka2Importer){target=_blank} (a.k.a. the Omeka 2 Importer) enables you to import items and collections from an Omeka Classic 2.x site into an Omeka S installation. The source site needs to be Classic version 2 or greater in order to offer an API endpoint for this module to use. 
 
-Once installed, the Omeka Classic Importer module should appear toward the bottom of the left navigation menu on the main admin dashboard. When selected, there are sub-menu items for **Import** and **Past Imports**. 
-
-![Omeka Classic Importer menu options Import and Past Imports](../modules/modulesfiles/oCi_menu.png)
-
 This module only imports items and their metadata (including tags), attached files, and collections (as item sets). It *will not* import Simple Page content or Exhibit Builder content.
 
 If plugins/modules are installed on both the source site and the target site, Omeka Classic Importer can import module-specific metadata. For example, geolocation data facilitated by the Mapping module in S and the Geolocation plugin in Classic will automatically be imported. PDF Text elements can be imported and mapped to Extract Text fields. The data may not automap properly, so be sure to check the mappings manually.
@@ -15,6 +11,10 @@ If plugins/modules are installed on both the source site and the target site, Om
 
 ## Import
 
+Once installed, the Omeka Classic Importer module should appear toward the bottom of the left navigation menu on the main admin dashboard. When selected, there are sub-menu items for **Import** and **Past Imports**. 
+
+![Omeka Classic Importer menu options Import and Past Imports](../modules/modulesfiles/oCi_menu.png)
+
 From the Import tab you can start new imports. 
 
 You must have the API enabled on the source Omeka Classic installation for the importer to work. To do this, the owner of the origin Omeka Classic installation should go to the API tab under Settings, accessed via the top navigation bar on the administrative dashboard. Ensure that the "Enable API" box is checked.
@@ -22,6 +22,7 @@ You must have the API enabled on the source Omeka Classic installation for the i
 To find the API endpoint of the origin Omeka Classic installation, go to the home page of that installation. Add `/api` to the end of the URL. You should see a page with the message "This is the endpoint URL for [name of origin site]" and links to the site information and available API resources. To confirm that the API is enabled, click on the link for available API resources. If you see `{"message":"API is disabled"}`, you will not be able to import from this site.
 
 ### Enter the API
+
 On the first page of the importer, enter the **Omeka Classic API Endpoint** - the site URL for the API you wish to access (it should end with "api"). Make sure you enter the full URL, beginning with "http", otherwise the importer will not be able to access the items at that site. Click "Next".
 
 ![API import field](../modules/modulesfiles/oCi_enterapi.png)
@@ -44,7 +45,7 @@ This module will preserve item visibility from Classic to S (public or private) 
 * **Import Collections**: To import the collections from the Omeka Classic site to the Omeka S site, as item sets.
 * **Import tag as**: To import Omeka Classic tags, select a property to map them to.
 
-![Basic options for importing](../modules/modulesfiles/oCi_basic.png)
+![Basic settings for an import, as listed above.](../modules/modulesfiles/oCi_basic.png)
 
 #### Map to Omeka S Properties
 This tab features a table for mapping between Omeka Classic elements and Omeka S properties. 
@@ -55,7 +56,7 @@ To clear the default mapping, click the "Clear Defaults" button.
 
 The columns of the table are **Omeka Classic element**, **Mapped properties**, and a checkbox option to **Preserve HTML as media**. Any field that has HTML you would like to maintain in your Omeka S installation, such as line breaks and text styling in the description field, can be imported as an HTML file attached to the item. The field will be imported in plain-text to the metadata and with its formatting as a media.
 
-![Map Omeka properties](../modules/modulesfiles/oCi_mapprop.png)
+![The "Map to Omeka S properties" tab, showing a "Clear Defaults" button at the top and a table of Dublin Core properties below. Each line in the table has an auto-filled matching property, a trash-can icon, and a checkbox for "Preserve HTML as media". The right-hand drawer is open showing all vocabularies with properties.](../modules/modulesfiles/oCi_mapprop.png)
 
 The first set of the table is Dublin Core, followed by Item Type Metadata. The import will also bring in any legacy or additional element sets (for example, Omeka Legacy File), or elements created by Classic plugins (such as a PDF Text section for extracted text). These plugin-based elements may auto-map if you have the equivalent Omeka S module installed (such as Extract Text in this case). 
 
@@ -80,7 +81,7 @@ To map:
 
 Items with the original Classic item type will be imported with the new S class. 
 
-![Resource classes mapping tab](../modules/modulesfiles/oCi_mapclass.png)
+![Classes mapping tab, with a "Clear defaults" button at the top and a table with "Item Type" on the left and "Resource Class" on the right. Each entry in the table has a trash-can icon. Many of the Dublin Core Types are automatically matched; "Oral History" is not mapped.](../modules/modulesfiles/oCi_mapclass.png)
 
 #### Map to Omeka S Templates
 
@@ -94,7 +95,7 @@ To map:
 
 Items with the original Classic item type will be imported with the new S resource template.
 
-![Resource Class mapping tab](../modules/modulesfiles/oCi_mapresource.png)
+![Templates mapping tab, with a "Clear defaults" button at the top and a table with headings Item Type and Resource Template below. Nothing has been automatically mapped.](../modules/modulesfiles/oCi_mapresource.png)
 
 ### Complete import
 When you have finished customizing the mapping, click the "Import" button in the upper right corner of the window.

@@ -125,7 +125,7 @@ When the module is active, it adds additional search options to the Advanced Sea
 
 For each search option, you must select a specific property from the dropdown. For example, if you are using "Duration" from two separate vocabularies, one for film (`time:hasDuration`) and one for events (`dcterms:extent`), you would need to select the correct property from the resource template you want to search. The dropdown will display the original property labels (`Extent` or `hasDuration` in the examples above). If you hover over the properties in the dropdown, it will show you the resource templates that are using that property and to which the search will apply.
 
-![Close up of the "Date comes before" search, displaying the hovertext for the Date property](../modules/modulesfiles/ndt-searchhelper.png)
+![The "Date comes before" search, displaying the dropdown for the Date property](../modules/modulesfiles/ndt-searchhelper.png)
 
 **Timestamp** data has two search options, one for "Date comes before" and "Date comes after". Select the property for timestamp from the dropdown - only properties which are being used for timestamp will appear in the dropdown. 
 
