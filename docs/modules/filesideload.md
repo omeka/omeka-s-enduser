@@ -23,7 +23,7 @@ From the Modules page of the left-hand navigation, scroll to File Sideload in th
 
 The File Sideload module has two configuration options.
 
-![An example configuration screen, with fields as listed below, is shown filled out. The Sideload directory is filled out with a relative path concluding in the folder "/sideloadFiles". The Delete sideloaded file? checkbox is checked.](../modules/modulesfiles/filesideload_config2.png)
+![An example configuration screen, with fields as listed below. The Sideload directory is filled out with a relative path concluding in the folder "/sideloadFiles". The "Delete sideloaded file?" checkbox is checked.](../modules/modulesfiles/filesideload_config2.png)
 
 **Sideload Directory**: the path, **relative to the server root**, of the directory in which the files are stored. This should look something like:
 
@@ -54,7 +54,7 @@ Clicking on either of the buttons adds a Sideload media block. Adding a single f
 - **Title**: Give the media file a new title (optional).
 - **File**: Select a file from this dropdown menu. The menu will load the file names as they appear in the directory. Select one from the dropdown and save your changes.
 
-![Sideload media options as listed above, with the dropdown open, displaying file names. Some options are shown as being in a subfolder, in the form "item123/24750.jpg".](../modules/modulesfiles/filesideload_addfile.png)
+![Sideload media options as listed above, with the dropdown open, displaying file names. Some options are shown as being in a subfolder, indicated by their format — example, "item123/24750.jpg".](../modules/modulesfiles/filesideload_addfile.png)
 
 Adding media by directory creates three fields:
 
