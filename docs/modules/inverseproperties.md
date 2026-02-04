@@ -63,7 +63,7 @@ Once you have finished editing the item, click "Save". The item you added as a l
 
 If you click on the resource you just linked, you should see that the inverse property value was created automatically.
 
-![The item show page for the resource that has been linked. You can see that its "Relation" property has also been filled out, with a link back to the first item. Its thumbnail and title is showing, also with a cube icon.](modulesfiles/inverseProperties_linkedProperty.png)
+![The item show page for the resource that has been linked. Its "Relation" property has also been filled out, with a link back to the first item. Its thumbnail and title are showing, also with a cube icon.](modulesfiles/inverseProperties_linkedProperty.png)
 
 If you delete a value, its inverse will not automatically delete. You must delete each value manually from its own resource.
 
