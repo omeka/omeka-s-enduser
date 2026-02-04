@@ -185,7 +185,7 @@ You will need to save your browsing column changes first, then return to this pa
 ### Password
 On this tab, create a new password. It must be entered twice, in both the New Password and Confirm New Password fields, to save properly.
 
-![A user is being edited on the Password tab, where the "New password" and "Confirm new password" textx fields are empty.](adminfiles/users_password.png)
+![A user is being edited on the Password tab, where the "New password" and "Confirm new password" text fields are empty.](adminfiles/users_password.png)
 
 To see the password requirements, click the arrow next to the New Password field. This will display a list of [requirements](../configuration.md) if any have been configured.
 
