@@ -8,7 +8,7 @@ Note that DSpace Connector only works with DSpace versions 5.6 and higher, inclu
 
 Navigate to the section labelled "DSpace Connector" under Modules.
 
-![Screenshot of the import options for DSpace Connector. Fields are listed in the text below.](../modules/modulesfiles/dspace_import.png)
+![The import options for DSpace Connector. Fields are listed in the text below.](../modules/modulesfiles/dspace_import.png)
 
 On the first form, enter the following information:
 
