@@ -155,7 +155,7 @@ Text fields allow for unformatted text entry.
 
 You can indicate the language for the content of an input using the globe symbol above the input (see the red arrow in the image below). Click on the globe icon to activate a text field, then enter the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes){target=_blank} code for the language in which the text is written.
 
-![A text entry field, with a globe icon to the left, is highlighted in blue with the cursor active in the field. It shows a two-letter language tag that is being applied to the content of the text field below.](contentfiles/items_lang.png)
+![A text entry field, with a globe icon to the left, highlighted in blue with the cursor active in the field. A two-letter language tag input is being applied to the content of the text field below.](contentfiles/items_lang.png)
 
 #### Omeka resource
 
