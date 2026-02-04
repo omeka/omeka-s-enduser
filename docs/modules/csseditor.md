@@ -30,7 +30,7 @@ CSS Editor also allows you to include external stylesheets by entering their URL
 
 To remove external stylesheets, either clear the text inputs, or click on the trash can icon if there are multiple stylesheet fields.
 
-![CSS Editor module interface, cropped to focus on external stylesheet field with remove button (trash can icon) highlighted.](modulesfiles/csseditor_remove.jpg)
+![External stylesheet field within CSS Editor module interface, remove button (trash can icon) highlighted.](modulesfiles/csseditor_remove.jpg)
 
 ## Tutorial: Using a Google webfont
 
