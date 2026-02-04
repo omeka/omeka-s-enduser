@@ -28,7 +28,7 @@ You should see a screen with the following options:
 * **Item Sets** add imported items to a selected [Item Set](../content/item-sets.md), if desired (optional--note that the Item Set must already exist in order to import into it).
 * **Sites**: add imported items to the specified site or sites. Global and user-specific default sites will be preselected here (optional).
 
-![Screenshot of the field options for Fedora Connector, as listed above.](../modules/modulesfiles/fc_options.png)
+![The field options for Fedora Connector, as listed above.](../modules/modulesfiles/fc_options.png)
 
 When the data is complete, press "Submit". You can track the status of the import by navigating to the Fedora Connector > Past Imports page, or on the [Jobs](../admin/jobs.md) section.
 
