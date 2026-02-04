@@ -54,7 +54,7 @@ Clicking on either of the buttons adds a Sideload media block. Adding a single f
 - **Title**: Give the media file a new title (optional).
 - **File**: Select a file from this dropdown menu. The menu will load the file names as they appear in the directory. Select one from the dropdown and save your changes.
 
-![Sideload media options as listed above, with the dropdown open, displaying file names. Some options are shown as being in a subfolder, indicated by their format — example, "item123/24750.jpg".](../modules/modulesfiles/filesideload_addfile.png)
+![Sideload media options as listed above, with the dropdown open, displaying file names. Some options are shown as being in a subfolder, indicated by their format — for example, "item123/24750.jpg".](../modules/modulesfiles/filesideload_addfile.png)
 
 Adding media by directory creates three fields:
 
