@@ -119,7 +119,7 @@ See the ["Sorting" section of the Searching page](../search.md#sorting) for more
 
 ### Show
 
-![Show settings, with some customization: "Show attached pages" is checked, while "Value annotations" is set to "Show value annotations (expanded)" and "Exclude resources not in site" is checked.](../sites/sitesfiles/sites_settingShow.png)
+![Show settings, with some customization: "Value annotations" is set to "Show value annotations (expanded)" and "Exclude resources not in site" is checked.](../sites/sitesfiles/sites_settingShow.png)
 
 **Show attached pages**: When this box is checked, site pages to which an item is attached will display on the public view of that item.
 
