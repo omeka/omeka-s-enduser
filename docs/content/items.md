@@ -151,7 +151,7 @@ Text fields allow for unformatted text entry. No markup is allowed in these fiel
 
 You can indicate the language for the content of a text input using the globe symbol above the input (see the image below). Click on the globe to activate a text field, then enter the [IETF two-letter Language tag](https://en.wikipedia.org/wiki/IETF_language_tag){target=_blank} code for the language in which the text is written.
 
-![A text entry field, with a globe icon to the left, is highlighted in blue with the cursor active in the field. It shows a two-letter language tag that is being applied to the content of the text field below.](contentfiles/items_lang.png)
+![A text entry field, with a globe icon to the left, highlighted in blue with the cursor active in the field. A two-letter language tag input is being applied to the content of the text field below.](contentfiles/items_lang.png)
 
 #### Omeka resource
 
