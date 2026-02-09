@@ -102,11 +102,13 @@ Once you have correctly configured all of the technical components of your Omeka
 
 1. Download the latest release from the release page.
 1. Make a copy of your `/config` directory. You will need to restore your `local.config.php` and `database.ini` files from that copy.
+1. Make a copy of your `.htaccess` file (in the root directory) if you have changed it, such as by [turning on error logging](errorLogging.md).
 1. Make a copy of your `/modules` and `/themes` directories.
 1. Make a copy of your `/files` directory.
 1. Remove all Omeka S files, and replace them with the files from the updated zip file.
-1. Replace your original `/config/local.config.php` and `/config/database.ini` file, and the `/modules`, `/themes`, and `/files` directories that you copied.
-    - For significant version updates, you may also have to install an updated version of your modules and themes. The release notes for the version will indicate whether or not those updates will be likely. Additionally, once you complete your migrations using your browser, the modules and themes that require new versions will be clearly marked on their respective pages.
+1. Replace your original `/config/local.config.php`, `/config/database.ini`, and `.htaccess` files.
+1. Replaxe your original `/modules`, `/themes`, and `/files` directories.
+    - For significant version updates, you may also have to install an updated version of your modules and themes. The release notes for the core version will indicate whether or not those updates will be likely. Once you complete your migrations using your browser, the modules and themes that require new versions will be clearly marked on their respective pages. The Modules page in your installation will tell you what needs to be updated; the Themes page under any of your Sites will indicate active themes that need updating. 
 1. In your web browser, go to your site's admin page (`/myomekas/admin`) and run any migrations that are needed.
 
 ### Update from GitHub
