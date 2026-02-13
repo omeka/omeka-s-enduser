@@ -75,7 +75,7 @@ owner_id=2
 
 **Format**: You can export information into a CSV or into a JSON-LD file (file extensions `.csv` or `.json`). Either choice will come wrapped in a ZIP file for download. 
 
-** Reference by**: This field is an option for CSV exports. For resources, you can either fill fields with absolute URLs (such as "https://yourinstallation.org/api/items/123") or with internals IDs only. This will affect fields for files, such as the fields with media derivatives (which might look like "https://yourinstallation.org/files/large/123abc.png").
+**Reference by**: This field is an option for CSV exports. For resources, you can either fill fields with absolute URLs (such as "https://yourinstallation.org/api/items/123") or with internals IDs only. This will affect fields for files, such as the fields with media derivatives (which might look like "https://yourinstallation.org/files/large/123abc.png").
 
 **Multivalue separator**: This field is an option for CSV exports. The default character is a vertical pipe (|) character. You can change this if desired. Other common separators include commas and semi-colons; we recommend choosing a character that does not appear in the dataset. 
 
