@@ -1,6 +1,6 @@
 site_name: Omeka S User Manual
 theme:
-    name: 'readthedocs'
+    name: 'material'
     custom_dir: 'omeka/'
     include_homepage_in_sidebar: true
 site_url: 'https://omeka.org/s/'

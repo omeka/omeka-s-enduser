@@ -1,18 +1,7 @@
-a {
-    color: #d60a0a;
-}
-
-a:hover,
-a:active {
-    color: #A91919;
-}
-
-a:visited {
-    color: #ba1c1c;
-}
-
-.rst-content code {
-color:revert!important;
+:root {
+    --md-primary-fg-color: #404e61;
+    --md-typeset-a-color: #A91919;
+    --md-accent-fg-color: #e34545;
 }
 
 .wy-side-nav-search {
@@ -37,32 +26,10 @@ color:revert!important;
     background-color: #A91919;
 }
 
-.wy-menu-vertical ul.current>li.current>ul.current> li a:hover, .wy-menu-vertical ul.current>li.current>a.current:hover {
-	color:#404040 !important;
-}
-
 .wy-menu-vertical a:visited {
     color: #b3b3b3;
 }
 
-.wy-nav-content {
-	max-width:1400px;
-}
-
-.wy-nav-content img {
-	border:1px solid #000000;
-	margin:0 auto;
-	display:block;
-}
-
-.wy-nav-content div[role="main"] a {
-  border-bottom: 1px dotted;
-}
-
-.wy-nav-content div[role="main"] a:hover,
-.wy-nav-content div[role="main"] a:active {
-  border-bottom: 1px solid;
-}
 
 /* Workaround for mkdocs RTD theme bug: apply theme styles */
 .rst-content table {
@@ -87,27 +54,22 @@ color:revert!important;
     vertical-align: middle;
 }
 
-.rst-content code, .rst-content tt, code {
-	font-size:revert;
-	padding:1px 2px;
+#iconfonts th:first-child,
+#iconfonts td:first-child {
+    text-align: center;
 }
 
-footer {
-	color:#111;
+.o-icon-bars:before {
+    content: "\f0c9";
 }
 
-.rst-content .note .admonition-title {
-	background-color:#1C5982;
+header a:link,
+header a:visited {
+    color: #fff;
 }
 
-.rst-content .note.admonition a {
-	color:#C3392C;
-}
-
-.wy-nav-top {
-background:#404E61;
-}
-
-.wy-nav-top a, .wy-nav-top a:visited {
-color:#fff;
+.headerlink {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 16px;
 }
