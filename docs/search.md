@@ -146,7 +146,7 @@ Clicking the advanced search link loads a new page with three options for search
 
 ### Style the public views
 
-You can style, hide, and emphasize search fields by using CSS. Each entry has a custom identifier, such as the `div` with "has_media_field", within the "advanced-search-content" class `div`. You can style these options using the [CSS Editor module](../modules/csseditor) or by modifying the code of your installation.  
+You can style, hide, and emphasize search fields by using CSS. Each entry has a custom identifier, such as the `div` with "has_media_field", within the "advanced-search-content" class `div`. You can style these options using the [CSS Editor module](../modules/csseditor.md) or by modifying the code of your installation.  
 
 ## Sorting
 
