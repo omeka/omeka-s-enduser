@@ -379,4 +379,4 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 
 You can request that new vocabularies be added to this module. Get in touch with the Omeka team on [the module's dedicated GitHub repository](https://github.com/omeka-s-modules/ValueSuggest){target=_blank}, by creating an issue and sharing the vocabularies you would like to see added. 
 
-You may be interested in using [the NDE Termennetwerk module](github.com/omeka-s-modules/NdeTermennetwerk/){target=_blank}, which is a fork of this module specifically for supplying [Dutch Digital Heritage Network terms](https://termennetwerk.netwerkdigitaalerfgoed.nl/en){target=_blank}. 
+You may be interested in using or forking [the NDE Termennetwerk module](https://github.com/omeka-s-modules/NdeTermennetwerk/){target=_blank}, which is a fork of this module specifically for supplying [Dutch Digital Heritage Network terms](https://termennetwerk.netwerkdigitaalerfgoed.nl/en){target=_blank}. 
