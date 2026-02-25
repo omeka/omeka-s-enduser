@@ -1,6 +1,8 @@
 # ArchivesSpace Connector
 
-The [ArchivesSpace Connector module](https://omeka.org/s/modules/ASpaceConnector){target=_blank} allows you to connect an Omeka S instance to a [ArchivesSpace repository](https://archivesspace.org){target=_blank} to import items and item sets from that repository. In addition to importing information, the Omeka S item will include a link back to the original item. This allows you to [refresh the information from the source when desired](#update-imported-resources).
+The [ArchivesSpace Connector module](https://omeka.org/s/modules/ASpaceConnector){target=_blank} allows you to connect an Omeka S instance to a [ArchivesSpace repository](https://archivesspace.org){target=_blank} to import items and item sets from that repository. This module works in conjunction with the [Hierachy module](hierarchy.md) to build and maintain a structured tree of collections and containers from ArchivesSpace, faithfully representing your archival arrangements within Omeka. 
+
+In addition to importing information, the Omeka S item will maintain a connection back to the original source material, which allows you to [refresh the information from the source when desired](#update-imported-resources). 
 
 Note that Omeka S cannot import digital files from ArchivesSpace at this time, only metadata. 
 
@@ -10,7 +12,9 @@ This connector relies on the ArchivesSpace API and its configuration. You will n
 
 ## Configure your ArchivesSpace installation
 
-First, ensure your ArchivesSpace website has the API enabled. This may not be possible if you are using a hosted instance of ArchivesSpace. Verify that the API works by entering this URL into your browser and seeing what happens. 
+First, ensure your ArchivesSpace website has the API enabled. This may not be possible if you are using a hosted instance of ArchivesSpace. 
+
+The link should start with `https://` and end with `/api`. Verify that the API works by entering this URL into your browser. If it works, you may see some JSON-formatted information including the key "archivesSpaceVersion".
 
 Next, we recommend your collections be designed to accommodate Omeka S's data model. 
 
@@ -44,14 +48,14 @@ In Omeka S, navigate to the section labelled "ArchivesSpace Connector" under Mod
 
 On the first form, enter the following information:
 
-* **ArchivesSpace API URL**: the entire URL, including the `https://`. This should end with `/api`.
+* **ArchivesSpace API URL**: The entire URL, including the `https://`. This should end with `/api`.
 * **ArchivesSpace target path**: The portion of the URL for a specific collection. This will be in the form of `/repositories/1/resource/a`. 
-* **Maintain collection hierarchy**: A checkbox to enable the import's connection with the Omeka S Hierarchy module. If unchecked, item sets will not be created with this import. 
+* **Maintain collection hierarchy**: A checkbox to enable the import's connection with the Omeka S Hierarchy module. If unchecked, item sets will not be created with this import, and no hierarchy will be created via the [Hierarchy module](hierarchy.md). 
 * **Omeka item level**: Choose which of ArchivesSpace's object options will be imported as Omeka S items. You can choose "Items," "Files," or both. If you choose Items, higher-level containers objects (including Files) will be imported as Omeka item sets. 
-* **Delete missing items on update**: A checkbox to change how re-runnning an import will behave. If checked, an item created on an earlier import but deleted in ArchivesSpace will be deleted in Omeka. If unchecked, updates will not delete missing objects. 
-* **Comment**: A text field to provide a reminder to yourself or others about the detais of this import.
+* **Delete missing items on update**: A checkbox to change how re-running an import will behave. If checked, an item created on an earlier import but deleted in ArchivesSpace will be deleted in Omeka. If unchecked, updates will not delete missing objects. 
+* **Comment**: A text field to provide a reminder to yourself or others about the details of this import.
 * **Resource template**: You can choose to apply one resource template to all of the items and item sets created by the import process. If you wish to use more than one (for example, one for created items and another for created item sets) you can batch-edit the resources after the import has completed, by using the links in the Past Imports table (see below). 
-* **Sites**: Add imported resources to the following sites immediately. This field loads all sites by default. 
+* **Sites**: Add imported resources (items, item sets, and hierarchies) to the following sites immediately. This field loads all sites by default. Remove them by clicking on the X; add sites by clicking in the field - a dropdown will appear. 
 
 Click the "Import" button. If the information above has been correctly entered, you will see a new page with a green banner at the top indicating the Job number of the import. 
 
