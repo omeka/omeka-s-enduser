@@ -105,6 +105,9 @@ Note that in the following image, the grouping label is shown in the hierarchy o
 
 ![A grouping page showing information about the attached item set.](modulesfiles/hierarchy_groupingPage.png)
 
+!!! note
+	A hierarchical grouping set to an item set, if the "Link directly" setting above is checked, will link even to item sets that are empty. This may be useful if your item sets have lots of metadata - for example, if you are using the [ArchivesSpace Connector](aspaceconnector.md) to import many archival container objects with descriptive arrangement information, you may have 4 empty item sets above a "folder" level item set that contains items. These links will always show item sets with 0 items. Depending on the theme (such as Default), the items (or lack of items) contained in the item set may be displayed prominently. We recommend finding a theme that suits the collections of your site. Also consider removing the item sets from the hierarchy if you do not want them to be displayed when they have no items. You can add them later, after adding items to them. 
+
 ## Display hierarchies on a site
 
 Public pages will display the hierarchy as a tree. Groupings with items in them will be links; groupings without any items will be displayed in plain text. 
