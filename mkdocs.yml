@@ -3,6 +3,8 @@ theme:
     name: 'material'
     custom_dir: 'omeka/'
     include_homepage_in_sidebar: true
+    features: 
+      - navigation.path
 site_url: 'https://omeka.org/s/'
 repo_url: 'http://github.com/omeka/omeka-s-enduser'
 extra_css:
