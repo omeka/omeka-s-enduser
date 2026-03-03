@@ -1,10 +1,10 @@
 # ArchivesSpace Connector
 
-The [ArchivesSpace Connector module](https://omeka.org/s/modules/ASpaceConnector){target=_blank} allows you to connect an Omeka S instance to a [ArchivesSpace repository](https://archivesspace.org){target=_blank} to import items and item sets from that repository. This module works in conjunction with the [Hierachy module](hierarchy.md) to build and maintain a structured tree of collections and containers from ArchivesSpace, faithfully representing your archival arrangements within Omeka. 
+The [ArchivesSpace Connector module](https://omeka.org/s/modules/ASpaceConnector){target=_blank} allows you to connect an Omeka S instance to a [ArchivesSpace repository](https://archivesspace.org){target=_blank} to import items and item sets from that repository. This module works in conjunction with the [Hierarchy module](hierarchy.md) to build and maintain a structured tree of collections and containers from ArchivesSpace, faithfully representing your archival arrangements within Omeka. 
 
-In addition to importing information, the Omeka S item will maintain a connection back to the original source material, which allows you to [refresh the information from the source when desired](#update-imported-resources). 
+After importing information, Omeka S will maintain a connection back to the original source material, which allows you to [refresh the information from the source when desired](#update-imported-resources). 
 
-Note that Omeka S cannot import digital files from ArchivesSpace at this time, only metadata. 
+Note that Omeka S cannot import digital materials from ArchivesSpace at this time, only textual metadata. 
 
 This connector relies on the ArchivesSpace API and its configuration. You will need an ArchivesSpace installation with a public API, and a precise set of configurations in your account to import materials correctly.
 
@@ -26,30 +26,28 @@ Your lowest-level ArchivesSpace objects should be either "files" or "items". The
 
 If the collection is described to a higher level, you can choose whether "files" in ArchivesSpace become Omeka items or item sets. This can allow you to later process more materials and include them at the item level while matching the first import. If you reconfigure your ArchivesSpace materials (such as changing "file" objects to "item" objects) we recommend undoing the original import and starting fresh. 
 
-Note that Omeka S cannot import digital files from ArchivesSpace at this time, only metadata. 
-
-### Metadata replication
+### Metadata inheritance
 
 ArchivesSpace has a configuration setting, enabled by default, to allow higher-level metadata to display on lower-level objects: "Inheritance". When this is active, the API output of ArchivesSpace sends information without context: that is, a collection-level extent will be duplicated in the metadata for all its lower-level objects that do not have their own extent - but it is not represented as "From the collection" in the API. 
 
-Thus, we recommend turning this setting off when importing into Omeka, to ensure metadata is not replicated out of context. You can read about how to disable this setting in your installation using the [ArchivesSpace technical documentation](https://archivesspace.github.io/tech-docs/architecture/public/){target=_blank} - look for the "Inheritance" section. The [file to be edited is called `config-defaults.rb`](https://github.com/archivesspace/archivesspace/blob/master/common/config/config-defaults.rb){target=_blank}. 
+Thus, we recommend turning this setting off when importing into Omeka, to ensure metadata is not replicated out of context. You can read about how to disable this setting in your installation in the [ArchivesSpace technical documentation](https://archivesspace.github.io/tech-docs/architecture/public/){target=_blank} - look for the "Inheritance" section. The [file to be edited is called `config-defaults.rb`](https://github.com/archivesspace/archivesspace/blob/master/common/config/config-defaults.rb){target=_blank}. 
 
 ## Configure your Omeka installation
 
-The ArchivesSpace module has no configuration settings. It does not add any site-specific settings. 
+The ArchivesSpace module has no configuration settings, and it does not add any site-specific settings. 
 
-We recommend installing and activating the Hierarchy module to best utilize the functionality of this connector. Hierarchies will automatically be created to represent the ArchivesSpace organizational system and will help you manage the item sets that are created with each import. 
+We recommend installing and activating the Hierarchy module to optimize the use of this connector. Hierarchies will automatically be created to represent your ArchivesSpace organizational system and will help you manage the item sets that are created with each import. 
 
 ## Import collections
 
-In Omeka S, navigate to the section labelled "ArchivesSpace Connector" under Modules.
+In Omeka S, navigate to the section labelled "ArchivesSpace Connector" under Modules. You will see the "Import" screen at first.
 
 ![The import options for the ArchivesSpace Connector. Fields are listed in the text below.](modulesfiles/aspace_import.png)
 
-On the first form, enter the following information:
+On the import form, enter the following information:
 
 * **ArchivesSpace API URL**: The entire URL, including the `https://`. This should end with `/api`.
-* **ArchivesSpace target path**: The portion of the URL for a specific collection. This will be in the form of `/repositories/1/resource/a`. 
+* **ArchivesSpace target path**: The portion of the URL for a specific collection. This will be in the form of `/repositories/1/resource/1`. 
 * **Maintain collection hierarchy**: A checkbox to enable the import's connection with the Omeka S Hierarchy module. If unchecked, item sets will not be created with this import, and no hierarchy will be created via the [Hierarchy module](hierarchy.md). 
 * **Omeka item level**: Choose which of ArchivesSpace's object options will be imported as Omeka S items. You can choose "Items," "Files," or both. If you choose Items, higher-level containers objects (including Files) will be imported as Omeka item sets. 
 * **Delete missing items on update**: A checkbox to change how re-running an import will behave. If checked, an item created on an earlier import but deleted in ArchivesSpace will be deleted in Omeka. If unchecked, updates will not delete missing objects. 
@@ -72,11 +70,11 @@ To confirm that the import has been successful, you can click on any of the impo
 
 Once you have confirmed that the hierarchy has been created successfully, check that it has been added to each site you specified in the import settings. 
 
-Then, ensure that the site-specific settigs for hierarchies is how you would wish your ArchivesSpace hierarachies to display. For example, you may not wish to show item counts if your imports have no objects imported as items. You may also wish to ensure that groupings' display pages are disabled and that hierarchies link directly to item sets instead, to show all imported metadata. 
+Then, ensure that the site-specific settigs for hierarchies is how you would like your ArchivesSpace hierarachies to display. You likely want to disable groupings' display pages so that hierarchies link directly to item sets and show all imported metadata. You may not want to show item counts if your imports have no objects imported as items.  
 
 ## Past Imports
 
-The "Past Imports" page displays a table of past ArchivesSpace imports, with the **Job ID** for the import, a radial option to **Undo** or **Re-run** the import, the repository’s **ArchivesSpace Collection** with a link to the API output for comparison (displayed as collection name if found), any **Comment** set to import, the number of **Resources** imported with a link to the advanced search results, the **Date** of the import, the import **Status**, and the **Owner** who initiated the import.
+The "Past Imports" page displays a table of existing ArchivesSpace connections, with the **Job ID** for the import, a radial option to **Undo** or **Re-run** the import, the repository’s **ArchivesSpace Collection** with a link to the API output for comparison (displayed as collection name if found), any **Comment** set to import, the number of **Resources** imported with a link to the advanced search results, the **Date** of the import, the import **Status**, and the **Owner** who initiated the import.
 
 ![Table of past imports.](modulesfiles/aspace_past.png)
 
@@ -84,8 +82,10 @@ You can see the API output directly by clicking on the links under the "Archives
 
 ## Update imported resources
 
-To update resources created using the ArchivesSpace Connector, simply check "Re-run" and then click "Submit" on the "Past Imports" page. The resources will be updated, not re-imported. This allows you to use the Connector to sync data between ArchivesSpace and Omeka S installations. You can re-run more than one import at a time. You cannot change import settings when re-running an import. 
+To update resources created using the ArchivesSpace Connector, simply check "Re-run" and then click "Submit" on the "Past Imports" page. The resources will be updated, not re-imported. This allows you to use the Connector to sync data between ArchivesSpace and Omeka S installations. You can re-run more than one import at a time. 
+
+You cannot change import settings when re-running an import. 
 
 ## Undo an import
 
-You can view past imports from the "Past Imports" page. To undo a completed import and remove all associated resources, change the radial button for each import you wish to undo and click the "Submit" button. This will also delete any hierarchy that was created for the import. 
+You can view existing connections from the "Past Imports" page. To undo a completed import and remove all associated resources, change the radial button for each import you wish to undo and click the "Submit" button. This will also delete the hierarchy that was created for the import. 
