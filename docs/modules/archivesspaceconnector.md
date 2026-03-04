@@ -1,6 +1,6 @@
 # ArchivesSpace Connector
 
-The [ArchivesSpace Connector module](https://omeka.org/s/modules/ASpaceConnector){target=_blank} allows you to connect an Omeka S instance to a [ArchivesSpace repository](https://archivesspace.org){target=_blank} to import items and item sets from that repository. This module works in conjunction with the [Hierarchy module](hierarchy.md) to build and maintain a structured tree of collections and containers from ArchivesSpace, faithfully representing your archival arrangements within Omeka. 
+The [ArchivesSpace Connector module](https://omeka.org/s/modules/ArchivesspaceConnector){target=_blank} allows you to connect an Omeka S instance to a [ArchivesSpace repository](https://archivesspace.org){target=_blank} to import items and item sets from that repository. This module works in conjunction with the [Hierarchy module](hierarchy.md) to build and maintain a structured tree of collections and containers from ArchivesSpace, faithfully representing your archival arrangements within Omeka. 
 
 After importing information, Omeka S will maintain a connection back to the original source material, which allows you to [refresh the information from the source when desired](#update-imported-resources). 
 

@@ -43,7 +43,7 @@ nav:
     - Modules:
         - modules/index.md
         - modules/activitylog.md
-        - modules/aspaceconnector.md
+        - modules/archivesspaceconnector.md
         - modules/collecting.md
         - modules/copyresources.md
         - modules/csseditor.md
