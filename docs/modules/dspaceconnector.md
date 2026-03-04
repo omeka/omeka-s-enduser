@@ -1,6 +1,6 @@
 # DSpace Connector
 
-The [DSpace Connector module](https://omeka.org/s/modules/DspaceConnector){target=_blank} allows you to connect an Omeka S instance to a [DSpace repository](https://duraspace.org/dspace/){target=_blank} to import items from that repository. In addition to importing information, the Omeka S item will include a link back to the original item. This allows you to [refresh the information from the source when desired](#update-imported-resources).
+The [DSpace Connector module](https://omeka.org/s/modules/DspaceConnector){target=_blank} allows you to connect an Omeka S instance to a [DSpace repository](https://duraspace.org/dspace/){target=_blank} to import items from that repository. In addition to importing information, the Omeka S item will maintain a connection back to the original item. This allows you to [refresh the information from the source when desired](#update-imported-resources).
 
 Note that DSpace Connector only works with DSpace versions 5.6 and higher, including DSpace 7.x. This connector relies on the DSpace API and its site-by-site configuration.
 
