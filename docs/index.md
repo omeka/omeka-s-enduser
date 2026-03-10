@@ -22,3 +22,8 @@ Screencasts to supplement the documentation are linked from relevant pages, and 
 
 <div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/241702586?h=aa5b5593c4" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <p><a href="https://vimeo.com/241702586">Omeka S Tour</a> from <a href="https://vimeo.com/omeka">Omeka</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+**Contributing to the user manual**
+You can find information on how to contribute changes, ask questions, and lodge issues on [the Github repository for this user manual](https://github.com/omeka/omeka-s-enduser){target=_blank}.
+
+We use external technology, MkDocs, to generate our user manual. We are working to make both the manual and our language and images within it more accessible. Please get in contact if you have any problems, or suggestions to improve the accessibility of this documentation.
