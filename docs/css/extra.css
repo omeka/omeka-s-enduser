@@ -1,7 +1,7 @@
 :root {
     --md-primary-fg-color: #404e61;
     --md-typeset-a-color: #A91919;
-    --md-accent-fg-color: #e34545;
+    --md-accent-fg-color: #dd3131;
 }
 
 .wy-side-nav-search {
@@ -72,4 +72,22 @@ header a:visited {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 16px;
+    min-width: 24px;
+    text-align: center;
+    opacity: 1 !important;
+    text-decoration: none !important;
+}
+
+.md-sidebar__scrollwrap {
+    scrollbar-color: #707070 #0000;
+}
+
+.md-search__form:hover {
+    background-color: #00000042;
+    box-shadow: 0 0 0 1px inset #cccc;
+}
+
+.md-typeset a:focus, 
+.md-typeset a:hover {
+    text-decoration: underline;
 }
