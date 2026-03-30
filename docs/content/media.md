@@ -96,6 +96,16 @@ If you wish your item to have a generic thumbnail (such as an icon of a book, or
 
 Thumbnails selected through the Advanced tab of an item edit screen (from an installation's Assets collection) will override any other thumbnails that have been generated for the item from its media.
 
+Three thumbnails are created for each item with an acceptable media type: 
+
+- a large derivative, with the original dimension ratio but with a maximum largest-side size of 800 pixels
+- a medium derivative, with the original dimension ratio but with a maxmimum largest-side size of 200 pixels
+- a square derivative, with its smallest side set to 200 pixels and its largest side cropped down to the center 200 pixels.
+
+The large thumbnail is shown on most item-view and media-view pages, with a link to the original unedited file. The square or medium thumbnails are used, depending on the theme & other settings, in browsing and search-results lists, map pins, etc. Themes may also display these images smaller than their file dimensions. 
+
+These dimensions are the default in all newly-created S installations but [can be changed by edited the `config` file](../configuration.md#thumbnails). The square thumbnail will always crop the larger side, and the medium thumbnail will always resize by the smaller side. 
+
 ### File sizes
 
 Omeka S imposes no file size limitations. Your server, however, may have restrictions on file upload sizes or speeds that may be causing problems. These limitations vary from server to server and we cannot change this for you. If you have a problem uploading media, please first check with your hosting service or your local server administrator.
