@@ -41,6 +41,8 @@ The **page title** is required and will display on browser tabs and be sent in t
 
 Use the **resource type** dropdown to select the resource type that you would like to let users browse on this page: Items, Item Sets, or Media. This cannot be edited after page creation.
 
+Then, choose the **thumbnails** this Faceted Browse page will display. You can choose [square (cropped) thumbnails or medium (uncropped, original-ratio) thumbnails](../content/media.md#media-thumbnails) for items and item sets displayed in the table. Leaving this on "Default" will display whichever thumbnails are preferred by your theme. 
+
 Select "Save and... Stay on this page" to continue creating the faceted browse.
 
 You can also save your edits and leave without working on categories and facets by selecting "Save and... Return to pages".
