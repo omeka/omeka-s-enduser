@@ -254,6 +254,8 @@ If the item is not approved, you should leave a note in the item or record to di
 
 Click “save” to ensure your changes are saved.
 
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1192402312?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="DataScribe- How to Review"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
 ## Export a dataset 
 
 You can begin exporting your dataset as soon as you have at least one approved item. First you need to validate the dataset. To do this, go to the “More Actions” dropdown in the upper right-hand corner of the browser window. Select “Validate dataset”.
