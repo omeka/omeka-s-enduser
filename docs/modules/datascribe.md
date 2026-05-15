@@ -154,6 +154,8 @@ In a DataScribe project you may need to use the same or similar forms for multip
 
 Note that you can only import a form when you are adding a new dataset. You can’t import a form to an existing dataset. 
 
+<div style="padding:68.15% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1192402311?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Export and Import Forms in DataScribe"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
 #### Export a dataset form
 
 Go to the dataset where you have already built the form you want to use or modify. Scroll all the way to the bottom of the dataset page. In the right hand drawer there is a heading for “Export form”. Below the heading is a link with the text “Click to export form (JSON)”.
@@ -173,6 +175,8 @@ Towards the bottom of the "Add Dataset" form, there is an option to import a for
 When you go in to edit your new dataset, you should now see the form you imported. From here, you can also add, delete, or modify fields as needed for this specific dataset.
 
 ## Sync a dataset
+
+<div style="padding:60.52% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1192402310?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="DataScribe - Sync Dataset"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 Syncing updates the dataset with the items currently in the Omeka S item set. Make sure you synchronize your datasets and item sets frequently, especially any time items are added or removed from the item set in the Omeka S installation.
 
@@ -218,6 +222,8 @@ In the top right corner, click ‘"Save And..." to either stay on the record if 
 
 Back on the records page, there is a drop-down menu on the right-side panel under Item Actions for "Submission Status". Click on that to select "Submit For Review" and you are done.
 
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1192402313?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="How to Transcribe with DataScribe"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
 ### Transcribe non-digitized sources 
 
 [See the tutorial on the wiki](https://raw.githubusercontent.com/wiki/omeka-s-modules/Datascribe/Site-docs/resources/tutorials/nondigitizedsources.md){target=_blank}.
@@ -261,6 +267,8 @@ Click “save” to ensure your changes are saved.
 You can begin exporting your dataset as soon as you have at least one approved item. First you need to validate the dataset. To do this, go to the “More Actions” dropdown in the upper right-hand corner of the browser window. Select “Validate dataset”.
 
 When you click this option, a drawer opens up explaining what the validation does. To validate the dataset, click the button in the drawer. You can refresh the page and check the timestamp of the most recent validation in the Dataset Metadata drawer to ensure that it has run properly.
+
+<div style="padding:73.62% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1192400871?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="DataScribe - Export Data"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 Once the data is validated, you can export your dataset. From the “More actions” dropdown, select “Export dataset.” Click the export dataset button and wait for the job to finish. You can see the timestamp of the last export in the Dataset metadata drawer.
 
