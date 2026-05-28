@@ -4,6 +4,9 @@
     --md-accent-fg-color: #dd3131;
 }
 
+.md-typeset img {
+	border: 1px solid #000000;}
+
 .wy-side-nav-search {
     background-color: #404E61;
 }
