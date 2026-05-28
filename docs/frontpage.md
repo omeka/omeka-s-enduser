@@ -1,15 +1,15 @@
 # Front Page
 
-Omeka S allows users to build multiple distinct sites within one installation that are not necessarily connected to each other. Each installation has, by default, a front page that lists all of the sites in the installation. This page is accessed by going to the main URL of your Omeka S installation; if your [admin dashboard](admin-dashboard.md) was at `yourdomain.org/omekas/admin`, then you would find this page at `yourdomain.org/omekas/`.
+Omeka S allows users to build multiple distinct sites. They exist in one installation but are ndo not need to connect to each other. By default, each installation has a front page that lists all of the sites in the installation. You can access this page by going to the main URL of your Omeka S installation. If your [admin dashboard](admin-dashboard.md) is at `yourdomain.org/omekas/admin`, then you can find this page at `yourdomain.org/omekas/`.
 
-The page displays all sites that a user has permission to see, along with the sites' summaries & thumbnails if they exist. If someone is not logged in, they will only see public sites. A logged-in Global Administrator, by contrast, would see all existing sites on the installation.
+The page displays all sites that a user has permission to see. It also displays the sites' summaries and thumbnails. A user can only see public sites unless they are logged in. A logged-in Global Administrator can see all existing sites on the installation.
 
 ![Installation front page for the "Stackable Sandbox" showing seven sites, three of which have summaries.](files/frontpage-basic.png)
 
-If you want this index page to be hidden from site visitors, a Global Administrator can select one public site on your installation to which visitors will be redirected when they navigate to your base URL (from `yourdomain.org/omekas/` to `yourdomain.org/omekas/s/yourmainsite/`). To do so:
+You can choose to hide this index page from site visitors. A Global Administrator can select one public site from your installation to redirect visitors to from this index page. When they navigate to your base URL, they will instead see this site. For example, from `yourdomain.org/omekas/` to `yourdomain.org/omekas/s/yourmainsite/`. To do this:
 
 - Go to Settings (the gear icon), then the General tab.
 - Under the "Default site" option, use the dropdown menu to select one of your current sites. 
-- To remove a selected site and revert back to the index page, click the small "X" on the right side of the dropdown.
+- Click the small "X" on the right side of the dropdown to remove a selected site and revert back to the index page.
 
-You can customize a branded site index for your installation by creating a site, creating a page, and then using the ["List of sites" page block](sites/site_pages.md#page-blocks) to generate a list of all the sites in the installation. Then, use the "Default site" option to point to that site.
+You can customize a branded site index for your installation. You can do this by creating a site, creating a page, and using the ["List of sites" page block](sites/site_pages.md#page-blocks) to generate a list of all sites. Then, use the "Default site" option to point to that site.

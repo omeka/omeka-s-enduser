@@ -1,8 +1,8 @@
 # Administrative Dashboard
 
-The administrative dashboard manages the content shared by all Omeka S sites and the core functionalities of the Omeka S installation. 
+The administrative dashboard manages the content shared by all Omeka S sites. It also manages the core functionalities of the Omeka S installation. 
 
-This [screencast](https://vimeo.com/455708039){target=_blank} walks you through the main features of the dashboard and navigating your Omeka S installation:
+This [screencast](https://vimeo.com/455708039){target=_blank} walks you through the main features of the dashboard. It explains how to navigate your Omeka S installation:
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/455708039?h=438143f0d3" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <p><a href="https://vimeo.com/455708039">Navigating Omeka S</a> from <a href="https://vimeo.com/omeka">Omeka</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
@@ -16,11 +16,11 @@ When a user logs in, the first page they see is the Admin Dashboard.
 
 ![Admin dashboard full view](files/admindashfullview.png)
 
-In addition to the left-hand navigation present on all pages (see below), the admin dashboard presents users with two boxes: **Manage Resources** and **Manage Sites**.
+The admin dashboard presents users with two boxes: **Manage Resources** and **Manage Sites*. This is in addition to the left-hand navigation present on all pages (see below).  
 
-The **Manage Resources** box displays the following resources with their total count: [Items](content/items.md), [Item sets](content/item-sets.md), [Vocabularies](content/vocabularies.md), and [Resource templates](content/resource-template.md). Clicking on the label of the Resource will take you to the browse page; clicking the plus-symbol button to the right of the label will take you to the add page for that resource type. 
+The **Manage Resources** box displays the following resources with their total count: [Items](content/items.md), [Item sets](content/item-sets.md), [Vocabularies](content/vocabularies.md), and [Resource templates](content/resource-template.md). Clicking on the label of the Resource takes you to the browse page. Clicking the plus-symbol button to the right of the label takes you to the add page for that resource type. 
 
-The **Manage Sites** box lists the [Sites](sites/index.md) on the install. Clicking on the site name will take you to the administrative tab for the site; clicking on the small arrow icon to the right will take you to the public view of the site (in a new window or tab). 
+The **Manage Sites** box lists the [Sites](sites/index.md) on the install. Clicking on the site name will take you to the administrative tab for the site. Clicking on the small arrow icon to the right will take you to the public view of the site (in a new window or tab). 
 
 ## Left-hand navigation
 
@@ -28,15 +28,15 @@ The following content appears on the left side of the admin dashboard and on all
 
 ![View of the left hand navigation on the admin dashboard, which also appears consistently throughout the admin interface, with options as described below](files/leftnav.png)
 
-In the upper left corner of the screen is a link displaying the title of the installation which will always take you back to the admin dashboard. 
+In the upper left corner of the screen is a link displaying the title of the installation. This will always take you back to the admin dashboard. 
 
-Directly below the installation title is the message “Signed in as [User]” where [User] is the display name of the person logged in. Next to the username is a gear icon that will [take you to your user settings page](admin/users.md#user-settings). 
+Directly below the installation title is the message “Signed in as [User]”. [User] is the display name of the person logged in. Next to the username is a gear icon. This icon will [take you to your user settings page](admin/users.md#user-settings). 
 
-Near the username (below or to the right, depending on window width) is the button to **Logout**. 
+Near the username is the button to **Logout**. 
 
-Underneath the user information is a search field which has an option for advanced search (ellipsis) in addition to the button to search (magnifying glass). Use this to search all items in the installation. 
+Underneath the user information is a search field. This includes an option for advanced search (ellipsis) and the button to search (magnifying glass). Use this to search all items in the installation. 
 
-Advanced search options (the ellipsis) allow you to refine the search by Resource Type, limiting it to **Items**, **Item Sets**, or **Media** by clicking the radio button next to the Resource Type you want to search. 
+Advanced search options allow you to refine the search by Resource Type. This limits the search to **Items**, **Item Sets**, or **Media** by clicking the radio button next to the selected Resource Type. 
 
 ![Advanced search options](files/search.png)
 
@@ -48,11 +48,11 @@ The left-hand navigation of the dashboard is divided into sections related to fu
     - [Item Sets](content/item-sets.md): manage aggregated groups of items. (Multiple boxes icon)
     - [Vocabularies](content/vocabularies.md): manage the metadata standards for your install. (Closed book icon)
     - [Resource Templates](content/resource-template.md): manage predefined sets of properties (fields) to use when creating items. (Pencil in a square icon)
-- Admin: installation-level administration (note that some of these tabs may not be visible to all user levels).
+- Admin: installation-level administration. Note that some of these tabs may not be visible to all user levels.
     - [Users](admin/users.md): manage users for the whole install and individual sites. (Human silhouette icon)
     - [Modules](modules/index.md): add functionality to your sites. (Plus sign in square icon)
     - [Jobs](admin/jobs.md): displays the user-activated tasks which are currently running. NB: jobs only display when they are running. (Three bars icon)
-    - [Settings](admin/settings.md): manage the global settings for all sites, the admin dashboard and the site dashboards. (Gears icon)
+    - [Settings](admin/settings.md): manage the global settings for all sites, the admin dashboard, and the site dashboards. (Gears icon)
 
 If you have installed modules, they may appear in the admin section of the left navigation below settings.
 
@@ -60,16 +60,16 @@ Note that users with more limited permissions will see only some of these naviga
 
 ## System information
 
-In the bottom right corner of every page on the admin side is the current version of Omeka S, along with some helpful links. Click the link labelled "System information" to see a full page with details about your installation.
+In the bottom right corner of every admin page is the current version of Omeka S. There are also some helpful links. Click the link labelled "System information" to see more details about your installation.
 
 ![Example System information page](files/systeminfo.png)
 
-On this page you can verify the versions of dependencies that Omeka is using, such as PHP, ImageMagick, and MySQL. If a particular module requires your server to supply something such as a PHP utility, you can look for it here. You can also look here to verify whether your Omeka installation recognizes a module you have tried to install.
+On this page you can verify the versions of dependencies that Omeka is using. This might be PHP, ImageMagick, and/or MySQL. If a module requires your server to supply something like a PHP utility, you can view it here. Look here to verify whether your Omeka installation recognizes a module you have tried to install.
 
-Note that your PHP section will tell you the "File Upload Limit", which is the number reflected in the media upload interface and the asset upload interface. Note also that Omeka S will tell you how much free server space it has access to. 
+Note that your PHP section will tell you the "File Upload Limit". This is the number reflected in the media upload interface and the asset upload interface. Note that Omeka S will tell you how much free server space it has access to. 
 
-You may be asked to supply the information on this page when asking for technical support on the [Forums](https://forum.omeka.org/){target=_blank} or when posting an issue on GitHub. 
+You may be asked to supply this information when requesting technical support on the [Forums](https://forum.omeka.org/){target=_blank} or when posting an issue on GitHub. 
 
-Clicking the two buttons near the bottom of the page can help you verify that PHP and ImageMagick are working properly for your site. Do this right after installation to ensure you don't run into problems later on, such as when batch-importing items or running other PHP-dependent jobs.
+Clicking the two buttons near the bottom of the page can help you verify that PHP and ImageMagick are working properly. Do this right after installation to ensure you don't run into problems with batch-importing or PHP-dependent jobs later on.
 
 ![Example results from the PHP CLI version button and the ImageMagick version button](files/systeminfo_buttons.png)
