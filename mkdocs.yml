@@ -3,12 +3,16 @@ theme:
     name: 'material'
     custom_dir: 'omeka/'
     include_homepage_in_sidebar: true
+    logo: logo.png
+    favicon: logo.png
     features: 
       - navigation.path
       - navigation.expand
       - toc.integrate
+      - toc.follow
       - search.highlight
       - search.share
+      - content.action.edit
     palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -27,8 +31,10 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
-site_url: 'https://omeka.org/s/'
-repo_url: 'http://github.com/omeka/omeka-s-enduser'
+site_url: https://omeka.org/s/
+repo_url: https://github.com/omeka/omeka-s/
+repo_name: 'Omeka S'
+edit_uri: https://github.com/omeka/omeka-s-enduser/edit/master/docs
 extra_css:
     - css/extra.css
 markdown_extensions:
