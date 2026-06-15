@@ -4,8 +4,20 @@
     --md-accent-fg-color: #dd3131;
 }
 
+.md-content a {
+text-decoration:underline;
+}
+
+/*
+.md-path a {
+color:#ba1c1c;}
+*/
+
 .md-typeset img {
-	border: 1px solid #000000;}
+	border: 1px solid #000000;
+	display:block;
+	margin:0 auto;
+	}
 
 .wy-side-nav-search {
     background-color: #404E61;
