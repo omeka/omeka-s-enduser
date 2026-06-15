@@ -7,7 +7,6 @@ theme:
     favicon: logo.png
     features: 
       - navigation.path
-      - navigation.sections
       - navigation.footer
       - toc.integrate
       - toc.follow
@@ -42,7 +41,8 @@ markdown_extensions:
     - admonition
     - attr_list
     - toc:
-        permalink: 
+        permalink: true
+        toc_depth: 5
 nav:
     - index.md
     - accessibility.md
