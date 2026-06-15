@@ -17,7 +17,7 @@ In order to install Omeka S (latest version 4.2), you will need a server running
 	- the PHP `imagick` extension, or
 	- the PHP `gd` extension.
 
-[Imagick and ImageMagick](https://www.imagemagick.org){target=_blank} are the same library and can create thumbnails for more than 200 formats. [GD](https://secure.php.net/manual/en/intro.image.php){target=_blank} is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). For more information, see the [Configuration page](configuration.md#thumbnails).
+[Imagick and ImageMagick](https://www.imagemagick.org){target=_blank} are the same library and can create thumbnails for more than 200 formats. [GD](https://secure.php.net/manual/en/book.image.php){target=_blank} is a basic graphic library installed by default with PHP. It can create thumbnails for common image formats only (jpeg, gif, png). For more information, see the [Configuration page](configuration.md#thumbnails).
 
 ## Installation methods
 
