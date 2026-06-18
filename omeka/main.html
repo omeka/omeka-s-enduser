@@ -62,7 +62,9 @@
     </nav>
     <main id="content">
         <article>
+            {% block content %}
             {{ page.content }}
+            {% endblock %}
             <a href="#content" id="back-to-top">Back to top</a>
         </article>
     </main>
