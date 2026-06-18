@@ -376,13 +376,14 @@ If you complete a batch action from the next screen, you will return back to thi
 
 ### Batch editing
 
-**Batch editing** items takes you to a new page. The items being edited will display on the right side in a drawer. Be sure to confirm the number of items being edited looks correct.
+**Batch editing** items takes you to a new page. The items being edited will display in a column on the right. Be sure to confirm the number of items being edited looks correct.
 
-The batch edit form gives you the following options:  
+The batch-edit form gives you the following options:  
 
 - **Set visibility**: a radio button. Select from public or not public to make the item visible or not visible to logged-out users.
 - **Set template**: a dropdown. Select from the installation's resource templates. You can remove templates from the selected items with the "[Unset template]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
 - **Set class**: a dropdown. Select from classes of the installed vocabularies. You can remove all classes from the selected items with the "[Unset class]" option. A search bar appears at the top of the dropdown menu if you would like to type to search.
+- **Set thumbnail**: Click the "Select" button to open up the Assets sidebar, where you can choose an existing asset or upload a new one, to be the thumbnail for all included items. This will replace any automatically-generated thumbnails from media, and any thumbnails chosen manually when editing individual items. 
 - **Set owner**: a dropdown. Select from users of the installation to choose who should be set as the owner of the selected items. Ownership determines who can edit and delete those items, outside the higher [user permission levels](../admin/users.md#roles-and-permissions).
 - **Add to item set**: a dropdown and text field. Select from item sets on the installation, organized by owner, or type to search. You can add the selected items to multiple item sets: click in the text field again to see the remaining options.
 - **Remove from item set**: a dropdown and text field. Select from item sets on the installation, organized by owner, or type to search. You can remove the selected items from multiple item sets: click in the text field again to see the remaining options.
