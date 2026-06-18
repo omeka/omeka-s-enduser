@@ -1,17 +1,24 @@
 site_name: Omeka S User Manual
 theme:
-    name: 'readthedocs'
+    name: null
     custom_dir: 'omeka/'
-    include_homepage_in_sidebar: true
+    include_search_page: true
+    search_index_only: false
+watch:
+    - 'omeka/'
 site_url: 'https://omeka.org/s/'
 repo_url: 'http://github.com/omeka/omeka-s-enduser'
+plugins:
+    - search
 extra_css:
-    - css/extra.css
+    - css/omeka.css
+extra_javascript:
+    - js/omeka.js
 markdown_extensions:
     - admonition
     - attr_list
     - toc:
-        permalink: 
+        permalink: ' '
 nav:
     - index.md
     - accessibility.md

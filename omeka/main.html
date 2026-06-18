@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="{{ config.theme.locale|default('en') }}">
+  <head>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%- for path in config.extra_css %}
+      <link href="{{ path | url }}" rel="stylesheet">
+    {%- endfor %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script>var base_url = {{ base_url|tojson }};</script>
+  </head>
+  <body>
+    <header>
+      <a href="#content" id="skip-link">Skip to content</a>
+      {%- block site_name %}
+        {%- if config.theme.logo %}
+          <a href="{{ nav.homepage.url|url }}">
+        {%- else %}
+          <a href="{{ nav.homepage.url|url }}" class="icon icon-home" id="site-title"> {{ config.site_name }}
+        {%- endif %}
+        {%- if config.theme.logo %}
+          <img src="{{ config.theme.logo|url }}" class="logo" alt="{% trans %}Logo{% endtrans %}"/>
+        {%- endif %}
+        </a>
+      {%- endblock %}
+      <button type="button" id="main-nav-toggle" aria-label="Open navigation" aria-controls="main-nav" aria-expanded="false"></button>
+      <form id="header-search" role="search" action="{{ base_url }}/search.html" method="get">
+        <input type="text" id="header-search-query" aria-label="Query">
+        <button type="submit" class="button" id="header-search-submit">Search</button>
+      </form>
+    </header>
+    <dialog id="mobile-nav-modal">
+        <button type="button" id="mobile-nav-modal-close" aria-label="Close navigation"></button>
+    </dialog>
+    <nav id="main-nav" aria-label="Pages">
+        {% if nav|length > 1 %}
+        <ul id="top-level">
+        {% for nav_item in nav %}
+            {% if nav_item.children %}
+                <li>
+                    <details>
+                    <summary>{{ nav_item.title }}</summary>
+                    <ul>
+                    {% for nav_item in nav_item.children %}
+                        <li class="{% if nav_item.active %}current{% endif %}">
+                            <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                    </details>
+                </li>
+            {% else %}
+                <li class="{% if nav_item.active %}current{% endif %}">
+                    <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    {% endif %}
+    </nav>
+    <main id="content">
+        <article>
+            {{ page.content }}
+            <a href="#content" id="back-to-top">Back to top</a>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; Omeka 2026</p>
+        {%- for script in config.extra_javascript %}
+        {{ script | script_tag }}
+        {%- endfor %}
+    </footer>
+  </body>
+</html>
