@@ -4,10 +4,10 @@
 <h1 id="search">Search Results</h1>
 
 <form action="{{ base_url }}/search.html">
-  <input name="q" id="mkdocs-search-query" type="text" >
+  <input name="q" id="mkdocs-search-query" type="text">
 </form>
 
-<div id="mkdocs-search-results">
-  Sorry, page not found.
+<div id="mkdocs-search-results" data-no-results-text="No results found">
+  Searching...
 </div>
 {% endblock %}
