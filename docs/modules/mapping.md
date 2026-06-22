@@ -11,7 +11,10 @@ The Mapping module adds several metadata fields to each item, a "Mapping" tab to
 - a "Map Browse" page for each site, found in the [Site Navigation settings](../sites/site_navigation.md)
 - [resource blocks to items and item sets](../sites/site_theme.md#select-regions-and-blocks) (not media), which can be repositioned within the regions offered by a given site's theme. 
 
-Mapping has no global configuration settings. Item sets cannot be geolocated, but can display mapping information based on items assigned to them.
+!!! note
+	Item sets cannot be geolocated, but can display mapping information based on items assigned to them.
+
+Mapping has installation-wide default settings (a choice of base maps, etc.), site-wide default settings that override the global settings, and user-specific administrative settings that apply when editing. Individual maps on pages, and those associated with items, can be customized to override all of these defaults. 
 
 Mapping can work with the [Collecting](../modules/collecting.md#prompts) module, by allowing users filling out the contribution form to provide geolocation data for their submissions. Users click directly on a map to place a marker, and can optionally provide a text label for the marker. See the Collecting module page for more information.
 
@@ -140,6 +143,21 @@ If the chosen field in this batch operation does not contain valid entries, the 
 
 You may wish to copy your coordinates in one batch operation, then update those markers with labels and images in a second batch operation. Note that if an item has multiple markers, all markers will get updated with identical images and labels. 
 
+### User settings
+
+A logged-in user can customize their own map settings to enable faster gelocation work. These settings will only take affect for **new item maps**, that is, for existing or new items with no current mapping data. These settings can be changed or removed at any time, as the user works through items. 
+
+From the Users link in the left sidebar, use the table of user accounts to edit one user. At the top of the screen, choose the "User settings" tab. 
+
+![The user settings tab scrolled down to the Mapping subsection.](modulesfiles/Mapping_user.png)
+
+The Mapping subsection added to the "User settings" tab provides options for the following:
+
+- **Basemap provider**: Select a basemap from the dropdown to show when editing item maps on the administrative side.  
+- **Minimum zoom level**: Set a minimum zoom level for all item maps when they first load.  
+- **Maximum zoom level**: Set a maximum zoom level for all item maps when they first load.
+- **Default bounds**: Set an area that must always be shown in item maps when they first load. The four corner coordinates set in this map will be included inside any map, with excess shown if the map dimensions require it. 
+
 ### CSV Import integration
 
 Mapping is compatible with [CSV Import](../modules/csvimport.md) when importing items (but not when importing mixed resources).
@@ -167,6 +185,17 @@ You cannot set marker labels or marker images in CSV Import. You cannot import t
 You cannot [batch-edit](../content/items.md#batch-editing) mapping values after items are in your system, only edit them manually one item at a time, or batch-revise mapping data using CSV Import.
 
 ## Add maps to a site
+
+### Global settings
+
+All of the maps in the entire installation can be given default settings, that can then be overridden at the site level and in specific maps' setting. 
+
+![The Mapping section of the installation-wide settings tab.](modulesfiles/Mapping_globalSettings.png)
+
+In this section you can: 
+	- set a basemap from the dropdown list
+	- set a minimum and maximum zoom level for all maps, and 
+	- set default bounds, the area of the world that is required to be displayed inside each map when first loaded. 
 
 ### Site-wide settings
 
