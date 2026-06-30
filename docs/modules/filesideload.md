@@ -1,23 +1,23 @@
 # File Sideload
 
-The [File Sideload module](https://omeka.org/s/modules/FileSideload){target=_blank} adds the ability to ingest media files that are already stored on the server where your Omeka S installation lives. New options will appear when uploading media to your items: "Sideload" for choosing individual files from your server, or "Sideload directory" for choosing folders full of files. 
+The [File Sideload module](https://omeka.org/s/modules/FileSideload){target=_blank} adds the ability to ingest media files that are already stored on the server where your Omeka S installation lives. New options will appear when uploading media to your items. "Sideload" allows you to choosing individual files from your server. "Sideload directory" allows you to choose folders full of files. 
 
-File Sideload is compatible with [CSV Import](../modules/csvimport.md). When installed, your CSV Import options will include the ability to add media via filenames in your Sideload directory. Be sure to disable file deletion in the File Sideload module when using it with CSV Import.
+File Sideload is compatible with [CSV Import](../modules/csvimport.md). When installed, your CSV Import options will allow you to add media via filenames in your Sideload directory. Be sure to disable file deletion in the File Sideload module when using it with CSV Import.
 
 ## Create a directory
 
 Create a directory (folder) on your server. It can be within the File Sideload module directory or on the same level as the Omeka S installation. 
 
 !!! note
-	If you place your sideload directory anywhere inside your Omeka installation, including inside the module directory (`youromekainstall/modules/FileSideload/yourdirectory`), be careful not to delete or move it when updating the installation or module. You may see error messages when editing items or media if the sideload directory cannot be found. Return to the module configuration page to fix this issue.
+	If you place your sideload directory anywhere inside your Omeka installation be careful not to delete or move it when updating the installation or module. This include inside the module directory (`youromekainstall/modules/FileSideload/yourdirectory`. You may see error messages when editing items or media if the sideload directory cannot be found. Return to the module configuration page to fix this issue.
 
 Upload or move files into this directory. All files and folders must be in this directory to be accessible.
 
-Note that when browsing these files from the module to add as media, you will only see the filenames and folder names, so you should name resources as clearly as possible (for example, "StudyInScarlet_coverpage.jpg" will be more helpful than "img001.jpg").
+Note that when browsing these files from the module to add as media, you will only see the filenames and folder names. You should name resources as clearly as possible. For example, "StudyInScarlet_coverpage.jpg" will be more helpful than "img001.jpg".
 
 ## Configuration
 
-After installing the module, you will need to configure the module to tell it where the directory is located.
+After installing the module, you will need to configure the module. This tells it where to find the directory.
 
 From the Modules page of the left-hand navigation, scroll to File Sideload in the list and click the "Configure" button.
 
@@ -37,13 +37,13 @@ If you are using an FTP application, copy out the remote site path in the locati
 
 **Delete sideloaded file?**
 
-- If checked, any file added to an item as media will be deleted from the Sideload directory, as the file is now saved as media in the Omeka S installation.
-- If unchecked, the files will remain in the directory, and will be available to be added as media to any item, until you manually remove them.
+- If checked, any file added to an item as media will be deleted from the Sideload directory. The file is now saved as media in the Omeka S installation.
+- If unchecked, the files will remain in the directory. The files will be available to ad as media to any item until you manually remove them.
 
 
 Add a sideload file to an item
 ------------------------------
-With File Sideload installed and configured, and files in the directory, you can now use the module to add media to items.
+With File Sideload installed and configured and files in the directory, you can use the module to add media to items.
 
 When editing an item, go to the Media tab. The "Add media" sidebar now includes two buttons for Sideload (below the core options).
 
@@ -60,9 +60,9 @@ Adding media by directory creates three fields:
 
 - **Title**: Give the media file a new title (optional). This title will apply to all added media identically.
 - **Directory**: Select a folder from this dropdown menu. The menu will load the folder names as they appear in the directory. 
-- **Ingest directory recursively**: Checking this box will include both all media from the sideload folder you chose and all media from all folders inside that folder. 
+- **Ingest directory recursively**: Checking this box includes all media from the sideload folder you chose and all media from all folders inside that folder. 
 
-![Sideload directory media options as listed above, with the dropdown open, displaying directory names. One directory is shown as "item234/item234b", indicating a folder within a folder.](../modules/modulesfiles/filesideload_directory_addfile.png)
+![Sideload directory media options as listed above. The dropdown is open, displaying directory names. One directory is shown as "item234/item234b", indicating a folder within a folder.](../modules/modulesfiles/filesideload_directory_addfile.png)
 
 Remember that File Sideload has a module-wide setting to delete files when ingested through this process. When you are sure your settings are correct, save the changes to the item. You should see the file or files added as media in the media section of the sidebar.
 
@@ -70,4 +70,4 @@ Remember that File Sideload has a module-wide setting to delete files when inges
 
 With CSV Import, you can add media to items via File Sideload. Provide a column with the filenames, not full URLs, pointing to the files in your Sideload directory. Add the mapping to Media source > Sideload.
 
-When using CSV Import with your Sideload directory, we recommend you un-check the file deletion setting in the File Sideload module configuration. CSV Import may delete files from your Sideload directory even if an import job has failed or stalled. You should always manually check the results of CSV Import before deleting the files it has imported. 
+When using CSV Import with your Sideload directory, un-check the file deletion setting in the File Sideload module configuration. CSV Import may delete files from your Sideload directory even if an import job has failed or stalled. You should always manually check the results of CSV Import before deleting the files it has imported. 

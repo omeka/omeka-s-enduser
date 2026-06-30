@@ -1,6 +1,6 @@
 # Hierarchy
 
-The [Hierarchy module](https://omeka.org/s/modules/Hierarchy){target=_blank} adds the ability to organize your Omeka S item sets into trees. This module is similar to [Collection Tree](https://omeka.org/classic/plugins/CollectionTree/){target=_blank} for Omeka Classic - you can create ordered or multi-level organizational systems.
+The [Hierarchy module](https://omeka.org/s/modules/Hierarchy){target=_blank} adds the ability to organize your Omeka S item sets into trees. This module is similar to [Collection Tree](https://omeka.org/classic/plugins/CollectionTree/){target=_blank} for Omeka Classic. You can create ordered or multi-level organizational systems.
 
 ![A hierarchy in action on a public page.](modulesfiles/hierarchy_public.png)
 
@@ -8,17 +8,17 @@ Any number of groupings can be created in the module; a parent can have any numb
 
 Hierarchies are displayed on each site with [resource page blocks](../sites/site_theme.md#configure-resource-pages) for items and item sets, and with a ["Hierarchy" page block](../sites/site_pages.md#page-blocks). Hierarchies can be added to individual sites for display, and can be configured on a site-by-site basis.
 
-Hierarchies can be created by users at the Supervisor and Global Administrator levels. Hierarchies are displayed [on individual sites by users with permission](../sites/site_users.md) to modify the resource page blocks, and the permission to edit pages. 
+Users at the Supervisor and Global Administrator levels can create hierarchies. Hierarchies display [on individual sites by users with permission](../sites/site_users.md) to modify the resource page blocks and the permission to edit pages. 
 
 ## Plan your groupings
 
-An Omeka S item can be in many item sets, according to your needs. But item sets cannot contain other item sets. Hierarchies do not change this - rather, they are a supplemental way of indicating a relationship between item sets. 
+An Omeka S item can be in many item sets, according to your needs. But item sets cannot contain other item sets. Hierarchies do not change this. Rather, they are a supplemental way of indicating a relationship between item sets. 
 
-For example, if you organize your items by creator (in a "Shakespeare, William" item set, a "Marlowe, Christopher" item set, and so on) these item sets might be considered "siblings" to one another: equivalent concepts, but unordered. You can use a hierarchy to order these item sets chronologically by the creators' lifetimes, or by most to least items, or alphabetically, or any other system you choose. 
+For example, if you organize your items by creator these item sets might be considered "siblings" to one another. These are equivalent concepts, but unordered. For instance, a "Shakespeare, William" item set, a "Marlowe, Christopher" item set, and so on. You can use a hierarchy to order these item sets chronologically by the creators' lifetimes. You can also order them by most to least items, or alphabetically, or any other system you choose. 
 
-You could also organize them in groupings by country of origin, the language used in their works, or other categories. If you have a "Works in German" item set, containing miscellaneous items as well as items also in the "Mann, Thomas" item set, you could nest the item sets of German authors under the "Works in German" item set as a way to indicate that relationship.
+You could also organize them in groupings by country of origin. Or, by the language used in their works. You could also organize them by other categories. Say you have a "Works in German" item set, and it contains miscellaneous items as well as items also in the "Mann, Thomas" item set. You could nest the item sets of German authors under the "Works in German" item set as a way to indicate that relationship.
 
-Another example might be organizing items by artifact type: paintings, sculptures, archaeological finds, documents, photographs. These item sets will not be modified but can be supplemented by adding larger categories such as "Artworks" and "Paper Items" and "Three-Dimensional Objects" to group the relevant item sets together. One hierarchy can contain the same item set more than once, so you can have a hierarchy as follows:
+Another example might be organizing items by artifact type. This might be by paintings, sculptures, archaeological finds, documents, photographs. These item sets will not be modified. But, they can be supplemented by adding larger categories such as "Artworks" and "Paper Items" and "Three-Dimensional Objects" to group the relevant item sets together. One hierarchy can contain the same item set more than once, so you can have a hierarchy as follows:
 
 - Artworks
 	- Paintings
@@ -31,11 +31,11 @@ Another example might be organizing items by artifact type: paintings, sculpture
 	- Documents
 	- Photographs.
 
-Remember that item sets, resource classes, and templates can also help you provide multiple points of organization and context for your items. 
+Remember item sets, resource classes, and templates can also help you provide organization and context for your items. 
 
-Hierarchies can be set up in different ways depending on the site settings you plan to use for them - whether you wish to create only one grouping per item set, linking directly to the item set pages, or whether groupings will be used to show a combination of all their children groupings' items. We recommend looking at the site settings section, below, while planning your collections. 
+Set up hierarchies in different ways depending on the site settings you plan to use for them. You might wish to create only one grouping per item set, link directly to the item set pages, or use groupings to show a combination of all their children groupings' items. We recommend looking at the site settings section, below, while planning your collections. 
 
-A hierarchy in Omeka S does not add metadata relationships to item sets (e.g., `relation` or `hasPart` values). The information created in a hierarchy is stored only in the module data, and does not modify the item sets themselves.
+A hierarchy in Omeka S does not add metadata relationships to item sets (e.g., `relation` or `hasPart` values). The information created in a hierarchy is stored only in the module data. It does not modify the item sets themselves.
 
 ## Create a hierarchy
 
@@ -52,7 +52,7 @@ If you leave the grouping label blank, the item set's name will be displayed. If
 !!! note
 	If you neither fill in the grouping label nor choose an item set, the grouping will appear in the tree as "[Untitled]". We recommend you employ at least one of the two options. 
 
-Then, drag and drop your groupings into your desired order or tree structure. Groupings can be dragged to become children of other groupings, or ordered to be siblings of each other. When a grouping is being dragged, look for small arrows that indicate where to drop it - to be a sibling of another grouping (an arrow underneath), or to be a child of the grouping (an arrow in the center). 
+Then, drag and drop your groupings into your desired order or tree structure. Groupings can be dragged to become children of other groupings, or ordered to be siblings of each other. When dragging a grouping, look for small arrows that indicate where to drop it. This makes it a sibling of another grouping (an arrow underneath) or a child of the grouping (an arrow in the center). 
 
 Add as many groupings as you need, filling out labels and selecting item sets where necessary. Combine this with creating new item sets and adding items to them as needed. 
 
@@ -66,13 +66,13 @@ For example, you may wish to create a five-level archival organizational system 
 			-  Folder 3.1.1 [set to an item set]
 				- [Items]
 
-Every entry in the list above is a grouping with a label but no item set, except for the bottom-most level, which is set to the item set containing the relevant items in Omeka. 
+Every entry in the list above is a grouping with a label but no item set. The exception is the bottom-most level, which is set to the item set containing the relevant items in Omeka. 
 
-![An example Hierarchy screen is filled out. The first hierarchy is called "Room 1" and has one grouping, called "Shelf 1". The second hierarchy is called "Room 2" and contains "Shelf 5", which contains "Top Shelf" and "Middle Shelf". Middle Shelf contains "Box 1" and "Box 2". "Box 2" contains "Folder 1" and "Folder 2". Folder 2 is set to an item set called "Correspondence 1933-1937" and is shown to contain 62 items. The parent groupings of Folder 2 (Box 2, Middle Shelf, and Shelf 5) also contain 62 items, indicating that other groupings are not yet set to item sets containing items.](modulesfiles/hierarchy_admin.png)
+![An example Hierarchy screen is filled out. The first hierarchy is called "Room 1" and has one grouping, called "Shelf 1". The second hierarchy is called "Room 2" and contains "Shelf 5", which contains "Top Shelf" and "Middle Shelf". Middle Shelf contains "Box 1" and "Box 2". "Box 2" contains "Folder 1" and "Folder 2". Folder 2 is set to an item set called "Correspondence 1933-1937" and is shown to contain 62 items. The parent groupings of Folder 2 (Box 2, Middle Shelf, and Shelf 5) also contain 62 items. This indicates that other groupings are not yet set to item sets containing items.](modulesfiles/hierarchy_admin.png)
 
-You can create as many hierarchies as you wish, with as many levels as needed, and reuse your item sets wherever you wish. In this way you can create multiple points of access to your collections, according to different topics or browse methods. 
+You can create as many hierarchies as you wish. They can include as many levels as needed. Reuse your item sets wherever you wish. You can create multiple points of access to your collections according to different topics or browse methods. 
 
-If you delete a grouping (the trash can icon to the right), its children will not be deleted with it. Instead, they will be promoted up to the level of the deleted grouping. 
+Deleting a grouping (the trash can icon to the right) does not delete its children with it. Instead, they will be promoted up to the level of the deleted grouping. 
 
 Remember to save your changes before navigating away from the module page. 
 
@@ -82,7 +82,7 @@ From the Sites tab of the left-hand navigation, pick a site and then choose "Hie
 
 ![Adding hierarchies by name to one site.](modulesfiles/hierarchy_site.png)
 
-All of your hierarchies are listed on the right. Add them to each site as desired. The order that hierarchies are arranged on this page is the order they will display on this site; you can drag and drop them once added. Then save the page. 
+All of your hierarchies are listed on the right. Add them to each site as desired. Hierarchies are arranged on this page in the order they will display on this site. You can drag and drop them once added. Then save the page. 
 
 ## Site configuration
 
@@ -92,39 +92,39 @@ From the Site Admin page, select the "Settings" tab, and scroll down to the "Hie
 
 The Hierarchy module has six configuration options for each site:
 
-- **Link directly to item set**: If checked, the hierarchy will not link groupings to their own custom public pages; the hierarchy's link structure will send users directly to item set pages.
+- **Link directly to item set**: If checked, the hierarchy will not link groupings to their own custom public pages. The hierarchy's link structure will send users directly to item set pages.
     - This will disable the "Combine hierarchy resources" setting below. 
-    - If you choose to link directly to item sets in the hierarchy, there will be no public links available to the groupings pages, although those pages will still exist on the site. Site visitors can access the grouping pages created by this module if you supply those links to them in some other way (such as in your navigation). So, the "Show item set metadata" setting may become redundant as it only affects grouping pages. You may also wish to turn off the "Show item sets beneath hierarchy" setting.
+    - If you choose to link directly to item sets in the hierarchy, there will be no public links available to the groupings pages. However, those pages will still exist on the site. Site visitors can access the grouping pages created by this module if you supply those links to them in some other way. For instance, in your navigation. So, the "Show item set metadata" setting may become redundant as it only affects grouping pages. You may also wish to turn off the "Show item sets beneath hierarchy" setting.
 - **Show hierarchy label**: If checked, the hierarchy's assigned label will display as the hierarchy header on public pages. If unchecked, the hierarchy will display without a label. You can also leave individual hierarchy labels blank. This only applies to the hierarchy headers; individual groupings' labels are unaffected by this setting. 
-- **Show hierarchy resource counts**: If checked, hierarchy grouping labels will be followed by the number of resources within the currently assigned item set, in parentheses.
-- **Combine hierarchy resources**: If checked, groupings will display the resources of all child groupings in resource counts and on grouping browse pages. If you show resource counts for each level of your hierarchy, and if you also combine those counts, you will see the total number of items of each grouping and its children. If those items are in more than one included item set, they will not be counted twice. 
-- **Show item sets beneath hierarchy**: If checked, a paragraph will display below the hierarchy with a list of all item sets that have been added to the groupings in the hierarchy. This is a way to provide direct links to item sets' view pages independently of the hierarchy's own link structure. 
-- **Show item set metadata on grouping pages**: If checked, the assigned item set's title, description, and image will display on each grouping's browse page. This will not show children groupings' item set information, only the one item set linked to the given grouping.
+- **Show hierarchy resource counts**: If checked, hierarchy grouping labels will be followed by the number of resources within the currently assigned item set in parentheses.
+- **Combine hierarchy resources**: If checked, groupings will display the resources of all child groupings in resource counts and on grouping browse pages. You will see the total number of items of each grouping and its children if you show resource counts for each level of your hierarchy and if you combine those counts. If those items are in more than one included item set, they will not be counted twice. 
+- **Show item sets beneath hierarchy**: If checked, a paragraph will display below the hierarchy. It will list all item sets that have been added to the groupings in the hierarchy. This provides direct links to item sets' view pages independently of the hierarchy's own link structure. 
+- **Show item set metadata on grouping pages**: If checked, the assigned item set's title, description, and image will display on each grouping's browse page. This will not show children groupings' item set information. It will only sho won the one item set linked to the given grouping.
 
-Note that in the following image, the grouping label is shown in the hierarchy on the left, while the full item set title is shown in the area on the right, alongside the item set description and thumbnail. 
+In the following image, the grouping label is shown in the hierarchy on the left. The full item set title is shown in the area on the right, alongside the item set description and thumbnail. 
 
 ![A grouping page showing information about the attached item set.](modulesfiles/hierarchy_groupingPage.png)
 
 !!! note
-	A hierarchical grouping set to an item set, if the "Link directly" setting above is checked, will link even to item sets that are empty. This may be useful if your item sets have lots of metadata - for example, if you are using the [ArchivesSpace Connector](aspaceconnector.md) to import many archival container objects with descriptive arrangement information, you may have 4 empty item sets above a "folder" level item set that contains items. These links will always show item sets with 0 items. Depending on the theme (such as Default), the items (or lack of items) contained in the item set may be displayed prominently. We recommend finding a theme that suits the collections of your site. Also consider removing the item sets from the hierarchy if you do not want them to be displayed when they have no items. You can add them later, after adding items to them. 
+	If you checked "Link directly," a hierarchical grouping set to an item set will link even to item sets that are empty. This may be useful if your item sets have lots of metadata. For example, you might use the [ArchivesSpace Connector](aspaceconnector.md) to import many archival container objects with descriptive arrangement information. You may have 4 empty item sets above a "folder" level item set that contains items. These links will always show item sets with 0 items. Depending on the theme, the items contained in the item set may be displayed prominently. We recommend finding a theme that suits the collections of your site. Also consider removing the item sets from the hierarchy if you do not want them to be displayed when they have no items. You can add them later, after adding items to them. 
 
 ## Display hierarchies on a site
 
-Public pages will display the hierarchy as a tree. Groupings with items in them will be links; groupings without any items will be displayed in plain text. 
+Public pages will display the hierarchy as a tree. Groupings with items in them will be links; groupings without any items display in plain text. 
 
-Depending on your site settings, each link in the hierarchy will point to a public page, in the form `yourinstallation.org/s/your-site/hierarchy/01`. This will display the chosen hierarchy at left, and all the items contained in the given grouping at right (either all the items in the attached item set, or including all the children items as per your site settings). 
+Depending on your site settings, each link in the hierarchy will point to a public page. It takes the form of `yourinstallation.org/s/your-site/hierarchy/01`. This displays the chosen hierarchy at left and all the items contained in the given grouping at right. This involves either all the items in the attached item set or including all the children items as per your site settings. 
 
-Depending on your site settings, underneath the hierarchy on these pages will be a list of all the item sets that are included in the full hierarchy, so that users can navigate to those if needed. (See the image at the top of this page for an example.) On site page blocks and on resources (items and item sets), this section will not display. 
+Depending on your site settings, a list of all item sets included in the full hierarchy will appear underneath the hierarchy on these pages. This is so users can navigate to those if needed. See the image at the top of this page for an example. On site page blocks and on resources (items and item sets), this section will not display. 
 
 !!! note
-	Public display will depend on whether the included item sets are added to the site as resources. If an item set is included in a hierarchy but not added to the site, the text "(Private)" will appear after the label, and it will be unlinked with no resource count. In the image above, "Folder 2" is a public item set that is not included in the site. Item sets with visibility set to "private" will not be available to logged-out users; they will also display as unlinked and with "(Private)" after the label. They will appear as normal to logged-in users, and in hierarchies in the administrative interface. 
+	Public display will depend on whether the included item sets are added to the site as resources. If an item set is included in a hierarchy but not added to the site, the text "(Private)" will appear after the label. Ut will be unlinked with no resource count. In the image above, "Folder 2" is a public item set that is not included in the site. Item sets with visibility set to "private" will not be available to logged-out users. They will also display as unlinked and with "(Private)" after the label. They will appear as normal to logged-in users, and in hierarchies in the administrative interface. 
 
 You can display hierarchies in two ways on your sites: 
 
 - By adding resource page blocks to item and item set view pages
 - By adding page blocks to site pages. 
 
-Remember that all of the hierarchies displayed on a given site will be formatted according to the site-wide settings. For example, you cannot display combined resource counts in one area of your site and grouping-specific counts in other areas. 
+Remember, the site-wide settings format all the hierarchies displayed on a given site. For example, you cannot display combined resource counts in one area of your site and grouping-specific counts in other areas. 
 
 ### Resource blocks
 
@@ -134,11 +134,11 @@ Select a site, then select the "Theme" tab in the left sidebar. Click the "Confi
 
 #### Item pages
 
-On item pages, you can add the "Hierarchy" resource block to any region offered by your theme. This will display all the hierarchies that apply to the item, limited to the hierarchies added to the site. If an item is in more than one item set, all of the item sets' hierarchies will be displayed (according to which hierarchies and which item sets are added to the site as resources) in the order specified in the site-specific configuration. 
+On item pages, you can add the "Hierarchy" resource block to any region offered by your theme. This will display all the hierarchies that apply to the item, limited to the hierarchies added to the site. If an item is in more than one item set, all the item sets' hierarchies will be displayed in the order specified in the site-specific configuration. This is according to which hierarchies and which item sets are added to the site as resources. 
 
 ![A public item view page with the Hierarchy showing multiple groupings highlighted in bold.](modulesfiles/hierarchy_publicItem2.png)
 
-Note that the item may be in more than one item set, and any of those item sets that are included in your hierarchy will be displayed in bold. In the image above, you can see an item view page with a hierarchy displayed. More than one grouping is highlighted in bold, indicating that the item is in all of those groupings/item sets. 
+The item may be in more than one item set. Any of the item sets included in your hierarchy will display in bold. In the image above, you can see an item view page with a hierarchy displayed. More than one grouping in bold, indicating that the item is in all of those groupings/item sets. 
 
 #### Item set pages
 

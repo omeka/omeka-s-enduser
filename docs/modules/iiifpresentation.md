@@ -1,16 +1,16 @@
 # IIIF Presentation
 
-The [IIIF Presentation module](https://omeka.org/s/modules/IiifPresentation/){target=_blank} allows installations to offer [IIIF Presentation API endpoints & viewers](https://iiif.io/api/presentation/3.0/){target=_blank} for their Omeka S items and item sets. These API endpoints are automatically available for all items and item sets when the module is installed and active. 
+The [IIIF Presentation module](https://omeka.org/s/modules/IiifPresentation/){target=_blank} allows installations to offer [IIIF Presentation API endpoints & viewers](https://iiif.io/api/presentation/3.0/){target=_blank} for their Omeka S items and item sets. Install and activate the module to make API endpoints aavailable for all items and item sets. 
 
-Omeka S offers the [Mirador IIIF viewer](https://projectmirador.org/){target=_blank} in its core code, which is what allows Omeka to [input and display IIIF media](../content/media.md#add-media-to-an-item) from around the web. This can be useful for institutions that host their digital collections elsewhere but wish to use those materials in Omeka virtual exhibits, or for educators who wish to use publicly-shared materials for teaching. 
+Omeka S offers the [Mirador IIIF viewer](https://projectmirador.org/){target=_blank} in its core code. This is what allows Omeka to [input and display IIIF media](../content/media.md#add-media-to-an-item) from around the web. This can be useful for institutions that host their digital collections elsewhere but wish to use those materials in Omeka virtual exhibits. It is also useful for educators who wish to use publicly-shared materials for teaching. 
 
-This module adds the ability to send an Omeka S installation's items or item sets to other IIIF viewers for display, and to load IIIF viewers on the installation for previewing and configuration. This can be used by others who wish to display your Omeka resources on their own sites. 
+This module can send an Omeka S installation's items or item sets to other IIIF viewers for display. It can also load IIIF viewers on the installation for previewing and configuration. Others who wish to display your Omeka resources on their own sites can use this. 
 
-A IIIF viewer can be set to display any item, a set of multiple items, any item set, or a set of multiple item sets, simply by creating the desired URL. The module has no settings or added admin interface options. 
+You can set a IIIF viewer to display any item, a set of multiple items, any item set, or a set of multiple item sets. It does this by creating the desired URL. The module has no settings or added admin interface options. 
 
 ## Using the module
 
-After installation, manifest and viewer URLs are created using your base Omeka S installation URL, not for any particular site on the installation. So, users can find the IIIF viewer URL for each item at 
+After installation, manifest and viewer URLs are created using your base Omeka S installation URL. They are not created for any particular site on the installation. So, users can find the IIIF viewer URL for each item at 
 
 `
 https://example.com/omeka-s/iiif-presentation/3/item/123/
@@ -37,16 +37,16 @@ https://example.com/omeka-s/iiif-presentation/3/item-set/45
 
 where `45` is the item set ID.
 
-You can serve more than one item ID, or more than one item set ID, by including the values separated by commas in the same place, for example:
+You can serve more than one item ID, or more than one item set ID, by including the values separated by commas in the same place. For example:
 
 `
 https://example.com/omeka-s/iiif-presentation/3/item/6,7,8,9
 `
 
-The values can be in any order, and will appear in the viewer in the given order.
+The values can be in any order and will appear in the viewer in the given order.
 
 
-You can test that the module is working correctly by going directly to a viewer or manifest URL in your browser. 
+You can test that the module is working correctly. Go directly to a viewer or manifest URL in your browser. 
 
 For the viewer, you should see your item's media load in the viewer with metadata in the sidebar. The URL will be redirected to something in the form of 
 
@@ -124,7 +124,7 @@ These endpoints are available for version 2 of the IIIF Presentation API.
 
 ## Events
 
-This module triggers these events during the composition of certain IIIF Presentation resources (manifest, canvas, collection, etc.). Use the event's `getTarget()` method to get the current controller.
+This module triggers these events during the composition of certain IIIF Presentation resources. This includes manifest, canvas, collection, etc. Use the event's `getTarget()` method to get the current controller.
 
 ### IIIF Presentation v3
 

@@ -2,9 +2,9 @@
 
 The [Extract Metadata module](https://omeka.org/s/modules/ExtractMetadata){target=_blank} allows site administrators to extract embedded metadata from media files. 
 
-The module adds a new "Extract metadata" tab to each media page, which will allow you to manually extract any embedded metadata found on the file. It also adds an "Extract metadata" field to the batch-editing page. When enabled, it automatically works on newly uploaded files. 
+The module adds a new "Extract metadata" tab to each media page. This allows you to manually extract any embedded metadata found on the file. It adds an "Extract metadata" field to the batch-editing page. When enabled, it automatically works on newly uploaded files. 
 
-A good workflow is to install and configure the module, batch-extract metadata from existing files in your database, map them to your chosen media metadata fields, and then simply allow the module to continue extracting metadata from files in the future.
+A good workflow first involves installing and configuring the module. Then, batch-extract metadata from existing files in your database and map them to your chosen media metadata fields. Finally, simply allow the module to continue extracting metadata from files in the future.
 
 ## Configuring the module
 
@@ -16,11 +16,11 @@ When configuring the module, you can:
     1. Click the "Add map +" button.
     1. Select the Resource, Extractor, and Property from dropdown menus.
     1. Provide a Pointer formatted using a JSON pointer as defined by the [IETF standard](https://datatracker.ietf.org/doc/html/rfc6901){target=_blank}.
-    1. If you would like to replace the metadata values through this pointer, make sure to select the checkbox to the right of these fields.
+    1. You may want to replace the metadata values through this pointer. To do so, make sure to select the checkbox to the right of these fields.
 
-When you are finished configuring the module, click the "Submit" button in the upper right corner of the screen.
+When you finish configuring the module, click the "Submit" button in the upper right corner of the screen.
 
-![Extract Metadata module configuration view with JSON Pointer crosswalk and submit button indicated by a teal arrow](../modules/modulesfiles/extractmetadata_config.png)
+![Extract Metadata module configuration view with JSON Pointer crosswalk. The submit button is indicated by a teal arrow](../modules/modulesfiles/extractmetadata_config.png)
 
 ## Adding media
 
@@ -34,10 +34,10 @@ You can view the extracted metadata on the media pages, on the "Extract metadata
 
 ## Editing media and items
 
-A user can edit media metadata attached to items by directly editing the individual item or by using the batch-edit functions.
+A user can edit media metadata attached to items by directly editing the individual item. Or, they can use the batch-edit functions.
 
 ### Editing items
-When editing a media/item, a user can choose to perform a number of actions, accessed through the Extract Metadata tab on the Item edit view. Select one of the four options from the dropdown menu.
+When editing a media/item, a user can choose to perform a number of actions. Access these actions through the Extract Metadata tab on the Item edit view. Select one of the four options from the dropdown menu.
 
 - Refresh metadata: (re)extract metadata from files
 - Refresh and map metadata: (re)extract metadata from files and map metadata to resource values
@@ -50,13 +50,13 @@ Be sure to click the "Save" button in the top right corner of the screen to exec
 
 ### Batch editing
 
-From the Items Browse screen, select the items you would like to batch edit. From the batch edit page, you can select any of the four action options from the "Extract metadata" dropdown menu. This will perform the action on all items selected for inclusion in the batch edit. 
+From the Items Browse screen, select the items you would like to batch edit. From the batch edit page, select one of four action options from the "Extract metadata" dropdown menu. This performs the action on all items selected for inclusion in the batch edit. 
 
 ![Batch edit view with Extract metadata dropdown open](../modules/modulesfiles/extractmetadata_batchedit.png)
 
 ## Extractors
 
-Extractors extract metadata from files. Note that extractors must be enabled on the module configuration page. This module comes with four extractors, but more can be added depending on your need. Your server may already have support for these utilities, but if you are having trouble, double-check to see if the dependency is installed.
+Extractors extract metadata from files. Note that extractors must be enabled on the module configuration page. This module comes with four extractors, but you can add more depending on your need. Your server may already have support for these utilities. If you are having trouble, double-check to see if the dependency is installed.
 
 ### ExifTool
 
@@ -72,23 +72,23 @@ Used to extract many types of metadata from many types of files. Uses the [getID
  
 ### Tika
 
-Used to extract many types of metadata from many types of files. Requires the [Apache Tika](https://tika.apache.org/){target=_blank} content analysis toolkit. Java must be installed and the path to the `tika-app-*.jar` file must be configured in `config/module.config.php` under `[extract_metadata_extractor_config][tika][jar_path]`.
+Used to extract many types of metadata from many types of files. Requires the [Apache Tika](https://tika.apache.org/){target=_blank} content analysis toolkit. Java must be installed. The path to the `tika-app-*.jar` file must be configured in `config/module.config.php` under `[extract_metadata_extractor_config][tika][jar_path]`.
 
 ### OHMS
 
-Added by the [OHMS Embed module](ohmsembed.md). Used to extract metadata generated by the Oral History Metadata Synchronizer Editor and contained in the XML file generated by that system. The OHMS extractor can use JSON pointers to map the metadata to Omeka resources. For more information, see the [OHMS Embed module](ohmsembed.md). 
+Added by the [OHMS Embed module](ohmsembed.md). Used to extract metadata generated by the Oral History Metadata Synchronizer Editor. Contained in the XML file generated by that system. The OHMS extractor can use JSON pointers to map the metadata to Omeka resources. For more information, see the [OHMS Embed module](ohmsembed.md). 
 
 ## Mappers
 
-Mappers map extracted metadata to resource values. Note that a mapper must be enabled on the module configuration page. This module comes with one mapper. Best practice for using this module with other mappers would be to fork the module code; see [our developer documentation for more details](https://omeka.org/s/docs/developer/modules/){target=_blank}.
+Mappers map extracted metadata to resource values. Note that a mapper must be enabled on the module configuration page. This module comes with one mapper. Best practice for using this module with other mappers would be to fork the module code. See [our developer documentation for more details](https://omeka.org/s/docs/developer/modules/){target=_blank}.
 
 ### JSON pointer
 
-You can map extracted metadata to media or item metadata properties using [JSON pointers](https://datatracker.ietf.org/doc/html/rfc6901){target=_blank}. You must define your own metadata crosswalk in the module configuration page under the "JSON Pointer crosswalk" tab.
+You can map extracted metadata to media or item metadata properties using [JSON pointers](https://datatracker.ietf.org/doc/html/rfc6901){target=_blank}. You must define your own metadata crosswalk in the module configuration page. Find it under the "JSON Pointer crosswalk" tab.
 
-You may wish to extract metadata from a few files first and see what information can be pointed to, then test some options on where best to map them.
+You may wish to extract metadata from a few files first and see what information can be pointed to. Then, test some options on where best to map them.
 
-One common example is to map a JPEG file's creation date to Dublin Core's "Date Created" property. The pointer points to the `DateTimeOriginal` value in the Exif metadata output, which you can view if you go to a media item and look at the "Extract metadata" tab. 
+One common example is to map a JPEG file's creation date to Dublin Core's "Date Created" property. The pointer points to the `DateTimeOriginal` value in the Exif metadata output. You can view this if you go to a media item and look at the "Extract metadata" tab. 
 
 Set up the mapper as follows:
 + Resource: [Media or Item]
@@ -97,10 +97,10 @@ Set up the mapper as follows:
 + Property: "Dublin Core : Date Created"
 + Replace values: [checked or unchecked].
 
-![Extract Metadata module configuration view with JSON Pointer crosswalk and submit button indicated by a teal arrow](../modules/modulesfiles/extractmetadata_config.png)
+![Extract Metadata module configuration view with JSON Pointer crosswalk. The submit button is indicated by a teal arrow](../modules/modulesfiles/extractmetadata_config.png)
 
-Once you've saved this map, perform the "Map metadata" action on one file or in a batch, and, if your JPEG file includes `DateTimeOriginal`, the media should now have a "Date Created" value.
+Once you've saved this map, perform the "Map metadata" action on one file or in a batch. If your JPEG file includes `DateTimeOriginal`, the media should now have a "Date Created" value.
 
 ## Integration with IIIF Presentation
 
-This module can automatically provide accurate width, height, and duration metadata for IIIF content resources published by the [IIIF Presentation module](iiifpresentation.md). This is useful for IIIF viewers that require strict validation against the IIIF specification. Note that this is only available if the metadata has already been extracted by the ExifTool extractor.
+This module provides accurate width, height, and duration metadata for IIIF content resources published by the [IIIF Presentation module](iiifpresentation.md). This is useful for IIIF viewers that require strict validation against the IIIF specification. This is only available if the metadata has already been extracted by the ExifTool extractor.
