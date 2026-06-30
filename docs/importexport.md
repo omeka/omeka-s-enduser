@@ -1,20 +1,20 @@
 # Importing and Exporting
 
-There are numerous methods for importing to, or exporting from, an Omeka S site. Third-party modules may add more functionality; we are only documenting Omeka-team-supported methods here. 
+There are numerous methods for importing to or exporting from an Omeka S site. Third-party modules may add more functionality. We are only documenting Omeka-team-supported methods here. 
 
 ## Connect to another Omeka site
 
 ### Import from Classic to S
 
-You can use the [Omeka Classic Importer module](modules/omekaCimporter.md) to import items & collections from a Classic site. This module only imports items and their metadata (including tags), attached files, and collections (as item sets). It will not import Simple Page content or Exhibit Builder content.
+You can use the [Omeka Classic Importer module](modules/omekaCimporter.md) to import items and collections from a Classic site. This module only imports items and their metadata (including tags), attached files, and collections (as item sets). It will not import Simple Page content or Exhibit Builder content.
 
-If equivalent plugins/modules are installed on both the source site and the target site, Omeka Classic Importer can import module-specific metadata. For example, geolocation data facilitated by the Mapping module in S and the Geolocation plugin in Classic will automatically be imported; [PDF Text](https://omeka.org/classic/plugins/PdfText/){target=_blank} elements can be imported and mapped to [Extract Text](https://omeka.org/s/modules/ExtractText/){target=_blank} fields.
+If you install equivalent plugins/modules from the source source site on the target site, Omeka Classic Importer can import module-specific metadata. For example, geolocation data facilitated by the Mapping module in S and the Geolocation plugin in Classic will automatically be imported. [PDF Text](https://omeka.org/classic/plugins/PdfText/){target=_blank} elements can be imported and mapped to [Extract Text](https://omeka.org/s/modules/ExtractText/){target=_blank} fields.
 
 You cannot currently export directly from an Omeka S site to a Classic site. See the options to export and import via spreadsheet, below. 
 
 ### Import from S to S
 
-You can use the [Omeka S Item Importer module](modules/ositemimporter.md) to import items and item sets from one Omeka S installation to another. You cannot import sites and their pages. We suggest setting up the target site as closely as possible to the source site, including installing and activating all the same modules, and installing any vocabularies used, before performing an import.
+You can use the [Omeka S Item Importer module](modules/ositemimporter.md) to import items and item sets from one Omeka S installation to another. You cannot import sites and their pages. We suggest setting up the target site as closely as possible to the source site. This includes installing and activating all the same modules and installing any vocabularies used before performing an import.
 
 ### Import or export resource templates 
 
@@ -26,10 +26,10 @@ You can use the [Omeka S Item Importer module](modules/ositemimporter.md) to imp
 
 ## Connect to non-Omeka platforms
 
-Omeka connects easily to other platforms built by the [Corporation for Digital Scholarship](https://digitalscholar.org/){target=_blank}. 
+Omeka easily connects to other platforms built by the [Corporation for Digital Scholarship](https://digitalscholar.org/){target=_blank}. 
 
-- Omeka S has a module for importing items from [Zotero](https://zotero.org){target=_blank}. Zotero is a research management tool you can use to organize journal articles and reading materials. You can organize items there and then export them as Omeka S items using the [Zotero Import module](modules/zoteroimport.md), or insert a bibliography or individual citations into an Omeka S site page using the [Zotero Citations module](modules/zoterocitation.md). 
-- [Tropy](https://tropy.org){target=_blank} has a plugin to export items to Omeka S. Tropy can be used to manage, edit, and describe digital images of archival and heritage materials, and is particularly useful for combining multiple images of a single item (e.g. books, letters with many pages, photo albums, etc.). Install Tropy and [add the "Export to Omeka S" plugin there](https://docs.tropy.org/other-features/omeka){target=_blank}. 
+- Omeka S has a module for importing items from [Zotero](https://zotero.org){target=_blank}. Zotero is a research management tool used to organize journal articles and reading materials. You can organize items there and then export them as Omeka S items using the [Zotero Import module](modules/zoteroimport.md). Or, insert a bibliography or individual citations into an Omeka S site page using the [Zotero Citations module](modules/zoterocitation.md). 
+- [Tropy](https://tropy.org){target=_blank} has a plugin to export items to Omeka S. Tropy can be used to manage, edit, and describe digital images of archival and heritage materials. It is useful for combining multiple images of a single item (e.g. books, letters with many pages, photo albums, etc.). Install Tropy and [add the "Export to Omeka S" plugin there](https://docs.tropy.org/other-features/omeka){target=_blank}. 
 
 Omeka S also has modules for importing resources from: 
 
@@ -42,27 +42,32 @@ Omeka S also has modules for importing resources from:
 
 ### Import from a spreadsheet
 
-Omeka S can take data in any spreadsheet (tabular) form, whether a CSV, an Excel file, or an ODS. Use the [CSV Import module](modules/csvimport.md) to add items, item sets, media, and users to your Omeka S site from a spreadsheet. This includes data exported from many different databases and platforms. 
+Omeka S can take data in any spreadsheet (tabular) form, whether a CSV, an Excel file, or an ODS. Use the [CSV Import module](modules/csvimport.md) to add items, item sets, media, and users to your site from a spreadsheet. This includes data exported from many different databases and platforms. 
 
 First, look to see if there a connector or importer module for the platform you are looking to export from. Omeka S has modules for Zotero, Zenodo, Fedora, DSpace, CKAN, Dataverse, and Invenio. If there is no specific module, export the data from your source platform into a spreadsheet. This may require some modification or cleanup of the data before importing into Omeka S. 
 
 ### Export to a spreadsheet
 
-Exporting resources from Omeka S is possible by using a Python script to query the installation's API. You can use this to copy your Omeka S materials to another platform, or as a backup of your work.
+Export resources from Omeka S by using a Python script to query the installation's API. Use this to copy your Omeka S materials to another platform, or as a backup of your work.
 
 [Omeka-s-csv.py](https://github.com/omeka/omeka-s-csv.py){target=_blank} is a Python script that exports data from Omeka S installations in CSV format.
 
 Outputted spreadsheets will have column headings for metadata terms in alphabetical order: `dcterms:description`, `dcterms:title`, etc. 
 
-There will also be a section of `o:` columns, including the internal Omeka S ID (`o:id`), the internal IDs of items' attached media (`o:media`), privacy settings (`o:is_public`, with values of "TRUE" or "FALSE"), created and modified dates, owners, sites, and other resource data. At the end will be `thumbnail` columns containing the URLs to media thumbnails generated by the installation. 
+There will also be a section of `o:` columns. These include:
+- the internal Omeka S ID (`o:id`)
+- the internal IDs of items' attached media (`o:media`)
+- privacy settings (`o:is_public`, with values of "TRUE" or "FALSE")
+- created and modified dates, owners, sites, and other resource data. 
+At the end will be `thumbnail` columns containing the URLs to media thumbnails generated by the installation. 
 
-This script cannot export site or page information, nor will it export resource templates, vocabularies, or other data stored in modules (such as Inverse Properties settings on resource templates). 
+This script cannot export site or page information. It won't export resource templates, vocabularies, or other data stored in modules (such as Inverse Properties settings on resource templates). 
 
 #### Requirements
 
 omeka-s-csv.py works with either Python 2 or 3, and requires no additional or external dependencies.
 
-Linux users will likely have Python already installed, and packages should be available from your distribution. There are several options for installing Python on Windows and Mac, including downloading an installer [from Python's website](https://www.python.org/downloads/).
+Linux users will likely have Python already installed. Packages should be available from your distribution. There are several options for installing Python on Windows and Mac. This includes downloading an installer [from Python's website](https://www.python.org/downloads/).
 
 #### Export
 
@@ -76,19 +81,19 @@ python3 omeka-s-csv.py
 
 The script will prompt you for the Omeka S API endpoint you want to export from. This is a URL pointing to the target Omeka S installation, and should start with `http://` or `https://` end with `/api`.
 
-Next, you will be prompted for an API key. Keys are required to export non-public data from the site, but are optional if you're only exporting public data. If you're not using a key, you can leave the input blank and just press "Enter".
+Next, you will be prompted for an API key. Keys are required to export non-public data from the site. They are optional if you're only exporting public data. If you're not using a key, you can leave the input blank and just press "Enter".
 
-Finally, a prompt will ask you to enter a "separator," a character that will be used to separate multiple pieces of data in a single CSV cell. It's important that the chosen separator is a character that doesn't appear in the actual data. The default choice is the "pipe" character (`|`), which is usually a safe option. To use that default choice, press "Enter"; otherwise, type the separator character you want to use instead.
+Finally, a prompt will ask you to enter a "separator." This is a character that will be used to separate multiple pieces of data in a single CSV cell. It's important that the chosen separator is a character that doesn't appear in the actual data. The default choice is the "pipe" character (`|`), which is usually a safe option. To use that default choice, press "Enter"; otherwise, type the separator character you want to use.
 
-The script will then run, and show output indicating its progress. The exported results will be placed in files in the same folder as the `omeka-s-csv.py` file: `items.csv`, `item_sets.csv`, and `media.csv`.
+The script will then run, and show output indicating its progress. The exported results will appear in files in the same folder as the `omeka-s-csv.py` file: `items.csv`, `item_sets.csv`, and `media.csv`.
 
 ### Access data using the API
 
-You can use your own S site's API to crawl data as required, rather than exporting a spreadsheet for one-time use. Note that you can [request different formats through the API](https://omeka.org/s/docs/developer/api/rest_api/#responses){target=_blank}, including `jsonld` and `rdfxml`. [For more information on the API, see the developer documentation section.](https://omeka.org/s/docs/developer/api/){target=_blank}
+You can use your own S site's API to crawl data as required rather than exporting a spreadsheet for one-time use. Note that you can [request different formats through the API](https://omeka.org/s/docs/developer/api/rest_api/#responses){target=_blank}, including `jsonld` and `rdfxml`. [For more information on the API, see the developer documentation section.](https://omeka.org/s/docs/developer/api/){target=_blank}
 
 ### Access data using the Output Formats module
 
-A user-friendly version of the same data available from the API can be accessed by installing the [Output Formats module](modules/outputformats.md). This will add an output dropdown automatically to all administrative interface pages with browse and search results as well as individual resource views. The module can also be enabled for public pages, allowing anyone to export a dataset from a browse or search subset. 
+Access a user-friendly version of the same data available from the API by installing the [Output Formats module](modules/outputformats.md). This adds an output dropdown automatically to all administrative interface pages with browse and search results and individual resource views. The module can also be enabled for public pages. This allows anyone to export a dataset from a browse or search subset. 
 
 The output formats available for this module are:
 
