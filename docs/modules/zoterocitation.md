@@ -37,6 +37,7 @@ Place your cursor in the desired place in the editing window. Click on the icon 
 	- your library ID
 	- your API key if you are using one
 	- your sorting element.
+
 Adjusting the settings only changes them for the current citation/bibliography generation. Once you have adjusted the settings, return to the "Add citation" or "Add bibliography" tabs. Then, apply the settings to your desired actions.
 
 ![Zotero Citation addition dialogue box with Add citation tab active](../modules/modulesfiles/zoterocitation_addcitation.png)
