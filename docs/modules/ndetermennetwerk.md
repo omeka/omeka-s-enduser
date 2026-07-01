@@ -1,8 +1,8 @@
 # NDE Termennetwerk
 
-The [NDE Termennetwerk module](https://omeka.org/s/modules/NdeTermennetwerk/){target=_blank} is a sub-module of [Value Suggest](valuesuggest.md) and adds an auto-complete feature to specific properties in a resource template, drawing on controlled vocabularies to help users fill them out. 
+The [NDE Termennetwerk module](https://omeka.org/s/modules/NdeTermennetwerk/){target=_blank} is a sub-module of [Value Suggest](valuesuggest.md). It adds an auto-complete feature to specific properties in a resource template. It does this by drawing on controlled vocabularies to help users fill them out. 
 
-This module requires the Value Suggest module to be installed and active in order to work. When active, the Value Suggest dropdown list will display NDE entries at the start.
+This module requires you to install and activate the Value Suggest module for it to work. When active, the Value Suggest dropdown list will display NDE entries at the start.
 
 It adds the following vocabularies as data types:
 

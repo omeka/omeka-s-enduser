@@ -1,14 +1,14 @@
 # Value Suggest
 
-The [Value Suggest module](https://omeka.org/s/modules/ValueSuggest){target=_blank} adds an auto-complete feature to properties in resource templates, and draws on published controlled vocabularies (see the end of this page for a complete list) to help users fill them out. Users can, for example, fill out the "Subject" field in Dublin Core with terms from the Library of Congress Subject Headings. 
+The [Value Suggest module](https://omeka.org/s/modules/ValueSuggest){target=_blank} adds an auto-complete feature to properties in resource templates. It draws on published controlled vocabularies to help users fill them out. See the end of this page for a complete list. Users can, for example, fill out the "Subject" field in Dublin Core with terms from the Library of Congress Subject Headings. 
 
-When a user is editing the metadata of a resource (an item, a piece of media, or an item set) that uses the Value-Suggest-enabled resource template, they can choose from a vocabulary's options. It functions as a [data type](../content/resource-template.md#data-types), but works like a modification to a text field: a user can start typing and select a suggestion from the dropdown, or ignore the dropdown and type in a textual entry.
+Say a user is editing the metadata of a resource. This might be an item, a piece of media, or an item set. If it uses the Value-Suggest-enabled resource template, they can choose from a vocabulary's options. It functions as a [data type](../content/resource-template.md#data-types). However, it works like a modification to a text field. A user can start typing and select a suggestion from the dropdown. Or, they can ignore the dropdown and type in a textual entry.
 
-Value Suggest comes packaged with many popular vocabularies - see the list below. Some examples: VIAF, PBCore for publishing information, RDA for multimedia, RightsStatements, and Creative Commons licenses. The module supplies terms in a number of languages. 
+Value Suggest comes packaged with many popular vocabularies. See the list below. Some examples: VIAF, PBCore for publishing information, RDA for multimedia, RightsStatements, and Creative Commons licenses. The module supplies terms in a number of languages. 
 
-This module also allows any field to [suggest values already stored in that property across the entire Omeka installation](#internal-suggestions). You can choose to narrow the suggested values to ones from resources with the same class, or ones from resources using the same resource template, to limit the number of suggestions and make them more relevant. 
+This module also allows any field to [suggest values already stored in that property across the entire Omeka installation](#internal-suggestions). Choose to narrow the suggested values to ones from resources with the same class, or ones from resources using the same resource template. This limits the number of suggestions and make them more relevant. 
 
-This feature helps encourage consistent metadata input and data compatibility with other databases. Note that Value Suggest offers, but cannot require, terms from the autosuggest feature. Users will always have the option of creating their own text value instead.
+This feature helps encourage consistent metadata input. It also encourages data compatibility with other databases. Note that Value Suggest offers, but cannot require, terms from the autosuggest feature. Users will always have the option of creating their own text value instead.
 
 ## Suggest values via resource templates
 
@@ -21,17 +21,17 @@ Value Suggest vocabularies are applied through resource templates. For additiona
 1. Click the "Set changes" button at the bottom of the drawer to assign the values to the property. 
 1. Save changes to the resource template. 
 
-![Editing the property subject, and the dropdown is open to show the Value Suggest vocabularies from the Library of Congress](../modules/modulesfiles/ValSug-ResTemplate1.png)
+![Editing the property subject. The dropdown is open to show the Value Suggest vocabularies from the Library of Congress](../modules/modulesfiles/ValSug-ResTemplate1.png)
 
-When you click the title of a resource template to see its details, the Value Suggest vocabulary will appear under the Data type table heading.
+Click the title of a resource template to see its details. The Value Suggest vocabulary will appear under the Data type table heading.
 
-![A red rectangle highlights the fact that the data type for Subject is "LC: Subject Headings"](../modules/modulesfiles/ValSug-ResTemplate2.png)
+![A red rectangle highlights that the data type for Subject is "LC: Subject Headings"](../modules/modulesfiles/ValSug-ResTemplate2.png)
 
 ## Suggest values for resources
 
-When a Value Suggest resource template is used for an item, media, or item set, the designated properties will auto-suggest values from the vocabulary specified in the template. 
+You might use Value Suggest resource template for an item, media, or item set. If so, the designated properties will auto-suggest values from the vocabulary specified in the template. 
 
-Users must start typing in the open text box of that specific property to prompt the auto-suggest feature. There may be a slight delay, but a drop-down menu will appear with choices drawn directly from the authority or vocabulary list you have associated with that property. In some cases, your text will search behind-the-scenes values: for example, ROR will display organization names with matching acronyms; ORCID will display researcher names that match an ORCID ID you have entered. 
+Users must start typing in the open text box of that specific property to prompt the auto-suggest feature. There may be a slight delay, but a drop-down menu will appear. The choices draw directly from the authority or vocabulary list you have associated with that property. In some cases, your text will search behind-the-scenes values. For example, ROR will display organization names with matching acronyms. ORCID will display researcher names that match an ORCID ID you have entered. 
 
 ![Item property Subject with "fashion" typed in the field. A dropdown menu auto-suggests terms, including "fashion design," which is selected.](../modules/modulesfiles/ValSug-ItemProperty1.png)
 
@@ -39,35 +39,35 @@ Hover over selections in the dropdown menu for a description of that vocabulary.
 
 ![Item property Material with "lithograph" typed in the field. A dropdown menu auto-suggests terms, including "color lithographs," which is selected. Helper text in a small overlaid window reads, "Lithographs printed in several colors."](../modules/modulesfiles/ValSug-ItemProperty2.png)
 
-After selecting a value, a box containing a URL should appear under the value. This link will direct visitors to a webpage with additional information on the value selected. This box can be removed by clicking the "X".
+After selecting a value, a box containing a URL should appear under the value. This link will direct visitors to a webpage with additional information on the value selected. Remove this box by clicking the "X".
 
 ![Item property Work Type with "Fashion Illustrations (layout features)" selected. Below, in red is a hyperlink to Getty Collections, with a small red "X".](../modules/modulesfiles/ValSug-ItemProperty3.png)
 
 ### Batch-apply vocabularies
 
-You can also apply Value Suggest vocabularies as data types to existing resources' **existing property values**, whether or not they are using any resource template. This will **not** set a Value Suggest data type onto the resources' property for future use, the way a resource template does. 
+You can also apply Value Suggest vocabularies as data types to existing resources' **existing property values**. You can do this whether or not they are using any resource template. This will **not** set a Value Suggest data type onto the resources' property for future use like a resource template does. 
 
-This can convert an existing text or URI value into a recognized Value Suggest value from one of its vocabularies. For example, you may have manually entered in RightsStatements URIs into the copyright field of many items, and now wish to convert those values into one of the structured entries from Value Suggest's RightsStatements "data type" to match future entries. 
+This can convert an existing text or URI value. It will convert to a recognized Value Suggest value from one of its vocabularies. For example, you may have manually entered in RightsStatements URIs into the copyright field of many items. You then wish to convert those values into one of the structured entries from Value Suggest's RightsStatements "data type" to match future entries. 
 
 This conversion may work with text values. Value Suggest looks for the text string to match a URL format (for example, "https://creativecommons.org/licenses/by/4.0/"). If your values are in URI form, Value Suggest will look to match either the URI value or the label text string.
 
-To do so, select the desired resources and batch-edit them. Look for the "Convert data type" button near the bottom of the form, in the "Values" section. Select the property (for example, "Rights" under Dublin Core) and then choose the Value Suggest vocabulary from the "Data type" dropdown (for example, Creative Commons or RightsStatements). 
+To do so, select the desired resources and batch-edit them. Look for the "Convert data type" button near the bottom of the form. It is in the "Values" section. Select the property (for example, "Rights" under Dublin Core). Then choose the Value Suggest vocabulary from the "Data type" dropdown. For example, Creative Commons or RightsStatements. 
 
 ![The batch-editing screen showing the "Convert data type" option expanded with the "Rights" property in the first selection and "Creative Commons" in the second selection.](../modules/modulesfiles/ValSug-BatchConvert.png)
 
-When converting an existing value into a Value Suggest data type, **the structured label will not be imported** from the source vocabulary into your metadata fields. If using URIs, your existing labels will be preserved, or if the label fields are empty, that will persist. If using text values, the URI will be preserved and converted into a URI, but the label field will be empty.
+When converting an existing value into a Value Suggest data type, **the structured label will not import** from the source vocabulary into your metadata fields. If using URIs, your existing labels will be preserved. If the label fields are empty, that will persist. If using text values, the URI will be preserved and converted into a URI. But, the label field will be empty.
 
 You can see whether the data-type conversion has succeeded when looking at the item in the admin interface. The original value, whether text (no link) or URI (link with an external-website icon to the right), should now appear as a link with no icon. 
 
-We recommend checking the conversion success by going into editing mode on the resources after the process has completed, and checking that the value is now showing the correct Value Suggest dropdown when clicked on. You can select the appropriate vocabulary-provided label at this time. 
+We recommend checking the conversion success by going into editing mode on the resources after the process has completed. Check that the value is now showing the correct Value Suggest dropdown when clicked on. You can select the appropriate vocabulary-provided label at this time. 
 
 ## Internal suggestions
 
-This module offers the ability to suggest values currently stored in your Omeka installation, that is, where a resource already has the value in a property:
+This module offers the ability to suggest values currently stored in your Omeka installation. That is, where a resource already has the value in a property. This includes:
 
-- Omeka: Property (values of the same property, for example `dcterms:creator`)
-- Omeka: Property / Resource template (values of the same property that are being used by items that share the same resource template, for example "Base resource")
-- Omeka: Property / Resource class (values of the same property that are being used by items that share the same class, for example `dctype:StillImage`).
+- Omeka: Property (values of the same property, for example `dcterms:creator`).
+- Omeka: Property / Resource template (values of the same property used by items that share the same resource template. For example,"Base resource").
+- Omeka: Property / Resource class (values of the same property that are being used by items that share the same class. For example, `dctype:StillImage`).
 
 ![A screenshot of the Publisher field being used to suggest several options from other items that start with "Glasg".](modulesfiles/ValSug-OmekaProperty.png)
 
@@ -101,7 +101,7 @@ This module includes the following vocabularies:
 Note that the [NDE Termennetwerk vocabularies are now available as a separate module](ndetermennetwerk.md). That module requires Value Suggest to be installed and active.
 
 !!! note
-	Some vocabularies appear in multiple languages in the list below: for example, Homosaurus (in English) is listed separately from the Dutch translation of Homosaurus found in the [NDE Termennetwerk module](ndetermennetwerk.md). Search the list and refer to the services to see which languages they support. We have indicated languages here for services that serve primarily one (non-English) language.
+	Some vocabularies appear in multiple languages in the list below. For example, Homosaurus (in English) is listed separately from the Dutch translation of Homosaurus found in the [NDE Termennetwerk module](ndetermennetwerk.md). Search the list and refer to the services to see which languages they support. We indicate languages here for services that serve primarily one (non-English) language.
 
 ### [Creative Commons (CC)](https://creativecommons.org/share-your-work/cclicenses/)
 
@@ -142,7 +142,7 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 - Collectivities (Corporations)
 - Conferences
 - Subject headings (all)
-- Subject headings [RAMEAU](https://rameau.bnf.fr){target=_blank} (Répertoire d’autorité-matière encyclopédique et alphabétique unifié, or Unified encyclopaedic and alphabetical list of subject authorities)
+- Subject headings [RAMEAU](https://rameau.bnf.fr){target=_blank} (Répertoire d’autorité-matière encyclopédique et alphabétique unifié. Or, Unified encyclopaedic and alphabetical list of subject authorities)
 - Subject headings [F-MeSH](http://mesh.inserm.fr/FrenchMesh){target=_blank} (French version of the medical subject headings)
 - Geographic names
 - Family names
@@ -305,7 +305,7 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 
 ### [RightsStatements.org](https://rightsstatements.org/){target=_blank}
 
-- Standardized rights statements for cultural heritage institutions that can be used to communicate the copyright and re-use status of digital objects to the public.
+- Standardized rights statements for cultural heritage institutions. They can be used to communicate the copyright and re-use status of digital objects to the public.
 
 ### [Research Organization Registry (ROR)](https://ror.org/){target=_blank}
 
@@ -377,6 +377,6 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 
 ## Request more vocabularies
 
-You can request that new vocabularies be added to this module. Get in touch with the Omeka team on [the module's dedicated GitHub repository](https://github.com/omeka-s-modules/ValueSuggest){target=_blank}, by creating an issue and sharing the vocabularies you would like to see added. 
+You can request that new vocabularies be added to this module. Get in touch with the Omeka team on [the module's dedicated GitHub repository](https://github.com/omeka-s-modules/ValueSuggest){target=_blank}. Create an issue and share the vocabularies you would like to see added. 
 
-You may be interested in using or forking [the NDE Termennetwerk module](https://github.com/omeka-s-modules/NdeTermennetwerk/){target=_blank}, which is a fork of this module specifically for supplying [Dutch Digital Heritage Network terms](https://termennetwerk.netwerkdigitaalerfgoed.nl/en){target=_blank}. 
+You may be interested in using or forking [the NDE Termennetwerk module](https://github.com/omeka-s-modules/NdeTermennetwerk/){target=_blank}. This is a fork of this module specifically for supplying [Dutch Digital Heritage Network terms](https://termennetwerk.netwerkdigitaalerfgoed.nl/en){target=_blank}. 
