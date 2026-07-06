@@ -571,15 +571,15 @@ Clicking on a marker will display that item's title, description, date or interv
 
 Whenever an item is selected, its marker in the timeline will show up with a highlight to indicate that it is active.
 
-##### Numeric:Interval appearance
+##### Display of intervals
 
-Interval properties display as a long bar running horizontally across the timeline, with bars reaching down to the timeline at the start and end dates of the interval. Overlapping intervals will stack. In the image below, the timeline is on the "Contrast" theme selected in the settings:
+Interval properties (fields with the data type `numeric:interval`) display as a long bar running horizontally across the timeline, with bars reaching down to the timeline at the start and end dates of the interval. Overlapping intervals will stack. In the image below, the timeline is on the "Contrast" theme selected in the settings:
 
 ![Timeline and map showing two items overlapping in the timeline bar. The timeline bar is above the map.](../modules/modulesfiles/Mapping_timelinePublic3.png)
 
-##### Numeric:Timestamp appearance
+##### Display of timestamps
 
-Timestamp properties display as a flag on the timeline, with one bar anchoring them to the timeline. Items which overlap either due to date or long text will stack. In the image below, the timeline is using the "Default" theme:
+Timestamp properties (fields with the data type `numeric:timestamp`) display as a flag on the timeline, with one bar anchoring them to the timeline. Items which overlap either due to date or long text will stack. In the image below, the timeline is using the "Default" theme:
 
 ![Timestamp timeline with many items shown in proximity. The timeline bar is below the map.](../modules/modulesfiles/Mapping_timelinePublic4.png)
 
@@ -593,15 +593,15 @@ In the images above, you can see examples of the timeline bar shown above the ma
 
 When "Show contemporaneous events" is checked, the map zooms to display all events which take place on the same day.
 
-In the image below, the timeline is using interval data. The event "Reading Abbey Girls' School" (March 1785 - December 1786) takes place within the same period as "Steventon Rectory" (1775-1801), so the map is zoomed out to display the location markers for both events.
+In the image below, the timeline is using interval data. The "Smithsonian Garden Shed" item is in focus, and shows a pin on the map. The "Statue of Freedom" item, which overlaps the first item chronologically in the timeline, is also showing a pin on the map. 
 
-![image as described](../modules/modulesfiles/Mapping_timelinePublicSCE.png)
+![image as described](../modules/modulesfiles/Mapping_timelinePublic3.png)
 
 ## Troubleshooting
 
-- Trouble deleting: If you would like to remove the mapping location from an item, you must delete all the map modifications. First, delete each marker (click the "Delete feature" button, select the markers, click to save). Then clear the map view settings (click the "Clear the default center and zoom level" button). The map will return to a global view. Save the item and confirm that the map no longer appears.
-- Trouble with map tiles: Ensure you have chosen a basemap from our provider list that offers tiles at a high degree of zoom. If not, choose another basemap or go back to the default provider.
-- Trouble with timelines: Ensure you have the Numeric Data Types module installed and active, and that your selected date metadata field is formatted correctly as a Numeric Data Type using resource templates. Items with mapping data but without date data will not show, nor will items with date data but without mapping data, as maps with timelines require both.
-- Trouble with items appearing on your maps: Ensure all items are added to your site under the Resources tab. Ensure the items have valid mapping data in their individual Mapping tabs. Test the Map Browse page, found at `yoursite/mapping/index/browse`. Test a simple Map by Attachments page block with a few items you know are geolocated correctly.
-- Trouble with maps appearing on item pages or item set pages: Add the Mapping resource page block to a region provided by your theme, by going to [Site > Theme > Configure resource pages](../sites/site_theme.md#configure-resource-pages).
-- Trouble saving overlays: There is a "Save overlay" button that must be clicked when an overlay is being entered or edited. Be sure to save each edit and then save the page. 
+- **Trouble deleting**: If you would like to remove the mapping location from an item, you must delete all the map modifications. First, delete each marker (click the "Delete feature" button, select the markers, click to save). Then clear the map view settings (click the "Clear the default center and zoom level" button). The map will return to a global view. Save the item and confirm that the map no longer appears.
+- **Trouble with map tiles**: Ensure you have chosen a basemap from our provider list that offers tiles at a high degree of zoom. If not, choose another basemap or go back to the default provider.
+- **Trouble with timelines**: Ensure you have the Numeric Data Types module installed and active, and that your selected date metadata field is formatted correctly as a Numeric Data Type using resource templates. Items with mapping data but without date data will not show, nor will items with date data but without mapping data, as maps with timelines require both.
+- **Items not appearing on your maps**: Ensure all items are added to your site under the Resources tab. Ensure the items have valid mapping data in their individual Mapping tabs. Test the Map Browse page, found at `yoursite/mapping/index/browse`. Test a simple Map by Attachments page block with a few items you know are geolocated correctly.
+- **Maps not appearing on item pages or item set pages**: Add the Mapping resource page block to a region provided by your theme, by going to [Site > Theme > Configure resource pages](../sites/site_theme.md#configure-resource-pages).
+- **Trouble saving overlays**: There is a "Save overlay" button that must be clicked when an overlay is being entered or edited. Be sure to save each edit and then save the page. 
