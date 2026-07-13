@@ -6,9 +6,6 @@ Demo Data provides data in formats supported by other modules. The [Numeric Data
 
 The interface for this module is only available to users at the Global Administrator and Supervisor levels. Resources created will be available to all users, but ownership will be the user that imported the dataset. 
 
-!!! note
-	The module requires storage space of roughly 220 megabytes. This is by far the largest Omeka Team module. It is intended to provide Omeka S users with sample items for learning various features, and should be both uninstalled in the interface and manually removed from your server to free up storage space. 
-
 ## Using Demo Data
 
 Upon installation and activation, "Demo Data" will appear as an option under the "Modules" section of the left-hand sidebar in the administrative dashboard. 
@@ -34,7 +31,11 @@ Purging a single dataset will remove the related resources from your installatio
 
 x![The Demo Data screen showing a dataset being purged.](modulesfiles/demodata_purge.png)
 
-Note that the module imports a "Demo Data" vocabulary when it is first installed. This exists whether you have imported a dataset or not. This vocabulary is removed when the module is uninstalled. 
+### Uninstalling
+
+The module requires storage space of roughly 220 megabytes. This is by far the largest Omeka Team module. It is intended to provide Omeka S users with sample items for learning various features. When you are done with it, it should be both uninstalled in the interface and manually deleted from the `/modules` folder of your server to free up storage space. 
+
+Note that the module imports a "Demo Data" vocabulary when it is first installed. This exists in your installation whether you have imported a dataset or not. This vocabulary is removed when the module is uninstalled, along with all other resources and resource templates. You do not need to purge datasets before uninstalling the module. 
 
 ## Datasets
 
