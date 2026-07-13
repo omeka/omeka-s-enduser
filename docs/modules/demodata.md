@@ -26,7 +26,7 @@ You can refresh this page by clicking again on the "Demo Data" link in the sideb
 Links are now available to see the Items and Item sets created for this dataset. 
 
 !!! note
-	Imported resources will be automatically added to all sites based on the user's settings for default sites. 
+	Imported resources will not be added to any sites. Users can manually add the items to a site to view their display on the public side of Omeka.  
 
 You will now have "Re-import" or "Purge" buttons available for each imported dataset. 
 
