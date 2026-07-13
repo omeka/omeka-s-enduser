@@ -145,6 +145,19 @@ If the chosen field in this batch operation does not contain valid entries, the 
 
 You may wish to copy your coordinates in one batch operation, then update those markers with labels and images in a second batch operation. Note that if an item has multiple markers, all markers will get updated with identical images and labels. 
 
+### Global settings
+
+All of the item add/edit maps in the installation can be given default settings  to enable faster gelocation work. These settings can then be overridden by logged-in users for their own mapping work. These settings will only take effect on the **administrative side** for **new item maps**, that is, for existing or new items with no current mapping data. 
+
+![The Mapping section of the installation-wide settings tab.](modulesfiles/Mapping_globalSettings.png)
+
+Under Admin in the left-hand bar of the administrative dashboard, click "Settings" and then scroll down to the "Mapping" section. In this section you can set: 
+
+- **Basemap provider**: Select a basemap from the dropdown to show when editing item maps on the administrative side.  
+- **Minimum zoom level**: Set a minimum zoom level for all item maps when they first load.  
+- **Maximum zoom level**: Set a maximum zoom level for all item maps when they first load.
+- **Default bounds**: Set an area that must always be shown in item maps when they first load. The four corner coordinates set in this map will be included inside any map, with excess shown if the map dimensions require it. 
+
 ### User settings
 
 A logged-in user can customize their own map settings to enable faster gelocation work. These settings will only take effect on the **administrative side** for **new item maps**, that is, for existing or new items with no current mapping data. These settings can be changed or removed at any time, as the user works through items. 
@@ -187,18 +200,6 @@ You cannot set marker labels or marker images in CSV Import. You cannot import t
 You cannot [batch-edit](../content/items.md#batch-editing) mapping values after items are in your system, only edit them manually one item at a time, or batch-revise mapping data using CSV Import.
 
 ## Add maps to a site
-
-### Global settings
-
-All of the maps in the entire installation can be given default settings, that can then be overridden at the site level and in specific maps' setting. 
-
-![The Mapping section of the installation-wide settings tab.](modulesfiles/Mapping_globalSettings.png)
-
-In this section you can: 
-
-	- set a basemap from the dropdown list
-	- set a minimum and maximum zoom level for all maps, and 
-	- set default bounds, the area of the world that is required to be displayed inside each map when first loaded. 
 
 ### Site-wide settings
 
@@ -383,7 +384,7 @@ The Timeline section allows you to add a timeline display alongside the map view
 	- For timestamp properties, if two events have a date of "1 January 2000," both events will show on the map when either is in the story slider.
 	- For interval properties, if one event has an interval of "28 July 1914 - 11 November 1918" and another has an interval of "January 1819 - December 1920" both events will show on the map when either is in the story slider.
 	- Note that this setting only works when "Fly to" is set to "Default view".
-- **Timeline theme**: A dropdown offering timeline color schemes from [TimelineJS](https://timeline.knightlab.com/){target=_blank}. The options are Default (the only theme available in previous versions of the timeline), a Dark theme, and a Contrast theme with accessibility-compliant colors. Note that these selections call a CSS file that will apply to all timelines on one page; different timelines on the same page cannot have different themes. 
+- **Timeline theme**: A dropdown offering timeline color schemes from [TimelineJS](https://timeline.knightlab.com/){target=_blank}. The options are Default (the only theme available in previous versions of the timeline), a Dark theme, and a Contrast theme with accessibility-compliant colors. Note that these selections call a CSS file that will apply to all timelines on one page; different timelines on the same page cannot have different themes. See the example images below in the [Timeline public view](#timeline-public-view) section of this page.
 - **Timeline navigation position**: by default, the timeline displays with the story slider, to the left of the map. Using this dropdown, you can change where the story slider displays. Options are:
 	- Default position
 	- Full width, below story slider and map
