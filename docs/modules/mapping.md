@@ -373,7 +373,7 @@ Click "Save overlay" to create the overlay. Click "Cancel" to clear each of the 
 
 #### Timeline
 
-The Timeline section allows you to add a timeline display alongside the map view. This feature requires the [Numeric Data Types](numericdatatypes.md) module and items with Timestamp or Interval values (applied via the [resource template](../content/resource-template.md)).
+The Timeline section allows you to add a timeline display alongside the map view. This feature requires the [Numeric Data Types](numericdatatypes.md) module and items with Timestamp or Interval values (applied via the [resource template](../content/resource-template.md)). The timeline code and themes come from [TimelineJS](https://timeline.knightlab.com/){target=_blank}.
 
 - **Title headline**: displays on the first slide of the timeline (see ["Timeline public view"](#timeline-public-view) below). You can use this to name the timeline.
 - **Title text**: appears below the title headline on the first slide of the timeline (see ["Timeline public view"](#timeline-public-view) below). You can use this to provide context or narrative introduction for the timeline.
@@ -381,8 +381,9 @@ The Timeline section allows you to add a timeline display alongside the map view
 	- Note that the transition between points is animated, so if you have very distant points the shift between them will involve a significant zoom out and in.
 - **Show contemporaneous events**: sets how two events with the same timestamp or interval are displayed. If checked, contemporaneous events will both display in the map when active in the story slider.
 	- For timestamp properties, if two events have a date of "1 January 2000," both events will show on the map when either is in the story slider.
-	- For interval properties, if one event has an interval of "28 July 1914 - 11 November 1918" and another has an interval of "January 1819- December 1920" both events will show on the map when either is in the story slider.
-	- Note that this setting only works with the default view of Timeline navigation position.
+	- For interval properties, if one event has an interval of "28 July 1914 - 11 November 1918" and another has an interval of "January 1819 - December 1920" both events will show on the map when either is in the story slider.
+	- Note that this setting only works when "Fly to" is set to "Default view".
+- **Timeline theme**: A dropdown offering timeline color schemes from [TimelineJS](https://timeline.knightlab.com/){target=_blank}. The options are Default (the only theme available in previous versions of the timeline), a Dark theme, and a Contrast theme with accessibility-compliant colors. Note that these selections call a CSS file that will apply to all timelines on one page; different timelines on the same page cannot have different themes. 
 - **Timeline navigation position**: by default, the timeline displays with the story slider, to the left of the map. Using this dropdown, you can change where the story slider displays. Options are:
 	- Default position
 	- Full width, below story slider and map
