@@ -292,7 +292,7 @@ You can add supplementary information to your maps using the Overlays options.
 Omeka provides three formats for adding custom overlays or non-Omeka data: 
 
 - [Web Map Service (WMS)](https://mapserver.org/ogc/wms_server.html){target=_blank}
-- [Web Map Tile Service (WMTS)](https://en.wikipedia.org/wiki/Web_Map_Tile_Service){target=_blank}
+- [Web Map Tile Service (WMTS)](https://www.ogc.org/standards/wmts/){target=_blank}
 - [International Image Interoperability Framework (IIIF) Georeference Annotation](https://iiif.io/api/extension/georef/){target=_blank}
 - [GeoJSON](https://geojson.org/){target=_blank}.
 
@@ -304,29 +304,31 @@ First, you can set whether you wish the overlays to display exclusively (one at 
 
 ##### WMS, WMTS, and IIIF
 
-Four fields are available for WMS overlays: 
+Four fields are available for **WMS (and WMTS) overlays**: 
 
  * **Label**: Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays. (Required.)
- * **Base URL**: Add a map overlay to the WMS map by URL. 
- * **Layers**: Any of the offered layers you wish to use, separated by commas. This is a string or strings provided by the WMS host.
- * **Styles**: Any styles you wish to use, separated by commas. This is a string or strings provided by the WMS host.
+ * **Base URL**: Add a map overlay to the WMS or WMTS map by URL. 
+ * **Layers**: Any of the offered layers you wish to use, separated by commas. This is a string or strings provided by the WMS or WMTS host.
+ * **Styles**: Any styles you wish to use, separated by commas. This is a string or strings provided by the WMS or WMTS host.
 
-Five fields are available for WMTS overlays - the same four as WMS, plus you must supply:
+Five fields are available for **WMTS overlays** - the same four as WMS, plus you must supply:
 
-* **Tile matrix set**: A code 
+* **Tile matrix set**: A code sourced from the mapping service to point to tiles in different formats. Provide only one value here. You may need to read the XML provided by the WMTS map to find the `<TileMatrixSet>` value(s). 
 
-Two fields are available for IIIF overlays:
+To find the "Layer" name, you may also need to read the XML - look for `<Layer><ows:Title>` for example. Note that for WMTS overlays the "Style" value is often "default". 
+
+Two fields are available for **IIIF overlays**:
 
  * **Label**: Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays. (Required.)
  * **URL**: Enter the URL of the IIIF manifest. This may be in the format `website.org/manifests/123456789`.
 
-Click "Save overlay" to create the overlay. Click "Cancel" to clear each of the fields. Multiple overlays can be added. Make sure you save each overlay edit, and then save the page. 
+Click "Save overlay" to create the overlay. Click "Cancel" to clear all of the fields. Multiple overlays can be added. Make sure you save each overlay when edited, and then save the page. 
 
 ![A "Map by query" page block with the Overlays section open. Four overlays already exist, and one - a WMS overlay - is open for editing.](modulesfiles/Mapping_pageOverlays.png)
 
 Once you have added an overlay, it will appear above the fields for adding more overlays. If you would like one or more of the overlays to display automatically when the page loads, check the box next to it. Note that some overlays can be large and take time to load on a public page. 
 
-Edit an overlay by clicking on on the red pencil edit button, or click the red trashcan icon to delete the overlay. Remember to click "Save overlay" and then save the page each time you make changes to these settings. 
+Edit an existing overlay by clicking on the red pencil edit button, or click the red trashcan icon to delete the overlay. Remember to click "Save overlay" and then save the page each time you make changes to these settings. 
 
 ##### GeoJSON overlays
 
