@@ -68,6 +68,17 @@
             {% endblock %}
             <a href="#content" id="back-to-top">Back to top</a>
         </article>
+        {%- block next_prev %}
+            <nav id="page-nav" aria-label="{% trans %}Page Navigation{% endtrans %}">
+              {%- if page.previous_page %}
+                <a href="{{ page.previous_page.url|url }}" class="button" title="{{ page.previous_page.title }}"><span class="icon icon-circle-arrow-left"></span> {% trans %}Previous{% endtrans %}</a>
+              {%- endif %}
+              {%- if page.next_page %}
+                <a href="{{ page.next_page.url|url }}" class="button" title="{{ page.next_page.title }}">{% trans %}Next{% endtrans %} <span class="icon icon-circle-arrow-right"></span></a>
+              {%- endif %}
+            </nav>
+        {%- endblock %}
+        <a href="#content" id="back-to-top">Back to top</a>
     </main>
     <footer>
         <p>&copy; Omeka 2026</p>

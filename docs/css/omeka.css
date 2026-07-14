@@ -74,6 +74,15 @@ footer {
     padding: 1rem;
 }
 
+/* Reusable classes */
+
+.button {
+    border-radius: 3px;
+    padding: .25rem .5rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
 /* Header */
 
 header {
@@ -285,4 +294,11 @@ main#content {
     font-size: 14px;
     display: inline-block;
     margin: 0 .5rem;
+}
+
+#page-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .25rem;
+    margin: 1rem 0;
 }
