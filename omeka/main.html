@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script>var base_url = {{ base_url|tojson }};</script>
   </head>
-  <body>
+  <body class="light">
     <header>
       <a href="#content" id="skip-link">Skip to content</a>
       {%- block site_name %}
@@ -30,6 +30,17 @@
         <input type="text" id="header-search-query" aria-label="Query" name="q">
         <button type="submit" class="button" id="header-search-submit">Search</button>
       </form>
+      <div id="theme" role="group" aria-label="Theme selection">
+        <label>
+          Theme
+          <select id="theme-select" aria-label="Theme options">
+            <option class="icon icon-system" value="system-default">System default</option>
+            <option class="icon icon-light" value="light">Light</option>
+            <option class="icon icon-dark" value="dark">Dark</option>
+          </select>
+        </label>
+        <button type="button" id="theme-submit" class="button">Select</button>
+      </div>
     </header>
     <dialog id="mobile-nav-modal">
         <button type="button" id="mobile-nav-modal-close" aria-label="Close navigation"></button>

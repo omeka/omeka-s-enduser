@@ -1,0 +1,37 @@
+:root {
+    --dark-mode-black: #272727;
+    --dark-mode-red: #EC6F6F;
+    --dark-mode-blue: #8bacec;
+    --dark-mode-border-color: #707070;
+    --dark-mode-text: #e1e1e1;
+}
+
+body.dark {
+    background-color: var(--dark-mode-black);
+    color: var(--dark-mode-text);
+
+    a {
+        color: var(--dark-mode-blue);
+    }
+
+    input[type="text"],
+    select {
+        background-color: var(--dark-bg);
+        border: 1px solid var(--dark-mode-border-color);
+        color: var(--dark-mode-text);
+    }
+
+    .button {
+        background-color: var(--dark-mode-blue);
+        color: var(--dark-mode-black);
+    }
+
+    header {
+        border-bottom: 1px solid var(--dark-mode-border-color);
+    }
+
+    #main-nav ul#top-level {
+        border-color: var(--dark-mode-border-color);
+    }
+
+}

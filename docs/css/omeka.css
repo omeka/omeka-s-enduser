@@ -1,3 +1,6 @@
+@import "light.css";
+@import "dark.css";
+
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -16,12 +19,6 @@
   url("../fonts/fa-solid-900.svg#fontawesome") format("svg")
 }
 
-:root {
-    --s-blue: #404E61;
-    --s-red: #A91919;
-    --border-color: #dfdfdf;
-}
-
 /* Global Elements */
 
 * {
@@ -30,12 +27,13 @@
     line-height: 1.5;
 }
 
-a {
-    color: var(--s-red);
-}
-
 img {
     max-width: 100%;
+}
+
+select {
+    padding: .25rem;
+    border-radius: 2px;
 }
 
 summary {
@@ -88,12 +86,12 @@ footer {
 header {
     width: 100%;
     grid-area: header;
-    background-color: var(--s-blue);
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
     grid-column: span 5 / span 5;
+    gap: 1rem;
 }
 
     @media screen and (max-width: 480px) {
@@ -107,15 +105,16 @@ header {
     }
 
 header a {
-    color: #fff;
     text-decoration: none;
 }
 
 header button {
-    background: var(--s-red);
-    color: #fff;
     border: 0;
     appearance: none;
+}
+
+#site-title {
+    margin-right: auto;
 }
 
 #header-search {
@@ -127,8 +126,7 @@ header button {
         #header-search {
             width: 100%;
             padding: 1rem;
-            background-color: #fff;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid;
         }
 
         #header-search-query {
@@ -144,6 +142,7 @@ header button {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    position: sticky;
 }
 
     @media screen and (max-width: 480px) {
@@ -174,7 +173,6 @@ header button {
 }
 
 #main-nav summary {
-    color: var(--s-red);
     text-decoration: underline;
     cursor: pointer;
     margin-left: -1rem;
@@ -186,7 +184,7 @@ header button {
 }
 
 #main-nav ul#top-level {
-    border: 1px solid var(--border-color);
+    border: 1px solid;
     border-radius: 3px;
     padding: 1rem;
     max-width: max-content;
@@ -271,7 +269,6 @@ main#content {
     position: static;
     margin-bottom: 1rem;
     width: 100%;
-    background-color: var(--s-blue);
     text-align: center;
 }
 

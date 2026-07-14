@@ -1,0 +1,53 @@
+:root {
+    --s-blue: #404E61;
+    --s-red: #A91919;
+    --border-color: #dfdfdf;
+}
+
+body.light {
+    a {
+        color: var(--s-red);
+    }
+
+    select {
+        border: 1px solid var(--border-color);
+    }
+
+    .button {
+        color: #fff;
+        background-color: var(--s-red);
+    }
+
+    header {
+        background-color: var(--s-blue);
+        color: #eee;
+    }
+
+    header .button {
+        background: var(--s-red);
+        color: #fff;
+    }
+
+    header a {
+        color: #fff;
+    }
+
+    @media screen and (max-width: 480px) {
+        #header-search {
+            background-color: #fff;
+            border-bottom-color: var(--border-color);
+        }
+    }
+
+    #main-nav summary {
+        color: var(--s-red);
+    }
+
+    #main-nav ul#top-level {
+        border-color: var(--border-color);
+    }
+
+    #skip-link:focus {
+        background-color: var(--s-blue);
+    }
+}
