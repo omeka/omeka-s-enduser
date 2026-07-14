@@ -1,0 +1,15 @@
+<nav id="breadcrumbs" aria-label="Breadcrumbs">
+  <ul>
+    <li><a href="{{ nav.homepage.url|url }}" class="icon icon-home" aria-label="{% trans %}Docs{% endtrans %}"></a></li>
+    {%- if page %}
+      {%- for doc in page.ancestors[::-1] %}
+        {%- if doc.url %}
+          <li class="breadcrumb-item"><a href="{{ doc.url|url }}">{{ doc.title }}</a></li>
+        {%- else %}
+          <li class="breadcrumb-item">{{ doc.title }}</li>
+        {%- endif %}
+      {%- endfor %}
+      <li class="breadcrumb-item active">{{ page.title }}</li>
+    {%- endif %}
+  </ul>
+</nav>

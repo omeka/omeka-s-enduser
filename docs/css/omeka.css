@@ -226,6 +226,27 @@ dialog #main-nav ul#top-level {
 
 /* Content */
 
+.icon-home:before {
+    content: "\f015" / "";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+#breadcrumbs ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: .5rem;
+    padding-left: 0;
+}
+
+#breadcrumbs li:not(:last-child):after {
+    content: "/" / "";
+    display: inline-block;
+    margin: 0 0 0 .5rem;
+    opacity: .3;
+}
+
 main#content {
     grid-area: main-content;
     padding: 0 1rem;

@@ -61,6 +61,7 @@
     {% endif %}
     </nav>
     <main id="content">
+        {%- include "breadcrumbs.html" %}
         <article>
             {% block content %}
             {{ page.content }}
