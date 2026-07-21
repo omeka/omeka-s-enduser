@@ -21,7 +21,8 @@ body.dark {
         color: var(--dark-mode-text);
     }
 
-    dialog {
+    dialog,
+    dialog .button {
         background-color: var(--dark-mode-black);
         color: var(--dark-mode-text);
     }
@@ -31,6 +32,17 @@ body.dark {
         color: var(--dark-mode-black);
     }
 
+    header {
+        border-bottom: 1px solid ;
+    }
+
+        @media screen and (max-width: 480px) {
+            header {
+                border-bottom: 0;
+            }
+        }
+
+    header,
     #header-search,
     #theme {
         border-bottom-color: var(--dark-mode-border-color);
