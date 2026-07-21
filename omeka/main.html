@@ -46,30 +46,30 @@
         <button type="button" id="mobile-nav-modal-close" aria-label="Close navigation"></button>
     </dialog>
     <nav id="main-nav" aria-label="Pages">
-        {% if nav|length > 1 %}
-        <ul id="top-level">
-        {% for nav_item in nav %}
-            {% if nav_item.children %}
-                <li>
-                    <details>
-                    <summary>{{ nav_item.title }}</summary>
-                    <ul>
-                    {% for nav_item in nav_item.children %}
-                        <li class="{% if nav_item.active %}current{% endif %}">
-                            <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
-                        </li>
-                    {% endfor %}
-                    </ul>
-                    </details>
-                </li>
-            {% else %}
-                <li class="{% if nav_item.active %}current{% endif %}">
-                    <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
-                </li>
-            {% endif %}
-        {% endfor %}
-        </ul>
-    {% endif %}
+    {%- block site_nav %}
+      {%- set navlevel = 1 %}
+      <ul id="top-level">
+      {%- for nav_item in nav %}
+        {%- if nav_item.is_section %}
+          <li class="section{% if nav_item.active %} current{% endif %}">
+            <span id="section-{{ loop.index }}-heading" class="section-heading">{{ nav_item.title }}</span>
+            <button type="button" class="{% if nav_item.active %}collapse{% else %}expand{% endif %} button" aria-expanded="{% if nav_item.active %}true{% else %}false{% endif %}" aria-controls="section-{{ loop.index }}" aria-labelledby="section-{{ loop.index }}-heading"></button>
+            <ul id="section-{{ loop.index }}" aria-labelledby="section-{{ loop.index }}-heading">
+            {%- for nav_item in nav_item.children %}
+              <li class="toctree-l{{ navlevel }}{% if nav_item.active %} current{% endif %}">
+                {%- include 'nav.html' %}
+              </li>
+            {%- endfor %}
+            </ul>
+          </li>
+        {%- elif config.theme.include_homepage_in_sidebar or (not nav_item == nav.homepage) %}
+          <li class="toctree-l{{ navlevel }}{% if nav_item.active %} current{% endif %}">
+            {%- include 'nav.html' %}
+          </li>
+        {%- endif %}
+      {%- endfor %}
+    </ul>
+    {%- endblock %}
     </nav>
     <main id="content">
         {%- include "breadcrumbs.html" %}
@@ -77,7 +77,6 @@
             {% block content %}
             {{ page.content }}
             {% endblock %}
-            <a href="#content" id="back-to-top">Back to top</a>
         </article>
         {%- block next_prev %}
             <nav id="page-nav" aria-label="{% trans %}Page Navigation{% endtrans %}">

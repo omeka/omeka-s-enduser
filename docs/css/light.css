@@ -47,6 +47,11 @@ body.light {
         border-color: var(--border-color);
     }
 
+    #main-nav button.button {
+        background-color: transparent;
+        color: var(--s-red-);
+    }
+
     #skip-link:focus {
         background-color: var(--s-blue);
     }

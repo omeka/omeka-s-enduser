@@ -69,6 +69,26 @@ const Omeka = {
         Omeka.addWindowSizeEventListeners(mobileNavModal, mainNav);
     },
 
+    setupNavToggles: () => {
+        const navToggleButtons = document.getElementsByTagName('button');
+
+        for (const navToggleButton of navToggleButtons) {
+            navToggleButton.addEventListener('click', () => Omeka.toggleChildNav(navToggleButton));
+        }
+    },
+
+    toggleChildNav: (toggleButton) => {
+        if (toggleButton.classList.contains('expand')) {
+            toggleButton.classList.remove('expand');
+            toggleButton.classList.add('collapse');
+            toggleButton.setAttribute('aria-expanded', 'true');
+        } else {
+            toggleButton.classList.remove('collapse');
+            toggleButton.classList.add('expand');
+            toggleButton.setAttribute('aria-expanded', 'false');
+        }
+    },
+
     manageMainNavDialogRole: (dialog, mainNav) => {
         if (window.innerWidth < 481) {
             dialog.append(mainNav);
@@ -81,7 +101,9 @@ const Omeka = {
         window.addEventListener('load', () => Omeka.manageMainNavDialogRole(dialog, mainNav));
         window.addEventListener('resize', () => Omeka.manageMainNavDialogRole(dialog, mainNav));
     }
+    
 }
 
 Omeka.setupMobileNav();
+Omeka.setupNavToggles();
 Omeka.manageTheme();

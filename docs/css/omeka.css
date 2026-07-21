@@ -142,7 +142,6 @@ header button {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    position: sticky;
 }
 
     @media screen and (max-width: 480px) {
@@ -172,12 +171,6 @@ header button {
     display: inline-block;
 }
 
-#main-nav summary {
-    text-decoration: underline;
-    cursor: pointer;
-    margin-left: -1rem;
-}
-
 #main-nav ul {
     list-style-type: none;
     padding: 0 1rem;
@@ -188,6 +181,8 @@ header button {
     border-radius: 3px;
     padding: 1rem;
     max-width: max-content;
+    position: sticky;
+    top: 1rem;
 }
 
     @media screen and (max-width: 480px) {
@@ -196,6 +191,32 @@ header button {
         }
     }
 
+#main-nav button.button {
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 100%;
+    padding: 0;
+    border: 0;
+}
+
+#main-nav .expand:before,
+#main-nav .collapse:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+#main-nav .expand:before {
+    content: "\f105" / "";
+}
+
+#main-nav .collapse:before {
+    content: "\f107" / "";
+}
+
+#main-nav .expand + ul {
+    display: none;
+}
+
 dialog #main-nav ul#top-level {
     padding: 0;
     border: 0;
@@ -203,6 +224,24 @@ dialog #main-nav ul#top-level {
 
 #main-nav #top-level > li {
     padding: 0 .5rem;
+}
+
+#main-nav .toctree {
+    display: none;
+}
+
+#main-nav .section ul {
+    width: 100%;
+}
+
+#main-nav .current > span,
+#main-nav .current > a {
+    font-weight: bold;
+}
+
+#main-nav .current > ul,
+#main-nav .collapse + .toctree {
+    display: block;
 }
 
 #mobile-nav-modal {

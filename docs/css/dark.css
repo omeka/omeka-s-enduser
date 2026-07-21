@@ -34,4 +34,8 @@ body.dark {
         border-color: var(--dark-mode-border-color);
     }
 
+    #main-nav button.button {
+        background-color: transparent;
+        color: var(--dark-mode-blue);
+    }
 }
