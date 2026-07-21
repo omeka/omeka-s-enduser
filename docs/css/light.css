@@ -49,7 +49,7 @@ body.light {
         border-color: var(--border-color);
     }
 
-    #main-nav button.button {
+    #main-nav ul button.button {
         background-color: transparent;
         color: var(--s-red-);
     }

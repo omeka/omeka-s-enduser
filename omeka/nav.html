@@ -11,7 +11,7 @@
     and (not config.theme.titles_only
     and (nav_item == page or not config.theme.collapse_navigation)))
     or (nav_item.is_section and nav_item.children)) %}
-    <ul id="nav-Id" class="toctree{% if nav_item.active %} current{% endif %}" aria-labelledby="{{ navId }}-heading">
+    <ul id="{{ navId }}" class="toctree{% if nav_item.active %} current{% endif %}" aria-labelledby="{{ navId }}-heading">
         {%- if nav_item.is_section %}
             {%- for nav_item in nav_item.children %}
                 <li class="toctree-l{{ navlevel }}{% if nav_item.active%} current{%endif%}">

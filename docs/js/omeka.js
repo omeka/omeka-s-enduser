@@ -74,18 +74,23 @@ const Omeka = {
         const expandAllButton = document.getElementById('expand-all');
         const collapseAllButton = document.getElementById('collapse-all');
 
+        const expandAllAlert = expandAllButton.getAttribute('data-success-alert');
+        const collapseAllAlert = collapseAllButton.getAttribute('data-success-alert');
+
         for (const navToggleButton of navToggleButtons) {
             navToggleButton.addEventListener('click', () => Omeka.toggleChildNav(navToggleButton));
         }
 
-        expandAllButton.addEventListener('click', () => Omeka.clickToggleAll('expand'));
-        collapseAllButton.addEventListener('click', () => Omeka.clickToggleAll('collapse'));
+        expandAllButton.addEventListener('click', () => Omeka.clickToggleAll('expand', expandAllAlert));
+        collapseAllButton.addEventListener('click', () => Omeka.clickToggleAll('collapse', collapseAllAlert));
     },
 
-    clickToggleAll: (action) => {
+    clickToggleAll: (action, alert) => {
         const targetButtons = document.querySelectorAll('#main-nav button.' + action);
+        const toggleAlerts = document.getElementById('toggle-alerts');
         for (const targetButton of targetButtons) {
             targetButton.click();
+            toggleAlerts.textContent = alert;
         }
     },
 

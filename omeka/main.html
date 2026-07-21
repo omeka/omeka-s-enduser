@@ -47,8 +47,9 @@
     </dialog>
     <nav id="main-nav" aria-label="Pages">
       <div id="main-nav-content">
-        <button type="button" id="expand-all" class="button">Expand all</button>
-        <button type="button" id="collapse-all" class="button">Collapse all</button>
+        <button type="button" id="expand-all" class="button" data-success-alert="All navigation expanded.">Expand all</button>
+        <button type="button" id="collapse-all" class="button" data-success-alert="All navigation collapsed.">Collapse all</button>
+        <div id="toggle-alerts" class="sr-only" aria-live="polite" aria-atomic="true"></div>
         {%- block site_nav %}
           {%- set navlevel = 1 %}
           <ul id="top-level">

@@ -74,11 +74,21 @@ footer {
 
 /* Reusable classes */
 
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
 .button {
     border-radius: 3px;
     padding: .25rem .5rem;
     display: inline-block;
     text-decoration: none;
+    border: 0;
 }
 
 /* Header */
@@ -179,6 +189,7 @@ header button {
 
 #main-nav ul#top-level {
     padding: 0;
+    margin-bottom: 0;
 }
 
 #main-nav ul {
@@ -200,10 +211,6 @@ header button {
             max-width: none;
         }
     }
-
-#main-nav-content > button {
-    border: 1px solid;
-}
 
 #main-nav ul button.button {
     width: 1.5rem;
@@ -236,10 +243,6 @@ dialog #main-nav ul#top-level {
     border: 0;
 }
 
-#main-nav #top-level > li {
-    padding: 0 .5rem;
-}
-
 #main-nav .toctree {
     display: none;
 }
@@ -253,7 +256,8 @@ dialog #main-nav ul#top-level {
     font-weight: bold;
 }
 
-#main-nav .current > ul,
+#main-nav .current > .collapse + ul,
+#main-nav a.current + ul,
 #main-nav .collapse + .toctree {
     display: block;
 }
