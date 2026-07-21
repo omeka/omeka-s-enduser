@@ -3,7 +3,7 @@
 <a class="{% if nav_item.active%} current{%endif%}" href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
 {%- else %}
 <span id="{{ navId }}-heading" class="subsection-heading">{{ nav_item.title }}</span>
-<button type="button" class="{% if nav_item.active %}collapse{% else %}expand{% endif %} button" aria-expanded="{% if nav_item.active %}true{% else %}false{% endif %}" aria-controls="{{ navId }}" aria-labelledby="{{ navId }}-heading"></button>
+<button type="button" class="{% if nav_item.active %}collapse{% else %}expand{% endif %} toggle-button button" aria-expanded="{% if nav_item.active %}true{% else %}false{% endif %}" aria-controls="{{ navId }}" aria-labelledby="{{ navId }}-heading"></button>
 {{ navLevel }}
 {%- endif %}
 {%- set navlevel = navlevel + 1 %}

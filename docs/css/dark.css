@@ -52,7 +52,7 @@ body.dark {
         color: var(--dark-mode-text);
     }
 
-    #main-nav ul#top-level {
+    #main-nav-content {
         border-color: var(--dark-mode-border-color);
     }
 

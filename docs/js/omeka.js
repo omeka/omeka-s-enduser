@@ -70,10 +70,22 @@ const Omeka = {
     },
 
     setupNavToggles: () => {
-        const navToggleButtons = document.getElementsByTagName('button');
+        const navToggleButtons = document.getElementsByClassName('toggle-button');
+        const expandAllButton = document.getElementById('expand-all');
+        const collapseAllButton = document.getElementById('collapse-all');
 
         for (const navToggleButton of navToggleButtons) {
             navToggleButton.addEventListener('click', () => Omeka.toggleChildNav(navToggleButton));
+        }
+
+        expandAllButton.addEventListener('click', () => Omeka.clickToggleAll('expand'));
+        collapseAllButton.addEventListener('click', () => Omeka.clickToggleAll('collapse'));
+    },
+
+    clickToggleAll: (action) => {
+        const targetButtons = document.querySelectorAll('#main-nav button.' + action);
+        for (const targetButton of targetButtons) {
+            targetButton.click();
         }
     },
 

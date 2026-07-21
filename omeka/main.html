@@ -46,48 +46,52 @@
         <button type="button" id="mobile-nav-modal-close" aria-label="Close navigation"></button>
     </dialog>
     <nav id="main-nav" aria-label="Pages">
-    {%- block site_nav %}
-      {%- set navlevel = 1 %}
-      <ul id="top-level">
-      {%- for nav_item in nav %}
-        {%- if nav_item.is_section %}
-          <li class="section{% if nav_item.active %} current{% endif %}">
-            <span id="section-{{ loop.index }}-heading" class="section-heading">{{ nav_item.title }}</span>
-            <button type="button" class="{% if nav_item.active %}collapse{% else %}expand{% endif %} button" aria-expanded="{% if nav_item.active %}true{% else %}false{% endif %}" aria-controls="section-{{ loop.index }}" aria-labelledby="section-{{ loop.index }}-heading"></button>
-            <ul id="section-{{ loop.index }}" aria-labelledby="section-{{ loop.index }}-heading">
-            {%- for nav_item in nav_item.children %}
+      <div id="main-nav-content">
+        <button type="button" id="expand-all" class="button">Expand all</button>
+        <button type="button" id="collapse-all" class="button">Collapse all</button>
+        {%- block site_nav %}
+          {%- set navlevel = 1 %}
+          <ul id="top-level">
+          {%- for nav_item in nav %}
+            {%- if nav_item.is_section %}
+              <li class="section{% if nav_item.active %} current{% endif %}">
+                <span id="section-{{ loop.index }}-heading" class="section-heading">{{ nav_item.title }}</span>
+                <button type="button" class="{% if nav_item.active %}collapse{% else %}expand{% endif %} toggle-button button" aria-expanded="{% if nav_item.active %}true{% else %}false{% endif %}" aria-controls="section-{{ loop.index }}" aria-labelledby="section-{{ loop.index }}-heading"></button>
+                <ul id="section-{{ loop.index }}" aria-labelledby="section-{{ loop.index }}-heading">
+                {%- for nav_item in nav_item.children %}
+                  <li class="toctree-l{{ navlevel }}{% if nav_item.active %} current{% endif %}">
+                    {%- include 'nav.html' %}
+                  </li>
+                {%- endfor %}
+                </ul>
+              </li>
+            {%- elif config.theme.include_homepage_in_sidebar or (not nav_item == nav.homepage) %}
               <li class="toctree-l{{ navlevel }}{% if nav_item.active %} current{% endif %}">
                 {%- include 'nav.html' %}
               </li>
-            {%- endfor %}
-            </ul>
-          </li>
-        {%- elif config.theme.include_homepage_in_sidebar or (not nav_item == nav.homepage) %}
-          <li class="toctree-l{{ navlevel }}{% if nav_item.active %} current{% endif %}">
-            {%- include 'nav.html' %}
-          </li>
-        {%- endif %}
-      {%- endfor %}
-    </ul>
-    {%- endblock %}
-    </nav>
-    <main id="content">
-        {%- include "breadcrumbs.html" %}
-        <article>
-            {% block content %}
-            {{ page.content }}
-            {% endblock %}
-        </article>
-        {%- block next_prev %}
-            <nav id="page-nav" aria-label="{% trans %}Page Navigation{% endtrans %}">
-              {%- if page.previous_page %}
-                <a href="{{ page.previous_page.url|url }}" class="button" title="{{ page.previous_page.title }}"><span class="icon icon-circle-arrow-left"></span> {% trans %}Previous{% endtrans %}</a>
-              {%- endif %}
-              {%- if page.next_page %}
-                <a href="{{ page.next_page.url|url }}" class="button" title="{{ page.next_page.title }}">{% trans %}Next{% endtrans %} <span class="icon icon-circle-arrow-right"></span></a>
-              {%- endif %}
-            </nav>
+            {%- endif %}
+          {%- endfor %}
+        </ul>
         {%- endblock %}
+        </nav>
+        <main id="content">
+            {%- include "breadcrumbs.html" %}
+            <article>
+                {% block content %}
+                {{ page.content }}
+                {% endblock %}
+            </article>
+            {%- block next_prev %}
+                <nav id="page-nav" aria-label="{% trans %}Page Navigation{% endtrans %}">
+                  {%- if page.previous_page %}
+                    <a href="{{ page.previous_page.url|url }}" class="button" title="{{ page.previous_page.title }}"><span class="icon icon-circle-arrow-left"></span> {% trans %}Previous{% endtrans %}</a>
+                  {%- endif %}
+                  {%- if page.next_page %}
+                    <a href="{{ page.next_page.url|url }}" class="button" title="{{ page.next_page.title }}">{% trans %}Next{% endtrans %} <span class="icon icon-circle-arrow-right"></span></a>
+                  {%- endif %}
+                </nav>
+            {%- endblock %}
+      </div>
         <a href="#content" id="back-to-top">Back to top</a>
     </main>
     <footer>

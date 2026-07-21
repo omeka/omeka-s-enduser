@@ -177,12 +177,16 @@ header button {
     display: inline-block;
 }
 
+#main-nav ul#top-level {
+    padding: 0;
+}
+
 #main-nav ul {
     list-style-type: none;
     padding: 0 1rem;
 }
 
-#main-nav ul#top-level {
+#main-nav-content {
     border: 1px solid;
     border-radius: 3px;
     padding: 1rem;
@@ -192,12 +196,16 @@ header button {
 }
 
     @media screen and (max-width: 480px) {
-        #main-nav ul#top-level {
+        #main-nav-content {
             max-width: none;
         }
     }
 
-#main-nav button.button {
+#main-nav-content > button {
+    border: 1px solid;
+}
+
+#main-nav ul button.button {
     width: 1.5rem;
     height: 1.5rem;
     line-height: 100%;

@@ -45,7 +45,7 @@ body.light {
         color: #fff;
     }
 
-    #main-nav ul#top-level {
+    #main-nav-content {
         border-color: var(--border-color);
     }
 
