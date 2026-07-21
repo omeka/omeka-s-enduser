@@ -19,6 +19,16 @@
   url("../fonts/fa-solid-900.svg#fontawesome") format("svg")
 }
 
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/fa-brands-400.eot");
+  src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg"); 
+}
+
+
 /* Global Elements */
 
 * {
@@ -89,6 +99,12 @@ footer {
     display: inline-block;
     text-decoration: none;
     border: 0;
+}
+
+.icon:before,
+.icon:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
 }
 
 /* Header */
@@ -301,7 +317,8 @@ dialog #main-nav ul#top-level {
     list-style: none;
     flex-wrap: wrap;
     gap: .5rem;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
 }
 
 #breadcrumbs li:not(:last-child):after {
@@ -334,6 +351,19 @@ main#content {
             margin-bottom: 0;
         }
     }
+
+#article-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.icon-github:before {
+    content: "\f09b" / "";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+}
 
 #back-to-top:after {
     content: "\f3bf" / "";

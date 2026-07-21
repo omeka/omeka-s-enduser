@@ -76,7 +76,12 @@
         {%- endblock %}
         </nav>
         <main id="content">
-            {%- include "breadcrumbs.html" %}
+            <div id="article-header">
+              {%- include "breadcrumbs.html" %}
+              {%- if config.repo_name|lower == 'github' %}
+              <a href="{{ page.edit_url }}" class="icon icon-github"> {% trans repo_name=config.repo_name %}Edit on {{ repo_name }}{% endtrans %}</a>
+              {%- endif %}
+            </div>
             <article>
                 {% block content %}
                 {{ page.content }}
