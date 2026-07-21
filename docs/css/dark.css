@@ -21,13 +21,23 @@ body.dark {
         color: var(--dark-mode-text);
     }
 
+    dialog {
+        background-color: var(--dark-mode-black);
+        color: var(--dark-mode-text);
+    }
+
     .button {
         background-color: var(--dark-mode-blue);
         color: var(--dark-mode-black);
     }
 
-    header {
-        border-bottom: 1px solid var(--dark-mode-border-color);
+    #header-search,
+    #theme {
+        border-bottom-color: var(--dark-mode-border-color);
+    }
+
+    #main-nav-toggle {
+        color: var(--dark-mode-text);
     }
 
     #main-nav ul#top-level {

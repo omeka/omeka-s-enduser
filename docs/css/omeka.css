@@ -91,7 +91,7 @@ header {
     justify-content: flex-end;
     flex-wrap: wrap;
     grid-column: span 5 / span 5;
-    gap: 1rem;
+    gap: 0 1rem;
 }
 
     @media screen and (max-width: 480px) {
@@ -132,8 +132,14 @@ header button {
         #header-search-query {
             width: 100%;
         }
-    }
 
+        #theme {
+            padding: .5rem 1rem;
+            border-bottom: 1px solid;
+            text-align: right;
+            width: 100%;
+        }
+    }
 /* Navigation */
 
 #main-nav {

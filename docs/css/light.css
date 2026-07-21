@@ -33,14 +33,16 @@ body.light {
     }
 
     @media screen and (max-width: 480px) {
-        #header-search {
+        #header-search,
+        #theme {
             background-color: #fff;
             border-bottom-color: var(--border-color);
+            color: #000;
         }
     }
 
-    #main-nav summary {
-        color: var(--s-red);
+    #main-nav-toggle {
+        color: #fff;
     }
 
     #main-nav ul#top-level {
