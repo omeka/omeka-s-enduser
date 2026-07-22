@@ -107,6 +107,18 @@ footer {
     font-weight: 900;
 }
 
+.admonition {
+    padding: .5rem 0;
+}
+
+.admonition-title {
+    font-weight: bold;
+}
+
+.admonition p {
+    padding: 0 1rem;
+}
+
 /* Header */
 
 header {

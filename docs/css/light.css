@@ -1,5 +1,7 @@
 :root {
     --s-blue: #404E61;
+    --s-light-blue: #dce5f2;
+    --s-light-blue-border: #bdcde3;
     --s-red: #A91919;
     --border-color: #dfdfdf;
 }
@@ -16,6 +18,11 @@ body.light {
     .button {
         color: #fff;
         background-color: var(--s-red);
+    }
+
+    .admonition {
+        background-color: var(--s-light-blue);
+        border: 1px solid var(--s-light-blue-border);
     }
 
     header {

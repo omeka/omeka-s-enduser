@@ -3,6 +3,7 @@
     --dark-mode-red: #EC6F6F;
     --dark-mode-blue: #8bacec;
     --dark-mode-border-color: #707070;
+    --dark-mode-blue-border-color: #69798f;
     --dark-mode-text: #e1e1e1;
 }
 
@@ -30,6 +31,11 @@ body.dark {
     .button {
         background-color: var(--dark-mode-blue);
         color: var(--dark-mode-black);
+    }
+
+    .admonition {
+        background-color: var(--s-blue);
+        border: 1px solid var(--dark-mode-blue-border-color);
     }
 
     header {
