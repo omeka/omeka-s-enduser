@@ -2,7 +2,7 @@
 
 The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows you to geolocate Omeka S items and display interactive maps throughout your public sites. Maps can also include timelines that allow you to scroll through items on a map in chronological order.
 
-![Map with timeline](../modules/modulesfiles/Mapping_timelinePublic1.png)
+![Map with timeline](modulesfiles/Mapping_timelinePublic1.png)
 
 The Mapping module adds: 
 
@@ -18,9 +18,9 @@ The Mapping module adds:
 
 Mapping has installation-wide default settings (a choice of base maps, etc.), site-specific default settings that override the global settings, and user-specific administrative settings that apply when editing. Individual maps on pages, and those associated with items, can be customized to override all of these defaults. 
 
-Mapping can work with the [Collecting](../modules/collecting.md#prompts) module, by allowing users filling out the contribution form to provide geolocation data for their submissions. Users click directly on a map to place a marker, and can optionally provide a text label for the marker. See the Collecting module page for more information.
+Mapping can work with the [Collecting](collecting.md#prompts) module, by allowing users filling out the contribution form to provide geolocation data for their submissions. Users click directly on a map to place a marker, and can optionally provide a text label for the marker. See the Collecting module page for more information.
 
-Mapping can work with the [CSV Import](../modules/csvimport.md) module, allowing geolocation data to be added in bulk. See the [CSV Import integration section below](#csv-import-integration) for more information.
+Mapping can work with the [CSV Import](csvimport.md) module, allowing geolocation data to be added in bulk. See the [CSV Import integration section below](#csv-import-integration) for more information.
 
 ## How to use maps
 
@@ -28,7 +28,7 @@ On public pages, site visitors use their mouse or trackpad to navigate within a 
 
 When editing a map in the administrative interface, small white square buttons on the left side of the map allow you to navigate and to edit the map's features. Hover over the buttons with the mouse to view tool-tips.
 
-![Map navigation buttons as described below](../modules/modulesfiles/Mapping_JustButtons.png)
+![Map navigation buttons as described below](modulesfiles/Mapping_JustButtons.png)
 
 * **Zoom in**: The small white square with a black plus sign. Each click zooms in one step (between 0 and 19).
 * **Zoom out**: The square with black minus sign. Each click zooms out one step (between 0 and 19).
@@ -64,7 +64,7 @@ This information can be set manually using the item's "Mapping" tab via a visual
 
 The item view screen will not show a "Mapping" tab unless there is already geolocation metadata, but one will appear when editing the item. To add a map to an item, enter editing mode and navigate to the "Mapping" tab.
 
-![The item-editing page with the Mapping tab selected.](../modules/modulesfiles/Mapping_Item_Add.png)
+![The item-editing page with the Mapping tab selected.](modulesfiles/Mapping_Item_Add.png)
 
 To move the map to where you want to add a location, you can do one of the following:
 
@@ -73,7 +73,7 @@ To move the map to where you want to add a location, you can do one of the follo
 * Type the place name into the search box (see the image below).
 	* Options will populate as you type, and will not search locations which do not match the formatting of the search function.
 
-![Mapping tab with a search for "Roosevelt Island" in the search view. Below the search field are a number of suggested locations.](../modules/modulesfiles/Mapping_itemSearch.png)
+![Mapping tab with a search for "Roosevelt Island" in the search view. Below the search field are a number of suggested locations.](modulesfiles/Mapping_itemSearch.png)
 
 When you are centered on your intended location, you can then:
 
@@ -83,17 +83,17 @@ When you are centered on your intended location, you can then:
 
 We refer to these various markers and shapes as "features" throughout the rest of this documentation.
 
-![Mapping tab with an active marker being drawn. The marker has a tooltip saying "click map to place marker"](../modules/modulesfiles/Mapping_drawMarker.png)
+![Mapping tab with an active marker being drawn. The marker has a tooltip saying "click map to place marker"](modulesfiles/Mapping_drawMarker.png)
 
 #### Edit features
 
 You can now click on the marker or shape to add a label that will display on [public map views](#public-view) of the item. Be aware that this will display in a large font.
 
-![Closeup of map with a marker selected. There is a field to enter the maker label.](../modules/modulesfiles/Mapping_addLabel.png)
+![Closeup of map with a marker selected. There is a field to enter the maker label.](modulesfiles/Mapping_addLabel.png)
 
 You can also add an image to display on the feature when clicked in the [public view](#public-view). You can only select from images that have already been [attached to the item as media](../content/items.md#media). To remove the image, select "No Image" from the sidebar.
 
-![Marker selected with Image added. The media is also visible in the sidebar, along with an option for "No Image"](../modules/modulesfiles/Mapping_addImage.png)
+![Marker selected with Image added. The media is also visible in the sidebar, along with an option for "No Image"](modulesfiles/Mapping_addImage.png)
 
 Neither field is required, but if you choose an image without entering a label, the media title will appear in the label field. This can be removed. 
 
@@ -103,13 +103,13 @@ To **move a marker or shape**, use the "Edit feature" button on the left hand to
 
 To apply your changes, click the "Save" option that opens from the "Edit feature" button. If you do not save, the marker will not be moved.
 
-![Marker being moved](../modules/modulesfiles/Mapping_moveMarker.png)
+![Marker being moved](modulesfiles/Mapping_moveMarker.png)
 
 To **delete a marker**, first click the "Delete feature" button in the left hand toolbar (trash can icon). Click on the marker or shape you want to delete; this will remove the feature from the map. In order to make the deletion permanent, you must click "Save" in the small menu that opens from the "Delete feature" button.
 
 Note that you can use the "Clear all" button in the menu which opens form the "Delete feature" button to clear all markers and shapes on the map.
 
-![Marker being deleted.](../modules/modulesfiles/Mapping_deleteMarker.png)
+![Marker being deleted.](modulesfiles/Mapping_deleteMarker.png)
 
 #### Map display
 
@@ -175,7 +175,7 @@ The Mapping subsection added to the "User settings" tab provides options for the
 
 ### CSV Import integration
 
-Mapping is compatible with [CSV Import](../modules/csvimport.md) when importing items (but not when importing mixed resources).
+Mapping is compatible with [CSV Import](csvimport.md) when importing items (but not when importing mixed resources).
 
 If the two modules are enabled, your CSV Import process will have a new "Mapping" dropdown menu in the "Add mapping" sidebar when you are connecting a spreadsheet column to a property.
 
@@ -244,7 +244,7 @@ Mapping creates three page blocks you can add to your site pages:
 
 To add a map to a page, go into page editing mode. On the right, under "Add new block", click either the "Map by attachments", "Map by query", or "Map by groups" block. Selecting one will add the map block to the bottom of the page. The blocks include customizable features for the map in collapsable panes. Click the triangles to expand or collapse these fields.
 
-![Page editing screen with the three Map blocks added: "Map by query", "Map by attachments", and "Map by groups". Block includes menu options Default View, Overlays and attachments.](../modules/modulesfiles/Mapping_Page_MapBlock1.png)
+![Page editing screen with the three Map blocks added: "Map by query", "Map by attachments", and "Map by groups". Block includes menu options Default View, Overlays and attachments.](modulesfiles/Mapping_Page_MapBlock1.png)
 
 The "Map by attachments" and "Map by query" blocks have largely the same settings besides the method for adding items to the map. 
 
@@ -408,11 +408,11 @@ With this block, markers are added to the map by selecting items manually.
 * Drag and drop items in this list to reorder them.
 * Remove items from the list by clicking the red trashcan.
 
-![A map with Add Attachment selected. On the right is a list of items.](../modules/modulesfiles/Mapping_pageAttachments.png)
+![A map with Add Attachment selected. On the right is a list of items.](modulesfiles/Mapping_pageAttachments.png)
 
 To add multiple items at once, click the "Quick add" slider just above the list of items in the right-hand drawer. This will add a checkbox to the left of each item. Check the boxes of those items you want to add to the map, then click the "Add selected" button at the bottom of the drawer.
 
-![Drawer with bulk add option activated](../modules/modulesfiles/Mapping_bulkAttachments.png)
+![Drawer with bulk add option activated](modulesfiles/Mapping_bulkAttachments.png)
 
 #### Query (Map by query block)
 
@@ -547,15 +547,15 @@ If you have added a label, it will show the label, as well as representative med
 
 Item mapping marker with label only:
 
-![Item pin pop-up showing "Black hole of Calcutta" text, with a line below showing "Item: History of Paul Jones, The Pirate." as a link to the item.](../modules/modulesfiles/Mapping_publicLabel.png)
+![Item pin pop-up showing "Black hole of Calcutta" text, with a line below showing "Item: History of Paul Jones, The Pirate." as a link to the item.](modulesfiles/Mapping_publicLabel.png)
 
 Item mapping marker with label and image:
 
-![Item pin pop-up showing the same information as above, with a thumbnail image, and with another line below "Item:" reading "Media: Illustration on title page of a tall ship at sea", as a link to the media.](../modules/modulesfiles/Mapping_publicLabelImg.png)
+![Item pin pop-up showing the same information as above, with a thumbnail image, and with another line below "Item:" reading "Media: Illustration on title page of a tall ship at sea", as a link to the media.](modulesfiles/Mapping_publicLabelImg.png)
 
 Item mapping marker with no label or image:
 
-![Item pin pop-up showing only "Item: History of Paul Jones, The Pirate".](../modules/modulesfiles/Mapping_publicNoLabel2.png)
+![Item pin pop-up showing only "Item: History of Paul Jones, The Pirate".](modulesfiles/Mapping_publicNoLabel2.png)
 
 #### Timeline public view
 
@@ -563,7 +563,7 @@ Timelines can only appear in page blocks. The timeline card will display to the 
 
 On a map block with a timeline, the block initially loads with the map either at default view or zoomed to display all markers. The timeline will display the title headline and text, as seen below. This image also shows the timeline with the "Dark" theme selected in the settings:
 
-![Map block with timeline, displaying the first slide of the timeline. The timeline is above the map.](../modules/modulesfiles/Mapping_timelinePublic2.png)
+![Map block with timeline, displaying the first slide of the timeline. The timeline is above the map.](modulesfiles/Mapping_timelinePublic2.png)
 
 The timeline viewer has zoom buttons to control the granularity of the timeline bar (zoom in for year by year, zoom out to see decades at once). The arrows below them jump the viewer to the very last item, or to the title slide.
 
@@ -571,7 +571,7 @@ When mousing over the timeline, the cursor changes to a four-directional arrow. 
 
 Clicking on a marker will display that item's title, description, date or interval, and attached image. The information area has a scrollbar for longer material. The title is a link to the item's show page.
 
-![Map block with timeline, displaying an item. The timeline is below the map.](../modules/modulesfiles/Mapping_timelinePublic1.png)
+![Map block with timeline, displaying an item. The timeline is below the map.](modulesfiles/Mapping_timelinePublic1.png)
 
 Whenever an item is selected, its marker in the timeline will show up with a highlight to indicate that it is active.
 
@@ -579,13 +579,13 @@ Whenever an item is selected, its marker in the timeline will show up with a hig
 
 Interval properties (fields with the data type `numeric:interval`) display as a long bar running horizontally across the timeline, with bars reaching down to the timeline at the start and end dates of the interval. Overlapping intervals will stack. In the image below, the timeline is on the "Contrast" theme selected in the settings:
 
-![Timeline and map showing two items overlapping in the timeline bar. The timeline bar is above the map.](../modules/modulesfiles/Mapping_timelinePublic3.png)
+![Timeline and map showing two items overlapping in the timeline bar. The timeline bar is above the map.](modulesfiles/Mapping_timelinePublic3.png)
 
 ##### Display of timestamps
 
 Timestamp properties (fields with the data type `numeric:timestamp`) display as a flag on the timeline, with one bar anchoring them to the timeline. Items which overlap either due to date or long text will stack. In the image below, the timeline is using the "Default" theme:
 
-![Timestamp timeline with many items shown in proximity. The timeline bar is below the map.](../modules/modulesfiles/Mapping_timelinePublic4.png)
+![Timestamp timeline with many items shown in proximity. The timeline bar is below the map.](modulesfiles/Mapping_timelinePublic4.png)
 
 ##### Timeline navigation position
 
@@ -599,7 +599,7 @@ When "Show contemporaneous events" is checked, the map zooms to display all even
 
 In the image below, the timeline is using interval data. The "Smithsonian Garden Shed" item is in focus, and shows a pin on the map. The "Statue of Freedom" item, which overlaps the first item chronologically in the timeline, is also showing a pin on the map. 
 
-![image as described](../modules/modulesfiles/Mapping_timelinePublic3.png)
+![image as described](modulesfiles/Mapping_timelinePublic3.png)
 
 ## Troubleshooting
 
