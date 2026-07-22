@@ -117,12 +117,13 @@ header {
     justify-content: flex-end;
     flex-wrap: wrap;
     grid-column: span 5 / span 5;
-    gap: 0 1rem;
+    gap: 1rem;
 }
 
     @media screen and (max-width: 480px) {
         header {
             padding: 0;
+            gap: 0 1rem;
         }
 
         header #site-title {
@@ -137,6 +138,7 @@ header a {
 header button {
     border: 0;
     appearance: none;
+    font-size: 12px;
 }
 
 #site-title {
@@ -146,6 +148,7 @@ header button {
 #header-search {
     display: flex;
     align-self: flex-start;
+    margin-bottom: 0;
 }
 
     @media screen and (max-width: 480px) {
@@ -166,6 +169,18 @@ header button {
             width: 100%;
         }
     }
+
+#header-search [type="submit"] {
+    border-radius: 0 2px 2px 0;
+}
+
+#theme,
+#theme label {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .25rem;
+}
+
 /* Navigation */
 
 #main-nav {
@@ -225,6 +240,9 @@ header button {
     @media screen and (max-width: 480px) {
         #main-nav-content {
             max-width: none;
+            border: 0;
+            padding: 0;
+            position: relative;
         }
     }
 
