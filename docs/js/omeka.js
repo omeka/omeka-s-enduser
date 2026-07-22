@@ -111,6 +111,7 @@ const Omeka = {
             dialog.append(mainNav);
         } else {
             dialog.insertAdjacentElement('afterend', mainNav);
+            dialog.close();
         }
     },
 
