@@ -6,12 +6,12 @@ The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows 
 
 The Mapping module adds: 
 
-- several metadata fields to each item, on a "Mapping" tab to item editing,
+- several metadata fields to each item, on a "Mapping" tab added to item editing
 - batch-editing options for items
 - optional location-based search fields to the advanced search pages on the admin and public interfaces, controlled on a site-by-site basis by [Site Settings](../sites/site_settings.md#settings)
 - three page blocks to [Site Pages](../sites/site_pages.md) that can display maps and timelines for browsing: "Map by query", "Map by attachments", and "Map by groups"
 - a "Map Browse" page for each site, found in the [Site Navigation settings](../sites/site_navigation.md)
-- [resource blocks to items and item sets](../sites/site_theme.md#select-regions-and-blocks) (not media), which can be repositioned within the regions offered by a given site's theme. 
+- [resource blocks for items and item sets](../sites/site_theme.md#select-regions-and-blocks) (not media), which can be repositioned within the regions offered by a given site's theme. 
 
 !!! note
 	Item sets cannot be geolocated, but can display mapping information based on items assigned to them.
