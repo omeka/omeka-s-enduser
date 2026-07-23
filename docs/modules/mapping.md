@@ -147,20 +147,22 @@ You may wish to copy your coordinates in one batch operation, then update those 
 
 ### Global settings
 
-All of the item add/edit maps in the installation can be given default settings  to enable faster gelocation work. These settings can then be overridden by logged-in users for their own mapping work. These settings will only take effect on the **administrative side** for **new item maps**, that is, for existing or new items with no current mapping data. 
+All of the item add/edit maps in the installation can be given default settings to enable faster gelocation work. These settings can then be overridden by logged-in users for their own mapping work. These settings will only take effect on the **administrative side**. 
+
+Under Admin in the left-hand bar of the administrative dashboard, click "Settings" and then scroll down to the "Mapping" section. 
 
 ![The Mapping section of the installation-wide settings tab.](modulesfiles/Mapping_globalSettings.png)
 
-Under Admin in the left-hand bar of the administrative dashboard, click "Settings" and then scroll down to the "Mapping" section. In this section you can set: 
+In this section you can set: 
 
 - **Basemap provider**: Select a basemap from the dropdown to show when editing item maps on the administrative side.  
 - **Minimum zoom level**: Set a minimum zoom level for all item maps when they first load.  
 - **Maximum zoom level**: Set a maximum zoom level for all item maps when they first load.
-- **Default bounds**: Set an area that must always be shown in item maps when they first load. The four corner coordinates set in this map will be included inside any map, with excess shown if the map dimensions require it. 
+- **Default bounds**: Set an area that must always be shown in item maps when they first load. The four corner coordinates set in this map will be included inside any map, with excess shown if the map dimensions require it. This setting will only apply to new item maps, that is, items without any mapping data. 
 
 ### User settings
 
-A logged-in user can customize their own map settings to enable faster gelocation work. These settings will only take effect on the **administrative side** for **new item maps**, that is, for existing or new items with no current mapping data. These settings can be changed or removed at any time, as the user works through items. 
+A logged-in user can customize their own map settings to enable faster gelocation work. These settings will only take effect on the **administrative side**. These settings can be changed or removed at any time, as the user works through items. 
 
 From the Users link in the left sidebar, use the table of user accounts to edit one user. At the top of the screen, choose the "User settings" tab. 
 
@@ -171,7 +173,7 @@ The Mapping subsection added to the "User settings" tab provides options for the
 - **Basemap provider**: Select a basemap from the dropdown to show when editing item maps on the administrative side.  
 - **Minimum zoom level**: Set a minimum zoom level for all item maps when they first load.  
 - **Maximum zoom level**: Set a maximum zoom level for all item maps when they first load.
-- **Default bounds**: Set an area that must always be shown in item maps when they first load. The four corner coordinates set in this map will be included inside any map, with excess shown if the map dimensions require it. 
+- **Default bounds**: Set an area that must always be shown in item maps when they first load. The four corner coordinates set in this map will be included inside any map, with excess shown if the map dimensions require it. This setting will only apply to new item maps, that is, items without any mapping data. 
 
 ### CSV Import integration
 
@@ -305,18 +307,22 @@ First, you can set whether you wish the overlays to display exclusively (one at 
 
 ##### WMS, WMTS, and IIIF
 
-Four fields are available for **WMS (and WMTS) overlays**: 
+Four fields are available for **WMS overlays**: 
 
  * **Label**: Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays. (Required.)
- * **Base URL**: Add a map overlay to the WMS or WMTS map by URL. 
- * **Layers**: Any of the offered layers you wish to use, separated by commas. This is a string or strings provided by the WMS or WMTS host.
- * **Styles**: Any styles you wish to use, separated by commas. This is a string or strings provided by the WMS or WMTS host.
+ * **Base URL**: Add a map overlay to the WMS map by URL. 
+ * **Layers**: Any of the offered layers you wish to use, separated by commas. This is a string or strings provided by the WMS host.
+ * **Styles**: Any styles you wish to use, separated by commas. This is a string or strings provided by the WMS host.
 
-Five fields are available for **WMTS overlays** - the same four as WMS, plus you must supply:
+Five fields are available for **WMTS overlays** - similar to WMS, but all fields only take one value:
 
-* **Tile matrix set**: A code sourced from the mapping service to point to tiles in different formats. Provide only one value here. You may need to read the XML provided by the WMTS map to find the `<TileMatrixSet>` value(s). 
+ * **Label**: Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays. (Required.)
+ * **Base URL**: Add a map overlay to the WMTS map by URL. 
+ * **Layer**: The offered layer you wish to use. This is a string provided by the WMTS host.
+ * **Style**: The style you wish to use. This is a string provided by the WMTS host.
+ * **Tile matrix set**: A code sourced from the mapping service to point to tiles in different formats. You may need to read the XML provided by the WMTS map to find the `<TileMatrixSet>` value(s). 
 
-To find the "Layer" name, you may also need to read the XML - look for `<Layer><ows:Title>` for example. Note that for WMTS overlays the "Style" value is often "default". 
+To find the "Layer" name, you may need to read the XML - look for `<Layer><ows:Title>` for example. Note that for WMTS overlays the "Style" value is often "default". 
 
 Two fields are available for **IIIF overlays**:
 
@@ -386,7 +392,6 @@ The Timeline section allows you to add a timeline display alongside the map view
 	- Note that this setting only works when "Fly to" is set to "Default view".
 - **Timeline theme**: A dropdown offering timeline color schemes from [TimelineJS](https://timeline.knightlab.com/){target=_blank}. The options are Default (the only theme available in previous versions of the timeline), a Dark theme, and a Contrast theme with accessibility-compliant colors. Note that these selections call a CSS file that will apply to all timelines on one page; different timelines on the same page cannot have different themes. See the example images below in the [Timeline public view](#timeline-public-view) section of this page.
 - **Timeline navigation position**: by default, the timeline displays with the story slider, to the left of the map. Using this dropdown, you can change where the story slider displays. Options are:
-	- Default position
 	- Full width, below story slider and map
 	- Full width, above story slider and map.
 - **Property**: a dropdown menu; select the timestamp or interval property to use when populating the timeline. The dropdown menu will populate with the properties which have been defined in a resource type as using numeric data types Interval or Timestamp.
@@ -444,13 +449,19 @@ Note that the administrative interface will not preview the map with your select
 
 #### Groups (Map by groups block)
 
-The "Map by groups" page block allows you to sort your items according to various criteria. A group will display as either a single map pin (in the center of all the locations of all its items), or as a polygon (containing all the locations of all its items). Users can click on the groups to see only that group's items. 
+The "Map by groups" page block sorts your items into groups of your choosing. A group will display as either a single map pin (in the center of all the locations of all its items), or as a polygon (containing all the locations of all its items). Users can click on the groups to see only that group's items. There is also a dropdown menu in the bottom left corner where users can select one of the groups. 
 
-This page block offers common ways that users want to group their items: by classes, by item sets, or by common values in a given field, such as linked resources used in the same field. 
+This page block offers common ways to browse items: by classes, by item sets, or by common values in a given field, such as linked resources used in the same field. 
 
 This block does not have timeline or overlay settings - only the Default View section, as above, and a Groups section. 
 
-![A map by group block on a public page, with the title "Browse by subject", with four pins showing. One pin pop-up is showing "Subject contains 'design & monuments' In item set 'National Mall Items'" with a button leading to "View all results (139 total)".](modulesfiles/Mapping_groupPublicPin1.png)
+![A map by group block on a public page, with the title "Map by groups", with 3 pins showing. One pin has a pop-up reflecting the group ".](modulesfiles/Mapping_groupPublic1.png)
+
+The public map on first viewing shows a feature for each group. In the image above, the dropdown menu has been expanded to show the options available in this map. One pin has been selected and its pop-up is showing, with the grouping information and a button that says "View all results".  
+
+After this button is clicked, the map will update to display features for each item in the group. There may be clusters, pins, and shapes. At the bottom of the map a "Return to groups" button is added, alongside the current browsing parameters (including the group and any filters applied):
+
+![A map by group block with the group's contents showing. A "Return to groups" button is now in the bottom left corner of the map.](modulesfiles/Mapping_groupPublic2.png)
 
 The Groups section has two fields to start:
 
@@ -465,7 +476,7 @@ The Groups section has two fields to start:
 	- Polygon: A shape with boundaries around the outermost features.
 	- Point: The central point of all the group's items' locations.
 
-Once a user selects a "Group by" choice, the form should expand with more fields, based on the selection. 
+Once a user selects a "Group by" choice, the form will expand with more fields, based on the selection. 
 
 Filtering options are also offered: when one grouping choice is made (such as group items by their class), you can then choose to filter items based on the other selections (such as only including items from a particular item set). These filters allow only one selection. 
 
@@ -497,7 +508,7 @@ This option allows you more flexibility than the "is exactly" option. This can b
 - Property: Select the property of the values to group. You can leave this blank to create groups from finding the supplied text values in all properties.
 - Values: Enter the (matches any part) text values to render as groups on the map, separated by new lines. 
 
-![A map by group block on the admin side, with "Group by property values (contains)" selected.](modulesfiles/Mapping_groupBlock.png)
+![A map by group block on the admin side, with "Group by property values (contains)" selected. Dublin Core Subject is chosen, and subject values are entered in the text box below, one per line.](modulesfiles/Mapping_groupBlock.png)
 
 ##### Group by Property values (is item with ID)
 
@@ -513,18 +524,6 @@ This option allows you to group items that have a common linked resource. Enter 
 - Filter by item set.
 - Filter by resource class.
 - Properties: Select the properties (that have any values) to render as groups on the map. Each property selected will become a group. 
-
-The public map on first viewing shows a feature for each group. In the image below polygons are set to display for each group. This is the same map as the image at the beginning of this section, set to display polygons instead of single pins:
-
-![A map by group block with polygons showing.](modulesfiles/Mapping_groupPublic1.png)
-
-In the image above, one polygon has been selected and its pop-up is showing, reading "Subject contains politics & protest, in item set National Mall Items" with "View all results (58 total)" on a clickable button. 
-
-After a group is selected, the map will update to display features for each item in the group. There may be clusters, pins, and shapes. Underneath the map there will appear a "Return to groups" button, alongside the current browsing parameters (including the group and any filters applied):
-
-![A map by group block with the group's contents showing.](modulesfiles/Mapping_groupPublic2.png)
-
-In the image above, the browsing parameters read "Subject contains: politics & protest | In item set: National Mall items". 
 
 ### Public view
 
