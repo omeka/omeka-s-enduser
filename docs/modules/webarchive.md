@@ -33,7 +33,7 @@ Depending on the file size, Omeka may take some time to ingest the media.
 
 Once a web archive is uploaded, the player should appear immediately in the media page on the admin side, and be visible on any public sites that include the item. Check these links right away to ensure the file is playing as expected. If you see an error, see the above section on [Server requirements](#server-requirements). 
 
-On a public site, the web archive player will show in the ["Media render" or "Media embeds" resource blocks](../sites/site_theme.md#configure-resource-pages). You can "Configure resource pages" from the Theme settings page on each site. Note that the "Lightbox Gallery" will not display this player, so you may need to weigh each site's priorities for rendering media on item view pages. 
+On a public site, the web archive player will show in the ["Media render" or "Media embeds" resource blocks](../sites/site_theme.md#configure-resource-pages). You can "Configure resource pages" from the Theme settings page on each site. Note that the "Lightbox Gallery" will not display this player, so you may need to weigh each site's priorities for rendering media on item view pages. Lightbox Gallery will generate a list of "Other media" that cannot be rendered in its player, so be aware that an item view page with "Lightbox Gallery" and "Media list" resource blocks will list your web archives twice. 
 
 ### Media configuration
 
