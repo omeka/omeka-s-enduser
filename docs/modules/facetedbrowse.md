@@ -1,6 +1,6 @@
 # Faceted Browse
 
-The [Faceted Browse module](https://omeka.org/s/modules/FacetedBrowse){target=_blank} lets you create "browse resource" pages with facets - filter and sort functions - that site visitors can use to explore your collections. Faceted Browse pages can be made for items, items sets, or media. 
+The [Faceted Browse module](https://omeka.org/s/modules/FacetedBrowse){target=_blank} lets you create "browse resource" pages with facets (filter and sort functions) that site visitors can use to explore your collections. Faceted Browse pages can be made for items, items sets, or media. 
 
 With this module, site managers are able to configure faceted browse pages and add them to their site's [navigation](../sites/site_navigation.md). End users are then able to browse through resources and use the facets to narrow the results in a logical and intuitive manner. This functionality is similar to the filtering options on many websites and should be easy for users to manage as long as you have clear language.
 
@@ -15,7 +15,7 @@ Once activated, Faceted Browse is configured on a site-by-site basis.
 A guide to the terms used to describe the aspects of a Faceted Browse page:
 
 - Category: a group of resources (items, item sets, or media) to which facets are applied on a specific page. You can use a query to narrow the resources, or leave it blank to show all of that resource type. 
-- Facet: an aspect of a resource - usually part of the metadata - which becomes a way to filter the resources in the category. Faceted browsing works best when you have some controlled vocabularies in your metadata values, or when unique values can be sorted into buckets (such as dates browsed by century). 
+- Facet: an aspect of a resource (usually part of the metadata) which becomes a way to filter the resources in the category. Faceted browsing works best when you have some controlled vocabularies in your metadata values, or when unique values can be sorted into buckets (such as dates browsed by century). 
 - Column: information to display for each resource in the results. Columns are optional. Once you have set at least one column, the items will display in a table form (not a grid). When no columns are set, your site's browsing default will display (e.g. title, thumbnail, and description for each resource).
 - Select: When a facet is browseable, you should allow your visitors the most appropriate means of sorting or searching those facets. You can allow them to, for example, exclude or include strings in the results, match full values exactly, or, with numerical data types, bucket the values into groupings that you set. 
 
@@ -51,7 +51,7 @@ You can also save your edits and leave without working on categories and facets 
 
 Once the page has been created, you must create a Category. This is where facets are created, and can also use filters to narrow down the pool of resources to browse with those facets. You can use multiple categories to provide different resource subsets for users to start their browsing.
 
-For example, you may want to add a general "Browse items" page to your navigation, and provide within it a category for navigating only images, another category for navigating only events, and a final category that allows users to browse all items in the site, including images and events. Or you could create separate Faceted Browse pages to add to your navigation - one for each item class - and within each page provide categories to restrict the resources further by another value. 
+For example, you may want to add a general "Browse items" page to your navigation, and provide within it a category for navigating only images, another category for navigating only events, and a final category that allows users to browse all items in the site, including images and events. Or you could create separate Faceted Browse pages to add to your navigation (one for each item class) and within each page provide categories to restrict the resources further by another value. 
 
 Click the "Add category" button to be taken to a new interface. 
 
@@ -65,7 +65,7 @@ You can set a **default sorting** method to use when a site visitor starts to br
 
 You can also include some **helper text** to guide your users on how to navigate the Faceted Browse page. This text will appear in the left-hand sidebar along with your facets in this category. There is a button to contract the text (which is expanded by default); the button says "Instructions" by default, but you can change this label. If you add no helper text, this button and text area will not appear. 
 
-Finally, this area includes the setting for **value facets** behavior: "Match any" and "Match all". If you are using value facets (this setting is not applicable to class, template, item set, or full-text facets) you can use this to ensure that users can broaden their results with "match any" or narrow them with "match all". For example, if you have a value facet for subject headings, the user can select one subject heading to see all the items matching that. If they further add another subject heading, they will see items that match either selection if the category is set to "Match any", or only items that match both those selections if the category is set to "Match all". This also applies to one selection each from two separate value facets. Note that this setting applies to all of the value facets in the category - you cannot set this behavior for each value facet individually. 
+Finally, this area includes the setting for **value facets** behavior: "Match any" and "Match all". If you are using value facets (this setting is not applicable to class, template, item set, or full-text facets) you can use this to ensure that users can broaden their results with "match any" or narrow them with "match all". For example, if you have a value facet for subject headings, the user can select one subject heading to see all the items matching that. If they further add another subject heading, they will see items that match either selection if the category is set to "Match any", or only items that match both those selections if the category is set to "Match all". This also applies to one selection each from two separate value facets. Note that this setting applies to all of the value facets in the category: you cannot set this behavior for each value facet individually. 
 
 !!! note
 	If the "Value facets mode" selection here impacts the behavior of your Faceted Browse page (i.e. if you are using value facets in this category) you may wish to use the "Helper text" field to explain the expected behavior to your users.
@@ -200,9 +200,9 @@ Adds a text search bar that will narrow down the results based on what the visit
 
 ### Numeric Data Types integration
 
-If you are using the [Numeric Data Types module](../modules/numericdatatypes.md), you will have additional facet types to work with, including Date after, Date before, Value greater than, Value less than, Duration greater than, Duration less than, Date in interval.
+If you are using the [Numeric Data Types module](numericdatatypes.md), you will have additional facet types to work with, including Date after, Date before, Value greater than, Value less than, Duration greater than, Duration less than, Date in interval.
 
-![Facet Type dropdown menu showing options including Numeric Date Types](../modules/modulesfiles/FacetedBrowse_NumericDataTypesSelect.png)
+![Facet Type dropdown menu showing options including Numeric Date Types](modulesfiles/FacetedBrowse_NumericDataTypesSelect.png)
 
 Once you have selected a facet type, you will be able to configure the facet to operate with the properties that use a numeric data type. Only properties with the exact data type set (Number, Date, Duration, or Interval) will display in the dropdown.
 
@@ -264,7 +264,7 @@ Drag and drop your pages into the desired place in your site navigation, and the
 
 ## Public views
 
-The public views of Faceted Browse pages include the base page, where there may be one or more categories to click on, and then category-specific pages, featuring the columns chosen for that view. Browse facets will show in a list if no columns are selected for display  - no column headings will be included, but the items on the page can be sorted as usual.
+The public views of Faceted Browse pages include the base page, where there may be one or more categories to click on, and then category-specific pages, featuring the columns chosen for that view. Browse facets will show in a list if no columns are selected for display: no column headings will be included, but the items on the page can be sorted as usual.
 
 ![Faceted browse page with a list of events that happened on the National Mall. On the left side of the image is a list of eras with radio buttons.](modulesfiles/FacetedBrowse_publicView.png)
 
