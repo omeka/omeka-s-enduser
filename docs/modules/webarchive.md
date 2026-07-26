@@ -8,7 +8,7 @@ The [Web Archive module](https://omeka.org/s/modules/WebArchive){target=_blank} 
 
 This player loads archive files using HTTP Range requests. If your server applies `Content-Encoding` to a web archive file, playback will fail.
 
-This most often affects uncompressed `.warc` files, since `.wacz` and `.warc.gz` are already compressed and are usually left alone. When the module detects this condition, it shows an error message instead of a broken player. See the [README for this module](https://github.com/omeka-s-modules/WebArchive){target=_blank} on Github for more technical information about resolving this error if you see it. 
+This most often affects uncompressed `.warc` files, since `.wacz` and `.warc.gz` are already compressed and are usually left alone. When the module detects this condition, it shows an error message instead of a broken player. See the [developer documentation page for this module](https://omeka.org/s/docs/developer/module_docs/WebArchive/){target=_blank} on Github for more technical information about resolving this error if you see it. 
 
 Web archive files can get quite large, so ensure your server settings are configured to enable large files (20MB+).
 
