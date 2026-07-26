@@ -88,6 +88,7 @@ nav:
         - modules/uridereferencer.md
         - modules/valuesuggest.md
         - modules/viewprivateresources.md
+        - modules/webarchive.md
         - modules/zoterocitation.md
         - modules/zoteroimport.md
     - Miscellaneous:
