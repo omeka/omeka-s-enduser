@@ -111,9 +111,9 @@ Use the dropdown to select which property to use for the facet. For example, you
 
 Set the Select type for the browse faceting. This sets how site visitors interact with the options in the field:
 
-- Single (list). Visitors can select only one; all options are displayed in a list of radio buttons.
-- Multiple (list). Visitors can select multiple; all options are displayed in a list of checkboxes. Multiple selections by site visitors will narrow (Option 1 AND Option 2) the search results. 
-- Single (dropdown menu). Visitors can select only one; all options are displayed in a dropdown menu.
+- Single (list). Visitors can select only one; all options are displayed in a list of radio buttons. An "All" option appears at the top and is selected on page load; users can select another option, and then clear that choice by selecting "All" again. 
+- Multiple (list). Visitors can select multiple; all options are displayed in a list of checkboxes. Multiple selections by site visitors will **narrow** (Option 1 AND Option 2) the search results. 
+- Single (dropdown menu). Visitors can select only one; all options are displayed in a dropdown menu. A "Select one..." option appears at the top and is selected on page load; users can select another option, and then clear that choice by selecting "Select one..." again.
 - Text input. Visitors can type in text to include or exclude resources that include that text in their values.
 
 For Select types that include a list or a dropdown menu, you can set a Query type (queries are available for value facets only; not for classes, templates, item sets, etc.). The options are:
@@ -168,7 +168,7 @@ For example, you may wish to load all the "Subject" property's values and allow 
 
 Allows visitors to narrow items by their resource class.
 
-Set the Select type for the browse faceting. For the "Multiple (list)" option, multiple selections by site visitors will broaden (Option 1 OR Option 2) the search results. 
+Set the Select type for the browse faceting. For the "Multiple (list)" option, multiple selections by site visitors will **broaden** (Option 1 OR Option 2) the search results. 
 
 Select the classes that will make up the facets from the dropdown menu.
 
@@ -178,7 +178,7 @@ Check the "Show all available classes" box to get a sense of the data that is av
 
 Allows visitors to narrow items by their [resource template](../content/resource-template.md).
 
-Set the Select type for the browse faceting. For the "Multiple (list)" option, multiple selections by site visitors will broaden (Option 1 OR Option 2) the search results. 
+Set the Select type for the browse faceting. For the "Multiple (list)" option, multiple selections by site visitors will **broaden** (Option 1 OR Option 2) the search results. 
 
 Select the resource templates that will make up the facets.
 
@@ -188,7 +188,7 @@ Check the "Show all available templates" box to get a sense of the data that is 
 
 Allows visitors to narrow items by [item sets](../content/item-sets.md).
 
-Set the Select type for the browse faceting. For the "Multiple (list)" option, multiple selections by site visitors will broaden (Option 1 OR Option 2) the search results. 
+Set the Select type for the browse faceting. For the "Multiple (list)" option, multiple selections by site visitors will **broaden** (Option 1 OR Option 2) the search results. 
 
 Select the item sets that will make up the facets.
 
