@@ -2,7 +2,7 @@
 
 The [Web Archive module](https://omeka.org/s/modules/WebArchive){target=_blank} adds support for ingesting and replaying web archive files as media. Web archives are captures of web pages or entire sites at a point in time. The module uses the [ReplayWeb.page player](https://replayweb.page/){target=_blank} to replay them in embedded players inside Omeka S public pages. 
 
-![](modulesfiles/webarchive_public.png)
+![An item view page with the item title and an embedded virtual browser displaying a page from Wikipedia.org alongside a timestamp of when it was archived.](modulesfiles/webarchive_public.png)
 
 ## Server requirements
 
@@ -16,7 +16,7 @@ Web archive files can get quite large, so ensure your server settings are config
 
 When the module is first installed, you will see the Configuration screen. You will be prompted to set a "Default embed mode", which will take effect for every web archive ingested into the installation. This setting can be overridden with individual embeds. 
 
-![](modulesfiles/webarchive_config.png)
+![The module configuration page with one dropdown available, expanded to show the options explained below.](modulesfiles/webarchive_config.png)
 
 The default embed mode controls what the player shows around the archived content. There are [four choices, derived from ReplayWeb.page's options](https://replayweb.page/docs/embedding/#embed-modes){target=_blank}:
 
@@ -27,11 +27,11 @@ The default embed mode controls what the player shows around the archived conten
 
 A web archive set to "Full" mode:
 
-![](modulesfiles/webarchive_full.png)
+![A media view page on the admin side showing an embedded web player with a bar above the browser navigation buttons. The three-dot button on the right of the navigationbar is expanded to show options including "Archive info" and "Download archive".](modulesfiles/webarchive_full.png)
 
 A web archive set to "Replay with info" mode:
 
-![](modulesfiles/webarchive_info.png)
+![A media view page on the admin side showing an embedded web player with a dropdown menu above the webpage, and no navigation bar. The dropdown is expanded to show a download button and some information about the archive, including file size and its creation date.](modulesfiles/webarchive_info.png)
 
 ## Upload a web archive
 
@@ -50,7 +50,7 @@ Each web archive you upload or ingest as media has its own settings. Go to the m
 - **Starting URL**: Enter the original URL of the page to open first. Leave blank to show the archive's pages list, where viewers can browse all captured pages. Required if embed mode is set to "Replay only". This URL can be found inside the player itself, by selecting a single page and copying the URL from the address bar. Once you enter that URL in this field, you can change the setting below to hide the address bar. Ensure this URL is exactly the same as what is found inside the archive file. 
 - **Embed mode**: Controls what the player shows around the archived content. (See above.)
 
-![Media Advanced tab.](modulesfiles/webarchive_mediaAdvanced.png)
+![The Advanced tab in media editing mode. Two options display under the usual Advanced tab content - Thumbnail, Owner, Alt Text, Language - and offer "Starting URL" and "Embed mode", as explained above.](modulesfiles/webarchive_mediaAdvanced.png)
 
 ## Public display
 
