@@ -1,14 +1,14 @@
 # Mapping 
 
-The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows you to geolocate Omeka S items and display interactive maps throughout your public sites. Maps can also include timelines that allow you to scroll through items on a map in chronological order.
+The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows you to geolocate Omeka S items and display interactive maps throughout your public sites. Maps can include timelines that allow you to scroll through items on a map in chronological order.
 
 ![Map with timeline](modulesfiles/Mapping_timelinePublic1.png)
 
 The Mapping module adds: 
 
-- several metadata fields to each item, on a "Mapping" tab added to item editing
+- several metadata fields to each item, on a "Mapping" tab available editing items
 - batch-editing options for items
-- optional location-based search fields to the advanced search pages on the admin and public interfaces, controlled on a site-by-site basis by [Site Settings](../sites/site_settings.md#settings)
+- optional location-based search fields to advanced search pages on the admin and public interfaces, controlled on a site-by-site basis by [Site Settings](../sites/site_settings.md#settings)
 - three page blocks to [Site Pages](../sites/site_pages.md) that can display maps and timelines for browsing: "Map by query", "Map by attachments", and "Map by groups"
 - a "Map Browse" page for each site, found in the [Site Navigation settings](../sites/site_navigation.md)
 - [resource blocks for items and item sets](../sites/site_theme.md#select-regions-and-blocks) (not media), which can be repositioned within the regions offered by a given site's theme. 
@@ -56,7 +56,7 @@ The "Search by map marker presence" option provides users with a dropdown with t
 
 ## Geolocate items
 
-The Mapping module adds metadata fields to each item, most of which cannot be accessed directly the way a text field can. This includes a latitude and longitude pair that creates markers on maps (an item can have more than one marker), or a series of coordinates that define shapes on the map (lines, polygons, and rectangles). There are also default display settings for each item's map - minimum corner coordinates that ensure the map contains at least those top, bottom, left, and right spots. 
+The Mapping module adds metadata fields to each item, most of which cannot be accessed directly the way a text field can. This includes a latitude and longitude pair that creates markers on maps (an item can have more than one marker), or a series of coordinates that define shapes on the map (lines, polygons, and rectangles). There are also default display settings for each item's map: minimum corner coordinates that ensure the map contains at least those top, bottom, left, and right spots. 
 
 This information can be set manually using the item's "Mapping" tab via a visual map interface, or can be textually bulk-added to items using [CSV Import](#csv-import-integration).
 
@@ -220,7 +220,7 @@ The Mapping module adds a section to each site's "Settings" tab found under "Sit
 
 Mapping creates a "Map Browse" page that can be added to each site in its navigation settings. This map has minimal customization options and will show every item in the site that has one or more geolocations, as well as some advanced search fields (including searching by an address with a radius). These search fields are not affected by the site settings. The title of the page will be "Map".
 
-Go to a Site, then go to Navigation. You will see under "Add a custom link" the option to add "Map Browse." When this is added to your navigation, you will be able to change the label that appears in the navigation (default is "Map Browse"), and the basemap, by clicking on the pencil icon to edit the Map Browse page settings. Note that changing the basemap will change the URL that is added to the navigation - for example, `yoursite/map-browse?mapping_basemap_provider=OpenTopoMap`. 
+Go to a Site, then go to Navigation. You will see under "Add a custom link" the option to add "Map Browse." When this is added to your navigation, you will be able to change the label that appears in the navigation (default is "Map Browse"), and the basemap, by clicking on the pencil icon to edit the Map Browse page settings. Note that changing the basemap will change the URL that is added to the navigation: for example, `yoursite/map-browse?mapping_basemap_provider=OpenTopoMap`. 
 
 ### Resource page blocks
 
@@ -232,7 +232,7 @@ Go to a Site, then go to Navigation. You will see under "Add a custom link" the 
 
 Item sets cannot themselves be geolocated (pinned to a map), but they will display maps of all their items' geolocation data. This appears in the admin side as a "Mapping" tab on the item set, the same as items. This tab is for informational purposes only, cannot be edited, and will disappear when you go to editing mode. 
 
-On the public side, item sets will not display a map automatically - you must [manually add the "Mapping" resource page block to a region](../sites/site_theme.md#select-regions-and-blocks) offered by your site theme, for each site you have. 
+On the public side, item sets will not display a map automatically. You must [manually add the "Mapping" resource page block to a region](../sites/site_theme.md#select-regions-and-blocks) offered by your site theme, for each site you have. 
 
 Item set pages, if you add the Mapping resource block to a region, will display a map with all the features for all the items in that set. This map resource block has no settings but can be modified with the [site-wide settings](#site-wide-settings).
 
@@ -299,7 +299,7 @@ Omeka provides three formats for adding custom overlays or non-Omeka data:
 - [International Image Interoperability Framework (IIIF) Georeference Annotation](https://iiif.io/api/extension/georef/){target=_blank}
 - [GeoJSON](https://geojson.org/){target=_blank}.
 
-WMS, WMTS, and IIIF overlays appear as optional visual layers that site visitors can display or hide. Overlays frequently only cover one part of the world map - for example, a historical map of northern Africa that has been digitized and mapped precisely with coordinates. You can have multiple layers all set to be visible by default, whether they overlap each other or not. 
+WMS, WMTS, and IIIF overlays appear as optional visual layers that site visitors can display or hide. Overlays frequently only cover one part of the world map: for example, a historical map of northern Africa that has been digitized and mapped precisely with coordinates. You can have multiple layers all set to be visible by default, whether they overlap each other or not. 
 
 GeoJSON overlays are datasets for adding map features. Rather than display items from your Omeka collection, this option can display information on a map using markers and shapes generated from [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON){target=_blank}-formatted data. You can provide supplemental clickable pins to your site maps using this tool; pins are not tied to Omeka items, but can be used to add context, such as important buildings. You can manually create GeoJSON for your own use, or copy GeoJSON from other sources. See below for more information about GeoJSON.
 
@@ -314,7 +314,7 @@ Four fields are available for **WMS overlays**:
  * **Layers**: Any of the offered layers you wish to use, separated by commas. This is a string or strings provided by the WMS host.
  * **Styles**: Any styles you wish to use, separated by commas. This is a string or strings provided by the WMS host.
 
-Five fields are available for **WMTS overlays** - similar to WMS, but all fields only take one value:
+Five fields are available for **WMTS overlays**: similar to WMS, but all fields only take one value:
 
  * **Label**: Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays. (Required.)
  * **Base URL**: Add a map overlay to the WMTS map by URL. 
@@ -322,7 +322,7 @@ Five fields are available for **WMTS overlays** - similar to WMS, but all fields
  * **Style**: The style you wish to use. This is a string provided by the WMTS host.
  * **Tile matrix set**: A code sourced from the mapping service to point to tiles in different formats. You may need to read the XML provided by the WMTS map to find the `<TileMatrixSet>` value(s). 
 
-To find the "Layer" name, you may need to read the XML - look for `<Layer><ows:Title>` for example. Note that for WMTS overlays the "Style" value is often "default". 
+To find the "Layer" name, you may need to read the XML: look for `<Layer><ows:Title>` for example. Note that for WMTS overlays the "Style" value is often "default". 
 
 Two fields are available for **IIIF overlays**:
 
@@ -331,7 +331,7 @@ Two fields are available for **IIIF overlays**:
 
 Click "Save overlay" to create the overlay. Click "Cancel" to clear all of the fields. Multiple overlays can be added. Make sure you save each overlay when edited, and then save the page. 
 
-![A "Map by query" page block with the Overlays section open. Four overlays already exist, and one - a WMS overlay - is open for editing.](modulesfiles/Mapping_pageOverlays.png)
+![A "Map by query" page block with the Overlays section open. Four overlays already exist, and one (a WMS overlay) is open for editing.](modulesfiles/Mapping_pageOverlays.png)
 
 Once you have added an overlay, it will appear above the fields for adding more overlays. If you would like one or more of the overlays to display automatically when the page loads, check the box next to it. Note that some overlays can be large and take time to load on a public page. 
 
@@ -339,7 +339,7 @@ Edit an existing overlay by clicking on the red pencil edit button, or click the
 
 ##### GeoJSON overlays
 
-GeoJSON provides map features as well as metadata information about each feature. You can use this to illustrate areas, such as historical boundaries of a municipality, or add coordinates related to the topic of your Omeka site or page. You can display any number of map features, of all types (point, line, and polygon). You can also have one set of metadata that refers to multiple discrete areas of the map - such as showing the continental United States, Alaska, and Hawaii as one single datapoint with three separate polygonal features. GeoJSON features look just like Omeka item features. 
+GeoJSON provides map features as well as metadata information about each feature. You can use this to illustrate areas, such as historical boundaries of a municipality, or add coordinates related to the topic of your Omeka site or page. You can display any number of map features, of all types (point, line, and polygon). You can also have one set of metadata that refers to multiple discrete areas of the map: such as showing the continental United States, Alaska, and Hawaii as one single datapoint with three separate polygonal features. GeoJSON features look just like Omeka item features. 
 
 ![The admin side of a page being edited, showing the "GeoJSON" section filled out with information.](modulesfiles/Mapping_geojsonAdmin.png)
 
@@ -388,7 +388,7 @@ The Timeline section allows you to add a timeline display alongside the map view
 	- Note that the transition between points is animated, so if you have very distant points the shift between them will involve a significant zoom out and in.
 - **Show contemporaneous events**: sets how two events with the same timestamp or interval are displayed. If checked, contemporaneous events will both display in the map when active in the story slider.
 	- For timestamp properties, if two events have a date of "1 January 2000," both events will show on the map when either is in the story slider.
-	- For interval properties, if one event has an interval of "28 July 1914 - 11 November 1918" and another has an interval of "January 1819 - December 1920" both events will show on the map when either is in the story slider.
+	- For interval properties, if one event has an interval of "28 July 1914/11 November 1918" and another has an interval of "January 1819/December 1920" both events will show on the map when either is in the story slider.
 	- Note that this setting only works when "Fly to" is set to "Default view".
 - **Timeline theme**: A dropdown offering timeline color schemes from [TimelineJS](https://timeline.knightlab.com/){target=_blank}. The options are Default (the only theme available in previous versions of the timeline), a Dark theme, and a Contrast theme with accessibility-compliant colors. Note that these selections call a CSS file that will apply to all timelines on one page; different timelines on the same page cannot have different themes. See the example images below in the [Timeline public view](#timeline-public-view) section of this page.
 - **Timeline navigation position**: by default, the timeline displays with the story slider, to the left of the map. Using this dropdown, you can change where the story slider displays. Options are:
@@ -429,7 +429,7 @@ More complicated queries can be set: specific item sets, classes, templates, ite
 
 ![The map by query block showing a query for classes Still Image and Image, with the sidebar open to the searh query edit interface.](modulesfiles/Mapping_blockquerysidebar.png)
 
-You can also run a search on your public site, and from the search results page, copy everything in your browser's address bar, starting with the question mark all the way to the end of the search URL (to the right) - for example:
+You can also run a search on your public site, and from the search results page, copy everything in your browser's address bar, starting with the question mark all the way to the end of the search URL (to the right). For example:
 
 ```
 ?fulltext_search=london&resource_class_id[]=33&has_media=1&has_features=1
@@ -453,7 +453,7 @@ The "Map by groups" page block sorts your items into groups of your choosing. A 
 
 This page block offers common ways to browse items: by classes, by item sets, or by common values in a given field, such as linked resources used in the same field. 
 
-This block does not have timeline or overlay settings - only the Default View section, as above, and a Groups section. 
+This block does not have timeline or overlay settings: only the Default View section, as above, and a Groups section. 
 
 ![A map by group block on a public page, with the title "Map by groups", with 3 pins showing. One pin has a pop-up reflecting the group ".](modulesfiles/Mapping_groupPublic1.png)
 
@@ -483,7 +483,7 @@ Filtering options are also offered: when one grouping choice is made (such as gr
 ##### Group by Item sets
 
 - Filter by resource class: Only include items assigned to the selected resource class.
-- Item sets: Select the item sets to render as groups on the map. Remember that each item set will render as either a polygon or point representing all of its items' locations - and that items can belong to more than one item set. 
+- Item sets: Select the item sets to render as groups on the map. Remember that each item set will render as either a polygon or point representing all of its items' locations; remember that items can belong to more than one item set. 
 
 ##### Group by Resource classes
 
@@ -501,7 +501,7 @@ This option can be useful if you use controlled vocabularies, for example for su
 
 ##### Group by Property values (contains)
 
-This option allows you more flexibility than the "is exactly" option. This can be useful to group items with textual location metadata such as City, State - enter each State text on a new line to see your items grouped by their state. 
+This option allows you more flexibility than the "is exactly" option. This can be useful to group items with textual location metadata such as in the format "City, State": enter each State text on a new line to see your items grouped by their state. 
 
 - Filter by item set.
 - Filter by resource class.
