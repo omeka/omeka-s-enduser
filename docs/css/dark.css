@@ -33,6 +33,7 @@ body.dark {
         color: var(--dark-mode-black);
     }
 
+    code,
     .admonition {
         background-color: var(--s-blue);
         border: 1px solid var(--dark-mode-blue-border-color);

@@ -46,6 +46,16 @@ select {
     border-radius: 2px;
 }
 
+code {
+    font-family: monospace;
+    padding: 0 .25rem;
+    margin: 0 .25rem;
+}
+
+code:only-child {
+    padding: .5rem;
+}
+
 summary {
     list-style: none;
 }
