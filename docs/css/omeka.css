@@ -416,6 +416,12 @@ main#content {
     margin-left: .25rem;
 }
 
+.headerlink {
+    display: inline-block;
+    min-height: 24px;
+    min-width: 24px;
+}
+
 .headerlink:before {
     content: "\f0c1" / "";
     font-family: "Font Awesome 5 Free";
