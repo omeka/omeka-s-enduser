@@ -107,7 +107,7 @@ const Omeka = {
     },
 
     manageMainNavDialogRole: (dialog, mainNav) => {
-        if (window.innerWidth < 481) {
+        if (window.innerWidth < 721) {
             dialog.append(mainNav);
         } else {
             dialog.insertAdjacentElement('afterend', mainNav);

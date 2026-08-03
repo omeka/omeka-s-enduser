@@ -43,7 +43,7 @@ body.dark {
         border-bottom: 1px solid ;
     }
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 720px) {
             header {
                 border-bottom: 0;
             }

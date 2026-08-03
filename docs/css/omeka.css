@@ -1,3 +1,4 @@
+@import "settings.css";
 @import "light.css";
 @import "dark.css";
 
@@ -97,7 +98,7 @@ body {
     gap: 1rem;
 }
 
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:720px) {
         body {
             display: block;
         }
@@ -163,7 +164,7 @@ header {
     gap: 1rem;
 }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 720px) {
         header {
             padding: 0;
             gap: 0 1rem;
@@ -194,7 +195,7 @@ header button {
     margin-bottom: 0;
 }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 720px) {
         #header-search {
             width: 100%;
             padding: 1rem;
@@ -234,7 +235,7 @@ header button {
     align-items: flex-start;
 }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 720px) {
         #main-nav {
             display: block;
         }
@@ -244,7 +245,7 @@ header button {
     display: none;
 }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 720px) {
         #main-nav-toggle {
             display: block;
             width: 1.5rem;
@@ -277,10 +278,9 @@ header button {
     padding: 1rem;
     max-width: max-content;
     position: sticky;
-    top: 1rem;
 }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 720px) {
         #main-nav-content {
             max-width: none;
             border: 0;
@@ -407,7 +407,7 @@ main#content {
     text-align: center;
 }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 720px) {
         #skip-link:focus {
             margin-bottom: 0;
         }

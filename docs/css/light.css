@@ -40,7 +40,7 @@ body.light {
         color: #fff;
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 720px) {
         #header-search,
         #theme {
             background-color: #fff;
