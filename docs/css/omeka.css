@@ -111,6 +111,10 @@ footer {
     border: 0;
 }
 
+a.icon {
+    text-decoration: none;
+}
+
 .icon:before,
 .icon:after {
     font-family: "Font Awesome 5 Free";
