@@ -20,6 +20,7 @@ body.light {
         background-color: var(--s-red);
     }
 
+    pre,
     code,
     .admonition {
         background-color: var(--s-light-blue);

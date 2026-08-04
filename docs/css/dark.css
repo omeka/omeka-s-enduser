@@ -33,6 +33,7 @@ body.dark {
         color: var(--dark-mode-black);
     }
 
+    pre,
     code,
     .admonition {
         background-color: var(--s-blue);
