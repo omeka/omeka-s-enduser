@@ -5,11 +5,9 @@
       {%- for doc in page.ancestors[::-1] %}
         {%- if doc.url %}
           <li class="breadcrumb-item"><a href="{{ doc.url|url }}">{{ doc.title }}</a></li>
-        {%- else %}
-          <li class="breadcrumb-item">{{ doc.title }}</li>
         {%- endif %}
       {%- endfor %}
-      <li class="breadcrumb-item active">{{ page.title }}</li>
+      <li class="breadcrumb-item active"><a href="{{ page.url|url }}">{{ page.title }}</a></li>
     {%- endif %}
   </ul>
 </nav>
