@@ -127,6 +127,7 @@ footer {
     display: inline-block;
     text-decoration: none;
     border: 0;
+    font-size: 1rem;
 }
 
 a.icon {
@@ -202,7 +203,7 @@ header button {
             border-bottom: 1px solid;
         }
 
-        #header-search-query {
+        #mkdocs-search-query {
             width: 100%;
         }
 
@@ -458,4 +459,12 @@ main#content {
     flex-wrap: wrap;
     gap: .25rem;
     margin: 1rem 0;
+}
+
+#mkdocs-search-results h2 {
+    margin-bottom: 0;
+}
+
+#mkdocs-search-results h2 + p {
+    margin-top: 0;
 }

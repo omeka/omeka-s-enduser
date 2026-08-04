@@ -1,13 +1,8 @@
 {% extends 'main.html' %}
 
 {% block content %}
-<h1 id="search">Search Results</h1>
-
-<form action="{{ base_url }}/search.html">
-  <input name="q" id="mkdocs-search-query" type="text">
-</form>
+<h1 id="search">Search Results: <span id="current-query">No query</span></h1>
 
 <div id="mkdocs-search-results" data-no-results-text="No results found">
-  Searching...
 </div>
 {% endblock %}

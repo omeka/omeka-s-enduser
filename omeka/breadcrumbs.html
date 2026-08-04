@@ -8,6 +8,8 @@
         {%- endif %}
       {%- endfor %}
       <li class="breadcrumb-item active"><a href="{{ page.url|url }}">{{ page.title }}</a></li>
+    {% else %}
+      <li class="breadcrumb-item active"><a href="{{ base_url }}/search.html">Search</a></li>
     {%- endif %}
   </ul>
 </nav>
