@@ -59,7 +59,7 @@ body.light {
 
     #main-nav ul button.button {
         background-color: transparent;
-        color: var(--s-red-);
+        color: var(--s-red);
     }
 
     #skip-link:focus {

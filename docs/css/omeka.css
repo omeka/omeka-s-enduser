@@ -289,25 +289,31 @@ header button {
         }
     }
 
-#main-nav ul button.button {
-    width: 1.5rem;
-    height: 1.5rem;
-    line-height: 100%;
-    padding: 0;
-    border: 0;
+#main-nav a {
+    text-decoration: none;
 }
 
-#main-nav .expand:before,
-#main-nav .collapse:before {
+#main-nav ul button.button {
+    line-height: 100%;
+    padding: .25rem 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+}
+
+#main-nav .expand:after,
+#main-nav .collapse:after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
 
-#main-nav .expand:before {
+#main-nav .expand:after {
     content: "\f105" / "";
 }
 
-#main-nav .collapse:before {
+#main-nav .collapse:after {
     content: "\f107" / "";
 }
 

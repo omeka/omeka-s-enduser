@@ -56,8 +56,7 @@
           {%- for nav_item in nav %}
             {%- if nav_item.is_section %}
               <li class="section{% if nav_item.active %} current{% endif %}">
-                <span id="section-{{ loop.index }}-heading" class="section-heading">{{ nav_item.title }}</span>
-                <button type="button" class="{% if nav_item.active %}collapse{% else %}expand{% endif %} toggle-button button" aria-expanded="{% if nav_item.active %}true{% else %}false{% endif %}" aria-controls="section-{{ loop.index }}" aria-labelledby="section-{{ loop.index }}-heading"></button>
+                <button type="button" id="section-{{ loop.index }}-heading" class="section-heading {% if nav_item.active %}collapse{% else %}expand{% endif %} toggle-button button" aria-expanded="{% if nav_item.active %}true{% else %}false{% endif %}" aria-controls="section-{{ loop.index }}" aria-labelledby="section-{{ loop.index }}-heading">{{ nav_item.title }}</button>
                 <ul id="section-{{ loop.index }}" aria-labelledby="section-{{ loop.index }}-heading">
                 {%- for nav_item in nav_item.children %}
                   <li class="toctree-l{{ navlevel }}{% if nav_item.active %} current{% endif %}">
