@@ -35,8 +35,6 @@
 * {
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
-    line-height: 1.5;
-    font-size: 16px;
 }
 
 img {
@@ -96,6 +94,8 @@ body {
         "main-nav main-content"
         "footer footer";
     gap: 1rem;
+    line-height: 1.5;
+    font-size: 16px;
 }
 
     @media screen and (max-width:720px) {
