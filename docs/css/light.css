@@ -4,6 +4,7 @@
     --s-light-blue-border: #bdcde3;
     --s-red: #A91919;
     --border-color: #dfdfdf;
+    --table-row-background: #ededed;
 }
 
 body.light {
@@ -25,6 +26,14 @@ body.light {
     .admonition {
         background-color: var(--s-light-blue);
         border: 1px solid var(--s-light-blue-border);
+    }
+
+    thead {
+        background-color: var(--s-light-blue-border);
+    }
+
+    tr:nth-child(2n) {
+        background-color: var(--table-row-background);
     }
 
     header {

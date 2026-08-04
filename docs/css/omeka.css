@@ -96,6 +96,16 @@ summary:before {
     text-align: center;
 }
 
+
+th,td {
+  padding: .5rem 1rem;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+}
+
 body {
     margin: 0;
     padding: 0;

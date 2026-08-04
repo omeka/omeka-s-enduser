@@ -5,6 +5,7 @@
     --dark-mode-border-color: #707070;
     --dark-mode-blue-border-color: #69798f;
     --dark-mode-text: #e1e1e1;
+    --dark-mode-table-row-bg: #424149;
 }
 
 body.dark {
@@ -38,6 +39,14 @@ body.dark {
     .admonition {
         background-color: var(--s-blue);
         border: 1px solid var(--dark-mode-blue-border-color);
+    }
+
+    thead {
+        background-color: var(--s-blue);
+    }
+
+    tr:nth-child(2n) {
+        background-color: var(--dark-mode-table-row-bg);
     }
 
     header {
