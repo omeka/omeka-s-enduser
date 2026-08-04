@@ -53,6 +53,7 @@ const Omeka = {
         const mainNav = document.getElementById('main-nav');
         const mobileNavModal = document.getElementById('mobile-nav-modal');
         const mobileNavModalClose = document.getElementById('mobile-nav-modal-close');
+        const mobileInternalLinks = document.getElementsByClassName('internal');
 
         mainNavToggleButton.addEventListener('click', function() {
             mobileNavModal.showModal();
@@ -65,6 +66,10 @@ const Omeka = {
             mainNavToggleButton.setAttribute('aria-expanded', 'false');
             mainNavToggleButton.focus();
         });
+
+        for (const mobileInternalLink of mobileInternalLinks) {
+            mobileInternalLink.addEventListener('click', () => { mobileNavModal.close() });
+        }
 
         Omeka.addWindowSizeEventListeners(mobileNavModal, mainNav);
     },
