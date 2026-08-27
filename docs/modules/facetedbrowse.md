@@ -2,17 +2,19 @@
 
 The [Faceted Browse module](https://omeka.org/s/modules/FacetedBrowse){target=_blank} lets you create "browse resource" pages with facets (filter and sort functions) that site visitors can use to explore your collections. Faceted Browse pages can be made for items, items sets, or media. 
 
-With this module, site managers are able to configure faceted browse pages and add them to their site's [navigation](../sites/site_navigation.md). End users are then able to browse through resources and use the facets to narrow the results in a logical and intuitive manner. This functionality is similar to the filtering options on many websites and should be easy for users to manage as long as you have clear language.
+With this module, site managers are able to configure faceted browsing pages and add them to a site's [navigation](../sites/site_navigation.md). End users are then able to browse through resources and use the facets to narrow the results in a logical and intuitive manner. This functionality is similar to the filtering options on many websites and should be easy for users to manage as long as you have clear language.
 
 The [public view](#public-views) section below shows how these facets display for single and multi-category pages.
 
 Faceted browse pages exist as separate [pages](../sites/site_pages.md). You can [add faceted browsing to a page as a block](#faceted-browse-preview-page-block) that will preview the FB page, but not have its full functionality. 
 
+Faceted Browse content can be set as the default search display when a user types into the search bar at the top of an Omeka S site. 
+
 Once activated, Faceted Browse is configured on a site-by-site basis.
 
 ## Terminology
 
-A guide to the terms used to describe the aspects of a Faceted Browse page:
+Here are terms that we use for the aspects of a Faceted Browse page:
 
 - Category: a group of resources (items, item sets, or media) to which facets are applied on a specific page. You can use a query to narrow the resources, or leave it blank to show all of that resource type. 
 - Facet: an aspect of a resource (usually part of the metadata) which becomes a way to filter the resources in the category. Faceted browsing works best when you have some controlled vocabularies in your metadata values, or when unique values can be sorted into buckets (such as dates browsed by century). 
