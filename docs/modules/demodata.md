@@ -46,6 +46,8 @@ Each dataset creates its own item set(s) and resource template on import. Re-imp
 
 You can find the resource templates created under the names "Demo Data: [Dataset]".
 
+![Items shown on the item browse page from the Demo Data: Document dataset. Thumbnails, item classes, and resource templates are displayed in the browse columns.](modulesfiles/demoData_items.png)
+
 ### Artworks
 
 This dataset is roughly 17MB. 
