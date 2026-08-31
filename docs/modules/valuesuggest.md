@@ -309,7 +309,7 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 
 ### [Research Organization Registry (ROR)](https://ror.org/){target=_blank}
 
-- The Research Organization Registry (ROR) is a global, community-led registry of open persistent identifiers for research organizations.
+- The Research Organization Registry (ROR) is a global, community-led registry of open persistent identifiers for research and funding organizations.
 
 ### [Tesauros del patrimonio cultural de España](http://tesauros.mecd.es/tesauros){target=_blank} (`es`)
 
