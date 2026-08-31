@@ -16,10 +16,10 @@ Once activated, Faceted Browse is configured on a site-by-site basis.
 
 Here are terms that we use for the aspects of a Faceted Browse page:
 
-- Category: a group of resources (items, item sets, or media) to which facets are applied on a specific page. You can use a query to narrow the resources, or leave it blank to show all of that resource type. 
-- Facet: an aspect of a resource (usually part of the metadata) which becomes a way to filter the resources in the category. Faceted browsing works best when you have some controlled vocabularies in your metadata values, or when unique values can be sorted into buckets (such as dates browsed by century). 
-- Column: information to display for each resource in the results. Columns are optional. Once you have set at least one column, the items will display in a table form (not a grid). When no columns are set, your site's browsing default will display (e.g. title, thumbnail, and description for each resource).
-- Select: When a facet is browseable, you should allow your visitors the most appropriate means of sorting or searching those facets. You can allow them to, for example, exclude or include strings in the results, match full values exactly, or, with numerical data types, bucket the values into groupings that you set. 
+- Category: A group of resources (items, item sets, or media) to which facets are applied on a specific page. You can use a query to narrow the available resources, or leave it blank to show all of that resource type. Categories are set on the admin side. You must add one category to each page you make. 
+- Facet: An aspect of a resource (usually part of the metadata) that becomes a way for users to narrow down the resources in the category. Faceted browsing works best when you have some controlled vocabularies in your metadata values, or when unique values can be sorted into buckets (such as dates browsed by century). Facets are offered as potential browsing filters on the public side. 
+- Column: Information to display for each resource in the results. Columns are optional. Once you have set at least one column, the items will display in a table form (not a grid). When no columns are set, your site's browsing default will display (e.g. title, thumbnail, and description for each resource).
+- Select: When a facet is browseable, you should allow your visitors the most appropriate means of sorting or searching those facets. You can allow them to, for example, exclude or include strings in the results, match full values exactly. Or, with numerical data types active, you can bucket the values into groupings that you set (such as decades, for items with more specific dates). 
 
 ![Faceted browse page with a list of events that happened on the National Mall. On the left side of the image is a list of options with checkboxes.](modulesfiles/FacetedBrowse_publicView-basic.png)
 
@@ -33,8 +33,6 @@ Once the Faceted Browse module is active, a tab for Faceted Browse will appear i
 
 Site managers must create Faceted Browse pages before they can be added to the site's navigation.
 
-### Add a Faceted Browse page
-
 Create a new page by clicking the "Add a page" button. This takes you to a new page where you can add basic information for the page and start adding categories. 
 
 ![Create page interface showing save page dropdown](modulesfiles/FacetedBrowse_AddPage.png)
@@ -43,7 +41,7 @@ The **page title** is required and will display on browser tabs and be sent in t
 
 Use the **resource type** dropdown to select the resource type that you would like to let users browse on this page: Items, Item Sets, or Media. This cannot be edited after page creation.
 
-Then, choose the **thumbnails** this Faceted Browse page will display. You can choose [square (cropped) thumbnails or medium (uncropped, original-ratio) thumbnails](../content/media.md#media-thumbnails) for items and item sets displayed in the table. Leaving this on "Default" will display whichever thumbnails are preferred by your theme. 
+Then, choose the **thumbnails** this Faceted Browse page will display. You can choose [square (cropped) thumbnails or medium (uncropped, original-ratio) thumbnails](../content/media.md#media-thumbnails) for items and item sets displayed in the table. Leaving this on "Default" will display whichever thumbnails are preferred by your site theme. 
 
 Select "Save and... Stay on this page" to continue creating the faceted browse.
 
@@ -51,7 +49,7 @@ You can also save your edits and leave without working on categories and facets 
 
 ### Categories
 
-Once the page has been created, you must create a Category. This is where facets are created, and can also use filters to narrow down the pool of resources to browse with those facets. You can use multiple categories to provide different resource subsets for users to start their browsing.
+Once the page has been created, you must create a Category. This is where facets are created, and can also use filters to narrow down the pool of resources to browse with those facets. You can use multiple categories to provide different resource subsets for users to start their browsing, or just make one category and give your users the maximum pool of resources to browse through.
 
 For example, you may want to add a general "Browse items" page to your navigation, and provide within it a category for navigating only images, another category for navigating only events, and a final category that allows users to browse all items in the site, including images and events. Or you could create separate Faceted Browse pages to add to your navigation (one for each item class) and within each page provide categories to restrict the resources further by another value. 
 
@@ -61,16 +59,16 @@ Give your category a **name** to be displayed to the public. This will appear at
 
 Use the **search query** interface to set the pool of resources that users will browse. The "Edit" button opens a drawer on the right hand side of the browser window which works exactly like [advanced search forms](../search.md#item-advanced-search) for items, media, and item sets. The "Advanced edit" button allows you to input a query string. You can leave the query blank to include all of the site's resources of that type. 
 
-You can set a **default sorting** method to use when a site visitor starts to browse using this category. This will apply to the default list of resources, or to the [FB table you have customized with columns](#columns). The dropdown menu will show "Created" and "Title" at first, but will update to reflect the columns you customize further down on the page. You will need to save your columns settings and return to this page to see this menu updated. Note that you cannot set a default sort by an Item Set column. 
+You can set a **default sorting** method to use when a site visitor starts to browse using this category. This will apply to the default list of resources, or to the [FB table you have customized with columns](#columns). The dropdown menu will show "Created" and "Title" at first, but will update to reflect the columns you customize further down the page. You will need to save your columns settings and return to this page to see this menu updated. Note that you cannot set a default sort by an Item Set column. 
 
 ![Add category form showing the options](modulesfiles/FacetedBrowse_SearchQuery.png)
 
 You can also include some **helper text** to guide your users on how to navigate the Faceted Browse page. This text will appear in the left-hand sidebar along with your facets in this category. There is a button to contract the text (which is expanded by default); the button says "Instructions" by default, but you can change this label. If you add no helper text, this button and text area will not appear. 
 
-Finally, this area includes the setting for **value facets** behavior: "Match any" and "Match all". If you are using value facets (this setting is not applicable to class, template, item set, or full-text facets) you can use this to ensure that users can broaden their results with "match any" or narrow them with "match all". For example, if you have a value facet for subject headings, the user can select one subject heading to see all the items matching that. If they further add another subject heading, they will see items that match either selection if the category is set to "Match any", or only items that match both those selections if the category is set to "Match all". This also applies to one selection each from two separate value facets. Note that this setting applies to all of the value facets in the category: you cannot set this behavior for each value facet individually. 
+Finally, this area includes the setting for **value facet** behavior: "Match any" and "Match all". If you are using value facets (this setting is not applicable to class, template, item set, or full-text facets) you can use this to ensure that users can broaden their results with "match any" or narrow them with "match all". For example, if you have a value facet for subject headings, the user can select one subject heading to see all the items matching that. If they further add another subject heading, they will see items that match either selection if the category is set to "Match any", or only items that match both those selections if the category is set to "Match all". This also applies to one selection each from two separate value facets. Note that this setting applies to all of the value facets in the category: you cannot set this behavior for each value facet individually. 
 
 !!! note
-	If the "Value facets mode" selection here impacts the behavior of your Faceted Browse page (i.e. if you are using value facets in this category) you may wish to use the "Helper text" field to explain the expected behavior to your users.
+	If you are using value facets, we recommend you use the "Helper text" field to explain the expected behavior to your users.
 
 After setting up the category, you can create facets and set columns for your browse display. Once you are done creating your facets and setting your display columns, save your category.
 
@@ -88,17 +86,17 @@ You can create facets from the following options:
 - Item set (for items only)
 - Full-text.
 
+More options may be added by modules. 
+
 ![Facet Type dropdown menu showing options](modulesfiles/FacetedBrowse_SelectFacetType.png)
 
-Once the type is selected, click the "Add" button. A drawer will open on the right side of the browser window with options to configure the facet. Facet names are always required and will display in the public interface. 
+Once the type is selected, click the "Add" button. A drawer will open on the right side of the browser window to configure the facet. Facet names are always required and will display in the public interface. 
 
 Other facet options are described below.
 
 The image below shows the drawer options for the Value facet:
 
 ![Configure Facet draw for the Values facet type, as listed in the section below.](modulesfiles/FacetedBrowse_ConfigureFacetV.png) 
-
-For the Single (list) and Multiple (list) Select types, page creators can choose to truncate the values on the list that is visible to the site visitor, by setting a number in the "Truncate values" option. Leaving the input blank will display all values. Entering in a number will display only that number of facets, in order, with a "See more (X)" link displaying the number of further facets. 
 
 Do not forget to click the "Set facet" button to save your work, and then save the category.
 
@@ -113,24 +111,24 @@ Use the dropdown to select which property to use for the facet. For example, you
 
 Set the Select type for the browse faceting. This sets how site visitors interact with the options in the field:
 
-- Single (list). Visitors can select only one; all options are displayed in a list of radio buttons. An "All" option appears at the top and is selected on page load; users can select another option, and then clear that choice by selecting "All" again. 
-- Multiple (list). Visitors can select multiple; all options are displayed in a list of checkboxes. Multiple selections by site visitors will **narrow** (Option 1 AND Option 2) the search results. 
+- Single (list). Visitors can select only one; options are displayed in a list of radio buttons. An "All" option appears at the top and is selected on page load; users can select another option, and then clear that choice by selecting "All" again. 
+- Multiple (list). Visitors can select multiple; all options are displayed in a list of checkboxes. Multiple selections by site visitors will **narrow** (Option 1 AND Option 2) the search results, regardless of the "Match any"/"Match all" value behavior set on the category. 
 - Single (dropdown menu). Visitors can select only one; all options are displayed in a dropdown menu. A "Select one..." option appears at the top and is selected on page load; users can select another option, and then clear that choice by selecting "Select one..." again.
 - Text input. Visitors can type in text to include or exclude resources that include that text in their values.
 
-For Select types that include a list or a dropdown menu, you can set a Query type (queries are available for value facets only; not for classes, templates, item sets, etc.). The options are:
+For **lists or dropdown menus**, you can set a **Query type** (queries are available for value facets only; not for classes, templates, item sets, etc.). The options are:
 
 - "Is exactly": Visitors pick a value that is an exact match to the property value. 
-	- For example, visitors can check a box next to an available subject value and see all items with that exact value in their subject property. Exact text is not case-sensitive.
+	- For example, visitors can check a box next to an available subject value and see all items with that exact value in the subject property. Exact text is not case-sensitive.
 - "Is not exactly": Visitors pick a value that exactly matches items to be excluded from the results. 
 	- For example, visitors can check a box next to an available subject value and see all items that do not have that exact value in their subject property.
 - "Contains": Visitors can pick a value that appears in any part of the property value.
 - "Does not contain": Visitors can pick a value to be excluded from any part of the property value.
--  "Is resource with ID": Visitors will select a resource to be included. 
-	- If you then "Add all available values", visitors will see a list of resources that are [used as values on other items (that is, linked resources)](../content/items.md#linked-resources). You can employ this option without selecting a single property; then all linked resource values will be included. Note that IDs will not show on the public interface, although they are displayed in the administrative side.
+-  "Is resource with ID": Visitors will select a resource that is linked to the available items in the given field (for example, all items with the same given resource in the Creator field). Resources display as their titles, not their IDs. 
+	- If you then "Add all available values", visitors will see a list of resources that are [used as values on other items (that is, linked resources)](../content/items.md#linked-resources). You can employ this option without selecting a single property; then all linked resource values will be included. Note that IDs will not show on the public interface, although they are displayed in the administrative side - only titles will show in the public options.
 -  "Is not resource with ID": Visitors will select a resource to be excluded. 
 	- If you then "Add all available values", visitors will see a list of resources that are used as values on other items. You can employ this option without selecting a single property; then all linked resource values will be included. Note that IDs will not show on the public interface, although they are displayed in the administrative side.
--  "Has any value": Visitors will select the property. 
+-  "Has any value": Visitors will select the property. All items with that non-empty property will display.  
 	- This will erase the property you chose in the steps above. If you then "Add all available values", visitors will see a list of properties that have values in them (in the format "Dublin Core: Language"). 
 -  "Has no values": Visitors will select the property. 
 	- This will erase the property you chose in the steps above. If you then "Add all available values", visitors will see a list of properties that have empty values (in the format "Dublin Core: Language"). 
@@ -139,12 +137,12 @@ For the text input Select type, you can set a specific property to search, or le
 
 - "Is exactly": Visitors enter a value that is an exact match to the full property value. 
 - "Is not exactly": Visitors enter an exact value to be excluded from the the property values.
-- "Contains": Visitors enter a value that matches any part of the property value. For example, they can search within item descriptions for a family name or a place.
+- "Contains": Visitors enter a value that matches any part of the property value. For example, they can search within item descriptions for a family name or a place, or text-search across all available metadata fields.
 - "Does not contain": Visitors enter a value to be excluded from any part of the property value. For example, they can exclude all items that mention a specific first name or place.
 
 You cannot leave the query blank. You may wish to provide multiple types of Select queries for the same field, in order to offer more granularity to site visitors.
 
-For the Single (list) and Multiple (list) Select types, Page creators can choose to truncate the values available on this list that is visible to the site visitor by setting a number in the "Truncate values" option. Leaving the input blank will display all values. Entering in a number will display only that number of facets, in order, with a "See more (X)" link displaying the number of further facets.
+For the Single (list) and Multiple (list) Select types, page creators can choose to **truncate the values available** on the list visible to the site visitor by setting a number in the "Truncate values" option. Leaving the input blank will display all values. Entering in a number will display only that number of facets, in order, with a "See more (X)" link displaying the number of further facets.
 
 Next, enter the values that will make up the facets. Each value should be on a separate line.
 
@@ -152,7 +150,7 @@ Check the "Show all available values" box to get a sense of the data that is ava
 
 The order of your available values (from most to least frequent) will not persist when you use the "Add all" button. Properties will rearrange themselves according to an internal order, as will resource templates, classes, and resources by ID. 
 
-The formatting of the value input will depend up on the query type selected above. If the query type is
+The formatting of the value input will depend up on the query type selected above. If the query type is:
 
 -  "Is exactly": enter a value that is an exact match to the property value.
 -  "Contains": enter a value that matches any part of the property value.
