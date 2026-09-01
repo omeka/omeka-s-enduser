@@ -196,7 +196,7 @@ Check the "Show all available item sets" box to get a sense of the data that is 
 
 ##### **Full-text** 
 
-Adds a text search bar that will narrow down the results based on what the visitor inputs. This will include all values, including title, description, class, and any extracted text. 
+Adds a text search bar that will narrow down the results based on what the visitor inputs. This will include all values, including title, description, class, and any extracted text. You can only have one full-text search bar in a category. 
 
 ### Numeric Data Types integration
 
