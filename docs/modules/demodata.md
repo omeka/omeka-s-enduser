@@ -1,6 +1,6 @@
 # Demo Data
 
-The [Demo Data module](https://omeka.org/s/modules/DemoData){target=_blank} imports sample datasets of Omeka S items for development, testing, and evaluation. The datasets use realistic cultural heritage content to demonstrate the breadth of Omeka S's data model: vocabularies, resource classes, value types, media, and modules working together across four distinct domains.
+The [Demo Data module](https://omeka.org/s/modules/DemoData){target=_blank} imports sample datasets of Omeka S items for development, testing, and evaluation. The datasets use realistic cultural heritage content to demonstrate the breadth of Omeka S's data model: vocabularies, resource classes, value types, media, and modules working together across four distinct domains. The resources in these datasets were assembled with the assistance of larger language and visions models.
 
 Demo Data provides data in formats supported by other modules. The [Numeric Data Types](numericdatatypes.md) module is optional; when active, date, duration, interval, and integer fields are stored as structured numeric values rather than plain text. The [Mapping](mapping.md) module is optional; when active, geographic coordinates are displayed as map markers.
 
