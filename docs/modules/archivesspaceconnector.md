@@ -6,15 +6,15 @@ After importing information, Omeka S will maintain a connection back to the orig
 
 Note that Omeka S cannot import digital materials from ArchivesSpace at this time, only textual metadata. 
 
-This connector relies on the ArchivesSpace API and its configuration. You will need an ArchivesSpace installation with a public API, and a precise set of configurations in your account to import materials correctly.
+This connector relies on the ArchivesSpace OAI-PMH interface and its configuration. You will need an ArchivesSpace installation with a public OAI endpoint, and a precise set of configurations in your account to import materials correctly.
 
 ![](modulesfiles/aspace_public.png)
 
 ## Configure your ArchivesSpace installation
 
-First, ensure your ArchivesSpace website has the API enabled. This may not be possible if you are using a hosted instance of ArchivesSpace. 
+First, ensure your ArchivesSpace website has the [OAI endpoint enabled](https://docs.archivesspace.org/customization/configuration/#urls-for-archivesspace-components){target=_blank}. This may not be possible if you are using a hosted instance of ArchivesSpace. `enable_oai` and `oai_url` are both set in the `config/config.rb` file.
 
-The link should start with `https://` and end with `/api`. Verify that the API works by entering this URL into your browser. If it works, you may see some JSON-formatted information including the key "archivesSpaceVersion".
+The `oai_url` endpoint this module uses should end in `oai?`. Verify that your OAI endpoint is properly configured and accessible by visiting \[`oai_url`\]`verb=Identify`. You should receive an XML response with basic information about your ArchivesSpace OAI configuration (NOTE: remove the `oai?` suffix from the `oai_url` when entering into **ArchivesSpace OAI URL** below).
 
 Next, we recommend your collections be designed to accommodate Omeka S's data model. 
 
@@ -46,7 +46,7 @@ In Omeka S, navigate to the section labelled "ArchivesSpace Connector" under Mod
 
 On the import form, enter the following information:
 
-* **ArchivesSpace API URL**: The entire URL, including the `https://`. This should end with `/api`.
+* **ArchivesSpace OAI URL**: The entire OAI endpoint URL, including the `https://`, with `oai?` removed from the end.
 * **ArchivesSpace target path**: The portion of the URL for a specific collection. This will be in the form of `/repositories/1/resource/1`. 
 * **Maintain collection hierarchy**: A checkbox to enable the import's connection with the Omeka S Hierarchy module. If unchecked, item sets will not be created with this import, and no hierarchy will be created via the [Hierarchy module](hierarchy.md). 
 * **Omeka item level**: Choose which of ArchivesSpace's object options will be imported as Omeka S items. You can choose "Items," "Files," or both. If you choose Items, higher-level containers objects (including Files) will be imported as Omeka item sets. 
