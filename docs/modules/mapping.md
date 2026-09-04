@@ -1,21 +1,26 @@
 # Mapping 
 
-The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows you to geolocate Omeka S items and display interactive maps throughout your public sites. Maps can also include timelines that allow you to scroll through items on a map in chronological order.
+The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows you to geolocate Omeka S items and display interactive maps throughout your public sites. Maps can include timelines that allow you to scroll through items on a map in chronological order.
 
-![Map with timeline](../modules/modulesfiles/Mapping_timelinePublic1.png)
+![Map with timeline](modulesfiles/Mapping_timelinePublic1.png)
 
-The Mapping module adds several metadata fields to each item, a "Mapping" tab to item editing, and several batch-editing options for items. It also adds:
+The Mapping module adds: 
 
-- optional location-based search fields to the advanced search pages on the admin and public interfaces, controlled on a site-by-site basis by [Site Settings](../sites/site_settings.md#settings)
+- several metadata fields to each item, on a "Mapping" tab available editing items
+- batch-editing options for items
+- optional location-based search fields to advanced search pages on the admin and public interfaces, controlled on a site-by-site basis by [Site Settings](../sites/site_settings.md#settings)
 - three page blocks to [Site Pages](../sites/site_pages.md) that can display maps and timelines for browsing: "Map by query", "Map by attachments", and "Map by groups"
 - a "Map Browse" page for each site, found in the [Site Navigation settings](../sites/site_navigation.md)
-- [resource blocks to items and item sets](../sites/site_theme.md#select-regions-and-blocks) (not media), which can be repositioned within the regions offered by a given site's theme. 
+- [resource blocks for items and item sets](../sites/site_theme.md#select-regions-and-blocks) (not media), which can be repositioned within the regions offered by a given site's theme. 
 
-Mapping has no global configuration settings. Item sets cannot be geolocated, but can display mapping information based on items assigned to them.
+!!! note
+	Item sets cannot be geolocated, but can display mapping information based on items assigned to them.
 
-Mapping can work with the [Collecting](../modules/collecting.md#prompts) module, by allowing users filling out the contribution form to provide geolocation data for their submissions. Users click directly on a map to place a marker, and can optionally provide a text label for the marker. See the Collecting module page for more information.
+Mapping has installation-wide default settings (a choice of base maps, etc.), site-specific default settings that override the global settings, and user-specific administrative settings that apply when editing. Individual maps on pages, and those associated with items, can be customized to override all of these defaults. 
 
-Mapping can work with the [CSV Import](../modules/csvimport.md) module, allowing geolocation data to be added in bulk. See the [CSV Import integration section below](#csv-import-integration) for more information.
+Mapping can work with the [Collecting](collecting.md#prompts) module, by allowing users filling out the contribution form to provide geolocation data for their submissions. Users click directly on a map to place a marker, and can optionally provide a text label for the marker. See the Collecting module page for more information.
+
+Mapping can work with the [CSV Import](csvimport.md) module, allowing geolocation data to be added in bulk. See the [CSV Import integration section below](#csv-import-integration) for more information.
 
 ## How to use maps
 
@@ -23,7 +28,7 @@ On public pages, site visitors use their mouse or trackpad to navigate within a 
 
 When editing a map in the administrative interface, small white square buttons on the left side of the map allow you to navigate and to edit the map's features. Hover over the buttons with the mouse to view tool-tips.
 
-![Map navigation buttons as described below](../modules/modulesfiles/Mapping_JustButtons.png)
+![Map navigation buttons as described below](modulesfiles/Mapping_JustButtons.png)
 
 * **Zoom in**: The small white square with a black plus sign. Each click zooms in one step (between 0 and 19).
 * **Zoom out**: The square with black minus sign. Each click zooms out one step (between 0 and 19).
@@ -51,7 +56,7 @@ The "Search by map marker presence" option provides users with a dropdown with t
 
 ## Geolocate items
 
-The Mapping module adds metadata fields to each item, most of which cannot be accessed directly the way a text field can. This includes a latitude and longitude pair that creates markers on maps (an item can have more than one marker), or a series of coordinates that define shapes on the map (lines, polygons, and rectangles). There are also default display settings for each item's map - minimum corner coordinates that ensure the map contains at least those top, bottom, left, and right spots. 
+The Mapping module adds metadata fields to each item, most of which cannot be accessed directly the way a text field can. This includes a latitude and longitude pair that creates markers on maps (an item can have more than one marker), or a series of coordinates that define shapes on the map (lines, polygons, and rectangles). There are also default display settings for each item's map: minimum corner coordinates that ensure the map contains at least those top, bottom, left, and right spots. 
 
 This information can be set manually using the item's "Mapping" tab via a visual map interface, or can be textually bulk-added to items using [CSV Import](#csv-import-integration).
 
@@ -59,7 +64,7 @@ This information can be set manually using the item's "Mapping" tab via a visual
 
 The item view screen will not show a "Mapping" tab unless there is already geolocation metadata, but one will appear when editing the item. To add a map to an item, enter editing mode and navigate to the "Mapping" tab.
 
-![The item-editing page with the Mapping tab selected.](../modules/modulesfiles/Mapping_Item_Add.png)
+![The item-editing page with the Mapping tab selected.](modulesfiles/Mapping_Item_Add.png)
 
 To move the map to where you want to add a location, you can do one of the following:
 
@@ -68,7 +73,7 @@ To move the map to where you want to add a location, you can do one of the follo
 * Type the place name into the search box (see the image below).
 	* Options will populate as you type, and will not search locations which do not match the formatting of the search function.
 
-![Mapping tab with a search for "Roosevelt Island" in the search view. Below the search field are a number of suggested locations.](../modules/modulesfiles/Mapping_itemSearch.png)
+![Mapping tab with a search for "Roosevelt Island" in the search view. Below the search field are a number of suggested locations.](modulesfiles/Mapping_itemSearch.png)
 
 When you are centered on your intended location, you can then:
 
@@ -78,17 +83,17 @@ When you are centered on your intended location, you can then:
 
 We refer to these various markers and shapes as "features" throughout the rest of this documentation.
 
-![Mapping tab with an active marker being drawn. The marker has a tooltip saying "click map to place marker"](../modules/modulesfiles/Mapping_drawMarker.png)
+![Mapping tab with an active marker being drawn. The marker has a tooltip saying "click map to place marker"](modulesfiles/Mapping_drawMarker.png)
 
 #### Edit features
 
 You can now click on the marker or shape to add a label that will display on [public map views](#public-view) of the item. Be aware that this will display in a large font.
 
-![Closeup of map with a marker selected. There is a field to enter the maker label.](../modules/modulesfiles/Mapping_addLabel.png)
+![Closeup of map with a marker selected. There is a field to enter the maker label.](modulesfiles/Mapping_addLabel.png)
 
 You can also add an image to display on the feature when clicked in the [public view](#public-view). You can only select from images that have already been [attached to the item as media](../content/items.md#media). To remove the image, select "No Image" from the sidebar.
 
-![Marker selected with Image added. The media is also visible in the sidebar, along with an option for "No Image"](../modules/modulesfiles/Mapping_addImage.png)
+![Marker selected with Image added. The media is also visible in the sidebar, along with an option for "No Image"](modulesfiles/Mapping_addImage.png)
 
 Neither field is required, but if you choose an image without entering a label, the media title will appear in the label field. This can be removed. 
 
@@ -98,13 +103,13 @@ To **move a marker or shape**, use the "Edit feature" button on the left hand to
 
 To apply your changes, click the "Save" option that opens from the "Edit feature" button. If you do not save, the marker will not be moved.
 
-![Marker being moved](../modules/modulesfiles/Mapping_moveMarker.png)
+![Marker being moved](modulesfiles/Mapping_moveMarker.png)
 
 To **delete a marker**, first click the "Delete feature" button in the left hand toolbar (trash can icon). Click on the marker or shape you want to delete; this will remove the feature from the map. In order to make the deletion permanent, you must click "Save" in the small menu that opens from the "Delete feature" button.
 
 Note that you can use the "Clear all" button in the menu which opens form the "Delete feature" button to clear all markers and shapes on the map.
 
-![Marker being deleted.](../modules/modulesfiles/Mapping_deleteMarker.png)
+![Marker being deleted.](modulesfiles/Mapping_deleteMarker.png)
 
 #### Map display
 
@@ -140,9 +145,39 @@ If the chosen field in this batch operation does not contain valid entries, the 
 
 You may wish to copy your coordinates in one batch operation, then update those markers with labels and images in a second batch operation. Note that if an item has multiple markers, all markers will get updated with identical images and labels. 
 
+### Global settings
+
+All of the item add/edit maps in the installation can be given default settings to enable faster gelocation work. These settings can then be overridden by logged-in users for their own mapping work. These settings will only take effect on the **administrative side**. 
+
+Under Admin in the left-hand bar of the administrative dashboard, click "Settings" and then scroll down to the "Mapping" section. 
+
+![The Mapping section of the installation-wide settings tab.](modulesfiles/Mapping_globalSettings.png)
+
+In this section you can set: 
+
+- **Basemap provider**: Select a basemap from the dropdown to show when editing item maps on the administrative side.  
+- **Minimum zoom level**: Set a minimum zoom level for all item maps when they first load.  
+- **Maximum zoom level**: Set a maximum zoom level for all item maps when they first load.
+- **Default bounds**: Set an area that must always be shown in item maps when they first load. The four corner coordinates set in this map will be included inside any map, with excess shown if the map dimensions require it. This setting will only apply to new item maps, that is, items without any mapping data. 
+
+### User settings
+
+A logged-in user can customize their own map settings to enable faster gelocation work. These settings will only take effect on the **administrative side**. These settings can be changed or removed at any time, as the user works through items. 
+
+From the Users link in the left sidebar, use the table of user accounts to edit one user. At the top of the screen, choose the "User settings" tab. 
+
+![The user settings tab scrolled down to the Mapping subsection.](modulesfiles/Mapping_user.png)
+
+The Mapping subsection added to the "User settings" tab provides options for the following:
+
+- **Basemap provider**: Select a basemap from the dropdown to show when editing item maps on the administrative side.  
+- **Minimum zoom level**: Set a minimum zoom level for all item maps when they first load.  
+- **Maximum zoom level**: Set a maximum zoom level for all item maps when they first load.
+- **Default bounds**: Set an area that must always be shown in item maps when they first load. The four corner coordinates set in this map will be included inside any map, with excess shown if the map dimensions require it. This setting will only apply to new item maps, that is, items without any mapping data. 
+
 ### CSV Import integration
 
-Mapping is compatible with [CSV Import](../modules/csvimport.md) when importing items (but not when importing mixed resources).
+Mapping is compatible with [CSV Import](csvimport.md) when importing items (but not when importing mixed resources).
 
 If the two modules are enabled, your CSV Import process will have a new "Mapping" dropdown menu in the "Add mapping" sidebar when you are connecting a spreadsheet column to a property.
 
@@ -185,7 +220,7 @@ The Mapping module adds a section to each site's "Settings" tab found under "Sit
 
 Mapping creates a "Map Browse" page that can be added to each site in its navigation settings. This map has minimal customization options and will show every item in the site that has one or more geolocations, as well as some advanced search fields (including searching by an address with a radius). These search fields are not affected by the site settings. The title of the page will be "Map".
 
-Go to a Site, then go to Navigation. You will see under "Add a custom link" the option to add "Map Browse." When this is added to your navigation, you will be able to change the label that appears in the navigation (default is "Map Browse"), and the basemap, by clicking on the pencil icon to edit the Map Browse page settings. Note that changing the basemap will change the URL that is added to the navigation - for example, `yoursite/map-browse?mapping_basemap_provider=OpenTopoMap`. 
+Go to a Site, then go to Navigation. You will see under "Add a custom link" the option to add "Map Browse." When this is added to your navigation, you will be able to change the label that appears in the navigation (default is "Map Browse"), and the basemap, by clicking on the pencil icon to edit the Map Browse page settings. Note that changing the basemap will change the URL that is added to the navigation: for example, `yoursite/map-browse?mapping_basemap_provider=OpenTopoMap`. 
 
 ### Resource page blocks
 
@@ -197,23 +232,27 @@ Go to a Site, then go to Navigation. You will see under "Add a custom link" the 
 
 Item sets cannot themselves be geolocated (pinned to a map), but they will display maps of all their items' geolocation data. This appears in the admin side as a "Mapping" tab on the item set, the same as items. This tab is for informational purposes only, cannot be edited, and will disappear when you go to editing mode. 
 
-On the public side, item sets will not display a map automatically - you must [manually add the "Mapping" resource page block to a region](../sites/site_theme.md#select-regions-and-blocks) offered by your site theme, for each site you have. 
+On the public side, item sets will not display a map automatically. You must [manually add the "Mapping" resource page block to a region](../sites/site_theme.md#select-regions-and-blocks) offered by your site theme, for each site you have. 
 
 Item set pages, if you add the Mapping resource block to a region, will display a map with all the features for all the items in that set. This map resource block has no settings but can be modified with the [site-wide settings](#site-wide-settings).
 
 ### Page blocks
 
-Mapping creates three page blocks you can add to your site pages: "Map by attachments", where you manually add resources to the map block; "Map by query", which allows you to use search parameters to add resources to the map block; and "Map by groups", where you can display a single map feature (a center-point pin or a containing shape) to represent categories of items, such as items grouped by their classes.
+Mapping creates three page blocks you can add to your site pages: 
 
-To add a map to a page, go into page editing mode. On the right, under "Add new block", click either the "Map by attachments," "Map by query", or "Map by groups" block. Selecting one will add the map block to the bottom of the page. The blocks include customizable features for the map in collapsable panes. Click the triangles to expand or collapse these fields.
+- "Map by attachments", where you manually add resources to the map block
+- "Map by query", which allows you to use search parameters to add resources to the map block
+- "Map by groups", where you can display a single map feature (a center-point pin or a containing shape) to represent categories of items, such as items grouped by their classes.
 
-![Page editing screen with the three Map blocks added: "Map by query", "Map by attachments", and "Map by groups". Block includes menu options Default View, Overlays and attachments.](../modules/modulesfiles/Mapping_Page_MapBlock1.png)
+To add a map to a page, go into page editing mode. On the right, under "Add new block", click either the "Map by attachments", "Map by query", or "Map by groups" block. Selecting one will add the map block to the bottom of the page. The blocks include customizable features for the map in collapsable panes. Click the triangles to expand or collapse these fields.
+
+![Page editing screen with the three Map blocks added: "Map by query", "Map by attachments", and "Map by groups". Block includes menu options Default View, Overlays and attachments.](modulesfiles/Mapping_Page_MapBlock1.png)
 
 The "Map by attachments" and "Map by query" blocks have largely the same settings besides the method for adding items to the map. 
 
 The "Map by groups" block does not have timeline or overlay options.
 
-#### Default view
+#### Default View
 
 This section lets you set the appearance and zoom level of the map. There are three fields and a preview map. Within the preview map are buttons for setting the default zoom and location of the map. If you do not set a default zoom or location, the map will contain all resources when first loaded on the public page.
 
@@ -230,7 +269,7 @@ This section lets you set the appearance and zoom level of the map. There are th
 
 **Scroll wheel zoom**: Set whether users can zoom with their mouse wheel when hovering over the map, either automatically upon page load or after clicking inside the map. You can disable mouse-wheel scrolling entirely.
 
-The preview map allows you to visually set a default view for this map. The map dimensions on the public page may not match the dimensions shown in this preview, but saving a default view here will guarantee that the four corner points will be displayed on the public page, with excess added to the outer edges if applicable. 
+The preview map on this editing page allows you to visually set a default view for this map. The map dimensions on the public page may not match the dimensions shown in this preview, but saving a default view here will guarantee that the four corner points will be displayed on the public page, with excess added to the outer edges if applicable. 
 
 Note that the text above the preview map tells you the current zoom level. 
 
@@ -256,40 +295,51 @@ You can add supplementary information to your maps using the Overlays options.
 Omeka provides three formats for adding custom overlays or non-Omeka data: 
 
 - [Web Map Service (WMS)](https://mapserver.org/ogc/wms_server.html){target=_blank}
+- [Web Map Tile Service (WMTS)](https://www.ogc.org/standards/wmts/){target=_blank}
 - [International Image Interoperability Framework (IIIF) Georeference Annotation](https://iiif.io/api/extension/georef/){target=_blank}
 - [GeoJSON](https://geojson.org/){target=_blank}.
 
-WMS and IIIF overlays appear as optional visual layers that site visitors can display or hide. Overlays frequently only cover one part of the world map - for example, a historical map of northern Africa that has been digitized and mapped precisely with coordinates. You can have multiple layers all set to be visible by default, whether they overlap each other or not. 
+WMS, WMTS, and IIIF overlays appear as optional visual layers that site visitors can display or hide. Overlays frequently only cover one part of the world map: for example, a historical map of northern Africa that has been digitized and mapped precisely with coordinates. You can have multiple layers all set to be visible by default, whether they overlap each other or not. 
 
 GeoJSON overlays are datasets for adding map features. Rather than display items from your Omeka collection, this option can display information on a map using markers and shapes generated from [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON){target=_blank}-formatted data. You can provide supplemental clickable pins to your site maps using this tool; pins are not tied to Omeka items, but can be used to add context, such as important buildings. You can manually create GeoJSON for your own use, or copy GeoJSON from other sources. See below for more information about GeoJSON.
 
 First, you can set whether you wish the overlays to display exclusively (one at a time) or inclusively (multiple at the same time). Then choose one of the three formats to begin entering information.
 
-##### WMS and IIIF
+##### WMS, WMTS, and IIIF
 
-Four fields are available for WMS overlays: 
+Four fields are available for **WMS overlays**: 
 
  * **Label**: Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays. (Required.)
  * **Base URL**: Add a map overlay to the WMS map by URL. 
  * **Layers**: Any of the offered layers you wish to use, separated by commas. This is a string or strings provided by the WMS host.
  * **Styles**: Any styles you wish to use, separated by commas. This is a string or strings provided by the WMS host.
 
-Two fields are available for IIIF overlays:
+Five fields are available for **WMTS overlays**: similar to WMS, but all fields only take one value:
+
+ * **Label**: Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays. (Required.)
+ * **Base URL**: Add a map overlay to the WMTS map by URL. 
+ * **Layer**: The offered layer you wish to use. This is a string provided by the WMTS host.
+ * **Style**: The style you wish to use. This is a string provided by the WMTS host.
+ * **Tile matrix set**: A code sourced from the mapping service to point to tiles in different formats. You may need to read the XML provided by the WMTS map to find the `<TileMatrixSet>` value(s). 
+
+To find the "Layer" name, you may need to read the XML: look for `<Layer><ows:Title>` for example. Note that for WMTS overlays the "Style" value is often "default". 
+
+Two fields are available for **IIIF overlays**:
 
  * **Label**: Create a unique, descriptive label for the map overlay. This will be visible to visitors and should be used to differentiate between overlays. (Required.)
  * **URL**: Enter the URL of the IIIF manifest. This may be in the format `website.org/manifests/123456789`.
 
-Click "Save overlay" to create the overlay. Click "Cancel" to clear each of the fields. Multiple overlays can be added. Make sure you save each overlay edit, and then save the page. 
+Click "Save overlay" to create the overlay. Click "Cancel" to clear all of the fields. Multiple overlays can be added. Make sure you save each overlay when edited, and then save the page. 
 
-![A "Map by query" page block with the Overlays section open. Four overlays already exist, and one - a WMS overlay - is open for editing.](modulesfiles/Mapping_pageOverlays.png)
+![A "Map by query" page block with the Overlays section open. Four overlays already exist, and one (a WMS overlay) is open for editing.](modulesfiles/Mapping_pageOverlays.png)
 
 Once you have added an overlay, it will appear above the fields for adding more overlays. If you would like one or more of the overlays to display automatically when the page loads, check the box next to it. Note that some overlays can be large and take time to load on a public page. 
 
-Edit an overlay by clicking on on the red pencil edit button, or click the red trashcan icon to delete the overlay.
+Edit an existing overlay by clicking on the red pencil edit button, or click the red trashcan icon to delete the overlay. Remember to click "Save overlay" and then save the page each time you make changes to these settings. 
 
 ##### GeoJSON overlays
 
-GeoJSON provides map features as well as metadata information about each feature. You can use this to illustrate areas, such as historical boundaries of a municipality, or add coordinates related to the topic of your Omeka site or page. You can display any number of map features, of all types (point, line, and polygon). You can also have one set of metadata that refers to multiple discrete areas of the map - such as showing the continental United States, Alaska, and Hawaii as one single datapoint with three separate polygonal features. GeoJSON features look just like Omeka item features. 
+GeoJSON provides map features as well as metadata information about each feature. You can use this to illustrate areas, such as historical boundaries of a municipality, or add coordinates related to the topic of your Omeka site or page. You can display any number of map features, of all types (point, line, and polygon). You can also have one set of metadata that refers to multiple discrete areas of the map: such as showing the continental United States, Alaska, and Hawaii as one single datapoint with three separate polygonal features. GeoJSON features look just like Omeka item features. 
 
 ![The admin side of a page being edited, showing the "GeoJSON" section filled out with information.](modulesfiles/Mapping_geojsonAdmin.png)
 
@@ -330,7 +380,7 @@ Click "Save overlay" to create the overlay. Click "Cancel" to clear each of the 
 
 #### Timeline
 
-The Timeline section allows you to add a timeline display alongside the map view. This feature requires the [Numeric Data Types](numericdatatypes.md) module and items with Timestamp or Interval values (applied via the [resource template](../content/resource-template.md)).
+The Timeline section allows you to add a timeline display alongside the map view. This feature requires the [Numeric Data Types](numericdatatypes.md) module and items with Timestamp or Interval values (applied via the [resource template](../content/resource-template.md)). The timeline code and themes come from [TimelineJS](https://timeline.knightlab.com/){target=_blank}.
 
 - **Title headline**: displays on the first slide of the timeline (see ["Timeline public view"](#timeline-public-view) below). You can use this to name the timeline.
 - **Title text**: appears below the title headline on the first slide of the timeline (see ["Timeline public view"](#timeline-public-view) below). You can use this to provide context or narrative introduction for the timeline.
@@ -338,10 +388,10 @@ The Timeline section allows you to add a timeline display alongside the map view
 	- Note that the transition between points is animated, so if you have very distant points the shift between them will involve a significant zoom out and in.
 - **Show contemporaneous events**: sets how two events with the same timestamp or interval are displayed. If checked, contemporaneous events will both display in the map when active in the story slider.
 	- For timestamp properties, if two events have a date of "1 January 2000," both events will show on the map when either is in the story slider.
-	- For interval properties, if one event has an interval of "28 July 1914 - 11 November 1918" and another has an interval of "January 1819- December 1920" both events will show on the map when either is in the story slider.
-	- Note that this setting only works with the default view of Timeline navigation position.
+	- For interval properties, if one event has an interval of "28 July 1914/11 November 1918" and another has an interval of "January 1819/December 1920" both events will show on the map when either is in the story slider.
+	- Note that this setting only works when "Fly to" is set to "Default view".
+- **Timeline theme**: A dropdown offering timeline color schemes from [TimelineJS](https://timeline.knightlab.com/){target=_blank}. The options are Default (the only theme available in previous versions of the timeline), a Dark theme, and a Contrast theme with accessibility-compliant colors. Note that these selections call a CSS file that will apply to all timelines on one page; different timelines on the same page cannot have different themes. See the example images below in the [Timeline public view](#timeline-public-view) section of this page.
 - **Timeline navigation position**: by default, the timeline displays with the story slider, to the left of the map. Using this dropdown, you can change where the story slider displays. Options are:
-	- Default position
 	- Full width, below story slider and map
 	- Full width, above story slider and map.
 - **Property**: a dropdown menu; select the timestamp or interval property to use when populating the timeline. The dropdown menu will populate with the properties which have been defined in a resource type as using numeric data types Interval or Timestamp.
@@ -363,11 +413,11 @@ With this block, markers are added to the map by selecting items manually.
 * Drag and drop items in this list to reorder them.
 * Remove items from the list by clicking the red trashcan.
 
-![A map with Add Attachment selected. On the right is a list of items.](../modules/modulesfiles/Mapping_pageAttachments.png)
+![A map with Add Attachment selected. On the right is a list of items.](modulesfiles/Mapping_pageAttachments.png)
 
 To add multiple items at once, click the "Quick add" slider just above the list of items in the right-hand drawer. This will add a checkbox to the left of each item. Check the boxes of those items you want to add to the map, then click the "Add selected" button at the bottom of the drawer.
 
-![Drawer with bulk add option activated](../modules/modulesfiles/Mapping_bulkAttachments.png)
+![Drawer with bulk add option activated](modulesfiles/Mapping_bulkAttachments.png)
 
 #### Query (Map by query block)
 
@@ -379,7 +429,7 @@ More complicated queries can be set: specific item sets, classes, templates, ite
 
 ![The map by query block showing a query for classes Still Image and Image, with the sidebar open to the searh query edit interface.](modulesfiles/Mapping_blockquerysidebar.png)
 
-You can also run a search on your public site, and from the search results page, copy everything in your browser's address bar, starting with the question mark all the way to the end of the search URL (to the right) - for example:
+You can also run a search on your public site, and from the search results page, copy everything in your browser's address bar, starting with the question mark all the way to the end of the search URL (to the right). For example:
 
 ```
 ?fulltext_search=london&resource_class_id[]=33&has_media=1&has_features=1
@@ -399,13 +449,19 @@ Note that the administrative interface will not preview the map with your select
 
 #### Groups (Map by groups block)
 
-The "Map by groups" page block allows you to sort your items according to various criteria. A group will display as either a single map pin (in the center of all the locations of all its items), or as a polygon (containing all the locations of all its items). Users can click on the groups to see only that group's items. 
+The "Map by groups" page block sorts your items into groups of your choosing. A group will display as either a single map pin (in the center of all the locations of all its items), or as a polygon (containing all the locations of all its items). Users can click on the groups to see only that group's items. There is also a dropdown menu in the bottom left corner where users can select one of the groups. 
 
-This page block offers common ways that users want to group their items: by classes, by item sets, or by common values in a given field, such as linked resources used in the same field. 
+This page block offers common ways to browse items: by classes, by item sets, or by common values in a given field, such as linked resources used in the same field. 
 
-This block does not have timeline or overlay settings - only the Default View section, as above, and a Groups section. 
+This block does not have timeline or overlay settings: only the Default View section, as above, and a Groups section. 
 
-![A map by group block on a public page, with the title "Browse by subject", with four pins showing. One pin pop-up is showing "Subject contains 'design & monuments' In item set 'National Mall Items'" with a button leading to "View all results (139 total)".](modulesfiles/Mapping_groupPublicPin1.png)
+![A map by group block on a public page, with the title "Map by groups", with 3 pins showing. One pin has a pop-up reflecting the group ".](modulesfiles/Mapping_groupPublic1.png)
+
+The public map on first viewing shows a feature for each group. In the image above, the dropdown menu has been expanded to show the options available in this map. One pin has been selected and its pop-up is showing, with the grouping information and a button that says "View all results".  
+
+After this button is clicked, the map will update to display features for each item in the group. There may be clusters, pins, and shapes. At the bottom of the map a "Return to groups" button is added, alongside the current browsing parameters (including the group and any filters applied):
+
+![A map by group block with the group's contents showing. A "Return to groups" button is now in the bottom left corner of the map.](modulesfiles/Mapping_groupPublic2.png)
 
 The Groups section has two fields to start:
 
@@ -420,14 +476,14 @@ The Groups section has two fields to start:
 	- Polygon: A shape with boundaries around the outermost features.
 	- Point: The central point of all the group's items' locations.
 
-Once a user selects a "Group by" choice, the form should expand with more fields, based on the selection. 
+Once a user selects a "Group by" choice, the form will expand with more fields, based on the selection. 
 
 Filtering options are also offered: when one grouping choice is made (such as group items by their class), you can then choose to filter items based on the other selections (such as only including items from a particular item set). These filters allow only one selection. 
 
 ##### Group by Item sets
 
 - Filter by resource class: Only include items assigned to the selected resource class.
-- Item sets: Select the item sets to render as groups on the map. Remember that each item set will render as either a polygon or point representing all of its items' locations - and that items can belong to more than one item set. 
+- Item sets: Select the item sets to render as groups on the map. Remember that each item set will render as either a polygon or point representing all of its items' locations; remember that items can belong to more than one item set. 
 
 ##### Group by Resource classes
 
@@ -445,14 +501,14 @@ This option can be useful if you use controlled vocabularies, for example for su
 
 ##### Group by Property values (contains)
 
-This option allows you more flexibility than the "is exactly" option. This can be useful to group items with textual location metadata such as City, State - enter each State text on a new line to see your items grouped by their state. 
+This option allows you more flexibility than the "is exactly" option. This can be useful to group items with textual location metadata such as in the format "City, State": enter each State text on a new line to see your items grouped by their state. 
 
 - Filter by item set.
 - Filter by resource class.
 - Property: Select the property of the values to group. You can leave this blank to create groups from finding the supplied text values in all properties.
 - Values: Enter the (matches any part) text values to render as groups on the map, separated by new lines. 
 
-![A map by group block on the admin side, with "Group by property values (contains)" selected.](modulesfiles/Mapping_groupBlock.png)
+![A map by group block on the admin side, with "Group by property values (contains)" selected. Dublin Core Subject is chosen, and subject values are entered in the text box below, one per line.](modulesfiles/Mapping_groupBlock.png)
 
 ##### Group by Property values (is item with ID)
 
@@ -468,18 +524,6 @@ This option allows you to group items that have a common linked resource. Enter 
 - Filter by item set.
 - Filter by resource class.
 - Properties: Select the properties (that have any values) to render as groups on the map. Each property selected will become a group. 
-
-The public map on first viewing shows a feature for each group. In the image below polygons are set to display for each group. This is the same map as the image at the beginning of this section, set to display polygons instead of single pins:
-
-![A map by group block with polygons showing.](modulesfiles/Mapping_groupPublic1.png)
-
-In the image above, one polygon has been selected and its pop-up is showing, reading "Subject contains politics & protest, in item set National Mall Items" with "View all results (58 total)" on a clickable button. 
-
-After a group is selected, the map will update to display features for each item in the group. There may be clusters, pins, and shapes. Underneath the map there will appear a "Return to groups" button, alongside the current browsing parameters (including the group and any filters applied):
-
-![A map by group block with the group's contents showing.](modulesfiles/Mapping_groupPublic2.png)
-
-In the image above, the browsing parameters read "Subject contains: politics & protest | In item set: National Mall items". 
 
 ### Public view
 
@@ -502,67 +546,65 @@ If you have added a label, it will show the label, as well as representative med
 
 Item mapping marker with label only:
 
-![Item pin pop-up showing "Black hole of Calcutta" text, with a line below showing "Item: History of Paul Jones, The Pirate." as a link to the item.](../modules/modulesfiles/Mapping_publicLabel.png)
+![Item pin pop-up showing "Black hole of Calcutta" text, with a line below showing "Item: History of Paul Jones, The Pirate." as a link to the item.](modulesfiles/Mapping_publicLabel.png)
 
 Item mapping marker with label and image:
 
-![Item pin pop-up showing the same information as above, with a thumbnail image, and with another line below "Item:" reading "Media: Illustration on title page of a tall ship at sea", as a link to the media.](../modules/modulesfiles/Mapping_publicLabelImg.png)
+![Item pin pop-up showing the same information as above, with a thumbnail image, and with another line below "Item:" reading "Media: Illustration on title page of a tall ship at sea", as a link to the media.](modulesfiles/Mapping_publicLabelImg.png)
 
 Item mapping marker with no label or image:
 
-![Item pin pop-up showing only "Item: History of Paul Jones, The Pirate".](../modules/modulesfiles/Mapping_publicNoLabel2.png)
+![Item pin pop-up showing only "Item: History of Paul Jones, The Pirate".](modulesfiles/Mapping_publicNoLabel2.png)
 
 #### Timeline public view
 
-Timelines only appear in page blocks. The timeline will display to the left of the map, or above the map on mobile views. Each item appears on both the map and the timeline (meaning it will only display items that have both numeric dates and map markers).
+Timelines can only appear in page blocks. The timeline card will display to the left of the map, or above the map on mobile views. The timeline bar itself can be set to appear above or below the map and card. Each item appears on both the map and the timeline (meaning it will only display items that have both numeric dates and map markers). 
 
-On a map block with a timeline, the block initially loads with the map either at default view or zoomed to display all markers. The timeline will display the title headline and text, as seen below:
+On a map block with a timeline, the block initially loads with the map either at default view or zoomed to display all markers. The timeline will display the title headline and text, as seen below. This image also shows the timeline with the "Dark" theme selected in the settings:
 
-![Map block with timeline, displaying the first slide of the timeline. There are two lines of text, a larger font reading "Title Headline" and below it smaller font reading "title text".](../modules/modulesfiles/Mapping_timelinePublic1.png)
+![Map block with timeline, displaying the first slide of the timeline. The timeline is above the map.](modulesfiles/Mapping_timelinePublic2.png)
 
-In the timeline half of the display, information appears on the top and the timeline on the bottom. The timeline viewer has zoom buttons which increase or decrease the horizontal display of time (zoom in for year by year, zoom out to see decades at once). The arrow below them returns the viewer to the title slide.
+The timeline viewer has zoom buttons to control the granularity of the timeline bar (zoom in for year by year, zoom out to see decades at once). The arrows below them jump the viewer to the very last item, or to the title slide.
 
-When mousing over the timeline, the cursor changes to a four-directional arrow. Viewers can hold and drag left and right to scroll through the timeline. They can also navigate between items using the semi-opaque right and left arrows on the information area of the display.
+When mousing over the timeline, the cursor changes to a four-directional arrow. Viewers can hold and drag left and right to scroll through the timeline. They can also navigate between items using the right and left arrows on the card showing each item.
 
-Clicking on a marker will display that item's date or interval, title, description, and attached image. The information area has a scroll bar for longer material. The title acts as a link to the item's show page.
+Clicking on a marker will display that item's title, description, date or interval, and attached image. The information area has a scrollbar for longer material. The title is a link to the item's show page.
 
-![Map block with timeline, displaying the interval item "Steventon Rectory, 1775-1801". The information area includes the beginning of a long paragraph describing the item. The marker for the rectory in the timeline runs off the right side of the timeline, which displays 1760-1800.](../modules/modulesfiles/Mapping_timelinePublic2.png)
+![Map block with timeline, displaying an item. The timeline is below the map.](modulesfiles/Mapping_timelinePublic1.png)
 
 Whenever an item is selected, its marker in the timeline will show up with a highlight to indicate that it is active.
 
-**Numeric:Interval appearance**
+##### Display of intervals
 
-Interval properties display as a long bar running horizontally across the timeline, with bars reaching down to the timeline at the start and end dates of the interval. Overlapping intervals will stack.
+Interval properties (fields with the data type `numeric:interval`) display as a long bar running horizontally across the timeline, with bars reaching down to the timeline at the start and end dates of the interval. Overlapping intervals will stack. In the image below, the timeline is on the "Contrast" theme selected in the settings:
 
-![Interval timeline with both Steventon Rectory and Reading Abbey Girls' School. The latter is open and highlighted in the timeline display; it is shorter than and nested under the timeline display for the Rectory.](../modules/modulesfiles/Mapping_timelinePublic3.png)
+![Timeline and map showing two items overlapping in the timeline bar. The timeline bar is above the map.](modulesfiles/Mapping_timelinePublic3.png)
 
-**Numeric:Timestamp appearance**
+##### Display of timestamps
 
-Timestamp properties display as a flag on the timeline, with one bar anchoring them to the timeline. Items which overlap either due to date or long text will stack.
+Timestamp properties (fields with the data type `numeric:timestamp`) display as a flag on the timeline, with one bar anchoring them to the timeline. Items which overlap either due to date or long text will stack. In the image below, the timeline is using the "Default" theme:
 
-![Timestamp timeline showing markers for the births of Cassandra and Jane Austen in the 1770s](../modules/modulesfiles/Mapping_timelinePublic4.png)
+![Timestamp timeline with many items shown in proximity. The timeline bar is below the map.](modulesfiles/Mapping_timelinePublic4.png)
 
-**Timeline navigation position**
+##### Timeline navigation position
 
-If you select "full width, below story slider and map" in the "Timeline navigation position" dropdown, the timeline and map will display as follows:
+The "Timeline navigation position" dropdown offers you the choice of "full width, below story slider and map" or "full width, above story slider and map".
 
-![Timeline start page slide, with the timeline displaying full width below the map and story slider](../modules/modulesfiles/Mapping_timelinePublicBelow.png)
+In the images above, you can see examples of the timeline bar shown above the map and item card, and below the map and item card. 
 
-If you select "full width, above story slider and map", the display will be similar but with the timeline above.
-
-**Show contemporaneous events**
+##### Show contemporaneous events
 
 When "Show contemporaneous events" is checked, the map zooms to display all events which take place on the same day.
 
-In the image below, the timeline is using interval data. The event "Reading Abbey Girls' School" (March 1785 - December 1786) takes place within the same period as "Steventon Rectory" (1775-1801), so the map is zoomed out to display the location markers for both events.
+In the image below, the timeline is using interval data. The "Smithsonian Garden Shed" item is in focus, and shows a pin on the map. The "Statue of Freedom" item, which overlaps the first item chronologically in the timeline, is also showing a pin on the map. 
 
-![image as described](../modules/modulesfiles/Mapping_timelinePublicSCE.png)
+![image as described](modulesfiles/Mapping_timelinePublic3.png)
 
 ## Troubleshooting
 
-- Trouble deleting: If you would like to remove the mapping location from an item, you must delete all the map modifications. First, delete each marker (click the "Delete feature" button, select the markers, click to save). Then clear the map view settings (click the "Clear the default center and zoom level" button). The map will return to a global view. Save the item and confirm that the map no longer appears.
-- Trouble with map tiles: Ensure you have chosen a basemap from our provider list that offers tiles at a high degree of zoom. If not, choose another basemap or go back to the default provider.
-- Trouble with timelines: Ensure you have the Numeric Data Types module installed and active, and that your selected date metadata field is formatted correctly as a Numeric Data Type using resource templates. Items with mapping data but without date data will not show, nor will items with date data but without mapping data, as maps with timelines require both.
-- Trouble with items appearing on your maps: Ensure all items are added to your site under the Resources tab. Ensure the items have valid mapping data in their individual Mapping tabs. Test the Map Browse page, found at `yoursite/mapping/index/browse`. Test a simple Map by Attachments page block with a few items you know are geolocated correctly.
-- Trouble with maps appearing on item pages or item set pages: Add the Mapping resource page block to a region provided by your theme, by going to [Site > Theme > Configure resource pages](../sites/site_theme.md#configure-resource-pages).
-- Trouble saving overlays: There is a "Save overlay" button that must be clicked when an overlay is being entered or edited. Be sure to save each edit and then save the page. 
+- **Trouble deleting**: If you would like to remove the mapping location from an item, you must delete all the map modifications. First, delete each marker (click the "Delete feature" button, select the markers, click to save). Then clear the map view settings (click the "Clear the default center and zoom level" button). The map will return to a global view. Save the item and confirm that the map no longer appears.
+- **Trouble with map tiles**: Ensure you have chosen a basemap from our provider list that offers tiles at a high degree of zoom. If not, choose another basemap or go back to the default provider.
+- **Trouble with timelines**: Ensure you have the Numeric Data Types module installed and active, and that your selected date metadata field is formatted correctly as a Numeric Data Type using resource templates. Items with mapping data but without date data will not show, nor will items with date data but without mapping data, as maps with timelines require both.
+- **Items not appearing on your maps**: Ensure all items are added to your site under the Resources tab. Ensure the items have valid mapping data in their individual Mapping tabs. Test the Map Browse page, found at `yoursite/mapping/index/browse`. Test a simple Map by Attachments page block with a few items you know are geolocated correctly.
+- **Maps not appearing on item pages or item set pages**: Add the Mapping resource page block to a region provided by your theme, by going to [Site > Theme > Configure resource pages](../sites/site_theme.md#configure-resource-pages).
+- **Trouble saving overlays**: There is a "Save overlay" button that must be clicked when an overlay is being entered or edited. Be sure to save each edit and then save the page. 
