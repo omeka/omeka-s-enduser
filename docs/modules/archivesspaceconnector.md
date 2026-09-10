@@ -6,13 +6,13 @@ After importing information, Omeka S will maintain a connection back to the orig
 
 Note that Omeka S cannot import digital materials from ArchivesSpace at this time, only textual metadata. 
 
-This connector relies on the ArchivesSpace OAI-PMH interface and its configuration. You will need an ArchivesSpace installation with a public OAI endpoint, and a precise set of configurations in your account to import materials correctly.
+This connector relies on access to the ArchivesSpace OAI-PMH interface. You will need an ArchivesSpace installation with a public OAI endpoint, and a precise set of configurations, to import materials correctly.
 
 ![](modulesfiles/aspace_public.png)
 
 ## Configure your ArchivesSpace installation
 
-First, ensure your ArchivesSpace website has the [OAI endpoint enabled](https://docs.archivesspace.org/customization/configuration/#urls-for-archivesspace-components){target=_blank}. This may not be possible if you are using a hosted instance of ArchivesSpace. `enable_oai` and `oai_url` are both set in the `config/config.rb` file.
+First, ensure your ArchivesSpace website has the [OAI endpoint enabled](https://docs.archivesspace.org/customization/configuration/#urls-for-archivesspace-components){target=_blank}. `enable_oai` and `oai_url` are both set in the `config/config.rb` file. Your managed hosting provider may not give you access to this file, and may or may not edit it by request. 
 
 The `oai_url` endpoint this module uses should end in `oai?`. Verify that your OAI endpoint is properly configured and accessible by visiting \[`oai_url`\]`verb=Identify`. You should receive an XML response with basic information about your ArchivesSpace OAI configuration (NOTE: remove the `oai?` suffix from the `oai_url` when entering into **ArchivesSpace OAI URL** below).
 
