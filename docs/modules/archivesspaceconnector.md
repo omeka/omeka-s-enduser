@@ -31,7 +31,7 @@ If the collection is described to a higher level, you can choose whether "files"
 
 ArchivesSpace has a configuration setting, enabled by default, to allow higher-level metadata to display on lower-level objects: "Inheritance". When this is active, the OAI output of ArchivesSpace sends information without context. That is, a collection-level extent will be duplicated in the metadata for all its lower-level objects that do not have their own extent, but it is not represented as "From the collection" in the OAI. 
 
-Thus, we recommend turning this setting off when importing into Omeka, to ensure metadata is not replicated out of context. You can read about how to disable this setting in your installation in the [ArchivesSpace technical documentation](https://archivesspace.github.io/tech-docs/architecture/public/){target=_blank}: look for the "Inheritance" section. The [file to be edited is called `config-defaults.rb`](https://github.com/archivesspace/archivesspace/blob/master/common/config/config-defaults.rb){target=_blank}. 
+Thus, we recommend turning this setting off when importing into Omeka, to ensure metadata is not replicated out of context. You can read about how to disable this setting in your installation in the [ArchivesSpace documentation](https://docs.archivesspace.org/architecture/public/#inheritance){target=_blank}. The [file to be edited is called `config-defaults.rb`](https://github.com/archivesspace/archivesspace/blob/master/common/config/config-defaults.rb){target=_blank}. Settings made here will affect both the Public User Interface and the OAI output. You may need to request this file be edited by your hosting provider. 
 
 ## Configure your Omeka installation
 
