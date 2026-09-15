@@ -53,6 +53,7 @@ nav:
         - modules/datarepositoryconnector.md
         - modules/datascribe.md
         - modules/datavisualization.md
+        - modules/demodata.md
         - modules/dspaceconnector.md
         - modules/exports.md
         - modules/extractmetadata.md
