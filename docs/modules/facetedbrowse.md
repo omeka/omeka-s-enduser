@@ -86,7 +86,7 @@ You can create facets from the following options:
 - Item set (for items only)
 - Full-text.
 
-More options may be added by modules. 
+More options may be added by modules. See the section below.
 
 ![Facet Type dropdown menu showing options](modulesfiles/FacetedBrowse_SelectFacetType.png)
 
@@ -142,24 +142,22 @@ For the text input Select type, you can set a specific property to search, or le
 
 You cannot leave the query blank. You may wish to provide multiple types of Select queries for the same field, in order to offer more granularity to site visitors.
 
-For the Single (list) and Multiple (list) Select types, page creators can choose to **truncate the values available** on the list visible to the site visitor by setting a number in the "Truncate values" option. Leaving the input blank will display all values. Entering in a number will display only that number of facets, in order, with a "See more (X)" link displaying the number of further facets.
+For the Single (list) and Multiple (list) Select types, page creators can choose to **truncate the displayed values** on the list visible to the site visitor, by setting a number in the "Truncate values" option. Leaving the input blank will display all values. Entering in a number will display only that number of values, in order, with a "See more (X)" link displaying the number of further values.
 
-Next, enter the values that will make up the facets. Each value should be on a separate line.
-
-Check the "Show all available values" box to get a sense of the data that is available for input. This will return existing values in the property you selected above, or from all properties. You may click the "Add all" button to populate the list of values. 
-
-The order of your available values (from most to least frequent) will not persist when you use the "Add all" button. Properties will rearrange themselves according to an internal order, as will resource templates, classes, and resources by ID. 
-
-The formatting of the value input will depend up on the query type selected above. If the query type is:
+Next, enter the values that will make up the facet. Each value should be on a separate line. The formatting of the value input will depend up on the query type selected above. If the query type is:
 
 -  "Is exactly": enter a value that is an exact match to the property value.
 -  "Contains": enter a value that matches any part of the property value.
 -  "Is resource with ID": enter the resource ID followed by any value (usually the resource title), separated by a single space.
 -  "Has any value": enter the property ID followed by any value (usually the property label), separated by a single space.
 
-When you are satisfied with your settings, click the "Set facet" button.
+You can check the "Show all available values" box to get a sense of the data that is available for input. This will return existing values in the property you selected above, or from all properties. You can sort that table by either the most common values, or the values alphabetically, using the sorting triangles that appear at the top of the table. You may then click the "Add all" button to populate the list of values.
 
-For example, you may wish to load all the "Subject" property's values and allow people to browse items using the subject headings currently in use. If you select "Show all available values" you will see a list of subjects currently in use, from most frequent to least. Note that you may wish to clean up your data and consolidate similar values, or fix typos and variations, to make faceted browsing more useful. You can use the [Value Suggest module](../modules/valuesuggest.md) in tandem with Faceted Browse to view and clean messy data.
+The order of your available values (from most to least frequent, or alphabetically, etc.) will not persist when you use the "Add all" button. Property values will rearrange themselves according to an internal order, as will resource templates, classes, and resources by ID. The order that appears in the field on the admin side is what will appear on the public page. 
+
+For example, you may wish to load all the "Subject" property's values and allow people to browse items using the subject headings currently in use. If you select "Show all available values" you will see a list of subjects currently in use, from most frequent to least. Note that you may wish to clean up your data and consolidate similar values, or fix typos and variations, to make faceted browsing more useful. You can use the [Value Suggest module](valuesuggest.md) in tandem with Faceted Browse to view and clean messy data.
+
+When you are satisfied with your settings, be sure to click the "Set facet" button before saving the page.
 
 !!! note
 	Note that "All available values" facets do not dynamically update when new values are added to the corpus, or when values are edited. You must reload the options using "Show all available values" and "Add all" in the facet to update the browsing list's content. We recommend doing this regularly when new items are being added.
@@ -172,7 +170,7 @@ Set the Select type for the browse faceting. For the "Multiple (list)" option, m
 
 Select the classes that will make up the facets from the dropdown menu.
 
-Check the "Show all available classes" box to get a sense of the data that is available for input.
+Check the "Show all available classes" box to get a sense of the data that is available for input. The order of your available values (from most to least frequent, or alphabetically, etc.) will not persist when you use the "Add all" button. Classes will rearrange themselves according to an internal order. The order that appears in the field on the admin side is what will appear on the public page. 
 
 ##### **Resource template** 
 
@@ -182,7 +180,7 @@ Set the Select type for the browse faceting. For the "Multiple (list)" option, m
 
 Select the resource templates that will make up the facets.
 
-Check the "Show all available templates" box to get a sense of the data that is available for input.
+Check the "Show all available templates" box to get a sense of the data that is available for input. The order of your available values (from most to least frequent, or alphabetically, etc.) will not persist when you use the "Add all" button. Template values will rearrange themselves according to an internal order. The order that appears in the field on the admin side is what will appear on the public page. 
 
 ##### **Item set** 
 
@@ -192,7 +190,7 @@ Set the Select type for the browse faceting. For the "Multiple (list)" option, m
 
 Select the item sets that will make up the facets.
 
-Check the "Show all available item sets" box to get a sense of the data that is available for input.
+Check the "Show all available item sets" box to get a sense of the data that is available for input. The order of your available values (from most to least frequent, or alphabetically, etc.) will not persist when you use the "Add all" button. Item sets will rearrange themselves according to the internal ID. The order that appears in the field on the admin side is what will appear on the public page. 
 
 ##### **Full-text** 
 
