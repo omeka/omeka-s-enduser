@@ -2,11 +2,11 @@
 
 The [Faceted Browse module](https://omeka.org/s/modules/FacetedBrowse){target=_blank} lets you create "browse resource" pages with facets (filter and sort functions) that site visitors can use to explore your collections. Faceted Browse pages can be made for items, items sets, or media. 
 
-With this module, site managers are able to configure faceted browsing pages and add them to a site's [navigation](../sites/site_navigation.md). End users are then able to browse through resources and use the facets to narrow the results in a logical and intuitive manner. This functionality is similar to the filtering options on many websites and should be easy for users to manage as long as you have clear language.
+With this module, site managers configure faceted browsing pages based on a specific site's resources. End users can then browse through those resources and use the facets to narrow the results in a logical and intuitive manner. This functionality is similar to the filtering options on many websites and should be easy for users to manage as long as you have clear language.
 
 The [public view](#public-views) section below shows how these facets display for single and multi-category pages.
 
-Faceted browse pages exist as separate [pages](../sites/site_pages.md). You can [add faceted browsing to a page as a block](#faceted-browse-preview-page-block) that will preview the FB page, but not have its full functionality. 
+Faceted browsing [pages](../sites/site_pages.md) can be added to a site's [navigation](../sites/site_navigation.md). You can [add faceted browsing to a page as a block](#faceted-browse-preview-page-block) that will preview the FB page, but not have its full functionality. 
 
 Faceted Browse content can be set as the default search display when a user types into the search bar at the top of an Omeka S site. 
 
@@ -23,33 +23,38 @@ Here are terms that we use for the aspects of a Faceted Browse page:
 
 ![Faceted browse page with a list of events that happened on the National Mall. On the left side of the image is a list of options with checkboxes.](modulesfiles/FacetedBrowse_publicView-basic.png)
 
-In the example public view above, the title "Browse items" is used for the page's appearance in the navigation; "Filter by type" is the category name in the left-hand sidebar of the page. Facets in the category include "Class", "Template used", and "Collection". In these examples the Select used is "Multiple (list)", which results in checkboxes for each option, and the visible options are truncated at 4.
+In the example public view above: 
+
+- the title "Browse items" is used for the page's appearance in the navigation.
+- "Filter by type" is the category name in the left-hand sidebar of the page.
+- Facets in the category include "Class", "Template used", and "Collection".
+- In these examples the Select used is "Multiple (list)", which results in checkboxes for each option, and the visible options are truncated at 4.
 
 ## Create Faceted Browse pages
 
 ![Site admin showing Faceted Browse startup page.](modulesfiles/FacetedBrowse_1.png)
 
-Once the Faceted Browse module is active, a tab for Faceted Browse will appear in the context menu for every site. Clicking on this tab will take you to a list of all of your Faceted Browse pages for that site.
+Once the Faceted Browse module is active, a link for Faceted Browse will appear in the context menu for every site. Clicking on this link will take you to a list of all of your Faceted Browse pages for that site.
 
 Site managers must create Faceted Browse pages before they can be added to the site's navigation.
 
-Create a new page by clicking the "Add a page" button. This takes you to a new page where you can add basic information for the page and start adding categories. 
+Create a new page by clicking the "Add new page" button. This takes you to a new page where you can add basic information for the page and start adding categories. 
 
 ![Create page interface showing save page dropdown](modulesfiles/FacetedBrowse_AddPage.png)
 
-The **page title** is required and will display on browser tabs and be sent in the page metadata. You can set a separate label in the site navigation. Most themes will not display this title visibly on the page. When one category is in use, its title will show on the page; when two or more categories are set, the heading "Browse" will display above the category links in the sidebar (see [the screenshot below](#multiple-categories-on-one-page) for how this will appear). 
+The **page title** is required, and will display on browser tabs and be sent in the page metadata. You can set a separate label in the site navigation. Most themes will not display this title visibly on the page. When a page only has one category, its title will show on the page; when two or more categories are set, the heading "Browse" will display above the category links in the sidebar (see [the screenshot below](#multiple-categories-on-one-page) for how this will appear). 
 
 Use the **resource type** dropdown to select the resource type that you would like to let users browse on this page: Items, Item Sets, or Media. This cannot be edited after page creation.
 
 Then, choose the **thumbnails** this Faceted Browse page will display. You can choose [square (cropped) thumbnails or medium (uncropped, original-ratio) thumbnails](../content/media.md#media-thumbnails) for items and item sets displayed in the table. Leaving this on "Default" will display whichever thumbnails are preferred by your site theme. 
 
-Select "Save and... Stay on this page" to continue creating the faceted browse.
+Select "Save and... Stay on this page" to continue creating the faceted browse categories.
 
 You can also save your edits and leave without working on categories and facets by selecting "Save and... Return to pages".
 
 ### Categories
 
-Once the page has been created, you must create a Category. This is where facets are created, and can also use filters to narrow down the pool of resources to browse with those facets. You can use multiple categories to provide different resource subsets for users to start their browsing, or just make one category and give your users the maximum pool of resources to browse through.
+Once the page has been created, you must create a Category. This is where facets are set up, and the filters used to narrow down the pool of resources for those facets. You can use multiple categories to provide different resource subsets for users to start their browsing, or just make one category and give your users the maximum pool of resources to browse through.
 
 For example, you may want to add a general "Browse items" page to your navigation, and provide within it a category for navigating only images, another category for navigating only events, and a final category that allows users to browse all items in the site, including images and events. Or you could create separate Faceted Browse pages to add to your navigation (one for each item class) and within each page provide categories to restrict the resources further by another value. 
 
@@ -57,7 +62,7 @@ Click the "Add category" button to be taken to a new interface.
 
 Give your category a **name** to be displayed to the public. This will appear at the top of the Faceted Browse page if it is the only category, and appear in the selection menu on the page if there are multiple categories. This is the only required field in this section. 
 
-Use the **search query** interface to set the pool of resources that users will browse. The "Edit" button opens a drawer on the right hand side of the browser window which works exactly like [advanced search forms](../search.md#item-advanced-search) for items, media, and item sets. The "Advanced edit" button allows you to input a query string. You can leave the query blank to include all of the site's resources of that type. 
+Use the **search query** interface to set the pool of resources that users will browse. You can leave the query blank to include all of the site's resources of that type. The "Edit" button opens a drawer on the right of the window which works exactly like [advanced search forms](../search.md#item-advanced-search) for items, media, and item sets. The "Advanced edit" button allows you to input a query string manually. 
 
 You can set a **default sorting** method to use when a site visitor starts to browse using this category. This will apply to the default list of resources, or to the [FB table you have customized with columns](#columns). The dropdown menu will show "Created" and "Title" at first, but will update to reflect the columns you customize further down the page. You will need to save your columns settings and return to this page to see this menu updated. Note that you cannot set a default sort by an Item Set column. 
 
@@ -65,7 +70,7 @@ You can set a **default sorting** method to use when a site visitor starts to br
 
 You can also include some **helper text** to guide your users on how to navigate the Faceted Browse page. This text will appear in the left-hand sidebar along with your facets in this category. There is a button to contract the text (which is expanded by default); the button says "Instructions" by default, but you can change this label. If you add no helper text, this button and text area will not appear. 
 
-Finally, this area includes the setting for **value facet** behavior: "Match any" and "Match all". If you are using value facets (this setting is not applicable to class, template, item set, or full-text facets) you can use this to ensure that users can broaden their results with "match any" or narrow them with "match all". For example, if you have a value facet for subject headings, the user can select one subject heading to see all the items matching that. If they further add another subject heading, they will see items that match either selection if the category is set to "Match any", or only items that match both those selections if the category is set to "Match all". This also applies to one selection each from two separate value facets. Note that this setting applies to all of the value facets in the category: you cannot set this behavior for each value facet individually. 
+Finally, this area includes the setting for **value facet** behavior: "Match any" and "Match all". If you are using value facets (this setting is not applicable to class, template, item set, or full-text facets) the "match any" setting will broaden results, and the "match all" will narrow them. For example, if you have a value facet for subject headings, the user can select one subject heading to see all the items matching that. If they add another subject heading, they will see items that match **either** selection if the category is set to "Match any", or only items that match **both** those selections if the category is set to "Match all". This also applies to one selection each from two separate value facets. Note that this setting applies to all of the value facets in the category: you cannot set this behavior for each value facet individually. 
 
 !!! note
 	If you are using value facets, we recommend you use the "Helper text" field to explain the expected behavior to your users.
@@ -107,13 +112,15 @@ Value facets correspond to the [values](../content/items.md#values) within a spe
 !!! note
 	Note that the "Value facet mode" setting at the top of the category editing interface will apply to all of the value facets you add to this category. "Match any" will allow users to broaden their results by adding more selections, while "Match all" will narrow the results when more criteria are added.
 
-Use the dropdown to select which property to use for the facet. For example, you may wish to select your description field, and allow users to search within those description texts. Or you may wish to select the subject field, and allow users to see all the controlled values you are using as subject headings. You can leave this blank to provide searching or browsing options across all of the resources' properties.
+A title is required; this will be the public heading displayed to users, and you can use it to explain how the facet works (for example, "Search within descriptions" or "Select subject headings"). 
+
+Use the dropdown to select which property to use for the facet. For example, you may wish to select your description field, and allow users to search within those description texts (with the "Text input" select type and the "Contains" query type). Or you may wish to select your subject field, and allow users to see all the controlled values you are using as subject headings. You can leave this blank to provide searching or browsing options across all of the resources' properties.
 
 Set the Select type for the browse faceting. This sets how site visitors interact with the options in the field:
 
 - Single (list). Visitors can select only one; options are displayed in a list of radio buttons. An "All" option appears at the top and is selected on page load; users can select another option, and then clear that choice by selecting "All" again. 
-- Multiple (list). Visitors can select multiple; all options are displayed in a list of checkboxes. Multiple selections by site visitors will **narrow** (Option 1 AND Option 2) the search results, regardless of the "Match any"/"Match all" value behavior set on the category. 
-- Single (dropdown menu). Visitors can select only one; all options are displayed in a dropdown menu. A "Select one..." option appears at the top and is selected on page load; users can select another option, and then clear that choice by selecting "Select one..." again.
+- Multiple (list). Visitors can select multiple; options are displayed in a list of checkboxes. Multiple selections by site visitors will **narrow** (Option 1 AND Option 2) the search results, regardless of the "Match any"/"Match all" value behavior set on the category. 
+- Single (dropdown menu). Visitors can select only one; all options are displayed in a dropdown menu. A "Select one..." option appears at the top and is selected on page load; users can choose another option, and then clear that choice by clicking "Select one..." again.
 - Text input. Visitors can type in text to include or exclude resources that include that text in their values.
 
 For **lists or dropdown menus**, you can set a **Query type** (queries are available for value facets only; not for classes, templates, item sets, etc.). The options are:
