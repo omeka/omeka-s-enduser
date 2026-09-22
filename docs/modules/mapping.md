@@ -155,9 +155,11 @@ Under Admin in the left-hand bar of the administrative dashboard, click "Setting
 
 In this section you can set: 
 
-- **Basemap provider**: Select a basemap from the dropdown to show when editing item maps on the **administrative side**. Some of the maps require a user key or token. To select Stamen-sourced basemaps, you need to register your domain (not any specific site URL) on their website; you do not need to enter in any kind of access key in your Omeka site for those to work.  
-- **Carto API key**: Go to the link provided in the interface and request an access key to use Carto-sourced basemaps. If you select a Carto basemap in any map setting, but do not have a valid API key in this field, those maps will show the "OpenStreetMap.Mapnik" default instead.
-- **Mapbox access token**: Go to the link provided in the interface and request an access key to use Mapbox-sourced basemaps. If you select a Mapbox basemap in any map setting, but do not have a valid access token in this field, those maps will show the "OpenStreetMap.Mapnik" default instead. 
+- **Basemap provider**: Select a basemap from the dropdown to show when editing item maps on the **administrative side**. Some of the maps require a user key or token. 
+!!! note
+	To use Stamen-sourced basemaps on any map (public or administrative) in the installation, you need to register your domain (not any specific site URL) on their website; you do not need to enter in any kind of access key in your Omeka installation(s) for those to work. If you do not register with Stamen, those maps will show the "OpenStreetMap.Mapnik" default instead.
+- **Carto API key**: To use Carto basemaps on any map (public or administrative) in the installation, you need an API key. Enter in an existing Carto key, or go to the link provided in the interface and request an access key to use Carto-sourced basemaps. If you select a Carto basemap in any map setting, but do not have a valid API key in this field, those maps will show the "OpenStreetMap.Mapnik" default instead.
+- **Mapbox access token**: To use Mapbox basemaps on any map (public or administrative) in the installation, you need an API key. Enter in an existing Mapbox token, or go to the link provided in the interface and request an access key to use Mapbox-sourced basemaps. If you select a Mapbox basemap in any map setting, but do not have a valid access token in this field, those maps will show the "OpenStreetMap.Mapnik" default instead. 
 - **Minimum zoom level**: Set a minimum zoom level for all item maps when they first load.  
 - **Maximum zoom level**: Set a maximum zoom level for all item maps when they first load.
 - **Default bounds**: Set an area that must always be shown in item maps when they first load. The four corner coordinates set in this map will be included inside any map, with excess shown if the map dimensions require it. This setting will only apply to new item maps, that is, items without any mapping data. 
@@ -172,7 +174,7 @@ From the Users link in the left sidebar, use the table of user accounts to edit 
 
 The Mapping subsection added to the "User settings" tab provides options for the following:
 
-- **Basemap provider**: Select a basemap from the dropdown to show when editing item maps on the administrative side.  
+- **Basemap provider**: Select a basemap from the dropdown to show when editing item maps on the administrative side. See information above about specific basemap providers and requirements. Lower-level users will need help from a global administrator to enter in access keys for specific services. 
 - **Minimum zoom level**: Set a minimum zoom level for all item maps when they first load.  
 - **Maximum zoom level**: Set a maximum zoom level for all item maps when they first load.
 - **Default bounds**: Set an area that must always be shown in item maps when they first load. The four corner coordinates set in this map will be included inside any map, with excess shown if the map dimensions require it. This setting will only apply to new item maps, that is, items without any mapping data. 
@@ -610,3 +612,4 @@ In the image below, the timeline is using interval data. The "Smithsonian Garden
 - **Items not appearing on your maps**: Ensure all items are added to your site under the Resources tab. Ensure the items have valid mapping data in their individual Mapping tabs. Test the Map Browse page, found at `yoursite/mapping/index/browse`. Test a simple Map by Attachments page block with a few items you know are geolocated correctly.
 - **Maps not appearing on item pages or item set pages**: Add the Mapping resource page block to a region provided by your theme, by going to [Site > Theme > Configure resource pages](../sites/site_theme.md#configure-resource-pages).
 - **Trouble saving overlays**: There is a "Save overlay" button that must be clicked when an overlay is being entered or edited. Be sure to save each edit and then save the page. 
+- **Wrong basemaps appearing**: Basemaps are inherited properties: From global settings that take effect on administrative-side maps, to user-specific settings, to individual admin-side maps; and from site-wide settings down to individual maps. The basemaps for Map Browse pages are set in the Navigation screen for each site; basemaps for page blocks are set when editing site pages. 
