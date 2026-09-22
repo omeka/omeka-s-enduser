@@ -16,7 +16,7 @@ The Mapping module adds:
 !!! note
 	Item sets cannot be geolocated, but can display mapping information based on items assigned to them.
 
-Mapping has installation-wide default settings (a choice of base maps, etc.), site-specific default settings that override the global settings, and user-specific administrative settings that apply when editing. Individual maps on pages, and those associated with items, can be customized to override all of these defaults. 
+Mapping has installation-wide default settings (a choice of displayed "basemaps", etc.), site-specific default settings that override the global settings, and user-specific administrative settings that apply when editing. Individual maps on pages, and those associated with items, can be customized to override all of these defaults. 
 
 Mapping can work with the [Collecting](collecting.md#prompts) module, by allowing users filling out the contribution form to provide geolocation data for their submissions. Users click directly on a map to place a marker, and can optionally provide a text label for the marker. See the Collecting module page for more information.
 
@@ -113,7 +113,7 @@ Note that you can use the "Clear all" button in the menu which opens form the "D
 
 #### Map display
 
-You can set any map's zoom level and center. The default is to center on one feature and zoom fully in, or to zoom out far enough to contain all features in the map view.
+You can set any map's zoom level and center. The default is to center on one feature and zoom fully in, or (if there are multiple map markers) to zoom out far enough to contain all features in the map view.
 
 * **Set the current view as the default view**: The square with a target or crosshair symbol. The map will default to a zoomed out (global) view. Click to set the current view as the default view for this item.
 * **Go to the current default view**: The square with a black box around a dot. This option is only available after you have set a default view. Click to pan and zoom map to the selected view for this item.
@@ -155,7 +155,9 @@ Under Admin in the left-hand bar of the administrative dashboard, click "Setting
 
 In this section you can set: 
 
-- **Basemap provider**: Select a basemap from the dropdown to show when editing item maps on the administrative side.  
+- **Basemap provider**: Select a basemap from the dropdown to show when editing item maps on the **administrative side**. Some of the maps require a user key or token. To select Stamen-sourced basemaps, you need to register your domain (not any specific site URL) on their website; you do not need to enter in any kind of access key in your Omeka site for those to work.  
+- **Carto API key**: Go to the link provided in the interface and request an access key to use Carto-sourced basemaps. If you select a Carto basemap in any map setting, but do not have a valid API key in this field, those maps will show the "OpenStreetMap.Mapnik" default instead.
+- **Mapbox access token**: Go to the link provided in the interface and request an access key to use Mapbox-sourced basemaps. If you select a Mapbox basemap in any map setting, but do not have a valid access token in this field, those maps will show the "OpenStreetMap.Mapnik" default instead. 
 - **Minimum zoom level**: Set a minimum zoom level for all item maps when they first load.  
 - **Maximum zoom level**: Set a maximum zoom level for all item maps when they first load.
 - **Default bounds**: Set an area that must always be shown in item maps when they first load. The four corner coordinates set in this map will be included inside any map, with excess shown if the map dimensions require it. This setting will only apply to new item maps, that is, items without any mapping data. 
