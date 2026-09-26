@@ -155,7 +155,8 @@ Under Admin in the left-hand bar of the administrative dashboard, click "Setting
 
 In this section you can set: 
 
-- **Basemap provider**: Select a basemap from the dropdown to show when editing item maps on the **administrative side**. Some of the maps require a user key or token. 
+- **Basemap provider**: Select a basemap from the dropdown to show when editing item maps on the **administrative side**. To help visitors with low vision, consider **Esri.NatGeoWorldMap** or **OpenTopoMap**, which have higher contrast between map features.
+	- Some of the maps require a user key or token. 
 !!! note
 	To use Stamen-sourced basemaps on any map (public or administrative) in the installation, you need to register your domain (not any specific site URL) on their website; you do not need to enter in any kind of access key in your Omeka installation(s) for those to work. If you do not register with Stamen, those maps will show the "OpenStreetMap.Mapnik" default instead.
 - **Carto API key**: To use Carto basemaps on any map (public or administrative) in the installation, you need an API key. Enter in an existing Carto key, or go to the link provided in the interface and request an access key to use Carto-sourced basemaps. If you select a Carto basemap in any map setting, but do not have a valid API key in this field, those maps will show the "OpenStreetMap.Mapnik" default instead.
