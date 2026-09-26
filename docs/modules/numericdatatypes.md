@@ -28,6 +28,9 @@ When you save changes to your resource template, the numeric type you chose shou
 	These fields will display only the numeric data entered, as in, it will show "200" if you mean to indicate "200 metres". If you want to indicate what your number values represent (seconds minutes, metres, pixels, inches, etc.), we suggest employing the property's alternate label to include the scale you are using; for example, use "Spatial Coverage" and rename it to indicate "Height (cm)".
 
 ## Add numeric data
+
+![A New Item editing screen, with a resource template set that adds all 4 types of numeric data types. Details on each field below.](modulesfiles/ndt-allOptions.png)
+
 When you add or edit an item using the template you created above, the properties you set as numeric will appear as follows:
 
 ### Timestamp
@@ -35,11 +38,11 @@ A Timestamp property automatically loads with fields for Year, Month, and Day. T
 
 If you enter a day without a month, the day information will not be saved. 
 
-![Empty timestamp fields, for property Date](../modules/modulesfiles/ndt-timestamp1.png)
+![A timestamp field, for property Date](modulesfiles/ndt-timestamp1.png)
 
-Clicking on the "time" button to the right of the day input field will load additional dropdown fields for Hour, Minute, and Second. Note that there is no AM/PM option; use twenty-four hour time entries (14 for 2pm, etc.).
+Clicking on the "time" button to the right of the day input field will load additional dropdown fields for Hour, Minute, and Second. You can select AM or PM hours in the dropdown. 
 
-![Empty timestamp fields, for property Date, with a row of time entry options below the date entry options](../modules/modulesfiles/ndt-timestamp2.png)
+![A timestamp field, for property Date, with a row of time entry options below the date entry options.](modulesfiles/ndt-timestamp2.png)
 
 Entries must be whole numbers, with no decimal points.
 
@@ -48,19 +51,19 @@ A number property is a small text field that allows you to type in a number, eit
 
 The entered value must be an integer or decimal. The number must not be less than -9007199254740991 or greater than 9007199254740991. The number of digits to either the left or right side of a decimal cannot exceed 16.
 
-![Field for property Spatial Coverage with the number 1 in the number entry field, and up or down toggle button on the right side of the field](../modules/modulesfiles/ndt-number.png)
+![Field for property Interval, and up or down toggle button on the right side of the field](modulesfiles/ndt-number.png)
 
 ### Duration
-A Duration property has a series of fields in which to enter the duration of the resource. There are fields for Years, Months, and Days. Clicking on the "time" button to the right of the day input field will load additional dropdown fields for Hours, Minutes, and Seconds. Note that there is no AM/PM option; use twenty-four hour time entries (14 for 2pm, etc.).
+A Duration property has a series of fields in which to enter the duration of the resource. There are fields for Years, Months, and Days. Clicking on the "time" button to the right of the day input field will load additional dropdown fields for Hours, Minutes, and Seconds. 
 
-![A property labelled duration, using the vocabulary dcterms "extent". There fields described are in a stack, with year on top.](../modules/modulesfiles/ndt-duration.png)
+![A property labelled duration. There are years, months, and days fields, empty, and hours, minutes, and seconds fields, with "95" in the minutes field.](modulesfiles/ndt-duration.png)
 
 You do not need to have input in every field. For example, you can enter a duration of 1 year and 5 days, leaving the month field blank.
 
 ### Interval
 An Interval property allows you to enter the beginning and end dates and times for a resource. There are two sets of timestamp fields, one for the start date and one for the end. 
 
-![Interval property with no times entered](../modules/modulesfiles/ndt-interval.png)
+![Interval property set on the Date Valid field.](modulesfiles/ndt-interval.png)
 
 ## Bulk-edit numeric data
 
