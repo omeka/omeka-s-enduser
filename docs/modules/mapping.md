@@ -6,9 +6,9 @@ The [Mapping module](https://omeka.org/s/modules/Mapping){target=_blank} allows 
 
 The Mapping module adds: 
 
-- several metadata fields to each item, on a "Mapping" tab available editing items
+- a "Mapping" tab when editing items, where items can be geolocated using pins and shapes (lines, polygons, rectangles), and each map can be customized
 - batch-editing options for items
-- optional location-based search fields to advanced search pages on the admin and public interfaces, controlled on a site-by-site basis by [Site Settings](../sites/site_settings.md#settings)
+- optional location-based search fields to the admin and public interfaces, controlled on a site-by-site basis with [Site Settings](../sites/site_settings.md#settings)
 - three page blocks to [Site Pages](../sites/site_pages.md) that can display maps and timelines for browsing: "Map by query", "Map by attachments", and "Map by groups"
 - a "Map Browse" page for each site, found in the [Site Navigation settings](../sites/site_navigation.md)
 - [resource blocks for items and item sets](../sites/site_theme.md#select-regions-and-blocks) (not media), which can be repositioned within the regions offered by a given site's theme. 
@@ -21,6 +21,10 @@ Mapping has installation-wide default settings (a choice of displayed "basemaps"
 Mapping can work with the [Collecting](collecting.md#prompts) module, by allowing users filling out the contribution form to provide geolocation data for their submissions. Users click directly on a map to place a marker, and can optionally provide a text label for the marker. See the Collecting module page for more information.
 
 Mapping can work with the [CSV Import](csvimport.md) module, allowing geolocation data to be added in bulk. See the [CSV Import integration section below](#csv-import-integration) for more information.
+
+## Requirements
+ 
+Most of the module works on any database Omeka S supports. The "Map by Groups" page block requires MySQL 8.0.24+ or MariaDB 11.7+, for the `ST_COLLECT` spatial function. On earlier versions, the block reports the requirement when you configure it, and displays nothing on the page.
 
 ## How to use maps
 
@@ -46,13 +50,14 @@ When editing a map in the administrative interface, small white square buttons o
 
 ### Search for mapping data
 
-Items with Mapping metadata (i.e. with markers or shapes on the map) can be searched with fields that the Mapping module adds to the advanced search fields. The public fields are optional (turned off by default) on [individual sites](../sites/site_settings.md#settings) in their [site settings](#site-wide-settings). 
+Items with Mapping metadata (i.e. with markers or shapes on the map) can be searched with fields that the Mapping module adds to the advanced search forms. The public fields are optional (turned off by default) on [individual sites](../sites/site_settings.md#settings) in their [site settings](#site-wide-settings). The admin-side fields are automatically enabled when the module is active. 
 
-![Map-based searching in the admin side.](modulesfiles/Mapping_advSearch.png)
+![Map-based searching in the admin side,.](modulesfiles/Mapping_advSearch.png)
 
-The "Add geographic location to advanced search" option will add the three fields seen above, allowing users to search by location: they must provide an address, as well as a distance (in numbers) and select a unit (kilometres or miles) to search within.
+The "Add geographic location to advanced search" option will add the two fields seen above. Users can:
 
-The "Search by map marker presence" option provides users with a dropdown with the options of "Has map markers" or "Has no map markers", as seen above.
+- search for all items either with or without any mapping data ("features", meaning pins and shapes)
+- search by location: they must provide an address, as well as a distance (in numbers) and a unit (kilometres or miles) to search within.
 
 ## Geolocate items
 
@@ -126,7 +131,7 @@ Users can select multiple items and perform [batch editing](../content/items.md#
 The options are:
 
 - **Delete features**: You can batch-remove all existing markers and shapes from multiple items. 
-- **Copy coordinates to markers**: This involves taking latitude and longitude data from an existing metadata value on each item or from their associated media. This will append new markers, not overwrite any existing markers. If there are multiple values on an item in the chosen proprerty, this will batch-copy them all as multiple markers. You can specify:
+- **Copy coordinates to markers**: This allows you to take latitude and longitude data from an existing metadata value on each item or from their associated media. This will append new markers, not overwrite any existing markers. If there are multiple values on an item in the chosen proprerty, this will batch-copy them all as multiple markers. You can specify:
 	- Which fields contain each or both values (for example, if you previously put this information into a text field such as `dcterms:spatial`)
 	- How they are separated (the operation will ignore spaces)
 	- Whether the longitude or latitude comes first in the pair. 
@@ -137,17 +142,17 @@ If you copy coordinates from an attached media, you can also check a box to assi
 	- Copying labels from an existing metadata value (either from the item, the primary media, or the media already assigned to the marker)
 	- Removing labels (the first entry in the dropdown).
 
-Note that marker labels have a limit of 255 characters. You will see your labels truncated if you copy label text from a field containing values longer than 255 characters.
+Note that marker labels have a limit of 255 characters. You will see your labels truncated if you copy text from a field containing values longer than 255 characters.
 
 If the chosen field in this batch operation does not contain valid entries, the item(s) will be skipped and you will not see an error message. [Batch-editing operations](../content/items.md#batch-editing) do not appear in the Jobs log unless they are "Edit all," so if you have done a selected-items batch-edit you may not be able to trace which items were modified.
 
-![The map-specific batch-editing field, with nothing filled out.](modulesfiles/Mapping_batchEdit.png)
+![The map-specific batch-editing field, with some selections made to display potential fields.](modulesfiles/Mapping_batchEdit.png)
 
 You may wish to copy your coordinates in one batch operation, then update those markers with labels and images in a second batch operation. Note that if an item has multiple markers, all markers will get updated with identical images and labels. 
 
 ### Global settings
 
-All of the item add/edit maps in the installation can be given default settings to enable faster gelocation work. These settings can then be overridden by logged-in users for their own mapping work. These settings will only take effect on the **administrative side**. 
+All of the item add/edit maps in the installation can be given default settings to enable faster gelocation work. These settings can then be overridden by logged-in users for their own mapping tasks. These settings will only take effect on the **administrative side**. 
 
 Under Admin in the left-hand bar of the administrative dashboard, click "Settings" and then scroll down to the "Mapping" section. 
 
@@ -263,7 +268,7 @@ This section lets you set the appearance and zoom level of the map. There are th
 
 ![Map by attachments block open to the Default View section. The basemap is "Esri.WorldTopoMap", and the zoom levels are at 3 and 17 respectively. The scroll-wheel zoom is set to "Disabled until map click".](modulesfiles/Mapping_BlockDefaultView1.png)
 
-**Basemap provider**: Select from a dropdown of basemaps. Once selected, the preview map will show you the appearance of that map. The default is "OpenStreetMap.Mapnik". These external providers are offered as-is; there is no guarantee of service or speed. 
+**Basemap provider**: Select from a dropdown of basemaps. Once selected, the preview map will show you the appearance of that map. The default is "OpenStreetMap.Mapnik", or the site setting basemap if one has been chosen. These external providers are offered as-is; there is no guarantee of service or speed. 
 
 !!! note
 	Some maps do not have tiles at a high degree of zoom; be sure to test your chosen basemap on item pages, item set pages, the Map Browse page, and page blocks to be certain it will work for your needs. 
@@ -613,4 +618,4 @@ In the image below, the timeline is using interval data. The "Smithsonian Garden
 - **Items not appearing on your maps**: Ensure all items are added to your site under the Resources tab. Ensure the items have valid mapping data in their individual Mapping tabs. Test the Map Browse page, found at `yoursite/mapping/index/browse`. Test a simple Map by Attachments page block with a few items you know are geolocated correctly.
 - **Maps not appearing on item pages or item set pages**: Add the Mapping resource page block to a region provided by your theme, by going to [Site > Theme > Configure resource pages](../sites/site_theme.md#configure-resource-pages).
 - **Trouble saving overlays**: There is a "Save overlay" button that must be clicked when an overlay is being entered or edited. Be sure to save each edit and then save the page. 
-- **Wrong basemaps appearing**: Basemaps are inherited properties: Global settings take effect on administrative-side maps, overridden by user-specific editing settings, and by individual admin-side maps; site-wide settings are overridden by individual public maps. The basemaps for Map Browse pages are set in the Navigation screen for each site; basemaps for page blocks are set when editing site pages. Maps on item-view pages use the site default basemap and cannot be customized. 
+- **Wrong basemaps appearing**: Basemaps are inherited properties: Global settings take effect on administrative-side maps, overridden by user-specific editing settings, and by individual admin-side maps. Public maps display their own custom settings, then default to the site-wide setting. The basemaps for Map Browse pages are set in the Navigation screen for each site; basemaps for page blocks are set when editing site pages. Maps on item-view pages use the site default basemap and cannot be customized further. 
