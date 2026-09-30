@@ -1,6 +1,8 @@
 # Numeric Data Types
 
-The [Numeric Data Type module](https://omeka.org/s/modules/NumericDataTypes){target=_blank} allows you to set certain properties as numeric data, using resource templates. You can designate properties as either dates and times or numbers.
+The [Numeric Data Type module](https://omeka.org/s/modules/NumericDataTypes){target=_blank} allows you to set certain properties as numeric data, using resource templates. You can designate properties with dates and times, durations, or numbers. These structured data fields allow you and your users to sort and filter items chronologically with a great amount of precision, such as within a specific ten-year span, or longer or shorter than a certain duration. 
+
+This module enables Omeka to show items on a timeline, either with a timestamp or an interval (spanning from a given start moment to an end moment). 
 
 ## Create numeric properties
 To implement the module, you will need to create or edit a [resource template](../content/resource-template.md) to set specific properties as having numeric data types. 
@@ -9,7 +11,7 @@ When creating or editing a resource template, find the property you want to set 
 
 Once the property is included in the template, click the pencil icon to edit the property. In the right hand drawer that opens, look for the dropdown "Data type" under the heading "Other options".
 
-![Closeup of the Other Options section, showing a dropdown for data type. A red arrow points to the header for the Numeric data types](../modules/modulesfiles/ndt-selectdata.png)
+![Closeup of the dropdown menu to set a data type. The last four options are the Numeric data types.](../modules/modulesfiles/ndt-selectdata.png)
 
 In the dropdown, select from the following options under the "Numeric" heading:
 
@@ -18,16 +20,16 @@ In the dropdown, select from the following options under the "Numeric" heading:
 - Duration, for how long something lasted, with options for years down to seconds
 - Interval, a date-based range with start and end dates in each instance of the property.
 
-Be sure to click "Set changes" at the bottom of the drawer to save this setting.
+Be sure to click "Set changes" at the bottom of the drawer to save this setting, then save the editing screen. 
 
 When you save changes to your resource template, the numeric type you chose should show up in the column "Data type" for the template.
 
-![Newly created resource template with a green-highlighted update success message. There are four properties - Title, Description, Date, and Spatial Coverage. In the column for Data Type, Date has Timestamp type and Spatial Coverage has Number.](../modules/modulesfiles/ndt-review.png)
-
-!!! note
-	These fields will display only the numeric data entered, as in, it will show "200" if you mean to indicate "200 metres". If you want to indicate what your number values represent (seconds minutes, metres, pixels, inches, etc.), we suggest employing the property's alternate label to include the scale you are using; for example, use "Spatial Coverage" and rename it to indicate "Height (cm)".
+![A resource template with four properties showing Data types set. The Identifier property has both "Text" and "Number", the Date property has "Timestamp", the Duration property is set to the "Duration" data type, and the Bit Rate/Frequency property is set to "Number".](modulesfiles/ndt-review.png)
 
 ## Add numeric data
+
+![A New Item editing screen, with a resource template set that adds all 4 types of numeric data types. Details on each field below.](modulesfiles/ndt-allOptions.png)
+
 When you add or edit an item using the template you created above, the properties you set as numeric will appear as follows:
 
 ### Timestamp
@@ -35,11 +37,11 @@ A Timestamp property automatically loads with fields for Year, Month, and Day. T
 
 If you enter a day without a month, the day information will not be saved. 
 
-![Empty timestamp fields, for property Date](../modules/modulesfiles/ndt-timestamp1.png)
+![A timestamp field, for property Date](modulesfiles/ndt-timestamp1.png)
 
-Clicking on the "time" button to the right of the day input field will load additional dropdown fields for Hour, Minute, and Second. Note that there is no AM/PM option; use twenty-four hour time entries (14 for 2pm, etc.).
+Clicking on the "time" button to the right of the day input field will load additional dropdown fields for Hour, Minute, and Second. You can select AM or PM hours in the dropdown. The "Offset" field allows you to designate a time zone relative to Coordinated Universal Time (UTC).
 
-![Empty timestamp fields, for property Date, with a row of time entry options below the date entry options](../modules/modulesfiles/ndt-timestamp2.png)
+![A timestamp field, for property Date, with a row of time entry options below the date entry options.](modulesfiles/ndt-timestamp2.png)
 
 Entries must be whole numbers, with no decimal points.
 
@@ -48,19 +50,24 @@ A number property is a small text field that allows you to type in a number, eit
 
 The entered value must be an integer or decimal. The number must not be less than -9007199254740991 or greater than 9007199254740991. The number of digits to either the left or right side of a decimal cannot exceed 16.
 
-![Field for property Spatial Coverage with the number 1 in the number entry field, and up or down toggle button on the right side of the field](../modules/modulesfiles/ndt-number.png)
+A number set in this data type will appear with commas indicating thousands, as in "5,000,000". 
+
+!!! note
+	These fields will display only the numeric data entered, as in, it will show "200" if you mean to indicate "200 metres". If you want to indicate what your number values represent (seconds minutes, metres, pixels, inches, etc.), we suggest employing the property's alternate label to include the scale you are using; for example, use "Spatial Coverage" and rename it to indicate "Height (cm)".
+
+![Field for property Interval, and up or down toggle button on the right side of the field](modulesfiles/ndt-number.png)
 
 ### Duration
-A Duration property has a series of fields in which to enter the duration of the resource. There are fields for Years, Months, and Days. Clicking on the "time" button to the right of the day input field will load additional dropdown fields for Hours, Minutes, and Seconds. Note that there is no AM/PM option; use twenty-four hour time entries (14 for 2pm, etc.).
+A Duration property has a series of fields in which to enter the duration of the resource. There are fields for Years, Months, and Days. Clicking on the "time" button to the right of the day input field will load additional dropdown fields for Hours, Minutes, and Seconds. 
 
-![A property labelled duration, using the vocabulary dcterms "extent". There fields described are in a stack, with year on top.](../modules/modulesfiles/ndt-duration.png)
+![A property labelled duration. There are years, months, and days fields, empty, and hours, minutes, and seconds fields, with "95" in the minutes field.](modulesfiles/ndt-duration.png)
 
 You do not need to have input in every field. For example, you can enter a duration of 1 year and 5 days, leaving the month field blank.
 
 ### Interval
 An Interval property allows you to enter the beginning and end dates and times for a resource. There are two sets of timestamp fields, one for the start date and one for the end. 
 
-![Interval property with no times entered](../modules/modulesfiles/ndt-interval.png)
+![Interval property set on the Date Valid field.](modulesfiles/ndt-interval.png)
 
 ## Bulk-edit numeric data
 
