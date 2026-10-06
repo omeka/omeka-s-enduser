@@ -91,23 +91,21 @@ You can create facets from the following options:
 - Item set (for items only)
 - Full-text.
 
-More options may be added by modules. See the section below.
+More options may be added by modules. The main one is Numeric Data Types; see the section further down this page for more information.
 
 ![Facet Type dropdown menu showing options](modulesfiles/FacetedBrowse_SelectFacetType.png)
 
 Once the type is selected, click the "Add" button. A drawer will open on the right side of the browser window to configure the facet. Facet names are always required and will display in the public interface. 
-
-Other facet options are described below.
-
-The image below shows the drawer options for the Value facet:
-
-![Configure Facet draw for the Values facet type, as listed in the section below.](modulesfiles/FacetedBrowse_ConfigureFacetV.png) 
 
 Do not forget to click the "Set facet" button to save your work, and then save the category.
 
 ##### **Value** 
 
 Value facets correspond to the [values](../content/items.md#values) within a specific property for each item.
+
+The image below shows some of the drawer options for the Value facet:
+
+![Configure Facet drawer for the Values facet type.](modulesfiles/FacetedBrowse_configurefacet1.png)
 
 !!! note
 	Note that the "Value facet mode" setting at the top of the category editing interface will apply to all of the value facets you add to this category. "Match any" will allow users to broaden their results by adding more selections, while "Match all" will narrow the results when more criteria are added.
@@ -122,6 +120,8 @@ Set the Select type for the browse faceting. This sets how site visitors interac
 - Multiple (list). Visitors can select multiple; options are displayed in a list of checkboxes. Multiple selections by site visitors will **narrow** (Option 1 AND Option 2) the search results, regardless of the "Match any"/"Match all" value behavior set on the category. 
 - Single (dropdown menu). Visitors can select only one; all options are displayed in a dropdown menu. A "Select one..." option appears at the top and is selected on page load; users can choose another option, and then clear that choice by clicking "Select one..." again.
 - Text input. Visitors can type in text to include or exclude resources that include that text in their values.
+
+![Configure Facet draw for the Values facet type, as listed in the section below.](modulesfiles/FacetedBrowse_configurefacet2.png)
 
 For **lists or dropdown menus**, you can set a **Query type** (queries are available for value facets only; not for classes, templates, item sets, etc.). The options are:
 
@@ -158,6 +158,8 @@ Next, enter the values that will make up the facet. Each value should be on a se
 -  "Is resource with ID": enter the resource ID followed by any value (usually the resource title), separated by a single space.
 -  "Has any value": enter the property ID followed by any value (usually the property label), separated by a single space.
 
+![The "Available values" table sorted by most frequent occurrence in the selected property.](modulesfiles/FacetedBrowse_AllValuesCount.png)
+
 You can check the "Show all available values" box to get a sense of the data that is available for input. This will return existing values in the property you selected above, or from all properties. You can sort that table by either the most common values, or the values alphabetically, using the sorting triangles that appear at the top of the table. You may then click the "Add all" button to populate the list of values.
 
 The order of your available values (from most to least frequent, or alphabetically, etc.) will not persist when you use the "Add all" button. Property values will rearrange themselves according to an internal order, as will resource templates, classes, and resources by ID. The order that appears in the field on the admin side is what will appear on the public page. 
@@ -169,13 +171,19 @@ When you are satisfied with your settings, be sure to click the "Set facet" butt
 !!! note
 	Note that "All available values" facets do not dynamically update when new values are added to the corpus, or when values are edited. You must reload the options using "Show all available values" and "Add all" in the facet to update the browsing list's content. We recommend doing this regularly when new items are being added.
 
+This is how the above example value facet will appear on a public Faceted Browse page: 
+
+![Configure Facet draw for the Values facet type, as listed in the section below.](modulesfiles/FacetedBrowse_facetpublic2.png)
+
 ##### **Resource class** 
 
 Allows visitors to narrow items by their resource class.
 
 Set the Select type for the browse faceting. For the "Multiple (list)" option, multiple selections by site visitors will **broaden** (Option 1 OR Option 2) the search results. 
 
-Select the classes that will make up the facets from the dropdown menu.
+Select the classes that will make up the facets from the dropdown menu.  You can truncate the lists visually if desired.
+
+![Configure Facet drawer for the Values facet type.](modulesfiles/FacetedBrowse_facetClass.png)
 
 Check the "Show all available classes" box to get a sense of the data that is available for input. The order of your available values (from most to least frequent, or alphabetically, etc.) will not persist when you use the "Add all" button. Classes will rearrange themselves according to an internal order. The order that appears in the field on the admin side is what will appear on the public page. 
 
@@ -185,7 +193,7 @@ Allows visitors to narrow items by their [resource template](../content/resource
 
 Set the Select type for the browse faceting. For the "Multiple (list)" option, multiple selections by site visitors will **broaden** (Option 1 OR Option 2) the search results. 
 
-Select the resource templates that will make up the facets.
+Select the resource templates that will make up the facets. You can truncate the lists visually if desired. 
 
 Check the "Show all available templates" box to get a sense of the data that is available for input. The order of your available values (from most to least frequent, or alphabetically, etc.) will not persist when you use the "Add all" button. Template values will rearrange themselves according to an internal order. The order that appears in the field on the admin side is what will appear on the public page. 
 
@@ -195,7 +203,9 @@ Allows visitors to narrow items by [item sets](../content/item-sets.md).
 
 Set the Select type for the browse faceting. For the "Multiple (list)" option, multiple selections by site visitors will **broaden** (Option 1 OR Option 2) the search results. 
 
-Select the item sets that will make up the facets.
+Select the item sets that will make up the facets.  You can truncate the lists visually if desired.
+
+![Configure Facet drawer for the Values facet type.](modulesfiles/FacetedBrowse_facetItemSet.png)
 
 Check the "Show all available item sets" box to get a sense of the data that is available for input. The order of your available values (from most to least frequent, or alphabetically, etc.) will not persist when you use the "Add all" button. Item sets will rearrange themselves according to the internal ID. The order that appears in the field on the admin side is what will appear on the public page. 
 
@@ -217,9 +227,9 @@ In the public view, the faceting will be controlled through a dropdown menu.
 
 ### Columns
 
-The items on the public page will initially display in a list, including the title, description, and thumbnail for each resource. These rows may be truncated (overly long text will be hidden).
+The items on the public page will initially display in a list (regardless of your site's theme settings). The list includes rows with the title, description, and thumbnail for each resource. These rows may be truncated (overly long text will be hidden), based on your site theme's settings.
 
-You can configure the information displayed about the results by adding columns of metadata to the display for your faceted browse. This will convert the display into a table with a row for each resource in the results. Columns are set on a category-by-category basis. Depending on whether your page has one category or multiple categories, the display of the initial page may change.
+You can configure the information displayed about the results by adding columns of metadata to the display. This will convert the display into a table with a row for each resource in the results. Columns are set on a category-by-category basis. If your page has only one category, the initial display will show its columns by default; if you have multiple categories, the default list format will display.
 
 On the public view of a faceted browse, users can sort by a column by selecting it from the dropdown menu. Each column can be sorted in ascending or descending order. If you would like to prevent users from sorting by a certain column, you can check the "Exclude sort by" checkbox when configuring that column to exclude it from the dropdown menu.
 
@@ -239,7 +249,7 @@ Once the type is selected, click the "Add" button. A drawer will open with optio
 
 For each column, a title is required, to be displayed in the header of the table. You can also exclude each column from being sortable by site visitors. Other settings are described below.
 
-Remember to click the "Set column" button or your work will not be saved.
+Remember to click the "Set column" button and then save the page, or your work will not be saved.
 
 ![Public Faceted Browse page with columns displaying](modulesfiles/FacetedBrowse_columns.png)
 
@@ -255,7 +265,7 @@ Set the maximum number of item sets to be displayed. To display all values, leav
 
 Item sets will display with small thumbnails and links to the item sets. 
 
-## Add Faceted Browse pages to the navigation
+## Add Faceted Browse pages to your navigation
 
 Click on the [Navigation tab](../sites/site_navigation.md) for your site. From the "Add a custom link" list in the page sidebar, select the "Faceted browse" option.
 
@@ -269,13 +279,13 @@ Drag and drop your pages into the desired place in your site navigation, and the
 
 ## Public views
 
-The public views of Faceted Browse pages include the base page, where there may be one or more categories to click on, and then category-specific pages, featuring the columns chosen for that view. Browse facets will show in a list if no columns are selected for display: no column headings will be included, but the items on the page can be sorted as usual.
+The public views of Faceted Browse pages include the base page, where there may be one or more categories to click on, and then category-specific pages, featuring the columns chosen for that view. The available resources will display in a list, if no columns are selected for display.
 
 ![Faceted browse page with a list of events that happened on the National Mall. On the left side of the image is a list of eras with radio buttons.](modulesfiles/FacetedBrowse_publicView.png)
 
 In this image, the facet is Era, displayed as a single-choice list. The items for this page are displayed in columns with the title and era for each item.
 
-Depending on your columns settings on each category, you may have more columns than the user's browser window can accommodate. If so, they will see only the number of columns that can fit their contents on the page without overflow, and see left and right arrows above the top-right corner of the table to scroll the hidden columns into view. Note that text in columns that are not showing on the page will not come up if the user text-searches the page.
+Depending on your column settings on each category, you may have more columns than the user's browser window can accommodate. If so, they will see only the number of columns that can fit their contents on the page without overflow, and see left and right arrows above the top-right corner of the table to scroll the hidden columns into view. Note that text in columns that are not showing on the page will not come up if the user text-searches the page.
 
 ![Faceted Browse page with the results table displaying left and right arrows to view columns that are not visible at the current page width.](modulesfiles/FacetedBrowse_publicView2.png)
 
