@@ -1,6 +1,6 @@
 # Administrative Dashboard
 
-The administrative dashboard manages the content shared by all Omeka S sites and the core functionalities of the Omeka S installation. 
+The administrative dashboard manages the content shared by all Omeka S sites and the core functionalities of the Omeka S [installation](glossary#installation). 
 
 This [screencast](https://vimeo.com/455708039){target=_blank} walks you through the main features of the dashboard and navigating your Omeka S installation:
 
