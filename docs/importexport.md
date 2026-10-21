@@ -38,7 +38,8 @@ Omeka S also has modules for importing resources from:
 - [DSpace](modules/dspaceconnector.md)
 - [CKAN](modules/datarepositoryconnector.md)
 - [Dataverse](modules/datarepositoryconnector.md)
-- [Invenio](modules/datarepositoryconnector.md). 
+- [Invenio](modules/datarepositoryconnector.md)
+- [ArchivesSpace](modules/archivesspaceconnector.md). 
 
 ### Import from a spreadsheet
 
