@@ -100,3 +100,13 @@ The output formats available for this module are:
 - [Turtle](https://www.w3.org/TR/rdf12-turtle/){target=_blank}.
 
 See the Output Formats module documentation for more details. 
+
+### Export a flattened version of your site
+
+The [Static Site Export module](modules/staticsiteexport.md) will create a simplified, non-dynamic version of your public site that can be launched elsewhere, or used as a backup or archival capture. 
+
+This site will have no dynamic searching features or search-query-based page block and URLs, and many module-based functions will not work. We have built the export so far to include Mapping data and maps, and will use the "default" Omeka S theme visually. Your flattened site can be rebuilt and shared online using Hugo. For more information, see the Static Site Export module page of this user manual. 
+
+### Export a web archive of your site
+
+We recommend using the [ArchiveWeb.page tool](https://webrecorder.net/archivewebpage/){target=_blank} by WebRecorder to create a visually accurate version of your public Omeka S site. Websites captured using this tool can be browsed and navigated using WebRecorder's tools.
