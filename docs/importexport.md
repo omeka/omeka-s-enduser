@@ -105,7 +105,7 @@ See the Output Formats module documentation for more details.
 
 The [Static Site Export module](modules/staticsiteexport.md) will create a simplified, non-dynamic version of your public site that can be launched elsewhere, or used as a backup or archival capture. 
 
-This site will have no dynamic searching features or search-query-based page block and URLs, and many module-based functions will not work. We have built the export so far to include Mapping data and maps, and will use the "default" Omeka S theme visually. Your flattened site can be rebuilt and shared online using Hugo. For more information, see the Static Site Export module page of this user manual. 
+This site will have no dynamic searching features or search-query-based page block and URLs, and many module-based functions will not work. We have built the export so far to include Mapping data and maps. The exported site will use the "default" Omeka S theme visually. Your flattened site can be rebuilt and shared online using Hugo. For more information, see the Static Site Export module page of this user manual. 
 
 ### Export a web archive of your site
 
