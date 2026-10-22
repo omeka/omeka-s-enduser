@@ -24,6 +24,10 @@ You can use the [Omeka S Item Importer module](modules/ositemimporter.md) to imp
 
 [You can share a custom vocabulary between Omeka S installations by exporting and importing it.](https://omeka.org/s/docs/user-manual/modules/customvocab/#manage-custom-vocabs)
 
+### Import sample materials for learning and testing
+
+The [Demo Data module](modules/demodata.md) comes with 800 sample items and 700 files of openly-licensed or public-domain media. You can import a small or large dataset to experiment with Omeka's data model and build your sites and features, or can be used for educational purposes for staff and students. It works best when the Numeric Data Types and Mapping modules are active. Imported items can be easily deleted. Remember to keep the resources and your practice sites private. 
+
 ## Connect to non-Omeka platforms
 
 Omeka connects easily to other platforms built by the [Corporation for Digital Scholarship](https://digitalscholar.org/){target=_blank}. 
