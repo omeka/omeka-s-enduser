@@ -44,4 +44,4 @@ The administrative dashboard of Omeka S has the following features for accessibi
 
 ## Accessibility Issues
 
-If you encounter an issue with accessiblity with the Omeka S core software or Omeka Team developed addons, please report your findings either via a [Forum post](https://forum.omeka.org/c/omeka-s/accessibility/36){target=_blank} or by making an issue in the appropriate GitHub repository.
+If you encounter an issue with accessibility with the Omeka S core software or Omeka Team developed addons, please report your findings either via a [Forum post](https://forum.omeka.org/c/omeka-s/accessibility/36){target=_blank} or by making an issue in the appropriate GitHub repository.
