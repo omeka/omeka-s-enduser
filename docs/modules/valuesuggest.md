@@ -71,6 +71,13 @@ This module offers the ability to suggest values currently stored in your Omeka 
 
 ![A screenshot of the Publisher field being used to suggest several options from other items that start with "Glasg".](modulesfiles/ValSug-OmekaProperty.png)
 
+## Configuration
+
+GeoNames limits how many searches each username can make. We recommend setting your own GeoNames username for the "Geonames: The GeoNames geographical database" data type; without one, its suggestions may sometimes stop appearing.
+
+1. Create a free account at [GeoNames](https://www.geonames.org/){target=_blank}.
+2. From the Modules page, click "Configure" next to Value Suggest, enter your username in the "GeoNames username" field, and click "Submit".
+
 ## Available vocabularies
 
 This module includes the following vocabularies:
@@ -120,7 +127,7 @@ Note that the [NDE Termennetwerk vocabularies are now available as a separate mo
 
 ### [GeoNames](http://www.geonames.org/){target=_blank}
 
-- The GeoNames geographical database
+- The GeoNames geographical database (see [Configuration](#configuration))
 - GeoNames features.
 
 ### [The Getty Vocabularies](https://www.getty.edu/research/tools/vocabularies/index.html){target=_blank}
