@@ -4,7 +4,7 @@ The [Value Suggest module](https://omeka.org/s/modules/ValueSuggest){target=_bla
 
 When a user is editing the metadata of a resource (an item, a piece of media, or an item set) that uses the Value-Suggest-enabled resource template, they can choose from a vocabulary's options. It functions as a [data type](../content/resource-template.md#data-types), but works like a modification to a text field: a user can start typing and select a suggestion from the dropdown, or ignore the dropdown and type in a textual entry.
 
-Value Suggest comes packaged with many popular vocabularies - see the list below. Some examples: VIAF, PBCore for publishing information, RDA for multimedia, RightsStatements, and Creative Commons licenses. The module supplies terms in a number of languages. 
+Value Suggest comes packaged with many popular vocabularies - [see the list below](#available-vocabularies). Some examples: VIAF, PBCore for publishing information, RDA for multimedia, RightsStatements, and Creative Commons licenses. The module supplies terms in a number of languages. 
 
 This module also allows any field to [suggest values already stored in that property across the entire Omeka installation](#internal-suggestions). You can choose to narrow the suggested values to ones from resources with the same class, or ones from resources using the same resource template, to limit the number of suggestions and make them more relevant. 
 
@@ -73,7 +73,11 @@ This module offers the ability to suggest values currently stored in your Omeka 
 
 ## Configuration
 
-GeoNames limits how many searches each username can make. We recommend setting your own GeoNames username for the "Geonames: The GeoNames geographical database" data type; without one, its suggestions may sometimes stop appearing.
+This module has one field on its configuration field, which only needs to be filled out if you use [GeoNames](https://www.geonames.org/){target=_blank} services. 
+
+![The ValueSuggest module configuration page, with a field for "GeoNames username".](modulesfiles/ValSug-config.png)
+
+[GeoNames](https://www.geonames.org/){target=_blank} limits how many searches each username can make. We recommend setting your own GeoNames username for the "Geonames: The GeoNames geographical database" data type; without one, its suggestions may sometimes stop appearing.
 
 1. Create a free account at [GeoNames](https://www.geonames.org/){target=_blank}.
 2. From the Modules page, click "Configure" next to Value Suggest, enter your username in the "GeoNames username" field, and click "Submit".
@@ -85,7 +89,7 @@ This module includes the following vocabularies:
 - Creative Commons
 - Dublin Core
 - Gemeinsame Normdatie (GND)
-- GeoNames
+- GeoNames (Note that [we suggest setting up a GeoNames account](#configuration) to use this service)
 - The Getty Vocabularies
 - Homosaurus
 - IdRef
