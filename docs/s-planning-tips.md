@@ -4,17 +4,16 @@
 
 A brand-new Omeka S installation comes with several pre-designed page types ready to share:
 
-- When you add a new site, you can choose an installed theme right away, or allow it to use the "Default" theme. 
-- The navigation of your first S site will come loaded with a "Browse" page for exploring items. You can quickly add the pre-installed "Welcome" page, which showcases some text formatting styles. 
+- The navigation of your first S site will come loaded with a "Browse" page for exploring items. You can add the pre-installed "Welcome" page, which showcases some text formatting styles. 
 - Once you add your first item, you will be able to view the "[item view page](content/items.md#public-views-for-items)". Customize this from the "Configure resource pages" button on the "Theme" tab. There is a separate page layout for viewing media attached to items.
-- When you begin sorting items into item sets, you can add a similar "Browse item sets" page to your navigation, and customize a similar "item set view" page. 
-- Depending on the theme you choose, these resource pages may have their own pre-configured blocks. Most themes will by default display: 
+- When you begin sorting items into item sets, you can add a similar "Browse item sets" page to your navigation, and customize a similar "Item set view" page. 
+- When you add a new site, you can choose an installed theme right away, or allow it to use the "Default" theme. Depending on the theme you choose, these [resource pages may have their own pre-configured blocks](sites/site_theme.md#configure-resource-pages). Most themes will by default display: 
 	- for items: a full-size embedding of the media, the item's metadata sorted by schema, a list of item sets and site pages where the item appears, and then a list of all the item's attached media with small thumbnails;
 	- for media: a full-size rendering of the media, then the media's metadata; 
 	- for item sets: the item set's metadata, then a browsing grid or list of the set's contents.
 - The pages for browsing items and items sets each link to [an Advanced Search form](search.md#public-views), as does the search bar at the top of your site.
 
-In Omeka S, you build your [sites](sites/index.md) page by page, using resources you've added to your installation. You should begin planning your site before you start adding resources at scale, but we suggest experimenting with a few sample items and item sets to get a feel for the way Omeka handles them.
+In Omeka S, you build your [sites](sites/index.md) page by page, using [resources](glossary#resources) you've added to your [installation](glossary#installation). You should begin planning your site before you start adding resources at scale, but we suggest experimenting with a few sample items and item sets to get a feel for the way Omeka handles them.
 
 What follows are some questions and ideas to help guide you as you plan your sites in Omeka S.
 
@@ -27,7 +26,7 @@ What follows are some questions and ideas to help guide you as you plan your sit
 ## Resources
 
 **What will you do with items in this website?**
-[Items](content/items.md) are the building blocks of Omeka S. What sort of [resource templates](content/resource-template.md) will you want to create and use to fully describe your items? Any item you include on an Omeka S will have a public item show page, so try to ensure that the information in an item's metadata can stand on its own. 
+[Items](content/items.md) are the building blocks of Omeka S. They are often sorted by [class](glossary#class), which frequently indicates the material type: still image, video, audio, physical object, location, event, person. What sort of [templates](content/resource-template.md) will you want to create to consistently describe your items, and will you want a template for each class? Any item you include on an Omeka S will have a public item show page, so try to ensure that the information in an item's metadata can stand on its own. 
 
 **What will you do with item sets?**
 You can use [item sets](content/item-sets.md) to group items to be included on a [site](sites/index.md), and they can be a way to guide visitors' browsing on your sites. For some sites, item sets are robust resources themselves.
@@ -35,14 +34,14 @@ You can use [item sets](content/item-sets.md) to group items to be included on a
 How do you want to group items into sets? What metadata fields will your item sets use? Do your item sets have relations to each other or to items?
 
 **What do you want your data to do?**
-What properties are you going to want to consistently describe in your site? Do you want some of these to display with a different label - for example 'author' instead of 'creator' for books? Use a [resource template](content/resource-template.md) and change the label of the property.
+What properties are you going to want to consistently describe in your site? Do you want some of these to display with a different label - for example 'author' instead of 'creator' for books? You can use a [resource template](content/resource-template.md) to change the public label of any property.
 
-In Omeka S, items and item sets can use other resources - items, item sets, and media - as properties; for example, you can make an item for William Shakespeare and have that item fill the 'creator' property for a 'Hamlet' item. How can your resources use this functionality?
+In Omeka S, items and item sets can use other resources - items, item sets, and media - as properties; for example, you can make an item for "William Shakespeare" and have that item fill the `creator` property for a "Hamlet" item. How can your resources use this functionality?
 
 Do you want to use a set of terms (controlled vocabulary) for certain items? You might want to use [Custom Vocab](modules/customvocab.md). Or do you want to use a terms list created by the Library of Congress or the Getty? Then you might use [Value Suggest](modules/valuesuggest.md).
 
 ## Building a site
-With Omeka S, you can built your sites from scratch or quickly set up our in-built pages. It's also easy to use multiple sites to accomplish your goals. 
+With Omeka S, you can built your sites from scratch or quickly set up our in-built pages. It's also easy to use multiple sites to accomplish your goals. Build one site, then quickly copy it using the [Copy Resources module](modules/copyresources.md).
 
 **What pages do you want to include?** What kind of content do you want on these pages? How do you want to arrange them? Try sketching out a sample menu or wireframes for the site. Look at example sites by other organizations or people. Use those as guides as you build your pages.
 
@@ -53,7 +52,7 @@ Pages are made up of rearrangable [blocks](sites/site_pages.md#page-blocks), whi
 Will you allow [users to create accounts](admin/users.md) on your site, and let them add their own items, metadata, or exhibits?
 
 ## Suggested modules
-The Omeka Team and our community of open-source developers have created hundreds of modules to extend the Omeka S core functionality. To assist administrators in installing and configuring Omeka S so that it is geared toward particular types of work, below are some suggested collections of modules:
+The Omeka Team and our community of open-source developers have created many modules to extend the Omeka S core functionality. To assist administrators in installing and configuring Omeka S so that it is geared toward particular types of work, below are some suggested collections of modules:
 
 ### Publishing digital collections
 
